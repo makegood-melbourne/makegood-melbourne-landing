@@ -1,45 +1,45 @@
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Building2, Shield, Wrench } from "lucide-react";
-import { Card, CardContent } from "@/components/ui/card";
 
-const services = [
-  {
-    icon: Building2,
-    title: "Make Good",
-    description: "End of lease restoration returning commercial and industrial spaces to their original condition per lease obligations."
-  },
-  {
-    icon: Shield,
-    title: "Make Safe",
-    description: "Immediate safety works ensuring properties meet compliance standards and protect occupants and assets."
-  },
-  {
-    icon: Wrench,
-    title: "Remediation & Rectification",
-    description: "Expert solutions for waterproofing issues, concrete cancer, and structural slab repairs."
-  }
-];
+const Services = () => {
+  const services = [
+    {
+      icon: Building2,
+      title: "End of Lease Make Good",
+      description: "Comprehensive make good services for commercial and industrial spaces. We return your property to its original condition, ensuring full compliance with lease obligations and avoiding costly disputes."
+    },
+    {
+      icon: Shield,
+      title: "Make Safe Works",
+      description: "Urgent make safe solutions to protect your property and occupants. We respond quickly to address safety hazards, secure sites, and implement temporary or permanent protective measures."
+    },
+    {
+      icon: Wrench,
+      title: "Remediation & Rectification",
+      description: "Expert remediation services addressing waterproofing failures, concrete cancer, and slab issues. Our qualified team delivers lasting solutions to structural and building envelope problems."
+    }
+  ];
 
-export const Services = () => {
   return (
-    <section className="py-24 bg-muted/30">
-      <div className="container px-6">
-        <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Expert restoration services
-          </h2>
-          <p className="text-xl text-muted-foreground font-light">
-            Comprehensive make good solutions for commercial and industrial properties across Melbourne
+    <section id="services" className="py-20 bg-secondary">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Our Services</h2>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            Professional solutions for all your commercial and industrial property needs in Melbourne
           </p>
         </div>
-        
-        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          {services.map((service) => (
-            <Card key={service.title} className="bg-card border-border hover:border-primary/50 transition-colors">
-              <CardContent className="pt-8 pb-8">
-                <div className="mb-6 inline-flex p-3 rounded-lg bg-primary/10">
-                  <service.icon className="w-8 h-8 text-primary" />
+
+        <div className="grid md:grid-cols-3 gap-8">
+          {services.map((service, index) => (
+            <Card key={index} className="border-border hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
+                  <service.icon className="h-6 w-6 text-accent" />
                 </div>
-                <h3 className="text-2xl font-bold mb-4">{service.title}</h3>
+                <CardTitle className="text-xl text-card-foreground">{service.title}</CardTitle>
+              </CardHeader>
+              <CardContent>
                 <p className="text-muted-foreground leading-relaxed">
                   {service.description}
                 </p>
@@ -51,3 +51,5 @@ export const Services = () => {
     </section>
   );
 };
+
+export default Services;

@@ -1,36 +1,50 @@
 import { Button } from "@/components/ui/button";
-import makegoodLogo from "@/assets/makegood-logo.png";
+import { ArrowRight } from "lucide-react";
+import heroImage from "@/assets/hero-construction.jpg";
 
-export const Hero = () => {
+const Hero = () => {
+  const scrollToContact = () => {
+    const element = document.getElementById('contact');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-background via-background to-muted/20" />
+      <div className="absolute inset-0 z-0">
+        <img 
+          src={heroImage} 
+          alt="Professional commercial construction and make good services in Melbourne"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/85 to-primary/70"></div>
+      </div>
       
-      <div className="container relative z-10 px-6 py-20">
-        <div className="mx-auto max-w-5xl text-center space-y-8">
-          <div className="mb-12 flex justify-center">
-            <img 
-              src={makegoodLogo} 
-              alt="Make Good Melbourne" 
-              className="h-16 md:h-20 w-auto invert brightness-0 contrast-200"
-            />
-          </div>
-          
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight">
-            <span className="block">Restoring commercial</span>
-            <span className="block mt-2">spaces to perfection</span>
+      <div className="container mx-auto px-4 z-10 pt-16">
+        <div className="max-w-3xl">
+          <h1 className="text-4xl md:text-6xl font-bold text-primary-foreground mb-6 leading-tight">
+            Professional Make Good Services for Commercial & Industrial Spaces
           </h1>
-          
-          <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto font-light">
-            Melbourne's trusted make good specialists. End of lease restoration, make safe works, and remediation for commercial and industrial properties.
+          <p className="text-xl md:text-2xl text-primary-foreground/90 mb-8 leading-relaxed">
+            Expert end of lease works, make safe solutions, and remediation services across Melbourne. We restore your space to its original condition, meeting all lease obligations.
           </p>
-          
-          <div className="flex flex-col sm:flex-row gap-4 justify-center pt-6">
-            <Button size="lg" className="text-lg px-8 py-6 bg-primary text-primary-foreground hover:bg-primary/90 font-medium">
-              Get a Quote
+          <div className="flex flex-col sm:flex-row gap-4">
+            <Button 
+              size="lg" 
+              onClick={scrollToContact}
+              className="bg-accent hover:bg-accent/90 text-accent-foreground text-lg px-8 py-6 group"
+            >
+              Get a Free Quote
+              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Button>
-            <Button size="lg" variant="outline" className="text-lg px-8 py-6 border-primary/30 hover:bg-secondary font-medium">
-              View Services
+            <Button 
+              size="lg" 
+              variant="outline"
+              onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
+              className="text-lg px-8 py-6 bg-primary-foreground/10 hover:bg-primary-foreground/20 text-primary-foreground border-primary-foreground/30"
+            >
+              Our Services
             </Button>
           </div>
         </div>
@@ -38,3 +52,5 @@ export const Hero = () => {
     </section>
   );
 };
+
+export default Hero;
