@@ -15,7 +15,7 @@ export const blogPosts: BlogPost[] = [
     title: "Year-End Property Planning: Preparing Your Commercial Space for 2025",
     date: "1 December 2024",
     excerpt: "As the year draws to a close, strategic property planning ensures your commercial premises enter 2025 in optimal condition. From maintenance assessments and budget planning to lease reviews and compliance audits, year-end is the perfect time to evaluate your property strategy and set your business up for success.",
-    image: "/src/assets/blog/construction-site-meeting.webp",
+    image: "/src/assets/blog/year-end-planning.jpg",
     content: `The end of the calendar year provides an ideal opportunity to assess your commercial property situation, plan for upcoming obligations, and ensure your premises support business goals in the year ahead. Whether you're a tenant reviewing lease commitments, a landlord planning property improvements, or a business owner evaluating space needs, strategic year-end planning prevents surprises and positions you for success. This comprehensive guide explores essential year-end property planning activities for commercial spaces.
 
 ## Why Year-End Property Planning Matters
@@ -408,12 +408,12 @@ Need help conducting property assessments, planning for lease end obligations, o
   },
   {
     id: "21",
-    slug: "maximizing-property-value-lease-end",
-    title: "Maximizing Property Value at Lease End: A Strategic Guide for Landlords",
+    slug: "maximising-property-value-lease-end",
+    title: "Maximising Property Value at Lease End: A Strategic Guide for Landlords",
     date: "1 November 2024",
-    excerpt: "Landlords can significantly increase rental returns and minimize vacancy periods through strategic property management as leases conclude. From proper make good enforcement and value-adding improvements to effective marketing timing, this guide explores how to maximize property value and tenant attraction when leases end.",
-    image: "/src/assets/blog/commercial-make-good.webp",
-    content: `When a commercial lease approaches its end, landlords face critical decisions that impact property value, rental returns, and vacancy periods. Strategic management of the lease end process—from make good enforcement to property positioning—can mean the difference between extended vacancies with costly remediation and seamless transitions to new tenants at improved rental rates. This comprehensive guide explores how landlords can maximize property value and returns when commercial leases conclude.
+    excerpt: "Landlords can significantly increase rental returns and minimise vacancy periods through strategic property management as leases conclude. From proper make good enforcement and value-adding improvements to effective marketing timing, this guide explores how to maximise property value and tenant attraction when leases end.",
+    image: "/src/assets/blog/maximising-property-value.jpg",
+    content: `When a commercial lease approaches its end, landlords face critical decisions that impact property value, rental returns, and vacancy periods. Strategic management of the lease end process—from make good enforcement to property positioning—can mean the difference between extended vacancies with costly remediation and seamless transitions to new tenants at improved rental rates. This comprehensive guide explores how landlords can maximise property value and returns when commercial leases conclude.
 
 ## Understanding Property Value Drivers at Lease End
 
@@ -807,7 +807,7 @@ Need help conducting property assessments, planning for lease end obligations, o
 - Professional property management
 - Documented everything in writing
 
-## Case Studies: Value Maximization in Practice
+## Case Studies: Value Maximisation in Practice
 
 ### Example 1: Strategic Improvement ROI
 
@@ -865,7 +865,7 @@ Need help conducting property assessments, planning for lease end obligations, o
 
 **Lesson**: Short-term shortcuts often create expensive long-term problems.
 
-## Your Lease End Value Maximization Checklist
+## Your Lease End Value Maximisation Checklist
 
 **12 Months Before Lease End**:
 - [ ] Confirm tenant retention or vacation plans
@@ -910,11 +910,11 @@ Need help conducting property assessments, planning for lease end obligations, o
 
 ## Conclusion
 
-Maximizing property value at lease end requires strategic planning, professional execution, and attention to detail throughout the process. From enforcing proper make good obligations to investing wisely in value-adding improvements and marketing the property effectively, landlords who approach lease ends strategically achieve higher rental returns, shorter vacancies, and better quality tenants.
+Maximising property value at lease end requires strategic planning, professional execution, and attention to detail throughout the process. From enforcing proper make good obligations to investing wisely in value-adding improvements and marketing the property effectively, landlords who approach lease ends strategically achieve higher rental returns, shorter vacancies, and better quality tenants.
 
 The difference between mediocre and excellent lease end outcomes is measured in thousands of dollars of rental income, months of vacancy avoided, and years of stable tenancy with quality tenants. Invest time in planning, enforce obligations professionally, present your property at its best, and reap the financial rewards.
 
-Need assistance managing lease end processes, conducting property assessments, or executing value-adding improvements? Our experienced team provides comprehensive landlord services from make good management and property improvement to tenant attraction strategies. Contact us today to maximize your property value and returns.`
+Need assistance managing lease end processes, conducting property assessments, or executing value-adding improvements? Our experienced team provides comprehensive landlord services from make good management and property improvement to tenant attraction strategies. Contact us today to maximise your property value and returns.`
   },
   {
     id: "20",

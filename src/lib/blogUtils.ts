@@ -18,6 +18,8 @@ import balconyWaterproofingImage from "@/assets/blog/balcony-waterproofing.webp"
 import slabRectificationImage from "@/assets/blog/slab-rectification.webp";
 import buildingDefectRemediationImage from "@/assets/blog/building-defect-remediation.webp";
 import strategicPlanningImage from "@/assets/blog/strategic-planning.jpg";
+import maximisingPropertyValueImage from "@/assets/blog/maximising-property-value.jpg";
+import yearEndPlanningImage from "@/assets/blog/year-end-planning.jpg";
 import { BlogPost } from "@/data/blogPosts";
 
 const imageMap: Record<string, string> = {
@@ -41,6 +43,8 @@ const imageMap: Record<string, string> = {
   'slab-rectification': slabRectificationImage,
   'building-defect-remediation': buildingDefectRemediationImage,
   'strategic-planning': strategicPlanningImage,
+  'maximising-property-value': maximisingPropertyValueImage,
+  'year-end-planning': yearEndPlanningImage,
 };
 
 export const getBlogImage = (imagePath: string): string => {
