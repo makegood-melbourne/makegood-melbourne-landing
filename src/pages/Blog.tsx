@@ -8,6 +8,7 @@ import cleaningImage from "@/assets/blog/cleaning-services.webp";
 import paintingImage from "@/assets/blog/painting-wall.webp";
 import warehouseImage from "@/assets/blog/warehouse-makegood.webp";
 import propertyImage from "@/assets/blog/property-transformation.webp";
+import newYearImage from "@/assets/blog/new-year-makegood.webp";
 
 const Blog = () => {
   const getImage = (imagePath: string) => {
@@ -15,6 +16,7 @@ const Blog = () => {
     if (imagePath.includes('painting-wall')) return paintingImage;
     if (imagePath.includes('warehouse-makegood')) return warehouseImage;
     if (imagePath.includes('property-transformation')) return propertyImage;
+    if (imagePath.includes('new-year-makegood')) return newYearImage;
     return cleaningImage;
   };
   return (
