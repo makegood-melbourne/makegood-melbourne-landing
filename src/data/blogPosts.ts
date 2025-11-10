@@ -10,6 +10,452 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: "30",
+    slug: "electrical-make-safe-decommissioning-demolition",
+    title: "Electrical Make Safe: Critical Decommissioning Before Demolition and Make Good Works",
+    date: "1 August 2025",
+    excerpt: "Electrical make safe is an essential preliminary step in make good and demolition projects, ensuring all electrical systems are safely decommissioned before strip-out works commence. Licensed electricians isolate, disconnect, and remove electrical installations, returning systems to base building configuration and creating a safe working environment. Learn about electrical make safe procedures, compliance requirements, and integration with make good projects.",
+    image: "/src/assets/blog/electrical-make-safe.jpg",
+    content: `Electrical make safe is a critical preliminary phase in commercial make good and demolition projects, involving the safe decommissioning and isolation of all electrical installations before physical strip-out works begin. This essential process protects workers from electrical hazards, ensures regulatory compliance, and allows demolition teams to work efficiently without risk of encountering live electrical systems. Licensed electricians systematically disconnect, isolate, and remove electrical systems, returning installations to base building configuration and providing certification of safe working conditions. This comprehensive guide explores electrical make safe procedures, compliance requirements, safety considerations, and integration with make good projects in Melbourne commercial properties.
+
+## Understanding Electrical Make Safe
+
+### What is Electrical Make Safe?
+
+**Definition and Purpose**:
+Electrical make safe is the process of safely decommissioning, isolating, and disconnecting all electrical installations within a tenancy or area prior to demolition or strip-out works. The process ensures no live electrical connections remain that could pose hazards to demolition workers, and returns electrical systems to their base building or original configuration as required for make good compliance.
+
+**Why Electrical Make Safe is Essential**:
+- **Worker Safety**: Eliminates risk of electrocution during demolition
+- **Legal Compliance**: Required by WorkSafe Victoria and electrical regulations
+- **Efficient Demolition**: Allows demolition crews to work without electrical hazards
+- **Make Good Requirement**: Returns electrical systems to base building configuration
+- **Insurance**: Many insurers require electrical make safe before demolition
+- **Liability Protection**: Demonstrates due diligence in safety procedures
+
+**When Electrical Make Safe is Required**:
+- Before any demolition or strip-out works commence
+- During make good projects removing tenant electrical installations
+- When decommissioning commercial tenancies
+- Prior to base building electrical work
+- Before any physical works involving walls, ceilings, or floors with electrical services
+
+### Scope of Electrical Make Safe
+
+**Electrical Systems Typically Included**:
+- Power outlets (GPOs) and circuits
+- Light fittings and switches
+- Data and communications cabling
+- Air conditioning electrical connections
+- Kitchen and bathroom electrical appliances
+- Switchboards and distribution boards (tenant installations)
+- Emergency lighting
+- Security and access control systems
+- Audio-visual and IT infrastructure
+- Specialty equipment electrical supplies
+
+**Base Building vs Tenant Electrical**:
+- **Base Building**: Main electrical infrastructure remaining in place
+- **Tenant Installations**: All electrical works installed by or for tenant to be removed
+- Make safe typically addresses tenant installations only
+- Base building electrical may require isolation but not removal
+
+## The Electrical Make Safe Process
+
+### Phase 1: Pre-Work Assessment and Planning
+
+**Site Electrical Survey**:
+- Identification of all electrical installations
+- Assessment of base building vs tenant electrical systems
+- Location of main switchboards and distribution boards
+- Mapping of electrical circuits and systems
+- Identification of shared services with other tenancies
+- Asbestos assessment (relevant for older electrical installations)
+
+**Documentation Review**:
+- Existing electrical drawings if available
+- Base building electrical configuration
+- Lease make good requirements for electrical
+- Previous electrical compliance certificates
+- Building management electrical requirements
+
+**Work Planning**:
+- Scope definition for disconnection and removal
+- Sequencing of electrical isolation works
+- Coordination with building management
+- Power shutdown scheduling
+- Access requirements and timing
+- Safety procedures and risk assessment
+
+### Phase 2: Electrical Isolation and Disconnection
+
+**Licensed Electrician Requirements**:
+- Only licensed electricians can perform electrical make safe work
+- Appropriate electrical license type for work scope
+- Public liability and professional indemnity insurance
+- WorkSafe Victoria compliance
+
+**Isolation Procedures**:
+
+**1. Main Power Isolation**:
+- Coordination with building management for shutdowns
+- Lockout/tagout procedures on switchboards
+- Testing to confirm isolation
+- Documentation of isolation points
+- Communication with building occupants if required
+
+**2. Circuit Disconnection**:
+- Systematic disconnection of all tenant circuits
+- Removal of circuit breakers from distribution boards
+- Capping of cables at switchboards
+- Labeling of disconnected circuits
+- Testing to confirm no live connections remain
+
+**3. Light Fitting Disconnection**:
+- Isolation of lighting circuits
+- Disconnection of light fittings at ceiling level
+- Capping of electrical cables
+- Removal of light fittings (if required)
+- Temporary lighting installation if work continuing
+
+**4. Power Outlet Disconnection**:
+- Isolation of power circuits
+- Disconnection at outlet level or within walls/ceiling
+- Capping of cables
+- Removal of outlets and faceplates
+- Patching of wall penetrations (if required for make good)
+
+**5. Fixed Appliance Disconnection**:
+- Air conditioning units
+- Kitchen appliances (ovens, cooktops, rangehoods)
+- Water heaters and instantaneous hot water systems
+- Specialty equipment
+- Emergency lighting systems
+
+**6. Data and Communications**:
+- Removal of data cabling (not electrical license required but often coordinated)
+- Disconnection of communications systems
+- Removal of data outlets and infrastructure
+
+### Phase 3: Testing and Certification
+
+**Electrical Testing**:
+- Dead testing to confirm no live circuits remain
+- Insulation resistance testing
+- Earth continuity testing
+- Polarity testing
+- Documentation of test results
+
+**Electrical Certificate of Compliance**:
+- Certificate of Electrical Safety (CoES) issued by licensed electrician
+- Certification that electrical make safe works completed safely
+- Confirmation no live electrical hazards remain
+- Documentation for building management and insurers
+- Required before demolition can commence
+
+**Handover Documentation**:
+- Electrical make safe completion report
+- Certificates of electrical safety
+- Photos of completed works
+- Updated electrical drawings if available
+- Lockout/tagout documentation
+- Handover to demolition contractor with safety clearance
+
+## Safety and Compliance Requirements
+
+### WorkSafe Victoria Requirements
+
+**Electrical Safety Regulations**:
+- Electricity Safety Act 1998 (Victoria)
+- Electricity Safety (Installations) Regulations 2009
+- Only licensed electricians can perform electrical work
+- Proper isolation and lockout/tagout procedures mandatory
+- Testing and verification required
+- Penalties for non-compliance including fines and prosecution
+
+**Workplace Safety**:
+- Safe Work Method Statements (SWMS) required
+- Risk assessments completed
+- Appropriate PPE and safety equipment
+- Electrical safety training for all workers
+- Incident reporting procedures
+
+### Licensing and Insurance
+
+**Electrical Licensing**:
+- Electricians must hold appropriate Victorian electrical license
+- License types: A Grade, B Grade, or Restricted license as relevant
+- License must be current and in good standing
+- Only work within license scope permitted
+- Energy Safe Victoria regulation and oversight
+
+**Insurance Requirements**:
+- Public liability insurance (minimum $10-20 million)
+- Professional indemnity insurance
+- Workers compensation insurance
+- Contractor all risks insurance for larger projects
+- Building management often requires evidence of insurance
+
+### Energy Safe Victoria
+
+**Regulatory Oversight**:
+- Energy Safe Victoria regulates electrical safety in Victoria
+- Electricians must comply with ESV requirements
+- Electrical Safety Management Schemes for larger projects
+- Investigation of electrical incidents
+- Enforcement actions for non-compliance
+
+**Electrical Safety Management Scheme (ESMS)**:
+- Required for major electrical works or high-risk sites
+- Documented safety management procedures
+- Regular inspections and audits
+- Incident management and reporting
+- May be required for large make good projects
+
+## Integration with Make Good and Demolition
+
+### Sequencing with Demolition Works
+
+**Critical Timing**:
+- Electrical make safe must be completed BEFORE demolition commences
+- Demolition cannot start without electrical safety clearance
+- Certificate of Electrical Safety must be provided to demolition contractor
+- Make safe works typically scheduled 1-3 days before demolition start
+
+**Coordination Requirements**:
+- Communication between electrical contractor and demolition contractor
+- Handover meeting to confirm safe working environment
+- Documentation transfer and safety briefing
+- Temporary services if required during demolition phase
+
+### Make Good Electrical Requirements
+
+**Returning to Base Building**:
+- Removal of all tenant-installed electrical systems
+- Reinstatement of original outlet and switch locations (if specified)
+- Reconnection to base building electrical configuration
+- Patching and making good of walls/ceilings after electrical removal
+- Final electrical testing and certification
+
+**Base Building Electrical Reinstatement**:
+- Reconnection of base building power outlets
+- Reinstallation of base building light fittings
+- Testing and certification of reinstated base building electrical
+- Compliance with current electrical standards
+- Certificate of Electrical Safety for reinstated systems
+
+### Temporary Services
+
+**Temporary Power During Works**:
+- Temporary distribution boards for construction power
+- Temporary lighting for ongoing works
+- Safety switches and appropriate protection
+- Regular inspection and maintenance
+- Removal upon completion
+
+## Common Electrical Systems in Commercial Tenancies
+
+### Office Electrical Systems
+
+**Power Distribution**:
+- Desktop power outlets (floor boxes, skirting outlets, desk-mounted)
+- Server room and IT equipment power
+- Kitchen and breakout area appliances
+- Photocopier and printer dedicated circuits
+- Uninterruptible Power Supply (UPS) systems
+
+**Lighting Systems**:
+- Suspended ceiling integrated light fittings
+- Pendant and feature lighting
+- Task lighting and desk lamps
+- Emergency and exit lighting
+- Lighting control systems
+
+**Communications**:
+- Structured data cabling
+- Phone system infrastructure
+- AV and video conferencing systems
+- Security and access control
+- Building management system integration
+
+### Retail and Hospitality Electrical
+
+**High-Load Equipment**:
+- Commercial kitchen equipment (ovens, fryers, refrigeration)
+- HVAC dedicated circuits
+- Specialty retail equipment
+- Display and feature lighting
+- Signage electrical connections
+
+**Three-Phase Power**:
+- Commercial kitchen equipment often requires three-phase
+- Large HVAC systems
+- Specialty equipment
+- Requires licensed electrician familiar with three-phase systems
+
+### Warehouse and Industrial Electrical
+
+**Heavy Duty Systems**:
+- High-bay lighting systems
+- Machinery and equipment power
+- Three-phase distribution
+- Overhead crane electrical systems
+- Loading dock equipment electrical
+
+## Cost Considerations
+
+### Electrical Make Safe Costs
+
+**Typical Pricing**:
+- Small office (100-200sqm): $1,500-$3,500
+- Medium office (200-500sqm): $3,500-$7,500
+- Large office (500-1000sqm): $7,500-$15,000+
+- Retail tenancies: $2,500-$10,000+ (depending on equipment)
+- Industrial/warehouse: $5,000-$20,000+ (depending on complexity)
+
+**Factors Affecting Costs**:
+- Size of tenancy and number of circuits
+- Complexity of electrical installations
+- Switchboard modifications required
+- Access and working conditions
+- Urgency and scheduling requirements
+- After-hours or weekend work requirements
+- Building management coordination complexity
+
+**Additional Costs**:
+- Temporary power and lighting: $800-$2,500
+- Three-phase disconnection: premium of 20-30%
+- Asbestos electrical materials removal (if present): licensed removal required
+- Complex systems (BMS, security, AV): specialist electricians may be required
+
+### Cost-Benefit of Professional Make Safe
+
+**Value of Proper Make Safe**:
+- Prevents demolition delays from unexpected electrical hazards
+- Avoids WorkSafe penalties and prosecution
+- Protects against liability from electrical incidents
+- Ensures insurance coverage remains valid
+- Facilitates efficient and safe demolition works
+- Provides certification for building management and insurers
+
+**Risks of Inadequate Make Safe**:
+- Worker electrocution or serious injury
+- WorkSafe prosecution and fines ($10,000s-$100,000s+)
+- Project delays from safety stand-downs
+- Liability exposure from incidents
+- Insurance claim denials
+- Reputational damage
+
+## Melbourne-Specific Considerations
+
+### Regulatory Environment
+
+**Strict Electrical Regulations**:
+- Energy Safe Victoria active oversight and enforcement
+- Regular compliance audits and inspections
+- Strong enforcement of licensing requirements
+- Electrical safety campaigns and education
+
+**WorkSafe Victoria**:
+- Active site inspections and compliance monitoring
+- Significant penalties for electrical safety breaches
+- Incident investigation and prosecution
+- High priority on electrical safety
+
+### Building Management Requirements
+
+**Melbourne Commercial Buildings**:
+- Building management often has specific electrical isolation procedures
+- Access scheduling and coordination requirements
+- Shutdown windows for electrical isolation (often after hours)
+- Documentation requirements for building management
+- Insurance and contractor compliance requirements
+
+### Victorian Building Stock
+
+**Older Buildings**:
+- Heritage electrical systems requiring specialist knowledge
+- Asbestos switchboards and electrical materials (pre-1990s buildings)
+- Non-standard electrical configurations
+- Upgrading requirements when reconnecting base building electrical
+
+**Modern Buildings**:
+- Building Management Systems (BMS) integration
+- Complex electrical distribution
+- Coordination with multiple building services
+- High documentation standards
+
+## Make Good Australia: Licensed Electrical Make Safe Specialists
+
+At Make Good Australia, our team of licensed and insured electricians specializes in electrical make safe works for commercial make good and demolition projects. We safely decommission and remove installed electrical systems and data cabling, returning them to base-build configuration and creating a secure environment for demolition crews.
+
+### Our Electrical Make Safe Services
+
+**Comprehensive Decommissioning**:
+- Complete electrical system isolation and disconnection
+- Switchboard modifications and circuit removal
+- Light fitting and power outlet disconnection
+- Data and communications removal coordination
+- Fixed appliance disconnection (kitchen, HVAC, specialty)
+- Three-phase and high-load equipment disconnection
+
+**Safety and Compliance**:
+- Licensed A-Grade electricians for all works
+- Full WorkSafe Victoria compliance
+- Proper isolation, lockout/tagout procedures
+- Comprehensive testing and verification
+- Certificate of Electrical Safety provided
+- Public liability and professional indemnity insurance
+
+**Project Coordination**:
+- Pre-work electrical survey and planning
+- Building management coordination for shutdowns
+- Scheduling to minimize disruption
+- Communication with demolition contractors
+- Temporary power and lighting if required
+- Documentation and handover for safe demolition
+
+**Base Building Electrical Reinstatement**:
+- Reconnection of base building electrical systems
+- Testing and certification of reinstated systems
+- Compliance with current electrical standards
+- Coordination with make good scope
+- Final electrical certificates for handover
+
+### Why Choose Make Good Australia for Electrical Make Safe
+
+- **Licensed Expertise**: A-Grade licensed electricians with extensive commercial experience
+- **Safety First**: Uncompromising focus on electrical safety and compliance
+- **Efficient Process**: Streamlined procedures minimizing delays
+- **Full Insurance**: Comprehensive insurance coverage for all works
+- **Building Management Liaison**: Experienced in building management coordination
+- **Integrated Service**: Part of complete make good solution
+- **Rapid Response**: Quick mobilization for urgent projects
+- **Certification**: Complete documentation and electrical safety certificates
+
+### Our Safety Record
+
+- **Zero electrical safety incidents** across hundreds of make good projects
+- **100% compliance** with WorkSafe Victoria requirements
+- **Full certification** provided for every project
+- **Positive feedback** from building managers and demolition contractors
+- **Efficient handovers** enabling prompt demolition commencement
+
+## Conclusion
+
+Electrical make safe is not just a regulatory requirement - it's an essential safety process protecting workers, ensuring legal compliance, and facilitating efficient demolition and make good works. Professional electrical make safe performed by licensed electricians eliminates electrical hazards, provides proper certification, and creates a safe working environment for subsequent trades.
+
+Proper electrical make safe requires technical expertise, safety knowledge, building management coordination, and full regulatory compliance. Engaging licensed electrical specialists with commercial make good experience ensures this critical preliminary phase is completed safely, efficiently, and to full compliance standards.
+
+**Planning a make good or demolition project?** Contact Make Good Australia today. Our licensed electricians will safely decommission your electrical systems, provide complete certification, and ensure your project proceeds safely and efficiently.
+
+**Make Good Australia**  
+Licensed electrical make safe specialists  
+Call us: [Contact Number]  
+Email: [Contact Email]  
+Creating safe working environments for make good and demolition`,
+  },
+  {
     id: "29",
     slug: "ceiling-repairs-suspended-acoustic-tiles-make-good",
     title: "Ceiling Repairs and Replacement: Suspended Ceilings, Water Damage, and Make Good Standards",
