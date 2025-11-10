@@ -21,11 +21,11 @@ const Hero = () => {
       </div>
       
       <div className="container mx-auto px-4 z-10 pt-16">
-        <div className="max-w-3xl">
-          <h1 className="text-4xl md:text-6xl font-bold text-primary-foreground mb-6 leading-tight">
+        <div className="max-w-3xl bg-background/80 backdrop-blur-sm p-8 md:p-12 rounded-lg">
+          <h1 className="text-4xl md:text-6xl text-foreground mb-6 leading-tight">
             Professional Make Good Services for Commercial & Industrial Spaces
           </h1>
-          <p className="text-xl md:text-2xl text-primary-foreground/90 mb-8 leading-relaxed">
+          <p className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed">
             Expert end of lease works, make safe solutions, and remediation services across Melbourne. We restore your space to its original condition, meeting all lease obligations.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
@@ -41,7 +41,7 @@ const Hero = () => {
               size="lg" 
               variant="outline"
               onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
-              className="text-lg px-8 py-6 bg-primary-foreground/10 hover:bg-primary-foreground/20 text-primary-foreground border-primary-foreground/30"
+              className="text-lg px-8 py-6"
             >
               Our Services
             </Button>
