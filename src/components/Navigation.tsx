@@ -19,7 +19,7 @@ const Navigation = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
-            <img src={logo} alt="Make Good Melbourne" className="h-8 md:h-10" />
+            <img src={logo} alt="Make Good Melbourne" className="h-8 md:h-10 brightness-0 invert" />
           </div>
           
           <div className="hidden md:flex items-center gap-6">
