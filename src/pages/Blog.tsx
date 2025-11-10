@@ -5,8 +5,14 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { blogPosts } from "@/data/blogPosts";
 import cleaningImage from "@/assets/blog/cleaning-services.webp";
+import paintingImage from "@/assets/blog/painting-wall.webp";
 
 const Blog = () => {
+  const getImage = (imagePath: string) => {
+    if (imagePath.includes('cleaning-services')) return cleaningImage;
+    if (imagePath.includes('painting-wall')) return paintingImage;
+    return cleaningImage;
+  };
   return (
     <div className="min-h-screen flex flex-col">
       <Navigation />
@@ -25,7 +31,7 @@ const Blog = () => {
               <Card key={post.id} className="border-border hover:shadow-lg transition-shadow overflow-hidden group">
                 <div className="aspect-video overflow-hidden">
                   <img 
-                    src={cleaningImage}
+                    src={getImage(post.image)}
                     alt={post.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />

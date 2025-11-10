@@ -5,10 +5,17 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { blogPosts } from "@/data/blogPosts";
 import cleaningImage from "@/assets/blog/cleaning-services.webp";
+import paintingImage from "@/assets/blog/painting-wall.webp";
 
 const BlogPost = () => {
   const { slug } = useParams<{ slug: string }>();
   const post = blogPosts.find((p) => p.slug === slug);
+
+  const getImage = (imagePath: string) => {
+    if (imagePath.includes('cleaning-services')) return cleaningImage;
+    if (imagePath.includes('painting-wall')) return paintingImage;
+    return cleaningImage;
+  };
 
   if (!post) {
     return (
@@ -48,7 +55,7 @@ const BlogPost = () => {
 
           <div className="aspect-video w-full overflow-hidden rounded-lg mb-8">
             <img 
-              src={cleaningImage}
+              src={getImage(post.image)}
               alt={post.title}
               className="w-full h-full object-cover"
             />
