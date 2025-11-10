@@ -16,6 +16,7 @@ import palletRackingImage from "@/assets/blog/pallet-racking.webp";
 import commercialMakeGoodImage from "@/assets/blog/commercial-make-good.webp";
 import conditionReportImage from "@/assets/blog/condition-report.webp";
 import leaseTransitionsImage from "@/assets/blog/lease-transitions.webp";
+import makeGoodServicesImage from "@/assets/blog/make-good-services.webp";
 
 const Blog = () => {
   const getImage = (imagePath: string) => {
@@ -31,6 +32,7 @@ const Blog = () => {
     if (imagePath.includes('commercial-make-good')) return commercialMakeGoodImage;
     if (imagePath.includes('condition-report')) return conditionReportImage;
     if (imagePath.includes('lease-transitions')) return leaseTransitionsImage;
+    if (imagePath.includes('make-good-services')) return makeGoodServicesImage;
     return cleaningImage;
   };
   return (
