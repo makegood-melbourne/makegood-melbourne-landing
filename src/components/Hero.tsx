@@ -22,13 +22,16 @@ const Hero = () => {
       
       <div className="container mx-auto px-4 z-10 pt-16">
         <div className="max-w-3xl bg-background/80 backdrop-blur-sm p-8 md:p-12 rounded-lg">
-          <h1 className="text-4xl md:text-6xl text-foreground mb-4 leading-tight">
-            Professional Make Good Services for Commercial & Industrial Spaces
+          <h1 className="text-5xl md:text-7xl text-foreground mb-4 font-bold leading-tight">
+            Makegood Melbourne
           </h1>
-          <p className="text-2xl md:text-3xl text-accent font-semibold mb-6">
+          <h2 className="text-3xl md:text-4xl text-accent font-semibold mb-6">
             Make Good, BETTER.
+          </h2>
+          <p className="text-xl md:text-2xl text-foreground mb-4 leading-relaxed">
+            Professional Make Good Services for Commercial & Industrial Spaces
           </p>
-          <p className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed">
+          <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed">
             Expert end of lease works, make safe solutions, and remediation services across Melbourne. We restore your space to its original condition, meeting all lease obligations.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
