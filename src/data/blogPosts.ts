@@ -12,11 +12,13 @@ export const blogPosts: BlogPost[] = [
   {
     id: "1",
     slug: "end-of-lease-cleaning-services",
-    title: "End-of-Lease Cleaning Services",
-    date: "1 May",
-    excerpt: "At the end of a lease, tenants and agents often face the challenging task of restoring the property to its original condition. For office and warehouse spaces, this means more than just a basic clean—it requires meticulous attention to detail to meet lease obligations.",
+    title: "End of Lease Cleaning Services",
+    date: "1 May 2025",
+    excerpt: "At the end of a commercial lease, tenants and real estate agents often face the challenging task of restoring the property to its original condition. It requires meticulous attention to detail to meet lease obligations. That's where our professional cleaning services come in. We provide a comprehensive solution designed to save you time, effort, and stress.",
     image: "/src/assets/blog/cleaning-services.webp",
-    content: `At the end of a lease, tenants and agents often face the challenging task of restoring the property to its original condition. For office and warehouse spaces, this means more than just a basic clean—it requires meticulous attention to detail to meet lease obligations and leave the premises in move-in-ready condition. That's where our professional cleaning services come in. Specialising in commercial offices and industrial warehouses, we provide a comprehensive solution designed to save you time, effort, and stress.
+    content: `At the end of a commercial lease, tenants and real estate agents often face the challenging task of restoring the property to its original condition. It requires meticulous attention to detail to meet lease obligations. That's where our professional cleaning services come in. We provide a comprehensive solution designed to save you time, effort, and stress.
+
+Specialising in commercial offices and industrial warehouses, we ensure your property is left in move-in-ready condition.
 
 ## What We Offer
 
