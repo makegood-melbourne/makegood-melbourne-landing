@@ -13,6 +13,7 @@ import officeStripOutImage from "@/assets/blog/office-strip-out.webp";
 import constructionMeetingImage from "@/assets/blog/construction-site-meeting.webp";
 import epoxyFlooringImage from "@/assets/blog/epoxy-flooring.webp";
 import palletRackingImage from "@/assets/blog/pallet-racking.webp";
+import commercialMakeGoodImage from "@/assets/blog/commercial-make-good.webp";
 
 const BlogPost = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -28,6 +29,7 @@ const BlogPost = () => {
     if (imagePath.includes('construction-site-meeting')) return constructionMeetingImage;
     if (imagePath.includes('epoxy-flooring')) return epoxyFlooringImage;
     if (imagePath.includes('pallet-racking')) return palletRackingImage;
+    if (imagePath.includes('commercial-make-good')) return commercialMakeGoodImage;
     return cleaningImage;
   };
 
