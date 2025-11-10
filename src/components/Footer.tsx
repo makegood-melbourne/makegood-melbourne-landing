@@ -7,6 +7,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           <div>
             <img src={logo} alt="Make Good Melbourne" className="h-10 mb-4 brightness-0 invert" />
+            <p className="text-lg text-accent font-semibold mb-2">Make Good, BETTER.</p>
             <p className="text-muted-foreground leading-relaxed">
               Professional make good, make safe, and remediation services for commercial and industrial properties across Melbourne.
             </p>
@@ -21,9 +22,19 @@ const Footer = () => {
                 </button>
               </li>
               <li>
+                <a href="/capabilities" className="text-muted-foreground hover:text-foreground transition-colors">
+                  Capabilities
+                </a>
+              </li>
+              <li>
                 <button onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })} className="text-muted-foreground hover:text-foreground transition-colors">
                   About Us
                 </button>
+              </li>
+              <li>
+                <a href="/blog" className="text-muted-foreground hover:text-foreground transition-colors">
+                  Blog
+                </a>
               </li>
               <li>
                 <button onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })} className="text-muted-foreground hover:text-foreground transition-colors">

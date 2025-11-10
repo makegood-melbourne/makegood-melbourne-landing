@@ -15,9 +15,12 @@ const About = () => {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-3">
               Why Choose Make Good Melbourne
             </h2>
+            <p className="text-xl text-accent font-semibold mb-6">
+              Make Good, BETTER.
+            </p>
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
               With extensive experience in commercial and industrial property services, we understand the critical importance of meeting lease obligations and maintaining property standards.
             </p>

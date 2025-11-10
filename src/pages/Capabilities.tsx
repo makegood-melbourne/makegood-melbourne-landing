@@ -62,7 +62,8 @@ const Capabilities = () => {
           </div>
           
           <div className="container mx-auto px-4 z-10 text-center">
-            <h1 className="text-4xl md:text-5xl text-foreground mb-4">Our Capabilities</h1>
+            <h1 className="text-4xl md:text-5xl text-foreground mb-3">Our Capabilities</h1>
+            <p className="text-2xl text-accent font-semibold mb-4">Make Good, BETTER.</p>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               We do make goods all day, every day. Whether your project is retail, commercial, or industrial, our network of reliable trades will work tirelessly to ensure your make good experience is seamless.
             </p>
