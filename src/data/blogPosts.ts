@@ -10,6 +10,449 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: "26",
+    slug: "fire-damage-restoration-make-good-commercial-properties",
+    title: "Fire Damage Restoration and Make Good: Comprehensive Recovery for Commercial Properties",
+    date: "1 April 2025",
+    excerpt: "Fire damage creates urgent restoration requirements for commercial properties, from structural repairs and smoke remediation to complete make good for lease compliance. Professional fire damage restoration addresses safety, structural integrity, and property recovery, ensuring properties are restored to pre-incident condition or better. Learn about assessment processes, restoration procedures, and make good obligations after fire events.",
+    image: "/src/assets/blog/fire-damage-restoration.jpg",
+    content: `Fire events in commercial properties create immediate and complex restoration challenges, requiring swift action to secure the premises, assess damage, and commence restoration work. Whether from accidental fires, electrical faults, kitchen fires, or other causes, fire damage affects not only the directly impacted areas but often extends throughout properties via smoke, heat, and water from fire suppression systems. Professional fire damage restoration and make good services ensure properties are safely restored, structurally sound, and compliant with all regulations. This comprehensive guide explores fire damage assessment, restoration processes, and make good requirements for Melbourne commercial properties.
+
+## Understanding Fire Damage in Commercial Properties
+
+### Types and Extent of Fire Damage
+
+**Direct Fire Damage**:
+- Structural damage to walls, ceilings, floors, and support elements
+- Destroyed or compromised building materials
+- Burnt fixtures, fittings, and equipment
+- Damaged electrical, plumbing, and mechanical systems
+- Compromised fire protection systems
+- Melted or warped building components
+
+**Smoke Damage**:
+- Smoke penetration throughout building via ventilation systems
+- Odour absorption into porous materials (carpets, fabrics, insulation)
+- Soot deposits on surfaces, walls, and ceilings
+- Discoloration and staining
+- Corrosive residue affecting metal surfaces
+- Contamination of HVAC systems
+
+**Heat Damage**:
+- Warping or melting of plastics, metals, and synthetic materials
+- Cracking or spalling of concrete from extreme temperatures
+- Compromised structural elements from heat exposure
+- Damaged glass and glazing systems
+- Heat-stressed electrical wiring and components
+
+**Water and Suppression Damage**:
+- Water damage from fire sprinkler activation or firefighting efforts
+- Saturation of building materials, carpets, and contents
+- Potential mould growth from moisture
+- Water damage to electrical systems requiring replacement
+- Damaged ceiling tiles and insulation from water exposure
+
+### Common Fire Causes in Commercial Properties
+
+**Electrical Fires**:
+- Faulty wiring or electrical installations
+- Overloaded circuits and power boards
+- Equipment malfunctions or electrical faults
+- Aged electrical infrastructure
+- Unauthorised electrical modifications
+
+**Kitchen and Cooking Fires**:
+- Commercial kitchen equipment fires
+- Grease fires and cooking oil ignition
+- Unattended cooking equipment
+- Exhaust system grease buildup ignition
+
+**Mechanical and Equipment Fires**:
+- Industrial equipment malfunctions
+- Heating system failures
+- Machinery overheating
+- Refrigeration system failures
+- Mechanical room fires
+
+**Arson and Deliberate Fires**:
+- Criminal fire damage requiring police investigation
+- Insurance claim complexities with deliberate fires
+- Additional security measures required during restoration
+
+## Fire Damage Assessment and Documentation
+
+### Immediate Post-Fire Assessment
+
+**Safety and Security**:
+- Professional structural safety assessment before entry
+- Temporary security measures to prevent unauthorised access
+- Utility disconnection (gas, electricity) if hazardous
+- Temporary weather protection and building securing
+- Hazardous materials identification and management
+
+**Damage Documentation**:
+- Comprehensive photographic and video documentation
+- Detailed written assessment of all affected areas
+- Categorisation of damage severity (light, moderate, severe, total loss)
+- Content inventory and damage assessment
+- Structural engineer reports for significant structural damage
+- Documentation for insurance claim purposes
+
+**Scope Definition**:
+- Identification of all areas requiring restoration
+- Demolition and removal requirements
+- Structural repair needs
+- Systems replacement or repair (electrical, mechanical, plumbing)
+- Smoke remediation scope throughout building
+- Timeline estimation and project staging
+
+### Engaging with Stakeholders
+
+**Insurance Coordination**:
+- Early notification to insurance provider
+- Liaison with loss adjusters and assessors
+- Documentation provision for claims
+- Scope agreement and approval processes
+- Progress reporting and variations management
+- Final claim documentation and sign-off
+
+**Building Owner and Tenant Coordination**:
+- Clear communication of damage extent and restoration requirements
+- Timeline expectations and project staging discussions
+- Access arrangements and business continuity planning
+- Lease obligation considerations
+- Temporary relocation arrangements if required
+
+**Regulatory Authorities**:
+- Council notifications if required
+- Building permit applications for major works
+- Fire service coordination if investigation ongoing
+- WorkSafe notifications if workplace incident
+- Heritage approvals if heritage-listed property
+
+## Fire Damage Restoration Process
+
+### Phase 1: Securing and Stabilisation
+
+**Emergency Services**:
+- Board-up and temporary weather protection
+- Emergency structural stabilisation if required
+- Temporary fencing or security measures
+- Utility disconnection and safety measures
+- Water extraction from suppression systems
+- Initial cleaning to prevent further damage
+
+**Damage Mitigation**:
+- Preventing secondary damage from weather exposure
+- Moisture management to prevent mould growth
+- Protection of undamaged areas during works
+- Salvage of undamaged contents and equipment
+- Temporary dehumidification if required
+
+### Phase 2: Demolition and Removal
+
+**Hazardous Materials Management**:
+- Asbestos assessment and removal if present (common in older properties)
+- Contaminated materials disposal according to EPA requirements
+- Fire-damaged materials classified as contaminated waste
+- Lead paint assessment and management if relevant
+- Proper waste classification and licensed disposal
+
+**Strip-Out and Demolition**:
+- Removal of all fire-damaged materials
+- Strip-out of smoke-affected carpets, ceiling tiles, and finishes
+- Demolition of compromised structural elements
+- Removal of damaged fixtures, fittings, and services
+- Complete strip-out to structural shell if extensively damaged
+- Waste sorting and recycling where possible
+
+**Deep Cleaning**:
+- Specialist smoke and soot cleaning of all surfaces
+- HVAC system cleaning and decontamination
+- Chemical cleaning of structural elements
+- Odour neutralisation treatments
+- Multiple cleaning passes to remove all residues
+
+### Phase 3: Structural and Systems Restoration
+
+**Structural Repairs**:
+- Concrete repairs including patching and resurfacing
+- Structural steel repairs or replacement
+- Wall framing repairs or reconstruction
+- Roof structure repairs if affected
+- Floor structure repairs and levelling
+- Structural engineer certification of completed works
+
+**Electrical Services**:
+- Complete electrical assessment and testing
+- Replacement of heat-affected wiring and components
+- Upgraded electrical installations to current standards
+- New switchboards and distribution boards
+- Fire detection and alarm system replacement or repair
+- Emergency lighting restoration
+- Electrical compliance certificates
+
+**Mechanical Services**:
+- HVAC system replacement or restoration
+- Ductwork replacement if smoke-contaminated
+- Plumbing repairs or replacement
+- Fire sprinkler system testing and repairs
+- Mechanical ventilation restoration
+- Gas services assessment and restoration if applicable
+
+**Fire Protection Systems**:
+- Fire sprinkler system inspection, testing, and repairs
+- Fire detection and alarm system replacement
+- Emergency exit lighting and signage restoration
+- Fire door and passive fire protection restoration
+- Fire service compliance certification
+
+### Phase 4: Building and Fitout Reinstatement
+
+**Building Envelope**:
+- Roof repairs or replacement
+- External wall repairs and repainting
+- Window and door replacement
+- Weather sealing and insulation
+- External finishes restoration
+
+**Internal Finishes**:
+- Plasterboard installation and finishing
+- Painting throughout affected areas
+- Flooring replacement (carpet, vinyl, tiles, or other finishes)
+- Ceiling replacement and finishing
+- Joinery and cabinetry restoration
+- Hardware and fixture installation
+
+**Specialized Finishes**:
+- Commercial kitchen restoration
+- Bathroom and amenities fitout
+- Specialized flooring (epoxy, polished concrete)
+- Feature walls and architectural elements
+- Signage and wayfinding restoration
+
+### Phase 5: Testing and Handover
+
+**Certification and Compliance**:
+- Electrical compliance certificates
+- Fire protection system commissioning and certification
+- Mechanical services commissioning
+- Building surveyor inspections and approvals
+- Council final inspections if permits required
+- Occupancy certificates if applicable
+
+**Final Inspections**:
+- Building owner or representative walkthrough
+- Defects identification and rectification
+- Final cleaning and preparation for occupation
+- Handover documentation and warranties
+- As-built drawings and compliance documentation
+
+## Make Good Considerations for Fire-Damaged Properties
+
+### Lease Obligation Complexities
+
+**Insurance and Liability Determination**:
+- Establishing cause of fire and responsibility
+- Tenant responsibility vs building owner responsibility
+- Insurance coverage assessment
+- Make good obligations when fire caused by tenant actions or negligence
+- Release from lease considerations in severe cases
+
+**Restoration Standards**:
+- Restoration to "original condition" vs "current condition"
+- Betterment considerations in insurance claims
+- Lease make good clauses application after fire damage
+- Code compliance upgrades required by regulations
+- Tenant contributions to upgrades required by current standards
+
+### End-of-Lease After Fire Damage
+
+**Scenarios**:
+- Fire near end of lease term
+- Lease termination following fire event
+- Make good obligations when property uninhabitable
+- Agreement negotiations between tenant and landlord
+- Early lease termination and make good settlement
+
+**Documentation**:
+- Pre-fire condition documentation importance
+- Photographic evidence of property condition
+- Agreed scope of works documentation
+- Insurance settlement agreements
+- Final make good scope agreement
+
+## Melbourne-Specific Fire Restoration Considerations
+
+### Regulatory Environment
+
+**Building Regulations**:
+- Victorian Building Authority (VBA) requirements
+- Building Code of Australia compliance
+- Heritage overlays for heritage-listed properties
+- Council planning permits for significant alterations
+- Essential Safety Measures compliance
+
+**Melbourne Fire Response**:
+- Fire Rescue Victoria coordination
+- Fire investigation cooperation if required
+- Building surveyor coordination for permits
+- Council building inspection requirements
+
+### Climate and Building Factors
+
+**Melbourne Building Stock**:
+- Heritage and older commercial buildings requiring specialized restoration
+- Asbestos presence in pre-2000s buildings
+- Modern commercial buildings with complex systems
+- Mixed-use properties requiring coordinated restoration
+
+**Weather Considerations**:
+- Rapid weather protection critical in Melbourne's variable climate
+- Moisture management during wet periods
+- Scheduling considerations for external works
+- Temperature control during restoration works
+
+## Timeline and Cost Considerations
+
+### Restoration Timeframes
+
+**Minor Fire Damage** (localized, limited smoke damage):
+- Assessment and scope: 1-2 weeks
+- Insurance approval: 2-4 weeks
+- Restoration works: 4-8 weeks
+- Total timeline: 2-3 months
+
+**Moderate Fire Damage** (significant areas affected, structural repairs):
+- Assessment and scope: 2-3 weeks
+- Insurance approval: 4-6 weeks
+- Restoration works: 8-16 weeks
+- Total timeline: 4-6 months
+
+**Major Fire Damage** (extensive structural damage, full fitout):
+- Assessment and scope: 3-4 weeks
+- Insurance approval: 6-8 weeks
+- Restoration works: 16-32 weeks
+- Total timeline: 6-12 months
+
+### Cost Factors
+
+**Assessment Costs**:
+- Structural engineering assessments: $2,000-$5,000+
+- Hazardous materials assessment: $1,000-$3,000
+- Insurance loss adjusting and assessment (usually insurer-paid)
+
+**Restoration Costs**:
+Highly variable depending on damage extent:
+- Minor localized damage: $20,000-$50,000
+- Moderate damage: $50,000-$200,000
+- Extensive damage: $200,000-$1,000,000+
+- Total reconstruction: $1,000,000+ depending on building size
+
+**Factors Affecting Costs**:
+- Extent of structural damage
+- Asbestos presence requiring removal
+- Smoke damage penetration throughout building
+- Systems replacement requirements (electrical, mechanical)
+- Access challenges and working in occupied buildings
+- Heritage building requirements
+- Code upgrade requirements for older buildings
+
+## Selecting a Fire Restoration Contractor
+
+### Critical Capabilities
+
+**Experience and Expertise**:
+- Demonstrated fire restoration experience in commercial properties
+- Insurance claim experience and coordination
+- Hazardous materials management capabilities (asbestos, contaminated waste)
+- Structural repair capabilities or partnerships
+- Emergency response availability
+- Multi-trade coordination (electrical, mechanical, building)
+
+**Certifications and Insurance**:
+- Building practitioner registration
+- Asbestos removal licenses if applicable
+- Comprehensive insurance (public liability, professional indemnity, contract works)
+- WorkSafe compliance
+- Trade-specific licenses (electrical, plumbing, etc.)
+
+**Project Management**:
+- Dedicated project manager assignment
+- Regular progress reporting and documentation
+- Stakeholder communication and coordination
+- Insurance liaison experience
+- Variations management
+- Timeline management
+
+### Red Flags to Avoid
+
+- Contractors without demonstrated fire restoration experience
+- Pressure for immediate contracts without proper assessment
+- Unrealistic timelines or cost estimates
+- Lack of appropriate licenses or insurance
+- Poor communication or documentation practices
+- Hesitance to provide references or portfolio
+
+## Make Good Australia: Fire Damage Restoration Excellence
+
+At Make Good Australia, we understand the urgency, complexity, and disruption that fire events create for commercial property owners and tenants. Our comprehensive fire damage restoration and make good services ensure your property is safely and completely restored, meeting all regulatory requirements and returning your property to full functionality.
+
+### Our Fire Restoration Services
+
+**Emergency Response**:
+- 24/7 emergency call-out for securing and stabilization
+- Immediate damage assessment and reporting
+- Emergency boarding, protection, and safety measures
+- Rapid mobilization to prevent secondary damage
+
+**Complete Restoration**:
+- Hazardous materials management and licensed asbestos removal
+- Structural repairs and engineering certification
+- Complete electrical and mechanical services restoration
+- Fire protection systems repair and certification
+- Building and fitout reinstatement to pre-fire or better condition
+- Deep cleaning and smoke odour elimination
+
+**Insurance and Compliance**:
+- Detailed documentation for insurance claims
+- Liaison with loss adjusters and assessors
+- Compliance certification and regulatory approvals
+- Progress reporting and transparent communication
+- Variation management and scope agreements
+
+**Make Good Expertise**:
+- Lease obligation assessment and advice
+- Landlord and tenant coordination
+- Pre-fire condition documentation and comparison
+- Make good scope negotiation and agreement
+- Final handover and documentation
+
+### Why Choose Make Good Australia for Fire Restoration
+
+- **Proven Fire Restoration Experience**: Extensive portfolio of commercial fire restoration projects across Melbourne
+- **Multi-Trade Capabilities**: In-house electrical, mechanical, building, and specialist trades
+- **Emergency Response Ready**: Rapid mobilization to secure and stabilize fire-damaged properties
+- **Insurance Expertise**: Experienced in insurance claim processes and documentation
+- **Regulatory Compliance**: All certifications, approvals, and compliance requirements managed
+- **Communication Focus**: Regular updates and transparent communication throughout the project
+- **Quality Commitment**: Restored properties meet or exceed pre-fire condition and current standards
+
+## Conclusion
+
+Fire damage creates significant disruption and complexity for commercial properties, requiring specialized restoration expertise to safely and completely recover properties. From emergency response and damage assessment through structural repairs, systems restoration, and final fitout, professional fire restoration ensures properties are returned to safe, functional, and compliant condition.
+
+Whether addressing fire damage during a lease term, managing end-of-lease obligations after a fire event, or restoring owner-occupied properties, engaging experienced fire restoration specialists ensures efficient restoration, proper insurance coordination, and full regulatory compliance.
+
+**Ready to restore your fire-damaged property?** Contact Make Good Australia today. Our fire restoration specialists are available 24/7 for emergency response and will guide you through every step of the restoration process, from initial assessment to final handover.
+
+**Make Good Australia**  
+Melbourne's trusted fire damage restoration and make good specialists  
+Call us: [Contact Number]  
+Email: [Contact Email]  
+Available 24/7 for emergency response`,
+  },
+  {
     id: "25",
     slug: "car-park-repairs-line-marking-make-good",
     title: "Car Park Repairs and Line Marking: Essential Make Good and Maintenance for Commercial Properties",

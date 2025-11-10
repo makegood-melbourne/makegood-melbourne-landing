@@ -23,6 +23,7 @@ import yearEndPlanningImage from "@/assets/blog/year-end-planning.jpg";
 import polycarbonateRoofingImage from "@/assets/blog/polycarbonate-roofing.jpg";
 import facadeCladdingRemediationImage from "@/assets/blog/facade-cladding-remediation.jpg";
 import carParkLineMarkingImage from "@/assets/blog/car-park-line-marking.jpg";
+import fireDamageRestorationImage from "@/assets/blog/fire-damage-restoration.jpg";
 import { BlogPost } from "@/data/blogPosts";
 
 const imageMap: Record<string, string> = {
@@ -51,6 +52,7 @@ const imageMap: Record<string, string> = {
   'polycarbonate-roofing': polycarbonateRoofingImage,
   'facade-cladding-remediation': facadeCladdingRemediationImage,
   'car-park-line-marking': carParkLineMarkingImage,
+  'fire-damage-restoration': fireDamageRestorationImage,
 };
 
 export const getBlogImage = (imagePath: string): string => {
