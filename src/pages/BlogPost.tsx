@@ -1,7 +1,8 @@
 import { useParams, Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
-import { ArrowLeft, Clock, Calendar } from "lucide-react";
+import { ArrowLeft, Clock, Calendar, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { blogPosts } from "@/data/blogPosts";
@@ -135,7 +136,32 @@ const BlogPost = () => {
             })}
           </div>
 
-          <div className="mt-12 pt-8 border-t border-border">
+          <Card className="mt-12 bg-accent/10 border-accent/20">
+            <CardContent className="pt-6">
+              <div className="text-center space-y-4">
+                <h3 className="text-2xl font-semibold text-foreground">Need Expert Make Good Services?</h3>
+                <p className="text-muted-foreground max-w-2xl mx-auto">
+                  Whether you're preparing for end-of-lease obligations or need specialist remediation services, 
+                  our experienced team is ready to help. Contact us today for a free consultation and quote.
+                </p>
+                <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">
+                  <Link to="/#contact">
+                    <Button size="lg" className="w-full sm:w-auto">
+                      Get a Free Quote
+                    </Button>
+                  </Link>
+                  <a href="tel:+61383769663">
+                    <Button variant="outline" size="lg" className="w-full sm:w-auto">
+                      <Phone className="mr-2 h-4 w-4" />
+                      Call Us Today
+                    </Button>
+                  </a>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
+          <div className="mt-8 pt-8 border-t border-border">
             <Link to="/blog">
               <Button variant="outline">
                 <ArrowLeft className="mr-2 h-4 w-4" />

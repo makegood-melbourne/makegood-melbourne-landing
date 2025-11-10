@@ -10,6 +10,139 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: "16",
+    slug: "concrete-cancer-prevention-remediation",
+    title: "Understanding Concrete Cancer: Prevention and Remediation for Commercial Properties",
+    date: "1 June 2024",
+    excerpt: "Concrete cancer, also known as concrete spalling, is one of the most serious structural issues facing commercial and industrial properties. Left untreated, this progressive deterioration can compromise building safety and lead to expensive repairs. Understanding the causes, signs, and remediation options is essential for property owners and managers.",
+    image: "/src/assets/blog/concrete-cancer.webp",
+    content: `Concrete cancer, also known as concrete spalling or concrete deterioration, is one of the most serious structural issues facing commercial and industrial properties in Melbourne. Left untreated, this progressive deterioration can compromise building safety, reduce property value, and lead to expensive emergency repairs. Understanding the causes, early warning signs, and remediation options is essential for property owners, managers, and real estate agents.
+
+## What Is Concrete Cancer?
+
+Concrete cancer occurs when the steel reinforcement (rebar) inside concrete begins to corrode. As steel rusts, it expands—up to ten times its original volume—creating internal pressure that cracks and breaks apart the surrounding concrete. This process is called spalling, and once it begins, it accelerates rapidly if left untreated.
+
+The result is visible cracking, flaking, and concrete pieces falling away, exposing the corroded steel beneath. Beyond the aesthetic damage, concrete cancer poses serious structural and safety risks.
+
+## Common Causes
+
+Several factors contribute to concrete cancer in commercial properties:
+
+### 1. Water Penetration
+
+Melbourne's variable weather, combined with aging waterproofing systems, allows moisture to seep into concrete. This is the primary catalyst for steel corrosion.
+
+### 2. Poor Construction Quality
+
+Insufficient concrete cover over steel reinforcement, incorrect concrete mix ratios, or poor compaction during construction can accelerate deterioration.
+
+### 3. Salt Exposure
+
+Properties near coastal areas or those exposed to de-icing salts experience faster corrosion rates.
+
+### 4. Carbonation
+
+Over time, atmospheric carbon dioxide reacts with concrete, reducing its alkalinity and removing the protective layer that normally prevents steel corrosion.
+
+### 5. Age
+
+Older buildings constructed before modern building codes often lack adequate protective measures against moisture and corrosion.
+
+## Identifying Early Warning Signs
+
+Catching concrete cancer early can save tens of thousands in repair costs. Watch for these indicators:
+
+- **Visible cracks** running along beams, columns, or slabs
+- **Rust stains** appearing on concrete surfaces
+- **Bulging or flaking** concrete
+- **Pieces of concrete** falling from ceilings, walls, or structural elements
+- **Exposed steel reinforcement** with visible rust
+- **White chalky deposits** (efflorescence) indicating moisture movement
+
+Regular building inspections by qualified professionals can identify issues before they become critical.
+
+## The Risks of Ignoring Concrete Cancer
+
+Delaying remediation can lead to:
+
+- **Structural failure**: Compromised load-bearing capacity threatens building integrity
+- **Safety hazards**: Falling concrete poses risks to occupants and visitors
+- **Increased repair costs**: Progressive damage requires more extensive (and expensive) repairs
+- **Property devaluation**: Visible deterioration reduces marketability and lease rates
+- **Legal liability**: Property owners may face legal consequences if structural issues cause injury
+
+## Professional Remediation Process
+
+Effective concrete cancer remediation requires specialist expertise and follows a systematic approach:
+
+### 1. Comprehensive Assessment
+
+Structural engineers conduct detailed inspections, often using techniques like:
+
+- Concrete scanning to map steel reinforcement
+- Core sampling to assess concrete strength
+- Cover meter surveys to measure concrete depth over steel
+
+### 2. Removal of Damaged Concrete
+
+All deteriorated concrete is carefully removed to expose the corroded steel, ensuring complete access to affected areas.
+
+### 3. Steel Treatment
+
+Exposed steel reinforcement is:
+
+- Cleaned using wire brushing or abrasive blasting
+- Treated with anti-corrosive coatings
+- Supplemented with additional reinforcement if structural capacity is compromised
+
+### 4. Concrete Restoration
+
+High-performance repair mortars are applied to:
+
+- Restore the concrete's protective cover
+- Restore structural strength
+- Create a smooth, finished surface
+
+### 5. Protective Coatings
+
+Waterproofing membranes and protective coatings are applied to prevent future moisture penetration.
+
+### 6. Ongoing Monitoring
+
+Regular inspections ensure repairs remain effective and identify any emerging issues early.
+
+## Prevention Strategies
+
+While concrete cancer can affect any property, proactive measures reduce risk:
+
+- **Regular maintenance inspections** every 12-24 months
+- **Prompt repair of cracks** before water penetrates
+- **Proper waterproofing** of exposed concrete surfaces
+- **Adequate drainage** to prevent water pooling against structures
+- **Protective coatings** on vulnerable areas like balconies and car parks
+
+## Why Professional Remediation Matters
+
+DIY or inadequate repairs often fail because:
+
+- Underlying corrosion continues unaddressed
+- Improper materials don't bond effectively
+- Structural implications aren't properly assessed
+- Waterproofing isn't adequately restored
+
+Professional remediation ensures compliance with building codes, addresses root causes, and provides warranties for peace of mind.
+
+## Make Good Obligations and Concrete Cancer
+
+For tenants vacating commercial properties with concrete cancer issues, understanding make-good obligations is crucial. While structural issues typically fall to the landlord, tenant-caused damage or accelerated deterioration may trigger make-good responsibilities. Clear documentation at lease commencement protects both parties.
+
+## Conclusion
+
+Concrete cancer is a serious but manageable issue when addressed promptly by qualified professionals. Property owners and managers who prioritise regular inspections and immediate remediation protect their investments, ensure occupant safety, and maintain property value.
+
+If you've noticed signs of concrete deterioration in your commercial or industrial property, don't wait. Early intervention is always more cost-effective than emergency repairs. Contact our specialist team today for a comprehensive assessment and expert remediation solutions tailored to your property's needs.`
+  },
+  {
     id: "1",
     slug: "end-of-lease-cleaning-services",
     title: "End of Lease Cleaning Services",
