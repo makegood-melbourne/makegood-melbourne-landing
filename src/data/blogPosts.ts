@@ -13,7 +13,7 @@ export const blogPosts: BlogPost[] = [
     id: "24",
     slug: "facade-cladding-remediation-fireproof-compliance",
     title: "Façade Repairs and Cladding Remediation: Navigating Fireproof Compliance in Commercial Buildings",
-    date: "1 December 2024",
+    date: "1 February 2025",
     excerpt: "Building façade and cladding remediation has become critical following national fire safety reforms. Non-compliant combustible cladding poses significant risks and legal obligations for property owners. Learn about assessment requirements, remediation processes, fireproof cladding solutions, and make good considerations for commercial properties.",
     image: "/src/assets/blog/facade-cladding-remediation.jpg",
     content: `Building façade and external cladding remediation has emerged as one of the most significant challenges facing commercial property owners and managers across Australia. Following tragic building fires and subsequent regulatory reforms, the identification and replacement of non-compliant combustible cladding has become a legal imperative, not merely a maintenance consideration. This comprehensive guide explores façade assessment, cladding remediation processes, fireproof compliance requirements, and implications for commercial property owners, tenants, and make good obligations.
