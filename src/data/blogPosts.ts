@@ -13,7 +13,7 @@ export const blogPosts: BlogPost[] = [
     id: "23",
     slug: "warehouse-polycarbonate-roofing-replacement",
     title: "Warehouse Polycarbonate Roofing Replacement: Restoring Natural Light and Weather Protection",
-    date: "1 October 2023",
+    date: "15 January 2025",
     excerpt: "Translucent polycarbonate roof sheeting provides essential natural lighting in warehouses and industrial facilities. Over time, these panels deteriorate, discolour, and leak, requiring replacement to maintain property value, operational efficiency, and lease compliance. Learn about assessment, replacement processes, and make good obligations.",
     image: "/src/assets/blog/polycarbonate-roofing.jpg",
     content: `Translucent polycarbonate roof sheeting is a critical feature of modern warehouses and industrial facilities, providing natural lighting that reduces energy costs and creates safer, more productive work environments. However, these panels have a finite lifespan and eventually require replacement as part of property maintenance and end-of-lease make good obligations. This comprehensive guide explores polycarbonate roofing assessment, replacement processes, and considerations for property owners and tenants.
