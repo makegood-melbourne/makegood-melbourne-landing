@@ -10,6 +10,452 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: "23",
+    slug: "warehouse-polycarbonate-roofing-replacement",
+    title: "Warehouse Polycarbonate Roofing Replacement: Restoring Natural Light and Weather Protection",
+    date: "15 January 2025",
+    excerpt: "Translucent polycarbonate roof sheeting provides essential natural lighting in warehouses and industrial facilities. Over time, these panels deteriorate, discolour, and leak, requiring replacement to maintain property value, operational efficiency, and lease compliance. Learn about assessment, replacement processes, and make good obligations.",
+    image: "/src/assets/blog/polycarbonate-roofing.jpg",
+    content: `Translucent polycarbonate roof sheeting is a critical feature of modern warehouses and industrial facilities, providing natural lighting that reduces energy costs and creates safer, more productive work environments. However, these panels have a finite lifespan and eventually require replacement as part of property maintenance and end-of-lease make good obligations. This comprehensive guide explores polycarbonate roofing assessment, replacement processes, and considerations for property owners and tenants.
+
+## Understanding Polycarbonate Roof Sheeting
+
+### What Are Translucent Polycarbonate Sheets?
+
+Translucent polycarbonate roof panels (often incorrectly called "skylights") are corrugated or profiled plastic sheeting installed within metal roof structures to allow natural light penetration:
+
+**Common Characteristics**:
+- Corrugated or profiled to match metal roofing profiles
+- Typically installed in regular patterns across the roof
+- Translucent rather than transparent (diffuses light)
+- UV-stabilised during manufacturing
+- Available in various thicknesses and profiles
+- Generally lighter than glass alternatives
+
+**Purpose and Benefits**:
+- Provides natural daylight throughout warehouse spaces
+- Reduces artificial lighting requirements and energy costs
+- Improves workplace safety through better visibility
+- Creates more pleasant working environment
+- Reduces reliance on electrical lighting during daylight hours
+
+### Common Applications
+
+**Industrial and Warehouse Properties**:
+- Manufacturing facilities
+- Distribution centres and logistics warehouses
+- Storage facilities
+- Workshop and maintenance areas
+- Loading dock areas
+- Industrial complexes
+
+**Typical Installation Patterns**:
+- Regular rows or grid patterns across roof sections
+- Concentrated above work areas
+- Strategic placement for optimal light distribution
+- Usually 5-15% of total roof area
+
+## Why Polycarbonate Roofing Requires Replacement
+
+### 1. Deterioration and Aging
+
+Polycarbonate sheeting degrades over time despite UV stabilisation:
+
+**Common Deterioration Signs**:
+- Yellowing or discolouration (reduces light transmission)
+- Brittleness and cracking
+- Surface crazing (fine surface cracks)
+- Loss of impact resistance
+- Reduced structural integrity
+- Warping or distortion
+
+**Typical Lifespan**:
+- Standard grade: 10-15 years
+- Premium grade: 15-20 years
+- High-performance grade: 20-25 years
+- Actual lifespan depends on climate, installation quality, and maintenance
+
+### 2. Weather Damage
+
+Melbourne's variable climate accelerates deterioration:
+
+**Environmental Factors**:
+- UV exposure causes degradation
+- Hailstorms cause cracking and punctures
+- Thermal expansion/contraction causes fixing failures
+- Wind damage and uplift
+- Accumulation of debris causing panel deformation
+
+**Damage Indicators**:
+- Visible cracks or holes
+- Missing or displaced panels
+- Separated fixing points
+- Storm damage
+- Impact damage from falling objects
+
+### 3. Leaking and Water Ingress
+
+Failed polycarbonate panels allow water penetration:
+
+**Leak Consequences**:
+- Water damage to stored goods and equipment
+- Slip hazards on warehouse floors
+- Rust and corrosion of steel infrastructure
+- Electrical hazards near lighting and equipment
+- Mould growth on surfaces
+- Property value reduction
+
+**Leak Causes**:
+- Cracked or broken panels
+- Failed or deteriorated fixing seals
+- Inadequate overlap at panel joints
+- Incorrect installation allowing water paths
+- Fixing screw deterioration
+
+### 4. Reduced Light Transmission
+
+Degraded panels lose their primary function:
+
+**Light Transmission Issues**:
+- Discoloured panels block significant light
+- Dirt and algae accumulation reduces transparency
+- Crazing diffuses light less effectively
+- Overall reduction in natural lighting benefits
+- Increased reliance on artificial lighting
+- Higher energy costs
+
+## Assessing Polycarbonate Roofing Condition
+
+### Visual Inspection Indicators
+
+**From Ground Level**:
+- Overall appearance and discolouration
+- Obvious cracks or damage
+- Missing panels
+- Water staining patterns on roof indicating leaks
+- Panel displacement or separation
+
+**From Roof Level** (professional inspection):
+- Close examination of panel condition
+- Fixing integrity
+- Sealant condition
+- Panel overlap and flashings
+- Structural support condition
+- Evidence of water penetration
+
+### Professional Assessment
+
+**Building Consultants or Roofing Specialists Evaluate**:
+- Extent of deterioration across all panels
+- Structural adequacy of supporting purlins
+- Fixing system condition and compliance
+- Leak sources and water damage
+- Expected remaining service life
+- Replacement priority and scope
+
+**Documentation**:
+- Photographic evidence of condition
+- Detailed report on defects
+- Recommended scope of replacement
+- Cost estimates for remediation
+- Timing recommendations
+
+### Leak Testing and Investigation
+
+When active leaks are present:
+- Identify specific leak sources
+- Assess extent of water damage
+- Determine if isolated repair or full replacement required
+- Evaluate urgency of remediation
+
+## Polycarbonate Roofing Replacement Process
+
+### 1. Planning and Preparation
+
+**Scope Definition**:
+- Determine full replacement versus partial repair
+- Identify all affected panels
+- Specify panel type, profile, and grade
+- Plan for access and safety requirements
+- Schedule works to minimise operational disruption
+
+**Material Selection**:
+- Match existing metal roof profile
+- Select appropriate thickness (typically 0.8mm-1.2mm)
+- Choose UV-stabilised premium grade for longevity
+- Consider tinted options if required
+- Ensure compliance with building codes
+
+**Access and Safety**:
+- Roof access equipment requirements
+- Edge protection and fall arrest systems
+- Work platform or scaffolding needs
+- Working at heights permits
+- Weather monitoring for safe working conditions
+
+### 2. Removal of Old Panels
+
+**Systematic Removal**:
+- Remove fixing screws carefully
+- Extract old panels without damaging roof structure
+- Inspect supporting purlins for damage
+- Clean debris from roof surface
+- Dispose of old panels responsibly
+
+**Structural Inspection**:
+- Check purlin condition and alignment
+- Identify any structural repairs needed
+- Assess fixing points for adequacy
+- Replace damaged or corroded purlins if necessary
+
+### 3. Installation of New Panels
+
+**Proper Installation Technique**:
+
+**Panel Positioning**:
+- Lay panels to match roof profile exactly
+- Ensure adequate overlap at side laps
+- Position panels to shed water correctly
+- Align with ridge and eave flashings
+
+**Fixing Method**:
+- Use appropriate roofing screws with sealing washers
+- Fix through crest (high point) of corrugation
+- Correct fixing spacing per manufacturer specifications
+- Ensure screws are not over-tightened (allows thermal movement)
+- Maintain consistent fixing pattern
+
+**Sealing and Weather Protection**:
+- Apply appropriate sealants at overlaps
+- Install closure strips at eaves and ridge
+- Ensure flashings are correctly installed
+- Verify weather-tightness of all penetrations
+- Allow for thermal expansion and contraction
+
+### 4. Quality Assurance
+
+**Post-Installation Checks**:
+- Verify all panels securely fixed
+- Check alignment and appearance
+- Inspect for any damage during installation
+- Test for water-tightness if possible
+- Confirm proper fixing density and pattern
+
+**Documentation**:
+- Photographic record of completed works
+- Materials specifications and warranties
+- Installation certification
+- Any identified additional works required
+
+## Make Good Obligations and Polycarbonate Roofing
+
+### Tenant Responsibilities
+
+**Lease Interpretation**:
+- Review lease make good clause regarding roofing
+- Determine if polycarbonate replacement is tenant obligation
+- Assess whether deterioration is beyond "fair wear and tear"
+- Clarify landlord versus tenant responsibilities
+
+**Common Lease Scenarios**:
+
+**Tenant Responsible**:
+- Lease specifies tenant maintains all roofing elements
+- Damage caused by tenant operations (impact, chemical exposure)
+- Panels damaged during tenant's fitout or alterations
+- Inadequate maintenance causing premature failure
+
+**Landlord Responsible**:
+- Normal aging and deterioration from weathering
+- Storm damage (unless tenant negligence)
+- Pre-existing condition at lease commencement
+- Structural failure of supporting roof members
+
+**Ambiguous Situations**:
+- Panels aged during tenancy but not failed
+- Combination of age and minor tenant impacts
+- Panels functional but discoloured
+
+**Resolution Approach**:
+- Open communication with landlord early
+- Professional condition assessment
+- Negotiated cost-sharing if appropriate
+- Document all agreements in writing
+
+### Landlord Considerations
+
+**Property Maintenance Strategy**:
+- Regular inspection programmes
+- Planned replacement before complete failure
+- Maintenance during vacancy periods
+- Balancing cost versus property presentation
+
+**Between-Tenancy Works**:
+- Optimal time for major roofing replacement
+- No operational disruption
+- Enhances property marketability
+- Can achieve better rental rates with updated property
+
+### Make Good Planning for Roofing
+
+If replacement is required as part of make good:
+
+**12 Months Before Lease End**:
+- Professional roofing inspection and report
+- Obtain detailed replacement quotes
+- Discuss obligations with landlord
+- Budget for works and include in planning
+
+**6 Months Before Lease End**:
+- Confirm scope with landlord
+- Engage qualified roofing contractors
+- Schedule works (weather dependent)
+- Arrange any necessary permits
+
+**3 Months Before Lease End**:
+- Execute roofing replacement
+- Allow contingency for weather delays
+- Document works photographically
+- Obtain completion certification
+
+## Cost Considerations
+
+### Replacement Cost Factors
+
+**Variables Affecting Cost**:
+- Total area of panels requiring replacement
+- Height and access difficulty
+- Building height and roof pitch
+- Panel grade and specifications
+- Current market pricing for materials
+- Labour rates and contractor availability
+- Scaffolding or elevated work platform requirements
+- Project timing (weather delays)
+
+**Typical Cost Ranges** (guide only - 2025 Melbourne):
+- Simple single-level warehouse: $80-$150 per sqm
+- Complex or high roof: $150-$250 per sqm
+- Includes removal, disposal, supply, and installation
+- Additional costs for structural repairs if needed
+- Costs vary significantly based on project specifics
+
+### Budget Planning
+
+**Obtaining Accurate Quotes**:
+- Engage multiple licensed roofing contractors
+- Provide detailed scope and building information
+- Request itemised quotations
+- Verify insurance and qualifications
+- Check references from similar projects
+
+**Contingency Planning**:
+- Allow 15-20% contingency for unforeseen issues
+- Consider weather delays in timing
+- Budget for any identified structural repairs
+- Factor in project management and inspection costs
+
+## Selecting Qualified Contractors
+
+### Essential Contractor Requirements
+
+**Licencing and Insurance**:
+- Current Victorian building practitioner registration
+- Public liability insurance (minimum $20M)
+- WorkCover insurance for all workers
+- Professional indemnity insurance
+
+**Experience and Capability**:
+- Demonstrated experience with industrial roofing
+- Polycarbonate panel replacement expertise
+- Safety management systems and procedures
+- Quality assurance processes
+
+**References and Track Record**:
+- Recent similar project examples
+- Contactable client references
+- Completion timeframes and performance
+- Safety record and compliance
+
+### Contractor Selection Process
+
+**Evaluation Criteria**:
+- Competitive but realistic pricing
+- Comprehensive scope understanding
+- Detailed methodology and programme
+- Safety management approach
+- Quality assurance commitments
+- Warranties and guarantees offered
+
+## Maintenance After Replacement
+
+### Extending Panel Lifespan
+
+**Regular Maintenance**:
+- Annual inspection of panel condition
+- Cleaning to remove debris and organic growth
+- Checking fixing integrity
+- Early repair of minor damage
+- Gutter and drainage maintenance
+
+**Preventive Measures**:
+- Trim overhanging vegetation
+- Remove debris accumulation promptly
+- Address leaks immediately
+- Monitor for impact damage
+- Schedule professional inspections
+
+### Warranty Management
+
+**New Panel Warranties**:
+- Typically 10-15 years for quality panels
+- UV degradation coverage
+- Manufacturing defect protection
+- Installation warranty from contractor
+
+**Warranty Maintenance**:
+- Retain all documentation
+- Comply with maintenance requirements
+- Photograph any issues promptly
+- Report claims within specified timeframes
+
+## Benefits of Timely Replacement
+
+### Operational Benefits
+
+**Immediate Improvements**:
+- Restored natural lighting levels
+- Elimination of leaks and water ingress
+- Enhanced workplace safety and visibility
+- Reduced electricity consumption
+- Improved facility appearance
+
+### Property Value Benefits
+
+**Long-Term Advantages**:
+- Maintained or enhanced property value
+- Improved tenant attraction and retention
+- Reduced vacancy periods
+- Competitive rental positioning
+- Avoided extensive water damage costs
+
+### Compliance and Risk Management
+
+**Risk Reduction**:
+- Eliminated leak-related safety hazards
+- Prevented goods and equipment damage
+- Avoided liability issues
+- Ensured building code compliance
+- Protected against structural deterioration
+
+## Conclusion
+
+Polycarbonate roof sheeting is a valuable asset in warehouse and industrial properties, but it requires eventual replacement as part of responsible property management. Whether addressing deterioration during tenancy, planning for end-of-lease make good obligations, or maintaining investment properties between tenancies, timely polycarbonate panel replacement protects property value, maintains operational efficiency, and ensures safe, well-lit working environments.
+
+Professional assessment, quality materials, and experienced contractors deliver successful outcomes that extend far beyond simple leak repairs. By understanding the replacement process, planning appropriately, and engaging qualified specialists, property owners and tenants can ensure their warehouse roofing continues to perform its essential function of providing natural light while protecting against Melbourne's variable weather.
+
+Need professional assessment of your warehouse polycarbonate roofing or quotes for replacement works? Our experienced team specialises in industrial roofing replacement, working with qualified contractors to deliver quality outcomes on time and within budget. Contact us today for a comprehensive roofing assessment and detailed proposal tailored to your property's specific needs.`
+  },
+  {
     id: "22",
     slug: "year-end-property-planning",
     title: "Year-End Property Planning: Preparing Your Commercial Space for 2025",
