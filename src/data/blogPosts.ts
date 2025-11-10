@@ -10,6 +10,389 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: "20",
+    slug: "strategic-make-good-planning",
+    title: "Strategic Make Good Planning: Avoiding End-of-Lease Surprises and Disputes",
+    date: "1 October 2024",
+    excerpt: "Strategic planning for commercial make good obligations can save thousands of dollars and prevent lease-end disputes. Understanding requirements early, budgeting appropriately, and engaging professionals at the right time ensures smooth property transitions and protects both tenant deposits and landlord-tenant relationships.",
+    image: "/src/assets/blog/strategic-planning.jpg",
+    content: `The end of a commercial lease can quickly become stressful and expensive when make good obligations haven't been properly planned for. Many tenants underestimate the scope and cost of restoring premises to their original condition, leading to rushed work, budget overruns, and potential disputes with landlords. Strategic planning transforms make good from a last-minute scramble into a manageable, cost-effective transition. This guide explores how to plan effectively for make good obligations throughout your tenancy.
+
+## Understanding Make Good Obligations Early
+
+The foundation of strategic planning begins the day you sign your lease:
+
+### 1. Comprehensive Lease Analysis
+
+**Review Make Good Clauses** thoroughly:
+- Precise restoration requirements (original condition, fair wear and tear considerations)
+- Which alterations must be removed versus which can remain
+- Timeframe for completing make good works
+- Standard of work required (professional trades, specific finishes)
+- Inspection and approval processes
+- Consequences of non-compliance (deposit deductions, additional costs)
+
+**Document Pre-Lease Condition**:
+- Detailed photographic records of the premises as received
+- Professional condition report documenting existing defects
+- Floor plans showing original layout
+- Record of all existing fixtures, fittings, and finishes
+- Dated and stamped documentation agreed by both parties
+
+This baseline documentation protects you from being held responsible for pre-existing issues and clarifies the restoration target.
+
+### 2. Track All Alterations Throughout Tenancy
+
+Maintain detailed records of every modification:
+
+**For Each Alteration**:
+- Photographs before, during, and after installation
+- Invoices and receipts for all work
+- Building permits and compliance certificates
+- Landlord approval documentation
+- Contractor details and warranties
+- Specifications and materials used
+
+**Why This Matters**:
+- Facilitates accurate restoration when lease ends
+- Demonstrates proper installation and compliance
+- Helps contractors quote restoration work accurately
+- Provides evidence if disputes arise about approved changes
+
+## Financial Planning for Make Good
+
+Budget surprises are among the most common sources of lease-end stress:
+
+### 1. Early Cost Assessment
+
+**Initial Planning (First Year of Tenancy)**:
+- Obtain preliminary quotes for eventual make good works
+- Set aside monthly provisions in your operating budget
+- Factor make good costs into business financial projections
+- Consider make good obligations when evaluating lease renewal options
+
+**Example Budget Planning**:
+- Premises size: 500 sqm office space
+- Alterations: Demountable offices, kitchen upgrade, flooring changes
+- Estimated make good cost: $40,000-$60,000
+- Lease term: 5 years
+- Monthly provision: $666-$1,000
+
+Setting aside funds progressively prevents cash flow shocks at lease end.
+
+### 2. Mid-Lease Cost Review
+
+**Reassess 12-18 Months Before Lease End**:
+- Update quotes based on current market rates
+- Account for additional alterations made during tenancy
+- Consider any property deterioration beyond normal wear
+- Factor in general maintenance items that have accumulated
+- Review budget provisions and adjust if necessary
+
+This timing allows course correction while you still have time to adjust budgets or explore alternative solutions.
+
+### 3. Budget Contingency
+
+Professional planners recommend adding 15-20% contingency for:
+- Hidden issues discovered during strip-out
+- Price increases between quote and execution
+- Additional work requested by landlord during inspection
+- Extended timeframes if initial work doesn't pass inspection
+
+## Timeline Planning: The 6-Month Strategy
+
+Strategic timing prevents rushed work and ensures quality outcomes:
+
+### 6 Months Before Lease End
+
+**Initial Planning Phase**:
+- Review lease make good requirements with legal advisor if needed
+- Begin discussions with landlord about specific expectations
+- Obtain 3 detailed quotes from reputable make good contractors
+- Review landlord's standard of work expectations
+- Identify any items requiring extended lead times (specialized trades, materials)
+- Confirm final make good timeframe allowed under lease
+
+### 4-5 Months Before Lease End
+
+**Contractor Selection and Planning**:
+- Select make good contractor based on price, experience, and availability
+- Develop detailed scope of works
+- Establish project timeline
+- Book contractors for anticipated start date
+- Arrange for any necessary permits or approvals
+- Plan operational transition (how business continues during works)
+
+### 3 Months Before Lease End
+
+**Pre-Work Coordination**:
+- Conduct pre-make good meeting with landlord and contractor
+- Walk through premises identifying any unclear requirements
+- Clarify expectations on finishes and standards
+- Agree on inspection process and timing
+- Finalize scope of works
+- Arrange removal/disposal services for fixtures and equipment
+
+### 6-8 Weeks Before Lease End
+
+**Execution Phase**:
+- Commence make good works
+- Maintain regular communication with landlord
+- Document all work with progress photos
+- Address any landlord concerns immediately
+- Plan for business relocation timing
+
+### 2-3 Weeks Before Lease End
+
+**Inspection and Rectification**:
+- Complete initial works
+- Request landlord's first inspection
+- Address any deficiencies identified
+- Arrange final inspection
+- Obtain sign-off on completed works
+- Organize final clean
+
+## Avoiding Common Planning Failures
+
+### 1. The "We'll Deal With It Later" Trap
+
+**The Problem**:
+Many tenants avoid thinking about make good until receiving lease end notice, leaving insufficient time and creating unnecessary stress.
+
+**Strategic Approach**:
+- Schedule annual make good reviews into business planning
+- Maintain ongoing communication with landlord about requirements
+- Stay informed about restoration obligations even mid-lease
+
+### 2. Underestimating Scope and Cost
+
+**The Problem**:
+Tenants are often shocked by make good costs, particularly for:
+- Ceiling and lighting restoration
+- Flooring removal and replacement
+- Partition and office removal
+- Making good floor, wall, and ceiling penetrations
+- Professional cleaning and carpet steam cleaning
+
+**Strategic Approach**:
+- Obtain professional assessments early
+- Get detailed, itemized quotes
+- Research typical costs per square meter for your property type
+- Consider complexity of original alterations when budgeting
+
+### 3. DIY or Unqualified Contractor Approach
+
+**The Problem**:
+Using unqualified contractors or attempting DIY make good often results in:
+- Work not meeting landlord standards
+- Required rectification by qualified tradespeople anyway
+- Extended timeframes
+- Potential deposit deductions
+- Strained landlord relationships
+
+**Strategic Approach**:
+- Engage experienced, licensed make good specialists
+- Verify contractor insurance and qualifications
+- Check references from similar commercial projects
+- Understand that proper professional work costs less than do-overs
+
+### 4. Poor Communication With Landlord
+
+**The Problem**:
+Assumptions about what's required or acceptable lead to disputes and rejected work.
+
+**Strategic Approach**:
+- Maintain open dialogue with property manager throughout tenancy
+- Request written clarification of any ambiguous lease terms
+- Involve landlord early in planning
+- Get approvals in writing
+- Document all agreements
+
+## Special Considerations for Different Property Types
+
+### Office Premises
+
+**Common Make Good Requirements**:
+- Removal of demountable partitions and offices
+- Restoration of ceiling grid and lighting
+- Carpet and flooring restoration
+- Kitchen and breakroom reinstatement
+- Data and electrical cabling removal or making safe
+- Patching and painting walls
+- Signage removal and facade restoration
+
+**Planning Considerations**:
+- Data cabling can be expensive to remove - clarify if making safe in ceiling is acceptable
+- Carpet replacement versus professional cleaning options
+- Whether existing paint color is acceptable or full repaint required
+
+### Retail Premises
+
+**Common Make Good Requirements**:
+- Removal of shopfitting and displays
+- Floor finish restoration
+- Shopfront and signage reinstatement
+- Lighting and electrical changes reversal
+- Storage and back-of-house area restoration
+- Grease trap and specialized equipment removal
+
+**Planning Considerations**:
+- Retail make good often complex due to extensive shopfitting
+- Heritage or shopping center requirements may add complexity
+- Consider timing to avoid peak retail periods for building access
+
+### Industrial and Warehouse
+
+**Common Make Good Requirements**:
+- Mezzanine or racking system removal
+- Floor repairs from heavy equipment
+- Specialized equipment removal
+- Office area restoration within warehouse
+- External yard area reinstatement
+- Specialized flooring (epoxy coating) restoration
+
+**Planning Considerations**:
+- Equipment removal may require specialized contractors
+- Floor slab repairs can be significant cost item
+- Environmental assessment may be required if chemical storage involved
+- Timing around operational shutdown
+
+## Negotiating Alternative Solutions
+
+Sometimes alternatives to full make good benefit both parties:
+
+### 1. Payment in Lieu
+
+**When It Works**:
+- Landlord plans renovations anyway
+- Cost of restoration exceeds value to landlord
+- Tenant changes may appeal to next tenant
+
+**Strategic Approach**:
+- Raise possibility 6-12 months before lease end
+- Obtain independent make good quote as negotiating baseline
+- Get agreement in writing with clear payment terms
+- Ensure arrangement releases you from make good obligations
+
+### 2. Incoming Tenant Direct Handover
+
+**When It Works**:
+- New tenant wants existing layout
+- Alterations are appealing to next occupant
+- Landlord agrees to arrangement
+
+**Strategic Approach**:
+- Must be coordinated through landlord
+- Obtain written release from make good obligations
+- Document condition being handed over
+- Ensure timing aligns with lease end date
+
+### 3. Partial Make Good
+
+**When It Works**:
+- Some elements acceptable to retain, others must be removed
+- Landlord preference varies by area
+
+**Strategic Approach**:
+- Clearly document which items require removal versus retention
+- Get written approval
+- Focus resources on items definitely requiring restoration
+
+## The Role of Professional Make Good Specialists
+
+Engaging professionals early provides strategic advantages:
+
+### 1. Accurate Planning and Budgeting
+
+Specialists provide:
+- Realistic cost estimates based on actual lease requirements
+- Identification of potential hidden costs
+- Advice on cost-effective restoration approaches
+- Budget planning tools
+
+### 2. Landlord Liaison
+
+Experienced contractors:
+- Understand landlord expectations and standards
+- Can negotiate on technical aspects of restoration
+- Facilitate clearer communication
+- Reduce potential for disputes
+
+### 3. Project Management
+
+Professionals manage:
+- Multiple trades and coordination
+- Timeline adherence
+- Quality control
+- Problem-solving when issues arise
+- Final inspection preparation
+
+### 4. Compliance and Quality
+
+Specialists ensure:
+- All work meets building code requirements
+- Proper materials and methods used
+- Work meets landlord standards first time
+- Appropriate documentation provided
+
+## Make Good Planning Checklist
+
+**At Lease Commencement**:
+- [ ] Thoroughly review and understand make good clauses
+- [ ] Complete detailed condition report with photos
+- [ ] Document original premises layout
+- [ ] Set up make good budget provision system
+
+**Throughout Tenancy**:
+- [ ] Obtain landlord approval for all alterations in writing
+- [ ] Maintain alteration records (photos, invoices, approvals)
+- [ ] Review make good requirements annually
+- [ ] Adjust budget provisions as needed
+
+**12 Months Before Lease End**:
+- [ ] Decide on lease renewal or termination
+- [ ] If terminating, begin formal make good planning
+- [ ] Review lease requirements with property manager
+
+**6 Months Before Lease End**:
+- [ ] Obtain multiple detailed make good quotes
+- [ ] Meet with landlord to clarify requirements
+- [ ] Select make good contractor
+- [ ] Finalize budget and timeline
+
+**3 Months Before Lease End**:
+- [ ] Confirm contractor booking
+- [ ] Coordinate work schedule with business operations
+- [ ] Arrange any necessary permits
+- [ ] Plan relocation timeline
+
+**6-8 Weeks Before Lease End**:
+- [ ] Commence make good works
+- [ ] Maintain regular progress communication with landlord
+- [ ] Document all work performed
+
+**2-3 Weeks Before Lease End**:
+- [ ] Complete all works
+- [ ] Conduct pre-inspection walk-through
+- [ ] Address any deficiencies
+- [ ] Obtain final landlord approval
+- [ ] Complete final cleaning
+
+**At Lease End**:
+- [ ] Conduct final handover inspection
+- [ ] Provide all required documentation
+- [ ] Hand over keys
+- [ ] Confirm deposit refund timeline
+
+## Conclusion
+
+Strategic make good planning transforms a potentially stressful and expensive obligation into a manageable process. By understanding requirements early, budgeting appropriately throughout the tenancy, maintaining detailed records, engaging professionals at the right time, and maintaining good landlord communication, tenants protect their interests while fulfilling obligations professionally.
+
+The difference between chaotic, expensive lease ends and smooth, cost-effective transitions comes down to planning. Don't wait until you receive your lease end notice - start planning now, regardless of how far away your lease expiry might be.
+
+Need help developing your make good strategy or obtaining accurate cost projections? Our experienced team provides comprehensive planning services, detailed assessments, and professional execution of commercial make good projects. Contact us today for a consultation and quote tailored to your specific lease obligations and timeline.`
+  },
+  {
     id: "19",
     slug: "building-defect-remediation-commercial-property",
     title: "Building Defect Remediation: Comprehensive Solutions for Commercial Property Issues",
