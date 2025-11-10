@@ -10,6 +10,447 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: "27",
+    slug: "waste-management-sustainability-make-good-works",
+    title: "Waste Management and Sustainability in Make Good Works: Environmental Responsibility in Commercial Fit-Outs",
+    date: "1 May 2025",
+    excerpt: "Sustainable waste management practices are increasingly critical in commercial make good projects, with regulations, tenant expectations, and environmental responsibility driving the need for waste minimization, recycling, and responsible disposal. Professional waste management reduces landfill contributions, ensures regulatory compliance, and can reduce project costs. Learn about waste streams, recycling strategies, EPA compliance, and sustainability reporting.",
+    image: "/src/assets/blog/waste-management-sustainability.jpg",
+    content: `Commercial make good projects generate significant volumes of waste materials, from demolished building components and removed fitouts to packaging from new installations. As environmental awareness grows and regulations strengthen, sustainable waste management has become a critical component of responsible make good practices. Professional waste management strategies minimize landfill contributions, maximize material recovery and recycling, ensure regulatory compliance, and can reduce overall project costs. This comprehensive guide explores waste streams in make good projects, recycling and diversion strategies, regulatory compliance, and best practices for sustainable make good works in Melbourne.
+
+## Understanding Waste in Make Good Projects
+
+### Common Waste Streams
+
+**Building Materials and Fixtures**:
+- Plasterboard and gypsum products
+- Timber framing, doors, and joinery
+- Metal components (steel framing, aluminium, fixtures)
+- Concrete and masonry materials
+- Flooring materials (carpet, vinyl, tiles, timber)
+- Ceiling tiles and grid systems
+- Insulation materials
+
+**Fitout and Furnishing Waste**:
+- Office partitioning and modular walls
+- Workstations and office furniture
+- Cabinetry and kitchen fitouts
+- Retail fixtures and display systems
+- Signage and branding elements
+- Window furnishings (blinds, curtains)
+
+**Electrical and Mechanical Waste**:
+- Electrical cables and wiring
+- Light fittings and lamps
+- Switchboards and electrical components
+- HVAC equipment and ductwork
+- Plumbing fixtures and pipes
+- Data and communications cabling
+
+**Hazardous and Regulated Waste**:
+- Asbestos-containing materials (if present in older buildings)
+- Fluorescent tubes and lamps containing mercury
+- Electronic waste (e-waste) from office equipment
+- Paint and chemical waste
+- Batteries and power supplies
+- Contaminated materials
+
+**Packaging and General Waste**:
+- Cardboard and packaging from new materials
+- Plastic wrapping and protective materials
+- Pallets and timber packaging
+- General construction site waste
+- Food and amenity waste from workers
+
+### Volume and Impact
+
+**Typical Waste Volumes**:
+- Small office make good (100-300sqm): 5-15 tonnes
+- Medium commercial make good (300-1000sqm): 15-50 tonnes
+- Large warehouse or industrial make good: 50-200+ tonnes
+- Retail fitout strip-out: 10-30 tonnes per 500sqm
+
+**Environmental Impact Without Proper Management**:
+- Landfill contribution and associated emissions
+- Lost opportunities for material recovery and circular economy
+- Embodied energy waste in discarded materials
+- Potential contamination from hazardous materials
+- Increased project costs from inefficient disposal
+
+## Sustainable Waste Management Principles
+
+### Waste Hierarchy
+
+The EPA Victoria waste hierarchy guides sustainable waste management:
+
+**1. Avoid**: Minimize waste generation through planning and design
+**2. Reduce**: Use less material and reduce waste at source
+**3. Reuse**: Reuse materials and components in place or elsewhere
+**4. Recycle**: Process materials for remanufacture into new products
+**5. Recover**: Recover energy from waste where recycling not viable
+**6. Dispose**: Landfill disposal as last resort only
+
+**Application in Make Good Projects**:
+- Careful strip-out to preserve materials for reuse
+- Segregation of waste streams at source
+- Engagement with recycling facilities and processors
+- Documentation and reporting of waste diversion
+- Landfill minimization as key project objective
+
+### Circular Economy Thinking
+
+**Material Recovery**:
+- Identification of materials suitable for recovery and reuse
+- Engagement with salvage and reuse organizations
+- Coordination with tenant or landlord for furniture reuse
+- Donation of serviceable items to charities or community organizations
+- Sale of valuable materials (metals, quality joinery)
+
+**Design for Disassembly** (new installations):
+- Modular systems that can be easily removed and reused
+- Mechanical fixings rather than adhesives where possible
+- Standard components and materials
+- Documentation of materials and installation methods
+- Consideration of future make good when installing new fitouts
+
+## Waste Stream Management and Recycling
+
+### Segregation at Source
+
+**On-Site Waste Management**:
+- Multiple skips or bins for different waste streams
+- Clear labeling and signage for waste segregation
+- Worker training on waste sorting requirements
+- Regular monitoring and correction of sorting errors
+- Dedicated areas for hazardous and regulated waste
+
+**Common Segregation Categories**:
+- Mixed recycling (metals, plastics, paper)
+- Timber and wood products
+- Plasterboard and gypsum
+- Concrete, bricks, and masonry
+- Carpet and soft furnishings
+- General waste (landfill)
+- Hazardous/regulated waste
+
+### Recyclable Materials in Make Good
+
+**Metal Materials** (high recycling rates):
+- Steel framing and structural components
+- Aluminium window frames and doors
+- Copper pipes and electrical cables
+- Brass and other metal fixtures
+- Recycling rate potential: 90-95%
+
+**Timber and Wood Products**:
+- Solid timber framing, doors, and joinery
+- Engineered wood products
+- Recycling options: mulching, garden products, bioenergy
+- Recycling rate potential: 70-80% (depending on contamination)
+
+**Plasterboard and Gypsum**:
+- Clean plasterboard can be recycled into new plasterboard
+- Gypsum recovery for agricultural or manufacturing use
+- Contamination (paint, adhesives) reduces recyclability
+- Recycling rate potential: 50-70% with proper segregation
+
+**Concrete and Masonry**:
+- Crushing for use as recycled aggregate
+- Road base and fill applications
+- Clean concrete has high recycling potential
+- Recycling rate potential: 80-90%
+
+**Carpet and Soft Furnishings**:
+- Carpet recycling into new carpet backing or other products
+- Requires specialized processors
+- Contamination issues with different carpet types mixed
+- Recycling rate potential: 30-50% (improving with better infrastructure)
+
+**Plastics and Packaging**:
+- Cardboard and paper packaging (high recycling rates)
+- Plastic wrapping and protective materials
+- PVC products (pipes, flooring) - limited recycling
+- Recycling rate potential: 40-60% (varies by plastic type)
+
+### Reuse and Salvage Opportunities
+
+**Items Suitable for Reuse**:
+- Office furniture and workstations in good condition
+- Kitchen appliances and cabinetry
+- Light fittings and quality fixtures
+- Doors, architraves, and joinery
+- Bathroom fixtures and fittings
+- Ceiling grid systems and tiles
+
+**Reuse Pathways**:
+- Internal reuse within same organization or building
+- Sale through online marketplaces or salvage yards
+- Donation to charities (tax deductible)
+- Community organizations and not-for-profits
+- Architectural salvage specialists
+- Low-cost furniture schemes for those in need
+
+## Regulatory Compliance and Requirements
+
+### EPA Victoria Requirements
+
+**Environmental Protection Act 2017**:
+- General Environmental Duty for all persons conducting activities
+- Duty to minimize risks of harm to human health and the environment
+- Applies to waste generation, handling, transport, and disposal
+- Penalties for breaches including fines and legal action
+
+**Waste Classification**:
+- Prescribed Industrial Waste (hazardous waste requiring special handling)
+- Priority Waste (including e-waste, mattresses)
+- Municipal and Commercial Waste
+- Classification determines handling and disposal requirements
+
+**Transport and Disposal Requirements**:
+- Licensed waste transporters required for certain waste types
+- Tracking and documentation requirements
+- Licensed disposal facilities only
+- Records must be maintained for auditing
+
+### Asbestos Management
+
+**If Asbestos Present**:
+- Licensed asbestos assessor survey required
+- Licensed asbestos removalist for removal works
+- Notification to WorkSafe Victoria
+- Specific packaging and disposal at licensed facilities
+- Clearance certificates required
+- Significant penalties for non-compliance
+
+**Asbestos Waste**:
+- Double-wrapped and labeled as asbestos
+- Transport by licensed carriers only
+- Disposal at licensed asbestos disposal facilities
+- Complete documentation chain required
+
+### E-Waste Regulations
+
+**Ban on E-Waste to Landfill** (Victoria):
+- E-waste banned from landfill since 2019
+- Includes computers, printers, televisions, monitors
+- Must be sent to dedicated e-waste recycling facilities
+- Penalties for non-compliance
+- Applies to all commercial make good projects
+
+## Sustainable Waste Management Planning
+
+### Pre-Project Waste Assessment
+
+**Waste Audit**:
+- Survey of existing fitout and materials
+- Identification of waste streams and volumes
+- Assessment of recycling and reuse opportunities
+- Identification of hazardous materials
+- Development of waste management plan
+
+**Waste Management Plan Components**:
+- Estimated waste volumes by material type
+- Recycling and diversion targets
+- Waste handling and segregation procedures
+- Licensed contractors and facilities
+- Hazardous waste management procedures
+- Reporting and documentation requirements
+
+### Contractor Selection and Requirements
+
+**Waste Management Capabilities**:
+- Demonstrated recycling and waste diversion experience
+- Relationships with recycling facilities and processors
+- Waste tracking and reporting systems
+- Licensing and compliance credentials
+- Understanding of EPA and environmental requirements
+
+**Contract Requirements**:
+- Specified recycling and landfill diversion targets
+- Waste reporting obligations
+- Use of licensed facilities and transporters
+- Compliance with EPA and regulations
+- Documentation requirements
+- Penalties for non-compliance with waste targets
+
+### On-Site Implementation
+
+**Best Practice Procedures**:
+- Careful strip-out to preserve materials for recovery
+- Immediate segregation of waste at point of generation
+- Protection of clean waste streams from contamination
+- Regular skip and bin management to maintain segregation
+- Designated storage areas for different waste types
+- Security of hazardous waste storage areas
+
+**Monitoring and Management**:
+- Regular site inspections for waste management compliance
+- Correction of waste sorting errors
+- Tracking of skip movements and weights
+- Photography and documentation
+- Communication with workers on expectations
+- Adjustment of procedures as needed
+
+## Waste Tracking and Reporting
+
+### Documentation Requirements
+
+**Waste Tracking**:
+- Skip hire dockets and waste collection records
+- Weighbridge receipts showing waste weights
+- Waste classification documentation
+- Facility receipts confirming disposal location
+- EPA tracking forms for prescribed waste
+- Transport licenses and compliance certificates
+
+**Project Reporting**:
+- Summary of total waste generated by type
+- Recycling rates and diversion from landfill
+- Reuse and salvage outcomes
+- Hazardous waste management documentation
+- Final waste report for building owner/tenant
+- Evidence for sustainability certifications
+
+### Sustainability Certifications
+
+**Green Star and NABERS**:
+- Construction waste requirements in Green Star
+- Documentation of waste diversion rates
+- Evidence of responsible waste management
+- Contribution to overall sustainability rating
+- Enhanced marketability and tenant appeal
+
+**Corporate Sustainability Reporting**:
+- Many tenants require waste reporting for ESG reporting
+- Contribution to organizational sustainability targets
+- Demonstration of environmental responsibility
+- Positive brand and reputation outcomes
+
+## Cost Considerations
+
+### Waste Management Costs
+
+**Landfill Disposal Costs**:
+- Landfill levy in Victoria: approx $125.90 per tonne (2025)
+- Gate fees at landfill: $50-100 per tonne
+- Total landfill cost: $175-225 per tonne
+- Transport costs: $100-200 per skip (depending on distance)
+
+**Recycling Costs**:
+- Often cheaper than landfill due to lower levy
+- Mixed recycling: $80-150 per tonne
+- Clean concrete and masonry: $30-80 per tonne (or free)
+- Metal recycling: Free or rebate received
+- Timber recycling: $60-120 per tonne
+- Overall cost savings through recycling: 20-40%
+
+**Hazardous Waste Costs**:
+- Asbestos disposal: $300-600 per tonne plus transport
+- E-waste recycling: $50-150 per tonne
+- Fluorescent tubes: $2-5 per unit
+- Paint and chemical waste: $150-300 per tonne
+
+### Cost-Benefit of Sustainable Practices
+
+**Direct Cost Savings**:
+- Lower disposal costs through recycling
+- Revenue from metal and quality materials
+- Reduced skip frequency through better segregation
+- Avoidance of EPA penalties and compliance costs
+
+**Indirect Benefits**:
+- Enhanced reputation and tenant satisfaction
+- Contribution to sustainability certifications
+- Competitive advantage in tender processes
+- Risk mitigation (regulatory compliance)
+- Social license to operate
+
+## Melbourne-Specific Considerations
+
+### Waste Infrastructure
+
+**Recycling Facilities in Melbourne**:
+- Numerous waste transfer stations accepting segregated waste
+- Specialized facilities for specific materials (metals, concrete, timber)
+- E-waste collection and processing facilities
+- Reuse and salvage centers
+- Access to comprehensive waste infrastructure supporting recycling
+
+**Regulatory Environment**:
+- EPA Victoria active monitoring and enforcement
+- Victorian landfill levy encouraging waste diversion
+- E-waste ban from landfill
+- Best Practice Environmental Management (BPEM) guidelines
+- Strong regulatory framework supporting sustainable practices
+
+### Industry Trends
+
+**Growing Expectations**:
+- Commercial tenants increasingly requiring sustainable practices
+- Building owners focused on sustainability credentials
+- Industry moving towards circular economy principles
+- Green building certifications becoming standard
+- Waste diversion targets increasing (often 80-90%+)
+
+## Make Good Australia: Sustainable Waste Management Leaders
+
+At Make Good Australia, we are committed to environmental responsibility and sustainable practices in all our make good projects. Our comprehensive waste management approach minimizes environmental impact, maximizes material recovery, ensures full regulatory compliance, and often reduces overall project costs.
+
+### Our Sustainable Waste Management Services
+
+**Waste Planning and Assessment**:
+- Pre-project waste audits and planning
+- Development of project-specific waste management plans
+- Recycling and diversion target setting
+- Identification of reuse and salvage opportunities
+- Hazardous material identification and planning
+
+**Implementation**:
+- Careful strip-out to preserve materials for recovery
+- On-site waste segregation systems
+- Relationships with recycling facilities and processors
+- Licensed hazardous waste management
+- Reuse and donation coordination
+
+**Reporting and Compliance**:
+- Comprehensive waste tracking and documentation
+- Final waste reports with diversion rates
+- EPA and regulatory compliance
+- Sustainability certification support
+- Transparent communication throughout
+
+### Our Waste Diversion Achievements
+
+- **Average waste diversion rate**: 75-85% across our projects
+- **Zero asbestos compliance breaches**: 100% compliant licensed removal
+- **E-waste**: 100% diversion from landfill
+- **Metal recycling**: 95%+ recovery rates
+- **Furniture reuse and donation**: Thousands of items diverted from landfill
+
+### Why Choose Make Good Australia for Sustainable Make Good
+
+- **Environmental Commitment**: Genuine commitment to minimizing environmental impact
+- **Proven Results**: Consistently high waste diversion rates
+- **Full Compliance**: EPA, WorkSafe, and regulatory compliance assured
+- **Transparency**: Detailed reporting and documentation
+- **Cost Effective**: Sustainable practices that reduce costs
+- **Industry Leadership**: Setting benchmarks for sustainable make good practices
+
+## Conclusion
+
+Sustainable waste management is no longer optional in commercial make good projects - it's an essential component of responsible construction practices, regulatory compliance, and environmental stewardship. Through careful planning, effective segregation, engagement with recycling infrastructure, and commitment to waste minimization, make good projects can achieve high waste diversion rates while reducing costs and environmental impact.
+
+Professional waste management planning and implementation ensures materials are recovered and recycled rather than sent to landfill, hazardous materials are responsibly managed, and full regulatory compliance is maintained. As industry expectations and regulations continue to evolve towards greater sustainability, engaging contractors with proven sustainable waste management capabilities becomes increasingly critical.
+
+**Ready to undertake sustainable make good works?** Contact Make Good Australia today. Our team will develop and implement a comprehensive waste management plan for your project, maximizing recycling and diversion while ensuring full compliance and minimizing costs.
+
+**Make Good Australia**  
+Melbourne's sustainable make good specialists  
+Call us: [Contact Number]  
+Email: [Contact Email]  
+Committed to environmental responsibility in every project`,
+  },
+  {
     id: "26",
     slug: "fire-damage-restoration-make-good-commercial-properties",
     title: "Fire Damage Restoration and Make Good: Comprehensive Recovery for Commercial Properties",
