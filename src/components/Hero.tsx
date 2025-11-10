@@ -30,7 +30,7 @@ const Hero = () => {
               MELBOURNE
             </span>
           </h1>
-          <h2 className="text-3xl md:text-4xl text-accent font-semibold mb-6">
+          <h2 className="text-3xl md:text-4xl text-accent font-semibold mb-6" style={{ textTransform: 'none' }}>
             Make good, BETTER.
           </h2>
           <p className="text-xl md:text-2xl text-foreground mb-4 leading-relaxed">
