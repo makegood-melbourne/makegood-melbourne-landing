@@ -1131,7 +1131,7 @@ Assumptions about what's required or acceptable lead to disputes and rejected wo
 **Planning Considerations**:
 - Data cabling can be expensive to remove - clarify if making safe in ceiling is acceptable
 - Carpet replacement versus professional cleaning options
-- Whether existing paint color is acceptable or full repaint required
+- Whether existing paint colour is acceptable or full repaint required
 
 ### Retail Premises
 
