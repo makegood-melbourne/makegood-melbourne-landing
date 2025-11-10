@@ -14,6 +14,7 @@ import makeGoodServicesImage from "@/assets/blog/make-good-services.webp";
 import tenantLandlordImage from "@/assets/blog/tenant-landlord-communication.webp";
 import smoothMakeGoodImage from "@/assets/blog/smooth-make-good-experience.webp";
 import concreteCancerImage from "@/assets/blog/concrete-cancer.webp";
+import balconyWaterproofingImage from "@/assets/blog/balcony-waterproofing.webp";
 import { BlogPost } from "@/data/blogPosts";
 
 const imageMap: Record<string, string> = {
@@ -33,6 +34,7 @@ const imageMap: Record<string, string> = {
   'tenant-landlord-communication': tenantLandlordImage,
   'smooth-make-good-experience': smoothMakeGoodImage,
   'concrete-cancer': concreteCancerImage,
+  'balcony-waterproofing': balconyWaterproofingImage,
 };
 
 export const getBlogImage = (imagePath: string): string => {

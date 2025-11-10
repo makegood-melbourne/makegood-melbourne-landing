@@ -10,6 +10,225 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: "17",
+    slug: "balcony-waterproofing-preventing-fixing-leaks",
+    title: "Balcony Waterproofing: Preventing and Fixing Leaks in Commercial Properties",
+    date: "1 July 2024",
+    excerpt: "Leaking balconies are one of the most common and costly problems in commercial buildings. During Melbourne's wet winter months, inadequate waterproofing becomes painfully obvious as water damage spreads to internal spaces. Understanding the causes, warning signs, and professional remediation solutions can save property owners thousands in structural repairs.",
+    image: "/src/assets/blog/balcony-waterproofing.webp",
+    content: `Leaking balconies are one of the most common and costly problems in commercial buildings across Melbourne. During our wet winter months, inadequate waterproofing becomes painfully obvious as water damage spreads to internal spaces, causing staining, structural deterioration, and tenant complaints. Understanding the causes, warning signs, and professional remediation solutions can save property owners and managers thousands in structural repairs and prevent serious building defects.
+
+## Why Balcony Waterproofing Fails
+
+Balconies are constantly exposed to Melbourne's harsh weather conditions—rain, UV radiation, temperature fluctuations, and wind. Over time, even well-constructed waterproofing systems can fail due to:
+
+### 1. Age and Material Degradation
+
+Waterproofing membranes have a finite lifespan, typically 10-15 years depending on quality and maintenance. As materials age, they become brittle, crack, and lose their water-resistant properties.
+
+### 2. Poor Initial Installation
+
+Many balcony leaks stem from inadequate waterproofing during construction:
+
+- Insufficient membrane overlap at joints
+- Incorrect fall (drainage slope) causing water pooling
+- Missing or poorly installed penetration flashings around drainage points
+- Inadequate membrane thickness or coverage
+
+### 3. Movement and Settlement
+
+Buildings naturally move and settle over time. This movement can:
+
+- Crack rigid waterproofing systems
+- Separate membranes from substrates
+- Open joints between balcony slabs and building walls
+- Damage drainage points and outlets
+
+### 4. Drainage System Failures
+
+Blocked or damaged drains are a primary cause of balcony leaks:
+
+- Debris accumulation blocking outlets
+- Broken or disconnected downpipes
+- Inadequate drainage capacity for heavy rainfall
+- Corroded or damaged grates and drains
+
+### 5. Impact Damage
+
+Commercial balconies endure heavy use:
+
+- Furniture dragging across surfaces
+- Planters and heavy objects causing membrane punctures
+- Maintenance work damaging protective layers
+- Foot traffic wearing through coating systems
+
+## Identifying Balcony Leak Warning Signs
+
+Early detection prevents minor issues from becoming major structural problems. Watch for these indicators:
+
+### External Signs
+
+- **Standing water** remaining on balconies after rain
+- **Cracking or bubbling** of surface coatings
+- **Rust stains** from corroding steel reinforcement
+- **Efflorescence** (white chalky deposits) indicating moisture movement
+- **Visible membrane damage** including tears, lifting, or separation
+- **Deteriorating sealants** around joints and penetrations
+
+### Internal Signs
+
+- **Water stains** on ceilings below balconies
+- **Peeling paint** or bubbling plaster on walls adjacent to balconies
+- **Damp odors** in rooms beneath or beside balconies
+- **Mold growth** on internal walls or ceilings
+- **Structural cracking** in concrete slabs
+
+Don't ignore these signs—water damage accelerates rapidly once it begins.
+
+## The Cost of Delayed Repairs
+
+Procrastinating on balcony waterproofing repairs leads to:
+
+### 1. Structural Damage
+
+Water penetration causes concrete cancer, steel reinforcement corrosion, and eventual structural failure requiring extensive (and expensive) remediation.
+
+### 2. Internal Damage
+
+Leaks damage internal finishes including:
+
+- Carpets and flooring
+- Plasterboard ceilings and walls
+- Electrical systems and light fittings
+- Cabinetry and fixtures
+
+### 3. Tenant Issues
+
+Commercial tenants experiencing water ingress may:
+
+- Request rent reductions
+- Terminate leases early
+- Claim compensation for damaged property or business interruption
+- Report issues to regulatory authorities
+
+### 4. Property Devaluation
+
+Visible water damage and known leak issues significantly reduce property values and make buildings harder to sell or lease.
+
+## Professional Waterproofing Remediation Process
+
+Effective balcony waterproofing requires specialist expertise and proper methodology:
+
+### 1. Comprehensive Assessment
+
+Waterproofing specialists conduct detailed inspections including:
+
+- Visual examination of all surfaces and joints
+- Moisture mapping to identify water penetration paths
+- Drainage testing to verify fall and outlet capacity
+- Structural assessment of substrate condition
+- Review of existing waterproofing system type and age
+
+### 2. Complete Membrane Removal
+
+In most cases, effective remediation requires:
+
+- Removal of all existing waterproofing layers
+- Stripping surface tiles or coatings to expose substrate
+- Assessment and repair of concrete substrate
+- Ensuring clean, dry, sound surfaces for new membrane application
+
+Attempting to apply new waterproofing over failed systems rarely succeeds and wastes money.
+
+### 3. Substrate Preparation and Repair
+
+Before new waterproofing application:
+
+- Concrete cracks are repaired with appropriate materials
+- Surface irregularities are leveled
+- Correct drainage falls are established (minimum 1:100 slope)
+- Penetrations and drainage points are properly prepared
+
+### 4. New Waterproofing System Installation
+
+Professional installation includes:
+
+- Selection of appropriate membrane type for the application
+- Proper primer application
+- Multiple membrane coats with adequate thickness
+- Special attention to corners, joints, and penetrations
+- Installation of reinforcing mesh at stress points
+- Adequate curing time between coats
+
+### 5. Drainage System Upgrades
+
+Effective waterproofing requires functional drainage:
+
+- Installation or replacement of drainage outlets
+- Ensuring adequate outlet sizing for rainfall intensity
+- Proper connection to building drainage systems
+- Installation of leaf guards and debris filters
+
+### 6. Protective Finishes
+
+Final protection layers may include:
+
+- Tiles with appropriate adhesives and grouts
+- Protective coating systems
+- Slip-resistant finishes for safety
+- UV-stable topcoats for exposed areas
+
+### 7. Testing and Certification
+
+Reputable contractors provide:
+
+- Flood testing to verify waterproofing integrity
+- Photographic documentation of all work stages
+- Compliance certificates confirming building code adherence
+- Warranties covering materials and workmanship (typically 10 years)
+
+## Preventative Maintenance for Balcony Waterproofing
+
+Extending waterproofing lifespan requires regular maintenance:
+
+- **Regular cleaning** of drainage outlets and grates (quarterly minimum)
+- **Annual inspections** by waterproofing specialists
+- **Prompt repairs** of any coating damage or cracks
+- **Resealing joints** every 2-3 years
+- **Avoiding impact damage** from furniture or equipment
+- **Proper drainage management** ensuring water doesn't pool
+
+## Waterproofing and Make Good Obligations
+
+For commercial tenants, balcony waterproofing responsibilities should be clearly defined in lease agreements. While structural waterproofing typically falls to landlords, tenants may be responsible for:
+
+- Maintaining drainage clearances
+- Reporting leaks promptly
+- Repairing damage caused by tenant activities
+- Ensuring proper use of balcony spaces
+
+At lease end, ensure make-good obligations regarding balcony condition are properly documented and fulfilled.
+
+## Why Professional Waterproofing Matters
+
+DIY or inexperienced waterproofing attempts frequently fail because:
+
+- Incorrect membrane selection for conditions
+- Inadequate substrate preparation
+- Poor detailing at critical junctions
+- Insufficient membrane thickness or coverage
+- No testing or certification
+- Lack of appropriate warranties
+
+Professional waterproofing contractors provide expertise, quality materials, proper installation methodology, and guarantees that protect your investment.
+
+## Conclusion
+
+Balcony waterproofing is a critical building element that protects your property investment and ensures tenant satisfaction. Melbourne's winter rains highlight existing waterproofing failures, making now the ideal time to address issues before they escalate into major structural problems.
+
+If you've noticed signs of balcony leaks in your commercial property, don't delay. Professional assessment and remediation prevent costly damage, maintain property values, and provide long-term peace of mind. Contact our specialist waterproofing team today for a comprehensive balcony inspection and expert remediation solutions tailored to your building's needs.`
+  },
+  {
     id: "16",
     slug: "concrete-cancer-prevention-remediation",
     title: "Understanding Concrete Cancer: Prevention and Remediation for Commercial Properties",
