@@ -18,7 +18,6 @@ const Hero = () => {
           alt="Professional commercial construction and make good services in Melbourne"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/85 to-primary/70"></div>
       </div>
       
       <div className="container mx-auto px-4 z-10 pt-16">
