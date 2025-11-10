@@ -22,12 +22,12 @@ const Hero = () => {
       
       <div className="container mx-auto px-4 z-10 pt-16">
         <div className="max-w-3xl bg-background/80 backdrop-blur-sm p-8 md:p-12 rounded-lg">
-          <h1 className="text-5xl md:text-7xl text-foreground mb-4 leading-none tracking-tight">
-            <span className="block font-bold uppercase" style={{ fontFamily: "'PP Neue Montreal', sans-serif" }}>
-              MAKEGOOD
+          <h1 className="text-5xl md:text-7xl text-foreground mb-4 leading-none">
+            <span className="block font-light tracking-tight lowercase" style={{ fontFamily: "'PP Neue Montreal', sans-serif" }}>
+              makegood.
             </span>
-            <span className="block text-3xl md:text-4xl font-medium mt-1 tracking-wide" style={{ fontFamily: "'PP Neue Montreal', sans-serif" }}>
-              MELBOURNE
+            <span className="block font-bold tracking-tight lowercase" style={{ fontFamily: "'PP Neue Montreal', sans-serif" }}>
+              melbourne
             </span>
           </h1>
           <h2 className="text-3xl md:text-4xl text-accent font-semibold mb-6">
