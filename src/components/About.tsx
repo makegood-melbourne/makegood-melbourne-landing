@@ -1,5 +1,5 @@
 import { CheckCircle2 } from "lucide-react";
-import melbourneSkyline from "@/assets/melbourne-skyline.jpg";
+import officeWorkspace from "@/assets/office-workspace.jpg";
 
 const About = () => {
   const features = [
@@ -45,12 +45,12 @@ const About = () => {
           </p>
         </div>
 
-        {/* Melbourne Image */}
+        {/* Office Workspace Image */}
         <div className="mb-16">
           <div className="aspect-video w-full overflow-hidden rounded-lg">
             <img 
-              src={melbourneSkyline}
-              alt="Melbourne CBD skyline - Our service area"
+              src={officeWorkspace}
+              alt="Professional commercial office space make good and restoration services"
               className="w-full h-full object-cover"
             />
           </div>
