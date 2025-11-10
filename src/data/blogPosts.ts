@@ -23,7 +23,7 @@ export const blogPosts: BlogPost[] = [
 ### Strategic Timing Benefits
 
 **Natural Planning Cycle**:
-- Aligns with business financial year-end for many organizations
+- Aligns with business financial year-end for many organisations
 - Budget planning for the coming year
 - Time to review and renew contracts before busy periods
 - Opportunity to address issues before they escalate
@@ -40,7 +40,7 @@ export const blogPosts: BlogPost[] = [
 - Identify and budget for upcoming expenses
 - Avoid emergency repairs and associated premium costs
 - Plan capital expenditure strategically
-- Maximize tax planning opportunities
+- Maximise tax planning opportunities
 
 **Risk Mitigation**:
 - Identify compliance issues before they become problems
@@ -83,7 +83,7 @@ Conduct a thorough evaluation of your premises:
 - Electrical safety inspections
 - HVAC system servicing and assessment
 - Pest inspections
-- Specialized assessments for industrial equipment or racking
+- Specialised assessments for industrial equipment or racking
 
 ### 2. Lease Review and Planning
 
@@ -163,7 +163,7 @@ Conduct a thorough evaluation of your premises:
 - Environmental compliance (waste management, chemical storage)
 - Specific industry requirements (food safety, medical facilities)
 
-**Documentation Organization**:
+**Documentation Organisation**:
 
 **Create or Update Property File**:
 - Lease agreements and all amendments
@@ -217,7 +217,7 @@ Conduct a thorough evaluation of your premises:
 - Is location still optimal for business operations?
 
 **2025 Space Strategy**:
-- Stay and optimize current premises
+- Stay and optimise current premises
 - Expand within current building
 - Relocate to more suitable property
 - Consolidate multiple locations
@@ -240,7 +240,7 @@ Conduct a thorough evaluation of your premises:
 
 **Efficiency Opportunities**:
 - LED lighting upgrades
-- HVAC system optimization or replacement
+- HVAC system optimisation or replacement
 - Insulation improvements
 - Solar panel feasibility
 - Smart building management systems
@@ -266,13 +266,13 @@ Conduct a thorough evaluation of your premises:
 
 **Timeline Planning**:
 - 12 months out: Initiate renewal negotiations or confirm departure
-- 6 months out: Select make good contractor, finalize budget
+- 6 months out: Select make good contractor, finalise budget
 - 3 months out: Confirm contractor booking, plan work schedule
 - 2 months out: Begin make good works
 
 ### Scenario 2: Recently Signed Multi-Year Lease
 
-**Optimization Focus**:
+**Optimisation Focus**:
 - Complete any planned fitout or improvements early 2025
 - Establish maintenance routines and service contracts
 - Set up make good budget provisioning system
@@ -282,15 +282,15 @@ Conduct a thorough evaluation of your premises:
 
 **Strategic Approach**:
 - Define objectives (employee satisfaction, efficiency, tenant attraction)
-- Obtain quotes and finalize specifications
+- Obtain quotes and finalise specifications
 - Check building permit requirements
-- Plan timing to minimize disruption
+- Plan timing to minimise disruption
 - If tenant, ensure landlord approval obtained in writing
 
 ### Scenario 4: Landlord with Multiple Properties
 
 **Portfolio Approach**:
-- Prioritize properties by condition and tenant situation
+- Prioritise properties by condition and tenant situation
 - Develop rolling maintenance program
 - Budget capital improvements across portfolio
 - Plan rent reviews and lease renewals systematically
@@ -353,10 +353,10 @@ Conduct a thorough evaluation of your premises:
 - [ ] Create property budget for 2025
 - [ ] Plan any major improvements or works
 - [ ] Assess space requirements for coming year
-- [ ] Review and optimize service contracts
+- [ ] Review and optimise service contracts
 
 **Documentation Tasks**:
-- [ ] Organize property file with all key documents
+- [ ] Organise property file with all key documents
 - [ ] Update condition photographic records
 - [ ] File all 2024 invoices and receipts
 - [ ] Document any alterations made during 2024
@@ -367,10 +367,10 @@ Conduct a thorough evaluation of your premises:
 - [ ] Assess lease renewal or relocation decision
 - [ ] Begin make good planning if lease ending
 - [ ] Consider energy efficiency opportunities
-- [ ] Plan space optimization projects
+- [ ] Plan space optimisation projects
 
 **Financial Planning**:
-- [ ] Finalize 2025 property budget
+- [ ] Finalise 2025 property budget
 - [ ] Discuss tax planning with accountant
 - [ ] Set up make good fund provisions if needed
 - [ ] Arrange financing for any major works
@@ -392,7 +392,7 @@ Conduct a thorough evaluation of your premises:
 - Professional execution ensuring quality outcomes
 
 **When to Engage Professionals**:
-- Complex or aging properties requiring specialized assessment
+- Complex or aging properties requiring specialised assessment
 - Upcoming lease ends requiring make good planning
 - Major improvement projects being considered
 - Compliance concerns or regulatory requirements
@@ -400,7 +400,7 @@ Conduct a thorough evaluation of your premises:
 
 ## Conclusion
 
-Year-end property planning transforms reactive property management into strategic asset optimization. By conducting thorough assessments, reviewing obligations, planning maintenance, and budgeting appropriately, businesses enter 2025 prepared for property commitments and positioned to make informed decisions about their commercial space needs.
+Year-end property planning transforms reactive property management into strategic asset optimisation. By conducting thorough assessments, reviewing obligations, planning maintenance, and budgeting appropriately, businesses enter 2025 prepared for property commitments and positioned to make informed decisions about their commercial space needs.
 
 The time invested in year-end planning pays dividends through prevented emergencies, controlled costs, smooth lease transitions, and premises that support business productivity and growth. Don't let year-end business pressures delay this important planning—make it a priority in December while you have time to develop thoughtful strategies.
 
@@ -594,7 +594,7 @@ Need help conducting property assessments, planning for lease end obligations, o
 - Data cabling infrastructure
 - Parking availability
 
-**Retail Tenants Prioritize**:
+**Retail Tenants Prioritise**:
 - Street appeal and visibility
 - Customer-friendly access
 - Clean, attractive shopfront
@@ -641,7 +641,7 @@ Need help conducting property assessments, planning for lease end obligations, o
 - Begin marketing 3-6 months before possession
 - Show property in occupied state
 - Target seamless tenant transition
-- Minimize vacancy period
+- Minimise vacancy period
 - Provide "subject to possession" disclaimer
 
 **After Vacation but During Works**:
@@ -708,7 +708,7 @@ Need help conducting property assessments, planning for lease end obligations, o
 - Make good requirements clearly defined
 - Maintenance and outgoings responsibilities clear
 
-## Financial Optimization
+## Financial Optimisation
 
 ### 1. Tax-Effective Property Management
 
@@ -743,7 +743,7 @@ Need help conducting property assessments, planning for lease end obligations, o
 - Reasonable treatment of minor issues
 - Professional communication throughout
 
-### 3. Minimizing Vacancy Costs
+### 3. Minimising Vacancy Costs
 
 **Holding Costs During Vacancy**:
 - Rates and land tax
@@ -753,7 +753,7 @@ Need help conducting property assessments, planning for lease end obligations, o
 - Marketing costs
 - Lost rental income
 
-**Strategies to Minimize**:
+**Strategies to Minimise**:
 - Start marketing early
 - Price competitively but appropriately
 - Professional presentation
@@ -883,7 +883,7 @@ Need help conducting property assessments, planning for lease end obligations, o
 
 **3-6 Months Before**:
 - [ ] Monitor tenant make good progress
-- [ ] Finalize contractor bookings for landlord works
+- [ ] Finalise contractor bookings for landlord works
 - [ ] Begin marketing if appropriate
 - [ ] Prepare property marketing materials
 - [ ] Update lease terms and conditions if needed
@@ -1017,7 +1017,7 @@ Strategic timing prevents rushed work and ensures quality outcomes:
 - Begin discussions with landlord about specific expectations
 - Obtain 3 detailed quotes from reputable make good contractors
 - Review landlord's standard of work expectations
-- Identify any items requiring extended lead times (specialized trades, materials)
+- Identify any items requiring extended lead times (specialised trades, materials)
 - Confirm final make good timeframe allowed under lease
 
 ### 4-5 Months Before Lease End
@@ -1037,7 +1037,7 @@ Strategic timing prevents rushed work and ensures quality outcomes:
 - Walk through premises identifying any unclear requirements
 - Clarify expectations on finishes and standards
 - Agree on inspection process and timing
-- Finalize scope of works
+- Finalise scope of works
 - Arrange removal/disposal services for fixtures and equipment
 
 ### 6-8 Weeks Before Lease End
@@ -1057,7 +1057,7 @@ Strategic timing prevents rushed work and ensures quality outcomes:
 - Address any deficiencies identified
 - Arrange final inspection
 - Obtain sign-off on completed works
-- Organize final clean
+- Organise final clean
 
 ## Avoiding Common Planning Failures
 
@@ -1141,7 +1141,7 @@ Assumptions about what's required or acceptable lead to disputes and rejected wo
 - Shopfront and signage reinstatement
 - Lighting and electrical changes reversal
 - Storage and back-of-house area restoration
-- Grease trap and specialized equipment removal
+- Grease trap and specialised equipment removal
 
 **Planning Considerations**:
 - Retail make good often complex due to extensive shopfitting
@@ -1153,13 +1153,13 @@ Assumptions about what's required or acceptable lead to disputes and rejected wo
 **Common Make Good Requirements**:
 - Mezzanine or racking system removal
 - Floor repairs from heavy equipment
-- Specialized equipment removal
+- Specialised equipment removal
 - Office area restoration within warehouse
 - External yard area reinstatement
-- Specialized flooring (epoxy coating) restoration
+- Specialised flooring (epoxy coating) restoration
 
 **Planning Considerations**:
-- Equipment removal may require specialized contractors
+- Equipment removal may require specialised contractors
 - Floor slab repairs can be significant cost item
 - Environmental assessment may be required if chemical storage involved
 - Timing around operational shutdown
@@ -1265,7 +1265,7 @@ Specialists ensure:
 - [ ] Obtain multiple detailed make good quotes
 - [ ] Meet with landlord to clarify requirements
 - [ ] Select make good contractor
-- [ ] Finalize budget and timeline
+- [ ] Finalise budget and timeline
 
 **3 Months Before Lease End**:
 - [ ] Confirm contractor booking
@@ -1467,7 +1467,7 @@ Based on investigation findings, specialists develop comprehensive remediation s
 - Prioritization of defects by severity and risk
 - Selection of appropriate remediation methods
 - Materials specification ensuring compliance and durability
-- Work sequencing minimizing building disruption
+- Work sequencing minimising building disruption
 - Budget estimation and cost-benefit analysis
 - Timeframe development
 - Identification of temporary measures if immediate remediation isn't feasible
@@ -1542,7 +1542,7 @@ Comprehensive project documentation protects your investment:
 
 Remediation in operational buildings requires careful management:
 
-- Staging work to minimize tenant disruption
+- Staging work to minimise tenant disruption
 - After-hours or weekend work scheduling
 - Temporary relocation of building functions
 - Noise, dust, and access management
@@ -1593,7 +1593,7 @@ Regular maintenance identifies and addresses minor issues before they become maj
 Professional assessments provide early warning of developing problems:
 
 - Annual or biennial comprehensive building inspections
-- Specialized assessments for high-risk elements
+- Specialised assessments for high-risk elements
 - Long-term maintenance planning
 - Budget forecasting for anticipated works
 
@@ -1644,7 +1644,7 @@ Early intervention prevents minor defects from becoming major structural problem
 
 ## Conclusion
 
-Building defect remediation is a specialized field requiring expert assessment, proper planning, and professional execution. Whether addressing water ingress, structural issues, facade problems, or building services defects, qualified remediation specialists provide comprehensive solutions that protect your property investment and ensure safe, functional commercial spaces.
+Building defect remediation is a specialised field requiring expert assessment, proper planning, and professional execution. Whether addressing water ingress, structural issues, facade problems, or building services defects, qualified remediation specialists provide comprehensive solutions that protect your property investment and ensure safe, functional commercial spaces.
 
 If you've identified building defects in your commercial property or want proactive assessment to prevent future problems, don't delay professional consultation. Our experienced team provides comprehensive defect investigation, remediation design, and expert implementation tailored to your property's specific needs. Contact us today for a thorough building assessment and remediation solutions that deliver lasting results.`
   },
@@ -1786,7 +1786,7 @@ Effective slab rectification requires specialist expertise and appropriate techn
 
 For slabs with voids beneath or minor settlement:
 
-**Process**: Holes are drilled through the slab and a specialized grout mixture is pumped beneath the concrete, filling voids and hydraulically lifting the slab to correct levels.
+**Process**: Holes are drilled through the slab and a specialised grout mixture is pumped beneath the concrete, filling voids and hydraulically lifting the slab to correct levels.
 
 **Advantages**:
 - Cost-effective for large areas
@@ -1813,7 +1813,7 @@ A modern alternative to traditional slab jacking:
 
 **Limitations**:
 - Higher material cost than cement grout
-- Requires specialized equipment and training
+- Requires specialised equipment and training
 
 ### 3. Underpinning
 
@@ -1851,9 +1851,9 @@ When rectification isn't feasible or cost-effective:
 
 ### 5. Overlay Systems
 
-For surface leveling without addressing structural issues:
+For surface levelling without addressing structural issues:
 
-**Process**: Self-leveling compounds or new concrete layers are applied over existing slabs to create level surfaces.
+**Process**: Self-levelling compounds or new concrete layers are applied over existing slabs to create level surfaces.
 
 **Appropriate for**:
 - Minor surface irregularities
@@ -1933,7 +1933,7 @@ Tenants causing slab damage through excessive loads or poor maintenance may face
 
 ## Conclusion
 
-Slab rectification is a specialized field requiring expert assessment and appropriate remediation techniques. Early intervention prevents minor settlement from becoming major structural problems, saves money, and maintains property functionality and value.
+Slab rectification is a specialised field requiring expert assessment and appropriate remediation techniques. Early intervention prevents minor settlement from becoming major structural problems, saves money, and maintains property functionality and value.
 
 If you've noticed signs of slab movement or settlement in your commercial or industrial property, don't delay investigation. Professional assessment identifies the extent of issues and appropriate solutions, protecting your property investment and ensuring safe, functional floor systems. Contact our specialist team today for comprehensive slab assessment and expert rectification solutions tailored to your property's specific needs.`
   },
@@ -2598,7 +2598,7 @@ Professionals also have the tools and experience to handle complex requirements,
 
 Make goods are a crucial part of the end-of-lease process, ensuring compliance with agreements, avoiding disputes, and maintaining positive landlord relationships. By understanding their responsibilities and investing in professional services, tenants can ensure a seamless handover and focus on their next steps with peace of mind.
 
-If you're approaching the end of your lease and want to ensure everything is handled perfectly, contact us today. Our expert team specialises in efficient, reliable make-good services tailored to your needs. Don't leave it to chance—let us handle the details so you can move on without stress.`
+If you're approaching the end of your lease and want to ensure everything is handled perfectly, contact us today. Our expert team specialises in efficient, reliable make-good services tailored to your specific needs. Let us take the stress out of property restoration so you can focus on what's next.`
   },
   {
     id: "5",
@@ -2631,7 +2631,7 @@ The new year is a time of change and renewal, and there's no better way to embra
 
 ## Conclusion:
 
-As we embark on this journey into the new year, let's not forget the importance of starting fresh and setting ourselves up for success. At MakeGOOD.Melbourne, we're committed to helping you achieve your goals and realize the full potential of your property. Whether you're a landlord preparing to list your property for lease or a tenant preparing to move on to new opportunities, our makegood services are here to support you every step of the way. Contact us today to learn more about how we can help you make the most of the new year and beyond.`
+As we embark on this journey into the new year, let's not forget the importance of starting fresh and setting ourselves up for success. At MakeGOOD.Melbourne, we're committed to helping you achieve your goals and realise the full potential of your property. Whether you're a landlord preparing to list your property for lease or a tenant preparing to move on to new opportunities, our makegood services are here to support you every step of the way. Contact us today to learn more about how we can help you make the most of the new year and beyond.`
   },
   {
     id: "6",
@@ -2776,7 +2776,7 @@ The life of a property agent is a delicate balancing act, requiring them to wear
 
 Our make good services are not here to take away from the capabilities of these talented professionals but to provide them with a valuable resource, especially in those final acts of the property management symphony. These closing scenes include handling the complex repairs, renovations, and maintenance tasks necessary to return a property to its original condition.
 
-Imagine a seasoned chef preparing a gourmet meal. While they excel in crafting delicious dishes, they might not have the expertise or time to manage every detail of the restaurant's interior. That's where an interior designer comes in. They specialize in creating an ambiance that complements the culinary experience. In this analogy, the agent is the chef, and our make good services are the interior designers.
+Imagine a seasoned chef preparing a gourmet meal. While they excel in crafting delicious dishes, they might not have the expertise or time to manage every detail of the restaurant's interior. That's where an interior designer comes in. They specialise in creating an ambiance that complements the culinary experience. In this analogy, the agent is the chef, and our make good services are the interior designers.
 
 We take pride in being the specialists who step in at the right moment to ensure that the property is in its finest form when a tenant's journey comes to an end. This includes repairing structural issues, refreshing the aesthetics, and performing thorough maintenance.
 
