@@ -18,6 +18,7 @@ import conditionReportImage from "@/assets/blog/condition-report.webp";
 import leaseTransitionsImage from "@/assets/blog/lease-transitions.webp";
 import makeGoodServicesImage from "@/assets/blog/make-good-services.webp";
 import tenantLandlordImage from "@/assets/blog/tenant-landlord-communication.webp";
+import smoothMakeGoodImage from "@/assets/blog/smooth-make-good-experience.webp";
 
 const Blog = () => {
   const getImage = (imagePath: string) => {
@@ -35,6 +36,7 @@ const Blog = () => {
     if (imagePath.includes('lease-transitions')) return leaseTransitionsImage;
     if (imagePath.includes('make-good-services')) return makeGoodServicesImage;
     if (imagePath.includes('tenant-landlord-communication')) return tenantLandlordImage;
+    if (imagePath.includes('smooth-make-good-experience')) return smoothMakeGoodImage;
     return cleaningImage;
   };
   return (
