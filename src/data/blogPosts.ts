@@ -17,92 +17,43 @@ export const blogPosts: BlogPost[] = [
     excerpt: "At the end of a commercial lease, tenants and real estate agents often face the challenging task of restoring the property to its original condition. It requires meticulous attention to detail to meet lease obligations. That's where our professional cleaning services come in. We provide a comprehensive solution designed to save you time, effort, and stress.",
     image: "/src/assets/blog/cleaning-services.webp",
     content: `At the end of a commercial lease, tenants and real estate agents often face the challenging task of restoring the property to its original condition. It requires meticulous attention to detail to meet lease obligations. That's where our professional cleaning services come in. We provide a comprehensive solution designed to save you time, effort, and stress.
+...
+Contact us today to discuss your needs and receive a tailored quote. Let us handle the hard work so you can focus on what's next.`
+  },
+  {
+    id: "4",
+    slug: "love-your-property",
+    title: "Love Your Property",
+    date: "1 February 2024",
+    excerpt: "As the month of February unfolds there's no better time to extend that love to your property. Join us as we explore how our make good services can bring a touch of love and renewal to your property this February.",
+    image: "/src/assets/blog/property-transformation.webp",
+    content: `Love Your Property
 
-Specialising in commercial offices and industrial warehouses, we ensure your property is left in move-in-ready condition.
+1 Feb
 
-## What We Offer
+Transformations for February
 
-Our end-of-lease cleaning services go beyond the basics to ensure every corner of your property is spotless and compliant with make-good requirements. Here are some of the end of lease cleaning solutions we provide:
+As the month of February unfolds, love is in the air and there's no better time to extend that love to your property. At MakeGOOD.Melbourne, we understand the importance of nurturing and maintaining your space to create a work place you truly love. Join us as we explore how our make good services can bring a touch of love and renewal to your property this February.
 
-### 1. Steam Cleaning of Carpets
+## Fall in Love Again:
 
-Heavy foot traffic can leave carpets stained and worn. Our advanced steam cleaning methods:
+February is not just about romantic love; it's also a time to rekindle your love for your property. Just like any relationship, properties require care and attention to thrive. Whether it's addressing wear and tear from everyday use or updating outdated features, our makegood services are designed to help you fall in love with your property all over again. From minor touch-ups to complete renovations, our expert team is here to bring your vision to life and create a space you'll love going work to.
 
-- Remove deep-seated dirt, allergens, and stains.
-- Revitalise carpets, leaving them fresh and looking as close to new as possible.
+## Renewal for Autumn:
 
-### 2. Window Cleaning
+As summer transitions into autumn, it's essential to prepare your property for the changing season. From cleaning out gutters and inspecting heating systems to refreshing landscaping and updating decor, our make good services can help ensure your property is ready to face whatever autumn may bring. By taking care of essential maintenance tasks now, you can enjoy the beauty of the season without the stress of property upkeep. Let us help you create a space that's not only beautiful but also functional and comfortable year-round.
 
-Crystal-clear windows make a significant difference in how a property is perceived. We:
+## Creating Comfort and Warmth:
 
-- Clean interior and exterior windows, including hard-to-reach areas.
-- Ensure streak-free, gleaming glass for a polished finish.
+With cooler temperatures on the horizon, now is the perfect time to make sure your property is cozy and inviting. Our make good services go beyond cosmetic enhancements to address practical concerns such as energy efficiency and insulation. Whether it's replacing drafty windows, insulating walls, or installing energy-efficient heating systems, we can help you create a space that's not only aesthetically pleasing but also comfortable and cost-effective to maintain. Let us take care of the details so you can enjoy the warmth and comfort of your property all winter long.
 
-### 3. Cleaning of Amenities
+## Enhancing Curb Appeal:
 
-Bathrooms and kitchens are among the most used areas in any commercial property. We:
+First impressions matter, especially when it comes to your property. This February, why not give your property a fresh new look with our makegood services? From exterior painting and landscaping to repairing driveways and pathways, we can help enhance your property's curb appeal and make it stand out from the crowd. Whether you're preparing to sell or simply want to impress your clients, our expert team can help you create a welcoming and attractive exterior that reflects the love and care you have for your property.
 
-- Deep-clean toilets, sinks, and countertops.
-- Sanitise high-touch surfaces to ensure hygiene.
-- Remove stubborn grime and stains from tiles and fixtures.
+## Conclusion:
 
-### 4. Air Conditioning Registers
-
-Dusty or dirty air conditioning vents can detract from the overall appearance and air quality of a space. We:
-
-- Thoroughly clean and sanitise AC registers.
-- Enhance the air quality and ensure vents look spotless.
-
-## Additional Make-Good Services
-
-In addition to cleaning, we offer specialised services to address common end-of-lease restoration needs:
-
-### 1. Ceiling Tile Cleaning or Replacement
-
-Ceiling tiles often show signs of wear, such as stains or discolouration. We:
-
-- Clean tiles to remove dirt and marks.
-- Replace damaged or discoloured tiles for a uniform appearance.
-
-### 2. Wall Repairs and Paint Touch-Ups
-
-Walls can suffer from dents, scratches, and holes during a tenancy. Our services include:
-
-- Patching and repairing damaged walls.
-- Touching up paint to restore walls to their original condition.
-
-### 3. Replacement of LED Fluorescent Lights
-
-Lighting is essential for creating a professional and inviting atmosphere. We:
-
-- Replace faulty or dim LED fluorescent lights.
-- Ensure all fixtures are functioning and meet energy efficiency standards.
-
-## Why Choose Us?
-
-### Expertise in Commercial Spaces
-
-We specialise in cleaning and restoring commercial offices and industrial warehouses, ensuring your property meets the expectations of landlords and potential tenants.
-
-### Comprehensive Solutions
-
-Our integrated approach saves you from coordinating multiple service providers. From deep cleaning to light replacements, we handle it all.
-
-### Time and Cost Efficiency
-
-By offering tailored services, we minimise downtime and deliver cost-effective solutions that help you meet tight deadlines.
-
-### High Standards of Quality
-
-Our team is committed to excellence, using professional-grade equipment and eco-friendly products to achieve outstanding results.
-
-## The Importance of Professional Cleaning Services
-
-Ensuring a property is clean and restored isn't just about fulfilling lease obligations—it's about creating a positive impression. For tenants, it means safeguarding your bond and maintaining a good relationship with the landlord. For agents, it means presenting a property that's ready to lease quickly, attracting potential tenants with its pristine condition.
-
-## Get in Touch
-
-Whether you're a tenant vacating a commercial property or a real estate agent preparing a space for its next lease, our end-of-lease cleaning services are here to help. Contact us today to discuss your needs and receive a tailored quote. Let us handle the hard work so you can focus on what's next.`
+This February, let's celebrate love in all its forms, including the love we have for our properties. Whether you're a property owner looking to refresh your space or an agent preparing for new tenants, our make good services are here to help you create a property you'll love. Contact us today to learn more about how we can bring a touch of love and renewal to your property this February.`
   },
   {
     id: "2",

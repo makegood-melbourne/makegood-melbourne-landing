@@ -7,6 +7,7 @@ import { blogPosts } from "@/data/blogPosts";
 import cleaningImage from "@/assets/blog/cleaning-services.webp";
 import paintingImage from "@/assets/blog/painting-wall.webp";
 import warehouseImage from "@/assets/blog/warehouse-makegood.webp";
+import propertyImage from "@/assets/blog/property-transformation.webp";
 
 const BlogPost = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -16,6 +17,7 @@ const BlogPost = () => {
     if (imagePath.includes('cleaning-services')) return cleaningImage;
     if (imagePath.includes('painting-wall')) return paintingImage;
     if (imagePath.includes('warehouse-makegood')) return warehouseImage;
+    if (imagePath.includes('property-transformation')) return propertyImage;
     return cleaningImage;
   };
 
