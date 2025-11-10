@@ -10,6 +10,525 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: "25",
+    slug: "car-park-repairs-line-marking-make-good",
+    title: "Car Park Repairs and Line Marking: Essential Make Good and Maintenance for Commercial Properties",
+    date: "1 March 2025",
+    excerpt: "Car parks are high-traffic areas subject to constant wear, requiring regular maintenance, repairs, and line marking renewal. Whether for end-of-lease make good obligations, property presentation, or safety compliance, professional car park restoration ensures functionality, safety, and property value. Learn about repair processes, line marking standards, and make good requirements.",
+    image: "/src/assets/blog/car-park-line-marking.jpg",
+    content: `Commercial car parks endure constant vehicular traffic, weather exposure, and mechanical stress, resulting in surface deterioration, faded line marking, and structural damage over time. Whether addressing end-of-lease make good obligations, maintaining property standards, or ensuring safety compliance, car park repairs and line marking are essential maintenance activities for commercial property owners and tenants. This comprehensive guide explores car park assessment, repair processes, line marking standards, and make good considerations for Melbourne commercial properties.
+
+## Understanding Car Park Deterioration
+
+### Common Car Park Issues
+
+**Surface Deterioration**:
+- Cracking in asphalt or concrete surfaces
+- Pothole formation from traffic and water penetration
+- Surface delamination or spalling (concrete)
+- Rutting and deformation (asphalt)
+- Oil and chemical staining
+- General wear from constant vehicle movement
+
+**Line Marking Degradation**:
+- Faded or completely worn line marking
+- Inconsistent or unclear parking bay delineation
+- Missing directional arrows and symbols
+- Non-compliant or outdated marking configurations
+- Damaged or peeling line paint or thermoplastic
+
+**Structural and Drainage Problems**:
+- Concrete cracking and structural movement
+- Failed expansion joints
+- Drainage issues causing water pooling
+- Damaged kerbs and wheel stops
+- Deteriorated or damaged bollards
+- Subsidence or settlement issues
+
+**Safety Concerns**:
+- Trip hazards from surface defects
+- Poor visibility from faded markings
+- Inadequate lighting (related infrastructure)
+- Damaged safety barriers or wheel stops
+- Non-compliant disabled parking configurations
+
+### Why Car Park Condition Matters
+
+**Safety and Liability**:
+- Vehicle damage from potholes or surface defects
+- Pedestrian trip and fall risks
+- Public liability exposure for property owners
+- WorkSafe compliance for employee safety
+- Insurance implications
+
+**Property Presentation and Value**:
+- First impression for visitors and tenants
+- Indicator of overall property maintenance
+- Property value and marketability impact
+- Tenant attraction and retention
+- Professional appearance standards
+
+**Regulatory Compliance**:
+- Australian Standards for car park design and marking
+- Disability Discrimination Act (DDA) compliance
+- Council requirements and permits
+- Lease compliance and make good obligations
+- Building Code of Australia requirements
+
+## Car Park Surface Repairs
+
+### Assessment and Scope Definition
+
+**Professional Inspection**:
+- Comprehensive surface condition survey
+- Identification of all defects requiring repair
+- Structural assessment if significant cracking present
+- Drainage adequacy evaluation
+- Traffic management requirements
+- Photographic documentation of existing conditions
+
+**Categorising Repairs**:
+- **Minor repairs**: Small cracks, isolated potholes, cosmetic defects
+- **Moderate repairs**: Multiple defects, section resurfacing, drainage improvements
+- **Major repairs**: Structural repairs, full resurfacing, extensive reconstruction
+- **Emergency repairs**: Immediate safety hazards requiring urgent remediation
+
+### Asphalt Car Park Repairs
+
+**Pothole Repairs**:
+
+**Temporary Repairs** (cold mix asphalt):
+- Quick application during wet or cold weather
+- Lower cost temporary solution
+- Shorter lifespan (months rather than years)
+- Suitable for emergency repairs
+
+**Permanent Repairs** (hot mix asphalt):
+- Professional application using hot asphalt
+- Proper compaction and bonding
+- Long-lasting repair (years of service)
+- Scheduled during suitable weather conditions
+
+**Process**:
+1. Saw cut or clean edges of damaged area
+2. Remove damaged asphalt and prepare base
+3. Apply tack coat for bonding
+4. Install and compact new hot mix asphalt
+5. Seal edges if required
+
+**Crack Sealing**:
+- Clean cracks thoroughly (routing or compressed air)
+- Apply hot rubberised crack sealant
+- Prevents water penetration and crack expansion
+- Extends pavement life significantly
+- Requires dry conditions for application
+
+**Asphalt Resurfacing** (overlays):
+- Applied over existing asphalt in reasonable condition
+- Typically 30-50mm thickness
+- Corrects minor surface irregularities
+- Provides fresh, uniform surface
+- Cost-effective alternative to full reconstruction
+- Requires proper surface preparation and priming
+
+### Concrete Car Park Repairs
+
+**Concrete Crack Repairs**:
+
+**Fine Cracks** (non-structural):
+- Epoxy or polyurethane crack injection
+- Prevents water penetration
+- Stabilises crack movement
+- Minimal surface disruption
+
+**Wide Cracks or Structural Cracks**:
+- Saw cut and remove damaged concrete
+- Install reinforcement if required
+- Pour new concrete with proper bonding agents
+- Joint sealing and finishing
+- Curing period before use
+
+**Concrete Spalling Repairs**:
+- Remove loose or delaminated concrete
+- Clean and prepare substrate
+- Apply bonding agent
+- Install repair mortar or concrete patch
+- Smooth finish to match existing surface
+- Proper curing essential
+
+**Full Panel Replacement**:
+- Remove entire damaged concrete panel
+- Prepare subbase (repair if necessary)
+- Install reinforcement mesh or fibres
+- Pour new concrete panel
+- Create control joints
+- Finishing and curing (typically 7-14 days before traffic)
+- Can be phased to maintain partial car park operation
+
+### Epoxy and Polymer Coatings
+
+**Epoxy Floor Coatings** (particularly for basement or covered car parks):
+
+**Benefits**:
+- Seals concrete surface against moisture and chemicals
+- Easy to clean and maintain
+- Reflective finish improves lighting effectiveness
+- Dust-proof surface
+- Available in various colours for zoning
+- Durable and long-lasting
+
+**Application Process**:
+1. Shot blasting or grinding to profile concrete
+2. Repair cracks and defects
+3. Apply epoxy primer
+4. Apply epoxy basecoat
+5. Broadcast quartz aggregate for slip resistance
+6. Apply clear epoxy topcoat
+7. Line marking as required
+8. Curing period before use (typically 24-72 hours)
+
+**Considerations**:
+- Requires dry concrete and controlled conditions
+- Professional application essential
+- Initial cost higher than standard repairs
+- Long-term cost savings from reduced maintenance
+
+### Drainage Repairs
+
+**Surface Drainage Issues**:
+- Correct ponding areas through localised resurfacing or grinding
+- Install or repair drainage pits and grates
+- Clear blocked drainage lines
+- Improve grades and falls to drainage points
+- Install channel drains if required
+
+**Subsurface Drainage**:
+- Repair or replace failed stormwater pipes
+- Install new drainage infrastructure if inadequate
+- Prevent water infiltration damaging pavement structure
+
+## Line Marking Services
+
+### Line Marking Standards and Compliance
+
+**Relevant Australian Standards**:
+- AS 2890.1: Parking facilities - Off-street car parking
+- AS 2890.6: Parking facilities - Off-street parking for people with disabilities
+- AS 1742.1: Manual of uniform traffic control devices - General introduction and index of signs
+
+**Standard Requirements**:
+- **Car parking bay dimensions**: Typically 2.4m-2.6m width × 5.4m-5.5m length
+- **Accessible parking bays**: Minimum 3.2m width with 2.4m shared area
+- **Line width**: Typically 75-100mm for standard marking
+- **Aisle widths**: Adequate for vehicle manoeuvring (varies by angle)
+- **Directional arrows and symbols**: Clear and compliant designs
+
+### Line Marking Methods
+
+**Paint Line Marking**:
+
+**Water-Based Road Paint**:
+- Most economical option
+- Suitable for low-traffic areas
+- Shorter lifespan (6-18 months depending on traffic)
+- Quick application and drying
+- Lower durability in high-traffic areas
+
+**Chlorinated Rubber Paint**:
+- More durable than water-based
+- Better adhesion and wear resistance
+- Suitable for moderate traffic areas
+- Lifespan approximately 12-24 months
+- Good cost-to-performance ratio
+
+**Application Process**:
+- Clean surface thoroughly (pressure washing or sweeping)
+- Mask or tape as required for precision
+- Apply paint using sprayer or applicator
+- Typically two coats for optimal coverage
+- Drying time before traffic (hours)
+
+**Thermoplastic Line Marking**:
+
+**Benefits**:
+- Highly durable (3-5+ years in high traffic)
+- Excellent visibility and reflectivity
+- Quick setting time (minutes)
+- Superior abrasion resistance
+- Cost-effective long-term solution for high-traffic areas
+
+**Application Process**:
+- Surface preparation (cleaning and priming if required)
+- Heat thermoplastic material to liquid state
+- Apply using extrusion screed or spray application
+- Embed glass beads for night-time reflectivity
+- Sets within minutes, traffic-ready quickly
+
+**Cost Considerations**:
+- Higher initial cost than paint
+- Lower lifetime cost due to longevity
+- Ideal for main circulation routes and high-wear areas
+
+**Epoxy Line Marking** (typically for internal car parks):
+- Extremely durable option
+- Excellent adhesion to concrete and coated surfaces
+- Long lifespan (5+ years)
+- Available in various colours for zoning
+- Higher cost, used selectively for premium applications
+
+### Line Marking Scope and Design
+
+**Typical Line Marking Elements**:
+
+**Parking Bay Lines**:
+- Individual bay delineation
+- Angle parking or perpendicular configurations
+- Accessible parking bays (wider with signage)
+- Motorcycle or compact car bays if designated
+
+**Circulation and Directional Marking**:
+- Directional arrows showing traffic flow
+- Give way or stop lines
+- Turning guidelines and corner markings
+- Speed limit markings
+- Pedestrian crossings or walkways
+
+**Specialty Markings**:
+- Reserved parking designations (visitor, staff, loading)
+- Disabled parking symbols and signage
+- Electric vehicle charging bay markings
+- "No Parking" or restricted zones
+- Safety zone markings (yellow)
+
+**Colour Standards**:
+- White: Standard parking bay and circulation marking
+- Yellow: No parking, restricted zones, safety areas
+- Blue: Accessible parking designation (in conjunction with signage)
+- Green: Sometimes used for EV charging or visitor parking
+
+### Line Marking Process
+
+**Planning and Design**:
+- Site measurement and existing marking documentation
+- Determine bay layout optimising space utilisation
+- Compliance check against Australian Standards
+- Design circulation patterns for safety and efficiency
+- Mark locations for accessible parking and other designations
+
+**Preparation**:
+- Remove existing line marking if worn or non-compliant
+- Clean surface thoroughly (pressure washing, sweeping, blowing)
+- Repair surface defects that interfere with marking
+- Dry surface completely before marking
+- Set out marking using measuring and string lines
+
+**Application**:
+- Mask or tape edges for precision where required
+- Apply line marking material (paint or thermoplastic)
+- Install reflective beads if required
+- Apply symbols, arrows, and text stencils
+- Quality check for coverage, width, and accuracy
+
+**Curing and Traffic**:
+- Paint: Hours to dry (depends on product and weather)
+- Thermoplastic: Minutes to set and ready for traffic
+- Final inspection and any touch-ups
+
+## Make Good Obligations for Car Parks
+
+### Tenant Responsibilities
+
+**Typical Lease Requirements**:
+- Return car park in "good condition, fair wear and tear excepted"
+- Repair damage caused by tenant operations (oil spills, heavy vehicle damage)
+- Restore line marking to clear, compliant condition
+- Remove tenant-specific markings or designations
+- Repair areas damaged by tenant alterations (bollards, signage)
+
+**Common Make Good Scenarios**:
+
+**Minor Make Good**:
+- Line marking refresh throughout car park
+- Repair isolated potholes or defects
+- Clean oil stains and marks
+- Restore standard parking configuration
+
+**Moderate Make Good**:
+- Section resurfacing of damaged areas
+- Complete line remarking with updated layout
+- Repair multiple defects and drainage issues
+- Restore bollards, wheel stops, and signage
+
+**Major Make Good**:
+- Full car park resurfacing
+- Complete structural repairs
+- New line marking configuration
+- Comprehensive restoration to original condition or better
+
+**Fair Wear and Tear Considerations**:
+- Normal fading of line marking over tenancy duration
+- Minor surface wear from appropriate vehicle use
+- Aging consistent with typical car park lifecycle
+- Not responsible for deterioration beyond reasonable use
+
+**Disputes and Resolution**:
+- Document car park condition at lease commencement (dilapidation report)
+- Photographic evidence throughout and at end of tenancy
+- Independent assessment if disputes arise
+- Negotiation of scope and cost sharing if appropriate
+
+### Landlord Considerations
+
+**Between Tenancy Works**:
+- Ideal timing for major car park repairs and resurfacing
+- No operational disruption or tenant negotiations
+- Enhances property presentation for new leasing
+- Can achieve better rental rates with well-maintained car park
+
+**Property Maintenance Strategy**:
+- Regular inspection and minor repairs prevents major deterioration
+- Scheduled line marking refresh (every 2-3 years)
+- Address drainage and structural issues proactively
+- Budget for lifecycle replacement (asphalt 15-25 years, concrete 25-50 years)
+
+## Cost Considerations
+
+### Typical Cost Ranges (2025 Melbourne)
+
+**Surface Repairs**:
+- **Asphalt pothole repairs**: $150-$400 per pothole (depending on size)
+- **Asphalt crack sealing**: $5-$15 per linear metre
+- **Asphalt resurfacing**: $35-$65 per square metre
+- **Concrete crack repairs**: $200-$800 per crack (depends on severity)
+- **Concrete panel replacement**: $180-$350 per square metre
+- **Epoxy floor coating**: $40-$80 per square metre
+
+**Line Marking**:
+- **Paint line marking**: $1.50-$3.50 per linear metre
+- **Thermoplastic line marking**: $4.00-$8.00 per linear metre
+- **Symbols and arrows**: $50-$150 each
+- **Minimum charge typically applies for small jobs**
+
+**Full Car Park Rehabilitation**:
+- Small car park (500sqm): $25,000-$50,000
+- Medium car park (1,500sqm): $60,000-$120,000
+- Large car park (5,000sqm): $180,000-$350,000+
+- Costs vary significantly based on scope, access, and existing condition
+
+### Budget Planning
+
+**Obtaining Accurate Quotes**:
+- Site inspection by contractors for accurate assessment
+- Detailed scope specification
+- Multiple quotes from licensed contractors
+- Verify insurance, licensing, and capability
+- References from similar projects
+
+**Timing Considerations**:
+- Weather-dependent works (dry conditions essential)
+- Avoid peak business periods if operational disruption expected
+- Allow adequate time for repairs and curing
+- Consider staging if car park must remain partially operational
+
+## Selecting Qualified Contractors
+
+### Essential Contractor Requirements
+
+**Licensing and Insurance**:
+- Appropriate contractor licensing (commercial builder or specialist)
+- Public liability insurance (minimum $20 million)
+- WorkCover insurance for all workers
+- Traffic management certification if working near roads
+
+**Experience and Capability**:
+- Demonstrated car park repair and line marking experience
+- Appropriate equipment (paving equipment, line marking machines)
+- Safety management systems
+- Quality products and materials
+- References from recent similar projects
+
+**Scope of Services**:
+- Some contractors offer combined services (repairs and line marking)
+- Others specialise in single discipline
+- Project coordination if multiple contractors required
+
+### Traffic Management and Safety
+
+**During Construction**:
+- Staged works to maintain partial car park operation if possible
+- Clear signage and traffic direction
+- Pedestrian safety measures
+- Fencing or barriers around work areas
+- Communication with building occupants regarding access
+
+**Final Safety Checks**:
+- Ensure all surfaces trafficable before reopening
+- Clear, visible line marking and directional signs
+- Remove all equipment and temporary barriers
+- Final clean and inspection
+
+## Maintenance After Repairs
+
+### Extending Car Park Lifespan
+
+**Regular Inspections**:
+- Annual professional assessment
+- Early identification of defects
+- Prompt repair of minor issues preventing major problems
+- Documentation and tracking of condition over time
+
+**Preventive Maintenance**:
+- Regular cleaning to remove debris and contaminants
+- Immediate cleanup of oil spills and chemical stains
+- Drainage maintenance (clearing pits and grates)
+- Crack sealing before significant deterioration
+- Line marking touch-ups as needed
+
+**Scheduled Major Maintenance**:
+- Plan for resurfacing or overlay every 10-20 years (asphalt)
+- Structural assessment and repairs as required
+- Updated line marking configurations as standards evolve
+- Comprehensive refurbishment for property repositioning
+
+## Benefits of Professional Car Park Restoration
+
+### Immediate Benefits
+
+**Safety and Compliance**:
+- Elimination of trip and vehicle damage hazards
+- Clear, compliant parking bay and circulation marking
+- Reduced public liability risks
+- Improved safety for users and pedestrians
+
+**Operational Benefits**:
+- Clear bay delineation maximises parking efficiency
+- Improved traffic flow reduces congestion
+- Professional appearance welcomes visitors and tenants
+- Enhanced property presentation and value
+
+### Long-Term Benefits
+
+**Property Value and Marketability**:
+- Well-maintained car park indicates overall property care
+- Attracts quality tenants and commands better rents
+- Reduced vacancy periods
+- Enhanced property valuation
+
+**Cost Savings**:
+- Preventive maintenance avoids expensive major repairs
+- Extended pavement lifespan through timely intervention
+- Reduced liability and insurance claims
+- Lower ongoing maintenance costs
+
+## Conclusion
+
+Car park repairs and line marking are essential components of commercial property maintenance and end-of-lease make good obligations. Whether addressing deteriorated surfaces, faded line marking, or comprehensive rehabilitation, professional car park restoration ensures safety, compliance, and property value. From minor crack repairs to complete resurfacing and line marking, engaging qualified contractors delivers durable, compliant outcomes that enhance property presentation and functionality.
+
+Proactive maintenance prevents costly failures and extends car park lifespan, while strategic repairs during vacancy periods or as part of planned make good works ensure properties remain competitive and compliant. With proper planning, quality materials, and experienced contractors, car park restoration represents a sound investment in property infrastructure and tenant satisfaction.
+
+Need professional assessment of your car park condition or quotes for repairs and line marking? Our experienced team works with qualified contractors specialising in commercial car park restoration to deliver quality outcomes on time and within budget. Contact us today for a comprehensive car park assessment and detailed proposal tailored to your property's specific needs.`
+  },
+  {
     id: "24",
     slug: "facade-cladding-remediation-fireproof-compliance",
     title: "Façade Repairs and Cladding Remediation: Navigating Fireproof Compliance in Commercial Buildings",

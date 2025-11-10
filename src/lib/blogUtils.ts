@@ -22,6 +22,7 @@ import maximisingPropertyValueImage from "@/assets/blog/maximising-property-valu
 import yearEndPlanningImage from "@/assets/blog/year-end-planning.jpg";
 import polycarbonateRoofingImage from "@/assets/blog/polycarbonate-roofing.jpg";
 import facadeCladdingRemediationImage from "@/assets/blog/facade-cladding-remediation.jpg";
+import carParkLineMarkingImage from "@/assets/blog/car-park-line-marking.jpg";
 import { BlogPost } from "@/data/blogPosts";
 
 const imageMap: Record<string, string> = {
@@ -49,6 +50,7 @@ const imageMap: Record<string, string> = {
   'year-end-planning': yearEndPlanningImage,
   'polycarbonate-roofing': polycarbonateRoofingImage,
   'facade-cladding-remediation': facadeCladdingRemediationImage,
+  'car-park-line-marking': carParkLineMarkingImage,
 };
 
 export const getBlogImage = (imagePath: string): string => {
