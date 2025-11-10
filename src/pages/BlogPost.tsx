@@ -1,47 +1,15 @@
 import { useParams, Link } from "react-router-dom";
-import { ArrowLeft } from "lucide-react";
+import { Helmet } from "react-helmet-async";
+import { ArrowLeft, Clock, Calendar } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { blogPosts } from "@/data/blogPosts";
-import cleaningImage from "@/assets/blog/cleaning-services.webp";
-import paintingImage from "@/assets/blog/painting-wall.webp";
-import warehouseImage from "@/assets/blog/warehouse-makegood.webp";
-import propertyImage from "@/assets/blog/property-transformation.webp";
-import newYearImage from "@/assets/blog/new-year-makegood.webp";
-import officeStripOutImage from "@/assets/blog/office-strip-out.webp";
-import constructionMeetingImage from "@/assets/blog/construction-site-meeting.webp";
-import epoxyFlooringImage from "@/assets/blog/epoxy-flooring.webp";
-import palletRackingImage from "@/assets/blog/pallet-racking.webp";
-import commercialMakeGoodImage from "@/assets/blog/commercial-make-good.webp";
-import conditionReportImage from "@/assets/blog/condition-report.webp";
-import leaseTransitionsImage from "@/assets/blog/lease-transitions.webp";
-import makeGoodServicesImage from "@/assets/blog/make-good-services.webp";
-import tenantLandlordImage from "@/assets/blog/tenant-landlord-communication.webp";
-import smoothMakeGoodImage from "@/assets/blog/smooth-make-good-experience.webp";
+import { getBlogImage, calculateReadingTime, parseMarkdown } from "@/lib/blogUtils";
 
 const BlogPost = () => {
   const { slug } = useParams<{ slug: string }>();
   const post = blogPosts.find((p) => p.slug === slug);
-
-  const getImage = (imagePath: string) => {
-    if (imagePath.includes('cleaning-services')) return cleaningImage;
-    if (imagePath.includes('painting-wall')) return paintingImage;
-    if (imagePath.includes('warehouse-makegood')) return warehouseImage;
-    if (imagePath.includes('property-transformation')) return propertyImage;
-    if (imagePath.includes('new-year-makegood')) return newYearImage;
-    if (imagePath.includes('office-strip-out')) return officeStripOutImage;
-    if (imagePath.includes('construction-site-meeting')) return constructionMeetingImage;
-    if (imagePath.includes('epoxy-flooring')) return epoxyFlooringImage;
-    if (imagePath.includes('pallet-racking')) return palletRackingImage;
-    if (imagePath.includes('commercial-make-good')) return commercialMakeGoodImage;
-    if (imagePath.includes('condition-report')) return conditionReportImage;
-    if (imagePath.includes('lease-transitions')) return leaseTransitionsImage;
-    if (imagePath.includes('make-good-services')) return makeGoodServicesImage;
-    if (imagePath.includes('tenant-landlord-communication')) return tenantLandlordImage;
-    if (imagePath.includes('smooth-make-good-experience')) return smoothMakeGoodImage;
-    return cleaningImage;
-  };
 
   if (!post) {
     return (
@@ -63,25 +31,83 @@ const BlogPost = () => {
     );
   }
 
+  const readingTime = calculateReadingTime(post.content);
+  const postUrl = `https://makegood.melbourne/blog/${post.slug}`;
+  const imageUrl = getBlogImage(post.image);
+
   return (
     <div className="min-h-screen flex flex-col">
+      <Helmet>
+        <title>{post.title} | MakeGOOD Melbourne Blog</title>
+        <meta name="description" content={post.excerpt} />
+        <meta property="og:title" content={post.title} />
+        <meta property="og:description" content={post.excerpt} />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content={postUrl} />
+        <meta property="og:image" content={imageUrl} />
+        <meta property="article:published_time" content={new Date(post.date).toISOString()} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={post.title} />
+        <meta name="twitter:description" content={post.excerpt} />
+        <meta name="twitter:image" content={imageUrl} />
+        <link rel="canonical" href={postUrl} />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BlogPosting",
+            "headline": post.title,
+            "image": imageUrl,
+            "datePublished": new Date(post.date).toISOString(),
+            "dateModified": new Date(post.date).toISOString(),
+            "author": {
+              "@type": "Organization",
+              "name": "MakeGOOD Melbourne"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "MakeGOOD Melbourne",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://makegood.melbourne/logo.png"
+              }
+            },
+            "description": post.excerpt,
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": postUrl
+            }
+          })}
+        </script>
+      </Helmet>
+      
       <Navigation />
       
       <main className="flex-1 pt-20">
         <article className="container mx-auto px-4 py-12 max-w-4xl">
-          <Link to="/blog" className="inline-flex items-center text-accent hover:text-accent/80 transition-colors mb-8">
-            <ArrowLeft className="mr-2 h-4 w-4" />
-            Back to Blog
-          </Link>
+          <nav className="mb-8">
+            <Link to="/blog" className="inline-flex items-center text-accent hover:text-accent/80 transition-colors">
+              <ArrowLeft className="mr-2 h-4 w-4" />
+              Back to Blog
+            </Link>
+          </nav>
 
-          <div className="mb-6">
-            <div className="text-sm text-muted-foreground mb-3">{post.date}</div>
-            <h1 className="text-4xl md:text-5xl text-foreground mb-6">{post.title}</h1>
-          </div>
+          <header className="mb-6">
+            <h1 className="text-4xl md:text-5xl text-foreground mb-4">{post.title}</h1>
+            <div className="flex flex-wrap items-center gap-4 text-sm text-muted-foreground">
+              <span className="flex items-center gap-1">
+                <Calendar className="h-4 w-4" />
+                {post.date}
+              </span>
+              <span className="flex items-center gap-1">
+                <Clock className="h-4 w-4" />
+                {readingTime} min read
+              </span>
+            </div>
+          </header>
 
           <div className="aspect-video w-full overflow-hidden rounded-lg mb-8">
             <img 
-              src={getImage(post.image)}
+              src={imageUrl}
               alt={post.title}
               className="w-full h-full object-cover"
             />
@@ -98,13 +124,14 @@ const BlogPost = () => {
                 return (
                   <ul key={index} className="list-disc pl-6 mb-4 space-y-2">
                     {items.map((item, i) => (
-                      <li key={i} className="text-muted-foreground">{item.replace('- ', '')}</li>
+                      <li key={i} className="text-muted-foreground" dangerouslySetInnerHTML={{ __html: parseMarkdown(item.replace('- ', '')) }} />
                     ))}
                   </ul>
                 );
-              } else {
-                return <p key={index} className="text-muted-foreground mb-4 leading-relaxed">{paragraph}</p>;
+              } else if (paragraph.trim()) {
+                return <p key={index} className="text-muted-foreground mb-4 leading-relaxed" dangerouslySetInnerHTML={{ __html: parseMarkdown(paragraph) }} />;
               }
+              return null;
             })}
           </div>
 

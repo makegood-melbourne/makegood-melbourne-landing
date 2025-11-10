@@ -1,46 +1,26 @@
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Clock } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { blogPosts } from "@/data/blogPosts";
-import cleaningImage from "@/assets/blog/cleaning-services.webp";
-import paintingImage from "@/assets/blog/painting-wall.webp";
-import warehouseImage from "@/assets/blog/warehouse-makegood.webp";
-import propertyImage from "@/assets/blog/property-transformation.webp";
-import newYearImage from "@/assets/blog/new-year-makegood.webp";
-import officeStripOutImage from "@/assets/blog/office-strip-out.webp";
-import constructionMeetingImage from "@/assets/blog/construction-site-meeting.webp";
-import epoxyFlooringImage from "@/assets/blog/epoxy-flooring.webp";
-import palletRackingImage from "@/assets/blog/pallet-racking.webp";
-import commercialMakeGoodImage from "@/assets/blog/commercial-make-good.webp";
-import conditionReportImage from "@/assets/blog/condition-report.webp";
-import leaseTransitionsImage from "@/assets/blog/lease-transitions.webp";
-import makeGoodServicesImage from "@/assets/blog/make-good-services.webp";
-import tenantLandlordImage from "@/assets/blog/tenant-landlord-communication.webp";
-import smoothMakeGoodImage from "@/assets/blog/smooth-make-good-experience.webp";
+import { getBlogImage, sortBlogPostsByDate, calculateReadingTime } from "@/lib/blogUtils";
 
 const Blog = () => {
-  const getImage = (imagePath: string) => {
-    if (imagePath.includes('cleaning-services')) return cleaningImage;
-    if (imagePath.includes('painting-wall')) return paintingImage;
-    if (imagePath.includes('warehouse-makegood')) return warehouseImage;
-    if (imagePath.includes('property-transformation')) return propertyImage;
-    if (imagePath.includes('new-year-makegood')) return newYearImage;
-    if (imagePath.includes('office-strip-out')) return officeStripOutImage;
-    if (imagePath.includes('construction-site-meeting')) return constructionMeetingImage;
-    if (imagePath.includes('epoxy-flooring')) return epoxyFlooringImage;
-    if (imagePath.includes('pallet-racking')) return palletRackingImage;
-    if (imagePath.includes('commercial-make-good')) return commercialMakeGoodImage;
-    if (imagePath.includes('condition-report')) return conditionReportImage;
-    if (imagePath.includes('lease-transitions')) return leaseTransitionsImage;
-    if (imagePath.includes('make-good-services')) return makeGoodServicesImage;
-    if (imagePath.includes('tenant-landlord-communication')) return tenantLandlordImage;
-    if (imagePath.includes('smooth-make-good-experience')) return smoothMakeGoodImage;
-    return cleaningImage;
-  };
+  const sortedPosts = sortBlogPostsByDate(blogPosts);
+  
   return (
     <div className="min-h-screen flex flex-col">
+      <Helmet>
+        <title>Blog - Expert Make Good & Property Restoration Insights | MakeGOOD Melbourne</title>
+        <meta name="description" content="Expert insights on make good services, end of lease works, and property restoration in Melbourne. Learn from industry professionals about commercial property maintenance." />
+        <meta property="og:title" content="Blog - Expert Make Good Insights | MakeGOOD Melbourne" />
+        <meta property="og:description" content="Expert insights on make good services, end of lease works, and property restoration in Melbourne." />
+        <meta property="og:type" content="website" />
+        <link rel="canonical" href="https://makegood.melbourne/blog" />
+      </Helmet>
+      
       <Navigation />
       
       <main className="flex-1 pt-20">
@@ -53,17 +33,24 @@ const Blog = () => {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {blogPosts.map((post) => (
+            {sortedPosts.map((post) => (
               <Card key={post.id} className="border-border hover:shadow-lg transition-shadow overflow-hidden group">
                 <div className="aspect-video overflow-hidden">
                   <img 
-                    src={getImage(post.image)}
+                    src={getBlogImage(post.image)}
                     alt={post.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    loading="lazy"
                   />
                 </div>
                 <CardHeader>
-                  <div className="text-sm text-muted-foreground mb-2">{post.date}</div>
+                  <div className="flex items-center gap-3 text-sm text-muted-foreground mb-2">
+                    <span>{post.date}</span>
+                    <span className="flex items-center gap-1">
+                      <Clock className="h-3 w-3" />
+                      {calculateReadingTime(post.content)} min read
+                    </span>
+                  </div>
                   <h2 className="text-2xl text-card-foreground mb-3">{post.title}</h2>
                 </CardHeader>
                 <CardContent>
