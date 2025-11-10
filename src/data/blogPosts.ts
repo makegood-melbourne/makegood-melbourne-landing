@@ -10,6 +10,486 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: "32",
+    title: "Asbestos Management in Commercial Make Good: Safe Identification, Removal, and Compliance",
+    slug: "asbestos-management-commercial-make-good-safe-removal",
+    excerpt: "Asbestos-containing materials remain prevalent in older commercial buildings, requiring careful management during make good projects. Learn about asbestos identification, licensed removal procedures, health risks, legal requirements, and safe demolition practices for commercial properties.",
+    date: "2025-10-15",
+    image: "asbestos-management.jpg",
+    content: `
+Asbestos-containing materials (ACMs) were extensively used in Australian commercial buildings constructed or refurbished before the late 1980s and early 1990s. Despite the complete ban on asbestos use and importation in Australia from December 2003, these materials remain present in countless commercial properties across Melbourne. During make good and demolition projects, disturbing asbestos materials without proper management creates serious health risks for workers and building occupants, along with significant legal and financial consequences. This comprehensive guide explores asbestos identification, safe management procedures, licensed removal requirements, and compliance obligations for commercial make good projects.
+
+## Understanding Asbestos in Commercial Buildings
+
+### What is Asbestos?
+
+**Definition and Types**:
+Asbestos is a group of naturally occurring fibrous silicate minerals that were extensively used in building materials for their fire resistance, insulation properties, strength, and low cost. The three main types used in Australia were:
+
+- **Chrysotile (White Asbestos)**: Most common, used in over 90% of ACMs
+- **Amosite (Brown Asbestos)**: Used in insulation and cement products
+- **Crocidolite (Blue Asbestos)**: Most dangerous, used in insulation and sprayed coatings
+
+**Why Asbestos is Dangerous**:
+When asbestos materials are damaged, deteriorating, or disturbed, microscopic fibres become airborne. Inhaling these fibres causes serious and often fatal diseases:
+
+- **Asbestosis**: Scarring of lung tissue causing breathlessness
+- **Mesothelioma**: Aggressive cancer of the lining of lungs or abdomen (usually fatal)
+- **Lung Cancer**: Increased risk, especially combined with smoking
+- **Pleural Disease**: Thickening and scarring of lung lining
+
+**Critical Point**: There is **no safe level** of asbestos exposure. Diseases develop decades after exposure (20-50 years latency period).
+
+### Asbestos Ban Timeline in Australia
+
+**Historical Use**:
+- **Pre-1980s**: Extensive use in virtually all building products
+- **1980s**: Awareness of health risks increased, some restrictions introduced
+- **1990-2003**: Gradual phase-out of different asbestos types
+- **31 December 2003**: Complete ban on manufacture, use, importation, and sale
+
+**Buildings Likely to Contain Asbestos**:
+- **Pre-1990**: High probability of ACMs throughout building
+- **1990-2003**: May contain some ACMs, particularly cement products
+- **Post-2003**: Should be asbestos-free, but contamination incidents have occurred
+
+### Common Asbestos-Containing Materials in Commercial Buildings
+
+**High-Risk Friable Asbestos** (easily crumbled by hand):
+- Sprayed asbestos insulation and fire protection
+- Asbestos pipe and boiler insulation
+- Asbestos rope and gaskets
+- Deteriorating asbestos cement
+- Damaged asbestos insulation board
+
+**Bonded Asbestos** (asbestos bound in cement or resin matrix):
+- Asbestos cement (AC) sheeting (flat and corrugated roofing/cladding)
+- AC internal wall sheeting
+- AC ceiling panels and tiles
+- AC floor tiles (vinyl and thermoplastic)
+- AC pipe and conduit
+- AC eaves and soffits
+- AC switchboard backing
+- Textured ceiling coatings (acoustic "popcorn" ceilings)
+- Millboard behind electrical boards
+
+**Hidden ACMs** (commonly overlooked):
+- Gaskets in HVAC systems
+- Fire door cores
+- Adhesives and mastics
+- Linoleum backing
+- Carpet underlay
+- Electrical cable insulation
+- Expansion joints
+- Bitumen roofing membranes
+
+## Asbestos Identification and Assessment
+
+### Asbestos Register and Management Plan
+
+**Legal Requirement**:
+Under Victorian and Commonwealth regulations, every commercial property must have an **Asbestos Register** documenting:
+- Location of known or suspected ACMs
+- Type and condition of materials
+- Risk assessment
+- Management recommendations
+
+**Duty to Manage Asbestos**:
+Building owners and employers have legal duty to:
+- Identify asbestos in their buildings
+- Maintain asbestos register
+- Ensure register is available to workers
+- Implement control measures
+- Review register regularly
+
+**Before Any Make Good Works**:
+- Review existing asbestos register
+- Conduct asbestos survey if register absent or inadequate
+- Provide register to all contractors
+- Ensure contractors understand ACM locations
+- Plan works to avoid disturbing asbestos
+
+### Asbestos Surveys and Testing
+
+**When Survey Required**:
+- No current asbestos register exists
+- Register is outdated or inadequate
+- Building modifications planned
+- Demolition or refurbishment works intended
+- Suspected ACMs discovered during works
+- Due diligence for property transactions
+
+**Types of Asbestos Surveys**:
+
+**1. Asbestos Management Survey (non-intrusive)**:
+- Visual inspection of readily accessible areas
+- Presumptive identification of suspected ACMs
+- Sampling and laboratory analysis of materials
+- Risk assessment and management recommendations
+- Suitable for occupied buildings and routine management
+
+**2. Asbestos Refurbishment/Demolition Survey (intrusive)**:
+- Comprehensive inspection including concealed areas
+- Destructive inspection methods if required
+- Sampling of all suspected materials
+- Full documentation for demolition/refurbishment planning
+- Building should be unoccupied
+- Required before significant demolition or refurbishment
+
+**Qualified Asbestos Assessor**:
+- Only licensed/competent asbestos assessors can conduct surveys
+- Independent assessor (not removal contractor) preferred
+- Provide detailed report with photos, plans, and recommendations
+
+**Laboratory Analysis**:
+- Samples analyzed by NATA-accredited laboratory
+- Identifies asbestos type and percentage
+- Results typically available within 3-7 days
+- Costs approximately $50-80 per sample
+
+### Visual Identification (Presumptive)
+
+**WARNING**: Never assume material is asbestos-free based on visual inspection alone. Only laboratory testing confirms presence or absence of asbestos.
+
+**Indicators of Potential ACMs**:
+- Cement sheet with characteristic appearance and date stamp
+- Age of building (pre-1990 high risk)
+- Textured ceiling coatings in older buildings
+- Old vinyl floor tiles 300mm x 300mm
+- Insulation on older pipes and ducts
+
+**DO NOT**:
+- Disturb suspected materials
+- Take samples unless trained and licensed
+- Assume materials are safe without testing
+- Rely on material labels (often incorrect or missing)
+
+## Legal Requirements and Compliance
+
+### Victorian and Commonwealth Legislation
+
+**Key Legislation**:
+- **Work Health and Safety Regulations 2017** (Commonwealth)
+- **Occupational Health and Safety Regulations 2017** (Victoria)
+- **Dangerous Goods Act 1985** (Victoria)
+- **Environment Protection Act 2017** (Victoria)
+- **Public Health and Wellbeing Act 2008** (Victoria)
+
+**Regulatory Bodies**:
+- **WorkSafe Victoria**: Workplace asbestos safety and licensing
+- **Environment Protection Authority (EPA) Victoria**: Asbestos waste disposal
+- **Local Councils**: Asbestos removal notifications
+- **Comcare**: Commonwealth government workplaces
+
+### Licensing Requirements
+
+**Class A Asbestos Removal License** (Friable Asbestos):
+- Required for any friable asbestos removal work
+- Also covers bonded asbestos (can do both types)
+- Extensive training and competency requirements
+- WorkSafe Victoria licensing and renewal
+- Public liability insurance minimum $10 million
+
+**Class B Asbestos Removal License** (Bonded Asbestos):
+- Required for bonded asbestos removal over 10 square meters
+- Cannot remove friable asbestos
+- Training and competency requirements
+- WorkSafe Victoria licensing
+
+**Unlicensed Asbestos Removal**:
+- Permitted only for bonded asbestos under 10 square meters
+- Must follow strict safety procedures
+- Training still required
+- Most commercial make good requires licensed removal
+
+**Penalties for Unlicensed Work**:
+- Fines up to $500,000+ for individuals
+- Fines up to $3 million+ for companies
+- Criminal prosecution possible
+- Personal liability for directors/managers
+
+### Notification Requirements
+
+**WorkSafe Victoria Notification**:
+- Class A work: 5 days written notice before commencement
+- Class B work over 10m²: 5 days notice
+- Emergency removal: notify as soon as practicable
+- Notification includes work details, procedures, duration
+
+**EPA Victoria Notification**:
+- Required for asbestos waste transport to EPA-licensed facilities
+- Waste tracking and documentation
+- Proper classification and packaging
+
+**Local Council Notification**:
+- Many councils require notification of asbestos removal
+- Check specific council requirements
+- May require permit for external removal work
+
+## Safe Asbestos Removal Procedures
+
+### Planning and Preparation
+
+**Asbestos Removal Control Plan**:
+Licensed removalists must prepare written control plan including:
+- Scope of removal work
+- Site-specific risks and control measures
+- Air monitoring procedures
+- Waste disposal arrangements
+- Emergency procedures
+- Worker training and PPE requirements
+
+**Site Preparation**:
+- Establish exclusion zones (barricades, signage)
+- Isolate HVAC systems to prevent fibre spread
+- Seal affected areas with plastic sheeting
+- Establish decontamination facilities
+- Set up negative air pressure (for enclosures)
+- Provide appropriate access/egress
+
+**Notifications and Permits**:
+- WorkSafe notification submitted
+- Building management informed
+- Neighboring tenants notified
+- Council permits obtained if required
+- Insurance notification
+
+### Personal Protective Equipment (PPE)
+
+**Respirators**:
+- P1 or P2 rated respirator for bonded asbestos
+- P3 or full-face powered air-purifying respirator for friable
+- Fit testing required
+- Clean shaven for proper seal
+
+**Protective Clothing**:
+- Disposable coveralls with hood
+- Disposable gloves
+- Rubber boots or disposable shoe covers
+- Eye protection
+- All PPE disposed as asbestos waste
+
+### Removal Methods
+
+**Wet Methods**:
+- Keep materials saturated during removal
+- Reduces airborne fibre release
+- Wetting agents/surfactants improve penetration
+- Continuous wetting during cutting or breaking
+- Wet cleaning of surfaces after removal
+
+**Controlled Methods**:
+- Remove sheets/materials intact where possible
+- No power tools on ACMs (releases fibres)
+- Hand tools only, gentle handling
+- Lower materials carefully (no dropping or throwing)
+- Place directly into waste bags/containers
+
+**Containment and Cleaning**:
+- HEPA-filtered vacuum only (never regular vacuum)
+- Wet wipe all surfaces
+- Multiple cleaning passes
+- Independent clearance inspection
+- Air monitoring to confirm safe levels
+
+**Waste Management**:
+- Double-bagging in 200-micron plastic
+- Clearly labeled "ASBESTOS WASTE - DANGEROUS"
+- Stored in locked skip or enclosed area
+- No co-mingling with other waste
+- Transported by licensed carrier to EPA-approved facility
+- Disposal costs: $200-400 per ton plus transport
+
+### Clearance and Certification
+
+**Visual Clearance Inspection**:
+- By independent licensed assessor
+- Inspection of removal area
+- Verification of cleanliness
+- Check waste removed appropriately
+- Clearance certificate issued
+
+**Air Monitoring**:
+- Required for friable removal and large bonded removals
+- Confirms airborne fibre levels below safe thresholds
+- Independent NATA-accredited laboratory analysis
+- Essential before area re-occupied
+
+**Clearance Certificate**:
+- Issued by independent assessor
+- Confirms safe removal completion
+- Required before area can be re-occupied
+- Provided to building owner and WorkSafe
+
+## Integration with Make Good Projects
+
+### Pre-Demolition Asbestos Assessment
+
+**Critical First Step**:
+Before any make good demolition or strip-out works commence, asbestos assessment must be completed:
+
+1. **Review Asbestos Register**: Check for known ACMs in work area
+2. **Refurbishment/Demolition Survey**: If inadequate register, conduct full survey
+3. **Laboratory Testing**: Confirm suspected materials
+4. **Removal Planning**: Engage licensed removalists
+5. **Removal Completion**: Obtain clearance certificate
+6. **Proceed with Make Good**: Only after clearance issued
+
+**Timeline Impact**:
+- Asbestos survey: 1-3 days plus 5-7 days lab results
+- Removal planning and notification: 5+ days
+- Removal works: 1-5 days depending on extent
+- Clearance inspection and air monitoring: 1-2 days
+- Total asbestos phase: 2-3 weeks minimum
+
+### Common Make Good Scenarios Involving Asbestos
+
+**Ceiling Removal**:
+- Acoustic ceiling tiles may contain asbestos
+- Ceiling panel backing boards
+- Fireproofing materials above ceilings
+- Duct and pipe insulation in ceiling space
+
+**Wall Removal/Modification**:
+- AC wall sheeting (internal walls)
+- Texture coatings
+- Adhesives and mastics
+- Conduit and pipe lagging
+
+**Floor Coverings**:
+- Vinyl floor tiles and backing
+- Carpet underlay
+- Adhesives and leveling compounds
+- Requires careful assessment before removal
+
+**Electrical Work**:
+- AC switchboard backing
+- Electrical cable insulation (very old installations)
+- Junction box backing materials
+
+**Mechanical Services**:
+- Pipe lagging insulation
+- Gaskets in HVAC equipment
+- Fire dampers and fire collars
+- Duct insulation
+
+### Asbestos Discovered During Works
+
+**STOP WORK IMMEDIATELY**:
+If suspected asbestos is discovered during make good works:
+
+1. **Stop all work** in affected area
+2. **Evacuate workers** from immediate area
+3. **Secure area** - prevent entry
+4. **Notify building management** and WorkSafe (if exposure occurred)
+5. **Arrange assessment** by licensed asbestos assessor
+6. **Laboratory testing** to confirm presence
+7. **Licensed removal** if confirmed
+8. **Clearance certificate** before resuming works
+
+**Worker Exposure**:
+- Workers potentially exposed must be informed
+- Medical assessment arranged if significant exposure
+- Incident reported to WorkSafe
+- Document exposure for workers' records
+
+### Cost Implications
+
+**Asbestos Management Costs**:
+- Asbestos survey: $800-$2,500 depending on building size
+- Laboratory testing: $50-80 per sample
+- Licensed removal (bonded): $80-150 per m² plus waste disposal
+- Licensed removal (friable): $200-500+ per m² plus waste disposal
+- Air monitoring: $800-$1,500 per area
+- Clearance inspection: $500-$1,200
+
+**Impact on Make Good Budget**:
+Asbestos removal can significantly increase make good costs, particularly:
+- Older buildings with extensive ACMs
+- Unexpected asbestos discoveries
+- Friable asbestos requiring Class A removal
+- Large areas requiring containment
+- Disposal costs for large quantities
+
+**Landlord vs Tenant Responsibility**:
+- Lease terms typically dictate responsibility
+- Some leases require tenant to remove tenant-installed ACMs
+- Base building ACMs usually landlord responsibility
+- Negotiate scope clearly before commencing
+
+## Make Good Australia: Licensed Asbestos Management
+
+At Make Good Australia, we prioritize the safety of workers, building occupants, and the environment in all projects. We coordinate professional asbestos management as an integrated component of commercial make good services.
+
+### Our Asbestos Management Services
+
+**Pre-Work Assessment**:
+- Review existing asbestos registers
+- Coordination of refurbishment/demolition surveys with licensed assessors
+- Laboratory testing coordination
+- Risk assessment for make good scope
+- Budget planning including asbestos costs
+
+**Licensed Asbestos Removal Coordination**:
+- Engagement of fully licensed Class A and B asbestos removalists
+- Verification of current licenses and insurance
+- Removal planning and notification management
+- Site supervision and compliance monitoring
+- Quality assurance throughout removal process
+
+**Compliance Management**:
+- WorkSafe and EPA notification lodgement
+- Council permit coordination
+- Building management liaison
+- Documentation and record keeping
+- Clearance certificate coordination
+
+**Post-Removal Make Good Works**:
+- Only commence after clearance issued
+- Safe work practices for all trades
+- Coordination of remaining make good scope
+- Integration with project timeline
+- Final handover documentation
+
+### Why Proper Asbestos Management Matters
+
+**Worker Safety**:
+- Protects workers from fatal asbestos-related diseases
+- Demonstrates duty of care
+- Prevents WorkSafe prosecution
+
+**Legal Compliance**:
+- Meets all legislative requirements
+- Avoids significant fines and penalties
+- Reduces liability exposure
+
+**Project Success**:
+- Prevents costly work stoppages
+- Avoids delays from unexpected discoveries
+- Protects project timeline and budget
+- Ensures smooth handover to landlord
+
+**Environmental Responsibility**:
+- Proper waste disposal prevents environmental contamination
+- Protects broader community
+- EPA compliance
+
+## Conclusion
+
+Asbestos management is a critical, non-negotiable component of commercial make good projects in older buildings. The serious health risks, stringent legal requirements, and severe penalties for non-compliance make professional asbestos assessment and licensed removal essential. Cutting corners on asbestos management endangers lives, exposes parties to massive liability, and can derail entire make good projects.
+
+Successful asbestos management requires early assessment, licensed removal specialists, full compliance with regulations, and integration into the overall make good project plan. The costs of proper asbestos management are a necessary investment in safety, compliance, and project success.
+
+**Planning a make good project in an older building?** Contact Make Good Australia today. We'll coordinate comprehensive asbestos assessment, licensed removal, and compliant make good works - protecting everyone involved and ensuring your project proceeds safely and successfully.
+
+**Make Good Australia**  
+Professional asbestos management coordination  
+Call us: [Contact Number]  
+Email: [Contact Email]  
+Safety first, compliance always, results guaranteed
+    `
+  },
+  {
     id: "31",
     title: "Carpet Tile Replacement and Installation: Professional Floor Preparation for End of Lease Make Good",
     slug: "carpet-tile-replacement-installation-floor-preparation",

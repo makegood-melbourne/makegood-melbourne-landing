@@ -29,6 +29,7 @@ import parapetFailureEmergencyRepairsImage from "@/assets/blog/parapet-failure-e
 import ceilingRepairsSuspendedAcousticImage from "@/assets/blog/ceiling-repairs-suspended-acoustic.jpg";
 import electricalMakeSafeImage from "@/assets/blog/electrical-make-safe.jpg";
 import carpetTileReplacementImage from "@/assets/blog/carpet-tile-replacement.jpg";
+import asbestosManagementImage from "@/assets/blog/asbestos-management.jpg";
 import { BlogPost } from "@/data/blogPosts";
 
 const imageMap: Record<string, string> = {
@@ -63,6 +64,7 @@ const imageMap: Record<string, string> = {
   'ceiling-repairs-suspended-acoustic': ceilingRepairsSuspendedAcousticImage,
   'electrical-make-safe': electricalMakeSafeImage,
   'carpet-tile-replacement': carpetTileReplacementImage,
+  'asbestos-management': asbestosManagementImage,
 };
 
 export const getBlogImage = (imagePath: string): string => {
