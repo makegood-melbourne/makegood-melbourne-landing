@@ -721,5 +721,56 @@ Examining case studies of successful make good strategies can provide valuable i
 ## Conclusion: The value of a well-executed commercial property make good plan.
 
 In conclusion, commercial property make good is a crucial aspect of a smooth exit strategy for both tenants and landlords. By understanding and fulfilling make good obligations, tenants can safeguard their deposit, maintain a positive relationship with the landlord, and avoid legal disputes. Landlords, on the other hand, can attract quality tenants and minimise costs associated with repairing damages or removing alterations. By following the steps outlined in this article and engaging professionals when necessary, both parties can ensure a hassle-free transition and protect their interests.`
+  },
+  {
+    id: "11",
+    slug: "understanding-property-condition-reports",
+    title: "Understanding the Importance of Property Condition Reports",
+    date: "1 July 2023",
+    excerpt: "A Property Condition Report (PCR) is an essential document that outlines the state of a property at the onset or conclusion of a lease, offering legal protection and clarity for both landlords and tenants.",
+    image: "/src/assets/blog/condition-report.webp",
+    content: `When it comes to leasing a property, be it residential or commercial, few documents are as essential as a Property Condition Report (PCR). This comprehensive assessment serves as a benchmark for a property's condition, offering peace of mind and legal protection for both landlords and tenants. In this article, we will explore what a PCR is, its benefits, and why it's an indispensable part of any leasing process.
+
+## What is a Property Condition Report?
+
+A Property Condition Report is a detailed document outlining the current state of a property at the beginning or end of a lease term. Created by either a professional inspector or a property manager, the report covers various aspects of the property, including:
+
+**Structural Integrity:** Notes on the walls, roof, floors, and other structural elements.
+
+**Fixtures and Fittings:** Status of light fixtures, plumbing, and electrical systems.
+
+**Interior and Exterior:** Condition of paint, carpets, windows, garden, and outdoor fixtures.
+
+**Appliances:** Current condition and functionality of any appliances included in the property.
+
+**Repairs Needed:** A list of existing damages or repairs required, often accompanied by photographs.
+
+## Benefits for Tenants
+
+### Security Deposit Protection
+
+One of the key benefits for tenants is the protection of their security deposit. The PCR serves as proof of the property's initial condition, safeguarding tenants from being unfairly charged for pre-existing issues.
+
+### Transparency
+
+The report encourages a transparent relationship between the tenant and landlord. Knowing the property's condition upfront helps tenants make informed decisions about taking up or renewing a lease.
+
+## Benefits for Owners
+
+### Legal Protection
+
+A PCR provides property owners with legal documentation, which can be invaluable in the case of disputes over property damage or required repairs.
+
+### Property Maintenance
+
+By identifying issues early on, property owners can address them before they worsen, thus preserving the value of their investment property.
+
+## Why It's Crucial for "Make Good" Services
+
+For companies specialising in "make good" services like ours, a Property Condition Report serves as the foundation for the work that needs to be done. It guides the restoration process, ensuring that properties are returned to their documented original condition, saving both time and resources for landlords and tenants.
+
+## Conclusion
+
+A Property Condition Report is an indispensable document that protects both landlords and tenants. It ensures that everyone is on the same page about the condition of the property, thereby reducing disputes and fostering a fair, transparent leasing process. As part of a comprehensive leasing package, a PCR is a win-win for all parties involved.`
   }
 ];
