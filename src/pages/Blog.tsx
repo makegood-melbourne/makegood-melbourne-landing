@@ -11,6 +11,7 @@ import propertyImage from "@/assets/blog/property-transformation.webp";
 import newYearImage from "@/assets/blog/new-year-makegood.webp";
 import officeStripOutImage from "@/assets/blog/office-strip-out.webp";
 import constructionMeetingImage from "@/assets/blog/construction-site-meeting.webp";
+import epoxyFlooringImage from "@/assets/blog/epoxy-flooring.webp";
 
 const Blog = () => {
   const getImage = (imagePath: string) => {
@@ -21,6 +22,7 @@ const Blog = () => {
     if (imagePath.includes('new-year-makegood')) return newYearImage;
     if (imagePath.includes('office-strip-out')) return officeStripOutImage;
     if (imagePath.includes('construction-site-meeting')) return constructionMeetingImage;
+    if (imagePath.includes('epoxy-flooring')) return epoxyFlooringImage;
     return cleaningImage;
   };
   return (
