@@ -28,6 +28,7 @@ import wasteManagementSustainabilityImage from "@/assets/blog/waste-management-s
 import parapetFailureEmergencyRepairsImage from "@/assets/blog/parapet-failure-emergency-repairs.jpg";
 import ceilingRepairsSuspendedAcousticImage from "@/assets/blog/ceiling-repairs-suspended-acoustic.jpg";
 import electricalMakeSafeImage from "@/assets/blog/electrical-make-safe.jpg";
+import carpetTileReplacementImage from "@/assets/blog/carpet-tile-replacement.jpg";
 import { BlogPost } from "@/data/blogPosts";
 
 const imageMap: Record<string, string> = {
@@ -61,6 +62,7 @@ const imageMap: Record<string, string> = {
   'parapet-failure-emergency-repairs': parapetFailureEmergencyRepairsImage,
   'ceiling-repairs-suspended-acoustic': ceilingRepairsSuspendedAcousticImage,
   'electrical-make-safe': electricalMakeSafeImage,
+  'carpet-tile-replacement': carpetTileReplacementImage,
 };
 
 export const getBlogImage = (imagePath: string): string => {

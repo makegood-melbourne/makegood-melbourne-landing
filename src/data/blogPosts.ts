@@ -10,6 +10,144 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: "31",
+    title: "Carpet Tile Replacement and Installation: Professional Floor Preparation for End of Lease Make Good",
+    slug: "carpet-tile-replacement-installation-floor-preparation",
+    excerpt: "Achieve flawless carpet tile installation with comprehensive floor grinding and preparation. Our process ensures removal of residual glue and uniform installation for end of lease make good compliance.",
+    date: "2025-09-15",
+    image: "carpet-tile-replacement.jpg",
+    content: `
+When it comes to end of lease make good obligations, carpet tile replacement and installation is one of the most visible elements that determines whether a tenancy is returned to its original condition. Professional floor preparation is critical to achieving a uniform, compliant finish that meets lease requirements.
+
+## The Importance of Proper Floor Preparation
+
+Many carpet tile installations fail because the underlying floor surface hasn't been properly prepared. Residual glue, uneven surfaces, and contamination can all compromise the installation quality and longevity of new carpet tiles.
+
+Our comprehensive approach ensures your floor is ready for a perfect installation that will pass the most stringent landlord inspections.
+
+## Floor Grinding: The Foundation of Quality Installation
+
+We provide comprehensive grinding of the floor surface to ensure uniform installation. This process involves:
+
+### Surface Leveling
+Professional grinding equipment removes high spots and creates a level substrate. An uneven floor will cause carpet tiles to lift, curl, or wear unevenly over time.
+
+### Glue Removal
+Complete removal of residual adhesive from previous flooring installations is essential. Old glue can prevent new adhesive from bonding properly and create visible irregularities through the carpet tiles.
+
+### Surface Preparation
+Grinding opens the concrete pores, creating an ideal surface for adhesive bonding. This ensures carpet tiles remain securely in place throughout the new tenancy period.
+
+### Contamination Elimination
+The grinding process removes oil, paint, sealers, and other contaminants that could interfere with adhesive performance or cause staining through the new carpet.
+
+## Professional Installation Standards
+
+Following thorough floor preparation, our installation process includes:
+
+### Moisture Testing
+Concrete floors are tested for moisture levels that could compromise adhesive bonding or damage carpet tiles over time.
+
+### Layout Planning
+Tiles are carefully planned to minimize cuts, maximize symmetry, and ensure consistent pattern alignment throughout the space.
+
+### Quality Adhesive Application
+We use commercial-grade pressure-sensitive adhesives specifically formulated for carpet tile installation, ensuring reliable bonding without damaging the substrate.
+
+### Precision Installation
+Each tile is carefully placed, aligned, and rolled to ensure proper adhesive contact and eliminate air pockets.
+
+## End of Lease Compliance
+
+Carpet tile replacement is often a major component of make good obligations. Our installation service ensures:
+
+- **Match to Original Specification**: We source carpet tiles that match or exceed the original base build specifications
+- **Professional Finish**: Installation quality that meets commercial property standards
+- **Documented Process**: Photographic records of preparation and installation for landlord verification
+- **Warranty Coverage**: Professional installation backed by manufacturer warranty requirements
+
+## Why Floor Grinding Makes the Difference
+
+The comprehensive floor grinding process we provide delivers multiple benefits:
+
+### Immediate Benefits
+- Uniform surface for consistent tile placement
+- Superior adhesive bonding
+- Elimination of previous installation defects
+- Clean, professional appearance
+
+### Long-Term Advantages
+- Extended carpet tile lifespan
+- Reduced maintenance requirements
+- Prevented tile lifting or movement
+- Protection of your security deposit
+
+## Integration with Complete Make Good
+
+Carpet tile installation is typically one of the final stages of a make good project. We coordinate timing with:
+
+- Completion of ceiling works
+- Final paint touch-ups
+- Electrical and data reinstatement
+- Final clean
+
+This sequencing prevents damage to new carpet and ensures the entire space is returned to base build condition simultaneously.
+
+## Technical Specifications
+
+Our carpet tile installation service includes:
+
+- Commercial-grade diamond grinding equipment
+- HEPA-filtered dust extraction
+- Moisture testing to AS/NZS standards
+- Pressure-sensitive adhesive systems
+- Pattern matching and alignment
+- Edge trimming and transition installation
+
+## Project Scheduling
+
+Floor preparation and carpet installation requires careful timing:
+
+1. **Floor Assessment**: Initial inspection and specification confirmation
+2. **Grinding Phase**: Typically 1-2 days depending on area size
+3. **Curing Period**: 24-48 hours for floor to stabilize
+4. **Installation**: Usually 1-2 days for standard office spaces
+5. **Final Inspection**: Walk-through and documentation
+
+## Cost Considerations
+
+While comprehensive floor preparation adds to project cost, it protects against:
+
+- Failed installations requiring costly replacement
+- Landlord rejection of make good works
+- Security deposit withholding
+- Legal disputes over tenancy condition
+
+Professional preparation is an investment in compliance and peace of mind.
+
+## Environmental Considerations
+
+Our floor preparation process includes:
+
+- Dust containment and HEPA filtration
+- Responsible disposal of removed materials
+- Low-VOC adhesive systems
+- Recycling of packaging materials
+
+## Why Professional Service Matters
+
+DIY or budget carpet installation approaches often fail to address floor preparation adequately. The result is visible defects, premature failure, and make good rejection by landlords.
+
+Our licensed and experienced team has completed thousands of square meters of commercial carpet tile installations, consistently delivering results that pass final inspections.
+
+## Get Started
+
+If your lease end is approaching and carpet replacement is required, contact our team early in your planning process. We'll assess your floor condition, provide detailed quotations, and schedule works to align with your make good timeline.
+
+Professional floor preparation and carpet tile installation removes the stress from one of the most visible aspects of your make good obligations, ensuring a smooth transition and full security deposit return.
+    `
+  },
+  {
     id: "30",
     slug: "electrical-make-safe-decommissioning-demolition",
     title: "Electrical Make Safe: Critical Decommissioning Before Demolition and Make Good Works",
