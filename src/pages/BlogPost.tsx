@@ -15,6 +15,7 @@ import epoxyFlooringImage from "@/assets/blog/epoxy-flooring.webp";
 import palletRackingImage from "@/assets/blog/pallet-racking.webp";
 import commercialMakeGoodImage from "@/assets/blog/commercial-make-good.webp";
 import conditionReportImage from "@/assets/blog/condition-report.webp";
+import leaseTransitionsImage from "@/assets/blog/lease-transitions.webp";
 
 const BlogPost = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -32,6 +33,7 @@ const BlogPost = () => {
     if (imagePath.includes('pallet-racking')) return palletRackingImage;
     if (imagePath.includes('commercial-make-good')) return commercialMakeGoodImage;
     if (imagePath.includes('condition-report')) return conditionReportImage;
+    if (imagePath.includes('lease-transitions')) return leaseTransitionsImage;
     return cleaningImage;
   };
 
