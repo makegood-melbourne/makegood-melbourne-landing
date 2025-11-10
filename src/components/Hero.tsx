@@ -23,10 +23,10 @@ const Hero = () => {
       <div className="container mx-auto px-4 z-10 pt-16">
         <div className="max-w-3xl bg-background/80 backdrop-blur-sm p-8 md:p-12 rounded-lg">
           <h1 className="text-5xl md:text-7xl text-foreground mb-4 leading-none flex flex-col items-start">
-            <span className="font-light tracking-tight uppercase w-full" style={{ fontFamily: "'PP Neue Montreal', sans-serif" }}>
+            <span className="font-light uppercase w-full" style={{ fontFamily: "'PP Neue Montreal', sans-serif", letterSpacing: '0.15em' }}>
               MAKEGOOD.
             </span>
-            <span className="font-bold tracking-tight uppercase w-full" style={{ fontFamily: "'PP Neue Montreal', sans-serif" }}>
+            <span className="font-bold uppercase w-full" style={{ fontFamily: "'PP Neue Montreal', sans-serif", letterSpacing: '0.02em' }}>
               MELBOURNE
             </span>
           </h1>
