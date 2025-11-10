@@ -10,6 +10,515 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: "29",
+    slug: "ceiling-repairs-suspended-acoustic-tiles-make-good",
+    title: "Ceiling Repairs and Replacement: Suspended Ceilings, Water Damage, and Make Good Standards",
+    date: "1 July 2025",
+    excerpt: "Ceiling repairs and replacement are critical components of commercial make good projects, addressing water damage, wear, and compliance requirements. From suspended ceiling grid systems and acoustic tiles to plasterboard ceilings and fire-rated systems, professional ceiling works ensure properties meet lease obligations and building standards. Learn about ceiling types, damage assessment, repair processes, and make good requirements.",
+    image: "/src/assets/blog/ceiling-repairs-suspended-acoustic.jpg",
+    content: `Commercial ceiling systems serve multiple critical functions beyond aesthetics - they conceal services, provide acoustic control, contribute to fire safety, and define finished ceiling heights. During lease terms, ceilings often sustain damage from water leaks, mechanical impacts, wear, and modifications for services. Make good obligations typically require ceilings to be returned to original condition or specified standards, making ceiling repairs and replacement a significant component of commercial make good projects. This comprehensive guide explores ceiling types, common damage, repair and replacement processes, and make good considerations for Melbourne commercial properties.
+
+## Understanding Commercial Ceiling Systems
+
+### Common Ceiling Types in Commercial Properties
+
+**Suspended Ceiling Grid Systems**:
+- Metal grid framework suspended from structural ceiling
+- Acoustic ceiling tiles (typically 600mm x 600mm)
+- Integrated with light fittings, air conditioning diffusers, sprinklers
+- Easy access to services above ceiling via removable tiles
+- Most common in commercial offices
+- Various tile finishes: tegular edge, square edge, concealed edge
+
+**Plasterboard Ceilings**:
+- Gypsum plasterboard sheets fixed to ceiling framework
+- Flush finished and painted surface
+- Services integration requires cut-outs and access panels
+- Fire-rated plasterboard available for fire-rated ceilings
+- Common in modern offices, retail, hospitality
+- More expensive to access services than suspended systems
+
+**Acoustic Plasterboard Ceilings**:
+- Perforated plasterboard with acoustic backing
+- Combines acoustic performance with flush finish
+- Used in areas requiring both aesthetics and sound control
+- More difficult to repair than standard plasterboard
+
+**Exposed Ceiling/Services**:
+- No ceiling finish - structural slab or roof exposed
+- Services (ductwork, pipes, cables) exposed and painted
+- Industrial/warehouse aesthetic
+- Common in warehouses, some modern offices, retail
+- Make good may involve painting exposed services
+
+**Specialty Ceiling Systems**:
+- Timber ceilings (battens, panels, acoustic timber)
+- Metal panel or blade ceilings
+- Acoustic fabric wrapped panels
+- Bulkhead and feature ceilings
+- Typically used in feature areas, retail, hospitality
+
+### Ceiling Functions and Requirements
+
+**Acoustic Performance**:
+- Sound absorption to control reverberation
+- Speech privacy between spaces
+- Noise reduction for open offices
+- Acoustic ratings measured in NRC (Noise Reduction Coefficient)
+
+**Fire Safety**:
+- Fire-rated ceiling systems as part of fire compartments
+- Minimum fire resistance levels (FRL) required
+- Fire sprinkler integration
+- Smoke detector placement
+- Essential Safety Measures (ESM) compliance
+
+**Services Integration**:
+- Air conditioning diffusers and return air grilles
+- Light fittings (recessed, troffer, panels)
+- Fire sprinklers and smoke detectors
+- Access panels for services above ceiling
+- Emergency lighting
+- Data and communications equipment
+
+**Ceiling Height Requirements**:
+- Minimum ceiling heights per Building Code
+- Lease specifications for ceiling height
+- Services coordination to maintain clearances
+- Structural ceiling height limitations
+
+## Common Ceiling Damage in Commercial Properties
+
+### Water Damage
+
+**Causes of Water Damage**:
+- Roof leaks during rain events
+- Air conditioning condensate leaks
+- Plumbing leaks from above
+- Fire sprinkler system leaks or activation
+- Steam and condensation from kitchens or bathrooms
+- Building defects allowing water penetration
+
+**Water Damage Effects**:
+- Acoustic tile staining (rust-colored water marks)
+- Tile sagging from water saturation
+- Tile disintegration and collapse
+- Plasterboard water staining and delamination
+- Mould growth in damp ceiling spaces
+- Grid system corrosion
+- Insulation saturation
+
+**Immediate Actions Required**:
+- Source identification and rectification critical
+- Removal of saturated tiles to prevent collapse
+- Dehumidification to prevent mould growth
+- Assessment of extent of damage
+- Documentation for insurance claims
+- Assessment of services above ceiling for damage
+
+### Physical Damage
+
+**Impact Damage**:
+- Furniture or equipment impacts during moves
+- Ladder or access equipment damage
+- Accidental contact during works
+- Mechanical services maintenance damage
+- Broken tiles or plasterboard sheets
+
+**Service Modifications**:
+- Cut-outs for new light fittings or diffusers
+- Poorly executed service penetrations
+- Oversized cut-outs lacking proper trims
+- Damage during service works above ceiling
+- Removed tiles not reinstated
+
+**Wear and Tear**:
+- Staining from age and dust accumulation
+- Acoustic tile breakdown and crumbling
+- Discoloration from UV exposure
+- Sagging from long-term moisture exposure
+- Grid system corrosion from age
+
+### Compliance and Standards Issues
+
+**Non-Compliant Modifications**:
+- Fire-rated ceiling breaches without proper sealing
+- Missing fire-rated tiles or plasterboard
+- Oversized penetrations compromising fire rating
+- Services works breaching fire compartments
+- Lack of proper access panels
+
+**Acoustic Performance Degradation**:
+- Removed acoustic tiles replaced with standard tiles
+- Gaps and penetrations reducing acoustic performance
+- Wrong tile specifications installed
+
+## Ceiling Assessment for Make Good
+
+### Pre-Make Good Inspection
+
+**Documentation**:
+- Photographic survey of all ceiling areas
+- Identification of damaged tiles or sections
+- Mapping of water damage extent
+- Service penetrations and compliance assessment
+- Comparison to lease commencement condition report
+
+**Damage Categorization**:
+- Minor damage: isolated damaged tiles, minor staining
+- Moderate damage: sections requiring replacement, multiple areas
+- Major damage: extensive water damage, structural issues, full replacement required
+- Compliance issues: fire rating, acoustic performance, safety
+
+**Sampling and Matching**:
+- Removal of sample tiles for matching
+- Identification of tile manufacturer and type
+- Grid system type and color identification
+- Paint specifications for plasterboard ceilings
+- Coordination with existing ceiling height and services
+
+### Make Good Scope Definition
+
+**Lease Make Good Requirements**:
+- Return to "original condition" interpretation
+- Patch repairs vs full replacement
+- Matching requirements (exact match vs similar)
+- Paint specifications and finishes
+- Services reinstatement (lights, diffusers, sprinklers)
+
+**Building Code Compliance**:
+- Fire rating requirements for fire-rated ceilings
+- Minimum ceiling height requirements
+- Smoke detector and sprinkler spacing
+- Emergency lighting provisions
+- Access panel requirements
+
+## Suspended Ceiling Repairs and Replacement
+
+### Minor Tile Replacement
+
+**Process**:
+- Identification and removal of damaged tiles
+- Sourcing matching replacement tiles
+- Installation of new tiles in grid system
+- Integration with light fittings and services
+- Final cleaning and inspection
+
+**Matching Challenges**:
+- Discontinued tile types requiring full area replacement
+- Color matching (new tiles vs aged existing tiles)
+- Texture and edge profile matching
+- Grid visibility differences (tegular vs square edge)
+
+**Cost-Effective Approach**:
+- Replace damaged tiles only if good match available
+- If matching not possible, replace full visible area or room
+- Consider partial ceiling refresh for large areas
+
+### Grid System Repairs
+
+**Common Issues**:
+- Damaged or sagging grid members
+- Missing suspension wires or clips
+- Corroded grid components
+- Unlevel or misaligned grid
+- Inadequate support causing sagging
+
+**Repair Process**:
+- Assessment of grid structural integrity
+- Replacement of damaged grid sections
+- Re-leveling and alignment
+- Installation of additional suspension as required
+- Grid painting if required to match
+
+### Full Suspended Ceiling Replacement
+
+**When Required**:
+- Extensive water damage throughout ceiling
+- Discontinued tile types unable to be matched
+- Make good requirement for full ceiling replacement
+- Age-related deterioration throughout
+- Change of ceiling height or grid layout
+
+**Process**:
+**1. Strip-Out**:
+- Removal of all ceiling tiles
+- Removal of light fittings and diffusers
+- Disconnection of services as required
+- Removal of grid system and suspension
+- Disposal of materials (recycling where possible)
+
+**2. Services Coordination**:
+- Electrical works for light fitting relocations
+- HVAC duct and diffuser modifications
+- Fire sprinkler adjustments if required
+- Data and communications relocations
+- Access panel planning
+
+**3. New Grid Installation**:
+- Laser level survey for grid height setting
+- Installation of perimeter angles
+- Main tee installation with suspension wires
+- Cross tee installation to form grid pattern
+- Leveling and alignment checks
+- Grid painting if specified
+
+**4. Tile and Services Installation**:
+- Acoustic tile installation
+- Light fitting installation and electrical connection
+- Air conditioning diffuser installation
+- Fire sprinkler head adjustment and testing
+- Smoke detector installation
+- Access panel installation
+- Final alignment and cleaning
+
+## Plasterboard Ceiling Repairs
+
+### Minor Repairs
+
+**Small Damage (less than 100mm)**:
+- Clean edges of damaged area
+- Fill with setting compound
+- Sand smooth and level
+- Prime and paint to match existing
+
+**Medium Damage (100mm-500mm)**:
+- Cut damaged section to nearest joists
+- Install timber backing or noggings
+- Cut and fix new plasterboard section
+- Tape and set joints
+- Sand, prime, and paint
+
+### Section Replacement
+
+**When Required**:
+- Extensive water damage in defined area
+- Multiple service penetrations requiring rectification
+- Failed repairs needing proper reconstruction
+- Compliance issues (fire rating)
+
+**Process**:
+- Define replacement area extent
+- Remove damaged plasterboard
+- Inspect ceiling space for further damage or issues
+- Repair or modify services as required
+- Install new fire-rated plasterboard if required
+- Tape and set all joints (multiple coats)
+- Sand to smooth finish
+- Prime and paint (often requires full room painting for consistency)
+
+### Full Plasterboard Ceiling Replacement
+
+**Process Similar to Section Replacement**:
+- Complete strip-out of existing ceiling
+- Assessment and preparation of ceiling frame
+- Installation of new plasterboard sheets
+- All joints taped and set
+- Sanding and finishing
+- Primer and paint application (minimum 2 coats)
+- Integration of services (cut-outs, trims, access panels)
+
+**Fire-Rated Ceilings**:
+- Use of fire-rated plasterboard (as specified)
+- Proper sealing of penetrations with fire-rated materials
+- Installation certification if required
+- Compliance with fire engineering requirements
+
+## Make Good Considerations and Standards
+
+### Matching and Finish Standards
+
+**Suspended Ceilings**:
+- Exact tile match ideal but often not achievable
+- "Similar" match acceptable in many lease interpretations
+- Full room or area replacement if exact match unavailable
+- Clean, unstained tiles as minimum
+- Grid alignment and levelness
+- All tiles properly seated and aligned
+
+**Plasterboard Ceilings**:
+- Smooth, defect-free finish
+- Paint finish matching existing (often requires full room repaint)
+- No visible joints or repairs
+- Consistent ceiling height and level
+- Proper integration with walls and services
+
+### Services Reinstatement
+
+**Lighting**:
+- Removal of tenant's additional light fittings
+- Reinstatement of original lighting layout
+- Repair of ceiling where fittings removed
+- Working condition and compliance
+- Emergency lighting tested and certified
+
+**Air Conditioning**:
+- Diffuser and return air grilles reinstated to original layout
+- Ceiling repairs where services removed or relocated
+- Diffusers clean and functional
+- Balancing and commissioning if system modified
+
+**Fire Protection**:
+- Fire sprinkler heads at correct spacing and locations
+- Smoke detectors compliant with Australian Standards
+- Testing and certification of systems
+- Fire-rated ceiling integrity maintained
+
+### Compliance Certification
+
+**Essential Safety Measures (ESM)**:
+- Annual ESM reports must show compliance
+- Ceiling-related systems (smoke detection, sprinklers)
+- Fire-rated ceiling maintenance
+- Emergency lighting
+
+**Building Surveyor Certification**:
+- Required if building permit triggered by works
+- Fire-rated ceiling compliance
+- Building Code compliance
+
+## Cost Considerations
+
+### Suspended Ceiling Costs
+
+**Tile Replacement Only**:
+- Tile supply: $8-$25 per tile (depending on type and quantity)
+- Installation: $20-$40 per tile
+- Total per tile: $28-$65
+- Small quantities (under 50 tiles): higher unit cost
+- Large quantities: better pricing
+
+**Full Suspended Ceiling Replacement**:
+- Supply and install: $60-$120 per sqm
+- Including grid, tiles, suspension, labor
+- Light fitting integration: $150-$400 per fitting
+- Diffuser integration: $100-$250 per diffuser
+- Fire sprinkler adjustment: $150-$300 per head
+- Access panels: $200-$500 each
+
+### Plasterboard Ceiling Costs
+
+**Minor Repairs**:
+- Small patch repairs: $150-$400 per repair
+- Medium repairs: $400-$800 per repair
+
+**Section Replacement**:
+- Supply and install (including finishing and painting): $80-$150 per sqm
+- Typically minimum charge $800-$1,500
+
+**Full Ceiling Replacement**:
+- Supply and install standard plasterboard: $80-$120 per sqm
+- Supply and install fire-rated plasterboard: $100-$150 per sqm
+- Including framing, fixing, stopping, sanding, priming, painting
+- Services cut-outs and integration: $100-$300 per penetration
+
+### Project Cost Examples
+
+**Small Office (150sqm)**:
+- Minor tile replacement (20 tiles): $1,000-$2,000
+- Section replacement (30sqm): $2,500-$5,000
+- Full replacement suspended ceiling: $10,000-$20,000
+
+**Medium Office (500sqm)**:
+- Full suspended ceiling: $35,000-$65,000
+- Full plasterboard ceiling: $45,000-$80,000
+
+**Factors Affecting Costs**:
+- Ceiling height (higher ceilings = higher costs)
+- Access and working conditions
+- Services complexity and integration
+- Tile or material specifications
+- Area size and economies of scale
+- Urgency and project timing
+
+## Melbourne-Specific Considerations
+
+### Building Stock Characteristics
+
+**Heritage Buildings**:
+- High ornate ceilings in heritage buildings
+- Conservation requirements
+- Specialized trades required
+- Higher costs for heritage-sensitive work
+
+**Modern Commercial Buildings**:
+- Predominantly suspended ceiling systems
+- Integrated services requiring coordination
+- Building Management requirements and access
+- ESM compliance critical
+
+### Weather and Water Damage
+
+**Melbourne's Climate**:
+- Heavy rain events causing roof and ceiling leaks
+- Importance of rapid response to prevent mould
+- Dehumidification essential in wet periods
+
+### Regulatory Environment
+
+**Building Regulations**:
+- Victorian Building Authority requirements
+- Essential Safety Measures compliance
+- Fire safety regulations strict
+- Building surveyor involvement for fire-rated works
+
+## Make Good Australia: Ceiling Repair and Replacement Specialists
+
+At Make Good Australia, we provide comprehensive ceiling repair and replacement services for all commercial property make good requirements. Our experienced team manages everything from minor tile replacements to complete ceiling system installations, ensuring compliance with lease obligations and building standards.
+
+### Our Ceiling Services
+
+**Assessment and Quotation**:
+- Detailed ceiling inspection and damage assessment
+- Sample matching for tile and finish consistency
+- Scope definition aligned with lease requirements
+- Transparent quotation and timeline estimates
+
+**All Ceiling Types**:
+- Suspended ceiling grid systems and acoustic tiles
+- Plasterboard ceiling repairs and replacement
+- Fire-rated ceiling systems with certification
+- Specialty ceilings (timber, metal, acoustic)
+- Exposed ceiling painting and preparation
+
+**Services Integration**:
+- Electrical coordination for lighting
+- HVAC diffuser and ductwork coordination
+- Fire sprinkler adjustment and testing
+- Smoke detector installation and testing
+- Access panel supply and installation
+- Complete services commissioning
+
+**Compliance and Certification**:
+- Fire-rated ceiling installation and certification
+- Building surveyor coordination
+- ESM compliance and testing
+- Quality assurance and documentation
+
+### Our Ceiling Work Advantages
+
+- **Tile Matching Expertise**: Extensive supplier network to source matching tiles
+- **Multi-Trade Coordination**: Electrical, HVAC, fire protection all managed
+- **Quality Finishing**: Superior workmanship on plasterboard and painting
+- **Compliance Focus**: All fire rating and ESM requirements met
+- **Minimal Disruption**: Efficient scheduling to minimize business impact
+- **Warranty**: Comprehensive warranty on all ceiling works
+
+## Conclusion
+
+Ceiling repairs and replacement represent a critical component of commercial make good obligations, requiring technical expertise, careful material matching, services coordination, and compliance knowledge. Whether addressing water-damaged acoustic tiles, repairing plasterboard sections, or completing full ceiling replacement, professional ceiling specialists ensure work meets lease requirements, building standards, and quality expectations.
+
+From minor tile replacements to complete ceiling system installations, engaging experienced ceiling contractors ensures efficient project delivery, proper services integration, full compliance certification, and quality finishes that satisfy lease make good obligations.
+
+**Ready to address your ceiling make good requirements?** Contact Make Good Australia today. Our ceiling specialists will assess your requirements, provide detailed quotations, and deliver quality ceiling repairs and replacement that meet all lease and compliance obligations.
+
+**Make Good Australia**  
+Melbourne's ceiling repair and make good specialists  
+Call us: [Contact Number]  
+Email: [Contact Email]  
+Professional ceiling solutions for all commercial properties`,
+  },
+  {
     id: "28",
     slug: "parapet-failure-emergency-building-repairs",
     title: "Parapet Failure and Emergency Building Repairs: Responding to Structural Collapse in Commercial Properties",
