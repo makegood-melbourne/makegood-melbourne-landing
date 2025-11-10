@@ -1,4 +1,5 @@
 import { CheckCircle2 } from "lucide-react";
+import melbourneSkyline from "@/assets/melbourne-skyline.jpg";
 
 const About = () => {
   const features = [
@@ -42,6 +43,17 @@ const About = () => {
           <p className="text-lg text-muted-foreground leading-relaxed">
             Our network of licensed tradespeople delivers seamless, comprehensive solutions that meet lease obligations, protect bonds, and ensure properties are ready for their next chapter.
           </p>
+        </div>
+
+        {/* Melbourne Image */}
+        <div className="mb-16">
+          <div className="aspect-video w-full overflow-hidden rounded-lg">
+            <img 
+              src={melbourneSkyline}
+              alt="Melbourne CBD skyline - Our service area"
+              className="w-full h-full object-cover"
+            />
+          </div>
         </div>
 
         {/* How We Serve You */}
