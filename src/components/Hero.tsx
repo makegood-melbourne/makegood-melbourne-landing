@@ -23,15 +23,16 @@ const Hero = () => {
       <div className="container mx-auto px-4 z-10 pt-16">
         <div className="max-w-3xl bg-background/80 backdrop-blur-sm p-8 md:p-12 rounded-lg">
           <h1 className="text-5xl md:text-7xl text-foreground mb-4 leading-none flex flex-col items-start">
-            <span className="font-light uppercase w-full" style={{ fontFamily: "'PP Neue Montreal', sans-serif", letterSpacing: '0.15em' }}>
+            <span className="font-light uppercase w-full" style={{ fontFamily: "'PP Neue Montreal', sans-serif", letterSpacing: '0.12em' }}>
               MAKEGOOD.
             </span>
             <span className="font-bold uppercase w-full" style={{ fontFamily: "'PP Neue Montreal', sans-serif", letterSpacing: '0.02em' }}>
               MELBOURNE
             </span>
           </h1>
-          <h2 className="text-3xl md:text-4xl text-accent font-semibold mb-6">
-            Make Good, BETTER.
+          <h2 className="text-3xl md:text-4xl font-semibold mb-6">
+            <span className="text-foreground">Make good, </span>
+            <span className="text-accent">BETTER.</span>
           </h2>
           <p className="text-xl md:text-2xl text-foreground mb-4 leading-relaxed">
             Professional Make Good Services for Commercial & Industrial Spaces
