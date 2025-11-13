@@ -103,38 +103,42 @@ Task: Write concise, conversion-focused content for this gap.
 
 CRITICAL FORMAT REQUIREMENTS:
 1. Word count: 600-800 words total (concise and scannable)
-2. Structure as SHORT service sections, each with:
-   - H3 heading (service category)
-   - One sentence description (max 20 words)
-   - 3-5 bullet points (each max 6 words)
-3. Start with brief 2-paragraph introduction (100 words max)
-4. Include 4-6 key service sections relevant to the location
+2. Structure: Brief intro + 4-6 core SERVICE offerings
+3. Each service section MUST have:
+   - H3 heading: Clear service name (e.g., "Office Strip Out", "End of Lease Restoration", "Building Remediation")
+   - One compelling sentence about what this service delivers (20-25 words)
+   - 4-6 bullet points listing SPECIFIC deliverables/features (8-12 words each)
+4. Start with brief 2-paragraph introduction (100 words max)
 5. Write in markdown format
-6. NO long paragraphs - keep everything scannable
-7. Focus on benefits and specific services, not process descriptions
-8. Meta description (150-160 characters)
+6. NO questions, NO FAQs, NO repetitive text
+7. Focus on what the client GETS - tangible outcomes and deliverables
+8. Make bullets actionable: "Complete removal of fixtures and fittings", NOT "Fixtures and fittings"
 
 EXAMPLE FORMAT:
-## Introduction paragraph
-Brief intro about the location and services (2-3 sentences max).
+## Introduction
+Brief intro about make good services in [location] and why they matter (2-3 sentences).
 
-Second paragraph with value proposition (2-3 sentences max).
+Second paragraph highlighting expertise and service quality (2-3 sentences).
 
-### Service Category 1
-One sentence describing this service category.
+### Office Strip Out Services
+Complete removal and disposal of all office infrastructure, leaving your commercial space ready for the next tenant or renovation.
 
-- Bullet point 1
-- Bullet point 2  
-- Bullet point 3
-- Bullet point 4
+- Full removal of partition walls and suspended ceilings
+- Disconnection and disposal of all electrical fixtures and data cabling
+- Professional removal of flooring including carpet tiles and vinyl
+- Safe disposal of furniture, fixtures and all waste materials
+- Site cleaning and preparation for handover inspection
+- Compliance documentation and certification
 
-### Service Category 2
-One sentence describing this service category.
+### End of Lease Make Good
+Restore your commercial space to its original condition with our comprehensive end of lease restoration services.
 
-- Bullet point 1
-- Bullet point 2
-- Bullet point 3
-- Bullet point 4
+- Full assessment against original lease schedule of conditions
+- Repair and replacement of damaged walls, floors and ceilings
+- Professional painting to match original specifications
+- Carpet and flooring repair or replacement as required
+- Electrical and plumbing repairs to meet building standards
+- Final cleaning and handover ready for lease inspection
 
 Return ONLY a valid JSON object, no markdown code blocks:
 {
