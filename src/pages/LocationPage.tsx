@@ -10,6 +10,14 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import ReactMarkdown from "react-markdown";
 
+import officeStripOut from "@/assets/blog/office-strip-out.webp";
+import leaseTransitions from "@/assets/blog/lease-transitions.webp";
+import electricalMakeSafe from "@/assets/blog/electrical-make-safe.jpg";
+import buildingRemediation from "@/assets/blog/building-defect-remediation.webp";
+import wasteManagement from "@/assets/blog/waste-management-sustainability.jpg";
+import epoxyFlooring from "@/assets/blog/epoxy-flooring.webp";
+import heroWarehouse from "@/assets/hero-warehouse.jpg";
+
 // Icon mapping for different service types
 const serviceIcons: { [key: string]: any } = {
   'office': Building2,
@@ -30,6 +38,27 @@ const getServiceIcon = (title: string) => {
     if (titleLower.includes(key)) return icon;
   }
   return serviceIcons.default;
+};
+
+const serviceImages: { [key: string]: string } = {
+  'strip': officeStripOut,
+  'office': officeStripOut,
+  'lease': leaseTransitions,
+  'make safe': electricalMakeSafe,
+  'safe': electricalMakeSafe,
+  'remediation': buildingRemediation,
+  'remedial': buildingRemediation,
+  'waste': wasteManagement,
+  'floor': epoxyFlooring,
+  'default': heroWarehouse
+};
+
+const getServiceImage = (title: string) => {
+  const titleLower = title.toLowerCase();
+  for (const [key, img] of Object.entries(serviceImages)) {
+    if (titleLower.includes(key)) return img;
+  }
+  return serviceImages.default;
 };
 
 const LocationPage = () => {
@@ -222,52 +251,69 @@ const LocationPage = () => {
                       return sections.map((section, index) => {
                         const lines = section.trim().split('\n');
                         const title = lines[0]?.replace(/^#+\s*/, '').trim();
-                        const description = lines.find(line => line && !line.startsWith('-') && !line.startsWith('#'))?.trim();
+                        const descriptionCandidate = lines.find(line => line && !line.startsWith('-') && !line.startsWith('#'))?.trim();
                         const bullets = lines
                           .filter(line => line.trim().startsWith('-'))
                           .map(line => line.replace(/^-\s*/, '').trim());
 
                         const Icon = getServiceIcon(title || '');
-                        const iconColors = [
-                          'bg-blue-500/10 text-blue-600',
-                          'bg-purple-500/10 text-purple-600',
-                          'bg-orange-500/10 text-orange-600',
-                          'bg-pink-500/10 text-pink-600',
-                          'bg-amber-500/10 text-amber-600',
-                          'bg-emerald-500/10 text-emerald-600',
-                        ];
-                        const colorClass = iconColors[index % iconColors.length];
+                        const imageSrc = getServiceImage(title || '');
+
+                        const normalize = (s: string) => s.toLowerCase().replace(/[^a-z0-9]/g, '');
+                        const isDuplicate = descriptionCandidate && title
+                          ? normalize(descriptionCandidate) === normalize(title)
+                          : false;
+                        const summary = !isDuplicate && descriptionCandidate
+                          ? descriptionCandidate
+                          : (bullets.length ? `Includes: ${bullets.slice(0,3).join(', ')}` : '');
 
                         return (
-                          <Card key={index} className="group p-6 hover:shadow-2xl transition-all duration-300 border-border hover:border-accent/30 bg-card">
-                            <div className="flex flex-col h-full">
-                              <div className="flex items-start gap-4 mb-4">
-                                <div className={`p-3 rounded-xl ${colorClass} group-hover:scale-110 transition-transform duration-300`}>
-                                  <Icon className="w-6 h-6" />
+                          <a key={index} href="/#contact" className="group block" aria-label={`Request quote for ${title} in ${content.target_location}`}>
+                            <Card className="p-0 overflow-hidden hover:shadow-2xl transition-all duration-300 border-border hover:border-accent/30 bg-card">
+                              <div className="flex flex-col h-full">
+                                <div className="overflow-hidden">
+                                  <img
+                                    src={imageSrc}
+                                    alt={`${title} in ${content.target_location}`}
+                                    className="h-32 w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                                    loading="lazy"
+                                  />
                                 </div>
-                                <div className="flex-1">
-                                  <h3 className="text-xl font-bold text-foreground mb-2 group-hover:text-accent transition-colors">
-                                    {title}
-                                  </h3>
+
+                                <div className="p-6">
+                                  <div className="flex items-start gap-4 mb-3">
+                                    <div className={`p-2.5 rounded-md bg-accent/10 text-accent group-hover:scale-110 transition-transform duration-300`}>
+                                      <Icon className="w-5 h-5" />
+                                    </div>
+                                    <h3 className="text-xl font-bold text-foreground group-hover:text-accent transition-colors">
+                                      {title}
+                                    </h3>
+                                  </div>
+
+                                  {summary && (
+                                    <p className="text-muted-foreground text-sm leading-relaxed mb-3">
+                                      {summary}
+                                    </p>
+                                  )}
+
+                                  {bullets.length > 0 && (
+                                    <ul className="space-y-2">
+                                      {bullets.slice(0,3).map((bullet, i) => (
+                                        <li key={i} className="flex items-start gap-2 text-sm text-muted-foreground">
+                                          <span className="text-accent mt-0.5 flex-shrink-0">•</span>
+                                          <span className="leading-relaxed">{bullet}</span>
+                                        </li>
+                                      ))}
+                                    </ul>
+                                  )}
+
+                                  <div className="mt-5">
+                                    <Button className="bg-accent hover:bg-accent/90 text-accent-foreground">Get a quote</Button>
+                                  </div>
                                 </div>
                               </div>
-                              {description && (
-                                <p className="text-muted-foreground text-sm leading-relaxed mb-4">
-                                  {description}
-                                </p>
-                              )}
-                              {bullets.length > 0 && (
-                                <ul className="space-y-2.5 mt-auto">
-                                  {bullets.map((bullet, i) => (
-                                    <li key={i} className="flex items-start gap-2.5 text-sm text-muted-foreground">
-                                      <span className="text-accent mt-0.5 flex-shrink-0">•</span>
-                                      <span className="leading-relaxed">{bullet}</span>
-                                    </li>
-                                  ))}
-                                </ul>
-                              )}
-                            </div>
-                          </Card>
+                            </Card>
+                          </a>
                         );
                       });
                     })()}
