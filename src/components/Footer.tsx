@@ -46,33 +46,9 @@ const Footer = () => {
 
           <div>
             <h4 className="font-semibold mb-4 text-foreground">Service Areas</h4>
-            <ul className="space-y-2">
-              <li>
-                <a href="/locations/melbourne-cbd" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Melbourne CBD
-                </a>
-              </li>
-              <li>
-                <a href="/locations/south-melbourne" className="text-muted-foreground hover:text-foreground transition-colors">
-                  South Melbourne
-                </a>
-              </li>
-              <li>
-                <a href="/locations/richmond" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Richmond
-                </a>
-              </li>
-              <li>
-                <a href="/locations/docklands" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Docklands
-                </a>
-              </li>
-              <li>
-                <a href="/locations" className="text-accent hover:text-accent/80 transition-colors font-medium">
-                  View All Areas →
-                </a>
-              </li>
-            </ul>
+            <p className="text-muted-foreground leading-relaxed">
+              We service all Melbourne metro areas including CBD, inner suburbs, and surrounding commercial/industrial areas.
+            </p>
           </div>
         </div>
 
