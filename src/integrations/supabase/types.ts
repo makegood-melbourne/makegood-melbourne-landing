@@ -214,7 +214,48 @@ export type Database = {
       }
     }
     Views: {
-      [_ in never]: never
+      published_content: {
+        Row: {
+          content: string | null
+          content_type: string | null
+          created_at: string | null
+          generated_images: Json | null
+          id: string | null
+          meta_description: string | null
+          published_at: string | null
+          slug: string | null
+          target_location: string | null
+          title: string | null
+          word_count: number | null
+        }
+        Insert: {
+          content?: string | null
+          content_type?: string | null
+          created_at?: string | null
+          generated_images?: Json | null
+          id?: string | null
+          meta_description?: string | null
+          published_at?: string | null
+          slug?: string | null
+          target_location?: string | null
+          title?: string | null
+          word_count?: number | null
+        }
+        Update: {
+          content?: string | null
+          content_type?: string | null
+          created_at?: string | null
+          generated_images?: Json | null
+          id?: string | null
+          meta_description?: string | null
+          published_at?: string | null
+          slug?: string | null
+          target_location?: string | null
+          title?: string | null
+          word_count?: number | null
+        }
+        Relationships: []
+      }
     }
     Functions: {
       [_ in never]: never

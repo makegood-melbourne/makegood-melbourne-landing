@@ -15,11 +15,10 @@ const LocationPage = () => {
     queryKey: ["location-page", slug],
     queryFn: async () => {
       const { data, error } = await supabase
-        .from("content_drafts")
+        .from("published_content")
         .select("*")
         .eq("slug", slug)
         .eq("content_type", "location_page")
-        .eq("status", "published")
         .single();
 
       if (error) throw error;
@@ -67,9 +66,6 @@ const LocationPage = () => {
       <Helmet>
         <title>{content.title}</title>
         <meta name="description" content={content.meta_description} />
-        {content.target_keywords && (
-          <meta name="keywords" content={content.target_keywords.join(", ")} />
-        )}
         <link rel="canonical" href={`${window.location.origin}/locations/${slug}`} />
         <script type="application/ld+json">
           {JSON.stringify(structuredData)}
