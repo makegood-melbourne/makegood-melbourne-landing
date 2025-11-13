@@ -184,13 +184,19 @@ Return ONLY a valid JSON object, no markdown code blocks:
     let contentData;
     try {
       const jsonMatch = contentText.match(/\{[\s\S]*\}/);
-      if (jsonMatch) {
-        contentData = JSON.parse(jsonMatch[0]);
-      } else {
-        contentData = JSON.parse(contentText);
-      }
+      let jsonString = jsonMatch ? jsonMatch[0] : contentText;
+      
+      // Clean up control characters that break JSON parsing
+      jsonString = jsonString
+        .replace(/[\u0000-\u001F\u007F-\u009F]/g, '') // Remove control characters
+        .replace(/\n/g, '\\n') // Escape newlines
+        .replace(/\r/g, '\\r') // Escape carriage returns
+        .replace(/\t/g, '\\t'); // Escape tabs
+      
+      contentData = JSON.parse(jsonString);
     } catch (e) {
       console.error('Failed to parse JSON:', e);
+      console.error('Raw response:', contentText.substring(0, 500));
       throw new Error('Invalid JSON response from AI');
     }
 
