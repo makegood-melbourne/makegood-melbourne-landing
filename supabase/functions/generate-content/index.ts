@@ -99,20 +99,42 @@ BRAND VOICE & CONTEXT:
 - Target audience: Property managers, landlords, tenants, real estate agents
 - Service area: Melbourne and Victoria
 
-Task: Write comprehensive, SEO-optimized content for this gap.
+Task: Write concise, conversion-focused content for this gap.
 
-Requirements:
-1. Word count: 1200-1800 words (this is critical for SEO)
-2. Include proper H1, H2, H3 structure with target keywords
-3. Write engaging introduction with primary keyword in first paragraph
-4. Include service details, benefits, process, and call-to-action
-5. Natural keyword integration (avoid keyword stuffing)
-6. Include FAQ section if appropriate
-7. Location-specific information if targeting a suburb
+CRITICAL FORMAT REQUIREMENTS:
+1. Word count: 600-800 words total (concise and scannable)
+2. Structure as SHORT service sections, each with:
+   - H3 heading (service category)
+   - One sentence description (max 20 words)
+   - 3-5 bullet points (each max 6 words)
+3. Start with brief 2-paragraph introduction (100 words max)
+4. Include 4-6 key service sections relevant to the location
+5. Write in markdown format
+6. NO long paragraphs - keep everything scannable
+7. Focus on benefits and specific services, not process descriptions
 8. Meta description (150-160 characters)
-9. Write in markdown format - DO NOT use bold (**text**) or italic formatting within sentences. Write naturally flowing text without emphasis formatting.
-10. Specify if this is a "page" or "blog" - pages are standalone service/location pages, blogs are articles
-11. If it's a page, provide navigation structure showing where it should appear in the site menu
+
+EXAMPLE FORMAT:
+## Introduction paragraph
+Brief intro about the location and services (2-3 sentences max).
+
+Second paragraph with value proposition (2-3 sentences max).
+
+### Service Category 1
+One sentence describing this service category.
+
+- Bullet point 1
+- Bullet point 2  
+- Bullet point 3
+- Bullet point 4
+
+### Service Category 2
+One sentence describing this service category.
+
+- Bullet point 1
+- Bullet point 2
+- Bullet point 3
+- Bullet point 4
 
 Return ONLY a valid JSON object, no markdown code blocks:
 {
@@ -121,13 +143,13 @@ Return ONLY a valid JSON object, no markdown code blocks:
   "meta_description": "Compelling 150-160 char description with keyword",
   "content": "Full markdown content here...",
   "target_keywords": ["primary keyword", "secondary keyword", "tertiary keyword"],
-  "word_count": 1500,
+  "word_count": 700,
   "seo_score": 85,
-  "is_page_or_blog": "page" or "blog",
+  "is_page_or_blog": "page",
   "navigation_structure": {
-    "parent_menu": "Services" or "Locations" or null,
+    "parent_menu": "Locations",
     "menu_label": "Label for navigation",
-    "position": "Where in menu",
+    "position": "In Areas dropdown",
     "changes_needed": "Description of any navigation changes needed"
   }
 }`;

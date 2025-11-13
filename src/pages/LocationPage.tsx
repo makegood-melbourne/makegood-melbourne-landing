@@ -169,60 +169,73 @@ const LocationPage = () => {
           <div className="container mx-auto px-4">
             <div className="grid lg:grid-cols-3 gap-8">
               {/* Content Area */}
-              <div className="lg:col-span-2 space-y-16">
-                <article className="space-y-16">
-                  <div className="prose prose-lg max-w-none dark:prose-invert
-                    prose-headings:font-bold
-                    prose-h1:text-4xl prose-h1:mb-8 prose-h1:text-foreground
-                    prose-h2:text-3xl prose-h2:mt-0 prose-h2:mb-8 prose-h2:text-foreground
-                    prose-h3:text-2xl prose-h3:mt-0 prose-h3:mb-6 prose-h3:text-foreground
-                    prose-p:text-lg prose-p:text-muted-foreground prose-p:leading-relaxed prose-p:mb-8
-                    prose-ul:my-0 prose-ul:space-y-4 
-                    prose-li:text-lg prose-li:text-muted-foreground prose-li:leading-relaxed
-                    prose-strong:text-foreground prose-strong:font-semibold">
-                    <ReactMarkdown
-                      components={{
-                        h2: ({ children }) => (
-                          <div className="mb-16 mt-20 first:mt-0">
-                            <h2 className="text-4xl font-bold text-foreground mb-4 pb-4 border-b-2 border-accent/20">
-                              {children}
-                            </h2>
+              <div className="lg:col-span-2">
+                {/* Introduction Section */}
+                <div className="mb-12 prose prose-lg max-w-none dark:prose-invert
+                  prose-p:text-lg prose-p:text-muted-foreground prose-p:leading-relaxed prose-p:mb-6">
+                  <ReactMarkdown
+                    components={{
+                      p: ({ children }) => (
+                        <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                          {children}
+                        </p>
+                      ),
+                      h2: () => null, // Hide h2 in intro
+                      h3: () => null, // Hide h3 in intro
+                      ul: () => null, // Hide lists in intro
+                      li: () => null,
+                    }}
+                  >
+                    {content.content.split('###')[0]}
+                  </ReactMarkdown>
+                </div>
+
+                {/* Service Cards Grid */}
+                <div className="grid md:grid-cols-2 gap-6 mb-12">
+                  {(() => {
+                    // Split content by H3 headings to create service cards
+                    const sections = content.content.split('###').slice(1);
+                    
+                    return sections.map((section, index) => {
+                      const lines = section.trim().split('\n');
+                      const title = lines[0]?.replace(/^#+\s*/, '').trim();
+                      const description = lines.find(line => line && !line.startsWith('-') && !line.startsWith('#'))?.trim();
+                      const bullets = lines
+                        .filter(line => line.trim().startsWith('-'))
+                        .map(line => line.replace(/^-\s*/, '').trim());
+
+                      return (
+                        <Card key={index} className="p-6 hover:shadow-xl transition-all duration-300 border-border hover:border-accent/50">
+                          <div className="flex items-start gap-4 mb-4">
+                            <div className="p-3 rounded-lg bg-accent/10 text-accent">
+                              <div className="w-6 h-6"></div>
+                            </div>
+                            <div className="flex-1">
+                              <h3 className="text-xl font-bold text-foreground mb-2">
+                                {title}
+                              </h3>
+                              {description && (
+                                <p className="text-muted-foreground text-sm leading-relaxed">
+                                  {description}
+                                </p>
+                              )}
+                            </div>
                           </div>
-                        ),
-                        h3: ({ children }) => (
-                          <div className="bg-card border border-border rounded-xl p-8 mb-8 hover:shadow-lg transition-shadow">
-                            <h3 className="text-2xl font-bold text-foreground mb-4 flex items-center gap-3">
-                              <span className="w-2 h-8 bg-accent rounded-full"></span>
-                              {children}
-                            </h3>
-                          </div>
-                        ),
-                        p: ({ children, node }) => {
-                          // Check if this paragraph is right after an h3
-                          const parent = node?.position;
-                          return (
-                            <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-                              {children}
-                            </p>
-                          );
-                        },
-                        ul: ({ children }) => (
-                          <ul className="space-y-4 mb-12 ml-8">
-                            {children}
-                          </ul>
-                        ),
-                        li: ({ children }) => (
-                          <li className="flex items-start gap-4 text-lg">
-                            <span className="text-accent text-2xl leading-none mt-1">•</span>
-                            <span className="flex-1 text-muted-foreground leading-relaxed pt-0.5">{children}</span>
-                          </li>
-                        ),
-                      }}
-                    >
-                      {content.content}
-                    </ReactMarkdown>
-                  </div>
-                </article>
+                          {bullets.length > 0 && (
+                            <ul className="space-y-2 ml-0">
+                              {bullets.map((bullet, i) => (
+                                <li key={i} className="flex items-start gap-2 text-sm text-muted-foreground">
+                                  <span className="text-accent mt-1">•</span>
+                                  <span>{bullet}</span>
+                                </li>
+                              ))}
+                            </ul>
+                          )}
+                        </Card>
+                      );
+                    });
+                  })()}
+                </div>
               </div>
 
               {/* Sidebar */}
