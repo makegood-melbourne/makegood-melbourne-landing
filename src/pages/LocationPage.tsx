@@ -169,56 +169,60 @@ const LocationPage = () => {
           <div className="container mx-auto px-4">
             <div className="grid lg:grid-cols-3 gap-8">
               {/* Content Area */}
-              <div className="lg:col-span-2">
-                <Card className="p-8 mb-8 bg-card">
-                  <article className="prose prose-lg max-w-none dark:prose-invert
+              <div className="lg:col-span-2 space-y-16">
+                <article className="space-y-16">
+                  <div className="prose prose-lg max-w-none dark:prose-invert
                     prose-headings:font-bold
-                    prose-h1:text-4xl prose-h1:mb-6 prose-h1:text-foreground
-                    prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-6 prose-h2:pb-3 prose-h2:border-b-2 prose-h2:border-accent/20 prose-h2:text-foreground
-                    prose-h3:text-2xl prose-h3:mt-8 prose-h3:mb-4 prose-h3:text-foreground
-                    prose-h4:text-xl prose-h4:mt-6 prose-h4:mb-3 prose-h4:text-foreground
-                    prose-p:text-base prose-p:text-muted-foreground prose-p:leading-relaxed prose-p:mb-6
-                    prose-ul:my-6 prose-ul:space-y-3 prose-li:text-muted-foreground prose-li:leading-relaxed
-                    prose-ol:my-6 prose-ol:space-y-3
-                    prose-strong:text-foreground prose-strong:font-semibold
-                    prose-a:text-accent prose-a:font-medium prose-a:no-underline hover:prose-a:underline
-                    prose-blockquote:border-l-4 prose-blockquote:border-accent prose-blockquote:pl-6 prose-blockquote:italic prose-blockquote:text-muted-foreground
-                    prose-code:text-accent prose-code:bg-accent/10 prose-code:px-2 prose-code:py-1 prose-code:rounded
-                    [&>*:first-child]:mt-0
-                    [&>*:last-child]:mb-0">
+                    prose-h1:text-4xl prose-h1:mb-8 prose-h1:text-foreground
+                    prose-h2:text-3xl prose-h2:mt-0 prose-h2:mb-8 prose-h2:text-foreground
+                    prose-h3:text-2xl prose-h3:mt-0 prose-h3:mb-6 prose-h3:text-foreground
+                    prose-p:text-lg prose-p:text-muted-foreground prose-p:leading-relaxed prose-p:mb-8
+                    prose-ul:my-0 prose-ul:space-y-4 
+                    prose-li:text-lg prose-li:text-muted-foreground prose-li:leading-relaxed
+                    prose-strong:text-foreground prose-strong:font-semibold">
                     <ReactMarkdown
                       components={{
                         h2: ({ children }) => (
-                          <h2 className="flex items-center gap-3">
-                            <span className="flex-1">{children}</span>
-                          </h2>
+                          <div className="mb-16 mt-20 first:mt-0">
+                            <h2 className="text-4xl font-bold text-foreground mb-4 pb-4 border-b-2 border-accent/20">
+                              {children}
+                            </h2>
+                          </div>
                         ),
                         h3: ({ children }) => (
-                          <h3 className="flex items-center gap-2">
-                            <span className="w-1 h-6 bg-accent rounded-full"></span>
-                            {children}
-                          </h3>
+                          <div className="bg-card border border-border rounded-xl p-8 mb-8 hover:shadow-lg transition-shadow">
+                            <h3 className="text-2xl font-bold text-foreground mb-4 flex items-center gap-3">
+                              <span className="w-2 h-8 bg-accent rounded-full"></span>
+                              {children}
+                            </h3>
+                          </div>
                         ),
+                        p: ({ children, node }) => {
+                          // Check if this paragraph is right after an h3
+                          const parent = node?.position;
+                          return (
+                            <p className="text-lg text-muted-foreground leading-relaxed mb-8">
+                              {children}
+                            </p>
+                          );
+                        },
                         ul: ({ children }) => (
-                          <ul className="space-y-3 my-6">
+                          <ul className="space-y-4 mb-12 ml-8">
                             {children}
                           </ul>
                         ),
                         li: ({ children }) => (
-                          <li className="flex items-start gap-3">
-                            <span className="text-accent mt-1.5">•</span>
-                            <span className="flex-1">{children}</span>
+                          <li className="flex items-start gap-4 text-lg">
+                            <span className="text-accent text-2xl leading-none mt-1">•</span>
+                            <span className="flex-1 text-muted-foreground leading-relaxed pt-0.5">{children}</span>
                           </li>
-                        ),
-                        p: ({ children }) => (
-                          <p className="mb-6 last:mb-0">{children}</p>
                         ),
                       }}
                     >
                       {content.content}
                     </ReactMarkdown>
-                  </article>
-                </Card>
+                  </div>
+                </article>
               </div>
 
               {/* Sidebar */}
