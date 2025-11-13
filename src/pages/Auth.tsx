@@ -8,6 +8,20 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { toast } from 'sonner';
 import { User, Session } from '@supabase/supabase-js';
+import { z } from 'zod';
+
+const authSchema = z.object({
+  email: z.string()
+    .trim()
+    .email({ message: "Invalid email address" })
+    .max(255, { message: "Email must be less than 255 characters" }),
+  password: z.string()
+    .min(8, { message: "Password must be at least 8 characters" })
+    .max(100, { message: "Password must be less than 100 characters" })
+    .regex(/[A-Z]/, { message: "Password must contain an uppercase letter" })
+    .regex(/[a-z]/, { message: "Password must contain a lowercase letter" })
+    .regex(/[0-9]/, { message: "Password must contain a number" })
+});
 
 export default function Auth() {
   const navigate = useNavigate();
@@ -52,9 +66,14 @@ export default function Auth() {
     setLoading(true);
 
     try {
-      const { data, error } = await supabase.auth.signInWithPassword({
+      const validated = authSchema.parse({
         email: loginEmail,
-        password: loginPassword,
+        password: loginPassword
+      });
+
+      const { data, error } = await supabase.auth.signInWithPassword({
+        email: validated.email,
+        password: validated.password
       });
 
       if (error) {
@@ -64,7 +83,13 @@ export default function Auth() {
         navigate('/content-agent');
       }
     } catch (error: any) {
-      toast.error(error.message || 'An error occurred');
+      if (error instanceof z.ZodError) {
+        error.errors.forEach(err => {
+          toast.error(err.message);
+        });
+      } else {
+        toast.error(error.message || 'An error occurred');
+      }
     } finally {
       setLoading(false);
     }
@@ -75,11 +100,16 @@ export default function Auth() {
     setLoading(true);
 
     try {
+      const validated = authSchema.parse({
+        email: signupEmail,
+        password: signupPassword
+      });
+
       const redirectUrl = `${window.location.origin}/content-agent`;
       
       const { data, error } = await supabase.auth.signUp({
-        email: signupEmail,
-        password: signupPassword,
+        email: validated.email,
+        password: validated.password,
         options: {
           emailRedirectTo: redirectUrl
         }
@@ -91,7 +121,13 @@ export default function Auth() {
         toast.success('Account created! Please check your email to confirm.');
       }
     } catch (error: any) {
-      toast.error(error.message || 'An error occurred');
+      if (error instanceof z.ZodError) {
+        error.errors.forEach(err => {
+          toast.error(err.message);
+        });
+      } else {
+        toast.error(error.message || 'An error occurred');
+      }
     } finally {
       setLoading(false);
     }

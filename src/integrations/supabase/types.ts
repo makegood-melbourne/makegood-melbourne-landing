@@ -176,6 +176,51 @@ export type Database = {
         }
         Relationships: []
       }
+      content_images: {
+        Row: {
+          created_at: string | null
+          draft_id: string | null
+          file_path: string
+          file_size: number
+          id: string
+          mime_type: string
+          user_id: string
+        }
+        Insert: {
+          created_at?: string | null
+          draft_id?: string | null
+          file_path: string
+          file_size: number
+          id?: string
+          mime_type: string
+          user_id: string
+        }
+        Update: {
+          created_at?: string | null
+          draft_id?: string | null
+          file_path?: string
+          file_size?: number
+          id?: string
+          mime_type?: string
+          user_id?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "content_images_draft_id_fkey"
+            columns: ["draft_id"]
+            isOneToOne: false
+            referencedRelation: "content_drafts"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "content_images_draft_id_fkey"
+            columns: ["draft_id"]
+            isOneToOne: false
+            referencedRelation: "published_content"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       seo_parameters: {
         Row: {
           category: string | null

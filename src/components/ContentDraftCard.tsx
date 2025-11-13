@@ -43,10 +43,12 @@ export const ContentDraftCard = ({ draft, onApprove, onReject, onPublish }: Cont
   const handleFileSelect = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
     if (file) {
-      if (!file.type.startsWith('image/')) {
+      const ALLOWED_TYPES = ['image/jpeg', 'image/png', 'image/webp'];
+      
+      if (!ALLOWED_TYPES.includes(file.type)) {
         toast({
           title: "Error",
-          description: "Please select an image file",
+          description: "Invalid file type. Use JPEG, PNG, or WebP",
           variant: "destructive",
         });
         return;
@@ -76,15 +78,17 @@ export const ContentDraftCard = ({ draft, onApprove, onReject, onPublish }: Cont
 
     setIsAddingImage(true);
     try {
+      const { data: { user } } = await supabase.auth.getUser();
+      if (!user) throw new Error("User not authenticated");
+
       let finalImageUrl = imageUrl;
 
       // Upload file if selected
       if (selectedFile) {
         const fileExt = selectedFile.name.split('.').pop();
-        const fileName = `${draft.id}-${Date.now()}.${fileExt}`;
-        const filePath = `${fileName}`;
+        const filePath = `${user.id}/${draft.id}-${Date.now()}.${fileExt}`;
 
-        const { error: uploadError, data } = await supabase.storage
+        const { error: uploadError } = await supabase.storage
           .from('content-images')
           .upload(filePath, selectedFile, {
             cacheControl: '3600',
@@ -92,6 +96,19 @@ export const ContentDraftCard = ({ draft, onApprove, onReject, onPublish }: Cont
           });
 
         if (uploadError) throw uploadError;
+
+        // Track the uploaded file
+        const { error: trackError } = await supabase
+          .from('content_images')
+          .insert({
+            user_id: user.id,
+            draft_id: draft.id,
+            file_path: filePath,
+            file_size: selectedFile.size,
+            mime_type: selectedFile.type
+          });
+
+        if (trackError) throw trackError;
 
         const { data: { publicUrl } } = supabase.storage
           .from('content-images')
@@ -126,10 +143,14 @@ export const ContentDraftCard = ({ draft, onApprove, onReject, onPublish }: Cont
       setSelectedFile(null);
       if (fileInputRef.current) fileInputRef.current.value = '';
       window.location.reload();
-    } catch (error) {
+    } catch (error: any) {
+      const errorMessage = error?.message?.includes('quota exceeded') 
+        ? 'Storage quota exceeded (100MB limit)'
+        : 'Failed to add image';
+      
       toast({
         title: "Error",
-        description: "Failed to add image",
+        description: errorMessage,
         variant: "destructive",
       });
     } finally {
