@@ -14,7 +14,204 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      competitor_analysis: {
+        Row: {
+          analysis_date: string
+          competitor_name: string
+          competitor_url: string
+          content_summary: string | null
+          id: string
+          key_services: string[] | null
+          next_scan_date: string | null
+          page_count: number | null
+          ranking_position: number | null
+          strengths: Json | null
+          target_locations: string[] | null
+          weaknesses: Json | null
+        }
+        Insert: {
+          analysis_date?: string
+          competitor_name: string
+          competitor_url: string
+          content_summary?: string | null
+          id?: string
+          key_services?: string[] | null
+          next_scan_date?: string | null
+          page_count?: number | null
+          ranking_position?: number | null
+          strengths?: Json | null
+          target_locations?: string[] | null
+          weaknesses?: Json | null
+        }
+        Update: {
+          analysis_date?: string
+          competitor_name?: string
+          competitor_url?: string
+          content_summary?: string | null
+          id?: string
+          key_services?: string[] | null
+          next_scan_date?: string | null
+          page_count?: number | null
+          ranking_position?: number | null
+          strengths?: Json | null
+          target_locations?: string[] | null
+          weaknesses?: Json | null
+        }
+        Relationships: []
+      }
+      content_drafts: {
+        Row: {
+          content: string
+          content_type: string
+          created_at: string
+          gap_id: string | null
+          generated_images: Json | null
+          id: string
+          meta_description: string | null
+          navigation_structure: Json | null
+          published_at: string | null
+          reviewed_at: string | null
+          seo_score: number | null
+          slug: string
+          status: string
+          target_keywords: string[] | null
+          target_location: string | null
+          title: string
+          updated_at: string
+          word_count: number | null
+        }
+        Insert: {
+          content: string
+          content_type: string
+          created_at?: string
+          gap_id?: string | null
+          generated_images?: Json | null
+          id?: string
+          meta_description?: string | null
+          navigation_structure?: Json | null
+          published_at?: string | null
+          reviewed_at?: string | null
+          seo_score?: number | null
+          slug: string
+          status?: string
+          target_keywords?: string[] | null
+          target_location?: string | null
+          title: string
+          updated_at?: string
+          word_count?: number | null
+        }
+        Update: {
+          content?: string
+          content_type?: string
+          created_at?: string
+          gap_id?: string | null
+          generated_images?: Json | null
+          id?: string
+          meta_description?: string | null
+          navigation_structure?: Json | null
+          published_at?: string | null
+          reviewed_at?: string | null
+          seo_score?: number | null
+          slug?: string
+          status?: string
+          target_keywords?: string[] | null
+          target_location?: string | null
+          title?: string
+          updated_at?: string
+          word_count?: number | null
+        }
+        Relationships: []
+      }
+      content_gaps: {
+        Row: {
+          competitor_urls: string[] | null
+          content_classification: string | null
+          content_draft_id: string | null
+          created_at: string
+          description: string
+          estimated_traffic: number | null
+          gap_type: string
+          id: string
+          impact_score: number | null
+          priority_score: number | null
+          status: string
+          suggested_keywords: string[] | null
+          target_location: string | null
+          title: string
+          updated_at: string
+        }
+        Insert: {
+          competitor_urls?: string[] | null
+          content_classification?: string | null
+          content_draft_id?: string | null
+          created_at?: string
+          description: string
+          estimated_traffic?: number | null
+          gap_type: string
+          id?: string
+          impact_score?: number | null
+          priority_score?: number | null
+          status?: string
+          suggested_keywords?: string[] | null
+          target_location?: string | null
+          title: string
+          updated_at?: string
+        }
+        Update: {
+          competitor_urls?: string[] | null
+          content_classification?: string | null
+          content_draft_id?: string | null
+          created_at?: string
+          description?: string
+          estimated_traffic?: number | null
+          gap_type?: string
+          id?: string
+          impact_score?: number | null
+          priority_score?: number | null
+          status?: string
+          suggested_keywords?: string[] | null
+          target_location?: string | null
+          title?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
+      seo_parameters: {
+        Row: {
+          category: string | null
+          created_at: string
+          id: string
+          is_active: boolean | null
+          parameter_type: string
+          priority: string | null
+          recommendation: string
+          source: string | null
+          value: Json | null
+        }
+        Insert: {
+          category?: string | null
+          created_at?: string
+          id?: string
+          is_active?: boolean | null
+          parameter_type: string
+          priority?: string | null
+          recommendation: string
+          source?: string | null
+          value?: Json | null
+        }
+        Update: {
+          category?: string | null
+          created_at?: string
+          id?: string
+          is_active?: boolean | null
+          parameter_type?: string
+          priority?: string | null
+          recommendation?: string
+          source?: string | null
+          value?: Json | null
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
