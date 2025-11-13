@@ -14,12 +14,36 @@ const LocationPage = () => {
   const { data: content, isLoading } = useQuery({
     queryKey: ["location-page", slug],
     queryFn: async () => {
-      const { data, error } = await supabase
+      // Try exact slug match first
+      let { data, error } = await supabase
         .from("published_content")
         .select("*")
         .eq("slug", slug)
         .eq("content_type", "location_page")
-        .single();
+        .maybeSingle();
+
+      // If not found, try with common SEO prefixes
+      if (!data && !error) {
+        const slugVariants = [
+          `make-good-services-${slug}`,
+          `makegood-${slug}`,
+          `${slug}-make-good`,
+        ];
+
+        for (const variant of slugVariants) {
+          const result = await supabase
+            .from("published_content")
+            .select("*")
+            .eq("slug", variant)
+            .eq("content_type", "location_page")
+            .maybeSingle();
+
+          if (result.data) {
+            data = result.data;
+            break;
+          }
+        }
+      }
 
       if (error) throw error;
       return data;
