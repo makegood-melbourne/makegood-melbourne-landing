@@ -170,16 +170,53 @@ const LocationPage = () => {
             <div className="grid lg:grid-cols-3 gap-8">
               {/* Content Area */}
               <div className="lg:col-span-2">
-                <Card className="p-8 mb-8">
+                <Card className="p-8 mb-8 bg-card">
                   <article className="prose prose-lg max-w-none dark:prose-invert
-                    prose-headings:text-foreground prose-headings:font-bold prose-headings:mb-4
-                    prose-h1:text-4xl prose-h2:text-3xl prose-h2:mt-8 prose-h2:border-b prose-h2:border-border prose-h2:pb-2
-                    prose-h3:text-2xl prose-h3:mt-6
-                    prose-p:text-muted-foreground prose-p:leading-relaxed prose-p:mb-4
-                    prose-ul:my-4 prose-li:text-muted-foreground prose-li:mb-2
+                    prose-headings:font-bold
+                    prose-h1:text-4xl prose-h1:mb-6 prose-h1:text-foreground
+                    prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-6 prose-h2:pb-3 prose-h2:border-b-2 prose-h2:border-accent/20 prose-h2:text-foreground
+                    prose-h3:text-2xl prose-h3:mt-8 prose-h3:mb-4 prose-h3:text-foreground
+                    prose-h4:text-xl prose-h4:mt-6 prose-h4:mb-3 prose-h4:text-foreground
+                    prose-p:text-base prose-p:text-muted-foreground prose-p:leading-relaxed prose-p:mb-6
+                    prose-ul:my-6 prose-ul:space-y-3 prose-li:text-muted-foreground prose-li:leading-relaxed
+                    prose-ol:my-6 prose-ol:space-y-3
                     prose-strong:text-foreground prose-strong:font-semibold
-                    prose-a:text-accent prose-a:no-underline hover:prose-a:underline">
-                    <ReactMarkdown>{content.content}</ReactMarkdown>
+                    prose-a:text-accent prose-a:font-medium prose-a:no-underline hover:prose-a:underline
+                    prose-blockquote:border-l-4 prose-blockquote:border-accent prose-blockquote:pl-6 prose-blockquote:italic prose-blockquote:text-muted-foreground
+                    prose-code:text-accent prose-code:bg-accent/10 prose-code:px-2 prose-code:py-1 prose-code:rounded
+                    [&>*:first-child]:mt-0
+                    [&>*:last-child]:mb-0">
+                    <ReactMarkdown
+                      components={{
+                        h2: ({ children }) => (
+                          <h2 className="flex items-center gap-3">
+                            <span className="flex-1">{children}</span>
+                          </h2>
+                        ),
+                        h3: ({ children }) => (
+                          <h3 className="flex items-center gap-2">
+                            <span className="w-1 h-6 bg-accent rounded-full"></span>
+                            {children}
+                          </h3>
+                        ),
+                        ul: ({ children }) => (
+                          <ul className="space-y-3 my-6">
+                            {children}
+                          </ul>
+                        ),
+                        li: ({ children }) => (
+                          <li className="flex items-start gap-3">
+                            <span className="text-accent mt-1.5">•</span>
+                            <span className="flex-1">{children}</span>
+                          </li>
+                        ),
+                        p: ({ children }) => (
+                          <p className="mb-6 last:mb-0">{children}</p>
+                        ),
+                      }}
+                    >
+                      {content.content}
+                    </ReactMarkdown>
                   </article>
                 </Card>
               </div>
