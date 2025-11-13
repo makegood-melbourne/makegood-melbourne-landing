@@ -12,6 +12,8 @@ import BlogPostPage from "./pages/BlogPostPage";
 import ContentAgent from "./pages/ContentAgent";
 import Auth from "./pages/Auth";
 import NotFound from "./pages/NotFound";
+import Locations from "./pages/Locations";
+import LocationPage from "./pages/LocationPage";
 import { ProtectedRoute } from "./components/ProtectedRoute";
 
 const queryClient = new QueryClient();
@@ -27,6 +29,8 @@ const App = () => (
           <Route path="/capabilities" element={<Capabilities />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
+          <Route path="/locations" element={<Locations />} />
+          <Route path="/locations/:slug" element={<LocationPage />} />
           <Route path="/auth" element={<Auth />} />
           <Route 
             path="/content-agent" 
