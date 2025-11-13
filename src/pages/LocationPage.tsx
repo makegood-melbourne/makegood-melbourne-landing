@@ -5,10 +5,32 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { supabase } from "@/integrations/supabase/client";
 import { Skeleton } from "@/components/ui/skeleton";
-import { MapPin, Phone, Mail, CheckCircle } from "lucide-react";
+import { MapPin, Phone, Mail, CheckCircle, Building2, Wrench, Package, Shield, Hammer, Settings } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import ReactMarkdown from "react-markdown";
+
+// Icon mapping for different service types
+const serviceIcons: { [key: string]: any } = {
+  'office': Building2,
+  'strip': Wrench,
+  'lease': Package,
+  'safe': Shield,
+  'remediation': Hammer,
+  'make good': Settings,
+  'restoration': Wrench,
+  'building': Building2,
+  'commercial': Building2,
+  'default': Settings
+};
+
+const getServiceIcon = (title: string) => {
+  const titleLower = title.toLowerCase();
+  for (const [key, icon] of Object.entries(serviceIcons)) {
+    if (titleLower.includes(key)) return icon;
+  }
+  return serviceIcons.default;
+};
 
 const LocationPage = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -167,74 +189,89 @@ const LocationPage = () => {
 
           {/* Main Content */}
           <div className="container mx-auto px-4">
-            <div className="grid lg:grid-cols-3 gap-8">
+            <div className="grid lg:grid-cols-3 gap-12">
               {/* Content Area */}
               <div className="lg:col-span-2">
                 {/* Introduction Section */}
-                <div className="mb-12 prose prose-lg max-w-none dark:prose-invert
-                  prose-p:text-lg prose-p:text-muted-foreground prose-p:leading-relaxed prose-p:mb-6">
-                  <ReactMarkdown
-                    components={{
-                      p: ({ children }) => (
-                        <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                          {children}
-                        </p>
-                      ),
-                      h2: () => null, // Hide h2 in intro
-                      h3: () => null, // Hide h3 in intro
-                      ul: () => null, // Hide lists in intro
-                      li: () => null,
-                    }}
-                  >
-                    {content.content.split('###')[0]}
-                  </ReactMarkdown>
+                <div className="mb-16">
+                  <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-8">
+                    {content.target_location} Make Good Services
+                  </h2>
+                  {(() => {
+                    const introText = content.content.split('###')[0];
+                    const paragraphs = introText
+                      .split('\n\n')
+                      .filter(p => p.trim() && !p.startsWith('#'))
+                      .map(p => p.trim());
+                    
+                    return paragraphs.map((para, idx) => (
+                      <p key={idx} className="text-lg text-muted-foreground leading-relaxed mb-6">
+                        {para}
+                      </p>
+                    ));
+                  })()}
                 </div>
 
                 {/* Service Cards Grid */}
-                <div className="grid md:grid-cols-2 gap-6 mb-12">
-                  {(() => {
-                    // Split content by H3 headings to create service cards
-                    const sections = content.content.split('###').slice(1);
-                    
-                    return sections.map((section, index) => {
-                      const lines = section.trim().split('\n');
-                      const title = lines[0]?.replace(/^#+\s*/, '').trim();
-                      const description = lines.find(line => line && !line.startsWith('-') && !line.startsWith('#'))?.trim();
-                      const bullets = lines
-                        .filter(line => line.trim().startsWith('-'))
-                        .map(line => line.replace(/^-\s*/, '').trim());
+                <div>
+                  <h2 className="text-2xl font-bold text-foreground mb-8">Our Services</h2>
+                  <div className="grid md:grid-cols-2 gap-6">
+                    {(() => {
+                      const sections = content.content.split('###').slice(1);
+                      
+                      return sections.map((section, index) => {
+                        const lines = section.trim().split('\n');
+                        const title = lines[0]?.replace(/^#+\s*/, '').trim();
+                        const description = lines.find(line => line && !line.startsWith('-') && !line.startsWith('#'))?.trim();
+                        const bullets = lines
+                          .filter(line => line.trim().startsWith('-'))
+                          .map(line => line.replace(/^-\s*/, '').trim());
 
-                      return (
-                        <Card key={index} className="p-6 hover:shadow-xl transition-all duration-300 border-border hover:border-accent/50">
-                          <div className="flex items-start gap-4 mb-4">
-                            <div className="p-3 rounded-lg bg-accent/10 text-accent">
-                              <div className="w-6 h-6"></div>
-                            </div>
-                            <div className="flex-1">
-                              <h3 className="text-xl font-bold text-foreground mb-2">
-                                {title}
-                              </h3>
+                        const Icon = getServiceIcon(title || '');
+                        const iconColors = [
+                          'bg-blue-500/10 text-blue-600',
+                          'bg-purple-500/10 text-purple-600',
+                          'bg-orange-500/10 text-orange-600',
+                          'bg-pink-500/10 text-pink-600',
+                          'bg-amber-500/10 text-amber-600',
+                          'bg-emerald-500/10 text-emerald-600',
+                        ];
+                        const colorClass = iconColors[index % iconColors.length];
+
+                        return (
+                          <Card key={index} className="group p-6 hover:shadow-2xl transition-all duration-300 border-border hover:border-accent/30 bg-card">
+                            <div className="flex flex-col h-full">
+                              <div className="flex items-start gap-4 mb-4">
+                                <div className={`p-3 rounded-xl ${colorClass} group-hover:scale-110 transition-transform duration-300`}>
+                                  <Icon className="w-6 h-6" />
+                                </div>
+                                <div className="flex-1">
+                                  <h3 className="text-xl font-bold text-foreground mb-2 group-hover:text-accent transition-colors">
+                                    {title}
+                                  </h3>
+                                </div>
+                              </div>
                               {description && (
-                                <p className="text-muted-foreground text-sm leading-relaxed">
+                                <p className="text-muted-foreground text-sm leading-relaxed mb-4">
                                   {description}
                                 </p>
                               )}
+                              {bullets.length > 0 && (
+                                <ul className="space-y-2.5 mt-auto">
+                                  {bullets.map((bullet, i) => (
+                                    <li key={i} className="flex items-start gap-2.5 text-sm text-muted-foreground">
+                                      <span className="text-accent mt-0.5 flex-shrink-0">•</span>
+                                      <span className="leading-relaxed">{bullet}</span>
+                                    </li>
+                                  ))}
+                                </ul>
+                              )}
                             </div>
-                          </div>
-                          {bullets.length > 0 && (
-                            <ul className="space-y-2 ml-0">
-                              {bullets.map((bullet, i) => (
-                                <li key={i} className="flex items-start gap-2 text-sm text-muted-foreground">
-                                  <span className="text-accent mt-1">•</span>
-                                  <span>{bullet}</span>
-                                </li>
-                              ))}
-                            </ul>
-                          )}
-                        </Card>
-                      );
-                    });
-                  })()}
+                          </Card>
+                        );
+                      });
+                    })()}
+                  </div>
                 </div>
               </div>
 
