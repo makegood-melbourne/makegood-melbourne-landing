@@ -34,8 +34,8 @@ const About = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-3">
             Who We Are
           </h2>
-          <p className="text-xl text-accent font-semibold mb-6">
-            Make Good, BETTER.
+          <p className="text-xl text-primary font-semibold mb-6">
+            We do make good all day, every day.
           </p>
           <p className="text-lg text-muted-foreground leading-relaxed mb-6">
             Navigating today's complex property market requires expertise and reliability. That's why we established MakeGOOD Melbourne—to redefine the standard of make good services across commercial, industrial, and warehouse properties.
