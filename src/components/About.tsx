@@ -35,7 +35,7 @@ const About = () => {
             Who We Are
           </h2>
           <p className="text-xl text-primary font-semibold mb-6">
-            We do make good all day, every day.
+            We do make goods all day, every day.
           </p>
           <p className="text-lg text-muted-foreground leading-relaxed mb-6">
             Navigating today's complex property market requires expertise and reliability. That's why we established MakeGOOD Melbourne—to redefine the standard of make good services across commercial, industrial, and warehouse properties.
