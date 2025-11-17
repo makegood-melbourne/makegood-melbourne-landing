@@ -34,7 +34,7 @@ const About = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-3">
             Who We Are
           </h2>
-          <p className="text-xl text-primary font-semibold mb-6">
+          <p className="text-xl text-accent font-semibold mb-6">
             We do make goods all day, every day.
           </p>
           <p className="text-lg text-muted-foreground leading-relaxed mb-6">
