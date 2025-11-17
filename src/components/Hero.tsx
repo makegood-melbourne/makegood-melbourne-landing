@@ -30,7 +30,7 @@ const Hero = () => {
               MELBOURNE
             </span>
           </h1>
-          <h2 className="text-3xl md:text-4xl text-accent font-semibold mb-6" style={{ textTransform: 'none' }}>
+          <h2 className="text-3xl md:text-4xl text-primary font-semibold mb-6" style={{ textTransform: 'none' }}>
             Make good, BETTER.
           </h2>
           <p className="text-xl md:text-2xl text-foreground mb-4 leading-relaxed">
@@ -43,7 +43,7 @@ const Hero = () => {
             <Button 
               size="lg" 
               onClick={scrollToContact}
-              className="bg-accent hover:bg-accent/90 text-accent-foreground text-lg px-8 py-6 group"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8 py-6 group"
             >
               Get a Free Quote
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
