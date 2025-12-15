@@ -175,9 +175,9 @@ const LocationTemplate = () => {
           <div className="max-w-5xl mx-auto">
             {/* Unique Local Content */}
             <div className="mb-12">
-              <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
-                Commercial & Industrial Property in {location.name}
-              </h2>
+            <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
+              Commercial & Industrial Property in <span className="text-primary">{location.name}</span>
+            </h2>
               <div className="text-muted-foreground space-y-4">
                 <p className="leading-relaxed">
                   {location.uniqueIntro}
