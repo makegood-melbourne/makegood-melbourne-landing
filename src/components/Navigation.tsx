@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Menu } from "lucide-react";
 import { useState } from "react";
-import logo from "@/assets/makegood-logo.png";
+import logo from "@/assets/makegood-melbourne-logo.png";
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,7 +20,7 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <a href="/">
-              <img src={logo} alt="Make Good Melbourne" className="h-8 md:h-10 brightness-0 invert cursor-pointer" />
+              <img src={logo} alt="MakeGOOD Melbourne - Commercial Make Good Services" className="h-8 md:h-10 brightness-0 invert cursor-pointer" />
             </a>
           </div>
           
