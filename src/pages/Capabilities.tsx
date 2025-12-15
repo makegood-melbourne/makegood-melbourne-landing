@@ -3,7 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Hammer, Building2, Wrench, CheckCircle } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import capabilitiesHero from "@/assets/capabilities-hero.jpg";
+import capabilitiesHero from "@/assets/commercial-property-restoration-capabilities-melbourne.jpg";
 
 const Capabilities = () => {
   const demolitionServices = [
@@ -55,7 +55,7 @@ const Capabilities = () => {
           <div className="absolute inset-0 z-0">
             <img 
               src={capabilitiesHero} 
-              alt="Professional commercial make good and restoration services"
+              alt="Professional commercial and industrial make good services including demolition, restoration, and trade work in Melbourne"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-background/70" />

@@ -1,5 +1,5 @@
 import { CheckCircle2 } from "lucide-react";
-import officeWorkspace from "@/assets/office-workspace.jpg";
+import officeWorkspace from "@/assets/modern-commercial-office-space-melbourne.jpg";
 
 const About = () => {
   const features = [
@@ -50,7 +50,7 @@ const About = () => {
           <div className="aspect-video w-full overflow-hidden rounded-lg">
             <img 
               src={officeWorkspace}
-              alt="Professional commercial office space make good and restoration services"
+              alt="Modern commercial office space ready for end of lease make good services in Melbourne"
               className="w-full h-full object-cover"
             />
           </div>
