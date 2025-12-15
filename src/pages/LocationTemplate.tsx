@@ -5,8 +5,8 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { getLocationBySlug } from "@/data/locations";
-import heroImage from "@/assets/locations/make-good-hero.jpeg";
-import workerImage from "@/assets/locations/worker-toolbelt.jpeg";
+import heroImage from "@/assets/locations/commercial-make-good-restoration-melbourne.jpeg";
+import workerImage from "@/assets/locations/melbourne-make-good-contractor-with-tools.jpeg";
 
 const LocationTemplate = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -271,7 +271,7 @@ const LocationTemplate = () => {
                 <div className="aspect-[4/3] rounded-lg overflow-hidden">
                   <img 
                     src={workerImage} 
-                    alt={`Professional make good worker applying epoxy flooring in ${location.name}`}
+                    alt={`Licensed make good contractor with tools ready for commercial property restoration in ${location.name} Melbourne`}
                     className="w-full h-full object-cover"
                   />
                 </div>
