@@ -138,20 +138,6 @@ const Capabilities = () => {
           </div>
         </section>
 
-        {/* CTA Banner */}
-        <section className="py-12 bg-secondary border-y border-primary/20">
-          <div className="container mx-auto px-4 text-center">
-            <h2 className="text-2xl md:text-3xl text-foreground mb-4">Ready to Start Your Make Good Project?</h2>
-            <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-              Get a free, no-obligation quote from our experienced team. We'll assess your needs and provide transparent pricing.
-            </p>
-            <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
-              <Link to="/#contact">
-                Contact Us Today
-              </Link>
-            </Button>
-          </div>
-        </section>
 
         {/* Make Good Services */}
         <section className="py-16 bg-secondary">
