@@ -63,9 +63,14 @@ const ServiceTemplate = () => {
           <div className="container mx-auto px-4">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
-                <p className="text-primary font-semibold mb-3 text-lg">Melbourne Specialists</p>
                 <h1 className="text-4xl md:text-5xl lg:text-6xl text-foreground mb-6">
-                  {service.title}
+                  {service.title.includes('Melbourne') ? (
+                    <>
+                      {service.title.replace(' Melbourne', '')} <span className="text-primary">Melbourne</span>
+                    </>
+                  ) : (
+                    service.title
+                  )}
                 </h1>
                 <p className="text-xl text-muted-foreground mb-8">
                   {service.heroText}
