@@ -1,5 +1,5 @@
 import commercialCleaningImage from "@/assets/services/commercial-cleaning-melbourne-supplies.jpeg";
-import warehouseFloorScrubberImage from "@/assets/services/warehouse-floor-scrubber-cleaning-v2.jpg";
+import warehouseFloorScrubberImage from "@/assets/services/warehouse-floor-scrubber-cleaning-v3.jpg";
 
 export interface Service {
   name: string;
