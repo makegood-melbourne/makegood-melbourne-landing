@@ -39,9 +39,9 @@ const Capabilities = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Helmet>
-        <title>Our Capabilities - Professional Make Good Services | MakeGOOD Melbourne</title>
-        <meta name="description" content="Comprehensive make good capabilities including demolition services, property restoration and trade services. Pallet racking removal, electrical make-safe, carpentry, concrete flooring, painting and more across Melbourne." />
-        <meta property="og:title" content="Our Capabilities - MakeGOOD Melbourne" />
+        <title>Make Good Capabilities | Demolition, Restoration & Trade Services Melbourne</title>
+        <meta name="description" content="Full-service make good capabilities: pallet racking removal, electrical make-safe, carpentry, concrete flooring, painting, ceiling repairs and more. Licensed Melbourne contractors." />
+        <meta property="og:title" content="Make Good Capabilities | MakeGOOD Melbourne" />
         <meta property="og:description" content="Professional demolition, make good and trade services for commercial and industrial properties in Melbourne." />
         <meta property="og:type" content="website" />
         <link rel="canonical" href="https://makegood.melbourne/capabilities" />

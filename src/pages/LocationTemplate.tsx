@@ -92,11 +92,30 @@ const LocationTemplate = () => {
   return (
     <>
       <Helmet>
-        <title>{location.title} | Make Good Melbourne</title>
-        <meta name="description" content={location.description} />
-        <meta property="og:title" content={`${location.title} | Make Good Melbourne`} />
-        <meta property="og:description" content={location.description} />
+        <title>{location.metaTitle}</title>
+        <meta name="description" content={location.metaDescription} />
+        <meta property="og:title" content={location.metaTitle} />
+        <meta property="og:description" content={location.metaDescription} />
         <link rel="canonical" href={`https://makegood.melbourne/areas/${slug}`} />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": `Make Good Services ${location.name}`,
+            "description": location.metaDescription,
+            "provider": {
+              "@type": "LocalBusiness",
+              "name": "Make Good Melbourne",
+              "url": "https://makegood.melbourne"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": location.name,
+              "containedIn": "Victoria, Australia"
+            },
+            "serviceType": "Make Good Services"
+          })}
+        </script>
       </Helmet>
 
       <Navigation />
@@ -335,6 +354,31 @@ const LocationTemplate = () => {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Extended SEO Content Section */}
+      <section className="py-16 bg-background border-t border-border">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
+              End of Lease Make Good Specialists in {location.name}
+            </h2>
+            <div className="prose prose-lg max-w-none text-muted-foreground space-y-4">
+              <p className="leading-relaxed">
+                When your commercial or industrial lease ends in {location.name}, meeting your make good obligations can feel overwhelming. That's where Make Good Melbourne comes in. We specialise in returning {location.name} commercial properties to their original condition, handling everything from office strip outs and warehouse restoration to industrial facility remediation.
+              </p>
+              <p className="leading-relaxed">
+                Our experienced team works with real estate agents, property managers, strata managers and tenants throughout {location.name} and the surrounding areas. We understand the specific requirements of {location.name}'s commercial property market—from older building stock that needs careful asbestos management to modern facilities requiring precision restoration to landlord specifications.
+              </p>
+              <p className="leading-relaxed">
+                Whether you're vacating a small office on {location.keyAreas[0]} or a large warehouse facility, we provide comprehensive make good services including demolition, electrical make-safe, carpentry, painting, flooring restoration, ceiling repairs and complete waste management. Every project includes detailed documentation for your records and lease compliance.
+              </p>
+              <p className="leading-relaxed">
+                As {location.name}'s trusted make good contractor, we guarantee our workmanship and offer fixed-price quotes with no hidden surprises. Contact us today for a free inspection and quote for your {location.name} make good project—we'll help you meet your lease obligations on time and on budget.
+              </p>
             </div>
           </div>
         </div>

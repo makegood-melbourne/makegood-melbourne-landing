@@ -13,10 +13,10 @@ const Blog = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Helmet>
-        <title>Blog - Expert Make Good & Property Restoration Insights | MakeGOOD Melbourne</title>
-        <meta name="description" content="Expert insights on make good services, end of lease works, and property restoration in Melbourne. Learn from industry professionals about commercial property maintenance." />
-        <meta property="og:title" content="Blog - Expert Make Good Insights | MakeGOOD Melbourne" />
-        <meta property="og:description" content="Expert insights on make good services, end of lease works, and property restoration in Melbourne." />
+        <title>Make Good Blog | Expert End of Lease & Property Restoration Insights Melbourne</title>
+        <meta name="description" content="Industry insights on commercial make good services, end of lease obligations, warehouse restoration and building remediation. Practical guides from Melbourne's property restoration experts." />
+        <meta property="og:title" content="Make Good Blog | Expert Property Restoration Insights" />
+        <meta property="og:description" content="Industry insights on commercial make good services, end of lease obligations and property restoration in Melbourne." />
         <meta property="og:type" content="website" />
         <link rel="canonical" href="https://makegood.melbourne/blog" />
       </Helmet>

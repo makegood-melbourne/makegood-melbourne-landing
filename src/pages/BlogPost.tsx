@@ -47,18 +47,19 @@ const BlogPost = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Helmet>
-        <title>{post.title} | MakeGOOD Melbourne Blog</title>
-        <meta name="description" content={post.excerpt} />
-        <meta property="og:title" content={post.title} />
+        <title>{post.title} - Expert Guide | MakeGOOD Melbourne</title>
+        <meta name="description" content={`${post.excerpt.slice(0, 155)}...`} />
+        <meta property="og:title" content={`${post.title} | MakeGOOD Melbourne`} />
         <meta property="og:description" content={post.excerpt} />
         <meta property="og:type" content="article" />
         <meta property="og:url" content={postUrl} />
         <meta property="og:image" content={imageUrl} />
         <meta property="article:published_time" content={new Date(post.date).toISOString()} />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={post.title} />
+        <meta name="twitter:title" content={`${post.title} | MakeGOOD Melbourne`} />
         <meta name="twitter:description" content={post.excerpt} />
         <meta name="twitter:image" content={imageUrl} />
+        <link rel="canonical" href={postUrl} />
         <link rel="canonical" href={postUrl} />
         <script type="application/ld+json">
           {JSON.stringify({
