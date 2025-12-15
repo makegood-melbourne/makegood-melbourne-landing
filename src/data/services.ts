@@ -12,7 +12,7 @@ export interface Service {
     description: string;
   }[];
   relatedServices: string[];
-  category: 'demolition' | 'make-good' | 'trade';
+  category: 'demolition' | 'make-good' | 'trade' | 'cleaning';
 }
 
 export const services: Service[] = [
@@ -315,6 +315,33 @@ export const services: Service[] = [
     ],
     relatedServices: ["electrical-make-safe", "commercial-make-good", "office-strip-out"],
     category: "trade"
+  },
+  {
+    name: "Commercial Cleaning",
+    slug: "commercial-cleaning",
+    title: "Commercial Cleaning Melbourne",
+    metaTitle: "Commercial Cleaning Melbourne | Make Good & Handover",
+    description: "Professional commercial cleaning services for Melbourne offices, warehouses and industrial properties. End of lease cleaning, post-construction cleaning and handover-ready results.",
+    metaDescription: "Commercial cleaning Melbourne for make good projects. End of lease cleaning, post-construction cleaning, warehouse and office cleaning. Pass your final inspection first time. Free quotes.",
+    heroText: "Professional cleaning services that ensure your property passes final inspection and handover requirements.",
+    benefits: [
+      "End of lease deep cleaning",
+      "Post-construction cleaning",
+      "High-pressure washing",
+      "Window and facade cleaning",
+      "Industrial floor scrubbing",
+      "Graffiti removal",
+      "Carpet steam cleaning",
+      "Handover-ready results"
+    ],
+    process: [
+      { step: "Site Assessment", description: "We inspect your property to understand cleaning scope and landlord requirements." },
+      { step: "Cleaning Plan", description: "Tailored cleaning schedule developed to meet your handover deadline." },
+      { step: "Professional Execution", description: "Our experienced team delivers thorough cleaning to inspection standards." },
+      { step: "Final Walkthrough", description: "Quality check to ensure property is handover-ready before you present to landlord." }
+    ],
+    relatedServices: ["commercial-make-good", "warehouse-make-good", "office-strip-out"],
+    category: "cleaning"
   }
 ];
 
@@ -322,6 +349,6 @@ export function getServiceBySlug(slug: string): Service | undefined {
   return services.find(service => service.slug === slug);
 }
 
-export function getServicesByCategory(category: 'demolition' | 'make-good' | 'trade'): Service[] {
+export function getServicesByCategory(category: 'demolition' | 'make-good' | 'trade' | 'cleaning'): Service[] {
   return services.filter(service => service.category === category);
 }
