@@ -335,8 +335,8 @@ export const services: Service[] = [
     benefits: [
       "End of lease deep cleaning",
       "Post-construction cleaning",
-      "Ride-on sweepers for warehouses",
-      "Pressure washing (internal and external)",
+      "Industrial floor scrubbing",
+      "High-pressure cleaning (floors, walls and exteriors)",
       "Chemical floor cleaning",
       "Window and facade cleaning",
       "Industrial floor scrubbing",
