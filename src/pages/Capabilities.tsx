@@ -248,7 +248,7 @@ const Capabilities = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-6 leading-relaxed">
-                  Don't hand back a dusty space. Our professional cleaning services ensure your property is spotless and ready for final inspection. From post-construction cleans to end of lease deep cleaning, we handle it all so you can focus on what matters.
+                  Pass your final inspection first time. Our professional cleaning services ensure your property meets landlord standards and handover requirements. From post-construction cleans to end of lease deep cleaning, we handle it all so you can focus on what matters.
                 </p>
                 <div className="grid md:grid-cols-2 gap-4 mb-6">
                   {cleaningItems.map((service, index) => (
