@@ -1,4 +1,4 @@
-import { useParams, Link } from "react-router-dom";
+import { useParams, Navigate, Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { MapPin, Clock, DollarSign, Building2, Wrench, Warehouse, ArrowRight } from "lucide-react";
 import Navigation from "@/components/Navigation";
@@ -7,26 +7,21 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { getLocationBySlug } from "@/data/locations";
 
+// Locations that should redirect to homepage until properly designed
+const redirectLocations = ["richmond"];
+
 const Location = () => {
   const { slug } = useParams<{ slug: string }>();
+  
+  // Redirect certain locations to homepage
+  if (slug && redirectLocations.includes(slug)) {
+    return <Navigate to="/" replace />;
+  }
+  
   const location = slug ? getLocationBySlug(slug) : undefined;
 
   if (!location) {
-    return (
-      <>
-        <Navigation />
-        <main className="min-h-screen flex items-center justify-center bg-background">
-          <div className="text-center">
-            <h1 className="text-4xl font-bold mb-4">Location Not Found</h1>
-            <p className="text-muted-foreground mb-8">We couldn't find that service area.</p>
-            <Button asChild>
-              <Link to="/">Return Home</Link>
-            </Button>
-          </div>
-        </main>
-        <Footer />
-      </>
-    );
+    return <Navigate to="/" replace />;
   }
 
   const services = [

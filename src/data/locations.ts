@@ -12,10 +12,7 @@ export interface Location {
   };
 }
 
-export const locations: Location[] = [
-  // Location pages are disabled until designs are approved
-  // and correct contact information is added
-];
+export const locations: Location[] = [];
 
 export const getLocationBySlug = (slug: string): Location | undefined => {
   return locations.find(location => location.slug === slug);
