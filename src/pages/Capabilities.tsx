@@ -241,7 +241,7 @@ const Capabilities = () => {
                     <Sparkles className="h-6 w-6 text-primary" />
                   </div>
                   <div>
-                    <CardTitle className="text-3xl text-foreground">Cleaning & Post-Works Services</CardTitle>
+                    <CardTitle className="text-3xl text-foreground">Commercial Cleaning & Handover Services</CardTitle>
                     <p className="text-primary font-medium mt-1">Complete Your Make Good</p>
                   </div>
                 </div>
