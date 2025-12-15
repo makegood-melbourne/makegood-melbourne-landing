@@ -17,7 +17,7 @@ export const blogPosts: BlogPost[] = [
     date: "2025-11-08",
     image: "port-melbourne-warehouse.jpg",
     content: `
-Ending a warehouse lease in Port Melbourne doesn't have to be a nightmare. With proper planning, clear documentation, and the right approach to your make good obligations, you can navigate the exit process smoothly and protect your bond. This guide breaks down everything Port Melbourne warehouse tenants need to know about end of lease requirements, from understanding what "make good" actually means to negotiating fair outcomes with landlords.
+Ending a warehouse lease in Port Melbourne doesn't have to be a nightmare. With proper planning, clear documentation and the right approach to your make good obligations, you can navigate the exit process smoothly and protect your bond. This guide breaks down everything Port Melbourne warehouse tenants need to know about end of lease requirements, from understanding what "make good" actually means to negotiating fair outcomes with landlords.
 
 ## Understanding Make Good Obligations in Port Melbourne Warehouses
 
@@ -7563,7 +7563,7 @@ So, let's dive in and create a clean, fresh start for your workspace!`
     date: "1 November 2023",
     excerpt: "Discover the collaborative magic between property agents and our make good services. Streamlining property transitions, enhancing value, and a harmonious approach to property management.",
     image: "/src/assets/blog/construction-site-meeting.webp",
-    content: `Property management is an intricate dance, with agents as its graceful choreographers. The life of an agent can be a whirlwind of tasks, from marketing vacant properties to managing lease agreements, and handling tenant concerns. These professionals often find themselves walking a tightrope, balancing the demands of tenants, property owners, and their own expertise. As someone who appreciates the hard work that goes into this profession, I understand the challenges agents face daily.
+    content: `Property management is an intricate dance, with agents as its graceful choreographers. The life of an agent can be a whirlwind of tasks, from marketing vacant properties to managing lease agreements and handling tenant concerns. These professionals often find themselves walking a tightrope, balancing the demands of tenants, property owners and their own expertise. As someone who appreciates the hard work that goes into this profession, I understand the challenges agents face daily.
 
 At Makegood.Melbourne, we don't view agents as simply handing off properties when a lease ends. Instead, we see them as maestros of the real estate orchestra, conducting harmonious transitions from one tenant to another. Our role is not to critique their performance but to provide a helping hand when the melody becomes complex.
 
@@ -7581,7 +7581,7 @@ Furthermore, agents must be adept at multitasking and problem-solving. They need
 
 The competitive nature of the real estate market adds another layer of pressure. Agents must stay updated on market trends, pricing strategies, and emerging technologies to remain competitive and relevant.
 
-In essence, property management is a demanding profession that requires a jack-of-all-trades approach. It's not just about finding tenants; it's about creating and maintaining a harmonious relationship between tenants, property owners, and the properties themselves. Agents work diligently to preserve the value of properties while ensuring tenant satisfaction, and this juggling act is no small feat.
+In essence, property management is a demanding profession that requires a jack-of-all-trades approach. It's not just about finding tenants; it's about creating and maintaining a harmonious relationship between tenants, property owners and the properties themselves. Agents work diligently to preserve the value of properties while ensuring tenant satisfaction, and this juggling act is no small feat.
 
 Understanding these challenges is essential for appreciating the critical role that agents play in the property management process. They are the linchpin that keeps the system running, and we respect their dedication and expertise. In the following sections, we will explore how our make good services can complement these skills and provide valuable support, without undermining their capabilities.
 
@@ -7645,7 +7645,7 @@ Let's delve into a couple of real-life case studies:
 
 **Case Study 1 - Streamlined Property Transition:**
 
-A property was coming off a lease, and the agent decided to collaborate with Makegood.Melbourne. Our team efficiently handled the necessary repairs, repainting, and maintenance tasks. The property was not only returned to its original condition swiftly but also had a higher appeal to potential tenants. The agent was delighted with the seamless process and saved valuable time.
+A property was coming off a lease and the agent decided to collaborate with Makegood.Melbourne. Our team efficiently handled the necessary repairs, repainting and maintenance tasks. The property was not only returned to its original condition swiftly but also had a higher appeal to potential tenants. The agent was delighted with the seamless process and saved valuable time.
 
 **Case Study 2 - Enhanced Property Value:**
 
