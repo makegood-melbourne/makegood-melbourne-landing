@@ -156,11 +156,19 @@ const ServiceTemplate = () => {
                   Our experienced team delivers professional {service.name.toLowerCase()} services across Melbourne's commercial and industrial properties. We understand the importance of meeting lease obligations and landlord requirements, working efficiently to minimise disruption while achieving quality results.
                 </p>
               </div>
-              {/* Image Placeholder */}
+              {/* Secondary Image */}
               <div className="hidden lg:block">
-                <div className="aspect-[4/3] bg-muted/30 rounded-lg border-2 border-dashed border-muted-foreground/20 flex items-center justify-center">
-                  <span className="text-muted-foreground/50 text-sm">Service Image</span>
-                </div>
+                {service.secondaryImage ? (
+                  <img 
+                    src={service.secondaryImage} 
+                    alt={service.secondaryImageAlt || `${service.name} Melbourne - professional commercial services`}
+                    className="aspect-[4/3] w-full object-cover rounded-lg"
+                  />
+                ) : (
+                  <div className="aspect-[4/3] bg-muted/30 rounded-lg border-2 border-dashed border-muted-foreground/20 flex items-center justify-center">
+                    <span className="text-muted-foreground/50 text-sm">Service Image</span>
+                  </div>
+                )}
               </div>
             </div>
           </div>
