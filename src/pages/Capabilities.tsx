@@ -1,11 +1,12 @@
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Hammer, Building2, Wrench, CheckCircle, ArrowRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Hammer, Building2, Wrench, Sparkles, CheckCircle, ArrowRight, Phone } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import capabilitiesHero from "@/assets/commercial-property-restoration-capabilities-melbourne.jpg";
-import { services, getServicesByCategory } from "@/data/services";
+import { getServicesByCategory } from "@/data/services";
 
 const Capabilities = () => {
   const demolitionServices = getServicesByCategory('demolition');
@@ -39,7 +40,16 @@ const Capabilities = () => {
     "Fire protection systems",
     "Plumbing services",
     "Flooring and concreting",
-    "LED fluorescent light replacement"
+    "Security system removal"
+  ];
+
+  const cleaningItems = [
+    "Post-construction cleaning",
+    "End of lease deep cleaning",
+    "High-pressure washing",
+    "Window and facade cleaning",
+    "Industrial floor scrubbing",
+    "Graffiti removal"
   ];
 
   return (
@@ -69,10 +79,16 @@ const Capabilities = () => {
           
           <div className="container mx-auto px-4 z-10 text-center">
             <h1 className="text-4xl md:text-5xl text-foreground mb-3">Our Capabilities</h1>
-            <p className="text-2xl text-accent font-semibold mb-4">Make Good, BETTER.</p>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-2xl text-primary font-semibold mb-4">Make Good, BETTER.</p>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
               We do make goods all day, every day. Whether your project is retail, commercial, or industrial, our network of reliable trades will work tirelessly to ensure your make good experience is seamless.
             </p>
+            <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
+              <Link to="/#contact">
+                <Phone className="mr-2 h-5 w-5" />
+                Get a Free Quote
+              </Link>
+            </Button>
           </div>
         </section>
 
@@ -82,8 +98,8 @@ const Capabilities = () => {
             <Card className="border-border">
               <CardHeader>
                 <div className="flex items-center gap-4 mb-4">
-                  <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center">
-                    <Hammer className="h-6 w-6 text-accent" />
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
+                    <Hammer className="h-6 w-6 text-primary" />
                   </div>
                   <CardTitle className="text-3xl text-foreground">Demolition Services</CardTitle>
                 </div>
@@ -95,7 +111,7 @@ const Capabilities = () => {
                 <div className="grid md:grid-cols-2 gap-4 mb-6">
                   {allDemolitionItems.map((service, index) => (
                     <div key={index} className="flex items-start gap-3">
-                      <CheckCircle className="h-5 w-5 text-accent mt-0.5 flex-shrink-0" />
+                      <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                       <span className="text-foreground">{service}</span>
                     </div>
                   ))}
@@ -108,7 +124,7 @@ const Capabilities = () => {
                         <Link
                           key={service.slug}
                           to={`/services/${service.slug}`}
-                          className="inline-flex items-center gap-1 text-accent hover:text-primary transition-colors text-sm font-medium"
+                          className="inline-flex items-center gap-1 text-accent hover:text-accent/80 transition-colors text-sm font-medium"
                         >
                           {service.name}
                           <ArrowRight className="h-3 w-3" />
@@ -122,14 +138,29 @@ const Capabilities = () => {
           </div>
         </section>
 
+        {/* CTA Banner */}
+        <section className="py-12 bg-primary">
+          <div className="container mx-auto px-4 text-center">
+            <h2 className="text-2xl md:text-3xl text-primary-foreground mb-4">Ready to Start Your Make Good Project?</h2>
+            <p className="text-primary-foreground/80 mb-6 max-w-2xl mx-auto">
+              Get a free, no-obligation quote from our experienced team. We'll assess your needs and provide transparent pricing.
+            </p>
+            <Button asChild size="lg" variant="secondary" className="bg-background text-foreground hover:bg-background/90">
+              <Link to="/#contact">
+                Contact Us Today
+              </Link>
+            </Button>
+          </div>
+        </section>
+
         {/* Make Good Services */}
         <section className="py-16 bg-secondary">
           <div className="container mx-auto px-4">
             <Card className="border-border">
               <CardHeader>
                 <div className="flex items-center gap-4 mb-4">
-                  <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center">
-                    <Building2 className="h-6 w-6 text-accent" />
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
+                    <Building2 className="h-6 w-6 text-primary" />
                   </div>
                   <CardTitle className="text-3xl text-foreground">Make Good Services</CardTitle>
                 </div>
@@ -141,7 +172,7 @@ const Capabilities = () => {
                 <div className="grid md:grid-cols-2 gap-4 mb-6">
                   {allMakeGoodItems.map((service, index) => (
                     <div key={index} className="flex items-start gap-3">
-                      <CheckCircle className="h-5 w-5 text-accent mt-0.5 flex-shrink-0" />
+                      <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                       <span className="text-foreground">{service}</span>
                     </div>
                   ))}
@@ -154,7 +185,7 @@ const Capabilities = () => {
                         <Link
                           key={service.slug}
                           to={`/services/${service.slug}`}
-                          className="inline-flex items-center gap-1 text-accent hover:text-primary transition-colors text-sm font-medium"
+                          className="inline-flex items-center gap-1 text-accent hover:text-accent/80 transition-colors text-sm font-medium"
                         >
                           {service.name}
                           <ArrowRight className="h-3 w-3" />
@@ -174,8 +205,8 @@ const Capabilities = () => {
             <Card className="border-border">
               <CardHeader>
                 <div className="flex items-center gap-4 mb-4">
-                  <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center">
-                    <Wrench className="h-6 w-6 text-accent" />
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
+                    <Wrench className="h-6 w-6 text-primary" />
                   </div>
                   <CardTitle className="text-3xl text-foreground">Trade Services</CardTitle>
                 </div>
@@ -187,7 +218,7 @@ const Capabilities = () => {
                 <div className="grid md:grid-cols-2 gap-4 mb-6">
                   {allTradeItems.map((service, index) => (
                     <div key={index} className="flex items-start gap-3">
-                      <CheckCircle className="h-5 w-5 text-accent mt-0.5 flex-shrink-0" />
+                      <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                       <span className="text-foreground">{service}</span>
                     </div>
                   ))}
@@ -200,7 +231,7 @@ const Capabilities = () => {
                         <Link
                           key={service.slug}
                           to={`/services/${service.slug}`}
-                          className="inline-flex items-center gap-1 text-accent hover:text-primary transition-colors text-sm font-medium"
+                          className="inline-flex items-center gap-1 text-accent hover:text-accent/80 transition-colors text-sm font-medium"
                         >
                           {service.name}
                           <ArrowRight className="h-3 w-3" />
@@ -214,13 +245,69 @@ const Capabilities = () => {
           </div>
         </section>
 
-        {/* Closing Statement */}
+        {/* Cleaning Services */}
         <section className="py-16 bg-secondary">
+          <div className="container mx-auto px-4">
+            <Card className="border-border border-2 border-primary/20">
+              <CardHeader>
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
+                    <Sparkles className="h-6 w-6 text-primary" />
+                  </div>
+                  <div>
+                    <CardTitle className="text-3xl text-foreground">Cleaning & Post-Works Services</CardTitle>
+                    <p className="text-primary font-medium mt-1">Complete Your Make Good</p>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground mb-6 leading-relaxed">
+                  Don't hand back a dusty space. Our professional cleaning services ensure your property is spotless and ready for final inspection. From post-construction cleans to end of lease deep cleaning, we handle it all so you can focus on what matters.
+                </p>
+                <div className="grid md:grid-cols-2 gap-4 mb-6">
+                  {cleaningItems.map((service, index) => (
+                    <div key={index} className="flex items-start gap-3">
+                      <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                      <span className="text-foreground">{service}</span>
+                    </div>
+                  ))}
+                </div>
+                <div className="bg-primary/5 rounded-lg p-6 mt-6">
+                  <p className="text-foreground font-medium mb-3">Bundle cleaning with your make good for a complete solution</p>
+                  <p className="text-muted-foreground text-sm mb-4">
+                    We coordinate cleaning as part of your project, saving you the hassle of managing multiple contractors.
+                  </p>
+                  <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground">
+                    <Link to="/#contact">
+                      Get a Cleaning Quote
+                    </Link>
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
+
+        {/* Final CTA */}
+        <section className="py-16 bg-background">
           <div className="container mx-auto px-4 text-center max-w-3xl">
             <h2 className="text-3xl text-foreground mb-6">Quality & Commitment</h2>
-            <p className="text-xl text-muted-foreground leading-relaxed">
+            <p className="text-xl text-muted-foreground leading-relaxed mb-8">
               With attention to detail and a commitment to quality, we transform spaces, ensuring they meet the standards of end of lease obligations. Our network of reliable trades works tirelessly to deliver comprehensive solutions that save you time, effort, and stress.
             </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
+                <Link to="/#contact">
+                  <Phone className="mr-2 h-5 w-5" />
+                  Get Your Free Quote
+                </Link>
+              </Button>
+              <Button asChild size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10">
+                <a href="tel:0383aborede">
+                  Call Us Now
+                </a>
+              </Button>
+            </div>
           </div>
         </section>
       </main>
