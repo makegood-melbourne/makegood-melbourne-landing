@@ -2,7 +2,9 @@ export interface Location {
   name: string;
   slug: string;
   title: string;
+  metaTitle: string;
   description: string;
+  metaDescription: string;
   uniqueIntro: string;
   localContext: string;
   keyAreas: string[];
@@ -14,7 +16,9 @@ export const locations: Location[] = [
     name: "Altona",
     slug: "altona",
     title: "Make Good Services Altona",
+    metaTitle: "Make Good Services Altona | End of Lease & Warehouse Restoration",
     description: "Professional make good and end of lease services for Altona's industrial and commercial properties. From Altona North warehouses to coastal business precincts, we deliver expert restoration solutions.",
+    metaDescription: "Expert make good services in Altona. Warehouse strip outs, industrial restoration, racking removal and end of lease works for Altona North and western Melbourne. Free quotes.",
     uniqueIntro: "Altona's industrial landscape stretches from the bustling Altona North warehouse district to the light industrial zones near Cherry Lake. With major transport links via Millers Road and the Western Ring Road, this area hosts everything from large-scale distribution centres to manufacturing facilities serving Melbourne's west.",
     localContext: "The Aircraft industrial estate and Kororoit Creek corridor present unique make good challenges, from older warehouse stock requiring comprehensive remediation to modern logistics facilities needing precise lease compliance. Our team understands Altona's mix of heavy industrial heritage and evolving commercial needs.",
     keyAreas: [
@@ -38,7 +42,9 @@ export const locations: Location[] = [
     name: "Clayton",
     slug: "clayton",
     title: "Make Good Services Clayton",
+    metaTitle: "Make Good Services Clayton | Commercial & Research Facility Restoration",
     description: "Professional make good and end of lease services for Clayton's commercial and industrial properties. From Monash University precinct to Clayton South industrial, we deliver expert restoration solutions.",
+    metaDescription: "Specialist make good services in Clayton. Office fitout removal, research facility restoration and industrial make goods near Monash University. Licensed contractors, free quotes.",
     uniqueIntro: "Clayton sits at the heart of Melbourne's innovation corridor, anchored by Monash University and the Monash Medical Centre. This unique mix creates demand for diverse commercial spaces—from research laboratories and medical suites to supporting retail and office facilities along Clayton Road and Centre Road.",
     localContext: "The Clayton South industrial precinct houses manufacturing and logistics operations requiring specialised make good expertise. Whether you're vacating a high-spec research facility near the university or an older industrial unit on Westall Road, we deliver compliant restoration that meets the exacting standards expected in this knowledge-intensive precinct.",
     keyAreas: [
@@ -62,7 +68,9 @@ export const locations: Location[] = [
     name: "Dandenong",
     slug: "dandenong",
     title: "Make Good Services Dandenong",
+    metaTitle: "Make Good Services Dandenong | Industrial & Manufacturing Restoration",
     description: "Professional make good and end of lease services for Dandenong's extensive industrial and commercial properties. From Dandenong South manufacturing to CBD retail, we deliver expert restoration solutions.",
+    metaDescription: "Industrial make good specialists in Dandenong South. Factory strip outs, heavy manufacturing restoration and warehouse make goods. Melbourne's largest industrial zone experts.",
     uniqueIntro: "Dandenong is Melbourne's industrial powerhouse. The Dandenong South precinct alone hosts over 1,500 businesses across manufacturing, logistics and heavy industry—making it one of Australia's largest industrial zones. The revitalised Dandenong CBD adds retail, hospitality and commercial office demand to this diverse property market.",
     localContext: "From heavy manufacturing facilities on Greens Road requiring industrial-grade remediation to modern distribution centres along the Frankston-Dandenong Road corridor, our team handles the full spectrum of make good complexity. We understand the scale and urgency that Dandenong's major industrial tenants require.",
     keyAreas: [
@@ -86,7 +94,9 @@ export const locations: Location[] = [
     name: "Kilsyth",
     slug: "kilsyth",
     title: "Make Good Services Kilsyth",
+    metaTitle: "Make Good Services Kilsyth | Eastern Suburbs Industrial Restoration",
     description: "Professional make good and end of lease services for Kilsyth's industrial and commercial properties. From Kilsyth South industrial to Canterbury Road businesses, we deliver expert restoration solutions.",
+    metaDescription: "Make good experts in Kilsyth and outer east Melbourne. Warehouse restoration, trade premises strip outs and end of lease works along Canterbury Road corridor. Free quotes.",
     uniqueIntro: "Nestled at the gateway to the Yarra Ranges, Kilsyth serves as the outer east's industrial hub. The Kilsyth South industrial area and Canterbury Road corridor provide essential warehousing, trade services and light manufacturing for Melbourne's eastern suburbs, with excellent access via Eastlink.",
     localContext: "Kilsyth's industrial properties range from purpose-built warehouses to converted trade premises. Many facilities in this area were built during the 1980s and 1990s, presenting specific make good challenges including older floor coatings, original electrical systems and dated office fitouts. Our experience with this building stock ensures efficient, cost-effective restoration.",
     keyAreas: [
@@ -110,7 +120,9 @@ export const locations: Location[] = [
     name: "Moorabbin",
     slug: "moorabbin",
     title: "Make Good Services Moorabbin",
+    metaTitle: "Make Good Services Moorabbin | Aviation & Industrial Property Restoration",
     description: "Professional make good and end of lease services for Moorabbin's commercial and industrial properties. From Moorabbin Airport precinct to South Road businesses, we deliver expert restoration solutions.",
+    metaDescription: "Specialist make good services in Moorabbin. Aviation facility restoration, airport precinct make goods and industrial property strip outs. Bayside Melbourne experts. Free quotes.",
     uniqueIntro: "Moorabbin's identity is shaped by its famous airport precinct—home to aviation businesses, aerospace manufacturers and flight training schools. Beyond the runway, the South Road and Chesterville Road corridors host a thriving mix of industrial, trade and commercial properties serving Melbourne's bayside region.",
     localContext: "The Moorabbin Airport precinct presents unique make good requirements, from specialised aviation facilities to high-security premises. Along Governor Road and Cochranes Road, older industrial stock often requires comprehensive remediation including concrete repairs, electrical upgrades and asbestos management. We deliver compliant solutions across all property types.",
     keyAreas: [
@@ -134,7 +146,9 @@ export const locations: Location[] = [
     name: "Mulgrave",
     slug: "mulgrave",
     title: "Make Good Services Mulgrave",
+    metaTitle: "Make Good Services Mulgrave | Business Park & Corporate Restoration",
     description: "Professional make good and end of lease services for Mulgrave's commercial and industrial properties. From Mulgrave business parks to Springvale Road corridor, we deliver expert restoration solutions.",
+    metaDescription: "Premium make good services in Mulgrave. Corporate office restoration, business park strip outs and end of lease works along Springvale Road. Quality guaranteed. Free quotes.",
     uniqueIntro: "Mulgrave has evolved into a premium business park destination, home to major corporate headquarters and technology companies attracted by Eastlink accessibility and proximity to Monash Freeway. The Springvale Road and Wellington Road corridors house modern commercial facilities alongside established industrial operations.",
     localContext: "Corporate tenants in Mulgrave's business parks expect immaculate make good standards—every detail matters when vacating premises designed for blue-chip occupiers. We also service the older industrial stock around Jacksons Road, where comprehensive remediation often includes floor restoration, office strip-outs and external facade repairs.",
     keyAreas: [
@@ -158,7 +172,9 @@ export const locations: Location[] = [
     name: "Port Melbourne",
     slug: "port-melbourne",
     title: "Make Good Services Port Melbourne",
+    metaTitle: "Make Good Services Port Melbourne | Fishermans Bend & Warehouse Restoration",
     description: "Professional make good and end of lease services for Port Melbourne's industrial and commercial properties. From Fishermans Bend to Webb Dock precinct, we deliver expert restoration solutions.",
+    metaDescription: "Expert make good services in Port Melbourne. Fishermans Bend warehouse restoration, heritage building strip outs and Webb Dock industrial make goods. Licensed contractors.",
     uniqueIntro: "Port Melbourne is where Melbourne meets the sea—and where industry meets innovation. The Fishermans Bend precinct is undergoing Australia's largest urban renewal, while Webb Dock and the port facilities continue to drive logistics and distribution activity. This creates a dynamic mix of heritage warehouses, modern creative spaces and heavy industrial facilities.",
     localContext: "From heritage-listed warehouses on Ingles Street requiring sensitive restoration to modern logistics facilities near Webb Dock needing rapid turnaround, Port Melbourne demands versatile make good expertise. The area's proximity to the CBD means landlords expect premium standards, while industrial tenants require practical, compliant outcomes.",
     keyAreas: [
@@ -182,7 +198,9 @@ export const locations: Location[] = [
     name: "Richmond",
     slug: "richmond",
     title: "Make Good Services Richmond",
+    metaTitle: "Make Good Services Richmond | Cremorne Tech & Creative Office Restoration",
     description: "Professional make good and end of lease services for Richmond's commercial and industrial properties. From Bridge Road offices to Cremorne warehouses, we deliver expert restoration solutions.",
+    metaDescription: "Make good specialists in Richmond and Cremorne. Tech office strip outs, creative studio restoration and heritage building make goods. Inner Melbourne experts. Free quotes.",
     uniqueIntro: "Richmond blends Melbourne's industrial heritage with its tech-driven future. The Cremorne precinct has become Australia's answer to Silicon Valley, housing tech giants and startups in converted warehouses. Meanwhile, Bridge Road, Swan Street and Church Street maintain vibrant retail and commercial precincts just minutes from the CBD.",
     localContext: "Cremorne's creative and tech tenants often leave behind complex fitouts—open-plan offices, server rooms and collaborative spaces requiring careful strip-out. Heritage buildings throughout Richmond add restoration complexity, while Victoria Gardens and Burnley offer more traditional commercial and industrial make good requirements.",
     keyAreas: [
@@ -206,7 +224,9 @@ export const locations: Location[] = [
     name: "Ringwood",
     slug: "ringwood",
     title: "Make Good Services Ringwood",
+    metaTitle: "Make Good Services Ringwood | Retail & Industrial End of Lease Works",
     description: "Professional make good and end of lease services for Ringwood's commercial and industrial properties. From Eastland precinct to Ringwood East industrial, we deliver expert restoration solutions.",
+    metaDescription: "End of lease make good services in Ringwood. Retail tenancy restoration near Eastland, warehouse strip outs and industrial make goods. Outer east Melbourne specialists.",
     uniqueIntro: "Ringwood serves as the commercial heart of Melbourne's outer east. The Eastland shopping precinct anchors significant retail activity, while the Maroondah Highway corridor and surrounding industrial areas support warehousing, manufacturing and trade services for the eastern suburbs through to the Yarra Valley.",
     localContext: "Retail tenancies around Eastland demand high presentation standards for make good, while Ringwood East's industrial precinct requires practical restoration of warehouses and manufacturing facilities. We understand the diverse expectations across Ringwood's property types—from shopping centre tenancies to industrial sheds.",
     keyAreas: [
@@ -230,7 +250,9 @@ export const locations: Location[] = [
     name: "South Melbourne",
     slug: "south-melbourne",
     title: "Make Good Services South Melbourne",
+    metaTitle: "Make Good Services South Melbourne | Creative Agency & Office Restoration",
     description: "Professional make good and end of lease services for South Melbourne's commercial and industrial properties. From Clarendon Street offices to City Road warehouses, we deliver expert restoration solutions.",
+    metaDescription: "Make good experts in South Melbourne. Creative agency fitout removal, Clarendon Street office restoration and heritage building compliance. Inner city specialists. Free quotes.",
     uniqueIntro: "South Melbourne is Melbourne's creative and professional services heartland. The Clarendon Street precinct houses advertising agencies, design studios and professional offices in character buildings, while City Road and Kings Way provide larger commercial and warehouse spaces. The iconic South Melbourne Market adds retail diversity to this inner-city locale.",
     localContext: "Creative agencies and professional tenants in South Melbourne often invest heavily in bespoke fitouts—exposed brick, custom joinery and designer finishes that require careful restoration or removal. Heritage overlays in many buildings add compliance considerations. We deliver make good solutions that respect both lease obligations and building character.",
     keyAreas: [
@@ -254,7 +276,9 @@ export const locations: Location[] = [
     name: "Truganina",
     slug: "truganina",
     title: "Make Good Services Truganina",
+    metaTitle: "Make Good Services Truganina | Large-Scale Logistics & Distribution Centre Restoration",
     description: "Professional make good and end of lease services for Truganina's rapidly growing industrial precinct. From logistics centres to modern warehouses, we deliver expert restoration solutions.",
+    metaDescription: "Large-scale make good services in Truganina. Distribution centre restoration, logistics facility strip outs and modern warehouse make goods. Western Melbourne growth corridor experts.",
     uniqueIntro: "Truganina represents Melbourne's industrial future. This rapidly expanding western precinct has become the destination for major logistics operators, e-commerce fulfilment centres and national distribution hubs. Modern facilities of 10,000m² or more are common, built to accommodate the scale demands of contemporary supply chains.",
     localContext: "Truganina's newer building stock presents different make good challenges—large floor plates, high-bay warehouses, sophisticated dock facilities and complex electrical systems. Landlords of these premium facilities expect meticulous standards. We deliver efficient, large-scale make good services that match the pace and professionalism this growth corridor demands.",
     keyAreas: [

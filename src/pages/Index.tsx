@@ -10,12 +10,34 @@ const Index = () => {
   return (
     <main className="min-h-screen bg-background text-foreground">
       <Helmet>
-        <title>MakeGOOD Melbourne - Professional Make Good & End of Lease Services</title>
-        <meta name="description" content="Expert make good services in Melbourne. Professional end of lease works, property restoration, and commercial property maintenance. Get your bond back guaranteed." />
-        <meta property="og:title" content="MakeGOOD Melbourne - Professional Make Good Services" />
-        <meta property="og:description" content="Expert make good services in Melbourne. Professional end of lease works and property restoration." />
+        <title>Make Good Melbourne | Commercial & Industrial End of Lease Restoration Specialists</title>
+        <meta name="description" content="Melbourne's trusted make good specialists. Expert end of lease restoration for offices, warehouses and industrial properties. Office strip outs, warehouse restoration, building remediation. Free quotes." />
+        <meta property="og:title" content="Make Good Melbourne | Commercial Property Restoration Specialists" />
+        <meta property="og:description" content="Melbourne's trusted make good specialists. Expert end of lease restoration for commercial and industrial properties." />
         <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://makegood.melbourne/" />
         <link rel="canonical" href="https://makegood.melbourne/" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "Make Good Melbourne",
+            "description": "Professional make good and end of lease restoration services for commercial and industrial properties in Melbourne, Victoria.",
+            "url": "https://makegood.melbourne",
+            "email": "enquiries@makegood.melbourne",
+            "areaServed": {
+              "@type": "State",
+              "name": "Victoria"
+            },
+            "serviceType": ["Make Good Services", "End of Lease Restoration", "Office Strip Outs", "Warehouse Restoration", "Building Remediation"],
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Melbourne",
+              "addressRegion": "VIC",
+              "addressCountry": "AU"
+            }
+          })}
+        </script>
       </Helmet>
       
       <Navigation />
