@@ -105,6 +105,7 @@ const LocationTemplate = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left: Content */}
             <div>
+              <p className="text-accent font-medium tracking-wide mb-2">Make good, BETTER.</p>
               <h1 className="text-4xl md:text-5xl lg:text-6xl mb-4 leading-tight">
                 <span className="font-light block">Make Good Services in</span>
                 <span className="font-bold text-primary">{location.name}</span>
