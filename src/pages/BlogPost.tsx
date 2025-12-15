@@ -1,4 +1,4 @@
-import { useParams, Link } from "react-router-dom";
+import { useParams, Link, Navigate } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { ArrowLeft, Clock, Calendar, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -7,9 +7,17 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { blogPosts } from "@/data/blogPosts";
 import { getBlogImage, calculateReadingTime, parseMarkdown } from "@/lib/blogUtils";
+import { getRedirectSlug } from "@/lib/redirects";
 
 const BlogPost = () => {
   const { slug } = useParams<{ slug: string }>();
+  
+  // Check if this is an old URL that needs redirecting
+  const redirectSlug = slug ? getRedirectSlug(slug) : null;
+  if (redirectSlug) {
+    return <Navigate to={`/blog/${redirectSlug}`} replace />;
+  }
+  
   const post = blogPosts.find((p) => p.slug === slug);
 
   if (!post) {
