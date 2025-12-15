@@ -1,5 +1,13 @@
 import commercialCleaningImage from "@/assets/services/commercial-cleaning-melbourne-supplies.jpeg";
 import warehouseFloorScrubberImage from "@/assets/services/warehouse-floor-scrubber-cleaning-v4.jpg";
+import industrialFloorScrubberImage from "@/assets/services/industrial-ride-on-floor-scrubber-warehouse-melbourne.png";
+
+export interface FeaturedSection {
+  title: string;
+  description: string;
+  image: string;
+  imageAlt: string;
+}
 
 export interface Service {
   name: string;
@@ -13,6 +21,7 @@ export interface Service {
   heroImageAlt?: string;
   secondaryImage?: string;
   secondaryImageAlt?: string;
+  featuredSection?: FeaturedSection;
   benefits: string[];
   process: {
     step: string;
@@ -328,13 +337,19 @@ export const services: Service[] = [
     slug: "commercial-cleaning",
     title: "Commercial Cleaning Melbourne",
     metaTitle: "Industrial Floor Cleaning Melbourne | Warehouses",
-    description: "Years of grime, oil stains and tyre marks don't stand a chance. Our ride-on scrubbers and high-pressure systems restore warehouse floors to like-new condition—whether you're preparing for a new tenant, impressing clients or just tired of looking at that mess.",
+    description: "From factory floors to office fitouts, we handle the cleaning jobs that regular cleaners won't touch. Industrial machinery, specialised chemicals and a team that knows what landlords expect at handover.",
     metaDescription: "Industrial floor cleaning Melbourne. Ride-on scrubbers, high-pressure washing, chemical treatment for warehouses. Transform tired floors fast. Free quotes.",
-    heroText: "Warehouse floors take a beating. We bring the heavy machinery to cut through years of grime, oil and tyre marks—leaving surfaces that look like the day they were poured.",
-    heroImage: warehouseFloorScrubberImage,
-    heroImageAlt: "Industrial ride-on floor scrubber cleaning polished concrete floor in modern Melbourne warehouse",
-    secondaryImage: commercialCleaningImage,
-    secondaryImageAlt: "Commercial cleaning supplies Melbourne - professional bucket, sponges and cleaning products for office and warehouse make good services",
+    heroText: "Heavy-duty cleaning for commercial and industrial properties. We tackle the jobs regular cleaners can't—warehouse floors, post-construction sites and end-of-lease handovers that need to pass inspection.",
+    heroImage: commercialCleaningImage,
+    heroImageAlt: "Commercial cleaning supplies Melbourne - professional equipment for industrial and office cleaning services",
+    secondaryImage: warehouseFloorScrubberImage,
+    secondaryImageAlt: "Professional warehouse floor cleaning Melbourne",
+    featuredSection: {
+      title: "Industrial Floor Cleaning",
+      description: "Years of grime, oil stains and tyre marks don't stand a chance. Our ride-on scrubbers and high-pressure systems restore warehouse floors to like-new condition—whether you're preparing for a new tenant, impressing clients or just tired of looking at that mess.",
+      image: industrialFloorScrubberImage,
+      imageAlt: "Industrial ride-on floor scrubber machine cleaning polished concrete warehouse floor Melbourne"
+    },
     benefits: [
       "Ride-on floor scrubbers for large areas",
       "High-pressure cleaning for floors, walls and exteriors",

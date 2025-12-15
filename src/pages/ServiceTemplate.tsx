@@ -107,13 +107,38 @@ const ServiceTemplate = () => {
           </div>
         </section>
 
+        {/* Featured Section (e.g., Industrial Floor Cleaning) */}
+        {service.featuredSection && (
+          <section className="py-16 bg-background">
+            <div className="container mx-auto px-4">
+              <div className="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                  <h2 className="text-3xl md:text-4xl text-foreground mb-6">
+                    {service.featuredSection.title}
+                  </h2>
+                  <p className="text-xl text-muted-foreground leading-relaxed">
+                    {service.featuredSection.description}
+                  </p>
+                </div>
+                <div>
+                  <img 
+                    src={service.featuredSection.image} 
+                    alt={service.featuredSection.imageAlt}
+                    className="aspect-[4/3] w-full object-cover rounded-lg"
+                  />
+                </div>
+              </div>
+            </div>
+          </section>
+        )}
+
         {/* Benefits Section */}
-        <section className="py-16 bg-background">
+        <section className="py-16 bg-secondary">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl md:text-4xl text-foreground mb-10">What's Included</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {service.benefits.map((benefit, index) => (
-                <div key={index} className="flex items-start gap-4 p-4 bg-secondary rounded-lg">
+                <div key={index} className="flex items-start gap-4 p-4 bg-background rounded-lg">
                   <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
                   <span className="text-lg text-foreground">{benefit}</span>
                 </div>
@@ -123,12 +148,12 @@ const ServiceTemplate = () => {
         </section>
 
         {/* Process Section */}
-        <section className="py-16 bg-secondary">
+        <section className="py-16 bg-background">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl md:text-4xl text-foreground mb-10">Our Process</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               {service.process.map((step, index) => (
-                <Card key={index} className="bg-background border-border">
+                <Card key={index} className="bg-secondary border-border">
                   <CardContent className="pt-6">
                     <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
                       <span className="text-xl font-bold text-primary">{index + 1}</span>
