@@ -1,6 +1,9 @@
 import { serve } from "https://deno.land/std@0.190.0/http/server.ts";
+import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
 
 const RESEND_API_KEY = Deno.env.get("RESEND_API_KEY");
+const SUPABASE_URL = Deno.env.get("SUPABASE_URL");
+const SUPABASE_SERVICE_ROLE_KEY = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY");
 
 const corsHeaders = {
   "Access-Control-Allow-Origin": "*",
@@ -35,6 +38,11 @@ const handler = async (req: Request): Promise<Response> => {
         { status: 400, headers: { ...corsHeaders, "Content-Type": "application/json" } }
       );
     }
+
+    // Initialize Supabase client
+    const supabase = createClient(SUPABASE_URL!, SUPABASE_SERVICE_ROLE_KEY!);
+
+    let emailSent = false;
 
     // Send notification email to business
     const businessEmailRes = await fetch("https://api.resend.com/emails", {
@@ -93,12 +101,50 @@ const handler = async (req: Request): Promise<Response> => {
     const customerEmailData = await customerEmailRes.json();
     console.log("Customer confirmation sent:", customerEmailData);
 
+    emailSent = true;
+
+    // Save enquiry to database as backup
+    const { error: dbError } = await supabase
+      .from("contact_enquiries")
+      .insert({
+        name,
+        email,
+        phone: phone || null,
+        message,
+        email_sent: emailSent,
+      });
+
+    if (dbError) {
+      console.error("Error saving enquiry to database:", dbError);
+      // Don't fail the request if DB save fails, email was already sent
+    } else {
+      console.log("Enquiry saved to database");
+    }
+
     return new Response(
       JSON.stringify({ success: true }),
       { status: 200, headers: { ...corsHeaders, "Content-Type": "application/json" } }
     );
   } catch (error: any) {
     console.error("Error sending email:", error);
+    
+    // Try to save to database even if email failed
+    try {
+      const supabase = createClient(SUPABASE_URL!, SUPABASE_SERVICE_ROLE_KEY!);
+      await supabase
+        .from("contact_enquiries")
+        .insert({
+          name: (await req.clone().json()).name,
+          email: (await req.clone().json()).email,
+          phone: (await req.clone().json()).phone || null,
+          message: (await req.clone().json()).message,
+          email_sent: false,
+        });
+      console.log("Enquiry saved to database despite email failure");
+    } catch (dbError) {
+      console.error("Failed to save enquiry to database:", dbError);
+    }
+
     return new Response(
       JSON.stringify({ error: error.message }),
       { status: 500, headers: { ...corsHeaders, "Content-Type": "application/json" } }
