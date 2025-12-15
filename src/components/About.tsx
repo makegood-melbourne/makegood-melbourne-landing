@@ -37,10 +37,10 @@ const About = () => {
           <p className="text-xl text-accent font-semibold mb-6">
             We do make goods all day, every day.
           </p>
-          <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+          <p className="text-xl text-muted-foreground leading-relaxed mb-6">
             Navigating today's complex property market requires expertise and reliability. That's why we established MakeGOOD Melbourne—to redefine the standard of make good services across commercial, industrial and warehouse properties.
           </p>
-          <p className="text-lg text-muted-foreground leading-relaxed">
+          <p className="text-xl text-muted-foreground leading-relaxed">
             Our network of licensed tradespeople delivers seamless, comprehensive solutions that meet lease obligations, protect bonds and ensure properties are ready for their next chapter.
           </p>
         </div>
@@ -77,10 +77,10 @@ const About = () => {
             <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
               Why Choose MakeGOOD Melbourne
             </h3>
-            <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
+            <p className="text-xl text-muted-foreground mb-6 leading-relaxed">
               With extensive experience across commercial and industrial properties, we understand the critical importance of meeting lease obligations and maintaining property standards.
             </p>
-            <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+            <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
               Our commitment to quality, attention to detail and comprehensive service approach ensures your property meets end-of-lease standards every time.
             </p>
             <div className="space-y-3">

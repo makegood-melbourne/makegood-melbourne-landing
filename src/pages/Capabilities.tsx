@@ -161,7 +161,7 @@ const Capabilities = () => {
         <section className="py-16 bg-secondary">
           <div className="container mx-auto px-4 text-center max-w-3xl">
             <h2 className="text-3xl text-foreground mb-6">Quality & Commitment</h2>
-            <p className="text-lg text-muted-foreground leading-relaxed">
+            <p className="text-xl text-muted-foreground leading-relaxed">
               With attention to detail and a commitment to quality, we transform spaces, ensuring they meet the standards of end of lease obligations. Our network of reliable trades works tirelessly to deliver comprehensive solutions that save you time, effort, and stress.
             </p>
           </div>
