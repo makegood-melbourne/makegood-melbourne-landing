@@ -95,7 +95,7 @@ const ServiceTemplate = () => {
                 {service.heroImage ? (
                   <img 
                     src={service.heroImage} 
-                    alt={service.name}
+                    alt={service.heroImageAlt || `${service.name} Melbourne - professional commercial services`}
                     className="aspect-[4/3] w-full object-cover rounded-lg"
                   />
                 ) : (
