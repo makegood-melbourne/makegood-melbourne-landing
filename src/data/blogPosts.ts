@@ -216,7 +216,7 @@ Port Melbourne's industrial property market has unique characteristics that affe
 - Premium rents compared to outer suburbs
 
 **Market Dynamics:**
-When vacancy rates are low, landlords have more leverage—they know they can re-let quickly. But they also know incoming tenants often want existing fitouts like racking and offices, which can work in your favor if you negotiate retention.
+When vacancy rates are low, landlords have more leverage—they know they can re-let quickly. But they also know incoming tenants often want existing fitouts like racking and offices, which can work in your favour if you negotiate retention.
 
 ### 2025 Market Trends Affecting Make Good
 
@@ -563,7 +563,7 @@ Building owners and employers have legal duty to:
 - Provide detailed report with photos, plans, and recommendations
 
 **Laboratory Analysis**:
-- Samples analyzed by NATA-accredited laboratory
+- Samples analysed by NATA-accredited laboratory
 - Identifies asbestos type and percentage
 - Results typically available within 3-7 days
 - Costs approximately $50-80 per sample
@@ -1011,7 +1011,7 @@ Floor preparation and carpet installation requires careful timing:
 
 1. **Floor Assessment**: Initial inspection and specification confirmation
 2. **Grinding Phase**: Typically 1-2 days depending on area size
-3. **Curing Period**: 24-48 hours for floor to stabilize
+3. **Curing Period**: 24-48 hours for floor to stabilise
 4. **Installation**: Usually 1-2 days for standard office spaces
 5. **Final Inspection**: Walk-through and documentation
 
@@ -1465,11 +1465,11 @@ At Make Good Australia, our team of licensed and insured electricians specialise
 
 - **Licensed Expertise**: A-Grade licensed electricians with extensive commercial experience
 - **Safety First**: Uncompromising focus on electrical safety and compliance
-- **Efficient Process**: Streamlined procedures minimizing delays
+- **Efficient Process**: Streamlined procedures minimising delays
 - **Full Insurance**: Comprehensive insurance coverage for all works
 - **Building Management Liaison**: Experienced in building management coordination
 - **Integrated Service**: Part of complete make good solution
-- **Rapid Response**: Quick mobilization for urgent projects
+- **Rapid Response**: Quick mobilisation for urgent projects
 - **Certification**: Complete documentation and electrical safety certificates
 
 ### Our Safety Record
@@ -1585,7 +1585,7 @@ Creating safe working environments for make good and demolition`,
 - Building defects allowing water penetration
 
 **Water Damage Effects**:
-- Acoustic tile staining (rust-colored water marks)
+- Acoustic tile staining (rust-coloured water marks)
 - Tile sagging from water saturation
 - Tile disintegration and collapse
 - Plasterboard water staining and delamination
@@ -1658,7 +1658,7 @@ Creating safe working environments for make good and demolition`,
 **Sampling and Matching**:
 - Removal of sample tiles for matching
 - Identification of tile manufacturer and type
-- Grid system type and color identification
+- Grid system type and colour identification
 - Paint specifications for plasterboard ceilings
 - Coordination with existing ceiling height and services
 
@@ -1691,7 +1691,7 @@ Creating safe working environments for make good and demolition`,
 
 **Matching Challenges**:
 - Discontinued tile types requiring full area replacement
-- Color matching (new tiles vs aged existing tiles)
+- Colour matching (new tiles vs aged existing tiles)
 - Texture and edge profile matching
 - Grid visibility differences (tegular vs square edge)
 
@@ -1875,7 +1875,7 @@ Creating safe working environments for make good and demolition`,
 
 **Full Suspended Ceiling Replacement**:
 - Supply and install: $60-$120 per sqm
-- Including grid, tiles, suspension, labor
+- Including grid, tiles, suspension, labour
 - Light fitting integration: $150-$400 per fitting
 - Diffuser integration: $100-$250 per diffuser
 - Fire sprinkler adjustment: $150-$300 per head
@@ -2097,7 +2097,7 @@ Professional ceiling solutions for all commercial properties`,
 - Emergency services notification (000 if people injured)
 - Building evacuation if structural safety uncertain
 - Protection of pedestrians and traffic
-- Security of site to prevent unauthorized access
+- Security of site to prevent unauthorised access
 
 **Site Securing**:
 - Temporary fencing or barriers around hazard zone
@@ -2339,7 +2339,7 @@ Professional ceiling solutions for all commercial properties`,
 **Public Liability**:
 - Critical importance of public liability insurance
 - Claims from injuries or property damage
-- Legal defense costs
+- Legal defence costs
 - Importance of immediate response to minimise liability
 
 ## Prevention and Maintenance
@@ -2473,7 +2473,7 @@ Available 24/7 for building emergencies`,
     date: "1 May 2025",
     excerpt: "Sustainable waste management practices are increasingly critical in commercial make good projects, with regulations, tenant expectations and environmental responsibility driving the need for waste minimisation, recycling and responsible disposal. Professional waste management reduces landfill contributions, ensures regulatory compliance and can reduce project costs. Learn about waste streams, recycling strategies, EPA compliance and sustainability reporting.",
     image: "/src/assets/blog/waste-management-sustainability.jpg",
-    content: `Commercial make good projects generate significant volumes of waste materials, from demolished building components and removed fitouts to packaging from new installations. As environmental awareness grows and regulations strengthen, sustainable waste management has become a critical component of responsible make good practices. Professional waste management strategies minimize landfill contributions, maximize material recovery and recycling, ensure regulatory compliance, and can reduce overall project costs. This comprehensive guide explores waste streams in make good projects, recycling and diversion strategies, regulatory compliance, and best practices for sustainable make good works in Melbourne.
+    content: `Commercial make good projects generate significant volumes of waste materials, from demolished building components and removed fitouts to packaging from new installations. As environmental awareness grows and regulations strengthen, sustainable waste management has become a critical component of responsible make good practices. Professional waste management strategies minimise landfill contributions, maximise material recovery and recycling, ensure regulatory compliance and can reduce overall project costs. This comprehensive guide explores waste streams in make good projects, recycling and diversion strategies, regulatory compliance and best practices for sustainable make good works in Melbourne.
 
 ## Understanding Waste in Make Good Projects
 
@@ -2540,7 +2540,7 @@ Available 24/7 for building emergencies`,
 
 The EPA Victoria waste hierarchy guides sustainable waste management:
 
-**1. Avoid**: Minimize waste generation through planning and design
+**1. Avoid**: Minimise waste generation through planning and design
 **2. Reduce**: Use less material and reduce waste at source
 **3. Reuse**: Reuse materials and components in place or elsewhere
 **4. Recycle**: Process materials for remanufacture into new products
@@ -2558,9 +2558,9 @@ The EPA Victoria waste hierarchy guides sustainable waste management:
 
 **Material Recovery**:
 - Identification of materials suitable for recovery and reuse
-- Engagement with salvage and reuse organizations
+- Engagement with salvage and reuse organisations
 - Coordination with tenant or landlord for furniture reuse
-- Donation of serviceable items to charities or community organizations
+- Donation of serviceable items to charities or community organisations
 - Sale of valuable materials (metals, quality joinery)
 
 **Design for Disassembly** (new installations):
@@ -2619,7 +2619,7 @@ The EPA Victoria waste hierarchy guides sustainable waste management:
 
 **Carpet and Soft Furnishings**:
 - Carpet recycling into new carpet backing or other products
-- Requires specialized processors
+- Requires specialised processors
 - Contamination issues with different carpet types mixed
 - Recycling rate potential: 30-50% (improving with better infrastructure)
 
@@ -2640,10 +2640,10 @@ The EPA Victoria waste hierarchy guides sustainable waste management:
 - Ceiling grid systems and tiles
 
 **Reuse Pathways**:
-- Internal reuse within same organization or building
+- Internal reuse within same organisation or building
 - Sale through online marketplaces or salvage yards
 - Donation to charities (tax deductible)
-- Community organizations and not-for-profits
+- Community organisations and not-for-profits
 - Architectural salvage specialists
 - Low-cost furniture schemes for those in need
 
@@ -2653,7 +2653,7 @@ The EPA Victoria waste hierarchy guides sustainable waste management:
 
 **Environmental Protection Act 2017**:
 - General Environmental Duty for all persons conducting activities
-- Duty to minimize risks of harm to human health and the environment
+- Duty to minimise risks of harm to human health and the environment
 - Applies to waste generation, handling, transport, and disposal
 - Penalties for breaches including fines and legal action
 
@@ -2779,7 +2779,7 @@ The EPA Victoria waste hierarchy guides sustainable waste management:
 
 **Corporate Sustainability Reporting**:
 - Many tenants require waste reporting for ESG reporting
-- Contribution to organizational sustainability targets
+- Contribution to organisational sustainability targets
 - Demonstration of environmental responsibility
 - Positive brand and reputation outcomes
 
@@ -2828,9 +2828,9 @@ The EPA Victoria waste hierarchy guides sustainable waste management:
 
 **Recycling Facilities in Melbourne**:
 - Numerous waste transfer stations accepting segregated waste
-- Specialized facilities for specific materials (metals, concrete, timber)
+- Specialised facilities for specific materials (metals, concrete, timber)
 - E-waste collection and processing facilities
-- Reuse and salvage centers
+- Reuse and salvage centres
 - Access to comprehensive waste infrastructure supporting recycling
 
 **Regulatory Environment**:
@@ -2886,7 +2886,7 @@ At Make Good Australia, we are committed to environmental responsibility and sus
 
 ### Why Choose Make Good Australia for Sustainable Make Good
 
-- **Environmental Commitment**: Genuine commitment to minimizing environmental impact
+- **Environmental Commitment**: Genuine commitment to minimising environmental impact
 - **Proven Results**: Consistently high waste diversion rates
 - **Full Compliance**: EPA, WorkSafe, and regulatory compliance assured
 - **Transparency**: Detailed reporting and documentation
@@ -2899,7 +2899,7 @@ Sustainable waste management is no longer optional in commercial make good proje
 
 Professional waste management planning and implementation ensures materials are recovered and recycled rather than sent to landfill, hazardous materials are responsibly managed, and full regulatory compliance is maintained. As industry expectations and regulations continue to evolve towards greater sustainability, engaging contractors with proven sustainable waste management capabilities becomes increasingly critical.
 
-**Ready to undertake sustainable make good works?** Contact Make Good Australia today. Our team will develop and implement a comprehensive waste management plan for your project, maximizing recycling and diversion while ensuring full compliance and minimizing costs.
+**Ready to undertake sustainable make good works?** Contact Make Good Australia today. Our team will develop and implement a comprehensive waste management plan for your project, maximising recycling and diversion while ensuring full compliance and minimising costs.
 
 **Make Good Australia**  
 Melbourne's sustainable make good specialists  
@@ -3122,10 +3122,10 @@ Committed to environmental responsibility in every project`,
 - Joinery and cabinetry restoration
 - Hardware and fixture installation
 
-**Specialized Finishes**:
+**Specialised Finishes**:
 - Commercial kitchen restoration
 - Bathroom and amenities fitout
-- Specialized flooring (epoxy, polished concrete)
+- Specialised flooring (epoxy, polished concrete)
 - Feature walls and architectural elements
 - Signage and wayfinding restoration
 
@@ -3200,7 +3200,7 @@ Committed to environmental responsibility in every project`,
 ### Climate and Building Factors
 
 **Melbourne Building Stock**:
-- Heritage and older commercial buildings requiring specialized restoration
+- Heritage and older commercial buildings requiring specialised restoration
 - Asbestos presence in pre-2000s buildings
 - Modern commercial buildings with complex systems
 - Mixed-use properties requiring coordinated restoration
@@ -3215,7 +3215,7 @@ Committed to environmental responsibility in every project`,
 
 ### Restoration Timeframes
 
-**Minor Fire Damage** (localized, limited smoke damage):
+**Minor Fire Damage** (localised, limited smoke damage):
 - Assessment and scope: 1-2 weeks
 - Insurance approval: 2-4 weeks
 - Restoration works: 4-8 weeks
@@ -3242,7 +3242,7 @@ Committed to environmental responsibility in every project`,
 
 **Restoration Costs**:
 Highly variable depending on damage extent:
-- Minor localized damage: $20,000-$50,000
+- Minor localised damage: $20,000-$50,000
 - Moderate damage: $50,000-$200,000
 - Extensive damage: $200,000-$1,000,000+
 - Total reconstruction: $1,000,000+ depending on building size
@@ -3302,7 +3302,7 @@ At Make Good Australia, we understand the urgency, complexity, and disruption th
 - 24/7 emergency call-out for securing and stabilization
 - Immediate damage assessment and reporting
 - Emergency boarding, protection, and safety measures
-- Rapid mobilization to prevent secondary damage
+- Rapid mobilisation to prevent secondary damage
 
 **Complete Restoration**:
 - Hazardous materials management and licensed asbestos removal
@@ -3330,7 +3330,7 @@ At Make Good Australia, we understand the urgency, complexity, and disruption th
 
 - **Proven Fire Restoration Experience**: Extensive portfolio of commercial fire restoration projects across Melbourne
 - **Multi-Trade Capabilities**: In-house electrical, mechanical, building, and specialist trades
-- **Emergency Response Ready**: Rapid mobilization to secure and stabilize fire-damaged properties
+- **Emergency Response Ready**: Rapid mobilisation to secure and stabilise fire-damaged properties
 - **Insurance Expertise**: Experienced in insurance claim processes and documentation
 - **Regulatory Compliance**: All certifications, approvals, and compliance requirements managed
 - **Communication Focus**: Regular updates and transparent communication throughout the project
@@ -3338,7 +3338,7 @@ At Make Good Australia, we understand the urgency, complexity, and disruption th
 
 ## Conclusion
 
-Fire damage creates significant disruption and complexity for commercial properties, requiring specialized restoration expertise to safely and completely recover properties. From emergency response and damage assessment through structural repairs, systems restoration, and final fitout, professional fire restoration ensures properties are returned to safe, functional, and compliant condition.
+Fire damage creates significant disruption and complexity for commercial properties, requiring specialised restoration expertise to safely and completely recover properties. From emergency response and damage assessment through structural repairs, systems restoration and final fitout, professional fire restoration ensures properties are returned to safe, functional and compliant condition.
 
 Whether addressing fire damage during a lease term, managing end-of-lease obligations after a fire event, or restoring owner-occupied properties, engaging experienced fire restoration specialists ensures efficient restoration, proper insurance coordination, and full regulatory compliance.
 
@@ -4955,7 +4955,7 @@ Conduct a thorough evaluation of your premises:
 **Preventative Maintenance**:
 - HVAC servicing schedule (quarterly or as specified)
 - Carpet cleaning and maintenance
-- Window cleaning program
+- Window cleaning programme
 - Pest control treatments
 - Garden and landscaping maintenance
 - Pressure washing and external cleaning
@@ -5038,7 +5038,7 @@ Conduct a thorough evaluation of your premises:
 
 **Current Space Evaluation**:
 - Is current layout supporting productivity?
-- Are there inefficiencies in space utilization?
+- Are there inefficiencies in space utilisation?
 - Do growth plans require more space?
 - Could downsizing reduce costs?
 - Is location still optimal for business operations?
@@ -5118,7 +5118,7 @@ Conduct a thorough evaluation of your premises:
 
 **Portfolio Approach**:
 - Prioritise properties by condition and tenant situation
-- Develop rolling maintenance program
+- Develop rolling maintenance programme
 - Budget capital improvements across portfolio
 - Plan rent reviews and lease renewals systematically
 - Consider property disposals or acquisitions
@@ -5231,7 +5231,7 @@ Year-end property planning transforms reactive property management into strategi
 
 The time invested in year-end planning pays dividends through prevented emergencies, controlled costs, smooth lease transitions, and premises that support business productivity and growth. Don't let year-end business pressures delay this important planning—make it a priority in December while you have time to develop thoughtful strategies.
 
-Need help conducting property assessments, planning for lease end obligations, or developing your 2025 property strategy? Our experienced team provides comprehensive property planning services, from condition reports and make good planning to maintenance program development and professional project execution. Contact us today to ensure your commercial property enters 2025 in optimal condition.`
+Need help conducting property assessments, planning for lease end obligations or developing your 2025 property strategy? Our experienced team provides comprehensive property planning services, from condition reports and make good planning to maintenance programme development and professional project execution. Contact us today to ensure your commercial property enters 2025 in optimal condition.`
   },
   {
     id: "21",
@@ -5382,7 +5382,7 @@ Need help conducting property assessments, planning for lease end obligations, o
 
 **High-Value, Low-Cost Improvements**:
 - Professional deep cleaning and carpet cleaning
-- Fresh paint in neutral, modern colors
+- Fresh paint in neutral, modern colours
 - Lighting upgrades to energy-efficient LEDs
 - Minor repairs and maintenance rectification
 - Bathroom and kitchen refreshing
@@ -5726,7 +5726,7 @@ Need help conducting property assessments, planning for lease end obligations, o
 - [ ] Document condition with photos
 - [ ] Process security deposit promptly
 - [ ] Complete landlord improvement works
-- [ ] Commence active showing program
+- [ ] Commence active showing programme
 
 **After Vacation**:
 - [ ] Secure property adequately
@@ -5910,7 +5910,7 @@ Tenants are often shocked by make good costs, particularly for:
 
 **Strategic Approach**:
 - Obtain professional assessments early
-- Get detailed, itemized quotes
+- Get detailed, itemised quotes
 - Research typical costs per square meter for your property type
 - Consider complexity of original alterations when budgeting
 
@@ -5972,7 +5972,7 @@ Assumptions about what's required or acceptable lead to disputes and rejected wo
 
 **Planning Considerations**:
 - Retail make good often complex due to extensive shopfitting
-- Heritage or shopping center requirements may add complexity
+- Heritage or shopping centre requirements may add complexity
 - Consider timing to avoid peak retail periods for building access
 
 ### Industrial and Warehouse
@@ -6291,7 +6291,7 @@ Thorough assessment is crucial for appropriate remediation:
 Based on investigation findings, specialists develop comprehensive remediation strategies:
 
 **Planning Elements**:
-- Prioritization of defects by severity and risk
+- Prioritisation of defects by severity and risk
 - Selection of appropriate remediation methods
 - Materials specification ensuring compliance and durability
 - Work sequencing minimising building disruption
@@ -6336,7 +6336,7 @@ Professional contractors execute remediation work:
 **For Facade Defects**:
 - Cladding repair or replacement
 - Render repair and refinishing
-- Comprehensive resealing programs
+- Comprehensive resealing programmes
 - Panel realignment or replacement
 
 ### 4. Testing and Verification
@@ -6405,7 +6405,7 @@ Remediation may trigger compliance requirements:
 
 While remediation addresses existing defects, prevention strategies reduce future issues:
 
-### Proactive Maintenance Programs
+### Proactive Maintenance Programmes
 
 Regular maintenance identifies and addresses minor issues before they become major defects:
 
@@ -6734,7 +6734,7 @@ Recommendations to prevent recurrence:
 - Drainage improvements
 - Moisture control systems
 - Load management strategies
-- Ongoing monitoring programs
+- Ongoing monitoring programmes
 
 ## Prevention and Maintenance
 
@@ -7167,7 +7167,7 @@ In addition to cleaning, we offer specialised services to address common end-of-
 Ceiling tiles often show signs of wear, such as stains or discoloration. We:
 
 - Clean tiles to remove dirt and marks.
-- Replace damaged or discolored tiles for a uniform appearance.
+- Replace damaged or discoloured tiles for a uniform appearance.
 
 ### 2. Wall Repairs and Paint Touch-Ups
 
@@ -7657,7 +7657,7 @@ Our collaborative approach is not about diminishing the role of agents but about
 
 ## Conclusion
 
-In the intricate world of property management, success is not a solo act, but rather a symphony of collaboration and specialisation. Property agents, like seasoned conductors, orchestrate the entire process, from finding tenants to ensuring lease agreements run smoothly. However, as the curtain draws on one tenant's residency and the stage is set for another, our make good services take centre stage, specializing in the final act of property restoration. This partnership is not about sidelining agents but about providing a harmonious and efficient property management experience.
+In the intricate world of property management, success is not a solo act, but rather a symphony of collaboration and specialisation. Property agents, like seasoned conductors, orchestrate the entire process, from finding tenants to ensuring lease agreements run smoothly. However, as the curtain draws on one tenant's residency and the stage is set for another, our make good services take centre stage, specialising in the final act of property restoration. This partnership is not about sidelining agents but about providing a harmonious and efficient property management experience.
 
 The harmony between agents and our make good services is built on respect and trust. Agents are experts in their own right, adept at creating lasting tenant relationships, marketing properties, and navigating the legal landscape. We respect and value their unique talents and the dedication they bring to the field.
 
@@ -7971,7 +7971,7 @@ A Property Condition Report is an indispensable document that protects both land
     image: "/src/assets/blog/lease-transitions.webp",
     content: `Strategies for tenants, agents, and owners to elevate exits.
 
-As the curtain draws to a close on a lease agreement, the collective goal is to leave no trace of occupancy behind. This shared mission is a testament to the responsible tenant, the diligent agent, and the conscientious property owner alike. A harmonious transition at the end of a lease is a reflection of mutual respect and commitment to property care. To achieve this seamless transition, the assistance of specialized trade services is a strategic choice. In this article, we'll delve into a spectrum of trade services designed to restore your property's splendor and ensure a graceful handover. Whether you're a tenant striving to recoup your security deposit, an agent aiming to uphold your reputation, or an owner keen on preserving your investment, these trade secrets hold the key to a successful lease legacy.
+As the curtain draws to a close on a lease agreement, the collective goal is to leave no trace of occupancy behind. This shared mission is a testament to the responsible tenant, the diligent agent and the conscientious property owner alike. A harmonious transition at the end of a lease is a reflection of mutual respect and commitment to property care. To achieve this seamless transition, the assistance of specialised trade services is a strategic choice. In this article, we'll delve into a spectrum of trade services designed to restore your property's splendour and ensure a graceful handover. Whether you're a tenant striving to recoup your security deposit, an agent aiming to uphold your reputation or an owner keen on preserving your investment, these trade secrets hold the key to a successful lease legacy.
 
 ## Painting
 
@@ -8312,7 +8312,7 @@ Before initiating any repairs or alterations, conduct a thorough inspection of t
 
 ### Plan and Organise
 
-Create a comprehensive plan to address the make good obligations efficiently. Break down the tasks into manageable steps and establish a timeline for completion. Identify any specialized work that may require professional assistance and start sourcing the necessary contractors or service providers.
+Create a comprehensive plan to address the make good obligations efficiently. Break down the tasks into manageable steps and establish a timeline for completion. Identify any specialised work that may require professional assistance and start sourcing the necessary contractors or service providers.
 
 ### Obtain Quotes
 
@@ -8412,7 +8412,7 @@ Establish clear and open lines of communication with your property owner or mana
 
 ### Engaging Professional Service Providers
 
-If your make good obligations involve complex repairs or specialized tasks, consider engaging professional service providers with expertise in the Melbourne market. Look for contractors or specialists who are familiar with local regulations, building codes, and industry standards. Their knowledge and experience can ensure the work is carried out to the required standards and help you avoid potential pitfalls.
+If your make good obligations involve complex repairs or specialised tasks, consider engaging professional service providers with expertise in the Melbourne market. Look for contractors or specialists who are familiar with local regulations, building codes and industry standards. Their knowledge and experience can ensure the work is carried out to the required standards and help you avoid potential pitfalls.
 
 ### Timelines and Planning
 
