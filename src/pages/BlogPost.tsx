@@ -47,7 +47,7 @@ const BlogPost = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Helmet>
-        <title>{post.title} - Expert Guide | MakeGOOD Melbourne</title>
+        <title>{post.title.length > 50 ? post.title.slice(0, 47) + '...' : post.title} | MakeGOOD</title>
         <meta name="description" content={`${post.excerpt.slice(0, 155)}...`} />
         <meta property="og:title" content={`${post.title} | MakeGOOD Melbourne`} />
         <meta property="og:description" content={post.excerpt} />
