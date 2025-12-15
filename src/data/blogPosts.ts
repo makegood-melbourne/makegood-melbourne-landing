@@ -27,7 +27,7 @@ Make good is your contractual obligation to return the warehouse to the conditio
 
 **Common Make Good Requirements:**
 - Removing racking, mezzanines and other tenant installations
-- Repairing damaged concrete floors (wheel marks, gouges, chemical stains)
+- Repairing damaged concrete floors (wheel marks, gouges and chemical stains)
 - Removing or repainting line marking to landlord specifications
 - Disconnecting tenant electrical and plumbing installations
 - Removing internal partitions or offices you've built
@@ -419,85 +419,111 @@ Port Melbourne warehouse make good doesn't have to be stressful or blow your bud
 - **Start early** (at least 90 days before lease end)
 - **Document everything** (photos are your best friend)
 - **Understand their lease** (read the actual make good clause, not what you think it says)
-- **Get professional quotes** (knowledge is negotiating power)
-- **Communicate openly** with landlords (surprises create disputes)
-- **Use qualified contractors** (shortcuts cost more in the long run)
+- **Negotiate strategically** (use market conditions and evidence)
+- **Use professionals** (experienced contractors and advisors)
+- **Communicate openly** (keep landlords in the loop)
 
-Don't leave your make good to the last minute. Start planning now, and you'll protect your bond, avoid disputes and exit your Port Melbourne warehouse on good terms.
+The key is preparation. By the time you're packing boxes, your make good plan should already be well underway.
+
+**Need help with your Port Melbourne warehouse make good?** Our team specialises in industrial property make good across Melbourne's inner suburbs. We know Port Melbourne's unique requirements, have established relationships with local contractors and can guide you through the entire process—from initial assessment to final handover.
+
+Contact us for a no-obligation consultation and get your exit strategy sorted today.
 
 ---
 
-**Need help with your Port Melbourne warehouse make good?**
-
-Our team specialises in industrial make good projects across Port Melbourne, Fishermans Bend and Melbourne's inner industrial areas. We understand the local market, know the compliance requirements and can help you navigate negotiations with landlords.
-
-**Contact us for:**
-- Free initial consultation
-- Detailed make good assessments
-- Competitive fixed-price quotes
-- Full project management from strip-out to handover
-
-Don't risk your bond or get caught out by unexpected costs. Let the experts handle your warehouse make good while you focus on your business.
+*Make Good Australia - Your Melbourne Industrial Property Make Good Specialists*
     `
   },
   {
     id: "32",
-    slug: "asbestos-management-make-good-commercial-properties",
-    title: "Asbestos Management in Commercial Make Good: Essential Safety and Compliance Guide",
-    date: "2025-10-01",
-    excerpt: "Asbestos remains a critical safety concern in commercial make good projects. This comprehensive guide covers identification, assessment, licensed removal requirements, compliance obligations and integration with make good works for Melbourne commercial properties.",
+    title: "Asbestos Management in Commercial Make Good: Safety, Compliance and Best Practice",
+    slug: "asbestos-management-commercial-make-good",
+    excerpt: "Understanding asbestos management in commercial make good projects is critical for safety and compliance. Learn about identification, legal requirements, safe removal procedures and integration with make good works in Melbourne properties.",
+    date: "2025-10-15",
     image: "asbestos-management.jpg",
-    content: `Asbestos-containing materials (ACMs) remain present in many commercial buildings constructed before 2004, presenting serious health risks if disturbed during make good or demolition works. Professional asbestos management is not optional—it's a legal requirement that protects workers, building occupants and the broader community from exposure to this dangerous substance. This comprehensive guide explores asbestos identification, assessment, removal requirements and integration with commercial make good projects in Melbourne.
+    content: `
+Asbestos remains one of the most serious hazards in commercial property make good projects. Despite being largely phased out in Australia by 1990, asbestos-containing materials (ACMs) are still present in countless commercial buildings constructed before that date. Proper identification, management and removal of asbestos is not just a legal requirement—it's essential for protecting the health of workers, occupants and the broader community.
 
-## Understanding Asbestos in Commercial Buildings
+This comprehensive guide covers everything commercial tenants, landlords and property managers need to know about asbestos management during make good projects.
+
+## Understanding Asbestos in Commercial Properties
 
 ### What is Asbestos?
 
-Asbestos refers to a group of naturally occurring fibrous minerals that were widely used in Australian construction materials from the 1940s through to the mid-1980s, with some products containing asbestos imported until 2004 when a total ban came into effect.
+Asbestos is a naturally occurring mineral fibre that was widely used in Australian building materials from the 1940s through to 1990. Its popularity stemmed from excellent properties:
+- Heat and fire resistance
+- Electrical insulation
+- Chemical resistance
+- High tensile strength
+- Flexibility and durability
 
-**Why It Was Used:**
-- Excellent fire resistance and heat insulation
-- Durability and resistance to chemical attack
-- Sound absorption properties
-- Low cost and easy installation
-- Versatility in many building applications
+These properties made asbestos ideal for a huge range of building applications—unfortunately, before the severe health risks were fully understood.
 
-**The Health Risks:**
-- Asbestosis (lung scarring)
-- Lung cancer
-- Mesothelioma (cancer of lung and abdominal lining)
-- Diseases typically develop 20-40 years after exposure
-- No safe level of exposure—any fibre inhalation is dangerous
+### Why Asbestos is Dangerous
 
-### Common Asbestos Locations in Commercial Buildings
+When asbestos-containing materials are disturbed, cut, drilled or damaged, microscopic fibres are released into the air. These fibres are:
+- Invisible to the naked eye
+- Easily inhaled deep into the lungs
+- Impossible to expel from the body
+- Capable of causing fatal diseases decades after exposure
 
-Buildings constructed or refurbished before 2004 may contain asbestos in:
+**Asbestos-Related Diseases:**
+- **Mesothelioma**: Aggressive cancer of the lung lining—almost exclusively caused by asbestos exposure. Typically fatal within 12-18 months of diagnosis.
+- **Asbestosis**: Chronic lung scarring from inhaled fibres. Progressive and incurable.
+- **Lung Cancer**: Risk significantly elevated in people exposed to asbestos, especially smokers.
+- **Pleural Plaques**: Thickening of lung lining—often first indicator of asbestos exposure.
 
-**Bonded (Non-Friable) Asbestos:**
-- Cement sheeting (internal and external walls)
-- Roofing and guttering (corrugated and flat sheets)
-- Eaves, fascias and soffits
-- Vinyl floor tiles and backing
-- Switchboard backing panels
-- Fire doors
-- Signage and notice boards
+Australia has one of the highest rates of asbestos-related disease in the world due to our extensive historical use of the material.
 
-**Friable Asbestos** (higher risk—can crumble to dust):
+### Types of Asbestos Materials
+
+**Friable Asbestos** (Higher Risk):
+- Crumbly or powdery materials that easily release fibres
 - Pipe lagging and thermal insulation
-- Boiler and plant insulation
-- Spray-on fire protection coatings
-- Ceiling tiles and panels
-- Millboard around heaters and stoves
-- Loose fill insulation
+- Sprayed fireproofing
+- Insulation boards when deteriorated
+- Requires Class A licensed removalist
 
-**Hidden Locations Often Found During Make Good:**
-- Behind wall linings
-- Above suspended ceilings
-- Within service risers
-- Under floor coverings
-- Linoleum backing
+**Bonded Asbestos** (Lower Risk when undisturbed):
+- Asbestos fibres bound in a solid matrix (usually cement)
+- Cement sheeting (fibro, AC sheet)
+- Vinyl floor tiles and backing
+- Roofing materials
+- Electrical switchboards
+- Becomes dangerous when cut, drilled or broken
+
+### Common Locations in Commercial Buildings
+
+Commercial buildings constructed pre-1990 may contain asbestos in:
+
+**Walls and Ceilings:**
+- Fibro cement wall sheeting (internal and external)
+- Acoustic ceiling tiles
+- Textured ceilings and coatings
+- Partition walls
+
+**Floors:**
+- Vinyl floor tiles (especially 9x9 inch format)
+- Vinyl sheet flooring backing
 - Carpet underlay
-- Electrical cable insulation
+- Tile adhesives and mastics
+
+**Roofing:**
+- Corrugated cement roof sheets (Super Six)
+- Roof gutters and downpipes
+- Flashing materials
+- Roof insulation
+
+**Mechanical and Electrical:**
+- Pipe lagging and insulation
+- Duct insulation
+- Fire doors and rated walls
+- Electrical switchboard backing
+- HVAC gaskets
+
+**Other Locations:**
+- Fire blankets and curtains
+- Elevator brake linings
 - Expansion joints
 - Bitumen roofing membranes
 
@@ -632,7 +658,7 @@ Building owners and employers have legal duty to:
 - Class A work: 5 days written notice before commencement
 - Class B work over 10m²: 5 days notice
 - Emergency removal: notify as soon as practicable
-- Notification includes work details, procedures, duration
+- Notification includes work details, procedures and duration
 
 **EPA Victoria Notification:**
 - Required for asbestos waste transport to EPA-licensed facilities
@@ -658,7 +684,7 @@ Licensed removalists must prepare written control plan including:
 - Worker training and PPE requirements
 
 **Site Preparation:**
-- Establish exclusion zones (barricades, signage)
+- Establish exclusion zones (barricades and signage)
 - Isolate HVAC systems to prevent fibre spread
 - Seal affected areas with plastic sheeting
 - Establish decontamination facilities
@@ -961,40 +987,8 @@ Carpet tile replacement is often a major component of make good obligations. Our
 
 - Matching or equivalent tile specifications to original installation
 - Uniform appearance and professional finish
-- Documentation of work completed for landlord approval
-- Compliance with lease make good requirements
-
-## Our Technical Capabilities
-
-Our commercial flooring team is equipped with:
-
-- Commercial-grade diamond grinding equipment
-- HEPA-filtered dust extraction
-- Moisture testing to AS/NZS standards
-- Pressure-sensitive adhesive systems
-- Pattern matching and alignment
-- Edge trimming and transition installation
-
-## Project Scheduling
-
-Floor preparation and carpet installation requires careful timing:
-
-1. **Floor Assessment**: Initial inspection and specification confirmation
-2. **Grinding Phase**: Typically 1-2 days depending on area size
-3. **Curing Period**: 24-48 hours for floor to stabilise
-4. **Installation**: Usually 1-2 days for standard office spaces
-5. **Final Inspection**: Walk-through and documentation
-
-## Cost Considerations
-
-While comprehensive floor preparation adds to project cost, it protects against:
-
-- Failed installations requiring costly replacement
-- Landlord rejection of make good works
-- Security deposit withholding
-- Legal disputes over tenancy condition
-
-Professional preparation is an investment in compliance and peace of mind.
+- Complete documentation for landlord approval
+- Warranty coverage for materials and workmanship
 
 ## Environmental Considerations
 
@@ -1022,11 +1016,11 @@ Professional floor preparation and carpet tile installation removes the stress f
     id: "30",
     slug: "industrial-lease-make-good-tips",
     title: "Industrial Lease Make Good Tips: Avoiding Common Pitfalls and Maximising Bond Return",
-    excerpt: "Navigating industrial lease make good can be complex. This article offers practical tips on documentation, contractor selection, timing, and negotiation to help tenants avoid disputes and secure full bond refunds.",
+    excerpt: "Navigating industrial lease make good can be complex. This article offers practical tips on documentation, contractor selection, timing and negotiation to help tenants avoid disputes and secure full bond refunds.",
     date: "2025-08-10",
     image: "industrial-lease-make-good.jpg",
     content: `
-Industrial lease make good obligations often cause confusion and disputes between tenants and landlords. Understanding your responsibilities, documenting conditions, and engaging the right professionals early can save time, money and stress.
+Industrial lease make good obligations often cause confusion and disputes between tenants and landlords. Understanding your responsibilities, documenting conditions and engaging the right professionals early can save time, money and stress.
 
 ## Key Tips for Industrial Lease Make Good
 
