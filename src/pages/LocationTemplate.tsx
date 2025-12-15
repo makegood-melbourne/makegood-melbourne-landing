@@ -105,7 +105,6 @@ const LocationTemplate = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left: Content */}
             <div>
-              <p className="text-accent font-medium tracking-wide mb-2">Make good, BETTER.</p>
               <h1 className="text-4xl md:text-5xl lg:text-6xl mb-4 leading-tight">
                 <span className="font-light block">Make Good Services in</span>
                 <span className="font-bold text-primary">{location.name}</span>
@@ -168,6 +167,9 @@ const LocationTemplate = () => {
       <section className="py-16 bg-secondary">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
+            <h2 className="text-2xl md:text-3xl font-bold text-accent text-center mb-12">
+              We do make goods all day, every day.
+            </h2>
             <div className="grid md:grid-cols-2 gap-12">
               {/* Key Areas */}
               <div>
