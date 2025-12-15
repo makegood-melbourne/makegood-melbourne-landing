@@ -90,11 +90,19 @@ const ServiceTemplate = () => {
                   </Button>
                 </div>
               </div>
-              {/* Image Placeholder */}
+              {/* Hero Image */}
               <div className="hidden lg:block">
-                <div className="aspect-[4/3] bg-muted/30 rounded-lg border-2 border-dashed border-muted-foreground/20 flex items-center justify-center">
-                  <span className="text-muted-foreground/50 text-sm">Service Image</span>
-                </div>
+                {service.heroImage ? (
+                  <img 
+                    src={service.heroImage} 
+                    alt={service.name}
+                    className="aspect-[4/3] w-full object-cover rounded-lg"
+                  />
+                ) : (
+                  <div className="aspect-[4/3] bg-muted/30 rounded-lg border-2 border-dashed border-muted-foreground/20 flex items-center justify-center">
+                    <span className="text-muted-foreground/50 text-sm">Service Image</span>
+                  </div>
+                )}
               </div>
             </div>
           </div>

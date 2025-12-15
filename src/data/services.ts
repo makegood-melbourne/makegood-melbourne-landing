@@ -6,6 +6,7 @@ export interface Service {
   description: string;
   metaDescription: string;
   heroText: string;
+  heroImage?: string;
   benefits: string[];
   process: {
     step: string;
@@ -324,6 +325,7 @@ export const services: Service[] = [
     description: "Professional commercial cleaning services for Melbourne offices, warehouses and industrial properties. End of lease cleaning, post-construction cleaning and handover-ready results.",
     metaDescription: "Commercial cleaning Melbourne for make good projects. End of lease cleaning, post-construction cleaning, warehouse and office cleaning. Pass your final inspection first time. Free quotes.",
     heroText: "Professional cleaning services that ensure your property passes final inspection and handover requirements.",
+    heroImage: "/assets/services/commercial-cleaning.jpeg",
     benefits: [
       "End of lease deep cleaning",
       "Post-construction cleaning",
