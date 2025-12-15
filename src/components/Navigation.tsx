@@ -12,8 +12,12 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
+// Only show completed service pages in navigation
+const publishedServiceSlugs = ['commercial-cleaning'];
+
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const publishedServices = services.filter(s => publishedServiceSlugs.includes(s.slug));
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -40,7 +44,7 @@ const Navigation = () => {
                 <ChevronDown className="h-4 w-4" />
               </DropdownMenuTrigger>
               <DropdownMenuContent align="start" className="bg-card border-border">
-                {services.map((service) => (
+                {publishedServices.map((service) => (
                   <DropdownMenuItem key={service.slug} asChild>
                     <Link 
                       to={`/services/${service.slug}`}
@@ -99,7 +103,7 @@ const Navigation = () => {
             <div className="py-2">
               <span className="text-foreground font-medium">Services</span>
               <div className="pl-4 mt-2 flex flex-col gap-2">
-                {services.map((service) => (
+                {publishedServices.map((service) => (
                   <Link 
                     key={service.slug}
                     to={`/services/${service.slug}`}
