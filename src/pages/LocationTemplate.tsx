@@ -5,6 +5,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { getLocationBySlug } from "@/data/locations";
+import heroImage from "@/assets/locations/make-good-hero.jpeg";
 
 const LocationTemplate = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -153,10 +154,14 @@ const LocationTemplate = () => {
               </div>
             </div>
 
-            {/* Right: Image Placeholder */}
+            {/* Right: Image */}
             <div className="hidden lg:block">
-              <div className="aspect-[4/3] bg-secondary border border-border rounded-lg flex items-center justify-center">
-                <span className="text-muted-foreground">Image Placeholder</span>
+              <div className="aspect-[4/3] rounded-lg overflow-hidden">
+                <img 
+                  src={heroImage} 
+                  alt={`Make good services in ${location.name} - commercial space restoration`}
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </div>
