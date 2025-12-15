@@ -169,38 +169,37 @@ const LocationTemplate = () => {
         </div>
       </section>
 
-      {/* Unique Local Content Section */}
-      <section className="py-16 bg-card border-b border-border">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
-              Commercial & Industrial Property in {location.name}
-            </h2>
-            <div className="prose prose-lg max-w-none text-muted-foreground space-y-4">
-              <p className="leading-relaxed">
-                {location.uniqueIntro}
-              </p>
-              <p className="leading-relaxed">
-                {location.localContext}
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Service Coverage Section */}
+      {/* Local Content & Service Coverage Section */}
       <section className="py-16 bg-secondary">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-2xl md:text-3xl font-bold text-primary text-center mb-12">
+            {/* Unique Local Content */}
+            <div className="mb-12">
+              <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
+                Commercial & Industrial Property in {location.name}
+              </h2>
+              <div className="text-muted-foreground space-y-4">
+                <p className="leading-relaxed">
+                  {location.uniqueIntro}
+                </p>
+                <p className="leading-relaxed">
+                  {location.localContext}
+                </p>
+              </div>
+            </div>
+
+            {/* Tagline */}
+            <h3 className="text-xl md:text-2xl font-bold text-primary text-center mb-10">
               We do make goods all day, every day.
-            </h2>
-            <div className="grid md:grid-cols-2 gap-12">
+            </h3>
+
+            {/* Areas & Property Types Grid */}
+            <div className="grid md:grid-cols-2 gap-12 max-w-3xl mx-auto">
               {/* Key Areas */}
               <div>
-                <h3 className="text-2xl font-bold text-foreground mb-6">
+                <h4 className="text-xl font-bold text-foreground mb-5">
                   Areas We Service
-                </h3>
+                </h4>
                 <ul className="space-y-3">
                   {location.keyAreas.map((area, index) => (
                     <li key={index} className="flex items-center gap-3">
@@ -213,9 +212,9 @@ const LocationTemplate = () => {
 
               {/* Business Types */}
               <div>
-                <h3 className="text-2xl font-bold text-foreground mb-6">
+                <h4 className="text-xl font-bold text-foreground mb-5">
                   Property Types
-                </h3>
+                </h4>
                 <ul className="space-y-3">
                   {location.businessTypes.map((type, index) => (
                     <li key={index} className="flex items-center gap-3">
