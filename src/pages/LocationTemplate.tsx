@@ -1,6 +1,6 @@
 import { useParams, Navigate, Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
-import { MapPin, Clock, Shield, Phone, ArrowRight, CheckCircle2, Building2, Wrench, Warehouse, Factory, HardHat, Truck } from "lucide-react";
+import { MapPin, Clock, Shield, Mail, ArrowRight, CheckCircle2, Building2, Wrench, Warehouse, Factory, HardHat, Truck } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -145,9 +145,9 @@ const LocationTemplate = () => {
                   asChild
                   className="text-lg px-8 py-6"
                 >
-                  <a href="tel:0398909222" className="flex items-center gap-2">
-                    <Phone className="w-5 h-5" />
-                    03 9890 9222
+                  <a href="mailto:ali@makegood.melbourne" className="flex items-center gap-2">
+                    <Mail className="w-5 h-5" />
+                    Email Us
                   </a>
                 </Button>
               </div>
@@ -352,9 +352,9 @@ const LocationTemplate = () => {
                 asChild
                 className="text-lg px-10 py-6"
               >
-                <a href="tel:0398909222" className="flex items-center gap-2">
-                  <Phone className="w-5 h-5" />
-                  Call Now
+                <a href="mailto:ali@makegood.melbourne" className="flex items-center gap-2">
+                  <Mail className="w-5 h-5" />
+                  Email Us
                 </a>
               </Button>
             </div>
