@@ -22,12 +22,12 @@ export const locations: Location[] = [
       "Burnley surrounds"
     ],
     businessTypes: [
-      "Corporate offices",
-      "Retail showrooms",
+      "Commercial offices",
+      "Creative studios",
       "Warehouses & logistics",
       "Manufacturing facilities",
-      "Medical & dental practices",
-      "Creative studios"
+      "Medical practices",
+      "Hospitality"
     ]
   }
 ];
