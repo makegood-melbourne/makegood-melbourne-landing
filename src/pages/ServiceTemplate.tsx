@@ -61,27 +61,35 @@ const ServiceTemplate = () => {
         {/* Hero Section */}
         <section className="bg-secondary py-16 md:py-24">
           <div className="container mx-auto px-4">
-            <div className="max-w-4xl">
-              <p className="text-primary font-semibold mb-3 text-lg">Melbourne Specialists</p>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl text-foreground mb-6">
-                {service.title}
-              </h1>
-              <p className="text-xl text-muted-foreground mb-8 max-w-2xl">
-                {service.heroText}
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground" asChild>
-                  <a href="tel:+61499007596">
-                    <Phone className="mr-2 h-5 w-5" />
-                    Call 0499 007 596
-                  </a>
-                </Button>
-                <Button size="lg" variant="outline" className="border-accent text-accent hover:bg-accent hover:text-accent-foreground" asChild>
-                  <a href="mailto:enquiries@makegood.melbourne">
-                    <Mail className="mr-2 h-5 w-5" />
-                    Get a Quote
-                  </a>
-                </Button>
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div>
+                <p className="text-primary font-semibold mb-3 text-lg">Melbourne Specialists</p>
+                <h1 className="text-4xl md:text-5xl lg:text-6xl text-foreground mb-6">
+                  {service.title}
+                </h1>
+                <p className="text-xl text-muted-foreground mb-8">
+                  {service.heroText}
+                </p>
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground" asChild>
+                    <a href="tel:+61499007596">
+                      <Phone className="mr-2 h-5 w-5" />
+                      Call 0499 007 596
+                    </a>
+                  </Button>
+                  <Button size="lg" variant="outline" className="border-accent text-accent hover:bg-accent hover:text-accent-foreground" asChild>
+                    <a href="mailto:enquiries@makegood.melbourne">
+                      <Mail className="mr-2 h-5 w-5" />
+                      Get a Quote
+                    </a>
+                  </Button>
+                </div>
+              </div>
+              {/* Image Placeholder */}
+              <div className="hidden lg:block">
+                <div className="aspect-[4/3] bg-muted/30 rounded-lg border-2 border-dashed border-muted-foreground/20 flex items-center justify-center">
+                  <span className="text-muted-foreground/50 text-sm">Service Image</span>
+                </div>
               </div>
             </div>
           </div>
@@ -125,14 +133,22 @@ const ServiceTemplate = () => {
         {/* Description Section */}
         <section className="py-16 bg-background">
           <div className="container mx-auto px-4">
-            <div className="max-w-3xl">
-              <h2 className="text-3xl md:text-4xl text-foreground mb-6">About This Service</h2>
-              <p className="text-xl text-muted-foreground leading-relaxed">
-                {service.description}
-              </p>
-              <p className="text-xl text-muted-foreground leading-relaxed mt-4">
-                Our experienced team delivers professional {service.name.toLowerCase()} services across Melbourne's commercial and industrial properties. We understand the importance of meeting lease obligations and landlord requirements, working efficiently to minimise disruption while achieving quality results.
-              </p>
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div>
+                <h2 className="text-3xl md:text-4xl text-foreground mb-6">About This Service</h2>
+                <p className="text-xl text-muted-foreground leading-relaxed">
+                  {service.description}
+                </p>
+                <p className="text-xl text-muted-foreground leading-relaxed mt-4">
+                  Our experienced team delivers professional {service.name.toLowerCase()} services across Melbourne's commercial and industrial properties. We understand the importance of meeting lease obligations and landlord requirements, working efficiently to minimise disruption while achieving quality results.
+                </p>
+              </div>
+              {/* Image Placeholder */}
+              <div className="hidden lg:block">
+                <div className="aspect-[4/3] bg-muted/30 rounded-lg border-2 border-dashed border-muted-foreground/20 flex items-center justify-center">
+                  <span className="text-muted-foreground/50 text-sm">Service Image</span>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -170,22 +186,22 @@ const ServiceTemplate = () => {
         )}
 
         {/* CTA Section */}
-        <section className="py-16 bg-primary">
+        <section className="py-16 bg-secondary border-t border-border">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl md:text-4xl text-primary-foreground mb-4">
+            <h2 className="text-3xl md:text-4xl text-foreground mb-4">
               Ready to Get Started?
             </h2>
-            <p className="text-xl text-primary-foreground/80 mb-8 max-w-2xl mx-auto">
+            <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
               Contact us today for a free quote on your {service.name.toLowerCase()} project.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" variant="secondary" asChild>
+              <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground" asChild>
                 <a href="tel:+61499007596">
                   <Phone className="mr-2 h-5 w-5" />
                   0499 007 596
                 </a>
               </Button>
-              <Button size="lg" variant="outline" className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary" asChild>
+              <Button size="lg" variant="outline" className="border-accent text-accent hover:bg-accent hover:text-accent-foreground" asChild>
                 <a href="mailto:enquiries@makegood.melbourne">
                   <Mail className="mr-2 h-5 w-5" />
                   enquiries@makegood.melbourne
