@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { getLocationBySlug } from "@/data/locations";
 import heroImage from "@/assets/locations/make-good-hero.jpeg";
-import workerImage from "@/assets/locations/worker-epoxy-flooring.jpeg";
+import workerImage from "@/assets/locations/worker-toolbelt.jpeg";
 
 const LocationTemplate = () => {
   const { slug } = useParams<{ slug: string }>();
