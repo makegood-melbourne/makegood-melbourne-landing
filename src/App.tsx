@@ -7,7 +7,7 @@ import Index from "./pages/Index";
 import Capabilities from "./pages/Capabilities";
 import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
-import Location from "./pages/Location";
+import LocationTemplate from "./pages/LocationTemplate";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -23,7 +23,7 @@ const App = () => (
           <Route path="/capabilities" element={<Capabilities />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
-          <Route path="/locations/:slug" element={<Location />} />
+          <Route path="/areas/:slug" element={<LocationTemplate />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
