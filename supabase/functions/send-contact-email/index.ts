@@ -44,7 +44,7 @@ const handler = async (req: Request): Promise<Response> => {
         Authorization: `Bearer ${RESEND_API_KEY}`,
       },
       body: JSON.stringify({
-        from: "MakeGOOD Website <onboarding@resend.dev>",
+        from: "MakeGOOD Melbourne <noreply@makegood.melbourne>",
         to: ["ali@makegood.melbourne"],
         subject: `New Enquiry from ${name}`,
         html: `
@@ -75,7 +75,7 @@ const handler = async (req: Request): Promise<Response> => {
         Authorization: `Bearer ${RESEND_API_KEY}`,
       },
       body: JSON.stringify({
-        from: "MakeGOOD Melbourne <onboarding@resend.dev>",
+        from: "MakeGOOD Melbourne <noreply@makegood.melbourne>",
         to: [email],
         subject: "We've received your enquiry - MakeGOOD Melbourne",
         html: `
