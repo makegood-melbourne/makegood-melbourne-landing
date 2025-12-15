@@ -1,4 +1,5 @@
 import commercialCleaningImage from "@/assets/services/commercial-cleaning-melbourne-supplies.jpeg";
+import warehouseFloorScrubberImage from "@/assets/services/warehouse-floor-scrubber-cleaning.jpg";
 
 export interface Service {
   name: string;
@@ -330,6 +331,8 @@ export const services: Service[] = [
     description: "Professional commercial cleaning services for Melbourne offices, warehouses and industrial properties. Ride-on sweepers for large areas, pressure washing, chemical cleaning and handover-ready results.",
     metaDescription: "Commercial cleaning Melbourne for make good projects. Ride-on sweepers, pressure washing, chemical cleaning for warehouses and offices. Pass your final inspection first time. Free quotes.",
     heroText: "Professional cleaning services that ensure your property passes final inspection and handover requirements.",
+    heroImage: warehouseFloorScrubberImage,
+    heroImageAlt: "Industrial ride-on floor scrubber cleaning polished concrete floor in modern Melbourne warehouse",
     secondaryImage: commercialCleaningImage,
     secondaryImageAlt: "Commercial cleaning supplies Melbourne - professional bucket, sponges and cleaning products for office and warehouse make good services",
     benefits: [
