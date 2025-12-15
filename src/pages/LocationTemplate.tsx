@@ -309,22 +309,6 @@ const LocationTemplate = () => {
         </div>
       </section>
 
-      {/* Testimonial Section (if exists) */}
-      {location.testimonial && (
-        <section className="py-16 bg-background">
-          <div className="container mx-auto px-4">
-            <div className="max-w-3xl mx-auto text-center">
-              <blockquote className="text-2xl md:text-3xl italic text-foreground mb-6 leading-relaxed">
-                "{location.testimonial.quote}"
-              </blockquote>
-              <div>
-                <p className="font-semibold text-primary text-lg">{location.testimonial.author}</p>
-                <p className="text-muted-foreground">{location.testimonial.business}</p>
-              </div>
-            </div>
-          </div>
-        </section>
-      )}
 
       {/* Final CTA Section */}
       <section className="py-20 bg-card border-t border-border">

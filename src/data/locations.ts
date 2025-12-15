@@ -5,11 +5,6 @@ export interface Location {
   description: string;
   keyAreas: string[];
   businessTypes: string[];
-  testimonial?: {
-    quote: string;
-    author: string;
-    business: string;
-  };
 }
 
 export const locations: Location[] = [
@@ -33,12 +28,7 @@ export const locations: Location[] = [
       "Manufacturing facilities",
       "Medical & dental practices",
       "Creative studios"
-    ],
-    testimonial: {
-      quote: "Make Good Melbourne handled our entire office strip out flawlessly. Professional team, on time, and the final result exceeded our expectations.",
-      author: "Sarah M.",
-      business: "Property Manager, Richmond"
-    }
+    ]
   }
 ];
 
