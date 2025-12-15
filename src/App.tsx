@@ -8,6 +8,7 @@ import Capabilities from "./pages/Capabilities";
 import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
 import LocationTemplate from "./pages/LocationTemplate";
+import ServiceTemplate from "./pages/ServiceTemplate";
 import NotFound from "./pages/NotFound";
 import LegacyBlogRedirect from "./pages/LegacyBlogRedirect";
 
@@ -25,6 +26,7 @@ const App = () => (
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="/areas/:slug" element={<LocationTemplate />} />
+          <Route path="/services/:slug" element={<ServiceTemplate />} />
           
           {/* Legacy redirects for old site structure */}
           <Route path="/tenants" element={<Navigate to="/" replace />} />

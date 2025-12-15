@@ -1,0 +1,204 @@
+import { useParams, Navigate, Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
+import { getServiceBySlug, services } from "@/data/services";
+import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { CheckCircle, Phone, Mail, ArrowRight } from "lucide-react";
+
+const ServiceTemplate = () => {
+  const { slug } = useParams<{ slug: string }>();
+  const service = slug ? getServiceBySlug(slug) : undefined;
+
+  if (!service) {
+    return <Navigate to="/capabilities" replace />;
+  }
+
+  const relatedServices = services.filter(s => 
+    service.relatedServices.includes(s.slug) && s.slug !== service.slug
+  ).slice(0, 3);
+
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": service.name,
+    "description": service.description,
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "MakeGOOD Melbourne",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Melbourne",
+        "addressRegion": "VIC",
+        "addressCountry": "AU"
+      },
+      "telephone": "+61 499 007 596"
+    },
+    "areaServed": {
+      "@type": "City",
+      "name": "Melbourne"
+    }
+  };
+
+  return (
+    <div className="min-h-screen flex flex-col bg-background">
+      <Helmet>
+        <title>{service.metaTitle}</title>
+        <meta name="description" content={service.metaDescription} />
+        <meta property="og:title" content={service.metaTitle} />
+        <meta property="og:description" content={service.metaDescription} />
+        <meta property="og:type" content="website" />
+        <link rel="canonical" href={`https://makegood.melbourne/services/${service.slug}`} />
+        <script type="application/ld+json">
+          {JSON.stringify(structuredData)}
+        </script>
+      </Helmet>
+
+      <Navigation />
+
+      <main className="flex-1 pt-20">
+        {/* Hero Section */}
+        <section className="bg-secondary py-16 md:py-24">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl">
+              <p className="text-primary font-semibold mb-3 text-lg">Melbourne Specialists</p>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl text-foreground mb-6">
+                {service.title}
+              </h1>
+              <p className="text-xl text-muted-foreground mb-8 max-w-2xl">
+                {service.heroText}
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground" asChild>
+                  <a href="tel:+61499007596">
+                    <Phone className="mr-2 h-5 w-5" />
+                    Call 0499 007 596
+                  </a>
+                </Button>
+                <Button size="lg" variant="outline" className="border-accent text-accent hover:bg-accent hover:text-accent-foreground" asChild>
+                  <a href="mailto:enquiries@makegood.melbourne">
+                    <Mail className="mr-2 h-5 w-5" />
+                    Get a Quote
+                  </a>
+                </Button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Benefits Section */}
+        <section className="py-16 bg-background">
+          <div className="container mx-auto px-4">
+            <h2 className="text-3xl md:text-4xl text-foreground mb-10">What's Included</h2>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {service.benefits.map((benefit, index) => (
+                <div key={index} className="flex items-start gap-4 p-4 bg-secondary rounded-lg">
+                  <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
+                  <span className="text-lg text-foreground">{benefit}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Process Section */}
+        <section className="py-16 bg-secondary">
+          <div className="container mx-auto px-4">
+            <h2 className="text-3xl md:text-4xl text-foreground mb-10">Our Process</h2>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {service.process.map((step, index) => (
+                <Card key={index} className="bg-background border-border">
+                  <CardContent className="pt-6">
+                    <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+                      <span className="text-xl font-bold text-primary">{index + 1}</span>
+                    </div>
+                    <h3 className="text-xl font-semibold text-foreground mb-2">{step.step}</h3>
+                    <p className="text-muted-foreground">{step.description}</p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Description Section */}
+        <section className="py-16 bg-background">
+          <div className="container mx-auto px-4">
+            <div className="max-w-3xl">
+              <h2 className="text-3xl md:text-4xl text-foreground mb-6">About This Service</h2>
+              <p className="text-xl text-muted-foreground leading-relaxed">
+                {service.description}
+              </p>
+              <p className="text-xl text-muted-foreground leading-relaxed mt-4">
+                Our experienced team delivers professional {service.name.toLowerCase()} services across Melbourne's commercial and industrial properties. We understand the importance of meeting lease obligations and landlord requirements, working efficiently to minimise disruption while achieving quality results.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Related Services */}
+        {relatedServices.length > 0 && (
+          <section className="py-16 bg-secondary">
+            <div className="container mx-auto px-4">
+              <h2 className="text-3xl md:text-4xl text-foreground mb-10">Related Services</h2>
+              <div className="grid md:grid-cols-3 gap-6">
+                {relatedServices.map((relatedService) => (
+                  <Link 
+                    key={relatedService.slug} 
+                    to={`/services/${relatedService.slug}`}
+                    className="group"
+                  >
+                    <Card className="bg-background border-border h-full hover:border-primary transition-colors">
+                      <CardContent className="pt-6">
+                        <h3 className="text-xl font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">
+                          {relatedService.name}
+                        </h3>
+                        <p className="text-muted-foreground mb-4 line-clamp-2">
+                          {relatedService.heroText}
+                        </p>
+                        <span className="text-accent flex items-center gap-2 font-medium">
+                          Learn more <ArrowRight className="h-4 w-4" />
+                        </span>
+                      </CardContent>
+                    </Card>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
+
+        {/* CTA Section */}
+        <section className="py-16 bg-primary">
+          <div className="container mx-auto px-4 text-center">
+            <h2 className="text-3xl md:text-4xl text-primary-foreground mb-4">
+              Ready to Get Started?
+            </h2>
+            <p className="text-xl text-primary-foreground/80 mb-8 max-w-2xl mx-auto">
+              Contact us today for a free quote on your {service.name.toLowerCase()} project.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button size="lg" variant="secondary" asChild>
+                <a href="tel:+61499007596">
+                  <Phone className="mr-2 h-5 w-5" />
+                  0499 007 596
+                </a>
+              </Button>
+              <Button size="lg" variant="outline" className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary" asChild>
+                <a href="mailto:enquiries@makegood.melbourne">
+                  <Mail className="mr-2 h-5 w-5" />
+                  enquiries@makegood.melbourne
+                </a>
+              </Button>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <Footer />
+    </div>
+  );
+};
+
+export default ServiceTemplate;

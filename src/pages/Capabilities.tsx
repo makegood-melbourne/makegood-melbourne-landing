@@ -1,12 +1,18 @@
 import { Helmet } from "react-helmet-async";
+import { Link } from "react-router-dom";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Hammer, Building2, Wrench, CheckCircle } from "lucide-react";
+import { Hammer, Building2, Wrench, CheckCircle, ArrowRight } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import capabilitiesHero from "@/assets/commercial-property-restoration-capabilities-melbourne.jpg";
+import { services, getServicesByCategory } from "@/data/services";
 
 const Capabilities = () => {
-  const demolitionServices = [
+  const demolitionServices = getServicesByCategory('demolition');
+  const makeGoodServices = getServicesByCategory('make-good');
+  const tradeServices = getServicesByCategory('trade');
+
+  const allDemolitionItems = [
     "Pallet racking removal",
     "Electrical make-safe",
     "Mechanical re-balancing",
@@ -16,7 +22,7 @@ const Capabilities = () => {
     "Transport and relocation services"
   ];
 
-  const makeGoodServices = [
+  const allMakeGoodItems = [
     "Carpentry and joinery",
     "Concrete flooring restoration",
     "Professional painting",
@@ -27,7 +33,7 @@ const Capabilities = () => {
     "Ceiling tile cleaning and replacement"
   ];
 
-  const tradeServices = [
+  const allTradeItems = [
     "Electrical installations and repairs",
     "Mechanical systems",
     "Fire protection systems",
@@ -86,14 +92,31 @@ const Capabilities = () => {
                 <p className="text-muted-foreground mb-6 leading-relaxed">
                   Our expert team excels in various facets of the demolition process, ensuring safe and efficient removal of structures, equipment, and materials. Whether it's interior alterations or complete demolitions, our team is equipped to handle projects of all sizes.
                 </p>
-                <div className="grid md:grid-cols-2 gap-4">
-                  {demolitionServices.map((service, index) => (
+                <div className="grid md:grid-cols-2 gap-4 mb-6">
+                  {allDemolitionItems.map((service, index) => (
                     <div key={index} className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-accent mt-0.5 flex-shrink-0" />
                       <span className="text-foreground">{service}</span>
                     </div>
                   ))}
                 </div>
+                {demolitionServices.length > 0 && (
+                  <div className="pt-4 border-t border-border">
+                    <p className="text-sm text-muted-foreground mb-3">Learn more about our demolition services:</p>
+                    <div className="flex flex-wrap gap-2">
+                      {demolitionServices.map((service) => (
+                        <Link
+                          key={service.slug}
+                          to={`/services/${service.slug}`}
+                          className="inline-flex items-center gap-1 text-accent hover:text-primary transition-colors text-sm font-medium"
+                        >
+                          {service.name}
+                          <ArrowRight className="h-3 w-3" />
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                )}
               </CardContent>
             </Card>
           </div>
@@ -115,14 +138,31 @@ const Capabilities = () => {
                 <p className="text-muted-foreground mb-6 leading-relaxed">
                   We specialise in restoring commercial, industrial, and warehouse properties to their original condition. Our skilled team excels in diverse areas, meticulously addressing every aspect of property restoration to ensure spaces are returned to a lease-able condition.
                 </p>
-                <div className="grid md:grid-cols-2 gap-4">
-                  {makeGoodServices.map((service, index) => (
+                <div className="grid md:grid-cols-2 gap-4 mb-6">
+                  {allMakeGoodItems.map((service, index) => (
                     <div key={index} className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-accent mt-0.5 flex-shrink-0" />
                       <span className="text-foreground">{service}</span>
                     </div>
                   ))}
                 </div>
+                {makeGoodServices.length > 0 && (
+                  <div className="pt-4 border-t border-border">
+                    <p className="text-sm text-muted-foreground mb-3">Learn more about our make good services:</p>
+                    <div className="flex flex-wrap gap-2">
+                      {makeGoodServices.map((service) => (
+                        <Link
+                          key={service.slug}
+                          to={`/services/${service.slug}`}
+                          className="inline-flex items-center gap-1 text-accent hover:text-primary transition-colors text-sm font-medium"
+                        >
+                          {service.name}
+                          <ArrowRight className="h-3 w-3" />
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                )}
               </CardContent>
             </Card>
           </div>
@@ -144,14 +184,31 @@ const Capabilities = () => {
                 <p className="text-muted-foreground mb-6 leading-relaxed">
                   Our comprehensive approach revitalises every facet of your property, ensuring a flawless canvas for its next chapter. Our dedicated team seamlessly integrates multiple trade specialties, tailored to enhance your space during the pivotal make good process.
                 </p>
-                <div className="grid md:grid-cols-2 gap-4">
-                  {tradeServices.map((service, index) => (
+                <div className="grid md:grid-cols-2 gap-4 mb-6">
+                  {allTradeItems.map((service, index) => (
                     <div key={index} className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-accent mt-0.5 flex-shrink-0" />
                       <span className="text-foreground">{service}</span>
                     </div>
                   ))}
                 </div>
+                {tradeServices.length > 0 && (
+                  <div className="pt-4 border-t border-border">
+                    <p className="text-sm text-muted-foreground mb-3">Learn more about our trade services:</p>
+                    <div className="flex flex-wrap gap-2">
+                      {tradeServices.map((service) => (
+                        <Link
+                          key={service.slug}
+                          to={`/services/${service.slug}`}
+                          className="inline-flex items-center gap-1 text-accent hover:text-primary transition-colors text-sm font-medium"
+                        >
+                          {service.name}
+                          <ArrowRight className="h-3 w-3" />
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                )}
               </CardContent>
             </Card>
           </div>
