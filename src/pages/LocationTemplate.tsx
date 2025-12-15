@@ -169,6 +169,25 @@ const LocationTemplate = () => {
         </div>
       </section>
 
+      {/* Unique Local Content Section */}
+      <section className="py-16 bg-card border-b border-border">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
+              Commercial & Industrial Property in {location.name}
+            </h2>
+            <div className="prose prose-lg max-w-none text-muted-foreground space-y-4">
+              <p className="leading-relaxed">
+                {location.uniqueIntro}
+              </p>
+              <p className="leading-relaxed">
+                {location.localContext}
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Service Coverage Section */}
       <section className="py-16 bg-secondary">
         <div className="container mx-auto px-4">
@@ -179,9 +198,9 @@ const LocationTemplate = () => {
             <div className="grid md:grid-cols-2 gap-12">
               {/* Key Areas */}
               <div>
-                <h2 className="text-2xl font-bold text-foreground mb-6">
+                <h3 className="text-2xl font-bold text-foreground mb-6">
                   Areas We Service
-                </h2>
+                </h3>
                 <ul className="space-y-3">
                   {location.keyAreas.map((area, index) => (
                     <li key={index} className="flex items-center gap-3">
@@ -194,9 +213,9 @@ const LocationTemplate = () => {
 
               {/* Business Types */}
               <div>
-                <h2 className="text-2xl font-bold text-foreground mb-6">
+                <h3 className="text-2xl font-bold text-foreground mb-6">
                   Property Types
-                </h2>
+                </h3>
                 <ul className="space-y-3">
                   {location.businessTypes.map((type, index) => (
                     <li key={index} className="flex items-center gap-3">
