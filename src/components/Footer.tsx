@@ -1,4 +1,6 @@
+import { Link } from "react-router-dom";
 import logo from "@/assets/makegood-melbourne-logo.png";
+import { locations } from "@/data/locations";
 
 const Footer = () => {
   return (
@@ -46,8 +48,20 @@ const Footer = () => {
 
           <div>
             <h4 className="font-semibold mb-4 text-foreground">Service Areas</h4>
-            <p className="text-muted-foreground leading-relaxed">
-              We service all Melbourne metro areas including CBD, inner suburbs, and surrounding commercial/industrial areas.
+            <ul className="space-y-2">
+              {locations.map((location) => (
+                <li key={location.slug}>
+                  <Link 
+                    to={`/areas/${location.slug}`}
+                    className="text-muted-foreground hover:text-foreground transition-colors"
+                  >
+                    {location.name} Make Good
+                  </Link>
+                </li>
+              ))}
+            </ul>
+            <p className="text-muted-foreground leading-relaxed mt-4 text-sm">
+              Servicing all Melbourne metro areas.
             </p>
           </div>
         </div>
