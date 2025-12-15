@@ -28,7 +28,7 @@ const Index = () => {
             <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6 text-center">
               Melbourne's Leading Make Good Specialists
             </h2>
-            <div className="grid md:grid-cols-2 gap-8 text-muted-foreground">
+            <div className="grid md:grid-cols-2 gap-x-8 gap-y-4 text-muted-foreground">
               <div>
                 <p className="mb-4 leading-relaxed">
                   Make Good Melbourne is your trusted partner for commercial and industrial end of lease restoration services across Melbourne and Victoria. We specialise in comprehensive make good works, make safe solutions and building remediation services for offices, warehouses, retail spaces and industrial facilities.
