@@ -107,9 +107,24 @@ const ServiceTemplate = () => {
           </div>
         </section>
 
+        {/* Benefits Section */}
+        <section className="py-16 bg-background">
+          <div className="container mx-auto px-4">
+            <h2 className="text-3xl md:text-4xl text-foreground mb-10">What's Included</h2>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {service.benefits.map((benefit, index) => (
+                <div key={index} className="flex items-start gap-4 p-4 bg-secondary rounded-lg">
+                  <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
+                  <span className="text-lg text-foreground">{benefit}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* Featured Section (e.g., Industrial Floor Cleaning) */}
         {service.featuredSection && (
-          <section className="py-16 bg-background">
+          <section className="py-16 bg-secondary">
             <div className="container mx-auto px-4">
               <div className="grid lg:grid-cols-2 gap-12 items-center">
                 <div>
@@ -131,21 +146,6 @@ const ServiceTemplate = () => {
             </div>
           </section>
         )}
-
-        {/* Benefits Section */}
-        <section className="py-16 bg-secondary">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl md:text-4xl text-foreground mb-10">What's Included</h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {service.benefits.map((benefit, index) => (
-                <div key={index} className="flex items-start gap-4 p-4 bg-background rounded-lg">
-                  <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
-                  <span className="text-lg text-foreground">{benefit}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
 
         {/* Process Section */}
         <section className="py-16 bg-background">
