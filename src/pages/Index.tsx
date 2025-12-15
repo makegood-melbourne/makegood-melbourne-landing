@@ -31,18 +31,18 @@ const Index = () => {
             <div className="grid md:grid-cols-2 gap-8 text-muted-foreground">
               <div>
                 <p className="mb-4 leading-relaxed">
-                  Make Good Melbourne is your trusted partner for commercial and industrial end of lease restoration services across Melbourne and Victoria. We specialize in comprehensive make good works, make safe solutions, and building remediation services for offices, warehouses, retail spaces, and industrial facilities.
+                  Make Good Melbourne is your trusted partner for commercial and industrial end of lease restoration services across Melbourne and Victoria. We specialise in comprehensive make good works, make safe solutions and building remediation services for offices, warehouses, retail spaces and industrial facilities.
                 </p>
                 <p className="mb-4 leading-relaxed">
-                  Our experienced team understands the complexities of lease obligations and works closely with real estate agents, property managers, strata managers, landlords, and tenants to deliver seamless property handovers. Whether you're preparing for lease expiry, managing emergency repairs, or addressing building defects, we provide professional solutions that meet all compliance requirements.
+                  Our experienced team understands the complexities of lease obligations and works closely with real estate agents, property managers, strata managers, landlords and tenants to deliver seamless property handovers. Whether you're preparing for lease expiry, managing emergency repairs or addressing building defects, we provide professional solutions that meet all compliance requirements.
                 </p>
               </div>
               <div>
                 <p className="mb-4 leading-relaxed">
-                  From pallet racking removal and electrical make-safe works to concrete cancer remediation, waterproofing repairs, and complete property restoration, our network of licensed tradespeople handles projects of all sizes. We deliver quality workmanship, competitive pricing, detailed documentation, and guaranteed results that protect your bond and ensure smooth lease transitions.
+                  From pallet racking removal and electrical make-safe works to concrete cancer remediation, waterproofing repairs and complete property restoration, our network of licensed tradespeople handles projects of all sizes. We deliver quality workmanship, competitive pricing, detailed documentation and guaranteed results that protect your bond and ensure smooth lease transitions.
                 </p>
                 <p className="leading-relaxed">
-                  Serving Melbourne's commercial property sector with expertise in demolition services, carpentry, painting, flooring, ceiling repairs, waste management, and full building compliance. Contact us today for a free consultation and discover why property professionals throughout Melbourne trust Make Good Melbourne for their end of lease restoration needs.
+                  Serving Melbourne's commercial property sector with expertise in demolition services, carpentry, painting, flooring, ceiling repairs, waste management and full building compliance. Contact us today for a free consultation and discover why property professionals throughout Melbourne trust Make Good Melbourne for their end of lease restoration needs.
                 </p>
               </div>
             </div>

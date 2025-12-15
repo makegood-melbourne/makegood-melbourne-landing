@@ -18,7 +18,7 @@ const About = () => {
     },
     {
       title: "Property Owners",
-      description: "Getting your property ready for the next tenant? We refurbish, restore, and rectify any damage from the previous tenancy, enhancing marketability and reducing vacancy time."
+      description: "Getting your property ready for the next tenant? We refurbish, restore and rectify any damage from the previous tenancy, enhancing marketability and reducing vacancy time."
     },
     {
       title: "Commercial Tenants",
@@ -38,10 +38,10 @@ const About = () => {
             We do make goods all day, every day.
           </p>
           <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-            Navigating today's complex property market requires expertise and reliability. That's why we established MakeGOOD Melbourne—to redefine the standard of make good services across commercial, industrial, and warehouse properties.
+            Navigating today's complex property market requires expertise and reliability. That's why we established MakeGOOD Melbourne—to redefine the standard of make good services across commercial, industrial and warehouse properties.
           </p>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            Our network of licensed tradespeople delivers seamless, comprehensive solutions that meet lease obligations, protect bonds, and ensure properties are ready for their next chapter.
+            Our network of licensed tradespeople delivers seamless, comprehensive solutions that meet lease obligations, protect bonds and ensure properties are ready for their next chapter.
           </p>
         </div>
 
@@ -81,7 +81,7 @@ const About = () => {
               With extensive experience across commercial and industrial properties, we understand the critical importance of meeting lease obligations and maintaining property standards.
             </p>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              Our commitment to quality, attention to detail, and comprehensive service approach ensures your property meets end-of-lease standards every time.
+              Our commitment to quality, attention to detail and comprehensive service approach ensures your property meets end-of-lease standards every time.
             </p>
             <div className="space-y-3">
               {features.map((feature, index) => (
@@ -98,7 +98,7 @@ const About = () => {
             <div className="space-y-4">
               <div>
                 <h5 className="font-semibold text-card-foreground mb-2">Property Types</h5>
-                <p className="text-muted-foreground">Offices, retail, warehouses, and industrial facilities</p>
+                <p className="text-muted-foreground">Offices, retail, warehouses and industrial facilities</p>
               </div>
               <div>
                 <h5 className="font-semibold text-card-foreground mb-2">Structural Solutions</h5>

@@ -11,7 +11,7 @@ const Footer = () => {
             <img src={logo} alt="MakeGOOD Melbourne - Professional End of Lease Services" className="h-10 mb-4 brightness-0 invert" />
             <p className="text-lg text-accent font-semibold mb-2">Make Good, BETTER.</p>
             <p className="text-muted-foreground leading-relaxed">
-              Professional make good, make safe, and remediation services for commercial and industrial properties across Melbourne.
+              Professional make good, make safe and remediation services for commercial and industrial properties across Melbourne.
             </p>
           </div>
           

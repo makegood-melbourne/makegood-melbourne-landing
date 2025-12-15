@@ -37,7 +37,7 @@ const Hero = () => {
             Professional Make Good Services for Commercial & Industrial Spaces
           </p>
           <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed">
-            Expert end of lease works, make safe solutions, and remediation services across Melbourne. We restore your space to its original condition, meeting all lease obligations.
+            Expert end of lease works, make safe solutions and remediation services across Melbourne. We restore your space to its original condition, meeting all lease obligations.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Button 
