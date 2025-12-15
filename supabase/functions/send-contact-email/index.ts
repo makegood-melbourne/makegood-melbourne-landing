@@ -53,7 +53,7 @@ const handler = async (req: Request): Promise<Response> => {
       },
       body: JSON.stringify({
         from: "MakeGOOD Melbourne <noreply@makegood.melbourne>",
-        to: ["ali@makegood.melbourne"],
+        to: ["enquiries@makegood.melbourne"],
         subject: `New Enquiry from ${name}`,
         html: `
           <h2>New Contact Form Enquiry</h2>
