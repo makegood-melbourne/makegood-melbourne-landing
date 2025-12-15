@@ -39,7 +39,7 @@ The key is your lease agreement and the **ingoing condition report**. If you did
 
 ### Fair Wear and Tear: What You're NOT Responsible For
 
-Here's where most disputes happen. Fair wear and tear recognizes that warehouses naturally deteriorate from normal use. You shouldn't pay for:
+Here's where most disputes happen. Fair wear and tear recognises that warehouses naturally deteriorate from normal use. You shouldn't pay for:
 
 **Normal Deterioration:**
 - Light surface abrasion on concrete from normal forklift traffic
@@ -840,7 +840,7 @@ Asbestos removal can significantly increase make good costs, particularly:
 
 ## Make Good Australia: Licensed Asbestos Management
 
-At Make Good Australia, we prioritize the safety of workers, building occupants, and the environment in all projects. We coordinate professional asbestos management as an integrated component of commercial make good services.
+At Make Good Australia, we prioritise the safety of workers, building occupants and the environment in all projects. We coordinate professional asbestos management as an integrated component of commercial make good services.
 
 ### Our Asbestos Management Services
 
@@ -950,7 +950,7 @@ Following thorough floor preparation, our installation process includes:
 Concrete floors are tested for moisture levels that could compromise adhesive bonding or damage carpet tiles over time.
 
 ### Layout Planning
-Tiles are carefully planned to minimize cuts, maximize symmetry, and ensure consistent pattern alignment throughout the space.
+Tiles are carefully planned to minimise cuts, maximise symmetry and ensure consistent pattern alignment throughout the space.
 
 ### Quality Adhesive Application
 We use commercial-grade pressure-sensitive adhesives specifically formulated for carpet tile installation, ensuring reliable bonding without damaging the substrate.
@@ -1426,7 +1426,7 @@ Electrical make safe is the process of safely decommissioning, isolating, and di
 
 ## Make Good Australia: Licensed Electrical Make Safe Specialists
 
-At Make Good Australia, our team of licensed and insured electricians specializes in electrical make safe works for commercial make good and demolition projects. We safely decommission and remove installed electrical systems and data cabling, returning them to base-build configuration and creating a secure environment for demolition crews.
+At Make Good Australia, our team of licensed and insured electricians specialises in electrical make safe works for commercial make good and demolition projects. We safely decommission and remove installed electrical systems and data cabling, returning them to base-build configuration and creating a secure environment for demolition crews.
 
 ### Our Electrical Make Safe Services
 
@@ -1449,7 +1449,7 @@ At Make Good Australia, our team of licensed and insured electricians specialize
 **Project Coordination**:
 - Pre-work electrical survey and planning
 - Building management coordination for shutdowns
-- Scheduling to minimize disruption
+- Scheduling to minimise disruption
 - Communication with demolition contractors
 - Temporary power and lighting if required
 - Documentation and handover for safe demolition
@@ -1923,7 +1923,7 @@ Creating safe working environments for make good and demolition`,
 **Heritage Buildings**:
 - High ornate ceilings in heritage buildings
 - Conservation requirements
-- Specialized trades required
+- Specialised trades required
 - Higher costs for heritage-sensitive work
 
 **Modern Commercial Buildings**:
@@ -1986,7 +1986,7 @@ At Make Good Australia, we provide comprehensive ceiling repair and replacement 
 - **Multi-Trade Coordination**: Electrical, HVAC, fire protection all managed
 - **Quality Finishing**: Superior workmanship on plasterboard and painting
 - **Compliance Focus**: All fire rating and ESM requirements met
-- **Minimal Disruption**: Efficient scheduling to minimize business impact
+- **Minimal Disruption**: Efficient scheduling to minimise business impact
 - **Warranty**: Comprehensive warranty on all ceiling works
 
 ## Conclusion
@@ -2340,7 +2340,7 @@ Professional ceiling solutions for all commercial properties`,
 - Critical importance of public liability insurance
 - Claims from injuries or property damage
 - Legal defense costs
-- Importance of immediate response to minimize liability
+- Importance of immediate response to minimise liability
 
 ## Prevention and Maintenance
 
@@ -2386,7 +2386,7 @@ Professional ceiling solutions for all commercial properties`,
 - Melbourne CBD and inner suburbs have extensive heritage buildings
 - Many with original brick parapets now 100+ years old
 - Heritage overlays and requirements common
-- Specialized heritage trades and materials required
+- Specialised heritage trades and materials required
 
 ### Weather Conditions
 
@@ -2471,7 +2471,7 @@ Available 24/7 for building emergencies`,
     slug: "waste-management-sustainability-make-good-works",
     title: "Waste Management and Sustainability in Make Good Works: Environmental Responsibility in Commercial Fit-Outs",
     date: "1 May 2025",
-    excerpt: "Sustainable waste management practices are increasingly critical in commercial make good projects, with regulations, tenant expectations, and environmental responsibility driving the need for waste minimization, recycling, and responsible disposal. Professional waste management reduces landfill contributions, ensures regulatory compliance, and can reduce project costs. Learn about waste streams, recycling strategies, EPA compliance, and sustainability reporting.",
+    excerpt: "Sustainable waste management practices are increasingly critical in commercial make good projects, with regulations, tenant expectations and environmental responsibility driving the need for waste minimisation, recycling and responsible disposal. Professional waste management reduces landfill contributions, ensures regulatory compliance and can reduce project costs. Learn about waste streams, recycling strategies, EPA compliance and sustainability reporting.",
     image: "/src/assets/blog/waste-management-sustainability.jpg",
     content: `Commercial make good projects generate significant volumes of waste materials, from demolished building components and removed fitouts to packaging from new installations. As environmental awareness grows and regulations strengthen, sustainable waste management has become a critical component of responsible make good practices. Professional waste management strategies minimize landfill contributions, maximize material recovery and recycling, ensure regulatory compliance, and can reduce overall project costs. This comprehensive guide explores waste streams in make good projects, recycling and diversion strategies, regulatory compliance, and best practices for sustainable make good works in Melbourne.
 
