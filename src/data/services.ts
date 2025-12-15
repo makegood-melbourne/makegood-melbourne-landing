@@ -1,6 +1,7 @@
 import commercialCleaningImage from "@/assets/services/commercial-cleaning-melbourne-supplies.jpeg";
 import warehouseFloorScrubberImage from "@/assets/services/warehouse-floor-scrubber-cleaning-v4.jpg";
 import industrialFloorScrubberImage from "@/assets/services/industrial-ride-on-floor-scrubber-warehouse-melbourne.png";
+import highPressureWarehouseCleaningImage from "@/assets/services/high-pressure-warehouse-cleaning-melbourne.png";
 
 export interface FeaturedSection {
   title: string;
@@ -340,6 +341,8 @@ export const services: Service[] = [
     description: "From factory floors to office fitouts, we handle the cleaning jobs that regular cleaners won't touch. Industrial machinery, specialised chemicals and a team that knows what landlords expect at handover.",
     metaDescription: "Industrial floor cleaning Melbourne. Ride-on scrubbers, high-pressure washing, chemical treatment for warehouses. Transform tired floors fast. Free quotes.",
     heroText: "Heavy-duty cleaning for commercial and industrial properties. We tackle the jobs regular cleaners can't—warehouse floors, post-construction sites and end-of-lease handovers that need to pass inspection.",
+    heroImage: highPressureWarehouseCleaningImage,
+    heroImageAlt: "High-pressure warehouse cleaning Melbourne - industrial cleaner pressure washing warehouse walls and polished concrete floor",
     secondaryImage: commercialCleaningImage,
     secondaryImageAlt: "Commercial cleaning supplies Melbourne - professional equipment for industrial and office cleaning services",
     featuredSection: {
