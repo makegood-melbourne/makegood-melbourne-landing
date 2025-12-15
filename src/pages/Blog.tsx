@@ -13,7 +13,7 @@ const Blog = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Helmet>
-        <title>Make Good Blog | Expert End of Lease & Property Restoration Insights Melbourne</title>
+        <title>Make Good Blog | Property Restoration Insights Melbourne</title>
         <meta name="description" content="Industry insights on commercial make good services, end of lease obligations, warehouse restoration and building remediation. Practical guides from Melbourne's property restoration experts." />
         <meta property="og:title" content="Make Good Blog | Expert Property Restoration Insights" />
         <meta property="og:description" content="Industry insights on commercial make good services, end of lease obligations and property restoration in Melbourne." />
