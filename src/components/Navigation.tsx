@@ -3,7 +3,7 @@ import { Menu, ChevronDown } from "lucide-react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "@/assets/makegood-melbourne-logo.png";
-import { locations } from "@/data/locations";
+import { getSortedLocations } from "@/data/locations";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -45,7 +45,7 @@ const Navigation = () => {
                 <ChevronDown className="h-4 w-4" />
               </DropdownMenuTrigger>
               <DropdownMenuContent align="start" className="bg-card border-border">
-                {locations.map((location) => (
+                {getSortedLocations().map((location) => (
                   <DropdownMenuItem key={location.slug} asChild>
                     <Link 
                       to={`/areas/${location.slug}`}
@@ -84,7 +84,7 @@ const Navigation = () => {
             <div className="py-2">
               <span className="text-foreground font-medium">Service Areas</span>
               <div className="pl-4 mt-2 flex flex-col gap-2">
-                {locations.map((location) => (
+                {getSortedLocations().map((location) => (
                   <Link 
                     key={location.slug}
                     to={`/areas/${location.slug}`}
