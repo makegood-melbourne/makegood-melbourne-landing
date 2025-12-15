@@ -5,7 +5,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { CheckCircle, Phone, Mail, ArrowRight } from "lucide-react";
+import { CheckCircle, Mail, ArrowRight } from "lucide-react";
 
 const ServiceTemplate = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -33,7 +33,7 @@ const ServiceTemplate = () => {
         "addressRegion": "VIC",
         "addressCountry": "AU"
       },
-      "telephone": "+61 499 007 596"
+      "email": "enquiries@makegood.melbourne"
     },
     "areaServed": {
       "@type": "City",
@@ -77,15 +77,14 @@ const ServiceTemplate = () => {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground" asChild>
-                    <a href="tel:+61499007596">
-                      <Phone className="mr-2 h-5 w-5" />
-                      Call 0499 007 596
-                    </a>
+                    <Link to="/#contact">
+                      Get a Free Quote
+                    </Link>
                   </Button>
                   <Button size="lg" variant="outline" className="border-accent text-accent hover:bg-accent hover:text-accent-foreground" asChild>
                     <a href="mailto:enquiries@makegood.melbourne">
                       <Mail className="mr-2 h-5 w-5" />
-                      Get a Quote
+                      Email Us
                     </a>
                   </Button>
                 </div>
@@ -217,10 +216,9 @@ const ServiceTemplate = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground" asChild>
-                <a href="tel:+61499007596">
-                  <Phone className="mr-2 h-5 w-5" />
-                  0499 007 596
-                </a>
+                <Link to="/#contact">
+                  Get a Free Quote
+                </Link>
               </Button>
               <Button size="lg" variant="outline" className="border-accent text-accent hover:bg-accent hover:text-accent-foreground" asChild>
                 <a href="mailto:enquiries@makegood.melbourne">
