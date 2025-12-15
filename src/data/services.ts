@@ -340,10 +340,8 @@ export const services: Service[] = [
     description: "From factory floors to office fitouts, we handle the cleaning jobs that regular cleaners won't touch. Industrial machinery, specialised chemicals and a team that knows what landlords expect at handover.",
     metaDescription: "Industrial floor cleaning Melbourne. Ride-on scrubbers, high-pressure washing, chemical treatment for warehouses. Transform tired floors fast. Free quotes.",
     heroText: "Heavy-duty cleaning for commercial and industrial properties. We tackle the jobs regular cleaners can't—warehouse floors, post-construction sites and end-of-lease handovers that need to pass inspection.",
-    heroImage: commercialCleaningImage,
-    heroImageAlt: "Commercial cleaning supplies Melbourne - professional equipment for industrial and office cleaning services",
-    secondaryImage: warehouseFloorScrubberImage,
-    secondaryImageAlt: "Professional warehouse floor cleaning Melbourne",
+    secondaryImage: commercialCleaningImage,
+    secondaryImageAlt: "Commercial cleaning supplies Melbourne - professional equipment for industrial and office cleaning services",
     featuredSection: {
       title: "Industrial Floor Cleaning",
       description: "Years of grime, oil stains and tyre marks don't stand a chance. Our ride-on scrubbers and high-pressure systems restore warehouse floors to like-new condition—whether you're preparing for a new tenant, impressing clients or just tired of looking at that mess.",
