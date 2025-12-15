@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { getLocationBySlug } from "@/data/locations";
 import heroImage from "@/assets/locations/make-good-hero.jpeg";
+import workerImage from "@/assets/locations/worker-epoxy-flooring.jpeg";
 
 const LocationTemplate = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -265,10 +266,14 @@ const LocationTemplate = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
-              {/* Image Placeholder */}
+              {/* Worker Image */}
               <div className="order-2 lg:order-1">
-                <div className="aspect-[4/3] bg-card border border-border rounded-lg flex items-center justify-center">
-                  <span className="text-muted-foreground">Image Placeholder</span>
+                <div className="aspect-[4/3] rounded-lg overflow-hidden">
+                  <img 
+                    src={workerImage} 
+                    alt={`Professional make good worker applying epoxy flooring in ${location.name}`}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
 
