@@ -258,11 +258,17 @@ const Capabilities = () => {
                     </div>
                   ))}
                 </div>
-                <div className="bg-primary/5 rounded-lg p-6 mt-6">
-                  <p className="text-foreground font-medium mb-3">Bundle cleaning with your make good for a complete solution</p>
-                  <p className="text-muted-foreground text-sm mb-4">
-                    We coordinate cleaning as part of your project, saving you the hassle of managing multiple contractors.
-                  </p>
+                <div className="pt-4 border-t border-border flex flex-wrap items-center justify-between gap-4">
+                  <div>
+                    <p className="text-sm text-muted-foreground mb-2">Learn more about our cleaning services:</p>
+                    <Link
+                      to="/services/commercial-cleaning"
+                      className="inline-flex items-center gap-1 text-accent hover:text-accent/80 transition-colors text-sm font-medium"
+                    >
+                      Commercial Cleaning
+                      <ArrowRight className="h-3 w-3" />
+                    </Link>
+                  </div>
                   <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground">
                     <Link to="/#contact">
                       Get a Cleaning Quote
