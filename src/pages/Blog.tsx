@@ -38,13 +38,13 @@ const Blog = () => {
               Welcome to the Make Good Melbourne blog, your comprehensive resource for professional insights into commercial and industrial property restoration. Our team of industry experts shares practical knowledge, compliance guidance, and best practices for end of lease make good projects across Melbourne and Victoria.
             </p>
             <p className="text-muted-foreground mb-6 leading-relaxed">
-              Whether you're a property manager, real estate agent, strata manager, or tenant preparing for lease expiry, our articles cover everything from asbestos management and concrete cancer remediation to electrical make-safe procedures and waste management compliance. We understand that make good obligations can be complex and costly, which is why we provide detailed guides to help you navigate the process with confidence.
+              Whether you're a property manager, real estate agent, strata manager or tenant preparing for lease expiry, our articles cover everything from asbestos management and concrete cancer remediation to electrical make-safe procedures and waste management compliance. We understand that make good obligations can be complex and costly, which is why we provide detailed guides to help you navigate the process with confidence.
             </p>
             <p className="text-muted-foreground mb-6 leading-relaxed">
-              Our blog covers specialized topics including building defect remediation, facade cladding safety, fire damage restoration, waterproofing solutions, and sustainable practices in commercial property maintenance. Each article is written by experienced professionals who work on make good projects daily, ensuring you receive accurate, up-to-date information that reflects current industry standards and Victorian regulations.
+              Our blog covers specialised topics including building defect remediation, facade cladding safety, fire damage restoration, waterproofing solutions and sustainable practices in commercial property maintenance. Each article is written by experienced professionals who work on make good projects daily, ensuring you receive accurate, up-to-date information that reflects current industry standards and Victorian regulations.
             </p>
             <p className="text-muted-foreground mb-8 leading-relaxed">
-              Explore our latest articles below to discover expert advice on maximizing property value, smooth lease transitions, strategic planning for make good works, and cost-effective solutions for commercial, retail, and industrial spaces throughout Melbourne.
+              Explore our latest articles below to discover expert advice on maximising property value, smooth lease transitions, strategic planning for make good works and cost-effective solutions for commercial, retail and industrial spaces throughout Melbourne.
             </p>
           </div>
 

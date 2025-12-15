@@ -11,7 +11,7 @@ const Services = () => {
     {
       icon: Shield,
       title: "Make Safe Works",
-      description: "Urgent make safe solutions to protect your property and occupants. We respond quickly to address safety hazards, secure sites, and implement temporary or permanent protective measures."
+      description: "Urgent make safe solutions to protect your property and occupants. We respond quickly to address safety hazards, secure sites and implement temporary or permanent protective measures."
     },
     {
       icon: Wrench,

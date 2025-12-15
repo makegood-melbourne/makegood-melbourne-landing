@@ -283,7 +283,7 @@ const LocationTemplate = () => {
                   Why {location.name} Trusts Us
                 </h2>
                 <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                  Local expertise, professional service, and guaranteed results. We understand {location.name}'s commercial property landscape.
+                  Local expertise, professional service and guaranteed results. We understand {location.name}'s commercial property landscape.
                 </p>
 
                 <div className="space-y-4">

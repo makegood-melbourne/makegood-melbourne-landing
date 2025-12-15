@@ -40,9 +40,9 @@ const Capabilities = () => {
     <div className="min-h-screen flex flex-col">
       <Helmet>
         <title>Our Capabilities - Professional Make Good Services | MakeGOOD Melbourne</title>
-        <meta name="description" content="Comprehensive make good capabilities including demolition services, property restoration, and trade services. Pallet racking removal, electrical make-safe, carpentry, concrete flooring, painting, and more across Melbourne." />
+        <meta name="description" content="Comprehensive make good capabilities including demolition services, property restoration and trade services. Pallet racking removal, electrical make-safe, carpentry, concrete flooring, painting and more across Melbourne." />
         <meta property="og:title" content="Our Capabilities - MakeGOOD Melbourne" />
-        <meta property="og:description" content="Professional demolition, make good, and trade services for commercial and industrial properties in Melbourne." />
+        <meta property="og:description" content="Professional demolition, make good and trade services for commercial and industrial properties in Melbourne." />
         <meta property="og:type" content="website" />
         <link rel="canonical" href="https://makegood.melbourne/capabilities" />
       </Helmet>
