@@ -369,6 +369,33 @@ export const services: Service[] = [
     ],
     relatedServices: ["commercial-make-good", "warehouse-make-good", "office-strip-out"],
     category: "cleaning"
+  },
+  {
+    name: "Warehouse Relocation",
+    slug: "warehouse-relocation",
+    title: "Warehouse Relocation Services Melbourne",
+    metaTitle: "Warehouse Relocation Melbourne | Fit-Out Experts",
+    description: "Moving warehouses? We handle everything except the truck. From preparing your old site for handover to fitting out your new space—racking installation, floor coatings, line marking and all the works to get you operational fast.",
+    metaDescription: "Warehouse relocation Melbourne. Old site make-good and new site fit-out. Racking, flooring, electrical, line marking. One team for both ends of your move. Free quotes.",
+    heroText: "Relocating your warehouse operation? We manage both sides of the move—restoring your old site to lease condition while preparing your new facility for day one.",
+    benefits: [
+      "Old site make-good and restoration",
+      "New site racking installation",
+      "Epoxy flooring and line marking",
+      "Electrical and lighting fit-out",
+      "Dock and roller door works",
+      "Coordinated timeline management",
+      "Single point of contact for both sites",
+      "Minimise downtime between locations"
+    ],
+    process: [
+      { step: "Dual Site Assessment", description: "We inspect both your current and new premises to understand the full scope." },
+      { step: "Coordinated Plan", description: "Detailed timeline aligning make-good works with new site fit-out for minimal downtime." },
+      { step: "Parallel Execution", description: "Teams work both sites simultaneously—stripping down the old while building up the new." },
+      { step: "Seamless Handover", description: "Old lease obligations met, new site operational and ready for your team." }
+    ],
+    relatedServices: ["warehouse-make-good", "pallet-racking-removal", "epoxy-flooring", "line-marking"],
+    category: "make-good"
   }
 ];
 
