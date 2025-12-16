@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet-async";
 import { getServiceBySlug, services } from "@/data/services";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import BeforeAfterSlider from "@/components/BeforeAfterSlider";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { CheckCircle, Mail, ArrowRight } from "lucide-react";
@@ -166,6 +167,9 @@ const ServiceTemplate = () => {
             </div>
           </div>
         </section>
+
+        {/* Before/After Slider - Only for End of Lease Relocation */}
+        {service.slug === 'end-of-lease-relocation' && <BeforeAfterSlider />}
 
         {/* Description Section */}
         <section className="py-16 bg-background">
