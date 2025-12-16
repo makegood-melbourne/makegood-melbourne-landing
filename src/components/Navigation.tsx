@@ -17,7 +17,7 @@ const publishedServiceSlugs = ['commercial-cleaning', 'end-of-lease-relocation',
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const publishedServices = services.filter(s => publishedServiceSlugs.includes(s.slug));
+  const publishedServices = services.filter(s => publishedServiceSlugs.includes(s.slug)).sort((a, b) => a.name.localeCompare(b.name));
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
