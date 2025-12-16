@@ -3,6 +3,7 @@ import warehouseFloorScrubberImage from "@/assets/services/warehouse-floor-scrub
 import industrialFloorScrubberImage from "@/assets/services/industrial-ride-on-floor-scrubber-warehouse-melbourne.png";
 import highPressureWarehouseCleaningImage from "@/assets/services/high-pressure-warehouse-cleaning-melbourne.png";
 import warehouseRelocationImage from "@/assets/services/warehouse-relocation-forklift-loading-racking-melbourne.png";
+import flatbedTruckTransportImage from "@/assets/services/flatbed-truck-transporting-pallet-racking-melbourne-skyline.png";
 
 export interface FeaturedSection {
   title: string;
@@ -381,6 +382,8 @@ export const services: Service[] = [
     heroText: "Vacating your warehouse, factory or office? We offer tailored logistical solutions from vacate to move-in. One comprehensive service that handles your make-good obligations and delivers your essential equipment to your new location—anywhere in Australia.",
     heroImage: warehouseRelocationImage,
     heroImageAlt: "Forklift loading dismantled pallet racking onto truck for end of lease warehouse relocation Melbourne",
+    secondaryImage: flatbedTruckTransportImage,
+    secondaryImageAlt: "Flatbed truck transporting pallet racking and industrial machinery with Melbourne city skyline in background",
     benefits: [
       "Complete make-good at vacating site",
       "Equipment transport to new location",
