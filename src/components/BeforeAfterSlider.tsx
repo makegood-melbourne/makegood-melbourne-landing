@@ -13,7 +13,7 @@ const BeforeAfterSlider = () => {
             The <span className="text-primary">Transformation</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            We dismantle, pack and transport your plant equipment, machinery and furniture to your new location—and restore your premises to agreed lease conditions. Drag the slider to see the result.
+            We dismantle, pack and transport your plant equipment, machinery and furniture to your new location—and restore your premises to pre-lease condition. Drag the slider to see the result.
           </p>
         </div>
         
