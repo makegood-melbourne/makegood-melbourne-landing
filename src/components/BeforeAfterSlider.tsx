@@ -13,7 +13,7 @@ const BeforeAfterSlider = () => {
             The <span className="text-primary">Transformation</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            See the result of a complete make-good. Drag the slider to reveal how we restore facilities to lease-ready condition.
+            We clear your facility, relocate your equipment to your new site and leave the old space lease-ready. Drag the slider to see the result.
           </p>
         </div>
         
