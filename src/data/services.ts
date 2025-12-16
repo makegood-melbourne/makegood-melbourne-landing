@@ -31,7 +31,7 @@ export interface Service {
     description: string;
   }[];
   relatedServices: string[];
-  category: 'demolition' | 'make-good' | 'trade' | 'cleaning';
+  category: 'demolition' | 'make-good' | 'trade' | 'cleaning' | 'structural';
 }
 
 export const services: Service[] = [
@@ -402,6 +402,33 @@ export const services: Service[] = [
     ],
     relatedServices: ["warehouse-make-good", "pallet-racking-removal", "commercial-make-good"],
     category: "make-good"
+  },
+  {
+    name: "Structural Remediation",
+    slug: "structural-remediation",
+    title: "Structural Remediation Melbourne",
+    metaTitle: "Structural Remediation Melbourne | Concrete & Steel",
+    description: "Expert structural remediation services for commercial and industrial properties. We address concrete deterioration, steel framework issues and retention structure failures to restore structural integrity.",
+    metaDescription: "Structural remediation Melbourne. Retention structure repairs, steel retrofitting, concrete cancer treatment. Engineered solutions for commercial properties. Free assessments.",
+    heroText: "Comprehensive structural remediation services to restore integrity and extend the service life of your commercial or industrial property. Expert assessment and engineered solutions.",
+    benefits: [
+      "Retention structure remediation",
+      "Steel framework retrofitting",
+      "Concrete deterioration treatment",
+      "Reinforcement corrosion repair",
+      "Structural integrity assessments",
+      "Long-term safety compliance",
+      "Engineered repair solutions",
+      "Preventative maintenance programs"
+    ],
+    process: [
+      { step: "Structural Assessment", description: "Comprehensive assessment of compromised structures to identify deterioration, corrosion and safety concerns." },
+      { step: "Engineering Solutions", description: "Develop engineered solutions tailored to your specific structural requirements and compliance needs." },
+      { step: "Remediation Works", description: "Expert treatment and precision correction of steel and concrete elements to restore structural integrity." },
+      { step: "Compliance Sign-off", description: "Final inspection ensuring long-term structural integrity, safety compliance and extended service life." }
+    ],
+    relatedServices: ["warehouse-make-good", "commercial-make-good", "office-strip-out"],
+    category: "structural"
   }
 ];
 
@@ -409,6 +436,6 @@ export function getServiceBySlug(slug: string): Service | undefined {
   return services.find(service => service.slug === slug);
 }
 
-export function getServicesByCategory(category: 'demolition' | 'make-good' | 'trade' | 'cleaning'): Service[] {
+export function getServicesByCategory(category: 'demolition' | 'make-good' | 'trade' | 'cleaning' | 'structural'): Service[] {
   return services.filter(service => service.category === category);
 }
