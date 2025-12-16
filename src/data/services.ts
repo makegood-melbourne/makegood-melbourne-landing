@@ -9,6 +9,7 @@ import warehouseFloorSlabDamageImage from "@/assets/services/warehouse-floor-sla
 import waterproofingMembraneImage from "@/assets/services/waterproofing-membrane-application-commercial-melbourne.jpeg";
 import retentionWallConstructionImage from "@/assets/services/retention-wall-formwork-reinforcement-construction-melbourne.jpeg";
 import claddingRemediationImage from "@/assets/services/cladding-remediation-facade-glazing-melbourne.jpeg";
+import glazingFacadeInstallationImage from "@/assets/services/glazing-facade-installation-commercial-building-melbourne.jpg";
 
 export interface FeaturedSection {
   title: string;
@@ -478,6 +479,12 @@ export const services: Service[] = [
       { step: "Fire Rating Compliance", description: "Comprehensive assessment, removal and replacement of non-compliant cladding systems with fire-rated materials tested to AS 1530 and AS 5113, meeting NCC requirements for external wall fire spread." },
       { step: "Completion and Sign-off", description: "Final inspection and certification documentation for the VBA, councils and building managers." }
     ],
+    featuredSection: {
+      title: "Expert Glazing Installation",
+      description: "Our specialist teams deliver precision glazing installations that meet stringent NCC requirements and Australian Standards. From high-rise facade upgrades to ground-level shopfront replacements, we ensure thermal efficiency, acoustic performance and fire compliance across all commercial glazing projects.",
+      image: glazingFacadeInstallationImage,
+      imageAlt: "Professional glazing facade installation on commercial high-rise building with workers in safety harnesses Melbourne"
+    },
     relatedServices: ["structural-remediation", "commercial-make-good", "office-strip-out"],
     category: "structural"
   }
