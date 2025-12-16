@@ -428,8 +428,8 @@ export const services: Service[] = [
         imageAlt: "Professional waterproofing membrane application on commercial building surface Melbourne"
       },
       {
-        title: "Concrete Cancer Treatment",
-        description: "Concrete cancer occurs when steel reinforcement inside concrete rusts and expands—cracking and displacing the surrounding structure. Left untreated, it compromises structural integrity and accelerates deterioration. Our remediation process involves removing damaged concrete, treating corroded steel with rust inhibitors and protective coatings, then restoring the surface with engineered repair mortars designed for long-term durability.",
+        title: "Concrete Cancer Rectification",
+        description: "Concrete cancer occurs when steel reinforcement inside concrete rusts and expands—cracking and displacing the surrounding structure. Left untreated, it compromises structural integrity and accelerates deterioration. Our rectification process involves removing damaged concrete, treating corroded steel with rust inhibitors and protective coatings, then restoring the surface with engineered repair mortars designed for long-term durability.",
         image: concreteCancerImage,
         imageAlt: "Severe concrete cancer on structural column showing exposed corroded steel reinforcement and spalling concrete requiring remediation Melbourne"
       }
@@ -439,7 +439,7 @@ export const services: Service[] = [
       "Waterproofing and membrane systems",
       "Retention structure remediation",
       "Steel framework retrofitting",
-      "Concrete cancer treatment",
+      "Concrete cancer rectification",
       "Car park and balcony waterproofing",
       "Structural engineer and council liaison",
       "Engineered repair solutions"
