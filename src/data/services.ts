@@ -377,7 +377,7 @@ export const services: Service[] = [
     metaTitle: "End of Lease Relocation Melbourne | Equipment Transport",
     description: "Vacating your warehouse or factory? We handle the make-good AND transport your equipment to your new site. One contractor, one point of contact—no coordination headaches. Office relocations also available.",
     metaDescription: "End of lease relocation Melbourne. Industrial make-good plus racking, machinery and equipment transport to your new site. Office relocations also available. Free quotes.",
-    heroText: "Leaving your warehouse, factory or office? We'll restore it to lease condition and move your equipment to your new site. One team handles both ends—so you don't have to juggle multiple contractors.",
+    heroText: "Vacating your warehouse, factory or office? We offer tailored logistical solutions from vacate to move-in. One comprehensive service that handles your make-good obligations and delivers your essential equipment to your new location—anywhere in Australia.",
     benefits: [
       "Complete make-good at vacating site",
       "Equipment transport to new location",
