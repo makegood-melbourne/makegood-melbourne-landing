@@ -461,22 +461,22 @@ export const services: Service[] = [
     metaTitle: "Cladding & Glazing Remediation Melbourne | Compliance",
     description: "Professional cladding and glazing remediation services across Melbourne. From ACP replacement to fire-rated compliance, we deliver end-to-end facade solutions.",
     metaDescription: "Cladding and glazing remediation Melbourne. ACP replacement, fire rating compliance, glazing upgrades. Licensed contractors, Australian Standards compliant. Free quotes.",
-    heroText: "Bring your building up to compliance with our specialist cladding and glazing remediation services. We deliver end-to-end solutions that meet Australian Standards and building code requirements.",
+    heroText: "Bring your building up to compliance with our specialist cladding and glazing remediation services. We deliver end-to-end solutions that meet NCC requirements and relevant Australian Standards.",
     heroImage: claddingRemediationImage,
     heroImageAlt: "Commercial building cladding remediation work in progress with facade panels being replaced Melbourne",
     benefits: [
       "ACP cladding replacement",
-      "Fire rating compliance",
+      "NCC and fire rating compliance",
       "Glazing upgrades and remediation",
       "End-to-end D&C delivery",
       "Structural engineer coordination",
-      "Council liaison and approvals"
+      "VBA and council liaison"
     ],
     process: [
-      { step: "Cladding Compliance and Performance", description: "With ACP cladding now banned, demand for compliant cladding is surging. Our proven expertise delivers end-to-end D&C remediation, ensuring compliance and performance." },
-      { step: "Glazing Compliance and Performance", description: "Many buildings contain non-compliant, underperforming glazing. Our deep experience delivers remediation projects that ensure compliance and enhance performance." },
-      { step: "Fire Rating Compliance", description: "Comprehensive assessment, removal and replacement of non-compliant cladding systems with fire-rated materials that comply with Australian Standards and building code requirements." },
-      { step: "Completion and Sign-off", description: "Final inspection and certification documentation for councils and building managers." }
+      { step: "Cladding Compliance and Performance", description: "With ACP cladding now banned, demand for compliant cladding is surging. Our proven expertise delivers end-to-end D&C remediation, ensuring NCC compliance and building performance." },
+      { step: "Glazing Compliance and Performance", description: "Many buildings contain non-compliant, underperforming glazing. Our deep experience delivers remediation projects that ensure compliance and enhance thermal and acoustic performance." },
+      { step: "Fire Rating Compliance", description: "Comprehensive assessment, removal and replacement of non-compliant cladding systems with fire-rated materials tested to AS 1530 and AS 5113, meeting NCC requirements for external wall fire spread." },
+      { step: "Completion and Sign-off", description: "Final inspection and certification documentation for the VBA, councils and building managers." }
     ],
     relatedServices: ["structural-remediation", "commercial-make-good", "office-strip-out"],
     category: "structural"
