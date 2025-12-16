@@ -8,6 +8,7 @@ import concreteCancerImage from "@/assets/services/concrete-cancer-exposed-rebar
 import warehouseFloorSlabDamageImage from "@/assets/services/warehouse-floor-slab-deterioration-structural-damage-melbourne.png";
 import waterproofingMembraneImage from "@/assets/services/waterproofing-membrane-application-commercial-melbourne.jpeg";
 import retentionWallConstructionImage from "@/assets/services/retention-wall-formwork-reinforcement-construction-melbourne.jpeg";
+import claddingRemediationImage from "@/assets/services/cladding-remediation-facade-glazing-melbourne.jpeg";
 
 export interface FeaturedSection {
   title: string;
@@ -460,7 +461,9 @@ export const services: Service[] = [
     metaTitle: "Cladding & Glazing Remediation Melbourne | Compliance",
     description: "Professional cladding and glazing remediation services across Melbourne. From ACP replacement to fire-rated compliance, we deliver end-to-end facade solutions.",
     metaDescription: "Cladding and glazing remediation Melbourne. ACP replacement, fire rating compliance, glazing upgrades. Licensed contractors, Australian Standards compliant. Free quotes.",
-    heroText: "Ensure building compliance and performance with our specialist cladding and glazing remediation services.",
+    heroText: "Bring your building up to compliance with our specialist cladding and glazing remediation services. We deliver end-to-end solutions that meet Australian Standards and building code requirements.",
+    heroImage: claddingRemediationImage,
+    heroImageAlt: "Commercial building cladding remediation work in progress with facade panels being replaced Melbourne",
     benefits: [
       "ACP cladding replacement",
       "Fire rating compliance",
