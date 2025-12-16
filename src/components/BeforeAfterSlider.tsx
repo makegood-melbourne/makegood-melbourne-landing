@@ -12,8 +12,8 @@ const BeforeAfterSlider = () => {
           <h2 className="text-3xl md:text-4xl text-foreground mb-4">
             The <span className="text-primary">Transformation</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            We clear your facility, relocate your equipment to your new site and leave the old space lease-ready. Drag the slider to see the result.
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            We dismantle, pack and transport your plant equipment, machinery and furniture to your new location—then restore your premises to agreed lease conditions. Drag the slider to see the result.
           </p>
         </div>
         
