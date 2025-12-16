@@ -4,7 +4,7 @@ import industrialFloorScrubberImage from "@/assets/services/industrial-ride-on-f
 import highPressureWarehouseCleaningImage from "@/assets/services/high-pressure-warehouse-cleaning-melbourne.png";
 import warehouseRelocationImage from "@/assets/services/warehouse-relocation-forklift-loading-racking-melbourne.png";
 import flatbedTruckTransportImage from "@/assets/services/flatbed-truck-transporting-pallet-racking-melbourne-skyline.png";
-import concreteCancerImage from "@/assets/services/concrete-cancer-exposed-rebar-structural-damage-melbourne.jpeg";
+import concreteCancerImage from "@/assets/services/concrete-cancer-exposed-rebar-spalling-remediation-melbourne.jpeg";
 
 export interface FeaturedSection {
   title: string;
@@ -409,15 +409,11 @@ export const services: Service[] = [
     slug: "structural-remediation",
     title: "Structural Remediation Melbourne",
     metaTitle: "Structural Remediation Melbourne | Concrete & Steel",
-    description: "Expert structural remediation services for commercial and industrial properties. We address concrete deterioration, steel framework issues and retention structure failures to restore structural integrity.",
+    description: "Expert structural remediation services for commercial and industrial properties. We address concrete cancer (spalling), steel framework issues and retention structure failures to restore structural integrity. Concrete cancer occurs when steel reinforcement inside concrete rusts and expands—cracking and displacing the surrounding structure. Our remediation process removes damaged concrete, treats corroded steel with rust inhibitors and restores the surface with engineered repair mortars.",
     metaDescription: "Structural remediation Melbourne. Retention structure repairs, steel retrofitting, concrete cancer treatment. Engineered solutions for commercial properties. Free assessments.",
     heroText: "Comprehensive structural remediation services to restore integrity and extend the service life of your commercial or industrial property. Expert assessment and engineered solutions.",
-    featuredSection: {
-      title: "Concrete Cancer Treatment",
-      description: "Concrete cancer—also known as concrete spalling—occurs when steel reinforcement inside concrete begins to rust. As the steel corrodes, it expands to up to six times its original size, cracking and displacing the surrounding concrete. Left untreated, this creates a vicious cycle: cracks allow more moisture in, accelerating corrosion and causing chunks of concrete to break away. Common signs include rust stains bleeding through concrete, visible cracks following rebar lines and bubbling or flaking surfaces. Our remediation process involves removing all damaged concrete to expose corroded steel, treating reinforcement with rust inhibitors, applying protective coatings and restoring the concrete with engineered repair mortars. Early intervention prevents costly structural failures and extends building lifespan by decades.",
-      image: concreteCancerImage,
-      imageAlt: "Concrete cancer showing exposed corroded steel reinforcement bars in deteriorating concrete structure requiring remediation"
-    },
+    secondaryImage: concreteCancerImage,
+    secondaryImageAlt: "Concrete cancer showing exposed corroded steel reinforcement bars in spalling concrete wall requiring structural remediation",
     benefits: [
       "Retention structure remediation",
       "Steel framework retrofitting",
