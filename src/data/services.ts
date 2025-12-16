@@ -4,7 +4,7 @@ import industrialFloorScrubberImage from "@/assets/services/industrial-ride-on-f
 import highPressureWarehouseCleaningImage from "@/assets/services/high-pressure-warehouse-cleaning-melbourne.png";
 import warehouseRelocationImage from "@/assets/services/warehouse-relocation-forklift-loading-racking-melbourne.png";
 import flatbedTruckTransportImage from "@/assets/services/flatbed-truck-transporting-pallet-racking-melbourne-skyline.png";
-import concreteCancerImage from "@/assets/services/concrete-cancer-exposed-rebar-spalling-remediation-melbourne.jpeg";
+import concreteCancerImage from "@/assets/services/concrete-cancer-exposed-rebar-column-spalling-melbourne.jpeg";
 
 export interface FeaturedSection {
   title: string;
@@ -413,7 +413,7 @@ export const services: Service[] = [
     metaDescription: "Structural remediation Melbourne. Retention structure repairs, steel retrofitting, concrete cancer treatment. Engineered solutions for commercial properties. Free assessments.",
     heroText: "Comprehensive structural remediation services to restore integrity and extend the service life of your commercial or industrial property. Expert assessment and engineered solutions.",
     secondaryImage: concreteCancerImage,
-    secondaryImageAlt: "Concrete cancer showing exposed corroded steel reinforcement bars in spalling concrete wall requiring structural remediation",
+    secondaryImageAlt: "Severe concrete cancer on structural column showing exposed corroded steel reinforcement and spalling concrete requiring remediation Melbourne",
     benefits: [
       "Retention structure remediation",
       "Steel framework retrofitting",
