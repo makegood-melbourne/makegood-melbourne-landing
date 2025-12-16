@@ -413,7 +413,7 @@ export const services: Service[] = [
     slug: "structural-remediation",
     title: "Structural Remediation Melbourne",
     metaTitle: "Structural Remediation Melbourne | Concrete & Steel",
-    description: "From minor concrete repairs to large-scale retention structure projects, we deliver structural remediation solutions across Melbourne's commercial and industrial properties. Our team has the expertise and resources to tackle complex structural challenges—whether it's a deteriorating warehouse floor slab, failing balcony waterproofing or a retention wall requiring reinforcement. We work with engineers and building managers to develop compliant, cost-effective solutions that restore structural integrity and extend asset life.",
+    description: "From minor concrete repairs to large-scale retention structure projects, we deliver structural remediation solutions across Melbourne's commercial and industrial properties. Our team has the expertise and resources to tackle complex structural challenges—whether it's a deteriorating warehouse floor slab, failing balcony waterproofing or a retention wall requiring reinforcement. We work closely with structural engineers, councils and building managers to develop compliant, cost-effective solutions that restore structural integrity and extend asset life.",
     metaDescription: "Structural remediation Melbourne. Concrete cancer treatment, floor slab repairs, waterproofing and membrane systems. Engineered solutions for commercial properties.",
     heroText: "Comprehensive structural remediation services to restore integrity and extend the service life of your commercial or industrial property. Expert assessment and engineered solutions.",
     heroImage: warehouseFloorSlabDamageImage,
@@ -441,14 +441,14 @@ export const services: Service[] = [
       "Steel framework retrofitting",
       "Concrete cancer treatment",
       "Car park and balcony waterproofing",
-      "Roof leak remediation",
+      "Structural engineer and council liaison",
       "Engineered repair solutions"
     ],
     process: [
       { step: "Structural Assessment", description: "Comprehensive assessment of compromised structures to identify deterioration, corrosion and safety concerns." },
-      { step: "Engineering Solutions", description: "Develop engineered solutions tailored to your specific structural requirements and compliance needs." },
+      { step: "Engineering Solutions", description: "We coordinate with structural engineers to develop compliant solutions tailored to your specific requirements." },
       { step: "Remediation Works", description: "Expert treatment and precision correction of steel and concrete elements to restore structural integrity." },
-      { step: "Compliance Sign-off", description: "Final inspection ensuring long-term structural integrity, safety compliance and extended service life." }
+      { step: "Compliance Sign-off", description: "Final inspection and documentation for structural engineers, councils and building managers as required." }
     ],
     relatedServices: ["warehouse-make-good", "commercial-make-good", "office-strip-out"],
     category: "structural"
