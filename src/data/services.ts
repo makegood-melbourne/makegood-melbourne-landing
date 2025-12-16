@@ -375,24 +375,24 @@ export const services: Service[] = [
     slug: "end-of-lease-relocation",
     title: "End of Lease Relocation Melbourne",
     metaTitle: "End of Lease Relocation Melbourne | Equipment Transport",
-    description: "Vacating your warehouse? We handle the make-good AND transport your racking and equipment to your new site. One contractor, one point of contact—no coordination headaches. We also relocate office fitouts.",
-    metaDescription: "End of lease relocation Melbourne. Warehouse make-good plus racking and equipment transport to your new site. Office relocations also available. Free quotes.",
-    heroText: "Leaving your warehouse? We'll restore it to lease condition and move your racking and equipment to your new site. One team handles both—so you don't have to juggle multiple contractors. Office relocations also available.",
+    description: "Vacating your warehouse or factory? We handle the make-good AND transport your equipment to your new site. One contractor, one point of contact—no coordination headaches. Office relocations also available.",
+    metaDescription: "End of lease relocation Melbourne. Industrial make-good plus racking, machinery and equipment transport to your new site. Office relocations also available. Free quotes.",
+    heroText: "Leaving your warehouse, factory or office? We'll restore it to lease condition and move your equipment to your new site. One team handles both ends—so you don't have to juggle multiple contractors.",
     benefits: [
       "Complete make-good at vacating site",
-      "Racking removal and transport",
-      "Equipment and machinery relocation",
+      "Equipment transport to new location",
       "Single contractor for entire process",
-      "Optional racking install at new site",
-      "Office fitout relocations also available",
+      "Warehouses, factories and offices",
+      "Optional install at new site",
       "Minimise downtime during transition",
+      "No coordination between separate trades",
       "Smooth handover to landlord"
     ],
     process: [
-      { step: "Site Assessment", description: "We inspect your current site to scope make-good works and catalogue racking and equipment for transport." },
+      { step: "Site Assessment", description: "We inspect your current site to scope make-good works and plan the equipment transport." },
       { step: "Coordinated Timeline", description: "Plan aligned with your lease end date and new site availability." },
-      { step: "Make Good + Load Out", description: "We restore your old site while carefully dismantling and loading your racking and equipment." },
-      { step: "Deliver and Handover", description: "Items delivered to new site, old premises handed back to landlord inspection-ready. Installation available if needed." }
+      { step: "Make Good + Load Out", description: "We restore your old site while carefully loading your equipment for transport." },
+      { step: "Deliver and Handover", description: "Equipment delivered to new site, old premises handed back inspection-ready. Installation available if needed." }
     ],
     relatedServices: ["warehouse-make-good", "pallet-racking-removal", "commercial-make-good"],
     category: "make-good"
