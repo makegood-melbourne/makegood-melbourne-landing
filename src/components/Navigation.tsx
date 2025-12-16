@@ -13,7 +13,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 
 // Only show completed service pages in navigation
-const publishedServiceSlugs = ['commercial-cleaning'];
+const publishedServiceSlugs = ['commercial-cleaning', 'end-of-lease-relocation'];
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

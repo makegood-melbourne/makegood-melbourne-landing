@@ -371,30 +371,30 @@ export const services: Service[] = [
     category: "cleaning"
   },
   {
-    name: "Warehouse Relocation",
-    slug: "warehouse-relocation",
-    title: "Warehouse Relocation Services Melbourne",
-    metaTitle: "Warehouse Relocation Melbourne | Fit-Out Experts",
-    description: "Moving warehouses? We handle everything except the truck. From preparing your old site for handover to fitting out your new space—racking installation, floor coatings, line marking and all the works to get you operational fast.",
-    metaDescription: "Warehouse relocation Melbourne. Old site make-good and new site fit-out. Racking, flooring, electrical, line marking. One team for both ends of your move. Free quotes.",
-    heroText: "Relocating your warehouse operation? We manage both sides of the move—restoring your old site to lease condition while preparing your new facility for day one.",
+    name: "End of Lease Relocation",
+    slug: "end-of-lease-relocation",
+    title: "End of Lease Relocation Melbourne",
+    metaTitle: "End of Lease Relocation Melbourne | Equipment Transport",
+    description: "Vacating your warehouse? We handle the make-good AND transport your racking and equipment to your new site. One contractor, one point of contact—no coordination headaches between separate trades.",
+    metaDescription: "End of lease relocation Melbourne. Make-good at your old site plus equipment transport to your new location. Racking, machinery, shelving moved. Free quotes.",
+    heroText: "Leaving your warehouse? We'll restore it to lease condition and move your racking and equipment to your new site. One team handles both—so you don't have to juggle multiple contractors.",
     benefits: [
-      "Old site make-good and restoration",
-      "New site racking installation",
-      "Epoxy flooring and line marking",
-      "Electrical and lighting fit-out",
-      "Dock and roller door works",
-      "Coordinated timeline management",
-      "Single point of contact for both sites",
-      "Minimise downtime between locations"
+      "Complete make-good at vacating site",
+      "Equipment and racking transport included",
+      "Single contractor for entire process",
+      "No coordination between separate trades",
+      "Optional installation at new site",
+      "Minimise downtime during transition",
+      "Meet all lease obligations",
+      "Smooth handover to landlord"
     ],
     process: [
-      { step: "Dual Site Assessment", description: "We inspect both your current and new premises to understand the full scope." },
-      { step: "Coordinated Plan", description: "Detailed timeline aligning make-good works with new site fit-out for minimal downtime." },
-      { step: "Parallel Execution", description: "Teams work both sites simultaneously—stripping down the old while building up the new." },
-      { step: "Seamless Handover", description: "Old lease obligations met, new site operational and ready for your team." }
+      { step: "Site Assessment", description: "We inspect your current site to scope make-good works and catalogue equipment for transport." },
+      { step: "Coordinated Timeline", description: "Plan aligned with your lease end date and new site availability." },
+      { step: "Make Good + Load Out", description: "We restore your old site while carefully dismantling and loading your equipment." },
+      { step: "Deliver and Handover", description: "Equipment delivered to new site, old premises handed back to landlord inspection-ready." }
     ],
-    relatedServices: ["warehouse-make-good", "pallet-racking-removal", "epoxy-flooring", "line-marking"],
+    relatedServices: ["warehouse-make-good", "pallet-racking-removal", "commercial-make-good"],
     category: "make-good"
   }
 ];
