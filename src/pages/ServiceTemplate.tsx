@@ -123,8 +123,8 @@ const ServiceTemplate = () => {
           </div>
         </section>
 
-        {/* Featured Section (e.g., Industrial Floor Cleaning) */}
-        {service.featuredSection && (
+        {/* Featured Section (single - legacy support) */}
+        {service.featuredSection && !service.featuredSections && (
           <section className="py-16 bg-secondary">
             <div className="container mx-auto px-4">
               <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -147,6 +147,31 @@ const ServiceTemplate = () => {
             </div>
           </section>
         )}
+
+        {/* Featured Sections (multiple) */}
+        {service.featuredSections && service.featuredSections.map((section, index) => (
+          <section key={index} className="py-16 bg-secondary">
+            <div className="container mx-auto px-4">
+              <div className={`grid lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}>
+                <div className={index % 2 === 1 ? 'lg:order-2' : ''}>
+                  <h2 className="text-3xl md:text-4xl text-foreground mb-6">
+                    {section.title}
+                  </h2>
+                  <p className="text-xl text-muted-foreground leading-relaxed">
+                    {section.description}
+                  </p>
+                </div>
+                <div className={index % 2 === 1 ? 'lg:order-1' : ''}>
+                  <img 
+                    src={section.image} 
+                    alt={section.imageAlt}
+                    className="aspect-[4/3] w-full object-cover rounded-lg"
+                  />
+                </div>
+              </div>
+            </div>
+          </section>
+        ))}
 
         {/* Process Section */}
         <section className="py-16 bg-background">

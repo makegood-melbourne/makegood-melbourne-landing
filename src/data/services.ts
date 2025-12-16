@@ -7,6 +7,7 @@ import flatbedTruckTransportImage from "@/assets/services/flatbed-truck-transpor
 import concreteCancerImage from "@/assets/services/concrete-cancer-exposed-rebar-column-spalling-melbourne.jpeg";
 import warehouseFloorSlabDamageImage from "@/assets/services/warehouse-floor-slab-deterioration-structural-damage-melbourne.png";
 import waterproofingMembraneImage from "@/assets/services/waterproofing-membrane-application-commercial-melbourne.jpeg";
+import retentionWallConstructionImage from "@/assets/services/retention-wall-formwork-reinforcement-construction-melbourne.jpeg";
 
 export interface FeaturedSection {
   title: string;
@@ -28,6 +29,7 @@ export interface Service {
   secondaryImage?: string;
   secondaryImageAlt?: string;
   featuredSection?: FeaturedSection;
+  featuredSections?: FeaturedSection[];
   benefits: string[];
   process: {
     step: string;
@@ -416,14 +418,22 @@ export const services: Service[] = [
     heroText: "Comprehensive structural remediation services to restore integrity and extend the service life of your commercial or industrial property. Expert assessment and engineered solutions.",
     heroImage: warehouseFloorSlabDamageImage,
     heroImageAlt: "Deteriorating warehouse floor slab with structural cracks and spalling at control joints requiring remediation Melbourne",
-    secondaryImage: concreteCancerImage,
-    secondaryImageAlt: "Severe concrete cancer on structural column showing exposed corroded steel reinforcement and spalling concrete requiring remediation Melbourne",
-    featuredSection: {
-      title: "Waterproofing & Membrane Systems",
-      description: "Water ingress is one of the leading causes of structural deterioration in commercial buildings. We provide professional waterproofing and membrane solutions for car parks, balconies, rooftops and podium decks. From hotel and office balconies to warehouse roofing leaks, our waterproofing systems protect your structure from moisture damage and extend asset life.",
-      image: waterproofingMembraneImage,
-      imageAlt: "Professional waterproofing membrane application on commercial building surface Melbourne"
-    },
+    secondaryImage: retentionWallConstructionImage,
+    secondaryImageAlt: "Large-scale retention wall formwork with steel reinforcement and crane demonstrating structural construction capabilities Melbourne",
+    featuredSections: [
+      {
+        title: "Waterproofing & Membrane Systems",
+        description: "Water ingress is one of the leading causes of structural deterioration in commercial buildings. We provide professional waterproofing and membrane solutions for car parks, balconies, rooftops and podium decks. From hotel and office balconies to warehouse roofing leaks, our waterproofing systems protect your structure from moisture damage and extend asset life.",
+        image: waterproofingMembraneImage,
+        imageAlt: "Professional waterproofing membrane application on commercial building surface Melbourne"
+      },
+      {
+        title: "Concrete Cancer Treatment",
+        description: "Concrete cancer occurs when steel reinforcement inside concrete rusts and expands—cracking and displacing the surrounding structure. Left untreated, it compromises structural integrity and accelerates deterioration. Our remediation process involves removing damaged concrete, treating corroded steel with rust inhibitors and protective coatings, then restoring the surface with engineered repair mortars designed for long-term durability.",
+        image: concreteCancerImage,
+        imageAlt: "Severe concrete cancer on structural column showing exposed corroded steel reinforcement and spalling concrete requiring remediation Melbourne"
+      }
+    ],
     benefits: [
       "Warehouse floor slab remediation",
       "Waterproofing and membrane systems",
