@@ -452,6 +452,31 @@ export const services: Service[] = [
     ],
     relatedServices: ["warehouse-make-good", "commercial-make-good", "office-strip-out"],
     category: "structural"
+  },
+  {
+    name: "Cladding & Glazing",
+    slug: "cladding-glazing",
+    title: "Cladding & Glazing Remediation Melbourne",
+    metaTitle: "Cladding & Glazing Remediation Melbourne | Compliance",
+    description: "Professional cladding and glazing remediation services across Melbourne. From ACP replacement to fire-rated compliance, we deliver end-to-end facade solutions.",
+    metaDescription: "Cladding and glazing remediation Melbourne. ACP replacement, fire rating compliance, glazing upgrades. Licensed contractors, Australian Standards compliant. Free quotes.",
+    heroText: "Ensure building compliance and performance with our specialist cladding and glazing remediation services.",
+    benefits: [
+      "ACP cladding replacement",
+      "Fire rating compliance",
+      "Glazing upgrades and remediation",
+      "End-to-end D&C delivery",
+      "Structural engineer coordination",
+      "Council liaison and approvals"
+    ],
+    process: [
+      { step: "Cladding Compliance and Performance", description: "With ACP cladding now banned, demand for compliant cladding is surging. Our proven expertise delivers end-to-end D&C remediation, ensuring compliance and performance." },
+      { step: "Glazing Compliance and Performance", description: "Many buildings contain non-compliant, underperforming glazing. Our deep experience delivers remediation projects that ensure compliance and enhance performance." },
+      { step: "Fire Rating Compliance", description: "Comprehensive assessment, removal and replacement of non-compliant cladding systems with fire-rated materials that comply with Australian Standards and building code requirements." },
+      { step: "Completion and Sign-off", description: "Final inspection and certification documentation for councils and building managers." }
+    ],
+    relatedServices: ["structural-remediation", "commercial-make-good", "office-strip-out"],
+    category: "structural"
   }
 ];
 
