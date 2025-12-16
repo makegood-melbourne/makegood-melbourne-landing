@@ -11,6 +11,7 @@ import LocationTemplate from "./pages/LocationTemplate";
 import ServiceTemplate from "./pages/ServiceTemplate";
 import NotFound from "./pages/NotFound";
 import LegacyBlogRedirect from "./pages/LegacyBlogRedirect";
+import BeforeAfterDemo from "./pages/BeforeAfterDemo";
 import { Chatbot } from "./components/Chatbot";
 
 const queryClient = new QueryClient();
@@ -28,6 +29,7 @@ const App = () => (
           <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="/areas/:slug" element={<LocationTemplate />} />
           <Route path="/services/:slug" element={<ServiceTemplate />} />
+          <Route path="/demo/before-after" element={<BeforeAfterDemo />} />
           
           {/* Legacy redirects for old site structure */}
           <Route path="/tenants" element={<Navigate to="/" replace />} />
