@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import beforeImage from '@/assets/services/manufacturing-facility-before-makegood-melbourne.jpeg';
+import beforeImage from '@/assets/services/warehouse-relocation-forklift-loading-racking-melbourne.png';
 import afterImage from '@/assets/services/empty-warehouse-after-makegood-melbourne.png';
 
 const BeforeAfterSlider = () => {
@@ -31,7 +31,7 @@ const BeforeAfterSlider = () => {
           >
             <img 
               src={beforeImage} 
-              alt="Manufacturing facility before make-good - operational with equipment Melbourne" 
+              alt="Forklift loading dismantled pallet racking onto truck for warehouse relocation Melbourne" 
               className="absolute inset-0 w-full h-full object-cover"
               style={{ width: `${100 / (sliderPosition / 100)}%`, maxWidth: 'none' }}
             />
