@@ -2,7 +2,7 @@ import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Hammer, Building2, Wrench, Sparkles, CheckCircle, ArrowRight, Phone } from "lucide-react";
+import { Hammer, Building2, Wrench, Sparkles, CheckCircle, ArrowRight, Phone, Shield } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import capabilitiesHero from "@/assets/commercial-property-restoration-capabilities-melbourne.jpg";
@@ -12,6 +12,7 @@ const Capabilities = () => {
   const demolitionServices = getServicesByCategory('demolition');
   const makeGoodServices = getServicesByCategory('make-good');
   const tradeServices = getServicesByCategory('trade');
+  const structuralServices = getServicesByCategory('structural');
 
   const allDemolitionItems = [
     "Pallet racking removal",
@@ -50,6 +51,12 @@ const Capabilities = () => {
     "Window and facade cleaning",
     "Industrial floor scrubbing",
     "Graffiti removal"
+  ];
+
+  const structuralItems = [
+    { title: "Retention Structure Remediation", description: "Comprehensive assessment and engineered solutions for compromised retention systems, ensuring long-term structural integrity and safety compliance." },
+    { title: "Steel Framework Retrofitting", description: "Expert modification and precision correction of steel structural elements to meet engineering specifications, improve performance and extend service life." },
+    { title: "Concrete Deterioration Treatment", description: "Specialised treatment and remediation of concrete deterioration to eliminate reinforcement corrosion, restore structural integrity and prevent future degradation." }
   ];
 
   return (
@@ -224,6 +231,67 @@ const Capabilities = () => {
                         </Link>
                       ))}
                     </div>
+                  </div>
+                )}
+              </CardContent>
+            </Card>
+          </div>
+        </section>
+
+        {/* Structural Remediation Services */}
+        <section className="py-16 bg-secondary">
+          <div className="container mx-auto px-4">
+            <Card className="border-border border-2 border-accent/20">
+              <CardHeader>
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center">
+                    <Shield className="h-6 w-6 text-accent" />
+                  </div>
+                  <div>
+                    <CardTitle className="text-3xl text-foreground">Structural Remediation</CardTitle>
+                    <p className="text-accent font-medium mt-1">Restore Structural Integrity</p>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground mb-6 leading-relaxed">
+                  Expert structural remediation services for commercial and industrial properties. We address concrete deterioration, steel framework issues and retention structure failures to restore structural integrity and ensure long-term safety compliance.
+                </p>
+                <div className="space-y-6 mb-6">
+                  {structuralItems.map((item, index) => (
+                    <div key={index} className="flex items-start gap-4">
+                      <div className="w-8 h-8 rounded bg-accent/10 flex items-center justify-center flex-shrink-0 mt-1">
+                        <span className="text-accent font-bold text-sm">{index + 1}</span>
+                      </div>
+                      <div>
+                        <h3 className="text-foreground font-semibold mb-1">{item.title}</h3>
+                        <p className="text-muted-foreground text-sm">{item.description}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+                {structuralServices.length > 0 && (
+                  <div className="pt-4 border-t border-border flex flex-wrap items-center justify-between gap-4">
+                    <div>
+                      <p className="text-sm text-muted-foreground mb-2">Learn more about our structural services:</p>
+                      <div className="flex flex-wrap gap-2">
+                        {structuralServices.map((service) => (
+                          <Link
+                            key={service.slug}
+                            to={`/services/${service.slug}`}
+                            className="inline-flex items-center gap-1 text-accent hover:text-accent/80 transition-colors text-sm font-medium"
+                          >
+                            {service.name}
+                            <ArrowRight className="h-3 w-3" />
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
+                    <Button asChild className="bg-accent hover:bg-accent/90 text-accent-foreground">
+                      <Link to="/#contact">
+                        Get a Structural Assessment
+                      </Link>
+                    </Button>
                   </div>
                 )}
               </CardContent>
