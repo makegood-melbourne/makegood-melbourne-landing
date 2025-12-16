@@ -206,7 +206,10 @@ const ServiceTemplate = () => {
                   {service.description}
                 </p>
                 <p className="text-xl text-muted-foreground leading-relaxed mt-4">
-                  Our experienced team delivers professional {service.name.toLowerCase()} services across Melbourne's commercial and industrial properties. We understand the importance of meeting lease obligations and landlord requirements, working efficiently to minimise disruption while achieving quality results.
+                  {service.slug === 'cladding-glazing' 
+                    ? `Our experienced team delivers professional ${service.name.toLowerCase()} services across Melbourne's commercial buildings. We understand the critical importance of bringing buildings up to compliance with Australian Standards and building code requirements, working efficiently to minimise disruption while achieving quality results.`
+                    : `Our experienced team delivers professional ${service.name.toLowerCase()} services across Melbourne's commercial and industrial properties. We understand the importance of meeting lease obligations and landlord requirements, working efficiently to minimise disruption while achieving quality results.`
+                  }
                 </p>
               </div>
               {/* Secondary Image */}
