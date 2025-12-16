@@ -11,7 +11,7 @@ const Index = () => {
     <main className="min-h-screen bg-background text-foreground">
       <Helmet>
         <title>Make Good Melbourne | End of Lease Restoration Experts</title>
-        <meta name="description" content="Melbourne's trusted make good specialists. Expert end of lease restoration for offices, warehouses and industrial properties. Office strip outs, warehouse restoration, building remediation. Free quotes." />
+        <meta name="description" content="Melbourne's trusted make good specialists. Expert end of lease restoration for offices, warehouses and industrial properties. Free quotes." />
         <meta property="og:title" content="Make Good Melbourne | Commercial Property Restoration Specialists" />
         <meta property="og:description" content="Melbourne's trusted make good specialists. Expert end of lease restoration for commercial and industrial properties." />
         <meta property="og:type" content="website" />
