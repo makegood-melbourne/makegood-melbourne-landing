@@ -413,7 +413,7 @@ export const services: Service[] = [
     slug: "structural-remediation",
     title: "Structural Remediation Melbourne",
     metaTitle: "Structural Remediation Melbourne | Concrete & Steel",
-    description: "Expert structural remediation services for commercial and industrial properties. We address concrete cancer (spalling), steel framework issues, retention structure failures, warehouse floor slab deterioration and waterproofing failures to restore structural integrity. Concrete cancer occurs when steel reinforcement inside concrete rusts and expands—cracking and displacing the surrounding structure. Our remediation process removes damaged concrete, treats corroded steel with rust inhibitors and restores the surface with engineered repair mortars.",
+    description: "From minor concrete repairs to large-scale retention structure projects, we deliver structural remediation solutions across Melbourne's commercial and industrial properties. Our team has the expertise and resources to tackle complex structural challenges—whether it's a deteriorating warehouse floor slab, failing balcony waterproofing or a retention wall requiring reinforcement. We work with engineers and building managers to develop compliant, cost-effective solutions that restore structural integrity and extend asset life.",
     metaDescription: "Structural remediation Melbourne. Concrete cancer treatment, floor slab repairs, waterproofing and membrane systems. Engineered solutions for commercial properties.",
     heroText: "Comprehensive structural remediation services to restore integrity and extend the service life of your commercial or industrial property. Expert assessment and engineered solutions.",
     heroImage: warehouseFloorSlabDamageImage,
