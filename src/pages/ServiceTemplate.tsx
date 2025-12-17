@@ -133,7 +133,7 @@ const ServiceTemplate = () => {
                     <img 
                       src={service.featuredSection.image} 
                       alt={service.featuredSection.imageAlt || `${service.name} professional services Melbourne`}
-                      className="aspect-[4/3] w-full object-cover rounded-lg"
+                      className="aspect-[4/3] w-full object-cover object-center rounded-lg"
                     />
                   ) : (
                     <div className="aspect-[4/3] bg-muted/30 rounded-lg border-2 border-dashed border-muted-foreground/20 flex items-center justify-center">
