@@ -10,6 +10,7 @@ import waterproofingMembraneImage from "@/assets/services/waterproofing-membrane
 import retentionWallConstructionImage from "@/assets/services/retention-wall-formwork-reinforcement-construction-melbourne.jpeg";
 import claddingRemediationImage from "@/assets/services/cladding-remediation-facade-glazing-melbourne.jpeg";
 import glazingFacadeInstallationImage from "@/assets/services/glazing-facade-installation-commercial-building-melbourne.jpg";
+import ceilingTilesLedPanelsImage from "@/assets/services/commercial-office-ceiling-tiles-led-panels-melbourne.jpeg";
 
 export interface FeaturedSection {
   title: string;
@@ -225,6 +226,8 @@ export const services: Service[] = [
     description: "Stained tiles, sagging grids and water damage make any office look neglected. We source matching tiles, repair suspension systems and restore your ceiling to a condition that satisfies landlords and impresses anyone walking through the door.",
     metaDescription: "Ceiling tile replacement Melbourne. Suspended ceiling repairs, tile matching and grid restoration. Commercial offices and retail. Fast service, quality finish. Free quotes.",
     heroText: "Water stains, damaged tiles and sagging grids tell everyone the space has been neglected. We match and replace tiles, repair the suspension system and deliver a ceiling that looks maintained—not just patched.",
+    heroImage: ceilingTilesLedPanelsImage,
+    heroImageAlt: "Modern commercial office space with suspended ceiling grid, rectangular LED panel lights and grey carpet flooring in Melbourne",
     benefits: [
       "Tile matching from major manufacturers",
       "Grid and suspension system repairs",
