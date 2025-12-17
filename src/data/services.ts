@@ -243,6 +243,12 @@ export const services: Service[] = [
       { step: "Sourcing & Installation", description: "Matching tiles and panels sourced, installed, LED panels repositioned and aircon vents adjusted." },
       { step: "Landlord Handover", description: "Ceiling completed to original condition, ready for inspection and sign-off." }
     ],
+    featuredSection: {
+      title: "Beyond Standard Replacement",
+      description: "Post-demolition tile repairs where partitions were removed. Discontinued tile matching when originals are no longer manufactured. Full grid restoration after tenant removal for extra height. Sprinkler coordination when required.",
+      image: ceilingTilesLedPanelsImage,
+      imageAlt: "Modern commercial office with suspended ceiling grid and LED panel lights in Melbourne"
+    },
     relatedServices: ["commercial-painting", "office-strip-out", "commercial-make-good"],
     category: "make-good"
   },
