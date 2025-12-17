@@ -281,7 +281,7 @@ export const services: Service[] = [
     ],
     featuredSection: {
       title: "Car Park Line Marking Restoration",
-      description: "Your lease stipulates original condition—but years of traffic have taken their toll. We bring car park markings back to compliance standard, restoring faded bays, worn directional arrows and eroded safety zones.",
+      description: "Years of traffic have taken their toll. We bring car park markings back to compliance standard, restoring faded bays, worn directional arrows and eroded safety zones.",
       image: carParkLineMarkingImage,
       imageAlt: "Aerial view of commercial car park with restored white bay markings and yellow directional lines in Melbourne"
     },
