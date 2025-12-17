@@ -75,7 +75,7 @@ const Navigation = () => {
                 {serviceCategories.map((category, index) => (
                   <div key={category.label}>
                     {index > 0 && <DropdownMenuSeparator />}
-                    <DropdownMenuLabel className="text-accent text-xs uppercase tracking-wider">
+                    <DropdownMenuLabel className="text-primary text-xs uppercase tracking-wider">
                       {category.label}
                     </DropdownMenuLabel>
                     {getServicesByCategory(category.slugs).map((service) => (
@@ -142,7 +142,7 @@ const Navigation = () => {
               <div className="pl-4 mt-2 flex flex-col gap-4">
                 {serviceCategories.map((category) => (
                   <div key={category.label}>
-                    <span className="text-accent text-xs uppercase tracking-wider font-medium">
+                    <span className="text-primary text-xs uppercase tracking-wider font-medium">
                       {category.label}
                     </span>
                     <div className="flex flex-col gap-2 mt-1">
