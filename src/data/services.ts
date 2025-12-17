@@ -13,6 +13,7 @@ import glazingFacadeInstallationImage from "@/assets/services/glazing-facade-ins
 import ceilingTilesLedPanelsImage from "@/assets/services/commercial-office-ceiling-tiles-led-panels-melbourne.jpeg";
 import ceilingTileReplacementHeroImage from "@/assets/services/ceiling-tile-replacement-commercial-office-melbourne.jpeg";
 import lineMarkingWornFloorImage from "@/assets/services/warehouse-floor-worn-line-markings-restoration-melbourne.jpeg";
+import lineMarkingRestoredImage from "@/assets/services/warehouse-floor-worn-line-markings-restoration-melbourne.png";
 
 export interface FeaturedSection {
   title: string;
@@ -275,6 +276,12 @@ export const services: Service[] = [
       { step: "Line Restoration", description: "Original markings reinstated with professional equipment—straight lines, sharp edges, consistent coverage." },
       { step: "Landlord Handover", description: "Lines cured and protected, ready for inspection and sign-off." }
     ],
+    featuredSection: {
+      title: "Restoration That Meets Lease Standards",
+      description: "From faded forklift aisles to removed tenant zones, we restore your warehouse floor markings to original condition. Professional equipment ensures straight lines, sharp edges and durable finishes that satisfy landlord inspections.",
+      image: lineMarkingRestoredImage,
+      imageAlt: "Restored yellow warehouse floor line markings with pedestrian walkways and safety zones in Melbourne"
+    },
     relatedServices: ["epoxy-flooring", "warehouse-make-good", "concrete-floor-repair"],
     category: "trade"
   },
