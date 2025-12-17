@@ -1,6 +1,6 @@
 import commercialCleaningImage from "@/assets/services/commercial-cleaning-melbourne-supplies.jpeg";
 import commercialFloorSweepingImage from "@/assets/services/commercial-floor-sweeping-concrete-melbourne.jpeg";
-import epoxyFlooringWarehouseImage from "@/assets/services/epoxy-flooring-warehouse-melbourne.jpg";
+import epoxyFlooringWarehouseImage from "@/assets/services/polished-epoxy-floor-industrial-warehouse-melbourne.jpeg";
 import warehouseFloorScrubberImage from "@/assets/services/warehouse-floor-scrubber-cleaning-v4.jpg";
 import industrialFloorScrubberImage from "@/assets/services/industrial-ride-on-floor-scrubber-warehouse-melbourne.png";
 import highPressureWarehouseCleaningImage from "@/assets/services/high-pressure-warehouse-cleaning-melbourne.png";
@@ -133,7 +133,7 @@ export const services: Service[] = [
     metaDescription: "Industrial epoxy flooring Melbourne. Warehouse floor coatings, concrete repair and resurfacing. Chemical-resistant, anti-slip finishes. Licensed applicators. Free quotes.",
     heroText: "Your warehouse floor takes a beating. Epoxy coating protects the concrete, hides the damage and gives you a surface that's easy to clean, safe to work on and built to last. Whether you're refreshing for a new tenant or upgrading your own facility—we deliver.",
     heroImage: epoxyFlooringWarehouseImage,
-    heroImageAlt: "Large industrial warehouse with freshly applied grey epoxy floor coating Melbourne",
+    heroImageAlt: "Polished epoxy floor coating in large industrial warehouse with reflective finish Melbourne",
     benefits: [
       "Chemical and oil resistant finishes",
       "Anti-slip coatings for safety compliance",
