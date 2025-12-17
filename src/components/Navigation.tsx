@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "@/assets/makegood-melbourne-logo.png";
 import { getSortedLocations } from "@/data/locations";
-import { services } from "@/data/services";
+import { getPublishedServices } from "@/data/services";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -42,7 +42,8 @@ const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const getServicesByCategory = (slugs: string[]) => {
-    return services
+    const publishedServices = getPublishedServices();
+    return publishedServices
       .filter(s => slugs.includes(s.slug))
       .sort((a, b) => a.name.localeCompare(b.name));
   };
@@ -72,24 +73,30 @@ const Navigation = () => {
                 <ChevronDown className="h-4 w-4" />
               </DropdownMenuTrigger>
               <DropdownMenuContent align="start" className="bg-card border-border w-64">
-                {serviceCategories.map((category, index) => (
-                  <div key={category.label}>
-                    {index > 0 && <DropdownMenuSeparator />}
-                    <DropdownMenuLabel className="text-primary text-xs uppercase tracking-wider">
-                      {category.label}
-                    </DropdownMenuLabel>
-                    {getServicesByCategory(category.slugs).map((service) => (
-                      <DropdownMenuItem key={service.slug} asChild>
-                        <Link 
-                          to={`/services/${service.slug}`}
-                          className="cursor-pointer"
-                        >
-                          {service.name}
-                        </Link>
-                      </DropdownMenuItem>
-                    ))}
-                  </div>
-                ))}
+                {serviceCategories.reduce((acc: React.ReactNode[], category, index) => {
+                  const categoryServices = getServicesByCategory(category.slugs);
+                  if (categoryServices.length === 0) return acc;
+                  
+                  acc.push(
+                    <div key={category.label}>
+                      {acc.length > 0 && <DropdownMenuSeparator />}
+                      <DropdownMenuLabel className="text-primary text-xs uppercase tracking-wider">
+                        {category.label}
+                      </DropdownMenuLabel>
+                      {categoryServices.map((service) => (
+                        <DropdownMenuItem key={service.slug} asChild>
+                          <Link 
+                            to={`/services/${service.slug}`}
+                            className="cursor-pointer"
+                          >
+                            {service.name}
+                          </Link>
+                        </DropdownMenuItem>
+                      ))}
+                    </div>
+                  );
+                  return acc;
+                }, [])}
                 <DropdownMenuSeparator />
                 <DropdownMenuItem asChild>
                   <Link 
@@ -140,25 +147,29 @@ const Navigation = () => {
             <div className="py-2">
               <span className="text-foreground font-medium">Services</span>
               <div className="pl-4 mt-2 flex flex-col gap-4">
-                {serviceCategories.map((category) => (
-                  <div key={category.label}>
-                    <span className="text-primary text-xs uppercase tracking-wider font-medium">
-                      {category.label}
-                    </span>
-                    <div className="flex flex-col gap-2 mt-1">
-                      {getServicesByCategory(category.slugs).map((service) => (
-                        <Link 
-                          key={service.slug}
-                          to={`/services/${service.slug}`}
-                          className="text-muted-foreground hover:text-accent transition-colors"
-                          onClick={() => setIsMenuOpen(false)}
-                        >
-                          {service.name}
-                        </Link>
-                      ))}
+                {serviceCategories.map((category) => {
+                  const categoryServices = getServicesByCategory(category.slugs);
+                  if (categoryServices.length === 0) return null;
+                  return (
+                    <div key={category.label}>
+                      <span className="text-primary text-xs uppercase tracking-wider font-medium">
+                        {category.label}
+                      </span>
+                      <div className="flex flex-col gap-2 mt-1">
+                        {categoryServices.map((service) => (
+                          <Link 
+                            key={service.slug}
+                            to={`/services/${service.slug}`}
+                            className="text-muted-foreground hover:text-accent transition-colors"
+                            onClick={() => setIsMenuOpen(false)}
+                          >
+                            {service.name}
+                          </Link>
+                        ))}
+                      </div>
                     </div>
-                  </div>
-                ))}
+                  );
+                })}
                 <Link 
                   to="/capabilities"
                   className="text-accent hover:text-accent/80 transition-colors font-medium"

@@ -1,6 +1,6 @@
 import { useParams, Navigate, Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
-import { getServiceBySlug, services } from "@/data/services";
+import { getServiceBySlug, getPublishedServices } from "@/data/services";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import BeforeAfterSlider from "@/components/BeforeAfterSlider";
@@ -12,11 +12,12 @@ const ServiceTemplate = () => {
   const { slug } = useParams<{ slug: string }>();
   const service = slug ? getServiceBySlug(slug) : undefined;
 
-  if (!service) {
+  // Redirect if service not found OR not published
+  if (!service || service.published !== true) {
     return <Navigate to="/capabilities" replace />;
   }
 
-  const relatedServices = services.filter(s => 
+  const relatedServices = getPublishedServices().filter(s => 
     service.relatedServices.includes(s.slug) && s.slug !== service.slug
   ).slice(0, 3);
 
