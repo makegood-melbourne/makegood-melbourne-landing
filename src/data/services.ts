@@ -224,7 +224,7 @@ export const services: Service[] = [
     slug: "ceiling-tile-replacement",
     title: "Ceiling Tile Replacement Melbourne",
     metaTitle: "Ceiling Tile Replacement Melbourne | Lease Compliance",
-    description: "From standard suspended grids to timber acoustic panels, we replace and restore commercial ceilings to meet your lease obligations. LED repositioning, aircon adjustments and full grid work included.",
+    description: "From standard suspended grids to timber acoustic panels, we replace and restore commercial ceilings to meet your lease obligations. Post-demolition repairs where partitions were removed, discontinued tile matching when originals are no longer made and full grid restoration when tenants have stripped them out for extra height. LED repositioning, aircon adjustments and sprinkler coordination when required.",
     metaDescription: "Ceiling tile replacement Melbourne. Acoustic panels, suspended grids, LED rebalancing and grid reinstallation. End of lease compliance for commercial offices. Free quotes.",
     heroText: "Whether your space has standard white tiles or premium timber acoustic panels, we deliver complete ceiling restoration. One contractor for every ceiling type—tiles matched, LEDs repositioned and aircon rebalanced for landlord sign-off.",
     heroImage: ceilingTileReplacementHeroImage,
@@ -235,7 +235,11 @@ export const services: Service[] = [
       "Meet your make-good ceiling requirements",
       "Standard tiles and acoustic panels",
       "LED panel and aircon rebalancing to suit",
-      "Ceiling grid repairs and reinstallation"
+      "Ceiling grid repairs and reinstallation",
+      "Post-partition removal repairs",
+      "Discontinued tile matching and alternatives",
+      "Full grid restoration after tenant removal",
+      "Sprinkler coordination when required"
     ],
     process: [
       { step: "Lease Review", description: "We confirm your make-good clause and identify the ceiling types throughout your tenancy." },
