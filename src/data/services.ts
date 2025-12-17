@@ -222,25 +222,26 @@ export const services: Service[] = [
     name: "Ceiling Tile Replacement",
     slug: "ceiling-tile-replacement",
     title: "Ceiling Tile Replacement Melbourne",
-    metaTitle: "Ceiling Tile Replacement Melbourne | Fast Service",
-    description: "Stained tiles, sagging grids and water damage make any office look neglected. We source matching tiles, repair suspension systems and restore your ceiling to a condition that satisfies landlords and impresses anyone walking through the door.",
-    metaDescription: "Ceiling tile replacement Melbourne. Suspended ceiling repairs, tile matching and grid restoration. Commercial offices and retail. Fast service, quality finish. Free quotes.",
-    heroText: "Water stains, damaged tiles and sagging grids tell everyone the space has been neglected. We match and replace tiles, repair the suspension system and deliver a ceiling that looks maintained—not just patched.",
+    metaTitle: "Ceiling Tile Replacement Melbourne | Lease Compliance",
+    description: "Most commercial leases require ceiling tiles replaced before you hand back the keys. We handle the full scope—tile replacement, LED panel rebalancing for open plan layouts and aircon adjustments to suit. One contractor for complete ceiling compliance.",
+    metaDescription: "Ceiling tile replacement Melbourne. End of lease compliance, LED panel rebalancing and suspended ceiling grid reinstallation. Commercial offices and warehouses. Free quotes.",
+    heroText: "Most commercial leases require ceiling tiles replaced before handover. We handle the full scope—tile replacement, LED panel rebalancing, aircon adjustments—so your make-good is signed off without delay.",
     heroImage: ceilingTilesLedPanelsImage,
     heroImageAlt: "Modern commercial office space with suspended ceiling grid, rectangular LED panel lights and grey carpet flooring in Melbourne",
     benefits: [
-      "Tile matching from major manufacturers",
-      "Grid and suspension system repairs",
-      "Water-damaged tile replacement",
-      "Access panel installation",
-      "Full ceiling replacement available",
-      "Minimal disruption to operations"
+      "Complete lease compliance sign-off",
+      "Tile matching from all major manufacturers",
+      "LED panel rebalancing for open layouts",
+      "Aircon vent repositioning to suit",
+      "Full grid reinstallation when required",
+      "Fast turnaround before lease expiry"
     ],
     process: [
-      { step: "Ceiling Survey", description: "We identify damage, count replacement tiles needed and assess grid condition." },
+      { step: "Lease Review", description: "We check your make-good clause to confirm exactly what ceiling works are required." },
+      { step: "Site Assessment", description: "Count tiles needed, note where partitions were removed and assess LED and aircon positioning." },
       { step: "Tile Sourcing", description: "Matching tiles sourced from suppliers. If discontinued, we recommend closest alternatives." },
-      { step: "Installation", description: "Damaged tiles swapped, grid adjusted and any suspension issues corrected." },
-      { step: "Quality Check", description: "Uniform appearance confirmed—no mismatched tiles, no visible repairs, no sag." }
+      { step: "Installation & Rebalancing", description: "Tiles replaced, LED panels repositioned for the open layout and aircon vents adjusted." },
+      { step: "Landlord Handover", description: "Ceiling completed to original condition, ready for inspection and sign-off." }
     ],
     relatedServices: ["commercial-painting", "office-strip-out", "commercial-make-good"],
     category: "make-good"
