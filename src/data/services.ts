@@ -226,8 +226,12 @@ export const services: Service[] = [
     description: "Most commercial leases require ceiling tiles replaced before you hand back the keys. We handle the full scope—tile replacement, LED panel rebalancing for open plan layouts and aircon adjustments to suit. One contractor for complete ceiling compliance.",
     metaDescription: "Ceiling tile replacement Melbourne. End of lease compliance, LED panel rebalancing and suspended ceiling grid reinstallation. Commercial offices and warehouses. Free quotes.",
     heroText: "Most commercial leases require ceiling tiles replaced before handover. We handle the full scope—tile replacement, LED panel rebalancing, aircon adjustments—so your make-good is signed off without delay.",
-    heroImage: ceilingTilesLedPanelsImage,
-    heroImageAlt: "Modern commercial office space with suspended ceiling grid, rectangular LED panel lights and grey carpet flooring in Melbourne",
+    featuredSection: {
+      title: "About This Service",
+      description: "We handle the full ceiling scope for your make-good—tile replacement, LED panel rebalancing for open layouts and aircon adjustments. One contractor for complete ceiling compliance.",
+      image: ceilingTilesLedPanelsImage,
+      imageAlt: "Modern commercial office space with suspended ceiling grid, rectangular LED panel lights and grey carpet flooring in Melbourne"
+    },
     benefits: [
       "Meet your make-good ceiling requirements",
       "Tile matching from all major manufacturers",
