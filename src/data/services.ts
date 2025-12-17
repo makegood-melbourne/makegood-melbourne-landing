@@ -114,12 +114,13 @@ export const services: Service[] = [
     secondaryImage: warehouseRelocationImage,
     secondaryImageAlt: "Forklift loading dismantled pallet racking onto flatbed truck for removal from Melbourne warehouse",
     benefits: [
-      "Selective, drive-in and cantilever racking",
-      "Floor and wall anchor removal",
-      "Protection bollard removal included",
-      "Core drilled, filled with epoxy or grout",
-      "Surface ground flush to slab",
-      "Racking recycled or disposed responsibly"
+      "All types of pallet racking systems including cantilever wall units",
+      "Dynabolt removal from floor slabs and walls",
+      "Removal of safety barriers, bollards and swing gates",
+      "Warehouse floor remediation of installed dynabolts by grinding down flush with slab, core drilling each anchor point and filling with epoxy resin",
+      "Transport solutions available",
+      "Buy back, recycling and disposal solutions available",
+      "Complete warehouse slab remediation solutions available"
     ],
     process: [
       { step: "Racking Audit", description: "We assess racking type, bay count and anchor configuration—floor bolts, wall ties and protection bollards." },
