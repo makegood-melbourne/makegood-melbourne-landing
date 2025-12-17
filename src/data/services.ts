@@ -12,6 +12,7 @@ import claddingRemediationImage from "@/assets/services/cladding-remediation-fac
 import glazingFacadeInstallationImage from "@/assets/services/glazing-facade-installation-commercial-building-melbourne.jpg";
 import ceilingTilesLedPanelsImage from "@/assets/services/commercial-office-ceiling-tiles-led-panels-melbourne.jpeg";
 import ceilingTileReplacementHeroImage from "@/assets/services/ceiling-tile-replacement-commercial-office-melbourne.jpeg";
+import lineMarkingWornFloorImage from "@/assets/services/warehouse-floor-worn-line-markings-restoration-melbourne.jpeg";
 
 export interface FeaturedSection {
   title: string;
@@ -258,6 +259,8 @@ export const services: Service[] = [
     description: "Lease ending and your warehouse or car park lines don't match the original layout? We restore eroded markings, remove tenant-specific delineations and return floors to the condition your landlord expects. Full line marking restoration for make-good compliance.",
     metaDescription: "Line marking restoration Melbourne. Warehouse and car park line reinstatement for end of lease compliance. Remove tenant markings, restore originals. Free quotes.",
     heroText: "Years of forklift traffic have worn your lines away. Or maybe you added bays and zones to suit your operation—now they need to go. We restore original markings, remove tenant delineations and hand back floors that meet your make-good obligations.",
+    heroImage: lineMarkingWornFloorImage,
+    heroImageAlt: "Worn and faded yellow line markings on warehouse concrete floor requiring restoration in Melbourne",
     benefits: [
       "Restore worn and faded line markings",
       "Remove tenant-specific delineations",
