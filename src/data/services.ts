@@ -29,6 +29,7 @@ export interface FeaturedSection {
 
 export interface CtaBlock {
   title: string;
+  subtitle?: string;
   text: string;
 }
 
@@ -129,8 +130,9 @@ export const services: Service[] = [
       "Complete warehouse slab remediation solutions available"
     ],
     ctaBlock: {
-      title: "Make Goods All Day, Every Day",
-      text: "Pallet racking removal is what we do—day in, day out. Our experienced crew has dismantled hundreds of racking systems across Melbourne, restoring warehouse floors to handover-ready condition. Let us handle yours while you focus on your move."
+      title: "Let Us Handle Your Racking Removal",
+      subtitle: "We do makegoods all day, every day.",
+      text: "Our experienced crew has dismantled hundreds of racking systems across Melbourne, restoring warehouse floors to handover-ready condition. Focus on your move—we'll take care of the rest."
     },
     relatedServices: ["warehouse-make-good", "concrete-floor-repair", "epoxy-flooring"],
     category: "demolition"
