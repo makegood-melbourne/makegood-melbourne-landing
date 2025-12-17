@@ -132,7 +132,7 @@ export const services: Service[] = [
     ctaBlock: {
       title: "Let Us Handle Your Racking Removal",
       subtitle: "We do makegoods all day, every day.",
-      text: "Our experienced crew has dismantled hundreds of racking systems across Melbourne, restoring warehouse floors to handover-ready condition. Focus on your move—we'll take care of the rest."
+      text: "Our experienced crew has dismantled hundreds of racking systems across Melbourne, restoring warehouse floors for handover. Get in touch today and let our track record speak for itself."
     },
     relatedServices: ["warehouse-make-good", "concrete-floor-repair", "epoxy-flooring"],
     category: "demolition"
