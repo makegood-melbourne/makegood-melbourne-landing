@@ -232,7 +232,7 @@ export const services: Service[] = [
       "Meet your make-good ceiling requirements",
       "Tile matching from all major manufacturers",
       "LED panel and aircon rebalancing to suit",
-      "Ceiling grid restoration and reinstallation"
+      "Ceiling grid repairs and reinstallation"
     ],
     process: [
       { step: "Lease Review", description: "We check your make-good clause to confirm exactly what ceiling works are required." },
