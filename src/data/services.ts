@@ -236,9 +236,8 @@ export const services: Service[] = [
     ],
     process: [
       { step: "Lease Review", description: "We check your make-good clause to confirm exactly what ceiling works are required." },
-      { step: "Site Assessment", description: "Count tiles needed, note where partitions were removed and assess LED and aircon positioning." },
-      { step: "Tile Sourcing", description: "Matching tiles sourced from suppliers. If discontinued, we recommend closest alternatives." },
-      { step: "Installation & Rebalancing", description: "Tiles replaced, LED panels repositioned for the open layout and aircon vents adjusted." },
+      { step: "Site Assessment", description: "Count tiles needed, note partition removal areas and assess LED and aircon positioning." },
+      { step: "Sourcing & Installation", description: "Matching tiles sourced, installed, LED panels repositioned and aircon vents adjusted." },
       { step: "Landlord Handover", description: "Ceiling completed to original condition, ready for inspection and sign-off." }
     ],
     relatedServices: ["commercial-painting", "office-strip-out", "commercial-make-good"],
