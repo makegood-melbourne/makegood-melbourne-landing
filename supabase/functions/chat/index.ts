@@ -24,7 +24,7 @@ Our services:
 - PALLET RACKING REMOVAL: Safe dismantling, floor anchor removal and concrete patching
 - EPOXY FLOORING: Industrial floor coatings, crack repair, chemical-resistant and anti-slip finishes
 - CONCRETE FLOOR REPAIR: Crack injection, spalling repair, joint restoration for warehouse and factory floors
-- LINE MARKING: Restore worn warehouse and car park lines for lease compliance. Remove tenant-specific delineations and reinstate original layouts
+- LINE MARKING: Warehouse and car park line marking restoration for lease compliance. We restore worn forklift aisles, faded bay markings, directional arrows and safety zones. Remove tenant-specific delineations and reinstate original layouts. Heavy-duty paints and thermoplastics with fast-dry options
 - COMMERCIAL PAINTING: Colour-matched make-good painting for offices, warehouses and retail
 - CEILING TILE REPLACEMENT: Standard suspended tiles and timber acoustic panels. Complete ceiling restoration for lease compliance including LED panel repositioning, aircon rebalancing, grid repairs, full grid reinstallation, post-partition removal repairs, discontinued tile matching and fire services coordination when required
 - PATCHING & PLASTERING: Wall repairs, hole filling, seamless plaster restoration
