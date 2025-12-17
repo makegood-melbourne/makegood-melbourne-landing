@@ -106,9 +106,9 @@ export const services: Service[] = [
     slug: "pallet-racking-removal",
     title: "Pallet Racking Removal Melbourne",
     metaTitle: "Pallet Racking Removal Melbourne | Fast Service",
-    description: "Racking bolted to the floor? That's your landlord's problem now—unless you sort it before handover. We dismantle, remove and dispose of all racking systems, then patch those anchor holes so you get your bond back without the headache.",
-    metaDescription: "Pallet racking removal Melbourne. Safe dismantling, transport and disposal of warehouse racking. Floor anchors removed and patched. Licensed removalists. Free quotes.",
-    heroText: "Professional pallet racking dismantling and relocation across Melbourne. We remove your racking systems and restore warehouse floors to their original condition—coring out anchor points, filling with epoxy resin, then grinding and sealing for a seamless finish.",
+    description: "Racking bolted to your floor and walls? That's your landlord's problem now—unless you sort it before handover. We dismantle, remove and dispose of all racking systems, protection bollards and wall brackets, then core drill and fill those anchor holes so you get your bond back.",
+    metaDescription: "Pallet racking removal Melbourne. Core drill and fill dynabolt removal. Floor and wall anchors extracted. Bollards removed. Licensed operators. Free quotes.",
+    heroText: "Professional pallet racking dismantling and floor restoration across Melbourne. We remove your racking systems—including wall ties and protection bollards—then core drill out every dynabolt, fill with epoxy resin or structural grout, and grind flush for a seamless handover.",
     heroImage: palletRackingHeroImage,
     heroImageAlt: "Warehouse with pallet racking being dismantled and stacked on floor ready for removal Melbourne",
     benefits: [
