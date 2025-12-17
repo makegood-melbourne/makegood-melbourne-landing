@@ -129,14 +129,6 @@ const ServiceTemplate = () => {
             <div className="container mx-auto px-4">
               <div className="grid lg:grid-cols-2 gap-12 items-center">
                 <div>
-                  <h2 className="text-3xl md:text-4xl text-foreground mb-6">
-                    {service.featuredSection.title}
-                  </h2>
-                  <p className="text-xl text-muted-foreground leading-relaxed">
-                    {service.featuredSection.description}
-                  </p>
-                </div>
-                <div>
                   {service.featuredSection.image ? (
                     <img 
                       src={service.featuredSection.image} 
@@ -148,6 +140,14 @@ const ServiceTemplate = () => {
                       <span className="text-muted-foreground/50 text-sm">Service Image</span>
                     </div>
                   )}
+                </div>
+                <div>
+                  <h2 className="text-3xl md:text-4xl text-foreground mb-6">
+                    {service.featuredSection.title}
+                  </h2>
+                  <p className="text-xl text-muted-foreground leading-relaxed">
+                    {service.featuredSection.description}
+                  </p>
                 </div>
               </div>
             </div>
