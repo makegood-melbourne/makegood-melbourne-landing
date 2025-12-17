@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 import BeforeAfterSlider from "@/components/BeforeAfterSlider";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { CheckCircle, Mail, ArrowRight } from "lucide-react";
+import { CheckCircle, Mail, ArrowRight, AlertTriangle } from "lucide-react";
 
 const ServiceTemplate = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -59,7 +59,7 @@ const ServiceTemplate = () => {
       <Navigation />
 
       <main className="flex-1 pt-20">
-        {/* Hero Section */}
+        {/* 1. Hero Section */}
         <section className="bg-secondary py-16 md:py-24">
           <div className="container mx-auto px-4">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -108,108 +108,7 @@ const ServiceTemplate = () => {
           </div>
         </section>
 
-        {/* Benefits Section */}
-        <section className="py-16 bg-background">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl md:text-4xl text-foreground mb-10">What's Included</h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {service.benefits.map((benefit, index) => (
-                <div key={index} className="flex items-start gap-4 p-4 bg-secondary rounded-lg">
-                  <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
-                  <span className="text-lg text-foreground">{benefit}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Featured Section (single - legacy support) */}
-        {service.featuredSection && !service.featuredSections && (
-          <section className="py-16 bg-secondary">
-            <div className="container mx-auto px-4">
-              <div className="grid lg:grid-cols-2 gap-12 items-center">
-                <div>
-                  {service.featuredSection.image ? (
-                    <img 
-                      src={service.featuredSection.image} 
-                      alt={service.featuredSection.imageAlt || `${service.name} professional services Melbourne`}
-                      className="aspect-[4/3] w-full object-cover rounded-lg"
-                      style={{ objectPosition: '20% center' }}
-                    />
-                  ) : (
-                    <div className="aspect-[4/3] bg-muted/30 rounded-lg border-2 border-dashed border-muted-foreground/20 flex items-center justify-center">
-                      <span className="text-muted-foreground/50 text-sm">Service Image</span>
-                    </div>
-                  )}
-                </div>
-                <div>
-                  <h2 className="text-3xl md:text-4xl text-foreground mb-6">
-                    {service.featuredSection.title}
-                  </h2>
-                  <p className="text-xl text-muted-foreground leading-relaxed">
-                    {service.featuredSection.description}
-                  </p>
-                </div>
-              </div>
-            </div>
-          </section>
-        )}
-
-        {/* Featured Sections (multiple) */}
-        {service.featuredSections && service.featuredSections.map((section, index) => (
-          <section key={index} className="py-16 bg-secondary">
-            <div className="container mx-auto px-4">
-              <div className={`grid lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}>
-                <div className={index % 2 === 1 ? 'lg:order-2' : ''}>
-                  <h2 className="text-3xl md:text-4xl text-foreground mb-6">
-                    {section.title}
-                  </h2>
-                  <p className="text-xl text-muted-foreground leading-relaxed">
-                    {section.description}
-                  </p>
-                </div>
-                <div className={index % 2 === 1 ? 'lg:order-1' : ''}>
-                  {section.image ? (
-                    <img 
-                      src={section.image} 
-                      alt={section.imageAlt || `${service.name} professional services Melbourne`}
-                      className="aspect-[4/3] w-full object-cover rounded-lg"
-                    />
-                  ) : (
-                    <div className="aspect-[4/3] bg-muted/30 rounded-lg border-2 border-dashed border-muted-foreground/20 flex items-center justify-center">
-                      <span className="text-muted-foreground/50 text-sm">Service Image</span>
-                    </div>
-                  )}
-                </div>
-              </div>
-            </div>
-          </section>
-        ))}
-
-        {/* Process Section */}
-        <section className="py-16 bg-background">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl md:text-4xl text-foreground mb-10">Our Process</h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {service.process.map((step, index) => (
-                <Card key={index} className="bg-secondary border-border">
-                  <CardContent className="pt-6">
-                    <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
-                      <span className="text-xl font-bold text-primary">{index + 1}</span>
-                    </div>
-                    <h3 className="text-xl font-semibold text-foreground mb-2">{step.step}</h3>
-                    <p className="text-muted-foreground">{step.description}</p>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Before/After Slider - Only for End of Lease Relocation */}
-        {service.slug === 'end-of-lease-relocation' && <BeforeAfterSlider />}
-
-        {/* Description Section */}
+        {/* 2. About Section */}
         <section className="py-16 bg-background">
           <div className="container mx-auto px-4">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -244,9 +143,168 @@ const ServiceTemplate = () => {
           </div>
         </section>
 
-        {/* Related Services */}
-        {relatedServices.length > 0 && (
+        {/* 3. Featured Section (single - legacy support) - Optional */}
+        {service.featuredSection && !service.featuredSections && (
           <section className="py-16 bg-secondary">
+            <div className="container mx-auto px-4">
+              <div className="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                  {service.featuredSection.image ? (
+                    <img 
+                      src={service.featuredSection.image} 
+                      alt={service.featuredSection.imageAlt || `${service.name} professional services Melbourne`}
+                      className="aspect-[4/3] w-full object-cover rounded-lg"
+                      style={{ objectPosition: '20% center' }}
+                    />
+                  ) : (
+                    <div className="aspect-[4/3] bg-muted/30 rounded-lg border-2 border-dashed border-muted-foreground/20 flex items-center justify-center">
+                      <span className="text-muted-foreground/50 text-sm">Service Image</span>
+                    </div>
+                  )}
+                </div>
+                <div>
+                  <h2 className="text-3xl md:text-4xl text-foreground mb-6">
+                    {service.featuredSection.title}
+                  </h2>
+                  <p className="text-xl text-muted-foreground leading-relaxed">
+                    {service.featuredSection.description}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+        )}
+
+        {/* 3. Featured Sections (multiple) - Optional */}
+        {service.featuredSections && service.featuredSections.map((section, index) => (
+          <section key={index} className="py-16 bg-secondary">
+            <div className="container mx-auto px-4">
+              <div className={`grid lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}>
+                <div className={index % 2 === 1 ? 'lg:order-2' : ''}>
+                  <h2 className="text-3xl md:text-4xl text-foreground mb-6">
+                    {section.title}
+                  </h2>
+                  <p className="text-xl text-muted-foreground leading-relaxed">
+                    {section.description}
+                  </p>
+                </div>
+                <div className={index % 2 === 1 ? 'lg:order-1' : ''}>
+                  {section.image ? (
+                    <img 
+                      src={section.image} 
+                      alt={section.imageAlt || `${service.name} professional services Melbourne`}
+                      className="aspect-[4/3] w-full object-cover rounded-lg"
+                    />
+                  ) : (
+                    <div className="aspect-[4/3] bg-muted/30 rounded-lg border-2 border-dashed border-muted-foreground/20 flex items-center justify-center">
+                      <span className="text-muted-foreground/50 text-sm">Service Image</span>
+                    </div>
+                  )}
+                </div>
+              </div>
+            </div>
+          </section>
+        ))}
+
+        {/* 4. What's Included Section */}
+        <section className="py-16 bg-background">
+          <div className="container mx-auto px-4">
+            <h2 className="text-3xl md:text-4xl text-foreground mb-10">What's Included</h2>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {service.benefits.map((benefit, index) => (
+                <div key={index} className="flex items-start gap-4 p-4 bg-secondary rounded-lg">
+                  <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
+                  <span className="text-lg text-foreground">{benefit}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* 5. Process Section - Optional (only show if process exists and has items) */}
+        {service.process && service.process.length > 0 && (
+          <section className="py-16 bg-secondary">
+            <div className="container mx-auto px-4">
+              <h2 className="text-3xl md:text-4xl text-foreground mb-10">Our Process</h2>
+              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                {service.process.map((step, index) => (
+                  <Card key={index} className="bg-background border-border">
+                    <CardContent className="pt-6">
+                      <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+                        <span className="text-xl font-bold text-primary">{index + 1}</span>
+                      </div>
+                      <h3 className="text-xl font-semibold text-foreground mb-2">{step.step}</h3>
+                      <p className="text-muted-foreground">{step.description}</p>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
+
+        {/* Before/After Slider - Only for End of Lease Relocation */}
+        {service.slug === 'end-of-lease-relocation' && <BeforeAfterSlider />}
+
+        {/* 6. CTA Block - Custom urgency/problem content or default */}
+        <section className="py-16 bg-secondary border-t border-border">
+          <div className="container mx-auto px-4">
+            {service.ctaBlock ? (
+              <div className="max-w-4xl mx-auto">
+                <div className="flex items-start gap-4 mb-8">
+                  <AlertTriangle className="h-8 w-8 text-primary flex-shrink-0 mt-1" />
+                  <div>
+                    <h2 className="text-3xl md:text-4xl text-foreground mb-4">
+                      {service.ctaBlock.title}
+                    </h2>
+                    <p className="text-xl text-muted-foreground leading-relaxed">
+                      {service.ctaBlock.text}
+                    </p>
+                  </div>
+                </div>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
+                  <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground" asChild>
+                    <Link to="/#contact">
+                      Get a Free Quote
+                    </Link>
+                  </Button>
+                  <Button size="lg" variant="outline" className="border-accent text-accent hover:bg-accent hover:text-accent-foreground" asChild>
+                    <a href="mailto:enquiries@makegood.melbourne">
+                      <Mail className="mr-2 h-5 w-5" />
+                      enquiries@makegood.melbourne
+                    </a>
+                  </Button>
+                </div>
+              </div>
+            ) : (
+              <div className="text-center">
+                <h2 className="text-3xl md:text-4xl text-foreground mb-4">
+                  Ready to Get Started?
+                </h2>
+                <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
+                  Contact us today for a free quote on your {service.name.toLowerCase()} project.
+                </p>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground" asChild>
+                    <Link to="/#contact">
+                      Get a Free Quote
+                    </Link>
+                  </Button>
+                  <Button size="lg" variant="outline" className="border-accent text-accent hover:bg-accent hover:text-accent-foreground" asChild>
+                    <a href="mailto:enquiries@makegood.melbourne">
+                      <Mail className="mr-2 h-5 w-5" />
+                      enquiries@makegood.melbourne
+                    </a>
+                  </Button>
+                </div>
+              </div>
+            )}
+          </div>
+        </section>
+
+        {/* 7. Related Services */}
+        {relatedServices.length > 0 && (
+          <section className="py-16 bg-background">
             <div className="container mx-auto px-4">
               <h2 className="text-3xl md:text-4xl text-foreground mb-10">Related Services</h2>
               <div className="grid md:grid-cols-3 gap-6">
@@ -256,7 +314,7 @@ const ServiceTemplate = () => {
                     to={`/services/${relatedService.slug}`}
                     className="group"
                   >
-                    <Card className="bg-background border-border h-full hover:border-primary transition-colors">
+                    <Card className="bg-secondary border-border h-full hover:border-primary transition-colors">
                       <CardContent className="pt-6">
                         <h3 className="text-xl font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">
                           {relatedService.name}
@@ -275,31 +333,6 @@ const ServiceTemplate = () => {
             </div>
           </section>
         )}
-
-        {/* CTA Section */}
-        <section className="py-16 bg-secondary border-t border-border">
-          <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl md:text-4xl text-foreground mb-4">
-              Ready to Get Started?
-            </h2>
-            <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Contact us today for a free quote on your {service.name.toLowerCase()} project.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground" asChild>
-                <Link to="/#contact">
-                  Get a Free Quote
-                </Link>
-              </Button>
-              <Button size="lg" variant="outline" className="border-accent text-accent hover:bg-accent hover:text-accent-foreground" asChild>
-                <a href="mailto:enquiries@makegood.melbourne">
-                  <Mail className="mr-2 h-5 w-5" />
-                  enquiries@makegood.melbourne
-                </a>
-              </Button>
-            </div>
-          </div>
-        </section>
       </main>
 
       <Footer />

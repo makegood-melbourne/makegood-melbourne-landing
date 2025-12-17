@@ -27,6 +27,11 @@ export interface FeaturedSection {
   imageAlt?: string;
 }
 
+export interface CtaBlock {
+  title: string;
+  text: string;
+}
+
 export interface Service {
   name: string;
   slug: string;
@@ -42,10 +47,11 @@ export interface Service {
   featuredSection?: FeaturedSection;
   featuredSections?: FeaturedSection[];
   benefits: string[];
-  process: {
+  process?: {
     step: string;
     description: string;
   }[];
+  ctaBlock?: CtaBlock;
   relatedServices: string[];
   category: 'demolition' | 'make-good' | 'trade' | 'cleaning' | 'structural';
 }
@@ -122,12 +128,10 @@ export const services: Service[] = [
       "Buy back, recycling and disposal solutions available",
       "Complete warehouse slab remediation solutions available"
     ],
-    process: [
-      { step: "Racking Audit", description: "We assess racking type, bay count and anchor configuration—floor bolts, wall ties and protection bollards." },
-      { step: "Safety Plan", description: "Detailed method statement developed—especially important for high-bay or loaded systems." },
-      { step: "Dismantling", description: "Experienced crew dismantles systematically. Bollards and wall brackets removed alongside racking." },
-      { step: "Floor Restoration", description: "Dynabolts core drilled out, holes filled with epoxy resin or structural grout, then ground flush." }
-    ],
+    ctaBlock: {
+      title: "Leaving Racking Behind Could Cost You",
+      text: "Your lease likely requires the warehouse returned to original condition. Bolted racking, wall anchors and protection bollards left behind can result in bond deductions, make-good disputes and delayed handover. We handle the removal and floor restoration so you meet your obligations without the headache."
+    },
     relatedServices: ["warehouse-make-good", "concrete-floor-repair", "epoxy-flooring"],
     category: "demolition"
   },
