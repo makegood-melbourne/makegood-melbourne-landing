@@ -111,7 +111,7 @@ const ServiceTemplate = () => {
         {/* 2. What's Included Section */}
         <section className="py-16 bg-background">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl md:text-4xl text-foreground mb-10">What's Included</h2>
+            <h2 className="text-3xl md:text-4xl text-foreground mb-10">What We Deliver</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {service.benefits.map((benefit, index) => (
                 <div key={index} className="flex items-start gap-4 p-4 bg-secondary rounded-lg">
