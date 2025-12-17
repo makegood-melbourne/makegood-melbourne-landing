@@ -144,7 +144,7 @@ const ServiceTemplate = () => {
               </div>
               {/* Copy on right */}
               <div>
-                <h2 className="text-3xl md:text-4xl text-foreground mb-6">About This Service</h2>
+                <h2 className="text-3xl md:text-4xl text-foreground mb-6">{service.name} Scope</h2>
                 <p className="text-xl text-muted-foreground leading-relaxed">
                   {service.description}
                 </p>
