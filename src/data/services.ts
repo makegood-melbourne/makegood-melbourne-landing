@@ -55,6 +55,7 @@ export interface Service {
   ctaBlock?: CtaBlock;
   relatedServices: string[];
   category: 'demolition' | 'make-good' | 'trade' | 'cleaning' | 'structural';
+  published?: boolean;
 }
 
 export const services: Service[] = [
@@ -133,7 +134,8 @@ export const services: Service[] = [
       text: "Our experienced crew has dismantled hundreds of racking systems across Melbourne, restoring warehouse floors for handover. Get in touch today for a free, no-obligation quote."
     },
     relatedServices: ["warehouse-make-good", "concrete-floor-repair", "epoxy-flooring"],
-    category: "demolition"
+    category: "demolition",
+    published: true
   },
   {
     name: "Epoxy Flooring",
@@ -161,7 +163,8 @@ export const services: Service[] = [
       text: "From small workshops to large distribution centres, we've coated floors across Melbourne's industrial properties. Get in touch today for a free, no-obligation quote."
     },
     relatedServices: ["concrete-floor-repair", "warehouse-make-good", "line-marking"],
-    category: "trade"
+    category: "trade",
+    published: true
   },
   {
     name: "Commercial Painting",
@@ -297,7 +300,8 @@ export const services: Service[] = [
       text: "We've restored line markings in warehouses and car parks across Melbourne. Get in touch today for a free, no-obligation quote."
     },
     relatedServices: ["epoxy-flooring", "warehouse-make-good", "concrete-floor-repair"],
-    category: "trade"
+    category: "trade",
+    published: true
   },
   {
     name: "Commercial Make Good",
@@ -405,7 +409,8 @@ export const services: Service[] = [
       text: "From warehouse floors to office fitouts, we've cleaned commercial properties across Melbourne. Get in touch today for a free, no-obligation quote."
     },
     relatedServices: ["commercial-make-good", "warehouse-make-good", "office-strip-out"],
-    category: "cleaning"
+    category: "cleaning",
+    published: true
   },
   {
     name: "End of Lease Relocation",
@@ -441,7 +446,8 @@ export const services: Service[] = [
       text: "We've managed end-to-end relocations across Melbourne and beyond—make good and transport in one seamless service. Get in touch today for a free, no-obligation quote."
     },
     relatedServices: ["warehouse-make-good", "pallet-racking-removal", "commercial-make-good"],
-    category: "make-good"
+    category: "make-good",
+    published: true
   },
   {
     name: "Structural Remediation",
@@ -491,7 +497,8 @@ export const services: Service[] = [
       text: "From concrete cancer to retention walls, we've delivered structural solutions across Melbourne's commercial properties. Get in touch today for a free, no-obligation quote."
     },
     relatedServices: ["warehouse-make-good", "commercial-make-good", "office-strip-out"],
-    category: "structural"
+    category: "structural",
+    published: true
   },
   {
     name: "Cladding & Glazing",
@@ -525,7 +532,8 @@ export const services: Service[] = [
       text: "We've delivered cladding and glazing compliance projects across Melbourne's commercial buildings. Get in touch today for a free, no-obligation quote."
     },
     relatedServices: ["structural-remediation", "commercial-make-good", "office-strip-out"],
-    category: "structural"
+    category: "structural",
+    published: true
   }
 ];
 
@@ -534,5 +542,9 @@ export function getServiceBySlug(slug: string): Service | undefined {
 }
 
 export function getServicesByCategory(category: 'demolition' | 'make-good' | 'trade' | 'cleaning' | 'structural'): Service[] {
-  return services.filter(service => service.category === category);
+  return services.filter(service => service.category === category && service.published === true);
+}
+
+export function getPublishedServices(): Service[] {
+  return services.filter(service => service.published === true);
 }
