@@ -255,22 +255,22 @@ export const services: Service[] = [
     slug: "line-marking",
     title: "Line Marking Melbourne",
     metaTitle: "Line Marking Melbourne | Warehouse & Car Park",
-    description: "Faded lines, missing safety zones, lease requirements for original condition? We mark warehouses, car parks and factories with durable paint or thermoplastic—clear, compliant and built to handle traffic.",
-    metaDescription: "Line marking Melbourne. Warehouse floor markings, car park lines, safety zones and pedestrian walkways. Durable paints and thermoplastics. Free quotes available.",
-    heroText: "Clear line marking isn't just about looks—it's safety compliance, efficient operations and meeting your lease obligations. Whether you need safety zones, pedestrian walkways, pallet bays or car park lines, we deliver crisp, durable markings that last.",
+    description: "Lease ending and your warehouse or car park lines don't match the original layout? We restore eroded markings, remove tenant-specific delineations and return floors to the condition your landlord expects. Full line marking restoration for make-good compliance.",
+    metaDescription: "Line marking restoration Melbourne. Warehouse and car park line reinstatement for end of lease compliance. Remove tenant markings, restore originals. Free quotes.",
+    heroText: "Years of forklift traffic have worn your lines away. Or maybe you added bays and zones to suit your operation—now they need to go. We restore original line markings, remove tenant-specific delineations and deliver floors that pass landlord inspection.",
     benefits: [
-      "Heavy-duty warehouse paints",
-      "Thermoplastic for high-traffic areas",
-      "Safety zones and pedestrian paths",
-      "Pallet locations and bay markings",
-      "Car park lines and symbols",
-      "Fast-dry formulas for quick return to service"
+      "Restore worn and faded line markings",
+      "Remove tenant-specific delineations",
+      "Reinstate original warehouse layouts",
+      "Car park line restoration",
+      "Heavy-duty paints and thermoplastics",
+      "Fast-dry formulas for quick handover"
     ],
     process: [
-      { step: "Layout Planning", description: "We work from your plans, lease specs or site measure to establish line positions." },
-      { step: "Surface Prep", description: "Floor cleaned, old markings removed or overcoated as required for clean adhesion." },
-      { step: "Precision Marking", description: "Professional equipment delivers straight lines, sharp edges and consistent coverage." },
-      { step: "Protection", description: "Lines protected during cure. Traffic can resume within hours depending on product used." }
+      { step: "Lease Review", description: "We check your make-good clause and compare current lines against original plans or base condition." },
+      { step: "Surface Prep", description: "Existing tenant markings removed or overcoated, floors cleaned for proper adhesion." },
+      { step: "Line Restoration", description: "Original markings reinstated with professional equipment—straight lines, sharp edges, consistent coverage." },
+      { step: "Landlord Handover", description: "Lines cured and protected, ready for inspection and sign-off." }
     ],
     relatedServices: ["epoxy-flooring", "warehouse-make-good", "concrete-floor-repair"],
     category: "trade"
