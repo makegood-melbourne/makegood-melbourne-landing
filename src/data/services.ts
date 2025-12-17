@@ -107,7 +107,7 @@ export const services: Service[] = [
     metaTitle: "Pallet Racking Removal Melbourne | Fast Service",
     description: "Racking bolted to the floor? That's your landlord's problem now—unless you sort it before handover. We dismantle, remove and dispose of all racking systems, then patch those anchor holes so you get your bond back without the headache.",
     metaDescription: "Pallet racking removal Melbourne. Safe dismantling, transport and disposal of warehouse racking. Floor anchors removed and patched. Licensed removalists. Free quotes.",
-    heroText: "Racking still bolted to the floor with your lease ending? We'll have it out, the anchors patched and the space handed back—fast. No damage to the slab, no arguments with your landlord.",
+    heroText: "Professional pallet racking dismantling and relocation across Melbourne. We remove your racking systems and restore warehouse floors to their original condition—coring out anchor points, filling with epoxy resin, then grinding and sealing for a seamless finish.",
     benefits: [
       "Selective, drive-in and cantilever racking",
       "Safe, methodical dismantling",
