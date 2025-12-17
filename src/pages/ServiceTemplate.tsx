@@ -232,7 +232,7 @@ const ServiceTemplate = () => {
                     src={service.secondaryImage} 
                     alt={service.secondaryImageAlt || `${service.name} Melbourne - professional commercial services`}
                     className="aspect-[4/3] w-full object-cover rounded-lg"
-                    style={{ objectPosition: service.slug === 'epoxy-flooring' ? '70% center' : 'center' }}
+                    style={{ objectPosition: service.slug === 'epoxy-flooring' ? '85% center' : 'center' }}
                   />
                 ) : (
                   <div className="aspect-[4/3] bg-muted/30 rounded-lg border-2 border-dashed border-muted-foreground/20 flex items-center justify-center">
