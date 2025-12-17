@@ -149,12 +149,8 @@ export const services: Service[] = [
       { step: "Crack Repair", description: "Structural cracks filled with flexible epoxy; surface defects patched and levelled." },
       { step: "Coating System", description: "Primer, base coat and topcoat applied. Anti-slip aggregate added if required. Cured and ready." }
     ],
-    featuredSection: {
-      title: "About This Service",
-      description: "Our experienced team delivers professional epoxy flooring services across Melbourne's commercial and industrial properties. We understand the importance of meeting lease obligations and landlord requirements, working efficiently to minimise disruption while achieving quality results.",
-      image: speckledEpoxyFloorImage,
-      imageAlt: "Speckled flake epoxy floor coating in large industrial warehouse Melbourne"
-    },
+    secondaryImage: speckledEpoxyFloorImage,
+    secondaryImageAlt: "Speckled flake epoxy floor coating in large industrial warehouse Melbourne",
     relatedServices: ["concrete-floor-repair", "warehouse-make-good", "line-marking"],
     category: "trade"
   },
