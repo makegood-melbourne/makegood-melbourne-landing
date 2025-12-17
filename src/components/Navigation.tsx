@@ -12,8 +12,25 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
-// Only show completed service pages in navigation
-const publishedServiceSlugs = ['office-strip-out', 'warehouse-make-good', 'commercial-make-good', 'commercial-cleaning', 'end-of-lease-relocation', 'structural-remediation', 'cladding-glazing'];
+// All service pages are now published
+const publishedServiceSlugs = [
+  'office-strip-out', 
+  'warehouse-make-good', 
+  'commercial-make-good', 
+  'commercial-cleaning', 
+  'end-of-lease-relocation', 
+  'structural-remediation', 
+  'cladding-glazing',
+  'pallet-racking-removal',
+  'epoxy-flooring',
+  'concrete-floor-repair',
+  'line-marking',
+  'commercial-painting',
+  'ceiling-tile-replacement',
+  'patching-plastering',
+  'electrical-make-safe',
+  'led-lighting'
+];
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

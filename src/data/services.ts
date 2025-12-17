@@ -97,22 +97,22 @@ export const services: Service[] = [
     slug: "pallet-racking-removal",
     title: "Pallet Racking Removal Melbourne",
     metaTitle: "Pallet Racking Removal Melbourne | Fast Service",
-    description: "Safe and efficient pallet racking removal across Melbourne. We dismantle, remove and dispose of all racking systems for warehouse make goods.",
-    metaDescription: "Pallet racking removal Melbourne. Safe dismantling, transport and disposal of warehouse racking. Licensed removalists, competitive pricing. Free quotes available.",
-    heroText: "Safe, efficient removal of pallet racking systems to meet your warehouse make good requirements.",
+    description: "Racking bolted to the floor? That's your landlord's problem now—unless you sort it before handover. We dismantle, remove and dispose of all racking systems, then patch those anchor holes so you get your bond back without the headache.",
+    metaDescription: "Pallet racking removal Melbourne. Safe dismantling, transport and disposal of warehouse racking. Floor anchors removed and patched. Licensed removalists. Free quotes.",
+    heroText: "Racking still bolted to the floor with your lease ending? We'll have it out, the anchors patched and the space handed back—fast. No damage to the slab, no arguments with your landlord.",
     benefits: [
-      "All racking types handled",
-      "Safe dismantling procedures",
-      "Floor anchor removal",
-      "Concrete patching included",
-      "Recycling where possible",
-      "Fast turnaround times"
+      "Selective, drive-in and cantilever racking",
+      "Safe, methodical dismantling",
+      "Floor anchors cut and patched",
+      "Concrete grinding for flush finish",
+      "Racking recycled or disposed responsibly",
+      "Coordinated with your make good timeline"
     ],
     process: [
-      { step: "Racking Assessment", description: "We assess racking type, quantity and condition to plan safe removal." },
-      { step: "Safety Planning", description: "Detailed safety plan developed for dismantling and removal." },
-      { step: "Professional Removal", description: "Experienced team dismantles and removes all racking safely." },
-      { step: "Floor Remediation", description: "Anchor points removed and concrete patched to restore floor." }
+      { step: "Racking Audit", description: "We assess racking type, bay count and anchor configuration to plan safe, efficient removal." },
+      { step: "Safety Plan", description: "Detailed method statement developed—especially important for high-bay or loaded systems." },
+      { step: "Dismantling", description: "Experienced crew dismantles systematically, protecting your floor and minimising dust." },
+      { step: "Floor Restoration", description: "Anchor bolts cut below surface, holes filled and ground flush. Ready for handover or epoxy." }
     ],
     relatedServices: ["warehouse-make-good", "concrete-floor-repair", "epoxy-flooring"],
     category: "demolition"
@@ -122,22 +122,22 @@ export const services: Service[] = [
     slug: "epoxy-flooring",
     title: "Epoxy Flooring Melbourne",
     metaTitle: "Epoxy Flooring Melbourne | Industrial Specialists",
-    description: "Industrial epoxy flooring solutions for Melbourne warehouses and factories. We repair, resurface and install durable epoxy floor coatings.",
-    metaDescription: "Industrial epoxy flooring Melbourne. Warehouse floor coatings, concrete repair and resurfacing. Durable, chemical-resistant finishes. Licensed applicators. Free quotes.",
-    heroText: "Durable, professional epoxy flooring solutions for warehouses, factories and commercial facilities.",
+    description: "Tired concrete floors dragging down your warehouse? Epoxy transforms worn, stained slabs into durable, professional surfaces that impress clients and stand up to forklifts, chemicals and heavy traffic. New installs or restoration—we handle it.",
+    metaDescription: "Industrial epoxy flooring Melbourne. Warehouse floor coatings, concrete repair and resurfacing. Chemical-resistant, anti-slip finishes. Licensed applicators. Free quotes.",
+    heroText: "Your warehouse floor takes a beating. Epoxy coating protects the concrete, hides the damage and gives you a surface that's easy to clean, safe to work on and built to last. Whether you're refreshing for a new tenant or upgrading your own facility—we deliver.",
     benefits: [
-      "Chemical-resistant finishes",
-      "Anti-slip coatings available",
-      "Concrete crack repair",
-      "Fast curing options",
-      "Range of colours and finishes",
-      "Long-lasting durability"
+      "Chemical and oil resistant finishes",
+      "Anti-slip coatings for safety compliance",
+      "Cracks and damage repaired first",
+      "Fast-cure options to minimise downtime",
+      "Range of colours including safety zones",
+      "20+ year lifespan with proper care"
     ],
     process: [
-      { step: "Floor Assessment", description: "We inspect your concrete floor condition and discuss requirements." },
-      { step: "Surface Preparation", description: "Diamond grinding and crack repair to ensure proper adhesion." },
-      { step: "Epoxy Application", description: "Professional application of primer, base coat and top coat." },
-      { step: "Curing and Handover", description: "Proper cure time observed before returning floor to service." }
+      { step: "Floor Assessment", description: "We inspect your slab for cracks, moisture and contaminants that could affect adhesion." },
+      { step: "Diamond Grinding", description: "Surface profiled to create mechanical bond—essential for long-lasting results." },
+      { step: "Crack Repair", description: "Structural cracks filled with flexible epoxy; surface defects patched and levelled." },
+      { step: "Coating System", description: "Primer, base coat and topcoat applied. Anti-slip aggregate added if required. Cured and ready." }
     ],
     relatedServices: ["concrete-floor-repair", "warehouse-make-good", "line-marking"],
     category: "trade"
@@ -147,22 +147,22 @@ export const services: Service[] = [
     slug: "commercial-painting",
     title: "Commercial Painting Melbourne",
     metaTitle: "Commercial Painting Melbourne | Quality Finish",
-    description: "Professional commercial painting services for Melbourne offices, warehouses and retail spaces. Quality finishes for make good and refurbishment projects.",
+    description: "Scuffed walls, patched holes and mismatched touch-ups won't pass a landlord inspection. We deliver professional commercial painting that meets lease requirements—colour-matched, properly prepared and finished to a standard that gets your bond back.",
     metaDescription: "Commercial painting Melbourne. Office, warehouse and retail painting. Make good painting, touch-ups and full repaints. Licensed painters, quality guaranteed. Free quotes.",
-    heroText: "Transform your commercial space with professional painting services that meet landlord and lease requirements.",
+    heroText: "Your lease says 'return to original condition'—that means matching the exact colours and finish quality. We handle colour matching, surface prep and professional application so the space looks right and your landlord signs off without drama.",
     benefits: [
-      "Interior and exterior painting",
-      "Make good colour matching",
-      "Low-odour paint options",
-      "After-hours work available",
-      "All surface types covered",
-      "Quality finish guaranteed"
+      "Accurate colour matching",
+      "Full surface preparation",
+      "Low-odour options for occupied spaces",
+      "After-hours and weekend work",
+      "All surfaces—walls, ceilings, trim",
+      "Quality finish that passes inspection"
     ],
     process: [
-      { step: "Colour Consultation", description: "We match existing colours or discuss new schemes for your space." },
-      { step: "Surface Preparation", description: "Walls patched, sanded and primed for perfect adhesion." },
-      { step: "Professional Application", description: "Skilled painters apply coats for even, lasting coverage." },
-      { step: "Final Inspection", description: "Quality check to ensure flawless finish before handover." }
+      { step: "Colour Matching", description: "We match existing colours precisely—no guessing, no 'close enough' that fails inspection." },
+      { step: "Surface Prep", description: "Holes filled, cracks repaired, surfaces sanded and primed. Preparation is everything." },
+      { step: "Professional Application", description: "Skilled painters deliver even coverage, clean edges and consistent finish throughout." },
+      { step: "Final Inspection", description: "We check every surface before handover. You see quality, your landlord sees compliance." }
     ],
     relatedServices: ["patching-plastering", "commercial-make-good", "ceiling-tile-replacement"],
     category: "make-good"
@@ -172,22 +172,22 @@ export const services: Service[] = [
     slug: "electrical-make-safe",
     title: "Electrical Make Safe Melbourne",
     metaTitle: "Electrical Make Safe Melbourne | Licensed Sparkies",
-    description: "Licensed electrical make safe services for Melbourne commercial and industrial properties. Safe disconnection, capping and removal of electrical installations.",
-    metaDescription: "Electrical make safe Melbourne. Licensed electricians for safe disconnection, capping and removal. Commercial and industrial specialists. Certificates provided. Free quotes.",
-    heroText: "Safe, compliant electrical disconnection and removal by licensed Melbourne electricians.",
+    description: "Removed a partition but left live wires exposed? Added data points that now need decommissioning? Electrical make safe isn't optional—it's a compliance requirement. Our licensed electricians disconnect, cap and certify so you hand back a safe, compliant space.",
+    metaDescription: "Electrical make safe Melbourne. Licensed electricians for safe disconnection, capping and removal. Commercial and industrial. Compliance certificates provided. Free quotes.",
+    heroText: "Exposed wiring and abandoned circuits are a liability—and a failed inspection waiting to happen. Our licensed electricians safely disconnect, remove and certify all electrical modifications so your make good is compliant and your handover is smooth.",
     benefits: [
-      "Licensed electricians",
-      "Compliance certificates",
-      "All installations covered",
-      "Data and comms removal",
+      "Licensed A-grade electricians",
+      "Compliance certificates provided",
+      "All circuit types covered",
+      "Data and communications removal",
       "Switchboard modifications",
-      "After-hours available"
+      "After-hours work available"
     ],
     process: [
-      { step: "Electrical Audit", description: "Licensed electrician assesses all circuits and installations to be removed." },
-      { step: "Safe Isolation", description: "Circuits safely isolated and de-energised before any work begins." },
-      { step: "Removal and Capping", description: "Installations removed and cables safely capped or terminated." },
-      { step: "Certification", description: "Compliance certificate issued for all electrical make safe works." }
+      { step: "Electrical Audit", description: "We identify all circuits, outlets, data points and installations requiring removal or modification." },
+      { step: "Safe Isolation", description: "Circuits isolated at the board before any work begins. Safety is non-negotiable." },
+      { step: "Removal and Capping", description: "Installations removed, cables terminated safely, plates blanked off to code." },
+      { step: "Certification", description: "Certificate of Electrical Safety issued. Documentation for your landlord and records." }
     ],
     relatedServices: ["office-strip-out", "warehouse-make-good", "led-lighting"],
     category: "demolition"
@@ -197,22 +197,22 @@ export const services: Service[] = [
     slug: "concrete-floor-repair",
     title: "Concrete Floor Repair Melbourne",
     metaTitle: "Concrete Floor Repair Melbourne | Industrial Experts",
-    description: "Industrial concrete floor repair services across Melbourne. We fix cracks, spalling, pitting and damage for warehouse and factory floors.",
+    description: "Cracks spreading across your warehouse floor? Joints breaking down? Forklift traffic and heavy loads punish concrete—but you don't need to replace the whole slab. We repair cracks, rebuild joints and restore surfaces so your floor performs like it should.",
     metaDescription: "Concrete floor repair Melbourne. Industrial crack repair, spalling fix, joint restoration and resurfacing. Warehouse and factory specialists. Free quotes available.",
-    heroText: "Restore your industrial concrete floors to meet lease obligations and provide a safe working surface.",
+    heroText: "That crack isn't going away on its own. Every forklift pass makes it worse, every pallet drop chips more concrete. We stop the damage, repair what's broken and give you a floor that's safe, functional and ready for years more service.",
     benefits: [
-      "Crack injection and repair",
-      "Spalling and pitting repair",
-      "Joint restoration",
-      "High-traffic area solutions",
-      "Fast-cure products available",
-      "Colour-matched finishes"
+      "Structural crack injection",
+      "Joint arris and spalling repair",
+      "Pitting and surface restoration",
+      "Forklift damage remediation",
+      "Fast-cure for minimal downtime",
+      "Colour-matched to existing slab"
     ],
     process: [
-      { step: "Floor Survey", description: "We assess damage extent and identify underlying causes." },
-      { step: "Repair Specification", description: "Appropriate repair methods selected for each defect type." },
-      { step: "Professional Repair", description: "Skilled technicians complete repairs using industrial-grade materials." },
-      { step: "Surface Restoration", description: "Repaired areas blended and finished to match surrounding floor." }
+      { step: "Damage Mapping", description: "We survey the entire floor, documenting crack patterns, joint condition and surface defects." },
+      { step: "Root Cause", description: "Understanding why damage occurred—overloading, poor joints, subgrade issues—guides the right repair." },
+      { step: "Precision Repair", description: "Epoxy injection for cracks, polymer-modified mortars for spalling, joint reconstruction where needed." },
+      { step: "Surface Finish", description: "Repairs ground flush and blended. Ready for coating, line marking or direct use." }
     ],
     relatedServices: ["epoxy-flooring", "warehouse-make-good", "line-marking"],
     category: "trade"
@@ -222,22 +222,22 @@ export const services: Service[] = [
     slug: "ceiling-tile-replacement",
     title: "Ceiling Tile Replacement Melbourne",
     metaTitle: "Ceiling Tile Replacement Melbourne | Fast Service",
-    description: "Commercial ceiling tile replacement and repair services in Melbourne. We match, replace and restore suspended ceiling systems for make goods.",
+    description: "Stained tiles, sagging grids and water damage make any office look neglected. We source matching tiles, repair suspension systems and restore your ceiling to a condition that satisfies landlords and impresses anyone walking through the door.",
     metaDescription: "Ceiling tile replacement Melbourne. Suspended ceiling repairs, tile matching and grid restoration. Commercial offices and retail. Fast service, quality finish. Free quotes.",
-    heroText: "Restore your commercial ceiling to perfect condition with professional tile replacement and grid repairs.",
+    heroText: "Water stains, damaged tiles and sagging grids tell everyone the space has been neglected. We match and replace tiles, repair the suspension system and deliver a ceiling that looks maintained—not just patched.",
     benefits: [
-      "Tile matching service",
-      "Grid and suspension repair",
-      "Stain and damage repair",
-      "Full ceiling replacement",
+      "Tile matching from major manufacturers",
+      "Grid and suspension system repairs",
+      "Water-damaged tile replacement",
       "Access panel installation",
-      "Minimal disruption"
+      "Full ceiling replacement available",
+      "Minimal disruption to operations"
     ],
     process: [
-      { step: "Ceiling Inspection", description: "We assess damage and identify matching tiles for replacement." },
-      { step: "Material Sourcing", description: "Matching tiles sourced or closest alternatives recommended." },
-      { step: "Professional Installation", description: "Damaged tiles replaced and grid repaired as needed." },
-      { step: "Final Inspection", description: "Ceiling checked for uniform appearance and proper fit." }
+      { step: "Ceiling Survey", description: "We identify damage, count replacement tiles needed and assess grid condition." },
+      { step: "Tile Sourcing", description: "Matching tiles sourced from suppliers. If discontinued, we recommend closest alternatives." },
+      { step: "Installation", description: "Damaged tiles swapped, grid adjusted and any suspension issues corrected." },
+      { step: "Quality Check", description: "Uniform appearance confirmed—no mismatched tiles, no visible repairs, no sag." }
     ],
     relatedServices: ["commercial-painting", "office-strip-out", "commercial-make-good"],
     category: "make-good"
@@ -247,22 +247,22 @@ export const services: Service[] = [
     slug: "line-marking",
     title: "Line Marking Melbourne",
     metaTitle: "Line Marking Melbourne | Warehouse & Car Park",
-    description: "Industrial and commercial line marking services in Melbourne. Warehouse floor markings, car park lines and safety zones professionally applied.",
+    description: "Faded lines, missing safety zones, lease requirements for original condition? We mark warehouses, car parks and factories with durable paint or thermoplastic—clear, compliant and built to handle traffic.",
     metaDescription: "Line marking Melbourne. Warehouse floor markings, car park lines, safety zones and pedestrian walkways. Durable paints and thermoplastics. Free quotes available.",
-    heroText: "Professional line marking for warehouses, car parks and commercial facilities across Melbourne.",
+    heroText: "Clear line marking isn't just about looks—it's safety compliance, efficient operations and meeting your lease obligations. Whether you need safety zones, pedestrian walkways, pallet bays or car park lines, we deliver crisp, durable markings that last.",
     benefits: [
-      "Durable industrial paints",
-      "Thermoplastic available",
-      "Safety zone marking",
-      "Pedestrian walkways",
-      "Pallet and bay locations",
-      "Fast drying formulas"
+      "Heavy-duty warehouse paints",
+      "Thermoplastic for high-traffic areas",
+      "Safety zones and pedestrian paths",
+      "Pallet locations and bay markings",
+      "Car park lines and symbols",
+      "Fast-dry formulas for quick return to service"
     ],
     process: [
-      { step: "Layout Planning", description: "We plan line locations based on your requirements or lease specifications." },
-      { step: "Surface Preparation", description: "Floor cleaned and old markings removed where required." },
-      { step: "Professional Application", description: "Precision application using professional line marking equipment." },
-      { step: "Cure and Handover", description: "Lines protected during curing for durable, long-lasting finish." }
+      { step: "Layout Planning", description: "We work from your plans, lease specs or site measure to establish line positions." },
+      { step: "Surface Prep", description: "Floor cleaned, old markings removed or overcoated as required for clean adhesion." },
+      { step: "Precision Marking", description: "Professional equipment delivers straight lines, sharp edges and consistent coverage." },
+      { step: "Protection", description: "Lines protected during cure. Traffic can resume within hours depending on product used." }
     ],
     relatedServices: ["epoxy-flooring", "warehouse-make-good", "concrete-floor-repair"],
     category: "trade"
@@ -297,22 +297,22 @@ export const services: Service[] = [
     slug: "patching-plastering",
     title: "Patching and Plastering Melbourne",
     metaTitle: "Patching and Plastering Melbourne | Commercial",
-    description: "Commercial patching and plastering services for Melbourne offices and retail. Wall repairs, hole patching and plaster restoration for make goods.",
+    description: "Every hole from removed signage, every crack from partition removal, every dent from years of use—they all need to disappear before handover. We patch, plaster and finish walls to a paint-ready standard that won't get flagged at inspection.",
     metaDescription: "Commercial patching and plastering Melbourne. Wall repairs, hole filling, plaster restoration and smooth finishes. Make good specialists. Quality guaranteed. Free quotes.",
-    heroText: "Restore walls to perfect condition with professional patching and plastering for your make good project.",
+    heroText: "Landlords notice every imperfection. Cable holes, anchor points, cracks and dents all need professional repair before painting. We deliver seamless patches and smooth finishes that disappear under paint—not repairs that show through.",
     benefits: [
-      "All wall types covered",
-      "Seamless repairs",
-      "Texture matching",
-      "Cornices and architraves",
-      "Paint-ready finish",
-      "Fast turnaround"
+      "Plasterboard and solid plaster repairs",
+      "Seamless, invisible patches",
+      "Texture matching where required",
+      "Cornice and architrave repairs",
+      "Large area skim coating",
+      "Paint-ready finish guaranteed"
     ],
     process: [
-      { step: "Damage Assessment", description: "We inspect all walls to identify repairs needed." },
-      { step: "Preparation", description: "Areas prepared with appropriate backing and bonding agents." },
-      { step: "Repair Application", description: "Skilled plasterers complete repairs with smooth, seamless finish." },
-      { step: "Sanding and Prep", description: "Repairs sanded smooth, ready for painting." }
+      { step: "Wall Assessment", description: "Every hole, crack and damaged area documented and repair approach determined." },
+      { step: "Backing and Prep", description: "Proper backing installed for larger holes; surfaces prepared for optimal adhesion." },
+      { step: "Repair and Finish", description: "Compound applied in layers, each sanded smooth. No shortcuts, no visible patches." },
+      { step: "Ready for Paint", description: "Surfaces sanded to final finish, dust removed, ready for primer and paint." }
     ],
     relatedServices: ["commercial-painting", "commercial-make-good", "ceiling-tile-replacement"],
     category: "make-good"
@@ -322,22 +322,22 @@ export const services: Service[] = [
     slug: "led-lighting",
     title: "LED Lighting Upgrade Melbourne",
     metaTitle: "LED Lighting Upgrade Melbourne | Commercial",
-    description: "Commercial LED lighting upgrades for Melbourne offices, warehouses and retail. Replace fluorescent with energy-efficient LED solutions.",
-    metaDescription: "LED lighting upgrade Melbourne. Replace fluorescent with LED. Commercial offices, warehouses and retail. Energy savings, better light quality. Licensed electricians. Free quotes.",
-    heroText: "Upgrade to energy-efficient LED lighting and reduce your commercial electricity costs.",
+    description: "Still running old fluoros? You're paying twice—once for the electricity, again for the constant tube replacements. LED upgrades cut energy costs, reduce maintenance and deliver better light quality. We handle the swap, the wiring and the disposal.",
+    metaDescription: "LED lighting upgrade Melbourne. Replace fluorescent with LED. Commercial offices, warehouses and retail. Energy savings, better light. Licensed electricians. Free quotes.",
+    heroText: "Fluorescent tubes flickering, ballasts failing, energy bills climbing? LED retrofits pay for themselves in reduced power consumption and eliminated maintenance. Better light, lower costs, zero hassle—we handle the complete changeover.",
     benefits: [
-      "Energy cost savings",
-      "Better light quality",
-      "Reduced maintenance",
-      "All fittings replaced",
-      "Disposal included",
-      "Licensed electricians"
+      "50-70% energy reduction",
+      "Dramatically better light quality",
+      "No more ballast failures",
+      "10+ year lifespan",
+      "Old fittings disposed responsibly",
+      "Licensed electricians throughout"
     ],
     process: [
-      { step: "Lighting Audit", description: "We assess existing lighting and recommend LED alternatives." },
-      { step: "Product Selection", description: "Quality LED products selected to suit your space and budget." },
-      { step: "Professional Installation", description: "Licensed electricians replace all fittings efficiently." },
-      { step: "Testing and Handover", description: "All new lighting tested and old fittings disposed of responsibly." }
+      { step: "Lighting Assessment", description: "We audit existing fittings, measure light levels and recommend appropriate LED replacements." },
+      { step: "Product Selection", description: "Quality LEDs matched to your space—colour temperature, output and fitting style considered." },
+      { step: "Installation", description: "Licensed electricians swap fittings efficiently, minimising disruption to your operations." },
+      { step: "Commissioning", description: "All new lighting tested, light levels verified, old fittings removed for recycling." }
     ],
     relatedServices: ["electrical-make-safe", "commercial-make-good", "office-strip-out"],
     category: "trade"
