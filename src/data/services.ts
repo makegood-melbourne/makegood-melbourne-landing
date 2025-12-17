@@ -111,6 +111,8 @@ export const services: Service[] = [
     heroText: "Professional pallet racking dismantling and floor restoration across Melbourne. We remove your racking systems—including wall ties and protection bollards—then core drill out every dynabolt, fill with epoxy resin or structural grout, and grind flush for a seamless handover.",
     heroImage: palletRackingHeroImage,
     heroImageAlt: "Warehouse with pallet racking being dismantled and stacked on floor ready for removal Melbourne",
+    secondaryImage: warehouseRelocationImage,
+    secondaryImageAlt: "Forklift loading dismantled pallet racking onto flatbed truck for removal from Melbourne warehouse",
     benefits: [
       "Selective, drive-in and cantilever racking",
       "Floor and wall anchor removal",
