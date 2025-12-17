@@ -14,27 +14,27 @@ import {
   DropdownMenuSeparator,
 } from "@/components/ui/dropdown-menu";
 
-// Service categories for navigation grouping
+// Service categories for navigation grouping (alphabetically sorted)
 const serviceCategories = [
+  {
+    label: "Cleaning",
+    slugs: ['commercial-cleaning']
+  },
   {
     label: "Make Good Services",
     slugs: ['office-strip-out', 'warehouse-make-good', 'commercial-make-good']
   },
   {
-    label: "Structural & Remediation",
-    slugs: ['structural-remediation', 'cladding-glazing', 'concrete-floor-repair']
+    label: "Relocation",
+    slugs: ['end-of-lease-relocation', 'pallet-racking-removal']
   },
   {
     label: "Specialist Trades",
     slugs: ['epoxy-flooring', 'line-marking', 'commercial-painting', 'ceiling-tile-replacement', 'patching-plastering', 'electrical-make-safe', 'led-lighting']
   },
   {
-    label: "Cleaning",
-    slugs: ['commercial-cleaning']
-  },
-  {
-    label: "Relocation",
-    slugs: ['end-of-lease-relocation', 'pallet-racking-removal']
+    label: "Structural & Remediation",
+    slugs: ['structural-remediation', 'cladding-glazing', 'concrete-floor-repair']
   }
 ];
 
