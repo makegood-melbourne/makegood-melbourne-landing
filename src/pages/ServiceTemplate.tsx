@@ -137,11 +137,17 @@ const ServiceTemplate = () => {
                   </p>
                 </div>
                 <div>
-                  <img 
-                    src={service.featuredSection.image} 
-                    alt={service.featuredSection.imageAlt}
-                    className="aspect-[4/3] w-full object-cover rounded-lg"
-                  />
+                  {service.featuredSection.image ? (
+                    <img 
+                      src={service.featuredSection.image} 
+                      alt={service.featuredSection.imageAlt || `${service.name} professional services Melbourne`}
+                      className="aspect-[4/3] w-full object-cover rounded-lg"
+                    />
+                  ) : (
+                    <div className="aspect-[4/3] bg-muted/30 rounded-lg border-2 border-dashed border-muted-foreground/20 flex items-center justify-center">
+                      <span className="text-muted-foreground/50 text-sm">Service Image</span>
+                    </div>
+                  )}
                 </div>
               </div>
             </div>
@@ -162,11 +168,17 @@ const ServiceTemplate = () => {
                   </p>
                 </div>
                 <div className={index % 2 === 1 ? 'lg:order-1' : ''}>
-                  <img 
-                    src={section.image} 
-                    alt={section.imageAlt}
-                    className="aspect-[4/3] w-full object-cover rounded-lg"
-                  />
+                  {section.image ? (
+                    <img 
+                      src={section.image} 
+                      alt={section.imageAlt || `${service.name} professional services Melbourne`}
+                      className="aspect-[4/3] w-full object-cover rounded-lg"
+                    />
+                  ) : (
+                    <div className="aspect-[4/3] bg-muted/30 rounded-lg border-2 border-dashed border-muted-foreground/20 flex items-center justify-center">
+                      <span className="text-muted-foreground/50 text-sm">Service Image</span>
+                    </div>
+                  )}
                 </div>
               </div>
             </div>

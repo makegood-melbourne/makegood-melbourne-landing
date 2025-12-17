@@ -18,8 +18,8 @@ import lineMarkingRestoredImage from "@/assets/services/warehouse-floor-worn-lin
 export interface FeaturedSection {
   title: string;
   description: string;
-  image: string;
-  imageAlt: string;
+  image?: string;
+  imageAlt?: string;
 }
 
 export interface Service {
@@ -278,6 +278,10 @@ export const services: Service[] = [
       { step: "Line Restoration", description: "Original markings reinstated with professional equipment—straight lines, sharp edges, consistent coverage." },
       { step: "Landlord Handover", description: "Lines cured and protected, ready for inspection and sign-off." }
     ],
+    featuredSection: {
+      title: "Car Park Line Marking Restoration",
+      description: "Your lease stipulates original condition—but years of traffic have taken their toll. We bring car park markings back to compliance standard, restoring faded bays, worn directional arrows and eroded safety zones so your handover goes smoothly and your bond stays intact."
+    },
     relatedServices: ["epoxy-flooring", "warehouse-make-good", "concrete-floor-repair"],
     category: "trade"
   },
