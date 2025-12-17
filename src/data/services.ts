@@ -11,6 +11,7 @@ import retentionWallConstructionImage from "@/assets/services/retention-wall-for
 import claddingRemediationImage from "@/assets/services/cladding-remediation-facade-glazing-melbourne.jpeg";
 import glazingFacadeInstallationImage from "@/assets/services/glazing-facade-installation-commercial-building-melbourne.jpg";
 import ceilingTilesLedPanelsImage from "@/assets/services/commercial-office-ceiling-tiles-led-panels-melbourne.jpeg";
+import ceilingTileReplacementHeroImage from "@/assets/services/ceiling-tile-replacement-commercial-office-melbourne.jpeg";
 
 export interface FeaturedSection {
   title: string;
@@ -226,6 +227,8 @@ export const services: Service[] = [
     description: "Most commercial leases require ceiling tiles replaced before you hand back the keys. We handle the full scope—tile replacement, LED panel rebalancing for open plan layouts and aircon adjustments to suit. One contractor for complete ceiling compliance.",
     metaDescription: "Ceiling tile replacement Melbourne. End of lease compliance, LED panel rebalancing and suspended ceiling grid reinstallation. Commercial offices and warehouses. Free quotes.",
     heroText: "Most commercial leases require ceiling tiles replaced before handover. We handle the full scope—tile replacement, LED panel rebalancing, aircon adjustments—so your make-good is signed off without delay.",
+    heroImage: ceilingTileReplacementHeroImage,
+    heroImageAlt: "Commercial office ceiling tile replacement showing timber acoustic panels and white suspended grid with LED lighting in Melbourne",
     secondaryImage: ceilingTilesLedPanelsImage,
     secondaryImageAlt: "Modern commercial office space with suspended ceiling grid, rectangular LED panel lights and grey carpet flooring in Melbourne",
     benefits: [
