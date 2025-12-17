@@ -10,31 +10,42 @@ import {
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
 } from "@/components/ui/dropdown-menu";
 
-// All service pages are now published
-const publishedServiceSlugs = [
-  'office-strip-out', 
-  'warehouse-make-good', 
-  'commercial-make-good', 
-  'commercial-cleaning', 
-  'end-of-lease-relocation', 
-  'structural-remediation', 
-  'cladding-glazing',
-  'pallet-racking-removal',
-  'epoxy-flooring',
-  'concrete-floor-repair',
-  'line-marking',
-  'commercial-painting',
-  'ceiling-tile-replacement',
-  'patching-plastering',
-  'electrical-make-safe',
-  'led-lighting'
+// Service categories for navigation grouping
+const serviceCategories = [
+  {
+    label: "Make Good Services",
+    slugs: ['office-strip-out', 'warehouse-make-good', 'commercial-make-good']
+  },
+  {
+    label: "Structural & Remediation",
+    slugs: ['structural-remediation', 'cladding-glazing', 'concrete-floor-repair']
+  },
+  {
+    label: "Specialist Trades",
+    slugs: ['epoxy-flooring', 'line-marking', 'commercial-painting', 'ceiling-tile-replacement', 'patching-plastering', 'electrical-make-safe', 'led-lighting']
+  },
+  {
+    label: "Cleaning",
+    slugs: ['commercial-cleaning']
+  },
+  {
+    label: "Relocation",
+    slugs: ['end-of-lease-relocation', 'pallet-racking-removal']
+  }
 ];
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const publishedServices = services.filter(s => publishedServiceSlugs.includes(s.slug)).sort((a, b) => a.name.localeCompare(b.name));
+
+  const getServicesByCategory = (slugs: string[]) => {
+    return services
+      .filter(s => slugs.includes(s.slug))
+      .sort((a, b) => a.name.localeCompare(b.name));
+  };
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -60,17 +71,26 @@ const Navigation = () => {
                 Services
                 <ChevronDown className="h-4 w-4" />
               </DropdownMenuTrigger>
-              <DropdownMenuContent align="start" className="bg-card border-border">
-                {publishedServices.map((service) => (
-                  <DropdownMenuItem key={service.slug} asChild>
-                    <Link 
-                      to={`/services/${service.slug}`}
-                      className="cursor-pointer"
-                    >
-                      {service.name}
-                    </Link>
-                  </DropdownMenuItem>
+              <DropdownMenuContent align="start" className="bg-card border-border w-64">
+                {serviceCategories.map((category, index) => (
+                  <div key={category.label}>
+                    {index > 0 && <DropdownMenuSeparator />}
+                    <DropdownMenuLabel className="text-accent text-xs uppercase tracking-wider">
+                      {category.label}
+                    </DropdownMenuLabel>
+                    {getServicesByCategory(category.slugs).map((service) => (
+                      <DropdownMenuItem key={service.slug} asChild>
+                        <Link 
+                          to={`/services/${service.slug}`}
+                          className="cursor-pointer"
+                        >
+                          {service.name}
+                        </Link>
+                      </DropdownMenuItem>
+                    ))}
+                  </div>
                 ))}
+                <DropdownMenuSeparator />
                 <DropdownMenuItem asChild>
                   <Link 
                     to="/capabilities"
@@ -119,16 +139,25 @@ const Navigation = () => {
           <div className="md:hidden pb-4 flex flex-col gap-3">
             <div className="py-2">
               <span className="text-foreground font-medium">Services</span>
-              <div className="pl-4 mt-2 flex flex-col gap-2">
-                {publishedServices.map((service) => (
-                  <Link 
-                    key={service.slug}
-                    to={`/services/${service.slug}`}
-                    className="text-muted-foreground hover:text-accent transition-colors"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    {service.name}
-                  </Link>
+              <div className="pl-4 mt-2 flex flex-col gap-4">
+                {serviceCategories.map((category) => (
+                  <div key={category.label}>
+                    <span className="text-accent text-xs uppercase tracking-wider font-medium">
+                      {category.label}
+                    </span>
+                    <div className="flex flex-col gap-2 mt-1">
+                      {getServicesByCategory(category.slugs).map((service) => (
+                        <Link 
+                          key={service.slug}
+                          to={`/services/${service.slug}`}
+                          className="text-muted-foreground hover:text-accent transition-colors"
+                          onClick={() => setIsMenuOpen(false)}
+                        >
+                          {service.name}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
                 ))}
                 <Link 
                   to="/capabilities"
