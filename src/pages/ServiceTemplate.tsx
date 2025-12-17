@@ -248,13 +248,18 @@ const ServiceTemplate = () => {
         {service.slug === 'end-of-lease-relocation' && <BeforeAfterSlider />}
 
         {/* 6. CTA Block - Custom content or default */}
-        <section className="py-16 bg-primary/10">
+        <section className="py-16 bg-background border-t border-border">
           <div className="container mx-auto px-4">
             {service.ctaBlock ? (
               <div className="max-w-4xl mx-auto text-center">
-                <h2 className="text-3xl md:text-4xl text-foreground mb-4">
+                <h2 className="text-3xl md:text-4xl text-foreground mb-2">
                   {service.ctaBlock.title}
                 </h2>
+                {service.ctaBlock.subtitle && (
+                  <p className="text-xl text-primary font-medium mb-6">
+                    {service.ctaBlock.subtitle}
+                  </p>
+                )}
                 <p className="text-xl text-muted-foreground leading-relaxed mb-8">
                   {service.ctaBlock.text}
                 </p>
