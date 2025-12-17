@@ -257,7 +257,7 @@ export const services: Service[] = [
     metaTitle: "Line Marking Melbourne | Warehouse & Car Park",
     description: "Lease ending and your warehouse or car park lines don't match the original layout? We restore eroded markings, remove tenant-specific delineations and return floors to the condition your landlord expects. Full line marking restoration for make-good compliance.",
     metaDescription: "Line marking restoration Melbourne. Warehouse and car park line reinstatement for end of lease compliance. Remove tenant markings, restore originals. Free quotes.",
-    heroText: "Years of forklift traffic have worn your lines away. Or maybe you added bays and zones to suit your operation—now they need to go. We restore original line markings, remove tenant-specific delineations and deliver floors that pass landlord inspection.",
+    heroText: "Years of forklift traffic have worn your lines away. Or maybe you added bays and zones to suit your operation—now they need to go. We restore original markings, remove tenant delineations and hand back floors that meet your make-good obligations.",
     benefits: [
       "Restore worn and faded line markings",
       "Remove tenant-specific delineations",
