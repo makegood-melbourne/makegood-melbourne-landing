@@ -74,12 +74,11 @@ export const services: Service[] = [
       "Full waste management included",
       "Minimal disruption to building"
     ],
-    process: [
-      { step: "Site Assessment", description: "We inspect your office to understand scope and identify any hazardous materials." },
-      { step: "Detailed Quote", description: "Transparent pricing covering all strip out works, waste disposal and make good." },
-      { step: "Safe Execution", description: "Our team completes the strip out efficiently, minimising disruption to other tenants." },
-      { step: "Clean Handover", description: "Space returned to base building condition, ready for the next tenant." }
-    ],
+    ctaBlock: {
+      title: "Let Us Handle Your Strip Out",
+      subtitle: "We do makegoods all day, every day.",
+      text: "Our crews have stripped out hundreds of Melbourne offices—from single tenancies to multi-floor fitouts. Get in touch today for a free, no-obligation quote."
+    },
     relatedServices: ["commercial-make-good", "carpet-removal", "ceiling-tile-replacement"],
     category: "demolition"
   },
@@ -99,12 +98,11 @@ export const services: Service[] = [
       "Electrical make-safe works",
       "Industrial cleaning included"
     ],
-    process: [
-      { step: "Lease Review", description: "We review your lease obligations to ensure all requirements are addressed." },
-      { step: "Scope Development", description: "Detailed scope covering all make good works required for compliance." },
-      { step: "Works Execution", description: "Our industrial team completes restoration to original condition." },
-      { step: "Landlord Sign-off", description: "We liaise with landlords to achieve smooth handover and bond return." }
-    ],
+    ctaBlock: {
+      title: "Let Us Handle Your Warehouse Make Good",
+      subtitle: "We do makegoods all day, every day.",
+      text: "From small units to large distribution centres, we've restored warehouses across Melbourne to handover-ready condition. Get in touch today for a free, no-obligation quote."
+    },
     relatedServices: ["pallet-racking-removal", "epoxy-flooring", "line-marking"],
     category: "make-good"
   },
@@ -155,14 +153,13 @@ export const services: Service[] = [
       "Range of colours including safety zones",
       "20+ year lifespan with proper care"
     ],
-    process: [
-      { step: "Floor Assessment", description: "We inspect your slab for cracks, moisture and contaminants that could affect adhesion." },
-      { step: "Diamond Grinding", description: "Surface profiled to create mechanical bond—essential for long-lasting results." },
-      { step: "Crack Repair", description: "Structural cracks filled with flexible epoxy; surface defects patched and levelled." },
-      { step: "Coating System", description: "Primer, base coat and topcoat applied. Anti-slip aggregate added if required. Cured and ready." }
-    ],
     secondaryImage: epoxyRollerApplicationImage,
     secondaryImageAlt: "Professional epoxy floor coating application with roller and spiked shoes Melbourne",
+    ctaBlock: {
+      title: "Let Us Handle Your Epoxy Flooring",
+      subtitle: "We do makegoods all day, every day.",
+      text: "From small workshops to large distribution centres, we've coated floors across Melbourne's industrial properties. Get in touch today for a free, no-obligation quote."
+    },
     relatedServices: ["concrete-floor-repair", "warehouse-make-good", "line-marking"],
     category: "trade"
   },
@@ -182,12 +179,11 @@ export const services: Service[] = [
       "All surfaces—walls, ceilings, trim",
       "Quality finish that passes inspection"
     ],
-    process: [
-      { step: "Colour Matching", description: "We match existing colours precisely—no guessing, no 'close enough' that fails inspection." },
-      { step: "Surface Prep", description: "Holes filled, cracks repaired, surfaces sanded and primed. Preparation is everything." },
-      { step: "Professional Application", description: "Skilled painters deliver even coverage, clean edges and consistent finish throughout." },
-      { step: "Final Inspection", description: "We check every surface before handover. You see quality, your landlord sees compliance." }
-    ],
+    ctaBlock: {
+      title: "Let Us Handle Your Commercial Painting",
+      subtitle: "We do makegoods all day, every day.",
+      text: "Our painters have delivered inspection-ready finishes across Melbourne's commercial properties for years. Get in touch today for a free, no-obligation quote."
+    },
     relatedServices: ["patching-plastering", "commercial-make-good", "ceiling-tile-replacement"],
     category: "make-good"
   },
@@ -207,12 +203,11 @@ export const services: Service[] = [
       "Switchboard modifications",
       "After-hours work available"
     ],
-    process: [
-      { step: "Electrical Audit", description: "We identify all circuits, outlets, data points and installations requiring removal or modification." },
-      { step: "Safe Isolation", description: "Circuits isolated at the board before any work begins. Safety is non-negotiable." },
-      { step: "Removal and Capping", description: "Installations removed, cables terminated safely, plates blanked off to code." },
-      { step: "Certification", description: "Certificate of Electrical Safety issued. Documentation for your landlord and records." }
-    ],
+    ctaBlock: {
+      title: "Let Us Handle Your Electrical Make Safe",
+      subtitle: "We do makegoods all day, every day.",
+      text: "Our licensed electricians have made safe hundreds of commercial spaces across Melbourne. Get in touch today for a free, no-obligation quote."
+    },
     relatedServices: ["office-strip-out", "warehouse-make-good", "led-lighting"],
     category: "demolition"
   },
@@ -232,12 +227,11 @@ export const services: Service[] = [
       "Fast-cure for minimal downtime",
       "Colour-matched to existing slab"
     ],
-    process: [
-      { step: "Damage Mapping", description: "We survey the entire floor, documenting crack patterns, joint condition and surface defects." },
-      { step: "Root Cause", description: "Understanding why damage occurred—overloading, poor joints, subgrade issues—guides the right repair." },
-      { step: "Precision Repair", description: "Epoxy injection for cracks, polymer-modified mortars for spalling, joint reconstruction where needed." },
-      { step: "Surface Finish", description: "Repairs ground flush and blended. Ready for coating, line marking or direct use." }
-    ],
+    ctaBlock: {
+      title: "Let Us Handle Your Floor Repairs",
+      subtitle: "We do makegoods all day, every day.",
+      text: "We've repaired warehouse floors across Melbourne—from minor cracks to major slab restoration. Get in touch today for a free, no-obligation quote."
+    },
     relatedServices: ["epoxy-flooring", "warehouse-make-good", "line-marking"],
     category: "trade"
   },
@@ -263,12 +257,11 @@ export const services: Service[] = [
       "Full grid restoration after tenant removal",
       "Fire services coordination when required"
     ],
-    process: [
-      { step: "Lease Review", description: "We confirm your make-good clause and identify the ceiling types throughout your tenancy." },
-      { step: "Site Assessment", description: "Count tiles and panels needed, note partition removal areas and assess LED and aircon positioning." },
-      { step: "Sourcing & Installation", description: "Matching tiles and panels sourced, installed, LED panels repositioned and aircon vents adjusted." },
-      { step: "Landlord Handover", description: "Ceiling completed to original condition, ready for inspection and sign-off." }
-    ],
+    ctaBlock: {
+      title: "Let Us Handle Your Ceiling Restoration",
+      subtitle: "We do makegoods all day, every day.",
+      text: "From single rooms to multi-floor offices, we've restored ceilings across Melbourne's commercial properties. Get in touch today for a free, no-obligation quote."
+    },
     relatedServices: ["commercial-painting", "office-strip-out", "commercial-make-good"],
     category: "make-good"
   },
@@ -292,17 +285,16 @@ export const services: Service[] = [
       "Heavy-duty paints and thermoplastics",
       "Fast-dry formulas for quick handover"
     ],
-    process: [
-      { step: "Lease Review", description: "We check your make-good clause and compare current lines against original plans or base condition." },
-      { step: "Surface Prep", description: "Existing tenant markings removed or overcoated, floors cleaned for proper adhesion." },
-      { step: "Line Restoration", description: "Original markings reinstated with professional equipment—straight lines, sharp edges, consistent coverage." },
-      { step: "Landlord Handover", description: "Lines cured and protected, ready for inspection and sign-off." }
-    ],
     featuredSection: {
       title: "Car Park Line Marking Restoration",
       description: "Years of traffic have taken their toll. We bring car park markings back to compliance standard, restoring faded bays, worn directional arrows and eroded safety zones.",
       image: carParkLineMarkingImage,
       imageAlt: "Aerial view of commercial car park with restored white bay markings and yellow directional lines in Melbourne"
+    },
+    ctaBlock: {
+      title: "Let Us Handle Your Line Marking",
+      subtitle: "We do makegoods all day, every day.",
+      text: "We've restored line markings in warehouses and car parks across Melbourne. Get in touch today for a free, no-obligation quote."
     },
     relatedServices: ["epoxy-flooring", "warehouse-make-good", "concrete-floor-repair"],
     category: "trade"
@@ -323,12 +315,11 @@ export const services: Service[] = [
       "Bond return assistance",
       "Transparent pricing"
     ],
-    process: [
-      { step: "Lease Assessment", description: "We review your make good clause to understand all obligations." },
-      { step: "Scope and Quote", description: "Detailed scope developed with transparent, competitive pricing." },
-      { step: "Works Coordination", description: "All trades managed to complete works efficiently and on time." },
-      { step: "Landlord Handover", description: "We coordinate final inspection and handover with your landlord." }
-    ],
+    ctaBlock: {
+      title: "Let Us Handle Your Make Good",
+      subtitle: "We do makegoods all day, every day.",
+      text: "We've managed make good projects across Melbourne—from small retail spaces to large corporate offices. Get in touch today for a free, no-obligation quote."
+    },
     relatedServices: ["office-strip-out", "commercial-painting", "ceiling-tile-replacement"],
     category: "make-good"
   },
@@ -348,12 +339,11 @@ export const services: Service[] = [
       "Large area skim coating",
       "Paint-ready finish guaranteed"
     ],
-    process: [
-      { step: "Wall Assessment", description: "Every hole, crack and damaged area documented and repair approach determined." },
-      { step: "Backing and Prep", description: "Proper backing installed for larger holes; surfaces prepared for optimal adhesion." },
-      { step: "Repair and Finish", description: "Compound applied in layers, each sanded smooth. No shortcuts, no visible patches." },
-      { step: "Ready for Paint", description: "Surfaces sanded to final finish, dust removed, ready for primer and paint." }
-    ],
+    ctaBlock: {
+      title: "Let Us Handle Your Wall Repairs",
+      subtitle: "We do makegoods all day, every day.",
+      text: "Our plasterers have delivered paint-ready finishes across Melbourne's commercial properties for years. Get in touch today for a free, no-obligation quote."
+    },
     relatedServices: ["commercial-painting", "commercial-make-good", "ceiling-tile-replacement"],
     category: "make-good"
   },
@@ -373,12 +363,11 @@ export const services: Service[] = [
       "Old fittings disposed responsibly",
       "Licensed electricians throughout"
     ],
-    process: [
-      { step: "Lighting Assessment", description: "We audit existing fittings, measure light levels and recommend appropriate LED replacements." },
-      { step: "Product Selection", description: "Quality LEDs matched to your space—colour temperature, output and fitting style considered." },
-      { step: "Installation", description: "Licensed electricians swap fittings efficiently, minimising disruption to your operations." },
-      { step: "Commissioning", description: "All new lighting tested, light levels verified, old fittings removed for recycling." }
-    ],
+    ctaBlock: {
+      title: "Let Us Handle Your LED Upgrade",
+      subtitle: "We do makegoods all day, every day.",
+      text: "We've upgraded lighting in offices, warehouses and retail spaces across Melbourne. Get in touch today for a free, no-obligation quote."
+    },
     relatedServices: ["electrical-make-safe", "commercial-make-good", "office-strip-out"],
     category: "trade"
   },
@@ -410,12 +399,11 @@ export const services: Service[] = [
       "Graffiti removal",
       "Carpet steam cleaning"
     ],
-    process: [
-      { step: "Walk the Site", description: "We assess the floor condition, stain types and access requirements." },
-      { step: "Right Equipment", description: "We match the machinery to your space—ride-on scrubbers, pressure washers or chemical systems." },
-      { step: "Get It Done", description: "Fast, thorough cleaning with minimal disruption to your operations." },
-      { step: "Ready to Use", description: "Floors dry and ready—whether for handover, new tenants or just a fresh start." }
-    ],
+    ctaBlock: {
+      title: "Let Us Handle Your Cleaning",
+      subtitle: "We do makegoods all day, every day.",
+      text: "From warehouse floors to office fitouts, we've cleaned commercial properties across Melbourne. Get in touch today for a free, no-obligation quote."
+    },
     relatedServices: ["commercial-make-good", "warehouse-make-good", "office-strip-out"],
     category: "cleaning"
   },
@@ -447,6 +435,11 @@ export const services: Service[] = [
       { step: "Make Good + Load Out", description: "We restore your old site while carefully loading your equipment for transport." },
       { step: "Deliver and Handover", description: "Equipment delivered to new site, old premises handed back inspection-ready. Installation available if needed." }
     ],
+    ctaBlock: {
+      title: "Let Us Handle Your Relocation",
+      subtitle: "We do makegoods all day, every day.",
+      text: "We've managed end-to-end relocations across Melbourne and beyond—make good and transport in one seamless service. Get in touch today for a free, no-obligation quote."
+    },
     relatedServices: ["warehouse-make-good", "pallet-racking-removal", "commercial-make-good"],
     category: "make-good"
   },
@@ -492,6 +485,11 @@ export const services: Service[] = [
       { step: "Remediation Works", description: "Expert treatment and precision correction of steel and concrete elements to restore structural integrity." },
       { step: "Compliance Sign-off", description: "Final inspection and documentation for structural engineers, councils and building managers as required." }
     ],
+    ctaBlock: {
+      title: "Let Us Handle Your Structural Remediation",
+      subtitle: "We do makegoods all day, every day.",
+      text: "From concrete cancer to retention walls, we've delivered structural solutions across Melbourne's commercial properties. Get in touch today for a free, no-obligation quote."
+    },
     relatedServices: ["warehouse-make-good", "commercial-make-good", "office-strip-out"],
     category: "structural"
   },
@@ -521,6 +519,11 @@ export const services: Service[] = [
     ],
     secondaryImage: glazingFacadeInstallationImage,
     secondaryImageAlt: "Professional glazing facade installation on commercial high-rise building with workers in safety harnesses Melbourne",
+    ctaBlock: {
+      title: "Let Us Handle Your Cladding Remediation",
+      subtitle: "We do makegoods all day, every day.",
+      text: "We've delivered cladding and glazing compliance projects across Melbourne's commercial buildings. Get in touch today for a free, no-obligation quote."
+    },
     relatedServices: ["structural-remediation", "commercial-make-good", "office-strip-out"],
     category: "structural"
   }
