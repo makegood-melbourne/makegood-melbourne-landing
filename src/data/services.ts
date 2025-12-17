@@ -129,8 +129,8 @@ export const services: Service[] = [
       "Complete warehouse slab remediation solutions available"
     ],
     ctaBlock: {
-      title: "Leaving Racking Behind Could Cost You",
-      text: "Your lease likely requires the warehouse returned to original condition. Bolted racking, wall anchors and protection bollards left behind can result in bond deductions, make-good disputes and delayed handover. We handle the removal and floor restoration so you meet your obligations without the headache."
+      title: "Make Goods All Day, Every Day",
+      text: "Pallet racking removal is what we do—day in, day out. Our experienced crew has dismantled hundreds of racking systems across Melbourne, restoring warehouse floors to handover-ready condition. Let us handle yours while you focus on your move."
     },
     relatedServices: ["warehouse-make-good", "concrete-floor-repair", "epoxy-flooring"],
     category: "demolition"

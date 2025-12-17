@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 import BeforeAfterSlider from "@/components/BeforeAfterSlider";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { CheckCircle, Mail, ArrowRight, AlertTriangle } from "lucide-react";
+import { CheckCircle, Mail, ArrowRight } from "lucide-react";
 
 const ServiceTemplate = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -247,23 +247,18 @@ const ServiceTemplate = () => {
         {/* Before/After Slider - Only for End of Lease Relocation */}
         {service.slug === 'end-of-lease-relocation' && <BeforeAfterSlider />}
 
-        {/* 6. CTA Block - Custom urgency/problem content or default */}
-        <section className="py-16 bg-secondary border-t border-border">
+        {/* 6. CTA Block - Custom content or default */}
+        <section className="py-16 bg-primary/10">
           <div className="container mx-auto px-4">
             {service.ctaBlock ? (
-              <div className="max-w-4xl mx-auto">
-                <div className="flex items-start gap-4 mb-8">
-                  <AlertTriangle className="h-8 w-8 text-primary flex-shrink-0 mt-1" />
-                  <div>
-                    <h2 className="text-3xl md:text-4xl text-foreground mb-4">
-                      {service.ctaBlock.title}
-                    </h2>
-                    <p className="text-xl text-muted-foreground leading-relaxed">
-                      {service.ctaBlock.text}
-                    </p>
-                  </div>
-                </div>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
+              <div className="max-w-4xl mx-auto text-center">
+                <h2 className="text-3xl md:text-4xl text-foreground mb-4">
+                  {service.ctaBlock.title}
+                </h2>
+                <p className="text-xl text-muted-foreground leading-relaxed mb-8">
+                  {service.ctaBlock.text}
+                </p>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground" asChild>
                     <Link to="/#contact">
                       Get a Free Quote
