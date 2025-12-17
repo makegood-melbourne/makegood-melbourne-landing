@@ -26,7 +26,7 @@ Our services:
 - CONCRETE FLOOR REPAIR: Crack injection, spalling repair, joint restoration for warehouse and factory floors
 - LINE MARKING: Warehouse floor markings, safety zones, pedestrian walkways, car park lines
 - COMMERCIAL PAINTING: Colour-matched make-good painting for offices, warehouses and retail
-- CEILING TILE REPLACEMENT: Standard suspended tiles and timber acoustic panels. Complete ceiling restoration for lease compliance including LED panel repositioning, aircon rebalancing, grid repairs and full grid reinstallation
+- CEILING TILE REPLACEMENT: Standard suspended tiles and timber acoustic panels. Complete ceiling restoration for lease compliance including LED panel repositioning, aircon rebalancing, grid repairs, full grid reinstallation, post-partition removal repairs, discontinued tile matching and fire services coordination when required
 - PATCHING & PLASTERING: Wall repairs, hole filling, seamless plaster restoration
 - ELECTRICAL MAKE SAFE: Licensed electricians for safe disconnection, capping and compliance certificates
 - LED LIGHTING UPGRADE: Replace fluorescent with energy-efficient LED, complete installation and disposal
