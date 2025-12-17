@@ -229,12 +229,11 @@ export const services: Service[] = [
     heroImage: ceilingTilesLedPanelsImage,
     heroImageAlt: "Modern commercial office space with suspended ceiling grid, rectangular LED panel lights and grey carpet flooring in Melbourne",
     benefits: [
-      "Complete lease compliance sign-off",
+      "Meet your make-good ceiling requirements",
       "Tile matching from all major manufacturers",
-      "LED panel rebalancing for open layouts",
-      "Aircon vent repositioning to suit",
-      "Full grid reinstallation when required",
-      "Fast turnaround before lease expiry"
+      "LED panel and aircon rebalancing to suit",
+      "Grid repairs and suspension fixes",
+      "Full grid reinstallation when required"
     ],
     process: [
       { step: "Lease Review", description: "We check your make-good clause to confirm exactly what ceiling works are required." },
