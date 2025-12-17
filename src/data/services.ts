@@ -13,8 +13,6 @@ import glazingFacadeInstallationImage from "@/assets/services/glazing-facade-ins
 import ceilingTilesLedPanelsImage from "@/assets/services/commercial-office-ceiling-tiles-led-panels-melbourne.jpeg";
 import ceilingTileReplacementHeroImage from "@/assets/services/ceiling-tile-replacement-commercial-office-melbourne.jpeg";
 import lineMarkingWornFloorImage from "@/assets/services/warehouse-floor-worn-line-markings-restoration-melbourne.jpeg";
-import lineMarkingCompletedImage from "@/assets/services/warehouse-line-marking-safety-bollards-pedestrian-walkway-melbourne.png";
-import carParkLineMarkingImage from "@/assets/services/car-park-line-marking-restoration-aerial-view-melbourne.jpeg";
 
 export interface FeaturedSection {
   title: string;
@@ -263,8 +261,6 @@ export const services: Service[] = [
     heroText: "Years of forklift traffic have worn your lines away. Or maybe you added bays and zones to suit your operation—now they need to go. We restore original markings, remove tenant delineations and hand back floors that meet your make-good obligations.",
     heroImage: lineMarkingWornFloorImage,
     heroImageAlt: "Worn and faded yellow line markings on warehouse concrete floor requiring restoration in Melbourne",
-    secondaryImage: carParkLineMarkingImage,
-    secondaryImageAlt: "Aerial view of commercial car park with freshly painted white bay markings and yellow traffic lines in Melbourne",
     benefits: [
       "Restore worn and faded line markings",
       "Remove tenant-specific delineations",
@@ -279,12 +275,6 @@ export const services: Service[] = [
       { step: "Line Restoration", description: "Original markings reinstated with professional equipment—straight lines, sharp edges, consistent coverage." },
       { step: "Landlord Handover", description: "Lines cured and protected, ready for inspection and sign-off." }
     ],
-    featuredSection: {
-      title: "Professional Line Marking Results",
-      description: "Sharp lines, proper safety delineation and compliant floor markings ready for landlord inspection and new tenant handover.",
-      image: lineMarkingCompletedImage,
-      imageAlt: "Empty warehouse with freshly painted yellow floor line markings, safety bollards and pedestrian walkway delineation in Melbourne"
-    },
     relatedServices: ["epoxy-flooring", "warehouse-make-good", "concrete-floor-repair"],
     category: "trade"
   },
