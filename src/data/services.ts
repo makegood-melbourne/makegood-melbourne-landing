@@ -113,17 +113,17 @@ export const services: Service[] = [
     heroImageAlt: "Warehouse with pallet racking being dismantled and stacked on floor ready for removal Melbourne",
     benefits: [
       "Selective, drive-in and cantilever racking",
-      "Safe, methodical dismantling",
-      "Floor anchors cut and patched",
-      "Concrete grinding for flush finish",
-      "Racking recycled or disposed responsibly",
-      "Coordinated with your make good timeline"
+      "Floor and wall anchor removal",
+      "Protection bollard removal included",
+      "Core drilled, filled with epoxy or grout",
+      "Surface ground flush to slab",
+      "Racking recycled or disposed responsibly"
     ],
     process: [
-      { step: "Racking Audit", description: "We assess racking type, bay count and anchor configuration to plan safe, efficient removal." },
+      { step: "Racking Audit", description: "We assess racking type, bay count and anchor configuration—floor bolts, wall ties and protection bollards." },
       { step: "Safety Plan", description: "Detailed method statement developed—especially important for high-bay or loaded systems." },
-      { step: "Dismantling", description: "Experienced crew dismantles systematically, protecting your floor and minimising dust." },
-      { step: "Floor Restoration", description: "Anchor bolts cut below surface, holes filled and ground flush. Ready for handover or epoxy." }
+      { step: "Dismantling", description: "Experienced crew dismantles systematically. Bollards and wall brackets removed alongside racking." },
+      { step: "Floor Restoration", description: "Dynabolts core drilled out, holes filled with epoxy resin or structural grout, then ground flush." }
     ],
     relatedServices: ["warehouse-make-good", "concrete-floor-repair", "epoxy-flooring"],
     category: "demolition"
