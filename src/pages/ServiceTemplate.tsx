@@ -108,8 +108,23 @@ const ServiceTemplate = () => {
           </div>
         </section>
 
-        {/* 2. About Section */}
+        {/* 2. What's Included Section */}
         <section className="py-16 bg-background">
+          <div className="container mx-auto px-4">
+            <h2 className="text-3xl md:text-4xl text-foreground mb-10">What's Included</h2>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {service.benefits.map((benefit, index) => (
+                <div key={index} className="flex items-start gap-4 p-4 bg-secondary rounded-lg">
+                  <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
+                  <span className="text-lg text-foreground">{benefit}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* 3. About Section */}
+        <section className="py-16 bg-secondary">
           <div className="container mx-auto px-4">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
@@ -143,9 +158,9 @@ const ServiceTemplate = () => {
           </div>
         </section>
 
-        {/* 3. Featured Section (single - legacy support) - Optional */}
+        {/* 4. Featured Section (single - legacy support) - Optional */}
         {service.featuredSection && !service.featuredSections && (
-          <section className="py-16 bg-secondary">
+          <section className="py-16 bg-background">
             <div className="container mx-auto px-4">
               <div className="grid lg:grid-cols-2 gap-12 items-center">
                 <div>
@@ -175,9 +190,9 @@ const ServiceTemplate = () => {
           </section>
         )}
 
-        {/* 3. Featured Sections (multiple) - Optional */}
+        {/* 4. Featured Sections (multiple) - Optional */}
         {service.featuredSections && service.featuredSections.map((section, index) => (
-          <section key={index} className="py-16 bg-secondary">
+          <section key={index} className="py-16 bg-background">
             <div className="container mx-auto px-4">
               <div className={`grid lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}>
                 <div className={index % 2 === 1 ? 'lg:order-2' : ''}>
@@ -205,21 +220,6 @@ const ServiceTemplate = () => {
             </div>
           </section>
         ))}
-
-        {/* 4. What's Included Section */}
-        <section className="py-16 bg-background">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl md:text-4xl text-foreground mb-10">What's Included</h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {service.benefits.map((benefit, index) => (
-                <div key={index} className="flex items-start gap-4 p-4 bg-secondary rounded-lg">
-                  <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
-                  <span className="text-lg text-foreground">{benefit}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
 
         {/* 5. Process Section - Optional (only show if process exists and has items) */}
         {service.process && service.process.length > 0 && (
