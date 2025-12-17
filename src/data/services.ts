@@ -117,7 +117,7 @@ export const services: Service[] = [
       "All types of pallet racking systems including cantilever wall units",
       "Dynabolt removal from floor slabs and walls",
       "Removal of safety barriers, bollards and swing gates",
-      "Warehouse floor remediation of installed dynabolts by grinding down flush with slab, core drilling each anchor point and filling with epoxy resin",
+      "Floor anchor remediation—core drilled, filled with epoxy resin and ground flush",
       "Transport solutions available",
       "Buy back, recycling and disposal solutions available",
       "Complete warehouse slab remediation solutions available"
