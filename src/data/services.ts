@@ -1,7 +1,7 @@
 import commercialCleaningImage from "@/assets/services/commercial-cleaning-melbourne-supplies.jpeg";
 import commercialFloorSweepingImage from "@/assets/services/commercial-floor-sweeping-concrete-melbourne.jpeg";
 import epoxyFlooringWarehouseImage from "@/assets/services/polished-epoxy-floor-industrial-warehouse-melbourne.jpeg";
-import speckledEpoxyFloorImage from "@/assets/services/speckled-epoxy-floor-warehouse-melbourne.jpeg";
+import epoxyRollerApplicationImage from "@/assets/services/epoxy-floor-roller-application-melbourne.jpeg";
 import warehouseFloorScrubberImage from "@/assets/services/warehouse-floor-scrubber-cleaning-v4.jpg";
 import industrialFloorScrubberImage from "@/assets/services/industrial-ride-on-floor-scrubber-warehouse-melbourne.png";
 import highPressureWarehouseCleaningImage from "@/assets/services/high-pressure-warehouse-cleaning-melbourne.png";
@@ -149,8 +149,8 @@ export const services: Service[] = [
       { step: "Crack Repair", description: "Structural cracks filled with flexible epoxy; surface defects patched and levelled." },
       { step: "Coating System", description: "Primer, base coat and topcoat applied. Anti-slip aggregate added if required. Cured and ready." }
     ],
-    secondaryImage: speckledEpoxyFloorImage,
-    secondaryImageAlt: "Speckled flake epoxy floor coating in large industrial warehouse Melbourne",
+    secondaryImage: epoxyRollerApplicationImage,
+    secondaryImageAlt: "Professional epoxy floor coating application with roller and spiked shoes Melbourne",
     relatedServices: ["concrete-floor-repair", "warehouse-make-good", "line-marking"],
     category: "trade"
   },
