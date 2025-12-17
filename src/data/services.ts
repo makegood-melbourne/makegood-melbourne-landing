@@ -6,7 +6,7 @@ import warehouseFloorScrubberImage from "@/assets/services/warehouse-floor-scrub
 import industrialFloorScrubberImage from "@/assets/services/industrial-ride-on-floor-scrubber-warehouse-melbourne.png";
 import highPressureWarehouseCleaningImage from "@/assets/services/high-pressure-warehouse-cleaning-melbourne.png";
 import warehouseRelocationImage from "@/assets/services/warehouse-relocation-forklift-loading-racking-melbourne.png";
-import palletRackingBlogImage from "@/assets/blog/pallet-racking.webp";
+import palletRackingHeroImage from "@/assets/services/pallet-racking-dismantling-warehouse-floor-melbourne.jpeg";
 import flatbedTruckTransportImage from "@/assets/services/flatbed-truck-transporting-pallet-racking-melbourne-skyline.png";
 import concreteCancerImage from "@/assets/services/concrete-cancer-exposed-rebar-column-spalling-melbourne.jpeg";
 import warehouseFloorSlabDamageImage from "@/assets/services/warehouse-floor-slab-deterioration-structural-damage-melbourne.png";
@@ -109,26 +109,8 @@ export const services: Service[] = [
     description: "Racking bolted to the floor? That's your landlord's problem now—unless you sort it before handover. We dismantle, remove and dispose of all racking systems, then patch those anchor holes so you get your bond back without the headache.",
     metaDescription: "Pallet racking removal Melbourne. Safe dismantling, transport and disposal of warehouse racking. Floor anchors removed and patched. Licensed removalists. Free quotes.",
     heroText: "Professional pallet racking dismantling and relocation across Melbourne. We remove your racking systems and restore warehouse floors to their original condition—coring out anchor points, filling with epoxy resin, then grinding and sealing for a seamless finish.",
-    featuredSections: [
-      {
-        title: "Option 1: Forklift Loading Racking",
-        description: "Shows dismantled racking being loaded onto a flatbed truck in a warehouse.",
-        image: warehouseRelocationImage,
-        imageAlt: "Forklift loading pallet racking onto truck in Melbourne warehouse"
-      },
-      {
-        title: "Option 2: Flatbed Truck Transport",
-        description: "Shows a truck transporting pallet racking with Melbourne skyline in background.",
-        image: flatbedTruckTransportImage,
-        imageAlt: "Flatbed truck transporting pallet racking Melbourne skyline"
-      },
-      {
-        title: "Option 3: Blog Pallet Racking",
-        description: "Alternative pallet racking image from the blog.",
-        image: palletRackingBlogImage,
-        imageAlt: "Pallet racking warehouse Melbourne"
-      }
-    ],
+    heroImage: palletRackingHeroImage,
+    heroImageAlt: "Warehouse with pallet racking being dismantled and stacked on floor ready for removal Melbourne",
     benefits: [
       "Selective, drive-in and cantilever racking",
       "Safe, methodical dismantling",
