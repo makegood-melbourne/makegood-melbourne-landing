@@ -17,6 +17,7 @@ const ContactSchema = z.object({
   email: z.string().trim().email("Invalid email address").max(255, "Email must be less than 255 characters"),
   phone: z.string().max(20, "Phone must be less than 20 characters").regex(/^[0-9\s\+\-\(\)]*$/, "Invalid phone format").optional().or(z.literal("")),
   message: z.string().trim().min(10, "Message must be at least 10 characters").max(2000, "Message must be less than 2000 characters"),
+  sourcePage: z.string().max(500, "Source page URL too long").optional(),
 });
 
 // HTML escape function to prevent XSS in email clients
@@ -54,7 +55,7 @@ const handler = async (req: Request): Promise<Response> => {
       );
     }
 
-    const { name, email, phone, message } = validationResult.data;
+    const { name, email, phone, message, sourcePage } = validationResult.data;
     
     console.log("Processing enquiry from:", name, email);
 
@@ -68,6 +69,7 @@ const handler = async (req: Request): Promise<Response> => {
     const safeEmail = escapeHtml(email);
     const safePhone = escapeHtml(phone || 'Not provided');
     const safeMessage = escapeHtml(message).replace(/\n/g, '<br>');
+    const safeSourcePage = escapeHtml(sourcePage || 'Unknown');
 
     // Send notification email to business
     const businessEmailRes = await fetch("https://api.resend.com/emails", {
@@ -85,6 +87,7 @@ const handler = async (req: Request): Promise<Response> => {
           <p><strong>Name:</strong> ${safeName}</p>
           <p><strong>Email:</strong> ${safeEmail}</p>
           <p><strong>Phone:</strong> ${safePhone}</p>
+          <p><strong>Source Page:</strong> ${safeSourcePage}</p>
           <p><strong>Message:</strong></p>
           <p>${safeMessage}</p>
           <hr>
@@ -137,6 +140,7 @@ const handler = async (req: Request): Promise<Response> => {
         phone: phone || null,
         message,
         email_sent: emailSent,
+        source_page: sourcePage || null,
       });
 
     if (dbError) {
@@ -160,7 +164,7 @@ const handler = async (req: Request): Promise<Response> => {
       const validationResult = ContactSchema.safeParse(rawData);
       
       if (validationResult.success) {
-        const { name, email, phone, message } = validationResult.data;
+        const { name, email, phone, message, sourcePage } = validationResult.data;
         await supabase
           .from("contact_enquiries")
           .insert({
@@ -169,6 +173,7 @@ const handler = async (req: Request): Promise<Response> => {
             phone: phone || null,
             message,
             email_sent: false,
+            source_page: sourcePage || null,
           });
         console.log("Enquiry saved to database despite email failure");
       }
