@@ -146,7 +146,7 @@ export const industries: Industry[] = [
         description: "Remediation work must meet current building codes and often requires engineering certification."
       }
     ],
-    services: ["cladding-glazing", "structural-remediation", "concrete-floor-repair"],
+    services: ["cladding-glazing", "structural-remediation", "concrete-floor-repair", "waterproofing"],
     benefits: [
       "Licensed and insured contractors",
       "Engineering-certified solutions",

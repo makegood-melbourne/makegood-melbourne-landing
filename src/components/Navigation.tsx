@@ -39,7 +39,7 @@ const serviceCategories = [
   },
   {
     label: "Structural & Remediation",
-    slugs: ['structural-remediation', 'cladding-glazing', 'concrete-floor-repair']
+    slugs: ['structural-remediation', 'cladding-glazing', 'concrete-floor-repair', 'waterproofing']
   }
 ];
 

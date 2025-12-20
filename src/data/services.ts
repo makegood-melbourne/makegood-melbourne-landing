@@ -634,6 +634,51 @@ export const services: Service[] = [
     relatedServices: ["carpet-removal", "vinyl-removal", "tile-removal", "epoxy-flooring"],
     category: "demolition",
     published: true
+  },
+  {
+    name: "Waterproofing",
+    slug: "waterproofing",
+    title: "Waterproofing Melbourne",
+    metaTitle: "Waterproofing Melbourne | Commercial & Industrial Specialists",
+    description: "Failed waterproofing causes costly damage to buildings—from balcony leaks penetrating into units below to roof failures flooding commercial spaces. We deliver professional waterproofing solutions for balconies, roofs, wet areas and podiums using quality membrane systems built to last.",
+    metaDescription: "Commercial waterproofing Melbourne. Balcony membranes, roof waterproofing, wet area sealing and podium deck systems. Licensed applicators, warranty included. Free quotes.",
+    heroText: "Water finds every weakness. Failed balcony membranes leak into apartments below. Deteriorated roof coatings let moisture into ceiling cavities. We apply proven membrane systems that protect your building for decades—not just pass the next inspection.",
+    heroImage: waterproofingMembraneImage,
+    heroImageAlt: "Professional applying waterproofing membrane to commercial building surface in Melbourne",
+    benefits: [
+      "Balcony and terrace membrane systems",
+      "Flat roof and podium waterproofing",
+      "Wet area sealing for bathrooms and kitchens",
+      "Concrete crack injection and sealing",
+      "Box gutter and parapet waterproofing",
+      "Long-term manufacturer warranties"
+    ],
+    process: [
+      {
+        step: "Inspection & Assessment",
+        description: "We identify the source of water ingress and assess substrate condition to determine the right waterproofing system."
+      },
+      {
+        step: "Surface Preparation",
+        description: "Substrates are cleaned, repaired and primed to ensure proper membrane adhesion and long-term performance."
+      },
+      {
+        step: "Membrane Application",
+        description: "Quality membrane systems are applied by licensed applicators following manufacturer specifications."
+      },
+      {
+        step: "Protection & Finishing",
+        description: "Membranes are protected with appropriate coverings and finished to integrate with surrounding surfaces."
+      }
+    ],
+    ctaBlock: {
+      title: "Let Us Handle Your Waterproofing",
+      subtitle: "We do makegoods all day, every day.",
+      text: "From balcony remediation to full roof systems, we've waterproofed commercial and residential buildings across Melbourne. Get in touch today for a free, no-obligation quote."
+    },
+    relatedServices: ["structural-remediation", "cladding-glazing", "concrete-floor-repair"],
+    category: "structural",
+    published: true
   }
 ];
 
