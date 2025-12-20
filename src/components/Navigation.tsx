@@ -138,6 +138,9 @@ const Navigation = () => {
             <button onClick={() => scrollToSection('about')} className="text-foreground hover:text-accent transition-colors">
               About
             </button>
+            <Link to="/faq" className="text-foreground hover:text-accent transition-colors">
+              FAQ
+            </Link>
             <Link to="/contact" className="text-foreground hover:text-accent transition-colors">
               Contact
             </Link>
@@ -215,6 +218,13 @@ const Navigation = () => {
             <button onClick={() => scrollToSection('about')} className="text-left text-foreground hover:text-accent transition-colors py-2">
               About
             </button>
+            <Link 
+              to="/faq" 
+              className="text-left text-foreground hover:text-accent transition-colors py-2"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              FAQ
+            </Link>
             <Link 
               to="/contact" 
               className="text-left text-foreground hover:text-accent transition-colors py-2"

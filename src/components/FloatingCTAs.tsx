@@ -30,7 +30,7 @@ const FloatingCTAs = () => {
           className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
         >
           <MessageSquare className="h-5 w-5 mr-2" />
-          <span>Free Quote - 24/7 Make Safe</span>
+          <span>Get a Free Quote</span>
         </Button>
       </div>
     </>
