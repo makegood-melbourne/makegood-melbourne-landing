@@ -267,7 +267,8 @@ export const services: Service[] = [
       text: "From single rooms to multi-floor offices, we've restored ceilings across Melbourne's commercial properties. Get in touch today for a free, no-obligation quote."
     },
     relatedServices: ["commercial-painting", "office-strip-out", "commercial-make-good"],
-    category: "make-good"
+    category: "make-good",
+    published: true
   },
   {
     name: "Line Marking",
