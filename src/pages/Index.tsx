@@ -3,8 +3,12 @@ import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
 import Services from "@/components/Services";
 import About from "@/components/About";
+import ProblemSolution from "@/components/ProblemSolution";
+import ServiceAreasGrid from "@/components/ServiceAreasGrid";
+import FAQ from "@/components/FAQ";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import FloatingCTAs from "@/components/FloatingCTAs";
 
 const Index = () => {
   return (
@@ -73,9 +77,13 @@ const Index = () => {
       </section>
       
       <Services />
+      <ProblemSolution />
       <About />
+      <ServiceAreasGrid />
+      <FAQ />
       <Contact />
       <Footer />
+      <FloatingCTAs />
     </main>
   );
 };
