@@ -1,3 +1,9 @@
+export interface FeaturedSection {
+  title: string;
+  description: string;
+  imagePlaceholder?: string; // Description of ideal image for this section
+}
+
 export interface Industry {
   name: string;
   slug: string;
@@ -6,7 +12,9 @@ export interface Industry {
   metaDescription: string;
   heroText: string;
   heroImage?: string;
+  heroImagePlaceholder?: string; // Description of ideal hero image
   introduction: string;
+  featuredSections?: FeaturedSection[];
   challenges: {
     title: string;
     description: string;
@@ -27,7 +35,20 @@ export const industries: Industry[] = [
     metaTitle: "Commercial Make Good Melbourne | Office & Retail Restoration",
     metaDescription: "Expert commercial make good services across Melbourne. Office strip outs, retail fitout removal, painting, flooring and full restoration. Fixed-price quotes. Call today.",
     heroText: "Complete make good solutions for Melbourne's commercial properties—from office towers and retail spaces to multi-tenancy buildings.",
+    heroImagePlaceholder: "Modern commercial building exterior or office tower in Melbourne",
     introduction: "Commercial make goods require precision, efficiency and minimal disruption to building operations. Whether you're vacating an office suite, retail tenancy or entire commercial floor, our team delivers comprehensive restoration that meets landlord specifications and building management requirements. We coordinate all trades, manage after-hours access and ensure your bond is returned in full.",
+    featuredSections: [
+      {
+        title: "Site Preparation & Services Coordination",
+        description: "We start by ensuring your project foundations—both literally and operationally—are set for success. Comprehensive surveys, service location mapping, and pre-construction compliance checks ensure every aspect of the site is ready before major works commence. Underground services are installed or safeguarded early, and bulk earthworks are sequenced correctly to maintain a safe, organised, and disruption-free work environment—protecting timelines and budgets from the very start.",
+        imagePlaceholder: "Commercial site preparation with survey equipment or service mapping"
+      },
+      {
+        title: "Services Integration & Quality Fit-Out",
+        description: "We integrate mechanical, electrical, and plumbing services seamlessly within the structural framework, using coordinated drawings and clash detection to avoid costly rework. Our fit-out delivery follows rigorous quality assurance procedures, ensuring every element—from mezzanines and partitions to specialist systems—meets specification. By the time we hand over, your building is fully functional, compliant, and ready for immediate operational use.",
+        imagePlaceholder: "Commercial office fit-out in progress showing trades coordination"
+      }
+    ],
     challenges: [
       {
         title: "Building Access & Coordination",
@@ -77,7 +98,25 @@ export const industries: Industry[] = [
     metaTitle: "Industrial Make Good Melbourne | Factory & Warehouse Restoration",
     metaDescription: "Industrial make good specialists Melbourne. Factory strip outs, warehouse restoration, racking removal, floor repair, hazardous material removal. Full compliance. Free quotes.",
     heroText: "Expert industrial make good services for Melbourne factories, warehouses and manufacturing facilities—from machinery removal to complete site restoration.",
+    heroImagePlaceholder: "Industrial warehouse or factory building exterior in Melbourne",
     introduction: "Industrial properties present the most complex make good challenges. Decades of manufacturing operations, heavy machinery anchored to floors, oil-stained concrete, hazardous materials and substantial modifications all require specialist handling. We've restored factories and warehouses across Melbourne to handover-ready condition, regardless of what operations occurred there.",
+    featuredSections: [
+      {
+        title: "Site Preparation & Services Coordination",
+        description: "We start by ensuring your project foundations—both literally and operationally—are set for success. Comprehensive surveys, service location mapping, and pre-construction compliance checks ensure every aspect of the site is ready before major works commence. Underground services are installed or safeguarded early, and bulk earthworks are sequenced correctly to maintain a safe, organised, and disruption-free work environment—protecting timelines and budgets from the very start.",
+        imagePlaceholder: "Industrial site with surveying or service location equipment"
+      },
+      {
+        title: "Structural Systems & Building Envelope",
+        description: "Our structural works are planned and executed with precision to deliver strength, accuracy, and efficiency. We coordinate fabrication, transport, and installation to ensure every lift, alignment, and connection meets engineering tolerances and safety requirements. Roofing, cladding, and glazing are installed to exacting standards, achieving early lock-up while delivering superior weatherproofing to protect your asset and enable internal works to progress without interruption.",
+        imagePlaceholder: "Industrial building structural work or cladding installation"
+      },
+      {
+        title: "Services Integration & Quality Fit-Out",
+        description: "We integrate mechanical, electrical, and plumbing services seamlessly within the structural framework, using coordinated drawings and clash detection to avoid costly rework. Our fit-out delivery follows rigorous quality assurance procedures, ensuring every element—from mezzanines and partitions to specialist systems—meets specification. By the time we hand over, your building is fully functional, compliant, and ready for immediate operational use.",
+        imagePlaceholder: "Industrial facility interior showing services and fit-out work"
+      }
+    ],
     challenges: [
       {
         title: "Heavy Machinery Removal",
@@ -127,7 +166,20 @@ export const industries: Industry[] = [
     metaTitle: "Building Remediation Melbourne | Structural, Cladding & Waterproofing",
     metaDescription: "Specialist building remediation services in Melbourne. Cladding & glazing repairs, structural remediation, concrete cancer treatment, waterproofing solutions. Licensed contractors.",
     heroText: "Expert building remediation services across Melbourne—structural repairs, cladding replacement, concrete restoration and waterproofing solutions.",
+    heroImagePlaceholder: "Building facade with scaffolding or remediation work in progress",
     introduction: "Building remediation addresses defects and deterioration that affect a building's structural integrity, safety and weatherproofing. From combustible cladding replacement to concrete cancer treatment, our remediation services restore buildings to compliant, safe condition. We work with strata managers, building owners and facility managers across Melbourne to deliver lasting solutions.",
+    featuredSections: [
+      {
+        title: "Structural Systems & Building Envelope",
+        description: "Our structural works are planned and executed with precision to deliver strength, accuracy, and efficiency. We coordinate fabrication, transport, and installation to ensure every lift, alignment, and connection meets engineering tolerances and safety requirements. Roofing, cladding, and glazing are installed to exacting standards, achieving early lock-up while delivering superior weatherproofing to protect your asset and enable internal works to progress without interruption.",
+        imagePlaceholder: "Building facade remediation with cladding or glazing installation"
+      },
+      {
+        title: "Concrete & Structural Restoration",
+        description: "Concrete cancer, spalling and reinforcement corrosion are addressed through proven repair methodologies. We remove deteriorated concrete, treat exposed reinforcement with protective coatings, and restore structural elements using high-performance repair mortars. Our approach extends the service life of your building while meeting engineering certification requirements.",
+        imagePlaceholder: "Concrete cancer repair showing exposed reinforcement or repair work"
+      }
+    ],
     challenges: [
       {
         title: "Cladding & Glazing Defects",

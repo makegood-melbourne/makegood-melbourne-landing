@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import { useParams, Link, Navigate } from "react-router-dom";
-import { ArrowRight, CheckCircle, AlertTriangle } from "lucide-react";
+import { ArrowRight, CheckCircle, AlertTriangle, ImageIcon } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -8,6 +8,15 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { getIndustryBySlug, Industry } from "@/data/industries";
 import { getServiceBySlug } from "@/data/services";
+
+const ImagePlaceholder = ({ description, className = "" }: { description: string; className?: string }) => (
+  <div className={`bg-secondary/50 border-2 border-dashed border-border rounded-lg flex flex-col items-center justify-center p-8 ${className}`}>
+    <ImageIcon className="h-12 w-12 text-muted-foreground mb-3" />
+    <p className="text-sm text-muted-foreground text-center max-w-xs">
+      <span className="font-medium">Image needed:</span> {description}
+    </p>
+  </div>
+);
 
 const IndustryTemplate = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -51,28 +60,46 @@ const IndustryTemplate = () => {
 
       {/* Hero Section */}
       <section className="pt-32 pb-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-secondary/50 to-background">
-        <div className="max-w-4xl mx-auto text-center">
-          <span className="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">
-            {industry.name} Specialists
-          </span>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
-            {industry.title}
-          </h1>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
-            {industry.heroText}
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild size="lg">
-              <Link to="/contact">
-                Get a Free Quote
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
-            </Button>
-            <Button asChild variant="outline" size="lg">
-              <Link to="/our-process">
-                Our Process
-              </Link>
-            </Button>
+        <div className="max-w-6xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <span className="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">
+                {industry.name} Specialists
+              </span>
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
+                {industry.title}
+              </h1>
+              <p className="text-xl text-muted-foreground mb-8">
+                {industry.heroText}
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Button asChild size="lg">
+                  <Link to="/contact">
+                    Get a Free Quote
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </Link>
+                </Button>
+                <Button asChild variant="outline" size="lg">
+                  <Link to="/our-process">
+                    Our Process
+                  </Link>
+                </Button>
+              </div>
+            </div>
+            <div>
+              {industry.heroImage ? (
+                <img 
+                  src={industry.heroImage} 
+                  alt={industry.title}
+                  className="rounded-lg shadow-xl w-full aspect-[4/3] object-cover"
+                />
+              ) : industry.heroImagePlaceholder ? (
+                <ImagePlaceholder 
+                  description={industry.heroImagePlaceholder} 
+                  className="aspect-[4/3]"
+                />
+              ) : null}
+            </div>
           </div>
         </div>
       </section>
@@ -86,6 +113,37 @@ const IndustryTemplate = () => {
         </div>
       </section>
 
+      {/* Featured Sections */}
+      {industry.featuredSections && industry.featuredSections.length > 0 && (
+        <section className="py-16 px-4 sm:px-6 lg:px-8">
+          <div className="max-w-6xl mx-auto space-y-16">
+            {industry.featuredSections.map((section, index) => (
+              <div 
+                key={index} 
+                className={`grid lg:grid-cols-2 gap-12 items-center ${
+                  index % 2 === 1 ? 'lg:flex-row-reverse' : ''
+                }`}
+              >
+                <div className={index % 2 === 1 ? 'lg:order-2' : ''}>
+                  <h2 className="text-2xl sm:text-3xl font-bold mb-4">
+                    {section.title}
+                  </h2>
+                  <p className="text-muted-foreground leading-relaxed">
+                    {section.description}
+                  </p>
+                </div>
+                <div className={index % 2 === 1 ? 'lg:order-1' : ''}>
+                  <ImagePlaceholder 
+                    description={section.imagePlaceholder || `Image for ${section.title}`}
+                    className="aspect-[4/3]"
+                  />
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
+
       {/* Challenges We Solve */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-secondary/30">
         <div className="max-w-5xl mx-auto">
@@ -93,7 +151,7 @@ const IndustryTemplate = () => {
             {industry.name} Make Good Challenges
           </h2>
           <p className="text-center text-muted-foreground mb-10 max-w-2xl mx-auto">
-            Unique requirements we handle for {industry.name.toLowerCase()} venues
+            Unique requirements we handle for {industry.name.toLowerCase()} properties
           </p>
 
           <div className="grid md:grid-cols-2 gap-6">
