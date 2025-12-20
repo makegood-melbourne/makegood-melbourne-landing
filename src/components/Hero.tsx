@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import heroImage from "@/assets/melbourne-warehouse-make-good-services.jpg";
+import HeroStats from "./HeroStats";
 
 const Hero = () => {
   const scrollToContact = () => {
@@ -36,10 +37,14 @@ const Hero = () => {
           <p className="text-xl md:text-2xl text-foreground mb-4 leading-relaxed">
             Professional Make Good Services for Commercial & Industrial Spaces
           </p>
-          <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed">
+          <p className="text-lg md:text-xl text-muted-foreground mb-6 leading-relaxed">
             Expert end of lease works, make safe solutions and remediation services across Melbourne. We restore your space to its original condition, meeting all lease obligations.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4">
+          
+          {/* Trust badges and stats */}
+          <HeroStats />
+          
+          <div className="flex flex-col sm:flex-row gap-4 mt-8">
             <Button 
               size="lg" 
               onClick={scrollToContact}

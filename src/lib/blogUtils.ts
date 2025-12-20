@@ -67,6 +67,10 @@ const imageMap: Record<string, string> = {
   'carpet-tile-replacement': carpetTileReplacementImage,
   'asbestos-management': asbestosManagementImage,
   'port-melbourne-warehouse': portMelbourneWarehouseImage,
+  // Mapped to existing images until dedicated images are added
+  'industrial-lease-make-good': warehouseImage,
+  'office-fitout-make-good': officeStripOutImage,
+  'retail-lease-make-good': commercialMakeGoodImage,
 };
 
 export const getBlogImage = (imagePath: string): string => {

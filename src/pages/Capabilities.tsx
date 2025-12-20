@@ -1,12 +1,20 @@
 import { Helmet } from "react-helmet-async";
+import { Link } from "react-router-dom";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Hammer, Building2, Wrench, CheckCircle } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Hammer, Building2, Wrench, Sparkles, CheckCircle, ArrowRight, Phone, Shield } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import capabilitiesHero from "@/assets/commercial-property-restoration-capabilities-melbourne.jpg";
+import { getServicesByCategory } from "@/data/services";
 
 const Capabilities = () => {
-  const demolitionServices = [
+  const demolitionServices = getServicesByCategory('demolition');
+  const makeGoodServices = getServicesByCategory('make-good');
+  const tradeServices = getServicesByCategory('trade');
+  const structuralServices = getServicesByCategory('structural');
+
+  const allDemolitionItems = [
     "Pallet racking removal",
     "Electrical make-safe",
     "Mechanical re-balancing",
@@ -16,7 +24,7 @@ const Capabilities = () => {
     "Transport and relocation services"
   ];
 
-  const makeGoodServices = [
+  const allMakeGoodItems = [
     "Carpentry and joinery",
     "Concrete flooring restoration",
     "Professional painting",
@@ -27,21 +35,36 @@ const Capabilities = () => {
     "Ceiling tile cleaning and replacement"
   ];
 
-  const tradeServices = [
+  const allTradeItems = [
     "Electrical installations and repairs",
     "Mechanical systems",
     "Fire protection systems",
     "Plumbing services",
     "Flooring and concreting",
-    "LED fluorescent light replacement"
+    "Security system removal"
+  ];
+
+  const cleaningItems = [
+    "Post-construction cleaning",
+    "End of lease deep cleaning",
+    "High-pressure washing",
+    "Window and facade cleaning",
+    "Industrial floor scrubbing",
+    "Graffiti removal"
+  ];
+
+  const structuralItems = [
+    { title: "Retention Structure Remediation", description: "Comprehensive assessment and engineered solutions for compromised retention systems, ensuring long-term structural integrity and safety compliance." },
+    { title: "Steel Framework Retrofitting", description: "Expert modification and precision correction of steel structural elements to meet engineering specifications, improve performance and extend service life." },
+    { title: "Concrete Deterioration Treatment", description: "Specialised treatment and remediation of concrete deterioration to eliminate reinforcement corrosion, restore structural integrity and prevent future degradation." }
   ];
 
   return (
     <div className="min-h-screen flex flex-col">
       <Helmet>
-        <title>Our Capabilities - Professional Make Good Services | MakeGOOD Melbourne</title>
-        <meta name="description" content="Comprehensive make good capabilities including demolition services, property restoration and trade services. Pallet racking removal, electrical make-safe, carpentry, concrete flooring, painting and more across Melbourne." />
-        <meta property="og:title" content="Our Capabilities - MakeGOOD Melbourne" />
+        <title>Our Capabilities | Make Good Melbourne</title>
+        <meta name="description" content="Full-service make good capabilities: pallet racking removal, electrical make-safe, carpentry, concrete flooring, painting, ceiling repairs and more. Licensed Melbourne contractors." />
+        <meta property="og:title" content="Make Good Capabilities | MakeGOOD Melbourne" />
         <meta property="og:description" content="Professional demolition, make good and trade services for commercial and industrial properties in Melbourne." />
         <meta property="og:type" content="website" />
         <link rel="canonical" href="https://makegood.melbourne/capabilities" />
@@ -63,10 +86,16 @@ const Capabilities = () => {
           
           <div className="container mx-auto px-4 z-10 text-center">
             <h1 className="text-4xl md:text-5xl text-foreground mb-3">Our Capabilities</h1>
-            <p className="text-2xl text-accent font-semibold mb-4">Make Good, BETTER.</p>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-2xl text-primary font-semibold mb-4">Make Good, BETTER.</p>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
               We do make goods all day, every day. Whether your project is retail, commercial, or industrial, our network of reliable trades will work tirelessly to ensure your make good experience is seamless.
             </p>
+            <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
+              <Link to="/#contact">
+                <Phone className="mr-2 h-5 w-5" />
+                Get a Free Quote
+              </Link>
+            </Button>
           </div>
         </section>
 
@@ -76,8 +105,8 @@ const Capabilities = () => {
             <Card className="border-border">
               <CardHeader>
                 <div className="flex items-center gap-4 mb-4">
-                  <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center">
-                    <Hammer className="h-6 w-6 text-accent" />
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
+                    <Hammer className="h-6 w-6 text-primary" />
                   </div>
                   <CardTitle className="text-3xl text-foreground">Demolition Services</CardTitle>
                 </div>
@@ -86,18 +115,36 @@ const Capabilities = () => {
                 <p className="text-muted-foreground mb-6 leading-relaxed">
                   Our expert team excels in various facets of the demolition process, ensuring safe and efficient removal of structures, equipment, and materials. Whether it's interior alterations or complete demolitions, our team is equipped to handle projects of all sizes.
                 </p>
-                <div className="grid md:grid-cols-2 gap-4">
-                  {demolitionServices.map((service, index) => (
+                <div className="grid md:grid-cols-2 gap-4 mb-6">
+                  {allDemolitionItems.map((service, index) => (
                     <div key={index} className="flex items-start gap-3">
-                      <CheckCircle className="h-5 w-5 text-accent mt-0.5 flex-shrink-0" />
+                      <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                       <span className="text-foreground">{service}</span>
                     </div>
                   ))}
                 </div>
+                {demolitionServices.length > 0 && (
+                  <div className="pt-4 border-t border-border">
+                    <p className="text-sm text-muted-foreground mb-3">Learn more about our demolition services:</p>
+                    <div className="flex flex-wrap gap-2">
+                      {demolitionServices.map((service) => (
+                        <Link
+                          key={service.slug}
+                          to={`/services/${service.slug}`}
+                          className="inline-flex items-center gap-1 text-accent hover:text-accent/80 transition-colors text-sm font-medium"
+                        >
+                          {service.name}
+                          <ArrowRight className="h-3 w-3" />
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                )}
               </CardContent>
             </Card>
           </div>
         </section>
+
 
         {/* Make Good Services */}
         <section className="py-16 bg-secondary">
@@ -105,8 +152,8 @@ const Capabilities = () => {
             <Card className="border-border">
               <CardHeader>
                 <div className="flex items-center gap-4 mb-4">
-                  <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center">
-                    <Building2 className="h-6 w-6 text-accent" />
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
+                    <Building2 className="h-6 w-6 text-primary" />
                   </div>
                   <CardTitle className="text-3xl text-foreground">Make Good Services</CardTitle>
                 </div>
@@ -115,14 +162,31 @@ const Capabilities = () => {
                 <p className="text-muted-foreground mb-6 leading-relaxed">
                   We specialise in restoring commercial, industrial, and warehouse properties to their original condition. Our skilled team excels in diverse areas, meticulously addressing every aspect of property restoration to ensure spaces are returned to a lease-able condition.
                 </p>
-                <div className="grid md:grid-cols-2 gap-4">
-                  {makeGoodServices.map((service, index) => (
+                <div className="grid md:grid-cols-2 gap-4 mb-6">
+                  {allMakeGoodItems.map((service, index) => (
                     <div key={index} className="flex items-start gap-3">
-                      <CheckCircle className="h-5 w-5 text-accent mt-0.5 flex-shrink-0" />
+                      <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                       <span className="text-foreground">{service}</span>
                     </div>
                   ))}
                 </div>
+                {makeGoodServices.length > 0 && (
+                  <div className="pt-4 border-t border-border">
+                    <p className="text-sm text-muted-foreground mb-3">Learn more about our make good services:</p>
+                    <div className="flex flex-wrap gap-2">
+                      {makeGoodServices.map((service) => (
+                        <Link
+                          key={service.slug}
+                          to={`/services/${service.slug}`}
+                          className="inline-flex items-center gap-1 text-accent hover:text-accent/80 transition-colors text-sm font-medium"
+                        >
+                          {service.name}
+                          <ArrowRight className="h-3 w-3" />
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                )}
               </CardContent>
             </Card>
           </div>
@@ -134,8 +198,8 @@ const Capabilities = () => {
             <Card className="border-border">
               <CardHeader>
                 <div className="flex items-center gap-4 mb-4">
-                  <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center">
-                    <Wrench className="h-6 w-6 text-accent" />
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
+                    <Wrench className="h-6 w-6 text-primary" />
                   </div>
                   <CardTitle className="text-3xl text-foreground">Trade Services</CardTitle>
                 </div>
@@ -144,26 +208,166 @@ const Capabilities = () => {
                 <p className="text-muted-foreground mb-6 leading-relaxed">
                   Our comprehensive approach revitalises every facet of your property, ensuring a flawless canvas for its next chapter. Our dedicated team seamlessly integrates multiple trade specialties, tailored to enhance your space during the pivotal make good process.
                 </p>
-                <div className="grid md:grid-cols-2 gap-4">
-                  {tradeServices.map((service, index) => (
+                <div className="grid md:grid-cols-2 gap-4 mb-6">
+                  {allTradeItems.map((service, index) => (
                     <div key={index} className="flex items-start gap-3">
-                      <CheckCircle className="h-5 w-5 text-accent mt-0.5 flex-shrink-0" />
+                      <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                       <span className="text-foreground">{service}</span>
                     </div>
                   ))}
+                </div>
+                {tradeServices.length > 0 && (
+                  <div className="pt-4 border-t border-border">
+                    <p className="text-sm text-muted-foreground mb-3">Learn more about our trade services:</p>
+                    <div className="flex flex-wrap gap-2">
+                      {tradeServices.map((service) => (
+                        <Link
+                          key={service.slug}
+                          to={`/services/${service.slug}`}
+                          className="inline-flex items-center gap-1 text-accent hover:text-accent/80 transition-colors text-sm font-medium"
+                        >
+                          {service.name}
+                          <ArrowRight className="h-3 w-3" />
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </CardContent>
+            </Card>
+          </div>
+        </section>
+
+        {/* Structural Remediation Services */}
+        <section className="py-16 bg-secondary">
+          <div className="container mx-auto px-4">
+            <Card className="border-border border-2 border-accent/20">
+              <CardHeader>
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center">
+                    <Shield className="h-6 w-6 text-accent" />
+                  </div>
+                  <div>
+                    <CardTitle className="text-3xl text-foreground">Structural Remediation</CardTitle>
+                    <p className="text-accent font-medium mt-1">Restore Structural Integrity</p>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground mb-6 leading-relaxed">
+                  Expert structural remediation services for commercial and industrial properties. We address concrete deterioration, steel framework issues and retention structure failures to restore structural integrity and ensure long-term safety compliance.
+                </p>
+                <div className="space-y-6 mb-6">
+                  {structuralItems.map((item, index) => (
+                    <div key={index} className="flex items-start gap-4">
+                      <div className="w-8 h-8 rounded bg-accent/10 flex items-center justify-center flex-shrink-0 mt-1">
+                        <span className="text-accent font-bold text-sm">{index + 1}</span>
+                      </div>
+                      <div>
+                        <h3 className="text-foreground font-semibold mb-1">{item.title}</h3>
+                        <p className="text-muted-foreground text-sm">{item.description}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+                {structuralServices.length > 0 && (
+                  <div className="pt-4 border-t border-border flex flex-wrap items-center justify-between gap-4">
+                    <div>
+                      <p className="text-sm text-muted-foreground mb-2">Learn more about our structural services:</p>
+                      <div className="flex flex-wrap gap-2">
+                        {structuralServices.map((service) => (
+                          <Link
+                            key={service.slug}
+                            to={`/services/${service.slug}`}
+                            className="inline-flex items-center gap-1 text-accent hover:text-accent/80 transition-colors text-sm font-medium"
+                          >
+                            {service.name}
+                            <ArrowRight className="h-3 w-3" />
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
+                    <Button asChild className="bg-accent hover:bg-accent/90 text-accent-foreground">
+                      <Link to="/#contact">
+                        Get a Structural Assessment
+                      </Link>
+                    </Button>
+                  </div>
+                )}
+              </CardContent>
+            </Card>
+          </div>
+        </section>
+
+        {/* Cleaning Services */}
+        <section className="py-16 bg-secondary">
+          <div className="container mx-auto px-4">
+            <Card className="border-border border-2 border-primary/20">
+              <CardHeader>
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
+                    <Sparkles className="h-6 w-6 text-primary" />
+                  </div>
+                  <div>
+                    <CardTitle className="text-3xl text-foreground">Commercial Cleaning & Handover Services</CardTitle>
+                    <p className="text-primary font-medium mt-1">Complete Your Make Good</p>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground mb-6 leading-relaxed">
+                  Pass your final inspection first time. Our professional cleaning services ensure your property meets landlord standards and handover requirements. From post-construction cleans to end of lease deep cleaning, we handle it all so you can focus on what matters.
+                </p>
+                <div className="grid md:grid-cols-2 gap-4 mb-6">
+                  {cleaningItems.map((service, index) => (
+                    <div key={index} className="flex items-start gap-3">
+                      <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                      <span className="text-foreground">{service}</span>
+                    </div>
+                  ))}
+                </div>
+                <div className="pt-4 border-t border-border flex flex-wrap items-center justify-between gap-4">
+                  <div>
+                    <p className="text-sm text-muted-foreground mb-2">Learn more about our cleaning services:</p>
+                    <Link
+                      to="/services/commercial-cleaning"
+                      className="inline-flex items-center gap-1 text-accent hover:text-accent/80 transition-colors text-sm font-medium"
+                    >
+                      Commercial Cleaning
+                      <ArrowRight className="h-3 w-3" />
+                    </Link>
+                  </div>
+                  <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground">
+                    <Link to="/#contact">
+                      Get a Cleaning Quote
+                    </Link>
+                  </Button>
                 </div>
               </CardContent>
             </Card>
           </div>
         </section>
 
-        {/* Closing Statement */}
-        <section className="py-16 bg-secondary">
+        {/* Final CTA */}
+        <section className="py-16 bg-background">
           <div className="container mx-auto px-4 text-center max-w-3xl">
             <h2 className="text-3xl text-foreground mb-6">Quality & Commitment</h2>
-            <p className="text-lg text-muted-foreground leading-relaxed">
+            <p className="text-xl text-muted-foreground leading-relaxed mb-8">
               With attention to detail and a commitment to quality, we transform spaces, ensuring they meet the standards of end of lease obligations. Our network of reliable trades works tirelessly to deliver comprehensive solutions that save you time, effort, and stress.
             </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
+                <Link to="/#contact">
+                  <Phone className="mr-2 h-5 w-5" />
+                  Get Your Free Quote
+                </Link>
+              </Button>
+              <Button asChild size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10">
+                <a href="tel:0383aborede">
+                  Call Us Now
+                </a>
+              </Button>
+            </div>
           </div>
         </section>
       </main>

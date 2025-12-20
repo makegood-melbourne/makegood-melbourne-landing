@@ -1,21 +1,48 @@
 import { Helmet } from "react-helmet-async";
 import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
-import Services from "@/components/Services";
+import ServicesCarousel from "@/components/ServicesCarousel";
+import SimpleProcess from "@/components/SimpleProcess";
 import About from "@/components/About";
+import ProblemSolution from "@/components/ProblemSolution";
+import ServiceAreasGrid from "@/components/ServiceAreasGrid";
+import FAQ from "@/components/FAQ";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import FloatingCTAs from "@/components/FloatingCTAs";
 
 const Index = () => {
   return (
     <main className="min-h-screen bg-background text-foreground">
       <Helmet>
-        <title>MakeGOOD Melbourne - Professional Make Good & End of Lease Services</title>
-        <meta name="description" content="Expert make good services in Melbourne. Professional end of lease works, property restoration, and commercial property maintenance. Get your bond back guaranteed." />
-        <meta property="og:title" content="MakeGOOD Melbourne - Professional Make Good Services" />
-        <meta property="og:description" content="Expert make good services in Melbourne. Professional end of lease works and property restoration." />
+        <title>Make Good Melbourne | End of Lease Restoration Experts</title>
+        <meta name="description" content="Melbourne's trusted make good specialists. Expert end of lease restoration for offices, warehouses and industrial properties. Free quotes." />
+        <meta property="og:title" content="Make Good Melbourne | Commercial Property Restoration Specialists" />
+        <meta property="og:description" content="Melbourne's trusted make good specialists. Expert end of lease restoration for commercial and industrial properties." />
         <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://makegood.melbourne/" />
         <link rel="canonical" href="https://makegood.melbourne/" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "Make Good Melbourne",
+            "description": "Professional make good and end of lease restoration services for commercial and industrial properties in Melbourne, Victoria.",
+            "url": "https://makegood.melbourne",
+            "email": "enquiries@makegood.melbourne",
+            "areaServed": {
+              "@type": "State",
+              "name": "Victoria"
+            },
+            "serviceType": ["Make Good Services", "End of Lease Restoration", "Office Strip Outs", "Warehouse Restoration", "Building Remediation"],
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Melbourne",
+              "addressRegion": "VIC",
+              "addressCountry": "AU"
+            }
+          })}
+        </script>
       </Helmet>
       
       <Navigation />
@@ -24,11 +51,11 @@ const Index = () => {
       {/* SEO Content Section */}
       <section className="py-12 bg-background border-b border-border">
         <div className="container mx-auto px-4 max-w-5xl">
-          <div className="prose prose-lg max-w-none">
+          <div className="prose prose-xl max-w-none">
             <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6 text-center">
-              Melbourne's Leading Make Good Specialists
+              Melbourne's Leading <span className="text-primary">Make Good Specialists</span>
             </h2>
-            <div className="grid md:grid-cols-2 gap-8 text-muted-foreground">
+            <div className="grid md:grid-cols-2 gap-x-8 gap-y-4 text-xl text-muted-foreground">
               <div>
                 <p className="mb-4 leading-relaxed">
                   Make Good Melbourne is your trusted partner for commercial and industrial end of lease restoration services across Melbourne and Victoria. We specialise in comprehensive make good works, make safe solutions and building remediation services for offices, warehouses, retail spaces and industrial facilities.
@@ -50,10 +77,15 @@ const Index = () => {
         </div>
       </section>
       
-      <Services />
+      <ServicesCarousel />
+      <SimpleProcess />
+      <ProblemSolution />
       <About />
+      <ServiceAreasGrid />
+      <FAQ />
       <Contact />
       <Footer />
+      <FloatingCTAs />
     </main>
   );
 };

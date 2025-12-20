@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import { blogPosts } from "@/data/blogPosts";
 import { getBlogImage, calculateReadingTime, parseMarkdown } from "@/lib/blogUtils";
 import { getRedirectSlug } from "@/lib/redirects";
@@ -47,16 +48,16 @@ const BlogPost = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Helmet>
-        <title>{post.title} | MakeGOOD Melbourne Blog</title>
-        <meta name="description" content={post.excerpt} />
-        <meta property="og:title" content={post.title} />
+        <title>{post.title.length > 50 ? post.title.slice(0, 47) + '...' : post.title} | MakeGOOD</title>
+        <meta name="description" content={`${post.excerpt.slice(0, 155)}...`} />
+        <meta property="og:title" content={`${post.title} | MakeGOOD Melbourne`} />
         <meta property="og:description" content={post.excerpt} />
         <meta property="og:type" content="article" />
         <meta property="og:url" content={postUrl} />
         <meta property="og:image" content={imageUrl} />
         <meta property="article:published_time" content={new Date(post.date).toISOString()} />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={post.title} />
+        <meta name="twitter:title" content={`${post.title} | MakeGOOD Melbourne`} />
         <meta name="twitter:description" content={post.excerpt} />
         <meta name="twitter:image" content={imageUrl} />
         <link rel="canonical" href={postUrl} />
@@ -93,14 +94,15 @@ const BlogPost = () => {
       
       <main className="flex-1 pt-20">
         <article className="container mx-auto px-4 py-12 max-w-4xl">
-          <nav className="mb-8">
-            <Link to="/blog" className="inline-flex items-center text-accent hover:text-accent/80 transition-colors">
-              <ArrowLeft className="mr-2 h-4 w-4" />
-              Back to Blog
-            </Link>
-          </nav>
+          {/* Breadcrumbs */}
+          <Breadcrumbs 
+            items={[
+              { label: "Blog", href: "/blog" },
+              { label: post.title.length > 40 ? post.title.slice(0, 37) + '...' : post.title }
+            ]} 
+          />
 
-          <header className="mb-6">
+          <header className="mb-6 mt-4">
             <h1 className="text-4xl md:text-5xl text-foreground mb-4">{post.title}</h1>
             <div className="flex flex-wrap items-center gap-4 text-sm text-muted-foreground">
               <span className="flex items-center gap-1">

@@ -4,10 +4,12 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Mail, MapPin, Phone } from "lucide-react";
 import { useState } from "react";
+import { useLocation } from "react-router-dom";
 import { toast } from "sonner";
 import { supabase } from "@/integrations/supabase/client";
 
 const Contact = () => {
+  const location = useLocation();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -21,8 +23,9 @@ const Contact = () => {
     setIsSubmitting(true);
 
     try {
+      const sourcePage = `${window.location.origin}${location.pathname}`;
       const { data, error } = await supabase.functions.invoke('send-contact-email', {
-        body: formData
+        body: { ...formData, sourcePage }
       });
 
       if (error) throw error;
@@ -49,7 +52,7 @@ const Contact = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Get in Touch</h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Ready to discuss your project? Contact us for a free, no-obligation quote.
           </p>
         </div>
@@ -161,7 +164,7 @@ const Contact = () => {
               </CardContent>
             </Card>
 
-            <div className="bg-accent/10 border border-accent/20 rounded-lg p-6">
+            <div className="bg-tertiary/10 border border-tertiary/30 rounded-lg p-6">
               <h3 className="font-semibold text-foreground mb-2">Emergency Make Safe?</h3>
               <p className="text-muted-foreground mb-4">
                 We offer rapid response for urgent make safe requirements. Contact us immediately for emergency situations.

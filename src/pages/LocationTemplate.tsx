@@ -1,9 +1,11 @@
 import { useParams, Navigate, Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
-import { MapPin, Clock, Shield, Mail, ArrowRight, CheckCircle2, Building2, Wrench, Warehouse, Factory, HardHat, Truck } from "lucide-react";
+import { MapPin, Clock, Shield, Mail, ArrowRight, CheckCircle2, Building2, Wrench, Warehouse, Factory, HardHat, Truck, HelpCircle } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import { Button } from "@/components/ui/button";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { getLocationBySlug } from "@/data/locations";
 import heroImage from "@/assets/locations/commercial-make-good-restoration-melbourne.jpeg";
 import workerImage from "@/assets/locations/melbourne-make-good-contractor-with-tools.jpeg";
@@ -92,17 +94,64 @@ const LocationTemplate = () => {
   return (
     <>
       <Helmet>
-        <title>{location.title} | Make Good Melbourne</title>
-        <meta name="description" content={location.description} />
-        <meta property="og:title" content={`${location.title} | Make Good Melbourne`} />
-        <meta property="og:description" content={location.description} />
+        <title>{location.metaTitle}</title>
+        <meta name="description" content={location.metaDescription} />
+        <meta property="og:title" content={location.metaTitle} />
+        <meta property="og:description" content={location.metaDescription} />
         <link rel="canonical" href={`https://makegood.melbourne/areas/${slug}`} />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": `Make Good Services ${location.name}`,
+            "description": location.metaDescription,
+            "provider": {
+              "@type": "LocalBusiness",
+              "name": "Make Good Melbourne",
+              "url": "https://makegood.melbourne"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": location.name,
+              "containedIn": "Victoria, Australia"
+            },
+            "serviceType": "Make Good Services"
+          })}
+        </script>
+        {location.faqs && location.faqs.length > 0 && (
+          <script type="application/ld+json">
+            {JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              "mainEntity": location.faqs.map(faq => ({
+                "@type": "Question",
+                "name": faq.question,
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": faq.answer
+                }
+              }))
+            })}
+          </script>
+        )}
       </Helmet>
 
       <Navigation />
 
+      {/* Breadcrumbs */}
+      <div className="pt-20 bg-background">
+        <div className="container mx-auto px-4">
+          <Breadcrumbs 
+            items={[
+              { label: "Service Areas", href: "/service-areas" },
+              { label: location.name }
+            ]} 
+          />
+        </div>
+      </div>
+
       {/* Hero Section */}
-      <section className="relative min-h-[70vh] flex items-center bg-background pt-20">
+      <section className="relative min-h-[70vh] flex items-center bg-background">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left: Content */}
@@ -147,7 +196,7 @@ const LocationTemplate = () => {
                   asChild
                   className="text-lg px-8 py-6"
                 >
-                  <a href="mailto:ali@makegood.melbourne" className="flex items-center gap-2">
+                  <a href="mailto:enquiries@makegood.melbourne" className="flex items-center gap-2">
                     <Mail className="w-5 h-5" />
                     Email Us
                   </a>
@@ -169,19 +218,37 @@ const LocationTemplate = () => {
         </div>
       </section>
 
-      {/* Service Coverage Section */}
+      {/* Local Content & Service Coverage Section */}
       <section className="py-16 bg-secondary">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-2xl md:text-3xl font-bold text-primary text-center mb-12">
-              We do make goods all day, every day.
+            {/* Unique Local Content */}
+            <div className="mb-12">
+            <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
+              Commercial & Industrial Property in <span className="text-primary">{location.name}</span>
             </h2>
-            <div className="grid md:grid-cols-2 gap-12">
+              <div className="text-muted-foreground space-y-4">
+                <p className="leading-relaxed">
+                  {location.uniqueIntro}
+                </p>
+                <p className="leading-relaxed">
+                  {location.localContext}
+                </p>
+              </div>
+            </div>
+
+            {/* Tagline */}
+            <h3 className="text-xl md:text-2xl font-bold text-primary text-center mb-10">
+              We do make goods all day, every day.
+            </h3>
+
+            {/* Areas & Property Types Grid */}
+            <div className="grid md:grid-cols-2 gap-12 max-w-3xl mx-auto">
               {/* Key Areas */}
               <div>
-                <h2 className="text-2xl font-bold text-foreground mb-6">
+                <h4 className="text-xl font-bold text-foreground mb-5">
                   Areas We Service
-                </h2>
+                </h4>
                 <ul className="space-y-3">
                   {location.keyAreas.map((area, index) => (
                     <li key={index} className="flex items-center gap-3">
@@ -194,9 +261,9 @@ const LocationTemplate = () => {
 
               {/* Business Types */}
               <div>
-                <h2 className="text-2xl font-bold text-foreground mb-6">
+                <h4 className="text-xl font-bold text-foreground mb-5">
                   Property Types
-                </h2>
+                </h4>
                 <ul className="space-y-3">
                   {location.businessTypes.map((type, index) => (
                     <li key={index} className="flex items-center gap-3">
@@ -218,7 +285,7 @@ const LocationTemplate = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
               Our Services in {location.name}
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Comprehensive make good solutions for commercial & industrial properties
             </p>
           </div>
@@ -282,7 +349,7 @@ const LocationTemplate = () => {
                 <h2 className="text-3xl font-bold text-foreground mb-6">
                   Why {location.name} Trusts Us
                 </h2>
-                <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+                <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
                   Local expertise, professional service and guaranteed results. We understand {location.name}'s commercial property landscape.
                 </p>
 
@@ -322,6 +389,65 @@ const LocationTemplate = () => {
         </div>
       </section>
 
+      {/* Extended SEO Content Section */}
+      <section className="py-16 bg-background border-t border-border">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
+              End of Lease Make Good Specialists in {location.name}
+            </h2>
+            <div className="prose prose-lg max-w-none text-muted-foreground space-y-4">
+              <p className="leading-relaxed">
+                When your commercial or industrial lease ends in {location.name}, meeting your make good obligations can feel overwhelming. That's where Make Good Melbourne comes in. We specialise in returning {location.name} commercial properties to their original condition, handling everything from office strip outs and warehouse restoration to industrial facility remediation.
+              </p>
+              <p className="leading-relaxed">
+                Our experienced team works with real estate agents, property managers, strata managers and tenants throughout {location.name} and the surrounding areas. We understand the specific requirements of {location.name}'s commercial property market—from older building stock that needs careful asbestos management to modern facilities requiring precision restoration to landlord specifications.
+              </p>
+              <p className="leading-relaxed">
+                Whether you're vacating a small office on {location.keyAreas[0]} or a large warehouse facility, we provide comprehensive make good services including demolition, electrical make-safe, carpentry, painting, flooring restoration, ceiling repairs and complete waste management. Every project includes detailed documentation for your records and lease compliance.
+              </p>
+              <p className="leading-relaxed">
+                As {location.name}'s trusted make good contractor, we guarantee our workmanship and offer fixed-price quotes with no hidden surprises. Contact us today for a free inspection and quote for your {location.name} make good project—we'll help you meet your lease obligations on time and on budget.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section - Only shown for locations with FAQs */}
+      {location.faqs && location.faqs.length > 0 && (
+        <section className="py-16 bg-secondary">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <div className="flex items-center gap-3 mb-8">
+                <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
+                  <HelpCircle className="h-6 w-6 text-primary" />
+                </div>
+                <h2 className="text-2xl md:text-3xl font-bold text-foreground">
+                  Frequently Asked Questions About {location.name} Make Goods
+                </h2>
+              </div>
+              
+              <Accordion type="single" collapsible className="space-y-4">
+                {location.faqs.map((faq, index) => (
+                  <AccordionItem 
+                    key={index} 
+                    value={`faq-${index}`}
+                    className="bg-card border border-border rounded-lg px-6"
+                  >
+                    <AccordionTrigger className="text-left text-foreground font-medium hover:text-primary hover:no-underline py-5">
+                      {faq.question}
+                    </AccordionTrigger>
+                    <AccordionContent className="text-muted-foreground pb-5 leading-relaxed">
+                      {faq.answer}
+                    </AccordionContent>
+                  </AccordionItem>
+                ))}
+              </Accordion>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Final CTA Section */}
       <section className="py-20 bg-card border-t border-border">
@@ -349,7 +475,7 @@ const LocationTemplate = () => {
                 asChild
                 className="text-lg px-10 py-6"
               >
-                <a href="mailto:ali@makegood.melbourne" className="flex items-center gap-2">
+                <a href="mailto:enquiries@makegood.melbourne" className="flex items-center gap-2">
                   <Mail className="w-5 h-5" />
                   Email Us
                 </a>
@@ -358,8 +484,8 @@ const LocationTemplate = () => {
 
             <p className="text-muted-foreground">
               Or email us at{" "}
-              <a href="mailto:ali@makegood.melbourne" className="text-primary hover:underline">
-                ali@makegood.melbourne
+              <a href="mailto:enquiries@makegood.melbourne" className="text-primary hover:underline">
+                enquiries@makegood.melbourne
               </a>
             </p>
           </div>
