@@ -1,3 +1,8 @@
+export interface LocationFAQ {
+  question: string;
+  answer: string;
+}
+
 export interface Location {
   name: string;
   slug: string;
@@ -9,6 +14,7 @@ export interface Location {
   localContext: string;
   keyAreas: string[];
   businessTypes: string[];
+  faqs?: LocationFAQ[];
 }
 
 export const locations: Location[] = [
@@ -88,6 +94,24 @@ export const locations: Location[] = [
       "Retail and hospitality",
       "Automotive industry",
       "Food production"
+    ],
+    faqs: [
+      {
+        question: "What makes industrial make goods in Dandenong South different from other areas?",
+        answer: "Dandenong South facilities are typically larger scale—often 5,000m² to 20,000m² or more—with heavy-duty infrastructure including reinforced floors, three-phase power systems, and specialised ventilation. Many buildings date from the 1970s-90s manufacturing boom, requiring asbestos surveys and potential remediation. We're experienced with the specific challenges of this precinct, including EPA compliance for former manufacturing sites."
+      },
+      {
+        question: "How long does a typical warehouse make good take in Dandenong?",
+        answer: "For a standard Dandenong warehouse (1,000-3,000m²), expect 2-4 weeks depending on scope. Larger distribution centres or those with extensive racking removal may require 4-6 weeks. Manufacturing facilities with contamination or hazardous materials can take 6-8 weeks. We provide detailed timelines after our initial site inspection."
+      },
+      {
+        question: "Do you handle food production facility make goods in Dandenong?",
+        answer: "Yes, we regularly restore food manufacturing and processing facilities throughout Dandenong South. This includes removing commercial kitchen equipment, decommissioning coolrooms and freezers, cleaning grease traps, and ensuring the space meets health and safety standards for handover. We understand the specific compliance requirements for food industry premises."
+      },
+      {
+        question: "What's the average cost for a make good in the Dandenong industrial precinct?",
+        answer: "Costs vary significantly based on size and condition. Small trade premises (200-500m²) typically range $15,000-$40,000. Medium warehouses (1,000-3,000m²) run $40,000-$120,000. Large manufacturing facilities (5,000m²+) can exceed $200,000. We provide fixed-price quotes after inspection so there are no surprises."
+      }
     ]
   },
   {
@@ -192,6 +216,24 @@ export const locations: Location[] = [
       "Commercial offices",
       "Creative studios",
       "Automotive services"
+    ],
+    faqs: [
+      {
+        question: "How do you handle heritage building make goods in Port Melbourne?",
+        answer: "Port Melbourne has many heritage-listed and character warehouses, particularly along Ingles Street and in the Fishermans Bend precinct. We work closely with heritage consultants when required, using sympathetic restoration techniques that preserve original features while meeting lease obligations. This includes careful removal of modern fitouts without damaging exposed brick, timber trusses, or original windows."
+      },
+      {
+        question: "What are the unique challenges of Fishermans Bend make goods?",
+        answer: "Fishermans Bend is in transition—many industrial buildings are being repurposed or will be demolished for the urban renewal project. We help tenants navigate whether a full make good is required or if a partial restoration is acceptable given the building's future. We also handle complex situations where creative studio fitouts need to be stripped from former industrial shells."
+      },
+      {
+        question: "Do you service Webb Dock and port-related facilities?",
+        answer: "Yes, we regularly work with logistics operators and port-related businesses around Webb Dock and Williamstown Road. These facilities often have specialised requirements including heavy-duty floor restoration, dock leveller servicing, container handling area repairs, and large-scale warehouse cleaning. We understand the 24/7 nature of port operations and can schedule work to minimise disruption."
+      },
+      {
+        question: "What's the turnaround time for Port Melbourne creative studio strip outs?",
+        answer: "Creative studios in Port Melbourne—common in converted warehouses—typically require 1-2 weeks for complete strip out and restoration. This includes removing custom built sets, studio lighting rigs, sound insulation, and returning the space to its original warehouse condition. We've completed dozens of studio make goods in the area and understand landlord expectations in this market."
+      }
     ]
   },
   {
@@ -244,6 +286,24 @@ export const locations: Location[] = [
       "Manufacturing facilities",
       "Medical and healthcare",
       "Hospitality"
+    ],
+    faqs: [
+      {
+        question: "What are Eastland shopping centre make good requirements?",
+        answer: "Eastland and surrounding retail tenancies have strict make good standards set by centre management. Requirements typically include removal of all shopfitting and signage, ceiling grid restoration to centre specifications, flooring removal back to concrete or base build, and compliance with after-hours work restrictions. We're familiar with Eastland's specific processes and work regularly with their facilities team."
+      },
+      {
+        question: "How do retail make goods in Ringwood differ from industrial?",
+        answer: "Retail tenancies focus heavily on presentation—perfect paint finishes, seamless ceiling tiles, and spotless shopfronts. Industrial make goods in Ringwood East prioritise function: floor durability, roller door operation, and structural integrity. Costs also differ significantly: a 100m² retail shop might cost $15,000-$25,000 while a similar-sized industrial unit runs $8,000-$15,000 due to different finish standards."
+      },
+      {
+        question: "Do you handle medical practice make goods in Ringwood?",
+        answer: "Yes, Ringwood has a significant healthcare precinct with medical centres, dental practices, and allied health facilities. Medical make goods require careful removal of plumbing for dental chairs or sterilisation equipment, proper disposal of any clinical waste infrastructure, and restoration to general commercial standards. We ensure all work meets health facility compliance requirements."
+      },
+      {
+        question: "What's your response time for urgent Ringwood make goods?",
+        answer: "We can typically attend for inspection within 24-48 hours across Ringwood and begin work within a week for urgent jobs. For retail tenancies with tight lease deadlines—common around Eastland where new tenants are waiting—we offer expedited scheduling and can work extended hours to meet handover dates. Emergency make-safe works can commence same-day when required."
+      }
     ]
   },
   {
