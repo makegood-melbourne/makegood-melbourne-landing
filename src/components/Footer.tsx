@@ -24,7 +24,9 @@ const Footer = () => {
 
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           <div>
-            <img src={logo} alt="MakeGOOD Melbourne - Professional End of Lease Services" className="h-10 mb-4 brightness-0 invert" />
+            <Link to="/">
+              <img src={logo} alt="MakeGOOD Melbourne - Professional End of Lease Services" className="h-10 mb-4 brightness-0 invert hover:opacity-80 transition-opacity cursor-pointer" />
+            </Link>
             <p className="text-lg text-accent font-semibold mb-2">Make Good, BETTER.</p>
             <p className="text-muted-foreground leading-relaxed mb-4">
               Professional make good, make safe and remediation services for commercial and industrial properties across Melbourne.
