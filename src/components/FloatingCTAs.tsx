@@ -22,8 +22,8 @@ const FloatingCTAs = () => {
         </Button>
       </div>
 
-      {/* Desktop: Quote CTA sits above the chatbot button */}
-      <div className="hidden md:block fixed bottom-24 right-6 z-40">
+      {/* Desktop: Quote CTA in bottom-left */}
+      <div className="hidden md:block fixed bottom-6 left-6 z-40">
         <Button 
           onClick={scrollToContact}
           size="lg"
