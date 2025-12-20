@@ -9,6 +9,7 @@ import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
 import LocationTemplate from "./pages/LocationTemplate";
 import ServiceTemplate from "./pages/ServiceTemplate";
+import IndustryTemplate from "./pages/IndustryTemplate";
 import GuestPostsDownload from "./pages/GuestPostsDownload";
 import NotFound from "./pages/NotFound";
 import LegacyBlogRedirect from "./pages/LegacyBlogRedirect";
@@ -43,6 +44,7 @@ const App = () => (
           <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="/areas/:slug" element={<LocationTemplate />} />
           <Route path="/services/:slug" element={<ServiceTemplate />} />
+          <Route path="/industries/:slug" element={<IndustryTemplate />} />
           <Route path="/downloads/guest-posts" element={<GuestPostsDownload />} />
           
           {/* Legacy redirects for old site structure */}

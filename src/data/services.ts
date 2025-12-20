@@ -534,6 +534,106 @@ export const services: Service[] = [
     relatedServices: ["structural-remediation", "commercial-make-good", "office-strip-out"],
     category: "structural",
     published: true
+  },
+  {
+    name: "Carpet Removal",
+    slug: "carpet-removal",
+    title: "Commercial Carpet Removal Melbourne",
+    metaTitle: "Commercial Carpet Removal Melbourne | Fast Strip Out",
+    description: "Professional carpet removal for commercial spaces. We strip carpet tiles, broadloom and underlay, dispose of waste compliantly and prepare floors for next tenant or new coverings.",
+    metaDescription: "Commercial carpet removal Melbourne. Office and retail carpet strip out, underlay removal, floor preparation. Fast turnaround, full disposal included. Free quotes.",
+    heroText: "Complete carpet removal for offices, retail and commercial spaces—including underlay, gripper rods and adhesive residue.",
+    benefits: [
+      "Carpet tiles and broadloom removal",
+      "Underlay and gripper rod strip out",
+      "Adhesive residue removal",
+      "Floor preparation for new coverings",
+      "Compliant waste disposal",
+      "Fast turnaround available"
+    ],
+    ctaBlock: {
+      title: "Let Us Handle Your Carpet Removal",
+      subtitle: "We do makegoods all day, every day.",
+      text: "We've stripped carpet from hundreds of commercial spaces across Melbourne. Get in touch today for a free, no-obligation quote."
+    },
+    relatedServices: ["office-strip-out", "vinyl-removal", "adhesive-removal"],
+    category: "demolition",
+    published: true
+  },
+  {
+    name: "Vinyl Removal",
+    slug: "vinyl-removal",
+    title: "Commercial Vinyl Flooring Removal Melbourne",
+    metaTitle: "Commercial Vinyl Removal Melbourne | Floor Strip Out",
+    description: "Specialist vinyl flooring removal for commercial and healthcare facilities. We remove sheet vinyl, LVT and vinyl tiles, including stubborn adhesives, leaving floors ready for restoration.",
+    metaDescription: "Commercial vinyl flooring removal Melbourne. Sheet vinyl, LVT and vinyl tile strip out. Adhesive grinding included. Medical, retail and office specialists. Free quotes.",
+    heroText: "Expert removal of sheet vinyl, luxury vinyl tiles and vinyl planks—including the adhesive that makes them so difficult to remove.",
+    benefits: [
+      "Sheet vinyl and welded seam removal",
+      "LVT and vinyl plank strip out",
+      "Vinyl tile removal",
+      "Adhesive grinding and preparation",
+      "Subfloor assessment and repair",
+      "Healthcare and cleanroom experience"
+    ],
+    ctaBlock: {
+      title: "Let Us Handle Your Vinyl Removal",
+      subtitle: "We do makegoods all day, every day.",
+      text: "From medical centres to retail stores, we've removed vinyl flooring across Melbourne's commercial properties. Get in touch today for a free, no-obligation quote."
+    },
+    relatedServices: ["carpet-removal", "adhesive-removal", "epoxy-flooring"],
+    category: "demolition",
+    published: true
+  },
+  {
+    name: "Tile Removal",
+    slug: "tile-removal",
+    title: "Commercial Tile Removal Melbourne",
+    metaTitle: "Commercial Tile Removal Melbourne | Floor & Wall",
+    description: "Professional tile removal for commercial kitchens, bathrooms and retail spaces. We remove ceramic, porcelain and quarry tiles from floors and walls, including adhesive bed preparation.",
+    metaDescription: "Commercial tile removal Melbourne. Floor and wall tile strip out for kitchens, bathrooms and retail. Adhesive bed removal included. Licensed contractors. Free quotes.",
+    heroText: "Complete tile removal from floors and walls—ceramic, porcelain, quarry tiles and mosaics, with adhesive bed grinding for a clean substrate.",
+    benefits: [
+      "Floor and wall tile removal",
+      "Ceramic, porcelain and quarry tiles",
+      "Adhesive bed grinding",
+      "Substrate preparation",
+      "Dust minimisation systems",
+      "Commercial kitchen specialists"
+    ],
+    ctaBlock: {
+      title: "Let Us Handle Your Tile Removal",
+      subtitle: "We do makegoods all day, every day.",
+      text: "From restaurant kitchens to retail fitouts, we've removed tiles across Melbourne's commercial properties. Get in touch today for a free, no-obligation quote."
+    },
+    relatedServices: ["vinyl-removal", "adhesive-removal", "epoxy-flooring"],
+    category: "demolition",
+    published: true
+  },
+  {
+    name: "Adhesive Removal",
+    slug: "adhesive-removal",
+    title: "Floor Adhesive Removal Melbourne",
+    metaTitle: "Floor Adhesive Removal Melbourne | Grinding & Preparation",
+    description: "Stubborn floor adhesive stopping your make good? We grind, scarify and remove carpet glue, vinyl adhesive, tile bed and epoxy residue to leave clean concrete ready for handover or new flooring.",
+    metaDescription: "Floor adhesive removal Melbourne. Carpet glue, vinyl adhesive, tile bed grinding. Industrial floor preparation for make good and new coverings. Free quotes.",
+    heroText: "The floor covering is gone but the adhesive remains. We grind, scarify and prepare concrete substrates to remove every trace of old adhesives.",
+    benefits: [
+      "Carpet adhesive grinding",
+      "Vinyl glue removal",
+      "Tile adhesive bed scarifying",
+      "Epoxy coating removal",
+      "Concrete surface preparation",
+      "Dust extraction systems"
+    ],
+    ctaBlock: {
+      title: "Let Us Handle Your Adhesive Removal",
+      subtitle: "We do makegoods all day, every day.",
+      text: "We've prepared hundreds of commercial floors across Melbourne, removing stubborn adhesives for smooth handovers. Get in touch today for a free, no-obligation quote."
+    },
+    relatedServices: ["carpet-removal", "vinyl-removal", "tile-removal", "epoxy-flooring"],
+    category: "demolition",
+    published: true
   }
 ];
 
