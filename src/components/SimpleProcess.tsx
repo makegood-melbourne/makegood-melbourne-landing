@@ -6,14 +6,14 @@ const processSteps = [
   {
     number: "01",
     icon: ClipboardCheck,
-    title: "Assess",
-    subtitle: "Understand Your Needs",
-    description: "We review your lease, inspect your premises and provide a detailed, fixed-price quote with no hidden surprises."
+    title: "Proposal",
+    subtitle: "Scope & Quote",
+    description: "We review your lease, inspect your premises and provide a detailed, fixed-price proposal with no hidden surprises."
   },
   {
     number: "02",
     icon: Wrench,
-    title: "Deliver",
+    title: "Make Good",
     subtitle: "Complete the Works",
     description: "Our licensed team coordinates all trades and completes your make good on schedule, keeping you informed at every step."
   },

@@ -22,6 +22,10 @@ const serviceCategories = [
     slugs: ['commercial-cleaning']
   },
   {
+    label: "Flooring Removal",
+    slugs: ['carpet-removal', 'vinyl-removal', 'tile-removal', 'adhesive-removal']
+  },
+  {
     label: "Make Good Services",
     slugs: ['office-strip-out', 'warehouse-make-good', 'commercial-make-good']
   },
