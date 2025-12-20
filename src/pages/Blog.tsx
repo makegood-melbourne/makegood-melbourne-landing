@@ -30,6 +30,9 @@ const Blog = () => {
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Expert insights on make good services, end of lease works, and property restoration in Melbourne
             </p>
+            <p className="mt-4 text-sm text-muted-foreground">
+              Showing <span className="font-medium text-foreground">{sortedPosts.length}</span> articles
+            </p>
           </div>
 
           {/* Intro Section for SEO */}
