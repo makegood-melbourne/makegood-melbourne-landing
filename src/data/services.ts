@@ -381,7 +381,7 @@ export const services: Service[] = [
     name: "Make Good Cleaning",
     slug: "commercial-cleaning",
     title: "Make Good Cleaning Melbourne",
-    metaTitle: "Make Good Cleaning Melbourne | Make Good Specialists",
+    metaTitle: "Make Good Cleaning Melbourne | Lease End Specialists",
     description: "Lease ending? We handle the heavy-duty cleaning regular cleaners won't touch. Industrial floor scrubbing, high-pressure washing and chemical treatment—everything your landlord expects at handover.",
     metaDescription: "Make good cleaning Melbourne. Lease end floor scrubbing, high-pressure washing, oil and tyre mark removal. Pass your final inspection. Free quotes.",
     heroText: "Heavy-duty cleaning for lease end and make good handovers. We tackle the jobs regular cleaners can't—warehouse floors, post-strip-out sites and final inspections that need to pass first time.",
