@@ -97,20 +97,20 @@ export const locations: Location[] = [
     ],
     faqs: [
       {
-        question: "What makes industrial make goods in Dandenong South different from other areas?",
-        answer: "Dandenong South facilities are typically larger scale—often 5,000m² to 20,000m² or more—with heavy-duty infrastructure including reinforced floors, three-phase power systems, and specialised ventilation. Many buildings date from the 1970s-90s manufacturing boom, requiring asbestos surveys and potential remediation. We're experienced with the specific challenges of this precinct, including EPA compliance for former manufacturing sites."
+        question: "Who is responsible for the make good at the end of a commercial lease in Dandenong?",
+        answer: "Under Victorian commercial lease law, the tenant is typically responsible for completing make good works before the lease expires. In Dandenong's industrial precinct—where leases often run 5-10 years—your make good obligations should be clearly stated in your lease agreement. We recommend reviewing your lease 6-12 months before expiry to understand exactly what's required and budget accordingly."
       },
       {
-        question: "How long does a typical warehouse make good take in Dandenong?",
-        answer: "For a standard Dandenong warehouse (1,000-3,000m²), expect 2-4 weeks depending on scope. Larger distribution centres or those with extensive racking removal may require 4-6 weeks. Manufacturing facilities with contamination or hazardous materials can take 6-8 weeks. We provide detailed timelines after our initial site inspection."
+        question: "How much does a make good cost per square metre in Dandenong South?",
+        answer: "Industrial make good costs in Dandenong South typically range from $30-$80 per square metre, depending on the condition and complexity of the space. A 2,000m² warehouse might cost $60,000-$160,000. Manufacturing facilities with contamination, asbestos, or specialised equipment removal can exceed $100/m². We provide fixed-price quotes after inspection—essential in this precinct where scope can vary dramatically."
       },
       {
-        question: "Do you handle food production facility make goods in Dandenong?",
-        answer: "Yes, we regularly restore food manufacturing and processing facilities throughout Dandenong South. This includes removing commercial kitchen equipment, decommissioning coolrooms and freezers, cleaning grease traps, and ensuring the space meets health and safety standards for handover. We understand the specific compliance requirements for food industry premises."
+        question: "Can I negotiate my make good clause in Dandenong before signing a lease?",
+        answer: "Absolutely—and we strongly recommend it. In Dandenong's competitive industrial market (vacancy rates under 2.5%), landlords are often willing to negotiate make good terms to secure quality tenants. Options include capped make good costs, 'as is' handover for older facilities, or landlord contributions toward restoration. Getting independent advice before signing could save you tens of thousands at lease end."
       },
       {
-        question: "What's the average cost for a make good in the Dandenong industrial precinct?",
-        answer: "Costs vary significantly based on size and condition. Small trade premises (200-500m²) typically range $15,000-$40,000. Medium warehouses (1,000-3,000m²) run $40,000-$120,000. Large manufacturing facilities (5,000m²+) can exceed $200,000. We provide fixed-price quotes after inspection so there are no surprises."
+        question: "What happens if I don't complete my make good by the lease end date in Dandenong?",
+        answer: "Failure to complete make good works by your lease expiry can have serious consequences: the landlord may complete the works and charge you at retail rates (often 30-50% higher than direct quotes), claim against your bank guarantee or security deposit, or pursue legal action for damages. In Dandenong's fast-moving industrial market, landlords are increasingly strict on timely handover. We recommend starting the process 8-12 weeks before lease end."
       }
     ]
   },
@@ -219,20 +219,20 @@ export const locations: Location[] = [
     ],
     faqs: [
       {
-        question: "How do you handle heritage building make goods in Port Melbourne?",
-        answer: "Port Melbourne has many heritage-listed and character warehouses, particularly along Ingles Street and in the Fishermans Bend precinct. We work closely with heritage consultants when required, using sympathetic restoration techniques that preserve original features while meeting lease obligations. This includes careful removal of modern fitouts without damaging exposed brick, timber trusses, or original windows."
+        question: "What is a make good clause and why does it matter in Port Melbourne?",
+        answer: "A make good clause defines how you must return your leased premises at lease end—typically to the condition documented at lease commencement. In Port Melbourne's premium market, landlords enforce these clauses strictly. With Fishermans Bend undergoing Australia's largest urban renewal and warehouse rents among Melbourne's highest, landlords expect properties returned to lettable condition promptly. Understanding your make good obligations early prevents costly disputes."
       },
       {
-        question: "What are the unique challenges of Fishermans Bend make goods?",
-        answer: "Fishermans Bend is in transition—many industrial buildings are being repurposed or will be demolished for the urban renewal project. We help tenants navigate whether a full make good is required or if a partial restoration is acceptable given the building's future. We also handle complex situations where creative studio fitouts need to be stripped from former industrial shells."
+        question: "Do I need a condition report before signing a Port Melbourne lease?",
+        answer: "Yes—a detailed condition report (or 'schedule of condition') is essential in Port Melbourne. Many buildings here are older warehouses or heritage structures with existing wear, and without documentation you could be held responsible for pre-existing issues. The report should include dated photographs and descriptions of all surfaces, fixtures, and any defects. Both parties should sign it before lease commencement. This single document can save thousands at lease end."
       },
       {
-        question: "Do you service Webb Dock and port-related facilities?",
-        answer: "Yes, we regularly work with logistics operators and port-related businesses around Webb Dock and Williamstown Road. These facilities often have specialised requirements including heavy-duty floor restoration, dock leveller servicing, container handling area repairs, and large-scale warehouse cleaning. We understand the 24/7 nature of port operations and can schedule work to minimise disruption."
+        question: "Can I pay the landlord instead of completing physical make good works in Port Melbourne?",
+        answer: "Yes, many Port Melbourne landlords accept a cash settlement in lieu of physical make good works—especially if they plan to refit the space for the next tenant anyway. This gives you cost certainty and avoids project management hassles. To negotiate this, you'll typically need 2-3 quotes from licensed contractors for the agreed scope of work. The final settlement is usually negotiated at 80-100% of quoted costs."
       },
       {
-        question: "What's the turnaround time for Port Melbourne creative studio strip outs?",
-        answer: "Creative studios in Port Melbourne—common in converted warehouses—typically require 1-2 weeks for complete strip out and restoration. This includes removing custom built sets, studio lighting rigs, sound insulation, and returning the space to its original warehouse condition. We've completed dozens of studio make goods in the area and understand landlord expectations in this market."
+        question: "How do heritage overlays affect make good requirements in Port Melbourne?",
+        answer: "Many Port Melbourne buildings—particularly around Fishermans Bend and the bay—have heritage overlays or character controls. This means restoration work may require council approval and must use appropriate materials and techniques. Removing modern additions is generally permitted, but any work affecting original fabric (brick, timber, steel) needs careful handling. We coordinate with heritage consultants when required to ensure compliance while meeting your lease obligations."
       }
     ]
   },
@@ -289,20 +289,20 @@ export const locations: Location[] = [
     ],
     faqs: [
       {
-        question: "What are Eastland shopping centre make good requirements?",
-        answer: "Eastland and surrounding retail tenancies have strict make good standards set by centre management. Requirements typically include removal of all shopfitting and signage, ceiling grid restoration to centre specifications, flooring removal back to concrete or base build, and compliance with after-hours work restrictions. We're familiar with Eastland's specific processes and work regularly with their facilities team."
+        question: "When should I start planning my make good in Ringwood?",
+        answer: "We recommend beginning make good planning 6-12 months before your lease expires. This allows time to review your lease obligations, obtain quotes, negotiate with your landlord if needed, and schedule works without rushing. For retail tenancies around Eastland—where new tenants often need immediate access—starting early is especially critical. Last-minute make goods typically cost 20-30% more due to expedited scheduling and limited contractor availability."
       },
       {
-        question: "How do retail make goods in Ringwood differ from industrial?",
-        answer: "Retail tenancies focus heavily on presentation—perfect paint finishes, seamless ceiling tiles, and spotless shopfronts. Industrial make goods in Ringwood East prioritise function: floor durability, roller door operation, and structural integrity. Costs also differ significantly: a 100m² retail shop might cost $15,000-$25,000 while a similar-sized industrial unit runs $8,000-$15,000 due to different finish standards."
+        question: "What does a typical office make good include in Ringwood?",
+        answer: "A standard office make good in Ringwood's commercial precinct typically includes: removing all tenant fixtures, partitions, and signage; patching and painting walls to a uniform finish; restoring ceilings to base building standard; removing floor coverings if installed by tenant; and ensuring all services (electrical, data, HVAC) are safe and functional. The goal is returning the space to the condition at lease commencement—or as specified in your lease."
       },
       {
-        question: "Do you handle medical practice make goods in Ringwood?",
-        answer: "Yes, Ringwood has a significant healthcare precinct with medical centres, dental practices, and allied health facilities. Medical make goods require careful removal of plumbing for dental chairs or sterilisation equipment, proper disposal of any clinical waste infrastructure, and restoration to general commercial standards. We ensure all work meets health facility compliance requirements."
+        question: "How can I reduce my make good costs in Ringwood?",
+        answer: "Several strategies can reduce make good costs: negotiate your lease terms upfront (capped costs or 'as is' conditions); maintain a detailed condition report from day one; ask if the incoming tenant wants to keep any fitout elements; explore cash settlement instead of physical works; and get multiple quotes early. In Ringwood's growing commercial market, landlords sometimes waive make good requirements to secure their next tenant quickly."
       },
       {
-        question: "What's your response time for urgent Ringwood make goods?",
-        answer: "We can typically attend for inspection within 24-48 hours across Ringwood and begin work within a week for urgent jobs. For retail tenancies with tight lease deadlines—common around Eastland where new tenants are waiting—we offer expedited scheduling and can work extended hours to meet handover dates. Emergency make-safe works can commence same-day when required."
+        question: "What's the difference between 'make good' and 'fair wear and tear' in Ringwood leases?",
+        answer: "Fair wear and tear refers to normal deterioration from reasonable use—minor scuffs, faded paint, or carpet wear in high-traffic areas. Make good obligations typically exclude fair wear and tear, meaning you shouldn't have to restore normal ageing. However, disputes often arise over what constitutes 'fair wear' versus damage. A detailed condition report at lease start is your best protection. We can advise on what's reasonable based on your specific Ringwood premises and lease term."
       }
     ]
   },
