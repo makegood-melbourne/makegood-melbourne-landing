@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet-async";
 import { MapPin, Clock, Shield, Mail, ArrowRight, CheckCircle2, Building2, Wrench, Warehouse, Factory, HardHat, Truck, HelpCircle } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { getLocationBySlug } from "@/data/locations";
@@ -137,8 +138,20 @@ const LocationTemplate = () => {
 
       <Navigation />
 
+      {/* Breadcrumbs */}
+      <div className="pt-20 bg-background">
+        <div className="container mx-auto px-4">
+          <Breadcrumbs 
+            items={[
+              { label: "Service Areas", href: "/service-areas" },
+              { label: location.name }
+            ]} 
+          />
+        </div>
+      </div>
+
       {/* Hero Section */}
-      <section className="relative min-h-[70vh] flex items-center bg-background pt-20">
+      <section className="relative min-h-[70vh] flex items-center bg-background">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left: Content */}

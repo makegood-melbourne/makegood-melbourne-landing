@@ -124,17 +124,28 @@ const Navigation = () => {
                     </Link>
                   </DropdownMenuItem>
                 ))}
+                <DropdownMenuSeparator />
+                <DropdownMenuItem asChild>
+                  <Link 
+                    to="/service-areas"
+                    className="cursor-pointer font-medium text-accent"
+                  >
+                    View All Service Areas
+                  </Link>
+                </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
             <button onClick={() => scrollToSection('about')} className="text-foreground hover:text-accent transition-colors">
               About
             </button>
-            <button onClick={() => scrollToSection('contact')} className="text-foreground hover:text-accent transition-colors">
+            <Link to="/contact" className="text-foreground hover:text-accent transition-colors">
               Contact
-            </button>
-            <Button onClick={() => scrollToSection('contact')} className="bg-accent hover:bg-accent/90 text-accent-foreground">
-              Get a Quote
-            </Button>
+            </Link>
+            <Link to="/contact">
+              <Button className="bg-accent hover:bg-accent/90 text-accent-foreground">
+                Get a Quote
+              </Button>
+            </Link>
           </div>
 
           <button className="md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
@@ -192,17 +203,30 @@ const Navigation = () => {
                     {location.name}
                   </Link>
                 ))}
+                <Link 
+                  to="/service-areas"
+                  className="text-accent hover:text-accent/80 transition-colors font-medium"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  View All Service Areas
+                </Link>
               </div>
             </div>
             <button onClick={() => scrollToSection('about')} className="text-left text-foreground hover:text-accent transition-colors py-2">
               About
             </button>
-            <button onClick={() => scrollToSection('contact')} className="text-left text-foreground hover:text-accent transition-colors py-2">
+            <Link 
+              to="/contact" 
+              className="text-left text-foreground hover:text-accent transition-colors py-2"
+              onClick={() => setIsMenuOpen(false)}
+            >
               Contact
-            </button>
-            <Button onClick={() => scrollToSection('contact')} className="bg-accent hover:bg-accent/90 text-accent-foreground w-full">
-              Get a Quote
-            </Button>
+            </Link>
+            <Link to="/contact" onClick={() => setIsMenuOpen(false)}>
+              <Button className="bg-accent hover:bg-accent/90 text-accent-foreground w-full">
+                Get a Quote
+              </Button>
+            </Link>
           </div>
         )}
       </div>

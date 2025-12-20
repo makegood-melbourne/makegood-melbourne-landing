@@ -12,6 +12,8 @@ import ServiceTemplate from "./pages/ServiceTemplate";
 import GuestPostsDownload from "./pages/GuestPostsDownload";
 import NotFound from "./pages/NotFound";
 import LegacyBlogRedirect from "./pages/LegacyBlogRedirect";
+import Contact from "./pages/Contact";
+import ServiceAreas from "./pages/ServiceAreas";
 import { Chatbot } from "./components/Chatbot";
 
 const queryClient = new QueryClient();
@@ -25,6 +27,8 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/capabilities" element={<Capabilities />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/service-areas" element={<ServiceAreas />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="/areas/:slug" element={<LocationTemplate />} />
