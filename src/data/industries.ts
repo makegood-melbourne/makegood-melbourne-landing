@@ -2,6 +2,11 @@ import commercialHeroImage from "@/assets/industries/commercial-office-make-good
 import commercialSitePreparationImage from "@/assets/industries/commercial-make-good-open-floor-industrial-windows-melbourne.jpeg";
 import commercialFitOutImage from "@/assets/industries/commercial-office-fitout-kitchen-breakroom-melbourne.jpeg";
 
+import industrialHeroImage from "@/assets/industries/industrial-warehouse-make-good-empty-floor-melbourne.jpeg";
+import industrialSitePreparationImage from "@/assets/industries/industrial-warehouse-steel-trusses-skylights-melbourne.jpeg";
+import industrialStructuralImage from "@/assets/industries/industrial-factory-roof-structure-racking-melbourne.jpeg";
+import industrialFitOutImage from "@/assets/industries/industrial-warehouse-polished-concrete-floor-melbourne.jpeg";
+
 export interface FeaturedSection {
   title: string;
   description: string;
@@ -108,23 +113,27 @@ export const industries: Industry[] = [
     metaTitle: "Industrial Make Good Melbourne | Factory & Warehouse Restoration",
     metaDescription: "Industrial make good specialists Melbourne. Factory strip outs, warehouse restoration, racking removal, floor repair, hazardous material removal. Full compliance. Free quotes.",
     heroText: "Expert industrial make good services for Melbourne factories, warehouses and manufacturing facilities—from machinery removal to complete site restoration.",
-    heroImagePlaceholder: "Industrial warehouse or factory building exterior in Melbourne",
+    heroImage: industrialHeroImage,
+    heroImageAlt: "Empty industrial warehouse after make good restoration with polished concrete floor and steel trusses in Melbourne",
     introduction: "Industrial properties present the most complex make good challenges. Decades of manufacturing operations, heavy machinery anchored to floors, oil-stained concrete, hazardous materials and substantial modifications all require specialist handling. We've restored factories and warehouses across Melbourne to handover-ready condition, regardless of what operations occurred there.",
     featuredSections: [
       {
         title: "Site Preparation & Services Coordination",
         description: "We start by ensuring your project foundations—both literally and operationally—are set for success. Comprehensive surveys, service location mapping, and pre-construction compliance checks ensure every aspect of the site is ready before major works commence. Underground services are installed or safeguarded early, and bulk earthworks are sequenced correctly to maintain a safe, organised, and disruption-free work environment—protecting timelines and budgets from the very start.",
-        imagePlaceholder: "Industrial site with surveying or service location equipment"
+        image: industrialSitePreparationImage,
+        imageAlt: "Industrial warehouse interior with steel roof trusses and skylights during make good preparation in Melbourne"
       },
       {
         title: "Structural Systems & Building Envelope",
         description: "Our structural works are planned and executed with precision to deliver strength, accuracy, and efficiency. We coordinate fabrication, transport, and installation to ensure every lift, alignment, and connection meets engineering tolerances and safety requirements. Roofing, cladding, and glazing are installed to exacting standards, achieving early lock-up while delivering superior weatherproofing to protect your asset and enable internal works to progress without interruption.",
-        imagePlaceholder: "Industrial building structural work or cladding installation"
+        image: industrialStructuralImage,
+        imageAlt: "Industrial factory roof structure with steel trusses and pallet racking in Melbourne warehouse"
       },
       {
         title: "Services Integration & Quality Fit-Out",
         description: "We integrate mechanical, electrical, and plumbing services seamlessly within the structural framework, using coordinated drawings and clash detection to avoid costly rework. Our fit-out delivery follows rigorous quality assurance procedures, ensuring every element—from mezzanines and partitions to specialist systems—meets specification. By the time we hand over, your building is fully functional, compliant, and ready for immediate operational use.",
-        imagePlaceholder: "Industrial facility interior showing services and fit-out work"
+        image: industrialFitOutImage,
+        imageAlt: "Symmetrical view of industrial warehouse with polished concrete floor and high bay lighting in Melbourne"
       }
     ],
     challenges: [
