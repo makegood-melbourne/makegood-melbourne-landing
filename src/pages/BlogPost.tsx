@@ -49,16 +49,16 @@ const BlogPost = () => {
     <div className="min-h-screen flex flex-col">
       <Helmet>
         <title>{post.title.length > 50 ? post.title.slice(0, 47) + '...' : post.title} | MakeGOOD</title>
-        <meta name="description" content={`${post.excerpt.slice(0, 155)}...`} />
+        <meta name="description" content={post.metaDescription || post.excerpt.slice(0, 155)} />
         <meta property="og:title" content={`${post.title} | MakeGOOD Melbourne`} />
-        <meta property="og:description" content={post.excerpt} />
+        <meta property="og:description" content={post.metaDescription || post.excerpt.slice(0, 155)} />
         <meta property="og:type" content="article" />
         <meta property="og:url" content={postUrl} />
         <meta property="og:image" content={imageUrl} />
         <meta property="article:published_time" content={new Date(post.date).toISOString()} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={`${post.title} | MakeGOOD Melbourne`} />
-        <meta name="twitter:description" content={post.excerpt} />
+        <meta name="twitter:description" content={post.metaDescription || post.excerpt.slice(0, 155)} />
         <meta name="twitter:image" content={imageUrl} />
         <link rel="canonical" href={postUrl} />
         <script type="application/ld+json">
