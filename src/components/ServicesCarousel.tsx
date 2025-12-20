@@ -35,6 +35,20 @@ const serviceImages: Record<string, string> = {
   "commercial-make-good": emptyWarehouseImage,
 };
 
+// Optimized alt text for service images
+const serviceImageAlts: Record<string, string> = {
+  "pallet-racking-removal": "Pallet racking removal and dismantling from warehouse floor in Melbourne",
+  "epoxy-flooring": "Polished epoxy floor coating in industrial Melbourne warehouse",
+  "ceiling-tile-replacement": "Ceiling tile replacement in commercial office Melbourne",
+  "line-marking": "Aerial view of car park line marking restoration in Melbourne",
+  "commercial-cleaning": "High-pressure cleaning of commercial warehouse floor in Melbourne",
+  "structural-remediation": "Concrete cancer and spalling damage requiring structural remediation",
+  "cladding-glazing": "Commercial building facade cladding remediation in Melbourne",
+  "warehouse-make-good": "Empty warehouse after professional make good restoration Melbourne",
+  "office-strip-out": "Office strip out and demolition for end of lease make good Melbourne",
+  "commercial-make-good": "Commercial property make good restoration for end of lease compliance",
+};
+
 const ServicesCarousel = () => {
   const publishedServices = getPublishedServices();
   
@@ -72,7 +86,7 @@ const ServicesCarousel = () => {
                     <div className="aspect-[4/3] overflow-hidden relative">
                       <img
                         src={serviceImages[service.slug]}
-                        alt={service.name}
+                        alt={serviceImageAlts[service.slug] || service.name}
                         className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent" />
