@@ -15,8 +15,8 @@ import rooftopWaterproofingImage from "@/assets/services/rooftop-waterproofing-m
 import retentionWallConstructionImage from "@/assets/services/retention-wall-formwork-reinforcement-construction-melbourne.jpeg";
 import claddingRemediationImage from "@/assets/services/cladding-remediation-facade-glazing-melbourne.jpeg";
 import glazingFacadeInstallationImage from "@/assets/services/glazing-facade-installation-commercial-building-melbourne.jpg";
-import ceilingTilesLedPanelsImage from "@/assets/services/commercial-office-ceiling-tiles-led-panels-melbourne.jpeg";
 import ceilingTileReplacementHeroImage from "@/assets/services/ceiling-tile-replacement-commercial-office-melbourne.jpeg";
+import suspendedCeilingGridImage from "@/assets/services/suspended-ceiling-grid-led-panels-commercial-office-melbourne.jpeg";
 import lineMarkingWornFloorImage from "@/assets/services/warehouse-floor-worn-line-markings-restoration-melbourne.jpeg";
 import lineMarkingRestoredImage from "@/assets/services/warehouse-floor-worn-line-markings-restoration-melbourne.png";
 import carParkLineMarkingImage from "@/assets/services/car-park-line-marking-restoration-aerial-melbourne.jpeg";
@@ -249,8 +249,8 @@ export const services: Service[] = [
     heroText: "Whether your space has standard white tiles or premium timber acoustic panels, we deliver complete ceiling restoration. One contractor for every ceiling type—tiles matched, LEDs repositioned and aircon rebalanced for landlord sign-off.",
     heroImage: ceilingTileReplacementHeroImage,
     heroImageAlt: "Commercial office ceiling tile replacement showing timber acoustic panels and white suspended grid with LED lighting in Melbourne",
-    secondaryImage: ceilingTilesLedPanelsImage,
-    secondaryImageAlt: "Modern commercial office space with suspended ceiling grid, rectangular LED panel lights and grey carpet flooring in Melbourne",
+    secondaryImage: suspendedCeilingGridImage,
+    secondaryImageAlt: "Suspended ceiling grid with white acoustic tiles and rectangular LED panel lights in commercial office Melbourne",
     benefits: [
       "Meet your make-good ceiling requirements",
       "Standard tiles and acoustic panels",
