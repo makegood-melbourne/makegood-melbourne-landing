@@ -7,6 +7,10 @@ import industrialSitePreparationImage from "@/assets/industries/industrial-wareh
 import industrialStructuralImage from "@/assets/industries/industrial-factory-roof-structure-racking-melbourne.jpeg";
 import industrialFitOutImage from "@/assets/industries/industrial-warehouse-polished-concrete-floor-melbourne.jpeg";
 
+import remediationHeroImage from "@/assets/services/glazing-facade-installation-commercial-building-melbourne.jpg";
+import remediationCladdingImage from "@/assets/services/cladding-remediation-facade-glazing-melbourne.jpeg";
+import remediationConcreteImage from "@/assets/services/concrete-cancer-exposed-rebar-column-spalling-melbourne.jpeg";
+
 export interface FeaturedSection {
   title: string;
   description: string;
@@ -185,18 +189,21 @@ export const industries: Industry[] = [
     metaTitle: "Building Remediation Melbourne | Structural, Cladding & Waterproofing",
     metaDescription: "Specialist building remediation services in Melbourne. Cladding & glazing repairs, structural remediation, concrete cancer treatment, waterproofing solutions. Licensed contractors.",
     heroText: "Expert building remediation services across Melbourne—structural repairs, cladding replacement, concrete restoration and waterproofing solutions.",
-    heroImagePlaceholder: "Building facade with scaffolding or remediation work in progress",
+    heroImage: remediationHeroImage,
+    heroImageAlt: "Commercial building glazing and facade installation during remediation works in Melbourne",
     introduction: "Building remediation addresses defects and deterioration that affect a building's structural integrity, safety and weatherproofing. From combustible cladding replacement to concrete cancer treatment, our remediation services restore buildings to compliant, safe condition. We work with strata managers, building owners and facility managers across Melbourne to deliver lasting solutions.",
     featuredSections: [
       {
         title: "Structural Systems & Building Envelope",
         description: "Our structural works are planned and executed with precision to deliver strength, accuracy, and efficiency. We coordinate fabrication, transport, and installation to ensure every lift, alignment, and connection meets engineering tolerances and safety requirements. Roofing, cladding, and glazing are installed to exacting standards, achieving early lock-up while delivering superior weatherproofing to protect your asset and enable internal works to progress without interruption.",
-        imagePlaceholder: "Building facade remediation with cladding or glazing installation"
+        image: remediationCladdingImage,
+        imageAlt: "Building facade cladding remediation and glazing replacement works in Melbourne"
       },
       {
         title: "Concrete & Structural Restoration",
         description: "Concrete cancer, spalling and reinforcement corrosion are addressed through proven repair methodologies. We remove deteriorated concrete, treat exposed reinforcement with protective coatings, and restore structural elements using high-performance repair mortars. Our approach extends the service life of your building while meeting engineering certification requirements.",
-        imagePlaceholder: "Concrete cancer repair showing exposed reinforcement or repair work"
+        image: remediationConcreteImage,
+        imageAlt: "Concrete cancer repair showing exposed steel reinforcement and spalling on column in Melbourne"
       }
     ],
     challenges: [
