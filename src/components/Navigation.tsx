@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import logo from "@/assets/makegood-melbourne-logo.png";
 import { getSortedLocations } from "@/data/locations";
 import { getPublishedServices } from "@/data/services";
+import { getAllIndustries } from "@/data/industries";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -133,6 +134,24 @@ const Navigation = () => {
                     View All Service Areas
                   </Link>
                 </DropdownMenuItem>
+            </DropdownMenuContent>
+            </DropdownMenu>
+            <DropdownMenu>
+              <DropdownMenuTrigger className="flex items-center gap-1 text-foreground hover:text-accent transition-colors">
+                Industries
+                <ChevronDown className="h-4 w-4" />
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="start" className="bg-card border-border">
+                {getAllIndustries().map((industry) => (
+                  <DropdownMenuItem key={industry.slug} asChild>
+                    <Link 
+                      to={`/industries/${industry.slug}`}
+                      className="cursor-pointer"
+                    >
+                      {industry.name}
+                    </Link>
+                  </DropdownMenuItem>
+                ))}
               </DropdownMenuContent>
             </DropdownMenu>
             <DropdownMenu>
@@ -241,6 +260,21 @@ const Navigation = () => {
                 >
                   View All Service Areas
                 </Link>
+              </div>
+            </div>
+            <div className="py-2">
+              <span className="text-foreground font-medium">Industries</span>
+              <div className="pl-4 mt-2 flex flex-col gap-2">
+                {getAllIndustries().map((industry) => (
+                  <Link 
+                    key={industry.slug}
+                    to={`/industries/${industry.slug}`}
+                    className="text-muted-foreground hover:text-accent transition-colors"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    {industry.name}
+                  </Link>
+                ))}
               </div>
             </div>
             <div className="py-2">

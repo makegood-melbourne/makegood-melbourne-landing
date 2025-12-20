@@ -1,7 +1,8 @@
 import { Helmet } from "react-helmet-async";
 import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
-import Services from "@/components/Services";
+import ServicesCarousel from "@/components/ServicesCarousel";
+import SimpleProcess from "@/components/SimpleProcess";
 import About from "@/components/About";
 import ProblemSolution from "@/components/ProblemSolution";
 import ServiceAreasGrid from "@/components/ServiceAreasGrid";
@@ -76,7 +77,8 @@ const Index = () => {
         </div>
       </section>
       
-      <Services />
+      <ServicesCarousel />
+      <SimpleProcess />
       <ProblemSolution />
       <About />
       <ServiceAreasGrid />
