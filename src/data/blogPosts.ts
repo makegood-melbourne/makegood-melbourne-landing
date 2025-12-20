@@ -4,6 +4,7 @@ export interface BlogPost {
   title: string;
   date: string;
   excerpt: string;
+  metaDescription?: string;
   content: string;
   image: string;
 }
@@ -14,6 +15,7 @@ export const blogPosts: BlogPost[] = [
     title: "Port Melbourne Warehouse Make Good: End of Lease Obligations and Exit Strategies",
     slug: "port-melbourne-warehouse-end-of-lease-make-good",
     excerpt: "Planning your warehouse lease exit in Port Melbourne? Learn about make good obligations, fair wear and tear, cost management, and negotiation strategies to avoid disputes and protect your bond in Victoria's industrial property market.",
+    metaDescription: "Planning your Port Melbourne warehouse lease exit? Learn about make good obligations, fair wear and tear, costs, and negotiation strategies to protect your bond.",
     date: "2025-11-08",
     image: "port-melbourne-warehouse.jpg",
     content: `
@@ -435,6 +437,7 @@ Don't wait until the last minute. Smart planning today saves thousands tomorrow.
     title: "Asbestos Management in Commercial Make Good: Safe Identification, Removal, and Compliance",
     slug: "asbestos-management-commercial-make-good-safe-removal",
     excerpt: "Asbestos-containing materials remain prevalent in older commercial buildings, requiring careful management during make good projects. Learn about asbestos identification, licensed removal procedures, health risks, legal requirements, and safe demolition practices for commercial properties.",
+    metaDescription: "Asbestos in your commercial property? Learn safe identification, licensed removal procedures, legal requirements, and compliance for Melbourne make good projects.",
     date: "2025-10-15",
     image: "asbestos-management.jpg",
     content: `
@@ -915,6 +918,7 @@ Safety first, compliance always, results guaranteed
     title: "Carpet Tile Replacement and Installation: Professional Floor Preparation for End of Lease Make Good",
     slug: "carpet-tile-replacement-installation-floor-preparation",
     excerpt: "Achieve flawless carpet tile installation with comprehensive floor grinding and preparation. Our process ensures removal of residual glue and uniform installation for end of lease make good compliance.",
+    metaDescription: "Professional carpet tile replacement for end of lease make good. Learn about floor preparation, glue removal, and installation standards for Melbourne properties.",
     date: "2025-09-15",
     image: "carpet-tile-replacement.jpg",
     content: `
@@ -1054,6 +1058,7 @@ Professional floor preparation and carpet tile installation removes the stress f
     title: "Electrical Make Safe: Critical Decommissioning Before Demolition and Make Good Works",
     date: "1 August 2025",
     excerpt: "Electrical make safe is an essential preliminary step in make good and demolition projects, ensuring all electrical systems are safely decommissioned before strip-out works commence. Licensed electricians isolate, disconnect, and remove electrical installations, returning systems to base building configuration and creating a safe working environment. Learn about electrical make safe procedures, compliance requirements, and integration with make good projects.",
+    metaDescription: "Electrical make safe is essential before demolition works. Learn about safe decommissioning, isolation procedures, and compliance requirements in Melbourne.",
     image: "/src/assets/blog/electrical-make-safe.jpg",
     content: `Electrical make safe is a critical preliminary phase in commercial make good and demolition projects, involving the safe decommissioning and isolation of all electrical installations before physical strip-out works begin. This essential process protects workers from electrical hazards, ensures regulatory compliance, and allows demolition teams to work efficiently without risk of encountering live electrical systems. Licensed electricians systematically disconnect, isolate, and remove electrical systems, returning installations to base building configuration and providing certification of safe working conditions. This comprehensive guide explores electrical make safe procedures, compliance requirements, safety considerations, and integration with make good projects in Melbourne commercial properties.
 
@@ -1500,6 +1505,7 @@ Creating safe working environments for make good and demolition`,
     title: "Ceiling Repairs and Replacement: Suspended Ceilings, Water Damage, and Make Good Standards",
     date: "1 July 2025",
     excerpt: "Ceiling repairs and replacement are critical components of commercial make good projects, addressing water damage, wear, and compliance requirements. From suspended ceiling grid systems and acoustic tiles to plasterboard ceilings and fire-rated systems, professional ceiling works ensure properties meet lease obligations and building standards. Learn about ceiling types, damage assessment, repair processes, and make good requirements.",
+    metaDescription: "Ceiling repairs for commercial make good projects. Expert guide on suspended ceilings, acoustic tiles, water damage restoration, and lease compliance in Melbourne.",
     image: "/src/assets/blog/ceiling-repairs-suspended-acoustic.jpg",
     content: `Commercial ceiling systems serve multiple critical functions beyond aesthetics - they conceal services, provide acoustic control, contribute to fire safety, and define finished ceiling heights. During lease terms, ceilings often sustain damage from water leaks, mechanical impacts, wear, and modifications for services. Make good obligations typically require ceilings to be returned to original condition or specified standards, making ceiling repairs and replacement a significant component of commercial make good projects. This comprehensive guide explores ceiling types, common damage, repair and replacement processes, and make good considerations for Melbourne commercial properties.
 
@@ -2009,6 +2015,7 @@ Professional ceiling solutions for all commercial properties`,
     title: "Parapet Failure and Emergency Building Repairs: Responding to Structural Collapse in Commercial Properties",
     date: "1 June 2025",
     excerpt: "Parapet failure and facade collapse represent serious building emergencies requiring immediate response to protect public safety. From emergency site securing and debris removal to structural assessment and reconstruction, professional emergency repair services manage the complete response. Learn about causes of parapet failure, emergency procedures, council requirements, structural engineering, and reconstruction processes.",
+    metaDescription: "Parapet failure or facade collapse? Learn about emergency building repairs, site securing, structural assessment, and reconstruction for Melbourne commercial properties.",
     image: "/src/assets/blog/parapet-failure-emergency-repairs.jpg",
     content: `Parapet failure and facade collapse represent some of the most serious building emergencies in commercial properties, creating immediate public safety risks and requiring urgent professional response. When parapets or building facades fail and debris falls onto footpaths, roads, or adjacent properties, rapid action is essential to secure the site, remove hazards, assess structural integrity, and commence repairs. Professional emergency building repair services coordinate the entire response, from initial emergency securing through structural engineering assessment to complete reconstruction and compliance. This comprehensive guide explores parapet failure causes, emergency response procedures, regulatory requirements, and reconstruction processes for Melbourne commercial properties.
 
@@ -2472,6 +2479,7 @@ Available 24/7 for building emergencies`,
     title: "Waste Management and Sustainability in Make Good Works: Environmental Responsibility in Commercial Fit-Outs",
     date: "1 May 2025",
     excerpt: "Sustainable waste management practices are increasingly critical in commercial make good projects, with regulations, tenant expectations and environmental responsibility driving the need for waste minimisation, recycling and responsible disposal. Professional waste management reduces landfill contributions, ensures regulatory compliance and can reduce project costs. Learn about waste streams, recycling strategies, EPA compliance and sustainability reporting.",
+    metaDescription: "Sustainable waste management for commercial make good projects. Learn about recycling, EPA compliance, waste minimisation, and environmental responsibility in Melbourne.",
     image: "/src/assets/blog/waste-management-sustainability.jpg",
     content: `Commercial make good projects generate significant volumes of waste materials, from demolished building components and removed fitouts to packaging from new installations. As environmental awareness grows and regulations strengthen, sustainable waste management has become a critical component of responsible make good practices. Professional waste management strategies minimise landfill contributions, maximise material recovery and recycling, ensure regulatory compliance and can reduce overall project costs. This comprehensive guide explores waste streams in make good projects, recycling and diversion strategies, regulatory compliance and best practices for sustainable make good works in Melbourne.
 
@@ -2913,6 +2921,7 @@ Committed to environmental responsibility in every project`,
     title: "Fire Damage Restoration and Make Good: Comprehensive Recovery for Commercial Properties",
     date: "1 April 2025",
     excerpt: "Fire damage creates urgent restoration requirements for commercial properties, from structural repairs and smoke remediation to complete make good for lease compliance. Professional fire damage restoration addresses safety, structural integrity, and property recovery, ensuring properties are restored to pre-incident condition or better. Learn about assessment processes, restoration procedures, and make good obligations after fire events.",
+    metaDescription: "Fire damage restoration for commercial properties in Melbourne. Learn about structural repairs, smoke remediation, insurance claims, and make good requirements.",
     image: "/src/assets/blog/fire-damage-restoration.jpg",
     content: `Fire events in commercial properties create immediate and complex restoration challenges, requiring swift action to secure the premises, assess damage, and commence restoration work. Whether from accidental fires, electrical faults, kitchen fires, or other causes, fire damage affects not only the directly impacted areas but often extends throughout properties via smoke, heat, and water from fire suppression systems. Professional fire damage restoration and make good services ensure properties are safely restored, structurally sound, and compliant with all regulations. This comprehensive guide explores fire damage assessment, restoration processes, and make good requirements for Melbourne commercial properties.
 
@@ -3356,6 +3365,7 @@ Available 24/7 for emergency response`,
     title: "Car Park Repairs and Line Marking: Essential Make Good and Maintenance for Commercial Properties",
     date: "1 March 2025",
     excerpt: "Car parks are high-traffic areas subject to constant wear, requiring regular maintenance, repairs, and line marking renewal. Whether for end-of-lease make good obligations, property presentation, or safety compliance, professional car park restoration ensures functionality, safety, and property value. Learn about repair processes, line marking standards, and make good requirements.",
+    metaDescription: "Car park repairs and line marking for commercial properties. Expert guide on concrete restoration, safety compliance, and end of lease make good in Melbourne.",
     image: "/src/assets/blog/car-park-line-marking.jpg",
     content: `Commercial car parks endure constant vehicular traffic, weather exposure, and mechanical stress, resulting in surface deterioration, faded line marking, and structural damage over time. Whether addressing end-of-lease make good obligations, maintaining property standards, or ensuring safety compliance, car park repairs and line marking are essential maintenance activities for commercial property owners and tenants. This comprehensive guide explores car park assessment, repair processes, line marking standards, and make good considerations for Melbourne commercial properties.
 
@@ -3875,6 +3885,7 @@ Need professional assessment of your car park condition or quotes for repairs an
     title: "Façade Repairs and Cladding Remediation: Navigating Fireproof Compliance in Commercial Buildings",
     date: "1 February 2025",
     excerpt: "Building façade and cladding remediation has become critical following national fire safety reforms. Non-compliant combustible cladding poses significant risks and legal obligations for property owners. Learn about assessment requirements, remediation processes, fireproof cladding solutions, and make good considerations for commercial properties.",
+    metaDescription: "Combustible cladding on your building? Learn about facade remediation, fire safety compliance, assessment requirements, and make good obligations in Melbourne.",
     image: "/src/assets/blog/facade-cladding-remediation.jpg",
     content: `Building façade and external cladding remediation has emerged as one of the most significant challenges facing commercial property owners and managers across Australia. Following tragic building fires and subsequent regulatory reforms, the identification and replacement of non-compliant combustible cladding has become a legal imperative, not merely a maintenance consideration. This comprehensive guide explores façade assessment, cladding remediation processes, fireproof compliance requirements, and implications for commercial property owners, tenants, and make good obligations.
 
@@ -4396,6 +4407,7 @@ Need professional assessment of your building's cladding or guidance on remediat
     title: "Warehouse Polycarbonate Roofing Replacement: Restoring Natural Light and Weather Protection",
     date: "15 January 2025",
     excerpt: "Translucent polycarbonate roof sheeting provides essential natural lighting in warehouses and industrial facilities. Over time, these panels deteriorate, discolour, and leak, requiring replacement to maintain property value, operational efficiency, and lease compliance. Learn about assessment, replacement processes, and make good obligations.",
+    metaDescription: "Warehouse polycarbonate roofing replacement in Melbourne. Learn about panel deterioration, natural lighting restoration, and end of lease make good requirements.",
     image: "/src/assets/blog/polycarbonate-roofing.jpg",
     content: `Translucent polycarbonate roof sheeting is a critical feature of modern warehouses and industrial facilities, providing natural lighting that reduces energy costs and creates safer, more productive work environments. However, these panels have a finite lifespan and eventually require replacement as part of property maintenance and end-of-lease make good obligations. This comprehensive guide explores polycarbonate roofing assessment, replacement processes, and considerations for property owners and tenants.
 
@@ -4842,6 +4854,7 @@ Need professional assessment of your warehouse polycarbonate roofing or quotes f
     title: "Year-End Property Planning: Preparing Your Commercial Space for 2025",
     date: "1 December 2024",
     excerpt: "As the year draws to a close, strategic property planning ensures your commercial premises enter 2025 in optimal condition. From maintenance assessments and budget planning to lease reviews and compliance audits, year-end is the perfect time to evaluate your property strategy and set your business up for success.",
+    metaDescription: "Year-end property planning for commercial spaces. Expert guide on maintenance assessments, budget planning, lease reviews, and preparing your property for 2025.",
     image: "/src/assets/blog/year-end-planning.jpg",
     content: `The end of the calendar year provides an ideal opportunity to assess your commercial property situation, plan for upcoming obligations, and ensure your premises support business goals in the year ahead. Whether you're a tenant reviewing lease commitments, a landlord planning property improvements, or a business owner evaluating space needs, strategic year-end planning prevents surprises and positions you for success. This comprehensive guide explores essential year-end property planning activities for commercial spaces.
 
@@ -5239,6 +5252,7 @@ Need help conducting property assessments, planning for lease end obligations or
     title: "Maximising Property Value at Lease End: A Strategic Guide for Landlords",
     date: "1 November 2024",
     excerpt: "Landlords can significantly increase rental returns and minimise vacancy periods through strategic property management as leases conclude. From proper make good enforcement and value-adding improvements to effective marketing timing, this guide explores how to maximise property value and tenant attraction when leases end.",
+    metaDescription: "Maximise your property value at lease end. Strategic guide for Melbourne landlords on make good enforcement, value-adding improvements, and tenant attraction.",
     image: "/src/assets/blog/maximising-property-value.jpg",
     content: `When a commercial lease approaches its end, landlords face critical decisions that impact property value, rental returns, and vacancy periods. Strategic management of the lease end process—from make good enforcement to property positioning—can mean the difference between extended vacancies with costly remediation and seamless transitions to new tenants at improved rental rates. This comprehensive guide explores how landlords can maximise property value and returns when commercial leases conclude.
 
@@ -5749,6 +5763,7 @@ Need assistance managing lease end processes, conducting property assessments, o
     title: "Strategic Make Good Planning: Avoiding End-of-Lease Surprises and Disputes",
     date: "1 October 2024",
     excerpt: "Strategic planning for commercial make good obligations can save thousands of dollars and prevent lease-end disputes. Understanding requirements early, budgeting appropriately, and engaging professionals at the right time ensures smooth property transitions and protects both tenant deposits and landlord-tenant relationships.",
+    metaDescription: "Strategic make good planning can save thousands. Learn how to avoid end of lease disputes, budget correctly, and ensure smooth property transitions in Melbourne.",
     image: "/src/assets/blog/strategic-planning.jpg",
     content: `The end of a commercial lease can quickly become stressful and expensive when make good obligations haven't been properly planned for. Many tenants underestimate the scope and cost of restoring premises to their original condition, leading to rushed work, budget overruns, and potential disputes with landlords. Strategic planning transforms make good from a last-minute scramble into a manageable, cost-effective transition. This guide explores how to plan effectively for make good obligations throughout your tenancy.
 
@@ -6132,6 +6147,7 @@ Need help developing your make good strategy or obtaining accurate cost projecti
     title: "Building Defect Remediation: Comprehensive Solutions for Commercial Property Issues",
     date: "1 September 2024",
     excerpt: "Building defects in commercial properties can range from minor cosmetic issues to serious structural problems affecting safety and property value. Understanding the remediation process, common defects, and professional solutions helps property owners address issues efficiently before they escalate into costly emergencies.",
+    metaDescription: "Building defects in your commercial property? Learn about common issues, remediation processes, and professional solutions before problems escalate. Melbourne guide.",
     image: "/src/assets/blog/building-defect-remediation.webp",
     content: `Building defects in commercial properties can range from minor cosmetic issues to serious structural problems affecting safety, tenant satisfaction, and property value. Whether discovered during routine inspections, tenant complaints, or pre-sale building reports, defects require prompt professional remediation to prevent escalation and protect your investment. This comprehensive guide explores common commercial building defects, remediation approaches, and why professional expertise matters.
 
@@ -6481,6 +6497,7 @@ If you've identified building defects in your commercial property or want proact
     title: "Slab Rectification: Addressing Concrete Floor Movement and Settlement in Commercial Buildings",
     date: "1 August 2024",
     excerpt: "Concrete slab movement and settlement are serious issues that can compromise the structural integrity and functionality of commercial and industrial properties. From uneven floors affecting equipment operation to cracks indicating foundation problems, understanding slab rectification is essential for property owners facing these challenges.",
+    metaDescription: "Concrete slab movement affecting your property? Learn about slab rectification, floor settlement causes, and professional repair solutions for Melbourne buildings.",
     image: "/src/assets/blog/slab-rectification.webp",
     content: `Concrete slab movement and settlement are serious issues that can compromise the structural integrity and functionality of commercial and industrial properties. From uneven floors affecting equipment operation and storage systems to cracks indicating foundation problems, understanding slab rectification is essential for property owners, managers, and tenants facing these challenges. This guide explores the causes, consequences, and professional solutions for slab movement issues.
 
@@ -6770,6 +6787,7 @@ If you've noticed signs of slab movement or settlement in your commercial or ind
     title: "Balcony Waterproofing: Preventing and Fixing Leaks in Commercial Properties",
     date: "1 July 2024",
     excerpt: "Leaking balconies are one of the most common and costly problems in commercial buildings. During Melbourne's wet winter months, inadequate waterproofing becomes painfully obvious as water damage spreads to internal spaces. Understanding the causes, warning signs, and professional remediation solutions can save property owners thousands in structural repairs.",
+    metaDescription: "Leaking balcony causing water damage? Learn about waterproofing solutions, warning signs, causes, and professional remediation for Melbourne commercial buildings.",
     image: "/src/assets/blog/balcony-waterproofing.webp",
     content: `Leaking balconies are one of the most common and costly problems in commercial buildings across Melbourne. During our wet winter months, inadequate waterproofing becomes painfully obvious as water damage spreads to internal spaces, causing staining, structural deterioration, and tenant complaints. Understanding the causes, warning signs, and professional remediation solutions can save property owners and managers thousands in structural repairs and prevent serious building defects.
 
@@ -6989,6 +7007,7 @@ If you've noticed signs of balcony leaks in your commercial property, don't dela
     title: "Understanding Concrete Cancer: Prevention and Remediation for Commercial Properties",
     date: "1 June 2024",
     excerpt: "Concrete cancer, also known as concrete spalling, is one of the most serious structural issues facing commercial and industrial properties. Left untreated, this progressive deterioration can compromise building safety and lead to expensive repairs. Understanding the causes, signs, and remediation options is essential for property owners and managers.",
+    metaDescription: "Concrete cancer threatening your building? Learn about causes, warning signs, prevention, and professional remediation options for Melbourne commercial properties.",
     image: "/src/assets/blog/concrete-cancer.webp",
     content: `Concrete cancer, also known as concrete spalling or concrete deterioration, is one of the most serious structural issues facing commercial and industrial properties in Melbourne. Left untreated, this progressive deterioration can compromise building safety, reduce property value, and lead to expensive emergency repairs. Understanding the causes, early warning signs, and remediation options is essential for property owners, managers, and real estate agents.
 
@@ -7122,6 +7141,7 @@ If you've noticed signs of concrete deterioration in your commercial or industri
     title: "End of Lease Cleaning Services",
     date: "1 May 2024",
     excerpt: "At the end of a commercial lease, tenants and real estate agents often face the challenging task of restoring the property to its original condition. It requires meticulous attention to detail to meet lease obligations. That's where our professional cleaning services come in. We provide a comprehensive solution designed to save you time, effort, and stress.",
+    metaDescription: "Professional end of lease cleaning for commercial properties. Save time and meet your make good obligations with comprehensive cleaning services in Melbourne.",
     image: "/src/assets/blog/cleaning-services.webp",
     content: `At the end of a lease, tenants and agents often face the challenging task of restoring the property to its original condition. For office and warehouse spaces, this means more than just a basic clean—it requires meticulous attention to detail to meet lease obligations and leave the premises in move-in-ready condition. That's where our professional cleaning services come in. Specialising in commercial offices and industrial warehouses, we provide a comprehensive solution designed to save you time, effort, and stress.
 
@@ -7250,6 +7270,7 @@ This February, let's celebrate love in all its forms, including the love we have
     title: "The Importance Of Painting",
     date: "1 April 2024",
     excerpt: "Finding the right tenant for a vacant office or warehouse can be a challenging process. Prospective tenants often form their first impressions within moments of viewing a property, and a dull, outdated appearance can be a major obstacle to securing a lease. One simple yet highly effective way to make a property more appealing is by applying a fresh coat of paint.",
+    metaDescription: "Fresh paint transforms vacant commercial properties. Learn how professional painting attracts tenants faster and maximises rental returns for Melbourne landlords.",
     image: "/src/assets/blog/painting-wall.webp",
     content: `Finding the right tenant for a vacant office or warehouse can be a challenging process. Prospective tenants often form their first impressions within moments of viewing a property and a dull, outdated appearance can be a major obstacle to securing a lease. One simple yet highly effective way to make a property more appealing is by applying a fresh coat of paint. In this blog, we'll explore how repainting can breathe new life into a space and help real estate agents attract tenants more easily.
 
@@ -7336,6 +7357,7 @@ Contact us today to discuss how we can help you transform your listings with exp
     title: "What Are Make Goods?",
     date: "1 March 2024",
     excerpt: "The end of a lease can be a stressful time for tenants, whether in industrial or commercial properties. Among the responsibilities during this period, one critical task often overlooked or misunderstood is the make-good process. But what exactly are make goods, and why are they so essential?",
+    metaDescription: "What are make goods in commercial leases? Learn about end of lease restoration requirements, tenant obligations, costs, and how to avoid landlord disputes.",
     image: "/src/assets/blog/warehouse-makegood.webp",
     content: `Why Are They Essential for End-of-Lease Agreements?
 
