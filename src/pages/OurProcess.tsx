@@ -323,7 +323,7 @@ const OurProcess = () => {
             Get in touch for a free consultation. We will review your lease, 
             inspect your premises, and provide a detailed quote—all at no cost.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
             <Button asChild size="lg" className="text-base">
               <Link to="/contact">
                 Get a Free Quote
@@ -336,6 +336,13 @@ const OurProcess = () => {
               </Link>
             </Button>
           </div>
+          <p className="text-muted-foreground">
+            Have more questions?{" "}
+            <Link to="/faq" className="text-primary hover:underline">
+              Check our FAQ
+            </Link>{" "}
+            for detailed answers.
+          </p>
         </div>
       </section>
 
