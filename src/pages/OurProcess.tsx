@@ -9,7 +9,11 @@ import {
   HardHat, 
   Camera, 
   KeyRound,
-  CheckCircle
+  CheckCircle,
+  Shield,
+  Target,
+  MessageSquare,
+  FileCheck
 } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
@@ -21,100 +25,119 @@ const processSteps = [
     number: "01",
     icon: Phone,
     title: "Free Consultation",
-    duration: "Day 1",
-    description: "We start with a comprehensive discussion about your needs and timeline.",
+    description: "We review your lease, inspect your premises, and discuss your specific requirements. No obligation, completely free.",
     details: [
-      "Review your lease and make good clause",
-      "Discuss your specific requirements",
-      "Understand your move-out timeline",
-      "Answer any initial questions"
+      "Lease review",
+      "Site inspection",
+      "Obligation assessment",
+      "Initial questions answered"
     ],
     outcome: "Clear understanding of your obligations"
   },
   {
     number: "02",
-    icon: ClipboardCheck,
-    title: "Site Inspection",
-    duration: "Within 48 hours",
-    description: "Our team visits your premises to assess the scope of works required.",
-    details: [
-      "Detailed walkthrough of your space",
-      "Document current condition with photos",
-      "Identify all required restoration works",
-      "Note any potential challenges"
-    ],
-    outcome: "Comprehensive site assessment"
-  },
-  {
-    number: "03",
     icon: FileText,
     title: "Detailed Quote",
-    duration: "2-3 business days",
-    description: "You receive a transparent, itemised quote with no hidden costs.",
+    description: "You receive a comprehensive, itemised quote with no hidden fees. You'll know exactly what's included and what it costs.",
     details: [
-      "Line-by-line breakdown of all works",
-      "Clear pricing with no surprises",
-      "Realistic timeline estimates",
-      "Options for different scope levels"
+      "Itemised scope of works",
+      "Fixed pricing",
+      "Timeline estimate",
+      "No surprises"
     ],
     outcome: "Full cost transparency"
   },
   {
-    number: "04",
+    number: "03",
     icon: Calendar,
     title: "Scope Agreement",
-    duration: "1-2 weeks before works",
-    description: "We work with you and your landlord to finalise the exact scope.",
+    description: "We work with you and your landlord to finalise the scope. We can attend meetings and handle coordination on your behalf.",
     details: [
-      "Coordinate with landlord requirements",
-      "Attend meetings on your behalf if needed",
-      "Finalise scope documentation",
-      "Confirm schedule and access arrangements"
+      "Landlord coordination",
+      "Scope finalisation",
+      "Timeline confirmation",
+      "Contract signing"
     ],
     outcome: "Agreed scope with all parties"
   },
   {
-    number: "05",
+    number: "04",
     icon: HardHat,
-    title: "Works Execution",
-    duration: "1-8 weeks depending on scope",
-    description: "Our licensed team completes all works to specification.",
+    title: "Scheduled Works",
+    description: "Our licensed team completes all make good works. We coordinate all trades and manage the entire project.",
     details: [
-      "Professional trades coordination",
+      "All trades coordinated",
       "Regular progress updates",
-      "Strict safety compliance",
-      "Quality workmanship throughout"
+      "Quality workmanship",
+      "Minimal disruption"
     ],
     outcome: "Professional completion of all works"
   },
   {
-    number: "06",
-    icon: Camera,
-    title: "Documentation",
-    duration: "Upon completion",
-    description: "Comprehensive documentation package for your records.",
+    number: "05",
+    icon: ClipboardCheck,
+    title: "Quality Inspection",
+    description: "We conduct a thorough internal inspection before landlord handover. Any defects are rectified immediately.",
     details: [
-      "Before and after photography",
-      "Compliance certificates",
-      "Test reports and sign-offs",
-      "Waste disposal receipts"
+      "Internal QA inspection",
+      "Defect rectification",
+      "Photo documentation",
+      "Compliance certificates"
     ],
-    outcome: "Complete audit trail"
+    outcome: "Works verified to standard"
   },
   {
-    number: "07",
+    number: "06",
     icon: KeyRound,
-    title: "Handover",
-    duration: "Lease expiry",
-    description: "Smooth handover to your landlord with full support.",
+    title: "Handover & Sign-off",
+    description: "We coordinate the final landlord inspection and ensure everything is approved. Your bond is protected.",
     details: [
-      "Coordinate final landlord inspection",
-      "Address any defects promptly",
-      "Facilitate key handover",
-      "Support bond release process"
+      "Landlord walkthrough",
+      "Final sign-off",
+      "Documentation package",
+      "Bond release support"
     ],
     outcome: "Successful lease completion"
   }
+];
+
+const differentiators = [
+  {
+    icon: Target,
+    title: "Single Point of Contact",
+    description: "One dedicated project manager handles everything. No chasing multiple contractors or coordinating trades yourself."
+  },
+  {
+    icon: FileCheck,
+    title: "Transparent Pricing",
+    description: "Fixed quotes with itemised breakdowns. No hidden fees, no surprises. What we quote is what you pay."
+  },
+  {
+    icon: Shield,
+    title: "Bond Protection",
+    description: "We don't consider the job done until your landlord signs off. Your bond is protected."
+  },
+  {
+    icon: MessageSquare,
+    title: "Clear Communication",
+    description: "Regular progress updates at every stage. You'll always know what's happening with your project."
+  }
+];
+
+const beforeDeliverables = [
+  "Detailed scope of works",
+  "Fixed price quote",
+  "Project timeline",
+  "Condition photography"
+];
+
+const afterDeliverables = [
+  "Completion photographs",
+  "Compliance certificates",
+  "Test reports (electrical, fire, mechanical)",
+  "Waste disposal receipts",
+  "Handover documentation",
+  "Final inspection checklist"
 ];
 
 const OurProcess = () => {
@@ -137,7 +160,7 @@ const OurProcess = () => {
         <title>Our Process | How We Deliver Make Good Works | Melbourne</title>
         <meta 
           name="description" 
-          content="Discover our proven 7-step make good process. From free consultation to successful handover, we make commercial lease restoration simple and stress-free." 
+          content="Discover our proven 6-step make good process. From free consultation to successful handover, we make commercial lease restoration simple and stress-free." 
         />
         <meta name="keywords" content="make good process, commercial restoration Melbourne, lease end process, make good steps" />
         <link rel="canonical" href="https://makegood.melbourne/our-process" />
@@ -152,14 +175,42 @@ const OurProcess = () => {
       <section className="pt-32 pb-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-secondary/50 to-background">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
-            Our Process
+            Our Make Good Process
           </h1>
           <p className="text-xl text-primary mb-4">
-            Simple, Transparent, Professional
+            From First Contact to Final Handover
           </p>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            From your first call to final handover, we manage every step of your make good. 
-            Our proven 7-step process ensures a smooth, stress-free experience.
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
+            Our proven 6-step process ensures your end-of-lease make good is completed 
+            professionally, on time, and without stress.
+          </p>
+          
+          {/* Trust Badges */}
+          <div className="flex flex-wrap justify-center gap-4 md:gap-8">
+            <div className="flex items-center gap-2 text-muted-foreground">
+              <CheckCircle className="h-5 w-5 text-primary" />
+              <span>Licensed & Insured</span>
+            </div>
+            <div className="flex items-center gap-2 text-muted-foreground">
+              <CheckCircle className="h-5 w-5 text-primary" />
+              <span>Fixed Pricing</span>
+            </div>
+            <div className="flex items-center gap-2 text-muted-foreground">
+              <CheckCircle className="h-5 w-5 text-primary" />
+              <span>Bond Protected</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Scope Note */}
+      <section className="py-6 px-4 sm:px-6 lg:px-8 bg-tertiary/10 border-y border-tertiary/20">
+        <div className="max-w-4xl mx-auto text-center">
+          <p className="text-sm text-muted-foreground">
+            <strong className="text-tertiary">Note:</strong> This process applies to end-of-lease make good projects. 
+            For simpler works (cleaning, minor repairs) or specialist services (structural remediation, cladding), 
+            we offer a streamlined approach tailored to your specific needs.{" "}
+            <Link to="/contact" className="text-primary hover:underline">Get in touch</Link> to discuss.
           </p>
         </div>
       </section>
@@ -167,6 +218,13 @@ const OurProcess = () => {
       {/* Process Timeline */}
       <section className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-5xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-center">
+            Your Make Good Journey
+          </h2>
+          <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
+            6 simple steps from consultation to handover
+          </p>
+          
           <div className="space-y-0">
             {processSteps.map((step, index) => (
               <div key={step.number} className="relative">
@@ -187,12 +245,9 @@ const OurProcess = () => {
                   <div className="flex-1 pt-2">
                     <div className="flex flex-wrap items-center gap-3 mb-2">
                       <span className="text-4xl md:text-5xl font-bold text-primary/30">{step.number}</span>
-                      <span className="text-sm px-3 py-1 rounded-full bg-tertiary/20 text-tertiary font-medium">
-                        {step.duration}
-                      </span>
                     </div>
                     
-                    <h2 className="text-2xl md:text-3xl font-bold mb-3">{step.title}</h2>
+                    <h3 className="text-2xl md:text-3xl font-bold mb-3">{step.title}</h3>
                     <p className="text-lg text-muted-foreground mb-4">{step.description}</p>
                     
                     <Card className="bg-card border-border">
@@ -219,97 +274,71 @@ const OurProcess = () => {
         </div>
       </section>
 
-      {/* Why Our Process Works */}
+      {/* Why Our Process Works - 4 Differentiators */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-secondary/30">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-2xl sm:text-3xl font-bold mb-8 text-center">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-center">
             Why Our Process Works
           </h2>
+          <p className="text-center text-muted-foreground mb-10 max-w-2xl mx-auto">
+            What makes working with us different
+          </p>
           
-          <div className="grid md:grid-cols-3 gap-6">
-            <Card className="bg-card border-l-4 border-l-primary">
-              <CardContent className="pt-6">
-                <h3 className="text-xl font-semibold mb-3">No Surprises</h3>
-                <p className="text-muted-foreground">
-                  Transparent pricing and clear communication at every step. 
-                  You always know what to expect.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-card border-l-4 border-l-primary">
-              <CardContent className="pt-6">
-                <h3 className="text-xl font-semibold mb-3">Single Point of Contact</h3>
-                <p className="text-muted-foreground">
-                  One dedicated project manager coordinates all trades, 
-                  so you only deal with one person.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-card border-l-4 border-l-primary">
-              <CardContent className="pt-6">
-                <h3 className="text-xl font-semibold mb-3">On-Time Delivery</h3>
-                <p className="text-muted-foreground">
-                  We build buffer time into our schedules and have backup 
-                  resources for unexpected issues.
-                </p>
-              </CardContent>
-            </Card>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {differentiators.map((item, index) => (
+              <Card key={index} className="bg-card border-l-4 border-l-primary">
+                <CardContent className="pt-6">
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                    <item.icon className="h-6 w-6 text-primary" />
+                  </div>
+                  <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
+                  <p className="text-sm text-muted-foreground">{item.description}</p>
+                </CardContent>
+              </Card>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Timeline Overview */}
+      {/* What You'll Receive */}
       <section className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-2xl sm:text-3xl font-bold mb-8 text-center">
-            Typical Project Timeline
+          <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-center">
+            What You'll Receive
           </h2>
-          
-          <div className="overflow-x-auto">
-            <div className="min-w-[600px] bg-card border border-border rounded-xl p-6">
-              <div className="flex justify-between items-center mb-6">
-                <span className="text-sm text-muted-foreground">6 months before</span>
-                <span className="text-sm text-muted-foreground">Lease expiry</span>
-              </div>
-              
-              <div className="relative h-4 bg-secondary rounded-full mb-6">
-                <div className="absolute left-0 w-1/6 h-full bg-tertiary/50 rounded-l-full" />
-                <div className="absolute left-[16.6%] w-1/6 h-full bg-tertiary/60" />
-                <div className="absolute left-[33.3%] w-1/6 h-full bg-primary/40" />
-                <div className="absolute left-[50%] w-1/4 h-full bg-primary/70" />
-                <div className="absolute right-0 w-[8.3%] h-full bg-primary rounded-r-full" />
-              </div>
-              
-              <div className="grid grid-cols-5 gap-2 text-center text-sm">
-                <div>
-                  <div className="font-medium text-foreground">Planning</div>
-                  <div className="text-muted-foreground text-xs">Consultation & Quote</div>
-                </div>
-                <div>
-                  <div className="font-medium text-foreground">Agreement</div>
-                  <div className="text-muted-foreground text-xs">Scope & Schedule</div>
-                </div>
-                <div>
-                  <div className="font-medium text-foreground">Preparation</div>
-                  <div className="text-muted-foreground text-xs">Coordination</div>
-                </div>
-                <div>
-                  <div className="font-medium text-foreground">Execution</div>
-                  <div className="text-muted-foreground text-xs">Make Good Works</div>
-                </div>
-                <div>
-                  <div className="font-medium text-foreground">Handover</div>
-                  <div className="text-muted-foreground text-xs">Inspection & Keys</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <p className="text-center text-muted-foreground mt-6">
-            We recommend starting the process 3-6 months before your lease ends for the smoothest experience.
+          <p className="text-center text-muted-foreground mb-10">
+            Complete documentation for a smooth handover
           </p>
+          
+          <div className="grid md:grid-cols-2 gap-6">
+            <Card className="bg-card border-border">
+              <CardContent className="pt-6">
+                <h3 className="text-xl font-semibold mb-4 text-primary">Before Works</h3>
+                <ul className="space-y-3">
+                  {beforeDeliverables.map((item, i) => (
+                    <li key={i} className="flex items-start gap-3">
+                      <CheckCircle className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                      <span className="text-muted-foreground">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-card border-border">
+              <CardContent className="pt-6">
+                <h3 className="text-xl font-semibold mb-4 text-primary">After Works</h3>
+                <ul className="space-y-3">
+                  {afterDeliverables.map((item, i) => (
+                    <li key={i} className="flex items-start gap-3">
+                      <CheckCircle className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                      <span className="text-muted-foreground">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </CardContent>
+            </Card>
+          </div>
         </div>
       </section>
 
@@ -317,11 +346,11 @@ const OurProcess = () => {
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-background to-secondary/30">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-2xl sm:text-3xl font-bold mb-4">
-            Ready to Start Your Make Good?
+            Ready to Get Started?
           </h2>
           <p className="text-lg text-muted-foreground mb-8">
-            Get in touch for a free consultation. We will review your lease, 
-            inspect your premises, and provide a detailed quote—all at no cost.
+            Get a free consultation and quote for your make good. 
+            We'll review your lease, inspect your premises, and provide a detailed quote—all at no cost.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
             <Button asChild size="lg" className="text-base">
@@ -336,7 +365,17 @@ const OurProcess = () => {
               </Link>
             </Button>
           </div>
-          <p className="text-muted-foreground">
+          <div className="flex flex-wrap justify-center gap-4 text-sm text-muted-foreground">
+            <span className="flex items-center gap-1">
+              <CheckCircle className="h-4 w-4 text-primary" />
+              No obligation
+            </span>
+            <span className="flex items-center gap-1">
+              <CheckCircle className="h-4 w-4 text-primary" />
+              Free site visit
+            </span>
+          </div>
+          <p className="text-muted-foreground mt-6">
             Have more questions?{" "}
             <Link to="/faq" className="text-primary hover:underline">
               Check our FAQ
