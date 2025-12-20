@@ -19,6 +19,50 @@ export interface Location {
 
 export const locations: Location[] = [
   {
+    name: "Melbourne CBD",
+    slug: "melbourne-cbd",
+    title: "Make Good Services Melbourne CBD",
+    metaTitle: "Make Good Services Melbourne CBD | Commercial Restoration Experts",
+    description: "Professional make good and end of lease services for Melbourne CBD's premium commercial properties. From Collins Street towers to Bourke Street retail, we deliver expert restoration solutions.",
+    metaDescription: "Expert make good services in Melbourne CBD. Office strip outs, retail restoration and commercial end of lease works. Licensed, insured, free quotes.",
+    uniqueIntro: "Melbourne's Central Business District is Australia's corporate heartland—home to major financial institutions, legal firms, tech companies and flagship retail destinations. From the prestigious 'Paris End' of Collins Street to the bustling laneways of the Hoddle Grid, CBD commercial properties command premium rents and exacting standards.",
+    localContext: "CBD landlords and building managers expect flawless make good outcomes. High-rise office towers require coordination with building management, after-hours access and freight lifts. Heritage buildings demand sensitive restoration, while retail tenancies on Bourke Street Mall need rapid turnaround to minimise vacancy. We navigate the complexity of CBD commercial property with precision and professionalism.",
+    keyAreas: [
+      "Collins Street precinct",
+      "Bourke Street Mall",
+      "Queen Street offices",
+      "William Street legal district",
+      "Docklands",
+      "Southbank"
+    ],
+    businessTypes: [
+      "Corporate offices",
+      "Legal and financial services",
+      "Retail and hospitality",
+      "Medical and allied health",
+      "Co-working spaces",
+      "Creative agencies"
+    ],
+    faqs: [
+      {
+        question: "What are typical make good requirements for CBD office buildings?",
+        answer: "CBD office make goods typically require removal of all tenant fixtures, partitions and cabling, repair of floor and ceiling penetrations, repainting to building standard colours, and restoration of base building services. High-rise buildings often mandate use of approved contractors and specific access protocols. We work closely with building management to ensure compliance with all requirements."
+      },
+      {
+        question: "How do you manage after-hours access in CBD buildings?",
+        answer: "Most CBD building managers restrict noisy or disruptive work to outside business hours—typically 6pm to 6am weekdays and weekends. We coordinate all access through building management, arrange freight lift bookings, and ensure our team holds current induction and insurance certificates. Our experienced crews are accustomed to working efficiently within these constraints."
+      },
+      {
+        question: "Can you handle heritage-listed CBD buildings?",
+        answer: "Yes, many Melbourne CBD buildings are heritage-listed or have heritage overlays. Our team understands the sensitivity required—we preserve original features, use appropriate materials, and can coordinate with heritage consultants when required. Whether it's a bluestone basement or an ornate Victorian facade, we ensure make good works comply with heritage requirements."
+      },
+      {
+        question: "What's the typical timeline for a CBD office make good?",
+        answer: "Timeline depends on the scope, but a standard CBD office make good (removal of fitout, patching, painting) typically takes 2-4 weeks for spaces under 500sqm. Larger floors or complex removals may take 4-8 weeks. We provide detailed timelines during quoting and can fast-track projects when required—though after-hours work constraints do impact scheduling."
+      }
+    ]
+  },
+  {
     name: "Altona",
     slug: "altona",
     title: "Make Good Services Altona",
