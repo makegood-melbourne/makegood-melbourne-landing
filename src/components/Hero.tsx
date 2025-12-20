@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Phone } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import heroImage from "@/assets/melbourne-warehouse-make-good-services.jpg";
 import HeroStats from "./HeroStats";
 
@@ -56,13 +56,10 @@ const Hero = () => {
             <Button 
               size="lg" 
               variant="outline"
-              asChild
+              onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
               className="text-lg px-8 py-6"
             >
-              <a href="tel:+61396706390">
-                <Phone className="mr-2 h-5 w-5" />
-                Call Now
-              </a>
+              Our Services
             </Button>
           </div>
         </div>
