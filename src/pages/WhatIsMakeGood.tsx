@@ -48,14 +48,14 @@ const WhatIsMakeGood = () => {
 
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 px-4 sm:px-6 lg:px-8 min-h-[60vh] flex items-center">
-        {/* Background image with overlay */}
+        {/* Background image with gradient overlay */}
         <div className="absolute inset-0 z-0">
           <img 
             src={heroImage} 
             alt="Empty commercial office space ready for make good restoration in Melbourne"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-background/80 backdrop-blur-[2px]" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/70" />
         </div>
         
         <div className="max-w-4xl mx-auto text-center relative z-10">
@@ -96,7 +96,7 @@ const WhatIsMakeGood = () => {
                   alt="Commercial office space after make good works with polished concrete floors Melbourne"
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-background/85" />
+                <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-black/60" />
               </div>
               <CardContent className="pt-6 relative z-10">
                 <h3 className="text-xl font-semibold mb-3 flex items-center gap-2">
@@ -118,7 +118,7 @@ const WhatIsMakeGood = () => {
                   alt="Empty warehouse after make good completion ready for handover Melbourne"
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-background/85" />
+                <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-black/60" />
               </div>
               <CardContent className="pt-6 relative z-10">
                 <h3 className="text-xl font-semibold mb-3 flex items-center gap-2">
@@ -424,14 +424,14 @@ const WhatIsMakeGood = () => {
 
       {/* CTA Section */}
       <section className="relative py-20 px-4 sm:px-6 lg:px-8">
-        {/* Background image with overlay */}
+        {/* Background image with gradient overlay */}
         <div className="absolute inset-0 z-0">
           <img 
             src={ctaImage} 
             alt="Manufacturing facility requiring make good services in Melbourne"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-background/90" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/70 to-black/60" />
         </div>
         
         <div className="max-w-3xl mx-auto text-center relative z-10">
