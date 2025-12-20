@@ -11,6 +11,7 @@ import flatbedTruckTransportImage from "@/assets/services/flatbed-truck-transpor
 import concreteCancerImage from "@/assets/services/concrete-cancer-exposed-rebar-column-spalling-melbourne.jpeg";
 import warehouseFloorSlabDamageImage from "@/assets/services/warehouse-floor-slab-deterioration-structural-damage-melbourne.png";
 import waterproofingMembraneImage from "@/assets/services/waterproofing-membrane-application-commercial-melbourne.jpeg";
+import rooftopWaterproofingImage from "@/assets/services/rooftop-waterproofing-membrane-application-melbourne.jpeg";
 import retentionWallConstructionImage from "@/assets/services/retention-wall-formwork-reinforcement-construction-melbourne.jpeg";
 import claddingRemediationImage from "@/assets/services/cladding-remediation-facade-glazing-melbourne.jpeg";
 import glazingFacadeInstallationImage from "@/assets/services/glazing-facade-installation-commercial-building-melbourne.jpg";
@@ -643,8 +644,10 @@ export const services: Service[] = [
     description: "Failed waterproofing causes costly damage to buildings—from balcony leaks penetrating into units below to roof failures flooding commercial spaces. We deliver professional waterproofing solutions for balconies, roofs, wet areas and podiums using quality membrane systems built to last.",
     metaDescription: "Commercial waterproofing Melbourne. Balcony membranes, roof waterproofing, wet area sealing and podium deck systems. Licensed applicators, warranty included. Free quotes.",
     heroText: "Water finds every weakness. Failed balcony membranes leak into apartments below. Deteriorated roof coatings let moisture into ceiling cavities. We apply proven membrane systems that protect your building for decades—not just pass the next inspection.",
-    heroImage: waterproofingMembraneImage,
-    heroImageAlt: "Professional applying waterproofing membrane to commercial building surface in Melbourne",
+    heroImage: rooftopWaterproofingImage,
+    heroImageAlt: "Worker applying waterproofing membrane to commercial rooftop in Melbourne",
+    secondaryImage: waterproofingMembraneImage,
+    secondaryImageAlt: "Close-up of waterproofing membrane application on commercial building surface in Melbourne",
     benefits: [
       "Balcony and terrace membrane systems",
       "Flat roof and podium waterproofing",
