@@ -135,9 +135,6 @@ const Navigation = () => {
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
-            <button onClick={() => scrollToSection('about')} className="text-foreground hover:text-accent transition-colors">
-              About
-            </button>
             <DropdownMenu>
               <DropdownMenuTrigger className="flex items-center gap-1 text-foreground hover:text-accent transition-colors">
                 Learn
@@ -145,10 +142,21 @@ const Navigation = () => {
               </DropdownMenuTrigger>
               <DropdownMenuContent align="start" className="bg-card border-border">
                 <DropdownMenuItem asChild>
+                  <button onClick={() => scrollToSection('about')} className="cursor-pointer w-full text-left">
+                    About Us
+                  </button>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link to="/our-process" className="cursor-pointer">
+                    Our Process
+                  </Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
                   <Link to="/what-is-make-good" className="cursor-pointer">
                     What is a Make Good?
                   </Link>
                 </DropdownMenuItem>
+                <DropdownMenuSeparator />
                 <DropdownMenuItem asChild>
                   <Link to="/faq" className="cursor-pointer">
                     FAQ
@@ -235,12 +243,22 @@ const Navigation = () => {
                 </Link>
               </div>
             </div>
-            <button onClick={() => scrollToSection('about')} className="text-left text-foreground hover:text-accent transition-colors py-2">
-              About
-            </button>
             <div className="py-2">
               <span className="text-foreground font-medium">Learn</span>
               <div className="pl-4 mt-2 flex flex-col gap-2">
+                <button 
+                  onClick={() => scrollToSection('about')} 
+                  className="text-left text-muted-foreground hover:text-accent transition-colors"
+                >
+                  About Us
+                </button>
+                <Link 
+                  to="/our-process" 
+                  className="text-muted-foreground hover:text-accent transition-colors"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Our Process
+                </Link>
                 <Link 
                   to="/what-is-make-good" 
                   className="text-muted-foreground hover:text-accent transition-colors"

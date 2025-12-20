@@ -18,6 +18,7 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfService from "./pages/TermsOfService";
 import FAQPage from "./pages/FAQPage";
 import WhatIsMakeGood from "./pages/WhatIsMakeGood";
+import OurProcess from "./pages/OurProcess";
 import { Chatbot } from "./components/Chatbot";
 
 const queryClient = new QueryClient();
@@ -37,6 +38,7 @@ const App = () => (
           <Route path="/terms-of-service" element={<TermsOfService />} />
           <Route path="/faq" element={<FAQPage />} />
           <Route path="/what-is-make-good" element={<WhatIsMakeGood />} />
+          <Route path="/our-process" element={<OurProcess />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="/areas/:slug" element={<LocationTemplate />} />
