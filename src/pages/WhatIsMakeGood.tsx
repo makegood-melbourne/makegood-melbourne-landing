@@ -55,7 +55,7 @@ const WhatIsMakeGood = () => {
             alt="Empty commercial office space ready for make good restoration in Melbourne"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/70" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/50" />
         </div>
         
         <div className="max-w-4xl mx-auto text-center relative z-10">
@@ -96,7 +96,7 @@ const WhatIsMakeGood = () => {
                   alt="Commercial office space after make good works with polished concrete floors Melbourne"
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-black/60" />
+                <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/50" />
               </div>
               <CardContent className="pt-6 relative z-10">
                 <h3 className="text-xl font-semibold mb-3 flex items-center gap-2">
@@ -118,7 +118,7 @@ const WhatIsMakeGood = () => {
                   alt="Empty warehouse after make good completion ready for handover Melbourne"
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-black/60" />
+                <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/50" />
               </div>
               <CardContent className="pt-6 relative z-10">
                 <h3 className="text-xl font-semibold mb-3 flex items-center gap-2">
@@ -431,7 +431,7 @@ const WhatIsMakeGood = () => {
             alt="Manufacturing facility requiring make good services in Melbourne"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/70 to-black/60" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/50 to-black/40" />
         </div>
         
         <div className="max-w-3xl mx-auto text-center relative z-10">
