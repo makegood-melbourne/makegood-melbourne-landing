@@ -40,7 +40,7 @@ const About = () => {
     },
     {
       icon: MapPin,
-      title: "Melbourne Locals",
+      title: "Melbourne Based",
       description: "Deep knowledge of local regulations, councils, and market expectations."
     }
   ];
