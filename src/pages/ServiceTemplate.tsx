@@ -279,19 +279,21 @@ const ServiceTemplate = () => {
         {service.comparison && (
           <section className="py-16 bg-background">
             <div className="container mx-auto px-4">
-              <h2 className="text-3xl md:text-4xl text-foreground mb-10">Why Choose Specialists?</h2>
+              <h2 className="text-3xl md:text-4xl text-foreground mb-10">
+                {service.comparison.title || "Why Choose Specialists?"}
+              </h2>
               <div className="overflow-x-auto">
                 <table className="w-full border-collapse">
                   <thead>
                     <tr>
-                      <th className="text-left p-4 bg-secondary text-foreground font-semibold border-b border-border">Feature</th>
-                      <th className="text-left p-4 bg-primary/10 text-foreground font-semibold border-b border-border">
+                      <th className="text-left p-4 bg-secondary text-foreground font-semibold border-b border-border w-1/5"></th>
+                      <th className="text-left p-4 bg-primary/10 text-foreground font-semibold border-b border-border w-2/5">
                         <div className="flex items-center gap-2">
                           <Check className="h-5 w-5 text-primary" />
                           {service.comparison.specialistTitle}
                         </div>
                       </th>
-                      <th className="text-left p-4 bg-secondary text-foreground font-semibold border-b border-border">
+                      <th className="text-left p-4 bg-secondary text-foreground font-semibold border-b border-border w-2/5">
                         {service.comparison.regularTitle}
                       </th>
                     </tr>
@@ -301,16 +303,10 @@ const ServiceTemplate = () => {
                       <tr key={index} className={index % 2 === 0 ? 'bg-background' : 'bg-secondary/50'}>
                         <td className="p-4 text-foreground font-medium border-b border-border">{item.feature}</td>
                         <td className="p-4 text-foreground border-b border-border bg-primary/5">
-                          <div className="flex items-start gap-2">
-                            <Check className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                            {item.specialist}
-                          </div>
+                          {item.specialist}
                         </td>
                         <td className="p-4 text-muted-foreground border-b border-border">
-                          <div className="flex items-start gap-2">
-                            <X className="h-5 w-5 text-muted-foreground/50 flex-shrink-0 mt-0.5" />
-                            {item.regular}
-                          </div>
+                          {item.regular}
                         </td>
                       </tr>
                     ))}

@@ -41,6 +41,7 @@ export interface ComparisonItem {
 }
 
 export interface Comparison {
+  title?: string;
   specialistTitle: string;
   regularTitle: string;
   items: ComparisonItem[];
@@ -432,15 +433,16 @@ export const services: Service[] = [
       "Graffiti removal"
     ],
     comparison: {
-      specialistTitle: "Make Good Specialists",
-      regularTitle: "Maintenance Crews",
+      title: "Why Choose Make Good Melbourne?",
+      specialistTitle: "Make Good Melbourne",
+      regularTitle: "Commercial Cleaners",
       items: [
-        { feature: "Equipment", specialist: "Ride-on scrubbers, industrial pressure washers", regular: "Mops and basic equipment" },
-        { feature: "Scale", specialist: "500sqm+ warehouse floors", regular: "Office-sized areas" },
-        { feature: "Stain removal", specialist: "Oil, tyre marks, chemical treatment", regular: "Surface cleaning only" },
-        { feature: "Waste handling", specialist: "Skip bins and full removal", regular: "Bagged waste only" },
-        { feature: "Timing", specialist: "After-hours and weekends", regular: "Business hours only" },
-        { feature: "Outcome", specialist: "Landlord inspection-ready", regular: "Maintenance standard" }
+        { feature: "Equipment", specialist: "Ride-on scrubbers, industrial pressure washers, commercial window cleaning, industrial steam cleaners, flood dryers", regular: "Standard cleaning equipment and steam cleaners" },
+        { feature: "Scale", specialist: "500sqm+ warehouse floors, multi-level buildings", regular: "Office and retail spaces" },
+        { feature: "Stain removal", specialist: "Oil, tyre marks, chemical degreasing, industrial stains", regular: "General surface cleaning and spot treatment" },
+        { feature: "Waste handling", specialist: "Skip bins, hazardous waste (asbestos), scrap metal recycling, large item disposal, furniture purchase options", regular: "Standard waste removal and bagged disposal" },
+        { feature: "Timing", specialist: "Flexible scheduling including after-hours and weekends", regular: "Typically after-hours to avoid business disruption" },
+        { feature: "Focus", specialist: "One-time intensive restoration for lease handover", regular: "Ongoing maintenance and regular upkeep" }
       ]
     },
     faqs: [
