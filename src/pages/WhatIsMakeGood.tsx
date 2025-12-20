@@ -6,6 +6,12 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
+// Images for visual enhancement
+import heroImage from "@/assets/industries/commercial-make-good-open-floor-industrial-windows-melbourne.jpeg";
+import officeImage from "@/assets/industries/commercial-office-make-good-polished-concrete-melbourne.jpeg";
+import warehouseImage from "@/assets/services/empty-warehouse-after-makegood-melbourne.png";
+import ctaImage from "@/assets/services/manufacturing-facility-before-makegood-melbourne.jpeg";
+
 const WhatIsMakeGood = () => {
   // Schema markup for educational content
   const articleSchema = {
@@ -41,8 +47,18 @@ const WhatIsMakeGood = () => {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="pt-32 pb-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-secondary/50 to-background">
-        <div className="max-w-4xl mx-auto text-center">
+      <section className="relative pt-32 pb-20 px-4 sm:px-6 lg:px-8 min-h-[60vh] flex items-center">
+        {/* Background image with overlay */}
+        <div className="absolute inset-0 z-0">
+          <img 
+            src={heroImage} 
+            alt="Empty commercial office space ready for make good restoration in Melbourne"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-background/80 backdrop-blur-[2px]" />
+        </div>
+        
+        <div className="max-w-4xl mx-auto text-center relative z-10">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
             What is a Make Good?
           </h1>
@@ -72,8 +88,17 @@ const WhatIsMakeGood = () => {
           </div>
 
           <div className="grid md:grid-cols-2 gap-6 mb-12">
-            <Card className="border-l-4 border-primary bg-card">
-              <CardContent className="pt-6">
+            {/* Office Card with background image */}
+            <Card className="relative overflow-hidden border-l-4 border-primary min-h-[200px]">
+              <div className="absolute inset-0 z-0">
+                <img 
+                  src={officeImage} 
+                  alt="Commercial office space after make good works with polished concrete floors Melbourne"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-background/85" />
+              </div>
+              <CardContent className="pt-6 relative z-10">
                 <h3 className="text-xl font-semibold mb-3 flex items-center gap-2">
                   <Building2 className="h-5 w-5 text-primary" />
                   For Offices
@@ -84,8 +109,18 @@ const WhatIsMakeGood = () => {
                 </p>
               </CardContent>
             </Card>
-            <Card className="border-l-4 border-primary bg-card">
-              <CardContent className="pt-6">
+            
+            {/* Warehouse Card with background image */}
+            <Card className="relative overflow-hidden border-l-4 border-primary min-h-[200px]">
+              <div className="absolute inset-0 z-0">
+                <img 
+                  src={warehouseImage} 
+                  alt="Empty warehouse after make good completion ready for handover Melbourne"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-background/85" />
+              </div>
+              <CardContent className="pt-6 relative z-10">
                 <h3 className="text-xl font-semibold mb-3 flex items-center gap-2">
                   <Building2 className="h-5 w-5 text-primary" />
                   For Warehouses
@@ -388,8 +423,18 @@ const WhatIsMakeGood = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-background to-secondary/30">
-        <div className="max-w-3xl mx-auto text-center">
+      <section className="relative py-20 px-4 sm:px-6 lg:px-8">
+        {/* Background image with overlay */}
+        <div className="absolute inset-0 z-0">
+          <img 
+            src={ctaImage} 
+            alt="Manufacturing facility requiring make good services in Melbourne"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-background/90" />
+        </div>
+        
+        <div className="max-w-3xl mx-auto text-center relative z-10">
           <h2 className="text-2xl sm:text-3xl font-bold mb-4">
             Need Help With Your Make Good?
           </h2>
