@@ -1,9 +1,10 @@
 import { useParams, Navigate, Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
-import { MapPin, Clock, Shield, Mail, ArrowRight, CheckCircle2, Building2, Wrench, Warehouse, Factory, HardHat, Truck } from "lucide-react";
+import { MapPin, Clock, Shield, Mail, ArrowRight, CheckCircle2, Building2, Wrench, Warehouse, Factory, HardHat, Truck, HelpCircle } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { getLocationBySlug } from "@/data/locations";
 import heroImage from "@/assets/locations/commercial-make-good-restoration-melbourne.jpeg";
 import workerImage from "@/assets/locations/melbourne-make-good-contractor-with-tools.jpeg";
@@ -116,6 +117,22 @@ const LocationTemplate = () => {
             "serviceType": "Make Good Services"
           })}
         </script>
+        {location.faqs && location.faqs.length > 0 && (
+          <script type="application/ld+json">
+            {JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              "mainEntity": location.faqs.map(faq => ({
+                "@type": "Question",
+                "name": faq.question,
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": faq.answer
+                }
+              }))
+            })}
+          </script>
+        )}
       </Helmet>
 
       <Navigation />
@@ -384,6 +401,40 @@ const LocationTemplate = () => {
         </div>
       </section>
 
+      {/* FAQ Section - Only shown for locations with FAQs */}
+      {location.faqs && location.faqs.length > 0 && (
+        <section className="py-16 bg-secondary">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <div className="flex items-center gap-3 mb-8">
+                <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
+                  <HelpCircle className="h-6 w-6 text-primary" />
+                </div>
+                <h2 className="text-2xl md:text-3xl font-bold text-foreground">
+                  Frequently Asked Questions About {location.name} Make Goods
+                </h2>
+              </div>
+              
+              <Accordion type="single" collapsible className="space-y-4">
+                {location.faqs.map((faq, index) => (
+                  <AccordionItem 
+                    key={index} 
+                    value={`faq-${index}`}
+                    className="bg-card border border-border rounded-lg px-6"
+                  >
+                    <AccordionTrigger className="text-left text-foreground font-medium hover:text-primary hover:no-underline py-5">
+                      {faq.question}
+                    </AccordionTrigger>
+                    <AccordionContent className="text-muted-foreground pb-5 leading-relaxed">
+                      {faq.answer}
+                    </AccordionContent>
+                  </AccordionItem>
+                ))}
+              </Accordion>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Final CTA Section */}
       <section className="py-20 bg-card border-t border-border">
