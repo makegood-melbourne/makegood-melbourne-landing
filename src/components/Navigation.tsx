@@ -138,9 +138,29 @@ const Navigation = () => {
             <button onClick={() => scrollToSection('about')} className="text-foreground hover:text-accent transition-colors">
               About
             </button>
-            <Link to="/faq" className="text-foreground hover:text-accent transition-colors">
-              FAQ
-            </Link>
+            <DropdownMenu>
+              <DropdownMenuTrigger className="flex items-center gap-1 text-foreground hover:text-accent transition-colors">
+                Learn
+                <ChevronDown className="h-4 w-4" />
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="start" className="bg-card border-border">
+                <DropdownMenuItem asChild>
+                  <Link to="/what-is-make-good" className="cursor-pointer">
+                    What is a Make Good?
+                  </Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link to="/faq" className="cursor-pointer">
+                    FAQ
+                  </Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link to="/blog" className="cursor-pointer">
+                    Blog
+                  </Link>
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
             <Link to="/contact" className="text-foreground hover:text-accent transition-colors">
               Contact
             </Link>
@@ -218,13 +238,32 @@ const Navigation = () => {
             <button onClick={() => scrollToSection('about')} className="text-left text-foreground hover:text-accent transition-colors py-2">
               About
             </button>
-            <Link 
-              to="/faq" 
-              className="text-left text-foreground hover:text-accent transition-colors py-2"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              FAQ
-            </Link>
+            <div className="py-2">
+              <span className="text-foreground font-medium">Learn</span>
+              <div className="pl-4 mt-2 flex flex-col gap-2">
+                <Link 
+                  to="/what-is-make-good" 
+                  className="text-muted-foreground hover:text-accent transition-colors"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  What is a Make Good?
+                </Link>
+                <Link 
+                  to="/faq" 
+                  className="text-muted-foreground hover:text-accent transition-colors"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  FAQ
+                </Link>
+                <Link 
+                  to="/blog" 
+                  className="text-muted-foreground hover:text-accent transition-colors"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Blog
+                </Link>
+              </div>
+            </div>
             <Link 
               to="/contact" 
               className="text-left text-foreground hover:text-accent transition-colors py-2"
