@@ -291,9 +291,15 @@ const WhatIsMakeGood = () => {
       {/* Timeline Section */}
       <section className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-2xl sm:text-3xl font-bold mb-8 text-center">
+          <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-center">
             Recommended Make Good Timeline
           </h2>
+          <p className="text-center text-muted-foreground mb-8">
+            For a detailed breakdown of each step, see{" "}
+            <Link to="/our-process" className="text-primary hover:underline">
+              our full process guide
+            </Link>.
+          </p>
           
           <div className="space-y-6">
             {[
@@ -399,8 +405,8 @@ const WhatIsMakeGood = () => {
               </Link>
             </Button>
             <Button asChild variant="outline" size="lg" className="text-base">
-              <Link to="/faq">
-                Read Our FAQ
+              <Link to="/our-process">
+                See Our Process
               </Link>
             </Button>
           </div>
