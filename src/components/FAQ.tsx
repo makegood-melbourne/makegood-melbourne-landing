@@ -57,7 +57,7 @@ const FAQ = () => {
   };
 
   return (
-    <section className="py-16 md:py-24 bg-muted/30">
+    <section className="py-12 md:py-16 bg-muted/30">
       <Helmet>
         <script type="application/ld+json">
           {JSON.stringify(faqSchema)}
