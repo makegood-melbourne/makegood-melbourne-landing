@@ -119,7 +119,7 @@ const BlogPost = () => {
           <div className="aspect-video w-full overflow-hidden rounded-lg mb-8">
             <img 
               src={imageUrl}
-              alt={post.title}
+              alt={post.imageAlt || post.title}
               className="w-full h-full object-cover"
             />
           </div>
