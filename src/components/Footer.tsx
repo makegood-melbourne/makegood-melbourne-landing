@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
-import { Mail, Shield } from "lucide-react";
+import { Mail, Shield, MapPin } from "lucide-react";
 import logo from "@/assets/makegood-melbourne-logo.png";
-import { locations } from "@/data/locations";
 
 const Footer = () => {
   return (
@@ -40,53 +39,59 @@ const Footer = () => {
           </div>
           
           <div>
-            <h4 className="font-semibold mb-4 text-foreground">Quick Links</h4>
+            <h4 className="font-semibold mb-4 text-foreground">Learn</h4>
             <ul className="space-y-2">
               <li>
-                <button onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })} className="text-muted-foreground hover:text-foreground transition-colors">
-                  Services
-                </button>
+                <Link to="/what-is-make-good" className="text-muted-foreground hover:text-foreground transition-colors">
+                  What is a Make Good?
+                </Link>
               </li>
               <li>
-                <a href="/capabilities" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Capabilities
-                </a>
+                <Link to="/our-process" className="text-muted-foreground hover:text-foreground transition-colors">
+                  Our Process
+                </Link>
               </li>
               <li>
-                <button onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })} className="text-muted-foreground hover:text-foreground transition-colors">
-                  About Us
-                </button>
+                <Link to="/faq" className="text-muted-foreground hover:text-foreground transition-colors">
+                  FAQ
+                </Link>
               </li>
               <li>
-                <a href="/blog" className="text-muted-foreground hover:text-foreground transition-colors">
+                <Link to="/blog" className="text-muted-foreground hover:text-foreground transition-colors">
                   Blog
-                </a>
+                </Link>
               </li>
               <li>
-                <button onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })} className="text-muted-foreground hover:text-foreground transition-colors">
-                  Contact
-                </button>
+                <Link to="/capabilities" className="text-muted-foreground hover:text-foreground transition-colors">
+                  Capabilities
+                </Link>
               </li>
             </ul>
           </div>
 
           <div>
             <h4 className="font-semibold mb-4 text-foreground">Service Areas</h4>
+            <div className="flex items-start gap-2 text-muted-foreground mb-4">
+              <MapPin className="h-5 w-5 text-accent shrink-0 mt-0.5" />
+              <p className="leading-relaxed">
+                Servicing all Melbourne metropolitan areas including CBD, inner suburbs, and greater Melbourne.
+              </p>
+            </div>
+            <Link 
+              to="/service-areas"
+              className="inline-flex items-center gap-2 text-accent hover:text-accent/80 transition-colors font-medium"
+            >
+              View all service areas →
+            </Link>
+            
+            <h4 className="font-semibold mt-6 mb-4 text-foreground">Contact</h4>
             <ul className="space-y-2">
-              {locations.map((location) => (
-                <li key={location.slug}>
-                  <Link 
-                    to={`/areas/${location.slug}`}
-                    className="text-muted-foreground hover:text-foreground transition-colors"
-                  >
-                    {location.name} Make Good
-                  </Link>
-                </li>
-              ))}
+              <li>
+                <Link to="/contact" className="text-muted-foreground hover:text-foreground transition-colors">
+                  Get a Quote
+                </Link>
+              </li>
             </ul>
-            <p className="text-muted-foreground leading-relaxed mt-4 text-sm">
-              Servicing all Melbourne metro areas.
-            </p>
           </div>
         </div>
 
