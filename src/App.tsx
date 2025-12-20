@@ -14,6 +14,8 @@ import NotFound from "./pages/NotFound";
 import LegacyBlogRedirect from "./pages/LegacyBlogRedirect";
 import Contact from "./pages/Contact";
 import ServiceAreas from "./pages/ServiceAreas";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsOfService from "./pages/TermsOfService";
 import { Chatbot } from "./components/Chatbot";
 
 const queryClient = new QueryClient();
@@ -29,6 +31,8 @@ const App = () => (
           <Route path="/capabilities" element={<Capabilities />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/service-areas" element={<ServiceAreas />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms-of-service" element={<TermsOfService />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="/areas/:slug" element={<LocationTemplate />} />
