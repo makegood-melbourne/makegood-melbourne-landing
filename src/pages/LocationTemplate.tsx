@@ -7,8 +7,24 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { getLocationBySlug } from "@/data/locations";
-import heroImage from "@/assets/locations/commercial-make-good-restoration-melbourne.jpeg";
+import defaultHeroImage from "@/assets/locations/commercial-make-good-restoration-melbourne.jpeg";
 import workerImage from "@/assets/locations/melbourne-make-good-contractor-with-tools.jpeg";
+import southMelbourneImage from "@/assets/locations/south-melbourne-market-commercial-precinct.jpeg";
+
+// Location-specific hero images with optimized alt text
+const locationHeroImages: Record<string, { src: string; alt: string }> = {
+  "south-melbourne": {
+    src: southMelbourneImage,
+    alt: "South Melbourne Market commercial precinct - make good services for retail and commercial spaces in South Melbourne"
+  }
+};
+
+const getHeroImage = (slug: string) => {
+  return locationHeroImages[slug] || {
+    src: defaultHeroImage,
+    alt: "Commercial property make good restoration services Melbourne"
+  };
+};
 
 const LocationTemplate = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -208,8 +224,8 @@ const LocationTemplate = () => {
             <div className="hidden lg:block">
               <div className="aspect-[4/3] rounded-lg overflow-hidden">
                 <img 
-                  src={heroImage} 
-                  alt={`Make good services in ${location.name} - commercial space restoration`}
+                  src={getHeroImage(slug || "").src} 
+                  alt={getHeroImage(slug || "").alt}
                   className="w-full h-full object-cover"
                 />
               </div>
