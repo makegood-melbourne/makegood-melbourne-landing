@@ -69,7 +69,7 @@ const Navigation = () => {
             <a href="/">
               <img src={logo} alt="MakeGOOD Melbourne - Commercial Make Good Services" className="h-8 md:h-10 brightness-0 invert cursor-pointer" />
             </a>
-            <span className="hidden lg:block text-sm text-primary font-medium pb-0.5">Make good, BETTER.</span>
+            <span className="hidden lg:block text-sm text-primary font-medium leading-none">Make good, BETTER.</span>
           </div>
           
           <div className="hidden md:flex items-center gap-6">
