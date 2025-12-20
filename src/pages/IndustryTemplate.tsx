@@ -120,11 +120,9 @@ const IndustryTemplate = () => {
             {industry.featuredSections.map((section, index) => (
               <div 
                 key={index} 
-                className={`grid lg:grid-cols-2 gap-12 items-center ${
-                  index % 2 === 1 ? 'lg:flex-row-reverse' : ''
-                }`}
+                className="grid lg:grid-cols-2 gap-12 items-center"
               >
-                <div className={index % 2 === 1 ? 'lg:order-2' : ''}>
+                <div className={index % 2 === 0 ? 'lg:order-2' : ''}>
                   <h2 className="text-2xl sm:text-3xl font-bold mb-4">
                     {section.title}
                   </h2>
@@ -132,11 +130,19 @@ const IndustryTemplate = () => {
                     {section.description}
                   </p>
                 </div>
-                <div className={index % 2 === 1 ? 'lg:order-1' : ''}>
-                  <ImagePlaceholder 
-                    description={section.imagePlaceholder || `Image for ${section.title}`}
-                    className="aspect-[4/3]"
-                  />
+                <div className={index % 2 === 0 ? 'lg:order-1' : ''}>
+                  {section.image ? (
+                    <img 
+                      src={section.image} 
+                      alt={section.imageAlt || section.title}
+                      className="rounded-lg shadow-xl w-full aspect-[4/3] object-cover"
+                    />
+                  ) : (
+                    <ImagePlaceholder 
+                      description={section.imagePlaceholder || `Image for ${section.title}`}
+                      className="aspect-[4/3]"
+                    />
+                  )}
                 </div>
               </div>
             ))}

@@ -1,6 +1,12 @@
+import commercialHeroImage from "@/assets/industries/commercial-office-make-good-polished-concrete-melbourne.jpeg";
+import commercialSitePreparationImage from "@/assets/industries/commercial-make-good-open-floor-industrial-windows-melbourne.jpeg";
+import commercialFitOutImage from "@/assets/industries/commercial-office-fitout-kitchen-breakroom-melbourne.jpeg";
+
 export interface FeaturedSection {
   title: string;
   description: string;
+  image?: string;
+  imageAlt?: string;
   imagePlaceholder?: string; // Description of ideal image for this section
 }
 
@@ -12,6 +18,7 @@ export interface Industry {
   metaDescription: string;
   heroText: string;
   heroImage?: string;
+  heroImageAlt?: string;
   heroImagePlaceholder?: string; // Description of ideal hero image
   introduction: string;
   featuredSections?: FeaturedSection[];
@@ -35,18 +42,21 @@ export const industries: Industry[] = [
     metaTitle: "Commercial Make Good Melbourne | Office & Retail Restoration",
     metaDescription: "Expert commercial make good services across Melbourne. Office strip outs, retail fitout removal, painting, flooring and full restoration. Fixed-price quotes. Call today.",
     heroText: "Complete make good solutions for Melbourne's commercial properties—from office towers and retail spaces to multi-tenancy buildings.",
-    heroImagePlaceholder: "Modern commercial building exterior or office tower in Melbourne",
+    heroImage: commercialHeroImage,
+    heroImageAlt: "Completed commercial office make good with polished concrete floors and exposed ceiling services in Melbourne",
     introduction: "Commercial make goods require precision, efficiency and minimal disruption to building operations. Whether you're vacating an office suite, retail tenancy or entire commercial floor, our team delivers comprehensive restoration that meets landlord specifications and building management requirements. We coordinate all trades, manage after-hours access and ensure your bond is returned in full.",
     featuredSections: [
       {
         title: "Site Preparation & Services Coordination",
         description: "We start by ensuring your project foundations—both literally and operationally—are set for success. Comprehensive surveys, service location mapping, and pre-construction compliance checks ensure every aspect of the site is ready before major works commence. Underground services are installed or safeguarded early, and bulk earthworks are sequenced correctly to maintain a safe, organised, and disruption-free work environment—protecting timelines and budgets from the very start.",
-        imagePlaceholder: "Commercial site preparation with survey equipment or service mapping"
+        image: commercialSitePreparationImage,
+        imageAlt: "Large open commercial floor with industrial windows after make good restoration in Melbourne"
       },
       {
         title: "Services Integration & Quality Fit-Out",
         description: "We integrate mechanical, electrical, and plumbing services seamlessly within the structural framework, using coordinated drawings and clash detection to avoid costly rework. Our fit-out delivery follows rigorous quality assurance procedures, ensuring every element—from mezzanines and partitions to specialist systems—meets specification. By the time we hand over, your building is fully functional, compliant, and ready for immediate operational use.",
-        imagePlaceholder: "Commercial office fit-out in progress showing trades coordination"
+        image: commercialFitOutImage,
+        imageAlt: "Commercial office kitchen and breakroom fit-out with quality joinery in Melbourne"
       }
     ],
     challenges: [
