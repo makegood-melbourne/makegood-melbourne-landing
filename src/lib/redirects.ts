@@ -21,21 +21,8 @@ export const blogRedirects: Record<string, string> = {
   "epoxy-flooring-industrial-applications": "restoring-concrete-floors",
   "commercial-cleaning-services-post-makegood": "end-of-lease-cleaning-services",
   "electrical-make-safe-emergency-response": "electrical-make-safe-decommissioning-demolition",
-  // Old /blogs/ URLs (plural) - redirect to correct /blog/ slugs
-  "the-ultimate-guide-to-pallet-racking-solutions": "guide-to-pallet-racking-solutions",
-  "property-condition-report": "understanding-property-condition-reports",
 };
 
 export const getRedirectSlug = (slug: string): string | null => {
   return blogRedirects[slug] || null;
-};
-
-// Page-level redirects for old site structure
-export const pageRedirects: Record<string, string> = {
-  "/tenants": "/",
-  "/blogs": "/blog",
-  "/about": "/#about",
-  "/learn": "/blog",
-  "/cart": "/",
-  "/services": "/capabilities",
 };

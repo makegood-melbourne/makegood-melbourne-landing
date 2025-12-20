@@ -13,10 +13,10 @@ const Blog = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Helmet>
-        <title>Make Good Blog | Property Restoration Insights Melbourne</title>
-        <meta name="description" content="Industry insights on commercial make good services, end of lease obligations, warehouse restoration and building remediation. Practical guides from Melbourne's property restoration experts." />
-        <meta property="og:title" content="Make Good Blog | Expert Property Restoration Insights" />
-        <meta property="og:description" content="Industry insights on commercial make good services, end of lease obligations and property restoration in Melbourne." />
+        <title>Blog - Expert Make Good & Property Restoration Insights | MakeGOOD Melbourne</title>
+        <meta name="description" content="Expert insights on make good services, end of lease works, and property restoration in Melbourne. Learn from industry professionals about commercial property maintenance." />
+        <meta property="og:title" content="Blog - Expert Make Good Insights | MakeGOOD Melbourne" />
+        <meta property="og:description" content="Expert insights on make good services, end of lease works, and property restoration in Melbourne." />
         <meta property="og:type" content="website" />
         <link rel="canonical" href="https://makegood.melbourne/blog" />
       </Helmet>
@@ -27,11 +27,8 @@ const Blog = () => {
         <div className="container mx-auto px-4 py-12">
           <div className="text-center mb-12">
             <h1 className="text-4xl md:text-5xl text-foreground mb-4">Make Good Melbourne Blog</h1>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Expert insights on make good services, end of lease works, and property restoration in Melbourne
-            </p>
-            <p className="mt-4 text-sm text-muted-foreground">
-              Showing <span className="font-medium text-foreground">{sortedPosts.length}</span> articles
             </p>
           </div>
 

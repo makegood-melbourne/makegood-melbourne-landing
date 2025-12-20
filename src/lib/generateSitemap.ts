@@ -1,6 +1,4 @@
 import { blogPosts } from "@/data/blogPosts";
-import { services } from "@/data/services";
-import { locations } from "@/data/locations";
 
 export function generateSitemap(): string {
   const baseUrl = "https://makegood.melbourne";
@@ -19,21 +17,7 @@ export function generateSitemap(): string {
     changefreq: 'monthly'
   }));
 
-  const serviceUrls = services.map(service => ({
-    url: `/services/${service.slug}`,
-    lastmod: currentDate,
-    priority: '0.8',
-    changefreq: 'monthly'
-  }));
-
-  const locationUrls = locations.map(location => ({
-    url: `/areas/${location.slug}`,
-    lastmod: currentDate,
-    priority: '0.8',
-    changefreq: 'monthly'
-  }));
-
-  const allUrls = [...staticPages, ...blogUrls, ...serviceUrls, ...locationUrls];
+  const allUrls = [...staticPages, ...blogUrls];
 
   let sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">`;
