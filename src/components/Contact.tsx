@@ -164,7 +164,7 @@ const Contact = () => {
               </CardContent>
             </Card>
 
-            <div className="bg-accent/10 border border-accent/20 rounded-lg p-6">
+            <div className="bg-tertiary/10 border border-tertiary/30 rounded-lg p-6">
               <h3 className="font-semibold text-foreground mb-2">Emergency Make Safe?</h3>
               <p className="text-muted-foreground mb-4">
                 We offer rapid response for urgent make safe requirements. Contact us immediately for emergency situations.
