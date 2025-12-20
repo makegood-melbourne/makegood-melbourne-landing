@@ -30,7 +30,9 @@ const faqs: FAQ[] = [
 
 Make good obligations can include removing partitions and signage, patching and repainting walls to a uniform finish, reinstating base building ceilings and floors, terminating electrical and data services, and completing a detailed final clean. The specific requirements vary depending on your lease terms and what modifications were made during your tenancy.
 
-Understanding your make good clause early—ideally before signing the lease—can save you significant time and money when it comes time to vacate.`
+Understanding your make good clause early—ideally before signing the lease—can save you significant time and money when it comes time to vacate.
+
+→ For a complete guide, visit our What is a Make Good? page.`
   },
   {
     category: "understanding",
@@ -41,7 +43,9 @@ Understanding your make good clause early—ideally before signing the lease—c
 
 • Make Safe refers to urgent works required to eliminate immediate hazards or safety risks. This might include securing a site after damage, removing dangerous materials, or addressing structural issues that pose a risk to occupants or the public.
 
-At Make Good Melbourne, we provide both services to help you manage your property needs.`
+At Make Good Melbourne, we provide both services to help you manage your property needs.
+
+→ Learn more about the differences on our What is a Make Good? page.`
   },
   {
     category: "understanding",
@@ -69,7 +73,9 @@ Final Works:
 • Detailed cleaning to handover standard
 • Documentation and photography for landlord sign-off
 
-The exact scope depends on your lease terms and what modifications were made during your tenancy.`
+The exact scope depends on your lease terms and what modifications were made during your tenancy.
+
+→ See the full breakdown on our What is a Make Good? page.`
   },
   // Costs & Pricing
   {
@@ -483,8 +489,20 @@ const FAQPage = () => {
                 <AccordionTrigger className="text-left text-lg font-medium hover:text-primary py-5 [&[data-state=open]>svg]:rotate-180">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground text-base pb-5 leading-relaxed whitespace-pre-line border-t border-border pt-4">
-                  {faq.answer}
+                <AccordionContent className="text-muted-foreground text-base pb-5 leading-relaxed border-t border-border pt-4">
+                  {faq.answer.split('\n').map((line, lineIndex) => {
+                    if (line.startsWith('→')) {
+                      return (
+                        <p key={lineIndex} className="mt-4">
+                          <Link to="/what-is-make-good" className="text-primary hover:underline inline-flex items-center gap-1">
+                            {line.replace('→ ', '')}
+                            <ArrowRight className="h-4 w-4" />
+                          </Link>
+                        </p>
+                      );
+                    }
+                    return line ? <span key={lineIndex}>{line}<br /></span> : <br key={lineIndex} />;
+                  })}
                 </AccordionContent>
               </AccordionItem>
             ))}
