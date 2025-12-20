@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet-async";
 import { getServiceBySlug, getPublishedServices } from "@/data/services";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import BeforeAfterSlider from "@/components/BeforeAfterSlider";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -60,6 +61,18 @@ const ServiceTemplate = () => {
       <Navigation />
 
       <main className="flex-1 pt-20">
+        {/* Breadcrumbs */}
+        <div className="bg-secondary">
+          <div className="container mx-auto px-4">
+            <Breadcrumbs 
+              items={[
+                { label: "Services", href: "/capabilities" },
+                { label: service.name }
+              ]} 
+            />
+          </div>
+        </div>
+
         {/* 1. Hero Section */}
         <section className="bg-secondary py-16 md:py-24">
           <div className="container mx-auto px-4">
