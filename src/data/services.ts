@@ -34,6 +34,23 @@ export interface CtaBlock {
   text: string;
 }
 
+export interface ComparisonItem {
+  feature: string;
+  specialist: string;
+  regular: string;
+}
+
+export interface Comparison {
+  specialistTitle: string;
+  regularTitle: string;
+  items: ComparisonItem[];
+}
+
+export interface FAQ {
+  question: string;
+  answer: string;
+}
+
 export interface Service {
   name: string;
   slug: string;
@@ -46,9 +63,12 @@ export interface Service {
   heroImageAlt?: string;
   secondaryImage?: string;
   secondaryImageAlt?: string;
+  trustBadges?: string[];
   featuredSection?: FeaturedSection;
   featuredSections?: FeaturedSection[];
   benefits: string[];
+  comparison?: Comparison;
+  faqs?: FAQ[];
   process?: {
     step: string;
     description: string;
@@ -382,28 +402,68 @@ export const services: Service[] = [
     slug: "commercial-cleaning",
     title: "Make Good Cleaning Melbourne",
     metaTitle: "Make Good Cleaning Melbourne | Lease End Specialists",
-    description: "Lease ending? We handle the heavy-duty cleaning regular cleaners won't touch. Industrial floor scrubbing, high-pressure washing and chemical treatment—everything your landlord expects at handover.",
+    description: "Lease ending? We handle the heavy-duty cleaning regular cleaners won't touch. Industrial floor scrubbing, high-pressure washing and chemical treatment—everything your landlord expects at handover. We work at scale: 500sqm warehouse floors, multi-level office strip-outs, loading docks caked in years of grime. This isn't maintenance cleaning—it's handover-ready restoration.",
     metaDescription: "Make good cleaning Melbourne. Lease end floor scrubbing, high-pressure washing, oil and tyre mark removal. Pass your final inspection. Free quotes.",
     heroText: "Heavy-duty cleaning for lease end and make good handovers. We tackle the jobs regular cleaners can't—warehouse floors, post-strip-out sites and final inspections that need to pass first time.",
     heroImage: commercialFloorSweepingImage,
     heroImageAlt: "Worker sweeping concrete floor with industrial broom during make good cleaning Melbourne",
     secondaryImage: highPressureWarehouseCleaningImage,
     secondaryImageAlt: "High-pressure warehouse cleaning Melbourne - industrial cleaner pressure washing warehouse floor for lease end",
+    trustBadges: [
+      "Industrial-Grade Equipment",
+      "After-Hours Available",
+      "Complete Waste Removal"
+    ],
     featuredSection: {
       title: "Industrial Floor Cleaning",
-      description: "Years of grime, oil stains and tyre marks don't stand a chance. Our ride-on scrubbers and high-pressure systems restore warehouse floors to handover condition—ready for your landlord's final inspection.",
+      description: "Years of grime, oil stains and tyre marks don't stand a chance. Our ride-on scrubbers and high-pressure systems restore warehouse floors to handover condition—ready for your landlord's final inspection. We handle the full scope: concrete polishing, chemical degreasing, line marking restoration and final detailing.",
       image: industrialFloorScrubberImage,
       imageAlt: "Industrial ride-on floor scrubber machine cleaning polished concrete warehouse floor Melbourne"
     },
     benefits: [
-      "Ride-on floor scrubbers for large areas",
-      "High-pressure cleaning for floors, walls and exteriors",
+      "Industrial floor scrubbing equipment",
+      "Ride-on scrubbers for large warehouse floors",
+      "High-pressure cleaning for concrete and loading docks",
       "Chemical treatment for oil stains and tyre marks",
+      "Waste removal and skip bin coordination",
       "Post-strip-out and post-construction clean-ups",
       "Final inspection preparation",
       "Window and facade cleaning",
-      "Graffiti removal",
-      "Carpet steam cleaning"
+      "Graffiti removal"
+    ],
+    comparison: {
+      specialistTitle: "Make Good Specialists",
+      regularTitle: "Maintenance Crews",
+      items: [
+        { feature: "Equipment", specialist: "Ride-on scrubbers, industrial pressure washers", regular: "Mops and basic equipment" },
+        { feature: "Scale", specialist: "500sqm+ warehouse floors", regular: "Office-sized areas" },
+        { feature: "Stain removal", specialist: "Oil, tyre marks, chemical treatment", regular: "Surface cleaning only" },
+        { feature: "Waste handling", specialist: "Skip bins and full removal", regular: "Bagged waste only" },
+        { feature: "Timing", specialist: "After-hours and weekends", regular: "Business hours only" },
+        { feature: "Outcome", specialist: "Landlord inspection-ready", regular: "Maintenance standard" }
+      ]
+    },
+    faqs: [
+      {
+        question: "What's the difference between make good cleaning and regular commercial cleaning?",
+        answer: "Make good cleaning is a one-time, intensive clean designed to restore a property to handover condition. We use industrial equipment like ride-on floor scrubbers and high-pressure washers to remove years of built-up grime, oil stains and tyre marks—things regular maintenance cleaners aren't equipped to handle."
+      },
+      {
+        question: "How long does a make good clean take?",
+        answer: "It depends on the size and condition of the property. A standard warehouse floor (500-1000sqm) typically takes 1-2 days. We'll provide a timeline after our initial site inspection."
+      },
+      {
+        question: "Do you handle waste removal?",
+        answer: "Yes. We coordinate skip bins and remove all waste as part of our service. You won't be left with bags of rubbish to deal with."
+      },
+      {
+        question: "Can you work after hours or on weekends?",
+        answer: "Absolutely. Many of our clients need cleaning completed outside business hours to minimise disruption. We're flexible with scheduling."
+      },
+      {
+        question: "Will this pass my landlord's final inspection?",
+        answer: "That's exactly what we prepare for. We understand landlord expectations and clean to handover standard—not just 'tidy'. If there are specific requirements in your lease, let us know and we'll address them."
+      }
     ],
     ctaBlock: {
       title: "Let Us Handle Your Cleaning",
