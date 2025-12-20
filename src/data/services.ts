@@ -1,7 +1,7 @@
 import commercialCleaningImage from "@/assets/services/commercial-cleaning-melbourne-supplies.jpeg";
 import commercialFloorSweepingImage from "@/assets/services/commercial-floor-sweeping-concrete-melbourne.jpeg";
 import epoxyFlooringWarehouseImage from "@/assets/services/polished-epoxy-floor-industrial-warehouse-melbourne.jpeg";
-import epoxyRollerApplicationImage from "@/assets/services/epoxy-floor-roller-application-melbourne.jpeg";
+import epoxySpreadingApplicationImage from "@/assets/services/epoxy-floor-spreading-application-warehouse-melbourne.jpeg";
 import warehouseFloorScrubberImage from "@/assets/services/warehouse-floor-scrubber-cleaning-v4.jpg";
 import industrialFloorScrubberImage from "@/assets/services/industrial-ride-on-floor-scrubber-warehouse-melbourne.png";
 import highPressureWarehouseCleaningImage from "@/assets/services/high-pressure-warehouse-cleaning-melbourne.png";
@@ -146,8 +146,8 @@ export const services: Service[] = [
     description: "Tired concrete floors dragging down your warehouse? Epoxy transforms worn, stained slabs into durable, professional surfaces that impress clients and stand up to forklifts, chemicals and heavy traffic. New installs or restoration—we handle it.",
     metaDescription: "Industrial epoxy flooring Melbourne. Warehouse floor coatings, concrete repair and resurfacing. Chemical-resistant, anti-slip finishes. Licensed applicators. Free quotes.",
     heroText: "Your warehouse floor takes a beating. Epoxy coating protects the concrete, hides the damage and gives you a surface that's easy to clean, safe to work on and built to last. Whether you're refreshing for a new tenant or upgrading your own facility—we deliver.",
-    heroImage: epoxyFlooringWarehouseImage,
-    heroImageAlt: "Polished epoxy floor coating in large industrial warehouse with reflective finish Melbourne",
+    heroImage: epoxySpreadingApplicationImage,
+    heroImageAlt: "Worker spreading epoxy floor coating in industrial warehouse Melbourne",
     benefits: [
       "Chemical and oil resistant finishes",
       "Anti-slip coatings for safety compliance",
@@ -156,8 +156,8 @@ export const services: Service[] = [
       "Range of colours including safety zones",
       "20+ year lifespan with proper care"
     ],
-    secondaryImage: epoxyRollerApplicationImage,
-    secondaryImageAlt: "Professional epoxy floor coating application with roller and spiked shoes Melbourne",
+    secondaryImage: epoxyFlooringWarehouseImage,
+    secondaryImageAlt: "Polished epoxy floor coating in large industrial warehouse with reflective finish Melbourne",
     ctaBlock: {
       title: "Let Us Handle Your Epoxy Flooring",
       subtitle: "We do makegoods all day, every day.",
