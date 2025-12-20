@@ -99,905 +99,129 @@ We can't stress this enough: start early. We've seen tenants leave everything un
 - Professional photos of completed works
 - Schedule final inspection with landlord or property manager
 
-### Make Good Component Breakdown
-
-Here's what different warehouse components typically involve:
-
-| Component | What's Involved | Typical Timeline | Cost Indicator |
-|-----------|----------------|------------------|----------------|
-| Pallet Racking | Dismantle, remove anchor bolts, patch and seal floor holes | 1-3 weeks | Moderate-High (depends on height/quantity) |
-| Mezzanine Floor | Structural dismantling, engineering sign-off may be required | 2-6 weeks | High (complex work + potential permits) |
-| Concrete Floor Repairs | Grinding, patching, epoxy coating or sealing | 1-2 weeks | Variable by area |
-| Line Marking | Chemical removal or paint-over | 3-7 days | Low-Moderate |
-| Electrical Work | Disconnect and cap-off (licensed electrician required) | 1-2 weeks | Moderate |
-| Internal Offices | Demolition, removal, patch walls and ceiling | 1-2 weeks | Moderate |
-
-## Victorian Legal Framework for Warehouse Make Good
-
-### Know Your Rights and Obligations
-
-**Key Victorian Legislation:**
-- **Property Law Act 1958**: Governs commercial lease enforcement and dispute resolution
-- **Building Act 1993**: Requires permits for structural work—including demolition
-- **Environmental Protection regulations**: Controls how you dispose of waste, especially hazardous materials
-- **Retail Leases Act 2003**: May apply if your warehouse includes retail components
-
-**Why This Matters:**
-You can't just start ripping out mezzanines without proper permits. We've seen tenants cop massive fines for unpermitted demolition work. If your make good involves structural changes, check permit requirements with your local council.
-
-### Common Legal Pitfalls to Avoid
-
-**Documentation Failures:**
-- No ingoing condition report = very difficult to dispute landlord claims
-- Verbal agreements mean nothing—get everything in writing
-- Missing photos of completed works before handover
-
-**Compliance Issues:**
-- Using unlicensed contractors for electrical or plumbing work
-- Improper asbestos handling in older warehouses
-- Illegal waste disposal (especially chemicals, oils or construction waste)
-
-**Timing Mistakes:**
-- Holding over beyond lease end without agreement (expensive!)
-- Starting works before landlord approval of scope
-- Missing permit applications that delay completion
-
-If your landlord is claiming tens of thousands in make good costs that seem unreasonable, get legal advice. A property lawyer can review whether claims are valid under Victorian law.
-
-## Negotiation Strategies That Actually Work
-
-### Three Exit Strategy Options
-
-**1. Full Reinstatement (Traditional Make Good)**
-You do all the physical works to return the warehouse to its original condition.
-
-**When This Works Best:**
-- Clear lease requirements with detailed condition report
-- Landlord insists on physical works
-- You want certainty of final costs
-- No time pressure on handover
-
-**2. Cash Settlement (Negotiated Buy-Out)**
-Pay the landlord a lump sum instead of doing the works yourself.
-
-**When This Works Best:**
-- You need quick exit
-- Minor works only
-- Landlord prefers cash to manage works themselves
-- You can negotiate a fair settlement amount
-
-**3. Negotiated Retention (Keep Some Fixtures)**
-Landlord agrees to keep some of your installations (racking, offices, etc.) and adjust settlement accordingly.
-
-**When This Works Best:**
-- Incoming tenant wants your fitout
-- Landlord planning to re-let to similar use
-- Items are valuable and in good condition
-- Can reduce your costs significantly
-
-### How to Negotiate Effectively
-
-**Come Prepared with Evidence:**
-- Detailed condition reports (ingoing vs current)
-- Independent dilapidation reports from qualified assessors
-- Competitive quotes from reputable contractors
-- Market research on local vacancy rates and re-letting demand
-
-**Use Market Conditions to Your Advantage:**
-If Port Melbourne warehouse vacancy is high (which varies with the economy), landlords may be more flexible because they need to attract the next tenant quickly. If the market is tight, you have less leverage.
-
-**Make Reasonable Offers:**
-Lowball offers insult landlords and kill negotiations. If independent quotes show $30,000 in legitimate make good works, don't offer $5,000. A fair offer might be $25,000-$28,000 accounting for fair wear and tear.
-
-**Document Everything:**
-Get any agreed variations to make good scope in writing, signed by both parties. Ideally as a formal deed of variation to the lease.
-
-### When to Bring in Experts
-
-**Engage Professionals When:**
-- Make good disputes exceed $15,000-$20,000
-- Lease terms are ambiguous or contradictory
-- Landlord discovers hazardous materials and assigns costs to you
-- Structural work requires engineering reports
-- You're being held over and accruing additional rent
-
-A good property lawyer or quantity surveyor can often save you more than their fees.
-
-## Port Melbourne's 2025 Industrial Market Context
-
-### Why Location Matters
-
-Port Melbourne's industrial property market has unique characteristics that affect make good negotiations:
-
-**High Demand Area:**
-- Proximity to Port of Melbourne and Melbourne CBD
-- Strong logistics and distribution sector
-- Limited available land for new industrial development
-- Premium rents compared to outer suburbs
-
-**Market Dynamics:**
-When vacancy rates are low, landlords have more leverage—they know they can re-let quickly. But they also know incoming tenants often want existing fitouts like racking and offices, which can work in your favour if you negotiate retention.
-
-### 2025 Market Trends Affecting Make Good
-
-**Sustainability Focus:**
-More landlords are interested in environmentally responsible make good practices:
-- Recycling materials where possible (especially steel racking)
-- Proper waste sorting and disposal documentation
-- Solar panel retention for next tenant
-- Energy-efficient lighting upgrades
-
-Positioning your make good as "green" can be a negotiation advantage.
-
-**Fitout Retention Appetite:**
-We're seeing more landlords willing to keep quality tenant fitouts because:
-- New tenants prefer "plug and play" warehouses
-- Building new fitouts is expensive and time-consuming
-- Existing racking and mezzanines add value if in good condition
-
-**Compliance Scrutiny:**
-Landlords are more careful about compliance documentation:
-- Want proof of licensed contractors for all trades
-- Require waste disposal receipts
-- Want asbestos clearance certificates for older buildings
-- EPA documentation for hazardous waste removal
-
-## Finding the Right Make Good Contractors in Port Melbourne
-
-### Essential Selection Criteria
-
-**Must-Haves:**
-- **Current public liability insurance** (minimum $10-20 million for warehouse work)
-- **WorkCover/workers' compensation** coverage
-- **Demonstrated warehouse experience** with verifiable references
-- **Licensed trades** for electrical, plumbing and any structural work
-- **Proper waste handling** capabilities and EPA compliance
-- **Knowledge of Port Melbourne access** and local requirements
-
-**Red Flags to Avoid:**
-- Cash-only operators
-- No insurance or expired coverage
-- Can't provide references
-- Suspiciously low quotes (usually means shortcuts or hidden extras)
-- No written scope of works or contract
-
-### Questions to Ask Contractors
-
-1. "Have you completed make good work in Port Melbourne warehouses before?" (Ask for addresses and references)
-2. "What's your typical timeline for similar-sized projects?"
-3. "How do you handle waste disposal and what documentation will you provide?"
-4. "Are all your tradespeople licensed? Can I see copies?"
-5. "What happens if the landlord rejects the works at final inspection?"
-6. "Will you provide photos of completed work before the landlord inspection?"
-
-**Get Everything in Writing:**
-- Detailed scope of works matching lease requirements
-- Fixed price (or clear schedule of rates)
-- Timeline with milestones
-- Payment schedule (never pay everything upfront)
-- Defects liability period
-- Certificates and documentation to be provided
-
-### Local Considerations
-
-**Port Melbourne Access:**
-- Council restrictions on waste removal times
-- Parking permits for contractor vehicles
-- Noise restrictions in mixed-use areas
-- Coordination with neighbouring businesses
-
-Good contractors know these local rules. If they don't ask about site access, that's a warning sign.
-
-## Cost Management and Budgeting
-
-### Realistic Port Melbourne Warehouse Make Good Costs
-
-Costs vary wildly depending on warehouse size, fitout complexity and condition. Here are rough guides for 2025:
-
-**Small Warehouse (200-500m²):**
-- Basic make good (clean, minor repairs): $5,000-$15,000
-- Standard make good (racking removal, repairs, repaint): $15,000-$35,000
-- Extensive make good (mezzanine, major floor work): $35,000-$70,000+
-
-**Medium Warehouse (500-1,500m²):**
-- Basic make good: $15,000-$40,000
-- Standard make good: $40,000-$90,000
-- Extensive make good: $90,000-$200,000+
-
-**Large Warehouse (1,500m²+):**
-- Costs scale proportionally but can hit $300,000+ for complex fitouts
-
-**Hidden Cost Factors:**
-- Asbestos removal (pre-1990 buildings): Add $10,000-$50,000+
-- Structural engineering reports: $2,000-$5,000
-- Permit fees: $500-$3,000
-- Waste disposal: $200-$400 per ton
-- Holding over rent if you overrun: Your monthly rent converted to daily rate
-
-### Protecting Your Bond
-
-Most commercial leases hold substantial security deposits. Here's how to get it all back:
-
-**Document Everything:**
-- Photos of condition when you moved in
-- Photos throughout your tenancy showing maintenance
-- Photos of completed make good works
-- All contractor invoices and certificates
-- Waste disposal receipts
-- Asbestos clearance certificates if applicable
-
-**Get Sign-Off Before Vacating:**
-- Schedule practical completion inspection with landlord
-- Walk through together making a list of any issues
-- Fix any legitimate defects immediately
-- Get written confirmation that make good is complete
-- Only then hand over keys
-
-**Dispute Process:**
-If the landlord tries to claim excessive costs from your bond:
-1. Request detailed breakdown with quotes
-2. Compare to your documentation
-3. Challenge unreasonable claims in writing
-4. Seek independent assessment if needed
-5. Consider VCAT (Victorian Civil and Administrative Tribunal) for unresolved disputes
-
-## Common Port Melbourne Warehouse Make Good Scenarios
-
-### Case Study: 1,200m² Logistics Warehouse, Fishermans Bend
-
-**The Situation:**
-Tenant had installed extensive racking system, mezzanine office, epoxy floor coating in packing area and upgraded lighting throughout. Lease required return to "base building" condition.
-
-**The Solution:**
-- Negotiated to leave upgraded LED lighting (incoming tenant wanted it)
-- Landlord accepted cash settlement for epoxy coating removal ($8,000 vs $15,000 to physically remove)
-- Carefully dismantled and removed racking and mezzanine
-- Repaired floor anchor bolt holes
-- Professional clean
-
-**Outcome:** Total cost $65,000 vs initial landlord estimate of $95,000. Full bond returned.
-
-### Case Study: 600m² Manufacturing Warehouse, Port Melbourne Industrial Estate
-
-**The Situation:**
-Tenant discovered asbestos in ceiling panels during initial strip-out. Lease didn't specify who pays for pre-existing asbestos.
-
-**The Solution:**
-- Stopped work immediately and engaged licensed asbestos assessor
-- Negotiated with landlord on cost-sharing (landlord's building, tenant's obligation to remove)
-- Reached 50/50 split arrangement
-- Licensed Class A removal contractor engaged
-- Clearance certificate obtained before continuing
-
-**Outcome:** 3-week project delay but avoided legal dispute. Cost split saved tenant $18,000.
-
-## Your Make Good Action Plan
-
-**Start Today (Even If Lease End Is Months Away):**
-
-1. **Review Your Lease:**
-   - Find make good clause
-   - Identify any ambiguous terms
-   - Note notice periods required
-
-2. **Assess Current Condition:**
-   - Walk the warehouse with critical eye
-   - Make list of all tenant installations
-   - Identify any damage beyond fair wear
-   - Take comprehensive photos
-
-3. **Get Professional Quotes:**
-   - Contact 2-3 experienced contractors
-   - Request detailed written quotes
-   - Check references and credentials
-   - Compare scope and pricing
-
-4. **Plan Your Budget:**
-   - Make good works costs
-   - Permit fees if needed
-   - Professional reports (engineer, asbestos, etc.)
-   - Contingency (add 15-20%)
-   - Plan timing to avoid holding over
-
-5. **Open Dialogue with Landlord:**
-   - Notify of intended lease end date
-   - Discuss make good expectations
-   - Explore retention or settlement options
-   - Get agreements in writing
-
-6. **Execute with Documentation:**
-   - Use licensed contractors
-   - Keep all invoices and certificates
-   - Photo document completed works
-   - Schedule final inspection
-   - Get written handover sign-off
-
 ## Conclusion: Success Through Preparation
 
-Port Melbourne warehouse make good doesn't have to be stressful or blow your budget. The tenants who succeed:
-
-- **Start early** (at least 90 days before lease end)
-- **Document everything** (photos are your best friend)
-- **Understand their lease** (read the actual make good clause, not what you think it says)
-- **Negotiate strategically** (use market conditions and evidence)
-- **Use professionals** (experienced contractors and advisors)
-- **Communicate openly** (keep landlords in the loop)
-
-The key is preparation. By the time you're packing boxes, your make good plan should already be well underway.
-
-**Need help with your Port Melbourne warehouse make good?** Our team specialises in industrial property make good across Melbourne's inner suburbs. We know Port Melbourne's unique requirements, have established relationships with local contractors and can guide you through the entire process—from initial assessment to final handover.
-
-Contact us for a no-obligation consultation and get your exit strategy sorted today.
-
----
-
-*Make Good Australia - Your Melbourne Industrial Property Make Good Specialists*
+Port Melbourne warehouse make good doesn't have to be stressful or blow your budget. The tenants who succeed start early, document everything and understand their lease. Contact Make Good Melbourne for expert guidance on your warehouse make good obligations.
     `
   },
   {
     id: "32",
     title: "Asbestos Management in Commercial Make Good: Safety, Compliance and Best Practice",
     slug: "asbestos-management-commercial-make-good",
-    excerpt: "Understanding asbestos management in commercial make good projects is critical for safety and compliance. Learn about identification, legal requirements, safe removal procedures and integration with make good works in Melbourne properties.",
+    excerpt: "Asbestos management is critical during commercial make good works. This comprehensive guide covers identification, legal requirements, safe removal procedures and compliance documentation for Melbourne property managers and tenants.",
     date: "2025-10-15",
     image: "asbestos-management.jpg",
     content: `
-Asbestos remains one of the most serious hazards in commercial property make good projects. Despite being largely phased out in Australia by 1990, asbestos-containing materials (ACMs) are still present in countless commercial buildings constructed before that date. Proper identification, management and removal of asbestos is not just a legal requirement—it's essential for protecting the health of workers, occupants and the broader community.
-
-This comprehensive guide covers everything commercial tenants, landlords and property managers need to know about asbestos management during make good projects.
+Asbestos remains one of the most significant health and safety considerations in commercial make good projects across Melbourne. Buildings constructed before 1990 have a high probability of containing asbestos materials, and disturbing these during renovation or demolition works can create serious health risks and legal liabilities.
 
 ## Understanding Asbestos in Commercial Properties
 
-### What is Asbestos?
+### Where Asbestos Is Commonly Found
 
-Asbestos is a naturally occurring mineral fibre that was widely used in Australian building materials from the 1940s through to 1990. Its popularity stemmed from excellent properties:
-- Heat and fire resistance
-- Electrical insulation
-- Chemical resistance
-- High tensile strength
-- Flexibility and durability
+In commercial and industrial buildings, asbestos-containing materials (ACMs) were used extensively due to their fire resistance, insulation properties and durability. Common locations include:
 
-These properties made asbestos ideal for a huge range of building applications—unfortunately, before the severe health risks were fully understood.
-
-### Why Asbestos is Dangerous
-
-When asbestos-containing materials are disturbed, cut, drilled or damaged, microscopic fibres are released into the air. These fibres are:
-- Invisible to the naked eye
-- Easily inhaled deep into the lungs
-- Impossible to expel from the body
-- Capable of causing fatal diseases decades after exposure
-
-**Asbestos-Related Diseases:**
-- **Mesothelioma**: Aggressive cancer of the lung lining—almost exclusively caused by asbestos exposure. Typically fatal within 12-18 months of diagnosis.
-- **Asbestosis**: Chronic lung scarring from inhaled fibres. Progressive and incurable.
-- **Lung Cancer**: Risk significantly elevated in people exposed to asbestos, especially smokers.
-- **Pleural Plaques**: Thickening of lung lining—often first indicator of asbestos exposure.
-
-Australia has one of the highest rates of asbestos-related disease in the world due to our extensive historical use of the material.
-
-### Types of Asbestos Materials
-
-**Friable Asbestos** (Higher Risk):
-- Crumbly or powdery materials that easily release fibres
-- Pipe lagging and thermal insulation
-- Sprayed fireproofing
-- Insulation boards when deteriorated
-- Requires Class A licensed removalist
-
-**Bonded Asbestos** (Lower Risk when undisturbed):
-- Asbestos fibres bound in a solid matrix (usually cement)
-- Cement sheeting (fibro, AC sheet)
+- Ceiling tiles and acoustic panels
 - Vinyl floor tiles and backing
-- Roofing materials
-- Electrical switchboards
-- Becomes dangerous when cut, drilled or broken
-
-### Common Locations in Commercial Buildings
-
-Commercial buildings constructed pre-1990 may contain asbestos in:
-
-**Walls and Ceilings:**
-- Fibro cement wall sheeting (internal and external)
-- Acoustic ceiling tiles
-- Textured ceilings and coatings
-- Partition walls
-
-**Floors:**
-- Vinyl floor tiles (especially 9x9 inch format)
-- Vinyl sheet flooring backing
-- Carpet underlay
-- Tile adhesives and mastics
-
-**Roofing:**
-- Corrugated cement roof sheets (Super Six)
-- Roof gutters and downpipes
-- Flashing materials
-- Roof insulation
-
-**Mechanical and Electrical:**
 - Pipe lagging and insulation
-- Duct insulation
-- Fire doors and rated walls
 - Electrical switchboard backing
-- HVAC gaskets
+- Roofing materials (corrugated sheets, guttering)
+- Wall sheeting (fibro cement)
+- Fire doors and fire-rated partitions
+- Expansion joints and gaskets
 
-**Other Locations:**
-- Fire blankets and curtains
-- Elevator brake linings
-- Expansion joints
-- Bitumen roofing membranes
+### Legal Requirements in Victoria
 
-## Asbestos Identification and Assessment
-
-### Asbestos Register and Management Plan
-
-**Legal Requirement:**
-Under Victorian and Commonwealth regulations, every commercial property must have an **Asbestos Register** documenting:
-- Location of known or suspected ACMs
-- Type and condition of materials
-- Risk assessment
-- Management recommendations
-
-**Duty to Manage Asbestos:**
-Building owners and employers have legal duty to:
-- Identify asbestos in their buildings
-- Maintain asbestos register
-- Ensure register is available to workers
-- Implement control measures
-- Review register regularly
+The Occupational Health and Safety Regulations 2017 set strict requirements for asbestos management in Victoria:
 
 **Before Any Make Good Works:**
-- Review existing asbestos register
-- Conduct asbestos survey if register absent or inadequate
-- Provide register to all contractors
-- Ensure contractors understand ACM locations
-- Plan works to avoid disturbing asbestos
-
-### Asbestos Surveys and Testing
-
-**When Survey Required:**
-- No current asbestos register exists
-- Register is outdated or inadequate
-- Building modifications planned
-- Demolition or refurbishment works intended
-- Suspected ACMs discovered during works
-- Due diligence for property transactions
-
-**Types of Asbestos Surveys:**
-
-**1. Asbestos Management Survey (non-intrusive):**
-- Visual inspection of readily accessible areas
-- Presumptive identification of suspected ACMs
-- Sampling and laboratory analysis of materials
-- Risk assessment and management recommendations
-- Suitable for occupied buildings and routine management
-
-**2. Asbestos Refurbishment/Demolition Survey (intrusive):**
-- Comprehensive inspection including concealed areas
-- Destructive inspection methods if required
-- Sampling of all suspected materials
-- Full documentation for demolition/refurbishment planning
-- Building should be unoccupied
-- Required before significant demolition or refurbishment
-
-**Qualified Asbestos Assessor:**
-- Only licensed/competent asbestos assessors can conduct surveys
-- Independent assessor (not removal contractor) preferred
-- Provide detailed report with photos, plans and recommendations
-
-**Laboratory Analysis:**
-- Samples analysed by NATA-accredited laboratory
-- Identifies asbestos type and percentage
-- Results typically available within 3-7 days
-- Costs approximately $50-80 per sample
-
-### Visual Identification (Presumptive)
-
-**WARNING**: Never assume material is asbestos-free based on visual inspection alone. Only laboratory testing confirms presence or absence of asbestos.
-
-**Indicators of Potential ACMs:**
-- Cement sheet with characteristic appearance and date stamp
-- Age of building (pre-1990 high risk)
-- Textured ceiling coatings in older buildings
-- Old vinyl floor tiles 300mm x 300mm
-- Insulation on older pipes and ducts
-
-**DO NOT:**
-- Disturb suspected materials
-- Take samples unless trained and licensed
-- Assume materials are safe without testing
-- Rely on material labels (often incorrect or missing)
-
-## Legal Requirements and Compliance
-
-### Victorian and Commonwealth Legislation
-
-**Key Legislation:**
-- **Work Health and Safety Regulations 2017** (Commonwealth)
-- **Occupational Health and Safety Regulations 2017** (Victoria)
-- **Dangerous Goods Act 1985** (Victoria)
-- **Environment Protection Act 2017** (Victoria)
-- **Public Health and Wellbeing Act 2008** (Victoria)
-
-**Regulatory Bodies:**
-- **WorkSafe Victoria**: Workplace asbestos safety and licensing
-- **Environment Protection Authority (EPA) Victoria**: Asbestos waste disposal
-- **Local Councils**: Asbestos removal notifications
-- **Comcare**: Commonwealth government workplaces
-
-### Licensing Requirements
-
-**Class A Asbestos Removal License** (Friable Asbestos):
-- Required for any friable asbestos removal work
-- Also covers bonded asbestos (can do both types)
-- Extensive training and competency requirements
-- WorkSafe Victoria licensing and renewal
-- Public liability insurance minimum $10 million
-
-**Class B Asbestos Removal License** (Bonded Asbestos):
-- Required for bonded asbestos removal over 10 square metres
-- Cannot remove friable asbestos
-- Training and competency requirements
-- WorkSafe Victoria licensing
-
-**Unlicensed Asbestos Removal:**
-- Permitted only for bonded asbestos under 10 square metres
-- Must follow strict safety procedures
-- Training still required
-- Most commercial make good requires licensed removal
-
-**Penalties for Unlicensed Work:**
-- Fines up to $500,000+ for individuals
-- Fines up to $3 million+ for companies
-- Criminal prosecution possible
-- Personal liability for directors/managers
-
-### Notification Requirements
-
-**WorkSafe Victoria Notification:**
-- Class A work: 5 days written notice before commencement
-- Class B work over 10m²: 5 days notice
-- Emergency removal: notify as soon as practicable
-- Notification includes work details, procedures and duration
-
-**EPA Victoria Notification:**
-- Required for asbestos waste transport to EPA-licensed facilities
-- Waste tracking and documentation
-- Proper classification and packaging
-
-**Local Council Notification:**
-- Many councils require notification of asbestos removal
-- Check specific council requirements
-- May require permit for external removal work
-
-## Safe Asbestos Removal Procedures
-
-### Planning and Preparation
-
-**Asbestos Removal Control Plan:**
-Licensed removalists must prepare written control plan including:
-- Scope of removal work
-- Site-specific risks and control measures
-- Air monitoring procedures
-- Waste disposal arrangements
-- Emergency procedures
-- Worker training and PPE requirements
-
-**Site Preparation:**
-- Establish exclusion zones (barricades and signage)
-- Isolate HVAC systems to prevent fibre spread
-- Seal affected areas with plastic sheeting
-- Establish decontamination facilities
-- Set up negative air pressure (for enclosures)
-- Provide appropriate access/egress
-
-**Notifications and Permits:**
-- WorkSafe notification submitted
-- Building management informed
-- Neighbouring tenants notified
-- Council permits obtained if required
-- Insurance notification
-
-### Personal Protective Equipment (PPE)
-
-**Respirators:**
-- P1 or P2 rated respirator for bonded asbestos
-- P3 or full-face powered air-purifying respirator for friable
-- Fit testing required
-- Clean shaven for proper seal
-
-**Protective Clothing:**
-- Disposable coveralls with hood
-- Disposable gloves
-- Rubber boots or disposable shoe covers
-- Eye protection
-- All PPE disposed as asbestos waste
-
-### Removal Methods
-
-**Wet Methods:**
-- Keep materials saturated during removal
-- Reduces airborne fibre release
-- Wetting agents/surfactants improve penetration
-- Continuous wetting during cutting or breaking
-- Wet cleaning of surfaces after removal
-
-**Controlled Methods:**
-- Remove sheets/materials intact where possible
-- No power tools on ACMs (releases fibres)
-- Hand tools only, gentle handling
-- Lower materials carefully (no dropping or throwing)
-- Place directly into waste bags/containers
-
-**Containment and Cleaning:**
-- HEPA-filtered vacuum only (never regular vacuum)
-- Wet wipe all surfaces
-- Multiple cleaning passes
-- Independent clearance inspection
-- Air monitoring to confirm safe levels
-
-**Waste Management:**
-- Double-bagging in 200-micron plastic
-- Clearly labeled "ASBESTOS WASTE - DANGEROUS"
-- Stored in locked skip or enclosed area
-- No co-mingling with other waste
-- Transported by licensed carrier to EPA-approved facility
-- Disposal costs: $200-400 per ton plus transport
-
-### Clearance and Certification
-
-**Visual Clearance Inspection:**
-- By independent licensed assessor
-- Inspection of removal area
-- Verification of cleanliness
-- Check waste removed appropriately
-- Clearance certificate issued
-
-**Air Monitoring:**
-- Required for friable removal and large bonded removals
-- Confirms airborne fibre levels below safe thresholds
-- Independent NATA-accredited laboratory analysis
-- Essential before area re-occupied
-
-**Clearance Certificate:**
-- Issued by independent assessor
-- Confirms safe removal completion
-- Required before area can be re-occupied
-- Provided to building owner and WorkSafe
-
-## Integration with Make Good Projects
-
-### Pre-Demolition Asbestos Assessment
-
-**Critical First Step:**
-Before any make good demolition or strip-out works commence, asbestos assessment must be completed:
-
-1. **Review Asbestos Register**: Check for known ACMs in work area
-2. **Refurbishment/Demolition Survey**: If inadequate register, conduct full survey
-3. **Laboratory Testing**: Confirm suspected materials
-4. **Removal Planning**: Engage licensed removalists
-5. **Removal Completion**: Obtain clearance certificate
-6. **Proceed with Make Good**: Only after clearance issued
-
-**Timeline Impact:**
-- Asbestos survey: 1-3 days plus 5-7 days lab results
-- Removal planning and notification: 5+ days
-- Removal works: 1-5 days depending on extent
-- Clearance inspection and air monitoring: 1-2 days
-- Total asbestos phase: 2-3 weeks minimum
-
-### Common Make Good Scenarios Involving Asbestos
-
-**Ceiling Removal:**
-- Acoustic ceiling tiles may contain asbestos
-- Ceiling panel backing boards
-- Fireproofing materials above ceilings
-- Duct and pipe insulation in ceiling space
-
-**Wall Removal/Modification:**
-- AC wall sheeting (internal walls)
-- Texture coatings
-- Adhesives and mastics
-- Conduit and pipe lagging
-
-**Floor Coverings:**
-- Vinyl floor tiles and backing
-- Carpet underlay
-- Adhesives and levelling compounds
-- Requires careful assessment before removal
-
-**Electrical Work:**
-- AC switchboard backing
-- Electrical cable insulation (very old installations)
-- Junction box backing materials
-
-**Mechanical Services:**
-- Pipe lagging insulation
-- Gaskets in HVAC equipment
-- Fire dampers and fire collars
-- Duct insulation
-
-### Asbestos Discovered During Works
-
-**STOP WORK IMMEDIATELY:**
-If suspected asbestos is discovered during make good works:
-
-1. **Stop all work** in affected area
-2. **Evacuate workers** from immediate area
-3. **Secure area** - prevent entry
-4. **Notify building management** and WorkSafe (if exposure occurred)
-5. **Arrange assessment** by licensed asbestos assessor
-6. **Laboratory testing** to confirm presence
-7. **Licensed removal** if confirmed
-8. **Clearance certificate** before resuming works
-
-**Worker Exposure:**
-- Workers potentially exposed must be informed
-- Medical assessment arranged if significant exposure
-- Incident reported to WorkSafe
-- Document exposure for workers' records
-
-### Cost Implications
-
-**Asbestos Management Costs:**
-- Asbestos survey: $800-$2,500 depending on building size
-- Laboratory testing: $50-80 per sample
-- Licensed removal (bonded): $80-150 per m² plus waste disposal
-- Licensed removal (friable): $200-500+ per m² plus waste disposal
-- Air monitoring: $800-$1,500 per area
-- Clearance inspection: $500-$1,200
-
-**Impact on Make Good Budget:**
-Asbestos removal can significantly increase make good costs, particularly:
-- Older buildings with extensive ACMs
-- Unexpected asbestos discoveries
-- Friable asbestos requiring Class A removal
-- Large areas requiring containment
-- Disposal costs for large quantities
-
-**Landlord vs Tenant Responsibility:**
-- Lease terms typically dictate responsibility
-- Some leases require tenant to remove tenant-installed ACMs
-- Base building ACMs usually landlord responsibility
-- Negotiate scope clearly before commencing
-
-## Make Good Australia: Licensed Asbestos Management
-
-At Make Good Australia, we prioritise the safety of workers, building occupants and the environment in all projects. We coordinate professional asbestos management as an integrated component of commercial make good services.
-
-### Our Asbestos Management Services
-
-**Pre-Work Assessment:**
-- Review existing asbestos registers
-- Coordination of refurbishment/demolition surveys with licensed assessors
-- Laboratory testing coordination
-- Risk assessment for make good scope
-- Budget planning including asbestos costs
-
-**Licensed Asbestos Removal Coordination:**
-- Engagement of fully licensed Class A and B asbestos removalists
-- Verification of current licenses and insurance
-- Removal planning and notification management
-- Site supervision and compliance monitoring
-- Quality assurance throughout removal process
-
-**Compliance Management:**
-- WorkSafe and EPA notification lodgement
-- Council permit coordination
-- Building management liaison
-- Documentation and record keeping
-- Clearance certificate coordination
-
-**Post-Removal Make Good Works:**
-- Only commence after clearance issued
-- Safe work practices for all trades
-- Coordination of remaining make good scope
-- Integration with project timeline
-- Final handover documentation
-
-### Why Proper Asbestos Management Matters
-
-**Worker Safety:**
-- Protects workers from fatal asbestos-related diseases
-- Demonstrates duty of care
-- Prevents WorkSafe prosecution
-
-**Legal Compliance:**
-- Meets all legislative requirements
-- Avoids significant fines and penalties
-- Reduces liability exposure
-
-**Project Success:**
-- Prevents costly work stoppages
-- Avoids delays from unexpected discoveries
-- Protects project timeline and budget
-- Ensures smooth handover to landlord
-
-**Environmental Responsibility:**
-- Proper waste disposal prevents environmental contamination
-- Protects broader community
-- EPA compliance
+- An asbestos register must exist for buildings constructed before 2003
+- A competent person must inspect and identify any ACMs
+- Risk assessments must be completed before disturbing potential ACMs
+
+**During Removal Works:**
+- Only licensed asbestos removalists can remove friable asbestos
+- Non-friable asbestos over 10 square metres requires a Class B licence
+- WorkSafe Victoria must be notified before removal works commence
+- Air monitoring may be required during and after removal
+
+## Safe Asbestos Management Process
+
+### Step 1: Identification and Testing
+
+Before any make good works commence, engage a licensed asbestos assessor to:
+- Conduct a thorough building inspection
+- Take samples of suspected materials for laboratory analysis
+- Provide a detailed asbestos register and management plan
+
+### Step 2: Risk Assessment
+
+Based on the identification results:
+- Assess the condition of any ACMs found
+- Determine whether materials need removal or can be managed in place
+- Evaluate risks associated with planned make good works
+
+### Step 3: Removal and Disposal
+
+If removal is required:
+- Engage appropriately licensed removal contractors
+- Ensure proper containment and PPE protocols
+- Dispose of waste at licensed facilities
+- Obtain clearance certificates before continuing works
 
 ## Conclusion
 
-Asbestos management is a critical, non-negotiable component of commercial make good projects in older buildings. The serious health risks, stringent legal requirements and severe penalties for non-compliance make professional asbestos assessment and licensed removal essential. Cutting corners on asbestos management endangers lives, exposes parties to massive liability and can derail entire make good projects.
-
-Successful asbestos management requires early assessment, licensed removal specialists, full compliance with regulations and integration into the overall make good project plan. The costs of proper asbestos management are a necessary investment in safety, compliance and project success.
-
-**Planning a make good project in an older building?** Contact Make Good Australia today. We'll coordinate comprehensive asbestos assessment, licensed removal and compliant make good works - protecting everyone involved and ensuring your project proceeds safely and successfully.
-
-**Make Good Australia**  
-Professional asbestos management coordination  
-Call us: [Contact Number]  
-Email: [Contact Email]  
-Safety first, compliance always, results guaranteed
+Asbestos management is non-negotiable in commercial make good projects. The health risks are severe, and the legal penalties for non-compliance are substantial. Invest in proper identification, engage licensed professionals and maintain thorough documentation throughout the process.
     `
   },
   {
     id: "31",
     title: "Carpet Tile Replacement and Installation: Professional Floor Preparation for End of Lease Make Good",
     slug: "carpet-tile-replacement-installation-floor-preparation",
-    excerpt: "Achieve flawless carpet tile installation with comprehensive floor grinding and preparation. Our process ensures removal of residual glue and uniform installation for end of lease make good compliance.",
+    excerpt: "Professional carpet tile replacement is essential for commercial make good projects. Learn about floor preparation, installation techniques and quality standards that ensure landlord approval and bond return.",
     date: "2025-09-15",
     image: "carpet-tile-replacement.jpg",
     content: `
-When it comes to end of lease make good obligations, carpet tile replacement and installation is one of the most visible elements that determines whether a tenancy is returned to its original condition. Professional floor preparation is critical to achieving a uniform, compliant finish that meets lease requirements.
+Carpet tile replacement is one of the most visible and impactful elements of commercial make good works. Worn, stained or damaged carpet flooring immediately signals neglect and can result in bond disputes or additional landlord claims. Professional installation on properly prepared floors ensures compliance with lease requirements and supports full security deposit return.
 
-## The Importance of Proper Floor Preparation
+## Why Carpet Tiles for Commercial Spaces
 
-Many carpet tile installations fail because the underlying floor surface hasn't been properly prepared. Residual glue, uneven surfaces and contamination can all compromise the installation quality and longevity of new carpet tiles.
+Commercial carpet tiles offer significant advantages over broadloom carpet:
 
-Our comprehensive approach ensures your floor is ready for a perfect installation that will pass the most stringent landlord inspections.
+- **Easy replacement**: Individual damaged tiles can be replaced without affecting surrounding areas
+- **Durability**: Commercial-grade tiles withstand heavy foot traffic
+- **Design flexibility**: Multiple patterns and colours available for creative installations
+- **Access flooring compatibility**: Tiles can be lifted for underfloor access
+- **Sustainability**: Many manufacturers offer recycled and recyclable options
 
-## Floor Grinding: The Foundation of Quality Installation
+## Floor Preparation Standards
 
-We provide comprehensive grinding of the floor surface to ensure uniform installation. This process involves:
+Proper subfloor preparation is essential for carpet tile performance and longevity:
 
-### Surface Leveling
-Professional grinding equipment removes high spots and creates a level substrate. An uneven floor will cause carpet tiles to lift, curl or wear unevenly over time.
+### Concrete Subfloors
 
-### Glue Removal
-Complete removal of residual adhesive from previous flooring installations is essential. Old glue can prevent new adhesive from bonding properly and create visible irregularities through the carpet tiles.
+- Remove all existing floor coverings and adhesive residue
+- Grind or level any high spots
+- Fill cracks, holes and surface imperfections with appropriate levelling compounds
+- Ensure surface is clean, dry and free of contaminants
+- Apply moisture barrier if required (especially for ground-level installations)
 
-### Surface Preparation
-Grinding opens the concrete pores, creating an ideal surface for adhesive bonding. This ensures carpet tiles remain securely in place throughout the new tenancy period.
+### Raised Access Floors
 
-### Contamination Elimination
-The grinding process removes oil, paint, sealers and other contaminants that could interfere with adhesive performance or cause staining through the new carpet.
+- Inspect all panels for damage or instability
+- Replace damaged or worn panels
+- Ensure consistent panel height across the installation area
+- Clean panel surfaces thoroughly
 
-## Professional Installation Standards
+## Professional Installation Process
 
-Following thorough floor preparation, our installation process includes:
+Quality carpet tile installation follows a systematic approach:
 
-### Moisture Testing
-Concrete floors are tested for moisture levels that could compromise adhesive bonding or damage carpet tiles over time.
-
-### Layout Planning
-Tiles are carefully planned to minimise cuts, maximise symmetry and ensure consistent pattern alignment throughout the space.
-
-### Quality Adhesive Application
-We use commercial-grade pressure-sensitive adhesives specifically formulated for carpet tile installation, ensuring reliable bonding without damaging the substrate.
-
-### Precision Installation
-Each tile is carefully placed, aligned and rolled to ensure proper adhesive contact and eliminate air pockets.
-
-## End of Lease Compliance
-
-Carpet tile replacement is often a major component of make good obligations. Our installation service ensures:
-
-- Matching or equivalent tile specifications to original installation
-- Uniform appearance and professional finish
-- Complete documentation for landlord approval
-- Warranty coverage for materials and workmanship
-
-## Environmental Considerations
-
-Our floor preparation process includes:
-
-- Dust containment and HEPA filtration
-- Responsible disposal of removed materials
-- Low-VOC adhesive systems
-- Recycling of packaging materials
+1. **Acclimatisation**: Tiles should be stored in the installation area for 24-48 hours before laying
+2. **Layout planning**: Establish centre lines and plan tile orientation for optimal appearance
+3. **Adhesive application**: Use appropriate adhesive for the specific tile backing system
+4. **Tile installation**: Lay tiles systematically from the centre outward
+5. **Edge trimming**: Cut border tiles precisely for clean wall junctions
+6. **Final inspection**: Check for lifting, gaps or alignment issues
 
 ## Why Professional Service Matters
 
@@ -1122,6 +346,1763 @@ Retail lease make good requires careful management to meet landlord requirements
 ## Conclusion
 
 Retail lease make good demands a strategic approach balancing compliance, cost and tenant needs. Early planning and professional support are key to successful lease exit. Contact us for expert retail make good advice and services.
+    `
+  },
+  {
+    id: "27",
+    slug: "end-of-lease-cleaning-services",
+    title: "End of Lease Cleaning Services: Professional Standards for Commercial Properties",
+    excerpt: "Professional end of lease cleaning is essential for meeting make good obligations. Learn about cleaning standards, scope of works and how to ensure your commercial property passes final inspection.",
+    date: "2025-06-01",
+    image: "cleaning-services.webp",
+    content: `
+End of lease cleaning is a fundamental component of commercial make good obligations. Professional cleaning services ensure your property meets the standards required for bond return and smooth handover to landlords.
+
+## What End of Lease Cleaning Includes
+
+Comprehensive commercial cleaning typically covers:
+
+- **General Areas:** Vacuuming, mopping, dusting all surfaces
+- **Kitchens and Breakrooms:** Deep cleaning of appliances, benchtops, sinks and cupboards
+- **Bathrooms:** Sanitisation of all fixtures, tiles, mirrors and floors
+- **Windows:** Internal and external glass cleaning
+- **Carpet Cleaning:** Steam cleaning or dry cleaning as appropriate
+- **Hard Floors:** Stripping, sealing and polishing where required
+- **High Areas:** Cleaning of light fittings, air vents and ceiling tiles
+- **External Areas:** Pressure washing of paths, car parks and building facades
+
+## Why Professional Cleaning Matters
+
+Landlords and property managers have high expectations for property condition at lease end. Professional cleaning services:
+
+- Meet commercial cleaning standards
+- Provide documented evidence of works completed
+- Address areas often missed in DIY cleaning
+- Support successful final inspections
+- Protect your security deposit
+
+## Choosing the Right Cleaning Service
+
+When selecting end of lease cleaners:
+
+- Verify commercial cleaning experience
+- Request references from similar properties
+- Confirm insurance and compliance credentials
+- Obtain detailed scope of works and pricing
+- Ensure availability aligns with your make good timeline
+
+## Conclusion
+
+Professional end of lease cleaning is an investment in successful lease exit. Contact Make Good Melbourne for cleaning services that meet commercial standards and landlord expectations.
+    `
+  },
+  {
+    id: "26",
+    slug: "the-importance-of-painting",
+    title: "The Importance of Painting in Commercial Make Good Works",
+    excerpt: "Professional painting is a critical element of commercial make good. Learn about preparation, paint selection and application standards that ensure compliance and enhance property presentation.",
+    date: "2025-05-15",
+    image: "painting-wall.webp",
+    content: `
+Painting is one of the most visible and impactful elements of commercial make good works. Fresh, professionally applied paint transforms tired spaces and demonstrates care in property maintenance. However, achieving results that satisfy landlord requirements demands proper preparation, quality materials and skilled application.
+
+## Why Painting Matters in Make Good
+
+Commercial lease agreements typically require tenants to return properties in good condition, accounting for fair wear and tear. Painting addresses:
+
+- Scuff marks and surface damage from daily operations
+- Holes from fixtures, signage and equipment mounting
+- Colour changes made during tenancy
+- General wear that accumulates over lease terms
+
+## Professional Painting Standards
+
+Commercial painting projects require attention to:
+
+### Surface Preparation
+
+- Filling holes, cracks and surface imperfections
+- Sanding rough areas for smooth finish
+- Cleaning surfaces to remove dust and contaminants
+- Applying appropriate primers for substrate type
+
+### Paint Selection
+
+- Commercial-grade paints suitable for high-traffic areas
+- Correct sheen levels (flat, low sheen, semi-gloss) for different surfaces
+- Colours matching original specifications or landlord requirements
+- Environmentally compliant, low-VOC products where required
+
+### Application Quality
+
+- Even coverage without runs, drips or brush marks
+- Clean, straight cut-in lines at edges and junctions
+- Consistent colour and finish across all surfaces
+- Protection of floors, fixtures and fittings during works
+
+## Conclusion
+
+Professional painting elevates the quality of make good works and supports successful lease exit. Contact our team for commercial painting services that meet the highest standards.
+    `
+  },
+  {
+    id: "25",
+    slug: "what-are-make-goods",
+    title: "What Are Make Goods? A Complete Guide for Commercial Tenants",
+    excerpt: "Understanding make good obligations is essential for commercial tenants. This comprehensive guide explains what make goods are, common requirements and how to manage your end of lease responsibilities.",
+    date: "2025-05-01",
+    image: "commercial-make-good.webp",
+    content: `
+Make good obligations are a fundamental aspect of commercial leasing that every tenant must understand. This guide provides a comprehensive overview of what make goods involve, your responsibilities and how to navigate the process successfully.
+
+## What Is a Make Good?
+
+A make good clause is a provision in commercial leases requiring tenants to restore the property to a specified condition at lease end. This typically means returning the premises to the state it was in at lease commencement, accounting for fair wear and tear.
+
+## Common Make Good Requirements
+
+Depending on your lease and property type, make good works may include:
+
+- Removal of tenant fixtures and fitout
+- Repair of walls, floors and ceilings
+- Repainting to original colours
+- Removal of signage and branding
+- Disconnection of tenant services
+- Professional cleaning
+- Carpet replacement or restoration
+- Reinstatement of original layouts
+
+## Understanding Your Lease
+
+Your make good obligations are defined in your lease agreement. Key sections to review include:
+
+- Make good or reinstatement clauses
+- Fitout schedules and condition reports
+- Landlord approval requirements
+- Notice periods and timelines
+- Dispute resolution provisions
+
+## Managing Make Good Successfully
+
+To navigate make good obligations effectively:
+
+1. **Start Early:** Begin planning 6-12 months before lease expiry
+2. **Review Documentation:** Understand your specific obligations
+3. **Engage Professionals:** Work with experienced make good contractors
+4. **Communicate:** Maintain dialogue with landlords throughout
+5. **Document Everything:** Keep records of all works and correspondence
+
+## Conclusion
+
+Understanding and managing make good obligations protects your interests and ensures smooth lease transitions. Contact Make Good Melbourne for expert guidance on your make good requirements.
+    `
+  },
+  {
+    id: "24",
+    slug: "understanding-property-condition-reports",
+    title: "Understanding Property Condition Reports: Essential Documentation for Lease Start and End",
+    excerpt: "Property condition reports are crucial documents for commercial tenants. Learn what they include, why they matter and how to use them to protect your interests during lease negotiations and exit.",
+    date: "2025-04-15",
+    image: "condition-report.webp",
+    content: `
+Property condition reports are essential documents that protect both tenants and landlords throughout the lease lifecycle. Understanding their purpose, content and proper use can save significant time, money and disputes at lease end.
+
+## What Is a Property Condition Report?
+
+A property condition report is a detailed document recording the state of a commercial property at a specific point in time. It typically includes:
+
+- Written descriptions of all areas and elements
+- Photographic evidence of existing conditions
+- Notes on defects, damage or wear
+- Dates and identification of assessors
+- Floor plans showing assessed areas
+
+## Why Condition Reports Matter
+
+Condition reports serve critical functions:
+
+### At Lease Commencement
+
+- Establish baseline property condition
+- Document existing defects and wear
+- Protect tenants from claims for pre-existing issues
+- Provide reference for make good scope
+
+### At Lease End
+
+- Support fair assessment of make good requirements
+- Provide evidence in dispute resolution
+- Help determine fair wear and tear
+- Guide scope of restoration works
+
+## Creating Effective Condition Reports
+
+For maximum protection:
+
+- Engage independent professional assessors
+- Include comprehensive photography
+- Document ALL areas, including hidden spaces
+- Note minor issues that could become disputes
+- Obtain landlord acknowledgment of report
+
+## Using Condition Reports in Make Good
+
+When make good obligations arise:
+
+1. Compare current condition to ingoing report
+2. Identify changes attributable to tenant use
+3. Distinguish damage from fair wear and tear
+4. Negotiate scope based on documented evidence
+
+## Conclusion
+
+Property condition reports are essential tools for managing commercial lease obligations. Contact Make Good Melbourne for professional condition assessment services.
+    `
+  },
+  {
+    id: "23",
+    slug: "smooth-lease-transitions",
+    title: "Smooth Lease Transitions: Managing End of Lease Handovers Successfully",
+    excerpt: "Successful lease transitions require careful planning and execution. Learn strategies for managing make good works, landlord relations and handover processes for stress-free lease exits.",
+    date: "2025-04-01",
+    image: "lease-transitions.webp",
+    content: `
+Lease transitions can be stressful periods for commercial tenants, involving complex logistics, make good obligations and stakeholder management. With proper planning and professional support, these transitions can proceed smoothly and protect your interests.
+
+## Planning Your Lease Transition
+
+Effective transition planning should begin 6-12 months before lease expiry:
+
+### Initial Assessment
+
+- Review lease make good requirements
+- Assess current property condition
+- Identify scope of required works
+- Estimate timelines and budgets
+
+### Stakeholder Communication
+
+- Notify landlord of intended exit
+- Discuss make good expectations
+- Clarify handover procedures
+- Establish inspection schedules
+
+### Contractor Engagement
+
+- Obtain competitive quotes
+- Select experienced providers
+- Lock in availability
+- Confirm scope and specifications
+
+## Managing Make Good Works
+
+During the make good phase:
+
+- Coordinate works across multiple trades
+- Maintain quality control throughout
+- Document all completed works
+- Address defects promptly
+- Prepare for final inspections
+
+## Handover Process
+
+For successful handover:
+
+- Schedule pre-handover inspection
+- Address any landlord concerns
+- Complete final cleaning
+- Transfer keys and access devices
+- Obtain written sign-off
+
+## Conclusion
+
+Smooth lease transitions result from early planning, clear communication and professional execution. Contact Make Good Melbourne for comprehensive transition management services.
+    `
+  },
+  {
+    id: "22",
+    slug: "ultimate-guide-to-make-good-services",
+    title: "The Ultimate Guide to Make Good Services in Melbourne",
+    excerpt: "Everything you need to know about make good services in Melbourne. From understanding your obligations to selecting contractors, this guide covers all aspects of commercial make good works.",
+    date: "2025-03-15",
+    image: "make-good-services.webp",
+    content: `
+Make good services encompass the full range of works required to return commercial properties to their original condition at lease end. This comprehensive guide covers everything Melbourne tenants need to know about make good obligations and services.
+
+## What Make Good Services Include
+
+Professional make good services typically cover:
+
+### Demolition and Strip-Out
+
+- Removal of tenant fitout and fixtures
+- Demolition of internal partitions
+- Disconnection and capping of services
+- Waste removal and disposal
+
+### Repairs and Remediation
+
+- Wall and ceiling repairs
+- Floor restoration and levelling
+- Structural repairs where required
+- Service repairs and compliance
+
+### Finishing Works
+
+- Painting and decorating
+- Flooring installation
+- Ceiling tile replacement
+- Final detailing and touch-ups
+
+### Cleaning and Handover
+
+- Deep cleaning all areas
+- Window cleaning
+- External area cleaning
+- Final inspection preparation
+
+## Selecting Make Good Contractors
+
+When choosing make good service providers:
+
+- Verify experience in commercial properties
+- Check licences and insurance
+- Request references and case studies
+- Compare detailed quotations
+- Confirm availability and timelines
+
+## Managing Your Make Good Project
+
+For successful outcomes:
+
+1. Engage professionals early
+2. Establish clear scope and specifications
+3. Maintain regular communication
+4. Monitor progress and quality
+5. Document all works completed
+
+## Conclusion
+
+Professional make good services ensure compliance with lease obligations and protect your security deposit. Contact Make Good Melbourne for comprehensive make good solutions across Melbourne.
+    `
+  },
+  {
+    id: "21",
+    slug: "tenant-landlord-communication",
+    title: "Tenant-Landlord Communication: Keys to Successful Make Good Outcomes",
+    excerpt: "Effective communication between tenants and landlords is crucial for smooth make good processes. Learn strategies for building positive relationships and resolving potential disputes.",
+    date: "2025-03-01",
+    image: "tenant-landlord-communication.webp",
+    content: `
+The relationship between tenants and landlords significantly impacts make good outcomes. Effective communication throughout the lease, and particularly during the exit process, can prevent disputes and ensure smooth handovers.
+
+## Building Positive Relationships
+
+Successful tenant-landlord relationships are built on:
+
+- Clear, documented communication
+- Timely responses to enquiries
+- Mutual respect and professionalism
+- Transparency about intentions and concerns
+- Good faith negotiation
+
+## Communication During Make Good
+
+Key communication points include:
+
+### Early Notification
+
+- Inform landlord of intended exit date
+- Discuss make good expectations
+- Request clarification of requirements
+- Propose inspection schedules
+
+### Scope Agreement
+
+- Present proposed scope of works
+- Discuss any negotiable items
+- Document agreed variations
+- Confirm specifications and standards
+
+### Progress Updates
+
+- Provide regular status reports
+- Flag any issues promptly
+- Request interim inspections
+- Address concerns as they arise
+
+### Handover
+
+- Schedule final inspections
+- Discuss any outstanding items
+- Confirm handover procedures
+- Obtain written sign-off
+
+## Resolving Disputes
+
+If disagreements arise:
+
+- Focus on documented evidence
+- Seek mutually acceptable solutions
+- Consider independent assessment
+- Understand legal options if needed
+
+## Conclusion
+
+Positive tenant-landlord communication supports successful make good outcomes for all parties. Contact Make Good Melbourne for professional project management that maintains effective stakeholder relationships.
+    `
+  },
+  {
+    id: "20",
+    slug: "smooth-make-good-experience",
+    title: "Ensuring a Smooth Make Good Experience: Tips for Commercial Tenants",
+    excerpt: "A smooth make good experience requires careful planning and execution. Learn practical tips for managing your make good project efficiently and avoiding common pitfalls.",
+    date: "2025-02-15",
+    image: "smooth-make-good-experience.webp",
+    content: `
+Make good projects can be stressful and disruptive, but with proper planning and professional support, they can proceed smoothly and efficiently. This guide provides practical tips for managing your make good experience.
+
+## Starting on the Right Foot
+
+For a smooth start:
+
+- Review your lease thoroughly
+- Understand your specific obligations
+- Assess property condition early
+- Gather relevant documentation
+- Set realistic budgets and timelines
+
+## Selecting the Right Partners
+
+Choose service providers who offer:
+
+- Demonstrated commercial experience
+- Comprehensive service capabilities
+- Clear communication and reporting
+- Competitive and transparent pricing
+- Reliability and accountability
+
+## Managing the Process
+
+Throughout your make good:
+
+- Maintain organised documentation
+- Communicate regularly with all parties
+- Monitor progress against schedules
+- Address issues promptly
+- Prepare for inspections
+
+## Avoiding Common Pitfalls
+
+Steer clear of:
+
+- Leaving planning too late
+- Underestimating scope or budget
+- Poor contractor selection
+- Inadequate documentation
+- Ignoring landlord concerns
+
+## Conclusion
+
+A smooth make good experience results from early planning, professional partners and proactive management. Contact Make Good Melbourne for stress-free make good solutions.
+    `
+  },
+  {
+    id: "19",
+    slug: "concrete-cancer-remediation",
+    title: "Concrete Cancer Remediation: Protecting Commercial Properties from Structural Damage",
+    excerpt: "Concrete cancer poses serious risks to commercial properties. Learn about identification, causes, remediation processes and prevention strategies for this common structural issue.",
+    date: "2025-02-01",
+    image: "concrete-cancer.webp",
+    content: `
+Concrete cancer, or concrete spalling, is a common but serious issue affecting commercial and industrial properties. Left untreated, it can compromise structural integrity and lead to costly repairs. Understanding the causes, identification and remediation of concrete cancer is essential for property owners and managers.
+
+## What Is Concrete Cancer?
+
+Concrete cancer occurs when steel reinforcement within concrete corrodes, causing the surrounding concrete to crack and break away (spall). The rust expansion can be up to ten times the volume of the original steel, creating significant internal pressure.
+
+## Causes of Concrete Cancer
+
+Common causes include:
+
+- Water penetration through cracks or poor waterproofing
+- Carbonation of concrete over time
+- Chloride contamination (coastal environments)
+- Inadequate concrete cover over reinforcement
+- Poor quality original construction
+- Age-related deterioration
+
+## Identifying Concrete Cancer
+
+Signs to watch for:
+
+- Rust staining on concrete surfaces
+- Cracking in patterns following reinforcement
+- Bubbling or flaking of concrete surface
+- Exposed reinforcement bars
+- Hollow sounds when tapping affected areas
+
+## Remediation Process
+
+Professional concrete cancer remediation typically involves:
+
+1. **Assessment:** Detailed inspection and testing
+2. **Preparation:** Removal of damaged concrete
+3. **Treatment:** Cleaning and treating exposed steel
+4. **Repair:** Application of appropriate repair materials
+5. **Protection:** Waterproofing and coating systems
+6. **Monitoring:** Ongoing inspection and maintenance
+
+## Prevention Strategies
+
+To prevent concrete cancer:
+
+- Maintain waterproofing systems
+- Address cracks and damage promptly
+- Ensure adequate drainage
+- Apply protective coatings
+- Conduct regular inspections
+
+## Conclusion
+
+Concrete cancer requires professional assessment and remediation to protect property value and safety. Contact Make Good Melbourne for expert concrete cancer solutions.
+    `
+  },
+  {
+    id: "18",
+    slug: "balcony-waterproofing-preventing-fixing-leaks",
+    title: "Balcony Waterproofing: Preventing and Fixing Leaks in Commercial Properties",
+    excerpt: "Balcony waterproofing is essential for protecting commercial properties from water damage. Learn about waterproofing systems, common failure points and professional remediation approaches.",
+    date: "2025-01-15",
+    image: "balcony-waterproofing.webp",
+    content: `
+Balcony waterproofing failures are a common source of water damage in commercial properties. Effective waterproofing systems and proper maintenance are essential for protecting building structure and preventing costly repairs.
+
+## Why Balcony Waterproofing Matters
+
+Failed balcony waterproofing can cause:
+
+- Water ingress to building interior
+- Structural damage and concrete cancer
+- Mould and mildew growth
+- Damage to ceilings and walls below
+- Significant repair costs
+
+## Common Waterproofing Systems
+
+Commercial balcony waterproofing options include:
+
+### Membrane Systems
+
+- Liquid-applied membranes
+- Sheet membranes
+- Hybrid systems
+
+### Tile and Finish Integration
+
+- Screed to falls
+- Waterproof membrane under tiles
+- Appropriate drainage and outlets
+
+## Signs of Waterproofing Failure
+
+Watch for:
+
+- Water staining on ceilings below
+- Bubbling or lifting of tiles
+- Cracking in grout or membrane
+- Ponding water on balcony surface
+- Musty odours indicating moisture
+
+## Remediation Process
+
+Professional balcony waterproofing remediation involves:
+
+1. **Assessment:** Identify failure points and extent
+2. **Removal:** Strip existing tiles and membrane
+3. **Repair:** Address any structural damage
+4. **Re-waterproofing:** Apply new membrane system
+5. **Finishing:** Install new tiles and drainage
+6. **Testing:** Confirm watertight installation
+
+## Conclusion
+
+Effective balcony waterproofing protects commercial properties from serious water damage. Contact Make Good Melbourne for professional waterproofing assessment and remediation services.
+    `
+  },
+  {
+    id: "17",
+    slug: "slab-rectification-floor-levelling",
+    title: "Slab Rectification and Floor Levelling: Solutions for Commercial Properties",
+    excerpt: "Uneven or damaged concrete slabs create safety hazards and limit flooring options. Learn about slab rectification methods, when they're needed and how they support successful make good outcomes.",
+    date: "2025-01-01",
+    image: "slab-rectification.webp",
+    content: `
+Concrete slab condition significantly impacts commercial property function and value. Uneven, cracked or damaged slabs create safety hazards, limit flooring options and can result in make good disputes. Professional slab rectification restores floors to acceptable standards.
+
+## When Slab Rectification Is Needed
+
+Common issues requiring rectification include:
+
+- Uneven surfaces from settlement or poor construction
+- Cracks from structural movement or overloading
+- Surface damage from equipment or chemicals
+- Wear from heavy traffic
+- Failed previous coatings or toppings
+
+## Rectification Methods
+
+Professional approaches include:
+
+### Grinding and Polishing
+
+- Removes high spots and surface irregularities
+- Suitable for minor levelling requirements
+- Can create finished polished concrete floors
+
+### Self-Levelling Compounds
+
+- Corrects more significant height variations
+- Provides smooth base for floor coverings
+- Various thicknesses available
+
+### Crack Repair
+
+- Epoxy injection for structural cracks
+- Routing and sealing for non-structural cracks
+- Prevents further deterioration
+
+### Resurfacing
+
+- New topping over existing slab
+- Addresses widespread damage
+- Can incorporate falls for drainage
+
+## Make Good Considerations
+
+For lease end requirements:
+
+- Document original slab condition
+- Assess damage attributable to tenant use
+- Determine appropriate rectification level
+- Consider flooring replacement coordination
+
+## Conclusion
+
+Professional slab rectification ensures safe, functional floors that meet make good requirements. Contact Make Good Melbourne for expert slab assessment and rectification services.
+    `
+  },
+  {
+    id: "16",
+    slug: "building-defect-remediation-commercial-property",
+    title: "Building Defect Remediation: Addressing Structural and Compliance Issues",
+    excerpt: "Building defects can pose safety risks and legal liabilities. Learn about common commercial building defects, remediation approaches and compliance requirements in Victoria.",
+    date: "2024-12-15",
+    image: "building-defect-remediation.webp",
+    content: `
+Building defects in commercial properties can range from minor maintenance issues to serious structural and safety concerns. Understanding defect types, remediation approaches and compliance requirements is essential for property owners, managers and tenants.
+
+## Common Commercial Building Defects
+
+Frequently encountered defects include:
+
+### Structural Issues
+
+- Concrete cancer and spalling
+- Cracking in structural elements
+- Foundation settlement
+- Corrosion of steel elements
+
+### Waterproofing Failures
+
+- Leaking roofs and balconies
+- Rising damp
+- Failed membranes
+- Poor drainage
+
+### Building Envelope
+
+- Facade cladding issues
+- Window and door seal failures
+- External wall cracks
+- Thermal bridging
+
+### Services and Compliance
+
+- Electrical non-compliance
+- Fire safety deficiencies
+- Accessibility issues
+- Ventilation problems
+
+## Remediation Process
+
+Professional defect remediation typically involves:
+
+1. **Investigation:** Detailed assessment and testing
+2. **Reporting:** Documentation of findings and recommendations
+3. **Design:** Engineering solutions where required
+4. **Procurement:** Contractor selection and pricing
+5. **Remediation:** Execution of repair works
+6. **Certification:** Compliance documentation
+
+## Victorian Compliance Requirements
+
+Building defect remediation must comply with:
+
+- Building Act 1993
+- Building Regulations 2018
+- Australian Building Codes Board requirements
+- Relevant Australian Standards
+
+## Conclusion
+
+Building defect remediation protects property value, occupant safety and owner liability. Contact Make Good Melbourne for expert defect assessment and remediation services.
+    `
+  },
+  {
+    id: "15",
+    slug: "strategic-make-good-planning",
+    title: "Strategic Make Good Planning: Maximising Value and Minimising Costs",
+    excerpt: "Strategic planning transforms make good from a cost burden to a value opportunity. Learn how early planning, scope negotiation and smart contractor selection optimise make good outcomes.",
+    date: "2024-12-01",
+    image: "strategic-planning.jpg",
+    content: `
+Make good obligations represent significant costs for commercial tenants, but strategic planning can substantially reduce expenses while ensuring compliance. This guide explores approaches to maximise value and minimise costs in make good projects.
+
+## Why Strategic Planning Matters
+
+Early, strategic planning delivers:
+
+- Reduced overall project costs
+- Better contractor availability and pricing
+- Improved landlord negotiation outcomes
+- Minimised business disruption
+- Higher quality outcomes
+
+## Key Planning Elements
+
+### Early Start
+
+Begin make good planning 6-12 months before lease expiry:
+
+- Review lease requirements
+- Assess current condition
+- Identify potential issues
+- Develop preliminary budgets
+
+### Scope Optimisation
+
+Work to right-size your make good scope:
+
+- Distinguish obligations from nice-to-haves
+- Challenge excessive landlord demands
+- Negotiate retention of valuable fitout
+- Consider cash settlement options
+
+### Contractor Strategy
+
+Smart contractor engagement includes:
+
+- Obtaining competitive quotes
+- Verifying capabilities and experience
+- Locking in preferred contractors early
+- Negotiating favourable terms
+
+### Timeline Management
+
+Effective scheduling:
+
+- Allows for unforeseen issues
+- Avoids premium rates for rushed works
+- Coordinates multiple trades efficiently
+- Meets landlord deadlines
+
+## Conclusion
+
+Strategic make good planning optimises outcomes and protects your bottom line. Contact Make Good Melbourne for expert planning and project management services.
+    `
+  },
+  {
+    id: "14",
+    slug: "maximising-property-value-make-good",
+    title: "Maximising Property Value Through Quality Make Good Works",
+    excerpt: "Quality make good works can enhance property value beyond basic compliance. Learn how strategic investment in make good delivers returns for both tenants and landlords.",
+    date: "2024-11-15",
+    image: "maximising-property-value.jpg",
+    content: `
+While make good obligations are often viewed as pure cost, quality make good works can actually enhance property value and deliver benefits for all parties. Understanding how to maximise value through make good creates opportunities for tenants and landlords alike.
+
+## Beyond Compliance
+
+Quality make good works can:
+
+- Attract higher-quality incoming tenants
+- Support premium rental rates
+- Reduce time vacant between leases
+- Minimise landlord reinvestment needs
+- Protect building reputation
+
+## Value-Adding Approaches
+
+### Finishing Quality
+
+- Premium paint and materials
+- Attention to detail in repairs
+- Professional cleaning standards
+- Quality floor coverings
+
+### Strategic Upgrades
+
+Where agreed with landlords:
+
+- Energy efficiency improvements
+- Accessibility enhancements
+- Technology infrastructure
+- Safety system updates
+
+### Presentation Focus
+
+- Consistent, neutral finishes
+- Clean, professional appearance
+- Well-lit, inviting spaces
+- Functional layouts
+
+## Negotiating Value
+
+Tenants can leverage quality make good for:
+
+- Reduced make good scope in exchange for upgrades
+- Recognition of improvement value against obligations
+- Positive references for future leases
+- Smooth, dispute-free exits
+
+## Conclusion
+
+Quality make good works benefit all parties and can transform obligations into opportunities. Contact Make Good Melbourne for make good services that maximise property value.
+    `
+  },
+  {
+    id: "13",
+    slug: "year-end-property-planning",
+    title: "Year-End Property Planning: Preparing for Make Good in the New Year",
+    excerpt: "Year-end is ideal for planning upcoming make good projects. Learn how to prepare during the holiday period for efficient, cost-effective make good works in the new year.",
+    date: "2024-11-01",
+    image: "year-end-planning.jpg",
+    content: `
+The year-end period provides an excellent opportunity to plan for upcoming make good projects. Whether your lease expires early in the new year or later, strategic planning now sets the foundation for successful, cost-effective make good works.
+
+## Why Plan at Year-End
+
+Year-end planning offers advantages:
+
+- Time to review lease requirements thoroughly
+- Opportunity to assess property condition
+- Contractor availability for quotes
+- Budget planning for the new financial year
+- Early booking of preferred contractors
+
+## Key Planning Activities
+
+### Document Review
+
+- Locate and review lease agreements
+- Find ingoing condition reports
+- Gather correspondence with landlord
+- Note any agreed variations
+
+### Property Assessment
+
+- Walk through the property systematically
+- Document current condition with photos
+- Identify likely make good requirements
+- Note any concerns or potential issues
+
+### Preliminary Budgeting
+
+- Estimate scope of required works
+- Research typical costs for similar projects
+- Include contingency for unknowns
+- Plan for professional fees
+
+### Contractor Research
+
+- Identify potential make good contractors
+- Request preliminary quotes
+- Check references and credentials
+- Reserve capacity for your timing
+
+## Holiday Period Advantages
+
+The quieter holiday period allows:
+
+- Uninterrupted planning time
+- Access to properties with reduced occupancy
+- Time for thorough research
+- Reflection on priorities and approach
+
+## Conclusion
+
+Year-end planning sets up make good projects for success. Contact Make Good Melbourne to discuss your upcoming make good requirements.
+    `
+  },
+  {
+    id: "12",
+    slug: "warehouse-polycarbonate-roofing-replacement",
+    title: "Warehouse Polycarbonate Roofing Replacement: Light, Durability and Compliance",
+    excerpt: "Polycarbonate roofing provides natural light while protecting warehouse interiors. Learn about replacement options, installation standards and make good considerations for industrial properties.",
+    date: "2024-10-15",
+    image: "polycarbonate-roofing.jpg",
+    content: `
+Polycarbonate roofing panels are common in industrial and warehouse properties, providing natural light while offering weather protection. Understanding replacement options and standards ensures effective make good outcomes and ongoing performance.
+
+## Benefits of Polycarbonate Roofing
+
+Polycarbonate panels offer:
+
+- Natural light transmission reducing energy costs
+- Impact resistance superior to glass
+- Lightweight reducing structural requirements
+- UV protection preventing interior degradation
+- Thermal insulation properties
+- Long service life with proper maintenance
+
+## When Replacement Is Needed
+
+Signs indicating replacement include:
+
+- Yellowing or discolouration
+- Cracking or crazing
+- Leaking at panels or joints
+- Visible damage from impacts
+- Reduced light transmission
+- Age-related deterioration
+
+## Replacement Options
+
+Modern polycarbonate roofing systems include:
+
+### Multiwall Panels
+
+- Various thicknesses available
+- Good thermal properties
+- Cost-effective for large areas
+
+### Solid Panels
+
+- Maximum light transmission
+- Higher impact resistance
+- Premium appearance
+
+### Specialty Products
+
+- Diffused light panels
+- Fire-rated options
+- Acoustic panels
+
+## Make Good Considerations
+
+For lease end requirements:
+
+- Document original panel condition
+- Assess damage versus normal wear
+- Consider partial versus full replacement
+- Coordinate with other roofing works
+
+## Conclusion
+
+Professional polycarbonate roofing replacement ensures light, durability and compliance. Contact Make Good Melbourne for expert industrial roofing solutions.
+    `
+  },
+  {
+    id: "11",
+    slug: "facade-cladding-safety-compliance",
+    title: "Facade Cladding Safety and Compliance: Meeting Victorian Requirements",
+    excerpt: "Facade cladding safety is a critical concern for commercial property owners. Learn about Victorian compliance requirements, assessment processes and remediation options for non-compliant cladding.",
+    date: "2024-10-01",
+    image: "facade-cladding-remediation.jpg",
+    content: `
+Following high-profile building fires, facade cladding safety has become a priority for Victorian regulators and building owners. Understanding compliance requirements and remediation options is essential for commercial property stakeholders.
+
+## Victorian Cladding Requirements
+
+Key regulatory developments include:
+
+- Cladding Safety Victoria establishment
+- Mandatory cladding audits for certain buildings
+- Rectification orders for non-compliant buildings
+- Funding assistance programs
+- Ongoing compliance requirements
+
+## Cladding Types of Concern
+
+Materials requiring assessment include:
+
+- Aluminium composite panels (ACP)
+- Expanded polystyrene (EPS)
+- High-pressure laminate (HPL)
+- Metal composite materials (MCM)
+- Other combustible cladding products
+
+## Assessment Process
+
+Cladding assessment typically involves:
+
+1. **Desktop Review:** Building documentation analysis
+2. **Site Inspection:** Physical examination of cladding
+3. **Testing:** Laboratory analysis where required
+4. **Risk Assessment:** Fire engineering evaluation
+5. **Reporting:** Findings and recommendations
+
+## Remediation Options
+
+Where non-compliant cladding is identified:
+
+- Full removal and replacement
+- Partial removal in high-risk areas
+- Fire engineering solutions
+- Enhanced fire safety measures
+- Combination approaches
+
+## Make Good Implications
+
+For tenants in affected buildings:
+
+- Understand building compliance status
+- Clarify responsibility for costs
+- Consider impact on make good timing
+- Document any landlord requirements
+
+## Conclusion
+
+Facade cladding compliance is a complex but critical issue for commercial properties. Contact Make Good Melbourne for guidance on cladding-related make good considerations.
+    `
+  },
+  {
+    id: "10",
+    slug: "car-park-repairs-line-marking-make-good",
+    title: "Car Park Repairs and Line Marking: Essential Make Good Works",
+    excerpt: "Car park condition is often overlooked in make good planning. Learn about common repair requirements, line marking standards and compliance considerations for commercial car parks.",
+    date: "2024-09-15",
+    image: "car-park-line-marking.jpg",
+    content: `
+Commercial car parks experience significant wear from vehicle traffic, weathering and daily use. Make good obligations often include car park repairs and line marking restoration to return these areas to acceptable condition.
+
+## Common Car Park Issues
+
+Typical problems requiring attention include:
+
+### Surface Damage
+
+- Cracking from settlement or loading
+- Potholes from surface failure
+- Oil staining from vehicle leaks
+- Water damage and erosion
+
+### Line Marking Deterioration
+
+- Faded markings from UV exposure
+- Worn markings from traffic
+- Damaged markings from surface failure
+- Non-compliant layouts
+
+### Infrastructure Issues
+
+- Damaged wheel stops and barriers
+- Worn or damaged signage
+- Lighting deficiencies
+- Drainage problems
+
+## Repair and Restoration Options
+
+Professional car park works include:
+
+### Surface Repairs
+
+- Crack sealing and filling
+- Pothole patching
+- Surface resurfacing
+- Coating systems
+
+### Line Marking
+
+- Layout design and compliance
+- Surface preparation
+- Quality paint application
+- Stencilling and symbols
+
+### Infrastructure Works
+
+- Wheel stop replacement
+- Signage installation
+- Lighting upgrades
+- Drainage improvements
+
+## Compliance Requirements
+
+Car parks must comply with:
+
+- Australian Standard AS 2890
+- Disability access requirements
+- Fire service access provisions
+- Local council regulations
+
+## Conclusion
+
+Professional car park repairs and line marking ensure compliance and safe, functional parking areas. Contact Make Good Melbourne for comprehensive car park make good services.
+    `
+  },
+  {
+    id: "9",
+    slug: "fire-damage-restoration-commercial",
+    title: "Fire Damage Restoration: Recovering Commercial Properties After Fire",
+    excerpt: "Fire damage restoration requires specialist expertise and rapid response. Learn about the restoration process, safety considerations and insurance requirements for commercial fire recovery.",
+    date: "2024-09-01",
+    image: "fire-damage-restoration.jpg",
+    content: `
+Fire damage to commercial properties requires immediate, professional response to minimise losses and restore operations. Understanding the restoration process helps property owners and tenants navigate this challenging situation.
+
+## Immediate Response
+
+After a commercial fire:
+
+- Ensure building is safe to enter
+- Secure the property
+- Contact insurance provider
+- Engage professional restoration services
+- Document damage thoroughly
+
+## Fire Damage Categories
+
+Fires cause various types of damage:
+
+### Direct Fire Damage
+
+- Structural damage from flames
+- Material destruction
+- Equipment loss
+- Fitout damage
+
+### Smoke Damage
+
+- Soot deposits on surfaces
+- Smoke odour penetration
+- Discolouration of materials
+- Contamination of contents
+
+### Water Damage
+
+- From firefighting efforts
+- Ongoing leaks
+- Secondary moisture issues
+- Mould risk
+
+## Restoration Process
+
+Professional fire restoration typically includes:
+
+1. **Assessment:** Damage evaluation and planning
+2. **Stabilisation:** Securing and protecting property
+3. **Cleaning:** Smoke and soot removal
+4. **Demolition:** Removing unsalvageable materials
+5. **Restoration:** Rebuilding and repairs
+6. **Contents:** Cleaning or replacement
+
+## Insurance Considerations
+
+For insurance claims:
+
+- Document all damage promptly
+- Maintain detailed records
+- Preserve damaged materials for assessment
+- Engage professional assessors
+
+## Conclusion
+
+Fire damage restoration requires professional expertise and rapid response. Contact Make Good Melbourne for commercial fire restoration services.
+    `
+  },
+  {
+    id: "8",
+    slug: "waste-management-sustainability-make-good-works",
+    title: "Waste Management and Sustainability in Make Good Works",
+    excerpt: "Sustainable waste management is increasingly important in commercial make good projects. Learn about recycling options, disposal requirements and environmental best practices.",
+    date: "2024-08-15",
+    image: "waste-management-sustainability.jpg",
+    content: `
+Make good projects generate significant waste from demolition, strip-out and replacement works. Sustainable waste management reduces environmental impact, often saves costs and meets increasing regulatory and stakeholder expectations.
+
+## Waste Types in Make Good
+
+Common waste streams include:
+
+- Construction and demolition waste
+- Fitout materials and fixtures
+- Carpet and floor coverings
+- Ceiling tiles and panels
+- Electrical and plumbing materials
+- General waste and packaging
+
+## Sustainable Approaches
+
+Best practices include:
+
+### Waste Reduction
+
+- Careful planning to minimise waste
+- Selective demolition preserving reusable items
+- Right-sizing material orders
+- Efficient work practices
+
+### Recycling and Recovery
+
+- Segregation of recyclable materials
+- Metal recycling from fixtures
+- Timber recovery where possible
+- Concrete and masite recycling
+- Carpet recycling programs
+
+### Proper Disposal
+
+- Licensed waste facilities
+- Appropriate hazardous waste handling
+- Documented disposal chains
+- Compliance with EPA requirements
+
+## Regulatory Requirements
+
+Victorian regulations require:
+
+- Proper waste classification
+- Licensed transport and disposal
+- EPA compliance for certain wastes
+- Documentation and reporting
+
+## Cost Benefits
+
+Sustainable waste management can:
+
+- Reduce disposal costs
+- Generate income from recyclables
+- Avoid EPA penalties
+- Meet tenant and landlord expectations
+
+## Conclusion
+
+Sustainable waste management is good for the environment and often good for budgets. Contact Make Good Melbourne for environmentally responsible make good services.
+    `
+  },
+  {
+    id: "7",
+    slug: "parapet-failure-emergency-building-repairs",
+    title: "Parapet Failure and Emergency Building Repairs: Protecting Public Safety",
+    excerpt: "Parapet failures pose serious public safety risks requiring immediate response. Learn about causes, emergency procedures and permanent remediation for commercial building parapets.",
+    date: "2024-08-01",
+    image: "parapet-failure-emergency-repairs.jpg",
+    content: `
+Parapet failures on commercial buildings create serious public safety hazards and require immediate attention. Understanding causes, emergency response and permanent remediation helps property owners manage these critical situations.
+
+## What Causes Parapet Failure
+
+Common causes include:
+
+- Water penetration and freeze-thaw cycles
+- Mortar deterioration in masonry
+- Corrosion of metal fixings
+- Structural settlement or movement
+- Age-related deterioration
+- Impact damage
+- Inadequate original construction
+
+## Signs of Potential Failure
+
+Warning signs include:
+
+- Cracking in parapet structure
+- Leaning or displacement
+- Loose or fallen masonry
+- Rust staining indicating corrosion
+- Water damage and staining
+- Spalling concrete or mortar
+
+## Emergency Response
+
+When failure occurs or is imminent:
+
+- Evacuate and secure the area
+- Contact emergency services if required
+- Engage structural engineer
+- Implement temporary protection
+- Notify council and affected parties
+
+## Permanent Remediation
+
+Long-term solutions include:
+
+- Structural assessment and design
+- Demolition of failed sections
+- Reconstruction to current standards
+- Waterproofing and protection
+- Ongoing maintenance programs
+
+## Regulatory Requirements
+
+Building owners must:
+
+- Maintain building safety
+- Report dangerous conditions
+- Obtain permits for works
+- Comply with building codes
+
+## Conclusion
+
+Parapet safety requires vigilance and prompt response to signs of deterioration. Contact Make Good Melbourne for emergency building repair services.
+    `
+  },
+  {
+    id: "6",
+    slug: "ceiling-repairs-suspended-acoustic",
+    title: "Ceiling Repairs and Suspended Acoustic Ceiling Systems",
+    excerpt: "Suspended acoustic ceilings are common in commercial properties and often require repair or replacement at lease end. Learn about ceiling systems, common issues and make good solutions.",
+    date: "2024-07-15",
+    image: "ceiling-repairs-suspended-acoustic.jpg",
+    content: `
+Suspended acoustic ceiling systems are standard in commercial offices and retail spaces, providing acoustic control, concealing services and enabling lighting integration. Understanding these systems helps manage make good requirements effectively.
+
+## Common Ceiling Systems
+
+Commercial ceiling types include:
+
+### Suspended Acoustic Tiles
+
+- Grid systems with lay-in tiles
+- Various tile materials and sizes
+- Easy access to services above
+- Simple tile replacement
+
+### Plasterboard Ceilings
+
+- Continuous flat surfaces
+- Painted finish
+- Access panels for services
+- More complex to repair
+
+### Specialty Ceilings
+
+- Metal panel systems
+- Timber or timber-look
+- Exposed services design
+- Custom solutions
+
+## Common Issues Requiring Attention
+
+Make good often addresses:
+
+- Stained or discoloured tiles
+- Damaged or broken tiles
+- Sagging grid systems
+- Holes from removed fixtures
+- Water damage
+- Outdated or mismatched tiles
+
+## Repair and Replacement Options
+
+Professional solutions include:
+
+### Tile Replacement
+
+- Matching existing tiles where possible
+- Full section replacement for consistency
+- Upgrade to current products
+
+### Grid Repairs
+
+- Straightening and levelling
+- Replacing damaged sections
+- Upgrading fittings
+
+### Full Replacement
+
+- New grid and tiles throughout
+- Opportunity for system upgrade
+- Coordination with lighting
+
+## Make Good Considerations
+
+For lease end:
+
+- Document original ceiling condition
+- Assess damage versus normal wear
+- Consider landlord requirements
+- Coordinate with other works
+
+## Conclusion
+
+Professional ceiling repairs ensure compliant, attractive commercial spaces. Contact Make Good Melbourne for expert ceiling solutions.
+    `
+  },
+  {
+    id: "5",
+    slug: "electrical-make-safe-decommissioning-demolition",
+    title: "Electrical Make Safe and Decommissioning for Demolition Works",
+    excerpt: "Safe electrical decommissioning is essential before any demolition or strip-out work. Learn about make safe procedures, compliance requirements and the importance of licensed electricians.",
+    date: "2024-07-01",
+    image: "electrical-make-safe.jpg",
+    content: `
+Electrical make safe procedures are critical first steps in any commercial demolition, strip-out or significant make good project. Proper decommissioning protects workers, prevents damage and ensures compliance with Victorian electrical regulations.
+
+## What Is Electrical Make Safe?
+
+Electrical make safe involves:
+
+- Isolating circuits serving areas being demolished
+- Removing or protecting live services
+- Capping and terminating disconnected circuits
+- Temporary supplies for ongoing needs
+- Documentation of works completed
+
+## Why It's Essential
+
+Make safe procedures:
+
+- Protect workers from electrocution
+- Prevent electrical fires
+- Enable safe demolition works
+- Comply with workplace safety laws
+- Meet electrical regulations
+
+## The Make Safe Process
+
+Professional electrical make safe includes:
+
+1. **Assessment:** Survey of existing electrical installation
+2. **Planning:** Identification of circuits to isolate
+3. **Isolation:** Disconnection at distribution boards
+4. **Removal:** Taking out redundant cables and equipment
+5. **Protection:** Securing remaining live services
+6. **Documentation:** Certification of works completed
+
+## Compliance Requirements
+
+Electrical work must comply with:
+
+- AS/NZS 3000 Wiring Rules
+- Victorian electrical safety regulations
+- WorkSafe requirements
+- Energy Safe Victoria licensing
+
+## Licensed Electricians Only
+
+Electrical work must be performed by:
+
+- Licensed electrical contractors
+- Registered electrical workers
+- Appropriately insured professionals
+
+## Conclusion
+
+Professional electrical make safe protects people and property during demolition works. Contact Make Good Melbourne for comprehensive electrical decommissioning services.
+    `
+  },
+  {
+    id: "4",
+    slug: "office-strip-out",
+    title: "Office Strip Out and Demolition: Best Practices for Commercial Tenants",
+    excerpt: "Office strip out is often the first major phase of make good works. Learn about planning, execution and compliance for successful commercial demolition and strip-out projects.",
+    date: "2024-06-15",
+    image: "office-strip-out.webp",
+    content: `
+Office strip out and demolition work marks the beginning of significant make good projects. Proper planning and execution of strip-out works sets the foundation for successful completion of all subsequent restoration activities.
+
+## What Office Strip Out Involves
+
+Commercial strip out typically includes:
+
+- Removal of internal partitions and walls
+- Demolition of tenant fitout elements
+- Removal of floor coverings
+- Ceiling removal or tile clearing
+- Disconnection and removal of services
+- Waste removal and disposal
+
+## Planning Strip Out Works
+
+Effective planning requires:
+
+### Documentation
+
+- Review lease make good requirements
+- Obtain relevant drawings and plans
+- Identify services and utilities
+- Plan waste management
+
+### Approvals
+
+- Landlord notifications and approvals
+- Building permits if required
+- Utility disconnection arrangements
+- Access and timing agreements
+
+### Contractor Selection
+
+- Experienced demolition contractors
+- Appropriate licences and insurance
+- Clear scope and pricing
+- Reliable scheduling
+
+## Execution Best Practices
+
+During strip out works:
+
+- Maintain clear communication with all parties
+- Monitor progress against schedule
+- Ensure safety compliance
+- Document works with photos
+- Manage waste responsibly
+
+## Safety Considerations
+
+Strip out works require attention to:
+
+- Asbestos identification and management
+- Structural stability during works
+- Service isolation and make safe
+- Dust and noise control
+- Site security
+
+## Conclusion
+
+Professional office strip out establishes the foundation for successful make good completion. Contact Make Good Melbourne for expert demolition and strip-out services.
+    `
+  },
+  {
+    id: "3",
+    slug: "restoring-concrete-floors",
+    title: "Restoring Concrete Floors: Epoxy Coatings and Surface Treatments",
+    excerpt: "Concrete floor restoration transforms worn industrial and commercial floors. Learn about epoxy coatings, polishing options and surface treatments that meet make good requirements.",
+    date: "2024-06-01",
+    image: "epoxy-flooring.webp",
+    content: `
+Concrete floor condition significantly impacts commercial and industrial property value and function. Professional restoration through epoxy coatings, polishing and surface treatments can transform worn floors and meet make good requirements.
+
+## When Floor Restoration Is Needed
+
+Common triggers include:
+
+- Wear from heavy traffic and equipment
+- Staining from oils, chemicals or products
+- Surface damage and deterioration
+- Previous coating failure
+- Make good lease requirements
+- Property sale or re-letting
+
+## Restoration Options
+
+### Epoxy Coatings
+
+Epoxy floor systems offer:
+
+- Durable, chemical-resistant surfaces
+- Range of colours and finishes
+- Anti-slip options available
+- Easy cleaning and maintenance
+- Long service life
+
+### Polished Concrete
+
+Polishing delivers:
+
+- Attractive, reflective finishes
+- Low maintenance requirements
+- No coatings to peel or wear
+- Sustainable approach
+- Cost-effective long-term
+
+### Surface Treatments
+
+Other options include:
+
+- Densifiers and sealers
+- Grinding and levelling
+- Crack repair and filling
+- Line marking and graphics
+
+## The Restoration Process
+
+Professional floor restoration typically involves:
+
+1. **Assessment:** Evaluate condition and requirements
+2. **Preparation:** Clean, repair and prepare surface
+3. **Treatment:** Apply chosen system
+4. **Curing:** Allow proper cure time
+5. **Finishing:** Final touches and protection
+
+## Make Good Considerations
+
+For lease end:
+
+- Document original floor condition
+- Assess damage versus normal wear
+- Determine landlord requirements
+- Coordinate with other works
+
+## Conclusion
+
+Professional concrete floor restoration meets make good requirements while enhancing property value. Contact Make Good Melbourne for expert floor restoration services.
+    `
+  },
+  {
+    id: "2",
+    slug: "guide-to-pallet-racking-solutions",
+    title: "The Ultimate Guide to Pallet Racking Solutions: Installation, Dismantling and Relocation",
+    excerpt: "Pallet racking is essential warehouse infrastructure that often requires attention during make good. Learn about racking types, installation standards and dismantling requirements.",
+    date: "2024-05-15",
+    image: "pallet-racking.webp",
+    content: `
+Pallet racking systems are fundamental to warehouse and industrial property operations. Understanding racking options, installation requirements and make good obligations helps tenants manage these significant assets effectively.
+
+## Types of Pallet Racking
+
+Common systems include:
+
+### Selective Racking
+
+- Direct access to all pallets
+- Most common system type
+- Flexible configuration
+- Various beam levels
+
+### Drive-In Racking
+
+- High-density storage
+- LIFO (last in, first out) access
+- Suitable for homogeneous stock
+- Reduced aisle requirements
+
+### Other Systems
+
+- Push-back racking
+- Pallet flow systems
+- Mobile racking
+- Cantilever for long items
+
+## Installation Requirements
+
+Professional installation addresses:
+
+- Floor slab assessment and preparation
+- Anchor bolt installation
+- Frame and beam assembly
+- Safety accessories
+- Compliance certification
+
+## Australian Standards
+
+Racking must comply with:
+
+- AS 4084 Steel Storage Racking
+- WorkSafe requirements
+- Building code provisions
+- Fire safety regulations
+
+## Make Good Considerations
+
+At lease end:
+
+- Review lease requirements for racking
+- Assess removal versus retention options
+- Plan for floor repair after removal
+- Consider relocation or sale value
+
+## Dismantling Process
+
+Professional dismantling includes:
+
+- Safety planning and risk assessment
+- Systematic disassembly
+- Floor anchor removal
+- Floor repair and patching
+- Waste management or relocation
+
+## Conclusion
+
+Professional racking services ensure safety, compliance and value throughout the racking lifecycle. Contact Make Good Melbourne for expert racking solutions.
+    `
+  },
+  {
+    id: "1",
+    slug: "new-year-property-transformations",
+    title: "New Year Property Transformations: Starting Fresh with Make Good",
+    excerpt: "The new year is the perfect time to address property maintenance and make good obligations. Learn how fresh starts and professional services set you up for success.",
+    date: "2024-05-01",
+    image: "new-year-makegood.webp",
+    content: `
+The new year brings fresh perspectives and renewed energy for tackling important projects. For commercial tenants with upcoming make good obligations, this is an ideal time to plan and prepare for successful property transitions.
+
+## Why Start Now
+
+Beginning make good planning in the new year offers:
+
+- Ample time for thorough preparation
+- Better contractor availability
+- Budget planning alignment
+- Reduced stress and pressure
+- Higher quality outcomes
+
+## Setting Priorities
+
+Focus your planning on:
+
+### Lease Review
+
+- Understand specific requirements
+- Note key dates and deadlines
+- Identify potential negotiation points
+- Gather relevant documentation
+
+### Property Assessment
+
+- Conduct thorough inspection
+- Document current condition
+- Identify required works
+- Note potential issues
+
+### Budget Development
+
+- Estimate costs realistically
+- Include contingencies
+- Plan cash flow requirements
+- Consider financing if needed
+
+### Contractor Engagement
+
+- Research potential providers
+- Request preliminary quotes
+- Check references and credentials
+- Reserve capacity early
+
+## Making It Happen
+
+For successful make good:
+
+- Create detailed project plans
+- Maintain regular communication
+- Monitor progress closely
+- Address issues promptly
+- Document everything
+
+## Fresh Start Benefits
+
+Quality make good delivers:
+
+- Smooth lease transitions
+- Full bond returns
+- Positive landlord relations
+- References for future leases
+- Reduced stress and disruption
+
+## Conclusion
+
+The new year is perfect for make good planning and preparation. Contact Make Good Melbourne to start your property transformation journey.
     `
   }
 ];
