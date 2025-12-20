@@ -378,29 +378,29 @@ export const services: Service[] = [
     category: "trade"
   },
   {
-    name: "Commercial Cleaning",
+    name: "Make Good Cleaning",
     slug: "commercial-cleaning",
-    title: "Commercial Cleaning Melbourne",
-    metaTitle: "Industrial Floor Cleaning Melbourne | Warehouses",
-    description: "From factory floors to office fitouts, we handle the cleaning jobs that regular cleaners won't touch. Industrial machinery, specialised chemicals and a team that knows what landlords expect at handover.",
-    metaDescription: "Industrial floor cleaning Melbourne. Ride-on scrubbers, high-pressure washing, chemical treatment for warehouses. Transform tired floors fast. Free quotes.",
-    heroText: "Heavy-duty cleaning for commercial and industrial properties. We tackle the jobs regular cleaners can't—warehouse floors, post-construction sites and end-of-lease handovers that need to pass inspection.",
+    title: "Make Good Cleaning Melbourne",
+    metaTitle: "Make Good Cleaning Melbourne | Make Good Specialists",
+    description: "Lease ending? We handle the heavy-duty cleaning regular cleaners won't touch. Industrial floor scrubbing, high-pressure washing and chemical treatment—everything your landlord expects at handover.",
+    metaDescription: "Make good cleaning Melbourne. Lease end floor scrubbing, high-pressure washing, oil and tyre mark removal. Pass your final inspection. Free quotes.",
+    heroText: "Heavy-duty cleaning for lease end and make good handovers. We tackle the jobs regular cleaners can't—warehouse floors, post-strip-out sites and final inspections that need to pass first time.",
     heroImage: commercialFloorSweepingImage,
-    heroImageAlt: "Worker sweeping concrete floor with industrial broom during commercial cleaning Melbourne",
+    heroImageAlt: "Worker sweeping concrete floor with industrial broom during make good cleaning Melbourne",
     secondaryImage: highPressureWarehouseCleaningImage,
-    secondaryImageAlt: "High-pressure warehouse cleaning Melbourne - industrial cleaner pressure washing warehouse floor",
+    secondaryImageAlt: "High-pressure warehouse cleaning Melbourne - industrial cleaner pressure washing warehouse floor for lease end",
     featuredSection: {
       title: "Industrial Floor Cleaning",
-      description: "Years of grime, oil stains and tyre marks don't stand a chance. Our ride-on scrubbers and high-pressure systems restore warehouse floors to like-new condition—whether you're preparing for a new tenant, impressing clients or just tired of looking at that mess.",
+      description: "Years of grime, oil stains and tyre marks don't stand a chance. Our ride-on scrubbers and high-pressure systems restore warehouse floors to handover condition—ready for your landlord's final inspection.",
       image: industrialFloorScrubberImage,
       imageAlt: "Industrial ride-on floor scrubber machine cleaning polished concrete warehouse floor Melbourne"
     },
     benefits: [
       "Ride-on floor scrubbers for large areas",
       "High-pressure cleaning for floors, walls and exteriors",
-      "Chemical treatment for stubborn stains and oil",
-      "Handover cleaning after make good works",
-      "Post-construction site clean-ups",
+      "Chemical treatment for oil stains and tyre marks",
+      "Post-strip-out and post-construction clean-ups",
+      "Final inspection preparation",
       "Window and facade cleaning",
       "Graffiti removal",
       "Carpet steam cleaning"
@@ -408,7 +408,7 @@ export const services: Service[] = [
     ctaBlock: {
       title: "Let Us Handle Your Cleaning",
       subtitle: "We do makegoods all day, every day.",
-      text: "From warehouse floors to office fitouts, we've cleaned commercial properties across Melbourne. Get in touch today for a free, no-obligation quote."
+      text: "From warehouse floors to office strip outs, we've prepared hundreds of Melbourne properties for final inspection. Get in touch today for a free, no-obligation quote."
     },
     relatedServices: ["commercial-make-good", "warehouse-make-good", "office-strip-out"],
     category: "cleaning",
