@@ -1076,8 +1076,8 @@ export const services: Service[] = [
     heroText: "Transform your warehouse with natural light and eliminate roof leaks. We install premium Ampelite fibreglass skylights designed for Melbourne's harshest industrial conditions.",
     heroImage: skylightRoofPanelsImage,
     heroImageAlt: "Industrial warehouse skylight replacement Melbourne - Ampelite fibreglass roofing installation",
-    secondaryImage: undefined,
-    secondaryImageAlt: "Commercial fibreglass skylight sheets installation Melbourne industrial building",
+    secondaryImage: skylightSteelStructureImage,
+    secondaryImageAlt: "Industrial skylight roof panels steel structure warehouse Melbourne",
     trustBadges: [
       "Ampelite Certified",
       "25 Year Warranty",
@@ -1129,12 +1129,6 @@ export const services: Service[] = [
       ]
     },
     featuredSections: [
-      {
-        title: "Skylight & Roof Panel Replacement Scope",
-        description: "Every skylight replacement project starts with a thorough roof inspection. We assess the condition of all translucent panels, identify damage, discolouration and leak points, and document findings with photos. Our detailed scope includes panel specifications, profile matching, quantities and pricing—ready for landlord approval on make good projects. This systematic approach ensures accurate quoting and no surprises during installation.",
-        image: skylightSteelStructureImage,
-        imageAlt: "Industrial skylight roof panels steel structure warehouse Melbourne"
-      },
       {
         title: "Ampelite Fibreglass Roofing Specialists",
         description: "We exclusively install Ampelite fibreglass roofing products—Australia's leading manufacturer with over 50 years in the industry. Ampelite panels are lightweight yet incredibly durable, designed specifically for commercial and industrial buildings. With up to 70 profile options including Trimdek, Klip-Lok, Custom Orb and Spandek, we match your existing roof seamlessly. Premium Solasafe panels block 99.9% of harmful UV rays while maintaining excellent light transmission, creating safer and brighter workspaces.",
