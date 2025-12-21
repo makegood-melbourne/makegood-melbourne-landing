@@ -45,14 +45,42 @@ Our services:
 - STRUCTURAL REMEDIATION: Concrete cancer treatment, floor slab repairs, retention structure work, waterproofing and membrane systems for car parks, balconies and roofs
 - CLADDING & GLAZING: ACP replacement, fire rating compliance, NCC requirements, glazing upgrades
 - PALLET RACKING REMOVAL: Safe dismantling, floor anchor removal and concrete patching
-- EPOXY FLOORING: Industrial floor coatings, crack repair, chemical-resistant and anti-slip finishes
-- CONCRETE FLOOR REPAIR: Crack injection, spalling repair, joint restoration for warehouse and factory floors
+- EPOXY FLOORING: Industrial floor coatings, crack repair, chemical-resistant and anti-slip finishes, epoxy restoration for lease compliance
 - LINE MARKING: Warehouse and car park line marking restoration for lease compliance
 - COMMERCIAL PAINTING: Colour-matched make-good painting for offices, warehouses and retail
 - CEILING TILE REPLACEMENT: Standard suspended tiles and timber acoustic panels, LED panel repositioning
 - PATCHING & PLASTERING: Wall repairs, hole filling, seamless plaster restoration
 - ELECTRICAL MAKE SAFE: Licensed electricians for safe disconnection, capping and compliance certificates
 - LED LIGHTING UPGRADE: Replace fluorescent with energy-efficient LED
+
+CONCRETE SLAB RESTORATION (SPECIALIST SERVICE):
+End of lease and your concrete floor needs to be restored? We handle the full scope—flooring removal, adhesive grinding, coating removal and slab preparation. Whether your lease requires epoxy restoration or the slab needs sealing—we can provide solutions that meet your obligations.
+
+What we deliver for concrete slab restoration:
+- Concrete Slab Restoration
+- Carpet, Tile & Vinyl Strip-Out
+- Adhesive & Coating Grinding
+- Heavy Industrial Slab Grind Capability
+- Epoxy & Line Marking Removal
+- Warehouse & Factory Specialists
+- End of Lease Specialists
+- Compliant Waste Disposal
+- Surface Leveling & Preparation
+
+Flooring & Tile Removal: Complete removal of all floor coverings—commercial carpet tiles, broadloom, sheet vinyl, LVT, vinyl planks and linoleum. We also strip ceramic, porcelain and quarry tiles from floors and walls, then grind away adhesive beds, carpet glue and failed epoxy coatings. Our industrial floor grinding equipment is able to ablate full surfaces to remove the deepest stains and restore even the most difficult slabs.
+
+Concrete Grinding & Preparation: Our advanced grinding equipment can fully ablate concrete surfaces—removing coatings, adhesives and contamination that traditional floor grinding devices are unable to remove. We use heavy-duty industrial grade floor grinding machines that restore even heavily damaged floors to like-new condition. Surface leveling, coating removal and slab finishing to meet the strictest lease requirements.
+
+Concrete Slab Restoration FAQs:
+- We remove all commercial floor coverings including carpet tiles, broadloom carpet, sheet vinyl, LVT, vinyl planks, linoleum, ceramic tiles, porcelain tiles, and quarry tiles. We also remove underlay, gripper rods, and all associated fixtures.
+- Our heavy-duty industrial floor grinders can fully ablate concrete surfaces—removing coatings, adhesives, and contamination that standard grinding equipment cannot touch.
+- All waste removal and disposal is included in our service. Clients won't need to arrange skip bins or separate waste contractors.
+- We specialise in end of lease floor restoration and ensure concrete slabs meet handover standards. We can provide documentation and condition reports if needed.
+- We can remove carpet glue, tile adhesive beds, vinyl adhesive, and failed epoxy coatings.
+- After grinding, the concrete slab will have a clean, uniform surface free of coatings, adhesives, and contamination.
+- We regularly work in operational facilities with dust-controlled grinding equipment and can work in stages or after hours.
+- We can grind floors with oil stains or chemical contamination using our heavy-duty grinders.
+- We can provide before and after photographic documentation for lease handovers.
 
 WHY CHOOSE US:
 - Single Point of Contact: One dedicated project manager handles everything
