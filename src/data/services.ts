@@ -1071,18 +1071,18 @@ export const services: Service[] = [
     slug: "skylight-roof-panel-replacement",
     title: "Skylight & Roof Panel Replacement Melbourne | Make Good & Property Upgrades",
     metaTitle: "Skylight Replacement Melbourne | Make Good & Lease End Specialists",
-    description: "End of lease skylight replacement and property upgrade specialists for Melbourne warehouses and industrial buildings. We coordinate professional skylight and roof panel replacement as part of your make good obligations or to improve your vacant property's appeal to prospective tenants.",
+    description: "End of lease skylight replacement and property upgrade specialists for Melbourne warehouses and industrial buildings. We deliver complete skylight and roof panel replacement as part of your make good obligations or to improve your vacant property's appeal to prospective tenants.",
     metaDescription: "Skylight replacement Melbourne for make good and property upgrades. End of lease compliance, vacant property improvements. Fibreglass panel installation. Free quotes.",
-    heroText: "Skylights failing your make good inspection? Or looking to upgrade your vacant property before re-leasing? We coordinate complete skylight and roof panel replacement—handling the entire scope so you don't have to chase multiple trades.",
+    heroText: "Skylights failing your make good inspection? Or upgrading your vacant property before re-leasing? We deliver complete skylight and roof panel replacement as part of your make good scope—from assessment through to landlord sign-off.",
     heroImage: skylightRoofPanelsImage,
     heroImageAlt: "Industrial warehouse skylight replacement Melbourne - fibreglass roofing installation for make good",
     secondaryImage: skylightSteelStructureImage,
     secondaryImageAlt: "Industrial skylight roof panels steel structure warehouse Melbourne",
     trustBadges: [
       "Make Good Specialists",
-      "Single Point of Contact",
       "Height Safety Compliant",
-      "Full Documentation Provided"
+      "Full Documentation Provided",
+      "Workmanship Warranty"
     ],
     benefits: [
       "End of lease skylight compliance",
@@ -1090,7 +1090,7 @@ export const services: Service[] = [
       "Fibreglass panel installation",
       "Damaged and leaking skylight replacement",
       "Yellowed and discoloured panel renewal",
-      "Roof sheet replacement coordination",
+      "Complete roof sheet replacement",
       "Height safety certified crews",
       "Landlord and property manager liaison",
       "VBA Certificate of Compliance",
@@ -1131,13 +1131,13 @@ export const services: Service[] = [
     featuredSections: [
       {
         title: "End of Lease Skylight Compliance",
-        description: "Industrial and warehouse leases often require skylights to be returned in original condition. Cracked, yellowed or leaking panels typically fail landlord inspections, putting your bond at risk and delaying handover. We assess your skylights against lease requirements, prepare detailed scopes for property manager approval, coordinate the replacement works, and provide complete documentation including VBA Certificates of Compliance. As make good specialists, we understand what landlords and property managers expect—and we handle the entire process so you can focus on your business transition.",
+        description: "Industrial and warehouse leases often require skylights to be returned in original condition. Cracked, yellowed or leaking panels typically fail landlord inspections, putting your bond at risk and delaying handover. We assess your skylights against lease requirements, prepare detailed scopes for property manager approval, complete the replacement works, and provide full documentation including VBA Certificates of Compliance. As make good specialists, we understand what landlords and property managers expect—and we handle the entire process so you can focus on your business transition.",
         image: undefined,
         imageAlt: "End of lease skylight inspection commercial property Melbourne"
       },
       {
         title: "Skylight & Roof Panel Replacement Scope",
-        description: "We coordinate complete skylight and roof panel replacement using quality Australian-made fibreglass products including Ampelite panels where specified. Our scope includes removal of damaged, aged or non-compliant panels, supply and installation of new fibreglass sheets matched to your existing roof profile, proper flashing and sealing, and all height safety requirements. We work with experienced roofing contractors who specialise in industrial skylight installation, ensuring professional results backed by workmanship warranties.",
+        description: "Our skylight replacement scope includes removal of damaged, aged or non-compliant panels, supply and installation of quality Australian-made fibreglass sheets matched to your existing roof profile, proper flashing and sealing, and all height safety requirements. We use products including Ampelite panels where specified, with professional installation backed by workmanship warranties.",
         image: skylightSteelStructureImage,
         imageAlt: "Industrial skylight steel structure warehouse roof panel replacement Melbourne"
       },
@@ -1148,10 +1148,10 @@ export const services: Service[] = [
         imageAlt: "Warehouse property upgrade skylight replacement Melbourne owner improvements"
       },
       {
-        title: "Why We Coordinate This Work",
-        description: "As a make good contractor, we regularly encounter skylights as part of broader end-of-lease scopes. Rather than forcing you to find and manage a separate roofing contractor, we include skylight replacement in our coordinated service. You deal with one company, receive one quote covering all your make good requirements, and get consistent project management from start to finish. Our roofing contractors are experienced in industrial skylight work and operate to the height safety standards required on commercial sites.",
+        title: "Included in Your Make Good Scope",
+        description: "Skylights are often part of a broader end-of-lease scope alongside flooring, cleaning, repairs and other requirements. We include skylight replacement in your overall make good quote—one company, one quote, one project manager, one handover. No need to find and manage separate trades for different parts of your make good.",
         image: undefined,
-        imageAlt: "Make good contractor coordinating skylight replacement works Melbourne"
+        imageAlt: "Complete make good scope including skylight replacement Melbourne"
       }
     ],
     processAfterSection: 1,
@@ -1165,8 +1165,8 @@ export const services: Service[] = [
         description: "Detailed scope with panel specifications, quantities and pricing. For make good projects, we handle landlord and property manager approvals."
       },
       {
-        step: "Coordinated Installation",
-        description: "Our height-safety certified roofing contractors remove old panels and install new fibreglass sheets with proper flashing and sealing."
+        step: "Professional Installation",
+        description: "Height-safety certified crews remove old panels and install new fibreglass sheets with proper flashing and sealing."
       },
       {
         step: "Completion & Documentation",
@@ -1188,11 +1188,11 @@ export const services: Service[] = [
       },
       {
         question: "Can you include skylight replacement in my broader make good scope?",
-        answer: "Absolutely—this is exactly how we typically handle skylight work. Rather than managing separate contractors, we include skylights in your overall make good quote alongside flooring, cleaning, repairs and any other requirements. One quote, one project manager, one handover."
+        answer: "Absolutely—this is exactly how we typically handle skylight work. We include skylights in your overall make good quote alongside flooring, cleaning, repairs and any other requirements. One quote, one project manager, one handover."
       },
       {
         question: "How long does skylight replacement take?",
-        answer: "Most warehouse skylight replacements are completed in 1-3 days depending on scope and access requirements. Larger projects may take longer. We schedule work to align with your make good timeline or vacancy period, and coordinate with any other trades working on site."
+        answer: "Most warehouse skylight replacements are completed in 1-3 days depending on scope and access requirements. Larger projects may take longer. We schedule work to align with your make good timeline or vacancy period."
       },
       {
         question: "Do you handle landlord approvals for skylight work?",
@@ -1200,17 +1200,17 @@ export const services: Service[] = [
       },
       {
         question: "What about asbestos roof panels?",
-        answer: "If asbestos-containing materials are identified during inspection, we engage licensed asbestos removalists to safely remove and dispose of materials before installing new panels. We coordinate the entire process and ensure full compliance with EPA and WorkSafe regulations."
+        answer: "If asbestos-containing materials are identified during inspection, licensed asbestos removalists safely remove and dispose of materials before new panels are installed. We manage the entire process and ensure full compliance with EPA and WorkSafe regulations."
       },
       {
         question: "I'm a property owner—can you help me upgrade skylights in my vacant building?",
-        answer: "Yes. Many property owners take advantage of vacancy periods to replace aged skylights before re-leasing. New skylights improve natural light, create a better first impression for prospective tenants, and reduce ongoing maintenance issues. We provide the same coordinated service for owners as we do for tenants completing make good works."
+        answer: "Yes. Many property owners take advantage of vacancy periods to replace aged skylights before re-leasing. New skylights improve natural light, create a better first impression for prospective tenants, and reduce ongoing maintenance issues. We provide the same complete service for owners as we do for tenants completing make good works."
       }
     ],
     ctaBlock: {
       title: "Skylights Part of Your Make Good?",
       subtitle: "We do makegoods all day, every day.",
-      text: "Whether you're completing end of lease obligations or upgrading your vacant property, we coordinate complete skylight replacement as part of our make good service. One quote, one project manager, complete documentation for handover. Get in touch for a free assessment."
+      text: "Whether you're completing end of lease obligations or upgrading your vacant property, we deliver complete skylight replacement as part of our make good service. One quote, one project manager, complete documentation for handover. Get in touch for a free assessment."
     },
     relatedServices: ["warehouse-make-good", "waterproofing", "cladding-glazing", "commercial-make-good"],
     category: "structural",
