@@ -22,8 +22,8 @@ const serviceCategories = [
     slugs: ['commercial-cleaning']
   },
   {
-    label: "Flooring Removal",
-    slugs: ['carpet-removal', 'vinyl-removal', 'tile-removal', 'adhesive-removal']
+    label: "Floor Restoration",
+    slugs: ['concrete-slab-restoration', 'epoxy-flooring']
   },
   {
     label: "Make Good Services",
@@ -35,7 +35,7 @@ const serviceCategories = [
   },
   {
     label: "Specialist Trades",
-    slugs: ['epoxy-flooring', 'line-marking', 'commercial-painting', 'ceiling-tile-replacement', 'patching-plastering', 'electrical-make-safe', 'led-lighting']
+    slugs: ['line-marking', 'commercial-painting', 'ceiling-tile-replacement', 'patching-plastering', 'electrical-make-safe', 'led-lighting']
   },
   {
     label: "Structural & Remediation",
