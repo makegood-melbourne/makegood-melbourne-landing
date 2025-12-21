@@ -37,26 +37,34 @@ OUR 6-STEP PROCESS (for end-of-lease make goods):
 Note: This process is for end-of-lease make good projects. For simpler works (cleaning, minor repairs) or specialist services (structural remediation, cladding), we offer a streamlined approach.
 
 Our services:
+
+CORE MAKE GOOD SERVICES:
 - OFFICE STRIP OUT: Complete fitout removal, partition demolition, floor covering removal, electrical decommissioning
 - WAREHOUSE MAKE GOOD: Industrial warehouse restoration including racking removal, floor repairs, line marking reinstatement
 - COMMERCIAL MAKE GOOD: Full commercial property restoration for offices, retail and commercial spaces
-- COMMERCIAL CLEANING: Industrial floor scrubbing, high-pressure cleaning, chemical floor treatment, post-construction cleaning
-- END OF LEASE RELOCATION: Make-good at old site plus transport of equipment, racking and machinery to new location anywhere in Australia
-- STRUCTURAL REMEDIATION: Concrete cancer treatment, floor slab repairs, retention structure work, waterproofing and membrane systems for car parks, balconies and roofs
-- CLADDING & GLAZING: ACP replacement, fire rating compliance, NCC requirements, glazing upgrades
-- PALLET RACKING REMOVAL: Safe dismantling, floor anchor removal and concrete patching
-- EPOXY FLOORING: Industrial floor coatings, crack repair, chemical-resistant and anti-slip finishes, epoxy restoration for lease compliance
-- LINE MARKING: Warehouse and car park line marking restoration for lease compliance
-- COMMERCIAL PAINTING: Colour-matched make-good painting for offices, warehouses and retail
-- CEILING TILE REPLACEMENT: Standard suspended tiles and timber acoustic panels, LED panel repositioning
-- PATCHING & PLASTERING: Wall repairs, hole filling, seamless plaster restoration
-- ELECTRICAL MAKE SAFE: Licensed electricians for safe disconnection, capping and compliance certificates
-- LED LIGHTING UPGRADE: Replace fluorescent with energy-efficient LED
+
+PALLET RACKING REMOVAL (SPECIALIST SERVICE):
+Racking bolted to your floor and walls? We dismantle, remove and dispose of all racking systems, protection bollards and wall brackets, then core drill and fill those anchor holes so you get your bond back.
+- All types of pallet racking systems including cantilever wall units
+- Dynabolt removal from floor slabs and walls
+- Removal of safety barriers, bollards and swing gates
+- Floor anchor remediation—core drilled, filled with epoxy resin and ground flush
+- Transport solutions available
+- Buy back, recycling and disposal solutions available
+
+EPOXY FLOORING (SPECIALIST SERVICE):
+Epoxy transforms worn, stained slabs into durable, professional surfaces. Whether refreshing for a new tenant, restoring epoxy for lease compliance, or upgrading your own facility—we deliver.
+- Chemical and oil resistant finishes
+- Anti-slip coatings for safety compliance
+- Cracks and damage repaired first
+- Fast-cure options to minimise downtime
+- Range of colours including safety zones
+- 20+ year lifespan with proper care
+- Epoxy restoration for end of lease compliance
 
 CONCRETE SLAB RESTORATION (SPECIALIST SERVICE):
 End of lease and your concrete floor needs to be restored? We handle the full scope—flooring removal, adhesive grinding, coating removal and slab preparation. Whether your lease requires epoxy restoration or the slab needs sealing—we can provide solutions that meet your obligations.
-
-What we deliver for concrete slab restoration:
+What we deliver:
 - Concrete Slab Restoration
 - Carpet, Tile & Vinyl Strip-Out
 - Adhesive & Coating Grinding
@@ -69,18 +77,74 @@ What we deliver for concrete slab restoration:
 
 Flooring & Tile Removal: Complete removal of all floor coverings—commercial carpet tiles, broadloom, sheet vinyl, LVT, vinyl planks and linoleum. We also strip ceramic, porcelain and quarry tiles from floors and walls, then grind away adhesive beds, carpet glue and failed epoxy coatings. Our industrial floor grinding equipment is able to ablate full surfaces to remove the deepest stains and restore even the most difficult slabs.
 
-Concrete Grinding & Preparation: Our advanced grinding equipment can fully ablate concrete surfaces—removing coatings, adhesives and contamination that traditional floor grinding devices are unable to remove. We use heavy-duty industrial grade floor grinding machines that restore even heavily damaged floors to like-new condition. Surface leveling, coating removal and slab finishing to meet the strictest lease requirements.
+Concrete Grinding & Preparation: Our advanced grinding equipment can fully ablate concrete surfaces—removing coatings, adhesives and contamination that traditional floor grinding devices are unable to remove. We use heavy-duty industrial grade floor grinding machines that restore even heavily damaged floors to like-new condition.
 
-Concrete Slab Restoration FAQs:
-- We remove all commercial floor coverings including carpet tiles, broadloom carpet, sheet vinyl, LVT, vinyl planks, linoleum, ceramic tiles, porcelain tiles, and quarry tiles. We also remove underlay, gripper rods, and all associated fixtures.
-- Our heavy-duty industrial floor grinders can fully ablate concrete surfaces—removing coatings, adhesives, and contamination that standard grinding equipment cannot touch.
-- All waste removal and disposal is included in our service. Clients won't need to arrange skip bins or separate waste contractors.
-- We specialise in end of lease floor restoration and ensure concrete slabs meet handover standards. We can provide documentation and condition reports if needed.
-- We can remove carpet glue, tile adhesive beds, vinyl adhesive, and failed epoxy coatings.
-- After grinding, the concrete slab will have a clean, uniform surface free of coatings, adhesives, and contamination.
-- We regularly work in operational facilities with dust-controlled grinding equipment and can work in stages or after hours.
-- We can grind floors with oil stains or chemical contamination using our heavy-duty grinders.
-- We can provide before and after photographic documentation for lease handovers.
+MAKE GOOD CLEANING (SPECIALIST SERVICE):
+Heavy-duty cleaning for lease end and make good handovers. We tackle the jobs regular cleaners can't—warehouse floors, post-strip-out sites and final inspections.
+- Industrial floor scrubbing with ride-on scrubbers
+- High-pressure cleaning for concrete and loading docks
+- Chemical treatment for oil stains and tyre marks
+- Waste removal and skip bin coordination
+- Post-strip-out and post-construction clean-ups
+- Window and facade cleaning
+- Graffiti removal
+Difference from regular cleaners: We use industrial-grade equipment (ride-on floor scrubbers, industrial pressure washers) to handle 500sqm+ warehouse floors and multi-level buildings.
+
+END OF LEASE RELOCATION (SPECIALIST SERVICE):
+Vacating your warehouse, factory or office? We handle the make-good AND transport your equipment to your new site. One contractor, one point of contact—no coordination headaches.
+- Complete make-good at vacating site
+- Equipment transport to new location anywhere in Australia
+- Single contractor for entire process
+- Optional install at new site
+- Minimise downtime during transition
+
+LINE MARKING:
+Lease ending and your warehouse or car park lines don't match the original layout? We restore eroded markings, remove tenant-specific delineations and return floors to the condition your landlord expects.
+- Restore worn and faded line markings
+- Remove tenant-specific delineations
+- Reinstate original warehouse layouts
+- Car park line restoration
+- Heavy-duty paints and thermoplastics
+
+CEILING TILE REPLACEMENT:
+From standard suspended grids to timber acoustic panels, we replace and restore commercial ceilings to meet lease obligations.
+- Standard tiles and acoustic panels
+- LED panel and aircon rebalancing
+- Ceiling grid repairs and reinstallation
+- Post-partition removal repairs
+- Discontinued tile matching and alternatives
+
+STRUCTURAL REMEDIATION (SPECIALIST SERVICE):
+From minor concrete repairs to large-scale retention structure projects. We work with structural engineers, councils and building managers.
+- Warehouse floor slab remediation
+- Waterproofing and membrane systems for car parks, balconies and roofs
+- Retention structure remediation
+- Concrete cancer rectification (rust treatment, repair mortars)
+- Steel framework retrofitting
+- Structural engineer and council liaison
+
+WATERPROOFING (SPECIALIST SERVICE):
+Failed waterproofing causes costly damage to buildings—from balcony leaks to roof failures. We deliver professional waterproofing solutions.
+- Balcony and terrace membrane systems
+- Flat roof and podium waterproofing
+- Wet area sealing for bathrooms and kitchens
+- Concrete crack injection and sealing
+- Box gutter and parapet waterproofing
+- Long-term manufacturer warranties
+
+CLADDING & GLAZING REMEDIATION (SPECIALIST SERVICE):
+Bring your building up to compliance with specialist cladding and glazing remediation services.
+- ACP cladding replacement (ACP now banned)
+- NCC and fire rating compliance
+- Glazing upgrades and remediation
+- Fire-rated materials tested to AS 1530 and AS 5113
+- VBA and council liaison
+
+OTHER SERVICES:
+- COMMERCIAL PAINTING: Colour-matched make-good painting for offices, warehouses and retail
+- PATCHING & PLASTERING: Wall repairs, hole filling, seamless plaster restoration
+- ELECTRICAL MAKE SAFE: Licensed electricians for safe disconnection, capping and compliance certificates
+- LED LIGHTING UPGRADE: Replace fluorescent with energy-efficient LED
 
 WHY CHOOSE US:
 - Single Point of Contact: One dedicated project manager handles everything
