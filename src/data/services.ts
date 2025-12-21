@@ -665,23 +665,39 @@ export const services: Service[] = [
     faqs: [
       {
         question: "What types of flooring can you remove?",
-        answer: "We remove all commercial floor coverings: carpet tiles and broadloom, sheet vinyl and LVT, ceramic and porcelain tiles, quarry tiles, linoleum, and failed epoxy coatings. We also grind away the adhesives left behind—carpet glue, vinyl adhesive, tile bed and epoxy residue."
+        answer: "We remove all commercial floor coverings including carpet tiles, broadloom carpet, sheet vinyl, luxury vinyl tiles (LVT), vinyl planks, linoleum, ceramic tiles, porcelain tiles, and quarry tiles. We also remove underlay, gripper rods, and all associated fixtures."
       },
       {
         question: "What makes your grinding equipment different?",
-        answer: "Our heavy-duty industrial grinders can fully ablate concrete surfaces—removing contamination that traditional equipment simply cannot. This means we can restore floors that other contractors would consider too damaged or too difficult."
-      },
-      {
-        question: "How long does concrete slab restoration take?",
-        answer: "Timing depends on the floor area and condition. A standard warehouse floor (500-1000sqm) with adhesive removal and grinding typically takes 2-4 days. We provide a timeline after our initial site inspection."
+        answer: "We use heavy-duty industrial floor grinders that can fully ablate concrete surfaces—removing coatings, adhesives, and contamination that standard grinding equipment cannot touch. Our machines are remote-operated for precision and safety, and include integrated dust extraction for cleaner worksites."
       },
       {
         question: "Do you handle waste disposal?",
-        answer: "Yes. All removed flooring, adhesives and debris are disposed of compliantly. We coordinate skip bins and leave you with a clean site—nothing left behind."
+        answer: "Yes, all waste removal and disposal is included in our service. We compliantly dispose of all flooring materials, adhesives, and debris. You won't need to arrange skip bins or separate waste contractors."
       },
       {
         question: "Will this satisfy my lease make good requirements?",
-        answer: "That's exactly what we prepare for. We restore concrete slabs to handover-ready condition that meets landlord and lease requirements. If your lease has specific floor standards, let us know and we'll ensure they're met."
+        answer: "Absolutely. We specialise in end of lease floor restoration and understand exactly what landlords and property managers require. We ensure your concrete slab meets handover standards and can provide documentation and condition reports if needed."
+      },
+      {
+        question: "Can you remove carpet glue and tile adhesive from concrete?",
+        answer: "Yes, adhesive removal is one of our core services. We grind away carpet glue, tile adhesive beds, vinyl adhesive, and failed epoxy coatings. Our industrial grinders remove even the most stubborn residue that stops standard contractors, leaving clean concrete ready for inspection or new flooring."
+      },
+      {
+        question: "What condition will the concrete be in after grinding?",
+        answer: "After grinding, your concrete slab will have a clean, uniform surface free of coatings, adhesives, and contamination. The finish can range from a smooth, polished look to a textured profile depending on your requirements. The floor will be ready for handover, new flooring installation, or epoxy coating."
+      },
+      {
+        question: "Do you work on occupied or operational warehouses?",
+        answer: "Yes, we regularly work in operational facilities. Our dust-controlled grinding equipment minimises disruption, and we can work in stages or after hours to accommodate your business operations. We'll discuss scheduling and access requirements during our site assessment."
+      },
+      {
+        question: "Can you grind floors with oil stains or chemical contamination?",
+        answer: "Yes, our heavy-duty grinders can ablate contaminated concrete surfaces, removing oil stains, chemical spills, and other contamination that has penetrated the slab. For severe contamination, we may recommend additional treatment or sealing after grinding."
+      },
+      {
+        question: "Do you provide before and after documentation?",
+        answer: "Yes, we can provide photographic documentation of the floor condition before and after our work. This is useful for lease handovers and can serve as evidence that make good requirements have been met."
       }
     ],
     ctaBlock: {
