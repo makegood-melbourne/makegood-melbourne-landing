@@ -1069,7 +1069,7 @@ export const services: Service[] = [
   {
     name: "Skylight & Roof Panel Replacement",
     slug: "skylight-roof-panel-replacement",
-    title: "Polycarbonate Roofing Melbourne | Skylight Replacement",
+    title: "Industrial Polycarbonate Roofing Solutions Melbourne",
     metaTitle: "Polycarbonate Roofing Sheets Melbourne | Skylight Replacement Specialists",
     description: "We supply and install clear polycarbonate roofing sheets designed for industrial and warehouse environments. Our installations improve natural light, resist harsh weather and are completed in accordance with Australian Standards and safety requirements. From new installations to repairs and upgrades, we deliver practical roofing solutions suited to Melbourne's demanding conditions.",
     metaDescription: "Clear polycarbonate roofing sheets Melbourne for warehouses and industrial facilities. Australian Standards compliant, weather resistant installations, repairs and upgrades.",
