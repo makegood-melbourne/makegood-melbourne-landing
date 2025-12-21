@@ -7,6 +7,7 @@ import industrialFloorScrubberImage from "@/assets/services/industrial-ride-on-f
 import highPressureWarehouseCleaningImage from "@/assets/services/high-pressure-warehouse-cleaning-melbourne.png";
 import warehouseRelocationImage from "@/assets/services/warehouse-relocation-forklift-loading-racking-melbourne.png";
 import palletRackingHeroImage from "@/assets/services/pallet-racking-dismantling-warehouse-floor-melbourne.jpeg";
+import warehouseBoltHoleRepairsImage from "@/assets/services/warehouse-bolt-hole-repairs-pallet-racking-melbourne.jpeg";
 import flatbedTruckTransportImage from "@/assets/services/flatbed-truck-transporting-pallet-racking-melbourne-skyline.png";
 import concreteCancerImage from "@/assets/services/concrete-cancer-exposed-rebar-column-spalling-melbourne.jpeg";
 import warehouseFloorSlabDamageImage from "@/assets/services/warehouse-floor-slab-deterioration-structural-damage-melbourne.png";
@@ -920,8 +921,8 @@ export const services: Service[] = [
       {
         title: "Bolt Hole Repairs",
         description: "When pallet racking, machinery or equipment is removed, you're left with hundreds of anchor holes in your floor. We core drill out damaged concrete around dynabolt holes, fill with high-strength epoxy resin, and grind flush to restore a smooth, level surface. Essential for [lease end make goods](/services/warehouse-make-good) and floor re-coating.",
-        image: palletRackingHeroImage,
-        imageAlt: "Warehouse floor with bolt holes from removed pallet racking requiring epoxy filling Melbourne"
+        image: warehouseBoltHoleRepairsImage,
+        imageAlt: "Warehouse pallet racking with bolt holes in concrete floor requiring epoxy filling Melbourne"
       },
       {
         title: "Crack Repairs",
