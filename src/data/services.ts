@@ -27,6 +27,7 @@ import emptyWarehouseImage from "@/assets/services/empty-warehouse-after-makegoo
 import manufacturingFacilityImage from "@/assets/services/manufacturing-facility-before-makegood-melbourne.jpeg";
 import concreteSlabRestorationHeroImage from "@/assets/services/concrete-slab-grinding-polished-warehouse-floor-melbourne.png";
 import concretePowerTrowelImage from "@/assets/services/concrete-power-trowel-slab-restoration-melbourne.jpeg";
+import concreteFloorJointImage from "@/assets/services/concrete-floor-joint-metal-expansion-strip-melbourne.jpeg";
 import tileFlooringRemovalImage from "@/assets/services/tile-flooring-removal-demolition-hammer-melbourne.jpeg";
 import grindSealFloorCoatingImage from "@/assets/services/grind-seal-floor-coating-application-warehouse-melbourne.jpeg";
 
@@ -935,8 +936,8 @@ export const services: Service[] = [
       {
         title: "Joint Repairs",
         description: "Control joints, construction joints and movement joints take the brunt of forklift traffic. Failed joints cause edge spalling, trip hazards and accelerated deterioration. We repair damaged joint edges with epoxy mortar, re-cut joints to proper depth, and install appropriate sealants—rigid for construction joints, flexible for movement joints.",
-        image: concretePowerTrowelImage,
-        imageAlt: "Control joint repair on industrial warehouse floor Melbourne"
+        image: concreteFloorJointImage,
+        imageAlt: "Concrete floor expansion joint with metal strip sealant in warehouse Melbourne"
       },
       {
         title: "Slab Stabilisation",
