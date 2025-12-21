@@ -617,8 +617,8 @@ export const services: Service[] = [
     heroText: "Your lease requires the concrete floor restored to original condition. We handle the full scope—flooring removal, adhesive grinding, coating removal and slab preparation. One contractor, one handover-ready result.",
     heroImage: concreteSlabRestorationHeroImage,
     heroImageAlt: "Large industrial warehouse with polished concrete floor ready for slab restoration Melbourne",
-    secondaryImage: epoxyFlooringWarehouseImage,
-    secondaryImageAlt: "Industrial concrete floor after professional slab restoration and grinding Melbourne",
+    secondaryImage: lineMarkingWornFloorImage,
+    secondaryImageAlt: "Worn industrial warehouse floor with faded line markings requiring concrete slab restoration Melbourne",
     trustBadges: [
       "Heavy-Duty Industrial Equipment",
       "Warehouse & Factory Specialists",
