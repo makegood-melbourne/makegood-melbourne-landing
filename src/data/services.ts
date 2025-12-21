@@ -22,7 +22,7 @@ import lineMarkingRestoredImage from "@/assets/services/warehouse-floor-worn-lin
 import carParkLineMarkingImage from "@/assets/services/car-park-line-marking-restoration-aerial-melbourne.jpeg";
 import emptyWarehouseImage from "@/assets/services/empty-warehouse-after-makegood-melbourne.png";
 import manufacturingFacilityImage from "@/assets/services/manufacturing-facility-before-makegood-melbourne.jpeg";
-import concreteSlabRestorationHeroImage from "@/assets/hero-warehouse-industrial.jpg";
+import concreteSlabRestorationHeroImage from "@/assets/services/concrete-slab-restoration-warehouse-melbourne.jpg";
 import concretePowerTrowelImage from "@/assets/services/concrete-power-trowel-slab-restoration-melbourne.jpeg";
 import tileFlooringRemovalImage from "@/assets/services/tile-flooring-removal-demolition-hammer-melbourne.jpeg";
 
@@ -615,7 +615,7 @@ export const services: Service[] = [
     metaTitle: "Concrete Slab Restoration Melbourne | Industrial Floor Specialists",
     description: "End of lease and your concrete floor needs to be restored? We remove carpet, vinyl, tiles, adhesives and coatings—then grind and prepare the slab to handover-ready condition. Our advanced grinding equipment can fully ablate concrete surfaces, removing contamination that traditional floor grinding devices are unable to remove.",
     metaDescription: "Concrete slab restoration Melbourne. Industrial floor grinding, adhesive removal, carpet and tile strip out. Heavy-duty equipment for warehouse and commercial floors. Free quotes.",
-    heroText: "Your lease requires the concrete floor restored to original condition. We handle the full scope—flooring removal, adhesive grinding, coating removal and slab preparation. Whether your lease requires epoxy restoration or the slab needs sealing—we can provide you with solutions that meet your obligations.",
+    heroText: "Your lease requires the concrete floor restored to original condition. We handle the full scope—flooring removal, adhesive grinding, coating removal and slab preparation. Whether your lease requires [epoxy restoration](/services/epoxy-flooring) or the slab needs sealing—we can provide you with solutions that meet your obligations.",
     heroImage: concreteSlabRestorationHeroImage,
     heroImageAlt: "Large industrial warehouse with polished concrete floor ready for slab restoration Melbourne",
     secondaryImage: lineMarkingWornFloorImage,
@@ -628,7 +628,7 @@ export const services: Service[] = [
     featuredSections: [
       {
         title: "Flooring & Tile Removal",
-        description: "Complete removal of all floor coverings—commercial carpet tiles, broadloom, sheet vinyl, LVT, vinyl planks and linoleum. We also strip ceramic, porcelain and quarry tiles from floors and walls, then grind away adhesive beds, carpet glue and failed epoxy coatings. Our industrial floor grinding equipment is able to ablate full surfaces to remove the deepest stains and restore even the most difficult slabs.",
+        description: "Complete removal of all floor coverings—commercial carpet tiles, broadloom, sheet vinyl, LVT, vinyl planks and linoleum. We also strip ceramic, porcelain and quarry tiles from floors and walls, then grind away adhesive beds, carpet glue and [failed epoxy coatings](/services/epoxy-flooring). Our industrial floor grinding equipment is able to ablate full surfaces to remove the deepest stains and restore even the most difficult slabs.",
         image: tileFlooringRemovalImage,
         imageAlt: "Demolition hammer removing floor tiles during commercial flooring strip out Melbourne"
       },
