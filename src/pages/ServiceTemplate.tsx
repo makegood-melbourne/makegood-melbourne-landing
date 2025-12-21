@@ -190,6 +190,48 @@ const ServiceTemplate = () => {
           </div>
         </section>
 
+        {/* Comparison Table - Optional */}
+        {service.comparison && (
+          <section className="py-16 bg-background">
+            <div className="container mx-auto px-4">
+              <h2 className="text-3xl md:text-4xl text-foreground mb-10">
+                {service.comparison.title || "Why Choose Specialists?"}
+              </h2>
+              <div className="overflow-x-auto">
+                <table className="w-full border-collapse">
+                  <thead>
+                    <tr>
+                      <th className="text-left p-4 bg-secondary text-foreground font-semibold border-b border-border w-1/5"></th>
+                      <th className="text-left p-4 bg-muted/50 text-muted-foreground font-semibold border-b border-border w-2/5">
+                        {service.comparison.regularTitle}
+                      </th>
+                      <th className="text-left p-4 bg-tertiary/15 text-foreground font-semibold border-b border-border w-2/5">
+                        <div className="flex items-center gap-2">
+                          <Check className="h-5 w-5 text-tertiary" />
+                          {service.comparison.specialistTitle}
+                        </div>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {service.comparison.items.map((item, index) => (
+                      <tr key={index} className={index % 2 === 0 ? 'bg-background' : 'bg-secondary/50'}>
+                        <td className="p-4 text-foreground font-medium border-b border-border">{item.feature}</td>
+                        <td className="p-4 text-muted-foreground border-b border-border bg-muted/30">
+                          {item.regular}
+                        </td>
+                        <td className="p-4 text-foreground border-b border-border bg-tertiary/10">
+                          {item.specialist}
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+        )}
+
         {/* 4. Featured Section (single - legacy support) - Optional */}
         {service.featuredSection && !service.featuredSections && (
           <section className="py-16 bg-background">
@@ -275,47 +317,6 @@ const ServiceTemplate = () => {
           </section>
         )}
 
-        {/* Comparison Table - Optional */}
-        {service.comparison && (
-          <section className="py-16 bg-background">
-            <div className="container mx-auto px-4">
-              <h2 className="text-3xl md:text-4xl text-foreground mb-10">
-                {service.comparison.title || "Why Choose Specialists?"}
-              </h2>
-              <div className="overflow-x-auto">
-                <table className="w-full border-collapse">
-                  <thead>
-                    <tr>
-                      <th className="text-left p-4 bg-secondary text-foreground font-semibold border-b border-border w-1/5"></th>
-                      <th className="text-left p-4 bg-muted/50 text-muted-foreground font-semibold border-b border-border w-2/5">
-                        {service.comparison.regularTitle}
-                      </th>
-                      <th className="text-left p-4 bg-tertiary/15 text-foreground font-semibold border-b border-border w-2/5">
-                        <div className="flex items-center gap-2">
-                          <Check className="h-5 w-5 text-tertiary" />
-                          {service.comparison.specialistTitle}
-                        </div>
-                      </th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {service.comparison.items.map((item, index) => (
-                      <tr key={index} className={index % 2 === 0 ? 'bg-background' : 'bg-secondary/50'}>
-                        <td className="p-4 text-foreground font-medium border-b border-border">{item.feature}</td>
-                        <td className="p-4 text-muted-foreground border-b border-border bg-muted/30">
-                          {item.regular}
-                        </td>
-                        <td className="p-4 text-foreground border-b border-border bg-tertiary/10">
-                          {item.specialist}
-                        </td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </section>
-        )}
 
         {/* FAQ Section - Optional */}
         {service.faqs && service.faqs.length > 0 && (
