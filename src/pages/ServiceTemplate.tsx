@@ -1,6 +1,7 @@
 import { useParams, Navigate, Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { getServiceBySlug, getPublishedServices } from "@/data/services";
+import { getServiceRedirectSlug } from "@/lib/redirects";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Breadcrumbs from "@/components/Breadcrumbs";
@@ -17,6 +18,13 @@ import {
 
 const ServiceTemplate = () => {
   const { slug } = useParams<{ slug: string }>();
+  
+  // Check for service redirects (e.g., old flooring pages -> concrete-slab-restoration)
+  const redirectSlug = slug ? getServiceRedirectSlug(slug) : null;
+  if (redirectSlug) {
+    return <Navigate to={`/services/${redirectSlug}`} replace />;
+  }
+  
   const service = slug ? getServiceBySlug(slug) : undefined;
 
   // Redirect if service not found OR not published
