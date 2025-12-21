@@ -1130,10 +1130,16 @@ export const services: Service[] = [
     },
     featuredSections: [
       {
-        title: "Ampelite Fibreglass Roofing Specialists",
-        description: "We exclusively install Ampelite fibreglass roofing products—Australia's leading manufacturer with over 50 years in the industry. Ampelite panels are lightweight yet incredibly durable, designed specifically for commercial and industrial buildings. With up to 70 profile options including Trimdek, Klip-Lok, Custom Orb and Spandek, we match your existing roof seamlessly. Premium Solasafe panels block 99.9% of harmful UV rays while maintaining excellent light transmission, creating safer and brighter workspaces.",
+        title: "Skylight & Roof Panel Replacement Scope",
+        description: "Every skylight replacement project starts with a thorough roof inspection. We assess the condition of all translucent panels, identify damage, discolouration and leak points, and document findings with photos. Our detailed scope includes panel specifications, profile matching, quantities and pricing—ready for landlord approval on make good projects. This systematic approach ensures accurate quoting and no surprises during installation.",
         image: skylightSteelStructureImage,
         imageAlt: "Industrial skylight roof panels steel structure warehouse Melbourne"
+      },
+      {
+        title: "Ampelite Fibreglass Roofing Specialists",
+        description: "We exclusively install Ampelite fibreglass roofing products—Australia's leading manufacturer with over 50 years in the industry. Ampelite panels are lightweight yet incredibly durable, designed specifically for commercial and industrial buildings. With up to 70 profile options including Trimdek, Klip-Lok, Custom Orb and Spandek, we match your existing roof seamlessly. Premium Solasafe panels block 99.9% of harmful UV rays while maintaining excellent light transmission, creating safer and brighter workspaces.",
+        image: undefined,
+        imageAlt: "Ampelite fibreglass roofing sheets installation industrial warehouse Melbourne"
       },
       {
         title: "Reduce Energy Costs & Improve Productivity",
