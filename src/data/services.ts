@@ -892,6 +892,119 @@ export const services: Service[] = [
     relatedServices: ["structural-remediation", "cladding-glazing", "concrete-floor-repair"],
     category: "structural",
     published: true
+  },
+  {
+    name: "Warehouse Floor Repairs",
+    slug: "warehouse-floor-repairs",
+    title: "Warehouse Floor Repairs Melbourne",
+    metaTitle: "Warehouse Floor Repairs Melbourne | Floor Dilapidations",
+    description: "Specialist warehouse floor repair services across Melbourne. We fix bolt holes, cracks, damaged joints, settlement voids and surface deterioration—restoring your industrial floor to full working condition. Whether you're addressing dilapidations for lease end or maintaining a working facility, our team delivers lasting repairs that meet structural and safety requirements.",
+    metaDescription: "Warehouse floor repairs Melbourne. Bolt hole filling, crack repairs, joint restoration, slab stabilization and floor leveling. Industrial floor dilapidations specialists. Free quotes.",
+    heroText: "Industrial floors take a beating—forklift traffic, heavy loads, racking anchors and years of wear. We repair damaged warehouse floors across Melbourne: bolt holes, cracks, failed joints, settlement voids and surface deterioration. Lasting repairs that restore structural integrity.",
+    heroImage: warehouseFloorSlabDamageImage,
+    heroImageAlt: "Deteriorating warehouse floor slab with cracks and damage at control joints requiring repair Melbourne",
+    secondaryImage: concreteSlabRestorationHeroImage,
+    secondaryImageAlt: "Industrial concrete floor restoration work in progress at Melbourne warehouse",
+    trustBadges: [
+      "Industrial Floor Specialists",
+      "Epoxy & Polyurethane Systems",
+      "Structural Repair Solutions"
+    ],
+    featuredSections: [
+      {
+        title: "Bolt Hole Repairs",
+        description: "When pallet racking, machinery or equipment is removed, you're left with hundreds of anchor holes in your floor. We core drill out damaged concrete around dynabolt holes, fill with high-strength epoxy resin, and grind flush to restore a smooth, level surface. Essential for [lease end make goods](/services/warehouse-make-good) and floor re-coating.",
+        image: palletRackingHeroImage,
+        imageAlt: "Warehouse floor with bolt holes from removed pallet racking requiring epoxy filling Melbourne"
+      },
+      {
+        title: "Crack Repairs",
+        description: "Floor cracks compromise structural integrity and create trip hazards. We use epoxy injection to fill and bond cracked concrete from within, restoring load-bearing capacity. For wider cracks, we rout and seal with flexible polyurethane that accommodates movement. Surface cracks are ground out and filled flush for a seamless finish.",
+        image: warehouseFloorSlabDamageImage,
+        imageAlt: "Cracked warehouse floor slab requiring epoxy injection repair Melbourne"
+      },
+      {
+        title: "Joint Repairs",
+        description: "Control joints, construction joints and movement joints take the brunt of forklift traffic. Failed joints cause edge spalling, trip hazards and accelerated deterioration. We repair damaged joint edges with epoxy mortar, re-cut joints to proper depth, and install appropriate sealants—rigid for construction joints, flexible for movement joints.",
+        image: concretePowerTrowelImage,
+        imageAlt: "Control joint repair on industrial warehouse floor Melbourne"
+      },
+      {
+        title: "Slab Stabilization",
+        description: "Settlement, voids and rocking slabs indicate problems beneath the surface. We inject polyurethane foam or cementitious grout to fill voids, stabilize settlement and re-level sunken sections. This non-invasive approach avoids costly slab replacement and restores load-bearing capacity across the affected area.",
+        image: retentionWallConstructionImage,
+        imageAlt: "Slab stabilization polyurethane injection to fill voids beneath warehouse floor Melbourne"
+      },
+      {
+        title: "Floor Grinding & Leveling",
+        description: "Uneven floors, high spots and surface deterioration affect forklift operation and safety. Our [industrial floor grinding](/services/concrete-slab-restoration) equipment levels surfaces, removes coatings and prepares floors for [epoxy systems](/services/epoxy-flooring) or grind-and-seal finishes. We restore flatness tolerances required for efficient warehouse operations.",
+        image: lineMarkingWornFloorImage,
+        imageAlt: "Floor grinding and leveling on damaged warehouse concrete Melbourne"
+      }
+    ],
+    benefits: [
+      "Bolt Hole Filling & Floor Restoration",
+      "Crack Injection & Structural Bonding",
+      "Joint Edge Repair & Re-sealing",
+      "Slab Stabilization & Void Filling",
+      "Floor Leveling & Surface Grinding",
+      "Epoxy & Polyurethane Repair Systems",
+      "Lease End Dilapidations",
+      "Minimal Downtime Solutions"
+    ],
+    comparison: {
+      title: "Professional vs Patch Repairs",
+      specialistTitle: "Make Good Melbourne",
+      regularTitle: "General Contractors",
+      items: [
+        { feature: "Bolt holes", specialist: "Core drill, epoxy fill, grind flush to original surface", regular: "Basic mortar patching that shrinks and cracks" },
+        { feature: "Crack repairs", specialist: "Epoxy injection restores structural bond, flexible sealants for movement joints", regular: "Surface filling that doesn't address subsurface damage" },
+        { feature: "Joint repairs", specialist: "Edge rebuild, proper re-cutting, appropriate sealant selection", regular: "Generic caulking that fails under traffic" },
+        { feature: "Slab issues", specialist: "Polyurethane injection to stabilize voids and settlement", regular: "Overlay patches that don't address root cause" },
+        { feature: "Equipment", specialist: "Industrial grinders, injection systems, diamond tooling", regular: "Hand tools and standard concrete products" },
+        { feature: "Outcome", specialist: "Lasting repairs that meet lease and operational requirements", regular: "Temporary fixes requiring repeat work" }
+      ]
+    },
+    faqs: [
+      {
+        question: "What causes bolt holes and how are they repaired?",
+        answer: "Bolt holes are left when racking, machinery or equipment anchored to your floor is removed. Dynabolts and chemical anchors leave holes 12-20mm in diameter. We core drill around each hole to remove damaged concrete, fill with high-strength epoxy resin, and grind flush to the surrounding surface. The result is a smooth, level floor ready for handover or re-coating."
+      },
+      {
+        question: "How do you repair cracks in warehouse floors?",
+        answer: "We use different methods depending on crack type. For structural cracks, we inject low-viscosity epoxy that flows into the crack and bonds the concrete together, restoring load-bearing capacity. For movement cracks (at joints or where slabs meet walls), we rout out the crack and fill with flexible polyurethane sealant that accommodates ongoing movement without failing."
+      },
+      {
+        question: "What's the difference between construction joints, control joints and movement joints?",
+        answer: "Construction joints are where concrete pours meet—they're not designed to move. Control joints are saw-cut grooves that encourage cracks to form in a controlled location. Movement joints accommodate expansion, contraction and structural movement. Each requires different repair approaches: rigid epoxy for construction joints, semi-rigid fillers for control joints, and flexible sealants for movement joints."
+      },
+      {
+        question: "How does slab stabilization work?",
+        answer: "When floor slabs settle, rock or have voids beneath them, we inject expanding polyurethane foam or cementitious grout through small drilled holes. The material fills voids, compacts loose soil and lifts settled sections back to level. This is far less disruptive than breaking out and replacing concrete, and the floor can return to service within hours."
+      },
+      {
+        question: "Can you repair floors while the warehouse is operational?",
+        answer: "In many cases, yes. We can section off repair areas and work progressively to maintain access to operational zones. Epoxy and polyurethane systems cure quickly—often allowing foot traffic within hours and forklift traffic within 24 hours. We'll plan the work to minimise disruption to your operations."
+      },
+      {
+        question: "Are these repairs suitable for lease end make good?",
+        answer: "Absolutely. Floor dilapidations are a common lease obligation. Our repairs restore floors to the condition required by your lease—whether that's filling all bolt holes, repairing cracks, or addressing joint damage. We provide documentation and photos for your landlord or property manager."
+      }
+    ],
+    process: [
+      { step: "Floor Assessment", description: "We inspect your floor to identify all damage: bolt holes, cracks, joint failures, settlement areas and surface deterioration." },
+      { step: "Repair Specification", description: "Based on damage type and your requirements (lease end vs operational), we specify appropriate repair methods and materials." },
+      { step: "Repair Execution", description: "Our team completes repairs using industrial equipment and professional-grade epoxy, polyurethane and cementitious systems." },
+      { step: "Handover Ready", description: "Completed repairs are ground flush and documented. Your floor is ready for inspection, coating or continued operations." }
+    ],
+    ctaBlock: {
+      title: "Let Us Repair Your Warehouse Floor",
+      subtitle: "We do makegoods all day, every day.",
+      text: "From bolt hole filling to slab stabilization, we've repaired warehouse floors across Melbourne. Get in touch today for a free, no-obligation quote."
+    },
+    relatedServices: ["concrete-slab-restoration", "epoxy-flooring", "pallet-racking-removal", "warehouse-make-good"],
+    category: "structural",
+    published: true
   }
 ];
 
