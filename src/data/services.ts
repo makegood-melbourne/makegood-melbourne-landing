@@ -20,6 +20,8 @@ import suspendedCeilingGridImage from "@/assets/services/suspended-ceiling-grid-
 import lineMarkingWornFloorImage from "@/assets/services/warehouse-floor-worn-line-markings-restoration-melbourne.jpeg";
 import lineMarkingRestoredImage from "@/assets/services/warehouse-floor-worn-line-markings-restoration-melbourne.png";
 import carParkLineMarkingImage from "@/assets/services/car-park-line-marking-restoration-aerial-melbourne.jpeg";
+import emptyWarehouseImage from "@/assets/services/empty-warehouse-after-makegood-melbourne.png";
+import manufacturingFacilityImage from "@/assets/services/manufacturing-facility-before-makegood-melbourne.jpeg";
 
 export interface FeaturedSection {
   title: string;
@@ -604,6 +606,102 @@ export const services: Service[] = [
     published: true
   },
   {
+    name: "Concrete Slab Restoration",
+    slug: "concrete-slab-restoration",
+    title: "Concrete Slab Restoration Melbourne",
+    metaTitle: "Concrete Slab Restoration Melbourne | Industrial Floor Specialists",
+    description: "End of lease and your concrete floor needs to be restored? We remove carpet, vinyl, tiles, adhesives and coatings—then grind and prepare the slab to handover-ready condition. Our advanced grinding equipment can fully ablate concrete surfaces, removing contamination that traditional floor grinding devices are unable to remove.",
+    metaDescription: "Concrete slab restoration Melbourne. Industrial floor grinding, adhesive removal, carpet and tile strip out. Heavy-duty equipment for warehouse and commercial floors. Free quotes.",
+    heroText: "Your lease requires the concrete floor restored to original condition. We handle the full scope—flooring removal, adhesive grinding, coating removal and slab preparation. One contractor, one handover-ready result.",
+    heroImage: emptyWarehouseImage,
+    heroImageAlt: "Clean restored concrete warehouse floor after slab restoration Melbourne",
+    secondaryImage: epoxyFlooringWarehouseImage,
+    secondaryImageAlt: "Industrial concrete floor after professional slab restoration and grinding Melbourne",
+    trustBadges: [
+      "Heavy-Duty Industrial Equipment",
+      "Warehouse & Factory Specialists",
+      "Complete Floor Restoration"
+    ],
+    featuredSections: [
+      {
+        title: "Concrete Grinding & Preparation",
+        description: "Our advanced grinding equipment can fully ablate concrete surfaces—removing coatings, adhesives and contamination that traditional floor grinding devices are unable to remove. We use heavy-duty industrial grade floor grinding machines that restore even heavily damaged floors to like-new condition. Surface leveling, coating removal and slab finishing to meet the strictest lease requirements.",
+        image: epoxySpreadingApplicationImage,
+        imageAlt: "Industrial concrete floor grinding and surface preparation Melbourne warehouse"
+      },
+      {
+        title: "Flooring Removal",
+        description: "Complete removal of soft floor coverings including commercial carpet tiles, broadloom, underlay and gripper rods. We also strip sheet vinyl, luxury vinyl tiles (LVT), vinyl planks and linoleum. All waste disposed of compliantly, leaving you with a clean substrate ready for grinding or handover.",
+        image: emptyWarehouseImage,
+        imageAlt: "Empty warehouse floor after carpet and vinyl flooring removal Melbourne"
+      },
+      {
+        title: "Tile & Adhesive Removal",
+        description: "Ceramic, porcelain, quarry tiles and mosaics removed from floors and walls. We grind away tile adhesive beds, carpet glue, vinyl adhesive and failed epoxy coatings. Our equipment handles the stubborn residue that stops standard contractors—leaving clean concrete ready for inspection.",
+        image: manufacturingFacilityImage,
+        imageAlt: "Concrete floor after tile and adhesive removal ready for restoration Melbourne"
+      }
+    ],
+    benefits: [
+      "Industrial-grade floor grinding equipment",
+      "Carpet, vinyl and tile removal",
+      "Adhesive and coating grinding",
+      "Surface leveling and preparation",
+      "Epoxy and paint removal",
+      "Warehouse and factory specialists",
+      "Compliant waste disposal",
+      "End of lease floor restoration"
+    ],
+    comparison: {
+      title: "Why Choose Make Good Melbourne?",
+      specialistTitle: "Make Good Melbourne",
+      regularTitle: "Standard Contractors",
+      items: [
+        { feature: "Equipment", specialist: "Heavy-duty industrial grinders that fully ablate surfaces", regular: "Standard grinding equipment with limited capability" },
+        { feature: "Scale", specialist: "Warehouse floors 500sqm+, multi-level buildings", regular: "Smaller commercial spaces" },
+        { feature: "Scope", specialist: "Full service: removal, grinding, preparation, disposal", regular: "Single trade only" },
+        { feature: "Specialty", specialist: "End of lease compliance and make good", regular: "General floor preparation" },
+        { feature: "Focus", specialist: "Guaranteed handover-ready results", regular: "Variable finish quality" }
+      ]
+    },
+    faqs: [
+      {
+        question: "What types of flooring can you remove?",
+        answer: "We remove all commercial floor coverings: carpet tiles and broadloom, sheet vinyl and LVT, ceramic and porcelain tiles, quarry tiles, linoleum, and failed epoxy coatings. We also grind away the adhesives left behind—carpet glue, vinyl adhesive, tile bed and epoxy residue."
+      },
+      {
+        question: "What makes your grinding equipment different?",
+        answer: "Our heavy-duty industrial grinders can fully ablate concrete surfaces—removing contamination that traditional equipment simply cannot. This means we can restore floors that other contractors would consider too damaged or too difficult."
+      },
+      {
+        question: "How long does concrete slab restoration take?",
+        answer: "Timing depends on the floor area and condition. A standard warehouse floor (500-1000sqm) with adhesive removal and grinding typically takes 2-4 days. We provide a timeline after our initial site inspection."
+      },
+      {
+        question: "Do you handle waste disposal?",
+        answer: "Yes. All removed flooring, adhesives and debris are disposed of compliantly. We coordinate skip bins and leave you with a clean site—nothing left behind."
+      },
+      {
+        question: "Will this satisfy my lease make good requirements?",
+        answer: "That's exactly what we prepare for. We restore concrete slabs to handover-ready condition that meets landlord and lease requirements. If your lease has specific floor standards, let us know and we'll ensure they're met."
+      }
+    ],
+    process: [
+      { step: "Site Assessment", description: "We inspect the floor condition, identify coverings and adhesives, and provide a detailed quote." },
+      { step: "Flooring Removal", description: "We strip all floor coverings—carpet, vinyl, tiles—and remove fixtures as required." },
+      { step: "Grinding & Preparation", description: "Our industrial grinders remove adhesives, coatings and contamination, restoring the slab surface." },
+      { step: "Final Inspection", description: "We ensure the floor meets lease requirements and is ready for handover or new flooring." }
+    ],
+    ctaBlock: {
+      title: "Restore Your Concrete Floor",
+      subtitle: "We do makegoods all day, every day.",
+      text: "From warehouse slabs to office floors, we've restored hundreds of concrete surfaces across Melbourne. Get in touch today for a free, no-obligation quote."
+    },
+    relatedServices: ["warehouse-make-good", "epoxy-flooring", "commercial-make-good"],
+    category: "demolition",
+    published: true
+  },
+  {
     name: "Carpet Removal",
     slug: "carpet-removal",
     title: "Commercial Carpet Removal Melbourne",
@@ -624,9 +722,9 @@ export const services: Service[] = [
       subtitle: "We do makegoods all day, every day.",
       text: "We've stripped carpet from hundreds of commercial spaces across Melbourne. Get in touch today for a free, no-obligation quote."
     },
-    relatedServices: ["office-strip-out", "vinyl-removal", "adhesive-removal"],
+    relatedServices: ["concrete-slab-restoration", "vinyl-removal", "adhesive-removal"],
     category: "demolition",
-    published: true
+    published: false
   },
   {
     name: "Vinyl Removal",
@@ -649,9 +747,9 @@ export const services: Service[] = [
       subtitle: "We do makegoods all day, every day.",
       text: "From medical centres to retail stores, we've removed vinyl flooring across Melbourne's commercial properties. Get in touch today for a free, no-obligation quote."
     },
-    relatedServices: ["carpet-removal", "adhesive-removal", "epoxy-flooring"],
+    relatedServices: ["concrete-slab-restoration", "carpet-removal", "adhesive-removal"],
     category: "demolition",
-    published: true
+    published: false
   },
   {
     name: "Tile Removal",
@@ -674,9 +772,9 @@ export const services: Service[] = [
       subtitle: "We do makegoods all day, every day.",
       text: "From restaurant kitchens to retail fitouts, we've removed tiles across Melbourne's commercial properties. Get in touch today for a free, no-obligation quote."
     },
-    relatedServices: ["vinyl-removal", "adhesive-removal", "epoxy-flooring"],
+    relatedServices: ["concrete-slab-restoration", "vinyl-removal", "adhesive-removal"],
     category: "demolition",
-    published: true
+    published: false
   },
   {
     name: "Adhesive Removal",
@@ -699,9 +797,9 @@ export const services: Service[] = [
       subtitle: "We do makegoods all day, every day.",
       text: "We've prepared hundreds of commercial floors across Melbourne, removing stubborn adhesives for smooth handovers. Get in touch today for a free, no-obligation quote."
     },
-    relatedServices: ["carpet-removal", "vinyl-removal", "tile-removal", "epoxy-flooring"],
+    relatedServices: ["concrete-slab-restoration", "carpet-removal", "vinyl-removal", "tile-removal"],
     category: "demolition",
-    published: true
+    published: false
   },
   {
     name: "Waterproofing",

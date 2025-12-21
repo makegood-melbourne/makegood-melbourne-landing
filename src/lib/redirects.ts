@@ -39,3 +39,15 @@ export const pageRedirects: Record<string, string> = {
   "/cart": "/",
   "/services": "/capabilities",
 };
+
+// Service page redirects for consolidated pages
+export const serviceRedirects: Record<string, string> = {
+  "carpet-removal": "concrete-slab-restoration",
+  "vinyl-removal": "concrete-slab-restoration",
+  "tile-removal": "concrete-slab-restoration",
+  "adhesive-removal": "concrete-slab-restoration",
+};
+
+export const getServiceRedirectSlug = (slug: string): string | null => {
+  return serviceRedirects[slug] || null;
+};
