@@ -23,6 +23,7 @@ import carParkLineMarkingImage from "@/assets/services/car-park-line-marking-res
 import emptyWarehouseImage from "@/assets/services/empty-warehouse-after-makegood-melbourne.png";
 import manufacturingFacilityImage from "@/assets/services/manufacturing-facility-before-makegood-melbourne.jpeg";
 import concreteSlabRestorationHeroImage from "@/assets/hero-warehouse-industrial.jpg";
+import concretePowerTrowelImage from "@/assets/services/concrete-power-trowel-slab-restoration-melbourne.jpeg";
 
 export interface FeaturedSection {
   title: string;
@@ -627,8 +628,8 @@ export const services: Service[] = [
       {
         title: "Concrete Grinding & Preparation",
         description: "Our advanced grinding equipment can fully ablate concrete surfaces—removing coatings, adhesives and contamination that traditional floor grinding devices are unable to remove. We use heavy-duty industrial grade floor grinding machines that restore even heavily damaged floors to like-new condition. Surface leveling, coating removal and slab finishing to meet the strictest lease requirements.",
-        image: epoxySpreadingApplicationImage,
-        imageAlt: "Industrial concrete floor grinding and surface preparation Melbourne warehouse"
+        image: concretePowerTrowelImage,
+        imageAlt: "Power trowel concrete finishing machine restoring industrial warehouse floor Melbourne"
       },
       {
         title: "Flooring Removal",
