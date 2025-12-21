@@ -26,7 +26,7 @@ import carParkLineMarkingImage from "@/assets/services/car-park-line-marking-res
 import emptyWarehouseImage from "@/assets/services/empty-warehouse-after-makegood-melbourne.png";
 import manufacturingFacilityImage from "@/assets/services/manufacturing-facility-before-makegood-melbourne.jpeg";
 import concreteSlabRestorationHeroImage from "@/assets/services/concrete-slab-grinding-polished-warehouse-floor-melbourne.png";
-import concretePowerTrowelImage from "@/assets/services/concrete-power-trowel-slab-restoration-melbourne.jpeg";
+import concreteFloorGrinderImage from "@/assets/services/concrete-floor-grinder-dust-extraction-melbourne.jpeg";
 import concreteFloorJointImage from "@/assets/services/concrete-floor-joint-metal-expansion-strip-melbourne.jpeg";
 import polyurethaneFoamInjectionImage from "@/assets/services/polyurethane-foam-injection-slab-stabilisation-melbourne.jpeg";
 import tileFlooringRemovalImage from "@/assets/services/tile-flooring-removal-demolition-hammer-melbourne.jpeg";
@@ -648,9 +648,9 @@ export const services: Service[] = [
       },
       {
         title: "Concrete Grinding & Preparation",
-        description: "Our heavy-duty floor grinders use diamond-encrusted cup wheels on spinning discs to pulverise and ablate concrete surfaces. Different grit ratios produce different finishes—from aggressive coating removal to smooth, polished results. For floors with cracks, bolt holes or joint damage, see our [warehouse floor repairs](/services/warehouse-floor-repairs) service.",
-        image: concretePowerTrowelImage,
-        imageAlt: "Power trowel concrete finishing machine restoring industrial warehouse floor Melbourne"
+        description: "Our heavy-duty floor grinders use diamond-encrusted cup wheels on spinning discs to pulverise and ablate concrete surfaces. Different grit ratios produce different finishes—from aggressive coating removal to smooth, polished results. For floors with cracks, dynabolt holes or joint damage, see our [warehouse floor repairs](/services/warehouse-floor-repairs) service.",
+        image: concreteFloorGrinderImage,
+        imageAlt: "Industrial concrete floor grinder with dust extraction preparing warehouse floor Melbourne"
       },
       {
         title: "Grind & Seal Finishes",
