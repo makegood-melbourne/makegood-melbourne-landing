@@ -132,6 +132,25 @@ Failed waterproofing causes costly damage to buildings—from balcony leaks to r
 - Box gutter and parapet waterproofing
 - Long-term manufacturer warranties
 
+Waterproofing FAQs:
+Q: How long does commercial waterproofing last?
+A: Quality membrane systems typically last 15-25 years when properly applied and maintained. We use premium membranes from manufacturers like Tremco, Sika and Wolfin with long-term warranties.
+
+Q: What causes balcony waterproofing to fail?
+A: Common causes include poor surface preparation, incorrect membrane selection, inadequate drainage falls, thermal movement cracking the membrane, and wear from foot traffic.
+
+Q: Can you waterproof over existing membranes?
+A: Sometimes. If the existing membrane is well-adhered and substrate is sound, we can apply compatible systems over the top. If there's delamination or moisture trapped beneath, we strip back to substrate first.
+
+Q: How do you find the source of a water leak?
+A: We conduct thorough inspections including flood testing, moisture mapping with meters, and visual assessment. Water can travel along building elements before appearing, so we trace the path back to the actual entry point.
+
+Q: What's the difference between liquid and sheet membranes?
+A: Liquid membranes are spray or roller-applied and cure to form a seamless coating—ideal for complex shapes. Sheet membranes (torch-on or self-adhesive) provide consistent thickness and suit large flat areas.
+
+Q: Do I need council approval for waterproofing work?
+A: Generally no—waterproofing is maintenance work. However, if replacing tiles, modifying drainage or making structural changes, permits may be required. We advise on compliance during quoting.
+
 CLADDING & GLAZING REMEDIATION (SPECIALIST SERVICE):
 Bring your building up to compliance with specialist cladding and glazing remediation services.
 - ACP cladding replacement (ACP now banned)
