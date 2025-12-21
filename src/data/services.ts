@@ -652,7 +652,7 @@ export const services: Service[] = [
         description: "Our heavy-duty floor grinders use diamond-encrusted cup wheels on spinning discs to pulverise and ablate concrete surfaces. Different grit ratios produce different finishes—from aggressive coating removal to smooth, polished results. For floors with cracks, dynabolt holes or joint damage, see our [warehouse floor repairs](/services/warehouse-floor-repairs) service.",
         image: concreteFloorGrinderImage,
         imageAlt: "Worker operating industrial concrete floor grinder with vacuum dust extraction in Melbourne warehouse",
-        imagePosition: "left"
+        imagePosition: "right"
       },
       {
         title: "Grind & Seal Finishes",
