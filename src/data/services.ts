@@ -9,6 +9,7 @@ import warehouseRelocationImage from "@/assets/services/warehouse-relocation-for
 import palletRackingHeroImage from "@/assets/services/pallet-racking-dismantling-warehouse-floor-melbourne.jpeg";
 import warehouseBoltHoleRepairsImage from "@/assets/services/warehouse-bolt-hole-repairs-pallet-racking-melbourne.jpeg";
 import warehouseFloorRepairsHeroImage from "@/assets/services/warehouse-floor-worn-surface-line-markings-hero-melbourne.png";
+import warehouseFloorRepairsScopeImage from "@/assets/services/warehouse-floor-repairs-scope-polished-concrete-melbourne.jpeg";
 import flatbedTruckTransportImage from "@/assets/services/flatbed-truck-transporting-pallet-racking-melbourne-skyline.png";
 import concreteCancerImage from "@/assets/services/concrete-cancer-exposed-rebar-column-spalling-melbourne.jpeg";
 import warehouseFloorSlabDamageImage from "@/assets/services/warehouse-floor-slab-deterioration-structural-damage-melbourne.png";
@@ -911,8 +912,8 @@ export const services: Service[] = [
     heroText: "Industrial floors take a beating—forklift traffic, heavy loads, racking anchors and years of wear. We repair damaged warehouse floors across Melbourne: bolt holes, cracks, failed joints, settlement voids and surface deterioration. Lasting repairs that restore structural integrity.",
     heroImage: warehouseFloorRepairsHeroImage,
     heroImageAlt: "Worn warehouse floor with deteriorated line markings requiring repair Melbourne",
-    secondaryImage: concreteSlabRestorationHeroImage,
-    secondaryImageAlt: "Industrial concrete floor restoration work in progress at Melbourne warehouse",
+    secondaryImage: warehouseFloorRepairsScopeImage,
+    secondaryImageAlt: "Empty warehouse with polished concrete floor and safety bollards after floor repairs Melbourne",
     trustBadges: [
       "Industrial Floor Specialists",
       "Epoxy & Polyurethane Systems",
