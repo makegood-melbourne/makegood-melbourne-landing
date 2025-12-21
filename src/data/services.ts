@@ -30,6 +30,7 @@ import concretePowerTrowelImage from "@/assets/services/concrete-power-trowel-sl
 import concreteFloorJointImage from "@/assets/services/concrete-floor-joint-metal-expansion-strip-melbourne.jpeg";
 import polyurethaneFoamInjectionImage from "@/assets/services/polyurethane-foam-injection-slab-stabilisation-melbourne.jpeg";
 import tileFlooringRemovalImage from "@/assets/services/tile-flooring-removal-demolition-hammer-melbourne.jpeg";
+import floorGrindingMachineImage from "@/assets/services/floor-grinding-machine-concrete-levelling-melbourne.jpeg";
 import grindSealFloorCoatingImage from "@/assets/services/grind-seal-floor-coating-application-warehouse-melbourne.jpeg";
 
 export interface FeaturedSection {
@@ -949,8 +950,8 @@ export const services: Service[] = [
       {
         title: "Floor Grinding & Levelling",
         description: "Uneven floors, high spots and surface deterioration affect forklift operation and safety. Our [industrial floor grinding](/services/concrete-slab-restoration) equipment levels surfaces, removes coatings and prepares floors for [epoxy systems](/services/epoxy-flooring) or grind-and-seal finishes. We restore flatness tolerances required for efficient warehouse operations.",
-        image: lineMarkingWornFloorImage,
-        imageAlt: "Floor grinding and leveling on damaged warehouse concrete Melbourne"
+        image: floorGrindingMachineImage,
+        imageAlt: "Industrial floor grinding machine on polished concrete warehouse floor Melbourne"
       }
     ],
     benefits: [
