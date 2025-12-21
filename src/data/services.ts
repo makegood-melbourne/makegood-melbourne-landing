@@ -25,6 +25,7 @@ import manufacturingFacilityImage from "@/assets/services/manufacturing-facility
 import concreteSlabRestorationHeroImage from "@/assets/services/concrete-slab-grinding-polished-warehouse-floor-melbourne.png";
 import concretePowerTrowelImage from "@/assets/services/concrete-power-trowel-slab-restoration-melbourne.jpeg";
 import tileFlooringRemovalImage from "@/assets/services/tile-flooring-removal-demolition-hammer-melbourne.jpeg";
+import grindSealFloorCoatingImage from "@/assets/services/grind-seal-floor-coating-application-warehouse-melbourne.jpeg";
 
 export interface FeaturedSection {
   title: string;
@@ -647,8 +648,8 @@ export const services: Service[] = [
       {
         title: "Grind & Seal Finishes",
         description: "For floors requiring a finished surface rather than raw concrete, we offer grind and seal services. After grinding removes old coatings and levels the surface, we apply protective sealants in matte, semi-gloss or high-gloss finishes. The sealed surface resists spills, stains, tyre marks and wear—creating a low-maintenance floor that enhances natural light and dust resistance.",
-        image: lineMarkingWornFloorImage,
-        imageAlt: "Industrial warehouse floor prepared for grind and seal finish Melbourne"
+        image: grindSealFloorCoatingImage,
+        imageAlt: "Worker applying protective floor sealant coating to ground concrete warehouse floor with spiked roller shoes Melbourne"
       }
     ],
     benefits: [
