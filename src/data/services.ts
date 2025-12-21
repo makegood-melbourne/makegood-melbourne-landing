@@ -621,28 +621,35 @@ export const services: Service[] = [
     secondaryImage: lineMarkingWornFloorImage,
     secondaryImageAlt: "Worn industrial warehouse floor with faded line markings requiring concrete slab restoration Melbourne",
     trustBadges: [
+      "Diamond-Tipped Grinding Technology",
       "Heavy-Duty Industrial Equipment",
-      "Warehouse & Factory Specialists",
-      "Complete Floor Restoration"
+      "Warehouse & Factory Specialists"
     ],
     featuredSections: [
       {
         title: "Flooring & Tile Removal",
-        description: "Complete removal of all floor coverings—commercial carpet tiles, broadloom, sheet vinyl, LVT, vinyl planks and linoleum. We also strip ceramic, porcelain and quarry tiles from floors and walls, then grind away adhesive beds, carpet glue and [failed epoxy coatings](/services/epoxy-flooring). Our industrial floor grinding equipment is able to ablate full surfaces to remove the deepest stains and restore even the most difficult slabs.",
+        description: "Complete removal of all floor coverings—commercial carpet tiles, broadloom, sheet vinyl, LVT, vinyl planks and linoleum. We also strip ceramic, porcelain and quarry tiles from floors and walls, then grind away adhesive beds, carpet glue and [failed epoxy coatings](/services/epoxy-flooring). We remove waterproofing membranes, wall glue and surface coatings that standard contractors leave behind.",
         image: tileFlooringRemovalImage,
         imageAlt: "Demolition hammer removing floor tiles during commercial flooring strip out Melbourne"
       },
       {
         title: "Concrete Grinding & Preparation",
-        description: "Our advanced grinding equipment can fully ablate concrete surfaces—removing coatings, adhesives and contamination that traditional floor grinding devices are unable to remove. We use heavy-duty industrial grade floor grinding machines that restore even heavily damaged floors to like-new condition. Surface leveling, coating removal and slab finishing to meet the strictest lease requirements.",
+        description: "Our heavy-duty floor grinders use diamond-encrusted cup wheels on spinning discs to pulverise and ablate concrete surfaces. Different grit ratios produce different finishes—from aggressive coating removal to smooth, polished results. This industrial-grade equipment removes coatings, adhesives and contamination that traditional floor grinding devices cannot touch.",
         image: concretePowerTrowelImage,
         imageAlt: "Power trowel concrete finishing machine restoring industrial warehouse floor Melbourne"
+      },
+      {
+        title: "Grind & Seal Finishes",
+        description: "For floors requiring a finished surface rather than raw concrete, we offer grind and seal services. After grinding removes old coatings and levels the surface, we apply protective sealants in matte, semi-gloss or high-gloss finishes. The sealed surface resists spills, stains, tyre marks and wear—creating a low-maintenance floor that enhances natural light and dust resistance.",
+        image: lineMarkingWornFloorImage,
+        imageAlt: "Industrial warehouse floor prepared for grind and seal finish Melbourne"
       }
     ],
     benefits: [
       "Concrete Slab Restoration",
       "Carpet, Tile & Vinyl Strip-Out",
       "Adhesive & Coating Grinding",
+      "Waterproofing Membrane Removal",
       "Heavy Industrial Slab Grind Capability",
       "Epoxy & Line Marking Removal",
       "Warehouse & Factory Specialists",
@@ -698,6 +705,10 @@ export const services: Service[] = [
       {
         question: "Do you provide before and after documentation?",
         answer: "Yes, we can provide photographic documentation of the floor condition before and after our work. This is useful for lease handovers and can serve as evidence that make good requirements have been met."
+      },
+      {
+        question: "What is grind and seal, and when is it recommended?",
+        answer: "Grind and seal is a two-phase process: first, we grind the concrete to remove old coatings, stains and surface imperfections using diamond-encrusted cup wheels. Then we apply a protective sealant in matte, semi-gloss or high-gloss finish. The sealed surface resists spills, stains, tyre marks and abrasion—ideal when you need a finished floor rather than raw concrete for handover or continued use."
       }
     ],
     ctaBlock: {
