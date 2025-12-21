@@ -75,6 +75,14 @@ const ServiceTemplate = () => {
 
   return (
     <div className="min-h-screen flex flex-col bg-background">
+      {/* Skip to Content Link for Accessibility */}
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:bg-primary focus:text-primary-foreground focus:rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
+      >
+        Skip to main content
+      </a>
+      
       <Helmet>
         <title>{service.metaTitle}</title>
         <meta name="description" content={service.metaDescription} />
@@ -100,7 +108,7 @@ const ServiceTemplate = () => {
 
       <Navigation />
 
-      <main className="flex-1 pt-20">
+      <main id="main-content" className="flex-1 pt-20">
         {/* Breadcrumbs */}
         <div className="bg-secondary">
           <div className="container mx-auto px-4">
@@ -151,6 +159,9 @@ const ServiceTemplate = () => {
                     src={service.heroImage} 
                     alt={service.heroImageAlt || `${service.name} Melbourne - professional commercial services`}
                     className="aspect-[4/3] w-full object-cover rounded-lg"
+                    width={800}
+                    height={600}
+                    loading="eager"
                   />
                 ) : (
                   <div className="aspect-[4/3] bg-muted/30 rounded-lg border-2 border-dashed border-muted-foreground/20 flex items-center justify-center">
@@ -200,6 +211,9 @@ const ServiceTemplate = () => {
                     alt={service.secondaryImageAlt || `${service.name} Melbourne - professional commercial services`}
                     className="aspect-[4/3] w-full object-cover rounded-lg"
                     style={{ objectPosition: service.slug === 'epoxy-flooring' ? '100% center' : 'center' }}
+                    width={800}
+                    height={600}
+                    loading="lazy"
                   />
                 ) : (
                   <div className="aspect-[4/3] bg-muted/30 rounded-lg border-2 border-dashed border-muted-foreground/20 flex items-center justify-center">
@@ -286,6 +300,9 @@ const ServiceTemplate = () => {
                       alt={service.featuredSection.imageAlt || `${service.name} professional services Melbourne`}
                       className="aspect-[4/3] w-full object-cover rounded-lg"
                       style={{ objectPosition: '20% center' }}
+                      width={800}
+                      height={600}
+                      loading="lazy"
                     />
                   ) : (
                     <div className="aspect-[4/3] bg-muted/30 rounded-lg border-2 border-dashed border-muted-foreground/20 flex items-center justify-center">
@@ -344,6 +361,9 @@ const ServiceTemplate = () => {
                           alt={section.imageAlt || `${service.name} professional services Melbourne`}
                           className="aspect-[4/3] w-full object-cover rounded-lg"
                           style={{ objectPosition: section.imagePosition === 'left' ? 'left center' : section.imagePosition === 'right' ? 'right center' : 'center' }}
+                          width={800}
+                          height={600}
+                          loading="lazy"
                         />
                       ) : (
                         <div className="aspect-[4/3] bg-muted/30 rounded-lg border-2 border-dashed border-muted-foreground/20 flex items-center justify-center">

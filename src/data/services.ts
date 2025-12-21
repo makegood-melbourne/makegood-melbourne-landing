@@ -948,7 +948,7 @@ export const services: Service[] = [
     title: "Warehouse Floor Repairs Melbourne",
     metaTitle: "Warehouse Floor Repairs Melbourne | Dynabolt Holes & Crack Repairs",
     description: "Specialist warehouse floor repair services across Melbourne. We fix dynabolt holes, cracks, damaged joints, settlement voids and surface deterioration—restoring your industrial floor to full working condition. Whether you're addressing dilapidations for lease end or maintaining a working facility, our team delivers lasting repairs that meet structural and safety requirements.",
-    metaDescription: "Expert warehouse floor repairs in Melbourne. Dynabolt hole filling, crack injection, joint restoration, slab stabilisation & floor levelling. Industrial dilapidations specialists. Free quote.",
+    metaDescription: "Warehouse floor repairs Melbourne. Professional dynabolt hole filling, concrete crack injection, joint restoration and slab levelling. Lease end dilapidations experts. Free quotes.",
     heroText: "Industrial floors take a beating—forklift traffic, heavy loads, racking anchors and years of wear. We repair damaged warehouse floors across Melbourne: dynabolt holes, cracks, failed joints, settlement voids and surface deterioration. Lasting repairs that restore structural integrity.",
     heroImage: warehouseFloorRepairsHeroImage,
     heroImageAlt: "Worn warehouse floor with deteriorated line markings requiring repair Melbourne",
