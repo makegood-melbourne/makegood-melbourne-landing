@@ -287,14 +287,14 @@ const ServiceTemplate = () => {
                   <thead>
                     <tr>
                       <th className="text-left p-4 bg-secondary text-foreground font-semibold border-b border-border w-1/5"></th>
-                      <th className="text-left p-4 bg-primary/10 text-foreground font-semibold border-b border-border w-2/5">
+                      <th className="text-left p-4 bg-muted/50 text-muted-foreground font-semibold border-b border-border w-2/5">
+                        {service.comparison.regularTitle}
+                      </th>
+                      <th className="text-left p-4 bg-tertiary/15 text-foreground font-semibold border-b border-border w-2/5">
                         <div className="flex items-center gap-2">
-                          <Check className="h-5 w-5 text-primary" />
+                          <Check className="h-5 w-5 text-tertiary" />
                           {service.comparison.specialistTitle}
                         </div>
-                      </th>
-                      <th className="text-left p-4 bg-secondary text-foreground font-semibold border-b border-border w-2/5">
-                        {service.comparison.regularTitle}
                       </th>
                     </tr>
                   </thead>
@@ -302,11 +302,11 @@ const ServiceTemplate = () => {
                     {service.comparison.items.map((item, index) => (
                       <tr key={index} className={index % 2 === 0 ? 'bg-background' : 'bg-secondary/50'}>
                         <td className="p-4 text-foreground font-medium border-b border-border">{item.feature}</td>
-                        <td className="p-4 text-foreground border-b border-border bg-primary/5">
-                          {item.specialist}
-                        </td>
-                        <td className="p-4 text-muted-foreground border-b border-border">
+                        <td className="p-4 text-muted-foreground border-b border-border bg-muted/30">
                           {item.regular}
+                        </td>
+                        <td className="p-4 text-foreground border-b border-border bg-tertiary/10">
+                          {item.specialist}
                         </td>
                       </tr>
                     ))}

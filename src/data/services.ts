@@ -442,7 +442,7 @@ export const services: Service[] = [
         { feature: "Stain removal", specialist: "Oil, tyre marks, chemical degreasing, industrial stains", regular: "General surface cleaning and spot treatment" },
         { feature: "Waste handling", specialist: "Skip bins, hazardous waste (asbestos), scrap metal recycling, large item disposal, furniture purchase options", regular: "Standard waste removal and bagged disposal" },
         { feature: "Timing", specialist: "Flexible scheduling including after-hours and weekends", regular: "Typically after-hours to avoid business disruption" },
-        { feature: "Focus", specialist: "One-time intensive restoration for lease handover", regular: "Ongoing maintenance and regular upkeep" }
+        { feature: "Focus", specialist: "Intensive restoration for lease handover", regular: "Ongoing maintenance and regular upkeep" }
       ]
     },
     faqs: [
