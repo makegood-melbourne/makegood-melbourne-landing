@@ -659,8 +659,7 @@ export const services: Service[] = [
       "Waterproofing Membrane Removal",
       "Heavy Industrial Slab Grind Capability",
       "Epoxy & Line Marking Removal",
-      "Warehouse & Factory Specialists",
-      "End of Lease Specialists",
+      "Warehouse End of Lease Specialists",
       "Compliant Waste Disposal",
       "Surface Leveling & Preparation"
     ],
