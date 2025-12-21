@@ -3,7 +3,7 @@ import commercialFloorSweepingImage from "@/assets/services/commercial-floor-swe
 import epoxyFlooringWarehouseImage from "@/assets/services/polished-epoxy-floor-industrial-warehouse-melbourne.jpeg";
 import epoxySpreadingApplicationImage from "@/assets/services/epoxy-floor-spreading-application-warehouse-melbourne.jpeg";
 import warehouseFloorScrubberImage from "@/assets/services/warehouse-floor-scrubber-cleaning-v4.jpg";
-import industrialFloorScrubberImage from "@/assets/services/industrial-ride-on-floor-scrubber-warehouse-melbourne.png";
+import industrialFloorScrubberImage from "@/assets/services/industrial-warehouse-floor-scrubber-cleaning-melbourne.jpeg";
 import highPressureWarehouseCleaningImage from "@/assets/services/high-pressure-warehouse-cleaning-melbourne.png";
 import warehouseRelocationImage from "@/assets/services/warehouse-relocation-forklift-loading-racking-melbourne.png";
 import palletRackingHeroImage from "@/assets/services/pallet-racking-dismantling-warehouse-floor-melbourne.jpeg";
