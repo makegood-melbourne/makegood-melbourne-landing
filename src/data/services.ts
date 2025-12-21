@@ -22,7 +22,7 @@ import lineMarkingRestoredImage from "@/assets/services/warehouse-floor-worn-lin
 import carParkLineMarkingImage from "@/assets/services/car-park-line-marking-restoration-aerial-melbourne.jpeg";
 import emptyWarehouseImage from "@/assets/services/empty-warehouse-after-makegood-melbourne.png";
 import manufacturingFacilityImage from "@/assets/services/manufacturing-facility-before-makegood-melbourne.jpeg";
-import concreteSlabRestorationHeroImage from "@/assets/services/concrete-slab-restoration-warehouse-melbourne.jpg";
+import concreteSlabRestorationHeroImage from "@/assets/services/concrete-slab-grinding-polished-warehouse-floor-melbourne.png";
 import concretePowerTrowelImage from "@/assets/services/concrete-power-trowel-slab-restoration-melbourne.jpeg";
 import tileFlooringRemovalImage from "@/assets/services/tile-flooring-removal-demolition-hammer-melbourne.jpeg";
 
@@ -623,7 +623,7 @@ export const services: Service[] = [
     metaDescription: "Concrete slab restoration Melbourne. Industrial floor grinding, adhesive removal, carpet and tile strip out. Heavy-duty equipment for warehouse and commercial floors. Free quotes.",
     heroText: "Your lease requires the concrete floor restored to original condition. We handle the full scope—flooring removal, adhesive grinding, coating removal and slab preparation. Whether your lease requires [epoxy restoration](/services/epoxy-flooring) or the slab needs sealing—we can provide you with solutions that meet your obligations.",
     heroImage: concreteSlabRestorationHeroImage,
-    heroImageAlt: "Large industrial warehouse with polished concrete floor ready for slab restoration Melbourne",
+    heroImageAlt: "Industrial warehouse concrete slab with freshly ground and sealed floor showing light reflection and grinding swirl patterns Melbourne",
     secondaryImage: lineMarkingWornFloorImage,
     secondaryImageAlt: "Worn industrial warehouse floor with faded line markings requiring concrete slab restoration Melbourne",
     trustBadges: [
