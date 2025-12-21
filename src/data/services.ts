@@ -936,13 +936,13 @@ export const services: Service[] = [
         imageAlt: "Control joint repair on industrial warehouse floor Melbourne"
       },
       {
-        title: "Slab Stabilization",
-        description: "Settlement, voids and rocking slabs indicate problems beneath the surface. We inject polyurethane foam or cementitious grout to fill voids, stabilize settlement and re-level sunken sections. This non-invasive approach avoids costly slab replacement and restores load-bearing capacity across the affected area.",
+        title: "Slab Stabilisation",
+        description: "Settlement, voids and rocking slabs indicate problems beneath the surface. We inject polyurethane foam or cementitious grout to fill voids, stabilise settlement and re-level sunken sections. This non-invasive approach avoids costly slab replacement and restores load-bearing capacity across the affected area.",
         image: retentionWallConstructionImage,
         imageAlt: "Slab stabilization polyurethane injection to fill voids beneath warehouse floor Melbourne"
       },
       {
-        title: "Floor Grinding & Leveling",
+        title: "Floor Grinding & Levelling",
         description: "Uneven floors, high spots and surface deterioration affect forklift operation and safety. Our [industrial floor grinding](/services/concrete-slab-restoration) equipment levels surfaces, removes coatings and prepares floors for [epoxy systems](/services/epoxy-flooring) or grind-and-seal finishes. We restore flatness tolerances required for efficient warehouse operations.",
         image: lineMarkingWornFloorImage,
         imageAlt: "Floor grinding and leveling on damaged warehouse concrete Melbourne"
@@ -952,8 +952,8 @@ export const services: Service[] = [
       "Bolt Hole Filling & Floor Restoration",
       "Crack Injection & Structural Bonding",
       "Joint Edge Repair & Re-sealing",
-      "Slab Stabilization & Void Filling",
-      "Floor Leveling & Surface Grinding",
+      "Slab Stabilisation & Void Filling",
+      "Floor Levelling & Surface Grinding",
       "Epoxy & Polyurethane Repair Systems",
       "Lease End Dilapidations",
       "Minimal Downtime Solutions"
@@ -966,7 +966,7 @@ export const services: Service[] = [
         { feature: "Bolt holes", specialist: "Core drill, epoxy fill, grind flush to original surface", regular: "Basic mortar patching that shrinks and cracks" },
         { feature: "Crack repairs", specialist: "Epoxy injection restores structural bond, flexible sealants for movement joints", regular: "Surface filling that doesn't address subsurface damage" },
         { feature: "Joint repairs", specialist: "Edge rebuild, proper re-cutting, appropriate sealant selection", regular: "Generic caulking that fails under traffic" },
-        { feature: "Slab issues", specialist: "Polyurethane injection to stabilize voids and settlement", regular: "Overlay patches that don't address root cause" },
+        { feature: "Slab issues", specialist: "Polyurethane injection to stabilise voids and settlement", regular: "Overlay patches that don't address root cause" },
         { feature: "Equipment", specialist: "Industrial grinders, injection systems, diamond tooling", regular: "Hand tools and standard concrete products" },
         { feature: "Outcome", specialist: "Lasting repairs that meet lease and operational requirements", regular: "Temporary fixes requiring repeat work" }
       ]
@@ -985,7 +985,7 @@ export const services: Service[] = [
         answer: "Construction joints are where concrete pours meet—they're not designed to move. Control joints are saw-cut grooves that encourage cracks to form in a controlled location. Movement joints accommodate expansion, contraction and structural movement. Each requires different repair approaches: rigid epoxy for construction joints, semi-rigid fillers for control joints, and flexible sealants for movement joints."
       },
       {
-        question: "How does slab stabilization work?",
+        question: "How does slab stabilisation work?",
         answer: "When floor slabs settle, rock or have voids beneath them, we inject expanding polyurethane foam or cementitious grout through small drilled holes. The material fills voids, compacts loose soil and lifts settled sections back to level. This is far less disruptive than breaking out and replacing concrete, and the floor can return to service within hours."
       },
       {
