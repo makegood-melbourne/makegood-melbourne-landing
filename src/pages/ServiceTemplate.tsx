@@ -353,7 +353,7 @@ const ServiceTemplate = () => {
                   {service.ctaBlock.title}
                 </h2>
                 {service.ctaBlock.subtitle && (
-                  <p className="text-xl text-primary font-medium mb-6">
+                  <p className="text-xl text-tertiary font-medium italic mb-6">
                     {service.ctaBlock.subtitle}
                   </p>
                 )}
