@@ -343,6 +343,7 @@ const ServiceTemplate = () => {
                           src={section.image} 
                           alt={section.imageAlt || `${service.name} professional services Melbourne`}
                           className="aspect-[4/3] w-full object-cover rounded-lg"
+                          style={{ objectPosition: section.imagePosition === 'left' ? 'left center' : section.imagePosition === 'right' ? 'right center' : 'center' }}
                         />
                       ) : (
                         <div className="aspect-[4/3] bg-muted/30 rounded-lg border-2 border-dashed border-muted-foreground/20 flex items-center justify-center">

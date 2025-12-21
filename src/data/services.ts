@@ -26,7 +26,7 @@ import carParkLineMarkingImage from "@/assets/services/car-park-line-marking-res
 import emptyWarehouseImage from "@/assets/services/empty-warehouse-after-makegood-melbourne.png";
 import manufacturingFacilityImage from "@/assets/services/manufacturing-facility-before-makegood-melbourne.jpeg";
 import concreteSlabRestorationHeroImage from "@/assets/services/concrete-slab-grinding-polished-warehouse-floor-melbourne.png";
-import concreteFloorGrinderImage from "@/assets/services/concrete-floor-grinder-dust-extraction-melbourne.jpeg";
+import concreteFloorGrinderImage from "@/assets/services/industrial-concrete-floor-grinding-warehouse-melbourne.jpeg";
 import concreteFloorJointImage from "@/assets/services/concrete-floor-joint-metal-expansion-strip-melbourne.jpeg";
 import polyurethaneFoamInjectionImage from "@/assets/services/polyurethane-foam-injection-slab-stabilisation-melbourne.jpeg";
 import tileFlooringRemovalImage from "@/assets/services/tile-flooring-removal-demolition-hammer-melbourne.jpeg";
@@ -38,6 +38,7 @@ export interface FeaturedSection {
   description: string;
   image?: string;
   imageAlt?: string;
+  imagePosition?: 'left' | 'center' | 'right';
 }
 
 export interface CtaBlock {
@@ -650,7 +651,8 @@ export const services: Service[] = [
         title: "Concrete Grinding & Preparation",
         description: "Our heavy-duty floor grinders use diamond-encrusted cup wheels on spinning discs to pulverise and ablate concrete surfaces. Different grit ratios produce different finishes—from aggressive coating removal to smooth, polished results. For floors with cracks, dynabolt holes or joint damage, see our [warehouse floor repairs](/services/warehouse-floor-repairs) service.",
         image: concreteFloorGrinderImage,
-        imageAlt: "Industrial concrete floor grinder with dust extraction preparing warehouse floor Melbourne"
+        imageAlt: "Worker operating industrial concrete floor grinder with vacuum dust extraction in Melbourne warehouse",
+        imagePosition: "left"
       },
       {
         title: "Grind & Seal Finishes",
