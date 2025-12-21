@@ -536,6 +536,12 @@ export const services: Service[] = [
     secondaryImageAlt: "Large-scale retention wall formwork with steel reinforcement and crane demonstrating structural construction capabilities Melbourne",
     featuredSections: [
       {
+        title: "Warehouse Floor Repairs",
+        description: "Industrial floors suffer from bolt holes, cracks, failed joints and settlement issues. Our dedicated [warehouse floor repairs](/services/warehouse-floor-repairs) service covers bolt hole filling, crack injection, joint restoration and slab stabilization—whether for lease end dilapidations or operational maintenance.",
+        image: warehouseFloorSlabDamageImage,
+        imageAlt: "Damaged warehouse floor slab with cracks and deterioration requiring structural floor repairs Melbourne"
+      },
+      {
         title: "Waterproofing & Membrane Systems",
         description: "Water ingress is one of the leading causes of structural deterioration in commercial buildings. We provide professional waterproofing and membrane solutions for car parks, balconies, rooftops and podium decks. From hotel and office balconies to warehouse roofing leaks, our waterproofing systems protect your structure from moisture damage and extend asset life.",
         image: waterproofingMembraneImage,
@@ -569,7 +575,7 @@ export const services: Service[] = [
       subtitle: "We do makegoods all day, every day.",
       text: "From concrete cancer to retention walls, we've delivered structural solutions across Melbourne's commercial properties. Get in touch today for a free, no-obligation quote."
     },
-    relatedServices: ["warehouse-make-good", "commercial-make-good", "office-strip-out"],
+    relatedServices: ["warehouse-floor-repairs", "warehouse-make-good", "commercial-make-good"],
     category: "structural",
     published: true
   },
