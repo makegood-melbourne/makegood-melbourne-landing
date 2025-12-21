@@ -24,6 +24,7 @@ import emptyWarehouseImage from "@/assets/services/empty-warehouse-after-makegoo
 import manufacturingFacilityImage from "@/assets/services/manufacturing-facility-before-makegood-melbourne.jpeg";
 import concreteSlabRestorationHeroImage from "@/assets/hero-warehouse-industrial.jpg";
 import concretePowerTrowelImage from "@/assets/services/concrete-power-trowel-slab-restoration-melbourne.jpeg";
+import tileFlooringRemovalImage from "@/assets/services/tile-flooring-removal-demolition-hammer-melbourne.jpeg";
 
 export interface FeaturedSection {
   title: string;
@@ -632,16 +633,10 @@ export const services: Service[] = [
         imageAlt: "Power trowel concrete finishing machine restoring industrial warehouse floor Melbourne"
       },
       {
-        title: "Flooring Removal",
-        description: "Complete removal of soft floor coverings including commercial carpet tiles, broadloom, underlay and gripper rods. We also strip sheet vinyl, luxury vinyl tiles (LVT), vinyl planks and linoleum. All waste disposed of compliantly, leaving you with a clean substrate ready for grinding or handover.",
-        image: emptyWarehouseImage,
-        imageAlt: "Empty warehouse floor after carpet and vinyl flooring removal Melbourne"
-      },
-      {
-        title: "Tile & Adhesive Removal",
-        description: "Ceramic, porcelain, quarry tiles and mosaics removed from floors and walls. We grind away tile adhesive beds, carpet glue, vinyl adhesive and failed epoxy coatings. Our equipment handles the stubborn residue that stops standard contractors—leaving clean concrete ready for inspection.",
-        image: manufacturingFacilityImage,
-        imageAlt: "Concrete floor after tile and adhesive removal ready for restoration Melbourne"
+        title: "Flooring & Tile Removal",
+        description: "Complete removal of all floor coverings—commercial carpet tiles, broadloom, sheet vinyl, LVT, vinyl planks and linoleum. We also strip ceramic, porcelain and quarry tiles from floors and walls, then grind away adhesive beds, carpet glue and failed epoxy coatings. Our equipment handles the stubborn residue that stops standard contractors—leaving clean concrete ready for inspection or handover.",
+        image: tileFlooringRemovalImage,
+        imageAlt: "Demolition hammer removing floor tiles during commercial flooring strip out Melbourne"
       }
     ],
     benefits: [
