@@ -615,7 +615,7 @@ export const services: Service[] = [
     metaTitle: "Concrete Slab Restoration Melbourne | Industrial Floor Specialists",
     description: "End of lease and your concrete floor needs to be restored? We remove carpet, vinyl, tiles, adhesives and coatings—then grind and prepare the slab to handover-ready condition. Our advanced grinding equipment can fully ablate concrete surfaces, removing contamination that traditional floor grinding devices are unable to remove.",
     metaDescription: "Concrete slab restoration Melbourne. Industrial floor grinding, adhesive removal, carpet and tile strip out. Heavy-duty equipment for warehouse and commercial floors. Free quotes.",
-    heroText: "Your lease requires the concrete floor restored to original condition. We handle the full scope—flooring removal, adhesive grinding, coating removal and slab preparation. One contractor, one handover-ready result.",
+    heroText: "Your lease requires the concrete floor restored to original condition. We handle the full scope—flooring removal, adhesive grinding, coating removal and slab preparation. Whether your lease requires epoxy restoration or the slab needs sealing—we can provide you with solutions that meet your obligations.",
     heroImage: concreteSlabRestorationHeroImage,
     heroImageAlt: "Large industrial warehouse with polished concrete floor ready for slab restoration Melbourne",
     secondaryImage: lineMarkingWornFloorImage,
