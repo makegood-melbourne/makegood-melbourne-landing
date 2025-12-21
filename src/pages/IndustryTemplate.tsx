@@ -37,7 +37,8 @@ const IndustryTemplate = () => {
     "description": industry.metaDescription,
     "provider": {
       "@type": "LocalBusiness",
-      "name": "Make Good Melbourne"
+      "name": "Make Good Melbourne",
+      "url": "https://makegood.melbourne"
     },
     "areaServed": {
       "@type": "City",
@@ -45,15 +46,43 @@ const IndustryTemplate = () => {
     }
   };
 
+  // FAQ Schema for rich snippets
+  const faqSchema = industry.faqs && industry.faqs.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": industry.faqs.map(faq => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer
+      }
+    }))
+  } : null;
+
   return (
     <main className="min-h-screen bg-background text-foreground">
       <Helmet>
         <title>{industry.metaTitle}</title>
         <meta name="description" content={industry.metaDescription} />
+        <meta property="og:title" content={industry.metaTitle} />
+        <meta property="og:description" content={industry.metaDescription} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={`https://makegood.melbourne/industries/${industry.slug}`} />
+        <meta property="og:image" content="https://makegood.melbourne/og-image.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={industry.metaTitle} />
+        <meta name="twitter:description" content={industry.metaDescription} />
+        <meta name="twitter:image" content="https://makegood.melbourne/og-image.jpg" />
         <link rel="canonical" href={`https://makegood.melbourne/industries/${industry.slug}`} />
         <script type="application/ld+json">
           {JSON.stringify(industrySchema)}
         </script>
+        {faqSchema && (
+          <script type="application/ld+json">
+            {JSON.stringify(faqSchema)}
+          </script>
+        )}
       </Helmet>
 
       <Navigation />
