@@ -298,39 +298,79 @@ const ServiceTemplate = () => {
           </section>
         )}
 
-        {/* 4. Featured Sections (multiple) - Optional */}
-        {service.featuredSections && service.featuredSections.map((section, index) => (
-          <section key={index} className="py-16 bg-background">
-            <div className="container mx-auto px-4">
-              <div className={`grid lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}>
-                <div className={index % 2 === 1 ? 'lg:order-2' : ''}>
-                  <h2 className="text-3xl md:text-4xl text-foreground mb-6">
-                    {section.title}
-                  </h2>
-                  <p className="text-xl text-muted-foreground leading-relaxed">
-                    {renderTextWithLinks(section.description)}
-                  </p>
-                </div>
-                <div className={index % 2 === 1 ? 'lg:order-1' : ''}>
-                  {section.image ? (
-                    <img 
-                      src={section.image} 
-                      alt={section.imageAlt || `${service.name} professional services Melbourne`}
-                      className="aspect-[4/3] w-full object-cover rounded-lg"
-                    />
-                  ) : (
-                    <div className="aspect-[4/3] bg-muted/30 rounded-lg border-2 border-dashed border-muted-foreground/20 flex items-center justify-center">
-                      <span className="text-muted-foreground/50 text-sm">Service Image</span>
-                    </div>
-                  )}
+        {/* 4. Featured Sections (multiple) with optional Process insertion */}
+        {service.featuredSections && (() => {
+          const processSection = service.process && service.process.length > 0 ? (
+            <section key="process-section" className="py-16 bg-secondary">
+              <div className="container mx-auto px-4">
+                <h2 className="text-3xl md:text-4xl text-foreground mb-10">Our Process</h2>
+                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                  {service.process.map((step, index) => (
+                    <Card key={index} className="bg-background border-border">
+                      <CardContent className="pt-6">
+                        <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+                          <span className="text-xl font-bold text-primary">{index + 1}</span>
+                        </div>
+                        <h3 className="text-xl font-semibold text-foreground mb-2">{step.step}</h3>
+                        <p className="text-muted-foreground">{step.description}</p>
+                      </CardContent>
+                    </Card>
+                  ))}
                 </div>
               </div>
-            </div>
-          </section>
-        ))}
+            </section>
+          ) : null;
 
-        {/* 5. Process Section - Optional (only show if process exists and has items) */}
-        {service.process && service.process.length > 0 && (
+          const insertAfterIndex = service.processAfterSection;
+          const elements: React.ReactNode[] = [];
+
+          service.featuredSections.forEach((section, index) => {
+            elements.push(
+              <section key={`featured-${index}`} className="py-16 bg-background">
+                <div className="container mx-auto px-4">
+                  <div className={`grid lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}>
+                    <div className={index % 2 === 1 ? 'lg:order-2' : ''}>
+                      <h2 className="text-3xl md:text-4xl text-foreground mb-6">
+                        {section.title}
+                      </h2>
+                      <p className="text-xl text-muted-foreground leading-relaxed">
+                        {renderTextWithLinks(section.description)}
+                      </p>
+                    </div>
+                    <div className={index % 2 === 1 ? 'lg:order-1' : ''}>
+                      {section.image ? (
+                        <img 
+                          src={section.image} 
+                          alt={section.imageAlt || `${service.name} professional services Melbourne`}
+                          className="aspect-[4/3] w-full object-cover rounded-lg"
+                        />
+                      ) : (
+                        <div className="aspect-[4/3] bg-muted/30 rounded-lg border-2 border-dashed border-muted-foreground/20 flex items-center justify-center">
+                          <span className="text-muted-foreground/50 text-sm">Service Image</span>
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              </section>
+            );
+
+            // Insert process section after the specified index
+            if (insertAfterIndex !== undefined && index === insertAfterIndex && processSection) {
+              elements.push(processSection);
+            }
+          });
+
+          // If no insertAfterIndex specified or process wasn't inserted, add it at the end
+          if (insertAfterIndex === undefined && processSection) {
+            elements.push(processSection);
+          }
+
+          return elements;
+        })()}
+
+        {/* 5. Process Section - Only show if no featuredSections (fallback for pages without featured sections) */}
+        {!service.featuredSections && service.process && service.process.length > 0 && (
           <section className="py-16 bg-secondary">
             <div className="container mx-auto px-4">
               <h2 className="text-3xl md:text-4xl text-foreground mb-10">Our Process</h2>
