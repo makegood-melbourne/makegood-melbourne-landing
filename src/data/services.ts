@@ -1063,6 +1063,142 @@ export const services: Service[] = [
     relatedServices: ["concrete-slab-restoration", "epoxy-flooring", "pallet-racking-removal", "warehouse-make-good"],
     category: "structural",
     published: true
+  },
+  {
+    name: "Skylight & Roof Panel Replacement",
+    slug: "skylight-roof-panel-replacement",
+    title: "Skylight & Roof Panel Replacement Melbourne",
+    metaTitle: "Skylight & Roof Panel Replacement Melbourne | Laserlite & Polycarbonate Specialists",
+    description: "Professional skylight and roof panel replacement services for Melbourne warehouses and industrial buildings. We replace damaged, discoloured or leaking laserlite, polycarbonate and fibreglass roof panels to restore natural light and weatherproofing.",
+    metaDescription: "Skylight & roof panel replacement Melbourne. Laserlite, polycarbonate & fibreglass panel specialists. End of lease compliance, leak repairs & natural light restoration. Free quotes.",
+    heroText: "Restore natural light and eliminate leaks with professional skylight and roof panel replacement for your Melbourne warehouse or industrial facility.",
+    heroImage: undefined,
+    heroImageAlt: "Warehouse skylight panel replacement Melbourne - laserlite polycarbonate roofing",
+    secondaryImage: undefined,
+    secondaryImageAlt: "Industrial roof panel installation Melbourne commercial building",
+    trustBadges: [
+      "Licensed Height Safety",
+      "All Panel Types",
+      "Leak-Free Guarantee",
+      "End of Lease Compliant"
+    ],
+    benefits: [
+      "Laserlite panel replacement",
+      "Polycarbonate skylight installation",
+      "Fibreglass panel upgrades",
+      "UV-stabilised panel options",
+      "Leak detection and repair",
+      "Flashing and seal replacement",
+      "Height safety compliant crews",
+      "Minimal operational disruption",
+      "Waste removal included",
+      "End of lease compliance"
+    ],
+    comparison: {
+      title: "Why Choose Specialist Roof Panel Contractors?",
+      specialistTitle: "MakeGOOD Specialists",
+      regularTitle: "General Roofers",
+      items: [
+        {
+          feature: "Industrial Experience",
+          specialist: "Warehouse & factory specialists",
+          regular: "Primarily residential focus"
+        },
+        {
+          feature: "Panel Knowledge",
+          specialist: "Expert in laserlite, polycarbonate, fibreglass",
+          regular: "Limited industrial panel experience"
+        },
+        {
+          feature: "Height Safety",
+          specialist: "Full height safety compliance & equipment",
+          regular: "May lack industrial certifications"
+        },
+        {
+          feature: "Lease Compliance",
+          specialist: "Understand landlord requirements",
+          regular: "No make good experience"
+        },
+        {
+          feature: "Operational Impact",
+          specialist: "Work around your business hours",
+          regular: "Standard business hours only"
+        }
+      ]
+    },
+    featuredSections: [
+      {
+        title: "Laserlite & Polycarbonate Panel Specialists",
+        description: "Laserlite and polycarbonate roof panels are the most common skylight solutions in Melbourne warehouses. Over time, these panels become brittle, discoloured, and prone to cracking—reducing natural light and creating leak points. We specialise in like-for-like replacement using UV-stabilised panels that restore light transmission and provide long-lasting weatherproofing. Our crews are experienced with all major panel profiles including Trimdek, Klip-Lok, and custom configurations.",
+        image: undefined,
+        imageAlt: "Laserlite polycarbonate roof panel replacement warehouse Melbourne"
+      },
+      {
+        title: "End of Lease Roof Panel Requirements",
+        description: "Many commercial leases require tenants to return skylights and roof panels to original condition. Cracked, yellowed or leaking panels often fail landlord inspections. We assess your roof panels against lease requirements, provide detailed scopes for landlord approval, and complete replacements to ensure full bond return. Our team understands the documentation and compliance standards expected by property managers across Melbourne.",
+        image: undefined,
+        imageAlt: "Commercial lease roof panel inspection compliance Melbourne"
+      },
+      {
+        title: "Industrial Roof Access & Safety",
+        description: "Working at height on industrial roofs requires specialised safety systems and trained personnel. Our crews hold current height safety certifications and use appropriate fall protection including harnesses, static lines, and edge protection where required. We conduct thorough risk assessments before every job and maintain full insurance coverage for industrial roof work across Melbourne.",
+        image: undefined,
+        imageAlt: "Height safety roof access industrial warehouse Melbourne"
+      }
+    ],
+    processAfterSection: 1,
+    process: [
+      {
+        step: "Roof Inspection",
+        description: "We assess all skylights and roof panels, identifying damage, discolouration, leaks and compliance issues."
+      },
+      {
+        step: "Scope & Quote",
+        description: "Detailed scope document with panel specifications, quantities and pricing for landlord approval."
+      },
+      {
+        step: "Panel Replacement",
+        description: "Height-safety compliant crews replace panels with matching or upgraded UV-stabilised alternatives."
+      },
+      {
+        step: "Handover",
+        description: "Final inspection, leak testing, and documentation for lease compliance sign-off."
+      }
+    ],
+    faqs: [
+      {
+        question: "What types of roof panels do you replace?",
+        answer: "We replace all common industrial skylight and roof panels including laserlite, polycarbonate (Suntuf, Laserlite 2000/3000), fibreglass, and corrugated plastic panels. We work with all standard profiles including Trimdek, Klip-Lok, Custom Orb, and Spandek to ensure seamless integration with your existing roof."
+      },
+      {
+        question: "How do I know if my skylights need replacing?",
+        answer: "Common signs include yellowing or discolouration reducing light transmission, visible cracks or crazing, water leaks during rain, brittleness when touched, and panels that have exceeded their 10-15 year lifespan. We provide free inspections to assess panel condition and recommend replacement where needed."
+      },
+      {
+        question: "Can you match existing roof panel profiles?",
+        answer: "Yes, we carry or source all common industrial roof profiles to ensure replacement panels integrate seamlessly with your existing roof. This includes legacy profiles that may no longer be standard—we can source compatible alternatives or custom solutions."
+      },
+      {
+        question: "Is skylight replacement required for end of lease?",
+        answer: "It depends on your lease terms and the condition of panels when you took possession. If panels have deteriorated beyond fair wear and tear, or your lease specifies original condition return, replacement is typically required. We can review your lease requirements and advise on compliance."
+      },
+      {
+        question: "How long does roof panel replacement take?",
+        answer: "Most warehouse skylight replacements are completed in 1-3 days depending on the number of panels and roof access requirements. We schedule work to minimise disruption to your operations and can work outside business hours if required."
+      },
+      {
+        question: "Do you handle asbestos roof panels?",
+        answer: "If asbestos-containing panels are identified during inspection, we engage licensed asbestos removalists to safely remove and dispose of materials before installing new panels. We coordinate the entire process and ensure full compliance with EPA regulations."
+      }
+    ],
+    ctaBlock: {
+      title: "Need Skylight or Roof Panel Replacement?",
+      subtitle: "We do makegoods all day, every day.",
+      text: "From single panel replacements to full warehouse re-roofing, we've restored skylights across Melbourne's industrial properties. Get in touch today for a free inspection and quote."
+    },
+    relatedServices: ["warehouse-make-good", "waterproofing", "cladding-glazing", "commercial-make-good"],
+    category: "structural",
+    published: true
   }
 ];
 
