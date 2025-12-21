@@ -28,6 +28,7 @@ import manufacturingFacilityImage from "@/assets/services/manufacturing-facility
 import concreteSlabRestorationHeroImage from "@/assets/services/concrete-slab-grinding-polished-warehouse-floor-melbourne.png";
 import concretePowerTrowelImage from "@/assets/services/concrete-power-trowel-slab-restoration-melbourne.jpeg";
 import concreteFloorJointImage from "@/assets/services/concrete-floor-joint-metal-expansion-strip-melbourne.jpeg";
+import polyurethaneFoamInjectionImage from "@/assets/services/polyurethane-foam-injection-slab-stabilisation-melbourne.jpeg";
 import tileFlooringRemovalImage from "@/assets/services/tile-flooring-removal-demolition-hammer-melbourne.jpeg";
 import grindSealFloorCoatingImage from "@/assets/services/grind-seal-floor-coating-application-warehouse-melbourne.jpeg";
 
@@ -942,8 +943,8 @@ export const services: Service[] = [
       {
         title: "Slab Stabilisation",
         description: "Settlement, voids and rocking slabs indicate problems beneath the surface. We inject polyurethane foam or cementitious grout to fill voids, stabilise settlement and re-level sunken sections. This non-invasive approach avoids costly slab replacement and restores load-bearing capacity across the affected area.",
-        image: retentionWallConstructionImage,
-        imageAlt: "Slab stabilization polyurethane injection to fill voids beneath warehouse floor Melbourne"
+        image: polyurethaneFoamInjectionImage,
+        imageAlt: "Polyurethane foam injection for concrete slab stabilisation Melbourne"
       },
       {
         title: "Floor Grinding & Levelling",
