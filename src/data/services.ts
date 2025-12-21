@@ -911,9 +911,9 @@ export const services: Service[] = [
     slug: "warehouse-floor-repairs",
     title: "Warehouse Floor Repairs Melbourne",
     metaTitle: "Warehouse Floor Repairs Melbourne | Floor Dilapidations",
-    description: "Specialist warehouse floor repair services across Melbourne. We fix bolt holes, cracks, damaged joints, settlement voids and surface deterioration—restoring your industrial floor to full working condition. Whether you're addressing dilapidations for lease end or maintaining a working facility, our team delivers lasting repairs that meet structural and safety requirements.",
-    metaDescription: "Warehouse floor repairs Melbourne. Bolt hole filling, crack repairs, joint restoration, slab stabilization and floor leveling. Industrial floor dilapidations specialists. Free quotes.",
-    heroText: "Industrial floors take a beating—forklift traffic, heavy loads, racking anchors and years of wear. We repair damaged warehouse floors across Melbourne: bolt holes, cracks, failed joints, settlement voids and surface deterioration. Lasting repairs that restore structural integrity.",
+    description: "Specialist warehouse floor repair services across Melbourne. We fix dynabolt holes, cracks, damaged joints, settlement voids and surface deterioration—restoring your industrial floor to full working condition. Whether you're addressing dilapidations for lease end or maintaining a working facility, our team delivers lasting repairs that meet structural and safety requirements.",
+    metaDescription: "Warehouse floor repairs Melbourne. Dynabolt hole filling, crack repairs, joint restoration, slab stabilization and floor leveling. Industrial floor dilapidations specialists. Free quotes.",
+    heroText: "Industrial floors take a beating—forklift traffic, heavy loads, racking anchors and years of wear. We repair damaged warehouse floors across Melbourne: dynabolt holes, cracks, failed joints, settlement voids and surface deterioration. Lasting repairs that restore structural integrity.",
     heroImage: warehouseFloorRepairsHeroImage,
     heroImageAlt: "Worn warehouse floor with deteriorated line markings requiring repair Melbourne",
     secondaryImage: warehouseFloorRepairsScopeImage,
@@ -925,10 +925,10 @@ export const services: Service[] = [
     ],
     featuredSections: [
       {
-        title: "Bolt Hole Repairs",
+        title: "Dynabolt Hole Repairs",
         description: "When pallet racking, machinery or equipment is removed, you're left with hundreds of anchor holes in your floor. We core drill out damaged concrete around dynabolt holes, fill with high-strength epoxy resin, and grind flush to restore a smooth, level surface. Essential for [lease end make goods](/services/warehouse-make-good) and floor re-coating.",
         image: warehouseBoltHoleRepairsImage,
-        imageAlt: "Warehouse pallet racking with bolt holes in concrete floor requiring epoxy filling Melbourne"
+        imageAlt: "Warehouse pallet racking with dynabolt holes in concrete floor requiring epoxy filling Melbourne"
       },
       {
         title: "Crack Repairs",
@@ -957,7 +957,7 @@ export const services: Service[] = [
     ],
     processAfterSection: 2, // Show process after "Joint Repairs"
     benefits: [
-      "Bolt Hole Filling & Floor Restoration",
+      "Dynabolt Hole Filling & Floor Restoration",
       "Crack Injection & Structural Bonding",
       "Joint Edge Repair & Re-sealing",
       "Slab Stabilisation & Void Filling",
@@ -971,7 +971,7 @@ export const services: Service[] = [
       specialistTitle: "Make Good Melbourne",
       regularTitle: "General Contractors",
       items: [
-        { feature: "Bolt holes", specialist: "Core drill, epoxy fill, grind flush to original surface", regular: "Basic mortar patching that shrinks and cracks" },
+        { feature: "Dynabolt holes", specialist: "Core drill, epoxy fill, grind flush to original surface", regular: "Basic mortar patching that shrinks and cracks" },
         { feature: "Crack repairs", specialist: "Epoxy injection restores structural bond, flexible sealants for movement joints", regular: "Surface filling that doesn't address subsurface damage" },
         { feature: "Joint repairs", specialist: "Edge rebuild, proper re-cutting, appropriate sealant selection", regular: "Generic caulking that fails under traffic" },
         { feature: "Slab issues", specialist: "Polyurethane injection to stabilise voids and settlement", regular: "Overlay patches that don't address root cause" },
@@ -981,8 +981,8 @@ export const services: Service[] = [
     },
     faqs: [
       {
-        question: "What causes bolt holes and how are they repaired?",
-        answer: "Bolt holes are left when racking, machinery or equipment anchored to your floor is removed. Dynabolts and chemical anchors leave holes 12-20mm in diameter. We core drill around each hole to remove damaged concrete, fill with high-strength epoxy resin, and grind flush to the surrounding surface. The result is a smooth, level floor ready for handover or re-coating."
+        question: "What causes dynabolt holes and how are they repaired?",
+        answer: "Dynabolt holes are left when racking, machinery or equipment anchored to your floor is removed. Dynabolts and chemical anchors leave holes 12-20mm in diameter. We core drill around each hole to remove damaged concrete, fill with high-strength epoxy resin, and grind flush to the surrounding surface. The result is a smooth, level floor ready for handover or re-coating."
       },
       {
         question: "How do you repair cracks in warehouse floors?",
@@ -1002,7 +1002,7 @@ export const services: Service[] = [
       },
       {
         question: "Are these repairs suitable for lease end make good?",
-        answer: "Absolutely. Floor dilapidations are a common lease obligation. Our repairs restore floors to the condition required by your lease—whether that's filling all bolt holes, repairing cracks, or addressing joint damage. We provide documentation and photos for your landlord or property manager."
+        answer: "Absolutely. Floor dilapidations are a common lease obligation. Our repairs restore floors to the condition required by your lease—whether that's filling all dynabolt holes, repairing cracks, or addressing joint damage. We provide documentation and photos for your landlord or property manager."
       }
     ],
     process: [
