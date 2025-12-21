@@ -847,6 +847,32 @@ export const services: Service[] = [
         description: "Membranes are protected with appropriate coverings and finished to integrate with surrounding surfaces."
       }
     ],
+    faqs: [
+      {
+        question: "How long does commercial waterproofing last?",
+        answer: "Quality membrane systems typically last 15-25 years when properly applied and maintained. We use premium membranes from manufacturers like Tremco, Sika and Wolfin that come with long-term warranties. Lifespan depends on membrane type, UV exposure, foot traffic and maintenance."
+      },
+      {
+        question: "What causes balcony waterproofing to fail?",
+        answer: "Common causes include poor surface preparation, incorrect membrane selection, inadequate drainage falls, thermal movement cracking the membrane, and wear from foot traffic. Age and UV degradation also contribute. We identify the failure mode before recommending solutions."
+      },
+      {
+        question: "Can you waterproof over existing membranes?",
+        answer: "Sometimes. If the existing membrane is well-adhered and the substrate is sound, we can apply compatible systems over the top. However, if there's delamination, moisture trapped beneath, or incompatible materials, we'll need to strip back to substrate first."
+      },
+      {
+        question: "How do you find the source of a water leak?",
+        answer: "We conduct thorough inspections including flood testing, moisture mapping with meters, and visual assessment of membrane condition. Water can travel along building elements before appearing, so we trace the path back to the actual entry point rather than just treating symptoms."
+      },
+      {
+        question: "What's the difference between liquid and sheet membranes?",
+        answer: "Liquid membranes are spray or roller-applied and cure to form a seamless coating—ideal for complex shapes and details. Sheet membranes (torch-on or self-adhesive) provide consistent thickness and are suited to large flat areas. We select based on application, substrate and performance requirements."
+      },
+      {
+        question: "Do I need council approval for waterproofing work?",
+        answer: "Generally no—waterproofing is maintenance work that doesn't require a building permit. However, if we're replacing tiles, modifying drainage or making structural changes as part of the remediation, permits may be required. We advise on compliance requirements during quoting."
+      }
+    ],
     ctaBlock: {
       title: "Let Us Handle Your Waterproofing",
       subtitle: "We do makegoods all day, every day.",
