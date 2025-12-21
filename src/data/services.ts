@@ -627,16 +627,16 @@ export const services: Service[] = [
     ],
     featuredSections: [
       {
-        title: "Concrete Grinding & Preparation",
-        description: "Our advanced grinding equipment can fully ablate concrete surfaces—removing coatings, adhesives and contamination that traditional floor grinding devices are unable to remove. We use heavy-duty industrial grade floor grinding machines that restore even heavily damaged floors to like-new condition. Surface leveling, coating removal and slab finishing to meet the strictest lease requirements.",
-        image: concretePowerTrowelImage,
-        imageAlt: "Power trowel concrete finishing machine restoring industrial warehouse floor Melbourne"
-      },
-      {
         title: "Flooring & Tile Removal",
         description: "Complete removal of all floor coverings—commercial carpet tiles, broadloom, sheet vinyl, LVT, vinyl planks and linoleum. We also strip ceramic, porcelain and quarry tiles from floors and walls, then grind away adhesive beds, carpet glue and failed epoxy coatings. Our equipment handles the stubborn residue that stops standard contractors—leaving clean concrete ready for inspection or handover.",
         image: tileFlooringRemovalImage,
         imageAlt: "Demolition hammer removing floor tiles during commercial flooring strip out Melbourne"
+      },
+      {
+        title: "Concrete Grinding & Preparation",
+        description: "Our advanced grinding equipment can fully ablate concrete surfaces—removing coatings, adhesives and contamination that traditional floor grinding devices are unable to remove. We use heavy-duty industrial grade floor grinding machines that restore even heavily damaged floors to like-new condition. Surface leveling, coating removal and slab finishing to meet the strictest lease requirements.",
+        image: concretePowerTrowelImage,
+        imageAlt: "Power trowel concrete finishing machine restoring industrial warehouse floor Melbourne"
       }
     ],
     benefits: [
@@ -682,12 +682,6 @@ export const services: Service[] = [
         question: "Will this satisfy my lease make good requirements?",
         answer: "That's exactly what we prepare for. We restore concrete slabs to handover-ready condition that meets landlord and lease requirements. If your lease has specific floor standards, let us know and we'll ensure they're met."
       }
-    ],
-    process: [
-      { step: "Site Assessment", description: "We inspect the floor condition, identify coverings and adhesives, and provide a detailed quote." },
-      { step: "Flooring Removal", description: "We strip all floor coverings—carpet, vinyl, tiles—and remove fixtures as required." },
-      { step: "Grinding & Preparation", description: "Our industrial grinders remove adhesives, coatings and contamination, restoring the slab surface." },
-      { step: "Final Inspection", description: "We ensure the floor meets lease requirements and is ready for handover or new flooring." }
     ],
     ctaBlock: {
       title: "Restore Your Concrete Floor",
