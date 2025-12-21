@@ -171,7 +171,7 @@ export const services: Service[] = [
     metaTitle: "Epoxy Flooring Melbourne | Industrial Specialists",
     description: "Tired concrete floors dragging down your warehouse? Epoxy transforms worn, stained slabs into durable, professional surfaces that impress clients and stand up to forklifts, chemicals and heavy traffic. New installs or restoration—we handle it.",
     metaDescription: "Industrial epoxy flooring Melbourne. Warehouse floor coatings, concrete repair and resurfacing. Chemical-resistant, anti-slip finishes. Licensed applicators. Free quotes.",
-    heroText: "Your warehouse floor takes a beating. Epoxy coating protects the concrete, hides the damage and gives you a surface that's easy to clean, safe to work on and built to last. Whether you're refreshing for a new tenant or upgrading your own facility—we deliver.",
+    heroText: "Your warehouse floor takes a beating. Epoxy coating protects the concrete, hides the damage and gives you a surface that's easy to clean, safe to work on and built to last. For floors with cracks, bolt holes or joint damage, we handle [floor repairs](/services/warehouse-floor-repairs) before coating. Whether you're refreshing for a new tenant or upgrading your own facility—we deliver.",
     heroImage: epoxySpreadingApplicationImage,
     heroImageAlt: "Worker spreading epoxy floor coating in industrial warehouse Melbourne",
     benefits: [
@@ -189,7 +189,7 @@ export const services: Service[] = [
       subtitle: "We do makegoods all day, every day.",
       text: "From small workshops to large distribution centres, we've coated floors across Melbourne's industrial properties. Get in touch today for a free, no-obligation quote."
     },
-    relatedServices: ["concrete-floor-repair", "warehouse-make-good", "line-marking"],
+    relatedServices: ["warehouse-floor-repairs", "concrete-floor-repair", "warehouse-make-good", "line-marking"],
     category: "trade",
     published: true
   },
@@ -640,7 +640,7 @@ export const services: Service[] = [
       },
       {
         title: "Concrete Grinding & Preparation",
-        description: "Our heavy-duty floor grinders use diamond-encrusted cup wheels on spinning discs to pulverise and ablate concrete surfaces. Different grit ratios produce different finishes—from aggressive coating removal to smooth, polished results. This industrial-grade equipment removes coatings, adhesives and contamination that traditional floor grinding devices cannot touch.",
+        description: "Our heavy-duty floor grinders use diamond-encrusted cup wheels on spinning discs to pulverise and ablate concrete surfaces. Different grit ratios produce different finishes—from aggressive coating removal to smooth, polished results. For floors with cracks, bolt holes or joint damage, see our [warehouse floor repairs](/services/warehouse-floor-repairs) service.",
         image: concretePowerTrowelImage,
         imageAlt: "Power trowel concrete finishing machine restoring industrial warehouse floor Melbourne"
       },
@@ -722,7 +722,7 @@ export const services: Service[] = [
       subtitle: "We do makegoods all day, every day.",
       text: "From warehouse slabs to office floors, we've restored hundreds of concrete surfaces across Melbourne. Get in touch today for a free, no-obligation quote."
     },
-    relatedServices: ["warehouse-make-good", "epoxy-flooring", "commercial-make-good"],
+    relatedServices: ["warehouse-floor-repairs", "warehouse-make-good", "epoxy-flooring", "commercial-make-good"],
     category: "demolition",
     published: true
   },
