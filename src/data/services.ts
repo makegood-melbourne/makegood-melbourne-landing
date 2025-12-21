@@ -28,7 +28,7 @@ import manufacturingFacilityImage from "@/assets/services/manufacturing-facility
 import concreteSlabRestorationHeroImage from "@/assets/services/concrete-slab-grinding-polished-warehouse-floor-melbourne.png";
 import concreteFloorGrinderImage from "@/assets/services/industrial-concrete-floor-grinding-warehouse-melbourne.jpeg";
 import concreteFloorJointImage from "@/assets/services/concrete-floor-joint-metal-expansion-strip-melbourne.jpeg";
-import skylightRoofPanelsImage from "@/assets/services/industrial-warehouse-skylight-panels-roof-structure-melbourne.jpg";
+import skylightRoofPanelsImage from "@/assets/services/industrial-warehouse-skylight-fibreglass-roof-melbourne.png";
 import polyurethaneFoamInjectionImage from "@/assets/services/polyurethane-foam-injection-slab-stabilisation-melbourne.jpeg";
 import tileFlooringRemovalImage from "@/assets/services/tile-flooring-removal-demolition-hammer-melbourne.jpeg";
 import floorGrindingMachineImage from "@/assets/services/floor-grinding-machine-concrete-levelling-melbourne.jpeg";
