@@ -448,23 +448,27 @@ export const services: Service[] = [
     faqs: [
       {
         question: "What's the difference between make good cleaning and regular commercial cleaning?",
-        answer: "Make good cleaning is a one-time, intensive clean designed to restore a property to handover condition. We use industrial equipment like ride-on floor scrubbers and high-pressure washers to remove years of built-up grime, oil stains and tyre marks—things regular maintenance cleaners aren't equipped to handle."
+        answer: "Make good cleaning is intensive restoration for lease handover—not ongoing maintenance. We use industrial-grade equipment like ride-on floor scrubbers, high-pressure washers, industrial steam cleaners and commercial window cleaning systems to tackle jobs regular cleaners can't: years of built-up grime, oil stains, tyre marks and post-strip-out restoration across 500sqm+ warehouse floors and multi-level buildings."
+      },
+      {
+        question: "What equipment do you use?",
+        answer: "We bring industrial-grade equipment that commercial cleaners don't have access to: ride-on floor scrubbers for large warehouse floors, industrial pressure washers for concrete and loading docks, commercial window cleaning systems, industrial steam cleaners for heavy-duty stain removal, and flood dryers for water damage situations. This equipment allows us to handle jobs at scale—500sqm+ warehouse floors, multi-level office strip-outs and loading docks caked in years of grime."
+      },
+      {
+        question: "What types of waste can you handle?",
+        answer: "We handle the full range: skip bin coordination, hazardous waste including asbestos removal (licensed), scrap metal recycling, and large item disposal. In some cases, we can also purchase office furniture—it's not common, but it's an option that can offset costs if you have quality items you no longer need."
       },
       {
         question: "How long does a make good clean take?",
-        answer: "It depends on the size and condition of the property. A standard warehouse floor (500-1000sqm) typically takes 1-2 days. We'll provide a timeline after our initial site inspection."
-      },
-      {
-        question: "Do you handle waste removal?",
-        answer: "Yes. We coordinate skip bins and remove all waste as part of our service. You won't be left with bags of rubbish to deal with."
+        answer: "It depends on the size and condition of the property. A standard warehouse floor (500-1000sqm) typically takes 1-2 days. Multi-level buildings or heavily soiled sites may take longer. We'll provide a timeline after our initial site inspection."
       },
       {
         question: "Can you work after hours or on weekends?",
-        answer: "Absolutely. Many of our clients need cleaning completed outside business hours to minimise disruption. We're flexible with scheduling."
+        answer: "Absolutely. We offer flexible scheduling including after-hours and weekends. Many of our clients need cleaning completed outside business hours to minimise disruption or meet tight lease deadlines."
       },
       {
         question: "Will this pass my landlord's final inspection?",
-        answer: "That's exactly what we prepare for. We understand landlord expectations and clean to handover standard—not just 'tidy'. If there are specific requirements in your lease, let us know and we'll address them."
+        answer: "That's exactly what we prepare for. Unlike maintenance cleaning, our focus is intensive restoration for lease handover. We understand landlord expectations and clean to handover standard—not just 'tidy'. If there are specific requirements in your lease, let us know and we'll address them."
       }
     ],
     ctaBlock: {
