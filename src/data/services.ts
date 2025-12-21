@@ -412,8 +412,8 @@ export const services: Service[] = [
     secondaryImageAlt: "High-pressure warehouse cleaning Melbourne - industrial cleaner pressure washing warehouse floor for lease end",
     trustBadges: [
       "Industrial-Grade Equipment",
-      "After-Hours Available",
-      "Complete Waste Removal"
+      "After-Hours Capability",
+      "Complete Waste Removal Solutions"
     ],
     featuredSection: {
       title: "Industrial Floor Cleaning",

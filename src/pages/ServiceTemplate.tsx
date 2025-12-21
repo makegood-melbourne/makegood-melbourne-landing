@@ -109,17 +109,6 @@ const ServiceTemplate = () => {
                     </a>
                   </Button>
                 </div>
-                {/* Trust Badges */}
-                {service.trustBadges && service.trustBadges.length > 0 && (
-                  <div className="flex flex-wrap gap-3 mt-6">
-                    {service.trustBadges.map((badge, index) => (
-                      <div key={index} className="flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full">
-                        <Shield className="h-4 w-4 text-primary" />
-                        <span className="text-sm font-medium text-foreground">{badge}</span>
-                      </div>
-                    ))}
-                  </div>
-                )}
               </div>
               {/* Hero Image */}
               <div className="hidden lg:block">
@@ -136,6 +125,17 @@ const ServiceTemplate = () => {
                 )}
               </div>
             </div>
+            {/* Trust Badges - Bottom of hero */}
+            {service.trustBadges && service.trustBadges.length > 0 && (
+              <div className="flex flex-wrap justify-center lg:justify-start gap-4 mt-12 pt-8 border-t border-border">
+                {service.trustBadges.map((badge, index) => (
+                  <div key={index} className="flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full">
+                    <Shield className="h-4 w-4 text-primary" />
+                    <span className="text-sm font-medium text-foreground">{badge}</span>
+                  </div>
+                ))}
+              </div>
+            )}
           </div>
         </section>
 
