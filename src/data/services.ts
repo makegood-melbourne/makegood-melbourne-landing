@@ -79,6 +79,7 @@ export interface Service {
   trustBadges?: string[];
   featuredSection?: FeaturedSection;
   featuredSections?: FeaturedSection[];
+  processAfterSection?: number; // Index of featured section after which to show process (0-based)
   benefits: string[];
   comparison?: Comparison;
   faqs?: FAQ[];
@@ -954,6 +955,7 @@ export const services: Service[] = [
         imageAlt: "Industrial floor grinding machine on polished concrete warehouse floor Melbourne"
       }
     ],
+    processAfterSection: 2, // Show process after "Joint Repairs"
     benefits: [
       "Bolt Hole Filling & Floor Restoration",
       "Crack Injection & Structural Bonding",
