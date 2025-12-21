@@ -628,7 +628,7 @@ export const services: Service[] = [
     featuredSections: [
       {
         title: "Flooring & Tile Removal",
-        description: "Complete removal of all floor coverings—commercial carpet tiles, broadloom, sheet vinyl, LVT, vinyl planks and linoleum. We also strip ceramic, porcelain and quarry tiles from floors and walls, then grind away adhesive beds, carpet glue and failed epoxy coatings. Our equipment handles the stubborn residue that stops standard contractors—leaving clean concrete ready for inspection or handover.",
+        description: "Complete removal of all floor coverings—commercial carpet tiles, broadloom, sheet vinyl, LVT, vinyl planks and linoleum. We also strip ceramic, porcelain and quarry tiles from floors and walls, then grind away adhesive beds, carpet glue and failed epoxy coatings. Our industrial floor grinding equipment is able to ablate full surfaces to remove the deepest stains and restore even the most difficult slabs.",
         image: tileFlooringRemovalImage,
         imageAlt: "Demolition hammer removing floor tiles during commercial flooring strip out Melbourne"
       },
