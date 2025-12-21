@@ -640,14 +640,15 @@ export const services: Service[] = [
       }
     ],
     benefits: [
-      "Industrial-grade floor grinding equipment",
-      "Carpet, vinyl and tile removal",
-      "Adhesive and coating grinding",
-      "Surface leveling and preparation",
-      "Epoxy and paint removal",
-      "Warehouse and factory specialists",
-      "Compliant waste disposal",
-      "End of lease floor restoration"
+      "Concrete Slab Restoration",
+      "Carpet, Tile & Vinyl Strip-Out",
+      "Adhesive & Coating Grinding",
+      "Heavy Industrial Slab Grind Capability",
+      "Epoxy & Line Marking Removal",
+      "Warehouse & Factory Specialists",
+      "End of Lease Specialists",
+      "Compliant Waste Disposal",
+      "Surface Leveling & Preparation"
     ],
     comparison: {
       title: "Why Choose Make Good Melbourne?",
