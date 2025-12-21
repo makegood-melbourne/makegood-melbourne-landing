@@ -2,6 +2,7 @@ import { useParams, Navigate, Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { getServiceBySlug, getPublishedServices } from "@/data/services";
 import { getServiceRedirectSlug } from "@/lib/redirects";
+import { renderTextWithLinks } from "@/lib/textWithLinks";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Breadcrumbs from "@/components/Breadcrumbs";
@@ -58,6 +59,20 @@ const ServiceTemplate = () => {
     }
   };
 
+  // FAQ Schema for rich snippets
+  const faqSchema = service.faqs && service.faqs.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": service.faqs.map(faq => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer
+      }
+    }))
+  } : null;
+
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <Helmet>
@@ -70,6 +85,11 @@ const ServiceTemplate = () => {
         <script type="application/ld+json">
           {JSON.stringify(structuredData)}
         </script>
+        {faqSchema && (
+          <script type="application/ld+json">
+            {JSON.stringify(faqSchema)}
+          </script>
+        )}
       </Helmet>
 
       <Navigation />
@@ -102,7 +122,7 @@ const ServiceTemplate = () => {
                   )}
                 </h1>
                 <p className="text-xl text-muted-foreground mb-8">
-                  {service.heroText}
+                  {renderTextWithLinks(service.heroText)}
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground" asChild>
@@ -185,7 +205,7 @@ const ServiceTemplate = () => {
               <div>
                 <h2 className="text-3xl md:text-4xl text-foreground mb-6">{service.name} Scope</h2>
                 <p className="text-xl text-muted-foreground leading-relaxed">
-                  {service.description}
+                  {renderTextWithLinks(service.description)}
                 </p>
                 <p className="text-xl text-muted-foreground leading-relaxed mt-4">
                   {service.slug === 'cladding-glazing' 
@@ -282,7 +302,7 @@ const ServiceTemplate = () => {
                     {section.title}
                   </h2>
                   <p className="text-xl text-muted-foreground leading-relaxed">
-                    {section.description}
+                    {renderTextWithLinks(section.description)}
                   </p>
                 </div>
                 <div className={index % 2 === 1 ? 'lg:order-1' : ''}>
