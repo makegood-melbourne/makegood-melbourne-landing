@@ -7,7 +7,7 @@ import industrialFloorScrubberImage from "@/assets/services/industrial-ride-on-f
 import highPressureWarehouseCleaningImage from "@/assets/services/high-pressure-warehouse-cleaning-melbourne.png";
 import warehouseRelocationImage from "@/assets/services/warehouse-relocation-forklift-loading-racking-melbourne.png";
 import palletRackingHeroImage from "@/assets/services/pallet-racking-dismantling-warehouse-floor-melbourne.jpeg";
-import warehouseBoltHoleRepairsImage from "@/assets/services/warehouse-bolt-hole-repairs-pallet-racking-melbourne.jpeg";
+import warehouseDynaboltHoleRepairsImage from "@/assets/services/warehouse-dynabolt-hole-repairs-pallet-racking-melbourne.jpeg";
 import warehouseFloorRepairsHeroImage from "@/assets/services/warehouse-floor-worn-surface-line-markings-hero-melbourne.png";
 import warehouseFloorRepairsScopeImage from "@/assets/services/warehouse-floor-repairs-scope-polished-concrete-melbourne.jpeg";
 import flatbedTruckTransportImage from "@/assets/services/flatbed-truck-transporting-pallet-racking-melbourne-skyline.png";
@@ -910,9 +910,9 @@ export const services: Service[] = [
     name: "Warehouse Floor Repairs",
     slug: "warehouse-floor-repairs",
     title: "Warehouse Floor Repairs Melbourne",
-    metaTitle: "Warehouse Floor Repairs Melbourne | Floor Dilapidations",
+    metaTitle: "Warehouse Floor Repairs Melbourne | Dynabolt Holes & Crack Repairs",
     description: "Specialist warehouse floor repair services across Melbourne. We fix dynabolt holes, cracks, damaged joints, settlement voids and surface deterioration—restoring your industrial floor to full working condition. Whether you're addressing dilapidations for lease end or maintaining a working facility, our team delivers lasting repairs that meet structural and safety requirements.",
-    metaDescription: "Warehouse floor repairs Melbourne. Dynabolt hole filling, crack repairs, joint restoration, slab stabilization and floor leveling. Industrial floor dilapidations specialists. Free quotes.",
+    metaDescription: "Expert warehouse floor repairs in Melbourne. Dynabolt hole filling, crack injection, joint restoration, slab stabilisation & floor levelling. Industrial dilapidations specialists. Free quote.",
     heroText: "Industrial floors take a beating—forklift traffic, heavy loads, racking anchors and years of wear. We repair damaged warehouse floors across Melbourne: dynabolt holes, cracks, failed joints, settlement voids and surface deterioration. Lasting repairs that restore structural integrity.",
     heroImage: warehouseFloorRepairsHeroImage,
     heroImageAlt: "Worn warehouse floor with deteriorated line markings requiring repair Melbourne",
@@ -927,7 +927,7 @@ export const services: Service[] = [
       {
         title: "Dynabolt Hole Repairs",
         description: "When pallet racking, machinery or equipment is removed, you're left with hundreds of anchor holes in your floor. We core drill out damaged concrete around dynabolt holes, fill with high-strength epoxy resin, and grind flush to restore a smooth, level surface. Essential for [lease end make goods](/services/warehouse-make-good) and floor re-coating.",
-        image: warehouseBoltHoleRepairsImage,
+        image: warehouseDynaboltHoleRepairsImage,
         imageAlt: "Warehouse pallet racking with dynabolt holes in concrete floor requiring epoxy filling Melbourne"
       },
       {
@@ -1003,10 +1003,18 @@ export const services: Service[] = [
       {
         question: "Are these repairs suitable for lease end make good?",
         answer: "Absolutely. Floor dilapidations are a common lease obligation. Our repairs restore floors to the condition required by your lease—whether that's filling all dynabolt holes, repairing cracks, or addressing joint damage. We provide documentation and photos for your landlord or property manager."
+      },
+      {
+        question: "How long do warehouse floor repairs take?",
+        answer: "Timing depends on scope. A standard warehouse with 200-500 dynabolt holes typically takes 2-3 days. Crack injection and joint repairs can often be completed in 1-2 days. We provide accurate timelines after inspection and can stage work to maintain partial warehouse access during repairs."
+      },
+      {
+        question: "What is the cost of warehouse floor repairs in Melbourne?",
+        answer: "Costs vary based on damage type and extent. Dynabolt hole filling is typically priced per hole, while crack and joint repairs depend on linear metres. We provide free, itemised quotes after inspecting your floor so you know exactly what to expect before work begins."
       }
     ],
     process: [
-      { step: "Floor Assessment", description: "We inspect your floor to identify all damage: bolt holes, cracks, joint failures, settlement areas and surface deterioration." },
+      { step: "Floor Assessment", description: "We inspect your floor to identify all damage: dynabolt holes, cracks, joint failures, settlement areas and surface deterioration." },
       { step: "Repair Specification", description: "Based on damage type and your requirements (lease end vs operational), we specify appropriate repair methods and materials." },
       { step: "Repair Execution", description: "Our team completes repairs using industrial equipment and professional-grade epoxy, polyurethane and cementitious systems." },
       { step: "Handover Ready", description: "Completed repairs are ground flush and documented. Your floor is ready for inspection, coating or continued operations." }
@@ -1014,7 +1022,7 @@ export const services: Service[] = [
     ctaBlock: {
       title: "Let Us Repair Your Warehouse Floor",
       subtitle: "We do makegoods all day, every day.",
-      text: "From bolt hole filling to slab stabilization, we've repaired warehouse floors across Melbourne. Get in touch today for a free, no-obligation quote."
+      text: "From dynabolt hole filling to slab stabilisation, we've repaired warehouse floors across Melbourne. Get in touch today for a free, no-obligation quote."
     },
     relatedServices: ["concrete-slab-restoration", "epoxy-flooring", "pallet-racking-removal", "warehouse-make-good"],
     category: "structural",
