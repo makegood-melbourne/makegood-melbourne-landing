@@ -8,6 +8,7 @@ import highPressureWarehouseCleaningImage from "@/assets/services/high-pressure-
 import warehouseRelocationImage from "@/assets/services/warehouse-relocation-forklift-loading-racking-melbourne.png";
 import palletRackingHeroImage from "@/assets/services/pallet-racking-dismantling-warehouse-floor-melbourne.jpeg";
 import warehouseBoltHoleRepairsImage from "@/assets/services/warehouse-bolt-hole-repairs-pallet-racking-melbourne.jpeg";
+import warehouseFloorRepairsHeroImage from "@/assets/services/warehouse-floor-worn-surface-line-markings-hero-melbourne.png";
 import flatbedTruckTransportImage from "@/assets/services/flatbed-truck-transporting-pallet-racking-melbourne-skyline.png";
 import concreteCancerImage from "@/assets/services/concrete-cancer-exposed-rebar-column-spalling-melbourne.jpeg";
 import warehouseFloorSlabDamageImage from "@/assets/services/warehouse-floor-slab-deterioration-structural-damage-melbourne.png";
@@ -908,8 +909,8 @@ export const services: Service[] = [
     description: "Specialist warehouse floor repair services across Melbourne. We fix bolt holes, cracks, damaged joints, settlement voids and surface deterioration—restoring your industrial floor to full working condition. Whether you're addressing dilapidations for lease end or maintaining a working facility, our team delivers lasting repairs that meet structural and safety requirements.",
     metaDescription: "Warehouse floor repairs Melbourne. Bolt hole filling, crack repairs, joint restoration, slab stabilization and floor leveling. Industrial floor dilapidations specialists. Free quotes.",
     heroText: "Industrial floors take a beating—forklift traffic, heavy loads, racking anchors and years of wear. We repair damaged warehouse floors across Melbourne: bolt holes, cracks, failed joints, settlement voids and surface deterioration. Lasting repairs that restore structural integrity.",
-    heroImage: warehouseFloorSlabDamageImage,
-    heroImageAlt: "Deteriorating warehouse floor slab with cracks and damage at control joints requiring repair Melbourne",
+    heroImage: warehouseFloorRepairsHeroImage,
+    heroImageAlt: "Worn warehouse floor with deteriorated line markings requiring repair Melbourne",
     secondaryImage: concreteSlabRestorationHeroImage,
     secondaryImageAlt: "Industrial concrete floor restoration work in progress at Melbourne warehouse",
     trustBadges: [
