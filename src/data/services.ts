@@ -28,6 +28,7 @@ import manufacturingFacilityImage from "@/assets/services/manufacturing-facility
 import concreteSlabRestorationHeroImage from "@/assets/services/concrete-slab-grinding-polished-warehouse-floor-melbourne.png";
 import concreteFloorGrinderImage from "@/assets/services/industrial-concrete-floor-grinding-warehouse-melbourne.jpeg";
 import concreteFloorJointImage from "@/assets/services/concrete-floor-joint-metal-expansion-strip-melbourne.jpeg";
+import skylightRoofPanelsImage from "@/assets/services/industrial-warehouse-skylight-panels-roof-structure-melbourne.jpg";
 import polyurethaneFoamInjectionImage from "@/assets/services/polyurethane-foam-injection-slab-stabilisation-melbourne.jpeg";
 import tileFlooringRemovalImage from "@/assets/services/tile-flooring-removal-demolition-hammer-melbourne.jpeg";
 import floorGrindingMachineImage from "@/assets/services/floor-grinding-machine-concrete-levelling-melbourne.jpeg";
@@ -1072,7 +1073,7 @@ export const services: Service[] = [
     description: "Professional industrial skylight and roof panel replacement for Melbourne warehouses, factories and commercial buildings. We install Australian-made Ampelite fibreglass roofing sheets with up to 25 years warranty—eliminating leaks, improving natural light and reducing energy costs.",
     metaDescription: "Industrial skylight replacement Melbourne. Ampelite fibreglass roofing specialists. Warehouse skylights, leak repairs, roof sheet replacement. Up to 25yr warranty. Free quotes.",
     heroText: "Transform your warehouse with natural light and eliminate roof leaks. We install premium Ampelite fibreglass skylights designed for Melbourne's harshest industrial conditions.",
-    heroImage: undefined,
+    heroImage: skylightRoofPanelsImage,
     heroImageAlt: "Industrial warehouse skylight replacement Melbourne - Ampelite fibreglass roofing installation",
     secondaryImage: undefined,
     secondaryImageAlt: "Commercial fibreglass skylight sheets installation Melbourne industrial building",
