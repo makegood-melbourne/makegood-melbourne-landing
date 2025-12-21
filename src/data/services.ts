@@ -1067,134 +1067,148 @@ export const services: Service[] = [
   {
     name: "Skylight & Roof Panel Replacement",
     slug: "skylight-roof-panel-replacement",
-    title: "Skylight & Roof Panel Replacement Melbourne",
-    metaTitle: "Skylight & Roof Panel Replacement Melbourne | Laserlite & Polycarbonate Specialists",
-    description: "Professional skylight and roof panel replacement services for Melbourne warehouses and industrial buildings. We replace damaged, discoloured or leaking laserlite, polycarbonate and fibreglass roof panels to restore natural light and weatherproofing.",
-    metaDescription: "Skylight & roof panel replacement Melbourne. Laserlite, polycarbonate & fibreglass panel specialists. End of lease compliance, leak repairs & natural light restoration. Free quotes.",
-    heroText: "Restore natural light and eliminate leaks with professional skylight and roof panel replacement for your Melbourne warehouse or industrial facility.",
+    title: "Industrial Skylight & Roof Panel Replacement Melbourne",
+    metaTitle: "Industrial Skylight Replacement Melbourne | Ampelite Fibreglass Roofing Specialists",
+    description: "Professional industrial skylight and roof panel replacement for Melbourne warehouses, factories and commercial buildings. We install Australian-made Ampelite fibreglass roofing sheets with up to 25 years warranty—eliminating leaks, improving natural light and reducing energy costs.",
+    metaDescription: "Industrial skylight replacement Melbourne. Ampelite fibreglass roofing specialists. Warehouse skylights, leak repairs, roof sheet replacement. Up to 25yr warranty. Free quotes.",
+    heroText: "Transform your warehouse with natural light and eliminate roof leaks. We install premium Ampelite fibreglass skylights designed for Melbourne's harshest industrial conditions.",
     heroImage: undefined,
-    heroImageAlt: "Warehouse skylight panel replacement Melbourne - laserlite polycarbonate roofing",
+    heroImageAlt: "Industrial warehouse skylight replacement Melbourne - Ampelite fibreglass roofing installation",
     secondaryImage: undefined,
-    secondaryImageAlt: "Industrial roof panel installation Melbourne commercial building",
+    secondaryImageAlt: "Commercial fibreglass skylight sheets installation Melbourne industrial building",
     trustBadges: [
-      "Licensed Height Safety",
-      "All Panel Types",
-      "Leak-Free Guarantee",
-      "End of Lease Compliant"
+      "Ampelite Certified",
+      "25 Year Warranty",
+      "Height Safety Compliant",
+      "Australian Made Materials"
     ],
     benefits: [
-      "Laserlite panel replacement",
-      "Polycarbonate skylight installation",
-      "Fibreglass panel upgrades",
-      "UV-stabilised panel options",
-      "Leak detection and repair",
-      "Flashing and seal replacement",
-      "Height safety compliant crews",
-      "Minimal operational disruption",
-      "Waste removal included",
+      "Ampelite fibreglass skylight installation",
+      "Industrial roof sheet replacement",
+      "Warehouse skylight repairs",
+      "UV-protected panels (99.9% UV blocking)",
+      "Leak detection and waterproofing",
+      "Metal roof sheet replacement",
+      "Energy-efficient natural lighting",
+      "Reduced air-conditioning costs",
+      "Height safety certified crews",
       "End of lease compliance"
     ],
     comparison: {
-      title: "Why Choose Specialist Roof Panel Contractors?",
-      specialistTitle: "MakeGOOD Specialists",
-      regularTitle: "General Roofers",
+      title: "Ampelite Fibreglass vs Old Skylight Sheets",
+      specialistTitle: "New Ampelite Panels",
+      regularTitle: "Aged/Damaged Panels",
       items: [
         {
-          feature: "Industrial Experience",
-          specialist: "Warehouse & factory specialists",
-          regular: "Primarily residential focus"
+          feature: "Light Transmission",
+          specialist: "Up to 90% natural light diffusion",
+          regular: "Yellowed, reduced light (often <40%)"
         },
         {
-          feature: "Panel Knowledge",
-          specialist: "Expert in laserlite, polycarbonate, fibreglass",
-          regular: "Limited industrial panel experience"
+          feature: "UV Protection",
+          specialist: "Solasafe blocks 99.9% harmful UV",
+          regular: "Degraded UV protection, sun damage"
         },
         {
-          feature: "Height Safety",
-          specialist: "Full height safety compliance & equipment",
-          regular: "May lack industrial certifications"
+          feature: "Heat Management",
+          specialist: "Low heat transmission, cooler workspace",
+          regular: "High heat transfer, increased cooling costs"
         },
         {
-          feature: "Lease Compliance",
-          specialist: "Understand landlord requirements",
-          regular: "No make good experience"
+          feature: "Weather Resistance",
+          specialist: "25 year manufacturer warranty",
+          regular: "Cracked, brittle, prone to leaks"
         },
         {
-          feature: "Operational Impact",
-          specialist: "Work around your business hours",
-          regular: "Standard business hours only"
+          feature: "Durability",
+          specialist: "Australian-made, industrial-grade",
+          regular: "Deteriorated, safety hazard"
         }
       ]
     },
     featuredSections: [
       {
-        title: "Laserlite & Polycarbonate Panel Specialists",
-        description: "Laserlite and polycarbonate roof panels are the most common skylight solutions in Melbourne warehouses. Over time, these panels become brittle, discoloured, and prone to cracking—reducing natural light and creating leak points. We specialise in like-for-like replacement using UV-stabilised panels that restore light transmission and provide long-lasting weatherproofing. Our crews are experienced with all major panel profiles including Trimdek, Klip-Lok, and custom configurations.",
+        title: "Ampelite Fibreglass Roofing Specialists",
+        description: "We exclusively install Ampelite fibreglass roofing products—Australia's leading manufacturer with over 50 years in the industry. Ampelite panels are lightweight yet incredibly durable, designed specifically for commercial and industrial buildings. With up to 70 profile options including Trimdek, Klip-Lok, Custom Orb and Spandek, we match your existing roof seamlessly. Premium Solasafe panels block 99.9% of harmful UV rays while maintaining excellent light transmission, creating safer and brighter workspaces.",
         image: undefined,
-        imageAlt: "Laserlite polycarbonate roof panel replacement warehouse Melbourne"
+        imageAlt: "Ampelite fibreglass roofing sheets installation industrial warehouse Melbourne"
       },
       {
-        title: "End of Lease Roof Panel Requirements",
-        description: "Many commercial leases require tenants to return skylights and roof panels to original condition. Cracked, yellowed or leaking panels often fail landlord inspections. We assess your roof panels against lease requirements, provide detailed scopes for landlord approval, and complete replacements to ensure full bond return. Our team understands the documentation and compliance standards expected by property managers across Melbourne.",
+        title: "Reduce Energy Costs & Improve Productivity",
+        description: "Old, yellowed skylights don't just look bad—they cost you money. Damaged panels reduce natural light, forcing reliance on artificial lighting and increasing electricity bills. Studies show natural light directly improves employee morale, concentration and productivity. Ampelite fibreglass panels provide diffused light with low heat transmission, reducing both lighting and air-conditioning costs. The Australian Bureau of Statistics reports workplace absenteeism costs around $2,700 per employee annually—quality skylights help create healthier, more productive environments.",
         image: undefined,
-        imageAlt: "Commercial lease roof panel inspection compliance Melbourne"
+        imageAlt: "Natural light warehouse skylight energy savings Melbourne"
       },
       {
-        title: "Industrial Roof Access & Safety",
-        description: "Working at height on industrial roofs requires specialised safety systems and trained personnel. Our crews hold current height safety certifications and use appropriate fall protection including harnesses, static lines, and edge protection where required. We conduct thorough risk assessments before every job and maintain full insurance coverage for industrial roof work across Melbourne.",
+        title: "Industrial Roof Leak Repairs",
+        description: "Leaking skylights cause damage to stock, plant and equipment, and may affect your insurance claims. Cracked, aged or incorrectly sealed skylight sheets are the most common cause of industrial roof leaks. We inspect your entire roof to identify leak sources, replace damaged panels with quality fibreglass sheets, and ensure proper flashing and sealing. Our repairs address the root cause—not just the symptoms—providing long-lasting protection for your assets.",
         image: undefined,
-        imageAlt: "Height safety roof access industrial warehouse Melbourne"
+        imageAlt: "Industrial roof leak repair skylight replacement Melbourne warehouse"
+      },
+      {
+        title: "End of Lease Skylight Compliance",
+        description: "Commercial and industrial leases often require skylights and roof panels to be returned in original condition. Cracked, discoloured or leaking panels typically fail landlord inspections, risking bond deductions. We assess your skylights against lease requirements, provide detailed scopes for property manager approval, and complete replacements with quality Australian-made materials. Full documentation including VBA Certificate of Compliance issued on completion.",
+        image: undefined,
+        imageAlt: "End of lease skylight inspection commercial property Melbourne"
       }
     ],
     processAfterSection: 1,
     process: [
       {
-        step: "Roof Inspection",
-        description: "We assess all skylights and roof panels, identifying damage, discolouration, leaks and compliance issues."
+        step: "Free Roof Inspection",
+        description: "We assess all skylights and roof panels, documenting damage, discolouration, leaks and identifying the right Ampelite product for your facility."
       },
       {
-        step: "Scope & Quote",
-        description: "Detailed scope document with panel specifications, quantities and pricing for landlord approval."
+        step: "Quote & Specification",
+        description: "Detailed scope with panel specifications, profile matching, quantities and pricing. We handle landlord approvals for make good projects."
       },
       {
-        step: "Panel Replacement",
-        description: "Height-safety compliant crews replace panels with matching or upgraded UV-stabilised alternatives."
+        step: "Professional Installation",
+        description: "Height-safety certified crews remove old panels and install new Ampelite fibreglass sheets with proper flashing and sealing."
       },
       {
-        step: "Handover",
-        description: "Final inspection, leak testing, and documentation for lease compliance sign-off."
+        step: "Handover & Warranty",
+        description: "Final inspection, leak testing, 10 year workmanship warranty, and VBA Certificate of Compliance for your records."
       }
     ],
     faqs: [
       {
-        question: "What types of roof panels do you replace?",
-        answer: "We replace all common industrial skylight and roof panels including laserlite, polycarbonate (Suntuf, Laserlite 2000/3000), fibreglass, and corrugated plastic panels. We work with all standard profiles including Trimdek, Klip-Lok, Custom Orb, and Spandek to ensure seamless integration with your existing roof."
+        question: "What is Ampelite and why do you use it?",
+        answer: "Ampelite is one of Australia's leading manufacturers of fibreglass roofing sheets, with over 50 years in the industry. Their products are 100% Australian-made, compliant with Australian Standards, and come with up to 25 years manufacturer warranty. We use Ampelite exclusively because of their proven durability, energy efficiency, and the wide range of profiles available to match any existing industrial roof."
       },
       {
         question: "How do I know if my skylights need replacing?",
-        answer: "Common signs include yellowing or discolouration reducing light transmission, visible cracks or crazing, water leaks during rain, brittleness when touched, and panels that have exceeded their 10-15 year lifespan. We provide free inspections to assess panel condition and recommend replacement where needed."
+        answer: "Common signs include yellowing or discolouration (reducing light transmission below 50%), visible cracks or crazing, water leaks during rain, brittleness when touched, and panels exceeding their 15-20 year lifespan. Damaged skylights also become safety hazards. We provide free inspections to assess condition and recommend the appropriate solution."
       },
       {
-        question: "Can you match existing roof panel profiles?",
-        answer: "Yes, we carry or source all common industrial roof profiles to ensure replacement panels integrate seamlessly with your existing roof. This includes legacy profiles that may no longer be standard—we can source compatible alternatives or custom solutions."
+        question: "What's the difference between fibreglass and polycarbonate skylights?",
+        answer: "Fibreglass (like Ampelite) offers superior durability, better UV resistance, lower heat transmission, and longer warranties compared to polycarbonate. While polycarbonate is cheaper initially, fibreglass panels maintain light transmission longer, resist yellowing, and typically last 20-25 years versus 10-15 for polycarbonate in industrial applications."
+      },
+      {
+        question: "How much can new skylights reduce energy costs?",
+        answer: "Quality skylights reduce both lighting and cooling costs. By maximising diffused natural light, you reduce artificial lighting requirements during daylight hours. Ampelite's heat-reflective properties also reduce transmitted temperatures, improving air-conditioning efficiency. Depending on your facility, savings of 15-30% on lighting costs are typical."
       },
       {
         question: "Is skylight replacement required for end of lease?",
-        answer: "It depends on your lease terms and the condition of panels when you took possession. If panels have deteriorated beyond fair wear and tear, or your lease specifies original condition return, replacement is typically required. We can review your lease requirements and advise on compliance."
+        answer: "It depends on your lease terms and the condition when you took possession. If skylights have deteriorated beyond fair wear and tear, or your lease specifies original condition return, replacement is typically required. We review lease requirements, provide documentation for landlord approval, and issue VBA Certificates of Compliance on completion."
       },
       {
-        question: "How long does roof panel replacement take?",
-        answer: "Most warehouse skylight replacements are completed in 1-3 days depending on the number of panels and roof access requirements. We schedule work to minimise disruption to your operations and can work outside business hours if required."
+        question: "How long does industrial skylight replacement take?",
+        answer: "Most warehouse skylight replacements are completed in 1-3 days depending on scope and access requirements. Larger projects may take longer. We schedule work to minimise operational disruption and can work outside business hours for 24-hour facilities. We coordinate with your operations team throughout."
       },
       {
-        question: "Do you handle asbestos roof panels?",
-        answer: "If asbestos-containing panels are identified during inspection, we engage licensed asbestos removalists to safely remove and dispose of materials before installing new panels. We coordinate the entire process and ensure full compliance with EPA regulations."
+        question: "Do you replace metal roof sheets as well as skylights?",
+        answer: "Yes, we handle complete industrial roof replacements including metal roof sheeting (Colorbond, Zincalume), as well as targeted repairs for rust, corrosion, storm damage and leaks. We can replace individual damaged sheets or undertake full roof re-sheeting projects."
+      },
+      {
+        question: "What about asbestos roof panels?",
+        answer: "If asbestos-containing materials are identified during inspection, we engage licensed asbestos removalists to safely remove and dispose of materials before installing new panels. We coordinate the entire process and ensure full compliance with EPA and WorkSafe regulations."
       }
     ],
     ctaBlock: {
-      title: "Need Skylight or Roof Panel Replacement?",
-      subtitle: "We do makegoods all day, every day.",
-      text: "From single panel replacements to full warehouse re-roofing, we've restored skylights across Melbourne's industrial properties. Get in touch today for a free inspection and quote."
+      title: "Leaking Skylights or Need More Natural Light?",
+      subtitle: "We do industrial roofing all day, every day.",
+      text: "From single skylight replacements to full warehouse roof resheeting, we've restored skylights and roofs across Melbourne's industrial properties. Quality Ampelite materials, height-safety compliant crews, and workmanship warranties you can trust. Get in touch today for a free inspection and quote."
     },
     relatedServices: ["warehouse-make-good", "waterproofing", "cladding-glazing", "commercial-make-good"],
     category: "structural",
