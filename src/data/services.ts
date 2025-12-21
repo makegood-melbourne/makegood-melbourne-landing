@@ -29,6 +29,7 @@ import concreteSlabRestorationHeroImage from "@/assets/services/concrete-slab-gr
 import concreteFloorGrinderImage from "@/assets/services/industrial-concrete-floor-grinding-warehouse-melbourne.jpeg";
 import concreteFloorJointImage from "@/assets/services/concrete-floor-joint-metal-expansion-strip-melbourne.jpeg";
 import skylightRoofPanelsImage from "@/assets/services/industrial-warehouse-skylight-fibreglass-roof-melbourne.png";
+import skylightSteelStructureImage from "@/assets/services/industrial-skylight-roof-panels-steel-structure-melbourne.jpeg";
 import polyurethaneFoamInjectionImage from "@/assets/services/polyurethane-foam-injection-slab-stabilisation-melbourne.jpeg";
 import tileFlooringRemovalImage from "@/assets/services/tile-flooring-removal-demolition-hammer-melbourne.jpeg";
 import floorGrindingMachineImage from "@/assets/services/floor-grinding-machine-concrete-levelling-melbourne.jpeg";
@@ -1131,8 +1132,8 @@ export const services: Service[] = [
       {
         title: "Ampelite Fibreglass Roofing Specialists",
         description: "We exclusively install Ampelite fibreglass roofing products—Australia's leading manufacturer with over 50 years in the industry. Ampelite panels are lightweight yet incredibly durable, designed specifically for commercial and industrial buildings. With up to 70 profile options including Trimdek, Klip-Lok, Custom Orb and Spandek, we match your existing roof seamlessly. Premium Solasafe panels block 99.9% of harmful UV rays while maintaining excellent light transmission, creating safer and brighter workspaces.",
-        image: undefined,
-        imageAlt: "Ampelite fibreglass roofing sheets installation industrial warehouse Melbourne"
+        image: skylightSteelStructureImage,
+        imageAlt: "Industrial skylight roof panels steel structure warehouse Melbourne"
       },
       {
         title: "Reduce Energy Costs & Improve Productivity",
