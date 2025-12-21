@@ -80,7 +80,7 @@ const ServiceTemplate = () => {
         </div>
 
         {/* 1. Hero Section */}
-        <section className="bg-secondary py-16 md:py-24">
+        <section className="bg-secondary pt-16 pb-10 md:pt-24 md:pb-12">
           <div className="container mx-auto px-4">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
