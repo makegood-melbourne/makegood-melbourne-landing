@@ -1,5 +1,4 @@
 import { Helmet } from "react-helmet-async";
-import { Link } from "react-router-dom";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Hammer, Building2, Wrench, Sparkles, CheckCircle, ArrowRight, Phone, Shield } from "lucide-react";
@@ -95,10 +94,10 @@ const Capabilities = () => {
               We do make goods all day, every day. Whether your project is retail, commercial, or industrial, our network of reliable trades will work tirelessly to ensure your make good experience is seamless.
             </p>
             <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
-              <Link to="/#contact">
+              <a href="/#contact">
                 <Phone className="mr-2 h-5 w-5" />
                 Get a Free Quote
-              </Link>
+              </a>
             </Button>
           </div>
         </section>

@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { Fragment } from "react";
 
 /**
@@ -23,16 +22,16 @@ export function renderTextWithLinks(text: string): React.ReactNode {
     const linkText = match[1];
     const url = match[2];
     
-    // Check if internal or external link
+    // Use native anchor tags for both internal and external links
     if (url.startsWith('/')) {
       parts.push(
-        <Link 
+        <a 
           key={`link-${keyIndex++}`}
-          to={url} 
+          href={url} 
           className="text-primary hover:text-primary/80 underline underline-offset-2"
         >
           {linkText}
-        </Link>
+        </a>
       );
     } else {
       parts.push(

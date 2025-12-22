@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -59,7 +58,7 @@ const ServicesCarousel = () => {
           <CarouselContent className="-ml-4">
             {featuredServices.map((service) => (
               <CarouselItem key={service.slug} className="pl-4 md:basis-1/2 lg:basis-1/3">
-                <Link to={`/services/${service.slug}`} className="block group">
+                <a href={`/services/${service.slug}`} className="block group">
                   <Card className="overflow-hidden border-border bg-card h-full transition-all duration-300 group-hover:border-primary/50 group-hover:shadow-xl">
                     <div className="aspect-[4/3] overflow-hidden relative">
                       <img
@@ -84,7 +83,7 @@ const ServicesCarousel = () => {
                       </span>
                     </CardContent>
                   </Card>
-                </Link>
+                </a>
               </CarouselItem>
             ))}
           </CarouselContent>
@@ -94,10 +93,10 @@ const ServicesCarousel = () => {
 
         <div className="text-center mt-8">
           <Button asChild variant="outline" size="lg">
-            <Link to="/capabilities">
+            <a href="/capabilities">
               View All Services
               <ArrowRight className="ml-2 h-5 w-5" />
-            </Link>
+            </a>
           </Button>
         </div>
       </div>

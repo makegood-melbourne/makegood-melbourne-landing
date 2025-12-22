@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { ClipboardCheck, Wrench, KeyRound, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -73,10 +72,10 @@ const SimpleProcess = () => {
 
         <div className="text-center">
           <Button asChild size="lg">
-            <Link to="/our-process">
+            <a href="/our-process">
               See Our Full Process
               <ArrowRight className="ml-2 h-5 w-5" />
-            </Link>
+            </a>
           </Button>
         </div>
       </div>
