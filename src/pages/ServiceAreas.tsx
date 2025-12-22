@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { MapPin, ArrowRight } from "lucide-react";
@@ -24,6 +25,9 @@ const ServiceAreas = () => {
       <Navigation />
       
       <main className="pt-16">
+        <div className="container mx-auto px-4 pt-4">
+          <Breadcrumbs items={[{ label: "Service Areas" }]} />
+        </div>
         {/* Hero Section */}
         <section className="bg-gradient-to-b from-background to-secondary py-16 md:py-20">
           <div className="container mx-auto px-4 text-center">

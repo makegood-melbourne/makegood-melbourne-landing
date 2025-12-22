@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight, ChevronDown } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import { Button } from "@/components/ui/button";
 import {
   Accordion,
@@ -442,8 +443,15 @@ const FAQPage = () => {
 
       <Navigation />
 
+      {/* Breadcrumbs */}
+      <div className="pt-24 px-4">
+        <div className="container mx-auto">
+          <Breadcrumbs items={[{ label: "FAQ" }]} />
+        </div>
+      </div>
+
       {/* Hero Section */}
-      <section className="pt-32 pb-12 md:pb-16 bg-background">
+      <section className="pb-12 md:pb-16 bg-background">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4 uppercase tracking-wide">
             Frequently Asked Questions

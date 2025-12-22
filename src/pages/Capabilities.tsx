@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Hammer, Building2, Wrench, Sparkles, CheckCircle, ArrowRight, Phone, Shield } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import capabilitiesHero from "@/assets/commercial-property-restoration-capabilities-melbourne.jpg";
 import { getServicesByCategory } from "@/data/services";
 
@@ -73,6 +74,9 @@ const Capabilities = () => {
       <Navigation />
 
       <main className="flex-1 pt-20">
+        <div className="container mx-auto px-4">
+          <Breadcrumbs items={[{ label: "Capabilities" }]} />
+        </div>
         {/* Hero Section */}
         <section className="relative h-[400px] flex items-center justify-center overflow-hidden">
           <div className="absolute inset-0 z-0">
