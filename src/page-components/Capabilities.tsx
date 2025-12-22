@@ -131,14 +131,14 @@ const Capabilities = () => {
                     <p className="text-sm text-muted-foreground mb-3">Learn more about our demolition services:</p>
                     <div className="flex flex-wrap gap-2">
                       {demolitionServices.map((service) => (
-                        <Link
+                        <a
                           key={service.slug}
-                          to={`/services/${service.slug}`}
+                          href={`/services/${service.slug}`}
                           className="inline-flex items-center gap-1 text-accent hover:text-accent/80 transition-colors text-sm font-medium"
                         >
                           {service.name}
                           <ArrowRight className="h-3 w-3" />
-                        </Link>
+                        </a>
                       ))}
                     </div>
                   </div>
@@ -178,14 +178,14 @@ const Capabilities = () => {
                     <p className="text-sm text-muted-foreground mb-3">Learn more about our make good services:</p>
                     <div className="flex flex-wrap gap-2">
                       {makeGoodServices.map((service) => (
-                        <Link
+                        <a
                           key={service.slug}
-                          to={`/services/${service.slug}`}
+                          href={`/services/${service.slug}`}
                           className="inline-flex items-center gap-1 text-accent hover:text-accent/80 transition-colors text-sm font-medium"
                         >
                           {service.name}
                           <ArrowRight className="h-3 w-3" />
-                        </Link>
+                        </a>
                       ))}
                     </div>
                   </div>
@@ -224,14 +224,14 @@ const Capabilities = () => {
                     <p className="text-sm text-muted-foreground mb-3">Learn more about our trade services:</p>
                     <div className="flex flex-wrap gap-2">
                       {tradeServices.map((service) => (
-                        <Link
+                        <a
                           key={service.slug}
-                          to={`/services/${service.slug}`}
+                          href={`/services/${service.slug}`}
                           className="inline-flex items-center gap-1 text-accent hover:text-accent/80 transition-colors text-sm font-medium"
                         >
                           {service.name}
                           <ArrowRight className="h-3 w-3" />
-                        </Link>
+                        </a>
                       ))}
                     </div>
                   </div>
@@ -279,21 +279,21 @@ const Capabilities = () => {
                       <p className="text-sm text-muted-foreground mb-2">Learn more about our structural services:</p>
                       <div className="flex flex-wrap gap-2">
                         {structuralServices.map((service) => (
-                          <Link
+                          <a
                             key={service.slug}
-                            to={`/services/${service.slug}`}
+                            href={`/services/${service.slug}`}
                             className="inline-flex items-center gap-1 text-accent hover:text-accent/80 transition-colors text-sm font-medium"
                           >
                             {service.name}
                             <ArrowRight className="h-3 w-3" />
-                          </Link>
+                          </a>
                         ))}
                       </div>
                     </div>
                     <Button asChild className="bg-accent hover:bg-accent/90 text-accent-foreground">
-                      <Link to="/#contact">
+                      <a href="/#contact">
                         Get a Structural Assessment
-                      </Link>
+                      </a>
                     </Button>
                   </div>
                 )}
@@ -332,18 +332,18 @@ const Capabilities = () => {
                 <div className="pt-4 border-t border-border flex flex-wrap items-center justify-between gap-4">
                   <div>
                     <p className="text-sm text-muted-foreground mb-2">Learn more about our cleaning services:</p>
-                    <Link
-                      to="/services/commercial-cleaning"
+                    <a
+                      href="/services/commercial-cleaning"
                       className="inline-flex items-center gap-1 text-accent hover:text-accent/80 transition-colors text-sm font-medium"
                     >
                       Commercial Cleaning
                       <ArrowRight className="h-3 w-3" />
-                    </Link>
+                    </a>
                   </div>
                   <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground">
-                    <Link to="/#contact">
+                    <a href="/#contact">
                       Get a Cleaning Quote
-                    </Link>
+                    </a>
                   </Button>
                 </div>
               </CardContent>
@@ -360,10 +360,10 @@ const Capabilities = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
-                <Link to="/#contact">
+                <a href="/#contact">
                   <Phone className="mr-2 h-5 w-5" />
                   Get Your Free Quote
-                </Link>
+                </a>
               </Button>
               <Button asChild size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10">
                 <a href="tel:0383aborede">
