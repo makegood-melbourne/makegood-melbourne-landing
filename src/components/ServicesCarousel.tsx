@@ -11,47 +11,6 @@ import {
 } from "@/components/ui/carousel";
 import { getPublishedServices } from "@/data/services";
 
-// Import service images
-import palletRackingImage from "@/assets/services/pallet-racking-dismantling-warehouse-floor-melbourne.jpeg";
-import epoxyFlooringImage from "@/assets/services/polished-epoxy-floor-industrial-warehouse-melbourne.jpeg";
-import ceilingTileImage from "@/assets/services/ceiling-tile-replacement-commercial-office-melbourne.jpeg";
-import lineMarkingImage from "@/assets/services/car-park-line-marking-restoration-aerial-melbourne.jpeg";
-import warehouseCleaningImage from "@/assets/services/high-pressure-warehouse-cleaning-melbourne.png";
-import concreteCancerImage from "@/assets/services/concrete-cancer-exposed-rebar-column-spalling-melbourne.jpeg";
-import claddingImage from "@/assets/services/cladding-remediation-facade-glazing-melbourne.jpeg";
-import emptyWarehouseImage from "@/assets/services/empty-warehouse-after-makegood-melbourne.png";
-import concreteSlabImage from "@/assets/services/concrete-slab-grinding-polished-warehouse-floor-melbourne.png";
-
-// Map service slugs to images
-const serviceImages: Record<string, string> = {
-  "pallet-racking-removal": palletRackingImage,
-  "epoxy-flooring": epoxyFlooringImage,
-  "ceiling-tile-replacement": ceilingTileImage,
-  "line-marking": lineMarkingImage,
-  "commercial-cleaning": warehouseCleaningImage,
-  "structural-remediation": concreteCancerImage,
-  "cladding-glazing": claddingImage,
-  "warehouse-make-good": emptyWarehouseImage,
-  "office-strip-out": emptyWarehouseImage,
-  "commercial-make-good": emptyWarehouseImage,
-  "concrete-slab-restoration": concreteSlabImage,
-};
-
-// Optimized alt text for service images
-const serviceImageAlts: Record<string, string> = {
-  "pallet-racking-removal": "Pallet racking removal and dismantling from warehouse floor in Melbourne",
-  "epoxy-flooring": "Polished epoxy floor coating in industrial Melbourne warehouse",
-  "ceiling-tile-replacement": "Ceiling tile replacement in commercial office Melbourne",
-  "line-marking": "Aerial view of car park line marking restoration in Melbourne",
-  "commercial-cleaning": "High-pressure cleaning of commercial warehouse floor in Melbourne",
-  "structural-remediation": "Concrete cancer and spalling damage requiring structural remediation",
-  "cladding-glazing": "Commercial building facade cladding remediation in Melbourne",
-  "warehouse-make-good": "Empty warehouse after professional make good restoration Melbourne",
-  "office-strip-out": "Office strip out and demolition for end of lease make good Melbourne",
-  "commercial-make-good": "Commercial property make good restoration for end of lease compliance",
-  "concrete-slab-restoration": "Concrete slab grinding and polishing for warehouse floor restoration Melbourne",
-};
-
 // Priority order for carousel display
 const priorityOrder = [
   "concrete-slab-restoration",
@@ -62,9 +21,9 @@ const priorityOrder = [
 const ServicesCarousel = () => {
   const publishedServices = getPublishedServices();
   
-  // Get featured services (those with images), sorted by priority
+  // Get featured services (those with hero images), sorted by priority
   const featuredServices = publishedServices
-    .filter(service => serviceImages[service.slug])
+    .filter(service => service.heroImage)
     .sort((a, b) => {
       const aIndex = priorityOrder.indexOf(a.slug);
       const bIndex = priorityOrder.indexOf(b.slug);
@@ -104,8 +63,8 @@ const ServicesCarousel = () => {
                   <Card className="overflow-hidden border-border bg-card h-full transition-all duration-300 group-hover:border-primary/50 group-hover:shadow-xl">
                     <div className="aspect-[4/3] overflow-hidden relative">
                       <img
-                        src={serviceImages[service.slug]}
-                        alt={serviceImageAlts[service.slug] || service.name}
+                        src={service.heroImage}
+                        alt={service.heroImageAlt || service.name}
                         className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent" />
