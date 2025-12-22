@@ -168,6 +168,33 @@ Bring your building up to compliance with specialist cladding and glazing remedi
 - Fire-rated materials tested to AS 1530 and AS 5113
 - VBA and council liaison
 
+SKYLIGHT & ROOF PANEL REPLACEMENT (SPECIALIST SERVICE):
+We supply and install clear polycarbonate roofing sheets designed for industrial and warehouse environments. Our installations improve natural light, resist harsh weather and are completed in accordance with Australian Standards and safety requirements.
+
+What we deliver:
+- Storm damaged and leaking roof repairs
+- Clear polycarbonate sheet installation
+- Yellowed and discoloured panel renewal
+- UV protection coatings
+- Compliant asbestos disposal (for old fibreglass panels)
+- Complete roof sheet replacement
+- Energy efficiency improvements
+- Certification and warranty documentation
+
+When skylights need replacing - signs to look for:
+- Yellowing or discolouration reducing light transmission
+- Visible cracks or crazing in panels
+- Water leaks during rain
+- Brittleness when touched
+- Panels exceeding 15-20 year lifespan
+
+We install quality Australian-made polycarbonate and fibreglass panels matched to your existing roof profile, including products from manufacturers like Ampelite. Most warehouse skylight replacements are completed in 1-3 days.
+
+For make good projects, we prepare detailed scopes for landlord and property manager review and can liaise directly with them on your behalf.
+
+Roof Repairs for Leaks & Storm Damage:
+Melbourne's harsh weather can cause sudden damage to polycarbonate and fibreglass roof panels—cracking, lifting, or complete failure during storms. We provide responsive repair services from temporary make-safe works through to full panel replacement.
+
 OTHER SERVICES:
 - COMMERCIAL PAINTING: Colour-matched make-good painting for offices, warehouses and retail
 - PATCHING & PLASTERING: Wall repairs, hole filling, seamless plaster restoration
