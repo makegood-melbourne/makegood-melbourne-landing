@@ -46,6 +46,7 @@ export const serviceRedirects: Record<string, string> = {
   "vinyl-removal": "concrete-slab-restoration",
   "tile-removal": "concrete-slab-restoration",
   "adhesive-removal": "concrete-slab-restoration",
+  "commercial-cleaning": "make-good-cleaning",
 };
 
 export const getServiceRedirectSlug = (slug: string): string | null => {
