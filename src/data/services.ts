@@ -1097,7 +1097,7 @@ export const services: Service[] = [
     skipAboutSection: true,
     comparison: {
       title: "When Skylights Need Replacing",
-      specialistTitle: "New Fibreglass Panels",
+      specialistTitle: "New Polycarbonate Panels",
       regularTitle: "Aged/Damaged Panels",
       items: [
         {
@@ -1106,24 +1106,29 @@ export const services: Service[] = [
           regular: "Yellowed, reduced light (often <40%)"
         },
         {
-          feature: "Lease Compliance",
-          specialist: "Meets original condition requirements",
-          regular: "Fails inspection, bond at risk"
+          feature: "UV Protection",
+          specialist: "Blocks up to 99% of UV radiation",
+          regular: "UV degraded, no longer blocking harmful rays"
         },
         {
-          feature: "Tenant Appeal",
-          specialist: "Bright, modern workspace impression",
-          regular: "Dated, neglected appearance"
+          feature: "Impact Resistance",
+          specialist: "High impact resistance, hail and debris protection",
+          regular: "Brittle, prone to cracking and storm damage"
         },
         {
-          feature: "Weather Resistance",
-          specialist: "Manufacturer warranties available",
-          regular: "Cracked, brittle, prone to leaks"
+          feature: "Thermal Performance",
+          specialist: "Superior thermal insulation, reduced energy costs",
+          regular: "Poor insulation, heat loss in winter"
         },
         {
-          feature: "Property Value",
-          specialist: "Improved leasability and rental yield",
-          regular: "Deters prospective tenants"
+          feature: "Lifespan",
+          specialist: "Manufacturer warranties, 20+ year lifespan",
+          regular: "Exceeded typical 15-20 year lifespan"
+        },
+        {
+          feature: "Safety & Compliance",
+          specialist: "Fully compliant with AS/NZS requirements",
+          regular: "May not meet current Australian Standards"
         }
       ]
     },
