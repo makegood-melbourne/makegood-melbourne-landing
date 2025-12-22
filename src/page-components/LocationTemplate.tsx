@@ -1,4 +1,3 @@
-import { useParams, Navigate, Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { MapPin, Clock, Shield, Mail, ArrowRight, CheckCircle2, Building2, Wrench, Warehouse, Factory, HardHat, Truck, HelpCircle } from "lucide-react";
 import Navigation from "@/components/Navigation";
@@ -31,12 +30,18 @@ const getHeroImage = (slug: string) => {
   };
 };
 
-const LocationTemplate = () => {
-  const { slug } = useParams<{ slug: string }>();
+interface LocationTemplateProps {
+  slug?: string;
+}
+
+const LocationTemplate = ({ slug }: LocationTemplateProps) => {
   const location = slug ? getLocationBySlug(slug) : undefined;
 
   if (!location) {
-    return <Navigate to="/" replace />;
+    if (typeof window !== 'undefined') {
+      window.location.href = '/service-areas';
+    }
+    return null;
   }
 
   const scrollToContact = () => {
@@ -347,10 +352,10 @@ const LocationTemplate = () => {
 
           <div className="text-center mt-12">
             <Button variant="outline" size="lg" asChild>
-              <Link to="/capabilities" className="group">
+              <a href="/capabilities" className="group">
                 View All Capabilities
                 <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-              </Link>
+              </a>
             </Button>
           </div>
         </div>

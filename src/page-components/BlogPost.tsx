@@ -1,4 +1,3 @@
-import { useParams, Link, Navigate } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { ArrowLeft, Clock, Calendar, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -10,13 +9,18 @@ import { blogPosts } from "@/data/blogPosts";
 import { getBlogImage, calculateReadingTime, parseMarkdown } from "@/lib/blogUtils";
 import { getRedirectSlug } from "@/lib/redirects";
 
-const BlogPost = () => {
-  const { slug } = useParams<{ slug: string }>();
-  
+interface BlogPostProps {
+  slug?: string;
+}
+
+const BlogPost = ({ slug }: BlogPostProps) => {
   // Check if this is an old URL that needs redirecting
   const redirectSlug = slug ? getRedirectSlug(slug) : null;
   if (redirectSlug) {
-    return <Navigate to={`/blog/${redirectSlug}`} replace />;
+    if (typeof window !== 'undefined') {
+      window.location.href = `/blog/${redirectSlug}`;
+    }
+    return null;
   }
   
   const post = blogPosts.find((p) => p.slug === slug);
@@ -28,12 +32,12 @@ const BlogPost = () => {
         <main className="flex-1 pt-20 flex items-center justify-center">
           <div className="text-center">
             <h1 className="text-4xl text-foreground mb-4">Post Not Found</h1>
-            <Link to="/blog">
+            <a href="/blog">
               <Button variant="outline">
                 <ArrowLeft className="mr-2 h-4 w-4" />
                 Back to Blog
               </Button>
-            </Link>
+            </a>
           </div>
         </main>
         <Footer />
@@ -155,11 +159,11 @@ const BlogPost = () => {
                   our experienced team is ready to help. Contact us today for a free consultation and quote.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">
-                  <Link to="/#contact">
+                  <a href="/#contact">
                     <Button size="lg" className="w-full sm:w-auto">
                       Get a Free Quote
                     </Button>
-                  </Link>
+                  </a>
                   <a href="tel:+61383769663">
                     <Button variant="outline" size="lg" className="w-full sm:w-auto">
                       <Phone className="mr-2 h-4 w-4" />
@@ -172,12 +176,12 @@ const BlogPost = () => {
           </Card>
 
           <div className="mt-8 pt-8 border-t border-border">
-            <Link to="/blog">
+            <a href="/blog">
               <Button variant="outline">
                 <ArrowLeft className="mr-2 h-4 w-4" />
                 Back to All Posts
               </Button>
-            </Link>
+            </a>
           </div>
         </article>
       </main>
