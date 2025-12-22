@@ -42,6 +42,7 @@ export interface FeaturedSection {
   image?: string;
   imageAlt?: string;
   imagePosition?: 'left' | 'center' | 'right';
+  imageLeft?: boolean; // Force image on left side of layout
 }
 
 export interface CtaBlock {
@@ -1147,7 +1148,8 @@ export const services: Service[] = [
         title: "Roof Repairs for Leaks & Storm Damage",
         description: "Melbourne's harsh weather can cause sudden damage to polycarbonate and fibreglass roof panels—cracking, lifting, or complete failure during storms. When leaks appear or panels are damaged, fast response is critical to prevent further water ingress and damage to stock, equipment, or flooring below.\n\nWe provide responsive repair services for storm-damaged and leaking roofs across Melbourne's industrial and commercial properties. From temporary make-safe works through to full panel replacement, we assess the damage, provide clear recommendations, and complete repairs efficiently to get your facility back to normal.",
         image: warehouseRoofSkylightsImage,
-        imageAlt: "Warehouse roof skylights steel structure Melbourne industrial"
+        imageAlt: "Warehouse roof skylights steel structure Melbourne industrial",
+        imageLeft: true
       }
     ],
     processAfterSection: 0,
