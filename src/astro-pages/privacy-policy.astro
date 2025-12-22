@@ -1,0 +1,12 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PrivacyPolicyPage from '../pages/PrivacyPolicy.tsx';
+---
+
+<BaseLayout 
+  title="Privacy Policy | Make Good Melbourne"
+  description="Privacy policy for Make Good Melbourne. How we collect, use, and protect your personal information."
+  canonicalUrl="https://makegood.melbourne/privacy-policy"
+>
+  <PrivacyPolicyPage client:load />
+</BaseLayout>

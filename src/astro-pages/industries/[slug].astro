@@ -1,0 +1,27 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import IndustryTemplatePage from '../../pages/IndustryTemplate.tsx';
+import { industries, getIndustryBySlug } from '../../data/industries';
+
+export function getStaticPaths() {
+  return industries.map((industry) => ({
+    params: { slug: industry.slug },
+    props: { industry },
+  }));
+}
+
+const { slug } = Astro.params;
+const industry = getIndustryBySlug(slug);
+
+if (!industry) {
+  return Astro.redirect('/');
+}
+---
+
+<BaseLayout 
+  title={industry.metaTitle}
+  description={industry.metaDescription}
+  canonicalUrl={`https://makegood.melbourne/industries/${industry.slug}`}
+>
+  <IndustryTemplatePage client:load />
+</BaseLayout>

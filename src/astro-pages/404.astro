@@ -1,0 +1,11 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import NotFoundPage from '../pages/NotFound.tsx';
+---
+
+<BaseLayout 
+  title="Page Not Found | Make Good Melbourne"
+  description="The page you're looking for doesn't exist. Return to Make Good Melbourne's homepage."
+>
+  <NotFoundPage client:load />
+</BaseLayout>

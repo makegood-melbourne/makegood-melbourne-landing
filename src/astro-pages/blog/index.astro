@@ -1,0 +1,12 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import BlogPage from '../pages/Blog.tsx';
+---
+
+<BaseLayout 
+  title="Blog | Make Good Melbourne"
+  description="Expert insights on commercial property restoration, end of lease obligations, and make good best practices from Melbourne's trusted specialists."
+  canonicalUrl="https://makegood.melbourne/blog"
+>
+  <BlogPage client:load />
+</BaseLayout>
