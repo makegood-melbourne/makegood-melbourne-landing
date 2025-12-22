@@ -83,6 +83,7 @@ export interface Service {
   featuredSection?: FeaturedSection;
   featuredSections?: FeaturedSection[];
   processAfterSection?: number; // Index of featured section after which to show process (0-based)
+  skipAboutSection?: boolean; // Skip the auto-generated about section
   benefits: string[];
   comparison?: Comparison;
   faqs?: FAQ[];
@@ -1093,6 +1094,7 @@ export const services: Service[] = [
       "Energy efficiency",
       "Certification and warranty"
     ],
+    skipAboutSection: true,
     comparison: {
       title: "When Skylights Need Replacing",
       specialistTitle: "New Fibreglass Panels",
