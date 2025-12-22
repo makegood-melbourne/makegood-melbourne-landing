@@ -460,11 +460,12 @@ const ServiceTemplate = () => {
         {/* Post-Comparison Sections - Appear after comparison table, before FAQ */}
         {service.postComparisonSections && service.postComparisonSections.map((section, index) => {
           const paragraphs = section.description.split('\n\n');
+          const shouldReverseLayout = section.imageLeft || index % 2 === 1;
           return (
             <section key={`post-comparison-${index}`} className={`py-16 ${index % 2 === 0 ? 'bg-background' : 'bg-secondary'}`}>
               <div className="container mx-auto px-4">
-                <div className={`grid lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}>
-                  <div className={index % 2 === 1 ? 'lg:order-2' : ''}>
+                <div className="grid lg:grid-cols-2 gap-12 items-center">
+                  <div className={shouldReverseLayout ? 'lg:order-2' : ''}>
                     <h2 className="text-3xl md:text-4xl text-foreground mb-6">
                       {section.title}
                     </h2>
@@ -474,7 +475,7 @@ const ServiceTemplate = () => {
                       </p>
                     ))}
                   </div>
-                  <div className={index % 2 === 1 ? 'lg:order-1' : ''}>
+                  <div className={shouldReverseLayout ? 'lg:order-1' : ''}>
                     {section.image ? (
                       <img 
                         src={section.image} 
