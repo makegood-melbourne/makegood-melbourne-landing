@@ -1134,7 +1134,7 @@ export const services: Service[] = [
       },
       {
         title: "Skylight & Roof Panel Replacement Scope",
-        description: "Our skylight replacement scope includes removal of damaged, aged or non-compliant panels, supply and installation of quality Australian-made fibreglass sheets matched to your existing roof profile, proper flashing and sealing, and all height safety requirements. We use products including Ampelite panels where specified, with professional installation backed by workmanship warranties.",
+        description: "From removal of damaged, yellowed or leaking panels through to installation of new polycarbonate sheets that allow natural light to flow through. We handle proper flashing, sealing and all guttering requirements. For properties with asbestos-containing panels, we manage licensed removal and compliant disposal as part of the project. Every installation includes workmanship warranties and documentation for your records.",
         image: skylightSteelStructureImage,
         imageAlt: "Industrial skylight steel structure warehouse roof panel replacement Melbourne"
       },
