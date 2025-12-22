@@ -1,5 +1,4 @@
 import { Helmet } from "react-helmet-async";
-import { useParams, Link, Navigate } from "react-router-dom";
 import { ArrowRight, CheckCircle, AlertTriangle, ImageIcon } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
@@ -19,12 +18,18 @@ const ImagePlaceholder = ({ description, className = "" }: { description: string
   </div>
 );
 
-const IndustryTemplate = () => {
-  const { slug } = useParams<{ slug: string }>();
+interface IndustryTemplateProps {
+  slug?: string;
+}
+
+const IndustryTemplate = ({ slug }: IndustryTemplateProps) => {
   const industry = getIndustryBySlug(slug || "");
 
   if (!industry) {
-    return <Navigate to="/404" replace />;
+    if (typeof window !== 'undefined') {
+      window.location.href = '/404';
+    }
+    return null;
   }
 
   const relatedServices = industry.services
@@ -143,15 +148,15 @@ const IndustryTemplate = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button asChild size="lg">
-                  <Link to="/contact">
+                  <a href="/contact">
                     Get a Free Quote
                     <ArrowRight className="ml-2 h-5 w-5" />
-                  </Link>
+                  </a>
                 </Button>
                 <Button asChild variant="outline" size="lg">
-                  <Link to="/our-process">
+                  <a href="/our-process">
                     Our Process
-                  </Link>
+                  </a>
                 </Button>
               </div>
             </div>
@@ -282,9 +287,9 @@ const IndustryTemplate = () => {
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {relatedServices.map((service) => (
                 service && (
-                  <Link
+                  <a
                     key={service.slug}
-                    to={`/services/${service.slug}`}
+                    href={`/services/${service.slug}`}
                     className="group block"
                   >
                     <Card className="bg-card border-border h-full transition-all duration-300 group-hover:border-primary/50 group-hover:shadow-lg">
@@ -301,7 +306,7 @@ const IndustryTemplate = () => {
                         </span>
                       </CardContent>
                     </Card>
-                  </Link>
+                  </a>
                 )
               ))}
             </div>
@@ -345,10 +350,10 @@ const IndustryTemplate = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg">
-              <Link to="/contact">
+              <a href="/contact">
                 Get a Free Quote
                 <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
+              </a>
             </Button>
           </div>
         </div>
