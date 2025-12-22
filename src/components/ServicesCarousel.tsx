@@ -20,6 +20,7 @@ import warehouseCleaningImage from "@/assets/services/high-pressure-warehouse-cl
 import concreteCancerImage from "@/assets/services/concrete-cancer-exposed-rebar-column-spalling-melbourne.jpeg";
 import claddingImage from "@/assets/services/cladding-remediation-facade-glazing-melbourne.jpeg";
 import emptyWarehouseImage from "@/assets/services/empty-warehouse-after-makegood-melbourne.png";
+import concreteSlabImage from "@/assets/services/concrete-slab-grinding-polished-warehouse-floor-melbourne.png";
 
 // Map service slugs to images
 const serviceImages: Record<string, string> = {
@@ -33,6 +34,7 @@ const serviceImages: Record<string, string> = {
   "warehouse-make-good": emptyWarehouseImage,
   "office-strip-out": emptyWarehouseImage,
   "commercial-make-good": emptyWarehouseImage,
+  "concrete-slab-restoration": concreteSlabImage,
 };
 
 // Optimized alt text for service images
@@ -47,14 +49,31 @@ const serviceImageAlts: Record<string, string> = {
   "warehouse-make-good": "Empty warehouse after professional make good restoration Melbourne",
   "office-strip-out": "Office strip out and demolition for end of lease make good Melbourne",
   "commercial-make-good": "Commercial property make good restoration for end of lease compliance",
+  "concrete-slab-restoration": "Concrete slab grinding and polishing for warehouse floor restoration Melbourne",
 };
+
+// Priority order for carousel display
+const priorityOrder = [
+  "concrete-slab-restoration",
+  "commercial-cleaning",
+  "ceiling-tile-replacement",
+];
 
 const ServicesCarousel = () => {
   const publishedServices = getPublishedServices();
   
-  // Get featured services (those with images)
+  // Get featured services (those with images), sorted by priority
   const featuredServices = publishedServices
     .filter(service => serviceImages[service.slug])
+    .sort((a, b) => {
+      const aIndex = priorityOrder.indexOf(a.slug);
+      const bIndex = priorityOrder.indexOf(b.slug);
+      // Priority items come first, others maintain original order
+      if (aIndex !== -1 && bIndex !== -1) return aIndex - bIndex;
+      if (aIndex !== -1) return -1;
+      if (bIndex !== -1) return 1;
+      return 0;
+    })
     .slice(0, 8);
 
   if (featuredServices.length === 0) return null;
