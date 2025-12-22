@@ -19,7 +19,7 @@ import {
 const serviceCategories = [
   {
     label: "Cleaning",
-    slugs: ['commercial-cleaning']
+    slugs: ['make-good-cleaning']
   },
   {
     label: "Floor Restoration",
