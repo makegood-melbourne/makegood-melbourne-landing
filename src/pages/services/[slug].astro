@@ -1,6 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import ServiceTemplatePage from '../../pages/ServiceTemplate.tsx';
+import ServiceTemplatePage from '../../page-components/ServiceTemplate.tsx';
 import { getPublishedServices, getServiceBySlug } from '../../data/services';
 
 export function getStaticPaths() {
@@ -17,18 +17,13 @@ const service = getServiceBySlug(slug);
 if (!service) {
   return Astro.redirect('/capabilities');
 }
-
-// Get OG image - use hero image if available, otherwise default
-const ogImage = service.heroImage 
-  ? `/og/services/${service.slug}.jpg` 
-  : '/og-default.jpg';
 ---
 
 <BaseLayout 
   title={service.metaTitle}
   description={service.metaDescription}
-  ogImage={ogImage}
+  ogImage="/og-default.jpg"
   canonicalUrl={`https://makegood.melbourne/services/${service.slug}`}
 >
-  <ServiceTemplatePage client:load />
+  <ServiceTemplatePage slug={slug} client:load />
 </BaseLayout>

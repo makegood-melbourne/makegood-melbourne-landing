@@ -1,0 +1,12 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import GuestPostsDownloadPage from '../page-components/GuestPostsDownload.tsx';
+---
+
+<BaseLayout 
+  title="Guest Posts Download | Make Good Melbourne"
+  description="Download guest post submissions for Make Good Melbourne."
+  canonicalUrl="https://makegood.melbourne/downloads/guest-posts"
+>
+  <GuestPostsDownloadPage client:load />
+</BaseLayout>
