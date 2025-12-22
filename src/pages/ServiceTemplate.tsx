@@ -457,6 +457,45 @@ const ServiceTemplate = () => {
           </section>
         )}
 
+        {/* Post-Comparison Sections - Appear after comparison table, before FAQ */}
+        {service.postComparisonSections && service.postComparisonSections.map((section, index) => {
+          const paragraphs = section.description.split('\n\n');
+          return (
+            <section key={`post-comparison-${index}`} className={`py-16 ${index % 2 === 0 ? 'bg-background' : 'bg-secondary'}`}>
+              <div className="container mx-auto px-4">
+                <div className={`grid lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}>
+                  <div className={index % 2 === 1 ? 'lg:order-2' : ''}>
+                    <h2 className="text-3xl md:text-4xl text-foreground mb-6">
+                      {section.title}
+                    </h2>
+                    {paragraphs.map((para, pIndex) => (
+                      <p key={pIndex} className="text-xl text-muted-foreground leading-relaxed mt-4 first:mt-0">
+                        {renderTextWithLinks(para)}
+                      </p>
+                    ))}
+                  </div>
+                  <div className={index % 2 === 1 ? 'lg:order-1' : ''}>
+                    {section.image ? (
+                      <img 
+                        src={section.image} 
+                        alt={section.imageAlt || `${service.name} professional services Melbourne`}
+                        className="aspect-[4/3] w-full object-cover rounded-lg"
+                        style={{ objectPosition: section.imagePosition === 'left' ? 'left center' : section.imagePosition === 'right' ? 'right center' : 'center' }}
+                        width={800}
+                        height={600}
+                        loading="lazy"
+                      />
+                    ) : (
+                      <div className="aspect-[4/3] bg-muted/30 rounded-lg border-2 border-dashed border-muted-foreground/20 flex items-center justify-center">
+                        <span className="text-muted-foreground/50 text-sm">Service Image</span>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              </div>
+            </section>
+          );
+        })}
 
         {/* FAQ Section - Optional */}
         {service.faqs && service.faqs.length > 0 && (
