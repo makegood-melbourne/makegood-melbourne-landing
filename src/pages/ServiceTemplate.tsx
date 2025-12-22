@@ -199,44 +199,46 @@ const ServiceTemplate = () => {
           </div>
         </section>
 
-        {/* 3. About Section */}
-        <section className="py-16 bg-secondary">
-          <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-              {/* Image on left */}
-              <div className="hidden lg:block">
-                {service.secondaryImage ? (
-                  <img 
-                    src={service.secondaryImage} 
-                    alt={service.secondaryImageAlt || `${service.name} Melbourne - professional commercial services`}
-                    className="aspect-[4/3] w-full object-cover rounded-lg"
-                    style={{ objectPosition: service.slug === 'epoxy-flooring' ? '100% center' : 'center' }}
-                    width={800}
-                    height={600}
-                    loading="lazy"
-                  />
-                ) : (
-                  <div className="aspect-[4/3] bg-muted/30 rounded-lg border-2 border-dashed border-muted-foreground/20 flex items-center justify-center">
-                    <span className="text-muted-foreground/50 text-sm">Service Image</span>
-                  </div>
-                )}
-              </div>
-              {/* Copy on right */}
-              <div>
-                <h2 className="text-3xl md:text-4xl text-foreground mb-6">{service.name} Scope</h2>
-                <p className="text-xl text-muted-foreground leading-relaxed">
-                  {renderTextWithLinks(service.description)}
-                </p>
-                <p className="text-xl text-muted-foreground leading-relaxed mt-4">
-                  {service.slug === 'cladding-glazing' 
-                    ? `Our experienced team delivers professional ${service.name.toLowerCase()} services across Melbourne's commercial buildings. We understand the critical importance of bringing buildings up to compliance with Australian Standards and building code requirements, working efficiently to minimise disruption while achieving quality results.`
-                    : `Our experienced team delivers professional ${service.name.toLowerCase()} services across Melbourne's commercial and industrial properties. We understand the importance of meeting lease obligations and landlord requirements, working efficiently to minimise disruption while achieving quality results.`
-                  }
-                </p>
+        {/* 3. About Section - Optional */}
+        {!service.skipAboutSection && (
+          <section className="py-16 bg-secondary">
+            <div className="container mx-auto px-4">
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+                {/* Image on left */}
+                <div className="hidden lg:block">
+                  {service.secondaryImage ? (
+                    <img 
+                      src={service.secondaryImage} 
+                      alt={service.secondaryImageAlt || `${service.name} Melbourne - professional commercial services`}
+                      className="aspect-[4/3] w-full object-cover rounded-lg"
+                      style={{ objectPosition: service.slug === 'epoxy-flooring' ? '100% center' : 'center' }}
+                      width={800}
+                      height={600}
+                      loading="lazy"
+                    />
+                  ) : (
+                    <div className="aspect-[4/3] bg-muted/30 rounded-lg border-2 border-dashed border-muted-foreground/20 flex items-center justify-center">
+                      <span className="text-muted-foreground/50 text-sm">Service Image</span>
+                    </div>
+                  )}
+                </div>
+                {/* Copy on right */}
+                <div>
+                  <h2 className="text-3xl md:text-4xl text-foreground mb-6">{service.name} Scope</h2>
+                  <p className="text-xl text-muted-foreground leading-relaxed">
+                    {renderTextWithLinks(service.description)}
+                  </p>
+                  <p className="text-xl text-muted-foreground leading-relaxed mt-4">
+                    {service.slug === 'cladding-glazing' 
+                      ? `Our experienced team delivers professional ${service.name.toLowerCase()} services across Melbourne's commercial buildings. We understand the critical importance of bringing buildings up to compliance with Australian Standards and building code requirements, working efficiently to minimise disruption while achieving quality results.`
+                      : `Our experienced team delivers professional ${service.name.toLowerCase()} services across Melbourne's commercial and industrial properties. We understand the importance of meeting lease obligations and landlord requirements, working efficiently to minimise disruption while achieving quality results.`
+                    }
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
+        )}
 
         {/* Comparison Table - Optional */}
         {service.comparison && (
