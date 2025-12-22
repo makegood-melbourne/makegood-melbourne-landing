@@ -168,7 +168,7 @@ Bring your building up to compliance with specialist cladding and glazing remedi
 - Fire-rated materials tested to AS 1530 and AS 5113
 - VBA and council liaison
 
-SKYLIGHT & ROOF PANEL REPLACEMENT (SPECIALIST SERVICE):
+POLYCARBONATE ROOFING & SKYLIGHTS (SPECIALIST SERVICE):
 We supply and install clear polycarbonate roofing sheets designed for industrial and warehouse environments. Our installations improve natural light, resist harsh weather and are completed in accordance with Australian Standards and safety requirements.
 
 What we deliver:
