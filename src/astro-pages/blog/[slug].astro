@@ -1,0 +1,29 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import BlogPostPage from '../../pages/BlogPost.tsx';
+import { blogPosts, getBlogPostBySlug } from '../../data/blogPosts';
+
+export function getStaticPaths() {
+  return blogPosts.map((post) => ({
+    params: { slug: post.slug },
+    props: { post },
+  }));
+}
+
+const { slug } = Astro.params;
+const post = getBlogPostBySlug(slug);
+
+if (!post) {
+  return Astro.redirect('/blog');
+}
+
+const description = post.metaDescription || post.excerpt;
+---
+
+<BaseLayout 
+  title={`${post.title} | Make Good Melbourne`}
+  description={description}
+  canonicalUrl={`https://makegood.melbourne/blog/${post.slug}`}
+>
+  <BlogPostPage client:load />
+</BaseLayout>

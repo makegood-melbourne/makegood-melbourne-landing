@@ -8475,3 +8475,7 @@ By considering these key factors specific to Melbourne, you can navigate the mak
 Congratulations! You are now equipped with the knowledge and tools to have a successful make good experience as a tenant in Melbourne. By understanding the make good service, knowing your rights and responsibilities, following our step-by-step guide, and maintaining effective communication, you can navigate this process with confidence. Remember, the make good service should be a collaborative effort between tenants and landlords, ensuring a fair and satisfactory outcome for both parties. Should you have any further questions or require additional support, feel free to reach out to our team. Best of luck with your make good journey!`
   }
 ];
+
+export const getBlogPostBySlug = (slug: string): BlogPost | undefined => {
+  return blogPosts.find(post => post.slug === slug);
+};

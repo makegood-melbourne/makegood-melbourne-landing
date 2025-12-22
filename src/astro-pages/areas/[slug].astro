@@ -1,0 +1,27 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import LocationTemplatePage from '../../pages/LocationTemplate.tsx';
+import { locations, getLocationBySlug } from '../../data/locations';
+
+export function getStaticPaths() {
+  return locations.map((location) => ({
+    params: { slug: location.slug },
+    props: { location },
+  }));
+}
+
+const { slug } = Astro.params;
+const location = getLocationBySlug(slug);
+
+if (!location) {
+  return Astro.redirect('/service-areas');
+}
+---
+
+<BaseLayout 
+  title={location.metaTitle}
+  description={location.metaDescription}
+  canonicalUrl={`https://makegood.melbourne/areas/${location.slug}`}
+>
+  <LocationTemplatePage client:load />
+</BaseLayout>
