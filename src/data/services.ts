@@ -34,6 +34,7 @@ import polyurethaneFoamInjectionImage from "@/assets/services/polyurethane-foam-
 import tileFlooringRemovalImage from "@/assets/services/tile-flooring-removal-demolition-hammer-melbourne.jpeg";
 import floorGrindingMachineImage from "@/assets/services/floor-grinding-machine-concrete-levelling-melbourne.jpeg";
 import grindSealFloorCoatingImage from "@/assets/services/grind-seal-floor-coating-application-warehouse-melbourne.jpeg";
+import warehouseRoofSkylightsImage from "@/assets/services/warehouse-roof-skylights-steel-structure-melbourne.jpeg";
 
 export interface FeaturedSection {
   title: string;
@@ -1138,6 +1139,12 @@ export const services: Service[] = [
         description: "From removal of damaged, yellowed or leaking panels through to installation of new polycarbonate sheets that allow natural light to flow through. We handle proper flashing, sealing and all guttering requirements. For properties with asbestos-containing panels, we manage licensed removal and compliant disposal as part of the project. Every installation includes workmanship warranties and documentation for your records.\n\nOur experienced team delivers professional skylight & roof panel replacement services across Melbourne's commercial and industrial properties. We understand the importance of meeting lease obligations and landlord requirements, working efficiently to minimise disruption while achieving quality results.",
         image: skylightSteelStructureImage,
         imageAlt: "Industrial skylight steel structure warehouse roof panel replacement Melbourne"
+      },
+      {
+        title: "Roof Repairs for Leaks & Storm Damage",
+        description: "Melbourne's harsh weather can cause sudden damage to polycarbonate and fibreglass roof panels—cracking, lifting, or complete failure during storms. When leaks appear or panels are damaged, fast response is critical to prevent further water ingress and damage to stock, equipment, or flooring below.\n\nWe provide responsive repair services for storm-damaged and leaking roofs across Melbourne's industrial and commercial properties. From temporary make-safe works through to full panel replacement, we assess the damage, provide clear recommendations, and complete repairs efficiently to get your facility back to normal.",
+        image: warehouseRoofSkylightsImage,
+        imageAlt: "Warehouse roof skylights steel structure Melbourne industrial"
       }
     ],
     processAfterSection: 0,
