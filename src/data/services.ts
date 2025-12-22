@@ -1128,7 +1128,7 @@ export const services: Service[] = [
     featuredSections: [
       {
         title: "Skylight & Roof Panel Replacement Scope",
-        description: "From removal of damaged, yellowed or leaking panels through to installation of new polycarbonate sheets that allow natural light to flow through. We handle proper flashing, sealing and all guttering requirements. For properties with asbestos-containing panels, we manage licensed removal and compliant disposal as part of the project. Every installation includes workmanship warranties and documentation for your records.",
+        description: "From removal of damaged, yellowed or leaking panels through to installation of new polycarbonate sheets that allow natural light to flow through. We handle proper flashing, sealing and all guttering requirements. For properties with asbestos-containing panels, we manage licensed removal and compliant disposal as part of the project. Every installation includes workmanship warranties and documentation for your records.\n\nOur experienced team delivers professional skylight & roof panel replacement services across Melbourne's commercial and industrial properties. We understand the importance of meeting lease obligations and landlord requirements, working efficiently to minimise disruption while achieving quality results.",
         image: skylightSteelStructureImage,
         imageAlt: "Industrial skylight steel structure warehouse roof panel replacement Melbourne"
       }
