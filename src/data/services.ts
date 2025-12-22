@@ -1084,16 +1084,14 @@ export const services: Service[] = [
       "Compliant Asbestos Disposal"
     ],
     benefits: [
-      "End of lease skylight compliance",
-      "Vacant property upgrades",
+      "Storm damaged and leaking roofs",
       "Clear polycarbonate sheet installation",
-      "Damaged and leaking skylight replacement",
       "Yellowed and discoloured panel renewal",
+      "UV Protection",
+      "Compliant asbestos disposal",
       "Complete roof sheet replacement",
-      "Height safety certified crews",
-      "Landlord and property manager liaison",
-      "VBA Certificate of Compliance",
-      "Complete project documentation"
+      "Energy efficiency",
+      "Certification and warranty"
     ],
     comparison: {
       title: "When Skylights Need Replacing",
