@@ -1,6 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import LocationTemplatePage from '../../pages/LocationTemplate.tsx';
+import LocationTemplatePage from '../../page-components/LocationTemplate.tsx';
 import { locations, getLocationBySlug } from '../../data/locations';
 
 export function getStaticPaths() {
@@ -23,5 +23,5 @@ if (!location) {
   description={location.metaDescription}
   canonicalUrl={`https://makegood.melbourne/areas/${location.slug}`}
 >
-  <LocationTemplatePage client:load />
+  <LocationTemplatePage slug={slug} client:load />
 </BaseLayout>

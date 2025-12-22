@@ -1,4 +1,3 @@
-import { useParams, Navigate, Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { getServiceBySlug, getPublishedServices } from "@/data/services";
 import { getServiceRedirectSlug } from "@/lib/redirects";
@@ -17,20 +16,25 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-const ServiceTemplate = () => {
-  const { slug } = useParams<{ slug: string }>();
-  
+interface ServiceTemplateProps {
+  slug?: string;
+}
+
+const ServiceTemplate = ({ slug }: ServiceTemplateProps) => {
   // Check for service redirects (e.g., old flooring pages -> concrete-slab-restoration)
   const redirectSlug = slug ? getServiceRedirectSlug(slug) : null;
   if (redirectSlug) {
-    return <Navigate to={`/services/${redirectSlug}`} replace />;
+    // In Astro, redirect is handled at the page level
+    window.location.href = `/services/${redirectSlug}`;
+    return null;
   }
   
   const service = slug ? getServiceBySlug(slug) : undefined;
 
   // Redirect if service not found OR not published
   if (!service || service.published !== true) {
-    return <Navigate to="/capabilities" replace />;
+    window.location.href = '/capabilities';
+    return null;
   }
 
   const relatedServices = getPublishedServices().filter(s => 
@@ -140,9 +144,9 @@ const ServiceTemplate = () => {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground" asChild>
-                    <Link to="/#contact">
+                    <a href="/#contact">
                       Get a Free Quote
-                    </Link>
+                    </a>
                   </Button>
                   <Button size="lg" variant="outline" className="border-accent text-accent hover:bg-accent hover:text-accent-foreground" asChild>
                     <a href="mailto:enquiries@makegood.melbourne">
@@ -542,9 +546,9 @@ const ServiceTemplate = () => {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground" asChild>
-                    <Link to="/#contact">
+                    <a href="/#contact">
                       Get a Free Quote
-                    </Link>
+                    </a>
                   </Button>
                   <Button size="lg" variant="outline" className="border-accent text-accent hover:bg-accent hover:text-accent-foreground" asChild>
                     <a href="mailto:enquiries@makegood.melbourne">
@@ -564,9 +568,9 @@ const ServiceTemplate = () => {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground" asChild>
-                    <Link to="/#contact">
+                    <a href="/#contact">
                       Get a Free Quote
-                    </Link>
+                    </a>
                   </Button>
                   <Button size="lg" variant="outline" className="border-accent text-accent hover:bg-accent hover:text-accent-foreground" asChild>
                     <a href="mailto:enquiries@makegood.melbourne">
@@ -587,9 +591,9 @@ const ServiceTemplate = () => {
               <h2 className="text-3xl md:text-4xl text-foreground mb-10">Related Services</h2>
               <div className="grid md:grid-cols-3 gap-6">
                 {relatedServices.map((relatedService) => (
-                  <Link 
+                  <a 
                     key={relatedService.slug} 
-                    to={`/services/${relatedService.slug}`}
+                    href={`/services/${relatedService.slug}`}
                     className="group"
                   >
                     <Card className="bg-secondary border-border h-full hover:border-primary transition-colors">
@@ -605,7 +609,7 @@ const ServiceTemplate = () => {
                         </span>
                       </CardContent>
                     </Card>
-                  </Link>
+                  </a>
                 ))}
               </div>
             </div>

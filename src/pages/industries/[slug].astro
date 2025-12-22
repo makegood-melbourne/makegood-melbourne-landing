@@ -1,6 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import IndustryTemplatePage from '../../pages/IndustryTemplate.tsx';
+import IndustryTemplatePage from '../../page-components/IndustryTemplate.tsx';
 import { industries, getIndustryBySlug } from '../../data/industries';
 
 export function getStaticPaths() {
@@ -23,5 +23,5 @@ if (!industry) {
   description={industry.metaDescription}
   canonicalUrl={`https://makegood.melbourne/industries/${industry.slug}`}
 >
-  <IndustryTemplatePage client:load />
+  <IndustryTemplatePage slug={slug} client:load />
 </BaseLayout>

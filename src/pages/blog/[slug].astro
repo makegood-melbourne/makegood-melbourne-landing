@@ -1,6 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import BlogPostPage from '../../pages/BlogPost.tsx';
+import BlogPostPage from '../../page-components/BlogPost.tsx';
 import { blogPosts, getBlogPostBySlug } from '../../data/blogPosts';
 
 export function getStaticPaths() {
@@ -25,5 +25,5 @@ const description = post.metaDescription || post.excerpt;
   description={description}
   canonicalUrl={`https://makegood.melbourne/blog/${post.slug}`}
 >
-  <BlogPostPage client:load />
+  <BlogPostPage slug={slug} client:load />
 </BaseLayout>
