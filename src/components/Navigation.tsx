@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Menu, ChevronDown } from "lucide-react";
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import logo from "@/assets/makegood-melbourne-logo.png";
 import { getSortedLocations } from "@/data/locations";
 import { getPublishedServices } from "@/data/services";
@@ -91,12 +90,12 @@ const Navigation = () => {
                       </DropdownMenuLabel>
                       {categoryServices.map((service) => (
                         <DropdownMenuItem key={service.slug} asChild>
-                          <Link 
-                            to={`/services/${service.slug}`}
+                          <a 
+                            href={`/services/${service.slug}`}
                             className="cursor-pointer"
                           >
                             {service.name}
-                          </Link>
+                          </a>
                         </DropdownMenuItem>
                       ))}
                     </div>
@@ -105,12 +104,12 @@ const Navigation = () => {
                 }, [])}
                 <DropdownMenuSeparator />
                 <DropdownMenuItem asChild>
-                  <Link 
-                    to="/capabilities"
+                  <a 
+                    href="/capabilities"
                     className="cursor-pointer font-medium text-accent"
                   >
                     View All Capabilities
-                  </Link>
+                  </a>
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
@@ -122,22 +121,22 @@ const Navigation = () => {
               <DropdownMenuContent align="start" className="bg-card border-border">
                 {getSortedLocations().map((location) => (
                   <DropdownMenuItem key={location.slug} asChild>
-                    <Link 
-                      to={`/areas/${location.slug}`}
+                    <a 
+                      href={`/areas/${location.slug}`}
                       className="cursor-pointer"
                     >
                       {location.name}
-                    </Link>
+                    </a>
                   </DropdownMenuItem>
                 ))}
                 <DropdownMenuSeparator />
                 <DropdownMenuItem asChild>
-                  <Link 
-                    to="/service-areas"
+                  <a 
+                    href="/service-areas"
                     className="cursor-pointer font-medium text-accent"
                   >
                     View All Service Areas
-                  </Link>
+                  </a>
                 </DropdownMenuItem>
             </DropdownMenuContent>
             </DropdownMenu>
@@ -149,12 +148,12 @@ const Navigation = () => {
               <DropdownMenuContent align="start" className="bg-card border-border">
                 {getAllIndustries().map((industry) => (
                   <DropdownMenuItem key={industry.slug} asChild>
-                    <Link 
-                      to={`/industries/${industry.slug}`}
+                    <a 
+                      href={`/industries/${industry.slug}`}
                       className="cursor-pointer"
                     >
                       {industry.name}
-                    </Link>
+                    </a>
                   </DropdownMenuItem>
                 ))}
               </DropdownMenuContent>
@@ -171,36 +170,36 @@ const Navigation = () => {
                   </button>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
-                  <Link to="/our-process" className="cursor-pointer">
+                  <a href="/our-process" className="cursor-pointer">
                     Our Process
-                  </Link>
+                  </a>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
-                  <Link to="/what-is-make-good" className="cursor-pointer">
+                  <a href="/what-is-make-good" className="cursor-pointer">
                     What is a Make Good?
-                  </Link>
+                  </a>
                 </DropdownMenuItem>
                 <DropdownMenuSeparator />
                 <DropdownMenuItem asChild>
-                  <Link to="/faq" className="cursor-pointer">
+                  <a href="/faq" className="cursor-pointer">
                     FAQ
-                  </Link>
+                  </a>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
-                  <Link to="/blog" className="cursor-pointer">
+                  <a href="/blog" className="cursor-pointer">
                     Blog
-                  </Link>
+                  </a>
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
-            <Link to="/contact" className="text-foreground hover:text-accent transition-colors">
+            <a href="/contact" className="text-foreground hover:text-accent transition-colors">
               Contact
-            </Link>
-            <Link to="/contact">
+            </a>
+            <a href="/contact">
               <Button className="bg-accent hover:bg-accent/90 text-accent-foreground">
                 Get a Quote
               </Button>
-            </Link>
+            </a>
           </div>
 
           <button className="md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
@@ -223,62 +222,62 @@ const Navigation = () => {
                       </span>
                       <div className="flex flex-col gap-2 mt-1">
                         {categoryServices.map((service) => (
-                          <Link 
+                          <a 
                             key={service.slug}
-                            to={`/services/${service.slug}`}
+                            href={`/services/${service.slug}`}
                             className="text-muted-foreground hover:text-accent transition-colors"
                             onClick={() => setIsMenuOpen(false)}
                           >
                             {service.name}
-                          </Link>
+                          </a>
                         ))}
                       </div>
                     </div>
                   );
                 })}
-                <Link 
-                  to="/capabilities"
+                <a 
+                  href="/capabilities"
                   className="text-accent hover:text-accent/80 transition-colors font-medium"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   View All Capabilities
-                </Link>
+                </a>
               </div>
             </div>
             <div className="py-2">
               <span className="text-foreground font-medium">Service Areas</span>
               <div className="pl-4 mt-2 flex flex-col gap-2">
                 {getSortedLocations().map((location) => (
-                  <Link 
+                  <a 
                     key={location.slug}
-                    to={`/areas/${location.slug}`}
+                    href={`/areas/${location.slug}`}
                     className="text-muted-foreground hover:text-accent transition-colors"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     {location.name}
-                  </Link>
+                  </a>
                 ))}
-                <Link 
-                  to="/service-areas"
+                <a 
+                  href="/service-areas"
                   className="text-accent hover:text-accent/80 transition-colors font-medium"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   View All Service Areas
-                </Link>
+                </a>
               </div>
             </div>
             <div className="py-2">
               <span className="text-foreground font-medium">Industries</span>
               <div className="pl-4 mt-2 flex flex-col gap-2">
                 {getAllIndustries().map((industry) => (
-                  <Link 
+                  <a 
                     key={industry.slug}
-                    to={`/industries/${industry.slug}`}
+                    href={`/industries/${industry.slug}`}
                     className="text-muted-foreground hover:text-accent transition-colors"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     {industry.name}
-                  </Link>
+                  </a>
                 ))}
               </div>
             </div>
@@ -291,48 +290,48 @@ const Navigation = () => {
                 >
                   About Us
                 </button>
-                <Link 
-                  to="/our-process" 
+                <a 
+                  href="/our-process" 
                   className="text-muted-foreground hover:text-accent transition-colors"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Our Process
-                </Link>
-                <Link 
-                  to="/what-is-make-good" 
+                </a>
+                <a 
+                  href="/what-is-make-good" 
                   className="text-muted-foreground hover:text-accent transition-colors"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   What is a Make Good?
-                </Link>
-                <Link 
-                  to="/faq" 
+                </a>
+                <a 
+                  href="/faq" 
                   className="text-muted-foreground hover:text-accent transition-colors"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   FAQ
-                </Link>
-                <Link 
-                  to="/blog" 
+                </a>
+                <a 
+                  href="/blog" 
                   className="text-muted-foreground hover:text-accent transition-colors"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Blog
-                </Link>
+                </a>
               </div>
             </div>
-            <Link 
-              to="/contact" 
+            <a 
+              href="/contact" 
               className="text-left text-foreground hover:text-accent transition-colors py-2"
               onClick={() => setIsMenuOpen(false)}
             >
               Contact
-            </Link>
-            <Link to="/contact" onClick={() => setIsMenuOpen(false)}>
+            </a>
+            <a href="/contact" onClick={() => setIsMenuOpen(false)}>
               <Button className="bg-accent hover:bg-accent/90 text-accent-foreground w-full">
                 Get a Quote
               </Button>
-            </Link>
+            </a>
           </div>
         )}
       </div>

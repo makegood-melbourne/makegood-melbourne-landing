@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Helmet } from "react-helmet-async";
-import { Link } from "react-router-dom";
 import { ArrowRight, ChevronDown } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
@@ -502,10 +501,10 @@ const FAQPage = () => {
                     if (line.startsWith('→')) {
                       return (
                         <p key={lineIndex} className="mt-4">
-                          <Link to="/what-is-make-good" className="text-primary hover:underline inline-flex items-center gap-1">
+                          <a href="/what-is-make-good" className="text-primary hover:underline inline-flex items-center gap-1">
                             {line.replace('→ ', '')}
                             <ArrowRight className="h-4 w-4" />
-                          </Link>
+                          </a>
                         </p>
                       );
                     }
@@ -530,15 +529,15 @@ const FAQPage = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="group">
-                <Link to="/contact">
+                <a href="/contact">
                   Get a Free Quote
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-                </Link>
+                </a>
               </Button>
               <Button asChild variant="outline" size="lg">
-                <Link to="/service-areas">
+                <a href="/service-areas">
                   View Service Areas
-                </Link>
+                </a>
               </Button>
             </div>
           </div>

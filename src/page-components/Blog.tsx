@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import { Helmet } from "react-helmet-async";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { ArrowRight, Clock } from "lucide-react";
@@ -75,13 +75,13 @@ const Blog = () => {
                   <p className="text-muted-foreground mb-4 line-clamp-3">
                     {post.excerpt}
                   </p>
-                  <Link 
-                    to={`/blog/${post.slug}`}
+                  <a 
+                    href={`/blog/${post.slug}`}
                     className="inline-flex items-center text-accent hover:text-accent/80 transition-colors"
                   >
                     Read More
                     <ArrowRight className="ml-2 h-4 w-4" />
-                  </Link>
+                  </a>
                 </CardContent>
               </Card>
             ))}

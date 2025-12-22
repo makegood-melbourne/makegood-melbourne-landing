@@ -1,5 +1,4 @@
 import { Helmet } from "react-helmet-async";
-import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Breadcrumbs from "@/components/Breadcrumbs";
@@ -45,7 +44,7 @@ const ServiceAreas = () => {
           <div className="container mx-auto px-4">
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
               {locations.map((location) => (
-                <Link key={location.slug} to={`/areas/${location.slug}`}>
+                <a key={location.slug} href={`/areas/${location.slug}`}>
                   <Card className="border-border hover:border-accent/50 transition-all duration-300 h-full group">
                     <CardContent className="pt-6">
                       <div className="flex items-start gap-4">
@@ -67,7 +66,7 @@ const ServiceAreas = () => {
                       </div>
                     </CardContent>
                   </Card>
-                </Link>
+                </a>
               ))}
             </div>
           </div>
@@ -136,11 +135,11 @@ const ServiceAreas = () => {
                   <p className="text-sm text-muted-foreground">Concrete cancer and structural repairs</p>
                 </div>
               </div>
-              <Link to="/capabilities">
+              <a href="/capabilities">
                 <Button className="bg-accent hover:bg-accent/90 text-accent-foreground">
                   View All Our Capabilities
                 </Button>
-              </Link>
+              </a>
             </div>
           </div>
         </section>
@@ -154,11 +153,11 @@ const ServiceAreas = () => {
             <p className="text-primary-foreground/80 mb-8 max-w-2xl mx-auto">
               Contact us today for a free, no-obligation quote. We'll visit your site anywhere in Melbourne to assess your make good requirements.
             </p>
-            <Link to="/contact">
+            <a href="/contact">
               <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
                 Get a Free Quote
               </Button>
-            </Link>
+            </a>
           </div>
         </section>
       </main>

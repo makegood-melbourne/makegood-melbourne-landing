@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { ArrowRight, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -61,9 +60,9 @@ const ServiceAreasGrid = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto mb-10">
           {areas.map((area, index) => (
             area.slug ? (
-              <Link 
+              <a 
                 key={index}
-                to={`/service-areas/${area.slug}`}
+                href={`/service-areas/${area.slug}`}
                 className="group bg-background border border-border rounded-lg p-5 hover:border-primary/50 hover:shadow-md transition-all duration-300"
               >
                 <div className="flex items-start gap-3">
@@ -77,7 +76,7 @@ const ServiceAreasGrid = () => {
                     </p>
                   </div>
                 </div>
-              </Link>
+              </a>
             ) : (
               <div 
                 key={index}
@@ -106,10 +105,10 @@ const ServiceAreasGrid = () => {
             size="lg"
             className="group"
           >
-            <Link to="/service-areas">
+            <a href="/service-areas">
               View All Service Areas
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-            </Link>
+            </a>
           </Button>
         </div>
       </div>

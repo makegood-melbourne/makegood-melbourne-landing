@@ -1,5 +1,4 @@
 import { Helmet } from "react-helmet-async";
-import { Link } from "react-router-dom";
 import { ArrowRight, CheckCircle, FileText, Building2, Users, AlertTriangle, Clock } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
@@ -324,9 +323,9 @@ const WhatIsMakeGood = () => {
           <p className="text-center text-muted-foreground">
             Actual costs depend on your specific lease terms, the condition of the premises, 
             and the extent of modifications made during your tenancy. 
-            <Link to="/contact" className="text-primary hover:underline ml-1">
+            <a href="/contact" className="text-primary hover:underline ml-1">
               Contact us for a free, no-obligation quote.
-            </Link>
+            </a>
           </p>
         </div>
       </section>
@@ -339,9 +338,9 @@ const WhatIsMakeGood = () => {
           </h2>
           <p className="text-center text-muted-foreground mb-8">
             For a detailed breakdown of each step, see{" "}
-            <Link to="/our-process" className="text-primary hover:underline">
+            <a href="/our-process" className="text-primary hover:underline">
               our full process guide
-            </Link>.
+            </a>.
           </p>
           
           <div className="space-y-6">
@@ -452,15 +451,15 @@ const WhatIsMakeGood = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" className="text-base">
-              <Link to="/contact">
+              <a href="/contact">
                 Get a Free Quote
                 <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
+              </a>
             </Button>
             <Button asChild variant="outline" size="lg" className="text-base">
-              <Link to="/our-process">
+              <a href="/our-process">
                 See Our Process
-              </Link>
+              </a>
             </Button>
           </div>
         </div>

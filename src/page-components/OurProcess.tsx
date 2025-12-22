@@ -1,5 +1,4 @@
 import { Helmet } from "react-helmet-async";
-import { Link } from "react-router-dom";
 import { 
   ArrowRight, 
   Phone, 
@@ -218,7 +217,7 @@ const OurProcess = () => {
             <strong className="text-tertiary">Note:</strong> This process applies to end-of-lease make good projects. 
             For simpler works (cleaning, minor repairs) or specialist services (structural remediation, cladding), 
             we offer a streamlined approach tailored to your specific needs.{" "}
-            <Link to="/contact" className="text-primary hover:underline">Get in touch</Link> to discuss.
+            <a href="/contact" className="text-primary hover:underline">Get in touch</a> to discuss.
           </p>
         </div>
       </section>
@@ -362,15 +361,15 @@ const OurProcess = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
             <Button asChild size="lg" className="text-base">
-              <Link to="/contact">
+              <a href="/contact">
                 Get a Free Quote
                 <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
+              </a>
             </Button>
             <Button asChild variant="outline" size="lg" className="text-base">
-              <Link to="/what-is-make-good">
+              <a href="/what-is-make-good">
                 Learn About Make Good
-              </Link>
+              </a>
             </Button>
           </div>
           <div className="flex flex-wrap justify-center gap-4 text-sm text-muted-foreground">
@@ -385,9 +384,9 @@ const OurProcess = () => {
           </div>
           <p className="text-muted-foreground mt-6">
             Have more questions?{" "}
-            <Link to="/faq" className="text-primary hover:underline">
+            <a href="/faq" className="text-primary hover:underline">
               Check our FAQ
-            </Link>{" "}
+            </a>{" "}
             for detailed answers.
           </p>
         </div>

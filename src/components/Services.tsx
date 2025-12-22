@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Building2, Shield, Wrench } from "lucide-react";
 
@@ -53,9 +53,9 @@ const Services = () => {
             );
 
             return service.link ? (
-              <Link key={index} to={service.link} className="block group">
+              <a key={index} href={service.link} className="block group">
                 {cardContent}
-              </Link>
+              </a>
             ) : (
               <div key={index}>{cardContent}</div>
             );
