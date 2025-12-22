@@ -1071,12 +1071,12 @@ export const services: Service[] = [
     published: true
   },
   {
-    name: "Skylight & Roof Panel Replacement",
-    slug: "skylight-roof-panel-replacement",
-    title: "Industrial Polycarbonate Roofing Solutions Melbourne",
-    metaTitle: "Polycarbonate Roofing Sheets Melbourne | Skylight Replacement Specialists",
+    name: "Polycarbonate Roofing & Skylights",
+    slug: "polycarbonate-roofing-skylights",
+    title: "Polycarbonate Roofing & Skylights Melbourne",
+    metaTitle: "Polycarbonate Roofing & Skylights Melbourne | Industrial Roof Panel Specialists",
     description: "We supply and install clear polycarbonate roofing sheets designed for industrial and warehouse environments. Our installations improve natural light, resist harsh weather and are completed in accordance with Australian Standards and safety requirements. From new installations to repairs and upgrades, we deliver practical roofing solutions suited to Melbourne's demanding conditions.",
-    metaDescription: "Clear polycarbonate roofing sheets Melbourne for warehouses and industrial facilities. Australian Standards compliant, weather resistant installations, repairs and upgrades.",
+    metaDescription: "Polycarbonate roofing and skylight installation Melbourne for warehouses and industrial facilities. Australian Standards compliant, weather resistant installations, repairs and upgrades.",
     heroText: "We supply and install clear polycarbonate roofing sheets designed for industrial and warehouse environments. Our installations improve natural light, resist harsh weather and are completed in accordance with Australian Standards and safety requirements.",
     heroImage: skylightRoofPanelsImage,
     heroImageAlt: "Clear polycarbonate roofing sheet installation industrial warehouse Melbourne",

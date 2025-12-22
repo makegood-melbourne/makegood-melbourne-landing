@@ -39,7 +39,7 @@ const serviceCategories = [
   },
   {
     label: "Structural & Remediation",
-    slugs: ['structural-remediation', 'skylight-roof-panel-replacement', 'cladding-glazing', 'concrete-floor-repair', 'waterproofing']
+    slugs: ['structural-remediation', 'polycarbonate-roofing-skylights', 'cladding-glazing', 'concrete-floor-repair', 'waterproofing']
   }
 ];
 
