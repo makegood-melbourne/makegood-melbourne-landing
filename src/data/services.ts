@@ -1127,31 +1127,13 @@ export const services: Service[] = [
     },
     featuredSections: [
       {
-        title: "End of Lease Skylight Compliance",
-        description: "Industrial and warehouse leases often require skylights to be returned in original condition. Cracked, yellowed or leaking panels typically fail landlord inspections, putting your bond at risk and delaying handover. We assess your skylights against lease requirements, prepare detailed scopes for property manager approval, complete the replacement works, and provide full documentation including VBA Certificates of Compliance. As make good specialists, we understand what landlords and property managers expect—and we handle the entire process so you can focus on your business transition.",
-        image: undefined,
-        imageAlt: "End of lease skylight inspection commercial property Melbourne"
-      },
-      {
         title: "Skylight & Roof Panel Replacement Scope",
         description: "From removal of damaged, yellowed or leaking panels through to installation of new polycarbonate sheets that allow natural light to flow through. We handle proper flashing, sealing and all guttering requirements. For properties with asbestos-containing panels, we manage licensed removal and compliant disposal as part of the project. Every installation includes workmanship warranties and documentation for your records.",
         image: skylightSteelStructureImage,
         imageAlt: "Industrial skylight steel structure warehouse roof panel replacement Melbourne"
-      },
-      {
-        title: "Vacant Property Upgrades for Owners",
-        description: "Property owners know that presentation matters when re-leasing industrial space. Damaged or yellowed skylights create a poor first impression for prospective tenants—signalling deferred maintenance and reducing your property's appeal. Replacing aged skylights during a vacancy period is practical and cost-effective: no tenant disruption, improved natural light that makes the space feel larger and more modern, and reduced ongoing maintenance issues. We help owners maximise their property's leasability with targeted upgrades that deliver genuine return on investment.",
-        image: undefined,
-        imageAlt: "Warehouse property upgrade skylight replacement Melbourne owner improvements"
-      },
-      {
-        title: "Included in Your Make Good Scope",
-        description: "Skylights are often part of a broader end-of-lease scope alongside flooring, cleaning, repairs and other requirements. We include skylight replacement in your overall make good quote—one company, one quote, one project manager, one handover. No need to find and manage separate trades for different parts of your make good.",
-        image: undefined,
-        imageAlt: "Complete make good scope including skylight replacement Melbourne"
       }
     ],
-    processAfterSection: 1,
+    processAfterSection: 0,
     process: [
       {
         step: "Skylight Assessment",
