@@ -21,6 +21,7 @@ if (!industry) {
 <BaseLayout 
   title={industry.metaTitle}
   description={industry.metaDescription}
+  ogImage={industry.ogImage || "/og-default.jpg"}
   canonicalUrl={`https://makegood.melbourne/industries/${industry.slug}`}
 >
   <IndustryTemplatePage slug={slug} client:load />

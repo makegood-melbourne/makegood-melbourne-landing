@@ -29,6 +29,7 @@ export interface Industry {
   heroImage?: string;
   heroImageAlt?: string;
   heroImagePlaceholder?: string; // Description of ideal hero image
+  ogImage?: string; // Public URL for Open Graph image
   introduction: string;
   featuredSections?: FeaturedSection[];
   challenges: {
@@ -53,6 +54,7 @@ export const industries: Industry[] = [
     heroText: "Complete make good solutions for Melbourne's commercial properties—from office towers and retail spaces to multi-tenancy buildings.",
     heroImage: commercialHeroImage,
     heroImageAlt: "Completed commercial office make good with polished concrete floors and exposed ceiling services in Melbourne",
+    ogImage: "/og/commercial.jpg",
     introduction: "Commercial make goods require precision, efficiency and minimal disruption to building operations. Whether you're vacating an office suite, retail tenancy or entire commercial floor, our team delivers comprehensive restoration that meets landlord specifications and building management requirements. We coordinate all trades, manage after-hours access and ensure your bond is returned in full.",
     featuredSections: [
       {
@@ -119,6 +121,7 @@ export const industries: Industry[] = [
     heroText: "Expert industrial make good services for Melbourne factories, warehouses and manufacturing facilities—from machinery removal to complete site restoration.",
     heroImage: industrialHeroImage,
     heroImageAlt: "Empty industrial warehouse after make good restoration with polished concrete floor and steel trusses in Melbourne",
+    ogImage: "/og/industrial.jpg",
     introduction: "Industrial properties present the most complex make good challenges. Decades of manufacturing operations, heavy machinery anchored to floors, oil-stained concrete, hazardous materials and substantial modifications all require specialist handling. We've restored factories and warehouses across Melbourne to handover-ready condition, regardless of what operations occurred there.",
     featuredSections: [
       {
@@ -191,6 +194,7 @@ export const industries: Industry[] = [
     heroText: "Expert building remediation services across Melbourne—structural repairs, cladding replacement, concrete restoration and waterproofing solutions.",
     heroImage: remediationHeroImage,
     heroImageAlt: "Commercial building glazing and facade installation during remediation works in Melbourne",
+    ogImage: "/og/remediation.jpg",
     introduction: "Building remediation addresses defects and deterioration that affect a building's structural integrity, safety and weatherproofing. From combustible cladding replacement to concrete cancer treatment, our remediation services restore buildings to compliant, safe condition. We work with strata managers, building owners and facility managers across Melbourne to deliver lasting solutions.",
     featuredSections: [
       {

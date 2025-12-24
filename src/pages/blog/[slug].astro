@@ -18,11 +18,16 @@ if (!post) {
 }
 
 const description = post.metaDescription || post.excerpt;
+
+// Construct OG image path from the blog image filename (strip extension and use .jpg)
+const imageBaseName = post.image.replace(/\.(webp|jpg|jpeg|png)$/i, '');
+const ogImage = `/og/blog/${imageBaseName}.jpg`;
 ---
 
 <BaseLayout 
   title={`${post.title} | Make Good Melbourne`}
   description={description}
+  ogImage={ogImage}
   canonicalUrl={`https://makegood.melbourne/blog/${post.slug}`}
 >
   <BlogPostPage slug={slug} client:load />
