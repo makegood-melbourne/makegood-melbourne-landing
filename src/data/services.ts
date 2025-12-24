@@ -79,6 +79,7 @@ export interface Service {
   heroText: string;
   heroImage?: string;
   heroImageAlt?: string;
+  ogImage?: string; // Public URL for Open Graph image (e.g., "/og/service-name.jpg")
   secondaryImage?: string;
   secondaryImageAlt?: string;
   trustBadges?: string[];
@@ -460,6 +461,7 @@ export const services: Service[] = [
     description: "Lease ending? We handle the heavy-duty cleaning regular cleaners won't touch. Industrial floor scrubbing, high-pressure washing and chemical treatment—everything your landlord expects at handover. We work at scale: 500sqm warehouse floors, multi-level office strip-outs, loading docks caked in years of grime. This isn't maintenance cleaning—it's handover-ready restoration.",
     metaDescription: "Make good cleaning Melbourne. Lease end floor scrubbing, high-pressure washing, oil and tyre mark removal. Pass your final inspection. Free quotes.",
     heroText: "Heavy-duty cleaning for lease end and make good handovers. We tackle the jobs regular cleaners can't—warehouse floors, post-strip-out sites and final inspections that need to pass first time.",
+    ogImage: "/og/make-good-cleaning.jpg",
     heroImage: commercialFloorSweepingImage,
     heroImageAlt: "Worker sweeping concrete floor with industrial broom during make good cleaning Melbourne",
     secondaryImage: highPressureWarehouseCleaningImage,
