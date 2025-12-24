@@ -25,7 +25,7 @@ import lineMarkingRestoredImage from "@/assets/services/warehouse-floor-worn-lin
 import carParkLineMarkingImage from "@/assets/services/car-park-line-marking-restoration-aerial-melbourne.jpeg";
 import emptyWarehouseImage from "@/assets/services/empty-warehouse-after-makegood-melbourne.png";
 import manufacturingFacilityImage from "@/assets/services/manufacturing-facility-before-makegood-melbourne.jpeg";
-import concreteSlabRestorationHeroImage from "@/assets/services/concrete-slab-grinding-polished-warehouse-floor-melbourne.png";
+import concreteSlabRestorationHeroImage from "@/assets/services/concrete-slab-restoration-warehouse-floor-melbourne.jpeg";
 import concreteFloorGrinderImage from "@/assets/services/industrial-concrete-floor-grinding-warehouse-melbourne.jpeg";
 import concreteFloorJointImage from "@/assets/services/concrete-floor-joint-metal-expansion-strip-melbourne.jpeg";
 import skylightRoofPanelsImage from "@/assets/services/industrial-skylight-roof-panels-steel-structure-melbourne.jpeg";
