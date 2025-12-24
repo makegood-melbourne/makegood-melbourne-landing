@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import { useParams } from "react-router-dom";
 import { ArrowRight, CheckCircle, AlertTriangle, ImageIcon } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
@@ -22,7 +23,9 @@ interface IndustryTemplateProps {
   slug?: string;
 }
 
-const IndustryTemplate = ({ slug }: IndustryTemplateProps) => {
+const IndustryTemplate = ({ slug: propSlug }: IndustryTemplateProps) => {
+  const params = useParams<{ slug: string }>();
+  const slug = propSlug || params.slug;
   const industry = getIndustryBySlug(slug || "");
 
   if (!industry) {

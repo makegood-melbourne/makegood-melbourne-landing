@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import { useParams } from "react-router-dom";
 import { getServiceBySlug, getPublishedServices } from "@/data/services";
 import { renderTextWithLinks } from "@/lib/textWithLinks";
 import Navigation from "@/components/Navigation";
@@ -19,7 +20,9 @@ interface ServiceTemplateProps {
   slug?: string;
 }
 
-const ServiceTemplate = ({ slug }: ServiceTemplateProps) => {
+const ServiceTemplate = ({ slug: propSlug }: ServiceTemplateProps) => {
+  const params = useParams<{ slug: string }>();
+  const slug = propSlug || params.slug;
   const service = slug ? getServiceBySlug(slug) : undefined;
 
   // Redirect if service not found OR not published

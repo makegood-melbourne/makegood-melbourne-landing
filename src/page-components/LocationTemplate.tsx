@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import { useParams } from "react-router-dom";
 import { MapPin, Clock, Shield, Mail, ArrowRight, CheckCircle2, Building2, Wrench, Warehouse, Factory, HardHat, Truck, HelpCircle } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
@@ -34,7 +35,9 @@ interface LocationTemplateProps {
   slug?: string;
 }
 
-const LocationTemplate = ({ slug }: LocationTemplateProps) => {
+const LocationTemplate = ({ slug: propSlug }: LocationTemplateProps) => {
+  const params = useParams<{ slug: string }>();
+  const slug = propSlug || params.slug;
   const location = slug ? getLocationBySlug(slug) : undefined;
 
   if (!location) {

@@ -1,5 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import { ArrowLeft, Clock, Calendar, Phone } from "lucide-react";
+import { useParams } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Navigation from "@/components/Navigation";
@@ -12,7 +13,9 @@ interface BlogPostProps {
   slug?: string;
 }
 
-const BlogPost = ({ slug }: BlogPostProps) => {
+const BlogPost = ({ slug: propSlug }: BlogPostProps) => {
+  const params = useParams<{ slug: string }>();
+  const slug = propSlug || params.slug;
   const post = blogPosts.find((p) => p.slug === slug);
 
   if (!post) {
