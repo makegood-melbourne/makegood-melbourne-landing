@@ -4,12 +4,10 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Mail, MapPin, Phone } from "lucide-react";
 import { useState } from "react";
-import { useLocation } from "react-router-dom";
 import { toast } from "sonner";
 import { supabase } from "@/integrations/supabase/client";
 
 const Contact = () => {
-  const location = useLocation();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -23,7 +21,7 @@ const Contact = () => {
     setIsSubmitting(true);
 
     try {
-      const sourcePage = `${window.location.origin}${location.pathname}`;
+      const sourcePage = window.location.href;
       const { data, error } = await supabase.functions.invoke('send-contact-email', {
         body: { ...formData, sourcePage }
       });
