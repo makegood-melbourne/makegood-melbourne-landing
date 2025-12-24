@@ -187,7 +187,7 @@ const LocationTemplate = ({ slug: propSlug }: LocationTemplateProps) => {
       </div>
 
       {/* Hero Section */}
-      <section className="relative min-h-[70vh] flex items-center bg-background">
+      <section className="relative pt-6 md:pt-10 pb-16 flex items-center bg-background">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left: Content */}
