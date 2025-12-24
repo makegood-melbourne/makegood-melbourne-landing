@@ -150,8 +150,8 @@ const ServiceTemplate = ({ slug: propSlug }: ServiceTemplateProps) => {
                   </Button>
                 </div>
               </div>
-              {/* Hero Image */}
-              <div className="hidden lg:block">
+              {/* Hero Image - Show on all screen sizes */}
+              <div className="order-first lg:order-last">
                 {service.heroImage ? (
                   <img 
                     src={service.heroImage} 
@@ -203,8 +203,8 @@ const ServiceTemplate = ({ slug: propSlug }: ServiceTemplateProps) => {
           return (
             <section key={`early-featured-${index}`} className="py-16 bg-secondary">
               <div className="container mx-auto px-4">
-                <div className={`grid lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}>
-                  <div className={index % 2 === 1 ? 'lg:order-2' : ''}>
+                <div className={`grid lg:grid-cols-2 gap-12 items-center`}>
+                  <div className={`order-last lg:order-first ${index % 2 === 1 ? 'lg:order-2' : ''}`}>
                     <h2 className="text-3xl md:text-4xl text-foreground mb-6">
                       {section.title}
                     </h2>
@@ -214,7 +214,7 @@ const ServiceTemplate = ({ slug: propSlug }: ServiceTemplateProps) => {
                       </p>
                     ))}
                   </div>
-                  <div className={index % 2 === 1 ? 'lg:order-1' : ''}>
+                  <div className={`order-first lg:order-last ${index % 2 === 1 ? 'lg:order-1' : ''}`}>
                     {section.image ? (
                       <img 
                         src={section.image} 
@@ -242,14 +242,23 @@ const ServiceTemplate = ({ slug: propSlug }: ServiceTemplateProps) => {
           <section className="py-16 bg-secondary">
             <div className="container mx-auto px-4">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
-                {/* Image on left */}
-                <div className="hidden lg:block">
+                {/* Image on left - Show on all screen sizes */}
+                <div className="order-first lg:order-first">
                   {service.secondaryImage ? (
                     <img 
                       src={service.secondaryImage} 
                       alt={service.secondaryImageAlt || `${service.name} Melbourne - professional commercial services`}
                       className="aspect-[4/3] w-full object-cover rounded-lg"
                       style={{ objectPosition: service.slug === 'epoxy-flooring' ? '100% center' : 'center' }}
+                      width={800}
+                      height={600}
+                      loading="lazy"
+                    />
+                  ) : service.heroImage ? (
+                    <img 
+                      src={service.heroImage} 
+                      alt={service.heroImageAlt || `${service.name} Melbourne - professional commercial services`}
+                      className="aspect-[4/3] w-full object-cover rounded-lg"
                       width={800}
                       height={600}
                       loading="lazy"
