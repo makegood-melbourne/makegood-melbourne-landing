@@ -1,6 +1,5 @@
 import { Helmet } from "react-helmet-async";
 import { getServiceBySlug, getPublishedServices } from "@/data/services";
-import { getServiceRedirectSlug } from "@/lib/redirects";
 import { renderTextWithLinks } from "@/lib/textWithLinks";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
@@ -21,14 +20,6 @@ interface ServiceTemplateProps {
 }
 
 const ServiceTemplate = ({ slug }: ServiceTemplateProps) => {
-  // Check for service redirects (e.g., old flooring pages -> concrete-slab-restoration)
-  const redirectSlug = slug ? getServiceRedirectSlug(slug) : null;
-  if (redirectSlug) {
-    // In Astro, redirect is handled at the page level
-    window.location.href = `/services/${redirectSlug}`;
-    return null;
-  }
-  
   const service = slug ? getServiceBySlug(slug) : undefined;
 
   // Redirect if service not found OR not published
