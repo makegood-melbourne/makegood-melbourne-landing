@@ -682,7 +682,7 @@ export const services: Service[] = [
     heroText: "Your lease requires the concrete floor restored to original condition. We handle the full scope—flooring removal, adhesive grinding, coating removal and slab preparation. Whether your lease requires [epoxy restoration](/services/epoxy-flooring) or the slab needs sealing—we can provide you with solutions that meet your obligations.",
     ogImage: "/og/concrete-slab-restoration.jpg",
     heroImage: concreteSlabRestorationHeroImage,
-    heroImageAlt: "Industrial warehouse concrete slab with freshly ground and sealed floor showing light reflection and grinding swirl patterns Melbourne",
+    heroImageAlt: "Large industrial warehouse with restored concrete slab floor and ride-on floor scrubber showing completed make good handover Melbourne",
     secondaryImage: lineMarkingWornFloorImage,
     secondaryImageAlt: "Worn industrial warehouse floor with faded line markings requiring concrete slab restoration Melbourne",
     trustBadges: [
