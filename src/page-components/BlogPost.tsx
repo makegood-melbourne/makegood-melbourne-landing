@@ -7,22 +7,12 @@ import Footer from "@/components/Footer";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { blogPosts } from "@/data/blogPosts";
 import { getBlogImage, calculateReadingTime, parseMarkdown } from "@/lib/blogUtils";
-import { getRedirectSlug } from "@/lib/redirects";
 
 interface BlogPostProps {
   slug?: string;
 }
 
 const BlogPost = ({ slug }: BlogPostProps) => {
-  // Check if this is an old URL that needs redirecting
-  const redirectSlug = slug ? getRedirectSlug(slug) : null;
-  if (redirectSlug) {
-    if (typeof window !== 'undefined') {
-      window.location.href = `/blog/${redirectSlug}`;
-    }
-    return null;
-  }
-  
   const post = blogPosts.find((p) => p.slug === slug);
 
   if (!post) {
