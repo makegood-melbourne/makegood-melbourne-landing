@@ -227,18 +227,14 @@ const ServiceTemplate = ({ slug: propSlug }: ServiceTemplateProps) => {
           return (
             <section key={`early-featured-${index}`} className="py-16 bg-secondary">
               <div className="container mx-auto px-4">
+                {/* Title first on mobile */}
+                <h2 className="text-3xl md:text-4xl text-foreground mb-6 lg:hidden">
+                  {section.title}
+                </h2>
+                
                 <div className={`grid lg:grid-cols-2 gap-12 items-center`}>
-                  <div className={`order-last lg:order-first ${index % 2 === 1 ? 'lg:order-2' : ''}`}>
-                    <h2 className="text-3xl md:text-4xl text-foreground mb-6">
-                      {section.title}
-                    </h2>
-                    {paragraphs.map((para, pIndex) => (
-                      <p key={pIndex} className="text-xl text-muted-foreground leading-relaxed mt-4 first:mt-0">
-                        {renderTextWithLinks(para)}
-                      </p>
-                    ))}
-                  </div>
-                  <div className={`order-first lg:order-last ${index % 2 === 1 ? 'lg:order-1' : ''}`}>
+                  {/* Image - shows after title on mobile */}
+                  <div className={index % 2 === 1 ? 'lg:order-1' : ''}>
                     {section.image ? (
                       <img 
                         src={section.image} 
@@ -255,6 +251,17 @@ const ServiceTemplate = ({ slug: propSlug }: ServiceTemplateProps) => {
                       </div>
                     )}
                   </div>
+                  {/* Copy */}
+                  <div className={index % 2 === 1 ? 'lg:order-2' : ''}>
+                    <h2 className="hidden lg:block text-3xl md:text-4xl text-foreground mb-6">
+                      {section.title}
+                    </h2>
+                    {paragraphs.map((para, pIndex) => (
+                      <p key={pIndex} className="text-xl text-muted-foreground leading-relaxed mt-4 first:mt-0">
+                        {renderTextWithLinks(para)}
+                      </p>
+                    ))}
+                  </div>
                 </div>
               </div>
             </section>
@@ -265,9 +272,12 @@ const ServiceTemplate = ({ slug: propSlug }: ServiceTemplateProps) => {
         {!service.skipAboutSection && (
           <section className="py-16 bg-secondary">
             <div className="container mx-auto px-4">
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
-                {/* Image on left - Show on all screen sizes */}
-                <div className="order-first lg:order-first">
+              {/* Title first on all screen sizes */}
+              <h2 className="text-3xl md:text-4xl text-foreground mb-6 lg:hidden">{service.name} Scope</h2>
+              
+              <div className="grid lg:grid-cols-2 gap-12 items-center">
+                {/* Image - shows after title on mobile, on left for desktop */}
+                <div>
                   {service.secondaryImage ? (
                     <img 
                       src={service.secondaryImage} 
@@ -295,7 +305,7 @@ const ServiceTemplate = ({ slug: propSlug }: ServiceTemplateProps) => {
                 </div>
                 {/* Copy on right */}
                 <div>
-                  <h2 className="text-3xl md:text-4xl text-foreground mb-6">{service.name} Scope</h2>
+                  <h2 className="hidden lg:block text-3xl md:text-4xl text-foreground mb-6">{service.name} Scope</h2>
                   <p className="text-xl text-muted-foreground leading-relaxed">
                     {renderTextWithLinks(service.description)}
                   </p>
@@ -357,16 +367,14 @@ const ServiceTemplate = ({ slug: propSlug }: ServiceTemplateProps) => {
         {service.featuredSection && !service.featuredSections && (
           <section className="py-16 bg-background">
             <div className="container mx-auto px-4">
+              {/* Title first on mobile */}
+              <h2 className="text-3xl md:text-4xl text-foreground mb-6 lg:hidden">
+                {service.featuredSection.title}
+              </h2>
+              
               <div className="grid lg:grid-cols-2 gap-12 items-center">
-                <div>
-                  <h2 className="text-3xl md:text-4xl text-foreground mb-6">
-                    {service.featuredSection.title}
-                  </h2>
-                  <p className="text-xl text-muted-foreground leading-relaxed">
-                    {service.featuredSection.description}
-                  </p>
-                </div>
-                <div>
+                {/* Image - shows after title on mobile, on right for desktop */}
+                <div className="lg:order-2">
                   {service.featuredSection.image ? (
                     <img 
                       src={service.featuredSection.image} 
@@ -382,6 +390,15 @@ const ServiceTemplate = ({ slug: propSlug }: ServiceTemplateProps) => {
                       <span className="text-muted-foreground/50 text-sm">Service Image</span>
                     </div>
                   )}
+                </div>
+                {/* Copy */}
+                <div className="lg:order-1">
+                  <h2 className="hidden lg:block text-3xl md:text-4xl text-foreground mb-6">
+                    {service.featuredSection.title}
+                  </h2>
+                  <p className="text-xl text-muted-foreground leading-relaxed">
+                    {service.featuredSection.description}
+                  </p>
                 </div>
               </div>
             </div>
@@ -419,17 +436,13 @@ const ServiceTemplate = ({ slug: propSlug }: ServiceTemplateProps) => {
             elements.push(
               <section key={`featured-${index}`} className="py-16 bg-secondary">
                 <div className="container mx-auto px-4">
-                  <div className={`grid lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}>
-                    <div className={index % 2 === 1 ? 'lg:order-2' : ''}>
-                      <h2 className="text-3xl md:text-4xl text-foreground mb-6">
-                        {section.title}
-                      </h2>
-                      {paragraphs.map((para, pIndex) => (
-                        <p key={pIndex} className="text-xl text-muted-foreground leading-relaxed mt-4 first:mt-0">
-                          {renderTextWithLinks(para)}
-                        </p>
-                      ))}
-                    </div>
+                  {/* Title first on mobile */}
+                  <h2 className="text-3xl md:text-4xl text-foreground mb-6 lg:hidden">
+                    {section.title}
+                  </h2>
+                  
+                  <div className={`grid lg:grid-cols-2 gap-12 items-center`}>
+                    {/* Image - shows after title on mobile */}
                     <div className={index % 2 === 1 ? 'lg:order-1' : ''}>
                       {section.image ? (
                         <img 
@@ -446,6 +459,17 @@ const ServiceTemplate = ({ slug: propSlug }: ServiceTemplateProps) => {
                           <span className="text-muted-foreground/50 text-sm">Service Image</span>
                         </div>
                       )}
+                    </div>
+                    {/* Copy */}
+                    <div className={index % 2 === 1 ? 'lg:order-2' : ''}>
+                      <h2 className="hidden lg:block text-3xl md:text-4xl text-foreground mb-6">
+                        {section.title}
+                      </h2>
+                      {paragraphs.map((para, pIndex) => (
+                        <p key={pIndex} className="text-xl text-muted-foreground leading-relaxed mt-4 first:mt-0">
+                          {renderTextWithLinks(para)}
+                        </p>
+                      ))}
                     </div>
                   </div>
                 </div>
