@@ -22,7 +22,7 @@ if (!service) {
 <BaseLayout 
   title={service.metaTitle}
   description={service.metaDescription}
-  ogImage="/og-default.jpg"
+  ogImage={service.ogImage || "/og-default.jpg"}
   canonicalUrl={`https://makegood.melbourne/services/${service.slug}`}
 >
   <ServiceTemplatePage slug={slug} client:load />
