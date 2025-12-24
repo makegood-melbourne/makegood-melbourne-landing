@@ -136,7 +136,7 @@ const IndustryTemplate = ({ slug: propSlug }: IndustryTemplateProps) => {
       </div>
 
       {/* Hero Section */}
-      <section className="pb-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-secondary/50 to-background">
+      <section className="pt-6 md:pt-10 pb-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-secondary/50 to-background">
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
