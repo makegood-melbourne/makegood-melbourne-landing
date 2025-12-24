@@ -120,7 +120,7 @@ const ServiceTemplate = ({ slug: propSlug }: ServiceTemplateProps) => {
         </div>
 
         {/* 1. Hero Section */}
-        <section className="bg-secondary pt-16 pb-10 md:pt-24 md:pb-12">
+        <section className="bg-secondary pt-6 pb-10 md:pt-24 md:pb-12">
           <div className="container mx-auto px-4">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
