@@ -124,6 +124,7 @@ const ServiceTemplate = ({ slug: propSlug }: ServiceTemplateProps) => {
           <div className="container mx-auto px-4">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
+                {/* Title */}
                 <h1 className="text-4xl md:text-5xl lg:text-6xl text-foreground mb-6">
                   {service.title.includes('Melbourne') ? (
                     <>
@@ -133,9 +134,31 @@ const ServiceTemplate = ({ slug: propSlug }: ServiceTemplateProps) => {
                     service.title
                   )}
                 </h1>
+                
+                {/* Hero Image - Mobile only, between title and description */}
+                <div className="lg:hidden mb-6">
+                  {service.heroImage ? (
+                    <img 
+                      src={service.heroImage} 
+                      alt={service.heroImageAlt || `${service.name} Melbourne - professional commercial services`}
+                      className="aspect-[4/3] w-full object-cover rounded-lg"
+                      width={800}
+                      height={600}
+                      loading="eager"
+                    />
+                  ) : (
+                    <div className="aspect-[4/3] bg-muted/30 rounded-lg border-2 border-dashed border-muted-foreground/20 flex items-center justify-center">
+                      <span className="text-muted-foreground/50 text-sm">Service Image</span>
+                    </div>
+                  )}
+                </div>
+                
+                {/* Description */}
                 <p className="text-xl text-muted-foreground mb-8">
                   {renderTextWithLinks(service.heroText)}
                 </p>
+                
+                {/* CTA Buttons */}
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground" asChild>
                     <a href="/#contact">
@@ -150,8 +173,9 @@ const ServiceTemplate = ({ slug: propSlug }: ServiceTemplateProps) => {
                   </Button>
                 </div>
               </div>
-              {/* Hero Image - Show on all screen sizes */}
-              <div className="order-first lg:order-last">
+              
+              {/* Hero Image - Desktop only */}
+              <div className="hidden lg:block">
                 {service.heroImage ? (
                   <img 
                     src={service.heroImage} 
