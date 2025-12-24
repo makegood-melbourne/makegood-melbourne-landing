@@ -19,6 +19,7 @@ import TermsOfService from "./page-components/TermsOfService";
 import FAQPage from "./page-components/FAQPage";
 import WhatIsMakeGood from "./page-components/WhatIsMakeGood";
 import OurProcess from "./page-components/OurProcess";
+import AdminDashboard from "./page-components/AdminDashboard";
 import { Chatbot } from "./components/Chatbot";
 
 const queryClient = new QueryClient();
@@ -45,7 +46,10 @@ const App = () => (
           <Route path="/services/:slug" element={<ServiceTemplate />} />
           <Route path="/industries/:slug" element={<IndustryTemplate />} />
           <Route path="/downloads/guest-posts" element={<GuestPostsDownload />} />
-          
+
+          {/* Admin */}
+          <Route path="/admin" element={<AdminDashboard />} />
+
           {/* Legacy redirects */}
           <Route path="/tenants" element={<Navigate to="/" replace />} />
           <Route path="/blogs" element={<Navigate to="/blog" replace />} />
@@ -53,7 +57,7 @@ const App = () => (
           <Route path="/learn" element={<Navigate to="/blog" replace />} />
           <Route path="/cart" element={<Navigate to="/" replace />} />
           <Route path="/services" element={<Navigate to="/capabilities" replace />} />
-          
+
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Chatbot />
