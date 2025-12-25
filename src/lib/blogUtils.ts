@@ -31,9 +31,11 @@ import electricalMakeSafeImage from "@/assets/blog/electrical-make-safe.jpg";
 import carpetTileReplacementImage from "@/assets/blog/carpet-tile-replacement.jpg";
 import asbestosManagementImage from "@/assets/blog/asbestos-management.jpg";
 import portMelbourneWarehouseImage from "@/assets/blog/port-melbourne-warehouse.jpg";
+import commercialPaintingMelbourneImage from "@/assets/blog/commercial-painting-melbourne.jpg";
 import { BlogPost } from "@/data/blogPosts";
 
 const imageMap: Record<string, string> = {
+  'commercial-painting-melbourne': commercialPaintingMelbourneImage,
   'cleaning-services': cleaningImage,
   'painting-wall': paintingImage,
   'warehouse-makegood': warehouseImage,
