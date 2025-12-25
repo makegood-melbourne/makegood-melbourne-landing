@@ -11,6 +11,7 @@ export default defineConfig({
     }),
   ],
   output: 'static',
+  trailingSlash: 'never',
   site: 'https://makegood.melbourne',
   redirects: {
     // Page-level redirects for old site structure
