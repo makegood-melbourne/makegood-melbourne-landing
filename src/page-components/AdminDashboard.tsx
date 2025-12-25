@@ -22,12 +22,24 @@ const AdminDashboard = () => {
   const [gaps, setGaps] = useState<ContentGap[]>([]);
   const [generating, setGenerating] = useState(false);
   const [selectedDraft, setSelectedDraft] = useState<ContentDraft | null>(null);
+  const [selectedGap, setSelectedGap] = useState<ContentGap | null>(null);
+  const [activeTab, setActiveTab] = useState("drafts");
   
   // New content form
   const [newTitle, setNewTitle] = useState("");
   const [newType, setNewType] = useState("blog_post");
   const [newKeywords, setNewKeywords] = useState("");
   const [newLocation, setNewLocation] = useState("");
+
+  const selectGapForGeneration = (gap: ContentGap) => {
+    setSelectedGap(gap);
+    setNewTitle(gap.title);
+    setNewType(gap.gap_type === "missing_service" ? "service_page" : gap.gap_type === "missing_location" ? "location_page" : "blog_post");
+    setNewKeywords(gap.suggested_keywords?.join(", ") || "");
+    setNewLocation(gap.target_location || "");
+    setActiveTab("generate");
+    toast.success(`Selected: ${gap.title}`);
+  };
 
   useEffect(() => {
     supabase.auth.getSession().then(({ data: { session } }) => {
@@ -206,7 +218,7 @@ const AdminDashboard = () => {
       </header>
       
       <main className="p-6">
-        <Tabs defaultValue="drafts" className="space-y-6">
+        <Tabs value={activeTab} onValueChange={setActiveTab} className="space-y-6">
           <TabsList>
             <TabsTrigger value="drafts" className="flex items-center gap-2">
               <FileText className="w-4 h-4" />
@@ -326,7 +338,11 @@ const AdminDashboard = () => {
               </Card>
             ) : (
               gaps.map((gap) => (
-                <Card key={gap.id}>
+                <Card 
+                  key={gap.id} 
+                  className={`cursor-pointer transition-all hover:ring-2 hover:ring-primary ${selectedGap?.id === gap.id ? 'ring-2 ring-primary bg-accent/50' : ''}`}
+                  onClick={() => selectGapForGeneration(gap)}
+                >
                   <CardContent className="py-4">
                     <div className="flex items-start justify-between">
                       <div>
@@ -342,9 +358,12 @@ const AdminDashboard = () => {
                           )}
                         </div>
                       </div>
-                      <Badge className={gap.status === 'completed' ? 'bg-green-500' : 'bg-yellow-500'}>
-                        {gap.status}
-                      </Badge>
+                      <div className="flex items-center gap-2">
+                        {selectedGap?.id === gap.id && <Badge className="bg-primary">Selected</Badge>}
+                        <Badge className={gap.status === 'completed' ? 'bg-green-500' : 'bg-yellow-500'}>
+                          {gap.status}
+                        </Badge>
+                      </div>
                     </div>
                   </CardContent>
                 </Card>
@@ -356,7 +375,9 @@ const AdminDashboard = () => {
             <Card>
               <CardHeader>
                 <CardTitle>Generate New Content</CardTitle>
-                <CardDescription>Use AI to generate SEO-optimized content</CardDescription>
+                <CardDescription>
+                  {selectedGap ? `Generating from: ${selectedGap.title}` : 'Use AI to generate SEO-optimized content'}
+                </CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div>
