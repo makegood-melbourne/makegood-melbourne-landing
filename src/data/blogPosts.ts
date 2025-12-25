@@ -17,8 +17,8 @@ export const blogPosts: BlogPost[] = [
     slug: "commercial-painting-melbourne-make-good",
     excerpt: "Professional commercial painting services in Melbourne for end-of-lease make goods, office repainting, and warehouse spaces. Get flawless finishes that meet landlord expectations and protect your bond.",
     metaDescription: "Expert commercial painting Melbourne for make goods. Professional office repainting, end of lease painting & warehouse finishes. Meet landlord expectations & protect your bond.",
-    date: "2025-12-25",
-    image: "painting-wall.webp",
+    date: "2025-12-15",
+    image: "commercial-painting-melbourne.jpg",
     content: `
 When it comes to vacating a commercial property in Melbourne, the condition of the paintwork plays a crucial role in fulfilling your end-of-lease obligations. A fresh coat of paint isn't just about aesthetics; it's a fundamental requirement of many lease agreements, ensuring the property is returned in a clean, well-maintained state. At Make Good Melbourne, we specialise in professional **commercial painting Melbourne** services, tailored specifically for end-of-lease make goods, office repainting, and revitalising warehouse spaces.
 
