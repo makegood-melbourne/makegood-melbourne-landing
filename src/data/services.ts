@@ -353,8 +353,7 @@ export const services: Service[] = [
       { step: "Scope Review", description: "We review your lease obligations and inspect the space to confirm exactly what painting is required for make good compliance." },
       { step: "Colour Matching", description: "We match original paint colours using spectrophotometer technology and sample testing to ensure accurate restoration." },
       { step: "Surface Preparation", description: "All holes are filled, patches repaired, surfaces sanded and cleaned. Primers applied where needed for proper adhesion." },
-      { step: "Professional Application", description: "Quality paints applied by experienced commercial painters—spray, roller or brush depending on surface and finish requirements." },
-      { step: "Final Inspection", description: "We complete a final walk-through to ensure all surfaces meet handover standard before owner inspection." }
+      { step: "Professional Application", description: "Quality paints applied by experienced commercial painters—spray, roller or brush depending on surface and finish requirements." }
     ],
     ctaBlock: {
       title: "Get Your Bond Back With Compliant Painting",
