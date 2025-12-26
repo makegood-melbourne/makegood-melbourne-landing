@@ -122,19 +122,9 @@ const LocationTemplate = ({ slug: propSlug }: LocationTemplateProps) => {
 
   return (
     <>
+      {/* OG/Twitter meta tags are handled by Astro's BaseLayout for static generation */}
+      {/* Only structured data (JSON-LD) needs client-side rendering */}
       <Helmet>
-        <title>{location.metaTitle}</title>
-        <meta name="description" content={location.metaDescription} />
-        <meta property="og:title" content={location.metaTitle} />
-        <meta property="og:description" content={location.metaDescription} />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content={`https://makegood.melbourne/areas/${slug}`} />
-        <meta property="og:image" content="https://makegood.melbourne/og-image.jpg" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={location.metaTitle} />
-        <meta name="twitter:description" content={location.metaDescription} />
-        <meta name="twitter:image" content="https://makegood.melbourne/og-image.jpg" />
-        <link rel="canonical" href={`https://makegood.melbourne/areas/${slug}`} />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",

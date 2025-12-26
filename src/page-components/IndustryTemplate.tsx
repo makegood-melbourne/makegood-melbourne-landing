@@ -72,19 +72,9 @@ const IndustryTemplate = ({ slug: propSlug }: IndustryTemplateProps) => {
 
   return (
     <main className="min-h-screen bg-background text-foreground">
+      {/* OG/Twitter meta tags are handled by Astro's BaseLayout for static generation */}
+      {/* Only structured data (JSON-LD) needs client-side rendering */}
       <Helmet>
-        <title>{industry.metaTitle}</title>
-        <meta name="description" content={industry.metaDescription} />
-        <meta property="og:title" content={industry.metaTitle} />
-        <meta property="og:description" content={industry.metaDescription} />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content={`https://makegood.melbourne/industries/${industry.slug}`} />
-        <meta property="og:image" content="https://makegood.melbourne/og-image.jpg" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={industry.metaTitle} />
-        <meta name="twitter:description" content={industry.metaDescription} />
-        <meta name="twitter:image" content="https://makegood.melbourne/og-image.jpg" />
-        <link rel="canonical" href={`https://makegood.melbourne/industries/${industry.slug}`} />
         <script type="application/ld+json">
           {JSON.stringify(industrySchema)}
         </script>
