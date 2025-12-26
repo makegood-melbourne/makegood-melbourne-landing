@@ -253,7 +253,7 @@ export const services: Service[] = [
     metaTitle: "End of Lease Painting Melbourne | Make Good Painting Services",
     description: "Professional commercial painting for offices, warehouses and industrial spaces across Melbourne. Colour-matched finishes, proper surface preparation and quality application—delivered on time for your handover deadline.",
     metaDescription: "End of lease painting Melbourne. Commercial and warehouse painting for make good compliance. Colour-matched, owner-approved finishes. Bond protection guaranteed. Free quotes.",
-    heroText: "We deliver professional painting for [offices](/industries/commercial), [warehouses](/industries/industrial) and commercial spaces—colour-matched to original specifications, properly prepared and finished to the standard owners expect. From [wall repairs](/services/patching-plastering) through to final coat, we handle it all so your handover goes smoothly.",
+    heroText: "We deliver professional painting for [offices](/industries/commercial), [warehouses](/industries/industrial) and commercial spaces—colour-matched to original specifications, properly prepared and expertly applied. From [wall repairs](/services/patching-plastering) through to final coat, our comprehensive make good service handles all of your end of lease obligations.",
     ogImage: "/og/commercial.jpg",
     heroImage: commercialPaintingHeroImage,
     heroImageAlt: "Professional painter applying fresh coat to commercial warehouse wall in Melbourne",
