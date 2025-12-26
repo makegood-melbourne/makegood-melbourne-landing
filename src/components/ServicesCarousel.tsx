@@ -9,6 +9,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { getPublishedServices } from "@/data/services";
+import { resolveImageSrc } from "@/lib/resolveImageSrc";
 
 // Priority order for carousel display
 const priorityOrder = [
@@ -62,7 +63,7 @@ const ServicesCarousel = () => {
                   <Card className="overflow-hidden border-border bg-card h-full transition-all duration-300 group-hover:border-primary/50 group-hover:shadow-xl">
                     <div className="aspect-[4/3] overflow-hidden relative">
                       <img
-                        src={service.heroImage}
+                        src={resolveImageSrc(service.heroImage)}
                         alt={service.heroImageAlt || service.name}
                         className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                       />

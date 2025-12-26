@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { resolveImageSrc } from "@/lib/resolveImageSrc";
 
 // Images for visual enhancement
 import heroImage from "@/assets/industries/commercial-make-good-open-floor-industrial-windows-melbourne.jpeg";
@@ -58,7 +59,7 @@ const WhatIsMakeGood = () => {
         {/* Background image with gradient overlay */}
         <div className="absolute inset-0 z-0">
           <img 
-            src={heroImage} 
+            src={resolveImageSrc(heroImage)} 
             alt="Empty commercial office space ready for make good restoration in Melbourne"
             className="w-full h-full object-cover"
             width={1200}
@@ -101,7 +102,7 @@ const WhatIsMakeGood = () => {
             <Card className="relative overflow-hidden border-l-4 border-primary min-h-[200px]">
               <div className="absolute inset-0 z-0">
                 <img 
-                  src={officeImage} 
+                  src={resolveImageSrc(officeImage)} 
                   alt="Commercial office space after make good works with polished concrete floors Melbourne"
                   className="w-full h-full object-cover"
                   width={600}
@@ -125,7 +126,7 @@ const WhatIsMakeGood = () => {
             <Card className="relative overflow-hidden border-l-4 border-primary min-h-[200px]">
               <div className="absolute inset-0 z-0">
                 <img 
-                  src={warehouseImage} 
+                  src={resolveImageSrc(warehouseImage)} 
                   alt="Empty warehouse after make good completion ready for handover Melbourne"
                   className="w-full h-full object-cover"
                   width={600}

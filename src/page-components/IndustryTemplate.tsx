@@ -9,6 +9,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { getIndustryBySlug, Industry } from "@/data/industries";
 import { getServiceBySlug } from "@/data/services";
+import { resolveImageSrc } from "@/lib/resolveImageSrc";
 
 const ImagePlaceholder = ({ description, className = "" }: { description: string; className?: string }) => (
   <div className={`bg-secondary/50 border-2 border-dashed border-border rounded-lg flex flex-col items-center justify-center p-8 ${className}`}>
@@ -128,7 +129,7 @@ const IndustryTemplate = ({ slug: propSlug }: IndustryTemplateProps) => {
             <div>
               {industry.heroImage ? (
                 <img 
-                  src={industry.heroImage} 
+                  src={resolveImageSrc(industry.heroImage)} 
                   alt={industry.title}
                   className="rounded-lg shadow-xl w-full aspect-[4/3] object-cover"
                   width={800}
@@ -174,7 +175,7 @@ const IndustryTemplate = ({ slug: propSlug }: IndustryTemplateProps) => {
                 <div className={index % 2 === 0 ? 'lg:order-1' : ''}>
                   {section.image ? (
                     <img 
-                      src={section.image} 
+                      src={resolveImageSrc(section.image)} 
                       alt={section.imageAlt || section.title}
                       className="rounded-lg shadow-xl w-full aspect-[4/3] object-cover"
                       width={800}

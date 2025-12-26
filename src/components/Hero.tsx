@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import heroImage from "@/assets/melbourne-warehouse-make-good-services.jpg";
 import HeroStats from "./HeroStats";
+import { resolveImageSrc } from "@/lib/resolveImageSrc";
 
 const Hero = () => {
   const scrollToContact = () => {
@@ -15,7 +16,7 @@ const Hero = () => {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 z-0">
         <img 
-          src={heroImage} 
+          src={resolveImageSrc(heroImage)} 
           alt="Melbourne warehouse and commercial space requiring end of lease make good restoration services"
           className="w-full h-full object-cover"
           width={1920}

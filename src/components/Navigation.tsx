@@ -5,6 +5,7 @@ import logo from "@/assets/makegood-melbourne-logo.png";
 import { getSortedLocations } from "@/data/locations";
 import { getPublishedServices } from "@/data/services";
 import { getAllIndustries } from "@/data/industries";
+import { resolveImageSrc } from "@/lib/resolveImageSrc";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -66,7 +67,7 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-end gap-3">
             <a href="/">
-              <img src={logo} alt="MakeGOOD Melbourne - Commercial Make Good Services" className="h-8 md:h-10 brightness-0 invert cursor-pointer" />
+              <img src={resolveImageSrc(logo)} alt="MakeGOOD Melbourne - Commercial Make Good Services" className="h-8 md:h-10 brightness-0 invert cursor-pointer" />
             </a>
             <span className="hidden lg:block text-sm text-primary font-medium leading-none">Make good, BETTER.</span>
           </div>
