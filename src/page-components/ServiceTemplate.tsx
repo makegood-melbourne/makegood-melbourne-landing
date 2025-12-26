@@ -308,8 +308,8 @@ const ServiceTemplate = ({ slug: propSlug }: ServiceTemplateProps) => {
           </section>
         )}
 
-        {/* Comparison Table - Optional */}
-        {service.comparison && (
+        {/* Comparison Table - Optional (only render here if not inserted between featured sections) */}
+        {service.comparison && service.comparisonAfterSection === undefined && (
           <section className="py-16 bg-background">
             <div className="container mx-auto px-4">
               <h2 className="text-3xl md:text-4xl text-foreground mb-10">
@@ -389,7 +389,7 @@ const ServiceTemplate = ({ slug: propSlug }: ServiceTemplateProps) => {
           </section>
         )}
 
-        {/* 4. Featured Sections (multiple) with optional Process insertion - Skip if already rendered early */}
+        {/* 4. Featured Sections (multiple) with optional Process and Comparison insertion - Skip if already rendered early */}
         {service.featuredSections && !service.skipAboutSection && (() => {
           const processSection = service.process && service.process.length > 0 ? (
             <section key="process-section" className="py-16 bg-secondary">
@@ -412,7 +412,49 @@ const ServiceTemplate = ({ slug: propSlug }: ServiceTemplateProps) => {
             </section>
           ) : null;
 
-          const insertAfterIndex = service.processAfterSection;
+          const comparisonSection = service.comparison && service.comparisonAfterSection !== undefined ? (
+            <section key="comparison-section" className="py-16 bg-background">
+              <div className="container mx-auto px-4">
+                <h2 className="text-3xl md:text-4xl text-foreground mb-10">
+                  {service.comparison.title || "Why Choose Specialists?"}
+                </h2>
+                <div className="overflow-x-auto">
+                  <table className="w-full border-collapse">
+                    <thead>
+                      <tr>
+                        <th className="text-left p-4 bg-secondary text-foreground font-semibold border-b border-border w-1/5"></th>
+                        <th className="text-left p-4 bg-muted/50 text-muted-foreground font-semibold border-b border-border w-2/5">
+                          {service.comparison.regularTitle}
+                        </th>
+                        <th className="text-left p-4 bg-tertiary/15 text-foreground font-semibold border-b border-border w-2/5">
+                          <div className="flex items-center gap-2">
+                            <Check className="h-5 w-5 text-tertiary" />
+                            {service.comparison.specialistTitle}
+                          </div>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {service.comparison.items.map((item, index) => (
+                        <tr key={index} className={index % 2 === 0 ? 'bg-background' : 'bg-secondary/50'}>
+                          <td className="p-4 text-foreground font-medium border-b border-border">{item.feature}</td>
+                          <td className="p-4 text-muted-foreground border-b border-border bg-muted/30">
+                            {item.regular}
+                          </td>
+                          <td className="p-4 text-foreground border-b border-border bg-tertiary/10">
+                            {item.specialist}
+                          </td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </section>
+          ) : null;
+
+          const processInsertAfterIndex = service.processAfterSection;
+          const comparisonInsertAfterIndex = service.comparisonAfterSection;
           const elements: React.ReactNode[] = [];
 
           service.featuredSections.forEach((section, index) => {
@@ -457,14 +499,19 @@ const ServiceTemplate = ({ slug: propSlug }: ServiceTemplateProps) => {
               </section>
             );
 
+            // Insert comparison section after the specified index
+            if (comparisonInsertAfterIndex !== undefined && index === comparisonInsertAfterIndex && comparisonSection) {
+              elements.push(comparisonSection);
+            }
+
             // Insert process section after the specified index
-            if (insertAfterIndex !== undefined && index === insertAfterIndex && processSection) {
+            if (processInsertAfterIndex !== undefined && index === processInsertAfterIndex && processSection) {
               elements.push(processSection);
             }
           });
 
-          // If no insertAfterIndex specified or process wasn't inserted, add it at the end
-          if (insertAfterIndex === undefined && processSection) {
+          // If no processInsertAfterIndex specified or process wasn't inserted, add it at the end
+          if (processInsertAfterIndex === undefined && processSection) {
             elements.push(processSection);
           }
 
