@@ -2,6 +2,9 @@
   command = "npx astro build"
   publish = "dist"
 
+[build.environment]
+  NODE_VERSION = "20"
+
 # 404 fallback - only for truly missing pages
 [[redirects]]
   from = "/*"
