@@ -33,8 +33,9 @@ import asbestosManagementImage from "@/assets/blog/asbestos-management.jpg";
 import portMelbourneWarehouseImage from "@/assets/blog/port-melbourne-warehouse.jpg";
 import commercialPaintingMelbourneImage from "@/assets/blog/commercial-painting-melbourne.jpg";
 import { BlogPost } from "@/data/blogPosts";
+import { resolveImageSrc } from "@/lib/resolveImageSrc";
 
-const imageMap: Record<string, string> = {
+const imageMap: Record<string, unknown> = {
   'commercial-painting-melbourne': commercialPaintingMelbourneImage,
   'cleaning-services': cleaningImage,
   'painting-wall': paintingImage,
@@ -75,23 +76,27 @@ const imageMap: Record<string, string> = {
   'retail-lease-make-good': commercialMakeGoodImage,
 };
 
-// CRITICAL: Detect /src/assets paths (which are invalid in production) and convert them
-export const getBlogImage = (imagePath: string): string => {
-  // If the imagePath is actually a bundled import already (not a string path), return it
-  if (typeof imagePath !== 'string') return imagePath;
-  
+// Normalize image imports across Astro + React builds.
+export const getBlogImage = (imagePath: unknown): string => {
+  // If the imagePath is a bundled image metadata object, use its .src.
+  if (typeof imagePath === "object" && imagePath !== null) {
+    const resolved = resolveImageSrc(imagePath);
+    return resolved || resolveImageSrc(cleaningImage);
+  }
+
+  if (typeof imagePath !== "string") return resolveImageSrc(cleaningImage);
+
   // Extract the key from /src/assets/blog/xxx.jpg -> xxx
   const match = imagePath.match(/blog\/([^.\/]+)\./);
-  if (match && match[1]) {
+  if (match?.[1]) {
     const imageKey = match[1];
-    if (imageMap[imageKey]) {
-      return imageMap[imageKey];
-    }
+    const mapped = imageMap[imageKey];
+    return resolveImageSrc(mapped) || resolveImageSrc(cleaningImage);
   }
-  
+
   // Fallback: try to find any key that matches part of the path
-  const imageKey = Object.keys(imageMap).find(key => imagePath.includes(key));
-  return imageKey ? imageMap[imageKey] : cleaningImage;
+  const imageKey = Object.keys(imageMap).find((key) => imagePath.includes(key));
+  return resolveImageSrc(imageKey ? imageMap[imageKey] : cleaningImage) || resolveImageSrc(cleaningImage);
 };
 
 export const sortBlogPostsByDate = (posts: BlogPost[]): BlogPost[] => {

@@ -10,6 +10,7 @@ import {
   MapPin 
 } from "lucide-react";
 import officeWorkspace from "@/assets/modern-commercial-office-space-melbourne.jpg";
+import { resolveImageSrc } from "@/lib/resolveImageSrc";
 
 const About = () => {
   const features = [
@@ -86,7 +87,7 @@ const About = () => {
         <div className="mb-16">
           <div className="aspect-video w-full overflow-hidden rounded-lg">
             <img 
-              src={officeWorkspace}
+              src={resolveImageSrc(officeWorkspace)}
               alt="Modern commercial office space ready for end of lease make good services in Melbourne"
               className="w-full h-full object-cover"
             />

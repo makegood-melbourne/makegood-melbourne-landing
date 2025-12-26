@@ -1,5 +1,6 @@
 import { Mail, Shield, MapPin } from "lucide-react";
 import logo from "@/assets/makegood-melbourne-logo.png";
+import { resolveImageSrc } from "@/lib/resolveImageSrc";
 
 const Footer = () => {
   return (
@@ -24,7 +25,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           <div>
             <a href="/">
-              <img src={logo} alt="MakeGOOD Melbourne - Professional End of Lease Services" className="h-10 mb-4 brightness-0 invert hover:opacity-80 transition-opacity cursor-pointer" />
+              <img src={resolveImageSrc(logo)} alt="MakeGOOD Melbourne - Professional End of Lease Services" className="h-10 mb-4 brightness-0 invert hover:opacity-80 transition-opacity cursor-pointer" />
             </a>
             <p className="text-lg text-accent font-semibold mb-2">Make Good, BETTER.</p>
             <p className="text-muted-foreground leading-relaxed mb-4">

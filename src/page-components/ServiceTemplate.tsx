@@ -2,6 +2,7 @@ import { Helmet } from "@/lib/helmet";
 import { useParams } from "react-router-dom";
 import { getServiceBySlug, getPublishedServices } from "@/data/services";
 import { renderTextWithLinks } from "@/lib/textWithLinks";
+import { resolveImageSrc } from "@/lib/resolveImageSrc";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Breadcrumbs from "@/components/Breadcrumbs";
@@ -129,7 +130,7 @@ const ServiceTemplate = ({ slug: propSlug }: ServiceTemplateProps) => {
                 <div className="lg:hidden mb-6">
                   {service.heroImage ? (
                     <img 
-                      src={service.heroImage} 
+                      src={resolveImageSrc(service.heroImage)} 
                       alt={service.heroImageAlt || `${service.name} Melbourne - professional commercial services`}
                       className="aspect-[4/3] w-full object-cover rounded-lg"
                       width={800}
@@ -168,7 +169,7 @@ const ServiceTemplate = ({ slug: propSlug }: ServiceTemplateProps) => {
               <div className="hidden lg:block">
                 {service.heroImage ? (
                   <img 
-                    src={service.heroImage} 
+                    src={resolveImageSrc(service.heroImage)} 
                     alt={service.heroImageAlt || `${service.name} Melbourne - professional commercial services`}
                     className="aspect-[4/3] w-full object-cover rounded-lg"
                     width={800}
@@ -227,7 +228,7 @@ const ServiceTemplate = ({ slug: propSlug }: ServiceTemplateProps) => {
                   <div className={index % 2 === 1 ? 'lg:order-1' : ''}>
                     {section.image ? (
                       <img 
-                        src={section.image} 
+                        src={resolveImageSrc(section.image)} 
                         alt={section.imageAlt || `${service.name} professional services Melbourne`}
                         className="aspect-[4/3] w-full object-cover rounded-lg"
                         style={{ objectPosition: section.imagePosition === 'left' ? 'left center' : section.imagePosition === 'right' ? 'right center' : 'center' }}
@@ -267,7 +268,7 @@ const ServiceTemplate = ({ slug: propSlug }: ServiceTemplateProps) => {
                 <div>
                   {service.secondaryImage ? (
                     <img 
-                      src={service.secondaryImage} 
+                      src={resolveImageSrc(service.secondaryImage)} 
                       alt={service.secondaryImageAlt || `${service.name} Melbourne - professional commercial services`}
                       className="aspect-[4/3] w-full object-cover rounded-lg"
                       style={{ objectPosition: service.slug === 'epoxy-flooring' ? '100% center' : 'center' }}
@@ -277,7 +278,7 @@ const ServiceTemplate = ({ slug: propSlug }: ServiceTemplateProps) => {
                     />
                   ) : service.heroImage ? (
                     <img 
-                      src={service.heroImage} 
+                      src={resolveImageSrc(service.heroImage)} 
                       alt={service.heroImageAlt || `${service.name} Melbourne - professional commercial services`}
                       className="aspect-[4/3] w-full object-cover rounded-lg"
                       width={800}
@@ -363,7 +364,7 @@ const ServiceTemplate = ({ slug: propSlug }: ServiceTemplateProps) => {
                 <div className="lg:order-2">
                   {service.featuredSection.image ? (
                     <img 
-                      src={service.featuredSection.image} 
+                      src={resolveImageSrc(service.featuredSection.image)} 
                       alt={service.featuredSection.imageAlt || `${service.name} professional services Melbourne`}
                       className="aspect-[4/3] w-full object-cover rounded-lg"
                       style={{ objectPosition: '20% center' }}
@@ -429,7 +430,7 @@ const ServiceTemplate = ({ slug: propSlug }: ServiceTemplateProps) => {
                     <div className={index % 2 === 1 ? 'lg:order-1' : ''}>
                       {section.image ? (
                         <img 
-                          src={section.image} 
+                          src={resolveImageSrc(section.image)} 
                           alt={section.imageAlt || `${service.name} professional services Melbourne`}
                           className="aspect-[4/3] w-full object-cover rounded-lg"
                           style={{ objectPosition: section.imagePosition === 'left' ? 'left center' : section.imagePosition === 'right' ? 'right center' : 'center' }}
@@ -513,7 +514,7 @@ const ServiceTemplate = ({ slug: propSlug }: ServiceTemplateProps) => {
                   <div className={shouldReverseLayout ? 'lg:order-1' : ''}>
                     {section.image ? (
                       <img 
-                        src={section.image} 
+                        src={resolveImageSrc(section.image)} 
                         alt={section.imageAlt || `${service.name} professional services Melbourne`}
                         className="aspect-[4/3] w-full object-cover rounded-lg"
                         style={{ objectPosition: section.imagePosition === 'left' ? 'left center' : section.imagePosition === 'right' ? 'right center' : 'center' }}
