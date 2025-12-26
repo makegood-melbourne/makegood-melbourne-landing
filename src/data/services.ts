@@ -268,7 +268,9 @@ export const services: Service[] = [
     featuredSections: [
       {
         title: "Internal Painting — Walls, Ceilings and Trim",
-        description: "Years of use leave their mark—scuffs, patched holes from fixtures, faded or discoloured paint. We restore walls, ceilings, doors and trims across projects of any scale—from single tenancies to multi-level buildings, with scaffolding and access equipment for high-reach work.\n\nWe prepare surfaces properly, match colours accurately and apply professional finishes across your entire tenancy. [Offices](/industries/commercial), [warehouses](/industries/industrial), showrooms, retail—whatever the space, we deliver results.\n\nThe outcome is a clean, consistent finish suited to [commercial](/industries/commercial) and [industrial](/industries/industrial) environments. Across [offices](/industries/commercial), [warehouses](/industries/industrial), showrooms and retail spaces, attention to detail and uniform presentation ensure the space is ready for inspection, handover or reoccupation.",
+        description: "We prepare surfaces properly, match colours accurately and apply professional finishes across your entire tenancy. [Offices](/industries/commercial), [warehouses](/industries/industrial), showrooms, retail—whatever the space, we deliver results.\n\nThe outcome is a clean, consistent finish suited to [commercial](/industries/commercial) and [industrial](/industries/industrial) environments. Across [offices](/industries/commercial), [warehouses](/industries/industrial), showrooms and retail spaces, attention to detail and uniform presentation ensure the space is ready for inspection, handover or reoccupation.",
+        image: "/src/assets/services/commercial-interior-surface-preparation-painting-melbourne.jpeg",
+        imageAlt: "Commercial interior surface preparation showing plastered walls and ceiling ready for professional painting in Melbourne",
         imageLeft: true
       },
       {
