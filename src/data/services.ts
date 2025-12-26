@@ -269,13 +269,15 @@ export const services: Service[] = [
       {
         title: "Internal Painting — Walls, Ceilings and Trim",
         description: "We prepare surfaces properly, match colours accurately and apply professional finishes across your entire tenancy. [Offices](/industries/commercial), [warehouses](/industries/industrial), showrooms, retail—whatever the space, we deliver results.\n\nThe outcome is a clean, consistent finish suited to [commercial](/industries/commercial) and [industrial](/industries/industrial) environments. Across [offices](/industries/commercial), [warehouses](/industries/industrial), showrooms and retail spaces, attention to detail and uniform presentation ensure the space is ready for inspection, handover or reoccupation.",
-        image: "/src/assets/services/commercial-interior-surface-preparation-painting-melbourne.jpeg",
-        imageAlt: "Commercial interior surface preparation showing plastered walls and ceiling ready for professional painting in Melbourne",
+        image: "/src/assets/services/industrial-warehouse-interior-wall-painting-boom-lift-melbourne.jpeg",
+        imageAlt: "Industrial warehouse interior wall painting using boom lift access equipment for high-reach surfaces in Melbourne",
         imageLeft: true
       },
       {
         title: "External Painting — Building Facades and External Surfaces",
         description: "We prepare external surfaces properly, match colours accurately and apply durable finishes suited to building facades and exposed external areas. Works are completed across [commercial](/industries/commercial) and [industrial](/industries/industrial) properties, with consideration given to access, weather conditions and surrounding site activity.\n\nThe outcome is a consistent, professional external presentation that aligns with lease requirements and overall building standards. Attention to detail and uniform finishes ensure the property is ready for inspection, handover or ongoing use.",
+        image: "/src/assets/services/commercial-building-facade-painting-cherry-picker-melbourne.jpeg",
+        imageAlt: "Commercial building facade painting using cherry picker access equipment for exterior panel surfaces in Melbourne",
         imageLeft: false
       },
       {
