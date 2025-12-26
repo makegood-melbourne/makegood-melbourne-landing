@@ -37,19 +37,27 @@ const Contact = () => {
 
     try {
       const sourcePage = window.location.href;
-      const { error } = await supabase.functions.invoke("send-contact-email", {
+      const { data, error } = await supabase.functions.invoke("send-contact-email", {
         body: { ...formData, sourcePage },
       });
 
-      if (error) throw error;
+      if (error) {
+        // Check if it's a validation error from the response
+        const errorMessage = error.message || "Failed to send message";
+        throw new Error(errorMessage);
+      }
+
+      // Check for error in the response data (validation errors return 400 with error in body)
+      if (data?.error) {
+        throw new Error(data.error);
+      }
 
       toast.success("Thank you! We'll get back to you within 24 hours.");
       setFormData({ name: "", email: "", phone: "", message: "" });
     } catch (error: any) {
       console.error("Error submitting form:", error);
-      toast.error(
-        "Sorry, there was an issue sending your message. Please try again or email us directly."
-      );
+      const message = error?.message || "Sorry, there was an issue sending your message.";
+      toast.error(message);
     } finally {
       setIsSubmitting(false);
     }
