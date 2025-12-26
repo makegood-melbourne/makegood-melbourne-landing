@@ -5,8 +5,11 @@ import { Textarea } from "@/components/ui/textarea";
 import { Mail, MapPin, Phone } from "lucide-react";
 import { useState } from "react";
 import { toast } from "sonner";
-import { supabase } from "@/integrations/supabase/client";
 
+const loadBackendClient = async () => {
+  const mod = await import("@/integrations/supabase/client");
+  return mod.supabase;
+};
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -37,6 +40,7 @@ const Contact = () => {
 
     try {
       const sourcePage = window.location.href;
+      const supabase = await loadBackendClient();
       const { data, error } = await supabase.functions.invoke("send-contact-email", {
         body: { ...formData, sourcePage },
       });
