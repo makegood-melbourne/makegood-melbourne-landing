@@ -17,6 +17,11 @@ const {
 
 const siteUrl = 'https://makegood.melbourne';
 const fullOgImage = ogImage.startsWith('http') ? ogImage : `${siteUrl}${ogImage}`;
+const ogImageType = ogImage.toLowerCase().endsWith('.png')
+  ? 'image/png'
+  : ogImage.toLowerCase().endsWith('.webp')
+    ? 'image/webp'
+    : 'image/jpeg';
 ---
 
 <!doctype html>
@@ -39,6 +44,7 @@ const fullOgImage = ogImage.startsWith('http') ? ogImage : `${siteUrl}${ogImage}
     <meta property="og:url" content={canonicalUrl} />
     <meta property="og:image" content={fullOgImage} />
     <meta property="og:image:secure_url" content={fullOgImage} />
+    <meta property="og:image:type" content={ogImageType} />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:image:alt" content={title} />
