@@ -257,7 +257,7 @@ export const services: Service[] = [
     ogImage: "/og/commercial.jpg",
     heroImage: commercialPaintingHeroImage,
     heroImageAlt: "Professional painter applying fresh coat to commercial warehouse wall in Melbourne",
-    trustBadges: ["Fully Insured", "Licensed Painters", "Fixed-Price Quotes"],
+    trustBadges: ["Licensed & Insured", "Fixed-Price Quotes", "Competitive Pricing"],
     benefits: [
       "Accurate colour matching to original specifications",
       "Full surface preparation—patching, sanding, priming",
