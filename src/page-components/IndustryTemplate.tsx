@@ -39,32 +39,7 @@ const IndustryTemplate = ({ slug: propSlug }: IndustryTemplateProps) => {
     .map(serviceSlug => getServiceBySlug(serviceSlug))
     .filter(Boolean);
 
-  // Breadcrumb Schema for rich snippets
-  const breadcrumbSchema = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://makegood.melbourne"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Industries",
-        "item": "https://makegood.melbourne/capabilities"
-      },
-      {
-        "@type": "ListItem",
-        "position": 3,
-        "name": industry.name,
-        "item": `https://makegood.melbourne/industries/${industry.slug}`
-      }
-    ]
-  };
-
+  // Service schema (breadcrumbs handled by Breadcrumbs component)
   const industrySchema = {
     "@context": "https://schema.org",
     "@type": "Service",
@@ -110,9 +85,6 @@ const IndustryTemplate = ({ slug: propSlug }: IndustryTemplateProps) => {
         <meta name="twitter:description" content={industry.metaDescription} />
         <meta name="twitter:image" content="https://makegood.melbourne/og-image.jpg" />
         <link rel="canonical" href={`https://makegood.melbourne/industries/${industry.slug}`} />
-        <script type="application/ld+json">
-          {JSON.stringify(breadcrumbSchema)}
-        </script>
         <script type="application/ld+json">
           {JSON.stringify(industrySchema)}
         </script>
