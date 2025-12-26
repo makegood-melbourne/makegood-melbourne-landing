@@ -1,20 +1,14 @@
 import * as React from "react";
-import * as HelmetAsync from "react-helmet-async";
 
-// Astro renders React components at build-time. react-helmet-async expects a Provider context during SSR;
-// our Astro BaseLayout already handles meta tags, so we no-op Helmet on the server to avoid build failures.
+// This project is built as static pages (Astro) and metadata is handled in Astro layouts.
+// react-helmet-async has caused both SSR build errors and client runtime crashes on some hosts,
+// so we provide a safe no-op implementation.
 
-const anyMod: any = HelmetAsync as any;
-const anyDefault: any = anyMod?.default;
+export const Helmet = ({ children }: { children?: React.ReactNode }) => null;
 
-const RealHelmet = anyMod?.Helmet ?? anyDefault?.Helmet;
-const RealHelmetProvider = anyMod?.HelmetProvider ?? anyDefault?.HelmetProvider;
-
-const isServer = typeof window === "undefined";
-
-export const Helmet: any = isServer ? (() => null) : RealHelmet;
-export const HelmetProvider: any = isServer
-  ? ({ children }: { children: React.ReactNode }) =>
-      React.createElement(React.Fragment, null, children)
-  : RealHelmetProvider;
+export const HelmetProvider = ({
+  children,
+}: {
+  children: React.ReactNode;
+}) => React.createElement(React.Fragment, null, children);
 
