@@ -7,6 +7,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { getLocationBySlug } from "@/data/locations";
+import { resolveImageSrc } from "@/lib/resolveImageSrc";
 import defaultHeroImage from "@/assets/locations/commercial-make-good-restoration-melbourne.jpeg";
 import workerImage from "@/assets/locations/melbourne-make-good-contractor-with-tools.jpeg";
 import southMelbourneImage from "@/assets/locations/south-melbourne-market-commercial-precinct.jpeg";
@@ -234,7 +235,7 @@ const LocationTemplate = ({ slug: propSlug }: LocationTemplateProps) => {
             <div className="hidden lg:block">
               <div className="aspect-[4/3] rounded-lg overflow-hidden">
                 <img 
-                  src={getHeroImage(slug || "").src} 
+                  src={resolveImageSrc(getHeroImage(slug || "").src)} 
                   alt={getHeroImage(slug || "").alt}
                   className="w-full h-full object-cover"
                   width={800}
@@ -365,7 +366,7 @@ const LocationTemplate = ({ slug: propSlug }: LocationTemplateProps) => {
               <div className="order-2 lg:order-1">
                 <div className="aspect-[4/3] rounded-lg overflow-hidden">
                   <img 
-                    src={workerImage} 
+                    src={resolveImageSrc(workerImage)} 
                     alt={`Licensed make good contractor with tools ready for commercial property restoration in ${location.name} Melbourne`}
                     className="w-full h-full object-cover"
                     width={800}
