@@ -75,7 +75,21 @@ const imageMap: Record<string, string> = {
   'retail-lease-make-good': commercialMakeGoodImage,
 };
 
+// CRITICAL: Detect /src/assets paths (which are invalid in production) and convert them
 export const getBlogImage = (imagePath: string): string => {
+  // If the imagePath is actually a bundled import already (not a string path), return it
+  if (typeof imagePath !== 'string') return imagePath;
+  
+  // Extract the key from /src/assets/blog/xxx.jpg -> xxx
+  const match = imagePath.match(/blog\/([^.\/]+)\./);
+  if (match && match[1]) {
+    const imageKey = match[1];
+    if (imageMap[imageKey]) {
+      return imageMap[imageKey];
+    }
+  }
+  
+  // Fallback: try to find any key that matches part of the path
   const imageKey = Object.keys(imageMap).find(key => imagePath.includes(key));
   return imageKey ? imageMap[imageKey] : cleaningImage;
 };
