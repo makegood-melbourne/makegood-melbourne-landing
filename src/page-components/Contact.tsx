@@ -268,27 +268,13 @@ const Contact = () => {
                   <CardContent className="pt-6">
                     <div className="flex items-start gap-4">
                       <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
-                        <Phone className="h-6 w-6 text-accent" />
-                      </div>
-                      <div>
-                        <h3 className="font-semibold text-lg text-card-foreground mb-1">Phone</h3>
-                        <p className="text-muted-foreground">Available for calls and enquiries</p>
-                        <p className="text-muted-foreground">Same-day response for urgent works</p>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-
-                <Card className="border-border">
-                  <CardContent className="pt-6">
-                    <div className="flex items-start gap-4">
-                      <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
                         <Clock className="h-6 w-6 text-accent" />
                       </div>
                       <div>
                         <h3 className="font-semibold text-lg text-card-foreground mb-1">Business Hours</h3>
-                        <p className="text-muted-foreground">Monday - Friday: 8:00 AM - 6:00 PM</p>
-                        <p className="text-muted-foreground">Saturday: By appointment</p>
+                        <p className="text-muted-foreground">Monday - Friday: 7:00 AM - 6:00 PM</p>
+                        <p className="text-muted-foreground">Saturday: 7:00 AM - 4:00 PM</p>
+                        <p className="text-muted-foreground">Sunday: By appointment</p>
                       </div>
                     </div>
                   </CardContent>
