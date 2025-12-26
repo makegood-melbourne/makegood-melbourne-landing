@@ -18,6 +18,8 @@ const Hero = () => {
           src={heroImage} 
           alt="Melbourne warehouse and commercial space requiring end of lease make good restoration services"
           className="w-full h-full object-cover"
+          width={1920}
+          height={1080}
         />
       </div>
       

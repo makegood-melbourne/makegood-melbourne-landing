@@ -247,6 +247,8 @@ const LocationTemplate = ({ slug: propSlug }: LocationTemplateProps) => {
                   src={getHeroImage(slug || "").src} 
                   alt={getHeroImage(slug || "").alt}
                   className="w-full h-full object-cover"
+                  width={800}
+                  height={600}
                 />
               </div>
             </div>
@@ -376,6 +378,8 @@ const LocationTemplate = ({ slug: propSlug }: LocationTemplateProps) => {
                     src={workerImage} 
                     alt={`Licensed make good contractor with tools ready for commercial property restoration in ${location.name} Melbourne`}
                     className="w-full h-full object-cover"
+                    width={800}
+                    height={600}
                   />
                 </div>
               </div>
