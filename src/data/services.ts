@@ -261,10 +261,8 @@ export const services: Service[] = [
       "Accurate colour matching to original specifications",
       "Full surface preparation—patching, sanding, priming",
       "Internal walls, ceilings and trim",
-      "External painting when required",
-      "Low-odour options for occupied or adjacent spaces",
-      "After-hours and weekend work available",
-      "Quality finish that passes inspection"
+      "External painting solutions",
+      "After-hours and weekend work available"
     ],
     featuredSections: [
       {
