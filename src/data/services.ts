@@ -35,7 +35,7 @@ import tileFlooringRemovalImage from "@/assets/services/tile-flooring-removal-de
 import floorGrindingMachineImage from "@/assets/services/floor-grinding-machine-concrete-levelling-melbourne.jpeg";
 import grindSealFloorCoatingImage from "@/assets/services/grind-seal-floor-coating-application-warehouse-melbourne.jpeg";
 import warehouseRoofSkylightsImage from "@/assets/services/warehouse-roof-skylights-steel-structure-melbourne.jpeg";
-import commercialPaintingHeroImage from "@/assets/services/commercial-painting-warehouse-wall-melbourne.jpg";
+import commercialPaintingHeroImage from "@/assets/services/commercial-warehouse-painting-make-good-melbourne.jpeg";
 import commercialPaintingScopeImage from "@/assets/services/commercial-painting-scope-surface-preparation-melbourne.jpeg";
 
 export interface FeaturedSection {
@@ -260,7 +260,7 @@ export const services: Service[] = [
     heroText: "We deliver professional painting for [offices](/industries/commercial), [warehouses](/industries/industrial) and commercial spaces—colour-matched to original specifications, properly prepared and expertly applied. From [wall repairs](/services/patching-plastering) through to final coat, our comprehensive make good services handle all of your end of lease obligations.",
     ogImage: "/og/commercial.jpg",
     heroImage: commercialPaintingHeroImage,
-    heroImageAlt: "Professional painter applying fresh coat to commercial warehouse wall in Melbourne",
+    heroImageAlt: "Large commercial warehouse interior with freshly painted white walls and steel structure during end of lease make good works in Melbourne",
     secondaryImage: commercialPaintingScopeImage,
     secondaryImageAlt: "Commercial interior with plastered walls and ceiling surface preparation ready for professional painting in Melbourne",
     scopeTitle: "End of Lease Painting Scope",
