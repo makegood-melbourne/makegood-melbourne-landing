@@ -268,7 +268,7 @@ export const services: Service[] = [
     featuredSections: [
       {
         title: "Internal Painting — Walls, Ceilings and Trim",
-        description: "Years of use leave their mark—scuffs, patched holes from fixtures, faded or discoloured paint. We restore walls, ceilings, doors and trims across projects of any size or height, from single tenancies to multi-level buildings.\n\nWe prepare surfaces properly, match colours accurately and apply professional finishes across your entire tenancy. [Offices](/industries/commercial), [warehouses](/industries/industrial), showrooms, retail—whatever the space, we deliver results.",
+        description: "Years of use leave their mark—scuffs, patched holes from fixtures, faded or discoloured paint. We restore walls, ceilings, doors and trims across projects of any scale—from single tenancies to multi-level buildings, with scaffolding and access equipment for high-reach work.\n\nWe prepare surfaces properly, match colours accurately and apply professional finishes across your entire tenancy. [Offices](/industries/commercial), [warehouses](/industries/industrial), showrooms, retail—whatever the space, we deliver results.",
         imageLeft: true
       },
       {
