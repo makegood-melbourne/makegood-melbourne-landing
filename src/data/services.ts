@@ -36,6 +36,7 @@ import floorGrindingMachineImage from "@/assets/services/floor-grinding-machine-
 import grindSealFloorCoatingImage from "@/assets/services/grind-seal-floor-coating-application-warehouse-melbourne.jpeg";
 import warehouseRoofSkylightsImage from "@/assets/services/warehouse-roof-skylights-steel-structure-melbourne.jpeg";
 import commercialPaintingHeroImage from "@/assets/services/commercial-painting-warehouse-wall-melbourne.jpg";
+import commercialPaintingScopeImage from "@/assets/services/commercial-painting-scope-surface-preparation-melbourne.jpeg";
 
 export interface FeaturedSection {
   title: string;
@@ -257,6 +258,8 @@ export const services: Service[] = [
     ogImage: "/og/commercial.jpg",
     heroImage: commercialPaintingHeroImage,
     heroImageAlt: "Professional painter applying fresh coat to commercial warehouse wall in Melbourne",
+    secondaryImage: commercialPaintingScopeImage,
+    secondaryImageAlt: "Commercial interior with plastered walls and ceiling surface preparation ready for professional painting in Melbourne",
     trustBadges: ["Licensed & Insured", "Competitive Pricing", "Fixed-Price Quotes"],
     benefits: [
       "Accurate colour matching to original specifications",
