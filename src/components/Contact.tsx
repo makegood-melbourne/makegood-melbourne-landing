@@ -18,21 +18,38 @@ const Contact = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+
+    // Netlify (or other hosts) must provide the Vite env vars at build-time.
+    // Without them, the backend client can't call the contact function.
+    const hasBackendConfig = Boolean(
+      import.meta.env.VITE_SUPABASE_URL &&
+        import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY
+    );
+
+    if (!hasBackendConfig) {
+      toast.error(
+        "Contact form is temporarily unavailable (site backend not configured)."
+      );
+      return;
+    }
+
     setIsSubmitting(true);
 
     try {
       const sourcePage = window.location.href;
-      const { data, error } = await supabase.functions.invoke('send-contact-email', {
-        body: { ...formData, sourcePage }
+      const { error } = await supabase.functions.invoke("send-contact-email", {
+        body: { ...formData, sourcePage },
       });
 
       if (error) throw error;
 
       toast.success("Thank you! We'll get back to you within 24 hours.");
-      setFormData({ name: '', email: '', phone: '', message: '' });
+      setFormData({ name: "", email: "", phone: "", message: "" });
     } catch (error: any) {
-      console.error('Error submitting form:', error);
-      toast.error("Sorry, there was an issue sending your message. Please try again or email us directly.");
+      console.error("Error submitting form:", error);
+      toast.error(
+        "Sorry, there was an issue sending your message. Please try again or email us directly."
+      );
     } finally {
       setIsSubmitting(false);
     }
