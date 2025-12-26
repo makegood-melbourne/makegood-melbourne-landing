@@ -195,8 +195,16 @@ For make good projects, we prepare detailed scopes for landlord and property man
 Roof Repairs for Leaks & Storm Damage:
 Melbourne's harsh weather can cause sudden damage to polycarbonate and fibreglass roof panels—cracking, lifting, or complete failure during storms. We provide responsive repair services from temporary make-safe works through to full panel replacement.
 
+MAKE GOOD PAINTING (SPECIALIST SERVICE):
+Professional painting for end-of-lease make goods. We prepare surfaces properly, match colours accurately and apply professional finishes across offices, warehouses, showrooms and retail spaces.
+- Accurate colour matching to original specifications using spectrophotometer technology
+- Full surface preparation—patching, sanding, priming
+- Internal walls, ceilings and trim
+- External painting for building facades and external surfaces
+- After-hours and weekend work available
+- Works completed to meet lease obligations and landlord requirements
+
 OTHER SERVICES:
-- COMMERCIAL PAINTING: Colour-matched make-good painting for offices, warehouses and retail
 - PATCHING & PLASTERING: Wall repairs, hole filling, seamless plaster restoration
 - ELECTRICAL MAKE SAFE: Licensed electricians for safe disconnection, capping and compliance certificates
 - LED LIGHTING UPGRADE: Replace fluorescent with energy-efficient LED
