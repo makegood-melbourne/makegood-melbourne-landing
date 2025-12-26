@@ -35,7 +35,7 @@ const serviceCategories = [
   },
   {
     label: "Specialist Trades",
-    slugs: ['line-marking', 'commercial-painting', 'ceiling-tile-replacement', 'patching-plastering', 'electrical-make-safe', 'led-lighting']
+    slugs: ['line-marking', 'make-good-painting', 'ceiling-tile-replacement', 'patching-plastering', 'electrical-make-safe', 'led-lighting']
   },
   {
     label: "Structural & Remediation",

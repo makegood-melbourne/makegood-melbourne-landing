@@ -84,6 +84,7 @@ export interface Service {
   ogImage?: string; // Public URL for Open Graph image (e.g., "/og/service-name.jpg")
   secondaryImage?: string;
   secondaryImageAlt?: string;
+  scopeTitle?: string; // Custom title for the scope section (defaults to "{name} Scope")
   trustBadges?: string[];
   featuredSection?: FeaturedSection;
   featuredSections?: FeaturedSection[];
@@ -248,18 +249,19 @@ export const services: Service[] = [
     published: true
   },
   {
-    name: "Commercial Painting",
-    slug: "commercial-painting",
-    title: "Commercial Painting Melbourne",
-    metaTitle: "End of Lease Painting Melbourne | Make Good Painting Services",
-    description: "Professional commercial painting for offices, warehouses and industrial spaces across Melbourne. Colour-matched finishes, proper surface preparation and quality application—delivered on time for your handover deadline.",
-    metaDescription: "End of lease painting Melbourne. Commercial and warehouse painting for make good compliance. Colour-matched, owner-approved finishes. Bond protection guaranteed. Free quotes.",
+    name: "Make Good Painting",
+    slug: "make-good-painting",
+    title: "Make Good Painting Melbourne",
+    metaTitle: "Make Good Painting Melbourne | End of Lease Painting Services",
+    description: "Professional make good painting for offices, warehouses and industrial spaces across Melbourne. Colour-matched finishes, proper surface preparation and quality application—delivered on time for your handover deadline.",
+    metaDescription: "Make good painting Melbourne. End of lease painting for commercial and industrial properties. Colour-matched, owner-approved finishes. Bond protection guaranteed. Free quotes.",
     heroText: "We deliver professional painting for [offices](/industries/commercial), [warehouses](/industries/industrial) and commercial spaces—colour-matched to original specifications, properly prepared and expertly applied. From [wall repairs](/services/patching-plastering) through to final coat, our comprehensive make good services handle all of your end of lease obligations.",
     ogImage: "/og/commercial.jpg",
     heroImage: commercialPaintingHeroImage,
     heroImageAlt: "Professional painter applying fresh coat to commercial warehouse wall in Melbourne",
     secondaryImage: commercialPaintingScopeImage,
     secondaryImageAlt: "Commercial interior with plastered walls and ceiling surface preparation ready for professional painting in Melbourne",
+    scopeTitle: "End of Lease Painting Scope",
     trustBadges: ["Licensed & Insured", "Competitive Pricing", "Fixed-Price Quotes"],
     benefits: [
       "Accurate colour matching to original specifications",
@@ -444,7 +446,7 @@ export const services: Service[] = [
       subtitle: "We do makegoods all day, every day.",
       text: "From single rooms to multi-floor offices, we've restored ceilings across Melbourne's commercial properties. Get in touch today for a free, no-obligation quote."
     },
-    relatedServices: ["commercial-painting", "office-strip-out", "commercial-make-good"],
+    relatedServices: ["make-good-painting", "office-strip-out", "commercial-make-good"],
     category: "make-good",
     published: true
   },
@@ -505,7 +507,7 @@ export const services: Service[] = [
       subtitle: "We do makegoods all day, every day.",
       text: "We've managed make good projects across Melbourne—from small retail spaces to large corporate offices. Get in touch today for a free, no-obligation quote."
     },
-    relatedServices: ["office-strip-out", "commercial-painting", "ceiling-tile-replacement"],
+    relatedServices: ["office-strip-out", "make-good-painting", "ceiling-tile-replacement"],
     category: "make-good"
   },
   {
@@ -529,7 +531,7 @@ export const services: Service[] = [
       subtitle: "We do makegoods all day, every day.",
       text: "Our plasterers have delivered paint-ready finishes across Melbourne's commercial properties for years. Get in touch today for a free, no-obligation quote."
     },
-    relatedServices: ["commercial-painting", "commercial-make-good", "ceiling-tile-replacement"],
+    relatedServices: ["make-good-painting", "commercial-make-good", "ceiling-tile-replacement"],
     category: "make-good"
   },
   {
