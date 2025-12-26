@@ -261,7 +261,7 @@ const ServiceTemplate = ({ slug: propSlug }: ServiceTemplateProps) => {
           <section className="py-16 bg-secondary">
             <div className="container mx-auto px-4">
               {/* Title - single element */}
-              <h2 className="text-3xl md:text-4xl text-foreground mb-6">{service.name} Scope</h2>
+              <h2 className="text-3xl md:text-4xl text-foreground mb-6">{service.scopeTitle || `${service.name} Scope`}</h2>
               
               <div className="grid lg:grid-cols-2 gap-12 items-center">
                 {/* Image */}

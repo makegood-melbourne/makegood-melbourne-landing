@@ -88,7 +88,7 @@ export const industries: Industry[] = [
         description: "Suspended ceilings, lighting modifications and data cabling all need to be addressed to meet base building specifications."
       }
     ],
-    services: ["office-strip-out", "commercial-make-good", "commercial-painting", "carpet-removal", "vinyl-removal", "ceiling-tile-replacement", "patching-plastering", "commercial-cleaning"],
+    services: ["office-strip-out", "commercial-make-good", "make-good-painting", "carpet-removal", "vinyl-removal", "ceiling-tile-replacement", "patching-plastering", "commercial-cleaning"],
     benefits: [
       "Experienced in Melbourne's major commercial buildings",
       "After-hours and weekend work available",
