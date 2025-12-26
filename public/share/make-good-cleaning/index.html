@@ -37,16 +37,15 @@
     <meta name="twitter:image:alt" content="Make good cleaning Melbourne – industrial floor cleaning" />
 
     <script>
-      // Redirect real users quickly; scrapers can still read OG tags from <head>
-      window.location.replace('/services/make-good-cleaning');
+      // Redirect humans after a short delay; scrapers should still read OG tags from <head>
+      setTimeout(() => {
+        window.location.replace('/services/make-good-cleaning');
+      }, 1500);
     </script>
-    <noscript>
-      <meta http-equiv="refresh" content="0; url=/services/make-good-cleaning" />
-    </noscript>
   </head>
   <body>
     <p>
-      Redirecting to <a href="/services/make-good-cleaning">Make Good Cleaning</a>…
+      Opening <a href="/services/make-good-cleaning">Make Good Cleaning</a>…
     </p>
   </body>
 </html>
