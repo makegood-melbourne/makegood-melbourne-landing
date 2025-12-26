@@ -81,19 +81,9 @@ const ServiceTemplate = ({ slug: propSlug }: ServiceTemplateProps) => {
         Skip to main content
       </a>
       
+      {/* OG/Twitter meta tags are handled by Astro's BaseLayout for static generation */}
+      {/* Only structured data (JSON-LD) needs client-side rendering */}
       <Helmet>
-        <title>{service.metaTitle}</title>
-        <meta name="description" content={service.metaDescription} />
-        <meta property="og:title" content={service.metaTitle} />
-        <meta property="og:description" content={service.metaDescription} />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content={`https://makegood.melbourne/services/${service.slug}`} />
-        <meta property="og:image" content={service.heroImage ? `https://makegood.melbourne${service.heroImage}` : "https://makegood.melbourne/og-image.jpg"} />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={service.metaTitle} />
-        <meta name="twitter:description" content={service.metaDescription} />
-        <meta name="twitter:image" content={service.heroImage ? `https://makegood.melbourne${service.heroImage}` : "https://makegood.melbourne/og-image.jpg"} />
-        <link rel="canonical" href={`https://makegood.melbourne/services/${service.slug}`} />
         <script type="application/ld+json">
           {JSON.stringify(structuredData)}
         </script>
