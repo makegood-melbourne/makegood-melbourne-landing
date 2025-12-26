@@ -272,7 +272,7 @@ export const services: Service[] = [
         imageLeft: true
       },
       {
-        title: "External Painting — When It's Required",
+        title: "External Painting — Facades, Bollards and Exteriors",
         description: "External painting isn't always in scope, but when it is—standalone tenancies, modified external surfaces, or specific lease requirements—we handle that too.\n\nWe'll confirm exactly what's needed before quoting, so you're not paying for work that isn't your responsibility.",
         imageLeft: false
       },
