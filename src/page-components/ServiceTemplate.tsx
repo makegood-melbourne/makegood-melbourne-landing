@@ -187,8 +187,8 @@ const ServiceTemplate = ({ slug: propSlug }: ServiceTemplateProps) => {
             {service.trustBadges && service.trustBadges.length > 0 && (
               <div className="flex flex-wrap gap-3 mt-10">
                 {service.trustBadges.map((badge, index) => (
-                  <div key={index} className="flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full">
-                    <Shield className="h-4 w-4 text-primary" />
+                  <div key={index} className="flex items-center gap-2 px-4 py-2 bg-accent/10 rounded-full">
+                    <Shield className="h-4 w-4 text-accent" />
                     <span className="text-sm font-medium text-foreground">{badge}</span>
                   </div>
                 ))}
