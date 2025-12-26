@@ -284,11 +284,6 @@ export const services: Service[] = [
         image: "/src/assets/services/commercial-building-facade-painting-cherry-picker-melbourne.jpeg",
         imageAlt: "Commercial building facade painting using cherry picker access equipment for exterior panel surfaces in Melbourne",
         imageLeft: false
-      },
-      {
-        title: "Part of a Complete Make Good Solution",
-        description: "Painting is often just one piece of the puzzle. We coordinate with [ceiling restoration](/services/ceiling-tile-replacement), [floor repairs](/services/warehouse-floor-repairs), and [full commercial make goods](/services/commercial-make-good)—one contractor managing everything so you get a seamless handover.",
-        imageLeft: true
       }
     ],
     comparison: {
