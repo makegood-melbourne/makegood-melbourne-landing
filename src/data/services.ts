@@ -274,8 +274,8 @@ export const services: Service[] = [
         imageLeft: true
       },
       {
-        title: "External Painting — Facades, Bollards and Exteriors",
-        description: "External painting isn't always in scope, but when it is—standalone tenancies, modified external surfaces, or specific lease requirements—we handle that too.\n\nWe'll confirm exactly what's needed before quoting, so you're not paying for work that isn't your responsibility.",
+        title: "External Painting — Building Facades and External Surfaces",
+        description: "We prepare external surfaces properly, match colours accurately and apply durable finishes suited to building facades and exposed external areas. Works are completed across [commercial](/industries/commercial) and [industrial](/industries/industrial) properties, with consideration given to access, weather conditions and surrounding site activity.\n\nThe outcome is a consistent, professional external presentation that aligns with lease requirements and overall building standards. Attention to detail and uniform finishes ensure the property is ready for inspection, handover or ongoing use.",
         imageLeft: false
       },
       {
