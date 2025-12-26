@@ -35,7 +35,7 @@ const WhatIsMakeGood = () => {
         <title>What is a Make Good? | Commercial Lease Guide | Melbourne</title>
         <meta 
           name="description" 
-          content="Understand make good clauses in commercial leases. Learn what's required, typical costs, and how to prepare for your lease end in Melbourne." 
+          content="Understand make good clauses in commercial leases. Learn what's required, typical costs, timelines, and how to prepare for your lease end in Melbourne. Expert guide for tenants." 
         />
         <meta name="keywords" content="make good clause, commercial lease, make good Melbourne, lease obligations, tenant responsibilities" />
         <link rel="canonical" href="https://makegood.melbourne/what-is-make-good" />
@@ -61,6 +61,8 @@ const WhatIsMakeGood = () => {
             src={heroImage} 
             alt="Empty commercial office space ready for make good restoration in Melbourne"
             className="w-full h-full object-cover"
+            width={1200}
+            height={800}
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/50" />
         </div>
@@ -102,6 +104,8 @@ const WhatIsMakeGood = () => {
                   src={officeImage} 
                   alt="Commercial office space after make good works with polished concrete floors Melbourne"
                   className="w-full h-full object-cover"
+                  width={600}
+                  height={400}
                 />
                 <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/50" />
               </div>
@@ -124,6 +128,8 @@ const WhatIsMakeGood = () => {
                   src={warehouseImage} 
                   alt="Empty warehouse after make good completion ready for handover Melbourne"
                   className="w-full h-full object-cover"
+                  width={600}
+                  height={400}
                 />
                 <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/50" />
               </div>
