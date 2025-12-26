@@ -250,10 +250,10 @@ export const services: Service[] = [
     name: "Commercial Painting",
     slug: "commercial-painting",
     title: "Commercial Painting Melbourne",
-    metaTitle: "Commercial Painting Melbourne | End of Lease Make Good",
-    description: "Almost every make good clause requires tenants to restore painted surfaces to original condition. Scuffed walls, patched holes and mismatched touch-ups won't pass owner inspection. We deliver professional commercial painting that meets lease requirements—colour-matched, properly prepared and finished to handover standard.",
-    metaDescription: "Commercial painting Melbourne for end of lease make good. Office, warehouse and industrial painting. Colour-matched, owner-approved finishes. Licensed painters. Free quotes.",
-    heroText: "Your make good clause almost certainly requires you to restore all painted surfaces to their original condition. That means walls, ceilings and any trim within your tenancy must be returned colour-matched and properly finished. We handle the colour matching, surface preparation and professional application—so you hand back a space that passes inspection first time.",
+    metaTitle: "End of Lease Painting Melbourne | Make Good Painting Services",
+    description: "Almost every make good clause requires tenants to restore painted surfaces to original condition. Scuffed walls, patched holes and mismatched touch-ups won't pass owner inspection. We deliver professional end of lease painting that meets lease requirements—colour-matched, properly prepared and finished to handover standard.",
+    metaDescription: "End of lease painting Melbourne. Commercial and warehouse painting for make good compliance. Colour-matched, owner-approved finishes. Bond protection guaranteed. Free quotes.",
+    heroText: "Your make good clause almost certainly requires you to restore all painted surfaces to their original condition. That means walls, ceilings and any trim within your tenancy must be returned colour-matched and properly finished. We handle the [wall repairs](/services/patching-plastering), colour matching, surface preparation and professional application—so you hand back a space that passes inspection first time.",
     ogImage: "/og/commercial.jpg",
     heroImage: commercialPaintingHeroImage,
     heroImageAlt: "Professional painter applying fresh coat to commercial warehouse wall in Melbourne",
@@ -269,13 +269,18 @@ export const services: Service[] = [
     featuredSections: [
       {
         title: "Internal Painting — Your Primary Make Good Obligation",
-        description: "The painted shell of your tenancy—walls, ceilings and trim—is almost always your responsibility to restore at lease end. Years of normal use leave scuffs, marks, patched holes from fixtures and faded or discoloured paint. Touch-ups rarely match, and owners will reject anything that looks inconsistent.\n\nWe prepare surfaces properly, match colours accurately and apply professional finishes that meet the 'original condition' requirement in your lease. Whether it's an office, warehouse, showroom or retail space—we deliver inspection-ready results.",
+        description: "The painted shell of your tenancy—walls, ceilings and trim—is almost always your responsibility to restore at lease end. Years of normal use leave scuffs, marks, patched holes from fixtures and faded or discoloured paint. Touch-ups rarely match, and owners will reject anything that looks inconsistent.\n\nWe prepare surfaces properly, match colours accurately and apply professional finishes that meet the 'original condition' requirement in your lease. Whether it's an [office](/industries/commercial), [warehouse](/industries/industrial), showroom or retail space—we deliver inspection-ready results.",
         imageLeft: true
       },
       {
         title: "External Painting — Less Common, But We Handle It",
         description: "External painting is rarely the tenant's responsibility—building facades, external walls and common areas typically remain the owner's obligation. However, some leases include specific external areas, particularly for standalone tenancies or where tenants have made modifications to external surfaces.\n\nIf your lease requires external painting restoration, we can scope and deliver that work too. We'll review your make good clause and confirm exactly what's required before quoting.",
         imageLeft: false
+      },
+      {
+        title: "Bond Protection Through Compliance",
+        description: "End of lease painting isn't just cosmetic—it's about meeting your contractual obligations and protecting your bond. Owners and property managers know what to look for: inconsistent finishes, visible patches, colour mismatches and poor preparation that shows through the paint.\n\nWe've completed hundreds of [commercial make goods](/services/commercial-make-good) and understand exactly what's required to pass inspection. Our painting is part of a complete restoration approach that protects your security deposit.",
+        imageLeft: true
       }
     ],
     comparison: {
@@ -322,7 +327,23 @@ export const services: Service[] = [
       },
       {
         question: "Do you handle patching and repairs before painting?",
-        answer: "Yes. Painting over holes, cracks or damaged surfaces is a waste of time and money—the defects show through. We fill all holes from removed fixtures, repair any plaster damage, sand patches smooth and apply appropriate primers before the finish coats. This is included in our make good painting service."
+        answer: "Yes. Painting over holes, cracks or damaged surfaces is a waste of time and money—the defects show through. We fill all holes from removed fixtures, repair any plaster damage, sand patches smooth and apply appropriate primers before the finish coats. This is included in our make good painting service. For more extensive wall damage, see our [patching and plastering](/services/patching-plastering) service."
+      },
+      {
+        question: "How much does end of lease painting cost in Melbourne?",
+        answer: "Costs vary based on floor area, ceiling height, surface condition and preparation requirements. Office spaces typically cost less per square metre than warehouses due to accessibility. We provide free, detailed quotes after inspecting your space—itemised so you know exactly what you're paying for."
+      },
+      {
+        question: "What is a make good clause?",
+        answer: "A make good clause is a standard provision in commercial leases requiring tenants to restore the premises to its original condition at lease end. This typically includes removing fitouts, repairing damage, restoring floors, and repainting all surfaces within the tenancy. The clause protects the owner's investment and ensures the space is ready for the next tenant."
+      },
+      {
+        question: "Who pays for end of lease painting?",
+        answer: "The tenant pays for end of lease painting as part of their make good obligations under the lease. This is a contractual requirement, not optional maintenance. Some tenants try to negotiate reduced scope with owners, but painting is rarely excluded from make good requirements. We can help you understand exactly what's required before you commit."
+      },
+      {
+        question: "Can I do my own end of lease painting?",
+        answer: "Technically yes, but owner rejection is common with DIY work. Commercial leases typically require 'professional' restoration, and owners know the difference. Poor preparation, colour mismatches, roller marks and drips are obvious to experienced property managers. Failed inspections cost more to rectify than doing it right the first time."
       }
     ],
     process: [
@@ -333,11 +354,11 @@ export const services: Service[] = [
       { step: "Final Inspection", description: "We complete a final walk-through to ensure all surfaces meet handover standard before owner inspection." }
     ],
     ctaBlock: {
-      title: "Let Us Handle Your Make Good Painting",
+      title: "Get Your Bond Back With Compliant Painting",
       subtitle: "We do makegoods all day, every day.",
       text: "Our painters have delivered inspection-ready finishes across Melbourne's commercial and industrial properties for years. We understand what owners expect and deliver work that gets accepted first time. Get in touch today for a free, no-obligation quote."
     },
-    relatedServices: ["patching-plastering", "commercial-make-good", "ceiling-tile-replacement", "warehouse-make-good"],
+    relatedServices: ["patching-plastering", "commercial-make-good", "ceiling-tile-replacement", "warehouse-make-good", "office-strip-out"],
     category: "make-good",
     published: true
   },
