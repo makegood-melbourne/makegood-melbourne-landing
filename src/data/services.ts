@@ -90,6 +90,7 @@ export interface Service {
   featuredSections?: FeaturedSection[];
   postComparisonSections?: FeaturedSection[]; // Sections that appear after comparison table, before FAQ
   processAfterSection?: number; // Index of featured section after which to show process (0-based)
+  processAfterScope?: boolean; // Show process right after scope section, before featured sections
   comparisonAfterSection?: number; // Index of featured section after which to show comparison table (0-based)
   skipAboutSection?: boolean; // Skip the auto-generated about section
   benefits: string[];
@@ -287,8 +288,8 @@ export const services: Service[] = [
         imageLeft: false
       }
     ],
+    processAfterScope: true, // Show process right after scope section
     comparisonAfterSection: 0, // Insert comparison after Internal Painting section
-    processAfterSection: 1, // Insert process after External Painting section
     comparison: {
       title: "Make Good Painting vs General Commercial Painting",
       specialistTitle: "Make Good Painting Specialist",
