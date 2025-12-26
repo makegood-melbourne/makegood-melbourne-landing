@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { Helmet } from "@/lib/helmet";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { ArrowRight, Clock } from "lucide-react";
 import Navigation from "@/components/Navigation";

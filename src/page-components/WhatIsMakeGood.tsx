@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { Helmet } from "@/lib/helmet";
 import { ArrowRight, CheckCircle, FileText, Building2, Users, AlertTriangle, Clock } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
