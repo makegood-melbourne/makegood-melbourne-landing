@@ -9,7 +9,6 @@ import { Textarea } from "@/components/ui/textarea";
 import { Mail, MapPin, Phone, Clock, AlertTriangle } from "lucide-react";
 import { useState } from "react";
 import { toast } from "sonner";
-import { supabase } from "@/integrations/supabase/client";
 import {
   Accordion,
   AccordionContent,
@@ -23,6 +22,11 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+
+const loadBackendClient = async () => {
+  const mod = await import("@/integrations/supabase/client");
+  return mod.supabase;
+};
 
 const contactFaqs = [
   {
@@ -75,7 +79,8 @@ const Contact = () => {
       const messageWithService = formData.serviceType 
         ? `[Service: ${formData.serviceType}]${formData.company ? ` [Company: ${formData.company}]` : ''}\n\n${formData.message}`
         : formData.message;
-      
+
+      const supabase = await loadBackendClient();
       const { error } = await supabase.functions.invoke('send-contact-email', {
         body: { 
           name: formData.name,

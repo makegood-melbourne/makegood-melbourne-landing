@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { supabase } from "@/integrations/supabase/client";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -9,6 +8,14 @@ import { Textarea } from "@/components/ui/textarea";
 import { toast } from "sonner";
 import { LogIn, LogOut, FileText, Lightbulb, PenTool, Eye, Trash2, RefreshCw } from "lucide-react";
 import type { Database } from "@/integrations/supabase/types";
+
+let supabaseCache: any | null = null;
+const loadBackendClient = async () => {
+  if (supabaseCache) return supabaseCache;
+  const mod = await import("@/integrations/supabase/client");
+  supabaseCache = mod.supabase;
+  return supabaseCache;
+};
 
 type ContentDraft = Database['public']['Tables']['content_drafts']['Row'];
 type ContentGap = Database['public']['Tables']['content_gaps']['Row'];
@@ -42,25 +49,38 @@ const AdminDashboard = () => {
   };
 
   useEffect(() => {
-    supabase.auth.getSession().then(({ data: { session } }) => {
-      setSession(session);
+    let unsub: { unsubscribe: () => void } | null = null;
+    let mounted = true;
+
+    (async () => {
+      const supabase = await loadBackendClient();
+      const { data } = await supabase.auth.getSession();
+      if (!mounted) return;
+
+      setSession(data.session);
       setLoading(false);
-      if (session) {
+      if (data.session) {
         fetchData();
       }
-    });
 
-    const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
-      setSession(session);
-      if (session) {
-        fetchData();
-      }
-    });
+      const { data: authData } = supabase.auth.onAuthStateChange((_event, session) => {
+        setSession(session);
+        if (session) {
+          fetchData();
+        }
+      });
 
-    return () => subscription.unsubscribe();
+      unsub = authData.subscription;
+    })();
+
+    return () => {
+      mounted = false;
+      unsub?.unsubscribe();
+    };
   }, []);
 
   const fetchData = async () => {
+    const supabase = await loadBackendClient();
     const [draftsRes, gapsRes] = await Promise.all([
       supabase.from('content_drafts').select('*').order('created_at', { ascending: false }),
       supabase.from('content_gaps').select('*').order('priority_score', { ascending: false })
@@ -72,6 +92,7 @@ const AdminDashboard = () => {
 
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
+    const supabase = await loadBackendClient();
     const { error } = await supabase.auth.signInWithPassword({ email, password });
     if (error) {
       toast.error(error.message);
@@ -81,6 +102,7 @@ const AdminDashboard = () => {
   };
 
   const handleLogout = async () => {
+    const supabase = await loadBackendClient();
     await supabase.auth.signOut();
     setSession(null);
     toast.success("Logged out");
@@ -94,6 +116,7 @@ const AdminDashboard = () => {
     
     setGenerating(true);
     try {
+      const supabase = await loadBackendClient();
       const response = await supabase.functions.invoke('generate-content', {
         body: {
           title: newTitle,
@@ -122,7 +145,8 @@ const AdminDashboard = () => {
     if (status === 'published') {
       updates.published_at = new Date().toISOString();
     }
-    
+
+    const supabase = await loadBackendClient();
     const { error } = await supabase
       .from('content_drafts')
       .update(updates)
@@ -138,7 +162,8 @@ const AdminDashboard = () => {
 
   const deleteDraft = async (id: string) => {
     if (!confirm("Are you sure you want to delete this draft?")) return;
-    
+
+    const supabase = await loadBackendClient();
     const { error } = await supabase
       .from('content_drafts')
       .delete()
