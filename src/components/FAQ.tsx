@@ -4,7 +4,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { Helmet } from "react-helmet-async";
+import { Helmet } from "@/lib/helmet";
 
 const FAQ = () => {
   const faqs = [
