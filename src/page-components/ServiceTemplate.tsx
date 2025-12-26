@@ -224,8 +224,8 @@ const ServiceTemplate = ({ slug: propSlug }: ServiceTemplateProps) => {
                 </h2>
                 
                 <div className={`grid lg:grid-cols-2 gap-12 items-center`}>
-                  {/* Image */}
-                  <div className={index % 2 === 1 ? 'lg:order-1' : ''}>
+                  {/* Image - alternates: Right, Left, Right... */}
+                  <div className={index % 2 === 0 ? 'lg:order-2' : ''}>
                     {section.image ? (
                       <img 
                         src={resolveImageSrc(section.image)} 
@@ -243,7 +243,7 @@ const ServiceTemplate = ({ slug: propSlug }: ServiceTemplateProps) => {
                     )}
                   </div>
                   {/* Copy */}
-                  <div className={index % 2 === 1 ? 'lg:order-2' : ''}>
+                  <div className={index % 2 === 0 ? 'lg:order-1' : ''}>
                     {paragraphs.map((para, pIndex) => (
                       <p key={pIndex} className="text-xl text-muted-foreground leading-relaxed mt-4 first:mt-0">
                         {renderTextWithLinks(para)}
@@ -426,8 +426,8 @@ const ServiceTemplate = ({ slug: propSlug }: ServiceTemplateProps) => {
                   </h2>
                   
                   <div className={`grid lg:grid-cols-2 gap-12 items-center`}>
-                    {/* Image */}
-                    <div className={index % 2 === 1 ? 'lg:order-1' : ''}>
+                    {/* Image - alternates: Right, Left, Right... */}
+                    <div className={index % 2 === 0 ? 'lg:order-2' : ''}>
                       {section.image ? (
                         <img 
                           src={resolveImageSrc(section.image)} 
@@ -445,7 +445,7 @@ const ServiceTemplate = ({ slug: propSlug }: ServiceTemplateProps) => {
                       )}
                     </div>
                     {/* Copy */}
-                    <div className={index % 2 === 1 ? 'lg:order-2' : ''}>
+                    <div className={index % 2 === 0 ? 'lg:order-1' : ''}>
                       {paragraphs.map((para, pIndex) => (
                         <p key={pIndex} className="text-xl text-muted-foreground leading-relaxed mt-4 first:mt-0">
                           {renderTextWithLinks(para)}
