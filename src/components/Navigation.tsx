@@ -163,9 +163,9 @@ const Navigation = () => {
               </DropdownMenuTrigger>
               <DropdownMenuContent align="start" className="bg-card border-border">
                 <DropdownMenuItem asChild>
-                  <button onClick={() => scrollToSection('about')} className="cursor-pointer w-full text-left">
+                  <a href="/#about" className="cursor-pointer">
                     About Us
-                  </button>
+                  </a>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
                   <a href="/our-process" className="cursor-pointer">
@@ -282,12 +282,13 @@ const Navigation = () => {
             <div className="py-2">
               <span className="text-foreground font-medium">Learn</span>
               <div className="pl-4 mt-2 flex flex-col gap-2">
-                <button 
-                  onClick={() => scrollToSection('about')} 
+                <a 
+                  href="/#about" 
                   className="text-left text-muted-foreground hover:text-accent transition-colors"
+                  onClick={() => setIsMenuOpen(false)}
                 >
                   About Us
-                </button>
+                </a>
                 <a 
                   href="/our-process" 
                   className="text-muted-foreground hover:text-accent transition-colors"
