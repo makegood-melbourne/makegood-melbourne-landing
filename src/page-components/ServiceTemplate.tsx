@@ -691,23 +691,41 @@ const ServiceTemplate = ({ slug: propSlug }: ServiceTemplateProps) => {
           <section className="py-16 bg-background">
             <div className="container mx-auto px-4">
               <h2 className="text-3xl md:text-4xl text-foreground mb-10">Related Services</h2>
-              <div className="grid md:grid-cols-3 gap-6">
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {relatedServices.map((relatedService) => (
                   <a 
                     key={relatedService.slug} 
                     href={`/services/${relatedService.slug}`}
-                    className="group"
+                    className="block group"
                   >
-                    <Card className="bg-secondary border-border h-full hover:border-primary transition-colors">
-                      <CardContent className="pt-6">
-                        <h3 className="text-xl font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">
-                          {relatedService.name}
-                        </h3>
-                        <p className="text-muted-foreground mb-4 line-clamp-2">
-                          {relatedService.heroText}
+                    <Card className="overflow-hidden border-border bg-card h-full transition-all duration-300 group-hover:border-primary/50 group-hover:shadow-xl">
+                      <div className="aspect-[4/3] overflow-hidden relative">
+                        {relatedService.heroImage ? (
+                          <img
+                            src={resolveImageSrc(relatedService.heroImage)}
+                            alt={relatedService.heroImageAlt || relatedService.name}
+                            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                            loading="lazy"
+                          />
+                        ) : (
+                          <div className="w-full h-full bg-muted/30 flex items-center justify-center">
+                            <span className="text-muted-foreground/50 text-sm">Service Image</span>
+                          </div>
+                        )}
+                        <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent" />
+                        <div className="absolute bottom-0 left-0 right-0 p-4">
+                          <h3 className="text-xl font-bold text-foreground mb-1">
+                            {relatedService.name}
+                          </h3>
+                        </div>
+                      </div>
+                      <CardContent className="p-4">
+                        <p className="text-sm text-muted-foreground line-clamp-2 mb-3">
+                          {relatedService.description}
                         </p>
-                        <span className="text-accent flex items-center gap-2 font-medium">
-                          Learn more <ArrowRight className="h-4 w-4" />
+                        <span className="inline-flex items-center text-primary text-sm font-medium group-hover:underline">
+                          Learn more
+                          <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
                         </span>
                       </CardContent>
                     </Card>
