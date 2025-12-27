@@ -360,7 +360,7 @@ export const services: Service[] = [
       { step: "Professional Application", description: "Quality paints applied by experienced commercial painters—spray, roller or brush depending on surface and finish requirements." }
     ],
     ctaBlock: {
-      title: "Get Your Bond Back With Compliant Painting",
+      title: "Let Us Handle Your Painting",
       subtitle: "We do makegoods all day, every day.",
       text: "Our painters have delivered inspection-ready finishes across Melbourne's commercial and industrial properties for years. We understand what owners expect and deliver work that gets accepted first time. Get in touch today for a free, no-obligation quote."
     },
