@@ -128,7 +128,7 @@ export const services: Service[] = [
       subtitle: "We do makegoods all day, every day.",
       text: "Our crews have stripped out hundreds of Melbourne offices—from single tenancies to multi-floor fitouts. Get in touch today for a free, no-obligation quote."
     },
-    relatedServices: ["commercial-make-good", "carpet-removal", "ceiling-tile-replacement"],
+    relatedServices: ["commercial-make-good", "ceiling-tile-replacement", "make-good-painting"],
     category: "demolition"
   },
   {
@@ -152,7 +152,7 @@ export const services: Service[] = [
       subtitle: "We do makegoods all day, every day.",
       text: "From small units to large distribution centres, we've restored warehouses across Melbourne to handover-ready condition. Get in touch today for a free, no-obligation quote."
     },
-    relatedServices: ["pallet-racking-removal", "epoxy-flooring", "line-marking"],
+    relatedServices: ["pallet-racking-removal", "warehouse-floor-repairs", "make-good-cleaning"],
     category: "make-good"
   },
   {
@@ -182,7 +182,7 @@ export const services: Service[] = [
       subtitle: "We do makegoods all day, every day.",
       text: "Our experienced crew has dismantled hundreds of racking systems across Melbourne, restoring warehouse floors for handover. Get in touch today for a free, no-obligation quote."
     },
-    relatedServices: ["warehouse-make-good", "concrete-floor-repair", "epoxy-flooring"],
+    relatedServices: ["warehouse-make-good", "warehouse-floor-repairs", "epoxy-flooring"],
     category: "demolition",
     published: true
   },
@@ -246,7 +246,7 @@ export const services: Service[] = [
       subtitle: "We do makegoods all day, every day.",
       text: "From small workshops to large distribution centres, we've coated floors across Melbourne's industrial properties. Get in touch today for a free, no-obligation quote."
     },
-    relatedServices: ["warehouse-floor-repairs", "concrete-floor-repair", "warehouse-make-good", "line-marking"],
+    relatedServices: ["warehouse-floor-repairs", "line-marking", "concrete-slab-restoration"],
     category: "trade",
     published: true
   },
@@ -389,7 +389,7 @@ export const services: Service[] = [
       subtitle: "We do makegoods all day, every day.",
       text: "Our licensed electricians have made safe hundreds of commercial spaces across Melbourne. Get in touch today for a free, no-obligation quote."
     },
-    relatedServices: ["office-strip-out", "warehouse-make-good", "led-lighting"],
+    relatedServices: ["office-strip-out", "commercial-make-good", "led-lighting"],
     category: "demolition"
   },
   {
@@ -413,7 +413,7 @@ export const services: Service[] = [
       subtitle: "We do makegoods all day, every day.",
       text: "We've repaired warehouse floors across Melbourne—from minor cracks to major slab restoration. Get in touch today for a free, no-obligation quote."
     },
-    relatedServices: ["epoxy-flooring", "warehouse-make-good", "line-marking"],
+    relatedServices: ["epoxy-flooring", "warehouse-floor-repairs", "line-marking"],
     category: "trade"
   },
   {
@@ -444,7 +444,7 @@ export const services: Service[] = [
       subtitle: "We do makegoods all day, every day.",
       text: "From single rooms to multi-floor offices, we've restored ceilings across Melbourne's commercial properties. Get in touch today for a free, no-obligation quote."
     },
-    relatedServices: ["make-good-painting", "office-strip-out", "commercial-make-good"],
+    relatedServices: ["make-good-painting", "patching-plastering", "commercial-make-good"],
     category: "make-good",
     published: true
   },
@@ -480,7 +480,7 @@ export const services: Service[] = [
       subtitle: "We do makegoods all day, every day.",
       text: "We've restored line markings in warehouses and car parks across Melbourne. Get in touch today for a free, no-obligation quote."
     },
-    relatedServices: ["epoxy-flooring", "warehouse-make-good", "concrete-floor-repair"],
+    relatedServices: ["epoxy-flooring", "warehouse-floor-repairs", "warehouse-make-good"],
     category: "trade",
     published: true
   },
@@ -505,7 +505,7 @@ export const services: Service[] = [
       subtitle: "We do makegoods all day, every day.",
       text: "We've managed make good projects across Melbourne—from small retail spaces to large corporate offices. Get in touch today for a free, no-obligation quote."
     },
-    relatedServices: ["office-strip-out", "make-good-painting", "ceiling-tile-replacement"],
+    relatedServices: ["office-strip-out", "make-good-painting", "make-good-cleaning"],
     category: "make-good"
   },
   {
@@ -529,7 +529,7 @@ export const services: Service[] = [
       subtitle: "We do makegoods all day, every day.",
       text: "Our plasterers have delivered paint-ready finishes across Melbourne's commercial properties for years. Get in touch today for a free, no-obligation quote."
     },
-    relatedServices: ["make-good-painting", "commercial-make-good", "ceiling-tile-replacement"],
+    relatedServices: ["make-good-painting", "ceiling-tile-replacement", "office-strip-out"],
     category: "make-good"
   },
   {
@@ -553,7 +553,7 @@ export const services: Service[] = [
       subtitle: "We do makegoods all day, every day.",
       text: "We've upgraded lighting in offices, warehouses and retail spaces across Melbourne. Get in touch today for a free, no-obligation quote."
     },
-    relatedServices: ["electrical-make-safe", "commercial-make-good", "office-strip-out"],
+    relatedServices: ["electrical-make-safe", "ceiling-tile-replacement", "commercial-make-good"],
     category: "trade"
   },
   {
@@ -635,7 +635,7 @@ export const services: Service[] = [
       subtitle: "We do makegoods all day, every day.",
       text: "From warehouse floors to office strip outs, we've prepared hundreds of Melbourne properties for final inspection. Get in touch today for a free, no-obligation quote."
     },
-    relatedServices: ["commercial-make-good", "warehouse-make-good", "office-strip-out"],
+    relatedServices: ["warehouse-make-good", "commercial-make-good", "concrete-slab-restoration"],
     category: "cleaning",
     published: true
   },
@@ -673,7 +673,7 @@ export const services: Service[] = [
       subtitle: "We do makegoods all day, every day.",
       text: "We've managed end-to-end relocations across Melbourne and beyond—make good and transport in one seamless service. Get in touch today for a free, no-obligation quote."
     },
-    relatedServices: ["warehouse-make-good", "pallet-racking-removal", "commercial-make-good"],
+    relatedServices: ["warehouse-make-good", "pallet-racking-removal", "make-good-cleaning"],
     category: "make-good",
     published: true
   },
@@ -731,7 +731,7 @@ export const services: Service[] = [
       subtitle: "We do makegoods all day, every day.",
       text: "From concrete cancer to retention walls, we've delivered structural solutions across Melbourne's commercial properties. Get in touch today for a free, no-obligation quote."
     },
-    relatedServices: ["warehouse-floor-repairs", "warehouse-make-good", "commercial-make-good"],
+    relatedServices: ["warehouse-floor-repairs", "waterproofing", "cladding-glazing"],
     category: "structural",
     published: true
   },
@@ -767,7 +767,7 @@ export const services: Service[] = [
       subtitle: "We do makegoods all day, every day.",
       text: "We've delivered cladding and glazing compliance projects across Melbourne's commercial buildings. Get in touch today for a free, no-obligation quote."
     },
-    relatedServices: ["structural-remediation", "commercial-make-good", "office-strip-out"],
+    relatedServices: ["structural-remediation", "waterproofing", "polycarbonate-roofing-skylights"],
     category: "structural",
     published: true
   },
@@ -1054,7 +1054,7 @@ export const services: Service[] = [
       subtitle: "We do makegoods all day, every day.",
       text: "From balcony remediation to full roof systems, we've waterproofed commercial and residential buildings across Melbourne. Get in touch today for a free, no-obligation quote."
     },
-    relatedServices: ["structural-remediation", "cladding-glazing", "concrete-floor-repair"],
+    relatedServices: ["structural-remediation", "cladding-glazing", "polycarbonate-roofing-skylights"],
     category: "structural",
     published: true
   },
@@ -1177,7 +1177,7 @@ export const services: Service[] = [
       subtitle: "We do makegoods all day, every day.",
       text: "From dynabolt hole filling to slab stabilisation, we've repaired warehouse floors across Melbourne. Get in touch today for a free, no-obligation quote."
     },
-    relatedServices: ["concrete-slab-restoration", "epoxy-flooring", "pallet-racking-removal", "warehouse-make-good"],
+    relatedServices: ["epoxy-flooring", "pallet-racking-removal", "concrete-slab-restoration"],
     category: "structural",
     published: true
   },
@@ -1322,7 +1322,7 @@ export const services: Service[] = [
       subtitle: "We do makegoods all day, every day.",
       text: "Whether you're completing end of lease obligations or upgrading your vacant property, we deliver complete skylight replacement as part of our make good service. One quote, one project manager, complete documentation for handover. Get in touch for a free assessment."
     },
-    relatedServices: ["warehouse-make-good", "waterproofing", "cladding-glazing", "commercial-make-good"],
+    relatedServices: ["warehouse-make-good", "waterproofing", "structural-remediation"],
     category: "structural",
     published: true
   }
