@@ -78,14 +78,15 @@ Flooring & Tile Removal: Complete removal of all floor coverings—commercial ca
 
 Concrete Grinding & Preparation: Our advanced grinding equipment can fully ablate concrete surfaces—removing coatings, adhesives and contamination that traditional floor grinding devices are unable to remove. We use heavy-duty industrial grade floor grinding machines that restore even heavily damaged floors to like-new condition.
 
-WAREHOUSE FLOOR REPAIRS (SPECIALIST SERVICE):
-Industrial floors take a beating—forklift traffic, heavy loads, racking anchors and years of wear. We repair damaged warehouse floors across Melbourne: bolt holes, cracks, failed joints, settlement voids and surface deterioration. Lasting repairs that restore structural integrity.
+WAREHOUSE & SHOWROOM FLOOR REPAIRS (SPECIALIST SERVICE):
+Industrial and showroom floors take a beating—forklift traffic, heavy loads, racking anchors and years of wear. We repair damaged warehouse and showroom floors across Melbourne: bolt holes, cracks, failed joints, settlement voids and surface deterioration. Lasting repairs that restore structural integrity.
 What we deliver:
 - Bolt Hole Filling & Floor Restoration: Core drill out damaged concrete around dynabolt holes, fill with high-strength epoxy resin, and grind flush
 - Crack Injection & Structural Bonding: Epoxy injection to fill and bond cracked concrete, restoring load-bearing capacity
 - Joint Edge Repair & Re-sealing: Repair damaged joint edges with epoxy mortar, re-cut joints, install appropriate sealants
 - Slab Stabilisation & Void Filling: Inject polyurethane foam or cementitious grout to fill voids and stabilise settlement
 - Floor Levelling & Surface Grinding: Level surfaces, remove coatings, prepare floors for epoxy or grind-and-seal finishes
+- Showroom Floor Repairs: High-quality finish repairs for customer-facing retail and showroom environments
 - Lease End Dilapidations: Floor repairs that meet landlord requirements for handover
 
 MAKE GOOD CLEANING (SPECIALIST SERVICE):
