@@ -364,7 +364,7 @@ export const services: Service[] = [
       subtitle: "We do makegoods all day, every day.",
       text: "Our painters have delivered inspection-ready finishes across Melbourne's commercial and industrial properties for years. We understand what owners expect and deliver work that gets accepted first time. Get in touch today for a free, no-obligation quote."
     },
-    relatedServices: ["patching-plastering", "commercial-make-good", "ceiling-tile-replacement", "warehouse-make-good", "office-strip-out"],
+    relatedServices: ["patching-plastering", "epoxy-flooring", "line-marking", "commercial-make-good"],
     category: "make-good",
     published: true
   },
