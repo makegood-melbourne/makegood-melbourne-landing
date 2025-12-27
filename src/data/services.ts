@@ -1063,9 +1063,9 @@ export const services: Service[] = [
     slug: "warehouse-floor-repairs",
     title: "Warehouse Floor Repairs Melbourne",
     metaTitle: "Warehouse Floor Repairs Melbourne | Dynabolt Holes & Crack Repairs",
-    description: "Specialist warehouse floor repair services across Melbourne. We fix dynabolt holes, cracks, damaged joints, settlement voids and surface deterioration—restoring your industrial floor to full working condition. Whether you're addressing dilapidations for lease end or maintaining a working facility, our team delivers lasting repairs that meet structural and safety requirements.",
-    metaDescription: "Warehouse floor repairs Melbourne. Professional dynabolt hole filling, concrete crack injection, joint restoration and slab levelling. Lease end dilapidations experts. Free quotes.",
-    heroText: "Industrial floors take a beating—forklift traffic, heavy loads, racking anchors and years of wear. We repair damaged warehouse floors across Melbourne: dynabolt holes, cracks, failed joints, settlement voids and surface deterioration. Lasting repairs that restore structural integrity.",
+    description: "Specialist warehouse and showroom floor repair services across Melbourne. We fix dynabolt holes, cracks, damaged joints, settlement voids and surface deterioration—restoring your industrial or retail floor to full working condition. Whether you're addressing dilapidations for lease end or maintaining a working facility, our team delivers lasting repairs that meet structural and safety requirements.",
+    metaDescription: "Warehouse & showroom floor repairs Melbourne. Professional dynabolt hole filling, concrete crack injection, joint restoration and slab levelling. Lease end dilapidations experts. Free quotes.",
+    heroText: "Industrial and showroom floors take a beating—forklift traffic, heavy loads, racking anchors and years of wear. We repair damaged warehouse and showroom floors across Melbourne: dynabolt holes, cracks, failed joints, settlement voids and surface deterioration. Lasting repairs that restore structural integrity.",
     ogImage: "/og/warehouse-floor-repairs.jpg",
     heroImage: warehouseFloorRepairsHeroImage,
     heroImageAlt: "Concrete floor leveling with screed tool for warehouse floor repairs Melbourne",
@@ -1116,6 +1116,7 @@ export const services: Service[] = [
       "Slab Stabilisation & Void Filling",
       "Floor Levelling & Surface Grinding",
       "Epoxy & Polyurethane Repair Systems",
+      "Warehouse & Showroom Specialists",
       "Lease End Dilapidations",
       "Minimal Downtime Solutions"
     ],
@@ -1164,6 +1165,10 @@ export const services: Service[] = [
       {
         question: "What is the cost of warehouse floor repairs in Melbourne?",
         answer: "Costs vary based on damage type and extent. Dynabolt hole filling is typically priced per hole, while crack and joint repairs depend on linear metres. We provide free, itemised quotes after inspecting your floor so you know exactly what to expect before work begins."
+      },
+      {
+        question: "Do you repair showroom floors as well as warehouse floors?",
+        answer: "Yes, we repair showroom floors using the same professional techniques as our warehouse work. Showrooms often require an even higher standard of finish since the floor is visible to customers. We restore cracks, fill holes from removed fixtures and displays, and prepare surfaces for polishing or coating—ensuring your showroom floor looks as good as it performs."
       }
     ],
     process: [
