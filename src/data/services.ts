@@ -8,7 +8,7 @@ import highPressureWarehouseCleaningImage from "@/assets/services/high-pressure-
 import warehouseRelocationImage from "@/assets/services/warehouse-relocation-forklift-loading-racking-melbourne.png";
 import palletRackingHeroImage from "@/assets/services/pallet-racking-dismantling-warehouse-floor-melbourne.jpeg";
 import warehouseDynaboltHoleRepairsImage from "@/assets/services/warehouse-dynabolt-hole-repairs-pallet-racking-melbourne.jpeg";
-import warehouseFloorRepairsHeroImage from "@/assets/services/warehouse-floor-worn-surface-line-markings-hero-melbourne.png";
+import warehouseFloorRepairsHeroImage from "@/assets/services/warehouse-floor-repairs-concrete-leveling-melbourne.jpeg";
 import warehouseFloorRepairsScopeImage from "@/assets/services/warehouse-floor-repairs-scope-polished-concrete-melbourne.jpeg";
 import flatbedTruckTransportImage from "@/assets/services/flatbed-truck-transporting-pallet-racking-melbourne-skyline.png";
 import concreteCancerImage from "@/assets/services/concrete-cancer-exposed-rebar-column-spalling-melbourne.jpeg";
@@ -1068,7 +1068,7 @@ export const services: Service[] = [
     heroText: "Industrial floors take a beating—forklift traffic, heavy loads, racking anchors and years of wear. We repair damaged warehouse floors across Melbourne: dynabolt holes, cracks, failed joints, settlement voids and surface deterioration. Lasting repairs that restore structural integrity.",
     ogImage: "/og/warehouse-floor-repairs.jpg",
     heroImage: warehouseFloorRepairsHeroImage,
-    heroImageAlt: "Worn warehouse floor with deteriorated line markings requiring repair Melbourne",
+    heroImageAlt: "Concrete floor leveling with screed tool for warehouse floor repairs Melbourne",
     secondaryImage: warehouseFloorRepairsScopeImage,
     secondaryImageAlt: "Empty warehouse with polished concrete floor and safety bollards after floor repairs Melbourne",
     trustBadges: [
