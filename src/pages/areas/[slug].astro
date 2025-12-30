@@ -1,6 +1,9 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import LocationTemplatePage from '../../page-components/LocationTemplate.tsx';
+import Navigation from '../../components/Navigation';
+import LocationHeroSection from '../../components/LocationHeroSection.astro';
+import LocationContent from '../../page-components/LocationContent.tsx';
+import Footer from '../../components/Footer';
 import { locations, getLocationBySlug } from '../../data/locations';
 
 export function getStaticPaths() {
@@ -24,5 +27,13 @@ if (!location) {
   ogImage="/og/locations-default.jpg"
   canonicalUrl={`https://makegood.melbourne/areas/${location.slug}`}
 >
-  <LocationTemplatePage slug={slug} client:load />
+  <Navigation client:load />
+  
+  <!-- Static optimized hero section with breadcrumbs -->
+  <LocationHeroSection slug={slug} />
+  
+  <!-- Interactive content loaded after hero -->
+  <LocationContent slug={slug} client:idle />
+  
+  <Footer client:idle />
 </BaseLayout>

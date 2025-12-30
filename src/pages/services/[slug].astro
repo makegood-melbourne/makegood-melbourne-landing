@@ -1,6 +1,9 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import ServiceTemplatePage from '../../page-components/ServiceTemplate.tsx';
+import Navigation from '../../components/Navigation';
+import ServiceHeroSection from '../../components/ServiceHeroSection.astro';
+import ServiceContent from '../../page-components/ServiceContent.tsx';
+import Footer from '../../components/Footer';
 import { getPublishedServices, getServiceBySlug } from '../../data/services';
 
 export function getStaticPaths() {
@@ -25,5 +28,25 @@ if (!service) {
   ogImage={service.ogImage || "/og-default.jpg"}
   canonicalUrl={`https://makegood.melbourne/services/${service.slug}`}
 >
-  <ServiceTemplatePage slug={slug} client:load />
+  <div class="min-h-screen flex flex-col bg-background">
+    <!-- Skip to Content Link for Accessibility -->
+    <a
+      href="#main-content"
+      class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:bg-primary focus:text-primary-foreground focus:rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
+    >
+      Skip to main content
+    </a>
+    
+    <Navigation client:load />
+    
+    <main id="main-content" class="flex-1">
+      <!-- Static optimized hero section with breadcrumbs -->
+      <ServiceHeroSection slug={slug} />
+      
+      <!-- Interactive content loaded after hero -->
+      <ServiceContent slug={slug} client:idle />
+    </main>
+    
+    <Footer client:idle />
+  </div>
 </BaseLayout>
