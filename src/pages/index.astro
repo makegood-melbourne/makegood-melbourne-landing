@@ -1,6 +1,9 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import IndexPage from '../page-components/Index.tsx';
+import Navigation from '../components/Navigation';
+import HeroSection from '../components/HeroSection.astro';
+import AboutSection from '../components/AboutSection.astro';
+import IndexContent from '../components/IndexContent';
 ---
 
 <BaseLayout 
@@ -9,5 +12,10 @@ import IndexPage from '../page-components/Index.tsx';
   ogImage="/og/commercial.jpg"
   canonicalUrl="https://makegood.melbourne/"
 >
-  <IndexPage client:load />
+  <main class="min-h-screen bg-background text-foreground">
+    <Navigation client:load />
+    <HeroSection />
+    <IndexContent client:idle />
+    <AboutSection />
+  </main>
 </BaseLayout>
