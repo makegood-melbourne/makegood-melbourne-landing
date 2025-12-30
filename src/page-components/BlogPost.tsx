@@ -107,6 +107,9 @@ const BlogPost = ({ slug: propSlug }: BlogPostProps) => {
               src={imageUrl}
               alt={post.imageAlt || post.title}
               className="w-full h-full object-cover"
+              width={1200}
+              height={675}
+              fetchPriority="high"
             />
           </div>
 
