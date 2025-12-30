@@ -25,6 +25,18 @@
   status = 301
   force = true
 
+# Legacy page redirects
+[[redirects]]
+  from = "/about"
+  to = "/#about"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/tenants"
+  to = "/what-is-make-good/"
+  status = 301
+  force = true
 
 
 # 404 fallback - only for truly missing pages
