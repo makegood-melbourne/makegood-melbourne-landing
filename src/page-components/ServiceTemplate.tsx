@@ -136,6 +136,8 @@ const ServiceTemplate = ({ slug: propSlug }: ServiceTemplateProps) => {
                       width={800}
                       height={600}
                       loading="eager"
+                      decoding="async"
+                      fetchPriority="high"
                     />
                   ) : (
                     <div className="aspect-[4/3] bg-muted/30 rounded-lg border-2 border-dashed border-muted-foreground/20 flex items-center justify-center">
@@ -175,6 +177,8 @@ const ServiceTemplate = ({ slug: propSlug }: ServiceTemplateProps) => {
                     width={800}
                     height={600}
                     loading="eager"
+                    decoding="async"
+                    fetchPriority="high"
                   />
                 ) : (
                   <div className="aspect-[4/3] bg-muted/30 rounded-lg border-2 border-dashed border-muted-foreground/20 flex items-center justify-center">
@@ -235,6 +239,7 @@ const ServiceTemplate = ({ slug: propSlug }: ServiceTemplateProps) => {
                         width={800}
                         height={600}
                         loading="lazy"
+                        decoding="async"
                       />
                     ) : (
                       <div className="aspect-[4/3] bg-muted/30 rounded-lg border-2 border-dashed border-muted-foreground/20 flex items-center justify-center">
@@ -275,6 +280,7 @@ const ServiceTemplate = ({ slug: propSlug }: ServiceTemplateProps) => {
                       width={800}
                       height={600}
                       loading="lazy"
+                      decoding="async"
                     />
                   ) : service.heroImage ? (
                     <img 
@@ -284,6 +290,7 @@ const ServiceTemplate = ({ slug: propSlug }: ServiceTemplateProps) => {
                       width={800}
                       height={600}
                       loading="lazy"
+                      decoding="async"
                     />
                   ) : (
                     <div className="aspect-[4/3] bg-muted/30 rounded-lg border-2 border-dashed border-muted-foreground/20 flex items-center justify-center">
@@ -393,6 +400,7 @@ const ServiceTemplate = ({ slug: propSlug }: ServiceTemplateProps) => {
                       width={800}
                       height={600}
                       loading="lazy"
+                      decoding="async"
                     />
                   ) : (
                     <div className="aspect-[4/3] bg-muted/30 rounded-lg border-2 border-dashed border-muted-foreground/20 flex items-center justify-center">
@@ -502,6 +510,7 @@ const ServiceTemplate = ({ slug: propSlug }: ServiceTemplateProps) => {
                           width={800}
                           height={600}
                           loading="lazy"
+                          decoding="async"
                         />
                       ) : (
                         <div className="aspect-[4/3] bg-muted/30 rounded-lg border-2 border-dashed border-muted-foreground/20 flex items-center justify-center">
@@ -591,6 +600,7 @@ const ServiceTemplate = ({ slug: propSlug }: ServiceTemplateProps) => {
                         width={800}
                         height={600}
                         loading="lazy"
+                        decoding="async"
                       />
                     ) : (
                       <div className="aspect-[4/3] bg-muted/30 rounded-lg border-2 border-dashed border-muted-foreground/20 flex items-center justify-center">

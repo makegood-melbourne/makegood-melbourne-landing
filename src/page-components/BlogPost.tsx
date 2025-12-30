@@ -109,6 +109,8 @@ const BlogPost = ({ slug: propSlug }: BlogPostProps) => {
               className="w-full h-full object-cover"
               width={1200}
               height={675}
+              loading="eager"
+              decoding="async"
               fetchPriority="high"
             />
           </div>
