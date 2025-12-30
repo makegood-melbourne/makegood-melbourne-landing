@@ -90,6 +90,9 @@ const About = () => {
               src={resolveImageSrc(officeWorkspace)}
               alt="Modern commercial office space ready for end of lease make good services in Melbourne"
               className="w-full h-full object-cover"
+              loading="lazy"
+              width={1200}
+              height={675}
             />
           </div>
         </div>
