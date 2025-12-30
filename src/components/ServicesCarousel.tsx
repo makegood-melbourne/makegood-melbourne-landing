@@ -66,6 +66,9 @@ const ServicesCarousel = () => {
                         src={resolveImageSrc(service.heroImage)}
                         alt={service.heroImageAlt || service.name}
                         className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                        loading="lazy"
+                        width={400}
+                        height={300}
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent" />
                       <div className="absolute bottom-0 left-0 right-0 p-4">
