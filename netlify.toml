@@ -5,6 +5,13 @@
 [build.environment]
   NODE_VERSION = "20"
 
+# Force www to non-www redirect
+[[redirects]]
+  from = "https://www.makegood.melbourne/*"
+  to = "https://makegood.melbourne/:splat"
+  status = 301
+  force = true
+
 # 404 fallback - only for truly missing pages
 [[redirects]]
   from = "/*"
