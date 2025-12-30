@@ -38,8 +38,14 @@
   status = 301
   force = true
 
+# Legacy service-areas redirect (/service-areas/* -> /areas/*)
+[[redirects]]
+  from = "/service-areas/*"
+  to = "/areas/:splat"
+  status = 301
+  force = true
 
-# 404 fallback - only for truly missing pages
+
 [[redirects]]
   from = "/*"
   to = "/404.html"
