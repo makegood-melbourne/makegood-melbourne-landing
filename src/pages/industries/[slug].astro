@@ -1,6 +1,9 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import IndustryTemplatePage from '../../page-components/IndustryTemplate.tsx';
+import Navigation from '../../components/Navigation';
+import IndustryHeroSection from '../../components/IndustryHeroSection.astro';
+import IndustryContent from '../../page-components/IndustryContent.tsx';
+import Footer from '../../components/Footer';
 import { industries, getIndustryBySlug } from '../../data/industries';
 
 export function getStaticPaths() {
@@ -24,5 +27,36 @@ if (!industry) {
   ogImage={industry.ogImage || "/og-default.jpg"}
   canonicalUrl={`https://makegood.melbourne/industries/${industry.slug}`}
 >
-  <IndustryTemplatePage slug={slug} client:load />
+  <main class="min-h-screen bg-background text-foreground">
+    <Navigation client:load />
+    
+    <!-- Breadcrumbs -->
+    <div class="pt-24 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-6xl mx-auto">
+        <nav aria-label="Breadcrumb" class="text-sm">
+          <ol class="flex items-center flex-wrap gap-2">
+            <li>
+              <a href="/" class="text-muted-foreground hover:text-primary transition-colors">Home</a>
+            </li>
+            <li class="text-muted-foreground">/</li>
+            <li>
+              <a href="/capabilities" class="text-muted-foreground hover:text-primary transition-colors">Industries</a>
+            </li>
+            <li class="text-muted-foreground">/</li>
+            <li>
+              <span class="text-foreground font-medium">{industry.name}</span>
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+    
+    <!-- Static optimized hero section -->
+    <IndustryHeroSection slug={slug} />
+    
+    <!-- Interactive content loaded after hero -->
+    <IndustryContent slug={slug} client:idle />
+    
+    <Footer client:idle />
+  </main>
 </BaseLayout>

@@ -1,0 +1,81 @@
+---
+import { Image } from 'astro:assets';
+import { Button } from '@/components/ui/button';
+import { ArrowRight } from 'lucide-react';
+import { getIndustryBySlug } from '@/data/industries';
+
+// Import all industry hero images statically
+import commercialHeroImage from "@/assets/industries/commercial-office-make-good-polished-concrete-melbourne.jpeg";
+import industrialHeroImage from "@/assets/industries/industrial-warehouse-make-good-empty-floor-melbourne.jpeg";
+import remediationHeroImage from "@/assets/services/glazing-facade-installation-commercial-building-melbourne.jpg";
+
+interface Props {
+  slug: string;
+}
+
+const { slug } = Astro.props;
+const industry = getIndustryBySlug(slug);
+
+if (!industry) {
+  return;
+}
+
+// Map slugs to images
+const heroImages: Record<string, ImageMetadata> = {
+  "commercial": commercialHeroImage,
+  "industrial": industrialHeroImage,
+  "remediation": remediationHeroImage
+};
+
+const heroImage = heroImages[slug];
+const heroImageAlt = industry.heroImageAlt || industry.title;
+---
+
+<!-- Hero Section - Static Astro with optimized image -->
+<section class="pt-6 md:pt-10 pb-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-secondary/50 to-background">
+  <div class="max-w-6xl mx-auto">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <div>
+        <span class="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">
+          {industry.name} Specialists
+        </span>
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
+          {industry.title}
+        </h1>
+        <p class="text-xl text-muted-foreground mb-8">
+          {industry.heroText}
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="/contact" class="inline-flex items-center justify-center h-11 px-8 rounded-md bg-primary text-primary-foreground font-medium hover:bg-primary/90 transition-colors">
+            Get a Free Quote
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+          <a href="/our-process" class="inline-flex items-center justify-center h-11 px-8 rounded-md border border-input bg-background font-medium hover:bg-accent hover:text-accent-foreground transition-colors">
+            Our Process
+          </a>
+        </div>
+      </div>
+      <div>
+        {heroImage ? (
+          <Image 
+            src={heroImage} 
+            alt={heroImageAlt}
+            class="rounded-lg shadow-xl w-full aspect-[4/3] object-cover"
+            widths={[360, 640, 800, 1200]}
+            sizes="(max-width: 640px) 360px, (max-width: 1024px) 640px, (max-width: 1280px) 800px, 1200px"
+            loading="eager"
+            decoding="async"
+            quality={70}
+          />
+        ) : (
+          <div class="bg-secondary/50 border-2 border-dashed border-border rounded-lg flex flex-col items-center justify-center p-8 aspect-[4/3]">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-muted-foreground mb-3"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg>
+            <p class="text-sm text-muted-foreground text-center max-w-xs">
+              <span class="font-medium">Image needed:</span> {industry.heroImagePlaceholder || 'Hero image for ' + industry.name}
+            </p>
+          </div>
+        )}
+      </div>
+    </div>
+  </div>
+</section>

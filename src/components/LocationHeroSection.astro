@@ -1,0 +1,118 @@
+---
+import { Image } from 'astro:assets';
+import { getLocationBySlug } from '@/data/locations';
+
+// Import all location hero images statically
+import defaultHeroImage from "@/assets/locations/commercial-make-good-restoration-melbourne.jpeg";
+import southMelbourneImage from "@/assets/locations/south-melbourne-market-commercial-precinct.jpeg";
+import melbourneCbdImage from "@/assets/locations/melbourne-cbd-skyline-yarra-river-commercial-district.jpeg";
+
+interface Props {
+  slug: string;
+}
+
+const { slug } = Astro.props;
+const location = getLocationBySlug(slug);
+
+if (!location) {
+  return;
+}
+
+// Map slugs to images with alt text
+const heroImages: Record<string, { image: ImageMetadata; alt: string }> = {
+  "south-melbourne": {
+    image: southMelbourneImage,
+    alt: "South Melbourne Market commercial precinct - make good services for retail and commercial spaces in South Melbourne"
+  },
+  "melbourne-cbd": {
+    image: melbourneCbdImage,
+    alt: "Melbourne CBD skyline and Yarra River at dusk - commercial office make good services in Melbourne central business district"
+  }
+};
+
+const heroData = heroImages[slug] || {
+  image: defaultHeroImage,
+  alt: "Commercial property make good restoration services Melbourne"
+};
+---
+
+<!-- Breadcrumbs -->
+<div class="pt-20 bg-background">
+  <div class="container mx-auto px-4">
+    <nav aria-label="Breadcrumb" class="py-4 text-sm">
+      <ol class="flex items-center flex-wrap gap-2">
+        <li>
+          <a href="/" class="text-muted-foreground hover:text-primary transition-colors">Home</a>
+        </li>
+        <li class="text-muted-foreground">/</li>
+        <li>
+          <a href="/service-areas" class="text-muted-foreground hover:text-primary transition-colors">Service Areas</a>
+        </li>
+        <li class="text-muted-foreground">/</li>
+        <li>
+          <span class="text-foreground font-medium">{location.name}</span>
+        </li>
+      </ol>
+    </nav>
+  </div>
+</div>
+
+<!-- Hero Section -->
+<section class="relative pt-6 md:pt-10 pb-16 flex items-center bg-background">
+  <div class="container mx-auto px-4">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <!-- Left: Content -->
+      <div>
+        <h1 class="text-4xl md:text-5xl lg:text-6xl mb-4 leading-tight">
+          <span class="font-light block">Make Good Services in</span>
+          <span class="font-bold text-primary">{location.name}</span>
+        </h1>
+        <p class="text-xl text-muted-foreground mb-8 leading-relaxed max-w-lg">
+          {location.description}
+        </p>
+
+        <!-- Trust Badges -->
+        <div class="flex flex-wrap gap-6 mb-10">
+          <div class="flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span class="text-foreground font-medium">Local Team</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span class="text-foreground font-medium">Fast Response</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></svg>
+            <span class="text-foreground font-medium">Fully Insured</span>
+          </div>
+        </div>
+
+        <!-- CTA Buttons -->
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="/#contact" class="inline-flex items-center justify-center h-11 px-8 rounded-md bg-primary text-primary-foreground font-medium hover:bg-primary/90 transition-colors">
+            Get a Free Quote
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+          <a href="mailto:enquiries@makegood.melbourne" class="inline-flex items-center justify-center h-11 px-8 rounded-md border border-input bg-background font-medium hover:bg-accent hover:text-accent-foreground transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            Email Us
+          </a>
+        </div>
+      </div>
+
+      <!-- Right: Hero Image -->
+      <div>
+        <Image 
+          src={heroData.image} 
+          alt={heroData.alt}
+          class="rounded-lg shadow-xl w-full aspect-[4/3] object-cover"
+          widths={[360, 640, 800, 1200]}
+          sizes="(max-width: 640px) 360px, (max-width: 1024px) 640px, (max-width: 1280px) 800px, 1200px"
+          loading="eager"
+          decoding="async"
+          quality={70}
+        />
+      </div>
+    </div>
+  </div>
+</section>

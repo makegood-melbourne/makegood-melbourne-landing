@@ -1,0 +1,83 @@
+---
+import { Image } from 'astro:assets';
+import { getBlogPostBySlug } from '@/data/blogPosts';
+import { calculateReadingTime } from '@/lib/blogUtils';
+
+// Import all blog images statically - these should match the filenames in blogPosts data
+const blogImages = import.meta.glob<{ default: ImageMetadata }>('/src/assets/blog/*.{jpg,jpeg,png,webp}', { eager: true });
+
+interface Props {
+  slug: string;
+}
+
+const { slug } = Astro.props;
+const post = getBlogPostBySlug(slug);
+
+if (!post) {
+  return;
+}
+
+const readingTime = calculateReadingTime(post.content);
+
+// Find matching image from glob imports
+const imagePath = `/src/assets/blog/${post.image}`;
+const imageModule = blogImages[imagePath];
+const heroImage = imageModule?.default;
+---
+
+<!-- Breadcrumbs -->
+<div class="pt-20 bg-background">
+  <div class="container mx-auto px-4">
+    <nav aria-label="Breadcrumb" class="py-4 text-sm">
+      <ol class="flex items-center flex-wrap gap-2">
+        <li>
+          <a href="/" class="text-muted-foreground hover:text-primary transition-colors">Home</a>
+        </li>
+        <li class="text-muted-foreground">/</li>
+        <li>
+          <a href="/blog" class="text-muted-foreground hover:text-primary transition-colors">Blog</a>
+        </li>
+        <li class="text-muted-foreground">/</li>
+        <li>
+          <span class="text-foreground font-medium">{post.title.length > 40 ? post.title.slice(0, 37) + '...' : post.title}</span>
+        </li>
+      </ol>
+    </nav>
+  </div>
+</div>
+
+<!-- Hero Section -->
+<article class="container mx-auto px-4 py-6 max-w-4xl">
+  <header class="mb-6">
+    <h1 class="text-4xl md:text-5xl text-foreground mb-4">{post.title}</h1>
+    <div class="flex flex-wrap items-center gap-4 text-sm text-muted-foreground">
+      <span class="flex items-center gap-1">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/></svg>
+        {post.date}
+      </span>
+      <span class="flex items-center gap-1">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        {readingTime} min read
+      </span>
+    </div>
+  </header>
+
+  <div class="aspect-video w-full overflow-hidden rounded-lg mb-8">
+    {heroImage ? (
+      <Image 
+        src={heroImage}
+        alt={post.imageAlt || post.title}
+        class="w-full h-full object-cover"
+        widths={[360, 640, 800, 1200]}
+        sizes="(max-width: 640px) 360px, (max-width: 1024px) 640px, (max-width: 1280px) 800px, 1200px"
+        loading="eager"
+        decoding="async"
+        quality={75}
+      />
+    ) : (
+      <div class="w-full h-full bg-muted/30 flex items-center justify-center">
+        <span class="text-muted-foreground">Blog Image</span>
+      </div>
+    )}
+  </div>
+</article>

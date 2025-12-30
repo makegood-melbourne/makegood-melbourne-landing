@@ -1,6 +1,9 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import BlogPostPage from '../../page-components/BlogPost.tsx';
+import Navigation from '../../components/Navigation';
+import BlogHeroSection from '../../components/BlogHeroSection.astro';
+import BlogContent from '../../page-components/BlogContent.tsx';
+import Footer from '../../components/Footer';
 import { blogPosts, getBlogPostBySlug } from '../../data/blogPosts';
 
 export function getStaticPaths() {
@@ -30,5 +33,15 @@ const ogImage = `/og/blog/${imageBaseName}.jpg`;
   ogImage={ogImage}
   canonicalUrl={`https://makegood.melbourne/blog/${post.slug}`}
 >
-  <BlogPostPage slug={slug} client:idle />
+  <div class="min-h-screen flex flex-col">
+    <Navigation client:load />
+    
+    <!-- Static optimized hero section with breadcrumbs and featured image -->
+    <BlogHeroSection slug={slug} />
+    
+    <!-- Interactive content loaded after hero -->
+    <BlogContent slug={slug} client:idle />
+    
+    <Footer client:idle />
+  </div>
 </BaseLayout>
