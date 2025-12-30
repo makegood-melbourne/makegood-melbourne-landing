@@ -30,5 +30,5 @@ const ogImage = `/og/blog/${imageBaseName}.jpg`;
   ogImage={ogImage}
   canonicalUrl={`https://makegood.melbourne/blog/${post.slug}`}
 >
-  <BlogPostPage slug={slug} client:load />
+  <BlogPostPage slug={slug} client:idle />
 </BaseLayout>

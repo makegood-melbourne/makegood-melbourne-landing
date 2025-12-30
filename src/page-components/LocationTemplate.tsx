@@ -240,6 +240,7 @@ const LocationTemplate = ({ slug: propSlug }: LocationTemplateProps) => {
                   className="w-full h-full object-cover"
                   width={800}
                   height={600}
+                  fetchPriority="high"
                 />
               </div>
             </div>
@@ -371,6 +372,7 @@ const LocationTemplate = ({ slug: propSlug }: LocationTemplateProps) => {
                     className="w-full h-full object-cover"
                     width={800}
                     height={600}
+                    loading="lazy"
                   />
                 </div>
               </div>
