@@ -53,6 +53,21 @@ export default defineConfig({
     '/services/tile-removal': '/services/concrete-slab-restoration',
     '/services/adhesive-removal': '/services/concrete-slab-restoration',
     '/services/commercial-cleaning': '/services/make-good-cleaning',
+    
+    // Old /service-areas/ URLs -> new /areas/ URLs
+    '/service-areas/melbourne-cbd': '/areas/melbourne-cbd',
+    '/service-areas/port-melbourne': '/areas/port-melbourne',
+    '/service-areas/dandenong': '/areas/dandenong',
+    '/service-areas/clayton': '/areas/clayton',
+    '/service-areas/moorabbin': '/areas/moorabbin',
+    '/service-areas/richmond': '/areas/richmond',
+    '/service-areas/ringwood': '/areas/ringwood',
+    '/service-areas/altona': '/areas/altona',
+    '/service-areas/kilsyth': '/areas/kilsyth',
+    '/service-areas/mulgrave': '/areas/mulgrave',
+    '/service-areas/south-melbourne': '/areas/south-melbourne',
+    '/service-areas/truganina': '/areas/truganina',
+    '/service-areas/[slug]': '/areas/[slug]',
   },
   vite: {
     resolve: {
