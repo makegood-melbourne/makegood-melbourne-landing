@@ -5,13 +5,18 @@
 [build.environment]
   NODE_VERSION = "20"
 
-# Force www to non-www redirect (host-based)
+# Domain-level redirects (handle Google crawling www + legacy /blogs/*)
 [[redirects]]
-  from = "/*"
+  from = "https://www.makegood.melbourne/blogs/*"
+  to = "https://makegood.melbourne/blog/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.makegood.melbourne/*"
   to = "https://makegood.melbourne/:splat"
   status = 301
   force = true
-  conditions = { Host = "www.makegood.melbourne" }
 
 # Legacy blog URL redirect (/blogs/* -> /blog/*)
 [[redirects]]
@@ -19,6 +24,7 @@
   to = "/blog/:splat"
   status = 301
   force = true
+
 
 
 # 404 fallback - only for truly missing pages
