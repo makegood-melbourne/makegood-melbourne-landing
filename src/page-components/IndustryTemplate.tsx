@@ -134,6 +134,8 @@ const IndustryTemplate = ({ slug: propSlug }: IndustryTemplateProps) => {
                   className="rounded-lg shadow-xl w-full aspect-[4/3] object-cover"
                   width={800}
                   height={600}
+                  loading="eager"
+                  decoding="async"
                   fetchPriority="high"
                 />
               ) : industry.heroImagePlaceholder ? (
@@ -182,6 +184,7 @@ const IndustryTemplate = ({ slug: propSlug }: IndustryTemplateProps) => {
                       width={800}
                       height={600}
                       loading="lazy"
+                      decoding="async"
                     />
                   ) : (
                     <ImagePlaceholder 
