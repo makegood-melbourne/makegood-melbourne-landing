@@ -5,16 +5,29 @@
 [build.environment]
   NODE_VERSION = "20"
 
-# Domain-level redirects (handle Google crawling www + legacy /blogs/*)
+# Domain + URL normalisation (avoid duplicate canonicals in Google)
 [[redirects]]
-  from = "https://www.makegood.melbourne/blogs/*"
-  to = "https://makegood.melbourne/blog/:splat"
+  from = "http://www.makegood.melbourne/*"
+  to = "https://makegood.melbourne/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://makegood.melbourne/*"
+  to = "https://makegood.melbourne/:splat"
   status = 301
   force = true
 
 [[redirects]]
   from = "https://www.makegood.melbourne/*"
   to = "https://makegood.melbourne/:splat"
+  status = 301
+  force = true
+
+# Remove trailing slashes (except root)
+[[redirects]]
+  from = "/:splat/"
+  to = "/:splat"
   status = 301
   force = true
 
