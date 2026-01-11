@@ -45,6 +45,13 @@
   status = 301
   force = true
 
+# Renamed service page redirects
+[[redirects]]
+  from = "/services/commercial-painting"
+  to = "/services/make-good-painting"
+  status = 301
+  force = true
+
 
 [[redirects]]
   from = "/*"
