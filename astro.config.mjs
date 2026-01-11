@@ -55,6 +55,9 @@ export default defineConfig({
     '/services/commercial-cleaning': '/services/make-good-cleaning',
     '/services/commercial-painting': '/services/make-good-painting',
     
+    // Blog post redirects for renamed/legacy URLs
+    '/blog/year-end-planning-commercial-property': '/blog/year-end-property-planning',
+    
     // Old /service-areas/ URLs -> new /areas/ URLs
     '/service-areas/melbourne-cbd': '/areas/melbourne-cbd',
     '/service-areas/port-melbourne': '/areas/port-melbourne',

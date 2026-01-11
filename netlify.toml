@@ -52,6 +52,12 @@
   status = 301
   force = true
 
+# Blog post redirects for renamed/legacy URLs
+[[redirects]]
+  from = "/blog/year-end-planning-commercial-property"
+  to = "/blog/year-end-property-planning"
+  status = 301
+  force = true
 
 [[redirects]]
   from = "/*"
