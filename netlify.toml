@@ -6,23 +6,27 @@
   NODE_VERSION = "20"
 
 # Direct legacy URL shortcuts (avoid redirect chains in Google)
+# Use Host conditions so Netlify matches these before the global www->non-www rule.
 [[redirects]]
-  from = "https://www.makegood.melbourne/about"
+  from = "/about"
   to = "https://makegood.melbourne/"
   status = 301
   force = true
+  conditions = { Host = "www.makegood.melbourne" }
 
 [[redirects]]
-  from = "https://www.makegood.melbourne/home"
+  from = "/home"
   to = "https://makegood.melbourne/"
   status = 301
   force = true
+  conditions = { Host = "www.makegood.melbourne" }
 
 [[redirects]]
-  from = "https://www.makegood.melbourne/tenants"
+  from = "/tenants"
   to = "https://makegood.melbourne/what-is-make-good"
   status = 301
   force = true
+  conditions = { Host = "www.makegood.melbourne" }
 
 # Domain + URL normalisation (avoid duplicate canonicals in Google)
 [[redirects]]
