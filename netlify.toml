@@ -5,6 +5,25 @@
 [build.environment]
   NODE_VERSION = "20"
 
+# Direct legacy URL shortcuts (avoid redirect chains in Google)
+[[redirects]]
+  from = "https://www.makegood.melbourne/about"
+  to = "https://makegood.melbourne/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.makegood.melbourne/home"
+  to = "https://makegood.melbourne/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.makegood.melbourne/tenants"
+  to = "https://makegood.melbourne/what-is-make-good"
+  status = 301
+  force = true
+
 # Domain + URL normalisation (avoid duplicate canonicals in Google)
 [[redirects]]
   from = "http://www.makegood.melbourne/*"
@@ -51,23 +70,6 @@
   status = 301
   force = true
 
-[[redirects]]
-  from = "https://www.makegood.melbourne/tenants"
-  to = "https://makegood.melbourne/what-is-make-good"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "https://www.makegood.melbourne/home"
-  to = "https://makegood.melbourne/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "https://www.makegood.melbourne/about"
-  to = "https://makegood.melbourne/"
-  status = 301
-  force = true
 
 [[redirects]]
   from = "/tenants"
