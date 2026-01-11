@@ -29,12 +29,8 @@
   conditions = { Host = ["www.makegood.melbourne"] }
 
 # Domain + URL normalisation (avoid duplicate canonicals in Google)
-[[redirects]]
-  from = "http://www.makegood.melbourne/*"
-  to = "https://makegood.melbourne/:splat"
-  status = 301
-  force = true
-
+# - Force HTTPS
+# - Force non-www
 [[redirects]]
   from = "http://makegood.melbourne/*"
   to = "https://makegood.melbourne/:splat"
@@ -42,10 +38,18 @@
   force = true
 
 [[redirects]]
-  from = "https://www.makegood.melbourne/*"
+  from = "http://www.makegood.melbourne/*"
   to = "https://makegood.melbourne/:splat"
   status = 301
   force = true
+
+# Catch-all: www -> non-www (single-hop after specific legacy shortcuts above)
+[[redirects]]
+  from = "/*"
+  to = "https://makegood.melbourne/:splat"
+  status = 301
+  force = true
+  conditions = { Host = ["www.makegood.melbourne"] }
 
 # Remove trailing slashes (except root)
 [[redirects]]
