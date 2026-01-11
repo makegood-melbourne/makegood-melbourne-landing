@@ -13,11 +13,32 @@ const {
   title, 
   description, 
   ogImage = '/og-default.jpg',
-  canonicalUrl = Astro.url.href,
+  canonicalUrl: canonicalUrlProp,
   robots = 'index, follow'
 } = Astro.props;
 
 const siteUrl = 'https://makegood.melbourne';
+
+const normaliseCanonicalUrl = (input?: string) => {
+  const url = new URL(input ?? Astro.url.pathname, siteUrl);
+
+  // Force preferred origin (https + non-www)
+  url.protocol = 'https:';
+  url.host = 'makegood.melbourne';
+
+  // Strip query/hash and normalise trailing slashes
+  url.search = '';
+  url.hash = '';
+
+  if (url.pathname.length > 1 && url.pathname.endsWith('/')) {
+    url.pathname = url.pathname.slice(0, -1);
+  }
+
+  return url.toString();
+};
+
+const canonicalUrl = normaliseCanonicalUrl(canonicalUrlProp);
+
 const fullOgImage = ogImage.startsWith('http') ? ogImage : `${siteUrl}${ogImage}`;
 const ogImageType = ogImage.toLowerCase().endsWith('.png')
   ? 'image/png'
