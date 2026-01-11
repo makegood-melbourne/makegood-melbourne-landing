@@ -47,12 +47,13 @@ export default defineConfig({
     // Catch-all for any other /blogs/ URLs -> same slug under /blog/
     '/blogs/[slug]': '/blog/[slug]',
     
-    // Service page redirects for consolidated pages
+    // Service page redirects for consolidated/renamed pages
     '/services/carpet-removal': '/services/concrete-slab-restoration',
     '/services/vinyl-removal': '/services/concrete-slab-restoration',
     '/services/tile-removal': '/services/concrete-slab-restoration',
     '/services/adhesive-removal': '/services/concrete-slab-restoration',
     '/services/commercial-cleaning': '/services/make-good-cleaning',
+    '/services/commercial-painting': '/services/make-good-painting',
     
     // Old /service-areas/ URLs -> new /areas/ URLs
     '/service-areas/melbourne-cbd': '/areas/melbourne-cbd',
