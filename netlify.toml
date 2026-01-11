@@ -64,6 +64,12 @@
   force = true
 
 [[redirects]]
+  from = "https://www.makegood.melbourne/about"
+  to = "https://makegood.melbourne/"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/tenants"
   to = "/what-is-make-good"
   status = 301
