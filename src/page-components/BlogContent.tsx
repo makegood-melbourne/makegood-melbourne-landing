@@ -1,5 +1,5 @@
 import { Helmet } from "@/lib/helmet";
-import { ArrowLeft, Phone } from "lucide-react";
+import { ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { blogPosts } from "@/data/blogPosts";
@@ -102,10 +102,9 @@ const BlogContent = ({ slug }: BlogContentProps) => {
                     Get a Free Quote
                   </Button>
                 </a>
-                <a href="tel:+61383769663">
+                <a href="mailto:enquiries@makegood.melbourne">
                   <Button variant="outline" size="lg" className="w-full sm:w-auto">
-                    <Phone className="mr-2 h-4 w-4" />
-                    Call Us Today
+                    Email Us
                   </Button>
                 </a>
               </div>
