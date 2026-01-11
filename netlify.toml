@@ -58,10 +58,42 @@
   status = 301
   force = true
 
+# /areas index doesn't exist - redirect to service-areas listing
+[[redirects]]
+  from = "/areas"
+  to = "/service-areas"
+  status = 301
+  force = true
+
 # Renamed service page redirects
 [[redirects]]
   from = "/services/commercial-painting"
   to = "/services/make-good-painting"
+  status = 301
+  force = true
+
+# Unpublished service page redirects (services exist in data but not published)
+[[redirects]]
+  from = "/services/commercial-make-good"
+  to = "/capabilities"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/services/concrete-floor-repair"
+  to = "/services/warehouse-floor-repairs"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/services/electrical-make-safe"
+  to = "/capabilities"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/services/led-lighting"
+  to = "/capabilities"
   status = 301
   force = true
 
