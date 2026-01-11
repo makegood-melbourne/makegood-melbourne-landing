@@ -6,31 +6,32 @@
   NODE_VERSION = "20"
 
 # Direct legacy URL shortcuts (avoid redirect chains in Google)
-# Use Host conditions so Netlify matches these before the global www->non-www rule.
+# IMPORTANT: Use absolute-from rules (Netlify matches these reliably) to avoid redirect loops.
 [[redirects]]
-  from = "/about"
-  to = "https://makegood.melbourne/"
-  status = 301
-  force = true
-  conditions = { Host = ["www.makegood.melbourne"] }
-
-[[redirects]]
-  from = "/home"
-  to = "https://makegood.melbourne/"
-  status = 301
-  force = true
-  conditions = { Host = ["www.makegood.melbourne"] }
-
-[[redirects]]
-  from = "/tenants"
+  from = "https://www.makegood.melbourne/tenants"
   to = "https://makegood.melbourne/what-is-make-good"
   status = 301
   force = true
-  conditions = { Host = ["www.makegood.melbourne"] }
+
+[[redirects]]
+  from = "https://www.makegood.melbourne/about"
+  to = "https://makegood.melbourne/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.makegood.melbourne/home"
+  to = "https://makegood.melbourne/"
+  status = 301
+  force = true
 
 # Domain + URL normalisation (avoid duplicate canonicals in Google)
-# - Force HTTPS
-# - Force non-www
+[[redirects]]
+  from = "http://www.makegood.melbourne/*"
+  to = "https://makegood.melbourne/:splat"
+  status = 301
+  force = true
+
 [[redirects]]
   from = "http://makegood.melbourne/*"
   to = "https://makegood.melbourne/:splat"
@@ -38,18 +39,10 @@
   force = true
 
 [[redirects]]
-  from = "http://www.makegood.melbourne/*"
+  from = "https://www.makegood.melbourne/*"
   to = "https://makegood.melbourne/:splat"
   status = 301
   force = true
-
-# Catch-all: www -> non-www (single-hop after specific legacy shortcuts above)
-[[redirects]]
-  from = "/*"
-  to = "https://makegood.melbourne/:splat"
-  status = 301
-  force = true
-  conditions = { Host = ["www.makegood.melbourne"] }
 
 # Remove trailing slashes (except root)
 [[redirects]]
