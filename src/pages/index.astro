@@ -4,6 +4,8 @@ import Navigation from '../components/Navigation';
 import HeroSection from '../components/HeroSection.astro';
 import AboutSection from '../components/AboutSection.astro';
 import IndexContent from '../components/IndexContent';
+import Footer from '../components/Footer';
+import FloatingCTAs from '../components/FloatingCTAs';
 ---
 
 <BaseLayout 
@@ -17,5 +19,7 @@ import IndexContent from '../components/IndexContent';
     <HeroSection />
     <IndexContent client:idle />
     <AboutSection />
+    <Footer client:load />
+    <FloatingCTAs client:load />
   </main>
 </BaseLayout>

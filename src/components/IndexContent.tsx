@@ -5,8 +5,8 @@ import ProblemSolution from "@/components/ProblemSolution";
 import ServiceAreasGrid from "@/components/ServiceAreasGrid";
 import FAQ from "@/components/FAQ";
 import Contact from "@/components/Contact";
-import Footer from "@/components/Footer";
-import FloatingCTAs from "@/components/FloatingCTAs";
+
+// Note: About section is rendered as AboutSection.astro in index.astro
 
 // Note: About section is now rendered as AboutSection.astro in index.astro
 
@@ -80,8 +80,6 @@ const IndexContent = () => {
       <ServiceAreasGrid />
       <FAQ />
       <Contact />
-      <Footer />
-      <FloatingCTAs />
     </>
   );
 };
