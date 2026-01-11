@@ -51,9 +51,9 @@ const App = () => (
           <Route path="/admin" element={<AdminDashboard />} />
 
           {/* Legacy redirects */}
-          <Route path="/tenants" element={<Navigate to="/" replace />} />
+          <Route path="/tenants" element={<Navigate to="/what-is-make-good" replace />} />
           <Route path="/blogs" element={<Navigate to="/blog" replace />} />
-          <Route path="/about" element={<Navigate to="/#about" replace />} />
+          <Route path="/about" element={<Navigate to="/" replace />} />
           <Route path="/learn" element={<Navigate to="/blog" replace />} />
           <Route path="/cart" element={<Navigate to="/" replace />} />
           <Route path="/services" element={<Navigate to="/capabilities" replace />} />

@@ -28,13 +28,13 @@
 # Legacy page redirects
 [[redirects]]
   from = "/about"
-  to = "/#about"
+  to = "/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/tenants"
-  to = "/what-is-make-good/"
+  to = "/what-is-make-good"
   status = 301
   force = true
 
