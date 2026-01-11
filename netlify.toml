@@ -5,51 +5,9 @@
 [build.environment]
   NODE_VERSION = "20"
 
-# Direct legacy URL shortcuts (avoid redirect chains in Google)
-# IMPORTANT: Use absolute-from rules (Netlify matches these reliably) to avoid redirect loops.
-[[redirects]]
-  from = "https://www.makegood.melbourne/tenants"
-  to = "https://makegood.melbourne/what-is-make-good"
-  status = 301
-  force = true
+# NOTE: Domain canonicalisation (www vs non-www, http vs https)
+# is handled at the hosting/domain level to avoid redirect loops.
 
-[[redirects]]
-  from = "https://www.makegood.melbourne/about"
-  to = "https://makegood.melbourne/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "https://www.makegood.melbourne/home"
-  to = "https://makegood.melbourne/"
-  status = 301
-  force = true
-
-# Domain + URL normalisation (avoid duplicate canonicals in Google)
-[[redirects]]
-  from = "http://www.makegood.melbourne/*"
-  to = "https://makegood.melbourne/:splat"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "http://makegood.melbourne/*"
-  to = "https://makegood.melbourne/:splat"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "https://www.makegood.melbourne/*"
-  to = "https://makegood.melbourne/:splat"
-  status = 301
-  force = true
-
-# Remove trailing slashes (except root)
-[[redirects]]
-  from = "/:splat/"
-  to = "/:splat"
-  status = 301
-  force = true
 
 # Legacy blog URL redirect (/blogs/* -> /blog/*)
 [[redirects]]
@@ -70,7 +28,6 @@
   to = "/"
   status = 301
   force = true
-
 
 [[redirects]]
   from = "/tenants"
