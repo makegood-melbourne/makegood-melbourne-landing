@@ -19,6 +19,9 @@ import claddingGlazing from "@/assets/services/cladding-remediation-facade-glazi
 import structuralRemediation from "@/assets/services/concrete-cancer-exposed-rebar-column-spalling-melbourne.jpeg";
 import waterproofing from "@/assets/services/rooftop-waterproofing-membrane-application-melbourne.jpeg";
 import skylightRoofing from "@/assets/services/industrial-warehouse-skylight-fibreglass-roof-melbourne.png";
+import concreteSlabRestoration from "@/assets/services/concrete-slab-grinding-polished-warehouse-floor-melbourne.png";
+import makeGoodCleaning from "@/assets/services/high-pressure-warehouse-cleaning-melbourne.png";
+import endOfLeaseRelocation from "@/assets/services/warehouse-relocation-forklift-loading-racking-melbourne.png";
 
 interface Props {
   slug: string;
@@ -45,10 +48,13 @@ const heroImages: Record<string, ImageMetadata> = {
   "carpet-removal": carpetRemoval,
   "ceiling-tile-replacement": ceilingTileReplacement,
   "commercial-cleaning": commercialCleaning,
+  "make-good-cleaning": makeGoodCleaning,
   "cladding-glazing": claddingGlazing,
   "structural-remediation": structuralRemediation,
   "waterproofing": waterproofing,
-  "polycarbonate-roofing-skylights": skylightRoofing
+  "polycarbonate-roofing-skylights": skylightRoofing,
+  "concrete-slab-restoration": concreteSlabRestoration,
+  "end-of-lease-relocation": endOfLeaseRelocation
 };
 
 const heroImage = heroImages[slug];
