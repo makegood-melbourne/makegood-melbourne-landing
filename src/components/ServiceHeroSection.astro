@@ -54,7 +54,7 @@ const titleParts = service.title.includes('Melbourne')
         <h1 class="text-4xl md:text-5xl lg:text-6xl text-foreground mb-6">
           {titleParts.highlight ? (
             <>
-              {titleParts.main}<br class="hidden sm:inline" /><span class="sm:hidden"> </span><span class="text-primary">{titleParts.highlight}</span>
+              {titleParts.main} <span class="text-primary">{titleParts.highlight}</span>
             </>
           ) : (
             service.title
