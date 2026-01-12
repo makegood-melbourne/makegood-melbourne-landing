@@ -23,7 +23,7 @@ const serviceCategories = [
   },
   {
     label: "Floor Restoration",
-    slugs: ['concrete-slab-restoration', 'epoxy-flooring', 'warehouse-floor-repairs']
+    slugs: ['warehouse-floor-restoration', 'epoxy-flooring']
   },
   {
     label: "Make Good Services",

@@ -65,7 +65,19 @@
 
 [[redirects]]
   from = "/services/concrete-floor-repair"
-  to = "/services/warehouse-floor-repairs"
+  to = "/services/warehouse-floor-restoration"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/services/concrete-slab-restoration"
+  to = "/services/warehouse-floor-restoration"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/services/warehouse-floor-repairs"
+  to = "/services/warehouse-floor-restoration"
   status = 301
   force = true
 
