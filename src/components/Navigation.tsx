@@ -31,7 +31,7 @@ const serviceCategories = [
   },
   {
     label: "Specialist Trades",
-    slugs: ['make-good-cleaning', 'make-good-painting', 'ceiling-tile-replacement', 'patching-plastering', 'electrical-make-safe', 'led-lighting']
+    slugs: ['handover-cleaning', 'make-good-painting', 'ceiling-tile-replacement', 'patching-plastering', 'electrical-make-safe', 'led-lighting']
   },
   {
     label: "Structural & Remediation",
