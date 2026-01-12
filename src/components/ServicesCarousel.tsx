@@ -13,8 +13,8 @@ import { resolveImageSrc } from "@/lib/resolveImageSrc";
 
 // Priority order for carousel display
 const priorityOrder = [
-  "concrete-slab-restoration",
-  "commercial-cleaning",
+  "warehouse-floor-restoration",
+  "make-good-cleaning",
   "ceiling-tile-replacement",
 ];
 
