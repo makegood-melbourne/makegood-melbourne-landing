@@ -1447,7 +1447,7 @@ export const services: Service[] = [
     },
     relatedServices: ["epoxy-flooring", "line-marking", "pallet-racking-removal", "warehouse-make-good"],
     category: "structural",
-    published: false
+    published: true
   }
 ];
 
