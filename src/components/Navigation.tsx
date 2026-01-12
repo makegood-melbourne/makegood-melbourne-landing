@@ -18,12 +18,8 @@ import {
 // Service categories for navigation grouping (alphabetically sorted)
 const serviceCategories = [
   {
-    label: "Cleaning",
-    slugs: ['make-good-cleaning']
-  },
-  {
     label: "Floor Restoration",
-    slugs: ['warehouse-floor-restoration', 'epoxy-flooring']
+    slugs: ['warehouse-floor-restoration', 'epoxy-flooring', 'line-marking']
   },
   {
     label: "Make Good Services",
@@ -35,7 +31,7 @@ const serviceCategories = [
   },
   {
     label: "Specialist Trades",
-    slugs: ['line-marking', 'make-good-painting', 'ceiling-tile-replacement', 'patching-plastering', 'electrical-make-safe', 'led-lighting']
+    slugs: ['make-good-cleaning', 'make-good-painting', 'ceiling-tile-replacement', 'patching-plastering', 'electrical-make-safe', 'led-lighting']
   },
   {
     label: "Structural & Remediation",
