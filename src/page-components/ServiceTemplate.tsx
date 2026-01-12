@@ -37,7 +37,7 @@ const ServiceTemplate = ({ slug: propSlug }: ServiceTemplateProps) => {
     { label: "Floor Restoration", slugs: ['warehouse-floor-restoration', 'epoxy-flooring', 'line-marking'] },
     { label: "Make Good Services", slugs: ['office-strip-out', 'warehouse-make-good', 'commercial-make-good'] },
     { label: "Relocation", slugs: ['end-of-lease-relocation', 'pallet-racking-removal'] },
-    { label: "Specialist Trades", slugs: ['make-good-cleaning', 'make-good-painting', 'ceiling-tile-replacement', 'patching-plastering', 'electrical-make-safe', 'led-lighting'] },
+    { label: "Specialist Trades", slugs: ['handover-cleaning', 'make-good-painting', 'ceiling-tile-replacement', 'patching-plastering', 'electrical-make-safe', 'led-lighting'] },
     { label: "Structural & Remediation", slugs: ['structural-remediation', 'polycarbonate-roofing-skylights', 'cladding-glazing', 'concrete-floor-repair', 'waterproofing'] }
   ];
   

@@ -559,7 +559,7 @@ export const services: Service[] = [
   },
   {
     name: "Handover Cleaning",
-    slug: "make-good-cleaning",
+    slug: "handover-cleaning",
     title: "Handover Cleaning Melbourne",
     metaTitle: "Handover Cleaning Melbourne | Lease End Specialists",
     description: "Lease ending? We handle the heavy-duty cleaning regular cleaners won't touch. Industrial floor scrubbing, high-pressure washing and chemical treatment—everything your landlord expects at handover. We work at scale: 500sqm warehouse floors, multi-level office strip-outs, loading docks caked in years of grime. This isn't maintenance cleaning—it's handover-ready restoration.",
