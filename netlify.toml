@@ -36,6 +36,12 @@
   force = true
 
 # Legacy service-areas redirect (/service-areas/* -> /areas/*)
+# IMPORTANT: keep /service-areas (the listing page) working and only redirect child routes.
+[[redirects]]
+  from = "/service-areas"
+  to = "/service-areas"
+  status = 200
+
 [[redirects]]
   from = "/service-areas/*"
   to = "/areas/:splat"
