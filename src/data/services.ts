@@ -1351,8 +1351,8 @@ export const services: Service[] = [
     ],
     featuredSections: [
       {
-        title: "Flooring & Coating Removal",
-        description: "Complete removal of all floor coverings and coatings. We strip carpet tiles, broadloom, sheet vinyl, LVT, vinyl planks, linoleum, ceramic tiles, porcelain tiles and quarry tiles. Our industrial grinders then ablate adhesive beds, carpet glue, tile mortar, waterproofing membranes and failed [epoxy coatings](/services/epoxy-flooring)—leaving clean concrete ready for restoration.",
+        title: "Flooring & Adhesive Removal",
+        description: "Complete removal of all floor coverings and their adhesives. We strip carpets and carpet tiles, vinyl and linoleum floorboards, ceramic and porcelain tiles and epoxy sealed concrete floors. Our industrial grinders then ablate adhesive beds, carpet glue, tile mortar, [waterproofing membranes](/services/waterproofing) and failed [epoxy coatings](/services/epoxy-flooring)—leaving concrete floor slabs ready for restoration.",
         image: tileFlooringRemovalImage,
         imageAlt: "Demolition hammer removing floor tiles during warehouse flooring strip out Melbourne"
       },
