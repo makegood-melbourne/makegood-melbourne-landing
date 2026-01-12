@@ -1405,14 +1405,28 @@ export const services: Service[] = [
         { feature: "Outcome", specialist: "Guaranteed handover-ready results", regular: "Variable finish quality, blame-shifting" }
       ]
     },
+    process: [
+      { step: "Floor Assessment", description: "We inspect your floor to identify existing coverings, adhesives, surface damage, repairs required and your finish requirements—whether for lease handover or continued operations." },
+      { step: "Strip-Out", description: "We remove all floor coverings including carpet, vinyl, tiles, and epoxy. Industrial grinders then ablate adhesives, membranes and failed coatings back to bare concrete." },
+      { step: "Grinding & Repairs", description: "Heavy-duty grinding levels surfaces and removes contamination. Dynabolt holes are cored and filled, cracks injected with epoxy or polyurethane, and joints repaired or re-sealed." },
+      { step: "Finishing & Handover", description: "Completed repairs are ground flush and documented. Your floor is finished to specification—raw concrete, grind and seal, or prepared for epoxy coating. Ready for inspection or continued use." }
+    ],
     faqs: [
       {
         question: "What types of flooring can you remove?",
         answer: "We remove all commercial floor coverings including carpet tiles, broadloom carpet, sheet vinyl, luxury vinyl tiles (LVT), vinyl planks, linoleum, ceramic tiles, porcelain tiles, and quarry tiles. We also remove underlay, gripper rods, and all associated fixtures."
       },
       {
+        question: "Can you remove carpet glue and tile adhesive from concrete?",
+        answer: "Yes. Our industrial grinders fully ablate adhesive beds, carpet glue, tile mortar and other residues that standard equipment leaves behind. We also remove waterproofing membranes and failed coatings, leaving bare concrete ready for restoration."
+      },
+      {
         question: "What makes your grinding equipment different?",
         answer: "We use heavy-duty industrial floor grinders that can fully ablate concrete surfaces—removing coatings, adhesives, and contamination that standard grinding equipment cannot touch. Our machines are remote-operated for precision and safety, and include integrated dust extraction for cleaner worksites."
+      },
+      {
+        question: "Can you grind floors with oil stains or chemical contamination?",
+        answer: "Yes. Our grinding process removes oil stains, chemical contamination and other surface issues that penetrate the concrete. For severe contamination, we grind deeper to reach clean concrete. This is often required in factories and workshops before floor coatings or handover."
       },
       {
         question: "How do you repair dynabolt holes?",
@@ -1441,6 +1455,14 @@ export const services: Service[] = [
       {
         question: "How long does warehouse floor restoration take?",
         answer: "Timing depends on floor size, condition and scope. A standard warehouse (500-1000m²) requiring flooring removal, grinding and basic repairs typically takes 5-7 days. Floors requiring extensive repairs or finishing coats take longer. We provide accurate timelines after inspection."
+      },
+      {
+        question: "What is the cost of warehouse floor restoration in Melbourne?",
+        answer: "Cost depends on floor area, existing coverings, extent of damage and finish required. We provide fixed-price quotes after inspection—no hidden costs. Contact us for a free site assessment and detailed quote."
+      },
+      {
+        question: "Do you restore showroom floors as well as warehouse floors?",
+        answer: "Yes. We restore floors in showrooms, factories, distribution centres and other commercial premises. Showroom floors often require a higher standard of finish—we can grind and seal to a polished or semi-gloss finish suitable for customer-facing spaces."
       },
       {
         question: "Do you provide before and after documentation?",
