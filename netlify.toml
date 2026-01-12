@@ -1,5 +1,5 @@
 [build]
-  command = "npx astro build"
+  command = "npx astro build && node scripts/smoke-tests.mjs"
   publish = "dist"
 
 [build.environment]

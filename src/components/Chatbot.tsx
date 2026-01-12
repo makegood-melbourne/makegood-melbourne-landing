@@ -1,10 +1,13 @@
 import { useState, useRef, useEffect } from "react";
-import { MessageCircle, X, Send, Loader2 } from "lucide-react";
+import { MessageCircle, X, Send, Loader2, AlertCircle, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { getBackendConfig } from "@/lib/backendClient";
 
 type Message = { role: "user" | "assistant"; content: string };
+
+const MAX_RETRIES = 3;
+const INITIAL_BACKOFF_MS = 1000;
 
 const { url: BACKEND_URL, publishableKey: BACKEND_KEY } = getBackendConfig();
 const CHAT_URL = `${BACKEND_URL}/functions/v1/chat`;
@@ -12,103 +15,141 @@ const CHAT_URL = `${BACKEND_URL}/functions/v1/chat`;
 export function Chatbot() {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState<Message[]>([]);
-  const [input, setInput] = useState('');
+  const [input, setInput] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+  const [backendAvailable, setBackendAvailable] = useState(true);
+  const [consecutiveErrors, setConsecutiveErrors] = useState(0);
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
   const scrollToBottom = () => {
-    messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   };
 
   useEffect(() => {
     scrollToBottom();
   }, [messages]);
 
-  const streamChat = async (userMessages: Message[]) => {
-    const resp = await fetch(CHAT_URL, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${BACKEND_KEY}`,
-      },
-      body: JSON.stringify({ messages: userMessages }),
-    });
+  const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
-    if (!resp.ok || !resp.body) {
-      const errorData = await resp.json().catch(() => ({}));
-      throw new Error(errorData.error || 'Failed to start chat');
-    }
+  const streamChatWithRetry = async (
+    userMessages: Message[],
+    retryCount = 0
+  ): Promise<void> => {
+    try {
+      const resp = await fetch(CHAT_URL, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${BACKEND_KEY}`,
+        },
+        body: JSON.stringify({ messages: userMessages }),
+      });
 
-    const reader = resp.body.getReader();
-    const decoder = new TextDecoder();
-    let textBuffer = '';
-    let assistantContent = '';
+      if (!resp.ok || !resp.body) {
+        const errorData = await resp.json().catch(() => ({}));
+        throw new Error(errorData.error || `HTTP ${resp.status}`);
+      }
 
-    while (true) {
-      const { done, value } = await reader.read();
-      if (done) break;
-      
-      textBuffer += decoder.decode(value, { stream: true });
+      // Reset error counter on successful connection
+      setConsecutiveErrors(0);
+      setBackendAvailable(true);
 
-      let newlineIndex: number;
-      while ((newlineIndex = textBuffer.indexOf('\n')) !== -1) {
-        let line = textBuffer.slice(0, newlineIndex);
-        textBuffer = textBuffer.slice(newlineIndex + 1);
+      const reader = resp.body.getReader();
+      const decoder = new TextDecoder();
+      let textBuffer = "";
+      let assistantContent = "";
 
-        if (line.endsWith('\r')) line = line.slice(0, -1);
-        if (line.startsWith(':') || line.trim() === '') continue;
-        if (!line.startsWith('data: ')) continue;
+      while (true) {
+        const { done, value } = await reader.read();
+        if (done) break;
 
-        const jsonStr = line.slice(6).trim();
-        if (jsonStr === '[DONE]') break;
+        textBuffer += decoder.decode(value, { stream: true });
 
-        try {
-          const parsed = JSON.parse(jsonStr);
-          const content = parsed.choices?.[0]?.delta?.content as string | undefined;
-          if (content) {
-            assistantContent += content;
-            setMessages(prev => {
-              const last = prev[prev.length - 1];
-              if (last?.role === 'assistant') {
-                return prev.map((m, i) => 
-                  i === prev.length - 1 ? { ...m, content: assistantContent } : m
-                );
-              }
-              return [...prev, { role: 'assistant', content: assistantContent }];
-            });
+        let newlineIndex: number;
+        while ((newlineIndex = textBuffer.indexOf("\n")) !== -1) {
+          let line = textBuffer.slice(0, newlineIndex);
+          textBuffer = textBuffer.slice(newlineIndex + 1);
+
+          if (line.endsWith("\r")) line = line.slice(0, -1);
+          if (line.startsWith(":") || line.trim() === "") continue;
+          if (!line.startsWith("data: ")) continue;
+
+          const jsonStr = line.slice(6).trim();
+          if (jsonStr === "[DONE]") break;
+
+          try {
+            const parsed = JSON.parse(jsonStr);
+            const content = parsed.choices?.[0]?.delta?.content as
+              | string
+              | undefined;
+            if (content) {
+              assistantContent += content;
+              setMessages((prev) => {
+                const last = prev[prev.length - 1];
+                if (last?.role === "assistant") {
+                  return prev.map((m, i) =>
+                    i === prev.length - 1
+                      ? { ...m, content: assistantContent }
+                      : m
+                  );
+                }
+                return [...prev, { role: "assistant", content: assistantContent }];
+              });
+            }
+          } catch {
+            textBuffer = line + "\n" + textBuffer;
+            break;
           }
-        } catch {
-          textBuffer = line + '\n' + textBuffer;
-          break;
         }
       }
+    } catch (error) {
+      // Retry with exponential backoff
+      if (retryCount < MAX_RETRIES) {
+        const backoffMs = INITIAL_BACKOFF_MS * Math.pow(2, retryCount);
+        console.log(
+          `[Chatbot] Retry ${retryCount + 1}/${MAX_RETRIES} after ${backoffMs}ms`
+        );
+        await sleep(backoffMs);
+        return streamChatWithRetry(userMessages, retryCount + 1);
+      }
+
+      // All retries exhausted
+      setConsecutiveErrors((prev) => prev + 1);
+      if (consecutiveErrors >= 2) {
+        setBackendAvailable(false);
+      }
+      throw error;
     }
   };
 
   const handleSend = async () => {
     if (!input.trim() || isLoading) return;
 
-    const userMsg: Message = { role: 'user', content: input.trim() };
+    const userMsg: Message = { role: "user", content: input.trim() };
     const newMessages = [...messages, userMsg];
     setMessages(newMessages);
-    setInput('');
+    setInput("");
     setIsLoading(true);
 
     try {
-      await streamChat(newMessages);
+      await streamChatWithRetry(newMessages);
     } catch (error) {
-      console.error('Chat error:', error);
-      setMessages(prev => [...prev, { 
-        role: 'assistant', 
-        content: 'Sorry, I encountered an error. Please try again or contact us directly at enquiries@makegood.melbourne' 
-      }]);
+      console.error("Chat error after retries:", error);
+      setMessages((prev) => [
+        ...prev,
+        {
+          role: "assistant",
+          content:
+            "I'm having trouble connecting right now. Please use our contact form or email us directly at enquiries@makegood.melbourne",
+        },
+      ]);
     } finally {
       setIsLoading(false);
     }
   };
 
   const handleKeyDown = (e: React.KeyboardEvent) => {
-    if (e.key === 'Enter' && !e.shiftKey) {
+    if (e.key === "Enter" && !e.shiftKey) {
       e.preventDefault();
       handleSend();
     }
@@ -120,8 +161,8 @@ export function Chatbot() {
       <button
         onClick={() => setIsOpen(true)}
         className={cn(
-          'fixed bottom-6 right-6 z-50 p-4 rounded-full bg-primary text-primary-foreground shadow-lg hover:bg-primary/90 transition-all duration-300',
-          isOpen && 'hidden'
+          "fixed bottom-6 right-6 z-50 p-4 rounded-full bg-primary text-primary-foreground shadow-lg hover:bg-primary/90 transition-all duration-300",
+          isOpen && "hidden"
         )}
         aria-label="Open chat"
       >
@@ -131,10 +172,12 @@ export function Chatbot() {
       {/* Chat Window */}
       <div
         className={cn(
-          'fixed bottom-6 right-6 z-50 w-[380px] max-w-[calc(100vw-48px)] bg-card border border-border rounded-2xl shadow-2xl flex flex-col transition-all duration-300 transform',
-          isOpen ? 'opacity-100 scale-100' : 'opacity-0 scale-95 pointer-events-none'
+          "fixed bottom-6 right-6 z-50 w-[380px] max-w-[calc(100vw-48px)] bg-card border border-border rounded-2xl shadow-2xl flex flex-col transition-all duration-300 transform",
+          isOpen
+            ? "opacity-100 scale-100"
+            : "opacity-0 scale-95 pointer-events-none"
         )}
-        style={{ height: '500px', maxHeight: 'calc(100vh - 100px)' }}
+        style={{ height: "500px", maxHeight: "calc(100vh - 100px)" }}
       >
         {/* Header */}
         <div className="flex items-center justify-between p-4 border-b border-border bg-muted/50 rounded-t-2xl">
@@ -143,7 +186,9 @@ export function Chatbot() {
               <MessageCircle className="w-5 h-5 text-primary-foreground" />
             </div>
             <div>
-              <h3 className="font-semibold text-foreground">Make Good Assistant</h3>
+              <h3 className="font-semibold text-foreground">
+                Make Good Assistant
+              </h3>
               <p className="text-xs text-muted-foreground">Ask us anything</p>
             </div>
           </div>
@@ -156,35 +201,57 @@ export function Chatbot() {
           </button>
         </div>
 
+        {/* Backend Unavailable Banner */}
+        {!backendAvailable && (
+          <div className="bg-yellow-500/10 border-b border-yellow-500/30 px-4 py-3 flex items-start gap-3">
+            <AlertCircle className="w-5 h-5 text-yellow-600 flex-shrink-0 mt-0.5" />
+            <div className="text-sm">
+              <p className="font-medium text-yellow-700 dark:text-yellow-400">
+                Chat temporarily unavailable
+              </p>
+              <a
+                href="/contact"
+                className="text-accent underline hover:no-underline inline-flex items-center gap-1 mt-1"
+              >
+                <Mail className="w-3 h-3" />
+                Use our contact form instead
+              </a>
+            </div>
+          </div>
+        )}
+
         {/* Messages */}
         <div className="flex-1 overflow-y-auto p-4 space-y-4">
           {messages.length === 0 && (
             <div className="text-center text-muted-foreground py-8">
               <p className="text-sm">👋 Hi! How can I help you today?</p>
-              <p className="text-xs mt-2">Ask about our make-good services, areas we cover, or how we can help with your commercial property.</p>
+              <p className="text-xs mt-2">
+                Ask about our make-good services, areas we cover, or how we can
+                help with your commercial property.
+              </p>
             </div>
           )}
           {messages.map((msg, i) => (
             <div
               key={i}
               className={cn(
-                'flex',
-                msg.role === 'user' ? 'justify-end' : 'justify-start'
+                "flex",
+                msg.role === "user" ? "justify-end" : "justify-start"
               )}
             >
               <div
                 className={cn(
-                  'max-w-[80%] px-4 py-2 rounded-2xl text-sm',
-                  msg.role === 'user'
-                    ? 'bg-primary text-primary-foreground rounded-br-md'
-                    : 'bg-muted text-foreground rounded-bl-md'
+                  "max-w-[80%] px-4 py-2 rounded-2xl text-sm",
+                  msg.role === "user"
+                    ? "bg-primary text-primary-foreground rounded-br-md"
+                    : "bg-muted text-foreground rounded-bl-md"
                 )}
               >
                 <p className="whitespace-pre-wrap">{msg.content}</p>
               </div>
             </div>
           ))}
-          {isLoading && messages[messages.length - 1]?.role === 'user' && (
+          {isLoading && messages[messages.length - 1]?.role === "user" && (
             <div className="flex justify-start">
               <div className="bg-muted px-4 py-2 rounded-2xl rounded-bl-md">
                 <Loader2 className="w-4 h-4 animate-spin text-muted-foreground" />
@@ -196,25 +263,37 @@ export function Chatbot() {
 
         {/* Input */}
         <div className="p-4 border-t border-border">
-          <div className="flex gap-2">
-            <input
-              type="text"
-              value={input}
-              onChange={(e) => setInput(e.target.value)}
-              onKeyDown={handleKeyDown}
-              placeholder="Type your message..."
-              className="flex-1 px-4 py-2 bg-muted border border-border rounded-full text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50"
-              disabled={isLoading}
-            />
+          {backendAvailable ? (
+            <div className="flex gap-2">
+              <input
+                type="text"
+                value={input}
+                onChange={(e) => setInput(e.target.value)}
+                onKeyDown={handleKeyDown}
+                placeholder="Type your message..."
+                className="flex-1 px-4 py-2 bg-muted border border-border rounded-full text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50"
+                disabled={isLoading}
+              />
+              <Button
+                onClick={handleSend}
+                disabled={!input.trim() || isLoading}
+                size="icon"
+                className="rounded-full"
+              >
+                <Send className="w-4 h-4" />
+              </Button>
+            </div>
+          ) : (
             <Button
-              onClick={handleSend}
-              disabled={!input.trim() || isLoading}
-              size="icon"
-              className="rounded-full"
+              asChild
+              className="w-full bg-accent hover:bg-accent/90 text-accent-foreground"
             >
-              <Send className="w-4 h-4" />
+              <a href="/contact">
+                <Mail className="w-4 h-4 mr-2" />
+                Contact Us Instead
+              </a>
             </Button>
-          </div>
+          )}
         </div>
       </div>
     </>
