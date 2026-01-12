@@ -889,7 +889,7 @@ export const services: Service[] = [
     },
     relatedServices: ["warehouse-floor-repairs", "warehouse-make-good", "epoxy-flooring", "commercial-make-good"],
     category: "demolition",
-    published: true
+    published: false
   },
   {
     name: "Carpet Removal",
@@ -1191,7 +1191,7 @@ export const services: Service[] = [
     },
     relatedServices: ["epoxy-flooring", "pallet-racking-removal", "concrete-slab-restoration"],
     category: "structural",
-    published: true
+    published: false
   },
   {
     name: "Polycarbonate Roofing & Skylights",
