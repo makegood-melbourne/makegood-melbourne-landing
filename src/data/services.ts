@@ -1345,7 +1345,7 @@ export const services: Service[] = [
     metaTitle: "Warehouse Floor Restoration Melbourne | Industrial Floor Specialists",
     description: "Complete warehouse floor restoration services across Melbourne. We remove flooring, strip coatings, grind adhesives, repair damage and restore concrete slabs to handover-ready condition. From carpet strip-out to dynabolt filling, crack repairs to epoxy finishes—we deliver the full scope in one comprehensive service.",
     metaDescription: "Warehouse floor restoration Melbourne. Flooring removal, concrete grinding, dynabolt repairs, crack injection and surface finishing. End of lease specialists. Free quotes.",
-    heroText: "Your lease requires the floor restored to original condition. We handle everything—flooring removal, coating grinding, [dynabolt repairs](#floor-repairs) and surface finishing. One contractor, one scope, handover-ready results.",
+    heroText: "Your lease requires the floor restored to original condition. We handle everything—flooring removal, coating grinding, dynabolt repairs and surface finishing. One contractor, one scope, handover-ready results.",
     ogImage: "/og/warehouse-floor-restoration.jpg",
     heroImage: concreteSlabRestorationHeroImage,
     heroImageAlt: "Large industrial warehouse with restored concrete slab floor showing completed floor restoration Melbourne",
