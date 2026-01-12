@@ -21,13 +21,15 @@ export function generateSitemap(): string {
     { url: '/terms-of-service', lastmod: currentDate, priority: '0.3', changefreq: 'yearly' },
   ];
 
-  // Service pages - high priority for SEO
-  const serviceUrls = services.map(service => ({
-    url: `/services/${service.slug}`,
-    lastmod: currentDate,
-    priority: '0.9',
-    changefreq: 'monthly'
-  }));
+  // Service pages - high priority for SEO (only published services)
+  const serviceUrls = services
+    .filter(service => service.published === true)
+    .map(service => ({
+      url: `/services/${service.slug}`,
+      lastmod: currentDate,
+      priority: '0.9',
+      changefreq: 'monthly'
+    }));
 
   // Industry pages
   const industryUrls = industries.map(industry => ({

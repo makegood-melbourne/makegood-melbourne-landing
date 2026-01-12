@@ -153,7 +153,7 @@ export const services: Service[] = [
       subtitle: "We do makegoods all day, every day.",
       text: "From small units to large distribution centres, we've restored warehouses across Melbourne to handover-ready condition. Get in touch today for a free, no-obligation quote."
     },
-    relatedServices: ["pallet-racking-removal", "warehouse-floor-repairs", "make-good-cleaning"],
+    relatedServices: ["pallet-racking-removal", "warehouse-floor-restoration", "make-good-cleaning"],
     category: "make-good"
   },
   {
@@ -183,7 +183,7 @@ export const services: Service[] = [
       subtitle: "We do makegoods all day, every day.",
       text: "Our experienced crew has dismantled hundreds of racking systems across Melbourne, restoring warehouse floors for handover. Get in touch today for a free, no-obligation quote."
     },
-    relatedServices: ["warehouse-make-good", "warehouse-floor-repairs", "epoxy-flooring"],
+    relatedServices: ["warehouse-make-good", "warehouse-floor-restoration", "epoxy-flooring"],
     category: "demolition",
     published: true
   },
@@ -194,7 +194,7 @@ export const services: Service[] = [
     metaTitle: "Epoxy Flooring Melbourne | Industrial Specialists",
     description: "Tired concrete floors dragging down your warehouse? Epoxy transforms worn, stained slabs into durable, professional surfaces that impress clients and stand up to forklifts, chemicals and heavy traffic. New installs or restoration—we handle it.",
     metaDescription: "Industrial epoxy flooring Melbourne. Warehouse floor coatings, concrete repair and resurfacing. Chemical-resistant, anti-slip finishes. Licensed applicators. Free quotes.",
-    heroText: "Your warehouse floor takes a beating. Epoxy coating protects the concrete, hides the damage and gives you a surface that's easy to clean, safe to work on and built to last. For floors with cracks, bolt holes or joint damage, we handle [floor repairs](/services/warehouse-floor-repairs) before coating. Whether you're refreshing for a new tenant or upgrading your own facility—we deliver.",
+    heroText: "Your warehouse floor takes a beating. Epoxy coating protects the concrete, hides the damage and gives you a surface that's easy to clean, safe to work on and built to last. For floors with cracks, bolt holes or joint damage, we handle [floor repairs](/services/warehouse-floor-restoration) before coating. Whether you're refreshing for a new tenant or upgrading your own facility—we deliver.",
     ogImage: "/og/epoxy-flooring.jpg",
     heroImage: epoxySpreadingApplicationImage,
     heroImageAlt: "Worker spreading epoxy floor coating in industrial warehouse Melbourne",
@@ -247,7 +247,7 @@ export const services: Service[] = [
       subtitle: "We do makegoods all day, every day.",
       text: "From small workshops to large distribution centres, we've coated floors across Melbourne's industrial properties. Get in touch today for a free, no-obligation quote."
     },
-    relatedServices: ["warehouse-floor-repairs", "line-marking", "concrete-slab-restoration"],
+    relatedServices: ["warehouse-floor-restoration", "line-marking"],
     category: "trade",
     published: true
   },
@@ -414,7 +414,7 @@ export const services: Service[] = [
       subtitle: "We do makegoods all day, every day.",
       text: "We've repaired warehouse floors across Melbourne—from minor cracks to major slab restoration. Get in touch today for a free, no-obligation quote."
     },
-    relatedServices: ["epoxy-flooring", "warehouse-floor-repairs", "line-marking"],
+    relatedServices: ["epoxy-flooring", "warehouse-floor-restoration", "line-marking"],
     category: "trade"
   },
   {
@@ -481,7 +481,7 @@ export const services: Service[] = [
       subtitle: "We do makegoods all day, every day.",
       text: "We've restored line markings in warehouses and car parks across Melbourne. Get in touch today for a free, no-obligation quote."
     },
-    relatedServices: ["epoxy-flooring", "warehouse-floor-repairs", "warehouse-make-good"],
+    relatedServices: ["epoxy-flooring", "warehouse-floor-restoration", "warehouse-make-good"],
     category: "trade",
     published: true
   },
@@ -636,7 +636,7 @@ export const services: Service[] = [
       subtitle: "We do makegoods all day, every day.",
       text: "From warehouse floors to office strip outs, we've prepared hundreds of Melbourne properties for final inspection. Get in touch today for a free, no-obligation quote."
     },
-    relatedServices: ["warehouse-make-good", "commercial-make-good", "concrete-slab-restoration"],
+    relatedServices: ["warehouse-make-good", "warehouse-floor-restoration"],
     category: "cleaning",
     published: true
   },
@@ -694,7 +694,7 @@ export const services: Service[] = [
     featuredSections: [
       {
         title: "Warehouse Floor Repairs",
-        description: "Industrial floors suffer from bolt holes, cracks, failed joints and settlement issues. Our dedicated [warehouse floor repairs](/services/warehouse-floor-repairs) service covers bolt hole filling, crack injection, joint restoration and slab stabilization—whether for lease end dilapidations or operational maintenance.",
+        description: "Industrial floors suffer from bolt holes, cracks, failed joints and settlement issues. Our dedicated [warehouse floor restoration](/services/warehouse-floor-restoration) service covers bolt hole filling, crack injection, joint restoration and slab stabilisation—whether for lease end dilapidations or operational maintenance.",
         image: warehouseFloorSlabDamageImage,
         imageAlt: "Damaged warehouse floor slab with cracks and deterioration requiring structural floor repairs Melbourne"
       },
@@ -738,7 +738,7 @@ export const services: Service[] = [
       subtitle: "We do makegoods all day, every day.",
       text: "From concrete cancer to retention walls, we've delivered structural solutions across Melbourne's commercial properties. Get in touch today for a free, no-obligation quote."
     },
-    relatedServices: ["warehouse-floor-repairs", "waterproofing", "cladding-glazing"],
+    relatedServices: ["warehouse-floor-restoration", "waterproofing", "cladding-glazing"],
     category: "structural",
     published: true
   },
@@ -805,7 +805,7 @@ export const services: Service[] = [
       },
       {
         title: "Concrete Grinding & Preparation",
-        description: "Our heavy-duty floor grinders use diamond-encrusted cup wheels on spinning discs to pulverise and ablate concrete surfaces. Different grit ratios produce different finishes—from aggressive coating removal to smooth, polished results. For floors with cracks, dynabolt holes or joint damage, see our [warehouse floor repairs](/services/warehouse-floor-repairs) service.",
+        description: "Our heavy-duty floor grinders use diamond-encrusted cup wheels on spinning discs to pulverise and ablate concrete surfaces. Different grit ratios produce different finishes—from aggressive coating removal to smooth, polished results. For floors with cracks, dynabolt holes or joint damage, see our [warehouse floor restoration](/services/warehouse-floor-restoration) service.",
         image: concreteFloorGrinderImage,
         imageAlt: "Worker operating industrial concrete floor grinder with vacuum dust extraction in Melbourne warehouse",
         imagePosition: "right"
@@ -887,7 +887,7 @@ export const services: Service[] = [
       subtitle: "We do makegoods all day, every day.",
       text: "From warehouse slabs to office floors, we've restored hundreds of concrete surfaces across Melbourne. Get in touch today for a free, no-obligation quote."
     },
-    relatedServices: ["warehouse-floor-repairs", "warehouse-make-good", "epoxy-flooring", "commercial-make-good"],
+    relatedServices: ["warehouse-floor-restoration", "warehouse-make-good", "epoxy-flooring"],
     category: "demolition",
     published: false
   },
@@ -912,7 +912,7 @@ export const services: Service[] = [
       subtitle: "We do makegoods all day, every day.",
       text: "We've stripped carpet from hundreds of commercial spaces across Melbourne. Get in touch today for a free, no-obligation quote."
     },
-    relatedServices: ["concrete-slab-restoration", "vinyl-removal", "adhesive-removal"],
+    relatedServices: ["warehouse-floor-restoration", "vinyl-removal", "adhesive-removal"],
     category: "demolition",
     published: false
   },
@@ -937,7 +937,7 @@ export const services: Service[] = [
       subtitle: "We do makegoods all day, every day.",
       text: "From medical centres to retail stores, we've removed vinyl flooring across Melbourne's commercial properties. Get in touch today for a free, no-obligation quote."
     },
-    relatedServices: ["concrete-slab-restoration", "carpet-removal", "adhesive-removal"],
+    relatedServices: ["warehouse-floor-restoration", "carpet-removal", "adhesive-removal"],
     category: "demolition",
     published: false
   },
@@ -962,7 +962,7 @@ export const services: Service[] = [
       subtitle: "We do makegoods all day, every day.",
       text: "From restaurant kitchens to retail fitouts, we've removed tiles across Melbourne's commercial properties. Get in touch today for a free, no-obligation quote."
     },
-    relatedServices: ["concrete-slab-restoration", "vinyl-removal", "adhesive-removal"],
+    relatedServices: ["warehouse-floor-restoration", "vinyl-removal", "adhesive-removal"],
     category: "demolition",
     published: false
   },
@@ -987,7 +987,7 @@ export const services: Service[] = [
       subtitle: "We do makegoods all day, every day.",
       text: "We've prepared hundreds of commercial floors across Melbourne, removing stubborn adhesives for smooth handovers. Get in touch today for a free, no-obligation quote."
     },
-    relatedServices: ["concrete-slab-restoration", "carpet-removal", "vinyl-removal", "tile-removal"],
+    relatedServices: ["warehouse-floor-restoration", "carpet-removal", "vinyl-removal", "tile-removal"],
     category: "demolition",
     published: false
   },
@@ -1110,7 +1110,7 @@ export const services: Service[] = [
       },
       {
         title: "Floor Grinding & Levelling",
-        description: "Uneven floors, high spots and surface deterioration affect forklift operation and safety. Our [industrial floor grinding](/services/concrete-slab-restoration) equipment levels surfaces, removes coatings and prepares floors for [epoxy systems](/services/epoxy-flooring) or grind-and-seal finishes. We restore flatness tolerances required for efficient warehouse operations.",
+        description: "Uneven floors, high spots and surface deterioration affect forklift operation and safety. Our [industrial floor grinding](/services/warehouse-floor-restoration) equipment levels surfaces, removes coatings and prepares floors for [epoxy systems](/services/epoxy-flooring) or grind-and-seal finishes. We restore flatness tolerances required for efficient warehouse operations.",
         image: floorGrindingMachineImage,
         imageAlt: "Industrial floor grinding machine on polished concrete warehouse floor Melbourne"
       }
@@ -1189,7 +1189,7 @@ export const services: Service[] = [
       subtitle: "We do makegoods all day, every day.",
       text: "From dynabolt hole filling to slab stabilisation, we've repaired warehouse floors across Melbourne. Get in touch today for a free, no-obligation quote."
     },
-    relatedServices: ["epoxy-flooring", "pallet-racking-removal", "concrete-slab-restoration"],
+    relatedServices: ["epoxy-flooring", "pallet-racking-removal", "warehouse-floor-restoration"],
     category: "structural",
     published: false
   },
@@ -1365,7 +1365,7 @@ export const services: Service[] = [
       },
       {
         title: "Floor Grinding & Levelling",
-        description: "Uneven floors, high spots and surface deterioration affect forklift operation and safety. Our [industrial floor grinding](/services/concrete-slab-restoration) equipment levels surfaces, removes coatings and prepares floors for [epoxy systems](/services/epoxy-flooring) or grind-and-seal finishes. We restore flatness tolerances required for efficient warehouse operations.",
+        description: "Uneven floors, high spots and surface deterioration affect forklift operation and safety. Our industrial floor grinding equipment levels surfaces, removes coatings and prepares floors for [epoxy systems](/services/epoxy-flooring) or grind-and-seal finishes. We restore flatness tolerances required for efficient warehouse operations.",
         image: floorGrindingPowerTrowelImage,
         imageAlt: "Industrial concrete power trowel with protective cage and orange power cord on warehouse floor Melbourne"
       },
