@@ -1,11 +1,13 @@
-import { useState, useRef, useEffect } from 'react';
-import { MessageCircle, X, Send, Loader2 } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { cn } from '@/lib/utils';
+import { useState, useRef, useEffect } from "react";
+import { MessageCircle, X, Send, Loader2 } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
+import { getBackendConfig } from "@/lib/backendClient";
 
-type Message = { role: 'user' | 'assistant'; content: string };
+type Message = { role: "user" | "assistant"; content: string };
 
-const CHAT_URL = `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/chat`;
+const { url: BACKEND_URL, publishableKey: BACKEND_KEY } = getBackendConfig();
+const CHAT_URL = `${BACKEND_URL}/functions/v1/chat`;
 
 export function Chatbot() {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,10 +26,10 @@ export function Chatbot() {
 
   const streamChat = async (userMessages: Message[]) => {
     const resp = await fetch(CHAT_URL, {
-      method: 'POST',
+      method: "POST",
       headers: {
-        'Content-Type': 'application/json',
-        Authorization: `Bearer ${import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY}`,
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${BACKEND_KEY}`,
       },
       body: JSON.stringify({ messages: userMessages }),
     });

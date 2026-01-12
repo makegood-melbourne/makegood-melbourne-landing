@@ -5,11 +5,9 @@ import { Textarea } from "@/components/ui/textarea";
 import { Mail, MapPin, Phone } from "lucide-react";
 import { useState } from "react";
 import { toast } from "sonner";
+import { getBackendClient } from "@/lib/backendClient";
 
-const loadBackendClient = async () => {
-  const mod = await import("@/integrations/supabase/client");
-  return mod.supabase;
-};
+const loadBackendClient = async () => getBackendClient();
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
