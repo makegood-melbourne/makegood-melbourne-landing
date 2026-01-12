@@ -34,6 +34,7 @@ import polyurethaneFoamInjectionImage from "@/assets/services/polyurethane-foam-
 import tileFlooringRemovalImage from "@/assets/services/tile-flooring-removal-demolition-hammer-melbourne.jpeg";
 import floorGrindingMachineImage from "@/assets/services/floor-grinding-machine-concrete-levelling-melbourne.jpeg";
 import grindSealFloorCoatingImage from "@/assets/services/grind-seal-floor-coating-application-warehouse-melbourne.jpeg";
+import concretePowerTrowelImage from "@/assets/services/concrete-power-trowel-slab-restoration-melbourne.jpeg";
 import warehouseRoofSkylightsImage from "@/assets/services/warehouse-roof-skylights-steel-structure-melbourne.jpeg";
 import commercialPaintingHeroImage from "@/assets/services/commercial-warehouse-painting-make-good-melbourne.jpeg";
 import commercialPaintingScopeImage from "@/assets/services/commercial-painting-scope-surface-preparation-melbourne.jpeg";
@@ -1363,10 +1364,10 @@ export const services: Service[] = [
         imageAlt: "Demolition hammer removing floor tiles during warehouse flooring strip out Melbourne"
       },
       {
-        title: "Concrete Grinding & Preparation",
-        description: "Our heavy-duty floor grinders use diamond-encrusted cup wheels to fully ablate concrete surfaces—removing coatings, adhesives and contamination that standard grinding equipment cannot touch. Different grit ratios produce different finishes, from aggressive coating removal to smooth, polished results. We restore even heavily damaged floors to handover-ready condition.",
-        image: concreteFloorGrinderImage,
-        imageAlt: "Worker operating industrial concrete floor grinder with vacuum dust extraction in Melbourne warehouse"
+        title: "Floor Grinding & Levelling",
+        description: "Uneven floors, high spots and surface deterioration affect forklift operation and safety. Our [industrial floor grinding](/services/concrete-slab-restoration) equipment levels surfaces, removes coatings and prepares floors for [epoxy systems](/services/epoxy-flooring) or grind-and-seal finishes. We restore flatness tolerances required for efficient warehouse operations.",
+        image: concretePowerTrowelImage,
+        imageAlt: "Industrial concrete power trowel with protective cage and orange power cord on warehouse floor Melbourne"
       },
       {
         title: "Dynabolt Hole Repairs",
