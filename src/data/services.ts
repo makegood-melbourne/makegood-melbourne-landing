@@ -1330,6 +1330,124 @@ export const services: Service[] = [
     relatedServices: ["warehouse-make-good", "waterproofing", "structural-remediation"],
     category: "structural",
     published: true
+  },
+  {
+    name: "Warehouse Floor Restoration",
+    slug: "warehouse-floor-restoration",
+    title: "Warehouse Floor Restoration Melbourne",
+    metaTitle: "Warehouse Floor Restoration Melbourne | Industrial Floor Specialists",
+    description: "Complete warehouse floor restoration services across Melbourne. We remove flooring, strip coatings, grind adhesives, repair damage and restore concrete slabs to handover-ready condition. From carpet strip-out to dynabolt filling, crack repairs to epoxy finishes—we deliver the full scope in one comprehensive service.",
+    metaDescription: "Warehouse floor restoration Melbourne. Flooring removal, concrete grinding, dynabolt repairs, crack injection and surface finishing. End of lease specialists. Free quotes.",
+    heroText: "Your lease requires the floor restored to original condition. We handle everything—flooring removal, coating grinding, [dynabolt repairs](#floor-repairs), crack injection and surface finishing. One contractor, one scope, handover-ready results.",
+    ogImage: "/og/warehouse-floor-restoration.jpg",
+    heroImage: concreteSlabRestorationHeroImage,
+    heroImageAlt: "Large industrial warehouse with restored concrete slab floor showing completed floor restoration Melbourne",
+    secondaryImage: warehouseFloorRepairsScopeImage,
+    secondaryImageAlt: "Empty warehouse with polished concrete floor after complete floor restoration Melbourne",
+    trustBadges: [
+      "Diamond-Tipped Grinding Technology",
+      "Industrial Floor Repair Systems",
+      "Warehouse & Factory Specialists"
+    ],
+    featuredSections: [
+      {
+        title: "Flooring & Coating Removal",
+        description: "Complete removal of all floor coverings and coatings. We strip carpet tiles, broadloom, sheet vinyl, LVT, vinyl planks, linoleum, ceramic tiles, porcelain tiles and quarry tiles. Our industrial grinders then ablate adhesive beds, carpet glue, tile mortar, waterproofing membranes and failed [epoxy coatings](/services/epoxy-flooring)—leaving clean concrete ready for restoration.",
+        image: tileFlooringRemovalImage,
+        imageAlt: "Demolition hammer removing floor tiles during warehouse flooring strip out Melbourne"
+      },
+      {
+        title: "Concrete Grinding & Preparation",
+        description: "Our heavy-duty floor grinders use diamond-encrusted cup wheels to fully ablate concrete surfaces—removing coatings, adhesives and contamination that standard grinding equipment cannot touch. Different grit ratios produce different finishes, from aggressive coating removal to smooth, polished results. We restore even heavily damaged floors to handover-ready condition.",
+        image: concreteFloorGrinderImage,
+        imageAlt: "Worker operating industrial concrete floor grinder with vacuum dust extraction in Melbourne warehouse"
+      },
+      {
+        title: "Floor Repairs",
+        description: "We repair the damage that comes with years of warehouse operations. Dynabolt holes are core drilled, filled with high-strength epoxy resin and ground flush. Cracks are injected with structural epoxy or flexible polyurethane depending on type. Failed joints are rebuilt and re-sealed. Settlement and voids are stabilised with polyurethane foam injection.",
+        image: warehouseDynaboltHoleRepairsImage,
+        imageAlt: "Warehouse pallet racking with dynabolt holes in concrete floor requiring epoxy filling Melbourne"
+      },
+      {
+        title: "Surface Finishing",
+        description: "Once the slab is restored and repaired, we provide the finish your lease requires. Grind and seal delivers a protected surface in matte, semi-gloss or high-gloss finish. [Epoxy coatings](/services/epoxy-flooring) provide chemical resistance and durability for continued operations. [Line marking](/services/line-marking) restores safety zones and traffic lanes. We match the specification in your lease.",
+        image: grindSealFloorCoatingImage,
+        imageAlt: "Worker applying protective floor sealant coating to ground concrete warehouse floor Melbourne"
+      }
+    ],
+    benefits: [
+      "Complete Flooring Strip-Out",
+      "Carpet, Vinyl, Tile & Adhesive Removal",
+      "Industrial Concrete Grinding",
+      "Epoxy & Coating Removal",
+      "Dynabolt Hole Repairs",
+      "Crack Injection & Joint Repairs",
+      "Slab Stabilisation & Levelling",
+      "Grind & Seal Finishes",
+      "End of Lease Specialists"
+    ],
+    comparison: {
+      title: "Why Choose Make Good Melbourne?",
+      specialistTitle: "Make Good Melbourne",
+      regularTitle: "Multiple Contractors",
+      items: [
+        { feature: "Scope", specialist: "Full service: removal, grinding, repairs and finishing", regular: "Separate trades for each stage" },
+        { feature: "Equipment", specialist: "Heavy-duty industrial grinders that fully ablate surfaces", regular: "Standard equipment with limited capability" },
+        { feature: "Repairs", specialist: "Structural epoxy injection, core drilling, polyurethane systems", regular: "Basic mortar patching that fails" },
+        { feature: "Coordination", specialist: "Single point of contact, one schedule, one handover", regular: "Multiple contractors, scheduling conflicts" },
+        { feature: "Outcome", specialist: "Guaranteed handover-ready results", regular: "Variable finish quality, blame-shifting" }
+      ]
+    },
+    faqs: [
+      {
+        question: "What types of flooring can you remove?",
+        answer: "We remove all commercial floor coverings including carpet tiles, broadloom carpet, sheet vinyl, luxury vinyl tiles (LVT), vinyl planks, linoleum, ceramic tiles, porcelain tiles, and quarry tiles. We also remove underlay, gripper rods, and all associated fixtures."
+      },
+      {
+        question: "What makes your grinding equipment different?",
+        answer: "We use heavy-duty industrial floor grinders that can fully ablate concrete surfaces—removing coatings, adhesives, and contamination that standard grinding equipment cannot touch. Our machines are remote-operated for precision and safety, and include integrated dust extraction for cleaner worksites."
+      },
+      {
+        question: "How do you repair dynabolt holes?",
+        answer: "Dynabolt holes are left when racking, machinery or equipment anchored to your floor is removed. We core drill around each hole to remove damaged concrete, fill with high-strength epoxy resin, and grind flush to the surrounding surface. The result is a smooth, level floor ready for handover or re-coating."
+      },
+      {
+        question: "How do you repair cracks in warehouse floors?",
+        answer: "We use different methods depending on crack type. For structural cracks, we inject low-viscosity epoxy that flows into the crack and bonds the concrete together, restoring load-bearing capacity. For movement cracks, we rout out the crack and fill with flexible polyurethane sealant that accommodates ongoing movement without failing."
+      },
+      {
+        question: "What is grind and seal, and when is it recommended?",
+        answer: "Grind and seal is a two-phase process: first, we grind the concrete to remove old coatings, stains and surface imperfections. Then we apply a protective sealant in matte, semi-gloss or high-gloss finish. The sealed surface resists spills, stains, tyre marks and abrasion—ideal when you need a finished floor rather than raw concrete for handover."
+      },
+      {
+        question: "Will this satisfy my lease make good requirements?",
+        answer: "Absolutely. We specialise in end of lease floor restoration and understand exactly what landlords and property managers require. We ensure your floor meets handover standards and can provide documentation and condition reports if needed."
+      },
+      {
+        question: "Do you handle waste disposal?",
+        answer: "Yes, all waste removal and disposal is included in our service. We compliantly dispose of all flooring materials, adhesives, debris and contaminated concrete. You won't need to arrange skip bins or separate waste contractors."
+      },
+      {
+        question: "Can you work while the warehouse is operational?",
+        answer: "In many cases, yes. We can section off areas and work progressively to maintain access to operational zones. Our dust-controlled equipment minimises disruption. We'll discuss scheduling and access requirements during our site assessment."
+      },
+      {
+        question: "How long does warehouse floor restoration take?",
+        answer: "Timing depends on floor size, condition and scope. A standard warehouse (500-1000m²) requiring flooring removal, grinding and basic repairs typically takes 5-7 days. Floors requiring extensive repairs or finishing coats take longer. We provide accurate timelines after inspection."
+      },
+      {
+        question: "Do you provide before and after documentation?",
+        answer: "Yes, we provide photographic documentation of the floor condition before and after our work. This is useful for lease handovers and serves as evidence that make good requirements have been met."
+      }
+    ],
+    ctaBlock: {
+      title: "Let Us Restore Your Warehouse Floor",
+      subtitle: "We do makegoods all day, every day.",
+      text: "From flooring strip-out to finished surface, we've restored warehouse floors across Melbourne. Get in touch today for a free, no-obligation quote."
+    },
+    relatedServices: ["epoxy-flooring", "line-marking", "pallet-racking-removal", "warehouse-make-good"],
+    category: "structural",
+    published: false
   }
 ];
 
