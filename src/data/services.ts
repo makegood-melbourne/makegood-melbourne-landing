@@ -34,7 +34,7 @@ import polyurethaneFoamInjectionImage from "@/assets/services/polyurethane-foam-
 import tileFlooringRemovalImage from "@/assets/services/tile-flooring-removal-demolition-hammer-melbourne.jpeg";
 import floorGrindingMachineImage from "@/assets/services/floor-grinding-machine-concrete-levelling-melbourne.jpeg";
 import grindSealFloorCoatingImage from "@/assets/services/grind-seal-floor-coating-application-warehouse-melbourne.jpeg";
-import concretePowerTrowelImage from "@/assets/services/concrete-power-trowel-slab-restoration-melbourne.jpeg";
+import floorGrindingPowerTrowelImage from "@/assets/services/floor-grinding-power-trowel-concrete-melbourne.png";
 import warehouseRoofSkylightsImage from "@/assets/services/warehouse-roof-skylights-steel-structure-melbourne.jpeg";
 import commercialPaintingHeroImage from "@/assets/services/commercial-warehouse-painting-make-good-melbourne.jpeg";
 import commercialPaintingScopeImage from "@/assets/services/commercial-painting-scope-surface-preparation-melbourne.jpeg";
@@ -1366,7 +1366,7 @@ export const services: Service[] = [
       {
         title: "Floor Grinding & Levelling",
         description: "Uneven floors, high spots and surface deterioration affect forklift operation and safety. Our [industrial floor grinding](/services/concrete-slab-restoration) equipment levels surfaces, removes coatings and prepares floors for [epoxy systems](/services/epoxy-flooring) or grind-and-seal finishes. We restore flatness tolerances required for efficient warehouse operations.",
-        image: concretePowerTrowelImage,
+        image: floorGrindingPowerTrowelImage,
         imageAlt: "Industrial concrete power trowel with protective cage and orange power cord on warehouse floor Melbourne"
       },
       {
