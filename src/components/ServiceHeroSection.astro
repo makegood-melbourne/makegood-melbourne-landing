@@ -95,7 +95,7 @@ const titleParts = service.title.includes('Melbourne')
     <div class="grid lg:grid-cols-2 gap-12 items-center">
       <div>
         <!-- Title -->
-        <h1 class="text-4xl md:text-5xl lg:text-6xl text-foreground mb-6">
+        <h1 class="text-4xl md:text-5xl lg:text-6xl text-foreground mb-6 break-words hyphens-auto">
           {titleParts.highlight ? (
             <>
               {titleParts.main} <span class="text-primary">{titleParts.highlight}</span>
