@@ -1369,10 +1369,10 @@ export const services: Service[] = [
         imageAlt: "Worker operating industrial concrete floor grinder with vacuum dust extraction in Melbourne warehouse"
       },
       {
-        title: "Floor Repairs",
-        description: "We repair the damage that comes with years of warehouse operations. Dynabolt holes are core drilled, filled with high-strength epoxy resin and ground flush. Cracks are injected with structural epoxy or flexible polyurethane depending on type. Failed joints are rebuilt and re-sealed. Settlement and voids are stabilised with polyurethane foam injection.",
+        title: "Dynabolt Hole Repairs",
+        description: "When pallet racking, machinery or equipment is removed, you're left with hundreds of anchor holes in your floor. We core drill out damaged concrete around dynabolt holes, fill with high-strength epoxy resin, and grind flush to restore a smooth, level surface. Essential for [lease end make goods](/what-is-make-good) and floor re-coating.",
         image: warehouseDynaboltHoleRepairsImage,
-        imageAlt: "Warehouse pallet racking with dynabolt holes in concrete floor requiring epoxy filling Melbourne"
+        imageAlt: "Industrial warehouse pallet racking with blue uprights and orange beams anchored to concrete floor Melbourne"
       },
       {
         title: "Surface Finishing",
