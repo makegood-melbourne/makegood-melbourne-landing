@@ -1,6 +1,7 @@
 ---
 import '../index.css';
 import { Toaster } from '../components/ui/sonner';
+import { Chatbot } from '../components/Chatbot';
 
 interface Props {
   title: string;
@@ -132,6 +133,7 @@ const ogImageType = ogImage.toLowerCase().endsWith('.png')
   </head>
   <body>
     <slot />
+    <Chatbot client:idle />
     <Toaster client:load richColors position="top-center" />
   </body>
 </html>
