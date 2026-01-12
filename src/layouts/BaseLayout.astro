@@ -1,5 +1,6 @@
 ---
 import '../index.css';
+import { Toaster } from '../components/ui/sonner';
 
 interface Props {
   title: string;
@@ -131,5 +132,6 @@ const ogImageType = ogImage.toLowerCase().endsWith('.png')
   </head>
   <body>
     <slot />
+    <Toaster client:load richColors position="top-center" />
   </body>
 </html>
