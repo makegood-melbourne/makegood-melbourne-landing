@@ -62,32 +62,24 @@ Epoxy transforms worn, stained slabs into durable, professional surfaces. Whethe
 - 20+ year lifespan with proper care
 - Epoxy restoration for end of lease compliance
 
-CONCRETE SLAB RESTORATION (SPECIALIST SERVICE):
-End of lease and your concrete floor needs to be restored? We handle the full scope—flooring removal, adhesive grinding, coating removal and slab preparation. Whether your lease requires epoxy restoration or the slab needs sealing—we can provide solutions that meet your obligations.
+WAREHOUSE FLOOR RESTORATION (SPECIALIST SERVICE):
+Complete warehouse and industrial floor restoration—from flooring strip-out to finished slab. Whether you're removing old coverings, repairing damage from racking anchors, or preparing for a new tenant, we deliver floors ready for handover.
+
 What we deliver:
-- Concrete Slab Restoration
-- Carpet, Tile & Vinyl Strip-Out
-- Adhesive & Coating Grinding
-- Heavy Industrial Slab Grind Capability
-- Epoxy & Line Marking Removal
-- Warehouse End of Lease Specialists
-- Compliant Waste Disposal
-- Surface Levelling & Preparation
+- Flooring & Adhesive Removal: Strip carpets, vinyl, tiles and epoxy, then grind away adhesives and membranes
+- Concrete Grinding & Levelling: Industrial-grade grinding to remove coatings, stains and surface contamination
+- Bolt Hole & Anchor Repairs: Core drill out dynabolt holes, fill with high-strength epoxy resin, grind flush
+- Crack Injection & Slab Stabilisation: Epoxy injection for cracks, polyurethane foam for voids and settlement
+- Joint Edge Repair: Repair damaged joint edges with epoxy mortar, re-cut and reseal
+- Surface Finishing: Grind-and-seal, epoxy coating, or preparation for new floor coverings
+- Showroom Floor Repairs: High-quality finish repairs for customer-facing retail environments
+- Lease End Compliance: Floor restoration that meets landlord requirements for handover
 
-Flooring & Tile Removal: Complete removal of all floor coverings—commercial carpet tiles, broadloom, sheet vinyl, LVT, vinyl planks and linoleum. We also strip ceramic, porcelain and quarry tiles from floors and walls, then grind away adhesive beds, carpet glue and failed epoxy coatings. Our industrial floor grinding equipment is able to ablate full surfaces to remove the deepest stains and restore even the most difficult slabs.
-
-Concrete Grinding & Preparation: Our advanced grinding equipment can fully ablate concrete surfaces—removing coatings, adhesives and contamination that traditional floor grinding devices are unable to remove. We use heavy-duty industrial grade floor grinding machines that restore even heavily damaged floors to like-new condition.
-
-WAREHOUSE & SHOWROOM FLOOR REPAIRS (SPECIALIST SERVICE):
-Industrial and showroom floors take a beating—forklift traffic, heavy loads, racking anchors and years of wear. We repair damaged warehouse and showroom floors across Melbourne: bolt holes, cracks, failed joints, settlement voids and surface deterioration. Lasting repairs that restore structural integrity.
-What we deliver:
-- Bolt Hole Filling & Floor Restoration: Core drill out damaged concrete around dynabolt holes, fill with high-strength epoxy resin, and grind flush
-- Crack Injection & Structural Bonding: Epoxy injection to fill and bond cracked concrete, restoring load-bearing capacity
-- Joint Edge Repair & Re-sealing: Repair damaged joint edges with epoxy mortar, re-cut joints, install appropriate sealants
-- Slab Stabilisation & Void Filling: Inject polyurethane foam or cementitious grout to fill voids and stabilise settlement
-- Floor Levelling & Surface Grinding: Level surfaces, remove coatings, prepare floors for epoxy or grind-and-seal finishes
-- Showroom Floor Repairs: High-quality finish repairs for customer-facing retail and showroom environments
-- Lease End Dilapidations: Floor repairs that meet landlord requirements for handover
+Our 4-step process:
+1. Assessment: Full floor inspection—damage, contamination, coatings, structural concerns
+2. Strip-Out: Remove all floor coverings, adhesives and failed coatings
+3. Grinding & Repairs: Industrial grinding, crack injection, bolt hole filling, levelling
+4. Finishing/Handover: Final surface treatment and landlord inspection coordination
 
 MAKE GOOD CLEANING (SPECIALIST SERVICE):
 Heavy-duty cleaning for lease end and make good handovers. We tackle the jobs regular cleaners can't—warehouse floors, post-strip-out sites and final inspections.
