@@ -9,6 +9,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Mail, MapPin, Phone, Clock, AlertTriangle } from "lucide-react";
 import { useState } from "react";
 import { toast } from "sonner";
+import { getBackendClient } from "@/lib/backendClient";
 import {
   Accordion,
   AccordionContent,
@@ -23,10 +24,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 
-const loadBackendClient = async () => {
-  const mod = await import("@/integrations/supabase/client");
-  return mod.supabase;
-};
+const loadBackendClient = async () => getBackendClient();
 
 const contactFaqs = [
   {
