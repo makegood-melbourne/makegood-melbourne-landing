@@ -13,6 +13,7 @@ const Capabilities = () => {
   const makeGoodServices = getServicesByCategory('make-good');
   const tradeServices = getServicesByCategory('trade');
   const structuralServices = getServicesByCategory('structural');
+  const cleaningServices = getServicesByCategory('cleaning');
 
   const allDemolitionItems = [
     "Pallet racking removal",
@@ -330,16 +331,34 @@ const Capabilities = () => {
                   ))}
                 </div>
                 <div className="pt-4 border-t border-border flex flex-wrap items-center justify-between gap-4">
-                  <div>
-                    <p className="text-sm text-muted-foreground mb-2">Learn more about our cleaning services:</p>
-                    <a
-                      href="/services/commercial-cleaning"
-                      className="inline-flex items-center gap-1 text-accent hover:text-accent/80 transition-colors text-sm font-medium"
-                    >
-                      Commercial Cleaning
-                      <ArrowRight className="h-3 w-3" />
-                    </a>
-                  </div>
+                  {cleaningServices.length > 0 ? (
+                    <div>
+                      <p className="text-sm text-muted-foreground mb-2">Learn more about our cleaning services:</p>
+                      <div className="flex flex-wrap gap-2">
+                        {cleaningServices.map((service) => (
+                          <a
+                            key={service.slug}
+                            href={`/services/${service.slug}`}
+                            className="inline-flex items-center gap-1 text-accent hover:text-accent/80 transition-colors text-sm font-medium"
+                          >
+                            {service.name}
+                            <ArrowRight className="h-3 w-3" />
+                          </a>
+                        ))}
+                      </div>
+                    </div>
+                  ) : (
+                    <div>
+                      <p className="text-sm text-muted-foreground mb-2">Learn more about our cleaning services:</p>
+                      <a
+                        href="/services/handover-cleaning"
+                        className="inline-flex items-center gap-1 text-accent hover:text-accent/80 transition-colors text-sm font-medium"
+                      >
+                        Handover Cleaning
+                        <ArrowRight className="h-3 w-3" />
+                      </a>
+                    </div>
+                  )}
                   <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground">
                     <a href="/#contact">
                       Get a Cleaning Quote
