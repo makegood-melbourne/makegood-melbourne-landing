@@ -698,6 +698,12 @@ export const services: Service[] = [
         imageAlt: "Damaged warehouse floor slab with cracks and deterioration requiring structural floor repairs Melbourne"
       },
       {
+        title: "Crack Injection & Slab Stabilisation",
+        description: "Structural cracks compromise both safety and water-tightness. We inject cracks with structural epoxy for load-bearing repairs or flexible polyurethane for movement joints. Settlement and voids beneath slabs are stabilised with high-density polyurethane foam injection, lifting and levelling without excavation.",
+        image: warehouseFloorSlabDamageImage,
+        imageAlt: "Structural crack in concrete warehouse floor slab requiring epoxy injection repair Melbourne"
+      },
+      {
         title: "Waterproofing & Membrane Systems",
         description: "Water ingress is one of the leading causes of structural deterioration in commercial buildings. We provide professional waterproofing and membrane solutions for car parks, balconies, rooftops and podium decks. From hotel and office balconies to warehouse roofing leaks, our waterproofing systems protect your structure from moisture damage and extend asset life.",
         image: waterproofingMembraneImage,
@@ -1338,7 +1344,7 @@ export const services: Service[] = [
     metaTitle: "Warehouse Floor Restoration Melbourne | Industrial Floor Specialists",
     description: "Complete warehouse floor restoration services across Melbourne. We remove flooring, strip coatings, grind adhesives, repair damage and restore concrete slabs to handover-ready condition. From carpet strip-out to dynabolt filling, crack repairs to epoxy finishes—we deliver the full scope in one comprehensive service.",
     metaDescription: "Warehouse floor restoration Melbourne. Flooring removal, concrete grinding, dynabolt repairs, crack injection and surface finishing. End of lease specialists. Free quotes.",
-    heroText: "Your lease requires the floor restored to original condition. We handle everything—flooring removal, coating grinding, [dynabolt repairs](#floor-repairs), crack injection and surface finishing. One contractor, one scope, handover-ready results.",
+    heroText: "Your lease requires the floor restored to original condition. We handle everything—flooring removal, coating grinding, [dynabolt repairs](#floor-repairs) and surface finishing. One contractor, one scope, handover-ready results.",
     ogImage: "/og/warehouse-floor-restoration.jpg",
     heroImage: concreteSlabRestorationHeroImage,
     heroImageAlt: "Large industrial warehouse with restored concrete slab floor showing completed floor restoration Melbourne",
