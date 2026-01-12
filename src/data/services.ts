@@ -699,9 +699,9 @@ export const services: Service[] = [
       },
       {
         title: "Crack Injection & Slab Stabilisation",
-        description: "Structural cracks compromise both safety and water-tightness. We inject cracks with structural epoxy for load-bearing repairs or flexible polyurethane for movement joints. Settlement and voids beneath slabs are stabilised with high-density polyurethane foam injection, lifting and levelling without excavation.",
-        image: warehouseFloorSlabDamageImage,
-        imageAlt: "Structural crack in concrete warehouse floor slab requiring epoxy injection repair Melbourne"
+        description: "Structural cracks compromise safety and water-tightness—we inject with structural epoxy for load-bearing repairs or flexible polyurethane for movement joints. Settlement, voids and rocking slabs indicate problems beneath the surface. We inject polyurethane foam or cementitious grout to fill voids, stabilise settlement and re-level sunken sections—a non-invasive approach that avoids costly slab replacement.",
+        image: polyurethaneFoamInjectionImage,
+        imageAlt: "Polyurethane foam injection for concrete slab stabilisation and void filling Melbourne"
       },
       {
         title: "Waterproofing & Membrane Systems",
