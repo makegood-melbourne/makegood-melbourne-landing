@@ -39,8 +39,8 @@ const Contact = () => {
         throw new Error(data.error);
       }
 
-      toast.success("Thank you! We'll get back to you within 24 hours.");
-      setFormData({ name: "", email: "", phone: "", message: "" });
+      // Redirect to thank you page with conversion tracking
+      window.location.href = "/thank-you";
     } catch (error: any) {
       console.error("Error submitting form:", error);
       const message = error?.message || "Sorry, there was an issue sending your message.";
