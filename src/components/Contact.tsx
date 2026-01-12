@@ -21,21 +21,6 @@ const Contact = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-
-    // Netlify (or other hosts) must provide the Vite env vars at build-time.
-    // Without them, the backend client can't call the contact function.
-    const hasBackendConfig = Boolean(
-      import.meta.env.VITE_SUPABASE_URL &&
-        import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY
-    );
-
-    if (!hasBackendConfig) {
-      toast.error(
-        "Contact form is temporarily unavailable (site backend not configured)."
-      );
-      return;
-    }
-
     setIsSubmitting(true);
 
     try {
