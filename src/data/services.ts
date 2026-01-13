@@ -116,6 +116,7 @@ export interface Service {
   capabilitiesTitle?: string; // Title for capabilities section
   capabilitiesSubtitle?: string; // Subtitle for capabilities section
   spotlightCards?: SpotlightCard[]; // Three-card layout with images for key services
+  processAfterSpotlight?: boolean; // Show process after spotlight section instead of default location
   benefits: string[];
   comparison?: Comparison;
   faqs?: FAQ[];
@@ -629,11 +630,12 @@ export const services: Service[] = [
       "Steel Framework Retrofitting"
     ],
     process: [
-      { step: "Assessment & Diagnosis", description: "Every project begins with a comprehensive site assessment to diagnose the underlying cause and extent of the structural issue. We work with structural engineers to perform diagnostic testing and develop a precise scope of works." },
-      { step: "Proposal & Planning", description: "We provide a detailed, fixed-price proposal outlining the recommended repair methodology, all associated costs and a clear project timeline. We believe in full transparency, ensuring you can make an informed decision." },
-      { step: "Remediation & Project Management", description: "Our experienced team executes the engineered solution with meticulous attention to detail. We manage the entire project, coordinating all trades and ensuring work is staged to minimise disruption to your tenants and operations while adhering to the highest safety standards." },
-      { step: "Certification & Handover", description: "Upon completion, we provide a full handover package including all structural certifications, material warranties and maintenance documentation. This ensures you have a complete record of the work performed and the assurance that it meets all Australian Standards." }
+      { step: "Assessment & Diagnosis", description: "Every project begins with a comprehensive site assessment to diagnose the underlying cause and extent of the structural issue. We work with engineers to perform diagnostic testing and develop a precise scope of works." },
+      { step: "Engineered Proposal", description: "We provide a detailed, fixed-price proposal outlining the recommended repair methodology, all associated costs and a clear project timeline. We believe in full transparency, ensuring you can make an informed decision." },
+      { step: "Remediation & Project Management", description: "Our experienced team executes the engineered solution with meticulous attention to detail. We manage the entire project, coordinating all trades and ensuring work is staged to minimise disruption while adhering to the highest safety standards." },
+      { step: "Certification & Handover", description: "Upon completion, we provide a full handover package including all structural certifications, material warranties and maintenance documentation. This ensures you have a complete record of the work and full compliance sign-off." }
     ],
+    processAfterSpotlight: true, // Show process after spotlight section
     ctaBlock: {
       title: "Let Us Handle Your Structural Remediation",
       subtitle: "We do makegoods all day, every day.",
