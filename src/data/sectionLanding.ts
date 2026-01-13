@@ -15,6 +15,7 @@ export interface SectionLandingData {
   
   // Hero
   title: string;
+  titleHighlight?: string;  // Optional word to highlight in orange
   tagline: string;
   trustBadges: string[];
   heroImage?: string;
@@ -47,9 +48,10 @@ export const sectionLandingPages: SectionLandingData[] = [
     metaDescription: "Expert building remediation services in Melbourne. Structural repairs, cladding compliance, waterproofing and defect rectification. Licensed contractors. Free site inspections.",
     ogImage: "/og/remediation.jpg",
     
-    title: "Building Remediation Melbourne",
-    tagline: "Structural integrity issues, non-compliant cladding or water ingress? Our remediation services restore your building to compliance—protecting your asset and your tenants.",
-    trustBadges: ["Licensed & Insured", "Structural Engineers", "NCC Compliant"],
+    title: "Building Remediation, Made BETTER.",
+    titleHighlight: "BETTER",  // The word to highlight in orange
+    tagline: "Your commercial property is a significant investment. We protect it. Our expert remediation services address structural decay, water damage, and facade issues at their source—restoring structural integrity, ensuring building compliance, and securing its long-term stability.",
+    trustBadges: ["Licensed & Insured", "Fixed Price Quotes", "End-of-Lease Specialists"],
     
     aboutTitlePrefix: "Melbourne's Leading",
     aboutTitleHighlight: "Building Remediation Specialists",

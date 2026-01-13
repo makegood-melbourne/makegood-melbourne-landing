@@ -26,6 +26,7 @@ interface SectionLandingData {
   
   // Hero
   title: string;
+  titleHighlight?: string;  // Optional word to highlight in orange
   tagline: string;
   trustBadges: string[];
   heroImage?: string;
@@ -123,11 +124,13 @@ const SectionLandingTemplate = ({ data }: SectionLandingTemplateProps) => {
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              {/* Title */}
+              {/* Title with optional highlight */}
               <h1 className="text-4xl md:text-5xl lg:text-6xl text-foreground mb-6">
-                {data.title.includes('Melbourne') ? (
+                {data.titleHighlight ? (
                   <>
-                    {data.title.replace(' Melbourne', '')} <span className="text-primary">Melbourne</span>
+                    {data.title.split(data.titleHighlight)[0]}
+                    <span className="text-primary">{data.titleHighlight}</span>
+                    {data.title.split(data.titleHighlight)[1]}
                   </>
                 ) : (
                   data.title
@@ -163,7 +166,7 @@ const SectionLandingTemplate = ({ data }: SectionLandingTemplateProps) => {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground" asChild>
                   <a href="/#contact">
-                    Get a Free Quote
+                    Get a Free Assessment
                   </a>
                 </Button>
                 <Button size="lg" variant="outline" className="border-accent text-accent hover:bg-accent hover:text-accent-foreground" asChild>
