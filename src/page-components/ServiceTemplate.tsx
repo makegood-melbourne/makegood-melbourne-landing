@@ -324,8 +324,8 @@ const ServiceTemplate = ({ slug: propSlug }: ServiceTemplateProps) => {
         {service.spotlightCards && service.spotlightCards.length > 0 && (
           <section className="py-16 bg-background">
             <div className="container mx-auto px-4">
-              <h2 className="text-3xl md:text-4xl text-foreground mb-4">DELIVERING PROVEN SOLUTIONS</h2>
-              <p className="text-lg text-muted-foreground mb-10 max-w-3xl">
+              <h2 className="text-3xl md:text-4xl text-foreground mb-4">DELIVERING PROVEN <span className="text-primary">SOLUTIONS</span></h2>
+              <p className="text-lg text-muted-foreground mb-10">
                 From concrete degradation to slab settlement, our team is equipped to manage complex structural challenges. We deliver proven, engineered solutions for a range of critical building failures.
               </p>
               <div className="grid md:grid-cols-3 gap-6">
