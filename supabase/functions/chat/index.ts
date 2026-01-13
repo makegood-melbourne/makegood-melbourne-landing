@@ -36,31 +36,9 @@ OUR 6-STEP PROCESS (for end-of-lease make goods):
 
 Note: This process is for end-of-lease make good projects. For simpler works (cleaning, minor repairs) or specialist services (structural remediation, cladding), we offer a streamlined approach.
 
-Our services:
+Our services are organised into three categories:
 
-CORE MAKE GOOD SERVICES:
-- OFFICE STRIP OUT: Complete fitout removal, partition demolition, floor covering removal, electrical decommissioning
-- WAREHOUSE MAKE GOOD: Industrial warehouse restoration including racking removal, floor repairs, line marking reinstatement
-- COMMERCIAL MAKE GOOD: Full commercial property restoration for offices, retail and commercial spaces
-
-PALLET RACKING REMOVAL (SPECIALIST SERVICE):
-Racking bolted to your floor and walls? We dismantle, remove and dispose of all racking systems, protection bollards and wall brackets, then core drill and fill those anchor holes so you get your bond back.
-- All types of pallet racking systems including cantilever wall units
-- Dynabolt removal from floor slabs and walls
-- Removal of safety barriers, bollards and swing gates
-- Floor anchor remediation—core drilled, filled with epoxy resin and ground flush
-- Transport solutions available
-- Buy back, recycling and disposal solutions available
-
-EPOXY FLOORING (SPECIALIST SERVICE):
-Epoxy transforms worn, stained slabs into durable, professional surfaces. Whether refreshing for a new tenant, restoring epoxy for lease compliance, or upgrading your own facility—we deliver.
-- Chemical and oil resistant finishes
-- Anti-slip coatings for safety compliance
-- Cracks and damage repaired first
-- Fast-cure options to minimise downtime
-- Range of colours including safety zones
-- 20+ year lifespan with proper care
-- Epoxy restoration for end of lease compliance
+=== FLOOR RESTORATION ===
 
 WAREHOUSE FLOOR RESTORATION (SPECIALIST SERVICE):
 Complete warehouse and industrial floor restoration—from flooring strip-out to finished slab. Whether you're removing old coverings, repairing damage from racking anchors, or preparing for a new tenant, we deliver floors ready for handover.
@@ -81,7 +59,36 @@ Our 4-step process:
 3. Grinding & Repairs: Industrial grinding, crack injection, bolt hole filling, levelling
 4. Finishing/Handover: Final surface treatment and landlord inspection coordination
 
-MAKE GOOD CLEANING (SPECIALIST SERVICE):
+EPOXY FLOORING (SPECIALIST SERVICE):
+Epoxy transforms worn, stained slabs into durable, professional surfaces. Whether refreshing for a new tenant, restoring epoxy for lease compliance, or upgrading your own facility—we deliver.
+- Chemical and oil resistant finishes
+- Anti-slip coatings for safety compliance
+- Cracks and damage repaired first
+- Fast-cure options to minimise downtime
+- Range of colours including safety zones
+- 20+ year lifespan with proper care
+- Epoxy restoration for end of lease compliance
+
+LINE MARKING:
+Lease ending and your warehouse or car park lines don't match the original layout? We restore eroded markings, remove tenant-specific delineations and return floors to the condition your landlord expects.
+- Restore worn and faded line markings
+- Remove tenant-specific delineations
+- Reinstate original warehouse layouts
+- Car park line restoration
+- Heavy-duty paints and thermoplastics
+
+PALLET RACKING REMOVAL (SPECIALIST SERVICE):
+Racking bolted to your floor and walls? We dismantle, remove and dispose of all racking systems, protection bollards and wall brackets, then core drill and fill those anchor holes so you get your bond back.
+- All types of pallet racking systems including cantilever wall units
+- Dynabolt removal from floor slabs and walls
+- Removal of safety barriers, bollards and swing gates
+- Floor anchor remediation—core drilled, filled with epoxy resin and ground flush
+- Transport solutions available
+- Buy back, recycling and disposal solutions available
+
+=== SPECIALIST TRADES ===
+
+HANDOVER CLEANING (SPECIALIST SERVICE):
 Heavy-duty cleaning for lease end and make good handovers. We tackle the jobs regular cleaners can't—warehouse floors, post-strip-out sites and final inspections.
 - Industrial floor scrubbing with ride-on scrubbers
 - High-pressure cleaning for concrete and loading docks
@@ -92,21 +99,14 @@ Heavy-duty cleaning for lease end and make good handovers. We tackle the jobs re
 - Graffiti removal
 Difference from regular cleaners: We use industrial-grade equipment (ride-on floor scrubbers, industrial pressure washers) to handle 500sqm+ warehouse floors and multi-level buildings.
 
-END OF LEASE RELOCATION (SPECIALIST SERVICE):
-Vacating your warehouse, factory or office? We handle the make-good AND transport your equipment to your new site. One contractor, one point of contact—no coordination headaches.
-- Complete make-good at vacating site
-- Equipment transport to new location anywhere in Australia
-- Single contractor for entire process
-- Optional install at new site
-- Minimise downtime during transition
-
-LINE MARKING:
-Lease ending and your warehouse or car park lines don't match the original layout? We restore eroded markings, remove tenant-specific delineations and return floors to the condition your landlord expects.
-- Restore worn and faded line markings
-- Remove tenant-specific delineations
-- Reinstate original warehouse layouts
-- Car park line restoration
-- Heavy-duty paints and thermoplastics
+MAKE GOOD PAINTING (SPECIALIST SERVICE):
+Professional painting for end-of-lease make goods. We prepare surfaces properly, match colours accurately and apply professional finishes across offices, warehouses, showrooms and retail spaces.
+- Accurate colour matching to original specifications using spectrophotometer technology
+- Full surface preparation—patching, sanding, priming
+- Internal walls, ceilings and trim
+- External painting for building facades and external surfaces
+- After-hours and weekend work available
+- Works completed to meet lease obligations and landlord requirements
 
 CEILING TILE REPLACEMENT:
 From standard suspended grids to timber acoustic panels, we replace and restore commercial ceilings to meet lease obligations.
@@ -116,6 +116,25 @@ From standard suspended grids to timber acoustic panels, we replace and restore 
 - Post-partition removal repairs
 - Discontinued tile matching and alternatives
 
+PATCHING & PLASTERING:
+Wall repairs, hole filling, seamless plaster restoration for make good projects.
+
+ELECTRICAL MAKE SAFE:
+Licensed electricians for safe disconnection, capping and compliance certificates.
+
+LED LIGHTING UPGRADE:
+Replace fluorescent with energy-efficient LED lighting.
+
+END OF LEASE RELOCATION (SPECIALIST SERVICE):
+Vacating your warehouse, factory or office? We handle the make-good AND transport your equipment to your new site. One contractor, one point of contact—no coordination headaches.
+- Complete make-good at vacating site
+- Equipment transport to new location anywhere in Australia
+- Single contractor for entire process
+- Optional install at new site
+- Minimise downtime during transition
+
+=== STRUCTURAL & REMEDIATION ===
+
 STRUCTURAL REMEDIATION (SPECIALIST SERVICE):
 From minor concrete repairs to large-scale retention structure projects. We work with structural engineers, councils and building managers.
 - Warehouse floor slab remediation
@@ -124,42 +143,6 @@ From minor concrete repairs to large-scale retention structure projects. We work
 - Concrete cancer rectification (rust treatment, repair mortars)
 - Steel framework retrofitting
 - Structural engineer and council liaison
-
-WATERPROOFING (SPECIALIST SERVICE):
-Failed waterproofing causes costly damage to buildings—from balcony leaks to roof failures. We deliver professional waterproofing solutions.
-- Balcony and terrace membrane systems
-- Flat roof and podium waterproofing
-- Wet area sealing for bathrooms and kitchens
-- Concrete crack injection and sealing
-- Box gutter and parapet waterproofing
-- Long-term manufacturer warranties
-
-Waterproofing FAQs:
-Q: How long does commercial waterproofing last?
-A: Quality membrane systems typically last 15-25 years when properly applied and maintained. We use premium membranes from manufacturers like Tremco, Sika and Wolfin with long-term warranties.
-
-Q: What causes balcony waterproofing to fail?
-A: Common causes include poor surface preparation, incorrect membrane selection, inadequate drainage falls, thermal movement cracking the membrane, and wear from foot traffic.
-
-Q: Can you waterproof over existing membranes?
-A: Sometimes. If the existing membrane is well-adhered and substrate is sound, we can apply compatible systems over the top. If there's delamination or moisture trapped beneath, we strip back to substrate first.
-
-Q: How do you find the source of a water leak?
-A: We conduct thorough inspections including flood testing, moisture mapping with meters, and visual assessment. Water can travel along building elements before appearing, so we trace the path back to the actual entry point.
-
-Q: What's the difference between liquid and sheet membranes?
-A: Liquid membranes are spray or roller-applied and cure to form a seamless coating—ideal for complex shapes. Sheet membranes (torch-on or self-adhesive) provide consistent thickness and suit large flat areas.
-
-Q: Do I need council approval for waterproofing work?
-A: Generally no—waterproofing is maintenance work. However, if replacing tiles, modifying drainage or making structural changes, permits may be required. We advise on compliance during quoting.
-
-CLADDING & GLAZING REMEDIATION (SPECIALIST SERVICE):
-Bring your building up to compliance with specialist cladding and glazing remediation services.
-- ACP cladding replacement (ACP now banned)
-- NCC and fire rating compliance
-- Glazing upgrades and remediation
-- Fire-rated materials tested to AS 1530 and AS 5113
-- VBA and council liaison
 
 POLYCARBONATE ROOFING & SKYLIGHTS (SPECIALIST SERVICE):
 We supply and install clear polycarbonate roofing sheets designed for industrial and warehouse environments. Our installations improve natural light, resist harsh weather and are completed in accordance with Australian Standards and safety requirements.
@@ -188,19 +171,44 @@ For make good projects, we prepare detailed scopes for landlord and property man
 Roof Repairs for Leaks & Storm Damage:
 Melbourne's harsh weather can cause sudden damage to polycarbonate and fibreglass roof panels—cracking, lifting, or complete failure during storms. We provide responsive repair services from temporary make-safe works through to full panel replacement.
 
-MAKE GOOD PAINTING (SPECIALIST SERVICE):
-Professional painting for end-of-lease make goods. We prepare surfaces properly, match colours accurately and apply professional finishes across offices, warehouses, showrooms and retail spaces.
-- Accurate colour matching to original specifications using spectrophotometer technology
-- Full surface preparation—patching, sanding, priming
-- Internal walls, ceilings and trim
-- External painting for building facades and external surfaces
-- After-hours and weekend work available
-- Works completed to meet lease obligations and landlord requirements
+CLADDING & GLAZING REMEDIATION (SPECIALIST SERVICE):
+Bring your building up to compliance with specialist cladding and glazing remediation services.
+- ACP cladding replacement (ACP now banned)
+- NCC and fire rating compliance
+- Glazing upgrades and remediation
+- Fire-rated materials tested to AS 1530 and AS 5113
+- VBA and council liaison
 
-OTHER SERVICES:
-- PATCHING & PLASTERING: Wall repairs, hole filling, seamless plaster restoration
-- ELECTRICAL MAKE SAFE: Licensed electricians for safe disconnection, capping and compliance certificates
-- LED LIGHTING UPGRADE: Replace fluorescent with energy-efficient LED
+CONCRETE FLOOR REPAIR (SPECIALIST SERVICE):
+Crack injection, slab stabilisation, joint repairs and structural concrete restoration.
+
+WATERPROOFING (SPECIALIST SERVICE):
+Failed waterproofing causes costly damage to buildings—from balcony leaks to roof failures. We deliver professional waterproofing solutions.
+- Balcony and terrace membrane systems
+- Flat roof and podium waterproofing
+- Wet area sealing for bathrooms and kitchens
+- Concrete crack injection and sealing
+- Box gutter and parapet waterproofing
+- Long-term manufacturer warranties
+
+Waterproofing FAQs:
+Q: How long does commercial waterproofing last?
+A: Quality membrane systems typically last 15-25 years when properly applied and maintained. We use premium membranes from manufacturers like Tremco, Sika and Wolfin with long-term warranties.
+
+Q: What causes balcony waterproofing to fail?
+A: Common causes include poor surface preparation, incorrect membrane selection, inadequate drainage falls, thermal movement cracking the membrane, and wear from foot traffic.
+
+Q: Can you waterproof over existing membranes?
+A: Sometimes. If the existing membrane is well-adhered and substrate is sound, we can apply compatible systems over the top. If there's delamination or moisture trapped beneath, we strip back to substrate first.
+
+Q: How do you find the source of a water leak?
+A: We conduct thorough inspections including flood testing, moisture mapping with meters, and visual assessment. Water can travel along building elements before appearing, so we trace the path back to the actual entry point.
+
+Q: What's the difference between liquid and sheet membranes?
+A: Liquid membranes are spray or roller-applied and cure to form a seamless coating—ideal for complex shapes. Sheet membranes (torch-on or self-adhesive) provide consistent thickness and suit large flat areas.
+
+Q: Do I need council approval for waterproofing work?
+A: Generally no—waterproofing is maintenance work. However, if replacing tiles, modifying drainage or making structural changes, permits may be required. We advise on compliance during quoting.
 
 WHY CHOOSE US:
 - Single Point of Contact: One dedicated project manager handles everything
