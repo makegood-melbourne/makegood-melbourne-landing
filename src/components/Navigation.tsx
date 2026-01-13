@@ -77,9 +77,9 @@ const Navigation = () => {
                     <div key={category.label}>
                       {acc.length > 0 && <DropdownMenuSeparator />}
                       {category.href ? (
-                        <DropdownMenuItem asChild className="p-0">
-                          <a href={category.href} className="block w-full px-2 py-1.5">
-                            <span className="text-primary text-xs uppercase tracking-wider font-semibold">
+                        <DropdownMenuItem asChild className="p-0 focus:bg-primary focus:text-primary-foreground">
+                          <a href={category.href} className="block w-full px-2 py-1.5 group">
+                            <span className="text-primary text-xs uppercase tracking-wider font-semibold group-hover:text-primary-foreground group-focus:text-primary-foreground">
                               {category.label}
                             </span>
                           </a>
