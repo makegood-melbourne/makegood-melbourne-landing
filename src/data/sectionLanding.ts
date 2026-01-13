@@ -73,10 +73,10 @@ export const sectionLandingPages: SectionLandingData[] = [
     aboutTitlePrefix: "YOUR END-OF-LEASE,",
     aboutTitleHighlight: "SIMPLIFIED",
     aboutContentLeft: [
-      "Returning a commercial property to its original state—a 'back to base' condition—is a complex and often stressful requirement at the end of a lease. It involves navigating strict landlord requirements, coordinating multiple trades, managing hazardous materials, and ensuring all work is compliant and certified. A mismanaged strip out can lead to costly delays, disputes, and loss of your bond."
+      "The transition between tenants is a critical moment for any property. A 'back to base' provision is not merely a checklist item; it is a complex project involving numerous trades, strict compliance standards, and significant financial risk. An improperly managed strip out can result in project delays, disputes over the final condition, and a longer vacancy period, all of which directly impact your return on investment."
     ],
     aboutContentRight: [
-      "At Makegood Melbourne, we are end-of-lease specialists. We manage the entire strip out process from start to finish. Our integrated team handles everything from the safe removal of partitions, fixtures, and fittings to the disconnection of services and the responsible disposal of all waste. We provide a single point of contact and a seamless process, guaranteeing your property is returned to base condition, ready for a successful handover."
+      "We provide a considered, methodical approach to end-of-lease projects. As integrated specialists, we manage every facet of the process, from the precise removal of internal structures to the certified decommissioning of essential services. By providing a single, accountable point of contact, we eliminate coordination failures and ensure a seamless workflow. Our objective is to return your property to its specified condition efficiently and correctly, ensuring it is ready for the next tenant without delay."
     ],
     
     serviceSlugs: [
