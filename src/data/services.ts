@@ -612,7 +612,7 @@ export const services: Service[] = [
       {
         image: waterproofingMembraneImage,
         imageAlt: "Structural waterproofing membrane application for commercial building protection Melbourne",
-        title: "Structural Waterproofing",
+        title: "Waterproofing & Membrane Systems",
         description: "Water ingress is a primary cause of structural failure. We install high-performance waterproofing and membrane systems for critical areas like podiums, rooftops and retaining walls, protecting the structure from moisture damage and securing its long-term durability."
       }
     ],
