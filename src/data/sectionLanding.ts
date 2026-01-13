@@ -112,7 +112,7 @@ export const sectionLandingPages: SectionLandingData[] = [
       }
     ],
     
-    ctaTitle: "GET YOUR PROPERTY HANDOVER-READY",
+    ctaTitle: "EXPERTS IN COMMERCIAL & INDUSTRIAL STRIP OUTS",
     ctaSubtitle: "Make Good, Made BETTER.",
     ctaText: "We are Melbourne's end-of-lease make good specialists. From a simple office defit to a complex industrial strip out, we deliver a seamless, reliable, and fully compliant service. Contact us today for a free site assessment and a detailed, fixed-price quote."
   },
