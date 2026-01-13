@@ -254,29 +254,33 @@ const SectionLandingTemplate = ({ data }: SectionLandingTemplateProps) => {
 
       {/* FAQ Section */}
       {data.faqs && data.faqs.length > 0 && (
-        <section className="py-16 bg-background">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl md:text-4xl text-foreground mb-10">
-              Frequently Asked Questions
-            </h2>
-            <div className="max-w-3xl">
-              <Accordion type="single" collapsible className="space-y-4">
-                {data.faqs.map((faq, index) => (
-                  <AccordionItem 
-                    key={index} 
-                    value={`faq-${index}`}
-                    className="bg-secondary rounded-lg px-6 border-none"
-                  >
-                    <AccordionTrigger className="text-left text-lg text-foreground hover:no-underline py-4">
-                      {faq.question}
-                    </AccordionTrigger>
-                    <AccordionContent className="text-muted-foreground pb-4">
-                      {renderTextWithLinks(faq.answer)}
-                    </AccordionContent>
-                  </AccordionItem>
-                ))}
-              </Accordion>
+        <section className="py-12 md:py-16 bg-muted/30">
+          <div className="container mx-auto px-4 max-w-4xl">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+                Frequently Asked Questions
+              </h2>
+              <p className="text-lg text-muted-foreground">
+                Everything you need to know about our remediation services
+              </p>
             </div>
+
+            <Accordion type="single" collapsible className="space-y-4">
+              {data.faqs.map((faq, index) => (
+                <AccordionItem 
+                  key={index} 
+                  value={`faq-${index}`}
+                  className="bg-background border border-border rounded-lg px-6 data-[state=open]:shadow-md transition-shadow"
+                >
+                  <AccordionTrigger className="text-left text-lg font-medium hover:text-primary py-5">
+                    {faq.question}
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground text-base pb-5 leading-relaxed">
+                    {renderTextWithLinks(faq.answer)}
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
           </div>
         </section>
       )}
