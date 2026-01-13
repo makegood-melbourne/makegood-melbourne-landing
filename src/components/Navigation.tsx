@@ -26,8 +26,13 @@ const serviceCategories = [
     slugs: ['handover-cleaning', 'make-good-painting', 'ceiling-tile-replacement', 'patching-plastering', 'electrical-make-safe', 'led-lighting', 'end-of-lease-relocation']
   },
   {
-    label: "Structural & Remediation",
-    slugs: ['structural-remediation', 'polycarbonate-roofing-skylights', 'cladding-glazing', 'concrete-floor-repair', 'waterproofing']
+    label: "Remediation",
+    href: "/services/remediation",  // Clickable category header
+    slugs: ['structural-remediation', 'polycarbonate-roofing-skylights', 'cladding-glazing', 'concrete-floor-repair', 'waterproofing'],
+    // Custom display names for services in this category
+    displayNames: {
+      'structural-remediation': 'Structural'
+    }
   }
 ];
 
@@ -71,16 +76,24 @@ const Navigation = () => {
                   acc.push(
                     <div key={category.label}>
                       {acc.length > 0 && <DropdownMenuSeparator />}
-                      <DropdownMenuLabel className="text-primary text-xs uppercase tracking-wider">
-                        {category.label}
-                      </DropdownMenuLabel>
+                      {category.href ? (
+                        <a href={category.href} className="block">
+                          <DropdownMenuLabel className="text-primary text-xs uppercase tracking-wider hover:text-primary/80 cursor-pointer">
+                            {category.label}
+                          </DropdownMenuLabel>
+                        </a>
+                      ) : (
+                        <DropdownMenuLabel className="text-primary text-xs uppercase tracking-wider">
+                          {category.label}
+                        </DropdownMenuLabel>
+                      )}
                       {categoryServices.map((service) => (
                         <DropdownMenuItem key={service.slug} asChild>
                           <a 
                             href={`/services/${service.slug}`}
                             className="cursor-pointer"
                           >
-                            {service.name}
+                            {category.displayNames?.[service.slug] || service.name}
                           </a>
                         </DropdownMenuItem>
                       ))}
@@ -203,9 +216,19 @@ const Navigation = () => {
                   if (categoryServices.length === 0) return null;
                   return (
                     <div key={category.label}>
-                      <span className="text-primary text-xs uppercase tracking-wider font-medium">
-                        {category.label}
-                      </span>
+                      {category.href ? (
+                        <a 
+                          href={category.href}
+                          className="text-primary text-xs uppercase tracking-wider font-medium hover:text-primary/80"
+                          onClick={() => setIsMenuOpen(false)}
+                        >
+                          {category.label}
+                        </a>
+                      ) : (
+                        <span className="text-primary text-xs uppercase tracking-wider font-medium">
+                          {category.label}
+                        </span>
+                      )}
                       <div className="flex flex-col gap-2 mt-1">
                         {categoryServices.map((service) => (
                           <a 
@@ -214,7 +237,7 @@ const Navigation = () => {
                             className="text-muted-foreground hover:text-accent transition-colors"
                             onClick={() => setIsMenuOpen(false)}
                           >
-                            {service.name}
+                            {category.displayNames?.[service.slug] || service.name}
                           </a>
                         ))}
                       </div>
