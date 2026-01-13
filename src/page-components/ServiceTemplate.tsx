@@ -258,36 +258,7 @@ const ServiceTemplate = ({ slug: propSlug }: ServiceTemplateProps) => {
           </section>
         )}
 
-        {/* Key Service Spotlight Section - Only for services with spotlightCards */}
-        {service.spotlightCards && service.spotlightCards.length > 0 && (
-          <section className="py-16 bg-secondary">
-            <div className="container mx-auto px-4">
-              <h2 className="text-3xl md:text-4xl text-foreground mb-10">Key Service Spotlight</h2>
-              <div className="grid md:grid-cols-3 gap-6">
-                {service.spotlightCards.map((card, index) => (
-                  <Card key={index} className="bg-background border-border hover:border-primary/50 transition-colors overflow-hidden">
-                    <div className="aspect-[4/3] overflow-hidden">
-                      <img 
-                        src={resolveImageSrc(card.image)} 
-                        alt={card.imageAlt}
-                        className="w-full h-full object-cover"
-                        width={400}
-                        height={300}
-                        loading="lazy"
-                        decoding="async"
-                      />
-                    </div>
-                    <CardContent className="pt-6">
-                      <h3 className="text-xl font-semibold text-foreground mb-3">{card.title}</h3>
-                      <p className="text-muted-foreground leading-relaxed">{card.description}</p>
-                    </CardContent>
-                  </Card>
-                ))}
-              </div>
-            </div>
-          </section>
-        )}
-
+        {/* 2. What's Included Section - Only if no capabilityCards */}
         {(!service.capabilityCards || service.capabilityCards.length === 0) && (
           <section className="py-16 bg-background">
             <div className="container mx-auto px-4">
@@ -348,6 +319,36 @@ const ServiceTemplate = ({ slug: propSlug }: ServiceTemplateProps) => {
             </section>
           );
         })}
+
+        {/* Key Service Spotlight Section - Only for services with spotlightCards */}
+        {service.spotlightCards && service.spotlightCards.length > 0 && (
+          <section className="py-16 bg-background">
+            <div className="container mx-auto px-4">
+              <h2 className="text-3xl md:text-4xl text-foreground mb-10">Key Service Spotlight</h2>
+              <div className="grid md:grid-cols-3 gap-6">
+                {service.spotlightCards.map((card, index) => (
+                  <Card key={index} className="bg-secondary border-border hover:border-primary/50 transition-colors overflow-hidden">
+                    <div className="aspect-[4/3] overflow-hidden">
+                      <img 
+                        src={resolveImageSrc(card.image)} 
+                        alt={card.imageAlt}
+                        className="w-full h-full object-cover"
+                        width={400}
+                        height={300}
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </div>
+                    <CardContent className="pt-6">
+                      <h3 className="text-xl font-semibold text-foreground mb-3">{card.title}</h3>
+                      <p className="text-muted-foreground leading-relaxed">{card.description}</p>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
 
         {/* 3. About Section - Optional */}
         {!service.skipAboutSection && (
