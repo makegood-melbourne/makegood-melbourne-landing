@@ -586,6 +586,14 @@ export const services: Service[] = [
     ],
     capabilitiesTitle: "Structural Capabilities",
     capabilitiesSubtitle: "Our expertise covers all critical areas of structural remediation.",
+    featuredSections: [
+      {
+        title: "Structural Remediation Scope",
+        description: "The structural integrity of your building is non-negotiable. At Makegood Melbourne, we address the root causes of structural decay to restore strength, safety and long-term stability to your asset.\n\nOur specialists work with qualified engineers to deliver certified solutions for a comprehensive range of structural defects. From diagnosing concrete cancer and rectifying slab settlement to advanced concrete injection and carbon fibre strengthening, we have the expertise to manage complex projects that general builders can't. We handle the entire process, from initial assessment and engineering specifications through to project completion and final certification.",
+        image: retentionWallConstructionImage,
+        imageAlt: "Large-scale retention wall formwork with steel reinforcement and crane demonstrating structural construction capabilities Melbourne"
+      }
+    ],
     spotlightCards: [
       {
         image: concreteCancerImage,
