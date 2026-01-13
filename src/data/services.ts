@@ -120,6 +120,7 @@ export interface Service {
   benefits: string[];
   comparison?: Comparison;
   faqs?: FAQ[];
+  faqTitle?: string; // Custom title for FAQ section (defaults to "Frequently Asked Questions")
   process?: {
     step: string;
     description: string;
@@ -641,6 +642,29 @@ export const services: Service[] = [
       subtitle: "We do makegoods all day, every day.",
       text: "From concrete cancer to retention walls, we've delivered structural solutions across Melbourne's commercial properties. Get in touch today for a free, no-obligation quote."
     },
+    faqs: [
+      {
+        question: "How do I know if a crack in my concrete is a serious structural issue?",
+        answer: "While minor surface cracks can be cosmetic, signs of a serious structural issue include cracks that are wider than a credit card, are continuing to grow, are leaking water, or have one side that is offset from the other. If you notice any of these, we strongly recommend a professional assessment to diagnose the cause and prevent further damage."
+      },
+      {
+        question: "What is the difference between concrete cancer and regular concrete damage?",
+        answer: "Concrete cancer, or spalling, specifically refers to the process where the internal steel reinforcement begins to rust. This rust expands, cracking and pushing away the surrounding concrete. Unlike simple surface damage, it is a progressive failure that will only get worse until the corroded steel is treated and the concrete is properly repaired with an engineered solution."
+      },
+      {
+        question: "Is it possible to repair foundations without a complete rebuild?",
+        answer: "Yes, absolutely. Modern techniques like foundation underpinning, slab jacking and the use of advanced grouts allow us to stabilise and re-level foundations without requiring a complete demolition and rebuild. These non-invasive methods are highly effective, save significant time and money, and are a core part of our structural remediation services."
+      },
+      {
+        question: "What is carbon fibre strengthening (FRP) and when is it used?",
+        answer: "Carbon Fibre Strengthening, or Fibre Reinforced Polymer (FRP), is a cutting-edge technique used to increase the load-bearing capacity of structural elements. We apply ultra-strong, lightweight carbon fibre fabric to beams, columns or slabs to add significant strength. It's an ideal solution for buildings undergoing a change of use, for correcting design flaws, or for reinforcing structures damaged by corrosion or stress."
+      },
+      {
+        question: "How do you ensure the structural repairs are certified and compliant?",
+        answer: "We ensure compliance at every step. We work directly with independent structural engineers who design and specify the repair methodology. During the project, we follow these specifications precisely. Upon completion, the engineer conducts a final inspection and provides a structural certification (e.g. a Form 16 in some states), giving you documented proof that the work meets all Australian Standards and is fit for purpose."
+      }
+    ],
+    faqTitle: "STRUCTURAL REMEDIATION FAQs",
     relatedServices: ["warehouse-floor-restoration", "waterproofing", "cladding-glazing"],
     category: "structural",
     published: true
