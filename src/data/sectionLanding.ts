@@ -78,27 +78,23 @@ export const sectionLandingPages: SectionLandingData[] = [
     faqs: [
       {
         question: "What types of building defects do you remediate?",
-        answer: "We handle a comprehensive range of building defects including concrete cancer (spalling and carbonation), non-compliant cladding requiring replacement, structural cracking and movement, waterproofing failures, façade deterioration, and roofing issues. Our team assesses each situation and recommends the most appropriate remediation approach."
+        answer: "We remediate a comprehensive range of building defects at their source. This includes concrete cancer and spalling, structural cracking, non-compliant facade and cladding issues, and complete waterproofing failures on roofs, basements, and podiums. Every project begins with a thorough assessment to ensure we recommend the correct, long-term solution."
       },
       {
         question: "Do you work with structural engineers?",
-        answer: "Yes, for structural remediation projects we work directly with qualified structural engineers. They provide the technical specifications and certifications required for the work. This ensures all structural repairs meet Australian Standards and can be properly certified upon completion."
+        answer: "Yes, always. For any project involving structural integrity, we work directly with qualified structural engineers. They provide the independent specifications and certifications required to ensure all repairs are not only effective but also fully compliant with Australian Standards. We manage this entire process for you."
       },
       {
-        question: "How long does building remediation typically take?",
-        answer: "Timeframes vary significantly based on the scope of work. Minor concrete repairs may take a few days, while major cladding replacement projects can span several months. After our initial assessment, we provide a detailed project timeline so you can plan accordingly and inform tenants if necessary."
+        question: "Can remediation work be done while the building is occupied?",
+        answer: "Yes, in most cases. Our project management is centred on minimising disruption. We develop detailed work plans to maintain safe access and schedule noisy or intrusive work after hours whenever possible. We coordinate closely with building managers to ensure tenants are informed and operations continue smoothly."
       },
       {
-        question: "Is my building covered by the Victorian Cladding Rectification Scheme?",
-        answer: "The Victorian Government's Cladding Rectification Register covers certain residential buildings with combustible cladding. Commercial buildings are generally not covered and owners are responsible for rectification. We can assess your building and advise on compliance requirements under the current National Construction Code."
+        question: "Is our building covered by the Victorian Cladding Rectification Scheme?",
+        answer: "The government's scheme is primarily focused on residential buildings, meaning commercial and industrial properties are typically the owner's responsibility to rectify. We can definitively assess your building's cladding, advise on your compliance obligations under the National Construction Code, and provide a clear pathway to rectification."
       },
       {
-        question: "Can you work while the building is occupied?",
-        answer: "In most cases, yes. We develop detailed work plans that maintain safe access for occupants and minimise disruption. For high-risk work like cladding removal, we may need to temporarily relocate some tenants for safety. We coordinate closely with building managers to schedule work around tenant needs."
-      },
-      {
-        question: "What warranties do you provide on remediation work?",
-        answer: "Warranty periods depend on the type of work performed. Waterproofing membrane systems typically carry 10-15 year warranties. Structural repairs are certified by engineers and warranted for the design life of the repair. We provide full documentation of all warranties and maintenance requirements upon project completion."
+        question: "What warranties do you provide on your work?",
+        answer: "We stand behind our work with comprehensive warranties. While specific periods vary—for example, waterproofing systems often carry 10-15 year manufacturer warranties—all our workmanship is guaranteed. Upon completion, we provide a full handover package with all warranty documentation, certifications, and maintenance requirements for your records."
       }
     ],
     
