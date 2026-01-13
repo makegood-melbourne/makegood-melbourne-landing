@@ -6,6 +6,11 @@ export interface SectionLandingFAQ {
   answer: string;
 }
 
+export interface SectionLandingTrustBadge {
+  icon: string;
+  title: string;
+}
+
 export interface SectionLandingData {
   // Meta
   slug: string;
@@ -17,7 +22,7 @@ export interface SectionLandingData {
   title: string;
   titleHighlight?: string;  // Optional word to highlight in orange
   tagline: string;
-  trustBadges: string[];
+  trustBadges: SectionLandingTrustBadge[];
   heroImage?: string;
   heroImageAlt?: string;
   
@@ -52,7 +57,12 @@ export const sectionLandingPages: SectionLandingData[] = [
     title: "Building Remediation, Made BETTER.",
     titleHighlight: "Made BETTER.",  // The word to highlight in orange
     tagline: "Your commercial property is a significant investment. We protect it. Our expert remediation services address structural decay, water damage, and facade issues at their source—restoring structural integrity, ensuring building compliance, and securing its long-term stability.",
-    trustBadges: ["Licensed & Insured", "Fixed Price Quotes", "End-of-Lease Specialists"],
+    trustBadges: [
+      { icon: "shield", title: "Licensed & Insured" },
+      { icon: "compass", title: "Engineered Solutions" },
+      { icon: "dollar", title: "Fixed-Price Quotes" },
+      { icon: "document", title: "Full Documentation" }
+    ],
     
     aboutTitlePrefix: "Restoring",
     aboutTitleHighlight: "Your Building's Integrity",
