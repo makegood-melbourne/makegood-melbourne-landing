@@ -5,6 +5,7 @@ import { Layers, Wrench, Shield, CheckCircle, ArrowRight, Phone } from "lucide-r
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import { resolveImageSrc } from "@/lib/resolveImageSrc";
 import capabilitiesHero from "@/assets/commercial-property-restoration-capabilities-melbourne.jpg";
 import { getPublishedServices } from "@/data/services";
 
@@ -71,7 +72,7 @@ const Capabilities = () => {
         <section className="relative h-[400px] flex items-center justify-center overflow-hidden">
           <div className="absolute inset-0 z-0">
             <img 
-              src={capabilitiesHero} 
+              src={resolveImageSrc(capabilitiesHero)} 
               alt="Professional commercial and industrial make good services including floor restoration, specialist trades and structural remediation in Melbourne"
               className="w-full h-full object-cover"
             />
