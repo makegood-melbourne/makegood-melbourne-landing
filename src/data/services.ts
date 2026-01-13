@@ -38,6 +38,7 @@ import floorGrindingPowerTrowelImage from "@/assets/services/floor-grinding-powe
 import warehouseRoofSkylightsImage from "@/assets/services/warehouse-roof-skylights-steel-structure-melbourne.jpeg";
 import commercialPaintingHeroImage from "@/assets/services/commercial-warehouse-painting-make-good-melbourne.jpeg";
 import commercialPaintingScopeImage from "@/assets/services/commercial-painting-scope-surface-preparation-melbourne.jpeg";
+import structuralRemediationHeroImage from "@/assets/services/structural-remediation-concrete-cancer-repair-melbourne.jpg";
 
 export interface FeaturedSection {
   title: string;
@@ -100,6 +101,7 @@ export interface Service {
   heroText: string;
   heroImage?: string;
   heroImageAlt?: string;
+  heroImageTitle?: string; // Title text for tooltip on hover
   ogImage?: string; // Public URL for Open Graph image (e.g., "/og/service-name.jpg")
   secondaryImage?: string;
   secondaryImageAlt?: string;
@@ -543,8 +545,9 @@ export const services: Service[] = [
     metaDescription: "Structural remediation Melbourne. Concrete cancer treatment, floor slab repairs, waterproofing and membrane systems. Engineered solutions for commercial properties.",
     heroText: "From concrete cancer and spalling to slab settlement and corrosion, structural defects compromise the safety and longevity of your asset. We deliver engineered solutions that address these issues at their source, restoring foundational strength and ensuring your building is safe, compliant and secure.",
     ogImage: "/og/structural-remediation.jpg",
-    heroImage: warehouseFloorSlabDamageImage,
-    heroImageAlt: "Deteriorating warehouse floor slab with structural cracks and spalling at control joints requiring remediation Melbourne",
+    heroImage: structuralRemediationHeroImage,
+    heroImageAlt: "Close-up of exposed and rusted rebar in a damaged concrete wall, showing a severe case of concrete cancer requiring structural remediation",
+    heroImageTitle: "Makegood Melbourne - Structural Concrete Cancer Repair",
     secondaryImage: retentionWallConstructionImage,
     secondaryImageAlt: "Large-scale retention wall formwork with steel reinforcement and crane demonstrating structural construction capabilities Melbourne",
     trustBadges: [
