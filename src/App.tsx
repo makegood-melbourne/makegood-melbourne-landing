@@ -11,6 +11,7 @@ import LocationTemplate from "./page-components/LocationTemplate";
 import ServiceTemplate from "./page-components/ServiceTemplate";
 import IndustryTemplate from "./page-components/IndustryTemplate";
 import GuestPostsDownload from "./page-components/GuestPostsDownload";
+import SectionLandingPage from "./page-components/SectionLandingPage";
 import NotFound from "./page-components/NotFound";
 import Contact from "./page-components/Contact";
 import ServiceAreas from "./page-components/ServiceAreas";
@@ -43,6 +44,13 @@ const App = () => (
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="/areas/:slug" element={<LocationTemplate />} />
+
+          {/* Section landing pages */}
+          <Route
+            path="/services/remediation"
+            element={<SectionLandingPage slug="remediation" />}
+          />
+
           <Route path="/services/:slug" element={<ServiceTemplate />} />
           <Route path="/industries/:slug" element={<IndustryTemplate />} />
           <Route path="/downloads/guest-posts" element={<GuestPostsDownload />} />
