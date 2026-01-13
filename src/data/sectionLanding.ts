@@ -52,6 +52,71 @@ export interface SectionLandingData {
 
 export const sectionLandingPages: SectionLandingData[] = [
   {
+    slug: "strip-out",
+    metaTitle: "Commercial Strip Out Melbourne | End of Lease Specialists",
+    metaDescription: "Expert commercial strip out and back to base services in Melbourne. Office, retail and warehouse defits. Licensed demolition. Hazardous waste removal. Free quotes.",
+    ogImage: "/og/strip-out.jpg",
+    
+    title: "EXPERT STRIP OUTS, MADE BETTER.",
+    titleHighlight: "MADE BETTER.",
+    tagline: "Preparing a commercial or industrial space for its next chapter requires more than just demolition. It demands precision, safety, and a deep understanding of lease obligations. Our expert strip out and 'back to base' services for office, retail, and warehouse properties across Melbourne ensure your project is completed on time, on budget, and ready for handover.",
+    trustBadges: [
+      { icon: "shield", title: "Licensed & Insured" },
+      { icon: "clipboard", title: "Lease Compliance Experts" },
+      { icon: "dollar", title: "Fixed-Price Quotes" },
+      { icon: "document", title: "Full Project Documentation" }
+    ],
+    heroImage: "/src/assets/services/commercial-industrial-strip-out-melbourne.jpg",
+    heroImageAlt: "A large commercial space undergoing a full strip out and back to base works by the Makegood Melbourne team.",
+    heroImageTitle: "Makegood Melbourne - Commercial and Industrial Strip Out Specialists",
+    
+    aboutTitlePrefix: "YOUR END-OF-LEASE,",
+    aboutTitleHighlight: "SIMPLIFIED",
+    aboutContentLeft: [
+      "Returning a commercial property to its original state—a 'back to base' condition—is a complex and often stressful requirement at the end of a lease. It involves navigating strict landlord requirements, coordinating multiple trades, managing hazardous materials, and ensuring all work is compliant and certified. A mismanaged strip out can lead to costly delays, disputes, and loss of your bond."
+    ],
+    aboutContentRight: [
+      "At Makegood Melbourne, we are end-of-lease specialists. We manage the entire strip out process from start to finish. Our integrated team handles everything from the safe removal of partitions, fixtures, and fittings to the disconnection of services and the responsible disposal of all waste. We provide a single point of contact and a seamless process, guaranteeing your property is returned to base condition, ready for a successful handover."
+    ],
+    
+    serviceSlugs: [
+      "back-to-base-works",
+      "demolition-works", 
+      "pallet-racking-removal",
+      "waste-management"
+    ],
+    carouselTitle: "OUR STRIP OUT SERVICES",
+    carouselTitleHighlight: "SERVICES",
+    carouselDescription: "Comprehensive solutions to return any commercial or industrial space to base condition.",
+    
+    faqs: [
+      {
+        question: "What does \"back to base\" or \"make good\" actually mean?",
+        answer: "It refers to the clause in most commercial leases that requires a tenant to return the property to its original condition at the end of the lease term. This typically involves removing all partitions, fixtures, data cabling, and other additions, and making good any damage to the base building."
+      },
+      {
+        question: "How is a commercial strip out different from standard demolition?",
+        answer: "A commercial strip out is a form of selective, internal demolition. Unlike a full building demolition, the goal is to carefully remove internal elements without damaging the base building's structure, essential services, or surrounding tenancies. It requires precision, planning, and a deep understanding of live environments."
+      },
+      {
+        question: "Can you handle the removal of hazardous materials like asbestos?",
+        answer: "Yes. We are licensed and certified to manage the identification, testing, and removal of hazardous materials, including asbestos, in full compliance with all Victorian regulations and WorkSafe standards. We provide all necessary clearance certificates for your peace of mind."
+      },
+      {
+        question: "How do you manage waste and recycling?",
+        answer: "We are committed to responsible waste management. We develop a waste management plan for every project, maximising the amount of material that can be recycled or repurposed. We provide full documentation of waste disposal, helping you meet your project's sustainability goals."
+      },
+      {
+        question: "How long does a typical office strip out in Melbourne take?",
+        answer: "A standard office strip out can take anywhere from a few days to several weeks, depending on the size of the space, the complexity of the fit-out, and any building restrictions (like noise or working hours). We provide a detailed and reliable timeline with every quote."
+      }
+    ],
+    
+    ctaTitle: "GET YOUR PROPERTY HANDOVER-READY",
+    ctaSubtitle: "Make Good, Made BETTER.",
+    ctaText: "We are Melbourne's end-of-lease make good specialists. From a simple office defit to a complex industrial strip out, we deliver a seamless, reliable, and fully compliant service. Contact us today for a free site assessment and a detailed, fixed-price quote."
+  },
+  {
     slug: "remediation",
     metaTitle: "Building Remediation Melbourne | Structural Repairs & Compliance",
     metaDescription: "Expert building remediation services in Melbourne. Structural repairs, cladding compliance, waterproofing and defect rectification. Licensed contractors. Free site inspections.",
