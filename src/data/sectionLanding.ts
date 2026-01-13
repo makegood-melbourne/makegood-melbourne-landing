@@ -20,9 +20,11 @@ export interface SectionLandingData {
   heroImage?: string;
   heroImageAlt?: string;
   
-  // About
-  aboutTitle: string;
-  aboutContent: string[];
+  // About - supports styled header "TITLE PREFIX" + "TITLE HIGHLIGHT" in orange
+  aboutTitlePrefix: string;  // e.g. "MELBOURNE'S LEADING"
+  aboutTitleHighlight: string;  // e.g. "REMEDIATION SPECIALISTS" - shown in orange
+  aboutContentLeft: string[];  // Left column paragraphs
+  aboutContentRight: string[]; // Right column paragraphs
   
   // Services Carousel
   serviceSlugs: string[];
@@ -49,11 +51,15 @@ export const sectionLandingPages: SectionLandingData[] = [
     tagline: "Structural integrity issues, non-compliant cladding or water ingress? Our remediation services restore your building to compliance—protecting your asset and your tenants.",
     trustBadges: ["Licensed & Insured", "Structural Engineers", "NCC Compliant"],
     
-    aboutTitle: "Expert Building Remediation Services",
-    aboutContent: [
+    aboutTitlePrefix: "MELBOURNE'S LEADING",
+    aboutTitleHighlight: "REMEDIATION SPECIALISTS",
+    aboutContentLeft: [
       "Building defects don't fix themselves. Whether you're dealing with concrete cancer eating through structural elements, combustible cladding that's putting tenants at risk, or persistent water ingress damaging your asset—professional remediation is the only solution.",
-      "Our team works alongside structural engineers and building surveyors to diagnose issues accurately and deliver permanent solutions. From façade replacements that meet current NCC requirements to waterproofing systems that actually work, we handle the complex projects that general builders can't.",
-      "Every remediation project starts with a thorough assessment. We identify the root cause—not just the symptoms—and provide clear, costed recommendations so you can make informed decisions about your building's future."
+      "Our team works alongside structural engineers and building surveyors to diagnose issues accurately and deliver permanent solutions. From façade replacements that meet current NCC requirements to waterproofing systems that actually work, we handle the complex projects that general builders can't."
+    ],
+    aboutContentRight: [
+      "Every remediation project starts with a thorough assessment. We identify the root cause—not just the symptoms—and provide clear, costed recommendations so you can make informed decisions about your building's future.",
+      "Whether it's structural repairs, cladding compliance, roof restoration or waterproofing failures, our licensed contractors deliver certified solutions that protect your investment for the long term."
     ],
     
     serviceSlugs: [

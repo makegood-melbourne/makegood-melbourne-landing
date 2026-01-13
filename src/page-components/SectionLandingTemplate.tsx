@@ -31,9 +31,11 @@ interface SectionLandingData {
   heroImage?: string;
   heroImageAlt?: string;
   
-  // About
-  aboutTitle: string;
-  aboutContent: string[];
+  // About - supports styled header "TITLE PREFIX" + "TITLE HIGHLIGHT" in orange
+  aboutTitlePrefix: string;  // e.g. "MELBOURNE'S LEADING"
+  aboutTitleHighlight: string;  // e.g. "REMEDIATION SPECIALISTS" - shown in orange
+  aboutContentLeft: string[];  // Left column paragraphs
+  aboutContentRight: string[]; // Right column paragraphs
   
   // Services Carousel
   serviceSlugs: string[];
@@ -208,16 +210,34 @@ const SectionLandingTemplate = ({ data }: SectionLandingTemplateProps) => {
         </div>
       </section>
 
-      {/* About Section */}
+      {/* About Section - 2 Column Layout */}
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl text-foreground mb-6">{data.aboutTitle}</h2>
-          <div className="max-w-4xl">
-            {data.aboutContent.map((paragraph, index) => (
-              <p key={index} className="text-xl text-muted-foreground leading-relaxed mb-4 last:mb-0">
-                {renderTextWithLinks(paragraph)}
-              </p>
-            ))}
+          {/* Styled Header */}
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-12 uppercase tracking-wide">
+            <span className="text-foreground">{data.aboutTitlePrefix}</span>{' '}
+            <span className="text-primary">{data.aboutTitleHighlight}</span>
+          </h2>
+          
+          {/* Two Column Content */}
+          <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
+            {/* Left Column */}
+            <div>
+              {data.aboutContentLeft.map((paragraph, index) => (
+                <p key={index} className="text-lg text-muted-foreground leading-relaxed mb-4 last:mb-0">
+                  {renderTextWithLinks(paragraph)}
+                </p>
+              ))}
+            </div>
+            
+            {/* Right Column */}
+            <div>
+              {data.aboutContentRight.map((paragraph, index) => (
+                <p key={index} className="text-lg text-muted-foreground leading-relaxed mb-4 last:mb-0">
+                  {renderTextWithLinks(paragraph)}
+                </p>
+              ))}
+            </div>
           </div>
         </div>
       </section>
