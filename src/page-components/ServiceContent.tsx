@@ -78,20 +78,61 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
         )}
       </Helmet>
 
-      {/* What's Included Section */}
-      <section className="py-16 bg-background">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl text-foreground mb-10">What We Deliver</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {service.benefits.map((benefit, index) => (
-              <div key={index} className="flex items-start gap-4 p-4 bg-secondary rounded-lg">
-                <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
-                <span className="text-lg text-foreground">{benefit}</span>
-              </div>
-            ))}
+      {/* Capabilities / What's Included (varies by service) */}
+      {service.capabilityCards && service.capabilityCards.length > 0 ? (
+        <section className="py-16 bg-background">
+          <div className="container mx-auto px-4">
+            <h2 className="text-3xl md:text-4xl text-foreground mb-2">
+              {service.capabilitiesTitle || "Capabilities"}
+            </h2>
+            {service.capabilitiesSubtitle && (
+              <p className="text-muted-foreground mb-10 max-w-3xl">
+                {service.capabilitiesSubtitle}
+              </p>
+            )}
+
+            <div className="grid lg:grid-cols-3 gap-6">
+              {service.capabilityCards.map((card, index) => (
+                <Card key={index} className="bg-secondary border-border">
+                  <CardContent className="pt-6">
+                    <h3 className="text-xl font-semibold text-foreground mb-4">
+                      {card.title}
+                    </h3>
+                    <ul className="space-y-2">
+                      {card.items.map((item, itemIndex) => (
+                        <li key={itemIndex} className="flex items-start gap-2">
+                          <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                          <span className="text-muted-foreground">{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      ) : (
+        <section className="py-16 bg-background">
+          <div className="container mx-auto px-4">
+            <h2 className="text-3xl md:text-4xl text-foreground mb-10">
+              What We Deliver
+            </h2>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {service.benefits.map((benefit, index) => (
+                <div
+                  key={index}
+                  className="flex items-start gap-4 p-4 bg-secondary rounded-lg"
+                >
+                  <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
+                  <span className="text-lg text-foreground">{benefit}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
 
       {/* Featured Section Right After What We Deliver - Only when skipAboutSection is true */}
       {service.skipAboutSection && service.featuredSections && service.featuredSections.map((section, index) => {
