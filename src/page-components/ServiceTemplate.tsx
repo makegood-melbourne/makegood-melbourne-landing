@@ -323,7 +323,7 @@ const ServiceTemplate = ({ slug: propSlug }: ServiceTemplateProps) => {
 
         {/* Process Section - After Featured Sections (when processAfterSpotlight is true) */}
         {service.processAfterSpotlight && service.process && service.process.length > 0 && (
-          <section className="py-16 bg-secondary">
+          <section className="py-16 bg-background">
             <div className="container mx-auto px-4">
               <h2 className="text-3xl md:text-4xl text-foreground mb-10">Our Process</h2>
               <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
