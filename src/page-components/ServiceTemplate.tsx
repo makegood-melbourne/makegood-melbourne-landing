@@ -34,10 +34,8 @@ const ServiceTemplate = ({ slug: propSlug }: ServiceTemplateProps) => {
 
   // Get related services from navigation categories (services in same category)
   const serviceCategories = [
-    { label: "Floor Restoration", slugs: ['warehouse-floor-restoration', 'epoxy-flooring', 'line-marking'] },
-    { label: "Make Good Services", slugs: ['office-strip-out', 'warehouse-make-good', 'commercial-make-good'] },
-    { label: "Relocation", slugs: ['end-of-lease-relocation', 'pallet-racking-removal'] },
-    { label: "Specialist Trades", slugs: ['handover-cleaning', 'make-good-painting', 'ceiling-tile-replacement', 'patching-plastering', 'electrical-make-safe', 'led-lighting'] },
+    { label: "Floor Restoration", slugs: ['warehouse-floor-restoration', 'epoxy-flooring', 'line-marking', 'pallet-racking-removal'] },
+    { label: "Specialist Trades", slugs: ['handover-cleaning', 'make-good-painting', 'ceiling-tile-replacement', 'patching-plastering', 'electrical-make-safe', 'led-lighting', 'end-of-lease-relocation'] },
     { label: "Structural & Remediation", slugs: ['structural-remediation', 'polycarbonate-roofing-skylights', 'cladding-glazing', 'concrete-floor-repair', 'waterproofing'] }
   ];
   
