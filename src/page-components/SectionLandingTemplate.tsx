@@ -31,6 +31,7 @@ interface SectionLandingData {
   trustBadges: { icon: string; title: string }[];
   heroImage?: string;
   heroImageAlt?: string;
+  heroImageTitle?: string;  // Tooltip text on hover
   
   // About - supports styled header "TITLE PREFIX" + "TITLE HIGHLIGHT" in orange
   aboutTitlePrefix: string;  // e.g. "MELBOURNE'S LEADING"
@@ -144,6 +145,7 @@ const SectionLandingTemplate = ({ data }: SectionLandingTemplateProps) => {
                   <img 
                     src={resolveImageSrc(data.heroImage)} 
                     alt={data.heroImageAlt || `${data.title} - professional commercial services`}
+                    title={data.heroImageTitle}
                     className="aspect-[4/3] w-full object-cover rounded-lg"
                     width={800}
                     height={600}
@@ -185,6 +187,7 @@ const SectionLandingTemplate = ({ data }: SectionLandingTemplateProps) => {
                 <img 
                   src={resolveImageSrc(data.heroImage)} 
                   alt={data.heroImageAlt || `${data.title} - professional commercial services`}
+                  title={data.heroImageTitle}
                   className="aspect-[4/3] w-full object-cover rounded-lg"
                   width={800}
                   height={600}

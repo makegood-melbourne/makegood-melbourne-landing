@@ -25,6 +25,7 @@ export interface SectionLandingData {
   trustBadges: SectionLandingTrustBadge[];
   heroImage?: string;
   heroImageAlt?: string;
+  heroImageTitle?: string;  // Tooltip text on hover
   
   // About - supports styled header "TITLE PREFIX" + "TITLE HIGHLIGHT" in orange
   aboutTitlePrefix: string;  // e.g. "MELBOURNE'S LEADING"
@@ -63,6 +64,9 @@ export const sectionLandingPages: SectionLandingData[] = [
       { icon: "dollar", title: "Fixed-Price Quotes" },
       { icon: "document", title: "Full Documentation" }
     ],
+    heroImage: "/src/assets/services/building-remediation-melbourne-shotcrete.jpg",
+    heroImageAlt: "Close-up of a worker applying shotcrete for concrete remediation services in Melbourne",
+    heroImageTitle: "Makegood Melbourne - Expert Building Remediation Services",
     
     aboutTitlePrefix: "Restoring",
     aboutTitleHighlight: "Your Building's Integrity",
