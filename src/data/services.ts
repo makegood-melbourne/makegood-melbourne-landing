@@ -109,54 +109,6 @@ export interface Service {
 
 export const services: Service[] = [
   {
-    name: "Office Strip Out",
-    slug: "office-strip-out",
-    title: "Office Strip Out Melbourne",
-    metaTitle: "Office Strip Out Melbourne | Commercial Experts",
-    description: "Complete office strip out services for Melbourne commercial properties. We remove partitions, furniture, flooring and all fitout elements efficiently.",
-    metaDescription: "Professional office strip out Melbourne. Remove partitions, ceilings, flooring and fitouts. Fast turnaround, full waste disposal. Free quotes from licensed contractors.",
-    heroText: "Transform your commercial space back to base building condition with our comprehensive office strip out services.",
-    benefits: [
-      "Complete fitout removal",
-      "Partition and ceiling demolition",
-      "Floor covering removal",
-      "Electrical and data de-commissioning",
-      "Full waste management included",
-      "Minimal disruption to building"
-    ],
-    ctaBlock: {
-      title: "Let Us Handle Your Strip Out",
-      subtitle: "We do makegoods all day, every day.",
-      text: "Our crews have stripped out hundreds of Melbourne offices—from single tenancies to multi-floor fitouts. Get in touch today for a free, no-obligation quote."
-    },
-    relatedServices: ["commercial-make-good", "ceiling-tile-replacement", "make-good-painting"],
-    category: "demolition"
-  },
-  {
-    name: "Warehouse Make Good",
-    slug: "warehouse-make-good",
-    title: "Warehouse Make Good Melbourne",
-    metaTitle: "Warehouse Make Good Melbourne | Industrial Experts",
-    description: "Industrial warehouse make good services across Melbourne. From floor repairs to racking removal, we restore warehouses to lease-compliant condition.",
-    metaDescription: "Warehouse make good Melbourne specialists. Floor restoration, racking removal, line marking and industrial repairs. End of lease compliance guaranteed. Free quotes.",
-    heroText: "Restore your industrial warehouse to original condition and meet all end of lease obligations with our specialist services.",
-    benefits: [
-      "Complete racking removal",
-      "Concrete floor restoration",
-      "Line marking reinstatement",
-      "Roller door and dock repairs",
-      "Electrical make-safe works",
-      "Industrial cleaning included"
-    ],
-    ctaBlock: {
-      title: "Let Us Handle Your Warehouse Make Good",
-      subtitle: "We do makegoods all day, every day.",
-      text: "From small units to large distribution centres, we've restored warehouses across Melbourne to handover-ready condition. Get in touch today for a free, no-obligation quote."
-    },
-    relatedServices: ["pallet-racking-removal", "warehouse-floor-restoration", "make-good-cleaning"],
-    category: "make-good"
-  },
-  {
     name: "Pallet Racking Removal",
     slug: "pallet-racking-removal",
     title: "Pallet Racking Removal Melbourne",
@@ -183,7 +135,7 @@ export const services: Service[] = [
       subtitle: "We do makegoods all day, every day.",
       text: "Our experienced crew has dismantled hundreds of racking systems across Melbourne, restoring warehouse floors for handover. Get in touch today for a free, no-obligation quote."
     },
-    relatedServices: ["warehouse-make-good", "warehouse-floor-restoration", "epoxy-flooring"],
+    relatedServices: ["warehouse-floor-restoration", "epoxy-flooring"],
     category: "demolition",
     published: true
   },
@@ -365,33 +317,9 @@ export const services: Service[] = [
       subtitle: "We do makegoods all day, every day.",
       text: "Our painters have delivered inspection-ready finishes across Melbourne's commercial and industrial properties for years. We understand what owners expect and deliver work that gets accepted first time. Get in touch today for a free, no-obligation quote."
     },
-    relatedServices: ["patching-plastering", "epoxy-flooring", "line-marking", "commercial-make-good"],
+    relatedServices: ["epoxy-flooring", "line-marking", "ceiling-tile-replacement"],
     category: "make-good",
     published: true
-  },
-  {
-    name: "Electrical Make Safe",
-    slug: "electrical-make-safe",
-    title: "Electrical Make Safe Melbourne",
-    metaTitle: "Electrical Make Safe Melbourne | Licensed Sparkies",
-    description: "Removed a partition but left live wires exposed? Added data points that now need decommissioning? Electrical make safe isn't optional—it's a compliance requirement. Our licensed electricians disconnect, cap and certify so you hand back a safe, compliant space.",
-    metaDescription: "Electrical make safe Melbourne. Licensed electricians for safe disconnection, capping and removal. Commercial and industrial. Compliance certificates provided. Free quotes.",
-    heroText: "Exposed wiring and abandoned circuits are a liability—and a failed inspection waiting to happen. Our licensed electricians safely disconnect, remove and certify all electrical modifications so your make good is compliant and your handover is smooth.",
-    benefits: [
-      "Licensed A-grade electricians",
-      "Compliance certificates provided",
-      "All circuit types covered",
-      "Data and communications removal",
-      "Switchboard modifications",
-      "After-hours work available"
-    ],
-    ctaBlock: {
-      title: "Let Us Handle Your Electrical Make Safe",
-      subtitle: "We do makegoods all day, every day.",
-      text: "Our licensed electricians have made safe hundreds of commercial spaces across Melbourne. Get in touch today for a free, no-obligation quote."
-    },
-    relatedServices: ["office-strip-out", "commercial-make-good", "led-lighting"],
-    category: "demolition"
   },
   {
     name: "Ceiling Tile Replacement",
@@ -421,7 +349,7 @@ export const services: Service[] = [
       subtitle: "We do makegoods all day, every day.",
       text: "From single rooms to multi-floor offices, we've restored ceilings across Melbourne's commercial properties. Get in touch today for a free, no-obligation quote."
     },
-    relatedServices: ["make-good-painting", "patching-plastering", "commercial-make-good"],
+    relatedServices: ["make-good-painting", "handover-cleaning"],
     category: "make-good",
     published: true
   },
@@ -457,81 +385,9 @@ export const services: Service[] = [
       subtitle: "We do makegoods all day, every day.",
       text: "We've restored line markings in warehouses and car parks across Melbourne. Get in touch today for a free, no-obligation quote."
     },
-    relatedServices: ["epoxy-flooring", "warehouse-floor-restoration", "warehouse-make-good"],
+    relatedServices: ["epoxy-flooring", "warehouse-floor-restoration"],
     category: "trade",
     published: true
-  },
-  {
-    name: "Commercial Make Good",
-    slug: "commercial-make-good",
-    title: "Commercial Make Good Melbourne",
-    metaTitle: "Commercial Make Good Melbourne | End of Lease",
-    description: "Complete commercial make good services for Melbourne offices, retail and commercial properties. Full restoration to meet lease obligations.",
-    metaDescription: "Commercial make good Melbourne. Office, retail and commercial property restoration. End of lease compliance, landlord liaison and full project management. Free quotes.",
-    heroText: "Complete make good solutions for commercial properties, ensuring full lease compliance and smooth handover.",
-    benefits: [
-      "Full lease compliance",
-      "Single point of contact",
-      "All trades coordinated",
-      "Landlord liaison included",
-      "Bond return assistance",
-      "Transparent pricing"
-    ],
-    ctaBlock: {
-      title: "Let Us Handle Your Make Good",
-      subtitle: "We do makegoods all day, every day.",
-      text: "We've managed make good projects across Melbourne—from small retail spaces to large corporate offices. Get in touch today for a free, no-obligation quote."
-    },
-    relatedServices: ["office-strip-out", "make-good-painting", "make-good-cleaning"],
-    category: "make-good"
-  },
-  {
-    name: "Patching and Plastering",
-    slug: "patching-plastering",
-    title: "Patching and Plastering Melbourne",
-    metaTitle: "Patching and Plastering Melbourne | Commercial",
-    description: "Every hole from removed signage, every crack from partition removal, every dent from years of use—they all need to disappear before handover. We patch, plaster and finish walls to a paint-ready standard that won't get flagged at inspection.",
-    metaDescription: "Commercial patching and plastering Melbourne. Wall repairs, hole filling, plaster restoration and smooth finishes. Make good specialists. Quality guaranteed. Free quotes.",
-    heroText: "Landlords notice every imperfection. Cable holes, anchor points, cracks and dents all need professional repair before painting. We deliver seamless patches and smooth finishes that disappear under paint—not repairs that show through.",
-    benefits: [
-      "Plasterboard and solid plaster repairs",
-      "Seamless, invisible patches",
-      "Texture matching where required",
-      "Cornice and architrave repairs",
-      "Large area skim coating",
-      "Paint-ready finish guaranteed"
-    ],
-    ctaBlock: {
-      title: "Let Us Handle Your Wall Repairs",
-      subtitle: "We do makegoods all day, every day.",
-      text: "Our plasterers have delivered paint-ready finishes across Melbourne's commercial properties for years. Get in touch today for a free, no-obligation quote."
-    },
-    relatedServices: ["make-good-painting", "ceiling-tile-replacement", "office-strip-out"],
-    category: "make-good"
-  },
-  {
-    name: "LED Lighting Upgrade",
-    slug: "led-lighting",
-    title: "LED Lighting Upgrade Melbourne",
-    metaTitle: "LED Lighting Upgrade Melbourne | Commercial",
-    description: "Still running old fluoros? You're paying twice—once for the electricity, again for the constant tube replacements. LED upgrades cut energy costs, reduce maintenance and deliver better light quality. We handle the swap, the wiring and the disposal.",
-    metaDescription: "LED lighting upgrade Melbourne. Replace fluorescent with LED. Commercial offices, warehouses and retail. Energy savings, better light. Licensed electricians. Free quotes.",
-    heroText: "Fluorescent tubes flickering, ballasts failing, energy bills climbing? LED retrofits pay for themselves in reduced power consumption and eliminated maintenance. Better light, lower costs, zero hassle—we handle the complete changeover.",
-    benefits: [
-      "50-70% energy reduction",
-      "Dramatically better light quality",
-      "No more ballast failures",
-      "10+ year lifespan",
-      "Old fittings disposed responsibly",
-      "Licensed electricians throughout"
-    ],
-    ctaBlock: {
-      title: "Let Us Handle Your LED Upgrade",
-      subtitle: "We do makegoods all day, every day.",
-      text: "We've upgraded lighting in offices, warehouses and retail spaces across Melbourne. Get in touch today for a free, no-obligation quote."
-    },
-    relatedServices: ["electrical-make-safe", "ceiling-tile-replacement", "commercial-make-good"],
-    category: "trade"
   },
   {
     name: "Handover Cleaning",
@@ -612,7 +468,7 @@ export const services: Service[] = [
       subtitle: "We do makegoods all day, every day.",
       text: "From warehouse floors to office strip outs, we've prepared hundreds of Melbourne properties for final inspection. Get in touch today for a free, no-obligation quote."
     },
-    relatedServices: ["warehouse-make-good", "warehouse-floor-restoration"],
+    relatedServices: ["warehouse-floor-restoration", "end-of-lease-relocation"],
     category: "cleaning",
     published: true
   },
@@ -650,7 +506,7 @@ export const services: Service[] = [
       subtitle: "We do makegoods all day, every day.",
       text: "We've managed end-to-end relocations across Melbourne and beyond—make good and transport in one seamless service. Get in touch today for a free, no-obligation quote."
     },
-    relatedServices: ["warehouse-make-good", "pallet-racking-removal", "make-good-cleaning"],
+    relatedServices: ["pallet-racking-removal", "handover-cleaning", "warehouse-floor-restoration"],
     category: "make-good",
     published: true
   },
@@ -969,7 +825,7 @@ export const services: Service[] = [
       subtitle: "We do makegoods all day, every day.",
       text: "Whether you're completing end of lease obligations or upgrading your vacant property, we deliver complete skylight replacement as part of our make good service. One quote, one project manager, complete documentation for handover. Get in touch for a free assessment."
     },
-    relatedServices: ["warehouse-make-good", "waterproofing", "structural-remediation"],
+    relatedServices: ["waterproofing", "structural-remediation", "warehouse-floor-restoration"],
     category: "structural",
     published: true
   },
@@ -1109,7 +965,7 @@ export const services: Service[] = [
       subtitle: "We do makegoods all day, every day.",
       text: "From flooring strip-out to finished surface, we've restored warehouse floors across Melbourne. Get in touch today for a free, no-obligation quote."
     },
-    relatedServices: ["epoxy-flooring", "line-marking", "pallet-racking-removal", "warehouse-make-good"],
+    relatedServices: ["epoxy-flooring", "line-marking", "pallet-racking-removal"],
     category: "structural",
     published: true
   }

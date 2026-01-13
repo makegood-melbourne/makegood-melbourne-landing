@@ -15,7 +15,7 @@ const Capabilities = () => {
   
   // Group services by the new 3-category navigation structure
   const floorRestorationSlugs = ['warehouse-floor-restoration', 'epoxy-flooring', 'line-marking', 'pallet-racking-removal'];
-  const specialistTradesSlugs = ['handover-cleaning', 'make-good-painting', 'ceiling-tile-replacement', 'patching-plastering', 'electrical-make-safe', 'led-lighting', 'end-of-lease-relocation'];
+  const specialistTradesSlugs = ['handover-cleaning', 'make-good-painting', 'ceiling-tile-replacement', 'end-of-lease-relocation'];
   const structuralRemediationSlugs = ['structural-remediation', 'polycarbonate-roofing-skylights', 'cladding-glazing', 'concrete-floor-repair', 'waterproofing'];
 
   const floorRestorationServices = allServices.filter(s => floorRestorationSlugs.includes(s.slug));
