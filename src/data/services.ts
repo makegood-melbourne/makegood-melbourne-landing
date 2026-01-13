@@ -72,6 +72,17 @@ export interface FAQ {
   answer: string;
 }
 
+export interface CapabilityCard {
+  icon: 'brick' | 'structure' | 'waterproof';
+  title: string;
+  items: string[];
+}
+
+export interface TrustBadge {
+  icon: 'shield' | 'compass' | 'dollar' | 'document';
+  title: string;
+}
+
 export interface Service {
   name: string;
   slug: string;
@@ -86,7 +97,7 @@ export interface Service {
   secondaryImage?: string;
   secondaryImageAlt?: string;
   scopeTitle?: string; // Custom title for the scope section (defaults to "{name} Scope")
-  trustBadges?: string[];
+  trustBadges?: (string | TrustBadge)[];
   featuredSection?: FeaturedSection;
   featuredSections?: FeaturedSection[];
   postComparisonSections?: FeaturedSection[]; // Sections that appear after comparison table, before FAQ
@@ -94,6 +105,9 @@ export interface Service {
   processAfterScope?: boolean; // Show process right after scope section, before featured sections
   comparisonAfterSection?: number; // Index of featured section after which to show comparison table (0-based)
   skipAboutSection?: boolean; // Skip the auto-generated about section
+  capabilityCards?: CapabilityCard[]; // Three-card layout for structural capabilities
+  capabilitiesTitle?: string; // Title for capabilities section
+  capabilitiesSubtitle?: string; // Subtitle for capabilities section
   benefits: string[];
   comparison?: Comparison;
   faqs?: FAQ[];
@@ -515,55 +529,82 @@ export const services: Service[] = [
     slug: "structural-remediation",
     title: "Structural Remediation Melbourne",
     metaTitle: "Structural Remediation Melbourne | Concrete & Steel",
-    description: "From minor concrete repairs to large-scale retention structure projects, we deliver structural remediation solutions across Melbourne's commercial and industrial properties. Our team has the expertise and resources to tackle complex structural challenges—whether it's a deteriorating warehouse floor slab, failing balcony waterproofing or a retention wall requiring reinforcement. We work closely with structural engineers, councils and building managers to develop compliant, cost-effective solutions that restore structural integrity and extend asset life.",
+    description: "The structural integrity of your building is non-negotiable. At Makegood Melbourne, we address the root causes of structural decay to restore strength, safety and long-term stability to your asset.\n\nOur specialists work with qualified engineers to deliver certified solutions for a comprehensive range of structural defects. From diagnosing concrete cancer and rectifying slab settlement to advanced concrete injection and carbon fibre strengthening, we have the expertise to manage complex projects that general builders can't. We handle the entire process, from initial assessment and engineering specifications through to project completion and final certification.",
     metaDescription: "Structural remediation Melbourne. Concrete cancer treatment, floor slab repairs, waterproofing and membrane systems. Engineered solutions for commercial properties.",
-    heroText: "Comprehensive structural remediation services to restore integrity and extend the service life of your commercial or industrial property. Expert assessment and engineered solutions.",
+    heroText: "From concrete cancer and spalling to slab settlement and corrosion, structural defects compromise the safety and longevity of your asset. We deliver engineered solutions that address these issues at their source, restoring foundational strength and ensuring your building is safe, compliant and secure.",
     ogImage: "/og/structural-remediation.jpg",
     heroImage: warehouseFloorSlabDamageImage,
     heroImageAlt: "Deteriorating warehouse floor slab with structural cracks and spalling at control joints requiring remediation Melbourne",
     secondaryImage: retentionWallConstructionImage,
     secondaryImageAlt: "Large-scale retention wall formwork with steel reinforcement and crane demonstrating structural construction capabilities Melbourne",
+    trustBadges: [
+      { icon: "shield", title: "Licensed & Insured" },
+      { icon: "compass", title: "Engineered Solutions" },
+      { icon: "dollar", title: "Fixed-Price Quotes" },
+      { icon: "document", title: "Full Documentation" }
+    ],
+    skipAboutSection: true,
+    capabilityCards: [
+      {
+        icon: "brick",
+        title: "Concrete & Masonry Repair",
+        items: [
+          "Concrete Cancer & Spalling Repair",
+          "Crack Injection & Sealing",
+          "Brickwork & Lintel Replacement",
+          "Facade & Render Remediation"
+        ]
+      },
+      {
+        icon: "structure",
+        title: "Strengthening & Stabilisation",
+        items: [
+          "Carbon Fibre Strengthening (FRP)",
+          "Slab Jacking & Void Filling",
+          "Foundation Underpinning",
+          "Post-Tensioned Slab Repairs"
+        ]
+      },
+      {
+        icon: "waterproof",
+        title: "Waterproofing & Corrosion",
+        items: [
+          "Structural Waterproofing Systems",
+          "Corrosion Inhibitor Application",
+          "Cathodic Protection Systems",
+          "Steel Framework Retrofitting"
+        ]
+      }
+    ],
+    capabilitiesTitle: "Structural Capabilities",
+    capabilitiesSubtitle: "Our expertise covers all critical areas of structural remediation.",
     featuredSections: [
       {
-        title: "Warehouse Floor Repairs",
-        description: "Industrial floors suffer from bolt holes, cracks, failed joints and settlement issues. Our dedicated [warehouse floor restoration](/services/warehouse-floor-restoration) service covers bolt hole filling, crack injection, joint restoration and slab stabilisation—whether for lease end dilapidations or operational maintenance.",
-        image: warehouseFloorSlabDamageImage,
-        imageAlt: "Damaged warehouse floor slab with cracks and deterioration requiring structural floor repairs Melbourne"
-      },
-      {
-        title: "Crack Injection & Slab Stabilisation",
-        description: "Structural cracks compromise safety and water-tightness—we inject with structural epoxy for load-bearing repairs or flexible polyurethane for movement joints. Settlement, voids and rocking slabs indicate problems beneath the surface. We inject polyurethane foam or cementitious grout to fill voids, stabilise settlement and re-level sunken sections—a non-invasive approach that avoids costly slab replacement.",
-        image: polyurethaneFoamInjectionImage,
-        imageAlt: "Polyurethane foam injection for concrete slab stabilisation and void filling Melbourne"
-      },
-      {
-        title: "Waterproofing & Membrane Systems",
-        description: "Water ingress is one of the leading causes of structural deterioration in commercial buildings. We provide professional waterproofing and membrane solutions for car parks, balconies, rooftops and podium decks. From hotel and office balconies to warehouse roofing leaks, our waterproofing systems protect your structure from moisture damage and extend asset life.",
-        image: waterproofingMembraneImage,
-        imageAlt: "Professional waterproofing membrane application on commercial building surface Melbourne"
-      },
-      {
-        title: "Concrete Cancer Rectification",
-        description: "Concrete cancer occurs when steel reinforcement inside concrete rusts and expands—cracking and displacing the surrounding structure. Left untreated, it compromises structural integrity and accelerates deterioration. Our rectification process involves removing damaged concrete, treating corroded steel with rust inhibitors and protective coatings, then restoring the surface with engineered repair mortars designed for long-term durability.",
-        image: concreteCancerImage,
-        imageAlt: "Severe concrete cancer on structural column showing exposed corroded steel reinforcement and spalling concrete requiring remediation Melbourne"
+        title: "Structural Remediation Scope",
+        description: "The structural integrity of your building is non-negotiable. At Makegood Melbourne, we address the root causes of structural decay to restore strength, safety and long-term stability to your asset.\n\nOur specialists work with qualified engineers to deliver certified solutions for a comprehensive range of structural defects. From diagnosing concrete cancer and rectifying slab settlement to advanced concrete injection and carbon fibre strengthening, we have the expertise to manage complex projects that general builders can't. We handle the entire process, from initial assessment and engineering specifications through to project completion and final certification.",
+        image: retentionWallConstructionImage,
+        imageAlt: "Large-scale retention wall formwork with steel reinforcement and crane demonstrating structural construction capabilities Melbourne"
       }
     ],
     benefits: [
-      "Warehouse floor slab remediation",
-      "Waterproofing and membrane systems",
-      "Retention structure remediation",
-      "Steel framework retrofitting",
-      "Concrete cancer rectification",
-      "Car park and balcony waterproofing",
-      "Structural engineer and council liaison",
-      "Engineered repair solutions"
+      "Concrete Cancer & Spalling Repair",
+      "Crack Injection & Sealing",
+      "Brickwork & Lintel Replacement",
+      "Facade & Render Remediation",
+      "Carbon Fibre Strengthening (FRP)",
+      "Slab Jacking & Void Filling",
+      "Foundation Underpinning",
+      "Post-Tensioned Slab Repairs",
+      "Structural Waterproofing Systems",
+      "Corrosion Inhibitor Application",
+      "Cathodic Protection Systems",
+      "Steel Framework Retrofitting"
     ],
     process: [
-      { step: "Structural Assessment", description: "Comprehensive assessment of compromised structures to identify deterioration, corrosion and safety concerns." },
-      { step: "Engineering Solutions", description: "We coordinate with structural engineers to develop compliant solutions tailored to your specific requirements." },
-      { step: "Remediation Works", description: "Expert treatment and precision correction of steel and concrete elements to restore structural integrity." },
-      { step: "Compliance Sign-off", description: "Final inspection and documentation for structural engineers, councils and building managers as required." }
+      { step: "Assessment & Diagnosis", description: "Every project begins with a comprehensive site assessment to diagnose the underlying cause and extent of the structural issue. We work with structural engineers to perform diagnostic testing and develop a precise scope of works." },
+      { step: "Proposal & Planning", description: "We provide a detailed, fixed-price proposal outlining the recommended repair methodology, all associated costs and a clear project timeline. We believe in full transparency, ensuring you can make an informed decision." },
+      { step: "Remediation & Project Management", description: "Our experienced team executes the engineered solution with meticulous attention to detail. We manage the entire project, coordinating all trades and ensuring work is staged to minimise disruption to your tenants and operations while adhering to the highest safety standards." },
+      { step: "Certification & Handover", description: "Upon completion, we provide a full handover package including all structural certifications, material warranties and maintenance documentation. This ensures you have a complete record of the work performed and the assurance that it meets all Australian Standards." }
     ],
     ctaBlock: {
       title: "Let Us Handle Your Structural Remediation",
