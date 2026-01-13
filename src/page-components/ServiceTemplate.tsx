@@ -320,6 +320,28 @@ const ServiceTemplate = ({ slug: propSlug }: ServiceTemplateProps) => {
           );
         })}
 
+        {/* Process Section - After Featured Sections (when processAfterSpotlight is true) */}
+        {service.processAfterSpotlight && service.process && service.process.length > 0 && (
+          <section className="py-16 bg-secondary">
+            <div className="container mx-auto px-4">
+              <h2 className="text-3xl md:text-4xl text-foreground mb-10">Our Process</h2>
+              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                {service.process.map((step, index) => (
+                  <Card key={index} className="bg-background border-border">
+                    <CardContent className="pt-6">
+                      <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+                        <span className="text-xl font-bold text-primary">{index + 1}</span>
+                      </div>
+                      <h3 className="text-xl font-semibold text-foreground mb-2">{step.step}</h3>
+                      <p className="text-muted-foreground">{step.description}</p>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
+
         {/* Key Service Spotlight Section - Only for services with spotlightCards */}
         {service.spotlightCards && service.spotlightCards.length > 0 && (
           <section className="py-16 bg-background">
@@ -345,28 +367,6 @@ const ServiceTemplate = ({ slug: propSlug }: ServiceTemplateProps) => {
                     <CardContent className="pt-6">
                       <h3 className="text-xl font-semibold text-foreground mb-3">{card.title}</h3>
                       <p className="text-muted-foreground leading-relaxed">{card.description}</p>
-                    </CardContent>
-                  </Card>
-                ))}
-              </div>
-            </div>
-          </section>
-        )}
-
-        {/* Process Section - After Spotlight (when processAfterSpotlight is true) */}
-        {service.processAfterSpotlight && service.process && service.process.length > 0 && (
-          <section className="py-16 bg-secondary">
-            <div className="container mx-auto px-4">
-              <h2 className="text-3xl md:text-4xl text-foreground mb-10">Our Process</h2>
-              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                {service.process.map((step, index) => (
-                  <Card key={index} className="bg-background border-border">
-                    <CardContent className="pt-6">
-                      <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
-                        <span className="text-xl font-bold text-primary">{index + 1}</span>
-                      </div>
-                      <h3 className="text-xl font-semibold text-foreground mb-2">{step.step}</h3>
-                      <p className="text-muted-foreground">{step.description}</p>
                     </CardContent>
                   </Card>
                 ))}
