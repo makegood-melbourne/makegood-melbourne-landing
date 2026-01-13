@@ -293,6 +293,7 @@ const ServiceTemplate = ({ slug: propSlug }: ServiceTemplateProps) => {
                       <img 
                         src={resolveImageSrc(section.image)} 
                         alt={section.imageAlt || `${service.name} professional services Melbourne`}
+                        title={section.imageTitle}
                         className="aspect-[4/3] w-full object-cover rounded-lg"
                         style={{ objectPosition: section.imagePosition === 'left' ? 'left center' : section.imagePosition === 'right' ? 'right center' : 'center' }}
                         width={800}

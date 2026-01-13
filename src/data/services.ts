@@ -39,12 +39,14 @@ import warehouseRoofSkylightsImage from "@/assets/services/warehouse-roof-skylig
 import commercialPaintingHeroImage from "@/assets/services/commercial-warehouse-painting-make-good-melbourne.jpeg";
 import commercialPaintingScopeImage from "@/assets/services/commercial-painting-scope-surface-preparation-melbourne.jpeg";
 import structuralRemediationHeroImage from "@/assets/services/structural-remediation-concrete-cancer-repair-melbourne.jpg";
+import shotcreteApplicationImage from "@/assets/services/shotcrete-application-structural-repair-melbourne.jpg";
 
 export interface FeaturedSection {
   title: string;
   description: string;
   image?: string;
   imageAlt?: string;
+  imageTitle?: string; // Title text for tooltip on hover
   imagePosition?: 'left' | 'center' | 'right';
   imageLeft?: boolean; // Force image on left side of layout
 }
@@ -593,10 +595,11 @@ export const services: Service[] = [
     capabilitiesSubtitle: "Our expertise covers all critical areas of structural remediation.",
     featuredSections: [
       {
-        title: "RESTORING FUNCTION AND STRENGTH",
+        title: "RESTORING STRENGTH AND STABILITY",
         description: "The structural integrity of your building is non-negotiable. At Makegood Melbourne, we address the root causes of structural decay to restore strength, safety and long-term stability to your asset.\n\nOur specialists work with qualified engineers to deliver certified solutions for a comprehensive range of structural defects. From diagnosing concrete cancer and rectifying slab settlement to advanced concrete injection and carbon fibre strengthening, we have the expertise to manage complex projects that general builders can't. We handle the entire process, from initial assessment and engineering specifications through to project completion and final certification.",
-        image: retentionWallConstructionImage,
-        imageAlt: "Large-scale retention wall formwork with steel reinforcement and crane demonstrating structural construction capabilities Melbourne"
+        image: shotcreteApplicationImage,
+        imageAlt: "A skilled worker applying shotcrete to a concrete wall, a key process in large-scale structural repair and remediation",
+        imageTitle: "Makegood Melbourne - Shotcrete and Concrete Repair Specialists"
       }
     ],
     spotlightCards: [
