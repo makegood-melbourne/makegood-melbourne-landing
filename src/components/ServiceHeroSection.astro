@@ -17,6 +17,7 @@ if (!service || service.published !== true) {
 // Use the same hero image source as the service data to avoid environment/build mismatches.
 const heroImage = service.heroImage as unknown;
 const heroImageAlt = service.heroImageAlt || `${service.name} Melbourne - professional commercial services`;
+const heroImageTitle = service.heroImageTitle;
 
 // Title formatting
 const titleParts = service.title.includes('Melbourne') 
@@ -67,6 +68,7 @@ const titleParts = service.title.includes('Melbourne')
             <Image 
               src={heroImage} 
               alt={heroImageAlt}
+              title={heroImageTitle}
               class="aspect-[4/3] w-full object-cover rounded-lg"
               widths={[360, 640, 800]}
               sizes="(max-width: 640px) 360px, (max-width: 1024px) 640px, 800px"
@@ -104,6 +106,7 @@ const titleParts = service.title.includes('Melbourne')
           <Image 
             src={heroImage} 
             alt={heroImageAlt}
+            title={heroImageTitle}
             class="aspect-[4/3] w-full object-cover rounded-lg"
             widths={[640, 800, 1200]}
             sizes="(max-width: 1024px) 640px, (max-width: 1280px) 800px, 1200px"
