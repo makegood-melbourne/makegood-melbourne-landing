@@ -83,6 +83,13 @@ export interface TrustBadge {
   title: string;
 }
 
+export interface SpotlightCard {
+  image: string;
+  imageAlt: string;
+  title: string;
+  description: string;
+}
+
 export interface Service {
   name: string;
   slug: string;
@@ -108,6 +115,7 @@ export interface Service {
   capabilityCards?: CapabilityCard[]; // Three-card layout for structural capabilities
   capabilitiesTitle?: string; // Title for capabilities section
   capabilitiesSubtitle?: string; // Subtitle for capabilities section
+  spotlightCards?: SpotlightCard[]; // Three-card layout with images for key services
   benefits: string[];
   comparison?: Comparison;
   faqs?: FAQ[];
@@ -578,12 +586,24 @@ export const services: Service[] = [
     ],
     capabilitiesTitle: "Structural Capabilities",
     capabilitiesSubtitle: "Our expertise covers all critical areas of structural remediation.",
-    featuredSections: [
+    spotlightCards: [
       {
-        title: "Structural Remediation Scope",
-        description: "The structural integrity of your building is non-negotiable. At Makegood Melbourne, we address the root causes of structural decay to restore strength, safety and long-term stability to your asset.\n\nOur specialists work with qualified engineers to deliver certified solutions for a comprehensive range of structural defects. From diagnosing concrete cancer and rectifying slab settlement to advanced concrete injection and carbon fibre strengthening, we have the expertise to manage complex projects that general builders can't. We handle the entire process, from initial assessment and engineering specifications through to project completion and final certification.",
-        image: retentionWallConstructionImage,
-        imageAlt: "Large-scale retention wall formwork with steel reinforcement and crane demonstrating structural construction capabilities Melbourne"
+        image: concreteCancerImage,
+        imageAlt: "Concrete cancer with exposed corroded rebar and spalling concrete requiring remediation Melbourne",
+        title: "Concrete Cancer Rectification",
+        description: "We don't just patch concrete cancer; we cure it. Our process involves removing all compromised material, treating the corroded steel reinforcement with anti-corrosion agents, and reinstating the surface with specialised, high-strength repair mortars for a permanent, engineered solution."
+      },
+      {
+        image: polyurethaneFoamInjectionImage,
+        imageAlt: "Polyurethane foam injection for crack repair and slab stabilisation Melbourne",
+        title: "Crack Injection & Slab Stabilisation",
+        description: "Structural cracks and voids compromise safety and stability. We utilise advanced epoxy and polyurethane injection systems to structurally rebond cracked concrete, fill voids and re-level sunken slabs—a non-invasive approach that restores integrity and avoids costly replacement."
+      },
+      {
+        image: waterproofingMembraneImage,
+        imageAlt: "Structural waterproofing membrane application for commercial building protection Melbourne",
+        title: "Structural Waterproofing",
+        description: "Water ingress is a primary cause of structural failure. We install high-performance waterproofing and membrane systems for critical areas like podiums, rooftops and retaining walls, protecting the structure from moisture damage and securing its long-term durability."
       }
     ],
     benefits: [
