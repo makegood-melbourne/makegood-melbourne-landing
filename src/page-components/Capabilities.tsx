@@ -6,7 +6,8 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { resolveImageSrc } from "@/lib/resolveImageSrc";
-import capabilitiesHero from "@/assets/commercial-property-restoration-capabilities-melbourne.jpg";
+// Use a public URL string here to avoid Astro/Vite ImageMetadata object issues in production islands.
+const capabilitiesHeroSrc = "/images/commercial-property-restoration-capabilities-melbourne.jpg";
 import { getPublishedServices } from "@/data/services";
 
 const Capabilities = () => {
@@ -72,7 +73,7 @@ const Capabilities = () => {
         <section className="relative h-[400px] flex items-center justify-center overflow-hidden">
           <div className="absolute inset-0 z-0">
             <img 
-              src={resolveImageSrc(capabilitiesHero)} 
+              src={capabilitiesHeroSrc}
               alt="Professional commercial and industrial make good services including floor restoration, specialist trades and structural remediation in Melbourne"
               className="w-full h-full object-cover"
             />
