@@ -1,6 +1,8 @@
 // Section landing page data for the 4 main service categories:
 // Strip Out, Make Good, Handover, Remediation
 
+import buildingRemediationHero from "@/assets/services/building-remediation-melbourne-shotcrete.jpg";
+
 export interface SectionLandingFAQ {
   question: string;
   answer: string;
@@ -17,16 +19,16 @@ export interface SectionLandingData {
   metaTitle: string;
   metaDescription: string;
   ogImage?: string;
-  
+
   // Hero
   title: string;
-  titleHighlight?: string;  // Optional word to highlight in orange
+  titleHighlight?: string; // Optional word to highlight in orange
   tagline: string;
   trustBadges: SectionLandingTrustBadge[];
-  heroImage?: string;
+  heroImage?: unknown;
   heroImageAlt?: string;
-  heroImageTitle?: string;  // Tooltip text on hover
-  
+  heroImageTitle?: string; // Tooltip text on hover
+
   // About - supports styled header "TITLE PREFIX" + "TITLE HIGHLIGHT" in orange
   aboutTitlePrefix: string;  // e.g. "MELBOURNE'S LEADING"
   aboutTitleHighlight: string;  // e.g. "REMEDIATION SPECIALISTS" - shown in orange

@@ -29,10 +29,10 @@ interface SectionLandingData {
   titleHighlight?: string;  // Optional word to highlight in orange
   tagline: string;
   trustBadges: { icon: string; title: string }[];
-  heroImage?: string;
+  heroImage?: unknown;
   heroImageAlt?: string;
   heroImageTitle?: string;  // Tooltip text on hover
-  
+
   // About - supports styled header "TITLE PREFIX" + "TITLE HIGHLIGHT" in orange
   aboutTitlePrefix: string;  // e.g. "MELBOURNE'S LEADING"
   aboutTitleHighlight: string;  // e.g. "REMEDIATION SPECIALISTS" - shown in orange
