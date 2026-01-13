@@ -30,6 +30,7 @@ export interface SectionLandingData {
   // Services Carousel
   serviceSlugs: string[];
   carouselTitle?: string;
+  carouselTitleHighlight?: string;  // Optional words to highlight in orange
   carouselDescription?: string;
   
   // FAQ
@@ -70,8 +71,9 @@ export const sectionLandingPages: SectionLandingData[] = [
       "structural-remediation",
       "waterproofing"
     ],
-    carouselTitle: "Remediation Services",
-    carouselDescription: "Specialist solutions for building defects, compliance issues and structural repairs",
+    carouselTitle: "Our Remediation Services",
+    carouselTitleHighlight: "Remediation Services",
+    carouselDescription: "Engineered solutions that restore safety, compliance, and longevity.",
     
     faqs: [
       {

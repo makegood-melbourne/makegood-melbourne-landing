@@ -13,12 +13,14 @@ import { resolveImageSrc } from "@/lib/resolveImageSrc";
 interface SectionServicesCarouselProps {
   serviceSlugs: string[];
   title?: string;
+  titleHighlight?: string;  // Optional words to highlight in orange
   description?: string;
 }
 
 const SectionServicesCarousel = ({ 
   serviceSlugs, 
   title = "Our Services",
+  titleHighlight,
   description 
 }: SectionServicesCarouselProps) => {
   const publishedServices = getPublishedServices();
@@ -36,8 +38,16 @@ const SectionServicesCarousel = ({
         {(title || description) && (
           <div className="text-center mb-10">
             {title && (
-              <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-                {title}
+              <h2 className="text-3xl sm:text-4xl font-bold mb-4 uppercase tracking-wide">
+                {titleHighlight && title.includes(titleHighlight) ? (
+                  <>
+                    {title.split(titleHighlight)[0]}
+                    <span className="text-primary">{titleHighlight}</span>
+                    {title.split(titleHighlight)[1]}
+                  </>
+                ) : (
+                  title
+                )}
               </h2>
             )}
             {description && (
