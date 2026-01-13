@@ -53,15 +53,15 @@ export const sectionLandingPages: SectionLandingData[] = [
     tagline: "Your commercial property is a significant investment. We protect it. Our expert remediation services address structural decay, water damage, and facade issues at their source—restoring structural integrity, ensuring building compliance, and securing its long-term stability.",
     trustBadges: ["Licensed & Insured", "Fixed Price Quotes", "End-of-Lease Specialists"],
     
-    aboutTitlePrefix: "Melbourne's Leading",
-    aboutTitleHighlight: "Building Remediation Specialists",
+    aboutTitlePrefix: "Restoring",
+    aboutTitleHighlight: "Your Building's Integrity",
     aboutContentLeft: [
-      "When structural defects, non-compliant cladding or water ingress threaten your commercial property, professional building remediation is essential—not optional. Left unaddressed, these issues escalate into safety hazards, compliance violations and significant capital losses.",
-      "Our remediation specialists work alongside structural engineers and building surveyors to diagnose defects accurately and deliver certified solutions. From concrete cancer treatment and façade replacements to waterproofing membrane systems that meet Australian Standards, we handle the complex projects that general builders can't."
+      "Time and exposure are unforgiving. Concrete spalls, steel corrodes, and waterproof membranes inevitably fail. What starts as a hairline crack or a minor leak can quickly escalate, compromising the structural safety, regulatory compliance, and operational continuity of your property. Ignoring these symptoms isn't just risky—it's a liability in the making.",
+      "Our remediation specialists work alongside structural engineers and building surveyors to diagnose defects at their source. We go beyond the surface to deliver certified, engineered solutions that solve the problem permanently."
     ],
     aboutContentRight: [
-      "Every remediation project begins with a comprehensive building assessment. We identify root causes—not just visible symptoms—and provide detailed, costed recommendations so property owners and managers can make informed decisions about their asset's future.",
-      "Whether you're managing an ageing office tower with spalling concrete, a warehouse with combustible cladding requiring urgent rectification, or a retail complex with persistent leak issues, our licensed contractors deliver NCC-compliant solutions that protect your investment for the long term."
+      "Every remediation project starts with a thorough building assessment. We identify the root cause—not just the visible symptoms—and provide a detailed, costed scope of works so you can make an informed decision about your asset.",
+      "Whether you're an owner facing urgent structural repairs, a body corporate addressing cladding compliance, or a tenant managing end-of-lease obligations, our licensed contractors deliver solutions that meet all Australian building standards, protecting your investment and providing certainty for the long term."
     ],
     
     serviceSlugs: [
