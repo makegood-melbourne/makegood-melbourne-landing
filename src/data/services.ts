@@ -1069,6 +1069,70 @@ export const services: Service[] = [
     relatedServices: ["epoxy-flooring", "line-marking", "pallet-racking-removal"],
     category: "structural",
     published: true
+  },
+  // Strip Out Category - Placeholder services for carousel
+  {
+    name: "Back to Base Works",
+    slug: "back-to-base-works",
+    title: "Back to Base Works Melbourne",
+    metaTitle: "Back to Base Works Melbourne | Service Disconnection",
+    description: "We expertly manage the disconnection and make-safe of all essential services, including electrical, fire, HVAC, and plumbing, ensuring the property is compliant and ready for the next tenant.",
+    metaDescription: "Professional back to base works in Melbourne. Electrical, fire, HVAC and plumbing disconnection. Licensed contractors. End of lease compliance. Free quotes.",
+    heroText: "Complete service disconnection and make-safe works for commercial properties. Our licensed team manages the systematic disconnection of electrical, fire, HVAC and plumbing systems, ensuring compliance with all building codes and landlord requirements.",
+    ogImage: "/og/back-to-base-works.jpg",
+    benefits: [
+      "Electrical disconnection and make-safe certification",
+      "Fire services isolation and testing",
+      "HVAC system decommissioning",
+      "Plumbing capping and certification",
+      "Full compliance documentation",
+      "Coordinated multi-trade management"
+    ],
+    relatedServices: ["demolition-works", "waste-management", "pallet-racking-removal"],
+    category: "demolition",
+    published: true
+  },
+  {
+    name: "Demolition Works",
+    slug: "demolition-works",
+    title: "Demolition Works Melbourne",
+    metaTitle: "Commercial Demolition Works Melbourne | Licensed",
+    description: "Our licensed team performs precise internal demolition, safely removing non-structural partitions, ceilings, flooring, fixtures, and fittings with minimal disruption.",
+    metaDescription: "Commercial demolition works Melbourne. Office strip out and internal demolition. Partition removal. Ceiling demolition. Licensed operators. Free quotes.",
+    heroText: "Selective internal demolition for commercial and industrial properties. We carefully remove partitions, suspended ceilings, flooring, fixtures and fittings without damaging the base building structure or surrounding tenancies.",
+    ogImage: "/og/demolition-works.jpg",
+    benefits: [
+      "Selective internal demolition",
+      "Partition and ceiling removal",
+      "Flooring and carpet strip-out",
+      "Fixture and fitting removal",
+      "Dust-controlled equipment",
+      "After-hours work available"
+    ],
+    relatedServices: ["back-to-base-works", "waste-management", "pallet-racking-removal"],
+    category: "demolition",
+    published: true
+  },
+  {
+    name: "Waste Management & Disposal",
+    slug: "waste-management",
+    title: "Waste Management & Disposal Melbourne",
+    metaTitle: "Commercial Waste Disposal Melbourne | Certified",
+    description: "We provide end-to-end waste management, including the certified handling and disposal of all materials, from general construction waste to hazardous substances like asbestos.",
+    metaDescription: "Commercial waste management Melbourne. Construction waste disposal. Asbestos removal certification. Recycling solutions. Sustainability reporting. Free quotes.",
+    heroText: "Comprehensive waste management solutions for commercial strip outs and construction projects. We handle everything from general waste to hazardous materials, maximising recycling and providing full disposal documentation.",
+    ogImage: "/og/waste-management.jpg",
+    benefits: [
+      "Licensed hazardous waste removal",
+      "Asbestos identification and disposal",
+      "Recycling and diversion from landfill",
+      "Full waste tracking documentation",
+      "Sustainability reporting available",
+      "Skip bin coordination and removal"
+    ],
+    relatedServices: ["back-to-base-works", "demolition-works", "pallet-racking-removal"],
+    category: "demolition",
+    published: true
   }
 ];
 

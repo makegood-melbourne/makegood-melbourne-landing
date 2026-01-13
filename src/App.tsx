@@ -47,6 +47,10 @@ const App = () => (
 
           {/* Section landing pages */}
           <Route
+            path="/services/strip-out"
+            element={<SectionLandingPage slug="strip-out" />}
+          />
+          <Route
             path="/services/remediation"
             element={<SectionLandingPage slug="remediation" />}
           />

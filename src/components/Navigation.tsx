@@ -15,21 +15,31 @@ import {
   DropdownMenuSeparator,
 } from "@/components/ui/dropdown-menu";
 
-// Service categories for navigation grouping (alphabetically sorted)
+// Service categories for navigation grouping - 4 main sections
 const serviceCategories = [
   {
-    label: "Floor Restoration",
-    slugs: ['warehouse-floor-restoration', 'epoxy-flooring', 'line-marking', 'pallet-racking-removal']
+    label: "Strip Out",
+    href: "/services/strip-out",  // Clickable category header
+    slugs: ['back-to-base-works', 'demolition-works', 'pallet-racking-removal', 'waste-management'],
+    displayNames: {
+      'pallet-racking-removal': 'Racking Removal',
+      'back-to-base-works': 'Back to Base Works',
+      'demolition-works': 'Demolition Works',
+      'waste-management': 'Waste Management'
+    }
   },
   {
-    label: "Specialist Trades",
-    slugs: ['handover-cleaning', 'make-good-painting', 'ceiling-tile-replacement', 'patching-plastering', 'electrical-make-safe', 'led-lighting', 'end-of-lease-relocation']
+    label: "Make Good",
+    slugs: ['warehouse-floor-restoration', 'epoxy-flooring', 'line-marking', 'make-good-painting', 'ceiling-tile-replacement', 'patching-plastering']
+  },
+  {
+    label: "Handover",
+    slugs: ['handover-cleaning', 'end-of-lease-relocation', 'electrical-make-safe', 'led-lighting']
   },
   {
     label: "Remediation",
     href: "/services/remediation",  // Clickable category header
-    slugs: ['structural-remediation', 'polycarbonate-roofing-skylights', 'cladding-glazing', 'concrete-floor-repair', 'waterproofing'],
-    // Custom display names for services in this category
+    slugs: ['structural-remediation', 'polycarbonate-roofing-skylights', 'cladding-glazing', 'waterproofing'],
     displayNames: {
       'structural-remediation': 'Structural'
     }

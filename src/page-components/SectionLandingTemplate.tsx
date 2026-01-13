@@ -4,7 +4,7 @@ import { resolveImageSrc } from "@/lib/resolveImageSrc";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import SectionServicesCarousel from "@/components/SectionServicesCarousel";
 import { Button } from "@/components/ui/button";
-import { Mail, Shield, Compass, BadgeDollarSign, FileText } from "lucide-react";
+import { Mail, Shield, Compass, BadgeDollarSign, FileText, ClipboardCheck } from "lucide-react";
 import {
   Accordion,
   AccordionContent,
@@ -211,7 +211,8 @@ const SectionLandingTemplate = ({ data }: SectionLandingTemplateProps) => {
                   badge.icon === "shield" ? Shield :
                   badge.icon === "compass" ? Compass :
                   badge.icon === "dollar" ? BadgeDollarSign :
-                  badge.icon === "document" ? FileText : Shield;
+                  badge.icon === "document" ? FileText : 
+                  badge.icon === "clipboard" ? ClipboardCheck : Shield;
                 
                 return (
                   <div key={index} className="flex flex-col items-center text-center gap-2">
