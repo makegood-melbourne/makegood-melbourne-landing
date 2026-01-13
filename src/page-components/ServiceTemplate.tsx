@@ -9,7 +9,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import BeforeAfterSlider from "@/components/BeforeAfterSlider";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { CheckCircle, Mail, ArrowRight, Shield, Check, X } from "lucide-react";
+import { CheckCircle, Mail, ArrowRight, Shield, Check, X, Blocks, Building2, Droplets, Compass, BadgeDollarSign, FileText } from "lucide-react";
 import {
   Accordion,
   AccordionContent,
@@ -198,32 +198,82 @@ const ServiceTemplate = ({ slug: propSlug }: ServiceTemplateProps) => {
             </div>
             {/* Trust Badges - Full width at bottom of hero */}
             {service.trustBadges && service.trustBadges.length > 0 && (
-              <div className="flex flex-wrap gap-3 mt-10">
-                {service.trustBadges.map((badge, index) => (
-                  <div key={index} className="flex items-center gap-2 px-4 py-2 bg-tertiary/10 rounded-full">
-                    <Shield className="h-4 w-4 text-tertiary" />
-                    <span className="text-sm font-medium text-tertiary">{badge}</span>
-                  </div>
-                ))}
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-10">
+                {service.trustBadges.map((badge, index) => {
+                  const isObject = typeof badge === 'object';
+                  const badgeTitle = isObject ? badge.title : badge;
+                  const IconComponent = isObject ? (
+                    badge.icon === "shield" ? Shield :
+                    badge.icon === "compass" ? Compass :
+                    badge.icon === "dollar" ? BadgeDollarSign :
+                    badge.icon === "document" ? FileText : Shield
+                  ) : Shield;
+                  
+                  return (
+                    <div key={index} className="flex flex-col items-center gap-2 py-3">
+                      <IconComponent className="h-6 w-6 text-muted-foreground" />
+                      <span className="text-sm font-medium text-muted-foreground text-center">{badgeTitle}</span>
+                    </div>
+                  );
+                })}
               </div>
             )}
           </div>
         </section>
 
-        {/* 2. What's Included Section */}
-        <section className="py-16 bg-background">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl md:text-4xl text-foreground mb-10">What We Deliver</h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {service.benefits.map((benefit, index) => (
-                <div key={index} className="flex items-start gap-4 p-4 bg-secondary rounded-lg">
-                  <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
-                  <span className="text-lg text-foreground">{benefit}</span>
-                </div>
-              ))}
+        {/* Capability Cards Section - Only for services with capabilityCards */}
+        {service.capabilityCards && service.capabilityCards.length > 0 && (
+          <section className="py-16 bg-background">
+            <div className="container mx-auto px-4">
+              <h2 className="text-3xl md:text-4xl text-foreground mb-3">
+                {service.capabilitiesTitle || "Structural Capabilities"}
+              </h2>
+              <p className="text-xl text-muted-foreground mb-10">
+                {service.capabilitiesSubtitle || "Our expertise covers all critical areas of structural remediation."}
+              </p>
+              <div className="grid md:grid-cols-3 gap-6">
+                {service.capabilityCards.map((card, index) => {
+                  const IconComponent = card.icon === 'brick' ? Blocks : card.icon === 'structure' ? Building2 : Droplets;
+                  return (
+                    <Card key={index} className="bg-secondary border-border hover:border-primary/50 transition-colors">
+                      <CardContent className="pt-6">
+                        <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+                          <IconComponent className="h-6 w-6 text-primary" />
+                        </div>
+                        <h3 className="text-xl font-semibold text-foreground mb-4">{card.title}</h3>
+                        <ul className="space-y-2">
+                          {card.items.map((item, itemIndex) => (
+                            <li key={itemIndex} className="flex items-start gap-2 text-muted-foreground">
+                              <CheckCircle className="h-4 w-4 text-primary flex-shrink-0 mt-1" />
+                              <span>{item}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </CardContent>
+                    </Card>
+                  );
+                })}
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
+        )}
+
+        {/* 2. What's Included Section - Only if no capabilityCards */}
+        {(!service.capabilityCards || service.capabilityCards.length === 0) && (
+          <section className="py-16 bg-background">
+            <div className="container mx-auto px-4">
+              <h2 className="text-3xl md:text-4xl text-foreground mb-10">What We Deliver</h2>
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {service.benefits.map((benefit, index) => (
+                  <div key={index} className="flex items-start gap-4 p-4 bg-secondary rounded-lg">
+                    <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
+                    <span className="text-lg text-foreground">{benefit}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
 
         {/* Featured Section Right After What We Deliver - Only when skipAboutSection is true */}
         {service.skipAboutSection && service.featuredSections && service.featuredSections.map((section, index) => {
