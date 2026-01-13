@@ -732,7 +732,7 @@ const ServiceTemplate = ({ slug: propSlug }: ServiceTemplateProps) => {
         {service.faqs && service.faqs.length > 0 && (
           <section className="py-16 bg-secondary">
             <div className="container mx-auto px-4">
-              <h2 className="text-3xl md:text-4xl text-foreground mb-10">Frequently Asked Questions</h2>
+              <h2 className="text-3xl md:text-4xl text-foreground mb-10">{service.faqTitle || 'Frequently Asked Questions'}</h2>
               <div className="max-w-3xl">
                 <Accordion type="single" collapsible className="w-full">
                   {service.faqs.map((faq, index) => (
