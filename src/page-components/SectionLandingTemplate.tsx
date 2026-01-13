@@ -129,7 +129,7 @@ const SectionLandingTemplate = ({ data }: SectionLandingTemplateProps) => {
                 {data.titleHighlight ? (
                   <>
                     {data.title.split(data.titleHighlight)[0]}
-                    <span className="text-primary">{data.titleHighlight}</span>
+                    <span className="text-primary whitespace-nowrap">{data.titleHighlight}</span>
                     {data.title.split(data.titleHighlight)[1]}
                   </>
                 ) : (

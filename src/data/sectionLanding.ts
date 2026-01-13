@@ -49,7 +49,7 @@ export const sectionLandingPages: SectionLandingData[] = [
     ogImage: "/og/remediation.jpg",
     
     title: "Building Remediation, Made BETTER.",
-    titleHighlight: "BETTER",  // The word to highlight in orange
+    titleHighlight: "Made BETTER.",  // The word to highlight in orange
     tagline: "Your commercial property is a significant investment. We protect it. Our expert remediation services address structural decay, water damage, and facade issues at their source—restoring structural integrity, ensuring building compliance, and securing its long-term stability.",
     trustBadges: ["Licensed & Insured", "Fixed Price Quotes", "End-of-Lease Specialists"],
     
