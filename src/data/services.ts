@@ -553,10 +553,10 @@ export const services: Service[] = [
     secondaryImage: retentionWallConstructionImage,
     secondaryImageAlt: "Large-scale retention wall formwork with steel reinforcement and crane demonstrating structural construction capabilities Melbourne",
     trustBadges: [
-      { icon: "shield", title: "Licensed & Insured" },
-      { icon: "compass", title: "Engineered Solutions" },
-      { icon: "dollar", title: "Fixed-Price Quotes" },
-      { icon: "document", title: "Full Documentation" }
+      "Licensed & Insured",
+      "Engineered Solutions",
+      "Fixed-Price Quotes",
+      "Full Documentation"
     ],
     skipAboutSection: true,
     capabilityCards: [
