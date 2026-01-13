@@ -288,11 +288,11 @@ const SectionLandingTemplate = ({ data }: SectionLandingTemplateProps) => {
       {/* CTA Section */}
       <section className="py-16 bg-secondary">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl text-foreground mb-4">{data.ctaTitle}</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-3">{data.ctaTitle}</h2>
           {data.ctaSubtitle && (
-            <p className="text-xl text-primary mb-4">{data.ctaSubtitle}</p>
+            <p className="text-2xl md:text-3xl font-bold text-primary mb-6">{data.ctaSubtitle}</p>
           )}
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto mb-8 leading-relaxed">
             {renderTextWithLinks(data.ctaText)}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

@@ -98,9 +98,9 @@ export const sectionLandingPages: SectionLandingData[] = [
       }
     ],
     
-    ctaTitle: "Protect Your Building Investment",
-    ctaSubtitle: "Expert remediation, lasting solutions.",
-    ctaText: "Building defects only get worse with time. Contact us today for a free site inspection and honest assessment of your remediation options."
+    ctaTitle: "SECURE YOUR ASSET'S LONGEVITY",
+    ctaSubtitle: "Make Good, BETTER.",
+    ctaText: "We've built our reputation on delivering engineered remediation solutions for commercial and industrial properties across Melbourne. Don't let building defects compromise your safety or your investment. Contact us for a comprehensive site assessment and a clear, detailed proposal."
   }
 ];
 
