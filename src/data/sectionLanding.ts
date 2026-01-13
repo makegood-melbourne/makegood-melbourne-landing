@@ -51,15 +51,15 @@ export const sectionLandingPages: SectionLandingData[] = [
     tagline: "Structural integrity issues, non-compliant cladding or water ingress? Our remediation services restore your building to compliance—protecting your asset and your tenants.",
     trustBadges: ["Licensed & Insured", "Structural Engineers", "NCC Compliant"],
     
-    aboutTitlePrefix: "MELBOURNE'S LEADING",
-    aboutTitleHighlight: "REMEDIATION SPECIALISTS",
+    aboutTitlePrefix: "Melbourne's Leading",
+    aboutTitleHighlight: "Building Remediation Specialists",
     aboutContentLeft: [
-      "Building defects don't fix themselves. Whether you're dealing with concrete cancer eating through structural elements, combustible cladding that's putting tenants at risk, or persistent water ingress damaging your asset—professional remediation is the only solution.",
-      "Our team works alongside structural engineers and building surveyors to diagnose issues accurately and deliver permanent solutions. From façade replacements that meet current NCC requirements to waterproofing systems that actually work, we handle the complex projects that general builders can't."
+      "When structural defects, non-compliant cladding or water ingress threaten your commercial property, professional building remediation is essential—not optional. Left unaddressed, these issues escalate into safety hazards, compliance violations and significant capital losses.",
+      "Our remediation specialists work alongside structural engineers and building surveyors to diagnose defects accurately and deliver certified solutions. From concrete cancer treatment and façade replacements to waterproofing membrane systems that meet Australian Standards, we handle the complex projects that general builders can't."
     ],
     aboutContentRight: [
-      "Every remediation project starts with a thorough assessment. We identify the root cause—not just the symptoms—and provide clear, costed recommendations so you can make informed decisions about your building's future.",
-      "Whether it's structural repairs, cladding compliance, roof restoration or waterproofing failures, our licensed contractors deliver certified solutions that protect your investment for the long term."
+      "Every remediation project begins with a comprehensive building assessment. We identify root causes—not just visible symptoms—and provide detailed, costed recommendations so property owners and managers can make informed decisions about their asset's future.",
+      "Whether you're managing an ageing office tower with spalling concrete, a warehouse with combustible cladding requiring urgent rectification, or a retail complex with persistent leak issues, our licensed contractors deliver NCC-compliant solutions that protect your investment for the long term."
     ],
     
     serviceSlugs: [

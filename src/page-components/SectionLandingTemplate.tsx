@@ -211,32 +211,30 @@ const SectionLandingTemplate = ({ data }: SectionLandingTemplateProps) => {
       </section>
 
       {/* About Section - 2 Column Layout */}
-      <section className="py-16 bg-background">
-        <div className="container mx-auto px-4">
-          {/* Styled Header */}
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-12 uppercase tracking-wide">
-            <span className="text-foreground">{data.aboutTitlePrefix}</span>{' '}
-            <span className="text-primary">{data.aboutTitleHighlight}</span>
-          </h2>
-          
-          {/* Two Column Content */}
-          <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
-            {/* Left Column */}
-            <div>
-              {data.aboutContentLeft.map((paragraph, index) => (
-                <p key={index} className="text-lg text-muted-foreground leading-relaxed mb-4 last:mb-0">
-                  {renderTextWithLinks(paragraph)}
-                </p>
-              ))}
-            </div>
+      <section className="py-12 bg-background border-b border-border">
+        <div className="container mx-auto px-4 max-w-5xl">
+          <div className="prose prose-xl max-w-none">
+            {/* Styled Header - matching homepage */}
+            <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6 text-center">
+              {data.aboutTitlePrefix} <span className="text-primary">{data.aboutTitleHighlight}</span>
+            </h2>
             
-            {/* Right Column */}
-            <div>
-              {data.aboutContentRight.map((paragraph, index) => (
-                <p key={index} className="text-lg text-muted-foreground leading-relaxed mb-4 last:mb-0">
-                  {renderTextWithLinks(paragraph)}
-                </p>
-              ))}
+            {/* Two Column Content */}
+            <div className="grid md:grid-cols-2 gap-x-8 gap-y-4 text-xl text-muted-foreground">
+              <div>
+                {data.aboutContentLeft.map((paragraph, index) => (
+                  <p key={index} className="mb-4 leading-relaxed last:mb-0">
+                    {renderTextWithLinks(paragraph)}
+                  </p>
+                ))}
+              </div>
+              <div>
+                {data.aboutContentRight.map((paragraph, index) => (
+                  <p key={index} className="mb-4 leading-relaxed last:mb-0">
+                    {renderTextWithLinks(paragraph)}
+                  </p>
+                ))}
+              </div>
             </div>
           </div>
         </div>
