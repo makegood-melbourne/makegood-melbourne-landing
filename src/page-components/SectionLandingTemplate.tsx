@@ -4,7 +4,7 @@ import { resolveImageSrc } from "@/lib/resolveImageSrc";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import SectionServicesCarousel from "@/components/SectionServicesCarousel";
 import { Button } from "@/components/ui/button";
-import { Mail, Shield } from "lucide-react";
+import { Mail, Shield, Compass, BadgeDollarSign, FileText } from "lucide-react";
 import {
   Accordion,
   AccordionContent,
@@ -28,7 +28,7 @@ interface SectionLandingData {
   title: string;
   titleHighlight?: string;  // Optional word to highlight in orange
   tagline: string;
-  trustBadges: string[];
+  trustBadges: { icon: string; title: string }[];
   heroImage?: string;
   heroImageAlt?: string;
   
@@ -200,15 +200,23 @@ const SectionLandingTemplate = ({ data }: SectionLandingTemplateProps) => {
             </div>
           </div>
           
-          {/* Trust Badges */}
+          {/* Trust Badges - 4 vertical badges */}
           {data.trustBadges && data.trustBadges.length > 0 && (
-            <div className="flex flex-wrap gap-3 mt-10">
-              {data.trustBadges.map((badge, index) => (
-                <div key={index} className="flex items-center gap-2 px-4 py-2 bg-tertiary/10 rounded-full">
-                  <Shield className="h-4 w-4 text-tertiary" />
-                  <span className="text-sm font-medium text-tertiary">{badge}</span>
-                </div>
-              ))}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-10">
+              {data.trustBadges.map((badge, index) => {
+                const IconComponent = 
+                  badge.icon === "shield" ? Shield :
+                  badge.icon === "compass" ? Compass :
+                  badge.icon === "dollar" ? BadgeDollarSign :
+                  badge.icon === "document" ? FileText : Shield;
+                
+                return (
+                  <div key={index} className="flex flex-col items-center text-center gap-2">
+                    <IconComponent className="h-8 w-8 text-muted-foreground" />
+                    <span className="text-sm font-medium text-muted-foreground">{badge.title}</span>
+                  </div>
+                );
+              })}
             </div>
           )}
         </div>
