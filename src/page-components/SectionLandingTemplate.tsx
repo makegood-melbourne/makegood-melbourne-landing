@@ -41,6 +41,7 @@ interface SectionLandingData {
   // Services Carousel
   serviceSlugs: string[];
   carouselTitle?: string;
+  carouselTitleHighlight?: string;  // Optional words to highlight in orange
   carouselDescription?: string;
   
   // FAQ
@@ -247,6 +248,7 @@ const SectionLandingTemplate = ({ data }: SectionLandingTemplateProps) => {
       <SectionServicesCarousel 
         serviceSlugs={data.serviceSlugs}
         title={data.carouselTitle || "Remediation Services"}
+        titleHighlight={data.carouselTitleHighlight}
         description={data.carouselDescription}
       />
 
