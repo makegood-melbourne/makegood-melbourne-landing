@@ -13,6 +13,17 @@ export interface SectionLandingTrustBadge {
   title: string;
 }
 
+export interface SectionLandingRelatedCard {
+  slug: string;
+  name: string;
+  description: string;
+}
+
+export interface SectionLandingRelatedBlock {
+  title: string;
+  cards: SectionLandingRelatedCard[];
+}
+
 export interface SectionLandingData {
   // Meta
   slug: string;
@@ -40,6 +51,9 @@ export interface SectionLandingData {
   carouselTitle?: string;
   carouselTitleHighlight?: string;  // Optional words to highlight in orange
   carouselDescription?: string;
+  
+  // Related Services Block (optional - appears between carousel and FAQ)
+  relatedServicesBlock?: SectionLandingRelatedBlock;
   
   // FAQ
   faqs: SectionLandingFAQ[];
@@ -88,6 +102,27 @@ export const sectionLandingPages: SectionLandingData[] = [
     carouselTitle: "OUR STRIP OUT SERVICES",
     carouselTitleHighlight: "SERVICES",
     carouselDescription: "Comprehensive solutions to return any commercial or industrial space to base condition.",
+    
+    relatedServicesBlock: {
+      title: "A COMPLETE STRIP OUT SERVICE",
+      cards: [
+        {
+          slug: "back-to-base-works",
+          name: "Back to Base Works",
+          description: "We manage the full 'back to base' process, including the disconnection and make-safe of all essential building services."
+        },
+        {
+          slug: "demolition-works",
+          name: "Demolition Works",
+          description: "Our licensed teams perform precise internal demolition, safely removing non-structural partitions, ceilings, flooring and fixtures."
+        },
+        {
+          slug: "waste-management",
+          name: "Waste Management",
+          description: "We provide end-to-end waste management, including the certified handling and disposal of all general and hazardous materials."
+        }
+      ]
+    },
     
     faqs: [
       {
