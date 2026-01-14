@@ -41,6 +41,7 @@ import commercialPaintingHeroImage from "@/assets/services/commercial-warehouse-
 import commercialPaintingScopeImage from "@/assets/services/commercial-painting-scope-surface-preparation-melbourne.jpeg";
 import structuralRemediationHeroImage from "@/assets/services/structural-remediation-concrete-cancer-repair-melbourne.jpg";
 import shotcreteApplicationImage from "@/assets/services/shotcrete-application-structural-repair-melbourne.jpg";
+import palletRackingRemovalHeroImage from "@/assets/services/pallet-racking-removal-melbourne-warehouse.jpeg";
 
 export interface FeaturedSection {
   title: string;
@@ -171,7 +172,7 @@ export const services: Service[] = [
     metaDescription: "Pallet racking removal Melbourne. Core drill and fill dynabolt removal. Concrete slab restoration. All racking types including mezzanines. Licensed operators. Free quotes.",
     heroText: "Whether you are reconfiguring your warehouse, relocating, or preparing for handover, the removal of pallet racking must be done correctly. We don't just dismantle; we restore the concrete slab to a safe, clean condition. This means every anchor is core-drilled and removed, the void is filled with high-strength epoxy resin, and the repair is ground flush to restore your warehouse floor.",
     ogImage: "/og/pallet-racking-removal.jpg",
-    heroImage: "/src/assets/services/pallet-racking-removal-melbourne-warehouse.jpeg",
+    heroImage: palletRackingRemovalHeroImage,
     heroImageAlt: "Partially dismantled orange and blue pallet racking in a large, empty Melbourne warehouse during a strip out",
     heroImageTitle: "Makegood Melbourne - Pallet Racking Removal Service",
     secondaryImage: palletRackingLogisticsImage,
