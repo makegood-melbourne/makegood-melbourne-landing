@@ -97,6 +97,7 @@ export interface SpotlightCard {
 
 export interface RelatedServiceCard {
   slug: string;
+  name: string;
   description: string;
 }
 
@@ -216,14 +217,17 @@ export const services: Service[] = [
       cards: [
         {
           slug: "back-to-base-works",
+          name: "Back to Base Works",
           description: "We manage the full 'back to base' process, including the disconnection and make-safe of all essential building services."
         },
         {
           slug: "demolition-works",
+          name: "Demolition Works",
           description: "Our licensed teams perform precise internal demolition, safely removing non-structural partitions, ceilings, flooring and fixtures."
         },
         {
           slug: "waste-management",
+          name: "Waste Management",
           description: "We provide end-to-end waste management, including the certified handling and disposal of all general and hazardous materials."
         }
       ]

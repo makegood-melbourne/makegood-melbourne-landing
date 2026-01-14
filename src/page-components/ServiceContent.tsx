@@ -575,8 +575,8 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
                         )}
                         <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent" />
                         <div className="absolute bottom-0 left-0 right-0 p-4">
-                          <h3 className="text-xl font-bold text-foreground mb-1">
-                            {linkedService?.name || card.slug}
+                        <h3 className="text-xl font-bold text-foreground mb-1">
+                            {linkedService?.name || card.name}
                           </h3>
                         </div>
                       </div>
@@ -685,8 +685,8 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
         </div>
       </section>
 
-      {/* Related Services */}
-      {relatedServices.length > 0 && (
+      {/* Related Services - Only show if no custom relatedServicesBlock */}
+      {!service.relatedServicesBlock && relatedServices.length > 0 && (
         <section className="py-16 bg-background">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl md:text-4xl text-foreground mb-10">Related Services</h2>
