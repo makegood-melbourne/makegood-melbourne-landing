@@ -42,7 +42,7 @@ import commercialPaintingScopeImage from "@/assets/services/commercial-painting-
 import structuralRemediationHeroImage from "@/assets/services/structural-remediation-concrete-cancer-repair-melbourne.jpg";
 import shotcreteApplicationImage from "@/assets/services/shotcrete-application-structural-repair-melbourne.jpg";
 import palletRackingRemovalHeroImage from "@/assets/services/pallet-racking-removal-melbourne-warehouse.jpeg";
-import wasteManagementBinImage from "@/assets/waste-management-bin.jpg";
+import wasteManagementBinImage from "@/assets/services/waste-management-bin.jpg";
 
 export interface FeaturedSection {
   title: string;
