@@ -278,41 +278,6 @@ const SectionLandingTemplate = ({ data }: SectionLandingTemplateProps) => {
         description={data.carouselDescription}
       />
 
-      {/* Related Services Block - Spotlight-style cards matching structural-remediation */}
-      {data.relatedServicesBlock && (
-        <section className="py-16 bg-background">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl md:text-4xl text-foreground mb-4">
-              {data.relatedServicesBlock.title}
-            </h2>
-            <p className="text-lg text-muted-foreground mb-10">
-              Our strip out services are part of a comprehensive end-of-lease solution. We coordinate all related works to deliver a seamless project.
-            </p>
-            <div className="grid md:grid-cols-3 gap-6">
-              {data.relatedServicesBlock.cards.map((card, index) => (
-                <a
-                  key={index}
-                  href={`/services/${card.slug}`}
-                  className="block group"
-                >
-                  <div className="bg-secondary border border-border hover:border-primary/50 transition-colors overflow-hidden h-full rounded-lg">
-                    <div className="aspect-[4/3] overflow-hidden">
-                      <div className="w-full h-full bg-muted/30 flex items-center justify-center">
-                        <span className="text-muted-foreground/50 text-sm">Service Image</span>
-                      </div>
-                    </div>
-                    <div className="p-6">
-                      <h3 className="text-xl font-semibold text-foreground mb-3">{card.name}</h3>
-                      <p className="text-muted-foreground leading-relaxed">{card.description}</p>
-                    </div>
-                  </div>
-                </a>
-              ))}
-            </div>
-          </div>
-        </section>
-      )}
-
       {/* FAQ Section */}
       {data.faqs && data.faqs.length > 0 && (
         <section className="py-12 md:py-16 bg-muted/30">
