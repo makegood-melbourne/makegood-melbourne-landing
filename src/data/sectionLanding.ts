@@ -96,8 +96,7 @@ export const sectionLandingPages: SectionLandingData[] = [
     serviceSlugs: [
       "back-to-base-works",
       "demolition-works", 
-      "pallet-racking-removal",
-      "waste-management"
+      "pallet-racking-removal"
     ],
     carouselTitle: "OUR STRIP OUT SERVICES",
     carouselTitleHighlight: "SERVICES",
@@ -115,11 +114,6 @@ export const sectionLandingPages: SectionLandingData[] = [
           slug: "demolition-works",
           name: "Demolition Works",
           description: "Our licensed teams perform precise internal demolition, safely removing non-structural partitions, ceilings, flooring and fixtures."
-        },
-        {
-          slug: "waste-management",
-          name: "Waste Management",
-          description: "We provide end-to-end waste management, including the certified handling and disposal of all general and hazardous materials."
         }
       ]
     },

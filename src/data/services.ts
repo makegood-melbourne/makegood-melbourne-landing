@@ -241,11 +241,6 @@ export const services: Service[] = [
           slug: "demolition-works",
           name: "Demolition Works",
           description: "Our licensed teams perform precise internal demolition, safely removing non-structural partitions, ceilings, flooring and fixtures."
-        },
-        {
-          slug: "waste-management",
-          name: "Waste Management",
-          description: "We provide end-to-end waste management, including the certified handling and disposal of all general and hazardous materials."
         }
       ]
     },
@@ -284,7 +279,7 @@ export const services: Service[] = [
       subtitle: "We do Make Goods all day, every day.",
       text: "Whether you're moving, upgrading, or handing back the keys, our professional racking removal service ensures the process is safe, efficient, and compliant. Contact us today for a site assessment and a no-obligation quote, including a potential valuation for your used racking."
     },
-    relatedServices: ["back-to-base-works", "demolition-works", "waste-management"],
+    relatedServices: ["back-to-base-works", "demolition-works"],
     category: "demolition",
     published: true
   },
@@ -1209,7 +1204,7 @@ export const services: Service[] = [
       "Full compliance documentation",
       "Coordinated multi-trade management"
     ],
-    relatedServices: ["demolition-works", "waste-management", "pallet-racking-removal"],
+    relatedServices: ["demolition-works", "pallet-racking-removal"],
     category: "demolition",
     published: true
   },
@@ -1230,28 +1225,7 @@ export const services: Service[] = [
       "Dust-controlled equipment",
       "After-hours work available"
     ],
-    relatedServices: ["back-to-base-works", "waste-management", "pallet-racking-removal"],
-    category: "demolition",
-    published: true
-  },
-  {
-    name: "Waste Management & Disposal",
-    slug: "waste-management",
-    title: "Waste Management & Disposal Melbourne",
-    metaTitle: "Commercial Waste Disposal Melbourne | Certified",
-    description: "We provide end-to-end waste management, including the certified handling and disposal of all materials, from general construction waste to hazardous substances like asbestos.",
-    metaDescription: "Commercial waste management Melbourne. Construction waste disposal. Asbestos removal certification. Recycling solutions. Sustainability reporting. Free quotes.",
-    heroText: "Comprehensive waste management solutions for commercial strip outs and construction projects. We handle everything from general waste to hazardous materials, maximising recycling and providing full disposal documentation.",
-    ogImage: "/og/waste-management.jpg",
-    benefits: [
-      "Licensed hazardous waste removal",
-      "Asbestos identification and disposal",
-      "Recycling and diversion from landfill",
-      "Full waste tracking documentation",
-      "Sustainability reporting available",
-      "Skip bin coordination and removal"
-    ],
-    relatedServices: ["back-to-base-works", "demolition-works", "pallet-racking-removal"],
+    relatedServices: ["back-to-base-works", "pallet-racking-removal"],
     category: "demolition",
     published: true
   }
