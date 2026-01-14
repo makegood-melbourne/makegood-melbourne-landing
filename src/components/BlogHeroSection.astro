@@ -3,8 +3,13 @@ import { Image } from 'astro:assets';
 import { getBlogPostBySlug } from '@/data/blogPosts';
 import { calculateReadingTime } from '@/lib/blogUtils';
 
-// Import all blog images statically - these should match the filenames in blogPosts data
-const blogImages = import.meta.glob<{ default: ImageMetadata }>('/src/assets/blog/*.{jpg,jpeg,png,webp}', { eager: true });
+// Import all blog images statically using relative path from src
+// Using the relative path pattern that works consistently in both dev and production builds
+const blogImagesAbsolute = import.meta.glob<{ default: ImageMetadata }>('/src/assets/blog/*.{jpg,jpeg,png,webp}', { eager: true });
+const blogImagesRelative = import.meta.glob<{ default: ImageMetadata }>('../assets/blog/*.{jpg,jpeg,png,webp}', { eager: true });
+
+// Merge both patterns to ensure we find the image regardless of path resolution
+const blogImages: Record<string, { default: ImageMetadata }> = { ...blogImagesAbsolute, ...blogImagesRelative };
 
 interface Props {
   slug: string;
@@ -19,9 +24,10 @@ if (!post) {
 
 const readingTime = calculateReadingTime(post.content);
 
-// Find matching image from glob imports
-const imagePath = `/src/assets/blog/${post.image}`;
-const imageModule = blogImages[imagePath];
+// Find matching image from glob imports - try multiple path formats
+const absolutePath = `/src/assets/blog/${post.image}`;
+const relativePath = `../assets/blog/${post.image}`;
+const imageModule = blogImages[absolutePath] || blogImages[relativePath];
 const heroImage = imageModule?.default;
 ---
 
