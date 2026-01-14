@@ -184,28 +184,51 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
               {service.relatedServicesBlock.title}
             </h2>
             <div className="grid md:grid-cols-3 gap-6">
-              {service.relatedServicesBlock.cards.map((card, index) => (
-                <a key={index} href={`/services/${card.slug}`} className="block group">
-                  <Card className="overflow-hidden border-border bg-card h-full transition-all duration-300 group-hover:border-primary/50 group-hover:shadow-xl">
-                    <div className="aspect-[4/3] overflow-hidden relative">
-                      <div className="w-full h-full bg-muted/30 flex items-center justify-center">
-                        <span className="text-muted-foreground/50 text-sm">Service Image</span>
+              {service.relatedServicesBlock.cards.map((card, index) => {
+                const linkedService = getServiceBySlug(card.slug);
+                const imageSrc = linkedService?.heroImage
+                  ? resolveImageSrc(linkedService.heroImage)
+                  : service.heroImage
+                    ? resolveImageSrc(service.heroImage)
+                    : undefined;
+
+                const imageAlt = linkedService?.heroImageAlt || `${card.name} Melbourne`;
+
+                return (
+                  <a key={index} href={`/services/${card.slug}`} className="block group">
+                    <Card className="overflow-hidden border-border bg-card h-full transition-all duration-300 group-hover:border-primary/50 group-hover:shadow-xl">
+                      <div className="aspect-[4/3] overflow-hidden relative">
+                        {imageSrc ? (
+                          <img
+                            src={imageSrc}
+                            alt={imageAlt}
+                            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                            loading="lazy"
+                            decoding="async"
+                            width={400}
+                            height={300}
+                          />
+                        ) : (
+                          <div className="w-full h-full bg-muted/30 flex items-center justify-center">
+                            <span className="text-muted-foreground/50 text-sm">Service Image</span>
+                          </div>
+                        )}
+                        <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent" />
+                        <div className="absolute bottom-0 left-0 right-0 p-4">
+                          <h3 className="text-xl font-bold text-foreground mb-1">{card.name}</h3>
+                        </div>
                       </div>
-                      <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent" />
-                      <div className="absolute bottom-0 left-0 right-0 p-4">
-                        <h3 className="text-xl font-bold text-foreground mb-1">{card.name}</h3>
-                      </div>
-                    </div>
-                    <CardContent className="p-4">
-                      <p className="text-sm text-muted-foreground line-clamp-3 mb-3">{card.description}</p>
-                      <span className="inline-flex items-center text-primary text-sm font-medium group-hover:gap-2 transition-all">
-                        Learn More
-                        <ArrowRight className="h-4 w-4 ml-1 transition-transform group-hover:translate-x-1" />
-                      </span>
-                    </CardContent>
-                  </Card>
-                </a>
-              ))}
+                      <CardContent className="p-4">
+                        <p className="text-sm text-muted-foreground line-clamp-3 mb-3">{card.description}</p>
+                        <span className="inline-flex items-center text-primary text-sm font-medium group-hover:gap-2 transition-all">
+                          Learn More
+                          <ArrowRight className="h-4 w-4 ml-1 transition-transform group-hover:translate-x-1" />
+                        </span>
+                      </CardContent>
+                    </Card>
+                  </a>
+                );
+              })}
             </div>
           </div>
         </section>
