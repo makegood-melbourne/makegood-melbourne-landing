@@ -7,6 +7,7 @@ import industrialFloorScrubberImage from "@/assets/services/industrial-warehouse
 import highPressureWarehouseCleaningImage from "@/assets/services/high-pressure-warehouse-cleaning-melbourne.png";
 import warehouseRelocationImage from "@/assets/services/warehouse-relocation-forklift-loading-racking-melbourne.png";
 import palletRackingHeroImage from "@/assets/services/pallet-racking-dismantling-warehouse-floor-melbourne.jpeg";
+import palletRackingLogisticsImage from "@/assets/services/pallet-racking-logistics-transport-melbourne.jpeg";
 import warehouseDynaboltHoleRepairsImage from "@/assets/services/warehouse-dynabolt-hole-repairs-pallet-racking-melbourne.jpeg";
 import warehouseFloorRepairsHeroImage from "@/assets/services/warehouse-floor-repairs-concrete-leveling-melbourne.jpeg";
 import warehouseFloorRepairsScopeImage from "@/assets/services/warehouse-floor-repairs-scope-polished-concrete-melbourne.jpeg";
@@ -53,6 +54,7 @@ export interface FeaturedSection {
 
 export interface CtaBlock {
   title: string;
+  titleHighlight?: string; // Part of title to highlight in orange
   subtitle?: string;
   text: string;
 }
@@ -93,6 +95,11 @@ export interface SpotlightCard {
   description: string;
 }
 
+export interface RelatedServiceCard {
+  slug: string;
+  description: string;
+}
+
 export interface Service {
   name: string;
   slug: string;
@@ -120,6 +127,10 @@ export interface Service {
   capabilitiesTitle?: string; // Title for capabilities section
   capabilitiesSubtitle?: string; // Subtitle for capabilities section
   spotlightCards?: SpotlightCard[]; // Three-card layout with images for key services
+  relatedServicesBlock?: {
+    title: string;
+    cards: RelatedServiceCard[];
+  };
   processAfterSpotlight?: boolean; // Show process after spotlight section instead of default location
   benefits: string[];
   comparison?: Comparison;
@@ -140,30 +151,119 @@ export const services: Service[] = [
     name: "Pallet Racking Removal",
     slug: "pallet-racking-removal",
     title: "Pallet Racking Removal Melbourne",
-    metaTitle: "Pallet Racking Removal Melbourne | Fast Service",
-    description: "Racking bolted to your floor and walls? That's your landlord's problem now—unless you sort it before handover. We dismantle, remove and dispose of all racking systems, protection bollards and wall brackets, then core drill and fill those anchor holes so you get your bond back.",
-    metaDescription: "Pallet racking removal Melbourne. Core drill and fill dynabolt removal. Floor and wall anchors extracted. Bollards removed. Licensed operators. Free quotes.",
-    heroText: "Professional pallet racking dismantling and floor restoration across Melbourne. We remove your racking systems—including wall ties, protection bollards, guard rails and safety gates—then core drill out every dynabolt, fill with epoxy resin and grind flush to remediate your warehouse floor to original condition for handover.",
+    metaTitle: "Pallet Racking Removal Melbourne | Slab Restoration",
+    description: "Whether you are reconfiguring your warehouse, relocating, or preparing for handover, the removal of pallet racking must be done correctly. We don't just dismantle; we restore the concrete slab to a safe, clean condition. This means every anchor is core-drilled and removed, the void is filled with high-strength epoxy resin, and the repair is ground flush to restore your warehouse floor.",
+    metaDescription: "Pallet racking removal Melbourne. Core drill and fill dynabolt removal. Concrete slab restoration. All racking types including mezzanines. Licensed operators. Free quotes.",
+    heroText: "Whether you are reconfiguring your warehouse, relocating, or preparing for handover, the removal of pallet racking must be done correctly. We don't just dismantle; we restore the concrete slab to a safe, clean condition. This means every anchor is core-drilled and removed, the void is filled with high-strength epoxy resin, and the repair is ground flush to restore your warehouse floor.",
     ogImage: "/og/pallet-racking-removal.jpg",
-    heroImage: palletRackingHeroImage,
-    heroImageAlt: "Warehouse with pallet racking being dismantled and stacked on floor ready for removal Melbourne",
-    secondaryImage: warehouseRelocationImage,
-    secondaryImageAlt: "Forklift loading dismantled pallet racking onto flatbed truck for removal from Melbourne warehouse",
-    benefits: [
-      "All types of pallet racking systems including cantilever wall units",
-      "Dynabolt removal from floor slabs and walls",
-      "Removal of safety barriers, bollards and swing gates",
-      "Floor anchor remediation—core drilled, filled with epoxy resin and ground flush",
-      "Transport solutions available",
-      "Buy back, recycling and disposal solutions available",
-      "Complete warehouse slab remediation solutions available"
+    heroImage: "/src/assets/services/pallet-racking-removal-melbourne-warehouse.jpeg",
+    heroImageAlt: "Partially dismantled orange and blue pallet racking in a large, empty Melbourne warehouse during a strip out",
+    heroImageTitle: "Makegood Melbourne - Pallet Racking Removal Service",
+    secondaryImage: palletRackingLogisticsImage,
+    secondaryImageAlt: "Forklift loading dismantled pallet racking components onto a truck in a Melbourne warehouse",
+    trustBadges: [
+      "Licensed & Insured",
+      "Fixed-Price Quotes",
+      "Slab Restoration Included",
+      "Full Documentation"
     ],
-    ctaBlock: {
-      title: "Let Us Handle Your Racking Removal",
-      subtitle: "We do makegoods all day, every day.",
-      text: "Our experienced crew has dismantled hundreds of racking systems across Melbourne, restoring warehouse floors for handover. Get in touch today for a free, no-obligation quote."
+    skipAboutSection: true,
+    capabilityCards: [
+      {
+        icon: "brick",
+        title: "SYSTEM DISMANTLING",
+        items: [
+          "All types of racking systems",
+          "Mezzanine floor removal",
+          "Removal of bollards and guard rails",
+          "Safe, methodical process"
+        ]
+      },
+      {
+        icon: "structure",
+        title: "CONCRETE SLAB RESTORATION",
+        items: [
+          "Core-drilling of all anchors",
+          "High-strength epoxy filling",
+          "Surface grinding for a flush finish",
+          "Crack and chip repairs"
+        ]
+      },
+      {
+        icon: "waterproof",
+        title: "LOGISTICS & RECOVERY",
+        items: [
+          "Stacking, banding and transport",
+          "Full site clean-up and waste disposal",
+          "Purchase offers for used racking",
+          "Detailed project documentation"
+        ]
+      }
+    ],
+    capabilitiesTitle: "PALLET RACKING REMOVAL CAPABILITIES",
+    capabilitiesSubtitle: "Our service covers the complete lifecycle of a pallet racking removal project.",
+    featuredSections: [
+      {
+        title: "MORE THAN JUST DISMANTLING",
+        description: "The removal of industrial racking involves significant logistical and safety challenges. An unprofessional approach can lead to more than just a poor-quality floor repair; it can result in safety incidents, damage to the building's structure or loading docks, and failure to meet the strict deadlines of a lease agreement.\n\nWe manage all site logistics and work to your project's deadlines. Our end-to-end service includes the complete removal of the racking from your site—be it for disposal, resale, or relocation. We then restore the concrete slab to its original condition for handover.",
+        image: palletRackingLogisticsImage,
+        imageAlt: "Forklift loading dismantled pallet racking components onto a truck in a Melbourne warehouse",
+        imageTitle: "Pallet Racking Logistics and Transport"
+      }
+    ],
+    relatedServicesBlock: {
+      title: "A COMPLETE STRIP OUT SERVICE",
+      cards: [
+        {
+          slug: "back-to-base-works",
+          description: "We manage the full 'back to base' process, including the disconnection and make-safe of all essential building services."
+        },
+        {
+          slug: "demolition-works",
+          description: "Our licensed teams perform precise internal demolition, safely removing non-structural partitions, ceilings, flooring and fixtures."
+        },
+        {
+          slug: "waste-management",
+          description: "We provide end-to-end waste management, including the certified handling and disposal of all general and hazardous materials."
+        }
+      ]
     },
-    relatedServices: ["warehouse-floor-restoration", "epoxy-flooring"],
+    benefits: [
+      "All types of racking systems",
+      "Mezzanine floor removal",
+      "Removal of bollards and guard rails",
+      "Core-drilling of all anchors",
+      "High-strength epoxy filling",
+      "Surface grinding for a flush finish",
+      "Stacking, banding and transport",
+      "Full site clean-up and waste disposal"
+    ],
+    faqs: [
+      {
+        question: "Can you buy our used pallet racking?",
+        answer: "Yes, in many cases. If your racking is a standard size and in good, reusable condition, we can offer a competitive purchase price. This can be used as a credit to significantly reduce or even eliminate the cost of the removal works."
+      },
+      {
+        question: "What types of racking do you remove?",
+        answer: "We are equipped to dismantle and remove all common types of industrial and warehouse racking, including selective, double-deep, drive-in, push-back, pallet-flow, cantilever, and mezzanine floor systems."
+      },
+      {
+        question: "Do you also repair the concrete floor after removal?",
+        answer: "Yes. Our service includes the complete removal of all anchors. We then fill the holes with high-strength epoxy resin and grind the repairs flush to leave a clean, safe and compliant floor."
+      },
+      {
+        question: "How long does it take to remove pallet racking?",
+        answer: "The timeline depends on the quantity and type of racking. A small warehouse can often be cleared in a single day, while a large-scale distribution centre may take a week or more. We provide a clear and reliable timeline for every project."
+      }
+    ],
+    faqTitle: "PALLET RACKING REMOVAL FAQs",
+    ctaBlock: {
+      title: "CLEAR YOUR WAREHOUSE",
+      titleHighlight: "WITH CONFIDENCE",
+      subtitle: "We do Make Goods all day, every day.",
+      text: "Whether you're moving, upgrading, or handing back the keys, our professional racking removal service ensures the process is safe, efficient, and compliant. Contact us today for a site assessment and a no-obligation quote, including a potential valuation for your used racking."
+    },
+    relatedServices: ["back-to-base-works", "demolition-works", "waste-management"],
     category: "demolition",
     published: true
   },
