@@ -685,8 +685,8 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
         </div>
       </section>
 
-      {/* Related Services - Only show if no custom relatedServicesBlock */}
-      {!service.relatedServicesBlock && relatedServices.length > 0 && (
+      {/* Related Services - Only show if no custom relatedServicesBlock or linkedSpotlightBlock */}
+      {!service.relatedServicesBlock && !service.linkedSpotlightBlock && relatedServices.length > 0 && (
         <section className="py-16 bg-background">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl md:text-4xl text-foreground mb-10">Related Services</h2>
