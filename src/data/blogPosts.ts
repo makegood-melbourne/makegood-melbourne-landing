@@ -1473,7 +1473,7 @@ Professional floor preparation and carpet tile installation removes the stress f
     date: "1 August 2025",
     excerpt: "Electrical make safe is an essential preliminary step in make good and demolition projects, ensuring all electrical systems are safely decommissioned before strip-out works commence. Licensed electricians isolate, disconnect, and remove electrical installations, returning systems to base building configuration and creating a safe working environment. Learn about electrical make safe procedures, compliance requirements, and integration with make good projects.",
     metaDescription: "Electrical make safe is essential before demolition works. Learn about safe decommissioning, isolation procedures, and compliance requirements in Melbourne.",
-    image: "/src/assets/blog/electrical-make-safe.jpg",
+    image: "electrical-make-safe.jpg",
     content: `Electrical make safe is a critical preliminary phase in commercial make good and demolition projects, involving the safe decommissioning and isolation of all electrical installations before physical strip-out works begin. This essential process protects workers from electrical hazards, ensures regulatory compliance, and allows demolition teams to work efficiently without risk of encountering live electrical systems. Licensed electricians systematically disconnect, isolate, and remove electrical systems, returning installations to base building configuration and providing certification of safe working conditions. This comprehensive guide explores electrical make safe procedures, compliance requirements, safety considerations, and integration with make good projects in Melbourne commercial properties.
 
 ## Understanding Electrical Make Safe
@@ -1920,7 +1920,7 @@ Creating safe working environments for make good and demolition`,
     date: "1 July 2025",
     excerpt: "Ceiling repairs and replacement are critical components of commercial make good projects, addressing water damage, wear, and compliance requirements. From suspended ceiling grid systems and acoustic tiles to plasterboard ceilings and fire-rated systems, professional ceiling works ensure properties meet lease obligations and building standards. Learn about ceiling types, damage assessment, repair processes, and make good requirements.",
     metaDescription: "Ceiling repairs for commercial make good projects. Expert guide on suspended ceilings, acoustic tiles, water damage restoration, and lease compliance in Melbourne.",
-    image: "/src/assets/blog/ceiling-repairs-suspended-acoustic.jpg",
+    image: "ceiling-repairs-suspended-acoustic.jpg",
     content: `Commercial ceiling systems serve multiple critical functions beyond aesthetics - they conceal services, provide acoustic control, contribute to fire safety, and define finished ceiling heights. During lease terms, ceilings often sustain damage from water leaks, mechanical impacts, wear, and modifications for services. Make good obligations typically require ceilings to be returned to original condition or specified standards, making ceiling repairs and replacement a significant component of commercial make good projects. This comprehensive guide explores ceiling types, common damage, repair and replacement processes, and make good considerations for Melbourne commercial properties.
 
 ## Understanding Commercial Ceiling Systems
@@ -2430,7 +2430,7 @@ Professional ceiling solutions for all commercial properties`,
     date: "1 June 2025",
     excerpt: "Parapet failure and facade collapse represent serious building emergencies requiring immediate response to protect public safety. From emergency site securing and debris removal to structural assessment and reconstruction, professional emergency repair services manage the complete response. Learn about causes of parapet failure, emergency procedures, council requirements, structural engineering, and reconstruction processes.",
     metaDescription: "Parapet failure or facade collapse? Learn about emergency building repairs, site securing, structural assessment, and reconstruction for Melbourne commercial properties.",
-    image: "/src/assets/blog/parapet-failure-emergency-repairs.jpg",
+    image: "parapet-failure-emergency-repairs.jpg",
     content: `Parapet failure and facade collapse represent some of the most serious building emergencies in commercial properties, creating immediate public safety risks and requiring urgent professional response. When parapets or building facades fail and debris falls onto footpaths, roads, or adjacent properties, rapid action is essential to secure the site, remove hazards, assess structural integrity, and commence repairs. Professional emergency building repair services coordinate the entire response, from initial emergency securing through structural engineering assessment to complete reconstruction and compliance. This comprehensive guide explores parapet failure causes, emergency response procedures, regulatory requirements, and reconstruction processes for Melbourne commercial properties.
 
 ## Understanding Parapet Failure
