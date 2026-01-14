@@ -1271,3 +1271,72 @@ export function getServicesByCategory(category: 'demolition' | 'make-good' | 'tr
 export function getPublishedServices(): Service[] {
   return services.filter(service => service.published === true);
 }
+
+,
+  {
+    name: "Waste Management",
+    slug: "waste-management",
+    title: "Intelligent Waste Management & Resource Recovery",
+    metaTitle: "Waste Management Melbourne | Steel & Furniture Recovery",
+    description: "We don't just dispose of waste; we recover value. Specialising in steel recycling and office furniture purchasing, we offer a smarter, more sustainable solution for your commercial strip-out needs in Melbourne.",
+    metaDescription: "Expert waste management in Melbourne. We specialise in steel recycling, purchase used office furniture, and provide certified, sustainable disposal for commercial and construction strip-outs.",
+    heroText: "We don't just dispose of waste; we recover value. Specialising in steel recycling and office furniture purchasing, we offer a smarter, more sustainable solution for your commercial strip-out needs in Melbourne.",
+    ogImage: "/og/waste-management.jpg",
+    heroImage: wasteManagementBinImage,
+    heroImageAlt: "Green waste management bin for commercial strip outs in Melbourne",
+    heroImageTitle: "Makegood Melbourne - Waste Management Service",
+    capabilitiesTitle: "A Complete Waste & Resource Recovery Service",
+    capabilityCards: [
+      {
+        icon: "brick",
+        title: "Commercial & Construction Waste",
+        items: ["Comprehensive disposal for all non-hazardous materials from your site, including rubble, timber, plasterboard, and general refuse. We ensure every item is sorted for maximum recycling."]
+      },
+      {
+        icon: "structure",
+        title: "Steel & Metals Recycling",
+        items: ["As steel recycling specialists, we turn your scrap metal into a valuable resource. We recover all ferrous and non-ferrous metals, ensuring they are processed responsibly and contribute to a circular economy."]
+      },
+      {
+        icon: "brick",
+        title: "Office Furniture & E-Waste",
+        items: ["Don't pay to dispose of quality assets. We purchase office furniture in good condition and provide certified disposal for all e-waste, ensuring data security and environmental compliance."]
+      }
+    ],
+    featuredSection: {
+      title: "A Smarter Approach to Waste: From Disposal to Recovery",
+      description: "At Make-Good Melbourne, we see waste as a resource waiting to be realised. Our waste management service is built on a foundation of resource recovery, transforming the traditional disposal model into a value-generating process for your business. We go beyond simply clearing your site; we meticulously sort, process, and recycle materials to minimise landfill and maximise sustainability. Our specialisation in steel recycling allows us to handle large volumes of scrap metal, offering competitive rebates and ensuring it re-enters the supply chain. This commitment to a circular economy not only benefits the environment but also improves your project's bottom line. Furthermore, we are unique in our approach to office furniture. Where others see waste, we see potential. We will assess your used office furniture and, if it's in good condition, we may purchase it from you. For items that can't be resold, we provide a free and responsible disposal service. This approach reduces your disposal costs and gives your assets a second life. Our team is fully certified and adheres to the strictest industry standards and local Melbourne regulations. We provide transparent documentation and ensure full compliance for every project, giving you complete peace of mind."
+    },
+    faqs: [
+      {
+        question: "What types of waste do you handle?",
+        answer: "We manage a wide range of commercial and construction waste, including general refuse, timber, plasterboard, and concrete. We have a specialised focus on recovering and recycling all types of scrap metal, particularly steel. We also handle office furniture and e-waste."
+      },
+      {
+        question: "Are you certified for waste management?",
+        answer: "Yes, our team is fully certified and trained in all aspects of waste management, including the handling of specific materials like e-waste. We operate in full compliance with all Victorian and Melbourne-specific environmental regulations."
+      },
+      {
+        question: "What is your process for office furniture removal?",
+        answer: "During our initial site assessment, we evaluate the condition of your office furniture. We may offer to purchase items that are in good, reusable condition. For all other furniture, we provide a free and environmentally responsible disposal service, aiming to recycle materials wherever possible."
+      },
+      {
+        question: "How do you ensure compliance with local regulations?",
+        answer: "We maintain up-to-date knowledge of all local council and state-level regulations. Our process includes comprehensive documentation, from waste transfer notes to recycling certificates, ensuring your project is fully compliant and auditable."
+      },
+      {
+        question: "What happens to the materials you collect?",
+        answer: "Our primary goal is to divert as much material from landfill as possible. Metals are sent to our partner recycling facilities, timber and concrete are processed for reuse in construction, and office furniture is either resold or broken down for material recycling. We provide detailed reports on the percentage of waste recycled from your project."
+      }
+    ],
+    ctaBlock: {
+      title: "Ready for a Smarter Waste Solution?",
+      subtitle: "Contact us today for a free, no-obligation assessment and discover how our resource recovery approach can benefit your project's budget and environmental footprint.",
+      text: ""
+    },
+    relatedServices: ["pallet-racking-removal", "demolition-works", "back-to-base-works"],
+    category: "make-good",
+    published: true,
+    benefits: []
+  }
+]
