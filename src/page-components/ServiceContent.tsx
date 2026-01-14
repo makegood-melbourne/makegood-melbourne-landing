@@ -176,54 +176,51 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
         );
       })}
 
-      {/* Related Services Block - After Detailed Service Description, before FAQ */}
-      {service.relatedServicesBlock && (
+      {/* Linked Spotlight Block - Spotlight-style cards that link to services (after Featured Sections) */}
+      {service.linkedSpotlightBlock && (
         <section className="py-16 bg-background">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl md:text-4xl text-foreground mb-10">
-              {service.relatedServicesBlock.title}
+            <h2 className="text-3xl md:text-4xl text-foreground mb-4">
+              {service.linkedSpotlightBlock.title}{' '}
+              {service.linkedSpotlightBlock.titleHighlight && (
+                <span className="text-primary">{service.linkedSpotlightBlock.titleHighlight}</span>
+              )}
             </h2>
+            {service.linkedSpotlightBlock.subtitle && (
+              <p className="text-lg text-muted-foreground mb-10">
+                {service.linkedSpotlightBlock.subtitle}
+              </p>
+            )}
             <div className="grid md:grid-cols-3 gap-6">
-              {service.relatedServicesBlock.cards.map((card, index) => {
+              {service.linkedSpotlightBlock.cards.map((card, index) => {
                 const linkedService = getServiceBySlug(card.slug);
                 const imageSrc = linkedService?.heroImage
                   ? resolveImageSrc(linkedService.heroImage)
-                  : service.heroImage
-                    ? resolveImageSrc(service.heroImage)
-                    : undefined;
-
-                const imageAlt = linkedService?.heroImageAlt || `${card.name} Melbourne`;
+                  : undefined;
 
                 return (
                   <a key={index} href={`/services/${card.slug}`} className="block group">
-                    <Card className="overflow-hidden border-border bg-card h-full transition-all duration-300 group-hover:border-primary/50 group-hover:shadow-xl">
-                      <div className="aspect-[4/3] overflow-hidden relative">
+                    <Card className="bg-secondary border-border hover:border-primary/50 transition-colors overflow-hidden h-full">
+                      <div className="aspect-[4/3] overflow-hidden">
                         {imageSrc ? (
                           <img
                             src={imageSrc}
-                            alt={imageAlt}
-                            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                            alt={linkedService?.heroImageAlt || `${card.name} Melbourne`}
+                            className="w-full h-full object-cover"
+                            width={600}
+                            height={450}
                             loading="lazy"
                             decoding="async"
-                            width={400}
-                            height={300}
                           />
                         ) : (
                           <div className="w-full h-full bg-muted/30 flex items-center justify-center">
                             <span className="text-muted-foreground/50 text-sm">Service Image</span>
                           </div>
                         )}
-                        <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent" />
-                        <div className="absolute bottom-0 left-0 right-0 p-4">
-                          <h3 className="text-xl font-bold text-foreground mb-1">{card.name}</h3>
-                        </div>
                       </div>
-                      <CardContent className="p-4">
-                        <p className="text-sm text-muted-foreground line-clamp-3 mb-3">{card.description}</p>
-                        <span className="inline-flex items-center text-primary text-sm font-medium group-hover:gap-2 transition-all">
-                          Learn More
-                          <ArrowRight className="h-4 w-4 ml-1 transition-transform group-hover:translate-x-1" />
-                        </span>
+                      <CardContent className="p-6">
+                        <h3 className="text-xl font-semibold text-foreground mb-3">{card.name}</h3>
+                        <p className="text-muted-foreground leading-relaxed">{card.description}</p>
                       </CardContent>
                     </Card>
                   </a>

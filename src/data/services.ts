@@ -101,6 +101,19 @@ export interface RelatedServiceCard {
   description: string;
 }
 
+export interface LinkedSpotlightCard {
+  slug: string;
+  name: string;
+  description: string;
+}
+
+export interface LinkedSpotlightBlock {
+  title: string;
+  titleHighlight?: string;
+  subtitle?: string;
+  cards: LinkedSpotlightCard[];
+}
+
 export interface Service {
   name: string;
   slug: string;
@@ -128,6 +141,7 @@ export interface Service {
   capabilitiesTitle?: string; // Title for capabilities section
   capabilitiesSubtitle?: string; // Subtitle for capabilities section
   spotlightCards?: SpotlightCard[]; // Three-card layout with images for key services
+  linkedSpotlightBlock?: LinkedSpotlightBlock; // Spotlight-style cards that link to other services
   relatedServicesBlock?: {
     title: string;
     cards: RelatedServiceCard[];
@@ -212,8 +226,10 @@ export const services: Service[] = [
         imageTitle: "Pallet Racking Logistics and Transport"
       }
     ],
-    relatedServicesBlock: {
-      title: "A COMPLETE STRIP OUT SERVICE",
+    linkedSpotlightBlock: {
+      title: "A COMPLETE STRIP OUT",
+      titleHighlight: "SERVICE",
+      subtitle: "Our pallet racking removal is part of a comprehensive strip out solution. We coordinate all related works to deliver a seamless end-of-lease project.",
       cards: [
         {
           slug: "back-to-base-works",

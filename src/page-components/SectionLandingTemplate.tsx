@@ -278,13 +278,16 @@ const SectionLandingTemplate = ({ data }: SectionLandingTemplateProps) => {
         description={data.carouselDescription}
       />
 
-      {/* Related Services Block - Optional section between carousel and FAQ */}
+      {/* Related Services Block - Spotlight-style cards matching structural-remediation */}
       {data.relatedServicesBlock && (
-        <section className="py-16 bg-secondary">
+        <section className="py-16 bg-background">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl md:text-4xl text-foreground mb-10">
+            <h2 className="text-3xl md:text-4xl text-foreground mb-4">
               {data.relatedServicesBlock.title}
             </h2>
+            <p className="text-lg text-muted-foreground mb-10">
+              Our strip out services are part of a comprehensive end-of-lease solution. We coordinate all related works to deliver a seamless project.
+            </p>
             <div className="grid md:grid-cols-3 gap-6">
               {data.relatedServicesBlock.cards.map((card, index) => (
                 <a
@@ -292,26 +295,15 @@ const SectionLandingTemplate = ({ data }: SectionLandingTemplateProps) => {
                   href={`/services/${card.slug}`}
                   className="block group"
                 >
-                  <div className="overflow-hidden border border-border bg-card h-full transition-all duration-300 group-hover:border-primary/50 group-hover:shadow-xl rounded-lg">
-                    <div className="aspect-[4/3] overflow-hidden relative">
+                  <div className="bg-secondary border border-border hover:border-primary/50 transition-colors overflow-hidden h-full rounded-lg">
+                    <div className="aspect-[4/3] overflow-hidden">
                       <div className="w-full h-full bg-muted/30 flex items-center justify-center">
                         <span className="text-muted-foreground/50 text-sm">Service Image</span>
                       </div>
-                      <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent" />
-                      <div className="absolute bottom-0 left-0 right-0 p-4">
-                        <h3 className="text-xl font-bold text-foreground mb-1">
-                          {card.name}
-                        </h3>
-                      </div>
                     </div>
-                    <div className="p-4">
-                      <p className="text-sm text-muted-foreground line-clamp-3 mb-3">
-                        {card.description}
-                      </p>
-                      <span className="inline-flex items-center text-primary text-sm font-medium group-hover:gap-2 transition-all">
-                        Learn More
-                        <ArrowRight className="h-4 w-4 ml-1 transition-transform group-hover:translate-x-1" />
-                      </span>
+                    <div className="p-6">
+                      <h3 className="text-xl font-semibold text-foreground mb-3">{card.name}</h3>
+                      <p className="text-muted-foreground leading-relaxed">{card.description}</p>
                     </div>
                   </div>
                 </a>
