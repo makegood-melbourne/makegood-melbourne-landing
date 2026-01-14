@@ -24,9 +24,12 @@ if (!post) {
 
 const readingTime = calculateReadingTime(post.content);
 
+// Normalise the image field (some entries include a full path instead of just the filename)
+const imageFileName = (post.image?.split('/').pop() || post.image).replace(/^\.+\//, '');
+
 // Find matching image from glob imports - try multiple path formats
-const absolutePath = `/src/assets/blog/${post.image}`;
-const relativePath = `../assets/blog/${post.image}`;
+const absolutePath = `/src/assets/blog/${imageFileName}`;
+const relativePath = `../assets/blog/${imageFileName}`;
 const imageModule = blogImages[absolutePath] || blogImages[relativePath];
 const heroImage = imageModule?.default;
 ---
