@@ -42,6 +42,7 @@ import commercialPaintingScopeImage from "@/assets/services/commercial-painting-
 import structuralRemediationHeroImage from "@/assets/services/structural-remediation-concrete-cancer-repair-melbourne.jpg";
 import shotcreteApplicationImage from "@/assets/services/shotcrete-application-structural-repair-melbourne.jpg";
 import palletRackingRemovalHeroImage from "@/assets/services/pallet-racking-removal-melbourne-warehouse.jpeg";
+import wasteManagementBinImage from "@/assets/services/waste-management-bin.jpg";
 
 export interface FeaturedSection {
   title: string;
@@ -245,7 +246,9 @@ export const services: Service[] = [
         {
           slug: "waste-management",
           name: "Waste Management",
-          description: "We provide end-to-end waste management, including the certified handling and disposal of all general and hazardous materials."
+          description: "We provide end-to-end waste management, including the certified handling and disposal of all general and hazardous materials.",
+          image: wasteManagementBinImage,
+          imageAlt: "Green waste management bin for waste disposal"
         }
       ]
     },
