@@ -18,11 +18,11 @@ import {
 // Service categories for navigation grouping - 4 main sections
 const serviceCategories = [
   {
-    label: "Strip Out",
+    label: "Strip Outs",
     href: "/services/strip-out",  // Clickable category header
     slugs: ['back-to-base-works', 'demolition-works', 'pallet-racking-removal', 'waste-management'],
     displayNames: {
-      'pallet-racking-removal': 'Racking Removal',
+      'pallet-racking-removal': 'Pallet Racking Removal',
       'back-to-base-works': 'Back to Base Works',
       'demolition-works': 'Demolition Works',
       'waste-management': 'Waste Management'
