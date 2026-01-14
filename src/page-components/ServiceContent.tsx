@@ -176,60 +176,7 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
         );
       })}
 
-      {/* Linked Spotlight Block - Spotlight-style cards that link to services (after Featured Sections) */}
-      {service.linkedSpotlightBlock && (
-        <section className="py-16 bg-background">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl md:text-4xl text-foreground mb-4">
-              {service.linkedSpotlightBlock.title}{' '}
-              {service.linkedSpotlightBlock.titleHighlight && (
-                <span className="text-primary">{service.linkedSpotlightBlock.titleHighlight}</span>
-              )}
-            </h2>
-            {service.linkedSpotlightBlock.subtitle && (
-              <p className="text-lg text-muted-foreground mb-10">
-                {service.linkedSpotlightBlock.subtitle}
-              </p>
-            )}
-            <div className="grid md:grid-cols-3 gap-6">
-              {service.linkedSpotlightBlock.cards.map((card, index) => {
-                const linkedService = getServiceBySlug(card.slug);
-                const imageSrc = linkedService?.heroImage
-                  ? resolveImageSrc(linkedService.heroImage)
-                  : undefined;
 
-                return (
-                  <a key={index} href={`/services/${card.slug}`} className="block group">
-                    <Card className="bg-secondary border-border hover:border-primary/50 transition-colors overflow-hidden h-full">
-                      <div className="aspect-[4/3] overflow-hidden">
-                        {imageSrc ? (
-                          <img
-                            src={imageSrc}
-                            alt={linkedService?.heroImageAlt || `${card.name} Melbourne`}
-                            className="w-full h-full object-cover"
-                            width={600}
-                            height={450}
-                            loading="lazy"
-                            decoding="async"
-                          />
-                        ) : (
-                          <div className="w-full h-full bg-muted/30 flex items-center justify-center">
-                            <span className="text-muted-foreground/50 text-sm">Service Image</span>
-                          </div>
-                        )}
-                      </div>
-                      <CardContent className="p-6">
-                        <h3 className="text-xl font-semibold text-foreground mb-3">{card.name}</h3>
-                        <p className="text-muted-foreground leading-relaxed">{card.description}</p>
-                      </CardContent>
-                    </Card>
-                  </a>
-                );
-              })}
-            </div>
-          </div>
-        </section>
-      )}
 
       {/* Process Section - For services that skip the About section */}
       {service.skipAboutSection && service.process && service.process.length > 0 && !service.processAfterScope && (
@@ -573,8 +520,8 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
                 </div>
                 <div className={shouldReverseLayout ? 'lg:order-1' : ''}>
                   {section.image ? (
-                    <img 
-                      src={resolveImageSrc(section.image)} 
+                    <img
+                      src={resolveImageSrc(section.image)}
                       alt={section.imageAlt || `${service.name} professional services Melbourne`}
                       className="aspect-[4/3] w-full object-cover rounded-lg"
                       style={{ objectPosition: section.imagePosition === 'left' ? 'left center' : section.imagePosition === 'right' ? 'right center' : 'center' }}
@@ -595,8 +542,63 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
         );
       })}
 
+      {/* Linked Spotlight Block - Related Services (must sit directly above FAQ) */}
+      {service.linkedSpotlightBlock && (
+        <section className="py-16 bg-background">
+          <div className="container mx-auto px-4">
+            <h2 className="text-3xl md:text-4xl text-foreground mb-4">
+              {service.linkedSpotlightBlock.title}{" "}
+              {service.linkedSpotlightBlock.titleHighlight && (
+                <span className="text-primary">{service.linkedSpotlightBlock.titleHighlight}</span>
+              )}
+            </h2>
+            {service.linkedSpotlightBlock.subtitle && (
+              <p className="text-lg text-muted-foreground mb-10">
+                {service.linkedSpotlightBlock.subtitle}
+              </p>
+            )}
+            <div className="grid md:grid-cols-3 gap-6">
+              {service.linkedSpotlightBlock.cards.map((card, index) => {
+                const linkedService = getServiceBySlug(card.slug);
+                const imageSrc = linkedService?.heroImage
+                  ? resolveImageSrc(linkedService.heroImage)
+                  : undefined;
+
+                return (
+                  <a key={index} href={`/services/${card.slug}`} className="block group">
+                    <Card className="bg-secondary border-border hover:border-primary/50 transition-colors overflow-hidden h-full">
+                      <div className="aspect-[4/3] overflow-hidden">
+                        {imageSrc ? (
+                          <img
+                            src={imageSrc}
+                            alt={linkedService?.heroImageAlt || `${card.name} Melbourne`}
+                            className="w-full h-full object-cover"
+                            width={600}
+                            height={450}
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        ) : (
+                          <div className="w-full h-full bg-muted/30 flex items-center justify-center">
+                            <span className="text-muted-foreground/50 text-sm">Service Image</span>
+                          </div>
+                        )}
+                      </div>
+                      <CardContent className="p-6">
+                        <h3 className="text-xl font-semibold text-foreground mb-3">{card.name}</h3>
+                        <p className="text-muted-foreground leading-relaxed">{card.description}</p>
+                      </CardContent>
+                    </Card>
+                  </a>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* FAQ Section */}
+
       {service.faqs && service.faqs.length > 0 && (
         <section className="py-16 bg-background">
           <div className="container mx-auto px-4">
