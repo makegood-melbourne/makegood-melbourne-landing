@@ -46,6 +46,8 @@ import shotcreteApplicationImage from "@/assets/services/shotcrete-application-s
 import palletRackingRemovalHeroImage from "@/assets/services/pallet-racking-removal-melbourne-warehouse.jpeg";
 import commercialDemolitionHeroImage from "@/assets/services/commercial-demolition-melbourne-hero.jpg";
 import commercialDemolitionFeaturedImage from "@/assets/services/commercial-demolition-melbourne-featured.jpg";
+import makeSafeWorksHeroImage from "@/assets/services/make-safe-works-melbourne-hero.jpg";
+import backToBaseCablingImage from "@/assets/services/back-to-base-cabling-melbourne.jpg";
 
 export interface FeaturedSection {
   title: string;
@@ -1301,7 +1303,7 @@ export const services: Service[] = [
     metaDescription: "Make safe works Melbourne. Electrical, plumbing and HVAC disconnection. Back to base cabling. Certified building services disconnection for end-of-lease make good.",
     heroText: "We disconnect and make safe all building services for your end-of-lease make good, returning all cabling back to base with full certification.",
     ogImage: "/og/make-safe-works.jpg",
-    heroImage: "/images/services/make-safe-works-melbourne-hero.jpg",
+    heroImage: makeSafeWorksHeroImage,
     heroImageAlt: "Electrical switchboard and meter panels with organized conduit and cabling for make safe works in Melbourne",
     heroImageTitle: "Makegood Melbourne - Make Safe Works Service",
     trustBadges: [
@@ -1349,7 +1351,7 @@ export const services: Service[] = [
       {
         title: "BACK TO BASE WORKS",
         description: "As part of your end-of-lease make good works, all building services need to be properly disconnected with all cabling returned back to base. We handle the complete disconnection of electrical, plumbing and HVAC systems. All certificates of completed works are provided upon handover.\n\nWe work within your project timeline, coordinating with our demolition crew throughout the entire strip out. From initial disconnection through to final certification, we manage the process to keep your make good on schedule.",
-        image: "/images/services/back-to-base-cabling-melbourne.jpg",
+        image: backToBaseCablingImage,
         imageAlt: "Organized orange data cabling properly managed and routed back to base in commercial building Melbourne",
         imageTitle: "Professional Back to Base Cabling - Delivered On Time",
         imageLeft: true
