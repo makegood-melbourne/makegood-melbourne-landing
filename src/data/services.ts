@@ -44,6 +44,8 @@ import commercialBuildingFacadePaintingImage from "@/assets/services/commercial-
 import structuralRemediationHeroImage from "@/assets/services/structural-remediation-concrete-cancer-repair-melbourne.jpg";
 import shotcreteApplicationImage from "@/assets/services/shotcrete-application-structural-repair-melbourne.jpg";
 import palletRackingRemovalHeroImage from "@/assets/services/pallet-racking-removal-melbourne-warehouse.jpeg";
+import commercialDemolitionHeroImage from "@/assets/services/commercial-demolition-melbourne-hero.jpg";
+import commercialDemolitionFeaturedImage from "@/assets/services/commercial-demolition-melbourne-featured.jpg";
 
 export interface FeaturedSection {
   title: string;
@@ -1213,19 +1215,114 @@ export const services: Service[] = [
   {
     name: "Demolition Works",
     slug: "demolition-works",
-    title: "Demolition Works Melbourne",
-    metaTitle: "Commercial Demolition Works Melbourne | Licensed",
-    description: "Our licensed team performs precise internal demolition, safely removing non-structural partitions, ceilings, flooring, fixtures, and fittings with minimal disruption.",
-    metaDescription: "Commercial demolition works Melbourne. Office strip out and internal demolition. Partition removal. Ceiling demolition. Licensed operators. Free quotes.",
-    heroText: "Selective internal demolition for commercial and industrial properties. We carefully remove partitions, suspended ceilings, flooring, fixtures and fittings without damaging the base building structure or surrounding tenancies.",
+    title: "Commercial & Industrial Demolition Melbourne",
+    metaTitle: "Commercial & Industrial Demolition Melbourne | Licensed Strip Out",
+    description: "From office de-fits to warehouse strip-outs, we restore your tenancy to its base condition. We remove partitions, ceilings and floor coverings, working within your project timeframes to ensure your make good is ready for handover on time.",
+    metaDescription: "Commercial and industrial demolition Melbourne. Office strip out, warehouse demolition, partition removal, floor covering removal. Licensed, insured. Free quotes.",
+    heroText: "From office de-fits to warehouse strip-outs, we restore your tenancy to its base condition. We remove partitions, ceilings and floor coverings, working within your project timeframes to ensure your make good is ready for handover on time.",
     ogImage: "/og/demolition-works.jpg",
+    heroImage: commercialDemolitionHeroImage,
+    heroImageAlt: "Empty commercial warehouse space after demolition and strip out in Melbourne, showing clean concrete floor and exposed ceiling services",
+    heroImageTitle: "Makegood Melbourne - Commercial & Industrial Demolition Service",
+    trustBadges: [
+      "Licensed & Insured",
+      "Fixed-Price Quotes",
+      "After-Hours Available",
+      "Full Documentation"
+    ],
+    skipAboutSection: true,
+    capabilityCards: [
+      {
+        icon: "brick",
+        title: "INTERNAL STRIP-OUTS",
+        items: [
+          "Drywall and glazed partitions",
+          "Internal doors and frames",
+          "Suspended ceilings and grids",
+          "Removal of fixtures and fittings"
+        ]
+      },
+      {
+        icon: "structure",
+        title: "FLOOR COVERING REMOVAL",
+        items: [
+          "Carpet and carpet tiles",
+          "Vinyl and timber flooring",
+          "Removal of epoxy coatings",
+          "Concrete grinding and levelling"
+        ]
+      },
+      {
+        icon: "waterproof",
+        title: "WASTE MANAGEMENT SOLUTIONS",
+        items: [
+          "Disposal of fittings, fixtures and furniture",
+          "Where possible, materials are salvaged to be recycled",
+          "Compliant handling and disposal of asbestos and other chemicals",
+          "Skip bin management and certified disposal"
+        ]
+      }
+    ],
+    capabilitiesTitle: "DEMOLITION WORKS CAPABILITIES",
+    capabilitiesSubtitle: "Our service covers the complete lifecycle of a commercial demolition project.",
+    featuredSections: [
+      {
+        title: "DEMOLITION, DONE RIGHT",
+        description: "We approach every strip-out with a clear plan of works designed to meet your end-of-lease obligations on schedule. By coordinating directly with building management, we ensure a smooth process that fulfills all lease requirements without delays or complications.\n\nOur expertise extends beyond offices and warehouses to include retail, hospitality and medical centres. We are licensed, insured and have the capability to work after hours to avoid disrupting adjacent tenants. This thorough planning allows us to identify challenges early, delivering a successful handover with no surprise variations.",
+        image: commercialDemolitionFeaturedImage,
+        imageAlt: "Empty commercial office space after demolition and strip out in Melbourne, showing clean concrete floor and exposed ceiling infrastructure",
+        imageTitle: "Professional Commercial Demolition - Delivered On Time",
+        imageLeft: true
+      }
+    ],
+    relatedServicesBlock: {
+      title: "A COMPLETE STRIP OUT SERVICE",
+      cards: [
+        {
+          slug: "back-to-base-works",
+          name: "Back to Base Works",
+          description: "We manage the full 'back to base' process, including the disconnection and make-safe of all essential building services."
+        },
+        {
+          slug: "pallet-racking-removal",
+          name: "Pallet Racking Removal",
+          description: "Complete dismantling and slab restoration service for all types of industrial racking systems."
+        }
+      ]
+    },
+    faqs: [
+      {
+        question: "What is the difference between your demolition service and a standard strip-out?",
+        answer: "Our demolition service is a core component of a complete strip-out or make-good project. While a strip-out focuses on removing all additions, our demolition works specifically handle the deconstruction of internal walls, fixed structures and flooring that require technical expertise and certified operators."
+      },
+      {
+        question: "Can you work in a live environment or an occupied building?",
+        answer: "Yes. We specialise in projects within live environments. Our team implements strict dust control measures, manages noise levels and schedules work to minimise disruption to your ongoing business operations or adjacent tenants."
+      },
+      {
+        question: "How do you ensure a project stays on schedule and on budget?",
+        answer: "Our process is built on thorough planning. We conduct a detailed site assessment to understand the full scope of work and identify potential challenges. This allows us to provide a fixed-price quote with no variations, giving you complete certainty from start to finish."
+      },
+      {
+        question: "What types of waste do you handle during demolition?",
+        answer: "We manage all waste generated from the demolition process. This includes general construction debris (drywall, timber), concrete, scrap metal (which we segregate for recycling) and flooring materials. We are also equipped to manage the certified disposal of hazardous materials through our specialist partners."
+      },
+      {
+        question: "Is demolition always required for a make good?",
+        answer: "Not always, but it is a common requirement in most commercial lease agreements. The goal of a make good is to return the space to its original base condition, which typically involves removing all non-original partitions, fixtures and fittings. Our demolition service is specifically designed to handle this deconstruction phase of the end-of-lease process efficiently and correctly."
+      }
+    ],
+    ctaBlock: {
+      title: "Ready to Clear Your Space with Confidence?",
+      text: "Contact us for a detailed site assessment and a fixed-price quote. Let us show you how a reliable demolition partner makes all the difference in your end-of-lease project."
+    },
     benefits: [
-      "Selective internal demolition",
-      "Partition and ceiling removal",
-      "Flooring and carpet strip-out",
-      "Fixture and fitting removal",
-      "Dust-controlled equipment",
-      "After-hours work available"
+      "Internal strip-outs and partition removal",
+      "Floor covering removal and concrete prep",
+      "Waste management and certified disposal",
+      "Licensed and insured operators",
+      "After-hours work capability",
+      "Fixed-price quotes with no variations"
     ],
     relatedServices: ["back-to-base-works", "pallet-racking-removal"],
     category: "demolition",
