@@ -46,6 +46,8 @@ import shotcreteApplicationImage from "@/assets/services/shotcrete-application-s
 import palletRackingRemovalHeroImage from "@/assets/services/pallet-racking-removal-melbourne-warehouse.jpeg";
 import commercialDemolitionHeroImage from "@/assets/services/commercial-demolition-melbourne-hero.jpg";
 import commercialDemolitionFeaturedImage from "@/assets/services/commercial-demolition-melbourne-featured.jpg";
+import makeSafeWorksHeroImage from "@/assets/services/make-safe-works-melbourne-hero.jpg";
+import backToBaseCablingImage from "@/assets/services/back-to-base-cabling-melbourne.jpg";
 
 export interface FeaturedSection {
   title: string;
@@ -237,8 +239,8 @@ export const services: Service[] = [
       subtitle: "Our pallet racking removal is part of a comprehensive strip out solution. We coordinate all related works to deliver a seamless end-of-lease project.",
       cards: [
         {
-          slug: "back-to-base-works",
-          name: "Back to Base Works",
+          slug: "make-safe-works",
+          name: "MAKE SAFE WORKS",
           description: "We manage the full 'back to base' process, including the disconnection and make-safe of all essential building services."
         },
         {
@@ -283,7 +285,7 @@ export const services: Service[] = [
       subtitle: "We do Make Goods all day, every day.",
       text: "Whether you're moving, upgrading, or handing back the keys, our professional racking removal service ensures the process is safe, efficient, and compliant. Contact us today for a site assessment and a no-obligation quote, including a potential valuation for your used racking."
     },
-    relatedServices: ["back-to-base-works", "demolition-works"],
+    relatedServices: ["demolition-works", "make-safe-works"],
     category: "demolition",
     published: true
   },
@@ -1190,28 +1192,7 @@ export const services: Service[] = [
     category: "structural",
     published: true
   },
-  // Strip Out Category - Placeholder services for carousel
-  {
-    name: "Back to Base Works",
-    slug: "back-to-base-works",
-    title: "Back to Base Works Melbourne",
-    metaTitle: "Back to Base Works Melbourne | Service Disconnection",
-    description: "We expertly manage the disconnection and make-safe of all essential services, including electrical, fire, HVAC, and plumbing, ensuring the property is compliant and ready for the next tenant.",
-    metaDescription: "Professional back to base works in Melbourne. Electrical, fire, HVAC and plumbing disconnection. Licensed contractors. End of lease compliance. Free quotes.",
-    heroText: "Complete service disconnection and make-safe works for commercial properties. Our licensed team manages the systematic disconnection of electrical, fire, HVAC and plumbing systems, ensuring compliance with all building codes and landlord requirements.",
-    ogImage: "/og/back-to-base-works.jpg",
-    benefits: [
-      "Electrical disconnection and make-safe certification",
-      "Fire services isolation and testing",
-      "HVAC system decommissioning",
-      "Plumbing capping and certification",
-      "Full compliance documentation",
-      "Coordinated multi-trade management"
-    ],
-    relatedServices: ["demolition-works", "pallet-racking-removal"],
-    category: "demolition",
-    published: true
-  },
+
   {
     name: "Demolition Works",
     slug: "demolition-works",
@@ -1309,7 +1290,126 @@ export const services: Service[] = [
       "After-hours work capability",
       "Fixed-price quotes with no variations"
     ],
-    relatedServices: ["back-to-base-works", "pallet-racking-removal"],
+    relatedServices: ["make-safe-works", "pallet-racking-removal"],
+    category: "demolition",
+    published: true
+  },
+  {
+    name: "Make Safe Works",
+    slug: "make-safe-works",
+    title: "Make Safe Works Melbourne",
+    metaTitle: "Make Safe Works Melbourne | Back to Base Disconnection",
+    description: "We disconnect and make safe all building services for your end-of-lease make good, returning all cabling back to base with full certification.",
+    metaDescription: "Make safe works Melbourne. Electrical, plumbing and HVAC disconnection. Back to base cabling. Certified building services disconnection for end-of-lease make good.",
+    heroText: "We disconnect and make safe all building services for your end-of-lease make good, returning all cabling back to base with full certification.",
+    ogImage: "/og/make-safe-works.jpg",
+    heroImage: makeSafeWorksHeroImage,
+    heroImageAlt: "Electrical switchboard and meter panels with organized conduit and cabling for make safe works in Melbourne",
+    heroImageTitle: "Makegood Melbourne - Make Safe Works Service",
+    trustBadges: [
+      "Licensed & Insured",
+      "Fixed-Price Quotes",
+      "After-Hours Available",
+      "Full Documentation"
+    ],
+    skipAboutSection: true,
+    capabilityCards: [
+      {
+        icon: "brick",
+        title: "ELECTRICAL MAKE SAFE",
+        items: [
+          "Disconnection of power circuits",
+          "Removal of lighting and power points",
+          "Data and communications cabling",
+          "Electrical certification provided"
+        ]
+      },
+      {
+        icon: "structure",
+        title: "HVAC & MECHANICAL",
+        items: [
+          "Air conditioning disconnection",
+          "Ductwork removal and capping",
+          "Ventilation system isolation",
+          "Mechanical certification provided"
+        ]
+      },
+      {
+        icon: "waterproof",
+        title: "PLUMBING WORKS",
+        items: [
+          "Water supply disconnection",
+          "Drainage isolation and capping",
+          "Fixture removal and make good",
+          "Plumbing certification provided"
+        ]
+      }
+    ],
+    capabilitiesTitle: "MAKE SAFE WORKS CAPABILITIES",
+    capabilitiesSubtitle: "Our service covers the complete disconnection of all building services for your end-of-lease make good.",
+    featuredSections: [
+      {
+        title: "BACK TO BASE WORKS",
+        description: "As part of your end-of-lease make good works, all building services need to be properly disconnected with all cabling returned back to base. We handle the complete disconnection of electrical, plumbing and HVAC systems. All certificates of completed works are provided upon handover.\n\nWe work within your project timeline, coordinating with our demolition crew throughout the entire strip out. From initial disconnection through to final certification, we manage the process to keep your make good on schedule.",
+        image: backToBaseCablingImage,
+        imageAlt: "Organized orange data cabling properly managed and routed back to base in commercial building Melbourne",
+        imageTitle: "Professional Back to Base Cabling - Delivered On Time",
+        imageLeft: true
+      }
+    ],
+    linkedSpotlightBlock: {
+      title: "A COMPLETE STRIP OUT",
+      titleHighlight: "SERVICE",
+      subtitle: "Our make safe works are part of a comprehensive strip out solution. We coordinate all related works to deliver your end-of-lease project on time.",
+      cards: [
+        {
+          slug: "demolition-works",
+          name: "DEMOLITION WORKS",
+          description: "Our licensed teams perform precise internal demolition, safely removing non-structural partitions, ceilings, flooring and fixtures."
+        },
+        {
+          slug: "pallet-racking-removal",
+          name: "PALLET RACKING REMOVAL",
+          description: "We manage the full 'back to base' process, including the disconnection and make-safe of all essential building services."
+        }
+      ]
+    },
+    faqs: [
+      {
+        question: "What does 'back to base' mean?",
+        answer: "Back to base refers to disconnecting all building services and returning cabling to its original connection point. This is a standard requirement for end-of-lease make good works, ensuring the space is returned to base building condition."
+      },
+      {
+        question: "What certifications do you provide?",
+        answer: "We provide certificates of completed works for all electrical, plumbing and HVAC disconnections. These certificates are required for your lease handover and are included with every project."
+      },
+      {
+        question: "How do you coordinate with other trades?",
+        answer: "We work directly with our demolition crew and schedule all disconnections to align with your strip out timeline. This ensures building services are disconnected at the right stage without delaying your project."
+      },
+      {
+        question: "Do you handle fire services disconnection?",
+        answer: "Fire services are typically managed by building management, but we can coordinate directly with them or provide the disconnection service if required. This includes isolating fire panels, removing detectors and returning all cabling back to base."
+      },
+      {
+        question: "Do you handle emergency or after-hours work?",
+        answer: "Yes. We can schedule disconnections outside business hours or on weekends to meet your project deadlines and minimize disruption to other tenants in the building."
+      }
+    ],
+    ctaBlock: {
+      title: "Ready to Start Your Make Good Project?",
+      text: "Get a detailed quote for your end-of-lease make safe works. We'll coordinate all disconnections and provide the certifications you need for handover."
+    },
+    benefits: [
+      "Electrical, plumbing and HVAC disconnection",
+      "Fire services coordination",
+      "All cabling returned back to base",
+      "Certificates of completed works provided",
+      "Licensed and insured operators",
+      "After-hours work capability",
+      "Fixed-price quotes with no variations"
+    ],
+    relatedServices: ["demolition-works", "pallet-racking-removal"],
     category: "demolition",
     published: true
   }

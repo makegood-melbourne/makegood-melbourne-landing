@@ -94,8 +94,8 @@ export const sectionLandingPages: SectionLandingData[] = [
     ],
     
     serviceSlugs: [
-      "back-to-base-works",
-      "demolition-works", 
+      "demolition-works",
+      "make-safe-works", 
       "pallet-racking-removal"
     ],
     carouselTitle: "OUR STRIP OUT SERVICES",
@@ -106,14 +106,14 @@ export const sectionLandingPages: SectionLandingData[] = [
       title: "A COMPLETE STRIP OUT SERVICE",
       cards: [
         {
-          slug: "back-to-base-works",
-          name: "Back to Base Works",
-          description: "We manage the full 'back to base' process, including the disconnection and make-safe of all essential building services."
+          slug: "demolition-works",
+          name: "DEMOLITION WORKS",
+          description: "Our licensed teams perform precise internal demolition, safely removing non-structural partitions, ceilings, flooring and fixtures."
         },
         {
-          slug: "demolition-works",
-          name: "Demolition Works",
-          description: "Our licensed teams perform precise internal demolition, safely removing non-structural partitions, ceilings, flooring and fixtures."
+          slug: "make-safe-works",
+          name: "MAKE SAFE WORKS",
+          description: "We manage the full 'back to base' process, including the disconnection and make-safe of all essential building services."
         }
       ]
     },
