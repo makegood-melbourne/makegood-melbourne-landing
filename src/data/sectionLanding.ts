@@ -2,6 +2,7 @@
 // Strip Out, Make Good, Handover, Remediation
 
 import buildingRemediationHero from "@/assets/services/building-remediation-melbourne-shotcrete.jpg";
+import stripOutHero from "@/assets/services/commercial-industrial-strip-out-melbourne.jpg";
 
 export interface SectionLandingFAQ {
   question: string;
@@ -80,7 +81,7 @@ export const sectionLandingPages: SectionLandingData[] = [
       { icon: "dollar", title: "Fixed-Price Quotes" },
       { icon: "document", title: "Full Project Documentation" }
     ],
-    heroImage: "/src/assets/services/commercial-industrial-strip-out-melbourne.jpg",
+    heroImage: stripOutHero,
     heroImageAlt: "A large commercial space undergoing a full strip out and back to base works by the Makegood Melbourne team.",
     heroImageTitle: "Makegood Melbourne - Commercial and Industrial Strip Out Specialists",
     
@@ -160,7 +161,7 @@ export const sectionLandingPages: SectionLandingData[] = [
       { icon: "dollar", title: "Fixed-Price Quotes" },
       { icon: "document", title: "Full Documentation" }
     ],
-    heroImage: "/src/assets/services/building-remediation-melbourne-shotcrete.jpg",
+    heroImage: buildingRemediationHero,
     heroImageAlt: "Close-up of a worker applying shotcrete for concrete remediation services in Melbourne",
     heroImageTitle: "Makegood Melbourne - Expert Building Remediation Services",
     
