@@ -156,17 +156,25 @@ const SectionLandingTemplate = ({ data }: SectionLandingTemplateProps) => {
               {/* Hero Image - Mobile only */}
               <div className="lg:hidden mb-6">
                 {data.heroImage ? (
-                  <img 
-                    src={resolveImageSrc(data.heroImage)} 
-                    alt={data.heroImageAlt || `${data.title} - professional commercial services`}
-                    title={data.heroImageTitle}
-                    className="aspect-[4/3] w-full object-cover rounded-lg"
-                    width={800}
-                    height={600}
-                    loading="eager"
-                    decoding="async"
-                    fetchPriority="high"
-                  />
+                  <picture>
+                    {data.heroImageMobile && (
+                      <source 
+                        srcSet={resolveImageSrc(data.heroImageMobile)} 
+                        media="(max-width: 1023px)" 
+                      />
+                    )}
+                    <img 
+                      src={resolveImageSrc(data.heroImage)} 
+                      alt={data.heroImageAlt || `${data.title} - professional commercial services`}
+                      title={data.heroImageTitle}
+                      className="aspect-[4/3] w-full object-cover rounded-lg"
+                      width={800}
+                      height={600}
+                      loading="eager"
+                      decoding="async"
+                      fetchPriority="high"
+                    />
+                  </picture>
                 ) : (
                   <div className="aspect-[4/3] bg-muted/30 rounded-lg border-2 border-dashed border-muted-foreground/20 flex items-center justify-center">
                     <span className="text-muted-foreground/50 text-sm">Section Image</span>

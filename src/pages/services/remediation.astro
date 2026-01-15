@@ -5,6 +5,8 @@ import Navigation from '../../components/Navigation';
 import SectionLandingTemplate from '../../page-components/SectionLandingTemplate';
 import Footer from '../../components/Footer';
 import { getSectionLandingBySlug } from '../../data/sectionLanding';
+import buildingRemediationHero from '../../assets/services/building-remediation-melbourne-shotcrete.jpg';
+import buildingRemediationHeroMobile from '../../assets/services/building-remediation-melbourne-shotcrete-mobile.jpg';
 
 const data = getSectionLandingBySlug('remediation');
 
@@ -19,6 +21,8 @@ if (!data) {
   ogImage={data.ogImage || "/og-default.jpg"}
   canonicalUrl="https://makegood.melbourne/services/remediation"
 >
+  <link slot="head" rel="preload" as="image" href={buildingRemediationHeroMobile.src} fetchpriority="high" media="(max-width: 1023px)" />
+  <link slot="head" rel="preload" as="image" href={buildingRemediationHero.src} fetchpriority="high" media="(min-width: 1024px)" />
   <div class="min-h-screen flex flex-col bg-background">
     <!-- Skip to Content Link for Accessibility -->
     <a

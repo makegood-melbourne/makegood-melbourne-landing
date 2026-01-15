@@ -5,6 +5,8 @@ import Navigation from '../../components/Navigation';
 import SectionLandingTemplate from '../../page-components/SectionLandingTemplate';
 import Footer from '../../components/Footer';
 import { getSectionLandingBySlug } from '../../data/sectionLanding';
+import stripOutHero from '../../assets/services/commercial-industrial-strip-out-melbourne.jpg';
+import stripOutHeroMobile from '../../assets/services/commercial-industrial-strip-out-melbourne-mobile.jpg';
 
 const data = getSectionLandingBySlug('strip-out');
 
@@ -19,6 +21,8 @@ if (!data) {
   ogImage={data.ogImage || "/og-default.jpg"}
   canonicalUrl="https://makegood.melbourne/services/strip-out"
 >
+  <link slot="head" rel="preload" as="image" href={stripOutHeroMobile.src} fetchpriority="high" media="(max-width: 1023px)" />
+  <link slot="head" rel="preload" as="image" href={stripOutHero.src} fetchpriority="high" media="(min-width: 1024px)" />
   <div class="min-h-screen flex flex-col bg-background">
     <!-- Skip to Content Link for Accessibility -->
     <a

@@ -131,6 +131,9 @@ const ogImageType = ogImage.toLowerCase().endsWith('.png')
         font-display: swap;
       }
     </style>
+    
+    <!-- Additional head content from pages -->
+    <slot name="head" />
   </head>
   <body>
     <slot />
