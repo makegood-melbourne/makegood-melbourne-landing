@@ -78,8 +78,8 @@ const SectionServicesCarousel = ({
                           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                           loading="lazy"
                           decoding="async"
-                          width={400}
-                          height={300}
+                          width={600}
+                          height={450}
                         />
                       ) : (
                         <div className="w-full h-full bg-muted/30 flex items-center justify-center">
