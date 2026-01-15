@@ -68,6 +68,12 @@
   status = 301
   force = true
 
+[[redirects]]
+  from = "/services/back-to-base-works"
+  to = "/services/make-safe-works"
+  status = 301
+  force = true
+
 # Unpublished service page redirects (services exist in data but not published)
 [[redirects]]
   from = "/services/commercial-make-good"

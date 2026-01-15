@@ -20,12 +20,11 @@ const serviceCategories = [
   {
     label: "Strip Out",
     href: "/services/strip-out",  // Clickable category header
-    slugs: ['back-to-base-works', 'demolition-works', 'pallet-racking-removal', 'waste-management'],
+    slugs: ['demolition-works', 'make-safe-works', 'pallet-racking-removal'],
     displayNames: {
-      'pallet-racking-removal': 'Racking Removal',
-      'back-to-base-works': 'Back to Base Works',
       'demolition-works': 'Demolition Works',
-      'waste-management': 'Waste Management'
+      'make-safe-works': 'Make Safe Works',
+      'pallet-racking-removal': 'Racking Removal'
     }
   },
   {
