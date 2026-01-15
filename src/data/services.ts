@@ -1357,8 +1357,10 @@ export const services: Service[] = [
         imageLeft: true
       }
     ],
-    relatedServicesBlock: {
-      title: "A COMPLETE STRIP OUT SERVICE",
+    linkedSpotlightBlock: {
+      title: "A COMPLETE STRIP OUT",
+      titleHighlight: "SERVICE",
+      subtitle: "Our make safe works are part of a comprehensive strip out solution. We coordinate all related works to deliver your end-of-lease project on time.",
       cards: [
         {
           slug: "demolition-works",
