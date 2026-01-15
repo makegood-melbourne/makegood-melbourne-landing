@@ -1275,21 +1275,6 @@ export const services: Service[] = [
         imageLeft: true
       }
     ],
-    relatedServicesBlock: {
-      title: "A COMPLETE STRIP OUT SERVICE",
-      cards: [
-        {
-          slug: "back-to-base-works",
-          name: "Back to Base Works",
-          description: "We manage the full 'back to base' process, including the disconnection and make-safe of all essential building services."
-        },
-        {
-          slug: "pallet-racking-removal",
-          name: "Pallet Racking Removal",
-          description: "Complete dismantling and slab restoration service for all types of industrial racking systems."
-        }
-      ]
-    },
     faqs: [
       {
         question: "What is the difference between your demolition service and a standard strip-out?",
