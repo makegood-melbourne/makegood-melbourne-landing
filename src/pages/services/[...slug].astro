@@ -15,7 +15,9 @@ export function getStaticPaths() {
 }
 
 const { slug } = Astro.params;
-const service = getServiceBySlug(slug);
+// Handle both single slugs and nested slugs (e.g., "pallet-racking-removal" or "strip-out-solutions/pallet-racking-removal")
+const fullSlug = Array.isArray(slug) ? slug.join('/') : slug;
+const service = getServiceBySlug(fullSlug);
 
 if (!service) {
   return Astro.redirect('/capabilities');
@@ -41,10 +43,10 @@ if (!service) {
     
     <main id="main-content" class="flex-1">
       <!-- Static optimized hero section with breadcrumbs -->
-      <ServiceHeroSection slug={slug} />
+      <ServiceHeroSection slug={fullSlug} />
       
       <!-- Interactive content loaded after hero -->
-      <ServiceContent slug={slug} client:idle />
+      <ServiceContent slug={fullSlug} client:idle />
     </main>
     
     <Footer client:idle />
