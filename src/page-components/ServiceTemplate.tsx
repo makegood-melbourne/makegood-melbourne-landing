@@ -537,7 +537,7 @@ const ServiceTemplate = ({ slug: propSlug }: ServiceTemplateProps) => {
         {/* 4. Featured Sections (multiple) with optional Process and Comparison insertion - Skip if already rendered early */}
         {service.featuredSections && !service.skipAboutSection && (() => {
           // Only create processSection if it's not already rendered after scope
-          const processSection = service.process && service.process.length > 0 && !service.processAfterScope ? (
+          const processSection = service.process && service.process.length > 0 && !service.processAfterScope && !service.processAfterSpotlight ? (
             <section key="process-section" className="py-16 bg-secondary">
               <div className="container mx-auto px-4">
                 <h2 className="text-3xl md:text-4xl text-foreground mb-10">Our Process</h2>
