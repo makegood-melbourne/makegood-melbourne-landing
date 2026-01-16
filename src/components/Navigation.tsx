@@ -29,7 +29,8 @@ const serviceCategories = [
   },
   {
     label: "Make Good",
-    slugs: ['warehouse-floor-restoration', 'epoxy-flooring', 'line-marking', 'make-good-painting', 'ceiling-tile-replacement', 'patching-plastering']
+    href: "/services/make-good",  // Clickable category header
+    slugs: ['flooring-installation', 'line-marking', 'make-good-painting', 'suspended-ceiling-works', 'wall-repairs-patching-plastering', 'warehouse-floor-restoration']
   },
   {
     label: "Handover",

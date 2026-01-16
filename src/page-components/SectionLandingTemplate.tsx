@@ -3,6 +3,7 @@ import { renderTextWithLinks } from "@/lib/textWithLinks";
 import { resolveImageSrc } from "@/lib/resolveImageSrc";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import SectionServicesCarousel from "@/components/SectionServicesCarousel";
+import SectionServicesGrid from "@/components/SectionServicesGrid";
 import { Button } from "@/components/ui/button";
 import { Mail, Shield, Compass, BadgeDollarSign, FileText, ClipboardCheck, ArrowRight } from "lucide-react";
 import {
@@ -50,11 +51,12 @@ interface SectionLandingData {
   aboutContentLeft: string[];  // Left column paragraphs
   aboutContentRight: string[]; // Right column paragraphs
   
-  // Services Carousel
+  // Services Carousel/Grid
   serviceSlugs: string[];
   carouselTitle?: string;
   carouselTitleHighlight?: string;  // Optional words to highlight in orange
   carouselDescription?: string;
+  useGrid?: boolean;  // If true, displays services in static grid instead of carousel
   
   // Related Services Block (optional - appears between carousel and FAQ)
   relatedServicesBlock?: RelatedServicesBlock;
@@ -278,13 +280,22 @@ const SectionLandingTemplate = ({ data }: SectionLandingTemplateProps) => {
         </div>
       </section>
 
-      {/* Services Carousel */}
-      <SectionServicesCarousel 
-        serviceSlugs={data.serviceSlugs}
-        title={data.carouselTitle || "Remediation Services"}
-        titleHighlight={data.carouselTitleHighlight}
-        description={data.carouselDescription}
-      />
+      {/* Services Carousel or Grid */}
+      {data.useGrid ? (
+        <SectionServicesGrid 
+          serviceSlugs={data.serviceSlugs}
+          title={data.carouselTitle || "Our Services"}
+          titleHighlight={data.carouselTitleHighlight}
+          description={data.carouselDescription}
+        />
+      ) : (
+        <SectionServicesCarousel 
+          serviceSlugs={data.serviceSlugs}
+          title={data.carouselTitle || "Remediation Services"}
+          titleHighlight={data.carouselTitleHighlight}
+          description={data.carouselDescription}
+        />
+      )}
 
       {/* FAQ Section */}
       {data.faqs && data.faqs.length > 0 && (

@@ -5,6 +5,8 @@ import buildingRemediationHero from "@/assets/services/building-remediation-melb
 import buildingRemediationHeroMobile from "@/assets/services/building-remediation-melbourne-shotcrete-mobile.jpg";
 import stripOutHero from "@/assets/services/commercial-industrial-strip-out-melbourne.jpg";
 import stripOutHeroMobile from "@/assets/services/commercial-industrial-strip-out-melbourne-mobile.jpg";
+import makeGoodHero from "@/assets/services/melbourne-warehouse-make-good-hero.jpg";
+import makeGoodHeroMobile from "@/assets/services/melbourne-warehouse-make-good-hero-mobile.jpg";
 
 export interface SectionLandingFAQ {
   question: string;
@@ -50,11 +52,12 @@ export interface SectionLandingData {
   aboutContentLeft: string[];  // Left column paragraphs
   aboutContentRight: string[]; // Right column paragraphs
   
-  // Services Carousel
+  // Services Carousel/Grid
   serviceSlugs: string[];
   carouselTitle?: string;
   carouselTitleHighlight?: string;  // Optional words to highlight in orange
   carouselDescription?: string;
+  useGrid?: boolean;  // If true, displays services in static grid instead of carousel
   
   // Related Services Block (optional - appears between carousel and FAQ)
   relatedServicesBlock?: SectionLandingRelatedBlock;
@@ -149,6 +152,82 @@ export const sectionLandingPages: SectionLandingData[] = [
     ctaTitle: "EXPERTS IN COMMERCIAL & INDUSTRIAL STRIP OUTS",
     ctaSubtitle: "Make Good, BETTER.",
     ctaText: "We are Melbourne's end-of-lease make good specialists. From a simple office defit to a complex industrial strip out, we deliver a seamless, reliable, and fully compliant service. Contact us today for a free site assessment and a detailed, fixed-price quote."
+  },
+  {
+    slug: "make-good",
+    metaTitle: "Make Good Melbourne | End of Lease Restoration Services",
+    metaDescription: "Professional make good services for commercial and industrial properties. Flooring, painting, ceiling works, and wall repairs. Fixed-price quotes, lease compliance guaranteed.",
+    ogImage: "/og/make-good.jpg",
+    
+    title: "MAKE GOOD, BETTER.",
+    titleHighlight: "BETTER.",
+    tagline: "From flooring and painting to ceiling repairs and wall patching, we handle every aspect of your end-of-lease make good. Our team ensures your commercial or industrial space is restored to base building condition and ready for handover.",
+    trustBadges: [
+      { icon: "shield", title: "Licensed & Insured" },
+      { icon: "clipboard", title: "Lease Compliance Experts" },
+      { icon: "dollar", title: "Fixed-Price Quotes" },
+      { icon: "document", title: "Full Project Documentation" }
+    ],
+    heroImage: makeGoodHero,
+    heroImageMobile: makeGoodHeroMobile,
+    heroImageAlt: "Clean, restored warehouse space showing completed make good works in Melbourne",
+    heroImageTitle: "Makegood Melbourne - Professional Make Good and Restoration Services",
+    
+    aboutTitlePrefix: "WE DO MAKE GOODS",
+    aboutTitleHighlight: "ALL DAY, EVERY DAY.",
+    aboutContentLeft: [
+      "End-of-lease make good works are what we do. Whether you're vacating an office, retail space, medical centre, or industrial warehouse, your lease requires the property to be returned to base building condition. We handle the entire restoration process—flooring, painting, ceiling repairs, wall patching—all completed to lease specifications.",
+      "We work directly with real estate agents, property managers, strata managers, landlords, and tenants to ensure compliance at every stage. Whether you're preparing for lease expiry, managing emergency repairs, or addressing building defects, we provide professional solutions that meet all lease obligations and compliance requirements."
+    ],
+    aboutContentRight: [
+      "Our network of licensed tradespeople handles projects of all sizes across commercial, industrial, retail, hospitality, and medical sectors. From small office fitouts to large-scale warehouse restorations, we deliver quality workmanship and competitive pricing.",
+      "Our detailed approach to scoping your project means you know the complete cost upfront without surprise variations later. We understand the pressure of lease deadlines and work efficiently to ensure your property is handover-ready when you need it.",
+      "Serving Melbourne's commercial and industrial property sectors with expertise in flooring, painting, ceiling repairs, wall restoration, and full building compliance. Contact us today for a free assessment and discover why property professionals throughout Melbourne choose Make Good Melbourne for their end-of-lease restoration needs."
+    ],
+    
+    serviceSlugs: [
+      "flooring-installation",
+      "line-marking",
+      "make-good-painting",
+      "suspended-ceiling-works",
+      "wall-repairs-patching-plastering",
+      "warehouse-floor-restoration"
+    ],
+    carouselTitle: "OUR MAKE GOOD SERVICES",
+    carouselTitleHighlight: "SERVICES",
+    carouselDescription: "Complete restoration solutions for commercial and industrial properties across Melbourne.",
+    useGrid: true,  // Display as static grid instead of carousel
+    
+    faqs: [
+      {
+        question: "What is included in make good works?",
+        answer: "Make good works include all services required to return your property to base building condition as specified in your lease. This typically covers flooring installation or removal, wall repairs and painting, ceiling repairs or replacement, removal of partitions and fitouts, electrical and plumbing disconnection, and restoration of any structural modifications. We assess your lease schedule and provide a comprehensive scope of works."
+      },
+      {
+        question: "How long does a make good project take?",
+        answer: "Project timelines depend on the size and scope of work required. A small office make good might take 1-2 weeks, while a large warehouse restoration can take 4-6 weeks. We provide a detailed timeline during the quoting process and work efficiently to meet your lease expiry deadlines."
+      },
+      {
+        question: "Do you provide fixed-price quotes?",
+        answer: "Yes. Our detailed approach to scoping your project means you receive a fixed-price quote with no surprise variations. We assess the property, review your lease requirements, and provide a comprehensive quote that covers all work required to meet base building condition."
+      },
+      {
+        question: "Can you work with my property manager or landlord?",
+        answer: "Absolutely. We work directly with property managers, landlords, real estate agents, and building owners throughout the make good process. We provide regular updates, coordinate inspections, and ensure all work meets the required standards for handover approval."
+      },
+      {
+        question: "What areas do you service?",
+        answer: "We service all of Melbourne and Victoria, including CBD, inner suburbs, outer suburbs, and regional areas. Our network of licensed tradespeople allows us to handle make good projects across the state efficiently."
+      },
+      {
+        question: "Can you work with our existing trades or building contractors?",
+        answer: "Absolutely. We're happy to coordinate with your preferred trades or building management contractors throughout the make good process. Whether it's fire services that must be handled by building management, specialised trades like elevator maintenance, or your own trusted painter, we can integrate their work into the project timeline. We handle the coordination and ensure all trades work together efficiently to meet your handover deadline."
+      }
+    ],
+    
+    ctaTitle: "YOUR MAKE GOOD SPECIALISTS",
+    ctaSubtitle: "Make Good, BETTER.",
+    ctaText: "Get a detailed quote for your end-of-lease make good works. We'll assess your lease requirements and provide a fixed-price proposal with a clear timeline for handover."
   },
   {
     slug: "remediation",
