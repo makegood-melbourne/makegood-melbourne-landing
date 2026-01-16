@@ -172,9 +172,9 @@ export interface Service {
 export const services: Service[] = [
   {
     name: "Pallet Racking Removal",
-    slug: "pallet-racking-removal",
-    title: "Pallet Racking Removal Melbourne",
-    metaTitle: "Pallet Racking Removal Melbourne | Slab Restoration",
+    slug: "strip-out-solutions/pallet-racking-removal",
+    title: "Pallet Racking Removal",
+    metaTitle: "Pallet Racking Strip Out Melbourne | Make Good, Better",
     description: "Whether you are reconfiguring your warehouse, relocating, or preparing for handover, the removal of pallet racking must be done correctly. We don't just dismantle; we restore the concrete slab to a safe, clean condition. This means every anchor is core-drilled and removed, the void is filled with high-strength epoxy resin, and the repair is ground flush to restore your warehouse floor.",
     metaDescription: "Pallet racking removal Melbourne. Core drill and fill dynabolt removal. Concrete slab restoration. All racking types including mezzanines. Licensed operators. Free quotes.",
     heroText: "Whether you are reconfiguring your warehouse, relocating, or preparing for handover, the removal of pallet racking must be done correctly. We don't just dismantle; we restore the concrete slab to a safe, clean condition. This means every anchor is core-drilled and removed, the void is filled with high-strength epoxy resin, and the repair is ground flush to restore your warehouse floor.",
@@ -240,12 +240,12 @@ export const services: Service[] = [
       subtitle: "Our pallet racking removal is part of a comprehensive strip out solution. We coordinate all related works to deliver a seamless end-of-lease project.",
       cards: [
         {
-          slug: "make-safe-works",
+          slug: "strip-out-solutions/make-safe",
           name: "MAKE SAFE WORKS",
           description: "We manage the full 'back to base' process, including the disconnection and make-safe of all essential building services."
         },
         {
-          slug: "demolition-works",
+          slug: "strip-out-solutions/demolition",
           name: "Demolition Works",
           description: "Our licensed teams perform precise internal demolition, safely removing non-structural partitions, ceilings, flooring and fixtures."
         }
@@ -286,7 +286,7 @@ export const services: Service[] = [
       subtitle: "We do Make Goods all day, every day.",
       text: "Whether you're moving, upgrading, or handing back the keys, our professional racking removal service ensures the process is safe, efficient, and compliant. Contact us today for a site assessment and a no-obligation quote, including a potential valuation for your used racking."
     },
-    relatedServices: ["demolition-works", "make-safe-works"],
+    relatedServices: ["strip-out-solutions/demolition", "strip-out-solutions/make-safe"],
     category: "demolition",
     published: true
   },
@@ -350,15 +350,15 @@ export const services: Service[] = [
       subtitle: "We do makegoods all day, every day.",
       text: "From small workshops to large distribution centres, we've coated floors across Melbourne's industrial properties. Get in touch today for a free, no-obligation quote."
     },
-    relatedServices: ["warehouse-floor-restoration", "line-marking"],
+    relatedServices: ["make-good-solutions/warehouse-flooring", "make-good-solutions/line-marking"],
     category: "trade",
     published: true
   },
   {
     name: "Make Good Painting",
-    slug: "make-good-painting",
-    title: "Make Good Painting Melbourne",
-    metaTitle: "Make Good Painting Melbourne | End of Lease Painting Services",
+    slug: "make-good-solutions/painting",
+    title: "Painting",
+    metaTitle: "Painting Make Good Melbourne | Make Good, Better",
     description: "Professional make good painting for offices, warehouses and industrial spaces across Melbourne. Colour-matched finishes, proper surface preparation and quality application—delivered on time for your handover deadline.",
     metaDescription: "Make good painting Melbourne. End of lease painting for commercial and industrial properties. Colour-matched, owner-approved finishes. Bond protection guaranteed. Free quotes.",
     heroText: "We deliver professional painting for [offices](/industries/commercial), [warehouses](/industries/industrial) and commercial spaces—colour-matched to original specifications, properly prepared and expertly applied. From [wall repairs](/services/patching-plastering) through to final coat, our comprehensive make good services handle all of your end of lease obligations.",
@@ -468,15 +468,15 @@ export const services: Service[] = [
       subtitle: "We do makegoods all day, every day.",
       text: "Our painters have delivered inspection-ready finishes across Melbourne's commercial and industrial properties for years. We understand what owners expect and deliver work that gets accepted first time. Get in touch today for a free, no-obligation quote."
     },
-    relatedServices: ["epoxy-flooring", "line-marking", "ceiling-tile-replacement"],
+    relatedServices: ["epoxy-flooring", "make-good-solutions/line-marking", "make-good-solutions/suspended-ceilings"],
     category: "make-good",
     published: true
   },
   {
     name: "Ceiling Tile Replacement",
-    slug: "ceiling-tile-replacement",
-    title: "Ceiling Tile Replacement Melbourne",
-    metaTitle: "Ceiling Tile Replacement Melbourne | Lease Compliance",
+    slug: "make-good-solutions/suspended-ceilings",
+    title: "Suspended Ceilings",
+    metaTitle: "Suspended Ceiling Make Good Melbourne | Make Good, Better",
     description: "From standard suspended grids to timber acoustic panels, we replace and restore commercial ceilings to meet your lease obligations. Post-demolition repairs where partitions were removed, discontinued tile matching when originals are no longer made and full grid restoration when tenants have stripped them out for extra height. LED repositioning, aircon adjustments and fire services coordination when required.",
     metaDescription: "Ceiling tile replacement Melbourne. Acoustic panels, suspended grids, LED rebalancing and grid reinstallation. End of lease compliance for commercial offices. Free quotes.",
     heroText: "Whether your space has standard white tiles or premium timber acoustic panels, we deliver complete ceiling restoration. One contractor for every ceiling type—tiles matched, LEDs repositioned and aircon rebalanced for landlord sign-off.",
@@ -500,15 +500,15 @@ export const services: Service[] = [
       subtitle: "We do makegoods all day, every day.",
       text: "From single rooms to multi-floor offices, we've restored ceilings across Melbourne's commercial properties. Get in touch today for a free, no-obligation quote."
     },
-    relatedServices: ["make-good-painting", "handover-cleaning"],
+    relatedServices: ["make-good-solutions/painting", "handover-solutions/end-of-lease-cleaning"],
     category: "make-good",
     published: true
   },
   {
     name: "Line Marking",
-    slug: "line-marking",
-    title: "Line Marking Melbourne",
-    metaTitle: "Line Marking Melbourne | Warehouse & Car Park",
+    slug: "make-good-solutions/line-marking",
+    title: "Line Marking",
+    metaTitle: "Line Marking Make Good Melbourne | Make Good, Better",
     description: "Lease ending and your warehouse or car park lines don't match the original layout? We restore eroded markings, remove tenant-specific delineations and return floors to the condition your landlord expects. Full line marking restoration for make-good compliance.",
     metaDescription: "Line marking restoration Melbourne. Warehouse and car park line reinstatement for end of lease compliance. Remove tenant markings, restore originals. Free quotes.",
     heroText: "Years of forklift traffic have worn your lines away. Or maybe you added bays and zones to suit your operation—now they need to go. We restore original markings, remove tenant delineations and hand back floors that meet your make-good obligations.",
@@ -536,15 +536,15 @@ export const services: Service[] = [
       subtitle: "We do makegoods all day, every day.",
       text: "We've restored line markings in warehouses and car parks across Melbourne. Get in touch today for a free, no-obligation quote."
     },
-    relatedServices: ["epoxy-flooring", "warehouse-floor-restoration"],
+    relatedServices: ["epoxy-flooring", "make-good-solutions/warehouse-flooring"],
     category: "trade",
     published: true
   },
   {
     name: "Handover Cleaning",
-    slug: "handover-cleaning",
-    title: "Handover Cleaning Melbourne",
-    metaTitle: "Handover Cleaning Melbourne | Lease End Specialists",
+    slug: "handover-solutions/end-of-lease-cleaning",
+    title: "End of Lease Cleaning",
+    metaTitle: "Handover Cleaning Melbourne | Make Good, Better",
     description: "Lease ending? We handle the heavy-duty cleaning regular cleaners won't touch. Industrial floor scrubbing, high-pressure washing and chemical treatment—everything your landlord expects at handover. We work at scale: 500sqm warehouse floors, multi-level office strip-outs, loading docks caked in years of grime. This isn't maintenance cleaning—it's handover-ready restoration.",
     metaDescription: "Handover cleaning Melbourne. Lease end floor scrubbing, high-pressure washing, oil and tyre mark removal. Pass your final inspection. Free quotes.",
     heroText: "Heavy-duty cleaning for lease end and make good handovers. We tackle the jobs regular cleaners can't—warehouse floors, post-strip-out sites and final inspections that need to pass first time.",
@@ -619,15 +619,15 @@ export const services: Service[] = [
       subtitle: "We do makegoods all day, every day.",
       text: "From warehouse floors to office strip outs, we've prepared hundreds of Melbourne properties for final inspection. Get in touch today for a free, no-obligation quote."
     },
-    relatedServices: ["warehouse-floor-restoration", "end-of-lease-relocation"],
+    relatedServices: ["make-good-solutions/warehouse-flooring", "handover-solutions/end-of-lease-relocation"],
     category: "cleaning",
     published: true
   },
   {
     name: "End of Lease Relocation",
-    slug: "end-of-lease-relocation",
-    title: "End of Lease Relocation Melbourne",
-    metaTitle: "End of Lease Relocation Melbourne | Equipment Transport",
+    slug: "handover-solutions/end-of-lease-relocation",
+    title: "End of Lease Relocation",
+    metaTitle: "End of Lease Relocation Melbourne | Make Good, Better",
     description: "Vacating your warehouse or factory? We handle the make-good AND transport your equipment to your new site. One contractor, one point of contact—no coordination headaches. Office relocations also available.",
     metaDescription: "End of lease relocation Melbourne. Industrial make-good plus racking, machinery and equipment transport to your new site. Office relocations also available. Free quotes.",
     heroText: "Vacating your warehouse, factory or office? We offer tailored logistical solutions from vacate to move-in. One comprehensive service that handles your make-good obligations and delivers your essential equipment to your new location—anywhere in Australia.",
@@ -657,15 +657,15 @@ export const services: Service[] = [
       subtitle: "We do makegoods all day, every day.",
       text: "We've managed end-to-end relocations across Melbourne and beyond—make good and transport in one seamless service. Get in touch today for a free, no-obligation quote."
     },
-    relatedServices: ["pallet-racking-removal", "handover-cleaning", "warehouse-floor-restoration"],
+    relatedServices: ["strip-out-solutions/pallet-racking-removal", "handover-solutions/end-of-lease-cleaning", "make-good-solutions/warehouse-flooring"],
     category: "make-good",
     published: true
   },
   {
     name: "Structural Remediation",
-    slug: "structural-remediation",
-    title: "Structural Remediation Melbourne",
-    metaTitle: "Structural Remediation Melbourne | Concrete & Steel",
+    slug: "remediation-solutions/structural",
+    title: "Structural",
+    metaTitle: "Structural Remediation Melbourne | Make Good, Better",
     description: "The structural integrity of your building is non-negotiable. At Makegood Melbourne, we address the root causes of structural decay to restore strength, safety and long-term stability to your asset.\n\nOur specialists work with qualified engineers to deliver certified solutions for a comprehensive range of structural defects. From diagnosing concrete cancer and rectifying slab settlement to advanced concrete injection and carbon fibre strengthening, we have the expertise to manage complex projects that general builders can't. We handle the entire process, from initial assessment and engineering specifications through to project completion and final certification.",
     metaDescription: "Structural remediation Melbourne. Concrete cancer treatment, floor slab repairs, waterproofing and membrane systems. Engineered solutions for commercial properties.",
     heroText: "From concrete cancer and spalling to slab settlement and corrosion, structural defects compromise the safety and longevity of your asset. We deliver engineered solutions that address these issues at their source, restoring foundational strength and ensuring your building is safe, compliant and secure.",
@@ -794,15 +794,15 @@ export const services: Service[] = [
       }
     ],
     faqTitle: "STRUCTURAL REMEDIATION FAQs",
-    relatedServices: ["warehouse-floor-restoration", "waterproofing", "cladding-glazing"],
+    relatedServices: ["make-good-solutions/warehouse-flooring", "remediation-solutions/waterproofing", "remediation-solutions/cladding-glazing"],
     category: "structural",
     published: true
   },
   {
     name: "Cladding & Glazing",
-    slug: "cladding-glazing",
-    title: "Cladding & Glazing Remediation Melbourne",
-    metaTitle: "Cladding & Glazing Remediation Melbourne | Compliance",
+    slug: "remediation-solutions/cladding-glazing",
+    title: "Cladding & Glazing",
+    metaTitle: "Cladding & Glazing Remediation Melbourne | Make Good, Better",
     description: "Professional cladding and glazing remediation services across Melbourne. From ACP replacement to fire-rated compliance, we deliver end-to-end facade solutions.",
     metaDescription: "Cladding and glazing remediation Melbourne. ACP replacement, fire rating compliance, glazing upgrades. Licensed contractors, Australian Standards compliant. Free quotes.",
     heroText: "Bring your building up to compliance with our specialist cladding and glazing remediation services. We deliver end-to-end solutions that meet NCC requirements and relevant Australian Standards.",
@@ -830,15 +830,15 @@ export const services: Service[] = [
       subtitle: "We do makegoods all day, every day.",
       text: "We've delivered cladding and glazing compliance projects across Melbourne's commercial buildings. Get in touch today for a free, no-obligation quote."
     },
-    relatedServices: ["structural-remediation", "waterproofing", "polycarbonate-roofing-skylights"],
+    relatedServices: ["remediation-solutions/structural", "remediation-solutions/waterproofing", "remediation-solutions/polycarbonate-roofing-skylights"],
     category: "structural",
     published: true
   },
   {
     name: "Waterproofing",
-    slug: "waterproofing",
-    title: "Waterproofing Melbourne",
-    metaTitle: "Waterproofing Melbourne | Commercial & Industrial Specialists",
+    slug: "remediation-solutions/waterproofing",
+    title: "Waterproofing",
+    metaTitle: "Waterproofing Remediation Melbourne | Make Good, Better",
     description: "Failed waterproofing causes costly damage to buildings—from balcony leaks penetrating into units below to roof failures flooding commercial spaces. We deliver professional waterproofing solutions for balconies, roofs, wet areas and podiums using quality membrane systems built to last.",
     metaDescription: "Commercial waterproofing Melbourne. Balcony membranes, roof waterproofing, wet area sealing and podium deck systems. Licensed applicators, warranty included. Free quotes.",
     heroText: "Water finds every weakness. Failed balcony membranes leak into apartments below. Deteriorated roof coatings let moisture into ceiling cavities. We apply proven membrane systems that protect your building for decades—not just pass the next inspection.",
@@ -904,15 +904,15 @@ export const services: Service[] = [
       subtitle: "We do makegoods all day, every day.",
       text: "From balcony remediation to full roof systems, we've waterproofed commercial and residential buildings across Melbourne. Get in touch today for a free, no-obligation quote."
     },
-    relatedServices: ["structural-remediation", "cladding-glazing", "polycarbonate-roofing-skylights"],
+    relatedServices: ["remediation-solutions/structural", "remediation-solutions/cladding-glazing", "remediation-solutions/polycarbonate-roofing-skylights"],
     category: "structural",
     published: true
   },
   {
     name: "Polycarbonate Roofing & Skylights",
-    slug: "polycarbonate-roofing-skylights",
-    title: "Polycarbonate Roofing & Skylights Melbourne",
-    metaTitle: "Polycarbonate Roofing & Skylights Melbourne | Industrial Roof Panel Specialists",
+    slug: "remediation-solutions/polycarbonate-roofing-skylights",
+    title: "Polycarbonate Roofing & Skylights",
+    metaTitle: "Polycarbonate Roofing & Skylights Remediation | Make Good, Better",
     description: "We supply and install clear polycarbonate roofing sheets designed for industrial and warehouse environments. Our installations improve natural light, resist harsh weather and are completed in accordance with Australian Standards and safety requirements. From new installations to repairs and upgrades, we deliver practical roofing solutions suited to Melbourne's demanding conditions.",
     metaDescription: "Polycarbonate roofing and skylight installation Melbourne for warehouses and industrial facilities. Australian Standards compliant, weather resistant installations, repairs and upgrades.",
     heroText: "We supply and install clear polycarbonate roofing sheets designed for industrial and warehouse environments. Our installations improve natural light, resist harsh weather and are completed in accordance with Australian Standards and safety requirements.",
@@ -1049,15 +1049,15 @@ export const services: Service[] = [
       subtitle: "We do makegoods all day, every day.",
       text: "Whether you're completing end of lease obligations or upgrading your vacant property, we deliver complete skylight replacement as part of our make good service. One quote, one project manager, complete documentation for handover. Get in touch for a free assessment."
     },
-    relatedServices: ["waterproofing", "structural-remediation", "warehouse-floor-restoration"],
+    relatedServices: ["remediation-solutions/waterproofing", "remediation-solutions/structural", "make-good-solutions/warehouse-flooring"],
     category: "structural",
     published: true
   },
   {
     name: "Warehouse Floor Restoration",
-    slug: "warehouse-floor-restoration",
-    title: "Warehouse Floor Restoration Melbourne",
-    metaTitle: "Warehouse Floor Restoration Melbourne | Industrial Floor Specialists",
+    slug: "make-good-solutions/warehouse-flooring",
+    title: "Warehouse Flooring Restoration",
+    metaTitle: "Warehouse Flooring Make Good Melbourne | Make Good, Better",
     description: "Complete warehouse floor restoration services across Melbourne. We remove flooring, strip coatings, grind adhesives, repair damage and restore concrete slabs to handover-ready condition. From carpet strip-out to dynabolt filling, crack repairs to epoxy finishes—we deliver the full scope in one comprehensive service.",
     metaDescription: "Warehouse floor restoration Melbourne. Flooring removal, concrete grinding, dynabolt repairs, crack injection and surface finishing. End of lease specialists. Free quotes.",
     heroText: "Your lease requires the floor restored to original condition. We handle everything—flooring removal, coating grinding, dynabolt repairs and surface finishing. One contractor, one scope, handover-ready results.",
@@ -1195,16 +1195,16 @@ export const services: Service[] = [
       subtitle: "We do makegoods all day, every day.",
       text: "From flooring strip-out to finished surface, we've restored warehouse floors across Melbourne. Get in touch today for a free, no-obligation quote."
     },
-    relatedServices: ["epoxy-flooring", "line-marking", "pallet-racking-removal"],
+    relatedServices: ["epoxy-flooring", "make-good-solutions/line-marking", "strip-out-solutions/pallet-racking-removal"],
     category: "structural",
     published: true
   },
 
   {
     name: "Demolition Works",
-    slug: "demolition-works",
-    title: "Commercial & Industrial Demolition Melbourne",
-    metaTitle: "Commercial & Industrial Demolition Melbourne | Licensed Strip Out",
+    slug: "strip-out-solutions/demolition",
+    title: "Demolition",
+    metaTitle: "Demolition Strip Out Melbourne | Make Good, Better",
     description: "From office de-fits to warehouse strip-outs, we restore your tenancy to its base condition. We remove partitions, ceilings and floor coverings, working within your project timeframes to ensure your make good is ready for handover on time.",
     metaDescription: "Commercial and industrial demolition Melbourne. Office strip out, warehouse demolition, partition removal, floor covering removal. Licensed, insured. Free quotes.",
     heroText: "From office de-fits to warehouse strip-outs, we restore your tenancy to its base condition. We remove partitions, ceilings and floor coverings, working within your project timeframes to ensure your make good is ready for handover on time.",
@@ -1297,15 +1297,15 @@ export const services: Service[] = [
       "After-hours work capability",
       "Fixed-price quotes with no variations"
     ],
-    relatedServices: ["make-safe-works", "pallet-racking-removal"],
+    relatedServices: ["strip-out-solutions/make-safe", "strip-out-solutions/pallet-racking-removal"],
     category: "demolition",
     published: true
   },
   {
     name: "Make Safe Works",
-    slug: "make-safe-works",
-    title: "Make Safe Works Melbourne",
-    metaTitle: "Make Safe Works Melbourne | Back to Base Disconnection",
+    slug: "strip-out-solutions/make-safe",
+    title: "Make Safe",
+    metaTitle: "Make Safe Strip Out Melbourne | Make Good, Better",
     description: "We disconnect and make safe all building services for your end-of-lease make good, returning all cabling back to base with full certification.",
     metaDescription: "Make safe works Melbourne. Electrical, plumbing and HVAC disconnection. Back to base cabling. Certified building services disconnection for end-of-lease make good.",
     heroText: "We disconnect and make safe all building services for your end-of-lease make good, returning all cabling back to base with full certification.",
@@ -1370,12 +1370,12 @@ export const services: Service[] = [
       subtitle: "Our make safe works are part of a comprehensive strip out solution. We coordinate all related works to deliver your end-of-lease project on time.",
       cards: [
         {
-          slug: "demolition-works",
+          slug: "strip-out-solutions/demolition",
           name: "DEMOLITION WORKS",
           description: "Our licensed teams perform precise internal demolition, safely removing non-structural partitions, ceilings, flooring and fixtures."
         },
         {
-          slug: "pallet-racking-removal",
+          slug: "strip-out-solutions/pallet-racking-removal",
           name: "PALLET RACKING REMOVAL",
           description: "We manage the full 'back to base' process, including the disconnection and make-safe of all essential building services."
         }
@@ -1416,9 +1416,57 @@ export const services: Service[] = [
       "After-hours work capability",
       "Fixed-price quotes with no variations"
     ],
-    relatedServices: ["demolition-works", "pallet-racking-removal"],
+    relatedServices: ["strip-out-solutions/demolition", "strip-out-solutions/pallet-racking-removal"],
     category: "demolition",
     published: true
+  },
+  {
+    name: "Handover Solutions",
+    slug: "handover-solutions",
+    title: "Handover Solutions",
+    metaTitle: "Handover Solutions Melbourne | Make Good, Better",
+    description: "[Content to be added]",
+    metaDescription: "[Content to be added]",
+    heroText: "[Content to be added]",
+    ogImage: "/og/handover-solutions.jpg",
+    heroImage: "",
+    heroImageAlt: "[Content to be added]",
+    benefits: [],
+    relatedServices: [],
+    category: "cleaning",
+    published: false
+  },
+  {
+    name: "Flooring Reinstatement",
+    slug: "make-good-solutions/flooring",
+    title: "Flooring Reinstatement",
+    metaTitle: "Flooring Make Good Melbourne | Make Good, Better",
+    description: "[Content to be added]",
+    metaDescription: "[Content to be added]",
+    heroText: "[Content to be added]",
+    ogImage: "/og/flooring-reinstatement.jpg",
+    heroImage: "",
+    heroImageAlt: "[Content to be added]",
+    benefits: [],
+    relatedServices: [],
+    category: "make-good",
+    published: false
+  },
+  {
+    name: "Wall Repairs, Patching & Plastering",
+    slug: "make-good-solutions/patching-plastering",
+    title: "Wall Repairs, Patching & Plastering",
+    metaTitle: "Patching & Plastering Make Good Melbourne | Make Good, Better",
+    description: "[Content to be added]",
+    metaDescription: "[Content to be added]",
+    heroText: "[Content to be added]",
+    ogImage: "/og/patching-plastering.jpg",
+    heroImage: "",
+    heroImageAlt: "[Content to be added]",
+    benefits: [],
+    relatedServices: [],
+    category: "make-good",
+    published: false
   }
 ];
 

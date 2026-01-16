@@ -220,6 +220,109 @@
   status = 301
   force = true
 
+# Navigation Restructure 2026 - Parent and Child Page Redirects
+# Parent pages
+[[redirects]]
+  from = "/services/strip-out"
+  to = "/services/strip-out-solutions"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/services/make-good"
+  to = "/services/make-good-solutions"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/services/remediation"
+  to = "/services/remediation-solutions"
+  status = 301
+  force = true
+
+# Strip Out Solutions children
+[[redirects]]
+  from = "/services/demolition-works"
+  to = "/services/strip-out-solutions/demolition"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/services/make-safe-works"
+  to = "/services/strip-out-solutions/make-safe"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/services/pallet-racking-removal"
+  to = "/services/strip-out-solutions/pallet-racking-removal"
+  status = 301
+  force = true
+
+# Make Good Solutions children
+[[redirects]]
+  from = "/services/line-marking"
+  to = "/services/make-good-solutions/line-marking"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/services/make-good-painting"
+  to = "/services/make-good-solutions/painting"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/services/ceiling-tile-replacement"
+  to = "/services/make-good-solutions/suspended-ceilings"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/services/warehouse-floor-restoration"
+  to = "/services/make-good-solutions/warehouse-flooring"
+  status = 301
+  force = true
+
+# Handover Solutions children
+[[redirects]]
+  from = "/services/handover-cleaning"
+  to = "/services/handover-solutions/end-of-lease-cleaning"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/services/end-of-lease-relocation"
+  to = "/services/handover-solutions/end-of-lease-relocation"
+  status = 301
+  force = true
+
+# Remediation Solutions children
+[[redirects]]
+  from = "/services/cladding-glazing"
+  to = "/services/remediation-solutions/cladding-glazing"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/services/polycarbonate-roofing-skylights"
+  to = "/services/remediation-solutions/polycarbonate-roofing-skylights"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/services/structural-remediation"
+  to = "/services/remediation-solutions/structural"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/services/waterproofing"
+  to = "/services/remediation-solutions/waterproofing"
+  status = 301
+  force = true
+
+# 404 catch-all (must be last)
 [[redirects]]
   from = "/*"
   to = "/404.html"
