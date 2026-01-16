@@ -355,7 +355,7 @@ export const services: Service[] = [
     published: true
   },
   {
-    name: "Make Good Painting",
+    name: "Painting",
     slug: "make-good-solutions/painting",
     title: "Painting",
     metaTitle: "Painting Make Good Melbourne | Make Good, Better",
@@ -473,7 +473,7 @@ export const services: Service[] = [
     published: true
   },
   {
-    name: "Ceiling Tile Replacement",
+    name: "Suspended Ceilings",
     slug: "make-good-solutions/suspended-ceilings",
     title: "Suspended Ceilings",
     metaTitle: "Suspended Ceiling Make Good Melbourne | Make Good, Better",
@@ -541,7 +541,7 @@ export const services: Service[] = [
     published: true
   },
   {
-    name: "Handover Cleaning",
+    name: "End of Lease Cleaning",
     slug: "handover-solutions/end-of-lease-cleaning",
     title: "End of Lease Cleaning",
     metaTitle: "Handover Cleaning Melbourne | Make Good, Better",
@@ -662,7 +662,7 @@ export const services: Service[] = [
     published: true
   },
   {
-    name: "Structural Remediation",
+    name: "Structural",
     slug: "remediation-solutions/structural",
     title: "Structural",
     metaTitle: "Structural Remediation Melbourne | Make Good, Better",
@@ -1054,7 +1054,7 @@ export const services: Service[] = [
     published: true
   },
   {
-    name: "Warehouse Floor Restoration",
+    name: "Warehouse Flooring",
     slug: "make-good-solutions/warehouse-flooring",
     title: "Warehouse Flooring Restoration",
     metaTitle: "Warehouse Flooring Make Good Melbourne | Make Good, Better",
@@ -1201,7 +1201,7 @@ export const services: Service[] = [
   },
 
   {
-    name: "Demolition Works",
+    name: "Demolition",
     slug: "strip-out-solutions/demolition",
     title: "Demolition",
     metaTitle: "Demolition Strip Out Melbourne | Make Good, Better",
@@ -1302,7 +1302,7 @@ export const services: Service[] = [
     published: true
   },
   {
-    name: "Make Safe Works",
+    name: "Make Safe",
     slug: "strip-out-solutions/make-safe",
     title: "Make Safe",
     metaTitle: "Make Safe Strip Out Melbourne | Make Good, Better",
