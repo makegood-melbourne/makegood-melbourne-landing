@@ -186,17 +186,13 @@ export const sectionLandingPages: SectionLandingData[] = [
     ],
     
     serviceSlugs: [
-      "flooring-installation",
       "line-marking",
       "make-good-painting",
-      "suspended-ceiling-works",
-      "wall-repairs-patching-plastering",
       "warehouse-floor-restoration"
     ],
     carouselTitle: "OUR MAKE GOOD SERVICES",
     carouselTitleHighlight: "SERVICES",
     carouselDescription: "Complete restoration solutions for commercial and industrial properties across Melbourne.",
-    useGrid: true,  // Display as static grid instead of carousel
     
     faqs: [
       {
