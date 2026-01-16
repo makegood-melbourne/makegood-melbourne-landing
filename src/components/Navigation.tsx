@@ -19,29 +19,33 @@ import {
 const serviceCategories = [
   {
     label: "Strip Out",
-    href: "/services/strip-out",  // Clickable category header
-    slugs: ['demolition-works', 'make-safe-works', 'pallet-racking-removal'],
+    href: "/services/strip-out-solutions",  // Clickable category header
+    slugs: ['strip-out-solutions/demolition', 'strip-out-solutions/make-safe', 'strip-out-solutions/pallet-racking-removal'],
     displayNames: {
-      'demolition-works': 'Demolition Works',
-      'make-safe-works': 'Make Safe Works',
-      'pallet-racking-removal': 'Racking Removal'
+      'strip-out-solutions/demolition': 'Demolition',
+      'strip-out-solutions/make-safe': 'Make Safe',
+      'strip-out-solutions/pallet-racking-removal': 'Pallet Racking Removal'
     }
   },
   {
     label: "Make Good",
-    href: "/services/make-good",  // Clickable category header
-    slugs: ['flooring-installation', 'line-marking', 'make-good-painting', 'suspended-ceiling-works', 'wall-repairs-patching-plastering', 'warehouse-floor-restoration']
+    href: "/services/make-good-solutions",  // Clickable category header
+    slugs: ['make-good-solutions/line-marking', 'make-good-solutions/painting', 'make-good-solutions/suspended-ceilings', 'make-good-solutions/warehouse-flooring']
   },
   {
     label: "Handover",
-    slugs: ['handover-cleaning', 'end-of-lease-relocation', 'electrical-make-safe', 'led-lighting']
+    href: "/services/handover-solutions",  // Clickable category header
+    slugs: ['handover-solutions/end-of-lease-cleaning', 'handover-solutions/end-of-lease-relocation']
   },
   {
     label: "Remediation",
-    href: "/services/remediation",  // Clickable category header
-    slugs: ['structural-remediation', 'polycarbonate-roofing-skylights', 'cladding-glazing', 'waterproofing'],
+    href: "/services/remediation-solutions",  // Clickable category header
+    slugs: ['remediation-solutions/structural', 'remediation-solutions/polycarbonate-roofing-skylights', 'remediation-solutions/cladding-glazing', 'remediation-solutions/waterproofing'],
     displayNames: {
-      'structural-remediation': 'Structural'
+      'remediation-solutions/structural': 'Structural',
+      'remediation-solutions/polycarbonate-roofing-skylights': 'Polycarbonate Roofing & Skylights',
+      'remediation-solutions/cladding-glazing': 'Cladding & Glazing',
+      'remediation-solutions/waterproofing': 'Waterproofing'
     }
   }
 ];
