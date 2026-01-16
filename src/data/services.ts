@@ -36,6 +36,7 @@ import tileFlooringRemovalImage from "@/assets/services/tile-flooring-removal-de
 import floorGrindingMachineImage from "@/assets/services/floor-grinding-machine-concrete-levelling-melbourne.jpeg";
 import grindSealFloorCoatingImage from "@/assets/services/grind-seal-floor-coating-application-warehouse-melbourne.jpeg";
 import floorGrindingPowerTrowelImage from "@/assets/services/floor-grinding-power-trowel-concrete-melbourne.png";
+import warehouseJointRepairImage from "@/assets/services/warehouse-concrete-floor-joint-repair-melbourne.jpg";
 import warehouseRoofSkylightsImage from "@/assets/services/warehouse-roof-skylights-steel-structure-melbourne.jpeg";
 import commercialPaintingHeroImage from "@/assets/services/commercial-warehouse-painting-make-good-melbourne.jpeg";
 import commercialPaintingScopeImage from "@/assets/services/commercial-painting-scope-surface-preparation-melbourne.jpeg";
@@ -1088,6 +1089,12 @@ export const services: Service[] = [
         description: "When pallet racking, machinery or equipment is removed, you're left with hundreds of anchor holes in your floor. We core drill out damaged concrete around dynabolt holes, fill with high-strength epoxy resin, and grind flush to restore a smooth, level surface. Essential for [lease end make goods](/what-is-make-good) and floor re-coating.",
         image: warehouseDynaboltHoleRepairsImage,
         imageAlt: "Industrial warehouse pallet racking with blue uprights and orange beams anchored to concrete floor Melbourne"
+      },
+      {
+        title: "Crack Injection & Joint Repairs",
+        description: "Cracks and deteriorated joints let water penetrate the slab and worsen under forklift traffic. We inject low-viscosity epoxy or polyurethane into cracks to restore structural integrity and prevent further damage. For failed expansion joints, we reseal with polyurethane caulking to keep water and debris out. Damaged joint edges (arrises) are rebuilt using quartz-filled epoxy resins designed for heavy traffic areas. We also handle complete expansion joint replacement—removing old fillers and installing new foam backer rods with modern sealants.",
+        image: warehouseJointRepairImage,
+        imageAlt: "Close-up of concrete floor expansion joint showing repair work on industrial warehouse floor Melbourne"
       },
       {
         title: "Surface Finishing",
