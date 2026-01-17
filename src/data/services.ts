@@ -1438,20 +1438,113 @@ export const services: Service[] = [
   },
   {
     name: "Flooring Reinstatement",
-    slug: "make-good-solutions/flooring",
+    slug: "make-good-solutions/flooring-reinstatement",
     title: "Flooring Reinstatement",
-    metaTitle: "Flooring Make Good Melbourne | Make Good, Better",
-    description: "[Content to be added]",
-    metaDescription: "[Content to be added]",
-    heroText: "[Content to be added]",
+    metaTitle: "Flooring Reinstatement Melbourne | Make Good, Better",
+    description: "Professional flooring reinstatement for lease handovers and make good compliance across Melbourne. We install carpet tiles, epoxy coatings, vinyl planks and timber flooring to match existing specifications and meet handover requirements.",
+    metaDescription: "Professional flooring reinstatement for lease handovers and make good compliance. Carpet tiles, epoxy flooring, vinyl and timber restoration to match original specifications across Melbourne.",
+    heroText: "Your lease calls for the flooring restored to its original condition. We install carpet tiles, epoxy coatings, vinyl planks and timber flooring to match existing specifications and meet handover requirements. From matching carpet tile patterns to replicating timber finishes—we deliver compliant, handover-ready floors.",
     ogImage: "/og/flooring-reinstatement.jpg",
-    heroImage: "",
-    heroImageAlt: "[Content to be added]",
-    benefits: [],
-    relatedServices: [],
+    heroImage: "", // TODO: Add hero image
+    heroImageAlt: "Commercial flooring reinstatement in progress showing carpet tile installation in Melbourne office",
+    heroImageTitle: "Makegood Melbourne - Flooring Reinstatement Service",
+    trustBadges: [
+      "Licensed & Insured",
+      "Fixed-Price Quotes",
+      "After-Hours Available",
+      "Full Documentation"
+    ],
+    skipAboutSection: true,
+    scopeHeading: "FLOORING REINSTATEMENT",
+    scopeHeadingHighlight: "WORKS",
+    scopeDescription: "Flooring damage from forklifts, office chairs, or years of heavy traffic can mean full replacement—or when the damage is localised, we reinstate specific sections to match the surrounding flooring. Carpet tiles, vinyl planks, epoxy coatings, engineered timber—our experienced team restores floors to match original specifications across all flooring types. We're make good specialists who understand lease obligations and work efficiently to meet handover deadlines.
+
+We work from your lease schedule to match the original flooring—pattern, colour, finish. If the exact product is no longer available, we source the closest match and coordinate approval before installation. Substrate preparation is handled appropriately: damaged concrete repaired, uneven areas levelled, surfaces prepared. Reinstatement is completed to approved finishes schedule so your space is ready for a successful handover.",
+    capabilityCards: [
+      {
+        icon: "brick",
+        title: "CARPET TILES",
+        items: [
+          "Most common flooring in commercial offices",
+          "Reinstated to match original pattern, color and layout",
+          "Work from lease documentation to identify specification",
+          "Source closest match if original product discontinued",
+          "Substrate preparation: repair concrete, level uneven areas",
+          "Tiles laid to match existing pattern (monolithic, quarter-turn, brick or ashlar)",
+          "Cut precisely around columns and services",
+          "Finished with edge trims where required"
+        ]
+      },
+      {
+        icon: "structure",
+        title: "EPOXY FLOORING",
+        items: [
+          "Standard in warehouses, factories and industrial tenancies",
+          "Recoat with same epoxy system (seal coat, broadcast or high-gloss)",
+          "Identify existing system and match original specification",
+          "Grind surface to create mechanical key",
+          "Repair cracks and damaged areas",
+          "Ensure slab is dry and contaminant-free",
+          "Apply coating per manufacturer specifications",
+          "Durable, compliant finish for handover"
+        ]
+      },
+      {
+        icon: "waterproof",
+        title: "VINYL & TIMBER",
+        items: [
+          "Increasingly common in offices, retail and hospitality venues",
+          "Source matching products to original specification",
+          "Identify product type: luxury vinyl planks, engineered timber or hybrid",
+          "Repair damaged concrete or existing underlays",
+          "Ensure surface is level and suitable for installation",
+          "Vinyl: floating floors with click-lock systems",
+          "Timber: glue-down or nail-down per original method",
+          "Match laying pattern, finish trims and transitions"
+        ]
+      }
+    ],
+    capabilitiesTitle: "FLOORING REINSTATEMENT CAPABILITIES",
+    capabilitiesSubtitle: "Our service covers all flooring types for commercial make good projects.",
+    linkedSpotlightBlock: {
+      title: "A COMPLETE MAKE GOOD",
+      titleHighlight: "SERVICE",
+      subtitle: "We coordinate flooring reinstatement with painting, ceiling replacement and floor restoration to deliver your end-of-lease project on time.",
+      cards: [
+        {
+          slug: "make-good-solutions/line-marking",
+          name: "Line Marking",
+          description: "Professional line marking for car parks, warehouses and industrial facilities to meet lease compliance requirements."
+        },
+        {
+          slug: "make-good-solutions/painting",
+          name: "Painting",
+          description: "End of lease painting services for commercial and industrial properties across Melbourne."
+        }
+      ]
+    },
+    ctaHeading: "READY TO RESTORE YOUR FLOORING WITH CONFIDENCE?",
+    ctaDescription: "Contact us for a detailed site assessment and a fixed-price quote. Let us show you how experienced flooring reinstatement makes all the difference in your end-of-lease project.",
+    benefits: [
+      "Carpet tile reinstatement",
+      "Epoxy floor coating",
+      "Vinyl plank installation",
+      "Timber floor restoration",
+      "Substrate preparation",
+      "Pattern matching",
+      "Product sourcing",
+      "Lease compliance"
+    ],
+    relatedServices: [
+      "make-good-solutions/line-marking",
+      "make-good-solutions/painting",
+      "make-good-solutions/suspended-ceilings",
+      "make-good-solutions/warehouse-flooring"
+    ],
     category: "make-good",
-    published: false
-  },
+    published: true
+  }
+,
   {
     name: "Wall Repairs, Patching & Plastering",
     slug: "make-good-solutions/patching-plastering",
