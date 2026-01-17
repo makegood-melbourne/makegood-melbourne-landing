@@ -148,7 +148,7 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
                 <div className={index % 2 === 0 ? 'lg:order-2' : ''}>
                   {section.image ? (
                     <img 
-                      src={resolveImageSrc(section.image)} 
+                      src={resolveImageSrc(section.image)} width={2048} height={1148} 
                       alt={section.imageAlt || `${service.name} professional services Melbourne`}
                       className="aspect-[4/3] w-full object-cover rounded-lg"
                       style={{ objectPosition: section.imagePosition === 'left' ? 'left center' : section.imagePosition === 'right' ? 'right center' : 'center' }}
@@ -457,7 +457,7 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
                   <div className={index % 2 === 0 ? 'lg:order-2' : ''}>
                     {section.image ? (
                       <img 
-                        src={resolveImageSrc(section.image)} 
+                        src={resolveImageSrc(section.image)} width={2048} height={1148} 
                         alt={section.imageAlt || `${service.name} professional services Melbourne`}
                         className="aspect-[4/3] w-full object-cover rounded-lg"
                         style={{ objectPosition: section.imagePosition === 'left' ? 'left center' : section.imagePosition === 'right' ? 'right center' : 'center' }}
@@ -543,7 +543,7 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
                 <div className={shouldReverseLayout ? 'lg:order-1' : ''}>
                   {section.image ? (
                     <img
-                      src={resolveImageSrc(section.image)}
+                      src={resolveImageSrc(section.image)} width={2048} height={1148}
                       alt={section.imageAlt || `${service.name} professional services Melbourne`}
                       className="aspect-[4/3] w-full object-cover rounded-lg"
                       style={{ objectPosition: section.imagePosition === 'left' ? 'left center' : section.imagePosition === 'right' ? 'right center' : 'center' }}
