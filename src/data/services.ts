@@ -1457,9 +1457,7 @@ export const services: Service[] = [
     skipAboutSection: true,
     scopeHeading: "FLOORING REINSTATEMENT",
     scopeHeadingHighlight: "WORKS",
-    scopeDescription: "Flooring damage from forklifts, office chairs, or years of heavy traffic can mean full replacement—or when the damage is localised, we reinstate specific sections to match the surrounding flooring. Carpet tiles, vinyl planks, epoxy coatings, engineered timber—our experienced team restores floors to match original specifications across all flooring types. We're make good specialists who understand lease obligations and work efficiently to meet handover deadlines.
-
-We work from your lease schedule to match the original flooring—pattern, colour, finish. If the exact product is no longer available, we source the closest match and coordinate approval before installation. Substrate preparation is handled appropriately: damaged concrete repaired, uneven areas levelled, surfaces prepared. Reinstatement is completed to approved finishes schedule so your space is ready for a successful handover.",
+    scopeDescription: "Flooring damage from forklifts, office chairs, or years of heavy traffic can mean full replacement—or when the damage is localised, we reinstate specific sections to match the surrounding flooring. Carpet tiles, vinyl planks, epoxy coatings, engineered timber—our experienced team restores floors to match original specifications across all flooring types. We're make good specialists who understand lease obligations and work efficiently to meet handover deadlines.\n\nWe work from your lease schedule to match the original flooring—pattern, colour, finish. If the exact product is no longer available, we source the closest match and coordinate approval before installation. Substrate preparation is handled appropriately: damaged concrete repaired, uneven areas levelled, surfaces prepared. Reinstatement is completed to approved finishes schedule so your space is ready for a successful handover.",
     capabilityCards: [
       {
         icon: "brick",
