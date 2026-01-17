@@ -73,7 +73,7 @@ export interface SectionLandingData {
 
 export const sectionLandingPages: SectionLandingData[] = [
   {
-    slug: "strip-out",
+    slug: "strip-out-solutions",
     metaTitle: "Commercial Strip Out Melbourne | End of Lease Specialists",
     metaDescription: "Expert commercial strip out and back to base services in Melbourne. Office, retail and warehouse defits. Licensed demolition. Hazardous waste removal. Free quotes.",
     ogImage: "/og/strip-out.jpg",
@@ -154,7 +154,7 @@ export const sectionLandingPages: SectionLandingData[] = [
     ctaText: "We are Melbourne's end-of-lease make good specialists. From a simple office defit to a complex industrial strip out, we deliver a seamless, reliable, and fully compliant service. Contact us today for a free site assessment and a detailed, fixed-price quote."
   },
   {
-    slug: "make-good",
+    slug: "make-good-solutions",
     metaTitle: "Make Good Melbourne | End of Lease Restoration Services",
     metaDescription: "Professional make good services for commercial and industrial properties. Flooring, painting, ceiling works, and wall repairs. Fixed-price quotes, lease compliance guaranteed.",
     ogImage: "/og/make-good.jpg",
@@ -226,7 +226,7 @@ export const sectionLandingPages: SectionLandingData[] = [
     ctaText: "Get a detailed quote for your end-of-lease make good works. We'll assess your lease requirements and provide a fixed-price proposal with a clear timeline for handover."
   },
   {
-    slug: "remediation",
+    slug: "remediation-solutions",
     metaTitle: "Building Remediation Melbourne | Structural Repairs & Compliance",
     metaDescription: "Expert building remediation services in Melbourne. Structural repairs, cladding compliance, waterproofing and defect rectification. Licensed contractors. Free site inspections.",
     ogImage: "/og/remediation.jpg",

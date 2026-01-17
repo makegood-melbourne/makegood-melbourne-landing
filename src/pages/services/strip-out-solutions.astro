@@ -8,7 +8,7 @@ import { getSectionLandingBySlug } from '../../data/sectionLanding';
 import stripOutHero from '../../assets/services/commercial-industrial-strip-out-melbourne.jpg';
 import stripOutHeroMobile from '../../assets/services/commercial-industrial-strip-out-melbourne-mobile.jpg';
 
-const data = getSectionLandingBySlug('strip-out');
+const data = getSectionLandingBySlug('strip-out-solutions');
 
 if (!data) {
   return Astro.redirect('/capabilities');
@@ -19,7 +19,7 @@ if (!data) {
   title={data.metaTitle}
   description={data.metaDescription}
   ogImage={data.ogImage || "/og-default.jpg"}
-  canonicalUrl="https://makegood.melbourne/services/strip-out"
+  canonicalUrl="https://makegood.melbourne/services/strip-out-solutions"
 >
   <link slot="head" rel="preload" as="image" href={stripOutHeroMobile.src} fetchpriority="high" media="(max-width: 1023px)" />
   <link slot="head" rel="preload" as="image" href={stripOutHero.src} fetchpriority="high" media="(min-width: 1024px)" />

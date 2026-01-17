@@ -8,7 +8,7 @@ import { getSectionLandingBySlug } from '../../data/sectionLanding';
 import makeGoodHero from '../../assets/services/melbourne-warehouse-make-good-hero.jpg';
 import makeGoodHeroMobile from '../../assets/services/melbourne-warehouse-make-good-hero-mobile.jpg';
 
-const data = getSectionLandingBySlug('make-good');
+const data = getSectionLandingBySlug('make-good-solutions');
 
 if (!data) {
   return Astro.redirect('/capabilities');
@@ -19,7 +19,7 @@ if (!data) {
   title={data.metaTitle}
   description={data.metaDescription}
   ogImage={data.ogImage || "/og-default.jpg"}
-  canonicalUrl="https://makegood.melbourne/services/make-good"
+  canonicalUrl="https://makegood.melbourne/services/make-good-solutions"
 >
   <link slot="head" rel="preload" as="image" href={makeGoodHeroMobile.src} fetchpriority="high" media="(max-width: 1023px)" />
   <link slot="head" rel="preload" as="image" href={makeGoodHero.src} fetchpriority="high" media="(min-width: 1024px)" />
