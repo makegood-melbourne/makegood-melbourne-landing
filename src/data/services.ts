@@ -1442,7 +1442,8 @@ export const services: Service[] = [
   {
     name: "Flooring Reinstatement",
     slug: "make-good-solutions/flooring-reinstatement",
-    title: "Flooring Reinstatement",
+    title: "FLOORING REINSTATEMENT MELBOURNE",
+    titleHighlight: "MELBOURNE",
     metaTitle: "Flooring Reinstatement Melbourne | Make Good, Better",
     description: "Professional flooring reinstatement for lease handovers and make good compliance across Melbourne. We install carpet tiles, epoxy coatings, vinyl planks and timber flooring to match existing specifications and meet handover requirements.",
     metaDescription: "Professional flooring reinstatement for lease handovers and make good compliance. Carpet tiles, epoxy flooring, vinyl and timber restoration to match original specifications across Melbourne.",
