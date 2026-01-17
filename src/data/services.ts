@@ -1437,17 +1437,19 @@ export const services: Service[] = [
     published: false
   },
   {
-    name: "Flooring Reinstatement",
-    slug: "make-good-solutions/flooring-reinstatement",
-    title: "Flooring Reinstatement",
-    metaTitle: "Flooring Reinstatement Melbourne | Make Good, Better",
+    name: "Warehouse Flooring Restoration",
+    slug: "make-good-solutions/warehouse-flooring-restoration",
+    title: "Warehouse Flooring Restoration",
+    metaTitle: "Warehouse Flooring Restoration Melbourne | Make Good, Better",
     description: "Professional flooring reinstatement for lease handovers and make good compliance across Melbourne. We install carpet tiles, epoxy coatings, vinyl planks and timber flooring to match existing specifications and meet handover requirements.",
     metaDescription: "Professional flooring reinstatement for lease handovers and make good compliance. Carpet tiles, epoxy flooring, vinyl and timber restoration to match original specifications across Melbourne.",
     heroText: "Your lease calls for the flooring restored to its original condition. We install carpet tiles, epoxy coatings, vinyl planks and timber flooring to match existing specifications and meet handover requirements. From matching carpet tile patterns to replicating timber finishes—we deliver compliant, handover-ready floors.",
     ogImage: "/og/flooring-reinstatement.jpg",
-    heroImage: "", // TODO: Add hero image
-    heroImageAlt: "Commercial flooring reinstatement in progress showing carpet tile installation in Melbourne office",
-    heroImageTitle: "Makegood Melbourne - Flooring Reinstatement Service",
+    heroImage: "/services/warehouse-flooring-restoration-hero.jpeg",
+    heroImageAlt: "A pristine, newly restored warehouse floor, reflecting the overhead lights, showcasing the quality of the restoration.",
+    heroImageTitle: "Makegood Melbourne - Warehouse Flooring Restoration Service",
+    secondaryImage: "/services/warehouse-flooring-restoration-process.jpeg",
+    secondaryImageAlt: "A worker spreading self-leveling compound on a warehouse floor.",,
     trustBadges: [
       "Licensed & Insured",
       "Fixed-Price Quotes",
@@ -1538,6 +1540,24 @@ export const services: Service[] = [
       "make-good-solutions/painting",
       "make-good-solutions/suspended-ceilings",
       "make-good-solutions/warehouse-flooring"
+    ],
+    faqs: [
+      {
+        question: "What types of floor damage do you repair?",
+        answer: "We repair a wide range of warehouse floor damage, including cracks, spalling, joint damage, and surface delamination. We also handle the removal of old coatings and the repair of the underlying concrete."
+      },
+      {
+        question: "Can you match the existing floor finish?",
+        answer: "Yes, we can match a wide variety of floor finishes, from standard grey concrete to specialized epoxy coatings. We work with you to ensure the restored floor meets your specifications and lease obligations."
+      },
+      {
+        question: "How long does a typical warehouse floor restoration take?",
+        answer: "The duration of a project depends on the size of the area and the extent of the damage. However, we work efficiently to minimize downtime and can often complete projects in a matter of days."
+      },
+      {
+        question: "Do you offer dust-free grinding?",
+        answer: "Yes, we use state-of-the-art grinding equipment with integrated dust extraction systems to ensure a clean and safe working environment."
+      }
     ],
     category: "make-good",
     published: true
