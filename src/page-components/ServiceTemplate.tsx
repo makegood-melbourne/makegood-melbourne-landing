@@ -283,7 +283,12 @@ const ServiceTemplate = ({ slug: propSlug }: ServiceTemplateProps) => {
               <div className="container mx-auto px-4">
                 {/* Title - single element, positioned via CSS grid order */}
                 <h2 className="text-3xl md:text-4xl text-foreground mb-6 lg:col-span-2 lg:mb-0">
-                  {section.title}
+                  {section.titleHighlight ? (
+                    <>
+                      {section.title.replace(section.titleHighlight, '').trim()}{' '}
+                      <span className="text-primary">{section.titleHighlight}</span>
+                    </>
+                  ) : section.title}
                 </h2>
                 
                 <div className={`grid lg:grid-cols-2 gap-12 items-center`}>

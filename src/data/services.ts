@@ -50,9 +50,11 @@ import commercialDemolitionFeaturedImage from "@/assets/services/commercial-demo
 import makeSafeWorksHeroImage from "@/assets/services/make-safe-works-melbourne-hero.jpg";
 import backToBaseCablingImage from "@/assets/services/back-to-base-cabling-melbourne.jpg";
 import flooringReinstatementHeroImage from "@/assets/services/flooring-reinstatement-hero.webp";
+import flooringReinstatementProcessImage from "@/assets/services/flooring-reinstatement-process.webp";
 
 export interface FeaturedSection {
   title: string;
+  titleHighlight?: string; // Part of title to highlight in orange
   description: string;
   image?: string;
   imageAlt?: string;
@@ -1505,6 +1507,18 @@ export const services: Service[] = [
     ],
     capabilitiesTitle: "FLOORING REINSTATEMENT CAPABILITIES",
     capabilitiesSubtitle: "Our service covers all flooring types for commercial make good projects.",
+    featuredSections: [
+      {
+        title: "FLOORING REINSTATEMENT WORKS",
+        titleHighlight: "WORKS",
+        description: "Flooring damage from forklifts, office chairs, or years of heavy traffic can mean full replacement—or when the damage is localised, we reinstate specific sections to match the surrounding flooring. Carpet tiles, vinyl planks, epoxy coatings, engineered timber—our experienced team restores floors to match original specifications across all flooring types. We're make good specialists who understand lease obligations and work efficiently to meet handover deadlines.\n\nWe work from your lease schedule to match the original flooring—pattern, colour, finish. If the exact product is no longer available, we source the closest match and coordinate approval before installation. Substrate preparation is handled appropriately: damaged concrete repaired, uneven areas levelled, surfaces prepared. Reinstatement is completed to approved finishes schedule so your space is ready for a successful handover.",
+        image: flooringReinstatementProcessImage,
+        imageAlt: "Industrial floor grinding and preparation for flooring reinstatement in Melbourne warehouse",
+        imageTitle: "Makegood Melbourne - Flooring Reinstatement Works",
+        imagePosition: "center",
+        imageLeft: false
+      }
+    ],
     linkedSpotlightBlock: {
       title: "A COMPLETE MAKE GOOD",
       titleHighlight: "SERVICE",
