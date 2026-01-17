@@ -1543,8 +1543,7 @@ We work from your lease schedule to match the original flooring—pattern, colou
     ],
     category: "make-good",
     published: true
-  }
-,
+  },
   {
     name: "Wall Repairs, Patching & Plastering",
     slug: "make-good-solutions/patching-plastering",
