@@ -50,7 +50,6 @@ import commercialDemolitionFeaturedImage from "@/assets/services/commercial-demo
 import makeSafeWorksHeroImage from "@/assets/services/make-safe-works-melbourne-hero.jpg";
 import backToBaseCablingImage from "@/assets/services/back-to-base-cabling-melbourne.jpg";
 import flooringReinstatementHeroImage from "@/assets/services/flooring-reinstatement-hero.webp";
-import flooringReinstatementProcessImage from "@/assets/services/flooring-reinstatement-process.webp";
 
 export interface FeaturedSection {
   title: string;
@@ -299,7 +298,7 @@ export const services: Service[] = [
     metaTitle: "Epoxy Flooring Melbourne | Industrial Specialists",
     description: "Tired concrete floors dragging down your warehouse? Epoxy transforms worn, stained slabs into durable, professional surfaces that impress clients and stand up to forklifts, chemicals and heavy traffic. New installs or restoration—we handle it.",
     metaDescription: "Industrial epoxy flooring Melbourne. Warehouse floor coatings, concrete repair and resurfacing. Chemical-resistant, anti-slip finishes. Licensed applicators. Free quotes.",
-    heroText: "Your warehouse floor takes a beating. Epoxy coating protects the concrete, hides the damage and gives you a surface that's easy to clean, safe to work on and built to last. For floors with cracks, bolt holes or joint damage, we handle [floor repairs](/services/warehouse-floor-restoration) before coating. Whether you're refreshing for a new tenant or upgrading your own facility—we deliver.",
+    heroText: "Your warehouse floor takes a beating. Epoxy coating protects the concrete, hides the damage and gives you a surface that's easy to clean, safe to work on and built to last. For floors with cracks, bolt holes or joint damage, we handle [floor repairs](/services/make-good-solutions/warehouse-flooring) before coating. Whether you're refreshing for a new tenant or upgrading your own facility—we deliver.",
     ogImage: "/og/epoxy-flooring.jpg",
     heroImage: epoxySpreadingApplicationImage,
     heroImageAlt: "Worker spreading epoxy floor coating in industrial warehouse Melbourne",
@@ -1506,17 +1505,6 @@ export const services: Service[] = [
     ],
     capabilitiesTitle: "FLOORING REINSTATEMENT CAPABILITIES",
     capabilitiesSubtitle: "Our service covers all flooring types for commercial make good projects.",
-    featuredSections: [
-      {
-        title: "Comprehensive Flooring Restoration from Start to Finish",
-        description: "Flooring reinstatement is rarely just about laying new material. Damaged substrates, uneven surfaces, old adhesive residue—these issues must be addressed before any new flooring goes down. Our team handles the complete process: removing existing flooring, repairing concrete damage, levelling uneven areas, and preparing surfaces to manufacturer specifications. Whether it's grinding back old epoxy, patching dynabolt holes from removed racking, or ensuring moisture levels are within tolerance—we manage every step so your new flooring performs as intended and meets lease requirements.",
-        image: flooringReinstatementProcessImage,
-        imageAlt: "Industrial floor grinding and preparation for flooring reinstatement in Melbourne warehouse",
-        imageTitle: "Makegood Melbourne - Comprehensive Flooring Restoration Process",
-        imagePosition: "center",
-        imageLeft: true
-      }
-    ],
     linkedSpotlightBlock: {
       title: "A COMPLETE MAKE GOOD",
       titleHighlight: "SERVICE",
@@ -1590,6 +1578,14 @@ export const services: Service[] = [
       {
         question: "Do you provide documentation for lease handover?",
         answer: "Yes, we provide complete documentation including before and after photos, product specifications, and completion certificates. This documentation supports your lease handover and demonstrates compliance with make good requirements."
+      },
+      {
+        question: "Can you apply epoxy over damaged concrete?",
+        answer: "Yes, but the damage must be repaired first. Cracks, dynabolt holes, spalling and joint failures need proper treatment before coating\u2014otherwise they'll telegraph through the epoxy and cause premature failure. We handle all floor repairs as part of our epoxy flooring reinstatement service."
+      },
+      {
+        question: "What preparation is needed before epoxy flooring?",
+        answer: "Proper preparation is critical for adhesion. We diamond grind the surface to create a profile, repair any cracks or damage, fill dynabolt holes, and ensure the concrete is clean and dry. Poor preparation is the main cause of epoxy failure\u2014we don't cut corners."
       }
     ],
     category: "make-good",

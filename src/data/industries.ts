@@ -161,7 +161,7 @@ export const industries: Industry[] = [
         description: "Mezzanines, partition walls and structural additions often need removal and slab restoration."
       }
     ],
-    services: ["pallet-racking-removal", "epoxy-flooring", "warehouse-floor-restoration", "line-marking", "handover-cleaning"],
+    services: ["strip-out-solutions/pallet-racking-removal", "epoxy-flooring", "make-good-solutions/warehouse-flooring", "make-good-solutions/line-marking", "handover-solutions/end-of-lease-cleaning"],
     benefits: [
       "Heavy machinery removal and disposal",
       "Floor anchor extraction and repair",

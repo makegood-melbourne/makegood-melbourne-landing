@@ -34,9 +34,9 @@ const ServiceTemplate = ({ slug: propSlug }: ServiceTemplateProps) => {
 
   // Get related services from navigation categories (services in same category)
   const serviceCategories = [
-    { label: "Floor Restoration", slugs: ['warehouse-floor-restoration', 'epoxy-flooring', 'line-marking', 'pallet-racking-removal'] },
-    { label: "Specialist Trades", slugs: ['handover-cleaning', 'make-good-painting', 'ceiling-tile-replacement', 'patching-plastering', 'electrical-make-safe', 'led-lighting', 'end-of-lease-relocation'] },
-    { label: "Structural & Remediation", slugs: ['structural-remediation', 'polycarbonate-roofing-skylights', 'cladding-glazing', 'concrete-floor-repair', 'waterproofing'] }
+    { label: "Floor Restoration", slugs: ['make-good-solutions/warehouse-flooring', 'epoxy-flooring', 'make-good-solutions/line-marking', 'strip-out-solutions/pallet-racking-removal'] },
+    { label: "Specialist Trades", slugs: ['handover-solutions/end-of-lease-cleaning', 'make-good-solutions/painting', 'make-good-solutions/suspended-ceilings', 'make-good-solutions/patching-plastering', 'handover-solutions/end-of-lease-relocation'] },
+    { label: "Structural & Remediation", slugs: ['remediation-solutions/structural', 'remediation-solutions/polycarbonate-roofing-skylights', 'remediation-solutions/cladding-glazing', 'remediation-solutions/waterproofing'] }
   ];
   
   const currentCategory = serviceCategories.find(cat => cat.slugs.includes(service.slug));

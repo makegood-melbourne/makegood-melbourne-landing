@@ -14,9 +14,9 @@ const Capabilities = () => {
   const allServices = getPublishedServices();
   
   // Group services by the new 3-category navigation structure
-  const floorRestorationSlugs = ['warehouse-floor-restoration', 'epoxy-flooring', 'line-marking', 'pallet-racking-removal'];
-  const specialistTradesSlugs = ['handover-cleaning', 'make-good-painting', 'ceiling-tile-replacement', 'end-of-lease-relocation'];
-  const structuralRemediationSlugs = ['structural-remediation', 'polycarbonate-roofing-skylights', 'cladding-glazing', 'concrete-floor-repair', 'waterproofing'];
+  const floorRestorationSlugs = ['make-good-solutions/warehouse-flooring', 'epoxy-flooring', 'make-good-solutions/line-marking', 'strip-out-solutions/pallet-racking-removal'];
+  const specialistTradesSlugs = ['handover-solutions/end-of-lease-cleaning', 'make-good-solutions/painting', 'make-good-solutions/suspended-ceilings', 'handover-solutions/end-of-lease-relocation'];
+  const structuralRemediationSlugs = ['remediation-solutions/structural', 'remediation-solutions/polycarbonate-roofing-skylights', 'remediation-solutions/cladding-glazing', 'remediation-solutions/waterproofing'];
 
   const floorRestorationServices = allServices.filter(s => floorRestorationSlugs.includes(s.slug));
   const specialistTradesServices = allServices.filter(s => specialistTradesSlugs.includes(s.slug));

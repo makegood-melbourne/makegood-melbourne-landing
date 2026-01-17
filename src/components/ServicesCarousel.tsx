@@ -13,9 +13,9 @@ import { resolveImageSrc } from "@/lib/resolveImageSrc";
 
 // Priority order for carousel display
 const priorityOrder = [
-  "warehouse-floor-restoration",
-  "make-good-cleaning",
-  "ceiling-tile-replacement",
+  "make-good-solutions/warehouse-flooring",
+  "handover-solutions/end-of-lease-cleaning",
+  "make-good-solutions/suspended-ceilings",
 ];
 
 const ServicesCarousel = () => {
