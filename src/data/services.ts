@@ -1445,7 +1445,7 @@ export const services: Service[] = [
     metaDescription: "Professional flooring reinstatement for lease handovers and make good compliance. Carpet tiles, epoxy flooring, vinyl and timber restoration to match original specifications across Melbourne.",
     heroText: "Your lease calls for the flooring restored to its original condition. We install carpet tiles, epoxy coatings, vinyl planks and timber flooring to match existing specifications and meet handover requirements. From matching carpet tile patterns to replicating timber finishes—we deliver compliant, handover-ready floors.",
     ogImage: "/og/flooring-reinstatement.jpg",
-    heroImage: "", // TODO: Add hero image
+    heroImage: "/services/flooring-reinstatement-hero.webp",
     heroImageAlt: "Commercial flooring reinstatement in progress showing carpet tile installation in Melbourne office",
     heroImageTitle: "Makegood Melbourne - Flooring Reinstatement Service",
     trustBadges: [
@@ -1504,6 +1504,17 @@ export const services: Service[] = [
     ],
     capabilitiesTitle: "FLOORING REINSTATEMENT CAPABILITIES",
     capabilitiesSubtitle: "Our service covers all flooring types for commercial make good projects.",
+    featuredSections: [
+      {
+        title: "Comprehensive Flooring Restoration from Start to Finish",
+        description: "Flooring reinstatement is rarely just about laying new material. Damaged substrates, uneven surfaces, old adhesive residue—these issues must be addressed before any new flooring goes down. Our team handles the complete process: removing existing flooring, repairing concrete damage, levelling uneven areas, and preparing surfaces to manufacturer specifications. Whether it's grinding back old epoxy, patching dynabolt holes from removed racking, or ensuring moisture levels are within tolerance—we manage every step so your new flooring performs as intended and meets lease requirements.",
+        image: "/services/flooring-reinstatement-process.webp",
+        imageAlt: "Industrial floor grinding and preparation for flooring reinstatement in Melbourne warehouse",
+        imageTitle: "Makegood Melbourne - Comprehensive Flooring Restoration Process",
+        imagePosition: "center",
+        imageLeft: true
+      }
+    ],
     linkedSpotlightBlock: {
       title: "A COMPLETE MAKE GOOD",
       titleHighlight: "SERVICE",
@@ -1518,6 +1529,16 @@ export const services: Service[] = [
           slug: "make-good-solutions/painting",
           name: "Painting",
           description: "End of lease painting services for commercial and industrial properties across Melbourne."
+        },
+        {
+          slug: "make-good-solutions/suspended-ceilings",
+          name: "Suspended Ceilings",
+          description: "Ceiling tile replacement and grid repairs to restore your commercial space to original condition."
+        },
+        {
+          slug: "make-good-solutions/warehouse-flooring",
+          name: "Warehouse Flooring",
+          description: "Complete warehouse floor restoration including concrete repairs, grinding, and protective coatings."
         }
       ]
     },
@@ -1538,6 +1559,36 @@ export const services: Service[] = [
       "make-good-solutions/painting",
       "make-good-solutions/suspended-ceilings",
       "make-good-solutions/warehouse-flooring"
+    ],
+    faqs: [
+      {
+        question: "What flooring types can you reinstate for end-of-lease make good?",
+        answer: "We reinstate all commercial flooring types including carpet tiles, epoxy coatings, vinyl planks (LVT), luxury vinyl tiles, engineered timber, and hybrid flooring. Our team works from your lease documentation to identify the original specification and source matching products\u2014or the closest available alternative if the original has been discontinued."
+      },
+      {
+        question: "Can you match my existing flooring exactly?",
+        answer: "We work to match your existing flooring as closely as possible. For carpet tiles, we identify the manufacturer, colour code, and laying pattern. For epoxy, we match the system type and finish. When exact products are discontinued, we source the closest match and coordinate approval with you and the landlord before installation."
+      },
+      {
+        question: "Do you handle substrate preparation and repairs?",
+        answer: "Yes, substrate preparation is a core part of our service. We repair damaged concrete, fill dynabolt holes from removed racking, level uneven areas, remove old adhesive residue, and ensure moisture levels are within tolerance\u2014all before any new flooring is installed."
+      },
+      {
+        question: "How long does flooring reinstatement take?",
+        answer: "Timeline depends on the flooring type and area size. Carpet tile installation in a standard office might take 1-2 days. Epoxy coatings require curing time\u2014typically 3-5 days for a complete system. We provide accurate timelines during quoting and coordinate with your lease handover deadline."
+      },
+      {
+        question: "What if my lease doesn't specify the original flooring?",
+        answer: "We conduct a site assessment to identify the existing flooring type and condition. If documentation is unclear, we can work with the landlord or property manager to confirm requirements before proceeding. Our experience with make good projects means we understand what landlords typically expect."
+      },
+      {
+        question: "Can you reinstate flooring in occupied spaces?",
+        answer: "Yes, we regularly work in occupied buildings. We can stage work in sections, work after hours, and coordinate around your operations. Carpet tiles and vinyl planks are particularly suited to staged installation with minimal disruption."
+      },
+      {
+        question: "Do you provide documentation for lease handover?",
+        answer: "Yes, we provide complete documentation including before and after photos, product specifications, and completion certificates. This documentation supports your lease handover and demonstrates compliance with make good requirements."
+      }
     ],
     category: "make-good",
     published: true
