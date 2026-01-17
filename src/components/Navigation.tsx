@@ -18,7 +18,7 @@ import {
 // Service categories for navigation grouping - 4 main sections
 const serviceCategories = [
   {
-    label: "Strip Out",
+    label: "Strip Out Solutions",
     href: "/services/strip-out-solutions",  // Clickable category header
     slugs: ['strip-out-solutions/demolition', 'strip-out-solutions/make-safe', 'strip-out-solutions/pallet-racking-removal'],
     displayNames: {
@@ -28,17 +28,17 @@ const serviceCategories = [
     }
   },
   {
-    label: "Make Good",
+    label: "Make Good Solutions",
     href: "/services/make-good-solutions",  // Clickable category header
     slugs: ['make-good-solutions/line-marking', 'make-good-solutions/painting', 'make-good-solutions/suspended-ceilings', 'make-good-solutions/warehouse-flooring']
   },
   {
-    label: "Handover",
+    label: "Handover Solutions",
     href: "/services/handover-solutions",  // Clickable category header
     slugs: ['handover-solutions/end-of-lease-cleaning', 'handover-solutions/end-of-lease-relocation']
   },
   {
-    label: "Remediation",
+    label: "Remediation Solutions",
     href: "/services/remediation-solutions",  // Clickable category header
     slugs: ['remediation-solutions/structural', 'remediation-solutions/polycarbonate-roofing-skylights', 'remediation-solutions/cladding-glazing', 'remediation-solutions/waterproofing'],
     displayNames: {
