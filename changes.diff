@@ -1,0 +1,124 @@
+diff --git a/public/services/warehouse-flooring-restoration-hero.webp b/public/services/warehouse-flooring-restoration-hero.webp
+new file mode 100644
+index 0000000..7f9d810
+Binary files /dev/null and b/public/services/warehouse-flooring-restoration-hero.webp differ
+diff --git a/public/services/warehouse-flooring-restoration-process.webp b/public/services/warehouse-flooring-restoration-process.webp
+new file mode 100644
+index 0000000..1a33e16
+Binary files /dev/null and b/public/services/warehouse-flooring-restoration-process.webp differ
+diff --git a/src/components/Navigation.tsx b/src/components/Navigation.tsx
+index 93097a5..5e96784 100644
+--- a/src/components/Navigation.tsx
++++ b/src/components/Navigation.tsx
+@@ -30,7 +30,7 @@ const serviceCategories = [
+   {
+     label: "Make Good Solutions",
+     href: "/services/make-good-solutions",  // Clickable category header
+-    slugs: ['make-good-solutions/flooring-reinstatement', 'make-good-solutions/line-marking', 'make-good-solutions/painting', 'make-good-solutions/suspended-ceilings', 'make-good-solutions/warehouse-flooring']
++    slugs: ['make-good-solutions/flooring-reinstatement', 'make-good-solutions/line-marking', 'make-good-solutions/painting', 'make-good-solutions/suspended-ceilings', 'make-good-solutions/warehouse-flooring', 'make-good-solutions/warehouse-flooring-restoration']
+   },
+   {
+     label: "Handover Solutions",
+diff --git a/src/data/sectionLanding.ts b/src/data/sectionLanding.ts
+index 7d1d324..a3a211d 100644
+--- a/src/data/sectionLanding.ts
++++ b/src/data/sectionLanding.ts
+@@ -190,7 +190,8 @@ export const sectionLandingPages: SectionLandingData[] = [
+       "make-good-solutions/line-marking",
+       "make-good-solutions/painting",
+       "make-good-solutions/suspended-ceilings",
+-      "make-good-solutions/warehouse-flooring"
++      "make-good-solutions/warehouse-flooring",
++      "make-good-solutions/warehouse-flooring-restoration"
+     ],
+     carouselTitle: "OUR MAKE GOOD SERVICES",
+     carouselTitleHighlight: "SERVICES",
+diff --git a/src/data/services.ts b/src/data/services.ts
+index 9b1a9ea..c08439f 100644
+--- a/src/data/services.ts
++++ b/src/data/services.ts
+@@ -181,6 +181,84 @@ export const services: Service[] = [
+     ogImage: "/og/pallet-racking-removal.jpg",
+     heroImage: palletRackingRemovalHeroImage,
+     heroImageAlt: "Partially dismantled orange and blue pallet racking in a large, empty Melbourne warehouse during a strip out",
++  },
++  {
++    name: "Warehouse Flooring Restoration",
++    slug: "make-good-solutions/warehouse-flooring-restoration",
++    title: "Warehouse Flooring Restoration",
++    metaTitle: "Warehouse Flooring Restoration Melbourne | Make Good, Better",
++    description: "Restore your warehouse floor to its original condition with our comprehensive flooring reinstatement services. We handle everything from old flooring removal to concrete slab repairs, ensuring a smooth, clean, and compliant handover.",
++    metaDescription: "Warehouse flooring restoration Melbourne. Concrete slab repair, floor grinding, and epoxy flooring services. End-of-lease make good specialists. Free quotes.",
++    heroText: "Restore your warehouse floor to its original condition with our comprehensive flooring reinstatement services. We handle everything from old flooring removal to concrete slab repairs, ensuring a smooth, clean, and compliant handover.",
++    ogImage: "/og/warehouse-flooring-restoration.jpg",
++    heroImage: "/services/warehouse-flooring-restoration-hero.webp",
++    heroImageAlt: "A wide shot of a perfectly finished warehouse floor, reflecting the overhead lights.",
++    secondaryImage: "/services/warehouse-flooring-restoration-process.webp",
++    secondaryImageAlt: "A worker spreading new epoxy coating on a warehouse floor.",
++    featuredSections: [
++      {
++        title: "Comprehensive Flooring Restoration from Start to Finish",
++        description: "Our flooring reinstatement service is a complete, end-to-end solution designed to meet the strictest end-of-lease requirements. We begin by removing all existing floor coverings, from carpet tiles to old epoxy, using specialized equipment to protect the underlying slab. Next, our team meticulously repairs any damage, including cracks, spalling, and bolt holes from previous installations. We then perform a thorough diamond grind to create a smooth, clean, and uniform surface, ready for handover. Our process is not just about repair; it’s about restoring the integrity and value of your asset, ensuring a seamless transition for the next tenant.",
++        image: "/services/warehouse-flooring-restoration-process.webp",
++        imageAlt: "A worker spreading new epoxy coating on a warehouse floor.",
++        imageLeft: true,
++      },
++    ],
++    relatedServicesBlock: {
++      title: "A Complete Make Good Service",
++      cards: [
++        {
++          slug: "make-good-solutions/line-marking",
++          name: "Line Marking",
++          description: "Professional line marking for car parks, warehouses and industrial facilities to meet lease compliance requirements.",
++        },
++        {
++          slug: "make-good-solutions/painting",
++          name: "Painting",
++          description: "End of lease painting services for commercial and industrial properties across Melbourne.",
++        },
++        {
++          slug: "make-good-solutions/suspended-ceilings",
++          name: "Suspended Ceilings",
++          description: "Complete repair and replacement of suspended ceilings, including grid work, tiles, and lighting.",
++        },
++        {
++          slug: "make-good-solutions/warehouse-flooring",
++          name: "Warehouse Flooring",
++          description: "Comprehensive warehouse flooring solutions, from repairs and grinding to new epoxy coatings.",
++        },
++      ],
++    },
++    faqs: [
++      {
++        question: "What is flooring reinstatement and how does it differ from floor replacement?",
++        answer: "Flooring reinstatement is the process of restoring a commercial or industrial property’s floor to its original condition as required by an end-of-lease agreement. This is different from replacement as it focuses on repairing and preparing the existing concrete slab, rather than installing a new floor covering. The process typically involves removing old flooring, repairing any damage, and ensuring the surface is clean, safe, and compliant.",
++      },
++      {
++        question: "How much does flooring reinstatement cost?",
++        answer: "The cost of flooring reinstatement varies depending on the size of the area, the condition of the concrete slab, and the specific requirements of your lease agreement. We provide a detailed, fixed-price quote after a thorough site inspection, so you have complete certainty of the costs involved before we begin.",
++      },
++      {
++        question: "How long does the process take?",
++        answer: "We understand that end-of-lease projects are time-sensitive. A typical flooring reinstatement project can be completed in just 2-4 days, depending on the scope of work. We work efficiently to ensure you meet your handover deadline without fail.",
++      },
++      {
++        question: "What types of damage can you repair?",
++        answer: "Our team is equipped to handle all common forms of concrete slab damage, including filling cracks and expansion joints, repairing spalling or chipped concrete, and grinding down uneven surfaces. We also specialize in filling in bolt-holes left from pallet racking or other machinery to create a perfectly smooth and safe surface.",
++      },
++      {
++        question: "How long will the reinstated floor last?",
++        answer: "A properly reinstated concrete floor is incredibly durable and designed to last for many years under normal industrial or commercial use. The goal of reinstatement is to return the slab to a robust, baseline condition that will stand the test of time for the next tenant.",
++      },
++      {
++        question: "Are you a licensed and insured contractor?",
++        answer: "Yes, Make Good Melbourne is fully licensed and insured to perform all make-good and flooring services. We provide all necessary compliance documentation to ensure a smooth and professional handover process.",
++      },
++    ],
++    benefits: [],
++    relatedServices: [],
++    category: "make-good",
++    published: true,
+     heroImageTitle: "Makegood Melbourne - Pallet Racking Removal Service",
+     secondaryImage: palletRackingLogisticsImage,
+     secondaryImageAlt: "Forklift loading dismantled pallet racking components onto a truck in a Melbourne warehouse",
