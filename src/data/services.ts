@@ -1445,10 +1445,10 @@ export const services: Service[] = [
     metaDescription: "Professional flooring reinstatement for lease handovers and make good compliance. Carpet tiles, epoxy flooring, vinyl and timber restoration to match original specifications across Melbourne.",
     heroText: "Your lease calls for the flooring restored to its original condition. We install carpet tiles, epoxy coatings, vinyl planks and timber flooring to match existing specifications and meet handover requirements. From matching carpet tile patterns to replicating timber finishes—we deliver compliant, handover-ready floors.",
     ogImage: "/og/flooring-reinstatement.jpg",
-    heroImage: { src: "/services/warehouse-flooring-restoration-hero.webp", width: 2048, height: 1152 },
+    heroImage: "/services/warehouse-flooring-restoration-hero.webp",
     heroImageAlt: "A pristine, newly restored warehouse floor, reflecting the overhead lights, showcasing the quality of the restoration.",
     heroImageTitle: "Makegood Melbourne - Warehouse Flooring Restoration Service",
-    secondaryImage: { src: "/services/warehouse-flooring-restoration-process.webp", width: 2048, height: 1148 },
+    secondaryImage: "/services/warehouse-flooring-restoration-process.webp",
     secondaryImageAlt: "A worker spreading self-leveling compound on a warehouse floor.",
     trustBadges: [
       "Licensed & Insured",
