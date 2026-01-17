@@ -102,9 +102,9 @@ export const sectionLandingPages: SectionLandingData[] = [
     ],
     
     serviceSlugs: [
-      "demolition-works",
-      "make-safe-works", 
-      "pallet-racking-removal"
+      "strip-out-solutions/demolition",
+      "strip-out-solutions/make-safe", 
+      "strip-out-solutions/pallet-racking-removal"
     ],
     carouselTitle: "OUR STRIP OUT SERVICES",
     carouselTitleHighlight: "SERVICES",
@@ -114,12 +114,12 @@ export const sectionLandingPages: SectionLandingData[] = [
       title: "A COMPLETE STRIP OUT SERVICE",
       cards: [
         {
-          slug: "demolition-works",
+          slug: "strip-out-solutions/demolition",
           name: "DEMOLITION WORKS",
           description: "Our licensed teams perform precise internal demolition, safely removing non-structural partitions, ceilings, flooring and fixtures."
         },
         {
-          slug: "make-safe-works",
+          slug: "strip-out-solutions/make-safe",
           name: "MAKE SAFE WORKS",
           description: "We manage the full 'back to base' process, including the disconnection and make-safe of all essential building services."
         }
@@ -186,9 +186,11 @@ export const sectionLandingPages: SectionLandingData[] = [
     ],
     
     serviceSlugs: [
-      "line-marking",
-      "make-good-painting",
-      "warehouse-floor-restoration"
+      "make-good-solutions/flooring-reinstatement",
+      "make-good-solutions/line-marking",
+      "make-good-solutions/painting",
+      "make-good-solutions/suspended-ceilings",
+      "make-good-solutions/warehouse-flooring"
     ],
     carouselTitle: "OUR MAKE GOOD SERVICES",
     carouselTitleHighlight: "SERVICES",
@@ -257,10 +259,10 @@ export const sectionLandingPages: SectionLandingData[] = [
     ],
     
     serviceSlugs: [
-      "cladding-glazing",
-      "polycarbonate-roofing-skylights", 
-      "structural-remediation",
-      "waterproofing"
+      "remediation-solutions/cladding-glazing",
+      "remediation-solutions/polycarbonate-roofing-skylights", 
+      "remediation-solutions/structural",
+      "remediation-solutions/waterproofing"
     ],
     carouselTitle: "Our Remediation Services",
     carouselTitleHighlight: "Remediation Services",
