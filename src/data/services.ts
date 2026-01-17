@@ -49,6 +49,8 @@ import commercialDemolitionHeroImage from "@/assets/services/commercial-demoliti
 import commercialDemolitionFeaturedImage from "@/assets/services/commercial-demolition-melbourne-featured.jpg";
 import makeSafeWorksHeroImage from "@/assets/services/make-safe-works-melbourne-hero.jpg";
 import backToBaseCablingImage from "@/assets/services/back-to-base-cabling-melbourne.jpg";
+import flooringReinstatementHeroImage from "@/assets/services/flooring-reinstatement-hero.webp";
+import flooringReinstatementProcessImage from "@/assets/services/flooring-reinstatement-process.webp";
 
 export interface FeaturedSection {
   title: string;
@@ -1445,7 +1447,7 @@ export const services: Service[] = [
     metaDescription: "Professional flooring reinstatement for lease handovers and make good compliance. Carpet tiles, epoxy flooring, vinyl and timber restoration to match original specifications across Melbourne.",
     heroText: "Your lease calls for the flooring restored to its original condition. We install carpet tiles, epoxy coatings, vinyl planks and timber flooring to match existing specifications and meet handover requirements. From matching carpet tile patterns to replicating timber finishes—we deliver compliant, handover-ready floors.",
     ogImage: "/og/flooring-reinstatement.jpg",
-    heroImage: "/services/flooring-reinstatement-hero.webp",
+    heroImage: flooringReinstatementHeroImage,
     heroImageAlt: "Commercial flooring reinstatement in progress showing carpet tile installation in Melbourne office",
     heroImageTitle: "Makegood Melbourne - Flooring Reinstatement Service",
     trustBadges: [
@@ -1508,7 +1510,7 @@ export const services: Service[] = [
       {
         title: "Comprehensive Flooring Restoration from Start to Finish",
         description: "Flooring reinstatement is rarely just about laying new material. Damaged substrates, uneven surfaces, old adhesive residue—these issues must be addressed before any new flooring goes down. Our team handles the complete process: removing existing flooring, repairing concrete damage, levelling uneven areas, and preparing surfaces to manufacturer specifications. Whether it's grinding back old epoxy, patching dynabolt holes from removed racking, or ensuring moisture levels are within tolerance—we manage every step so your new flooring performs as intended and meets lease requirements.",
-        image: "/services/flooring-reinstatement-process.webp",
+        image: flooringReinstatementProcessImage,
         imageAlt: "Industrial floor grinding and preparation for flooring reinstatement in Melbourne warehouse",
         imageTitle: "Makegood Melbourne - Comprehensive Flooring Restoration Process",
         imagePosition: "center",
