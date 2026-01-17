@@ -190,7 +190,8 @@ export const sectionLandingPages: SectionLandingData[] = [
       "make-good-solutions/line-marking",
       "make-good-solutions/painting",
       "make-good-solutions/suspended-ceilings",
-      "make-good-solutions/warehouse-flooring"
+      "make-good-solutions/warehouse-flooring",
+      "make-good-solutions/warehouse-flooring-restoration"
     ],
     carouselTitle: "OUR MAKE GOOD SERVICES",
     carouselTitleHighlight: "SERVICES",
