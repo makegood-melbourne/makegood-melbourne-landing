@@ -1449,7 +1449,7 @@ export const services: Service[] = [
     heroImageAlt: "A pristine, newly restored warehouse floor, reflecting the overhead lights, showcasing the quality of the restoration.",
     heroImageTitle: "Makegood Melbourne - Warehouse Flooring Restoration Service",
     secondaryImage: "/services/warehouse-flooring-restoration-process.jpeg",
-    secondaryImageAlt: "A worker spreading self-leveling compound on a warehouse floor.",,
+    secondaryImageAlt: "A worker spreading self-leveling compound on a warehouse floor.",
     trustBadges: [
       "Licensed & Insured",
       "Fixed-Price Quotes",
