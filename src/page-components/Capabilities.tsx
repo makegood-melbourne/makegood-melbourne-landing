@@ -60,7 +60,7 @@ const Capabilities = () => {
         <meta property="og:title" content="Make Good Capabilities | MakeGOOD Melbourne" />
         <meta property="og:description" content="Professional floor restoration, specialist trades and structural remediation services for commercial and industrial properties in Melbourne." />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://makegood.melbourne/capabilities" />
+        <link rel="canonical" href="https://makegood.melbourne/capabilities/" />
       </Helmet>
 
       <Navigation />

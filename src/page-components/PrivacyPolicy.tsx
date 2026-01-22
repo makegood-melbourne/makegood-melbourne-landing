@@ -13,7 +13,7 @@ const PrivacyPolicy = () => {
       <Helmet>
         <title>Privacy Policy | Make Good Melbourne</title>
         <meta name="description" content="Privacy Policy for Make Good Melbourne. Learn how we collect, use, and protect your personal information." />
-        <link rel="canonical" href="https://makegoodmelbourne.com.au/privacy-policy" />
+        <link rel="canonical" href="https://makegood.melbourne/privacy-policy/" />
       </Helmet>
 
       <Navigation />

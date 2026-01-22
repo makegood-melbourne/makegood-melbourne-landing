@@ -13,7 +13,7 @@ const TermsOfService = () => {
       <Helmet>
         <title>Terms of Service | Make Good Melbourne</title>
         <meta name="description" content="Terms of Service for Make Good Melbourne. Read our terms and conditions for using our website and services." />
-        <link rel="canonical" href="https://makegoodmelbourne.com.au/terms-of-service" />
+        <link rel="canonical" href="https://makegood.melbourne/terms-of-service/" />
       </Helmet>
 
       <Navigation />
