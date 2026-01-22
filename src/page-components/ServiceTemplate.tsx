@@ -130,12 +130,10 @@ const ServiceTemplate = ({ slug: propSlug }: ServiceTemplateProps) => {
                     <>
                       {service.title.replace(service.titleHighlight, '').trim()} <span className="text-primary">{service.titleHighlight}</span>
                     </>
-                  ) : service.title.includes('Melbourne') ? (
-                    <>
-                      {service.title.replace(' Melbourne', '')} <span className="text-primary">Melbourne</span>
-                    </>
                   ) : (
-                    service.title
+                    <>
+                      {service.title} <span className="text-primary">Melbourne</span>
+                    </>
                   )}
                 </h1>
                 
