@@ -5,9 +5,12 @@
 [build.environment]
   NODE_VERSION = "20"
 
-# NOTE: Domain canonicalisation (www vs non-www, http vs https)
-# is handled at the hosting/domain level to avoid redirect loops.
-
+# Domain canonicalization - redirect www to non-www
+[[redirects]]
+  from = "https://www.makegood.melbourne/*"
+  to = "https://makegood.melbourne/:splat"
+  status = 301
+  force = true
 
 # Legacy blog URL redirect (/blogs/* -> /blog/*)
 [[redirects]]
