@@ -19,10 +19,10 @@ const heroImage = service.heroImage as unknown;
 const heroImageAlt = service.heroImageAlt || `${service.name} Melbourne - professional commercial services`;
 const heroImageTitle = service.heroImageTitle;
 
-// Title formatting
-const titleParts = service.title.includes('Melbourne') 
-  ? { main: service.title.replace(' Melbourne', ''), highlight: 'Melbourne' }
-  : { main: service.title, highlight: null };
+// Title formatting - use titleHighlight if set, otherwise append Melbourne
+const titleParts = service.titleHighlight 
+  ? { main: service.title.replace(service.titleHighlight, '').trim(), highlight: service.titleHighlight }
+  : { main: service.title, highlight: 'Melbourne' };
 ---
 
 <!-- Breadcrumbs -->
