@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Menu, ChevronDown } from "lucide-react";
+import { Menu, ChevronDown, Phone } from "lucide-react";
 import { useState } from "react";
 import logo from "@/assets/makegood-melbourne-logo.png";
 import { getSortedLocations } from "@/data/locations";
@@ -207,6 +207,10 @@ const Navigation = () => {
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
+            <a href="tel:0383760101" className="flex items-center gap-2 text-foreground hover:text-accent transition-colors">
+              <Phone className="h-4 w-4" />
+              <span className="font-medium">03 8376 0101</span>
+            </a>
             <a href="/contact" className="text-foreground hover:text-accent transition-colors">
               Contact
             </a>
@@ -346,6 +350,14 @@ const Navigation = () => {
                 </a>
               </div>
             </div>
+            <a 
+              href="tel:0383760101" 
+              className="flex items-center gap-2 text-foreground hover:text-accent transition-colors py-2"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              <Phone className="h-4 w-4" />
+              <span className="font-medium">03 8376 0101</span>
+            </a>
             <a 
               href="/contact" 
               className="text-left text-foreground hover:text-accent transition-colors py-2"
