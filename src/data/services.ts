@@ -1311,7 +1311,7 @@ export const services: Service[] = [
     metaTitle: "Make Safe Strip Out Melbourne | Make Good, Better",
     description: "We disconnect and make safe all building services for your end-of-lease make good, returning all cabling back to base with full certification.",
     metaDescription: "Make safe works Melbourne. Electrical, plumbing and HVAC disconnection. Back to base cabling. Certified building services disconnection for end-of-lease make good.",
-    heroText: "We disconnect and make safe all building services for your end-of-lease make good, returning all cabling back to base with full certification.",
+    heroText: "We disconnect and make safe all building services as part of your end-of-lease make good. From returning electrical cabling back to mains to capping off plumbing and rebalancing or removing HVAC systems, we ensure your tenancy is returned to its original condition and is ready for handover.",
     ogImage: "/og/make-safe-works.jpg",
     heroImage: makeSafeWorksHeroImage,
     heroImageAlt: "Electrical switchboard and meter panels with organized conduit and cabling for make safe works in Melbourne",
