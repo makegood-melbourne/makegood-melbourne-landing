@@ -18,7 +18,7 @@ const Blog = () => {
         <meta property="og:title" content="Make Good Blog | Expert Property Restoration Insights" />
         <meta property="og:description" content="Industry insights on commercial make good services, end of lease obligations and property restoration in Melbourne." />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://makegood.melbourne/blog" />
+        <link rel="canonical" href="https://makegood.melbourne/blog/" />
       </Helmet>
       
       <Navigation />

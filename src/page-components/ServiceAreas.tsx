@@ -18,7 +18,7 @@ const ServiceAreas = () => {
           name="description" 
           content="Make Good Melbourne services all Melbourne metro areas. View our service coverage across suburbs including Altona, Clayton, Dandenong, Port Melbourne, and more." 
         />
-        <link rel="canonical" href="https://makegood.melbourne/service-areas" />
+        <link rel="canonical" href="https://makegood.melbourne/service-areas/" />
       </Helmet>
       
       <Navigation />

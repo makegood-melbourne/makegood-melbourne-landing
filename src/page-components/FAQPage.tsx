@@ -434,7 +434,7 @@ const FAQPage = () => {
         <meta name="description" content="Get answers to common questions about make good services in Melbourne. Learn about costs, timelines, processes, and how to protect your bond. Free quotes available." />
         <meta property="og:title" content="Make Good FAQ | Make Good Melbourne" />
         <meta property="og:description" content="Everything you need to know about commercial make good services in Melbourne." />
-        <link rel="canonical" href="https://makegood.melbourne/faq" />
+        <link rel="canonical" href="https://makegood.melbourne/faq/" />
         <script type="application/ld+json">
           {JSON.stringify(faqSchema)}
         </script>

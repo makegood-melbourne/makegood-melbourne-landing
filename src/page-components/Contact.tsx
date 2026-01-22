@@ -129,7 +129,7 @@ const Contact = () => {
           name="description" 
           content="Get in touch with Make Good Melbourne for a free consultation. Contact us for end of lease make good services, make safe works, and remediation across Melbourne." 
         />
-        <link rel="canonical" href="https://makegood.melbourne/contact" />
+        <link rel="canonical" href="https://makegood.melbourne/contact/" />
         <script type="application/ld+json">
           {JSON.stringify(faqSchema)}
         </script>
