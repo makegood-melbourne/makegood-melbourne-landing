@@ -19,26 +19,6 @@ const ServiceAreasGrid = () => {
       slug: "dandenong"
     },
     {
-      name: "Clayton",
-      description: "Research facilities, commercial offices",
-      slug: "clayton"
-    },
-    {
-      name: "Richmond",
-      description: "Creative studios, tech offices",
-      slug: "richmond"
-    },
-    {
-      name: "Moorabbin",
-      description: "Aviation precinct, logistics",
-      slug: "moorabbin"
-    },
-    {
-      name: "Ringwood",
-      description: "Retail centres, business parks",
-      slug: "ringwood"
-    },
-    {
       name: "All Victoria",
       description: "Statewide commercial coverage",
       slug: null
@@ -57,7 +37,7 @@ const ServiceAreasGrid = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto mb-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-4xl mx-auto mb-8">
           {areas.map((area, index) => (
             area.slug ? (
               <a 
