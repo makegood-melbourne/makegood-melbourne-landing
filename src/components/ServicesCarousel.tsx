@@ -45,7 +45,7 @@ const ServicesCarousel = () => {
             Our <span className="text-primary">Services</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            From strip outs to specialist trades, we handle every aspect of your make good
+            Strip outs. Remediation. Everything in between.
           </p>
         </div>
 
