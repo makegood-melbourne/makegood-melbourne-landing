@@ -36,200 +36,11 @@ OUR 6-STEP PROCESS (for end-of-lease make goods):
 
 Note: This process is for end-of-lease make good projects. For simpler works (cleaning, minor repairs) or specialist services (structural remediation, cladding), we offer a streamlined approach.
 
-Our services are organised into three categories:
-
-=== FLOOR RESTORATION ===
-
-WAREHOUSE FLOOR RESTORATION (SPECIALIST SERVICE):
-Complete warehouse and industrial floor restoration—from flooring strip-out to finished slab. Whether you're removing old coverings, repairing damage from racking anchors, or preparing for a new tenant, we deliver floors ready for handover.
-
-What we deliver:
-- Flooring & Adhesive Removal: Strip carpets, vinyl, tiles and epoxy, then grind away adhesives and membranes
-- Concrete Grinding & Levelling: Industrial-grade grinding to remove coatings, stains and surface contamination
-- Bolt Hole & Anchor Repairs: Core drill out dynabolt holes, fill with high-strength epoxy resin, grind flush
-- Crack Injection & Slab Stabilisation: Epoxy injection for cracks, polyurethane foam for voids and settlement
-- Joint Edge Repair: Repair damaged joint edges with epoxy mortar, re-cut and reseal
-- Surface Finishing: Grind-and-seal, epoxy coating, or preparation for new floor coverings
-- Showroom Floor Repairs: High-quality finish repairs for customer-facing retail environments
-- Lease End Compliance: Floor restoration that meets landlord requirements for handover
-
-Our 4-step process:
-1. Assessment: Full floor inspection—damage, contamination, coatings, structural concerns
-2. Strip-Out: Remove all floor coverings, adhesives and failed coatings
-3. Grinding & Repairs: Industrial grinding, crack injection, bolt hole filling, levelling
-4. Finishing/Handover: Final surface treatment and landlord inspection coordination
-
-EPOXY FLOORING (SPECIALIST SERVICE):
-Epoxy transforms worn, stained slabs into durable, professional surfaces. Whether refreshing for a new tenant, restoring epoxy for lease compliance, or upgrading your own facility—we deliver.
-- Chemical and oil resistant finishes
-- Anti-slip coatings for safety compliance
-- Cracks and damage repaired first
-- Fast-cure options to minimise downtime
-- Range of colours including safety zones
-- 20+ year lifespan with proper care
-- Epoxy restoration for end of lease compliance
-
-LINE MARKING:
-Lease ending and your warehouse or car park lines don't match the original layout? We restore eroded markings, remove tenant-specific delineations and return floors to the condition your landlord expects.
-- Restore worn and faded line markings
-- Remove tenant-specific delineations
-- Reinstate original warehouse layouts
-- Car park line restoration
-- Heavy-duty paints and thermoplastics
-
-PALLET RACKING REMOVAL (SPECIALIST SERVICE):
-Racking bolted to your floor and walls? We dismantle, remove and dispose of all racking systems, protection bollards and wall brackets, then core drill and fill those anchor holes so you get your bond back.
-- All types of pallet racking systems including cantilever wall units
-- Dynabolt removal from floor slabs and walls
-- Removal of safety barriers, bollards and swing gates
-- Floor anchor remediation—core drilled, filled with epoxy resin and ground flush
-- Transport solutions available
-- Buy back, recycling and disposal solutions available
-
-=== SPECIALIST TRADES ===
-
-HANDOVER CLEANING (SPECIALIST SERVICE):
-Heavy-duty cleaning for lease end and make good handovers. We tackle the jobs regular cleaners can't—warehouse floors, post-strip-out sites and final inspections.
-- Industrial floor scrubbing with ride-on scrubbers
-- High-pressure cleaning for concrete and loading docks
-- Chemical treatment for oil stains and tyre marks
-- Waste removal and skip bin coordination
-- Post-strip-out and post-construction clean-ups
-- Window and facade cleaning
-- Graffiti removal
-Difference from regular cleaners: We use industrial-grade equipment (ride-on floor scrubbers, industrial pressure washers) to handle 500sqm+ warehouse floors and multi-level buildings.
-
-MAKE GOOD PAINTING (SPECIALIST SERVICE):
-Professional painting for end-of-lease make goods. We prepare surfaces properly, match colours accurately and apply professional finishes across offices, warehouses, showrooms and retail spaces.
-- Accurate colour matching to original specifications using spectrophotometer technology
-- Full surface preparation—patching, sanding, priming
-- Internal walls, ceilings and trim
-- External painting for building facades and external surfaces
-- After-hours and weekend work available
-- Works completed to meet lease obligations and landlord requirements
-
-CEILING TILE REPLACEMENT:
-From standard suspended grids to timber acoustic panels, we replace and restore commercial ceilings to meet lease obligations.
-- Standard tiles and acoustic panels
-- LED panel and aircon rebalancing
-- Ceiling grid repairs and reinstallation
-- Post-partition removal repairs
-- Discontinued tile matching and alternatives
-
-PATCHING & PLASTERING:
-Wall repairs, hole filling, seamless plaster restoration for make good projects.
-
-ELECTRICAL MAKE SAFE:
-Licensed electricians for safe disconnection, capping and compliance certificates.
-
-LED LIGHTING UPGRADE:
-Replace fluorescent with energy-efficient LED lighting.
-
-END OF LEASE RELOCATION (SPECIALIST SERVICE):
-Vacating your warehouse, factory or office? We handle the make-good AND transport your equipment to your new site. One contractor, one point of contact—no coordination headaches.
-- Complete make-good at vacating site
-- Equipment transport to new location anywhere in Australia
-- Single contractor for entire process
-- Optional install at new site
-- Minimise downtime during transition
-
-=== STRUCTURAL & REMEDIATION ===
-
-STRUCTURAL REMEDIATION (SPECIALIST SERVICE):
-From minor concrete repairs to large-scale retention structure projects. We work with structural engineers, councils and building managers.
-- Warehouse floor slab remediation
-- Waterproofing and membrane systems for car parks, balconies and roofs
-- Retention structure remediation
-- Concrete cancer rectification (rust treatment, repair mortars)
-- Steel framework retrofitting
-- Structural engineer and council liaison
-
-POLYCARBONATE ROOFING & SKYLIGHTS (SPECIALIST SERVICE):
-We supply and install clear polycarbonate roofing sheets designed for industrial and warehouse environments. Our installations improve natural light, resist harsh weather and are completed in accordance with Australian Standards and safety requirements.
-
-What we deliver:
-- Storm damaged and leaking roof repairs
-- Clear polycarbonate sheet installation
-- Yellowed and discoloured panel renewal
-- UV protection coatings
-- Compliant asbestos disposal (for old fibreglass panels)
-- Complete roof sheet replacement
-- Energy efficiency improvements
-- Certification and warranty documentation
-
-When skylights need replacing - signs to look for:
-- Yellowing or discolouration reducing light transmission
-- Visible cracks or crazing in panels
-- Water leaks during rain
-- Brittleness when touched
-- Panels exceeding 15-20 year lifespan
-
-We install quality Australian-made polycarbonate and fibreglass panels matched to your existing roof profile, including products from manufacturers like Ampelite. Most warehouse skylight replacements are completed in 1-3 days.
-
-For make good projects, we prepare detailed scopes for landlord and property manager review and can liaise directly with them on your behalf.
-
-Roof Repairs for Leaks & Storm Damage:
-Melbourne's harsh weather can cause sudden damage to polycarbonate and fibreglass roof panels—cracking, lifting, or complete failure during storms. We provide responsive repair services from temporary make-safe works through to full panel replacement.
-
-CLADDING & GLAZING REMEDIATION (SPECIALIST SERVICE):
-Bring your building up to compliance with specialist cladding and glazing remediation services.
-- ACP cladding replacement (ACP now banned)
-- NCC and fire rating compliance
-- Glazing upgrades and remediation
-- Fire-rated materials tested to AS 1530 and AS 5113
-- VBA and council liaison
-
-CONCRETE FLOOR REPAIR (SPECIALIST SERVICE):
-Crack injection, slab stabilisation, joint repairs and structural concrete restoration.
-
-WATERPROOFING (SPECIALIST SERVICE):
-Failed waterproofing causes costly damage to buildings—from balcony leaks to roof failures. We deliver professional waterproofing solutions.
-- Balcony and terrace membrane systems
-- Flat roof and podium waterproofing
-- Wet area sealing for bathrooms and kitchens
-- Concrete crack injection and sealing
-- Box gutter and parapet waterproofing
-- Long-term manufacturer warranties
-
-Waterproofing FAQs:
-Q: How long does commercial waterproofing last?
-A: Quality membrane systems typically last 15-25 years when properly applied and maintained. We use premium membranes from manufacturers like Tremco, Sika and Wolfin with long-term warranties.
-
-Q: What causes balcony waterproofing to fail?
-A: Common causes include poor surface preparation, incorrect membrane selection, inadequate drainage falls, thermal movement cracking the membrane, and wear from foot traffic.
-
-Q: Can you waterproof over existing membranes?
-A: Sometimes. If the existing membrane is well-adhered and substrate is sound, we can apply compatible systems over the top. If there's delamination or moisture trapped beneath, we strip back to substrate first.
-
-Q: How do you find the source of a water leak?
-A: We conduct thorough inspections including flood testing, moisture mapping with meters, and visual assessment. Water can travel along building elements before appearing, so we trace the path back to the actual entry point.
-
-Q: What's the difference between liquid and sheet membranes?
-A: Liquid membranes are spray or roller-applied and cure to form a seamless coating—ideal for complex shapes. Sheet membranes (torch-on or self-adhesive) provide consistent thickness and suit large flat areas.
-
-Q: Do I need council approval for waterproofing work?
-A: Generally no—waterproofing is maintenance work. However, if replacing tiles, modifying drainage or making structural changes, permits may be required. We advise on compliance during quoting.
-
-WHY CHOOSE US:
-- Single Point of Contact: One dedicated project manager handles everything
-- Transparent Pricing: Fixed quotes with itemised breakdowns, no hidden fees
-- Bond Protection: We don't consider the job done until your landlord signs off
-- Clear Communication: Regular progress updates at every stage
-
-DOCUMENTATION WE PROVIDE:
-Before works: Detailed scope, fixed price quote, project timeline, condition photography
-After works: Completion photos, compliance certificates, test reports, waste disposal receipts, handover documentation
-
-SPECIAL HANDLING - Ongoing facility management:
-If someone asks about ongoing facility management services, regular maintenance contracts, or similar recurring services:
-- Do NOT say we don't offer this
-- Instead, respond positively: "While our core focus is project-based make-good and restoration work, we do offer ongoing facility management services for select commercial clients. This can include regular maintenance, periodic inspections, and scheduled upkeep of your property. If this sounds like what you need, please email us at enquiries@makegood.melbourne to discuss how we can tailor an ongoing arrangement for your property."
-
 HELPFUL PAGES TO MENTION:
 - /what-is-make-good - Complete guide to make good clauses and requirements
 - /our-process - Our 6-step process explained in detail
 - /faq - Frequently asked questions about make goods
-- /contact - Get a free quote
+- /contact - Get a quote
 
 Your role:
 - Answer questions about our services professionally and helpfully
@@ -247,22 +58,22 @@ serve(async (req) => {
 
   try {
     const { messages } = await req.json();
-    const LOVABLE_API_KEY = Deno.env.get("LOVABLE_API_KEY");
+    const OPENAI_API_KEY = Deno.env.get("OPENAI_API_KEY");
     
-    if (!LOVABLE_API_KEY) {
-      throw new Error("LOVABLE_API_KEY is not configured");
+    if (!OPENAI_API_KEY) {
+      throw new Error("OPENAI_API_KEY is not configured");
     }
 
     console.log("Chat request received with", messages.length, "messages");
 
-    const response = await fetch("https://ai.gateway.lovable.dev/v1/chat/completions", {
+    const response = await fetch("https://api.openai.com/v1/chat/completions", {
       method: "POST",
       headers: {
-        Authorization: `Bearer ${LOVABLE_API_KEY}`,
+        Authorization: `Bearer ${OPENAI_API_KEY}`,
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        model: "google/gemini-2.5-flash",
+        model: "gpt-4o-mini",
         messages: [
           { role: "system", content: systemPrompt },
           ...messages,
@@ -279,15 +90,15 @@ serve(async (req) => {
           headers: { ...corsHeaders, "Content-Type": "application/json" },
         });
       }
-      if (response.status === 402) {
-        console.error("Payment required");
-        return new Response(JSON.stringify({ error: "Service temporarily unavailable." }), {
-          status: 402,
+      if (response.status === 401) {
+        console.error("Invalid API key");
+        return new Response(JSON.stringify({ error: "Service configuration error." }), {
+          status: 500,
           headers: { ...corsHeaders, "Content-Type": "application/json" },
         });
       }
       const errorText = await response.text();
-      console.error("AI gateway error:", response.status, errorText);
+      console.error("OpenAI API error:", response.status, errorText);
       return new Response(JSON.stringify({ error: "AI service error" }), {
         status: 500,
         headers: { ...corsHeaders, "Content-Type": "application/json" },

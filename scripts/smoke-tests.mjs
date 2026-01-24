@@ -9,8 +9,8 @@
  * Exit code 0 = success, 1 = failure (will fail the deploy)
  */
 
-const SUPABASE_URL = process.env.VITE_SUPABASE_URL || "https://eijgvnbwbklartrzqhqt.supabase.co";
-const SUPABASE_ANON_KEY = process.env.VITE_SUPABASE_PUBLISHABLE_KEY || "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVpamd2bmJ3YmtsYXJ0cnpxaHF0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjI5OTUxMTcsImV4cCI6MjA3ODU3MTExN30.I0HQj5pPxwjFTohztM-cg1IaVRcBhiKEu7JTtQJtuGc";
+const SUPABASE_URL = process.env.VITE_SUPABASE_URL || "https://krgbykvrigbbkvyprqnb.supabase.co";
+const SUPABASE_ANON_KEY = process.env.VITE_SUPABASE_PUBLISHABLE_KEY || "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtyZ2J5a3ZyaWdiYmt2eXBycW5iIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjkyMzk1NjYsImV4cCI6MjA4NDgxNTU2Nn0.8aCUrnJnMUVJ-BES78V13uZu671oQo6rNvu3ZrRV8vs";
 
 const CONTACT_ENDPOINT = `${SUPABASE_URL}/functions/v1/send-contact-email`;
 const CHAT_ENDPOINT = `${SUPABASE_URL}/functions/v1/chat`;
