@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import HeroStats from "./HeroStats";
 
 const HeroContent = () => {
   const scrollToContact = () => {
@@ -21,17 +20,17 @@ const HeroContent = () => {
     <div className="container mx-auto px-4 z-10 pt-16">
       <div className="max-w-3xl bg-background/80 backdrop-blur-sm p-8 md:p-12 rounded-lg">
         <h1 className="text-4xl md:text-6xl text-foreground mb-4 leading-tight font-bold" style={{ fontFamily: "'PP Neue Montreal', sans-serif" }}>
-          Commercial & Industrial Make Good Solutions
+          Commercial Make Good & Remedial Works
         </h1>
         <h2 className="text-3xl md:text-4xl text-primary font-semibold mb-6" style={{ textTransform: 'none' }}>
           Make good, BETTER.
         </h2>
-        <p className="text-lg md:text-xl text-muted-foreground mb-6 leading-relaxed">
-          End of lease restoration, remediation and make-safe works for offices, warehouses and industrial sites across Melbourne.
+        <p className="text-lg md:text-xl text-white mb-6 leading-relaxed">
+          Commercial spaces get worn. Leases end. We put things right.
         </p>
-        
-        {/* Trust badges and stats */}
-        <HeroStats />
+        <p className="text-lg md:text-xl text-white mb-6 leading-relaxed">
+          End-of-lease strip-out, make-safe and remedial works across Melbourne. Transparent quotes. Licensed trades. A finish you can hand over.
+        </p>
         
         <div className="flex flex-col sm:flex-row gap-4 mt-8">
           <Button 
@@ -39,7 +38,7 @@ const HeroContent = () => {
             onClick={scrollToContact}
             className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8 py-6 group"
           >
-            Get a Free Quote
+            Get a Quote
             <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
           </Button>
           <Button 
@@ -51,6 +50,10 @@ const HeroContent = () => {
             Our Services
           </Button>
         </div>
+
+        <p className="text-lg md:text-xl mt-6 leading-relaxed" style={{ color: '#2C7BE5' }}>
+          We do make goods all day, every day.
+        </p>
       </div>
     </div>
   );
