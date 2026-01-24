@@ -50,10 +50,6 @@ const HeroContent = () => {
             Our Services
           </Button>
         </div>
-
-        <p className="text-lg md:text-xl mt-6 leading-relaxed" style={{ color: '#2C7BE5' }}>
-          We do make goods all day, every day.
-        </p>
       </div>
     </div>
   );

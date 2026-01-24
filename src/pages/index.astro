@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Navigation from '../components/Navigation';
 import HeroSection from '../components/HeroSection.astro';
+import SpecialistsSection from '../components/SpecialistsSection.astro';
 import AboutSection from '../components/AboutSection.astro';
 import IndexContent from '../components/IndexContent';
 import Footer from '../components/Footer';
@@ -17,6 +18,7 @@ import FloatingCTAs from '../components/FloatingCTAs';
   <main class="min-h-screen bg-background text-foreground">
     <Navigation client:load />
     <HeroSection />
+    <SpecialistsSection />
     <IndexContent client:idle />
     <AboutSection />
     <Footer client:load />
