@@ -148,7 +148,7 @@ const BlogPost = ({ slug: propSlug }: BlogPostProps) => {
                 <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">
                   <a href="/#contact">
                     <Button size="lg" className="w-full sm:w-auto">
-                      Get a Free Quote
+                      Get a Quote
                     </Button>
                   </a>
                   <a href="tel:+61383769663">

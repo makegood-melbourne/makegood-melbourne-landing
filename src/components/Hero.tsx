@@ -46,7 +46,7 @@ const Hero = () => {
               onClick={scrollToContact}
               className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8 py-6 group"
             >
-              Get a Free Quote
+              Get a Quote
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Button>
             <Button 

@@ -155,7 +155,7 @@ const ServiceAreas = () => {
             </p>
             <a href="/contact">
               <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
-                Get a Free Quote
+                Get a Quote
               </Button>
             </a>
           </div>

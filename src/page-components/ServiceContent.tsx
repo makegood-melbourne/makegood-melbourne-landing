@@ -723,7 +723,7 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground" asChild>
                   <a href="/#contact">
-                    Get a Free Quote
+                    Get a Quote
                   </a>
                 </Button>
                 <Button size="lg" variant="outline" className="border-accent text-accent hover:bg-accent hover:text-accent-foreground" asChild>
@@ -745,7 +745,7 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground" asChild>
                   <a href="/#contact">
-                    Get a Free Quote
+                    Get a Quote
                   </a>
                 </Button>
                 <Button size="lg" variant="outline" className="border-accent text-accent hover:bg-accent hover:text-accent-foreground" asChild>

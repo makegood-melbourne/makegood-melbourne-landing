@@ -83,7 +83,7 @@ const ProblemSolution = () => {
             onClick={scrollToContact}
             className="bg-primary hover:bg-primary/90 text-primary-foreground group"
           >
-            Get Your Free Quote
+            Get Your Quote
             <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
           </Button>
         </div>

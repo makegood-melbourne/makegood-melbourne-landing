@@ -124,7 +124,7 @@ const Contact = () => {
   return (
     <>
       <Helmet>
-        <title>Contact Make Good Melbourne | Get Your Free Quote</title>
+        <title>Contact Make Good Melbourne | Get Your Quote</title>
         <meta 
           name="description" 
           content="Get in touch with Make Good Melbourne for a free consultation. Contact us for end of lease make good services, make safe works, and remediation across Melbourne." 

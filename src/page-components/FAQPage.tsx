@@ -530,7 +530,7 @@ const FAQPage = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="group">
                 <a href="/contact">
-                  Get a Free Quote
+                  Get a Quote
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </a>
               </Button>
