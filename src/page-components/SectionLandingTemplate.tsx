@@ -2,6 +2,7 @@ import { Helmet } from "@/lib/helmet";
 import { renderTextWithLinks } from "@/lib/textWithLinks";
 import { resolveImageSrc } from "@/lib/resolveImageSrc";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import SimpleProcess from "@/components/SimpleProcess";
 import SectionServicesCarousel from "@/components/SectionServicesCarousel";
 import SectionServicesGrid from "@/components/SectionServicesGrid";
 import { Button } from "@/components/ui/button";
@@ -279,6 +280,9 @@ const SectionLandingTemplate = ({ data }: SectionLandingTemplateProps) => {
           </div>
         </div>
       </section>
+
+      {/* How It Works Section */}
+      <SimpleProcess />
 
       {/* Services Carousel or Grid */}
       {data.useGrid ? (
