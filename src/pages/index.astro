@@ -3,7 +3,6 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Navigation from '../components/Navigation';
 import HeroSection from '../components/HeroSection.astro';
 import SpecialistsSection from '../components/SpecialistsSection.astro';
-import ReinforcementBlock from '../components/ReinforcementBlock.astro';
 import IndexContent from '../components/IndexContent';
 import Footer from '../components/Footer';
 import FloatingCTAs from '../components/FloatingCTAs';
@@ -20,7 +19,6 @@ import FloatingCTAs from '../components/FloatingCTAs';
     <HeroSection />
     <SpecialistsSection />
     <IndexContent client:idle />
-    <ReinforcementBlock />
     <Footer client:load />
     <FloatingCTAs client:load />
   </main>
