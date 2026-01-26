@@ -8,12 +8,30 @@
     <div class="mg-specialists__copy">
       We work with tenants, property managers and owners to restore commercial spaces to their original condition. One contractor. One quote. Every trade covered.
     </div>
+    
+    <!-- Trust Indicators -->
+    <div class="mg-specialists__trust-indicators">
+      <div class="mg-specialists__trust-item">
+        <div class="mg-specialists__trust-number">500+</div>
+        <div class="mg-specialists__trust-label">Projects Completed</div>
+      </div>
+      <div class="mg-specialists__trust-divider"></div>
+      <div class="mg-specialists__trust-item">
+        <div class="mg-specialists__trust-number">12+</div>
+        <div class="mg-specialists__trust-label">Years Experience</div>
+      </div>
+      <div class="mg-specialists__trust-divider"></div>
+      <div class="mg-specialists__trust-item">
+        <div class="mg-specialists__trust-number">100%</div>
+        <div class="mg-specialists__trust-label">Licensed Trades</div>
+      </div>
+    </div>
   </div>
 </section>
 
 <style>
   .mg-specialists {
-    padding: 96px 24px;
+    padding: 96px 24px 58px;
     text-align: center;
   }
   .mg-specialists__inner {
@@ -34,14 +52,58 @@
     font-size: 18px;
     line-height: 1.6;
     color: rgba(255, 255, 255, 0.9);
-    margin: 0;
+    margin: 0 0 32px;
   }
+  
+  /* Trust Indicators */
+  .mg-specialists__trust-indicators {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    margin-top: 32px;
+  }
+  .mg-specialists__trust-item {
+    text-align: center;
+  }
+  .mg-specialists__trust-number {
+    font-size: clamp(32px, 4vw, 48px);
+    font-weight: 700;
+    color: #3B82F6;
+    margin-bottom: 4px;
+  }
+  .mg-specialists__trust-label {
+    font-size: 14px;
+    color: #ffffff;
+    line-height: 1.4;
+  }
+  .mg-specialists__trust-divider {
+    width: 1px;
+    height: 48px;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
   @media (max-width: 600px) {
     .mg-specialists {
-      padding: 64px 16px;
+      padding: 64px 16px 40px;
     }
     .mg-specialists__copy {
       font-size: 16px;
+      margin-bottom: 24px;
+    }
+    .mg-specialists__trust-indicators {
+      flex-direction: column;
+      gap: 24px;
+    }
+    .mg-specialists__trust-divider {
+      display: none;
+    }
+    .mg-specialists__trust-number {
+      font-size: 36px;
+    }
+    .mg-specialists__trust-label {
+      font-size: 13px;
     }
   }
 </style>
