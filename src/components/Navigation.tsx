@@ -180,7 +180,7 @@ const Navigation = () => {
               </DropdownMenuTrigger>
               <DropdownMenuContent align="start" className="bg-card border-border">
                 <DropdownMenuItem asChild>
-                  <a href="/#about" className="cursor-pointer">
+                  <a href="/about" className="cursor-pointer">
                     About Us
                   </a>
                 </DropdownMenuItem>
@@ -310,7 +310,7 @@ const Navigation = () => {
               <span className="text-foreground font-medium">Learn</span>
               <div className="pl-4 mt-2 flex flex-col gap-2">
                 <a 
-                  href="/#about" 
+                  href="/about" 
                   className="text-left text-muted-foreground hover:text-accent transition-colors"
                   onClick={() => setIsMenuOpen(false)}
                 >
