@@ -1,6 +1,0 @@
-Question: "Do you offer structural remediation services?"
-
-Chatbot Response:
-"Yes, we do! Make Good Melbourne offers structural remediation services, which include engineered solutions for concrete deterioration, retention structures and steel framework issues. If you'd like to know more about this service or discuss your specific needs, feel free to reach out to us at enquiries@makegood.melbourne for more details or to get a quote."
-
-✅ SUCCESS - The chatbot now knows about structural remediation services!
