@@ -27,8 +27,8 @@
   force = true
 
 [[redirects]]
-  from = "/about"
-  to = "/"
+  from = "/#about"
+  to = "/about"
   status = 301
   force = true
 
