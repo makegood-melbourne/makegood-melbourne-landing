@@ -52,9 +52,27 @@ const Index = () => {
       <section className="py-12 bg-background border-b border-border">
         <div className="container mx-auto px-4 max-w-5xl">
           <div className="prose prose-xl max-w-none">
-            <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6 text-center">
+            <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-8 text-center">
               Melbourne's Leading <span className="text-primary">Make Good Specialists</span>
             </h2>
+            
+            {/* Trust Indicators */}
+            <div className="flex flex-col sm:flex-row justify-center items-center gap-6 sm:gap-8 mb-8 not-prose">
+              <div className="text-center">
+                <div className="text-3xl md:text-4xl font-bold text-tertiary mb-1">500+</div>
+                <div className="text-sm md:text-base text-white">Projects Completed</div>
+              </div>
+              <div className="hidden sm:block w-px h-12 bg-border"></div>
+              <div className="text-center">
+                <div className="text-3xl md:text-4xl font-bold text-tertiary mb-1">12+</div>
+                <div className="text-sm md:text-base text-white">Years Experience</div>
+              </div>
+              <div className="hidden sm:block w-px h-12 bg-border"></div>
+              <div className="text-center">
+                <div className="text-3xl md:text-4xl font-bold text-tertiary mb-1">100%</div>
+                <div className="text-sm md:text-base text-white">Licensed Trades</div>
+              </div>
+            </div>
             <div className="grid md:grid-cols-2 gap-x-8 gap-y-4 text-xl text-muted-foreground">
               <div>
                 <p className="mb-4 leading-relaxed">
@@ -77,7 +95,9 @@ const Index = () => {
         </div>
       </section>
       
-      <ServicesCarousel />
+      <div className="-mt-6">
+        <ServicesCarousel />
+      </div>
       <SimpleProcess />
       <ProblemSolution />
       <About />
