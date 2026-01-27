@@ -96,7 +96,7 @@ const ServiceOutcomes = () => {
           display: flex;
           align-items: center;
           gap: 16px;
-          font-size: 1.1rem;
+          font-size: 1.125rem;
           color: white;
           text-align: left;
         }
@@ -112,7 +112,7 @@ const ServiceOutcomes = () => {
           padding: 16px 32px;
           background: hsl(25, 85%, 60%);
           color: hsl(0, 0%, 13.3%);
-          font-size: 1.1rem;
+          font-size: 1.125rem;
           font-weight: 600;
           border-radius: 8px;
           text-decoration: none;
@@ -144,7 +144,7 @@ const ServiceOutcomes = () => {
           }
           
           .supporting-text {
-            font-size: 1.1rem;
+            font-size: 1.125rem;
             margin-bottom: 36px;
           }
           
