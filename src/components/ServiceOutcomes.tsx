@@ -1,7 +1,7 @@
 const ServiceOutcomes = () => {
   return (
     <section className="service-outcomes-section">
-      <div className="container">
+      <div className="outcomes-container">
         <div className="content-wrapper">
           <h2 className="headline">
             Make Good. <span className="orange-accent">Start to Finish.</span>
@@ -50,7 +50,7 @@ const ServiceOutcomes = () => {
           position: relative;
         }
         
-        .container {
+        .outcomes-container {
           max-width: 900px;
           margin: 0 auto;
           padding: 0 20px;
