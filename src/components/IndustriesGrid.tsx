@@ -6,44 +6,58 @@ interface Industry {
   title: string;
   description: string;
   slug: string;
+  image: string;
+  alt: string;
 }
 
 const industries: Industry[] = [
   {
     id: "offices",
     title: "Offices",
-    description: "Corporate and multi-tenant offices. Reinstatement works in live buildings.",
-    slug: "offices"
+    description: "Partitions down. Walls patched. Back to base building.",
+    slug: "offices",
+    image: "/images/industries/commercial-office-make-good-melbourne.jpg",
+    alt: "Professional commercial office space after make good restoration in Melbourne"
   },
   {
     id: "warehouses-logistics",
     title: "Warehouses & Logistics",
-    description: "High-clearance sites. Works coordinated around ongoing operations.",
-    slug: "warehouses-logistics"
+    description: "Racking out. Floors restored. Ready for the next tenant.",
+    slug: "warehouses-logistics",
+    image: "/images/industries/warehouse-logistics-make-good-melbourne.jpg",
+    alt: "Industrial warehouse and logistics facility make good services in Melbourne"
   },
   {
     id: "retail",
     title: "Retail",
-    description: "Street-front and shopping centre tenancies. Delivered to landlord and centre standards.",
-    slug: "retail"
+    description: "Shopfront stripped. Surfaces finished. Handed back to centre standards.",
+    slug: "retail",
+    image: "/images/industries/retail-shopfront-make-good-melbourne.jpg",
+    alt: "Retail shopfront and commercial space make good services in Melbourne"
   },
   {
     id: "medical-centres",
     title: "Medical Centres & Suites",
-    description: "Clinical and allied health spaces. Services-heavy fit-outs handled.",
-    slug: "medical-centres"
+    description: "Fitout removed. Services capped. Compliant and cleared.",
+    slug: "medical-centres",
+    image: "/images/industries/medical-centre-make-good-melbourne.jpg",
+    alt: "Medical centre and healthcare suite make good services in Melbourne"
   },
   {
     id: "industrial-manufacturing",
     title: "Industrial & Manufacturing",
-    description: "Industrial tenancies with plant, services, and rectification scope.",
-    slug: "industrial-manufacturing"
+    description: "Plant out. Damage repaired. Drains cleared and compliant.",
+    slug: "industrial-manufacturing",
+    image: "/images/industries/industrial-manufacturing-make-good-melbourne.jpg",
+    alt: "Industrial manufacturing facility make good and restoration services in Melbourne"
   },
   {
     id: "hospitality-venues",
     title: "Hospitality & Venues",
-    description: "Restaurants, bars, and venues. Complex services and tight access managed.",
-    slug: "hospitality-venues"
+    description: "Kitchen stripped. Services made safe. Floor ready to hand over.",
+    slug: "hospitality-venues",
+    image: "/images/industries/hospitality-venue-kitchen-make-good-melbourne.jpg",
+    alt: "Commercial hospitality venue and kitchen make good services in Melbourne"
   }
 ];
 
@@ -54,10 +68,10 @@ const IndustriesGrid = () => {
         {/* Header */}
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4 uppercase tracking-wide text-foreground">
-            Industries We Work In
+            Industries We Serve
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Make good and remedial works across commercial tenancies.
+            From corporate offices to industrial facilities, we deliver professional make good solutions across diverse commercial sectors throughout Melbourne.
           </p>
         </div>
 
@@ -70,9 +84,16 @@ const IndustriesGrid = () => {
               className="block group"
             >
               <Card className="overflow-hidden border-border bg-card h-full transition-all duration-300 group-hover:border-primary/50 group-hover:shadow-xl">
-                {/* Image Placeholder */}
-                <div className="aspect-[4/3] overflow-hidden relative bg-muted/30 flex items-center justify-center">
-                  <span className="text-muted-foreground/50 text-sm">Industry Image</span>
+                {/* Industry Image */}
+                <div className="aspect-[4/3] overflow-hidden relative bg-muted/30">
+                  <img 
+                    src={industry.image} 
+                    alt={industry.alt}
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                    loading="lazy"
+                    width="800"
+                    height="600"
+                  />
                 </div>
 
                 {/* Content */}
