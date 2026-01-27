@@ -32,11 +32,11 @@ const Footer = () => {
               Professional make good, make safe and remediation services for commercial and industrial properties across Melbourne.
             </p>
             <a 
-              href="mailto:info@makegoodmelbourne.com.au" 
+              href="mailto:info@makegood.melbourne" 
               className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
             >
               <Mail className="h-4 w-4" />
-              info@makegoodmelbourne.com.au
+              info@makegood.melbourne
             </a>
           </div>
           
