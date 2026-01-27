@@ -46,14 +46,15 @@ const HeroContent = () => {
             Get a Quote
             <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
           </Button>
-          <Button 
-            size="lg" 
-            variant="outline"
-            onClick={scrollToServices}
-            className="text-lg px-8 py-6"
-          >
-            Our Services
-          </Button>
+          <a href="/capabilities/">
+            <Button 
+              size="lg" 
+              variant="outline"
+              className="text-lg px-8 py-6"
+            >
+              Our Services
+            </Button>
+          </a>
         </div>
       </div>
     </div>

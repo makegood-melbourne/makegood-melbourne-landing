@@ -5,7 +5,7 @@ interface Industry {
   id: string;
   title: string;
   description: string;
-  slug: string;
+  href: string;
   image: string;
   alt: string;
 }
@@ -15,7 +15,7 @@ const industries: Industry[] = [
     id: "offices",
     title: "Offices",
     description: "Partitions down. Walls patched. Back to base building.",
-    slug: "offices",
+    href: "/industries/commercial/",
     image: "/images/industries/commercial-office-make-good-melbourne.jpg",
     alt: "Professional commercial office space after make good restoration in Melbourne"
   },
@@ -23,7 +23,7 @@ const industries: Industry[] = [
     id: "warehouses-logistics",
     title: "Warehouses & Logistics",
     description: "Racking out. Floors restored. Ready for the next tenant.",
-    slug: "warehouses-logistics",
+    href: "/industries/industrial/",
     image: "/images/industries/warehouse-logistics-make-good-melbourne.jpg",
     alt: "Industrial warehouse and logistics facility make good services in Melbourne"
   },
@@ -31,7 +31,7 @@ const industries: Industry[] = [
     id: "retail",
     title: "Retail",
     description: "Shopfront stripped. Surfaces finished. Handed back to centre standards.",
-    slug: "retail",
+    href: "/industries/commercial/",
     image: "/images/industries/retail-shopfront-make-good-melbourne.jpg",
     alt: "Retail shopfront and commercial space make good services in Melbourne"
   },
@@ -39,7 +39,7 @@ const industries: Industry[] = [
     id: "medical-centres",
     title: "Medical Centres & Suites",
     description: "Fitout removed. Services capped. Compliant and cleared.",
-    slug: "medical-centres",
+    href: "/industries/commercial/",
     image: "/images/industries/medical-centre-make-good-melbourne.jpg",
     alt: "Medical centre and healthcare suite make good services in Melbourne"
   },
@@ -47,7 +47,7 @@ const industries: Industry[] = [
     id: "industrial-manufacturing",
     title: "Industrial & Manufacturing",
     description: "Plant out. Damage repaired. Drains cleared and compliant.",
-    slug: "industrial-manufacturing",
+    href: "/industries/industrial/",
     image: "/images/industries/industrial-manufacturing-make-good-melbourne.jpg",
     alt: "Industrial manufacturing facility make good and restoration services in Melbourne"
   },
@@ -55,7 +55,7 @@ const industries: Industry[] = [
     id: "hospitality-venues",
     title: "Hospitality & Venues",
     description: "Kitchen stripped. Services made safe. Floor ready to hand over.",
-    slug: "hospitality-venues",
+    href: "/industries/commercial/",
     image: "/images/industries/hospitality-venue-kitchen-make-good-melbourne.jpg",
     alt: "Commercial hospitality venue and kitchen make good services in Melbourne"
   }
@@ -80,7 +80,7 @@ const IndustriesGrid = () => {
           {industries.map((industry) => (
             <a 
               key={industry.id} 
-              href={`/industries/${industry.slug}`} 
+              href={industry.href} 
               className="block group"
             >
               <Card className="overflow-hidden border-border bg-card h-full transition-all duration-300 group-hover:border-primary/50 group-hover:shadow-xl">
