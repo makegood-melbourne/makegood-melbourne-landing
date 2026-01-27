@@ -71,7 +71,7 @@ const ServiceAreasGrid = () => {
                     <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors">
                       {area.name}
                     </h3>
-                    <p className="text-sm text-muted-foreground mt-1">
+                    <p className="text-base text-muted-foreground mt-1">
                       {area.description}
                     </p>
                   </div>
@@ -88,7 +88,7 @@ const ServiceAreasGrid = () => {
                     <h3 className="font-semibold text-primary">
                       {area.name}
                     </h3>
-                    <p className="text-sm text-muted-foreground mt-1">
+                    <p className="text-base text-muted-foreground mt-1">
                       {area.description}
                     </p>
                   </div>

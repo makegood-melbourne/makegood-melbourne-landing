@@ -96,7 +96,7 @@ const ServiceOutcomes = () => {
           display: flex;
           align-items: center;
           gap: 16px;
-          font-size: 1.125rem;
+          font-size: 1.125rem; /* text-lg */
           color: white;
           text-align: left;
         }
@@ -112,8 +112,8 @@ const ServiceOutcomes = () => {
           padding: 16px 32px;
           background: hsl(25, 85%, 60%);
           color: hsl(0, 0%, 13.3%);
-          font-size: 1.125rem;
-          font-weight: 600;
+          font-size: 1.125rem; /* text-lg */
+          font-weight: 500;
           border-radius: 8px;
           text-decoration: none;
           transition: all 0.3s ease;
@@ -144,7 +144,7 @@ const ServiceOutcomes = () => {
           }
           
           .supporting-text {
-            font-size: 1.125rem;
+            font-size: 1.125rem; /* text-lg */
             margin-bottom: 36px;
           }
           
