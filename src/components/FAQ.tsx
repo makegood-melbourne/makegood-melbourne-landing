@@ -42,6 +42,11 @@ const FAQ = () => {
     }
   ];
 
+  // Split FAQs into two columns
+  const midpoint = Math.ceil(faqs.length / 2);
+  const leftColumnFaqs = faqs.slice(0, midpoint);
+  const rightColumnFaqs = faqs.slice(midpoint);
+
   // Generate FAQ Schema markup
   const faqSchema = {
     "@context": "https://schema.org",
@@ -64,7 +69,7 @@ const FAQ = () => {
         </script>
       </Helmet>
       
-      <div className="container mx-auto px-4 max-w-4xl">
+      <div className="container mx-auto px-4 max-w-7xl">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
             Frequently Asked Questions
@@ -74,22 +79,48 @@ const FAQ = () => {
           </p>
         </div>
 
-        <Accordion type="single" collapsible className="space-y-4">
-          {faqs.map((faq, index) => (
-            <AccordionItem 
-              key={index} 
-              value={`item-${index}`}
-              className="bg-background border border-border rounded-lg px-6 data-[state=open]:shadow-md transition-shadow"
-            >
-              <AccordionTrigger className="text-left text-lg font-medium hover:text-primary py-5">
-                {faq.question}
-              </AccordionTrigger>
-              <AccordionContent className="text-muted-foreground text-base pb-5 leading-relaxed">
-                {faq.answer}
-              </AccordionContent>
-            </AccordionItem>
-          ))}
-        </Accordion>
+        {/* Two-column layout on desktop, single column on mobile */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
+          {/* Left Column */}
+          <div>
+            <Accordion type="single" collapsible className="space-y-4">
+              {leftColumnFaqs.map((faq, index) => (
+                <AccordionItem 
+                  key={index} 
+                  value={`item-${index}`}
+                  className="bg-background border border-border rounded-lg px-6 data-[state=open]:shadow-md transition-shadow"
+                >
+                  <AccordionTrigger className="text-left text-lg font-medium hover:text-primary py-5">
+                    {faq.question}
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground text-base pb-5 leading-relaxed">
+                    {faq.answer}
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
+          </div>
+
+          {/* Right Column */}
+          <div>
+            <Accordion type="single" collapsible className="space-y-4">
+              {rightColumnFaqs.map((faq, index) => (
+                <AccordionItem 
+                  key={index + midpoint} 
+                  value={`item-${index + midpoint}`}
+                  className="bg-background border border-border rounded-lg px-6 data-[state=open]:shadow-md transition-shadow"
+                >
+                  <AccordionTrigger className="text-left text-lg font-medium hover:text-primary py-5">
+                    {faq.question}
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground text-base pb-5 leading-relaxed">
+                    {faq.answer}
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
+          </div>
+        </div>
       </div>
     </section>
   );
