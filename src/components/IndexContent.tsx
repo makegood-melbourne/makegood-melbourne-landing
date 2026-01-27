@@ -1,6 +1,7 @@
 import { Helmet } from "@/lib/helmet";
 import ServicesCarousel from "@/components/ServicesCarousel";
 import ServiceOutcomes from "@/components/ServiceOutcomes";
+import IndustriesGrid from "@/components/IndustriesGrid";
 import ServiceAreasGrid from "@/components/ServiceAreasGrid";
 import FAQ from "@/components/FAQ";
 import Contact from "@/components/Contact";
@@ -41,6 +42,7 @@ const IndexContent = () => {
       
       <ServicesCarousel />
       <ServiceOutcomes />
+      <IndustriesGrid />
 
       <ServiceAreasGrid />
       <FAQ />
