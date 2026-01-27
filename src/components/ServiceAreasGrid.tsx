@@ -50,10 +50,10 @@ const ServiceAreasGrid = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Melbourne & Victoria Service Areas
+            Where We Work
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Make Good Melbourne provides professional restoration services across Melbourne's key business districts and throughout Victoria.
+            Offices, warehouses and industrial sites across Melbourne and Victoria.
           </p>
         </div>
 
