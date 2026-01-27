@@ -45,8 +45,8 @@ const ServiceOutcomes = () => {
       
       <style jsx>{`
         .service-outcomes-section {
-          background: #0a0a0a;
-          padding: 100px 0;
+          background: hsl(0, 0%, 13.3%);
+          padding: 56px 24px 58px;
           position: relative;
         }
         
@@ -136,7 +136,7 @@ const ServiceOutcomes = () => {
         /* Mobile responsiveness */
         @media (max-width: 768px) {
           .service-outcomes-section {
-            padding: 60px 0;
+            padding: 64px 16px 40px;
           }
           
           .headline {
