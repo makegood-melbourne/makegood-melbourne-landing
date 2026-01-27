@@ -5,6 +5,7 @@ import HeroSection from '../components/HeroSection.astro';
 import SpecialistsSection from '../components/SpecialistsSection.astro';
 import IndexContent from '../components/IndexContent';
 import FAQ from '../components/FAQ.astro';
+import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 import FloatingCTAs from '../components/FloatingCTAs';
 import { homepageFaqs } from '../data/faqs';
@@ -71,6 +72,7 @@ const businessSchema = {
     <SpecialistsSection />
     <IndexContent client:idle />
     <FAQ />
+    <Contact client:idle />
     <Footer client:load />
     <FloatingCTAs client:load />
   </main>
