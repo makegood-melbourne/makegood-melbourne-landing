@@ -109,7 +109,7 @@ const ServiceOutcomes = () => {
           display: inline-flex;
           align-items: center;
           gap: 12px;
-          padding: 16px 32px;
+          padding: 0.625rem 2rem; /* matches size="lg": h-11 px-8 */
           background: hsl(25, 85%, 60%);
           color: hsl(0, 0%, 13.3%);
           font-size: 1.125rem; /* text-lg */
@@ -153,7 +153,7 @@ const ServiceOutcomes = () => {
           }
           
           .cta-button {
-            padding: 14px 28px;
+            padding: 0.5rem 1.75rem;
             font-size: 1rem;
           }
         }
