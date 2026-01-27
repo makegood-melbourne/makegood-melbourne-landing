@@ -3,6 +3,7 @@ import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
 import ServicesCarousel from "@/components/ServicesCarousel";
 import SimpleProcess from "@/components/SimpleProcess";
+import IndustriesGrid from "@/components/IndustriesGrid";
 import About from "@/components/About";
 import ProblemSolution from "@/components/ProblemSolution";
 import ServiceAreasGrid from "@/components/ServiceAreasGrid";
@@ -79,6 +80,7 @@ const Index = () => {
       
       <ServicesCarousel />
       <SimpleProcess />
+      <IndustriesGrid />
       <ProblemSolution />
       <About />
       <ServiceAreasGrid />
