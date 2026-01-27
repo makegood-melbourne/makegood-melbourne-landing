@@ -103,7 +103,7 @@ const ServiceAreasGrid = () => {
             asChild
             variant="default"
             size="lg"
-            className="group"
+            className="text-lg group"
           >
             <a href="/service-areas">
               View All Service Areas
