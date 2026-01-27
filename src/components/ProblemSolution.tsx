@@ -1,5 +1,4 @@
-import { X, Check, ArrowRight } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { X, Check } from "lucide-react";
 
 const ProblemSolution = () => {
   const problems = [
@@ -20,26 +19,19 @@ const ProblemSolution = () => {
     "Full bond protection with compliance documentation",
   ];
 
-  const scrollToContact = () => {
-    const element = document.getElementById('contact');
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return (
     <section className="py-12 md:py-16 bg-background">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
+        <div className="text-center mb-8">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            End of Lease Stress? <span className="text-primary">We've Got You Covered</span>
+            Why Make Good Projects Go Wrong — And How We Prevent It
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Don't let make good obligations catch you off guard. See how we transform common lease-end challenges into smooth handovers.
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+            Make good disputes, delays and cost blowouts usually come from poor scope definition and trade coordination. Our process is designed to eliminate those risks.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-12">
+        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {/* Problems Column */}
           <div className="bg-destructive/5 border border-destructive/20 rounded-xl p-8">
             <h3 className="text-xl font-semibold text-destructive mb-6 flex items-center gap-2">
@@ -75,17 +67,6 @@ const ProblemSolution = () => {
               ))}
             </ul>
           </div>
-        </div>
-
-        <div className="text-center">
-          <Button 
-            size="lg" 
-            onClick={scrollToContact}
-            className="bg-primary hover:bg-primary/90 text-primary-foreground group"
-          >
-            Get Your Quote
-            <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-          </Button>
         </div>
       </div>
     </section>
