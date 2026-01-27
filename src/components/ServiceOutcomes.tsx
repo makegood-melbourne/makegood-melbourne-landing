@@ -4,7 +4,7 @@ const ServiceOutcomes = () => {
       <div className="outcomes-container">
         <div className="content-wrapper">
           <h2 className="headline">
-            Make Good. <span className="orange-accent">Start to Finish.</span>
+            Your Project. <span className="orange-accent">Start to Finish.</span>
           </h2>
           
           <p className="supporting-text">
