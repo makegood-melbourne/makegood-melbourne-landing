@@ -79,7 +79,7 @@ const ServiceOutcomes = () => {
         .supporting-text {
           font-size: 1.25rem;
           color: white;
-          margin: 0 0 48px 0;
+          margin: 0 0 32px 0;
           opacity: 0.9;
           line-height: 1.6;
         }
