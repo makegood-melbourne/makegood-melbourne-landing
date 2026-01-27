@@ -14,21 +14,21 @@ const ServiceOutcomes = () => {
           <div className="outcomes-list">
             <div className="outcome-item">
               <svg className="checkmark" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M20 6L9 17L4 12" stroke="#FF6B35" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M20 6L9 17L4 12" stroke="hsl(25, 85%, 60%)" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
               <span>No scope surprises.</span>
             </div>
             
             <div className="outcome-item">
               <svg className="checkmark" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M20 6L9 17L4 12" stroke="#FF6B35" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M20 6L9 17L4 12" stroke="hsl(25, 85%, 60%)" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
               <span>One contractor. Full accountability.</span>
             </div>
             
             <div className="outcome-item">
               <svg className="checkmark" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M20 6L9 17L4 12" stroke="#FF6B35" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M20 6L9 17L4 12" stroke="hsl(25, 85%, 60%)" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
               <span>Starts on time. Finishes on time.</span>
             </div>
@@ -72,8 +72,8 @@ const ServiceOutcomes = () => {
         }
         
         .orange-accent {
-          color: #FF6B35;
-          display: block;
+          color: hsl(25, 85%, 60%);
+          display: inline;
         }
         
         .supporting-text {
@@ -110,19 +110,19 @@ const ServiceOutcomes = () => {
           align-items: center;
           gap: 12px;
           padding: 16px 32px;
-          background: #FF6B35;
-          color: white;
+          background: hsl(25, 85%, 60%);
+          color: hsl(0, 0%, 13.3%);
           font-size: 1.1rem;
           font-weight: 600;
           border-radius: 8px;
           text-decoration: none;
           transition: all 0.3s ease;
-          box-shadow: 0 4px 20px rgba(255, 107, 53, 0.3);
+          box-shadow: 0 4px 20px hsla(25, 85%, 60%, 0.3);
         }
         
         .cta-button:hover {
           transform: translateY(-2px);
-          box-shadow: 0 6px 30px rgba(255, 107, 53, 0.5);
+          box-shadow: 0 6px 30px hsla(25, 85%, 60%, 0.5);
         }
         
         .arrow-icon {
