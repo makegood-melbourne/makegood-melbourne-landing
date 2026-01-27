@@ -4,8 +4,53 @@ import Navigation from '../components/Navigation';
 import HeroSection from '../components/HeroSection.astro';
 import SpecialistsSection from '../components/SpecialistsSection.astro';
 import IndexContent from '../components/IndexContent';
+import FAQ from '../components/FAQ.astro';
 import Footer from '../components/Footer';
 import FloatingCTAs from '../components/FloatingCTAs';
+import { homepageFaqs } from '../data/faqs';
+
+// Generate FAQPage schema from homepage FAQs
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": homepageFaqs.map(faq => ({
+    "@type": "Question",
+    "name": faq.question,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": faq.answer
+    }
+  }))
+};
+
+// LocalBusiness schema
+const businessSchema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Make Good Melbourne",
+  "url": "https://makegood.melbourne/",
+  "email": "info@makegood.melbourne",
+  "description": "Professional make good, make safe and remediation services for commercial and industrial properties across Melbourne. Expert end-of-lease restoration, office strip-outs, warehouse restoration, and building remediation throughout Victoria.",
+  "areaServed": [
+    {
+      "@type": "City",
+      "name": "Melbourne"
+    },
+    {
+      "@type": "State",
+      "name": "Victoria"
+    }
+  ],
+  "serviceType": [
+    "Make Good Services",
+    "End of Lease Restoration",
+    "Office Strip Outs",
+    "Warehouse Restoration",
+    "Building Remediation",
+    "Make Safe Services",
+    "Commercial Property Restoration"
+  ]
+};
 ---
 
 <BaseLayout 
@@ -14,11 +59,18 @@ import FloatingCTAs from '../components/FloatingCTAs';
   ogImage="/og/commercial.jpg"
   canonicalUrl="https://makegood.melbourne/"
 >
+  <!-- JSON-LD Schemas -->
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(businessSchema)} />
+  </Fragment>
+
   <main class="min-h-screen bg-background text-foreground">
     <Navigation client:load />
     <HeroSection />
     <SpecialistsSection />
     <IndexContent client:idle />
+    <FAQ />
     <Footer client:load />
     <FloatingCTAs client:load />
   </main>

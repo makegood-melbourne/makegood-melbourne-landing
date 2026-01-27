@@ -1,0 +1,116 @@
+---
+import { homepageFaqs } from '@/data/faqs';
+
+// Split FAQs into two columns for desktop layout
+const midpoint = Math.ceil(homepageFaqs.length / 2);
+const leftColumnFaqs = homepageFaqs.slice(0, midpoint);
+const rightColumnFaqs = homepageFaqs.slice(midpoint);
+---
+
+<section class="py-12 md:py-16 bg-muted/30">
+  <div class="container mx-auto px-4 max-w-7xl">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold text-foreground mb-4">
+        Frequently Asked Questions
+      </h2>
+      <p class="text-lg text-muted-foreground">
+        Everything you need to know about make good services in Melbourne
+      </p>
+    </div>
+
+    <!-- Two-column layout on desktop, single column on mobile -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
+      <!-- Left Column -->
+      <div class="space-y-4">
+        {leftColumnFaqs.map((faq, index) => (
+          <details class="faq-item bg-background border border-border rounded-lg px-6 group">
+            <summary class="faq-question text-left text-lg font-medium hover:text-primary py-5 cursor-pointer list-none flex items-center justify-between">
+              <span>{faq.question}</span>
+              <svg 
+                class="faq-chevron h-5 w-5 shrink-0 transition-transform duration-200 text-muted-foreground" 
+                xmlns="http://www.w3.org/2000/svg" 
+                width="24" 
+                height="24" 
+                viewBox="0 0 24 24" 
+                fill="none" 
+                stroke="currentColor" 
+                stroke-width="2" 
+                stroke-linecap="round" 
+                stroke-linejoin="round"
+              >
+                <path d="m6 9 6 6 6-6"/>
+              </svg>
+            </summary>
+            <div class="faq-answer text-muted-foreground text-base pb-5 leading-relaxed">
+              {faq.answer}
+            </div>
+          </details>
+        ))}
+      </div>
+
+      <!-- Right Column -->
+      <div class="space-y-4">
+        {rightColumnFaqs.map((faq, index) => (
+          <details class="faq-item bg-background border border-border rounded-lg px-6 group">
+            <summary class="faq-question text-left text-lg font-medium hover:text-primary py-5 cursor-pointer list-none flex items-center justify-between">
+              <span>{faq.question}</span>
+              <svg 
+                class="faq-chevron h-5 w-5 shrink-0 transition-transform duration-200 text-muted-foreground" 
+                xmlns="http://www.w3.org/2000/svg" 
+                width="24" 
+                height="24" 
+                viewBox="0 0 24 24" 
+                fill="none" 
+                stroke="currentColor" 
+                stroke-width="2" 
+                stroke-linecap="round" 
+                stroke-linejoin="round"
+              >
+                <path d="m6 9 6 6 6-6"/>
+              </svg>
+            </summary>
+            <div class="faq-answer text-muted-foreground text-base pb-5 leading-relaxed">
+              {faq.answer}
+            </div>
+          </details>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Chevron rotation when open */
+  details[open] .faq-chevron {
+    transform: rotate(180deg);
+  }
+
+  /* Shadow on open */
+  details[open] {
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  }
+
+  /* Hide default marker */
+  summary::-webkit-details-marker {
+    display: none;
+  }
+</style>
+
+<script>
+  // Optional: Add smooth animation for opening/closing
+  document.addEventListener('DOMContentLoaded', () => {
+    const details = document.querySelectorAll('details.faq-item');
+    
+    details.forEach((detail) => {
+      const summary = detail.querySelector('summary');
+      const answer = detail.querySelector('.faq-answer');
+      
+      if (summary && answer) {
+        summary.addEventListener('click', (e) => {
+          // Let the browser handle the default behavior
+          // This script is just for potential future enhancements
+        });
+      }
+    });
+  });
+</script>
