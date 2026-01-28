@@ -364,7 +364,7 @@ export const services: Service[] = [
     metaTitle: "Painting Make Good Melbourne | Make Good, Better",
     description: "Professional make good painting for offices, warehouses and industrial spaces across Melbourne. Colour-matched finishes, proper surface preparation and quality application—delivered on time for your handover deadline.",
     metaDescription: "Make good painting Melbourne. End of lease painting for commercial and industrial properties. Colour-matched, owner-approved finishes. Bond protection guaranteed. Free quotes.",
-    heroText: "We deliver professional painting for [offices](/industries/commercial), [warehouses](/industries/industrial) and commercial spaces—colour-matched to original specifications, properly prepared and expertly applied. From [wall repairs](/services/patching-plastering) through to final coat, our comprehensive make good services handle all of your end of lease obligations.",
+    heroText: "We deliver professional painting for [offices](/industries/commercial), [warehouses](/industries/industrial) and commercial spaces—colour-matched to original specifications, properly prepared and expertly applied. From [wall repairs](/services/make-good-solutions/patching-plastering) through to final coat, our comprehensive make good services handle all of your end of lease obligations.",
     ogImage: "/og/make-good-painting.jpg",
     heroImage: commercialPaintingHeroImage,
     heroImageAlt: "Large commercial warehouse interior with freshly painted white walls and steel structure during end of lease make good works in Melbourne",
@@ -441,7 +441,7 @@ export const services: Service[] = [
       },
       {
         question: "Do you handle patching and repairs before painting?",
-        answer: "Yes. Painting over holes, cracks or damaged surfaces is a waste of time and money—the defects show through. We fill all holes from removed fixtures, repair any plaster damage, sand patches smooth and apply appropriate primers before the finish coats. This is included in our make good painting service. For more extensive wall damage, see our [patching and plastering](/services/patching-plastering) service."
+        answer: "Yes. Painting over holes, cracks or damaged surfaces is a waste of time and money—the defects show through. We fill all holes from removed fixtures, repair any plaster damage, sand patches smooth and apply appropriate primers before the finish coats. This is included in our make good painting service. For more extensive wall damage, see our [patching and plastering](/services/make-good-solutions/patching-plastering) service."
       },
       {
         question: "How much does end of lease painting cost in Melbourne?",
@@ -1607,20 +1607,149 @@ export const services: Service[] = [
     published: true
   },
   {
-    name: "Wall Repairs, Patching & Plastering",
+    name: "Patching & Plastering",
     slug: "make-good-solutions/patching-plastering",
-    title: "Wall Repairs, Patching & Plastering",
+    title: "PATCHING & PLASTERING",
+    titleHighlight: "MELBOURNE",
     metaTitle: "Patching & Plastering Make Good Melbourne | Make Good, Better",
-    description: "[Content to be added]",
-    metaDescription: "[Content to be added]",
-    heroText: "[Content to be added]",
+    description: "Holes from fixtures. Impact damage. Repairs after partition demolition. We patch, plaster and repair so all surfaces are ready for paint and handover.",
+    metaDescription: "Professional patching and plastering for commercial make good projects. We repair holes from fixtures, impact damage and post-demolition surfaces ready for paint and handover across Melbourne.",
+    heroText: "Holes from fixtures. Impact damage. Repairs after partition demolition. We patch, plaster and repair so all surfaces are ready for paint and handover.",
     ogImage: "/og/patching-plastering.jpg",
     heroImage: "",
-    heroImageAlt: "[Content to be added]",
-    benefits: [],
-    relatedServices: [],
+    heroImageAlt: "Commercial patching and plastering make good service in Melbourne",
+    heroImageTitle: "Makegood Melbourne - Patching & Plastering Service",
+    trustBadges: [
+      "Licensed & Insured",
+      "Fixed-Price Quotes",
+      "After-Hours Available",
+      "Full Documentation"
+    ],
+    skipAboutSection: true,
+    scopeHeading: "PATCHING & PLASTERING",
+    scopeHeadingHighlight: "WORKS",
+    scopeDescription: "Tenants leave marks. Fixtures get removed. Partitions come down. What's left behind—screw holes, anchor points, damaged plasterboard, rough edges where walls used to be—needs to be repaired before the painter can start.\n\nWe handle the repairs so your walls are smooth, even and ready for final coat. Surfaces are sanded flush, joints are invisible, textures are matched. No shortcuts. No visible patches. Just clean walls ready for handover.",
+    capabilityCards: [
+      {
+        icon: "brick",
+        title: "FIXTURE REMOVAL REPAIRS",
+        items: [
+          "Holes from removed shelving, signage and fixtures",
+          "Screw holes, anchor points and bracket damage",
+          "Cable penetrations and data point removals",
+          "Patch to match existing wall texture and finish",
+          "Sand flush for seamless paint finish",
+          "Repairs undetectable once painted"
+        ]
+      },
+      {
+        icon: "structure",
+        title: "IMPACT DAMAGE",
+        items: [
+          "Dents, gouges and scrapes from tenancy wear",
+          "Forklift damage in warehouses",
+          "Trolley and equipment marks in corridors",
+          "Damaged sections cut back and replaced",
+          "Surface restored to match surrounding wall"
+        ]
+      },
+      {
+        icon: "waterproof",
+        title: "POST-DEMOLITION REPAIRS",
+        items: [
+          "Wall repairs after partition strip out",
+          "Ceiling make good where walls were removed",
+          "Floor-to-ceiling patching along demolition lines",
+          "Junction repairs where tenant fitout met base building",
+          "Surfaces prepared for painting and handover"
+        ]
+      }
+    ],
+    capabilitiesTitle: "PATCHING & PLASTERING CAPABILITIES",
+    capabilitiesSubtitle: "Our service covers all wall and ceiling repairs for commercial make good projects.",
+    featuredSections: [
+      {
+        title: "PATCHING & PLASTERING WORKS",
+        titleHighlight: "WORKS",
+        description: "Tenants leave marks. Fixtures get removed. Partitions come down. What's left behind—screw holes, anchor points, damaged plasterboard, rough edges where walls used to be—needs to be repaired before the painter can start.\n\nWe handle the repairs so your walls are smooth, even and ready for final coat. Surfaces are sanded flush, joints are invisible, textures are matched. No shortcuts. No visible patches. Just clean walls ready for handover.",
+        image: "",
+        imageAlt: "Patching and plastering works for commercial make good in Melbourne",
+        imageTitle: "Makegood Melbourne - Patching & Plastering Works",
+        imagePosition: "center",
+        imageLeft: false
+      }
+    ],
+    linkedSpotlightBlock: {
+      title: "A COMPLETE MAKE GOOD",
+      titleHighlight: "SERVICE",
+      subtitle: "We coordinate patching and plastering with painting, ceiling replacement and flooring reinstatement to deliver your end-of-lease project on time.",
+      cards: [
+        {
+          slug: "make-good-solutions/painting",
+          name: "Painting",
+          description: "End of lease painting services for commercial and industrial properties across Melbourne."
+        },
+        {
+          slug: "make-good-solutions/suspended-ceilings",
+          name: "Suspended Ceilings",
+          description: "Ceiling tile replacement and grid repairs to restore your commercial space to original condition."
+        },
+        {
+          slug: "make-good-solutions/flooring-reinstatement",
+          name: "Flooring Reinstatement",
+          description: "Professional flooring reinstatement for lease handovers and make good compliance across Melbourne."
+        },
+        {
+          slug: "make-good-solutions/warehouse-flooring",
+          name: "Warehouse Flooring",
+          description: "Complete warehouse floor restoration including concrete repairs, grinding and protective coatings."
+        }
+      ]
+    },
+    ctaHeading: "READY TO GET STARTED?",
+    ctaDescription: "Contact us today for a free quote on your patching and plastering project.",
+    benefits: [
+      "Fixture removal repairs",
+      "Impact damage restoration",
+      "Post-demolition patching",
+      "Texture matching",
+      "Surface preparation",
+      "Paint-ready finish"
+    ],
+    relatedServices: [
+      "make-good-solutions/painting",
+      "make-good-solutions/suspended-ceilings",
+      "make-good-solutions/flooring-reinstatement",
+      "make-good-solutions/warehouse-flooring"
+    ],
+    faqs: [
+      {
+        question: "Can you match existing wall textures?",
+        answer: "Yes. We match the existing finish—smooth, sand or knockdown. Once painted, repairs are undetectable."
+      },
+      {
+        question: "Do you repair holes from removed fixtures and signage?",
+        answer: "Yes. Screw holes, anchor points, bracket damage, cable penetrations—we patch and sand everything flush."
+      },
+      {
+        question: "What about damage from partition removal?",
+        answer: "Yes. After strip out, we repair walls and ceilings along demolition lines so the base building is restored and paint-ready."
+      },
+      {
+        question: "What's the difference between patching and skim coating?",
+        answer: "Patching repairs localised damage. Skim coating resurfaces an entire wall when the condition is too poor for spot repairs alone."
+      },
+      {
+        question: "Do you repair water-damaged plasterboard?",
+        answer: "If the damage is minor and the source has been fixed, yes. For significant water damage, we'll assess whether it's a repair or a remediation job."
+      },
+      {
+        question: "How long does patching and plastering take?",
+        answer: "Depends on scope. A small office might take a day. Larger spaces with extensive damage take longer. We give you a timeline upfront."
+      }
+    ],
     category: "make-good",
-    published: false
+    published: true
   }
 ];
 
