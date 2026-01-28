@@ -226,6 +226,9 @@ const serviceCards = [
     position: relative;
     aspect-ratio: 16 / 9;
     overflow: hidden;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    will-change: transform;
   }
 
   .card-image {
@@ -235,6 +238,8 @@ const serviceCards = [
     transition: transform 0.3s ease;
     display: block;
     pointer-events: none;
+    backface-visibility: hidden;
+    transform: translateZ(0);
   }
 
   .card-image-link:hover .card-image {
