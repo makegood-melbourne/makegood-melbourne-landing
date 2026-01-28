@@ -34,7 +34,7 @@ const serviceCategories = [
   },
   {
     label: "Handover Solutions",
-    href: "/services/handover-solutions",  // Clickable category header
+    href: "/services/handover-solutions/end-of-lease-cleaning",  // Temporary link until parent page created
     slugs: ['handover-solutions/end-of-lease-cleaning', 'handover-solutions/end-of-lease-relocation']
   },
   {
