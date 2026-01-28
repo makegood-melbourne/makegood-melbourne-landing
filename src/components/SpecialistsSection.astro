@@ -9,6 +9,19 @@
       We work with tenants, property managers and owners to restore commercial spaces to their original condition. One contractor. One quote. Every trade covered.
     </div>
     
+    <!-- Remediation Micro-Callout -->
+    <div class="mg-specialists__micro-callout">
+      <h3 class="mg-specialists__micro-heading">Structural issues don't wait.</h3>
+      <p class="mg-specialists__micro-body">
+        Building problems need engineered solutions. Concrete cancer, water ingress, cladding compliance—we diagnose the cause and deliver certified repairs.
+      </p>
+      <div class="mg-specialists__micro-links">
+        <a href="#" class="mg-specialists__micro-link">Structural</a>
+        <a href="#" class="mg-specialists__micro-link">Waterproofing</a>
+        <a href="#" class="mg-specialists__micro-link">Contact Us</a>
+      </div>
+    </div>
+    
     <!-- Trust Indicators -->
     <div class="mg-specialists__trust-indicators">
       <div class="mg-specialists__trust-item">
@@ -56,6 +69,42 @@
     margin: 0 0 32px;
   }
   
+  /* Remediation Micro-Callout */
+  .mg-specialists__micro-callout {
+    margin: 24px auto 28px;
+    max-width: 680px;
+    text-align: center;
+  }
+  .mg-specialists__micro-heading {
+    font-size: clamp(18px, 2vw, 22px);
+    font-weight: 600;
+    color: #ffffff;
+    margin: 0 0 10px;
+    line-height: 1.3;
+  }
+  .mg-specialists__micro-body {
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.75);
+    margin: 0 0 14px;
+  }
+  .mg-specialists__micro-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+  .mg-specialists__micro-link {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  .mg-specialists__micro-link:hover {
+    color: rgba(255, 255, 255, 0.95);
+    text-decoration: underline;
+  }
+  
   /* Trust Indicators */
   .mg-specialists__trust-indicators {
     display: flex;
@@ -92,6 +141,18 @@
     .mg-specialists__copy {
       font-size: 16px;
       margin-bottom: 24px;
+    }
+    .mg-specialists__micro-callout {
+      margin: 20px auto 24px;
+    }
+    .mg-specialists__micro-heading {
+      font-size: 18px;
+    }
+    .mg-specialists__micro-body {
+      font-size: 15px;
+    }
+    .mg-specialists__micro-links {
+      gap: 12px;
     }
     .mg-specialists__trust-indicators {
       flex-direction: column;
