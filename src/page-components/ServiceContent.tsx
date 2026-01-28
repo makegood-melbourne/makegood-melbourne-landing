@@ -42,7 +42,7 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
         "addressRegion": "VIC",
         "addressCountry": "AU"
       },
-      "email": "enquiries@makegood.melbourne"
+      "email": "info@makegood.melbourne"
     },
     "areaServed": {
       "@type": "City",
@@ -95,7 +95,7 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
               {service.capabilityCards.map((card, index) => (
                 <Card key={index} className="bg-secondary border-border">
                   <CardContent className="pt-6">
-                    <h3 className="text-xl font-semibold text-foreground mb-4">
+                    <h3 className="text-xl font-bold text-foreground mb-4">
                       {card.title}
                     </h3>
                     <ul className="space-y-2">
@@ -727,7 +727,7 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
                   </a>
                 </Button>
                 <Button size="lg" variant="outline" className="border-accent text-accent hover:bg-accent hover:text-accent-foreground" asChild>
-                  <a href="mailto:enquiries@makegood.melbourne">
+                  <a href="mailto:info@makegood.melbourne">
                     <Mail className="mr-2 h-5 w-5" />
                     Email Us
                   </a>
@@ -749,9 +749,9 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
                   </a>
                 </Button>
                 <Button size="lg" variant="outline" className="border-accent text-accent hover:bg-accent hover:text-accent-foreground" asChild>
-                  <a href="mailto:enquiries@makegood.melbourne">
+                  <a href="mailto:info@makegood.melbourne">
                     <Mail className="mr-2 h-5 w-5" />
-                    enquiries@makegood.melbourne
+                    Email Us
                   </a>
                 </Button>
               </div>

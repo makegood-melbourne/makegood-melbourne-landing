@@ -30,7 +30,7 @@ const serviceCategories = [
   {
     label: "Make Good Solutions",
     href: "/services/make-good-solutions",  // Clickable category header
-    slugs: ['make-good-solutions/flooring-reinstatement', 'make-good-solutions/line-marking', 'make-good-solutions/painting', 'make-good-solutions/suspended-ceilings', 'make-good-solutions/warehouse-flooring']
+    slugs: ['make-good-solutions/flooring-reinstatement', 'make-good-solutions/line-marking', 'make-good-solutions/patching-plastering', 'make-good-solutions/painting', 'make-good-solutions/suspended-ceilings', 'make-good-solutions/warehouse-flooring']
   },
   {
     label: "Handover Solutions",
