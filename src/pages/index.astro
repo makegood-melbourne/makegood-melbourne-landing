@@ -3,6 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Navigation from '../components/Navigation';
 import HeroSection from '../components/HeroSection.astro';
 import SpecialistsSection from '../components/SpecialistsSection.astro';
+import ServicesGrid from '../components/ServicesGrid.astro';
 import IndexContent from '../components/IndexContent';
 import FAQ from '../components/FAQ.astro';
 import Contact from '../components/Contact';
@@ -70,6 +71,7 @@ const businessSchema = {
     <Navigation client:load />
     <HeroSection />
     <SpecialistsSection />
+    <ServicesGrid />
     <IndexContent client:idle />
     <FAQ />
     <Contact client:idle />

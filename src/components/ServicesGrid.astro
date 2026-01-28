@@ -1,0 +1,333 @@
+---
+/**
+ * ServicesGrid.astro
+ * 
+ * A static 2x2 grid section for the homepage displaying the 4 main service categories:
+ * Strip Outs, Remediation, Make Goods, and Handover.
+ * 
+ * Each card dynamically pulls its hero image from the linked category/service page.
+ */
+
+import { Image } from 'astro:assets';
+
+// Import hero images from section landing pages
+import stripOutHero from "@/assets/services/commercial-industrial-strip-out-melbourne.jpg";
+import makeGoodHero from "@/assets/services/melbourne-warehouse-make-good-hero.jpg";
+import buildingRemediationHero from "@/assets/services/building-remediation-melbourne-shotcrete.jpg";
+
+// Import hero image for Handover from end-of-lease-cleaning service
+import handoverHero from "@/assets/services/commercial-floor-sweeping-concrete-melbourne.jpeg";
+
+// Card data with all content and links
+const serviceCards = [
+  {
+    id: 'strip-outs',
+    title: 'STRIP OUTS',
+    description: 'Fitout removal, demolition, and make-safe. Clear the space so the next phase can start.',
+    categoryLink: '/services/strip-out-solutions/',
+    ctaLabel: 'Strip Out Solutions',
+    heroImage: stripOutHero,
+    heroImageAlt: 'Commercial and industrial strip out works in Melbourne warehouse',
+    chips: [
+      { label: 'Demolition', href: '/services/strip-out-solutions/demolition/' },
+      { label: 'Make Safe', href: '/services/strip-out-solutions/make-safe/' },
+      { label: 'Pallet Racking Removal', href: '/services/strip-out-solutions/pallet-racking-removal/' },
+    ],
+  },
+  {
+    id: 'remediation',
+    title: 'REMEDIATION',
+    description: 'Structural repairs, waterproofing, cladding compliance. Problems fixed at the source.',
+    categoryLink: '/services/remediation-solutions/',
+    ctaLabel: 'Remediation Solutions',
+    heroImage: buildingRemediationHero,
+    heroImageAlt: 'Building remediation and structural repair works in Melbourne',
+    chips: [
+      { label: 'Structural', href: '/services/remediation-solutions/structural/' },
+      { label: 'Waterproofing', href: '/services/remediation-solutions/waterproofing/' },
+      { label: 'Cladding & Glazing', href: '/services/remediation-solutions/cladding-glazing/' },
+      { label: 'Polycarbonate Roofing & Skylights', href: '/services/remediation-solutions/polycarbonate-roofing-skylights/' },
+    ],
+  },
+  {
+    id: 'make-goods',
+    title: 'MAKE GOODS',
+    description: 'Restoring spaces to original condition. Floors, walls, ceilings—back to how it was.',
+    categoryLink: '/services/make-good-solutions/',
+    ctaLabel: 'Make Good Solutions',
+    heroImage: makeGoodHero,
+    heroImageAlt: 'Make good restoration works in Melbourne warehouse',
+    chips: [
+      { label: 'Flooring Reinstatement', href: '/services/make-good-solutions/flooring-reinstatement/' },
+      { label: 'Painting', href: '/services/make-good-solutions/painting/' },
+      { label: 'Suspended Ceilings', href: '/services/make-good-solutions/suspended-ceilings/' },
+      { label: 'Line Marking', href: '/services/make-good-solutions/line-marking/' },
+    ],
+  },
+  {
+    id: 'handover',
+    title: 'HANDOVER',
+    description: 'The final push. Cleaning, relocation, and everything needed to hand back the keys.',
+    categoryLink: '/services/handover-solutions/end-of-lease-cleaning/',
+    ctaLabel: 'Handover Solutions',
+    heroImage: handoverHero,
+    heroImageAlt: 'End of lease cleaning and handover services in Melbourne',
+    chips: [
+      { label: 'End of Lease Cleaning', href: '/services/handover-solutions/end-of-lease-cleaning/' },
+      { label: 'End of Lease Relocation', href: '/services/handover-solutions/end-of-lease-relocation/' },
+    ],
+  },
+];
+---
+
+<section class="services-grid-section">
+  <div class="container">
+    <!-- Section Header -->
+    <div class="section-header">
+      <h2 class="section-title">
+        <span class="title-white">OUR</span>{' '}
+        <span class="title-orange">SERVICES</span>
+      </h2>
+      <p class="section-subtitle">
+        Strip outs, make goods, handover, and building remediation — delivered by one contractor.
+      </p>
+    </div>
+
+    <!-- 2x2 Grid -->
+    <div class="services-grid">
+      {serviceCards.map((card) => (
+        <article class="service-card" data-card={card.id}>
+          <!-- Image Area with Title Overlay -->
+          <div class="card-image-wrapper">
+            <Image
+              src={card.heroImage}
+              alt={card.heroImageAlt}
+              class="card-image"
+              loading="lazy"
+              widths={[400, 600, 800]}
+              sizes="(max-width: 768px) 100vw, 50vw"
+            />
+            <div class="image-overlay">
+              <a href={card.categoryLink} class="card-title-link">
+                <h3 class="card-title">{card.title}</h3>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card Content -->
+          <div class="card-content">
+            <p class="card-description">{card.description}</p>
+
+            <!-- Sub-service Chips -->
+            <div class="chips-container">
+              {card.chips.map((chip) => (
+                <a href={chip.href} class="chip">
+                  {chip.label}
+                </a>
+              ))}
+            </div>
+
+            <!-- Primary CTA -->
+            <a href={card.categoryLink} class="card-cta">
+              {card.ctaLabel} <span class="cta-arrow">→</span>
+            </a>
+          </div>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .services-grid-section {
+    background-color: var(--color-bg-dark, #121212);
+    padding: 5rem 0;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  /* Section Header */
+  .section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .section-title {
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 1rem;
+  }
+
+  .title-white {
+    color: #ffffff;
+  }
+
+  .title-orange {
+    color: var(--color-primary, #f97316);
+  }
+
+  .section-subtitle {
+    color: #9ca3af;
+    font-size: 1.125rem;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+
+  /* Grid Layout */
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  @media (max-width: 768px) {
+    .services-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  /* Card Styling */
+  .service-card {
+    background-color: #1f1f1f;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    border: 1px solid #2a2a2a;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .service-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--color-primary, #f97316);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Image Area */
+  .card-image-wrapper {
+    position: relative;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+  }
+
+  .card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+
+  .service-card:hover .card-image {
+    transform: scale(1.05);
+  }
+
+  /* Gradient Overlay */
+  .image-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem 1.5rem 1rem;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.4) 60%, transparent 100%);
+  }
+
+  .card-title-link {
+    text-decoration: none;
+  }
+
+  .card-title-link:focus {
+    outline: 2px solid var(--color-primary, #f97316);
+    outline-offset: 2px;
+  }
+
+  .card-title {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin: 0;
+  }
+
+  /* Card Content */
+  .card-content {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  .card-description {
+    color: #9ca3af;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.25rem;
+  }
+
+  /* Chips Container */
+  .chips-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .chip {
+    display: inline-block;
+    padding: 0.375rem 0.75rem;
+    background-color: #2a2a2a;
+    color: #9ca3af;
+    font-size: 0.875rem;
+    border-radius: 9999px;
+    border: 1px solid #3a3a3a;
+    text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+  }
+
+  .chip:hover {
+    background-color: #3a3a3a;
+    color: #d1d5db;
+    border-color: #4a4a4a;
+  }
+
+  .chip:focus {
+    outline: 2px solid var(--color-primary, #f97316);
+    outline-offset: 2px;
+  }
+
+  /* Primary CTA */
+  .card-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--color-primary, #f97316);
+    font-weight: 600;
+    text-decoration: none;
+    margin-top: auto;
+    transition: gap 0.2s ease;
+  }
+
+  .card-cta:hover {
+    gap: 0.75rem;
+  }
+
+  .card-cta:focus {
+    outline: 2px solid var(--color-primary, #f97316);
+    outline-offset: 2px;
+  }
+
+  .cta-arrow {
+    transition: transform 0.2s ease;
+  }
+
+  .card-cta:hover .cta-arrow {
+    transform: translateX(4px);
+  }
+</style>
