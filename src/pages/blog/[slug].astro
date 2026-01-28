@@ -34,6 +34,37 @@ const ogImage = `/og/blog/${imageBaseName}.jpg`;
   ogImage={ogImage}
   canonicalUrl={`https://makegood.melbourne/blog/${post.slug}`}
 >
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": post.title,
+    "description": description,
+    "image": `https://makegood.melbourne${ogImage}`,
+    "datePublished": post.date,
+    "dateModified": post.date,
+    "author": {
+      "@type": "Organization",
+      "name": "Make Good Melbourne",
+      "url": "https://makegood.melbourne"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Make Good Melbourne",
+      "url": "https://makegood.melbourne",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://makegood.melbourne/logo.png"
+      }
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": `https://makegood.melbourne/blog/${post.slug}`
+    }
+  })} />
+  <meta slot="head" property="og:type" content="article" />
+  <meta slot="head" property="article:published_time" content={post.date} />
+  <meta slot="head" property="article:modified_time" content={post.date} />
+  <meta slot="head" property="article:author" content="Make Good Melbourne" />
   <div class="min-h-screen flex flex-col">
     <Navigation client:load />
     
