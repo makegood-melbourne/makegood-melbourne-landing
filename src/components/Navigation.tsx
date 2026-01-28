@@ -194,6 +194,11 @@ const Navigation = () => {
                     What is a Make Good?
                   </a>
                 </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <a href="/learn/commercial-remediation-guide" className="cursor-pointer">
+                    Commercial Remediation Guide
+                  </a>
+                </DropdownMenuItem>
                 <DropdownMenuSeparator />
                 <DropdownMenuItem asChild>
                   <a href="/faq" className="cursor-pointer">
