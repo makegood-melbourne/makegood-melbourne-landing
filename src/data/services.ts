@@ -366,7 +366,7 @@ export const services: Service[] = [
     metaTitle: "Painting Make Good Melbourne | Make Good, Better",
     description: "Professional make good painting for offices, warehouses and industrial spaces across Melbourne. Colour-matched finishes, proper surface preparation and quality application—delivered on time for your handover deadline.",
     metaDescription: "Make good painting Melbourne. End of lease painting for commercial and industrial properties. Colour-matched, owner-approved finishes. Bond protection guaranteed. Free quotes.",
-    heroText: "We deliver professional painting for [offices](/industries/commercial), [warehouses](/industries/industrial) and commercial spaces—colour-matched to original specifications, properly prepared and expertly applied. From [wall repairs](/services/make-good-solutions/patching-plastering) through to final coat, our comprehensive make good services handle all of your end of lease obligations.",
+    heroText: "We deliver professional painting for offices, warehouses and commercial spaces—colour-matched to original specifications, properly prepared and expertly applied. From wall repairs through to final coat, our comprehensive make good services handle all of your end of lease obligations.",
     ogImage: "/og/make-good-painting.jpg",
     heroImage: commercialPaintingHeroImage,
     heroImageAlt: "Large commercial warehouse interior with freshly painted white walls and steel structure during end of lease make good works in Melbourne",
@@ -384,14 +384,14 @@ export const services: Service[] = [
     featuredSections: [
       {
         title: "Internal Painting — Walls, Ceilings and Trim",
-        description: "We prepare surfaces properly, match colours accurately and apply professional finishes across your entire tenancy. [Offices](/industries/commercial), [warehouses](/industries/industrial), showrooms, retail—whatever the space, we deliver results.\n\nThe outcome is a clean, consistent finish suited to [commercial](/industries/commercial) and [industrial](/industries/industrial) environments. Across [offices](/industries/commercial), [warehouses](/industries/industrial), showrooms and retail spaces, attention to detail and uniform presentation ensure the space is ready for inspection, handover or reoccupation.",
+        description: "We prepare surfaces properly, match colours accurately and apply professional finishes across your entire tenancy. Offices, warehouses, showrooms, retail—whatever the space, we deliver results.\n\nThe outcome is a clean, consistent finish suited to commercial and industrial environments. Across offices, warehouses, showrooms and retail spaces, attention to detail and uniform presentation ensure the space is ready for inspection, handover or reoccupation.",
         image: industrialWarehouseInteriorPaintingImage,
         imageAlt: "Industrial warehouse interior wall painting using boom lift access equipment for high-reach surfaces in Melbourne",
         imageLeft: true
       },
       {
         title: "External Painting — Building Facades and External Surfaces",
-        description: "We prepare external surfaces properly, match colours accurately and apply durable finishes suited to building facades and exposed external areas. Works are completed across [commercial](/industries/commercial) and [industrial](/industries/industrial) properties, with consideration given to access, weather conditions and surrounding site activity.\n\nThe outcome is a consistent, professional external presentation that aligns with lease requirements and overall building standards. Attention to detail and uniform finishes ensure the property is ready for inspection, handover or ongoing use.",
+        description: "We prepare external surfaces properly, match colours accurately and apply durable finishes suited to building facades and exposed external areas. Works are completed across commercial and industrial properties, with consideration given to access, weather conditions and surrounding site activity.\n\nThe outcome is a consistent, professional external presentation that aligns with lease requirements and overall building standards. Attention to detail and uniform finishes ensure the property is ready for inspection, handover or ongoing use.",
         image: commercialBuildingFacadePaintingImage,
         imageAlt: "Commercial building facade painting using cherry picker access equipment for exterior panel surfaces in Melbourne",
         imageLeft: false
