@@ -140,7 +140,7 @@ export function Chatbot() {
         {
           role: "assistant",
           content:
-            "I'm having trouble connecting right now. Please use our contact form or email us directly at enquiries@makegood.melbourne",
+            "I'm having trouble connecting right now. Please use our contact form or email us directly at info@makegood.melbourne",
         },
       ]);
     } finally {
