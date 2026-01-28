@@ -50,7 +50,7 @@ const ogImageType = ogImage.toLowerCase().endsWith('.png')
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en-AU">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -63,11 +63,12 @@ const ogImageType = ogImage.toLowerCase().endsWith('.png')
     <link rel="canonical" href={canonicalUrl} />
     
     <!-- Preload critical assets for performance -->
-    <link rel="preload" href="/fonts/PPNeueMontreal-Book.otf" as="font" type="font/otf" crossorigin="anonymous" />
-    <link rel="preload" href="/fonts/PPNeueMontreal-Medium.otf" as="font" type="font/otf" crossorigin="anonymous" />
-    <link rel="preload" href="/fonts/PPNeueMontreal-Bold.otf" as="font" type="font/otf" crossorigin="anonymous" />
+    <link rel="preload" href="/fonts/PPNeueMontreal-Book.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+    <link rel="preload" href="/fonts/PPNeueMontreal-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+    <link rel="preload" href="/fonts/PPNeueMontreal-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
     
     <!-- Open Graph -->
+    <meta property="og:locale" content="en_AU" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Make Good Melbourne" />
     <meta property="og:title" content={title} />
@@ -97,21 +98,24 @@ const ogImageType = ogImage.toLowerCase().endsWith('.png')
       }
       @font-face {
         font-family: 'PP Neue Montreal';
-        src: url('/fonts/PPNeueMontreal-Book.otf') format('opentype');
+        src: url('/fonts/PPNeueMontreal-Book.woff2') format('woff2'),
+             url('/fonts/PPNeueMontreal-Book.otf') format('opentype');
         font-weight: 400;
         font-style: normal;
         font-display: swap;
       }
       @font-face {
         font-family: 'PP Neue Montreal';
-        src: url('/fonts/PPNeueMontreal-Medium.otf') format('opentype');
+        src: url('/fonts/PPNeueMontreal-Medium.woff2') format('woff2'),
+             url('/fonts/PPNeueMontreal-Medium.otf') format('opentype');
         font-weight: 500;
         font-style: normal;
         font-display: swap;
       }
       @font-face {
         font-family: 'PP Neue Montreal';
-        src: url('/fonts/PPNeueMontreal-Bold.otf') format('opentype');
+        src: url('/fonts/PPNeueMontreal-Bold.woff2') format('woff2'),
+             url('/fonts/PPNeueMontreal-Bold.otf') format('opentype');
         font-weight: 700;
         font-style: normal;
         font-display: swap;
