@@ -81,6 +81,34 @@ const BlogContent = ({ slug }: BlogContentProps) => {
                   ))}
                 </ul>
               );
+            } else if (paragraph.includes('|') && paragraph.split('\n').length > 2) {
+              // Parse markdown table
+              const lines = paragraph.split('\n').filter(line => line.trim());
+              const headers = lines[0].split('|').map(h => h.trim()).filter(h => h);
+              const rows = lines.slice(2).map(row => row.split('|').map(cell => cell.trim()).filter(cell => cell));
+              
+              return (
+                <div key={index} className="overflow-x-auto mb-6">
+                  <table className="min-w-full border border-border">
+                    <thead className="bg-muted/50">
+                      <tr>
+                        {headers.map((header, i) => (
+                          <th key={i} className="px-4 py-3 text-left text-foreground font-semibold border-b border-border">{header}</th>
+                        ))}
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {rows.map((row, i) => (
+                        <tr key={i} className="border-b border-border hover:bg-muted/20 transition-colors">
+                          {row.map((cell, j) => (
+                            <td key={j} className="px-4 py-3 text-muted-foreground">{cell}</td>
+                          ))}
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              );
             } else if (paragraph.trim()) {
               return <p key={index} className="text-muted-foreground mb-4 leading-relaxed" dangerouslySetInnerHTML={{ __html: parseMarkdown(paragraph) }} />;
             }

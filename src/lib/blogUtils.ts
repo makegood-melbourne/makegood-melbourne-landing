@@ -32,10 +32,12 @@ import carpetTileReplacementImage from "@/assets/blog/carpet-tile-replacement.jp
 import asbestosManagementImage from "@/assets/blog/asbestos-management.jpg";
 import portMelbourneWarehouseImage from "@/assets/blog/port-melbourne-warehouse.jpg";
 import commercialPaintingMelbourneImage from "@/assets/blog/commercial-painting-melbourne.jpg";
+import commercialWaterDamageCeilingImage from "@/assets/blog/commercial-water-damage-ceiling-melbourne.jpg";
 import { BlogPost } from "@/data/blogPosts";
 import { resolveImageSrc } from "@/lib/resolveImageSrc";
 
 const imageMap: Record<string, unknown> = {
+  'commercial-water-damage-ceiling-melbourne': commercialWaterDamageCeilingImage,
   'commercial-painting-melbourne': commercialPaintingMelbourneImage,
   'cleaning-services': cleaningImage,
   'painting-wall': paintingImage,

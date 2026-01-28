@@ -18,8 +18,8 @@ export const blogPosts: BlogPost[] = [
     excerpt: "What to do in the first 48 hours after a leak in a commercial building. Make safe actions, containment, drying, mould protocols, salvage decisions, reinstatement and handover documentation across Melbourne.",
     metaDescription: "What to do in the first 48 hours after a leak in a commercial building. Make safe actions, containment, drying, mould protocols, salvage decisions, reinstatement and handover documentation across Melbourne.",
     date: "2026-01-14",
-    image: "commercial-water-damage-mould-remediation-melbourne.jpg",
-    imageAlt: "Commercial water damage and mould remediation services in Melbourne",
+    image: "commercial-water-damage-ceiling-melbourne.jpg",
+    imageAlt: "Commercial ceiling water damage showing exposed ceiling grid and damaged plasterboard requiring remediation in Melbourne office",
     content: `
 Water damage in a commercial building rarely stays small. A minor leak above a ceiling grid can become soaked insulation, damaged electrical components, stained walls, swollen joinery and, if left long enough, mould growth and odour complaints.
 
