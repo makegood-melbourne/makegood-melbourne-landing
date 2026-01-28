@@ -92,17 +92,32 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 16px;
+    gap: 8px;
   }
   .mg-specialists__micro-link {
     font-size: 14px;
-    color: rgba(255, 255, 255, 0.7);
-    text-decoration: none;
-    transition: color 0.2s ease;
+    color: #3B82F6;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+    padding: 6px 12px;
+    cursor: pointer;
+    transition: color 0.2s ease, text-decoration-thickness 0.2s ease;
   }
   .mg-specialists__micro-link:hover {
-    color: rgba(255, 255, 255, 0.95);
-    text-decoration: underline;
+    color: #60A5FA;
+    text-decoration-thickness: 2px;
+  }
+  .mg-specialists__micro-link:focus {
+    outline: 2px solid #3B82F6;
+    outline-offset: 2px;
+    color: #60A5FA;
+  }
+  .mg-specialists__micro-link:not(:last-child)::after {
+    content: '•';
+    color: rgba(255, 255, 255, 0.3);
+    margin-left: 12px;
+    text-decoration: none;
   }
   
   /* Trust Indicators */
