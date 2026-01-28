@@ -2,7 +2,6 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Mail, MapPin, Phone } from "lucide-react";
 import { useState } from "react";
 import { toast } from "sonner";
 import { getBackendClient } from "@/lib/backendClient";
@@ -67,7 +66,7 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div className="max-w-2xl mx-auto">
           <Card className="border-border">
             <CardHeader>
               <CardTitle className="text-card-foreground">Send us a message</CardTitle>
@@ -113,7 +112,7 @@ const Contact = () => {
                     value={formData.message}
                     onChange={handleChange}
                     required
-                    rows={5}
+                    rows={4}
                     className="bg-background border-input resize-none"
                   />
                 </div>
@@ -127,60 +126,6 @@ const Contact = () => {
               </form>
             </CardContent>
           </Card>
-
-          <div className="space-y-6">
-            <Card className="border-border">
-              <CardContent className="pt-6">
-                <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
-                    <MapPin className="h-5 w-5 text-accent" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-card-foreground mb-1">Location</h3>
-                    <p className="text-muted-foreground">Melbourne, Victoria</p>
-                    <p className="text-muted-foreground">Servicing all metro areas</p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="border-border">
-              <CardContent className="pt-6">
-                <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
-                    <Phone className="h-5 w-5 text-accent" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-card-foreground mb-1">Phone</h3>
-                    <p className="text-muted-foreground">Available Monday - Friday</p>
-                    <p className="text-muted-foreground">8:00 AM - 6:00 PM</p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="border-border">
-              <CardContent className="pt-6">
-                <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
-                    <Mail className="h-5 w-5 text-accent" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-card-foreground mb-1">Email</h3>
-                    <p className="text-muted-foreground">Response within 24 hours</p>
-                    <p className="text-muted-foreground">Available 7 days a week</p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <div className="bg-tertiary/10 border border-tertiary/30 rounded-lg p-6">
-              <h3 className="font-semibold text-foreground mb-2">Emergency Make Safe?</h3>
-              <p className="text-muted-foreground mb-4">
-                We offer rapid response for urgent make safe requirements. Contact us immediately for emergency situations.
-              </p>
-            </div>
-          </div>
         </div>
       </div>
     </section>
