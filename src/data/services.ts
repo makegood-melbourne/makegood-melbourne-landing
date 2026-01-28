@@ -1538,6 +1538,11 @@ export const services: Service[] = [
           description: "End of lease painting services for commercial and industrial properties across Melbourne."
         },
         {
+          slug: "make-good-solutions/patching-plastering",
+          name: "Patching & Plastering",
+          description: "Professional patching and plastering for commercial make good projects across Melbourne."
+        },
+        {
           slug: "make-good-solutions/suspended-ceilings",
           name: "Suspended Ceilings",
           description: "Ceiling tile replacement and grid repairs to restore your commercial space to original condition."
@@ -1545,7 +1550,7 @@ export const services: Service[] = [
         {
           slug: "make-good-solutions/warehouse-flooring",
           name: "Warehouse Flooring",
-          description: "Complete warehouse floor restoration including concrete repairs, grinding, and protective coatings."
+          description: "Complete warehouse floor restoration including concrete repairs, grinding and protective coatings."
         }
       ]
     },
@@ -1688,6 +1693,16 @@ export const services: Service[] = [
       subtitle: "We coordinate patching and plastering with painting, ceiling replacement and flooring reinstatement to deliver your end-of-lease project on time.",
       cards: [
         {
+          slug: "make-good-solutions/flooring-reinstatement",
+          name: "Flooring Reinstatement",
+          description: "Professional flooring reinstatement for lease handovers and make good compliance across Melbourne."
+        },
+        {
+          slug: "make-good-solutions/line-marking",
+          name: "Line Marking",
+          description: "Professional line marking for car parks, warehouses and industrial facilities to meet lease compliance requirements."
+        },
+        {
           slug: "make-good-solutions/painting",
           name: "Painting",
           description: "End of lease painting services for commercial and industrial properties across Melbourne."
@@ -1696,11 +1711,6 @@ export const services: Service[] = [
           slug: "make-good-solutions/suspended-ceilings",
           name: "Suspended Ceilings",
           description: "Ceiling tile replacement and grid repairs to restore your commercial space to original condition."
-        },
-        {
-          slug: "make-good-solutions/flooring-reinstatement",
-          name: "Flooring Reinstatement",
-          description: "Professional flooring reinstatement for lease handovers and make good compliance across Melbourne."
         },
         {
           slug: "make-good-solutions/warehouse-flooring",
