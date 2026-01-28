@@ -95,7 +95,7 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
               {service.capabilityCards.map((card, index) => (
                 <Card key={index} className="bg-secondary border-border">
                   <CardContent className="pt-6">
-                    <h3 className="text-xl font-semibold text-foreground mb-4">
+                    <h3 className="text-xl font-bold text-foreground mb-4">
                       {card.title}
                     </h3>
                     <ul className="space-y-2">

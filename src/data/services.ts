@@ -51,6 +51,7 @@ import makeSafeWorksHeroImage from "@/assets/services/make-safe-works-melbourne-
 import backToBaseCablingImage from "@/assets/services/back-to-base-cabling-melbourne.jpg";
 import flooringReinstatementHeroImage from "@/assets/services/flooring-reinstatement-hero.webp";
 import flooringReinstatementProcessImage from "@/assets/services/flooring-reinstatement-process.webp";
+import patchingPlasteringHeroImage from "@/assets/services/patching-plastering-commercial-office-walls-ceiling-melbourne.jpeg";
 
 export interface FeaturedSection {
   title: string;
@@ -471,7 +472,7 @@ export const services: Service[] = [
       subtitle: "We do makegoods all day, every day.",
       text: "Our painters have delivered inspection-ready finishes across Melbourne's commercial and industrial properties for years. We understand what owners expect and deliver work that gets accepted first time. Get in touch today for a free, no-obligation quote."
     },
-    relatedServices: ["epoxy-flooring", "make-good-solutions/line-marking", "make-good-solutions/suspended-ceilings"],
+    relatedServices: ["epoxy-flooring", "make-good-solutions/line-marking", "make-good-solutions/patching-plastering", "make-good-solutions/suspended-ceilings"],
     category: "make-good",
     published: true
   },
@@ -503,7 +504,7 @@ export const services: Service[] = [
       subtitle: "We do makegoods all day, every day.",
       text: "From single rooms to multi-floor offices, we've restored ceilings across Melbourne's commercial properties. Get in touch today for a free, no-obligation quote."
     },
-    relatedServices: ["make-good-solutions/painting", "handover-solutions/end-of-lease-cleaning"],
+    relatedServices: ["handover-solutions/end-of-lease-cleaning", "make-good-solutions/painting", "make-good-solutions/patching-plastering"],
     category: "make-good",
     published: true
   },
@@ -539,7 +540,7 @@ export const services: Service[] = [
       subtitle: "We do makegoods all day, every day.",
       text: "We've restored line markings in warehouses and car parks across Melbourne. Get in touch today for a free, no-obligation quote."
     },
-    relatedServices: ["epoxy-flooring", "make-good-solutions/warehouse-flooring"],
+    relatedServices: ["epoxy-flooring", "make-good-solutions/patching-plastering", "make-good-solutions/warehouse-flooring"],
     category: "trade",
     published: true
   },
@@ -1198,7 +1199,7 @@ export const services: Service[] = [
       subtitle: "We do makegoods all day, every day.",
       text: "From flooring strip-out to finished surface, we've restored warehouse floors across Melbourne. Get in touch today for a free, no-obligation quote."
     },
-    relatedServices: ["epoxy-flooring", "make-good-solutions/line-marking", "strip-out-solutions/pallet-racking-removal"],
+    relatedServices: ["epoxy-flooring", "make-good-solutions/line-marking", "make-good-solutions/patching-plastering", "strip-out-solutions/pallet-racking-removal"],
     category: "structural",
     published: true
   },
@@ -1562,6 +1563,7 @@ export const services: Service[] = [
     relatedServices: [
       "make-good-solutions/line-marking",
       "make-good-solutions/painting",
+      "make-good-solutions/patching-plastering",
       "make-good-solutions/suspended-ceilings",
       "make-good-solutions/warehouse-flooring"
     ],
@@ -1616,8 +1618,8 @@ export const services: Service[] = [
     metaDescription: "Professional patching and plastering for commercial make good projects. We repair holes from fixtures, impact damage and post-demolition surfaces ready for paint and handover across Melbourne.",
     heroText: "Holes from fixtures. Impact damage. Repairs after partition demolition. We patch, plaster and repair so all surfaces are ready for paint and handover.",
     ogImage: "/og/patching-plastering.jpg",
-    heroImage: "",
-    heroImageAlt: "Commercial patching and plastering make good service in Melbourne",
+    heroImage: patchingPlasteringHeroImage,
+    heroImageAlt: "Commercial office space with freshly plastered white walls and suspended ceiling ready for make good handover in Melbourne",
     heroImageTitle: "Makegood Melbourne - Patching & Plastering Service",
     trustBadges: [
       "Licensed & Insured",
