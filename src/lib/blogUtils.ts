@@ -114,8 +114,11 @@ export const calculateReadingTime = (content: string): number => {
 };
 
 export const parseMarkdown = (text: string): string => {
+  // Handle markdown links [text](url)
+  let parsed = text.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" class="text-primary hover:text-primary/80 underline transition-colors">$1</a>');
+  
   // Handle bold text
-  let parsed = text.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+  parsed = parsed.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
   
   // Handle italic text
   parsed = parsed.replace(/\*(.+?)\*/g, '<em>$1</em>');

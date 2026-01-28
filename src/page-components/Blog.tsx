@@ -52,14 +52,14 @@ const Blog = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {sortedPosts.map((post) => (
               <Card key={post.id} className="border-border hover:shadow-lg transition-shadow overflow-hidden group">
-                <div className="aspect-video overflow-hidden">
+                <a href={`/blog/${post.slug}`} className="block aspect-video overflow-hidden">
                   <img 
                     src={getBlogImage(post.image)}
                     alt={post.imageAlt || post.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     loading="lazy"
                   />
-                </div>
+                </a>
                 <CardHeader>
                   <div className="flex items-center gap-3 text-sm text-muted-foreground mb-2">
                     <span>{post.date}</span>
