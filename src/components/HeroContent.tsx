@@ -38,14 +38,15 @@ const HeroContent = () => {
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 mt-8">
-          <Button 
-            size="lg" 
-            onClick={scrollToContact}
-            className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8 py-6 group"
-          >
-            Get a Quote
-            <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-          </Button>
+          <a href="/contact">
+            <Button 
+              size="lg" 
+              className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8 py-6 group"
+            >
+              Get a Quote
+              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+            </Button>
+          </a>
           <a href="/capabilities/">
             <Button 
               size="lg" 
