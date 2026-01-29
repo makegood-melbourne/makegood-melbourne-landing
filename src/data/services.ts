@@ -365,7 +365,7 @@ export const services: Service[] = [
     title: "Painting",
     metaTitle: "Painting Make Good Melbourne | Make Good, Better",
     description: "Professional make good painting for offices, warehouses and industrial spaces across Melbourne. Colour-matched finishes, proper surface preparation and quality application—delivered on time for your handover deadline.",
-    metaDescription: "Make good painting Melbourne. End of lease painting for commercial and industrial properties. Colour-matched, owner-approved finishes. Bond protection guaranteed. Free quotes.",
+    metaDescription: "Make good painting Melbourne. End of lease painting for commercial and industrial properties. Colour-matched, owner-approved finishes. Professional finish for successful handover. Free quotes.",
     heroText: "We deliver professional painting for offices, warehouses and commercial spaces—colour-matched to original specifications, properly prepared and expertly applied. From wall repairs through to final coat, our comprehensive make good services handle all of your end of lease obligations.",
     ogImage: "/og/make-good-painting.jpg",
     heroImage: commercialPaintingHeroImage,

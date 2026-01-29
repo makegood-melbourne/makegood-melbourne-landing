@@ -13,7 +13,7 @@ import {
 } from "@/components/ui/accordion";
 import { cn } from "@/lib/utils";
 
-type FAQCategory = "all" | "understanding" | "costs" | "process" | "services" | "working";
+type FAQCategory = "all" | "understanding" | "costs" | "process" | "services" | "remediation" | "working";
 
 interface FAQ {
   question: string;
@@ -134,23 +134,24 @@ const faqs: FAQ[] = [
     question: "Can you work outside business hours?",
     answer: "Yes, when required. Often necessary in occupied buildings or retail environments. We'll discuss scheduling during the quoting process."
   },
+  // Category 5: Remediation (NEW)
   {
-    category: "services",
+    category: "remediation",
     question: "What is building remediation and when is it needed?",
     answer: "Remediation is rectifying defects or damage—structural issues, water ingress, concrete spalling, cracking. It's needed when the problem affects the building's safety, integrity, or compliance."
   },
   {
-    category: "services",
+    category: "remediation",
     question: "Does my building need cladding rectification?",
     answer: "If your building has combustible cladding, it may not meet current fire safety standards. We can assess the situation and advise on removal and replacement with compliant materials."
   },
   {
-    category: "services",
+    category: "remediation",
     question: "My building has water leaks—can you fix them?",
     answer: "Yes. We find the source, repair the damage and restore affected areas. Water damage left untreated leads to bigger problems."
   },
 
-  // Category 5: Working With Us (merged with Common Concerns)
+  // Category 6: Working With Us (merged with Common Concerns)
   {
     category: "working",
     question: "Are you licensed and insured?",
@@ -204,6 +205,7 @@ const categories: { id: FAQCategory; label: string }[] = [
   { id: "costs", label: "Costs & Pricing" },
   { id: "process", label: "Process & Timeline" },
   { id: "services", label: "Services" },
+  { id: "remediation", label: "Remediation" },
   { id: "working", label: "Working With Us" },
 ];
 
@@ -515,7 +517,7 @@ const FAQPage = () => {
             Frequently Asked Questions
           </h1>
           <p className="text-xl text-primary font-medium">
-            Everything you need to know about make good services
+            Everything you need to know about make good, remediation and working with us.
           </p>
         </div>
       </section>
