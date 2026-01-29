@@ -1,5 +1,7 @@
 ---
 import BaseLayout from "@/layouts/BaseLayout.astro";
+import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 
 const title = "Remediation Guide | Commercial Building Rectification Melbourne";
@@ -15,509 +17,352 @@ const ogImage = new URL("/images/learn/remediation-hero-placeholder.svg", Astro.
   ogImage={ogImage.toString()}
   ogType="article"
 >
-  <!-- Breadcrumb -->
-  <nav class="bg-background border-b border-border">
-    <div class="container mx-auto px-4 py-3">
-      <ol class="flex items-center space-x-2 text-sm text-muted-foreground">
-        <li><a href="/" class="hover:text-primary">Home</a></li>
-        <li>/</li>
-        <li><a href="/learn" class="hover:text-primary">Learn</a></li>
-        <li>/</li>
-        <li class="text-foreground">Remediation Guide</li>
-      </ol>
-    </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <section class="relative bg-background">
-    <div class="container mx-auto px-4 py-16 md:py-24">
-      <div class="grid lg:grid-cols-2 gap-12 items-center">
-        <div>
-          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
-            Commercial remediation guide for <span class="text-primary">Melbourne</span>
-          </h1>
-          <p class="text-xl md:text-2xl text-white mb-6">
-            When building defects go beyond routine maintenance.
-          </p>
-          <p class="text-lg text-foreground/80 mb-4">
-            Structural damage, water ingress, failed waterproofing, non-compliant cladding—these aren't maintenance issues. They're remediation projects.
-          </p>
-          <p class="text-lg text-foreground/80">
-            This guide covers the types of remediation common in Melbourne commercial buildings, how projects are typically delivered, and what property managers, building owners and facilities teams need to know before work begins.
-          </p>
-        </div>
-        <div class="relative">
-          <img
-            src="/images/learn/commercial-remediation-warehouse-melbourne.jpg"
-            alt="Commercial warehouse remediation works showing yellow scissor lift and concrete flooring during building rectification in Melbourne"
-            class="w-full h-auto rounded-lg shadow-lg"
-            width="1200"
-            height="500"
-            loading="eager"
-          />
+  <div class="min-h-screen flex flex-col bg-background">
+    <!-- Skip to Content Link for Accessibility -->
+    <a
+      href="#main-content"
+      class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:bg-primary focus:text-primary-foreground focus:rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
+    >
+      Skip to main content
+    </a>
+    
+    <Navigation client:idle />
+    
+    <main id="main-content" class="flex-1">
+      <!-- Breadcrumb -->
+      <div class="bg-secondary pt-20">
+        <div class="container mx-auto px-4">
+          <nav aria-label="Breadcrumb">
+            <ol class="flex items-center space-x-2 text-sm text-muted-foreground pb-3">
+              <li><a href="/" class="hover:text-primary">Home</a></li>
+              <li>/</li>
+              <li><a href="/learn" class="hover:text-primary">Learn</a></li>
+              <li>/</li>
+              <li class="text-foreground">Remediation Guide</li>
+            </ol>
+          </nav>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- Quick Navigation -->
-  <section class="bg-muted/30 py-8">
-    <div class="container mx-auto px-4">
-      <div class="max-w-4xl mx-auto">
-        <h2 class="text-sm font-medium text-muted-foreground mb-3">On this page</h2>
-        <nav class="flex flex-col space-y-2">
-          <a href="#what-is-remediation" class="text-foreground hover:text-primary transition-colors">What is commercial remediation</a>
-          <a href="#types-of-remediation" class="text-foreground hover:text-primary transition-colors">Types of remediation</a>
-          <a href="#remediation-process" class="text-foreground hover:text-primary transition-colors">The remediation process</a>
-          <a href="#compliance-safety" class="text-foreground hover:text-primary transition-colors">Compliance and safety</a>
-          <a href="#checklists-guides" class="text-foreground hover:text-primary transition-colors">Checklists and guides</a>
-          <a href="#faqs" class="text-foreground hover:text-primary transition-colors">FAQs</a>
-        </nav>
-      </div>
-    </div>
-  </section>
+      <!-- Hero Section -->
+      <section class="bg-secondary pt-6 pb-10 md:pt-10 md:pb-12">
+        <div class="container mx-auto px-4">
+          <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
+                Commercial remediation guide for <span class="text-primary">Melbourne</span>
+              </h1>
+              <p class="text-xl md:text-2xl text-white mb-6">
+                When building defects go beyond routine maintenance.
+              </p>
+              <p class="text-lg text-foreground/80 mb-4">
+                Structural damage, water ingress, failed waterproofing, non-compliant cladding—these aren't maintenance issues. They're remediation projects.
+              </p>
+              <p class="text-lg text-foreground/80">
+                This guide covers the types of remediation common in Melbourne commercial buildings, how projects are typically delivered, and what property managers, building owners and facilities teams need to know before work begins.
+              </p>
+            </div>
+            <div class="relative">
+              <img
+                src="/images/learn/commercial-remediation-warehouse-melbourne.jpg"
+                alt="Commercial warehouse remediation works showing yellow scissor lift and concrete flooring during building rectification in Melbourne"
+                class="aspect-[4/3] w-full object-cover rounded-lg"
+                width="800"
+                height="600"
+                loading="eager"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
 
-  <!-- What is Commercial Remediation -->
-  <section id="what-is-remediation" class="py-16 md:py-24">
-    <div class="container mx-auto px-4 max-w-4xl">
-      <h2 class="text-3xl md:text-4xl font-bold mb-6">What is commercial remediation</h2>
-      <div class="prose prose-lg max-w-none">
-        <p>
-          Remediation is repair work that goes beyond routine maintenance. It addresses structural defects, water ingress, fire damage, mould contamination or compliance failures that affect a building's integrity, safety or performance. Unlike planned maintenance or cosmetic upgrades, remediation is reactive—triggered by damage, failure or non-compliance that needs to be fixed.
-        </p>
-        <p>
-          Unlike <a href="/what-is-make-good" class="text-primary hover:underline">make good works</a>, which restore a tenancy to its original condition at lease end, remediation fixes the underlying problem. It involves identifying the root cause, making the site safe and then repairing or replacing affected building elements. Common triggers include ceiling leaks, cracked concrete, failed waterproofing, smoke damage and cladding defects.
-        </p>
-        <p>
-          Many projects involve both: remediation to fix the defect, followed by make good to restore finishes and hand back the space. For example, a burst pipe might require remediation to repair the plumbing and dry out water damaged walls, then make good works to repaint, replace ceiling tiles and reinstate the tenancy.
-        </p>
-      </div>
-    </div>
-  </section>
+      <!-- Quick Navigation -->
+      <section class="bg-muted/30 py-8">
+        <div class="container mx-auto px-4">
+          <div class="max-w-4xl mx-auto">
+            <h2 class="text-sm font-medium text-muted-foreground mb-3">On this page</h2>
+            <nav class="flex flex-col space-y-2">
+              <a href="#what-is-remediation" class="text-foreground hover:text-primary transition-colors">What is commercial remediation</a>
+              <a href="#types-of-remediation" class="text-foreground hover:text-primary transition-colors">Types of remediation</a>
+              <a href="#remediation-process" class="text-foreground hover:text-primary transition-colors">The remediation process</a>
+              <a href="#compliance-safety" class="text-foreground hover:text-primary transition-colors">Compliance and safety</a>
+              <a href="#checklists-guides" class="text-foreground hover:text-primary transition-colors">Checklists and guides</a>
+              <a href="#faqs" class="text-foreground hover:text-primary transition-colors">FAQs</a>
+            </nav>
+          </div>
+        </div>
+      </section>
 
-  <!-- JSON-LD Schema -->
-  <script type="application/ld+json" set:html={JSON.stringify({
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "Commercial remediation guide for Melbourne buildings",
-    "description": description,
-    "author": {
-      "@type": "Organization",
-      "name": "Make Good Melbourne"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "Make Good Melbourne",
-      "logo": {
-        "@type": "ImageObject",
-        "url": new URL("/logo.png", Astro.site).toString()
-      }
-    },
-    "datePublished": "2026-01-29",
-    "dateModified": "2026-01-29",
-    "mainEntityOfPage": canonicalURL.toString(),
-    "image": ogImage.toString()
-  })} />
+      <!-- What is Commercial Remediation -->
+      <section id="what-is-remediation" class="py-16 md:py-24">
+        <div class="container mx-auto px-4 max-w-4xl">
+          <h2 class="text-3xl md:text-4xl font-bold mb-6">What is commercial remediation</h2>
+          <div class="prose prose-lg max-w-none space-y-6">
+            <p>
+              Remediation is repair work that goes beyond routine maintenance. It addresses structural defects, water ingress, fire damage, mould contamination or compliance failures that affect a building's integrity, safety or performance. Unlike planned maintenance or cosmetic upgrades, remediation is reactive—triggered by damage, failure or non-compliance that needs to be fixed.
+            </p>
+            <p>
+              Unlike <a href="/what-is-make-good" class="text-primary hover:underline">make good works</a>, which restore a tenancy to its original condition at lease end, remediation fixes the underlying problem. It involves identifying the root cause, making the site safe and then repairing or replacing affected building elements. Common triggers include ceiling leaks, cracked concrete, failed waterproofing, smoke damage and cladding defects.
+            </p>
+            <p>
+              Many projects involve both: remediation to fix the defect, followed by make good to restore finishes and hand back the space. For example, a burst pipe might require remediation to repair the plumbing and dry out water damaged walls, then make good works to repaint, replace ceiling tiles and reinstate the tenancy.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- JSON-LD Schema -->
+      <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Commercial remediation guide for Melbourne buildings",
+        "description": description,
+        "author": {
+          "@type": "Organization",
+          "name": "Make Good Melbourne"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Make Good Melbourne",
+          "logo": {
+            "@type": "ImageObject",
+            "url": new URL("/logo.png", Astro.site).toString()
+          }
+        },
+        "datePublished": "2026-01-29",
+        "dateModified": "2026-01-29",
+        "mainEntityOfPage": canonicalURL.toString(),
+        "image": ogImage.toString()
+      })} />
+
+      <!-- Types of Remediation -->
+      <section id="types-of-remediation" class="py-16 md:py-24 bg-muted/30">
+        <div class="container mx-auto px-4">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4 text-center">Types of remediation</h2>
+          <p class="text-lg text-muted-foreground text-center mb-12 max-w-3xl mx-auto">
+            Commercial remediation covers a range of defects and damage types. Each requires specific assessment, containment and repair methods.
+          </p>
+          
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Water Damage and Mould -->
+            <div class="bg-card border border-border rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
+              <img
+                src="/images/learn/water-damage-thumb.svg"
+                alt="Water damage and mould remediation thumbnail placeholder 300x200"
+                class="w-full h-48 object-cover"
+                width="300"
+                height="200"
+                loading="lazy"
+              />
+              <div class="p-6">
+                <h3 class="text-xl font-semibold mb-3">Water damage and mould remediation</h3>
+                <p class="text-muted-foreground mb-4">
+                  Leaks, burst pipes and failed waterproofing can cause ceiling damage, wall saturation and mould growth. Quick response within 48 hours reduces secondary damage and reinstatement costs.
+                </p>
+                <a href="/blog/commercial-water-damage-mould-remediation-melbourne" class="text-primary hover:underline font-medium">
+                  Learn more →
+                </a>
+              </div>
+            </div>
+
+            <!-- Fire and Smoke Damage -->
+            <div class="bg-card border border-border rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
+              <img
+                src="/images/learn/fire-damage-thumb.svg"
+                alt="Fire and smoke damage restoration thumbnail placeholder 300x200"
+                class="w-full h-48 object-cover"
+                width="300"
+                height="200"
+                loading="lazy"
+              />
+              <div class="p-6">
+                <h3 class="text-xl font-semibold mb-3">Fire and smoke damage restoration</h3>
+                <p class="text-muted-foreground mb-4">
+                  Fire and smoke affect structural elements, electrical systems and air quality. Restoration includes make safe works, cleaning, odour removal and rebuilding damaged areas.
+                </p>
+                <a href="/blog/fire-damage-restoration" class="text-primary hover:underline font-medium">
+                  Learn more →
+                </a>
+              </div>
+            </div>
+
+            <!-- Structural Remediation -->
+            <div class="bg-card border border-border rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
+              <img
+                src="/images/learn/structural-thumb.svg"
+                alt="Structural remediation and concrete spalling thumbnail placeholder 300x200"
+                class="w-full h-48 object-cover"
+                width="300"
+                height="200"
+                loading="lazy"
+              />
+              <div class="p-6">
+                <h3 class="text-xl font-semibold mb-3">Structural remediation and concrete spalling</h3>
+                <p class="text-muted-foreground mb-4">
+                  Concrete cancer, spalling and structural cracks compromise building integrity. Remediation involves removing damaged concrete, treating reinforcement and rebuilding to engineering specifications.
+                </p>
+                <a href="/blog/concrete-cancer-prevention-remediation" class="text-primary hover:underline font-medium">
+                  Learn more →
+                </a>
+              </div>
+            </div>
+
+            <!-- Facade and Cladding -->
+            <div class="bg-card border border-border rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
+              <img
+                src="/images/learn/facade-cladding-thumb.svg"
+                alt="Facade and cladding defect remediation thumbnail placeholder 300x200"
+                class="w-full h-48 object-cover"
+                width="300"
+                height="200"
+                loading="lazy"
+              />
+              <div class="p-6">
+                <h3 class="text-xl font-semibold mb-3">Facade and cladding defect remediation</h3>
+                <p class="text-muted-foreground mb-4">
+                  Non-compliant cladding, failed seals and water ingress through facades require removal, compliance upgrades and weatherproofing. Often involves building surveyor approval and staged works.
+                </p>
+                <a href="/blog/facade-cladding-remediation-fireproof-compliance" class="text-primary hover:underline font-medium">
+                  Learn more →
+                </a>
+              </div>
+            </div>
+
+            <!-- Make Safe and Emergency Works -->
+            <div class="bg-card border border-border rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
+              <img
+                src="/images/learn/make-safe-thumb.svg"
+                alt="Make safe and emergency works thumbnail placeholder 300x200"
+                class="w-full h-48 object-cover"
+                width="300"
+                height="200"
+                loading="lazy"
+              />
+              <div class="p-6">
+                <h3 class="text-xl font-semibold mb-3">Make safe and emergency works</h3>
+                <p class="text-muted-foreground mb-4">
+                  Urgent response to electrical hazards, structural instability and safety risks. Make safe works isolate danger, secure the site and allow assessment before full remediation begins.
+                </p>
+                <a href="/blog/electrical-make-safe" class="text-primary hover:underline font-medium">
+                  Learn more →
+                </a>
+              </div>
+            </div>
+
+            <!-- Ceiling Failures -->
+            <div class="bg-card border border-border rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
+              <img
+                src="/images/learn/ceiling-leaks-thumb.svg"
+                alt="Leak related ceiling failures thumbnail placeholder 300x200"
+                class="w-full h-48 object-cover"
+                width="300"
+                height="200"
+                loading="lazy"
+              />
+              <div class="p-6">
+                <h3 class="text-xl font-semibold mb-3">Leak related ceiling failures</h3>
+                <p class="text-muted-foreground mb-4">
+                  Roof leaks, HVAC condensate and plumbing failures cause ceiling grid collapse, tile staining and insulation saturation. Remediation includes source repair, drying and ceiling replacement.
+                </p>
+                <a href="/blog/ceiling-repairs-suspended-acoustic" class="text-primary hover:underline font-medium">
+                  Learn more →
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- The Commercial Remediation Process -->
+      <section id="remediation-process" class="py-16 md:py-24">
+        <div class="container mx-auto px-4">
+          <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">The commercial remediation process</h2>
+            <p class="text-lg text-muted-foreground mb-8">
+              While every project is different, most commercial remediation works follow a similar sequence from initial assessment through to handover.
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+              <div>
+                <ol class="space-y-6">
+                  <li class="flex gap-4">
+                    <div class="flex-shrink-0 w-8 h-8 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-semibold">
+                      1
+                    </div>
+                    <div>
+                      <h3 class="font-semibold text-lg mb-2">Assess and make safe</h3>
+                      <p class="text-muted-foreground">
+                        Identify the damage, isolate hazards and secure the site. This may include electrical isolation, structural propping or containment barriers.
+                      </p>
+                    </div>
+                  </li>
+                  <li class="flex gap-4">
+                    <div class="flex-shrink-0 w-8 h-8 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-semibold">
+                      2
+                    </div>
+                    <div>
+                      <h3 class="font-semibold text-lg mb-2">Contain and isolate where required</h3>
+                      <p class="text-muted-foreground">
+                        Set up barriers, negative air pressure or access restrictions to prevent contamination spread and allow occupied areas to remain operational.
+                      </p>
+                    </div>
+                  </li>
+                  <li class="flex gap-4">
+                    <div class="flex-shrink-0 w-8 h-8 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-semibold">
+                      3
+                    </div>
+                    <div>
+                      <h3 class="font-semibold text-lg mb-2">Drying and moisture control</h3>
+                      <p class="text-muted-foreground">
+                        For water related damage, drying equipment and moisture monitoring reduce secondary issues like mould and material degradation.
+                      </p>
+                    </div>
+                  </li>
+                </ol>
+              </div>
+              <div>
+                <ol class="space-y-6" start="4">
+                  <li class="flex gap-4">
+                    <div class="flex-shrink-0 w-8 h-8 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-semibold">
+                      4
+                    </div>
+                    <div>
+                      <h3 class="font-semibold text-lg mb-2">Salvage versus strip out decisions</h3>
+                      <p class="text-muted-foreground">
+                        Determine what can be cleaned or repaired and what needs replacement. Factors include contamination level, cost and time constraints.
+                      </p>
+                    </div>
+                  </li>
+                  <li class="flex gap-4">
+                    <div class="flex-shrink-0 w-8 h-8 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-semibold">
+                      5
+                    </div>
+                    <div>
+                      <h3 class="font-semibold text-lg mb-2">Repair and rebuild</h3>
+                      <p class="text-muted-foreground">
+                        Structural repairs, waterproofing, electrical and mechanical reinstatement, followed by finishes and handover.
+                      </p>
+                    </div>
+                  </li>
+                  <li class="flex gap-4">
+                    <div class="flex-shrink-0 w-8 h-8 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-semibold">
+                      6
+                    </div>
+                    <div>
+                      <h3 class="font-semibold text-lg mb-2">Testing and certification</h3>
+                      <p class="text-muted-foreground">
+                        Final testing, compliance sign off and handover documentation to confirm works meet building standards.
+                      </p>
+                    </div>
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    
+    <Footer client:idle />
+  </div>
 </BaseLayout>
-
-  <!-- Types of Remediation -->
-  <section id="types-of-remediation" class="py-16 md:py-24 bg-muted/30">
-    <div class="container mx-auto px-4">
-      <h2 class="text-3xl md:text-4xl font-bold mb-4 text-center">Types of remediation</h2>
-      <p class="text-lg text-muted-foreground text-center mb-12 max-w-3xl mx-auto">
-        Commercial remediation covers a range of defects and damage types. Each requires specific assessment, containment and repair methods.
-      </p>
-      
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <!-- Water Damage and Mould -->
-        <div class="bg-card border border-border rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
-          <img
-            src="/images/learn/water-damage-thumb.svg"
-            alt="Water damage and mould remediation thumbnail placeholder 300x200"
-            class="w-full h-48 object-cover"
-            width="300"
-            height="200"
-            loading="lazy"
-          />
-          <div class="p-6">
-            <h3 class="text-xl font-semibold mb-3">Water damage and mould remediation</h3>
-            <p class="text-muted-foreground mb-4">
-              Leaks, burst pipes and failed waterproofing can cause ceiling damage, wall saturation and mould growth. Quick response within 48 hours reduces secondary damage and reinstatement costs.
-            </p>
-            <a href="/blog/commercial-water-damage-mould-remediation-melbourne" class="text-primary hover:underline font-medium">
-              Learn more →
-            </a>
-          </div>
-        </div>
-
-        <!-- Fire and Smoke Damage -->
-        <div class="bg-card border border-border rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
-          <img
-            src="/images/learn/fire-damage-thumb.svg"
-            alt="Fire and smoke damage restoration thumbnail placeholder 300x200"
-            class="w-full h-48 object-cover"
-            width="300"
-            height="200"
-            loading="lazy"
-          />
-          <div class="p-6">
-            <h3 class="text-xl font-semibold mb-3">Fire and smoke damage restoration</h3>
-            <p class="text-muted-foreground mb-4">
-              Fire and smoke affect structural elements, electrical systems and air quality. Restoration includes make safe works, cleaning, odour removal and rebuilding damaged areas.
-            </p>
-            <a href="/blog/fire-damage-restoration" class="text-primary hover:underline font-medium">
-              Learn more →
-            </a>
-          </div>
-        </div>
-
-        <!-- Structural Remediation -->
-        <div class="bg-card border border-border rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
-          <img
-            src="/images/learn/structural-thumb.svg"
-            alt="Structural remediation and concrete spalling thumbnail placeholder 300x200"
-            class="w-full h-48 object-cover"
-            width="300"
-            height="200"
-            loading="lazy"
-          />
-          <div class="p-6">
-            <h3 class="text-xl font-semibold mb-3">Structural remediation and concrete spalling</h3>
-            <p class="text-muted-foreground mb-4">
-              Concrete cancer, spalling and structural cracks compromise building integrity. Remediation involves removing damaged concrete, treating reinforcement and rebuilding to engineering specifications.
-            </p>
-            <a href="/blog/concrete-cancer-prevention-remediation" class="text-primary hover:underline font-medium">
-              Learn more →
-            </a>
-          </div>
-        </div>
-
-        <!-- Facade and Cladding -->
-        <div class="bg-card border border-border rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
-          <img
-            src="/images/learn/facade-cladding-thumb.svg"
-            alt="Facade and cladding defect remediation thumbnail placeholder 300x200"
-            class="w-full h-48 object-cover"
-            width="300"
-            height="200"
-            loading="lazy"
-          />
-          <div class="p-6">
-            <h3 class="text-xl font-semibold mb-3">Facade and cladding defect remediation</h3>
-            <p class="text-muted-foreground mb-4">
-              Non-compliant cladding, failed seals and water ingress through facades require removal, compliance upgrades and weatherproofing. Often involves building surveyor approval and staged works.
-            </p>
-            <a href="/blog/facade-cladding-remediation-fireproof-compliance" class="text-primary hover:underline font-medium">
-              Learn more →
-            </a>
-          </div>
-        </div>
-
-        <!-- Make Safe and Emergency Works -->
-        <div class="bg-card border border-border rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
-          <img
-            src="/images/learn/make-safe-thumb.svg"
-            alt="Make safe and emergency works thumbnail placeholder 300x200"
-            class="w-full h-48 object-cover"
-            width="300"
-            height="200"
-            loading="lazy"
-          />
-          <div class="p-6">
-            <h3 class="text-xl font-semibold mb-3">Make safe and emergency works</h3>
-            <p class="text-muted-foreground mb-4">
-              Urgent response to electrical hazards, structural instability and safety risks. Make safe works isolate danger, secure the site and allow assessment before full remediation begins.
-            </p>
-            <a href="/blog/electrical-make-safe" class="text-primary hover:underline font-medium">
-              Learn more →
-            </a>
-          </div>
-        </div>
-
-        <!-- Ceiling Failures -->
-        <div class="bg-card border border-border rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
-          <img
-            src="/images/learn/ceiling-leaks-thumb.svg"
-            alt="Leak related ceiling failures thumbnail placeholder 300x200"
-            class="w-full h-48 object-cover"
-            width="300"
-            height="200"
-            loading="lazy"
-          />
-          <div class="p-6">
-            <h3 class="text-xl font-semibold mb-3">Leak related ceiling failures</h3>
-            <p class="text-muted-foreground mb-4">
-              Roof leaks, HVAC condensate and plumbing failures cause ceiling grid collapse, tile staining and insulation saturation. Remediation includes source repair, drying and ceiling replacement.
-            </p>
-            <a href="/blog/ceiling-repairs-suspended-acoustic" class="text-primary hover:underline font-medium">
-              Learn more →
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- The Commercial Remediation Process -->
-  <section id="remediation-process" class="py-16 md:py-24">
-    <div class="container mx-auto px-4">
-      <div class="max-w-4xl mx-auto">
-        <h2 class="text-3xl md:text-4xl font-bold mb-6">The commercial remediation process</h2>
-        <p class="text-lg text-muted-foreground mb-8">
-          While every project is different, most commercial remediation works follow a similar sequence from initial assessment through to handover.
-        </p>
-
-        <div class="grid md:grid-cols-2 gap-8 mb-12">
-          <div>
-            <ol class="space-y-6">
-              <li class="flex gap-4">
-                <div class="flex-shrink-0 w-8 h-8 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-semibold">
-                  1
-                </div>
-                <div>
-                  <h3 class="font-semibold text-lg mb-2">Assess and make safe</h3>
-                  <p class="text-muted-foreground">
-                    Identify the damage, isolate hazards and secure the site. This may include electrical isolation, structural propping or containment barriers.
-                  </p>
-                </div>
-              </li>
-              <li class="flex gap-4">
-                <div class="flex-shrink-0 w-8 h-8 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-semibold">
-                  2
-                </div>
-                <div>
-                  <h3 class="font-semibold text-lg mb-2">Contain and isolate where required</h3>
-                  <p class="text-muted-foreground">
-                    Set up barriers, negative air pressure or access restrictions to prevent contamination spread and allow occupied areas to remain operational.
-                  </p>
-                </div>
-              </li>
-              <li class="flex gap-4">
-                <div class="flex-shrink-0 w-8 h-8 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-semibold">
-                  3
-                </div>
-                <div>
-                  <h3 class="font-semibold text-lg mb-2">Drying and moisture control</h3>
-                  <p class="text-muted-foreground">
-                    For water related damage, drying equipment and moisture monitoring reduce secondary issues like mould and material degradation.
-                  </p>
-                </div>
-              </li>
-            </ol>
-          </div>
-          <div>
-            <ol class="space-y-6" start="4">
-              <li class="flex gap-4">
-                <div class="flex-shrink-0 w-8 h-8 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-semibold">
-                  4
-                </div>
-                <div>
-                  <h3 class="font-semibold text-lg mb-2">Salvage versus strip out decisions</h3>
-                  <p class="text-muted-foreground">
-                    Determine what can be cleaned or repaired and what needs replacement. Factors include contamination level, cost and time constraints.
-                  </p>
-                </div>
-              </li>
-              <li class="flex gap-4">
-                <div class="flex-shrink-0 w-8 h-8 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-semibold">
-                  5
-                </div>
-                <div>
-                  <h3 class="font-semibold text-lg mb-2">Reinstatement and handover</h3>
-                  <p class="text-muted-foreground">
-                    Rebuild or restore affected areas, complete compliance testing and provide handover documentation including warranties and test certificates.
-                  </p>
-                </div>
-              </li>
-            </ol>
-          </div>
-        </div>
-
-        <div class="bg-muted/30 rounded-lg p-8">
-          <img
-            src="/images/learn/remediation-process-diagram.svg"
-            alt="Commercial remediation process diagram placeholder 600x400"
-            class="w-full max-w-2xl mx-auto h-auto rounded-lg"
-            width="600"
-            height="400"
-            loading="lazy"
-          />
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Compliance, Safety and Waste Handling -->
-  <section id="compliance-safety" class="py-16 md:py-24 bg-muted/30">
-    <div class="container mx-auto px-4">
-      <div class="max-w-4xl mx-auto">
-        <h2 class="text-3xl md:text-4xl font-bold mb-6">Compliance, safety and waste handling</h2>
-        <p class="text-lg text-muted-foreground mb-8">
-          Commercial remediation work is subject to building codes, workplace health and safety regulations and environmental requirements.
-        </p>
-
-        <div class="grid md:grid-cols-2 gap-8">
-          <div class="bg-card border border-border rounded-lg p-6">
-            <h3 class="text-xl font-semibold mb-4">Safe work practices</h3>
-            <p class="text-muted-foreground mb-4">
-              Remediation contractors work under SafeWork Victoria requirements. This includes site inductions, hazard identification, PPE, working at heights permits and confined space protocols where relevant.
-            </p>
-            <p class="text-muted-foreground">
-              For occupied buildings, works are often staged or scheduled outside business hours to reduce disruption and maintain safety separation between trades and building users.
-            </p>
-          </div>
-
-          <div class="bg-card border border-border rounded-lg p-6">
-            <h3 class="text-xl font-semibold mb-4">Hazardous materials and waste disposal</h3>
-            <p class="text-muted-foreground mb-4">
-              Remediation may involve asbestos, lead paint, contaminated materials or chemical residues. Licensed removalists and EPA approved disposal methods are required for regulated waste.
-            </p>
-            <p class="text-muted-foreground">
-              Waste tracking, manifests and disposal certificates form part of the handover documentation. Learn more about <a href="/blog/waste-management-sustainability" class="text-primary hover:underline">waste management and sustainability</a>.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Checklists and Guides -->
-  <section id="checklists-guides" class="py-16 md:py-24">
-    <div class="container mx-auto px-4">
-      <div class="max-w-4xl mx-auto">
-        <h2 class="text-3xl md:text-4xl font-bold mb-6">Checklists and guides</h2>
-        <p class="text-lg text-muted-foreground mb-8">
-          These resources help property managers, facilities teams and tenants plan remediation works and understand what to expect during the process.
-        </p>
-
-        <div class="bg-card border border-border rounded-lg p-8">
-          <h3 class="text-xl font-semibold mb-6">Related guides and resources</h3>
-          <ul class="space-y-4">
-            <li>
-              <a href="/blog/commercial-water-damage-mould-remediation-melbourne" class="text-primary hover:underline font-medium">
-                Commercial water damage and mould remediation: First 48 hours checklist
-              </a>
-              <p class="text-sm text-muted-foreground mt-1">What to do immediately after a leak, containment steps and reinstatement process</p>
-            </li>
-            <li>
-              <a href="/blog/fire-damage-restoration" class="text-primary hover:underline font-medium">
-                Fire damage restoration for commercial properties
-              </a>
-              <p class="text-sm text-muted-foreground mt-1">Smoke cleaning, structural assessment and rebuilding after fire incidents</p>
-            </li>
-            <li>
-              <a href="/blog/concrete-cancer-prevention-remediation" class="text-primary hover:underline font-medium">
-                Understanding concrete cancer: Prevention and remediation
-              </a>
-              <p class="text-sm text-muted-foreground mt-1">Causes, identification and repair methods for concrete spalling and corrosion</p>
-            </li>
-            <li>
-              <a href="/blog/facade-cladding-remediation-fireproof-compliance" class="text-primary hover:underline font-medium">
-                Facade repairs and cladding remediation: Navigating fireproof compliance
-              </a>
-              <p class="text-sm text-muted-foreground mt-1">Cladding audits, non-compliant material removal and compliance upgrades</p>
-            </li>
-            <li>
-              <a href="/blog/building-defect-remediation-commercial-property" class="text-primary hover:underline font-medium">
-                Building defect remediation: Comprehensive solutions for commercial properties
-              </a>
-              <p class="text-sm text-muted-foreground mt-1">Identifying and addressing structural, waterproofing and building envelope defects</p>
-            </li>
-            <li>
-              <a href="/blog/electrical-make-safe" class="text-primary hover:underline font-medium">
-                Electrical make safe: Emergency response for commercial properties
-              </a>
-              <p class="text-sm text-muted-foreground mt-1">Urgent electrical isolation, safety testing and temporary power solutions</p>
-            </li>
-            <li>
-              <a href="/blog/ceiling-repairs-suspended-acoustic" class="text-primary hover:underline font-medium">
-                Ceiling repairs: Suspended grid and acoustic tile replacement
-              </a>
-              <p class="text-sm text-muted-foreground mt-1">Ceiling damage assessment, grid repairs and tile matching for commercial fit outs</p>
-            </li>
-            <li>
-              <a href="/blog/waste-management-sustainability" class="text-primary hover:underline font-medium">
-                Waste management and sustainability in commercial remediation
-              </a>
-              <p class="text-sm text-muted-foreground mt-1">EPA compliance, waste tracking and sustainable disposal practices</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQs -->
-  <section id="faqs" class="py-16 md:py-24 bg-muted/30">
-    <div class="container mx-auto px-4">
-      <div class="max-w-4xl mx-auto">
-        <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center">Frequently asked questions</h2>
-        
-        <div class="space-y-6">
-          <div class="bg-card border border-border rounded-lg p-6">
-            <h3 class="text-lg font-semibold mb-3">What is commercial remediation?</h3>
-            <p class="text-muted-foreground">
-              Commercial remediation is repair work that addresses structural defects, water damage, fire damage, mould or compliance failures in commercial buildings. It goes beyond routine maintenance to fix underlying problems and restore safety and functionality.
-            </p>
-          </div>
-
-          <div class="bg-card border border-border rounded-lg p-6">
-            <h3 class="text-lg font-semibold mb-3">How quickly should remediation start after a leak?</h3>
-            <p class="text-muted-foreground">
-              Response within 48 hours significantly reduces secondary damage like mould growth and material degradation. Make safe works and containment should begin immediately, with drying equipment deployed within the first 24 hours where possible.
-            </p>
-          </div>
-
-          <div class="bg-card border border-border rounded-lg p-6">
-            <h3 class="text-lg font-semibold mb-3">Can remediation be completed while a site is occupied?</h3>
-            <p class="text-muted-foreground">
-              Many remediation projects can proceed with the building occupied, using containment barriers, staged works or after-hours scheduling. The approach depends on the type of damage, safety requirements and whether hazardous materials are involved.
-            </p>
-          </div>
-
-          <div class="bg-card border border-border rounded-lg p-6">
-            <h3 class="text-lg font-semibold mb-3">When is mould testing required?</h3>
-            <p class="text-muted-foreground">
-              Mould testing is typically recommended when visible mould exceeds one square metre, when there are persistent odours or when occupants report health symptoms. Testing identifies mould species and guides remediation methods and safety protocols.
-            </p>
-          </div>
-
-          <div class="bg-card border border-border rounded-lg p-6">
-            <h3 class="text-lg font-semibold mb-3">Who is responsible for remediation in a lease, tenant or landlord?</h3>
-            <p class="text-muted-foreground">
-              Responsibility depends on the lease terms and the cause of damage. Landlords typically handle structural defects, building envelope failures and issues arising from building systems. Tenants may be responsible for damage caused by their fit out or operations. Review the lease and obtain legal advice where liability is unclear.
-            </p>
-          </div>
-
-          <div class="bg-card border border-border rounded-lg p-6">
-            <h3 class="text-lg font-semibold mb-3">What documentation is usually provided at handover?</h3>
-            <p class="text-muted-foreground">
-              Handover documentation typically includes completion certificates, test results (moisture readings, air quality, electrical safety), material warranties, waste disposal manifests, before and after photos and compliance certificates where building permits were required.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA Section (MUST be last per user preference) -->
-  <section class="py-16 md:py-24">
-    <div class="container mx-auto px-4">
-      <div class="max-w-3xl mx-auto text-center">
-        <h2 class="text-3xl md:text-4xl font-bold mb-4">
-          Need remediation and reinstatement under one contractor
-        </h2>
-        <p class="text-lg text-muted-foreground mb-6">
-          We handle the full scope from make safe and remediation through to reinstatement and handover. One point of contact, coordinated works and proper documentation at every stage.
-        </p>
-        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <Button size="lg" asChild>
-            <a href="/contact">Get a Quote</a>
-          </Button>
-          <a href="/industries/remediation" class="text-primary hover:underline font-medium">
-            View remediation services →
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
