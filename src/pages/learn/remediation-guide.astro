@@ -67,6 +67,7 @@ const ogImage = new URL("/images/learn/remediation-hero-placeholder.svg", Astro.
                 src="/images/learn/commercial-remediation-warehouse-melbourne.jpg"
                 alt="Commercial warehouse remediation works showing yellow scissor lift and concrete flooring during building rectification in Melbourne"
                 class="aspect-[4/3] w-full object-cover rounded-lg"
+                style="object-position: 75% center;"
                 width="800"
                 height="600"
                 loading="eager"
@@ -76,20 +77,60 @@ const ogImage = new URL("/images/learn/remediation-hero-placeholder.svg", Astro.
         </div>
       </section>
 
-      <!-- Quick Navigation -->
-      <section class="bg-muted/30 py-8">
+      <!-- In This Guide Navigation -->
+      <section class="bg-muted/50 border-y border-border py-12">
         <div class="container mx-auto px-4">
-          <div class="max-w-4xl mx-auto">
-            <h2 class="text-sm font-medium text-muted-foreground mb-3">On this page</h2>
-            <nav class="flex flex-col space-y-2">
-              <a href="#what-is-remediation" class="text-foreground hover:text-primary transition-colors">What is commercial remediation</a>
-              <a href="#types-of-remediation" class="text-foreground hover:text-primary transition-colors">Types of remediation</a>
-              <a href="#remediation-process" class="text-foreground hover:text-primary transition-colors">The remediation process</a>
-              <a href="#compliance-safety" class="text-foreground hover:text-primary transition-colors">Compliance and safety</a>
-              <a href="#checklists-guides" class="text-foreground hover:text-primary transition-colors">Checklists and guides</a>
-              <a href="#faqs" class="text-foreground hover:text-primary transition-colors">FAQs</a>
-            </nav>
-          </div>
+          <h2 class="text-2xl font-bold mb-8 text-center">In this guide</h2>
+          <nav class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto">
+            <a href="#what-is-remediation" class="group block p-4 bg-card border border-border rounded-lg hover:bg-accent hover:border-accent-foreground/20 transition-all cursor-pointer">
+              <span class="flex items-center justify-between">
+                <span class="font-medium group-hover:text-primary transition-colors">What is commercial remediation</span>
+                <svg class="w-4 h-4 text-muted-foreground group-hover:text-primary group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+              </span>
+            </a>
+            <a href="#types-of-remediation" class="group block p-4 bg-card border border-border rounded-lg hover:bg-accent hover:border-accent-foreground/20 transition-all cursor-pointer">
+              <span class="flex items-center justify-between">
+                <span class="font-medium group-hover:text-primary transition-colors">Types of remediation</span>
+                <svg class="w-4 h-4 text-muted-foreground group-hover:text-primary group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+              </span>
+            </a>
+            <a href="#remediation-process" class="group block p-4 bg-card border border-border rounded-lg hover:bg-accent hover:border-accent-foreground/20 transition-all cursor-pointer">
+              <span class="flex items-center justify-between">
+                <span class="font-medium group-hover:text-primary transition-colors">The remediation process</span>
+                <svg class="w-4 h-4 text-muted-foreground group-hover:text-primary group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+              </span>
+            </a>
+            <a href="#compliance-safety" class="group block p-4 bg-card border border-border rounded-lg hover:bg-accent hover:border-accent-foreground/20 transition-all cursor-pointer">
+              <span class="flex items-center justify-between">
+                <span class="font-medium group-hover:text-primary transition-colors">Compliance and safety</span>
+                <svg class="w-4 h-4 text-muted-foreground group-hover:text-primary group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+              </span>
+            </a>
+            <a href="#checklists-guides" class="group block p-4 bg-card border border-border rounded-lg hover:bg-accent hover:border-accent-foreground/20 transition-all cursor-pointer">
+              <span class="flex items-center justify-between">
+                <span class="font-medium group-hover:text-primary transition-colors">Checklists and guides</span>
+                <svg class="w-4 h-4 text-muted-foreground group-hover:text-primary group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+              </span>
+            </a>
+            <a href="#faqs" class="group block p-4 bg-card border border-border rounded-lg hover:bg-accent hover:border-accent-foreground/20 transition-all cursor-pointer">
+              <span class="flex items-center justify-between">
+                <span class="font-medium group-hover:text-primary transition-colors">FAQs</span>
+                <svg class="w-4 h-4 text-muted-foreground group-hover:text-primary group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+              </span>
+            </a>
+          </nav>
         </div>
       </section>
 
