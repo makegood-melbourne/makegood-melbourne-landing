@@ -15,32 +15,47 @@ const ogImage = new URL("/images/learn/remediation-hero-placeholder.svg", Astro.
   ogImage={ogImage.toString()}
   ogType="article"
 >
+  <!-- Breadcrumb -->
+  <nav class="bg-background border-b border-border">
+    <div class="container mx-auto px-4 py-3">
+      <ol class="flex items-center space-x-2 text-sm text-muted-foreground">
+        <li><a href="/" class="hover:text-primary">Home</a></li>
+        <li>/</li>
+        <li><a href="/learn" class="hover:text-primary">Learn</a></li>
+        <li>/</li>
+        <li class="text-foreground">Remediation Guide</li>
+      </ol>
+    </div>
+  </nav>
+
   <!-- Hero Section -->
   <section class="relative bg-background">
     <div class="container mx-auto px-4 py-16 md:py-24">
-      <div class="max-w-4xl mx-auto text-center mb-12">
-        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
-          Commercial remediation guide for <span class="text-primary">Melbourne</span>
-        </h1>
-        <p class="text-xl md:text-2xl text-white mb-6">
-          When building defects go beyond routine maintenance.
-        </p>
-        <p class="text-lg text-foreground/80 mb-4">
-          Structural damage, water ingress, failed waterproofing, non-compliant cladding—these aren't maintenance issues. They're remediation projects.
-        </p>
-        <p class="text-lg text-foreground/80">
-          This guide covers the types of remediation common in Melbourne commercial buildings, how projects are typically delivered, and what property managers, building owners and facilities teams need to know before work begins.
-        </p>
-      </div>
-      <div class="w-full">
-        <img
-          src="/images/learn/commercial-remediation-warehouse-melbourne.jpg"
-          alt="Commercial warehouse remediation works showing yellow scissor lift and concrete flooring during building rectification in Melbourne"
-          class="w-full h-auto rounded-lg shadow-lg"
-          width="1200"
-          height="500"
-          loading="eager"
-        />
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
+            Commercial remediation guide for <span class="text-primary">Melbourne</span>
+          </h1>
+          <p class="text-xl md:text-2xl text-white mb-6">
+            When building defects go beyond routine maintenance.
+          </p>
+          <p class="text-lg text-foreground/80 mb-4">
+            Structural damage, water ingress, failed waterproofing, non-compliant cladding—these aren't maintenance issues. They're remediation projects.
+          </p>
+          <p class="text-lg text-foreground/80">
+            This guide covers the types of remediation common in Melbourne commercial buildings, how projects are typically delivered, and what property managers, building owners and facilities teams need to know before work begins.
+          </p>
+        </div>
+        <div class="relative">
+          <img
+            src="/images/learn/commercial-remediation-warehouse-melbourne.jpg"
+            alt="Commercial warehouse remediation works showing yellow scissor lift and concrete flooring during building rectification in Melbourne"
+            class="w-full h-auto rounded-lg shadow-lg"
+            width="1200"
+            height="500"
+            loading="eager"
+          />
+        </div>
       </div>
     </div>
   </section>
@@ -48,15 +63,15 @@ const ogImage = new URL("/images/learn/remediation-hero-placeholder.svg", Astro.
   <!-- Quick Navigation -->
   <section class="bg-muted/30 py-8">
     <div class="container mx-auto px-4">
-      <div class="bg-card border border-border rounded-lg p-6">
-        <h2 class="text-lg font-semibold mb-4">On this page</h2>
-        <nav class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
-          <a href="#what-is-remediation" class="text-primary hover:underline">What is commercial remediation</a>
-          <a href="#types-of-remediation" class="text-primary hover:underline">Types of remediation</a>
-          <a href="#remediation-process" class="text-primary hover:underline">The remediation process</a>
-          <a href="#compliance-safety" class="text-primary hover:underline">Compliance and safety</a>
-          <a href="#checklists-guides" class="text-primary hover:underline">Checklists and guides</a>
-          <a href="#faqs" class="text-primary hover:underline">FAQs</a>
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-sm font-medium text-muted-foreground mb-3">On this page</h2>
+        <nav class="flex flex-col space-y-2">
+          <a href="#what-is-remediation" class="text-foreground hover:text-primary transition-colors">What is commercial remediation</a>
+          <a href="#types-of-remediation" class="text-foreground hover:text-primary transition-colors">Types of remediation</a>
+          <a href="#remediation-process" class="text-foreground hover:text-primary transition-colors">The remediation process</a>
+          <a href="#compliance-safety" class="text-foreground hover:text-primary transition-colors">Compliance and safety</a>
+          <a href="#checklists-guides" class="text-foreground hover:text-primary transition-colors">Checklists and guides</a>
+          <a href="#faqs" class="text-foreground hover:text-primary transition-colors">FAQs</a>
         </nav>
       </div>
     </div>
@@ -68,13 +83,13 @@ const ogImage = new URL("/images/learn/remediation-hero-placeholder.svg", Astro.
       <h2 class="text-3xl md:text-4xl font-bold mb-6">What is commercial remediation</h2>
       <div class="prose prose-lg max-w-none">
         <p>
-          Commercial remediation refers to repair and restoration work that addresses structural defects, water damage, fire damage, mould contamination or building compliance failures in commercial and industrial properties. Unlike routine maintenance or <a href="/what-is-make-good" class="text-primary hover:underline">make good works</a>, remediation typically involves identifying the root cause of a problem, making the site safe and then repairing or replacing affected building elements.
+          Remediation is repair work that goes beyond routine maintenance. It addresses structural defects, water ingress, fire damage, mould contamination or compliance failures that affect a building's integrity, safety or performance. Unlike planned maintenance or cosmetic upgrades, remediation is reactive—triggered by damage, failure or non-compliance that needs to be fixed.
         </p>
         <p>
-          Remediation is often triggered by visible damage such as ceiling leaks, cracked concrete, failed waterproofing, smoke staining or cladding defects. In Melbourne, common causes include storm damage, burst pipes, HVAC failures, concrete cancer and non-compliant building materials. Property managers and building owners usually engage remediation contractors when damage exceeds what can be handled through standard maintenance, when safety is at risk or when compliance issues are identified.
+          Unlike <a href="/what-is-make-good" class="text-primary hover:underline">make good works</a>, which restore a tenancy to its original condition at lease end, remediation fixes the underlying problem. It involves identifying the root cause, making the site safe and then repairing or replacing affected building elements. Common triggers include ceiling leaks, cracked concrete, failed waterproofing, smoke damage and cladding defects.
         </p>
         <p>
-          The key difference between remediation and make good is scope and intent. Make good restores a tenancy to its original condition at lease end. Remediation fixes underlying defects and damage that affect the building structure, safety or compliance. Many projects involve both: remediation to address the defect, followed by make good to restore finishes and hand back the space.
+          Many projects involve both: remediation to fix the defect, followed by make good to restore finishes and hand back the space. For example, a burst pipe might require remediation to repair the plumbing and dry out water damaged walls, then make good works to repaint, replace ceiling tiles and reinstate the tenancy.
         </p>
       </div>
     </div>
