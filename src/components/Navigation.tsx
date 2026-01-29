@@ -195,8 +195,8 @@ const Navigation = () => {
                   </a>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
-                  <a href="/learn/commercial-remediation-guide" className="cursor-pointer">
-                    Commercial Remediation Guide
+                  <a href="/learn/remediation-guide" className="cursor-pointer">
+                    Remediation Guide
                   </a>
                 </DropdownMenuItem>
                 <DropdownMenuSeparator />
