@@ -227,7 +227,7 @@ const faqSchema = {
       "name": "What is the difference between make good and make safe?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "<strong>Make good</strong> is planned work at the end of a lease—restoring the space as required by your agreement. <strong>Make safe</strong> is urgent work after an incident—fire, flood, impact damage. It's about eliminating hazards and securing the site quickly."
+        "text": "Make good is planned work at the end of a lease—restoring the space as required by your agreement. Make safe is urgent work after an incident—fire, flood, impact damage. It's about eliminating hazards and securing the site quickly."
       }
     },
     {
@@ -243,7 +243,7 @@ const faqSchema = {
       "name": "What is a make good and when is it required?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "A make good is the process of returning a commercial space to its original or agreed condition at lease end. Most commercial leases have a make good clause. It's triggered when you vacate—whether at lease end, early termination, or break clause."
+        "text": "A make good is the process of returning a commercial space to its original or agreed condition at lease end. Most commercial leases have a make good clause. It's triggered when you vacate—whether at lease end, early termination or break clause."
       }
     },
     {
@@ -355,7 +355,7 @@ const faqSchema = {
       "name": "Do you handle make safe or urgent works?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes—during business hours. We secure sites after fire, flood, or impact damage. We eliminate hazards and make the property safe. We don't offer 24/7 emergency call-outs."
+        "text": "Yes—during business hours. We secure sites after fire, flood or impact damage. We eliminate hazards and make the property safe. We don't offer 24/7 emergency call-outs."
       }
     },
     {
@@ -363,7 +363,7 @@ const faqSchema = {
       "name": "What types of properties do you service?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Commercial and industrial properties across Melbourne. Offices, retail, warehouses, factories, mixed-use buildings. Small office suites to large distribution centres."
+        "text": "Commercial and industrial properties across Melbourne. Offices, retail, warehouses, factories and mixed-use buildings. Small office suites to large distribution centres."
       }
     },
     {
@@ -371,7 +371,7 @@ const faqSchema = {
       "name": "What areas of Melbourne do you service?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Melbourne and surrounding areas. CBD, inner suburbs, outer growth corridors, industrial precincts."
+        "text": "Melbourne and surrounding areas. CBD, inner suburbs, outer growth corridors and industrial precincts."
       }
     },
     {
@@ -387,7 +387,7 @@ const faqSchema = {
       "name": "What is building remediation and when is it needed?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Remediation is rectifying defects or damage—structural issues, water ingress, concrete spalling, cracking. It's needed when the problem affects the building's safety, integrity, or compliance."
+        "text": "Remediation is rectifying defects or damage—structural issues, water ingress, concrete spalling and cracking. It's needed when the problem affects the building's safety, integrity or compliance."
       }
     },
     {
@@ -435,7 +435,7 @@ const faqSchema = {
       "name": "What information do you need for a quote?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Your lease agreement (especially the make good clause), property address, approximate floor area and any landlord requirements. If you don't have everything, we'll work with what you have and clarify the rest on site."
+        "text": "Your lease agreement (especially the make good clause ), property address, approximate floor area and any landlord requirements. If you don't have everything, we'll work with what you have and clarify the rest on site."
       }
     },
     {
@@ -451,7 +451,7 @@ const faqSchema = {
       "name": "What if my landlord disputes the make good works?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Agree on a clear scope in writing before work starts. That's the best way to avoid disputes. If one arises, our documentation—photos, certificates, records—shows the work was completed to standard."
+        "text": "Agree on a clear scope in writing before work starts. That's the best way to avoid disputes. If one arises, our documentation—photos, certificates and records—shows the work was completed to standard."
       }
     },
     {
