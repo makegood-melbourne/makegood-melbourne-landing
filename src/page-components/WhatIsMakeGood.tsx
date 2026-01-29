@@ -441,11 +441,11 @@ const WhatIsMakeGood = () => {
         {/* Background image with gradient overlay */}
         <div className="absolute inset-0 z-0">
           <img 
-            src={ctaImage} 
+            src={resolveImageSrc(ctaImage)} 
             alt="Manufacturing facility requiring make good services in Melbourne"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/50 to-black/40" />
+          <div className="absolute inset-0 bg-secondary/80" />
         </div>
         
         <div className="max-w-3xl mx-auto text-center relative z-10">
