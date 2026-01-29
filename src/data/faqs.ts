@@ -20,7 +20,7 @@ export const homepageFaqs: FAQ[] = [
   },
   {
     question: "How long does a make good take?",
-    answer: "Small office strip-out: 1–2 weeks. Large warehouse restoration: 4–8 weeks. It depends on size, complexity, and coordination with the landlord."
+    answer: "Small office strip-out: 1–2 weeks. Large warehouse restoration: 4–8 weeks. It depends on size, complexity and coordination with the landlord."
   },
   {
     question: "What areas of Melbourne do you service?",
@@ -32,6 +32,6 @@ export const homepageFaqs: FAQ[] = [
   },
   {
     question: "Do you provide free quotes?",
-    answer: "Yes. Free site inspection, lease review, and detailed fixed-price quote. No obligation."
+    answer: "Yes. Free site inspection, lease review and detailed fixed-price quote. No obligation."
   }
 ];

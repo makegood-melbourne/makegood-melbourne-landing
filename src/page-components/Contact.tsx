@@ -33,7 +33,7 @@ const contactFaqs = [
   },
   {
     question: "Do you provide free quotes?",
-    answer: "Yes. Free site inspection, lease review, and detailed fixed-price quote. No obligation."
+    answer: "Yes. Free site inspection, lease review and detailed fixed-price quote. No obligation."
   },
   {
     question: "What areas do you service?",
@@ -41,7 +41,7 @@ const contactFaqs = [
   },
   {
     question: "What information do you need for a quote?",
-    answer: "To provide an accurate quote, we'll need your property address, approximate size, type of tenancy (office, warehouse, retail, industrial), your lease end date, and a brief description of the make good requirements or any specific concerns."
+    answer: "To provide an accurate quote, we'll need your property address, approximate size, type of tenancy (office, warehouse, retail, industrial), your lease end date and a brief description of the make good requirements or any specific concerns."
   },
   {
     question: "Can you work outside business hours?",
@@ -127,7 +127,7 @@ const Contact = () => {
         <title>Contact Make Good Melbourne | Get Your Quote</title>
         <meta 
           name="description" 
-          content="Get in touch with Make Good Melbourne for a free consultation. Contact us for end of lease make good services, make safe works, and remediation across Melbourne." 
+          content="Get in touch with Make Good Melbourne for a free consultation. Contact us for end of lease make good services, make safe works and remediation across Melbourne." 
         />
         <link rel="canonical" href="https://makegood.melbourne/contact/" />
         <script type="application/ld+json">

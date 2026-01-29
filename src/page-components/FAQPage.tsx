@@ -26,7 +26,7 @@ const faqs: FAQ[] = [
   {
     category: "understanding",
     question: "What is a make good clause in a commercial lease?",
-    answer: "A make good clause sets out what you're required to do when your lease ends. Usually that means removing your fitout, repairing damage, and returning the space to its original condition. Every lease is different—read yours carefully."
+    answer: "A make good clause sets out what you're required to do when your lease ends. Usually that means removing your fitout, repairing damage and returning the space to its original condition. Every lease is different—read yours carefully."
   },
   {
     category: "understanding",
@@ -36,7 +36,7 @@ const faqs: FAQ[] = [
   {
     category: "understanding",
     question: "What does a make good typically include?",
-    answer: "Removing tenant-installed partitions, signage, and fixtures. Patching and painting walls. Reinstating ceilings and floors. Disconnecting and certifying electrical, data, and mechanical services. For warehouses, it often includes racking removal and concrete floor repairs."
+    answer: "Removing tenant-installed partitions, signage and fixtures. Patching and painting walls. Reinstating ceilings and floors. Disconnecting and certifying electrical, data and mechanical services. For warehouses, it often includes racking removal and concrete floor repairs."
   },
   {
     category: "understanding",
@@ -78,7 +78,7 @@ const faqs: FAQ[] = [
   {
     category: "costs",
     question: "Do you price match or have a price promise?",
-    answer: "No. We don't compete on price. We provide fair, fixed-price quotes based on quality work, licensed trades, and proper project management."
+    answer: "No. We don't compete on price. We provide fair, fixed-price quotes based on quality work, licensed trades and proper project management."
   },
   {
     category: "costs",
@@ -90,12 +90,12 @@ const faqs: FAQ[] = [
   {
     category: "process",
     question: "How long does a make good take?",
-    answer: "Small office strip-out: 1–2 weeks. Large warehouse restoration: 4–8 weeks. It depends on size, complexity, and coordination with the landlord."
+    answer: "Small office strip-out: 1–2 weeks. Large warehouse restoration: 4–8 weeks. It depends on size, complexity and coordination with the landlord."
   },
   {
     category: "process",
     question: "When should I start planning my make good?",
-    answer: "At least 3–6 months before your lease ends. That gives you time for inspections, scope agreement, quotes, and scheduling without rushing."
+    answer: "At least 3–6 months before your lease ends. That gives you time for inspections, scope agreement, quotes and scheduling without rushing."
   },
   {
     category: "process",
@@ -147,7 +147,7 @@ const faqs: FAQ[] = [
   {
     category: "services",
     question: "My building has water leaks—can you fix them?",
-    answer: "Yes. We find the source, repair the damage, and restore affected areas. Water damage left untreated leads to bigger problems."
+    answer: "Yes. We find the source, repair the damage and restore affected areas. Water damage left untreated leads to bigger problems."
   },
 
   // Category 5: Working With Us (merged with Common Concerns)
@@ -159,17 +159,17 @@ const faqs: FAQ[] = [
   {
     category: "working",
     question: "What documentation do you provide?",
-    answer: "Before and after photos, compliance certificates, electrical and fire safety test reports, waste disposal receipts, and a final handover checklist. Everything you need for a clean handover."
+    answer: "Before and after photos, compliance certificates, electrical and fire safety test reports, waste disposal receipts and a final handover checklist. Everything you need for a clean handover."
   },
   {
     category: "working",
     question: "Do you provide free quotes?",
-    answer: "Yes. Free site inspection, lease review, and detailed fixed-price quote. No obligation."
+    answer: "Yes. Free site inspection, lease review and detailed fixed-price quote. No obligation."
   },
   {
     category: "working",
     question: "What information do you need for a quote?",
-    answer: "Your lease agreement (especially the make good clause), property address, approximate floor area, and any landlord requirements. If you don't have everything, we'll work with what you have and clarify the rest on site."
+    answer: "Your lease agreement (especially the make good clause), property address, approximate floor area and any landlord requirements. If you don't have everything, we'll work with what you have and clarify the rest on site."
   },
   {
     category: "working",
@@ -189,7 +189,7 @@ const faqs: FAQ[] = [
   {
     category: "working",
     question: "Can I do my own make good instead of hiring professionals?",
-    answer: "You can try, but it's not recommended. Landlords usually require licensed trades for electrical, plumbing, and fire safety work. You'll need proper documentation and compliance certificates. A poor job leads to disputes and extra costs."
+    answer: "You can try, but it's not recommended. Landlords usually require licensed trades for electrical, plumbing and fire safety work. You'll need proper documentation and compliance certificates. A poor job leads to disputes and extra costs."
   },
   {
     category: "working",
@@ -217,7 +217,7 @@ const faqSchema = {
       "name": "What is a make good clause in a commercial lease?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "A make good clause sets out what you're required to do when your lease ends. Usually that means removing your fitout, repairing damage, and returning the space to its original condition. Every lease is different—read yours carefully."
+        "text": "A make good clause sets out what you're required to do when your lease ends. Usually that means removing your fitout, repairing damage and returning the space to its original condition. Every lease is different—read yours carefully."
       }
     },
     {
@@ -233,7 +233,7 @@ const faqSchema = {
       "name": "What does a make good typically include?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Removing tenant-installed partitions, signage, and fixtures. Patching and painting walls. Reinstating ceilings and floors. Disconnecting and certifying electrical, data, and mechanical services. For warehouses, it often includes racking removal and concrete floor repairs."
+        "text": "Removing tenant-installed partitions, signage and fixtures. Patching and painting walls. Reinstating ceilings and floors. Disconnecting and certifying electrical, data and mechanical services. For warehouses, it often includes racking removal and concrete floor repairs."
       }
     },
     {
@@ -297,7 +297,7 @@ const faqSchema = {
       "name": "Do you price match or have a price promise?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. We don't compete on price. We provide fair, fixed-price quotes based on quality work, licensed trades, and proper project management."
+        "text": "No. We don't compete on price. We provide fair, fixed-price quotes based on quality work, licensed trades and proper project management."
       }
     },
     {
@@ -313,7 +313,7 @@ const faqSchema = {
       "name": "How long does a make good take?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Small office strip-out: 1–2 weeks. Large warehouse restoration: 4–8 weeks. It depends on size, complexity, and coordination with the landlord."
+        "text": "Small office strip-out: 1–2 weeks. Large warehouse restoration: 4–8 weeks. It depends on size, complexity and coordination with the landlord."
       }
     },
     {
@@ -321,7 +321,7 @@ const faqSchema = {
       "name": "When should I start planning my make good?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "At least 3–6 months before your lease ends. That gives you time for inspections, scope agreement, quotes, and scheduling without rushing."
+        "text": "At least 3–6 months before your lease ends. That gives you time for inspections, scope agreement, quotes and scheduling without rushing."
       }
     },
     {
@@ -401,7 +401,7 @@ const faqSchema = {
       "name": "My building has water leaks—can you fix them?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. We find the source, repair the damage, and restore affected areas. Water damage left untreated leads to bigger problems."
+        "text": "Yes. We find the source, repair the damage and restore affected areas. Water damage left untreated leads to bigger problems."
       }
     },
     {
@@ -417,7 +417,7 @@ const faqSchema = {
       "name": "What documentation do you provide?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Before and after photos, compliance certificates, electrical and fire safety test reports, waste disposal receipts, and a final handover checklist. Everything you need for a clean handover."
+        "text": "Before and after photos, compliance certificates, electrical and fire safety test reports, waste disposal receipts and a final handover checklist. Everything you need for a clean handover."
       }
     },
     {
@@ -425,7 +425,7 @@ const faqSchema = {
       "name": "Do you provide free quotes?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Free site inspection, lease review, and detailed fixed-price quote. No obligation."
+        "text": "Yes. Free site inspection, lease review and detailed fixed-price quote. No obligation."
       }
     },
     {
@@ -433,7 +433,7 @@ const faqSchema = {
       "name": "What information do you need for a quote?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Your lease agreement (especially the make good clause), property address, approximate floor area, and any landlord requirements. If you don't have everything, we'll work with what you have and clarify the rest on site."
+        "text": "Your lease agreement (especially the make good clause), property address, approximate floor area and any landlord requirements. If you don't have everything, we'll work with what you have and clarify the rest on site."
       }
     },
     {
@@ -465,7 +465,7 @@ const faqSchema = {
       "name": "Can I do my own make good instead of hiring professionals?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "You can try, but it's not recommended. Landlords usually require licensed trades for electrical, plumbing, and fire safety work. You'll need proper documentation and compliance certificates. A poor job leads to disputes and extra costs."
+        "text": "You can try, but it's not recommended. Landlords usually require licensed trades for electrical, plumbing and fire safety work. You'll need proper documentation and compliance certificates. A poor job leads to disputes and extra costs."
       }
     },
     {
@@ -490,9 +490,9 @@ const FAQPage = () => {
     <main className="min-h-screen bg-background text-foreground">
       <Helmet>
         <title>Make Good FAQ Melbourne | Make Good, BETTER.</title>
-        <meta name="description" content="Your complete guide to make good costs, processes, and requirements in Melbourne. Get clear answers to your end-of-lease questions. Free quotes available." />
+        <meta name="description" content="Your complete guide to make good costs, processes and requirements in Melbourne. Get clear answers to your end-of-lease questions. Free quotes available." />
         <meta property="og:title" content="Make Good FAQ Melbourne | Make Good, BETTER." />
-        <meta property="og:description" content="Your complete guide to make good costs, processes, and requirements in Melbourne. Get clear answers to your end-of-lease questions. Free quotes available." />
+        <meta property="og:description" content="Your complete guide to make good costs, processes and requirements in Melbourne. Get clear answers to your end-of-lease questions. Free quotes available." />
         <link rel="canonical" href="https://makegood.melbourne/faq/" />
         <script type="application/ld+json">
           {JSON.stringify(faqSchema)}
