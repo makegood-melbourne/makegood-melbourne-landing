@@ -1,6 +1,278 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import FAQPage from '../page-components/FAQPage.tsx';
+
+// JSON-LD Schema for FAQPage - server-rendered for SEO
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is a make good clause in a commercial lease?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A make good clause sets out what you're required to do when your lease ends. Usually that means removing your fitout, repairing damage and returning the space to its original condition. Every lease is different—read yours carefully."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between make good and make safe?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Make good is planned work at the end of a lease—restoring the space as required by your agreement. Make safe is urgent work after an incident—fire, flood, impact damage. It's about eliminating hazards and securing the site quickly."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does a make good typically include?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Removing tenant-installed partitions, signage and fixtures. Patching and painting walls. Reinstating ceilings and floors. Disconnecting and certifying electrical, data and mechanical services. For warehouses, it often includes racking removal and concrete floor repairs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is a make good and when is it required?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A make good is the process of returning a commercial space to its original or agreed condition at lease end. Most commercial leases have a make good clause. It's triggered when you vacate—whether at lease end, early termination or break clause."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Who is responsible for make good requirements?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The tenant. In almost all commercial leases, you're responsible for the work and the cost. Check your lease to understand exactly what's required."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens if I don't complete my make good?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The landlord can complete the work and bill you—usually at a premium. You may lose part or all of your bond. In some cases, they'll pursue legal action. Better to deal with it yourself."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does a make good cost in Melbourne?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It depends on size and scope. Office make goods typically run $100–$200 per square metre. Industrial spaces are often less. We quote after a site inspection—fixed price, no surprises."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Who pays for the make good—tenant or landlord?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The tenant. In almost all commercial leases, you cover the cost."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I negotiate my make good costs with the landlord?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Some landlords will accept a cash settlement instead of physical works—especially if they're planning to refurbish anyway. Others may agree to a reduced scope. We can help you work through the options."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How can I reduce my make good costs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Plan early. Get a clear scope agreed with your landlord before work starts. Negotiate what actually needs reinstating. And get it done right the first time—rework is expensive."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you price match or have a price promise?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. We don't compete on price. We provide fair, fixed-price quotes based on quality work, licensed trades and proper project management."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the difference between a quote and an estimate?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "An estimate is a rough guess that can change. A quote is a fixed price for a defined scope. We provide fixed-price quotes. Once we agree on the scope, the price is locked."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does a make good take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Small office strip-out: 1–2 weeks. Large warehouse restoration: 4–8 weeks. It depends on size, complexity and coordination with the landlord."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When should I start planning my make good?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "At least 3–6 months before your lease ends. That gives you time for inspections, scope agreement, quotes and scheduling without rushing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is your make good process?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "1. Free consultation—we review your lease and inspect the site. 2. Detailed quote—fixed price, no surprises. 3. Scope agreement—we finalise requirements with you and the landlord. 4. Execution—we complete the work to the agreed standard. 5. Documentation and handover—full records, final inspection coordinated."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How quickly will you respond to my enquiry?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Within 24 hours on business days. For urgent make safe situations, often the same day."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need to be on site for the quote inspection?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Helpful, but not essential. We can coordinate access with your building manager. Having someone who knows the site available helps us understand your requirements."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you handle make safe or urgent works?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes—during business hours. We secure sites after fire, flood or impact damage. We eliminate hazards and make the property safe. We don't offer 24/7 emergency call-outs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What types of properties do you service?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Commercial and industrial properties across Melbourne. Offices, retail, warehouses, factories and mixed-use buildings. Small office suites to large distribution centres."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What areas of Melbourne do you service?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Melbourne and surrounding areas. CBD, inner suburbs, outer growth corridors and industrial precincts."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you work outside business hours?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, when required. Often necessary in occupied buildings or retail environments. We'll discuss scheduling during the quoting process."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is building remediation and when is it needed?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Remediation is rectifying defects or damage—structural issues, water ingress, concrete spalling and cracking. It's needed when the problem affects the building's safety, integrity or compliance."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does my building need cladding rectification?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If your building has combustible cladding, it may not meet current fire safety standards. We can assess the situation and advise on removal and replacement with compliant materials."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "My building has water leaks—can you fix them?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. We find the source, repair the damage and restore affected areas. Water damage left untreated leads to bigger problems."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are you licensed and insured?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Fully licensed, with public liability and workers' compensation coverage. Certificates of currency available on request."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What documentation do you provide?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Before and after photos, compliance certificates, electrical and fire safety test reports, waste disposal receipts and a final handover checklist. Everything you need for a clean handover."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you provide free quotes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Free site inspection, lease review and detailed fixed-price quote. No obligation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What information do you need for a quote?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Your lease agreement (especially the make good clause ), property address, approximate floor area and any landlord requirements. If you don't have everything, we'll work with what you have and clarify the rest on site."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you have a contact number or physical address?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We don't have a public phone number or office. Contact us via email at info@makegood.melbourne. We respond during business hours."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What if my landlord disputes the make good works?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Agree on a clear scope in writing before work starts. That's the best way to avoid disputes. If one arises, our documentation—photos, certificates and records—shows the work was completed to standard."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens if the make good isn't completed on time?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Holdover rent. Often significantly higher than standard rent. Landlords may also claim damages. We schedule carefully and build in contingency to finish on time."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I do my own make good instead of hiring professionals?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can try, but it's not recommended. Landlords usually require licensed trades for electrical, plumbing and fire safety work. You'll need proper documentation and compliance certificates. A poor job leads to disputes and extra costs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you guarantee that my bond will be returned?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. That's the landlord's decision. Our job is to complete the work to the required standard and provide documentation that supports a successful handover."
+      }
+    }
+  ]
+};
 ---
 
 <BaseLayout 
@@ -8,5 +280,6 @@ import FAQPage from '../page-components/FAQPage.tsx';
   description="Your complete guide to make good costs, processes, and requirements in Melbourne. Get clear answers to your end-of-lease questions. Free quotes available."
   canonicalUrl="https://makegood.melbourne/faq"
 >
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
   <FAQPage client:idle />
 </BaseLayout>
