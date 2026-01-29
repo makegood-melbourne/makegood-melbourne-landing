@@ -437,18 +437,8 @@ const WhatIsMakeGood = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="relative py-20 px-4 sm:px-6 lg:px-8">
-        {/* Background image with gradient overlay */}
-        <div className="absolute inset-0 z-0">
-          <img 
-            src={resolveImageSrc(ctaImage)} 
-            alt="Manufacturing facility requiring make good services in Melbourne"
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-secondary/80" />
-        </div>
-        
-        <div className="max-w-3xl mx-auto text-center relative z-10">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-secondary">
+        <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-2xl sm:text-3xl font-bold mb-4">
             Need Help With Your Make Good?
           </h2>
