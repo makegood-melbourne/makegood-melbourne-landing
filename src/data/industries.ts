@@ -55,7 +55,7 @@ export const industries: Industry[] = [
     heroImage: commercialHeroImage,
     heroImageAlt: "Completed commercial office make good with polished concrete floors and exposed ceiling services in Melbourne",
     ogImage: "/og/commercial.jpg",
-    introduction: "Commercial make goods require precision, efficiency and minimal disruption to building operations. Whether you're vacating an office suite, retail tenancy or entire commercial floor, our team delivers comprehensive restoration that meets landlord specifications and building management requirements. We coordinate all trades, manage after-hours access and ensure your bond is returned in full.",
+    introduction: "Commercial make goods require precision, efficiency and minimal disruption to building operations. Whether you're vacating an office suite, retail tenancy or entire commercial floor, our team delivers comprehensive restoration that meets landlord specifications and building management requirements. We coordinate all trades, manage after-hours access and provide documentation to support a successful handover.",
     featuredSections: [
       {
         title: "Site Preparation & Services Coordination",

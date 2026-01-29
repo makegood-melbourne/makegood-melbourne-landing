@@ -21,7 +21,7 @@ const processSteps = [
     icon: KeyRound,
     title: "Handover",
     subtitle: "Secure Sign-Off",
-    description: "We conduct quality inspections, coordinate landlord walkthroughs and ensure your bond is protected with full documentation."
+    description: "We conduct quality inspections, coordinate landlord walkthroughs and provide full documentation to support a successful handover."
   }
 ];
 

@@ -561,7 +561,7 @@ Yes, we offer flexible scheduling including weekends and after-hours work to acc
 
 ## Contact Make Good Melbourne Today
 
-Ready to ensure your commercial property is returned in pristine condition? Contact Make Good Melbourne today for a free, no-obligation quote on your commercial painting requirements. Let us help you achieve a flawless finish that satisfies your landlord and protects your bond.
+Ready to ensure your commercial property is returned in pristine condition? Contact Make Good Melbourne today for a free, no-obligation quote on your commercial painting requirements. Let us help you achieve a flawless finish that satisfies your landlord and supports a successful handover.
 
 Whether it is an office refurbishment, an end-of-lease repaint, or comprehensive warehouse preparation, our professional team is here to deliver exceptional results, on time and within budget.
 
@@ -1472,8 +1472,7 @@ Successful asbestos management requires early assessment, licensed removal speci
 
 **Make Good Australia**  
 Professional asbestos management coordination  
-Call us: [Contact Number]  
-Email: [Contact Email]  
+Email: info@makegood.melbourne  
 Safety first, compliance always, results guaranteed
     `
   },
@@ -2059,8 +2058,7 @@ Proper electrical make safe requires technical expertise, safety knowledge, buil
 
 **Make Good Australia**  
 Licensed electrical make safe specialists  
-Call us: [Contact Number]  
-Email: [Contact Email]  
+Email: info@makegood.melbourne  
 Creating safe working environments for make good and demolition`,
   },
   {
@@ -2569,8 +2567,7 @@ From minor tile replacements to complete ceiling system installations, engaging 
 
 **Make Good Australia**  
 Melbourne's ceiling repair and make good specialists  
-Call us: [Contact Number]  
-Email: [Contact Email]  
+Email: info@makegood.melbourne  
 Professional ceiling solutions for all commercial properties`,
   },
   {
@@ -2982,7 +2979,7 @@ At Make Good Australia, we provide comprehensive emergency building repair servi
 ### Our Emergency Response Services
 
 **Immediate Response**:
-- 24/7 emergency call-out for building emergencies
+- Rapid response during business hours for building emergencies
 - Rapid site securing and public safety measures
 - Traffic management and footpath closure coordination
 - Emergency debris removal and hazard elimination
@@ -3016,7 +3013,7 @@ Earlier this year, we responded to a parapet failure where a parapet wall collap
 
 ### Why Choose Make Good Australia for Emergency Repairs
 
-- **Rapid Response**: 24/7 availability for building emergencies
+- **Rapid Response**: Fast response during business hours for building emergencies
 - **Complete Service**: Emergency works through to final reconstruction
 - **Experienced Team**: Extensive emergency repair experience
 - **Full Compliance**: All regulatory and engineering requirements managed
@@ -3029,13 +3026,12 @@ Parapet failure represents a serious building emergency requiring immediate prof
 
 Prevention through regular inspection and maintenance is always preferable to emergency response, but when failure occurs, engaging experienced emergency repair specialists ensures the situation is managed safely, efficiently, and with full regulatory compliance.
 
-**Experiencing a building emergency or parapet failure?** Contact Make Good Australia immediately. Our emergency response team is available 24/7 and will rapidly secure your site, coordinate all required assessments and approvals, and manage complete reconstruction.
+**Experiencing a building emergency or parapet failure?** Contact Make Good Melbourne during business hours. Our team will rapidly secure your site, coordinate all required assessments and approvals, and manage complete reconstruction.
 
-**Make Good Australia**  
-Melbourne's emergency building repair specialists  
-Emergency Hotline: [Contact Number]  
-Email: [Contact Email]  
-Available 24/7 for building emergencies`,
+**Make Good Melbourne**  
+Melbourne's building repair specialists  
+Email: info@makegood.melbourne  
+Available during business hours`,
   },
   {
     id: "27",
@@ -3475,8 +3471,7 @@ Professional waste management planning and implementation ensures materials are 
 
 **Make Good Australia**  
 Melbourne's sustainable make good specialists  
-Call us: [Contact Number]  
-Email: [Contact Email]  
+Email: info@makegood.melbourne  
 Committed to environmental responsibility in every project`,
   },
   {
@@ -3872,7 +3867,7 @@ At Make Good Australia, we understand the urgency, complexity, and disruption th
 ### Our Fire Restoration Services
 
 **Emergency Response**:
-- 24/7 emergency call-out for securing and stabilization
+- Rapid response during business hours for securing and stabilisation
 - Immediate damage assessment and reporting
 - Emergency boarding, protection, and safety measures
 - Rapid mobilisation to prevent secondary damage
@@ -3915,13 +3910,12 @@ Fire damage creates significant disruption and complexity for commercial propert
 
 Whether addressing fire damage during a lease term, managing end-of-lease obligations after a fire event, or restoring owner-occupied properties, engaging experienced fire restoration specialists ensures efficient restoration, proper insurance coordination, and full regulatory compliance.
 
-**Ready to restore your fire-damaged property?** Contact Make Good Australia today. Our fire restoration specialists are available 24/7 for emergency response and will guide you through every step of the restoration process, from initial assessment to final handover.
+**Ready to restore your fire-damaged property?** Contact Make Good Melbourne during business hours. Our fire restoration specialists will guide you through every step of the restoration process, from initial assessment to final handover.
 
-**Make Good Australia**  
+**Make Good Melbourne**  
 Melbourne's trusted fire damage restoration and make good specialists  
-Call us: [Contact Number]  
-Email: [Contact Email]  
-Available 24/7 for emergency response`,
+Email: info@makegood.melbourne  
+Available during business hours`,
   },
   {
     id: "25",

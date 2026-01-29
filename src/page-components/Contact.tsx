@@ -29,15 +29,15 @@ const loadBackendClient = async () => getBackendClient();
 const contactFaqs = [
   {
     question: "How quickly will you respond to my enquiry?",
-    answer: "We aim to respond to all enquiries within 24 hours during business days. For urgent make safe requirements, we offer same-day response and can often attend site within hours."
+    answer: "Within 24 hours on business days. For urgent make safe situations, often the same day."
   },
   {
     question: "Do you provide free quotes?",
-    answer: "Yes, all our quotes are free and come with no obligation. We'll visit your site to assess the scope of work and provide a detailed, fixed-price quote so you know exactly what to expect."
+    answer: "Yes. Free site inspection, lease review, and detailed fixed-price quote. No obligation."
   },
   {
     question: "What areas do you service?",
-    answer: "We service all Melbourne metropolitan areas including Altona, Clayton, Dandenong, Kilsyth, Moorabbin, Mulgrave, Port Melbourne, Richmond, Ringwood, South Melbourne, and Truganina. We also cover surrounding suburbs."
+    answer: "Melbourne and surrounding areas. CBD, inner suburbs, outer growth corridors, industrial precincts."
   },
   {
     question: "What information do you need for a quote?",
@@ -300,11 +300,11 @@ const Contact = () => {
                         <AlertTriangle className="h-6 w-6 text-accent" />
                       </div>
                       <div>
-                        <h3 className="font-semibold text-lg text-foreground mb-1">Emergency Make Safe?</h3>
+                        <h3 className="font-semibold text-lg text-foreground mb-1">Urgent Make Safe?</h3>
                         <p className="text-muted-foreground mb-2">
-                          We offer rapid response for urgent make safe requirements including water damage, fire damage, and structural concerns.
+                          We handle urgent works during business hours—water damage, fire damage, structural concerns.
                         </p>
-                        <p className="text-accent font-medium">Contact us immediately for same-day response</p>
+                        <p className="text-accent font-medium">Contact us during business hours for a rapid response</p>
                       </div>
                     </div>
                   </CardContent>
@@ -364,6 +364,15 @@ const Contact = () => {
                   </AccordionItem>
                 ))}
               </Accordion>
+              <div className="text-center mt-8">
+                <a 
+                  href="/faq" 
+                  className="inline-flex items-center gap-2 text-primary hover:text-primary/80 font-medium transition-colors"
+                >
+                  More Questions? See Our FAQ
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </a>
+              </div>
             </div>
           </div>
         </section>

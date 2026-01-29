@@ -91,12 +91,12 @@ const processSteps = [
     number: "06",
     icon: KeyRound,
     title: "Handover & Sign-off",
-    description: "We coordinate the final landlord inspection and ensure everything is approved. Your bond is protected.",
+    description: "We coordinate the final landlord inspection and ensure everything is approved. Our documentation supports a successful handover.",
     details: [
       "Landlord walkthrough",
       "Final sign-off",
       "Documentation package",
-      "Bond release support"
+      "Handover support"
     ],
     outcome: "Successful lease completion"
   }
@@ -115,8 +115,8 @@ const differentiators = [
   },
   {
     icon: Shield,
-    title: "Bond Protection",
-    description: "We don't consider the job done until your landlord signs off. Your bond is protected."
+    title: "Professional Handover",
+    description: "We don't consider the job done until your landlord signs off. Our approach supports a successful handover."
   },
   {
     icon: MessageSquare,
@@ -205,7 +205,7 @@ const OurProcess = () => {
             </div>
             <div className="flex items-center gap-2 text-muted-foreground">
               <CheckCircle className="h-5 w-5 text-primary" />
-              <span>Bond Protected</span>
+              <span>Professional Handover</span>
             </div>
           </div>
         </div>
