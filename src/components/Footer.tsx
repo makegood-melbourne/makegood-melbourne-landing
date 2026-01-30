@@ -90,7 +90,7 @@ const Footer = () => {
             <ul className="space-y-2">
               <li>
                 <a href="/contact" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Get a Quote
+                  Request a Quote
                 </a>
               </li>
             </ul>

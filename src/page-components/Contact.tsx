@@ -148,7 +148,7 @@ const Contact = () => {
               Contact Make Good Melbourne
             </h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Ready to discuss your make good project? Get a free, no-obligation quote from Melbourne's commercial property restoration experts.
+              Ready to discuss your make good project? Tell us about your requirements and we'll be in touch within 24 hours to arrange a site inspection and detailed quote.
             </p>
           </div>
         </section>
@@ -384,7 +384,7 @@ const Contact = () => {
               Ready to Get Started?
             </h2>
             <p className="text-primary-foreground/80 mb-8 max-w-2xl mx-auto">
-              Whether you need a free quote, have questions about your lease obligations, or require emergency make safe works, we're here to help.
+              Whether you have questions about your lease requirements, need make safe works or want to discuss your next project, we're here to help.
             </p>
             <Button 
               size="lg" 

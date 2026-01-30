@@ -212,12 +212,9 @@ const Navigation = () => {
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
-            <a href="/contact" className="text-foreground hover:text-accent transition-colors">
-              Contact
-            </a>
             <a href="/contact">
               <Button className="bg-accent hover:bg-accent/90 text-accent-foreground">
-                Get a Quote
+                Request a Quote
               </Button>
             </a>
           </div>
@@ -351,16 +348,9 @@ const Navigation = () => {
                 </a>
               </div>
             </div>
-            <a 
-              href="/contact" 
-              className="text-left text-foreground hover:text-accent transition-colors py-2"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Contact
-            </a>
             <a href="/contact" onClick={() => setIsMenuOpen(false)}>
               <Button className="bg-accent hover:bg-accent/90 text-accent-foreground w-full">
-                Get a Quote
+                Request a Quote
               </Button>
             </a>
           </div>
