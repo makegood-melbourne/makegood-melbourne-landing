@@ -195,9 +195,6 @@ importers:
       globals:
         specifier: ^15.15.0
         version: 15.15.0
-      lovable-tagger:
-        specifier: ^1.1.11
-        version: 1.1.13(vite@5.4.21(@types/node@22.19.6))(yaml@2.8.2)
       postcss:
         specifier: ^8.5.6
         version: 8.5.6
@@ -2768,11 +2765,6 @@ packages:
   loose-envify@1.4.0:
     resolution: {integrity: sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==}
     hasBin: true
-
-  lovable-tagger@1.1.13:
-    resolution: {integrity: sha512-RBEYDxao7Xf8ya29L0cd+ocE7Gs80xPOIOwwck65Hoie8YDKViuXi3UYV14DoNWIvaJ7WVPf7SG3cc844nFqGA==}
-    peerDependencies:
-      vite: '>=5.0.0 <8.0.0'
 
   lru-cache@10.4.3:
     resolution: {integrity: sha512-JNAzZcXrCt42VGLuYz0zfAzDfAvJWW6AfYlDBQyDV5DClI2m5sAmK+OIO7s59XfsRsWHp02jAJrRadPRGTt6SQ==}
@@ -6420,15 +6412,6 @@ snapshots:
   loose-envify@1.4.0:
     dependencies:
       js-tokens: 4.0.0
-
-  lovable-tagger@1.1.13(vite@5.4.21(@types/node@22.19.6))(yaml@2.8.2):
-    dependencies:
-      esbuild: 0.25.12
-      tailwindcss: 3.4.19(yaml@2.8.2)
-      vite: 5.4.21(@types/node@22.19.6)
-    transitivePeerDependencies:
-      - tsx
-      - yaml
 
   lru-cache@10.4.3: {}
 
