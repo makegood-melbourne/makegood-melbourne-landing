@@ -3,6 +3,7 @@ import { Helmet } from "@/lib/helmet";
 import { ArrowRight } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import CtaBlockReact from "@/components/CtaBlockReact";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { Button } from "@/components/ui/button";
 import {
@@ -567,6 +568,8 @@ const FAQPage = () => {
       </section>
 
 
+
+      <CtaBlockReact />
 
       <Footer />
     </main>

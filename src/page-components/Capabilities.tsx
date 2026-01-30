@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Layers, Wrench, Shield, CheckCircle, ArrowRight, Phone } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import CtaBlockReact from "@/components/CtaBlockReact";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { resolveImageSrc } from "@/lib/resolveImageSrc";
 // Use a public URL string here to avoid Astro/Vite ImageMetadata object issues in production islands.
@@ -250,6 +251,8 @@ const Capabilities = () => {
 
 
       </main>
+
+      <CtaBlockReact />
 
       <Footer />
     </div>

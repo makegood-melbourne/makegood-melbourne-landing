@@ -1,7 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import FAQPage from '../page-components/FAQPage.tsx';
-import CtaBlock from '../components/CtaBlock.astro';
 
 // JSON-LD Schema for FAQPage - server-rendered for SEO
 const faqSchema = {
@@ -283,5 +282,4 @@ const faqSchema = {
 >
   <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
   <FAQPage client:idle />
-  <CtaBlock />
 </BaseLayout>

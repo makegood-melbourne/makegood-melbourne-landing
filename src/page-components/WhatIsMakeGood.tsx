@@ -2,6 +2,7 @@ import { Helmet } from "@/lib/helmet";
 import { ArrowRight, CheckCircle, FileText, Building2, Users, AlertTriangle, Clock } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import CtaBlockReact from "@/components/CtaBlockReact";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -436,7 +437,7 @@ const WhatIsMakeGood = () => {
         </div>
       </section>
 
-
+      <CtaBlockReact />
 
       <Footer />
     </main>

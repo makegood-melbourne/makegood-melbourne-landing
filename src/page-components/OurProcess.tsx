@@ -16,6 +16,7 @@ import {
 } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import CtaBlockReact from "@/components/CtaBlockReact";
 import ProblemSolution from "@/components/ProblemSolution";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { Button } from "@/components/ui/button";
@@ -353,6 +354,8 @@ const OurProcess = () => {
       <ProblemSolution />
 
 
+
+      <CtaBlockReact />
 
       <Footer />
     </main>
