@@ -3,6 +3,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Navigation from '../../components/Navigation';
 import ServiceHeroSection from '../../components/ServiceHeroSection.astro';
 import ServiceContent from '../../page-components/ServiceContent.tsx';
+import CtaBlock from '../../components/CtaBlock.astro';
 import Footer from '../../components/Footer';
 import { getPublishedServices, getServiceBySlug } from '../../data/services';
 
@@ -47,6 +48,9 @@ if (!service) {
       
       <!-- Interactive content loaded after hero -->
       <ServiceContent slug={fullSlug} client:idle />
+      
+      <!-- Standardized CTA Block -->
+      <CtaBlock />
     </main>
     
     <Footer client:idle />

@@ -144,22 +144,7 @@ const ServiceAreas = () => {
           </div>
         </section>
 
-        {/* CTA Section */}
-        <section className="py-16 bg-primary">
-          <div className="container mx-auto px-4 text-center">
-            <h2 className="text-2xl md:text-3xl font-bold text-primary-foreground mb-4">
-              Ready to Get Started in Your Area?
-            </h2>
-            <p className="text-primary-foreground/80 mb-8 max-w-2xl mx-auto">
-              Contact us today for a free, no-obligation quote. We'll visit your site anywhere in Melbourne to assess your make good requirements.
-            </p>
-            <a href="/contact">
-              <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
-                Get a Quote
-              </Button>
-            </a>
-          </div>
-        </section>
+
       </main>
 
       <Footer />

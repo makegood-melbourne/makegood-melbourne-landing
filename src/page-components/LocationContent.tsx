@@ -177,19 +177,7 @@ const LocationContent = ({ slug }: LocationContentProps) => {
         </section>
       )}
 
-      {/* Final CTA */}
-      <section className="py-20 bg-card border-t border-border">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Ready to Get Started?</h2>
-            <p className="text-xl text-muted-foreground mb-10">Get your free quote for {location.name} make good services today.</p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" onClick={scrollToContact} className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-10 py-6 group">Get Free Quote<ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" /></Button>
-              <Button size="lg" variant="outline" asChild className="text-lg px-10 py-6"><a href="mailto:enquiries@makegood.melbourne" className="flex items-center gap-2"><Mail className="w-5 h-5" />Email Us</a></Button>
-            </div>
-          </div>
-        </div>
-      </section>
+
     </>
   );
 };

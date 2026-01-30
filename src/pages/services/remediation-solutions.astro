@@ -3,6 +3,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Navigation from '../../components/Navigation';
 import SectionLandingTemplate from '../../page-components/SectionLandingTemplate';
+import CtaBlock from '../../components/CtaBlock.astro';
 import Footer from '../../components/Footer';
 import { getSectionLandingBySlug } from '../../data/sectionLanding';
 import buildingRemediationHero from '../../assets/services/building-remediation-melbourne-shotcrete.jpg';
@@ -36,6 +37,7 @@ if (!data) {
     
     <main id="main-content" class="flex-1">
       <SectionLandingTemplate data={data} client:idle />
+      <CtaBlock />
     </main>
     
     <Footer client:idle />

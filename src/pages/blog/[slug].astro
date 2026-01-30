@@ -3,6 +3,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Navigation from '../../components/Navigation';
 import BlogHeroSection from '../../components/BlogHeroSection.astro';
 import BlogContent from '../../page-components/BlogContent.tsx';
+import CtaBlock from '../../components/CtaBlock.astro';
 import Footer from '../../components/Footer';
 import { blogPosts, getBlogPostBySlug } from '../../data/blogPosts';
 
@@ -73,6 +74,9 @@ const ogImage = `/og/blog/${imageBaseName}.jpg`;
     
     <!-- Interactive content loaded after hero -->
     <BlogContent slug={slug} client:idle />
+    
+    <!-- Standardized CTA Block -->
+    <CtaBlock />
     
     <Footer client:idle />
   </div>

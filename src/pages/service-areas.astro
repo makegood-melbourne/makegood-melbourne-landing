@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import ServiceAreasPage from '../page-components/ServiceAreas.tsx';
+import CtaBlock from '../components/CtaBlock.astro';
 ---
 
 <BaseLayout 
@@ -9,4 +10,5 @@ import ServiceAreasPage from '../page-components/ServiceAreas.tsx';
   canonicalUrl="https://makegood.melbourne/service-areas"
 >
   <ServiceAreasPage client:idle />
+  <CtaBlock />
 </BaseLayout>

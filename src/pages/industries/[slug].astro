@@ -3,6 +3,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Navigation from '../../components/Navigation';
 import IndustryHeroSection from '../../components/IndustryHeroSection.astro';
 import IndustryContent from '../../page-components/IndustryContent.tsx';
+import CtaBlock from '../../components/CtaBlock.astro';
 import Footer from '../../components/Footer';
 import { industries, getIndustryBySlug } from '../../data/industries';
 
@@ -56,6 +57,9 @@ if (!industry) {
     
     <!-- Interactive content loaded after hero -->
     <IndustryContent slug={slug} client:idle />
+    
+    <!-- Standardized CTA Block -->
+    <CtaBlock />
     
     <Footer client:idle />
   </main>

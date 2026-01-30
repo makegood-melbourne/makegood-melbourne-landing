@@ -762,62 +762,6 @@ const ServiceTemplate = ({ slug: propSlug }: ServiceTemplateProps) => {
         {/* Before/After Slider - Only for End of Lease Relocation */}
         {service.slug === 'end-of-lease-relocation' && <BeforeAfterSlider />}
 
-        {/* 6. CTA Block - Custom content or default */}
-        <section className="py-16 bg-background border-t border-border">
-          <div className="container mx-auto px-4">
-            {service.ctaBlock ? (
-              <div className="max-w-4xl mx-auto text-center">
-                <h2 className="text-3xl md:text-4xl text-foreground mb-2">
-                  {service.ctaBlock.title}
-                </h2>
-                {service.ctaBlock.subtitle && (
-                  <p className="text-xl text-tertiary font-medium italic mb-6">
-                    {service.ctaBlock.subtitle}
-                  </p>
-                )}
-                <p className="text-xl text-muted-foreground leading-relaxed mb-8">
-                  {service.ctaBlock.text}
-                </p>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground" asChild>
-                    <a href="/#contact">
-                      Get a Quote
-                    </a>
-                  </Button>
-                  <Button size="lg" variant="outline" className="border-accent text-accent hover:bg-accent hover:text-accent-foreground" asChild>
-                    <a href="mailto:enquiries@makegood.melbourne">
-                      <Mail className="mr-2 h-5 w-5" />
-                      enquiries@makegood.melbourne
-                    </a>
-                  </Button>
-                </div>
-              </div>
-            ) : (
-              <div className="text-center">
-                <h2 className="text-3xl md:text-4xl text-foreground mb-4">
-                  Ready to Get Started?
-                </h2>
-                <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-                  Contact us today for a free quote on your {service.name.toLowerCase()} project.
-                </p>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground" asChild>
-                    <a href="/#contact">
-                      Get a Quote
-                    </a>
-                  </Button>
-                  <Button size="lg" variant="outline" className="border-accent text-accent hover:bg-accent hover:text-accent-foreground" asChild>
-                    <a href="mailto:enquiries@makegood.melbourne">
-                      <Mail className="mr-2 h-5 w-5" />
-                      enquiries@makegood.melbourne
-                    </a>
-                  </Button>
-                </div>
-              </div>
-            )}
-          </div>
-        </section>
-
         {/* 7. Related Services */}
         {relatedServices.length > 0 && (
           <section className="py-16 bg-background">

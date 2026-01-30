@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import OurProcessPage from '../page-components/OurProcess.tsx';
+import CtaBlock from '../components/CtaBlock.astro';
 ---
 
 <BaseLayout 
@@ -9,4 +10,5 @@ import OurProcessPage from '../page-components/OurProcess.tsx';
   canonicalUrl="https://makegood.melbourne/our-process"
 >
   <OurProcessPage client:idle />
+  <CtaBlock />
 </BaseLayout>

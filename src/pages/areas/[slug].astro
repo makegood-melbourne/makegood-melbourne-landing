@@ -3,6 +3,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Navigation from '../../components/Navigation';
 import LocationHeroSection from '../../components/LocationHeroSection.astro';
 import LocationContent from '../../page-components/LocationContent.tsx';
+import CtaBlock from '../../components/CtaBlock.astro';
 import Footer from '../../components/Footer';
 import { locations, getLocationBySlug } from '../../data/locations';
 
@@ -34,6 +35,9 @@ if (!location) {
   
   <!-- Interactive content loaded after hero -->
   <LocationContent slug={slug} client:idle />
+  
+  <!-- Standardized CTA Block -->
+  <CtaBlock />
   
   <Footer client:idle />
 </BaseLayout>

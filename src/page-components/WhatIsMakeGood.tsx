@@ -436,31 +436,7 @@ const WhatIsMakeGood = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-secondary">
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-2xl sm:text-3xl font-bold mb-4">
-            Need Help With Your Make Good?
-          </h2>
-          <p className="text-lg text-muted-foreground mb-8">
-            We provide free, no-obligation quotes and can guide you through the entire process. 
-            From lease review to final handover, we make your make good simple.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild size="lg" className="text-base">
-              <a href="/contact">
-                Get a Quote
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </a>
-            </Button>
-            <Button asChild variant="outline" size="lg" className="text-base">
-              <a href="/our-process">
-                See Our Process
-              </a>
-            </Button>
-          </div>
-        </div>
-      </section>
+
 
       <Footer />
     </main>

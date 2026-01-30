@@ -116,29 +116,7 @@ const BlogContent = ({ slug }: BlogContentProps) => {
           })}
         </div>
 
-        <Card className="mt-12 bg-accent/10 border-accent/20">
-          <CardContent className="pt-6">
-            <div className="text-center space-y-4">
-              <h3 className="text-2xl font-semibold text-foreground">Need Expert Make Good Services?</h3>
-              <p className="text-muted-foreground max-w-2xl mx-auto">
-                Whether you're preparing for end-of-lease obligations or need specialist remediation services, 
-                our experienced team is ready to help. Contact us today for a free consultation and quote.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">
-                <a href="/#contact">
-                  <Button size="lg" className="w-full sm:w-auto">
-                    Get a Quote
-                  </Button>
-                </a>
-                <a href="mailto:enquiries@makegood.melbourne">
-                  <Button variant="outline" size="lg" className="w-full sm:w-auto">
-                    Email Us
-                  </Button>
-                </a>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
+
 
         <div className="mt-8 pt-8 border-t border-border">
           <a href="/blog">

@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import WhatIsMakeGoodPage from '../page-components/WhatIsMakeGood.tsx';
+import CtaBlock from '../components/CtaBlock.astro';
 ---
 
 <BaseLayout 
@@ -9,4 +10,5 @@ import WhatIsMakeGoodPage from '../page-components/WhatIsMakeGood.tsx';
   canonicalUrl="https://makegood.melbourne/what-is-make-good"
 >
   <WhatIsMakeGoodPage client:idle />
+  <CtaBlock />
 </BaseLayout>

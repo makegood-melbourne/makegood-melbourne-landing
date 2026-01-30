@@ -334,31 +334,7 @@ const SectionLandingTemplate = ({ data }: SectionLandingTemplateProps) => {
         </section>
       )}
 
-      {/* CTA Section */}
-      <section className="py-16 bg-secondary">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-3">{data.ctaTitle}</h2>
-          {data.ctaSubtitle && (
-            <p className="text-2xl md:text-3xl font-bold text-primary mb-6">{data.ctaSubtitle}</p>
-          )}
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto mb-8 leading-relaxed">
-            {renderTextWithLinks(data.ctaText)}
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground" asChild>
-              <a href="/#contact">
-                Get a Quote
-              </a>
-            </Button>
-            <Button size="lg" variant="outline" className="border-accent text-accent hover:bg-accent hover:text-accent-foreground" asChild>
-              <a href="mailto:enquiries@makegood.melbourne">
-                <Mail className="mr-2 h-5 w-5" />
-                Email Us
-              </a>
-            </Button>
-          </div>
-        </div>
-      </section>
+
     </>
   );
 };

@@ -240,25 +240,7 @@ const IndustryContent = ({ slug }: IndustryContentProps) => {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-background to-secondary/30">
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-2xl sm:text-3xl font-bold mb-4">
-            Need a {industry.name} Make Good?
-          </h2>
-          <p className="text-lg text-muted-foreground mb-8">
-            Get a free consultation and quote. We'll assess your requirements and provide a comprehensive proposal.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild size="lg">
-              <a href="/contact">
-                Get a Quote
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </a>
-            </Button>
-          </div>
-        </div>
-      </section>
+
     </>
   );
 };

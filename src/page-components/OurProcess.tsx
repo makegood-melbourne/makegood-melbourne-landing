@@ -352,48 +352,7 @@ const OurProcess = () => {
 
       <ProblemSolution />
 
-      {/* CTA Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-background to-secondary/30">
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-2xl sm:text-3xl font-bold mb-4">
-            Ready to Get Started?
-          </h2>
-          <p className="text-lg text-muted-foreground mb-8">
-            Get a free consultation and quote for your make good. 
-            We'll review your lease, inspect your premises, and provide a detailed quote—all at no cost.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
-            <Button asChild size="lg" className="text-base">
-              <a href="/contact">
-                Get a Quote
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </a>
-            </Button>
-            <Button asChild variant="outline" size="lg" className="text-base">
-              <a href="/what-is-make-good">
-                Learn About Make Good
-              </a>
-            </Button>
-          </div>
-          <div className="flex flex-wrap justify-center gap-4 text-sm text-muted-foreground">
-            <span className="flex items-center gap-1">
-              <CheckCircle className="h-4 w-4 text-primary" />
-              No obligation
-            </span>
-            <span className="flex items-center gap-1">
-              <CheckCircle className="h-4 w-4 text-primary" />
-              Free site visit
-            </span>
-          </div>
-          <p className="text-muted-foreground mt-6">
-            Have more questions?{" "}
-            <a href="/faq" className="text-primary hover:underline">
-              Check our FAQ
-            </a>{" "}
-            for detailed answers.
-          </p>
-        </div>
-      </section>
+
 
       <Footer />
     </main>

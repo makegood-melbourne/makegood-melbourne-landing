@@ -248,23 +248,7 @@ const Capabilities = () => {
           </div>
         </section>
 
-        {/* Final CTA */}
-        <section className="py-16 bg-secondary">
-          <div className="container mx-auto px-4 text-center max-w-3xl">
-            <h2 className="text-3xl text-foreground mb-6">Quality & Commitment</h2>
-            <p className="text-xl text-muted-foreground leading-relaxed mb-8">
-              With attention to detail and a commitment to quality, we transform spaces, ensuring they meet the standards of end of lease obligations. Our network of reliable trades works tirelessly to deliver comprehensive solutions that save you time, effort and stress.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
-                <a href="/#contact">
-                  <Phone className="mr-2 h-5 w-5" />
-                  Get Your Quote
-                </a>
-              </Button>
-            </div>
-          </div>
-        </section>
+
       </main>
 
       <Footer />

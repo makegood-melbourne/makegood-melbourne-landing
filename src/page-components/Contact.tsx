@@ -377,24 +377,7 @@ const Contact = () => {
           </div>
         </section>
 
-        {/* CTA Section */}
-        <section className="py-16 bg-primary">
-          <div className="container mx-auto px-4 text-center">
-            <h2 className="text-2xl md:text-3xl font-bold text-primary-foreground mb-4">
-              Ready to Get Started?
-            </h2>
-            <p className="text-primary-foreground/80 mb-8 max-w-2xl mx-auto">
-              Whether you have questions about your lease requirements, need make safe works or want to discuss your next project, we're here to help.
-            </p>
-            <Button 
-              size="lg" 
-              className="bg-accent hover:bg-accent/90 text-accent-foreground"
-              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-            >
-              Fill Out The Form Above
-            </Button>
-          </div>
-        </section>
+
       </main>
 
       <Footer />

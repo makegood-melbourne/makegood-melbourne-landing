@@ -6,7 +6,7 @@ import SpecialistsSection from '../components/SpecialistsSection.astro';
 import ServicesGrid from '../components/ServicesGrid.astro';
 import IndexContent from '../components/IndexContent';
 import FAQ from '../components/FAQ.astro';
-import Contact from '../components/Contact';
+import CtaBlock from '../components/CtaBlock.astro';
 import Footer from '../components/Footer';
 import FloatingCTAs from '../components/FloatingCTAs';
 import { homepageFaqs } from '../data/faqs';
@@ -92,7 +92,7 @@ const businessSchema = {
     <ServicesGrid />
     <IndexContent client:idle />
     <FAQ />
-    <Contact client:idle />
+    <CtaBlock />
     <Footer client:load />
     <FloatingCTAs client:load />
   </main>

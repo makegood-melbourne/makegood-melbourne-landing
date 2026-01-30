@@ -566,32 +566,7 @@ const FAQPage = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-12 md:py-16 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <div className="max-w-2xl mx-auto text-center bg-card border border-border rounded-2xl p-8 md:p-12">
-            <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-3">
-              Still have questions?
-            </h2>
-            <p className="text-lg text-muted-foreground mb-8">
-              Contact us for a free consultation and get answers tailored to your situation.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" className="group">
-                <a href="/contact">
-                  Get a Quote
-                  <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-                </a>
-              </Button>
-              <Button asChild variant="outline" size="lg">
-                <a href="/service-areas">
-                  View Service Areas
-                </a>
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
+
 
       <Footer />
     </main>
