@@ -31,6 +31,7 @@ import concreteFloorGrinderImage from "@/assets/services/industrial-concrete-flo
 import concreteFloorJointImage from "@/assets/services/concrete-floor-joint-metal-expansion-strip-melbourne.jpeg";
 import skylightRoofPanelsImage from "@/assets/services/industrial-skylight-roof-panels-steel-structure-melbourne.jpeg";
 import skylightSteelStructureImage from "@/assets/services/industrial-warehouse-skylight-steel-trusses-melbourne.jpeg";
+import craneLiftingRoofPanelsImage from "@/assets/services/crane-lifting-roof-panels-melbourne.webp";
 import polyurethaneFoamInjectionImage from "@/assets/services/polyurethane-foam-injection-slab-stabilisation-melbourne.jpeg";
 import tileFlooringRemovalImage from "@/assets/services/tile-flooring-removal-demolition-hammer-melbourne.jpeg";
 import floorGrindingMachineImage from "@/assets/services/floor-grinding-machine-concrete-levelling-melbourne.jpeg";
@@ -981,10 +982,10 @@ export const services: Service[] = [
     },
     featuredSections: [
       {
-        title: "Skylight & Roof Panel Replacement Scope",
+        title: "Skylight &<br/>Roof Panel Replacement Scope",
         description: "From removal of damaged, yellowed or leaking panels through to installation of new polycarbonate sheets that allow natural light to flow through. We handle proper flashing, sealing and all guttering requirements. For properties with asbestos-containing panels, we manage licensed removal and compliant disposal as part of the project. Every installation includes workmanship warranties and documentation for your records.\n\nOur experienced team delivers professional skylight & roof panel replacement services across Melbourne's commercial and industrial properties. We understand the importance of meeting lease obligations and landlord requirements, working efficiently to minimise disruption while achieving quality results.",
-        image: skylightSteelStructureImage,
-        imageAlt: "Industrial skylight steel structure warehouse roof panel replacement Melbourne"
+        image: craneLiftingRoofPanelsImage,
+        imageAlt: "Crane lifting polycarbonate roof panels for industrial skylight installation Melbourne"
       }
     ],
     postComparisonSections: [
