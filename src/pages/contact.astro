@@ -1,7 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import ContactPage from '../page-components/Contact.tsx';
-import CtaBlock from '../components/CtaBlock.astro';
 ---
 
 <BaseLayout 
@@ -10,5 +9,4 @@ import CtaBlock from '../components/CtaBlock.astro';
   canonicalUrl="https://makegood.melbourne/contact"
 >
   <ContactPage client:load />
-  <CtaBlock />
 </BaseLayout>

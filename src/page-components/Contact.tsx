@@ -314,33 +314,6 @@ const Contact = () => {
           </div>
         </section>
 
-        {/* Map Section */}
-        <section className="py-16 bg-background">
-          <div className="container mx-auto px-4">
-            <div className="max-w-6xl mx-auto">
-              <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6 text-center">
-                Our Service Area
-              </h2>
-              <p className="text-muted-foreground text-center mb-8 max-w-2xl mx-auto">
-                We service all Melbourne metropolitan areas, from the inner city to the outer suburbs. No matter where your commercial property is located, we can help.
-              </p>
-              <div className="rounded-xl overflow-hidden border border-border shadow-lg">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d403149.7363696944!2d144.59374775000002!3d-37.97124695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad646b5d2ba4df7%3A0x4045675218ccd90!2sMelbourne%20VIC%2C%20Australia!5e0!3m2!1sen!2sau!4v1702000000000!5m2!1sen!2sau"
-                  width="100%"
-                  height="400"
-                  style={{ border: 0 }}
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  title="Make Good Melbourne Service Area Map"
-                  className="grayscale"
-                />
-              </div>
-            </div>
-          </div>
-        </section>
-
         {/* FAQ Section */}
         <section className="py-16 bg-secondary">
           <div className="container mx-auto px-4">
