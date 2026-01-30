@@ -140,9 +140,10 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
         return (
           <section key={`early-featured-${index}`} className="py-16 bg-secondary">
             <div className="container mx-auto px-4">
-              <h2 className="text-3xl md:text-4xl text-foreground mb-6 lg:col-span-2 lg:mb-0">
-                {section.title}
-              </h2>
+              <h2 
+                className="text-3xl md:text-4xl text-foreground mb-6 lg:col-span-2 lg:mb-0"
+                dangerouslySetInnerHTML={{ __html: section.title }}
+              />
               
               <div className={`grid lg:grid-cols-2 gap-12 items-center`}>
                 <div className={index % 2 === 0 ? 'lg:order-2' : ''}>
