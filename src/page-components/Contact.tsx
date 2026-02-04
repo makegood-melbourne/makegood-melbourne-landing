@@ -353,6 +353,27 @@ const Contact = () => {
 
       </main>
 
+      {/* CTA Block - Contact Variant */}
+      <section className="py-12 md:py-16 bg-secondary">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-2xl md:text-3xl font-bold mb-3 text-foreground">Ready to Get Started?</h2>
+            <p className="text-lg md:text-xl text-foreground mb-6">
+              Whether you have questions about your lease requirements, need make safe works or want to discuss your next project, we're here to help.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a
+                href="#contact-form"
+                className="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 ring-offset-background bg-primary text-primary-foreground hover:bg-primary/90 h-11 px-8"
+              >
+                Fill Out The Form Above
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="ml-2"><path d="m18 15-6-6-6 6"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <Footer />
     </>
   );
