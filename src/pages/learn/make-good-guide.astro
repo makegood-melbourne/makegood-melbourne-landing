@@ -111,150 +111,123 @@ const ogImage = new URL("/images/og/make-good-guide.jpg", Astro.site);
         "image": ogImage.toString()
       })} />
 
-      <!-- What's Typically Included -->
-      <section id="whats-included" class="py-16 md:py-24 bg-muted/30">
+      <!-- Types of Make Good Works - Blog Hub Section -->
+      <section id="types-of-make-good" class="py-16 md:py-24 bg-muted/30">
         <div class="container mx-auto px-4">
-          <h2 class="text-3xl md:text-4xl font-bold mb-4 text-center">What's typically included</h2>
+          <h2 class="text-3xl md:text-4xl font-bold mb-4 text-center">Types of make good works</h2>
           <p class="text-lg text-white text-center mb-12 max-w-3xl mx-auto">
-            The scope of make good works varies depending on your lease terms and property type.
+            The most common make good projects in Melbourne commercial properties.
           </p>
           
+          <!-- Row 1: 3 cards -->
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
+            <!-- Strip Out -->
+            <a href="/blog/office-strip-out-demolition-melbourne" class="group block bg-card border border-border rounded-lg overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+              <img
+                src="/src/assets/blog/office-strip-out.webp"
+                alt="Commercial office strip out and demolition works in Melbourne"
+                class="w-full h-48 object-cover" style="aspect-ratio: 3/2;"
+                width="300"
+                height="200"
+                loading="lazy"
+              />
+              <div class="p-6">
+                <h3 class="text-xl font-semibold mb-3 group-hover:text-primary transition-colors">Strip out and demolition</h3>
+                <p class="text-muted-foreground mb-4">
+                  Removal of tenant-installed partitions, fitouts, workstations and fixtures. The first step in most make good projects—clearing the space back to base building condition.
+                </p>
+                <span class="text-primary font-medium">
+                  Learn more →
+                </span>
+              </div>
+            </a>
+
+            <!-- Painting and Walls -->
+            <a href="/blog/commercial-painting-melbourne-make-good" class="group block bg-card border border-border rounded-lg overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+              <img
+                src="/src/assets/blog/commercial-painting-melbourne.jpg"
+                alt="Commercial painting and wall restoration for make good works in Melbourne"
+                class="w-full h-48 object-cover" style="aspect-ratio: 3/2;"
+                width="300"
+                height="200"
+                loading="lazy"
+              />
+              <div class="p-6">
+                <h3 class="text-xl font-semibold mb-3 group-hover:text-primary transition-colors">Painting and wall restoration</h3>
+                <p class="text-muted-foreground mb-4">
+                  Patching holes, repairing damage and repainting to a uniform finish. Professional painting ensures walls meet landlord handover standards and lease requirements.
+                </p>
+                <span class="text-primary font-medium">
+                  Learn more →
+                </span>
+              </div>
+            </a>
+
+            <!-- Ceilings and Flooring -->
+            <a href="/blog/ceiling-repairs-suspended-acoustic-tiles-make-good" class="group block bg-card border border-border rounded-lg overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+              <img
+                src="/src/assets/blog/ceiling-repairs-suspended-acoustic.jpg"
+                alt="Suspended ceiling repairs and acoustic tile replacement in commercial make good"
+                class="w-full h-48 object-cover" style="aspect-ratio: 3/2;"
+                width="300"
+                height="200"
+                loading="lazy"
+              />
+              <div class="p-6">
+                <h3 class="text-xl font-semibold mb-3 group-hover:text-primary transition-colors">Ceilings and flooring</h3>
+                <p class="text-muted-foreground mb-4">
+                  Replacement of damaged ceiling tiles, grid repairs and floor restoration. Includes carpet tile replacement, vinyl removal and concrete floor preparation.
+                </p>
+                <span class="text-primary font-medium">
+                  Learn more →
+                </span>
+              </div>
+            </a>
+          </div>
+
+          <!-- Row 2: 2 cards centred -->
           <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <!-- Demolition & Removal -->
-            <div class="bg-card border border-border rounded-lg p-6">
-              <h3 class="text-xl font-semibold mb-4 text-primary">Demolition and removal</h3>
-              <ul class="space-y-3 text-muted-foreground">
-                <li class="flex items-start gap-3">
-                  <svg class="w-5 h-5 text-primary shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                  </svg>
-                  <span>Removal of tenant-installed partitions and walls</span>
-                </li>
-                <li class="flex items-start gap-3">
-                  <svg class="w-5 h-5 text-primary shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                  </svg>
-                  <span>Stripping out office fitouts and workstations</span>
-                </li>
-                <li class="flex items-start gap-3">
-                  <svg class="w-5 h-5 text-primary shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                  </svg>
-                  <span>Removal of signage and branding</span>
-                </li>
-                <li class="flex items-start gap-3">
-                  <svg class="w-5 h-5 text-primary shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                  </svg>
-                  <span>Pallet racking dismantling (warehouses)</span>
-                </li>
-                <li class="flex items-start gap-3">
-                  <svg class="w-5 h-5 text-primary shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                  </svg>
-                  <span>Fixture and fitting removal</span>
-                </li>
-              </ul>
-            </div>
+            <!-- Warehouse Make Goods -->
+            <a href="/blog/port-melbourne-warehouse-end-of-lease-make-good" class="group block bg-card border border-border rounded-lg overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+              <img
+                src="/src/assets/blog/port-melbourne-warehouse.jpg"
+                alt="Warehouse make good and end of lease restoration in Port Melbourne"
+                class="w-full h-48 object-cover" style="aspect-ratio: 3/2;"
+                width="300"
+                height="200"
+                loading="lazy"
+              />
+              <div class="p-6">
+                <h3 class="text-xl font-semibold mb-3 group-hover:text-primary transition-colors">Warehouse make goods</h3>
+                <p class="text-muted-foreground mb-4">
+                  Industrial and warehouse restoration including pallet racking removal, floor repairs, line marking and mezzanine dismantling. Different requirements to office spaces.
+                </p>
+                <span class="text-primary font-medium">
+                  Learn more →
+                </span>
+              </div>
+            </a>
 
-            <!-- Restoration Works -->
-            <div class="bg-card border border-border rounded-lg p-6">
-              <h3 class="text-xl font-semibold mb-4 text-primary">Restoration works</h3>
-              <ul class="space-y-3 text-muted-foreground">
-                <li class="flex items-start gap-3">
-                  <svg class="w-5 h-5 text-primary shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                  </svg>
-                  <span>Patching holes and repairing walls</span>
-                </li>
-                <li class="flex items-start gap-3">
-                  <svg class="w-5 h-5 text-primary shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                  </svg>
-                  <span>Repainting to uniform finish</span>
-                </li>
-                <li class="flex items-start gap-3">
-                  <svg class="w-5 h-5 text-primary shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                  </svg>
-                  <span>Ceiling tile replacement</span>
-                </li>
-                <li class="flex items-start gap-3">
-                  <svg class="w-5 h-5 text-primary shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                  </svg>
-                  <span>Floor restoration or replacement</span>
-                </li>
-                <li class="flex items-start gap-3">
-                  <svg class="w-5 h-5 text-primary shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                  </svg>
-                  <span>Base building services restoration</span>
-                </li>
-              </ul>
-            </div>
-
-            <!-- Electrical & Services -->
-            <div class="bg-card border border-border rounded-lg p-6">
-              <h3 class="text-xl font-semibold mb-4 text-primary">Electrical and services</h3>
-              <ul class="space-y-3 text-muted-foreground">
-                <li class="flex items-start gap-3">
-                  <svg class="w-5 h-5 text-primary shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                  </svg>
-                  <span>Make safe and isolation of circuits</span>
-                </li>
-                <li class="flex items-start gap-3">
-                  <svg class="w-5 h-5 text-primary shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                  </svg>
-                  <span>Removal of data and communications cabling</span>
-                </li>
-                <li class="flex items-start gap-3">
-                  <svg class="w-5 h-5 text-primary shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                  </svg>
-                  <span>Testing and certification of systems</span>
-                </li>
-                <li class="flex items-start gap-3">
-                  <svg class="w-5 h-5 text-primary shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                  </svg>
-                  <span>Mechanical services termination</span>
-                </li>
-              </ul>
-            </div>
-
-            <!-- Final Works -->
-            <div class="bg-card border border-border rounded-lg p-6">
-              <h3 class="text-xl font-semibold mb-4 text-primary">Final works</h3>
-              <ul class="space-y-3 text-muted-foreground">
-                <li class="flex items-start gap-3">
-                  <svg class="w-5 h-5 text-primary shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                  </svg>
-                  <span>Detailed cleaning to handover standard</span>
-                </li>
-                <li class="flex items-start gap-3">
-                  <svg class="w-5 h-5 text-primary shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                  </svg>
-                  <span>Documentation and photography</span>
-                </li>
-                <li class="flex items-start gap-3">
-                  <svg class="w-5 h-5 text-primary shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                  </svg>
-                  <span>Compliance certificates</span>
-                </li>
-                <li class="flex items-start gap-3">
-                  <svg class="w-5 h-5 text-primary shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                  </svg>
-                  <span>Landlord inspection coordination</span>
-                </li>
-              </ul>
-            </div>
+            <!-- Planning and Compliance -->
+            <a href="/blog/strategic-make-good-planning" class="group block bg-card border border-border rounded-lg overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+              <img
+                src="/src/assets/blog/strategic-planning.jpg"
+                alt="Strategic make good planning and compliance for commercial properties"
+                class="w-full h-48 object-cover" style="aspect-ratio: 3/2;"
+                width="300"
+                height="200"
+                loading="lazy"
+              />
+              <div class="p-6">
+                <h3 class="text-xl font-semibold mb-3 group-hover:text-primary transition-colors">Planning and compliance</h3>
+                <p class="text-muted-foreground mb-4">
+                  Strategic planning, asbestos management and waste disposal. Understanding your lease obligations and coordinating works to meet handover deadlines.
+                </p>
+                <span class="text-primary font-medium">
+                  Learn more →
+                </span>
+              </div>
+            </a>
           </div>
         </div>
       </section>
