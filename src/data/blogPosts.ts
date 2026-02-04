@@ -153,7 +153,7 @@ Sometimes. If water is extracted quickly (within hours), tiles are lifted and dr
 
 Waiting. The longer water sits, the more damage occurs—materials swell, adhesives fail, mould begins and costs escalate. Fast response in the first 48 hours makes the difference between a repair and a full remediation.
 
-**Is remediation different from [make good](/what-is-make-good)?**
+**Is remediation different from [make good](/learn/make-good-guide)?**
 
 Yes. Remediation addresses damage, contamination or defects—fixing the problem and restoring the building to a safe, functional state. Make good is about returning a tenancy to its original condition at lease end. Sometimes they overlap, but the drivers are different.
 

@@ -72,7 +72,7 @@ const SimpleProcess = () => {
 
         <div className="text-center">
           <Button asChild size="lg">
-            <a href="/our-process">
+            <a href="/learn/our-process">
               See Our Full Process
               <ArrowRight className="ml-2 h-5 w-5" />
             </a>

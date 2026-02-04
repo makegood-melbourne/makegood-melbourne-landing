@@ -107,8 +107,9 @@ function generateBreadcrumbs(pathStr: string, serviceNameOverride?: string): Bre
       breadcrumbs.push({ label: pageTitle });
     }
   } else {
-    // Check if it's a learn page (our-process, what-is-make-good, capabilities, faq, service-areas)
-    const learnPages = ['our-process', 'what-is-make-good', 'capabilities', 'faq', 'service-areas'];
+    // Check if it's a standalone learn-related page (capabilities, faq, service-areas)
+    // Note: our-process and make-good-guide are now under /learn/ path
+    const learnPages = ['capabilities', 'faq', 'service-areas'];
     
     if (learnPages.includes(firstSegment)) {
       breadcrumbs.push({ label: 'Learn', href: '/faq' });

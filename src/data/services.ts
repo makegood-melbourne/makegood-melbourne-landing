@@ -1092,7 +1092,7 @@ export const services: Service[] = [
       },
       {
         title: "Dynabolt Hole Repairs",
-        description: "When pallet racking, machinery or equipment is removed, you're left with hundreds of anchor holes in your floor. We core drill out damaged concrete around dynabolt holes, fill with high-strength epoxy resin, and grind flush to restore a smooth, level surface. Essential for [lease end make goods](/what-is-make-good) and floor re-coating.",
+        description: "When pallet racking, machinery or equipment is removed, you're left with hundreds of anchor holes in your floor. We core drill out damaged concrete around dynabolt holes, fill with high-strength epoxy resin, and grind flush to restore a smooth, level surface. Essential for [lease end make goods](/learn/make-good-guide) and floor re-coating.",
         image: warehouseDynaboltHoleRepairsImage,
         imageAlt: "Industrial warehouse pallet racking with blue uprights and orange beams anchored to concrete floor Melbourne"
       },

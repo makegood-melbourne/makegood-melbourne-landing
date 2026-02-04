@@ -11,8 +11,10 @@ export function generateSitemap(): string {
   const staticPages = [
     { url: '/', lastmod: currentDate, priority: '1.0', changefreq: 'weekly' },
     { url: '/capabilities', lastmod: currentDate, priority: '0.9', changefreq: 'monthly' },
-    { url: '/what-is-make-good', lastmod: currentDate, priority: '0.9', changefreq: 'monthly' },
-    { url: '/our-process', lastmod: currentDate, priority: '0.9', changefreq: 'monthly' },
+    { url: '/learn/make-good-guide', lastmod: currentDate, priority: '0.9', changefreq: 'monthly' },
+    { url: '/learn/our-process', lastmod: currentDate, priority: '0.9', changefreq: 'monthly' },
+    { url: '/learn/remediation-guide', lastmod: currentDate, priority: '0.9', changefreq: 'monthly' },
+    { url: '/about', lastmod: currentDate, priority: '0.8', changefreq: 'monthly' },
     { url: '/service-areas', lastmod: currentDate, priority: '0.8', changefreq: 'monthly' },
     { url: '/blog', lastmod: currentDate, priority: '0.8', changefreq: 'weekly' },
     { url: '/faq', lastmod: currentDate, priority: '0.7', changefreq: 'monthly' },

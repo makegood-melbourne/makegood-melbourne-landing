@@ -39,7 +39,7 @@ const WhatIsMakeGood = () => {
           content="Understand make good clauses in commercial leases. Learn what's required, typical costs, timelines, and how to prepare for your lease end in Melbourne. Expert guide for tenants." 
         />
         <meta name="keywords" content="make good clause, commercial lease, make good Melbourne, lease obligations, tenant responsibilities" />
-        <link rel="canonical" href="https://makegood.melbourne/what-is-make-good/" />
+        <link rel="canonical" href="https://makegood.melbourne/learn/make-good-guide/" />
         <script type="application/ld+json">
           {JSON.stringify(articleSchema)}
         </script>
@@ -338,7 +338,7 @@ const WhatIsMakeGood = () => {
           </h2>
           <p className="text-center text-muted-foreground mb-8">
             For a detailed breakdown of each step, see{" "}
-            <a href="/our-process" className="text-primary hover:underline">
+            <a href="/learn/our-process" className="text-primary hover:underline">
               our full process guide
             </a>.
           </p>

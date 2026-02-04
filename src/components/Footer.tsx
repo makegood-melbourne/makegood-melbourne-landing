@@ -41,15 +41,22 @@ const Footer = () => {
           </div>
           
           <div>
+            {/* Learn section - synced with header navigation */}
             <h4 className="font-semibold mb-4 text-foreground">Learn</h4>
             <ul className="space-y-2">
+              {/* Ordered by user intent/funnel: Awareness → Consideration → Decision → Support */}
               <li>
-                <a href="/what-is-make-good" className="text-muted-foreground hover:text-foreground transition-colors">
-                  What is a Make Good?
+                <a href="/learn/make-good-guide" className="text-muted-foreground hover:text-foreground transition-colors">
+                  Make Good Guide
                 </a>
               </li>
               <li>
-                <a href="/our-process" className="text-muted-foreground hover:text-foreground transition-colors">
+                <a href="/learn/remediation-guide" className="text-muted-foreground hover:text-foreground transition-colors">
+                  Remediation Guide
+                </a>
+              </li>
+              <li>
+                <a href="/learn/our-process" className="text-muted-foreground hover:text-foreground transition-colors">
                   Our Process
                 </a>
               </li>
@@ -61,6 +68,16 @@ const Footer = () => {
               <li>
                 <a href="/blog" className="text-muted-foreground hover:text-foreground transition-colors">
                   Blog
+                </a>
+              </li>
+            </ul>
+            
+            {/* Company section - About Us moved here */}
+            <h4 className="font-semibold mt-6 mb-4 text-foreground">Company</h4>
+            <ul className="space-y-2">
+              <li>
+                <a href="/about" className="text-muted-foreground hover:text-foreground transition-colors">
+                  About Us
                 </a>
               </li>
               <li>
