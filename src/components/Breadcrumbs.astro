@@ -77,9 +77,18 @@ function generateBreadcrumbs(path: string): BreadcrumbItem[] {
       breadcrumbs.push({ label: postTitle });
     }
   } else {
-    // Core pages and legal pages (about, contact, faq, privacy-policy, terms-of-service, etc.)
-    const pageTitle = slugToTitle(firstSegment);
-    breadcrumbs.push({ label: pageTitle });
+    // Check if it's a learn page (our-process, what-is-make-good, capabilities, faq, service-areas)
+    const learnPages = ['our-process', 'what-is-make-good', 'capabilities', 'faq', 'service-areas'];
+    
+    if (learnPages.includes(firstSegment)) {
+      breadcrumbs.push({ label: 'Learn', href: '/learn' });
+      const pageTitle = slugToTitle(firstSegment);
+      breadcrumbs.push({ label: pageTitle });
+    } else {
+      // Core pages and legal pages (about, contact, privacy-policy, terms-of-service)
+      const pageTitle = slugToTitle(firstSegment);
+      breadcrumbs.push({ label: pageTitle });
+    }
   }
   
   return breadcrumbs;
