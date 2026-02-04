@@ -1,0 +1,21 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import Navigation from '../components/Navigation.tsx';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+
+interface Props {
+  title: string;
+  description: string;
+  ogImage?: string;
+  canonicalUrl?: string;
+  robots?: string;
+}
+
+const props = Astro.props;
+---
+
+<BaseLayout {...props}>
+  <Navigation client:load />
+  <Breadcrumbs />
+  <slot />
+</BaseLayout>

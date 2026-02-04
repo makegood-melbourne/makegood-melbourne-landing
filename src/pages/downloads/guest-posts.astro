@@ -1,5 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import Navigation from '../../components/Navigation';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import GuestPostsDownloadPage from '../../page-components/GuestPostsDownload.tsx';
 ---
 
@@ -8,5 +10,9 @@ import GuestPostsDownloadPage from '../../page-components/GuestPostsDownload.tsx
   description="Download guest post submissions for Make Good Melbourne."
   canonicalUrl="https://makegood.melbourne/downloads/guest-posts"
 >
+  <Navigation client:load />
+  <div class="bg-secondary pt-20">
+    <Breadcrumbs path="/downloads/guest-posts" />
+  </div>
   <GuestPostsDownloadPage client:idle />
 </BaseLayout>

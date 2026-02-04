@@ -14,11 +14,10 @@ import {
   MessageSquare,
   FileCheck
 } from "lucide-react";
-import Navigation from "@/components/Navigation";
+
 import Footer from "@/components/Footer";
 import CtaBlockReact from "@/components/CtaBlockReact";
 import ProblemSolution from "@/components/ProblemSolution";
-import Breadcrumbs from "@/components/Breadcrumbs";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -170,15 +169,6 @@ const OurProcess = () => {
           {JSON.stringify(processSchema)}
         </script>
       </Helmet>
-
-      <Navigation />
-
-      {/* Breadcrumbs */}
-      <div className="pt-24 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto">
-          <Breadcrumbs items={[{ label: "Our Process" }]} />
-        </div>
-      </div>
 
       {/* Hero Section */}
       <section className="pb-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-secondary/50 to-background">

@@ -1,7 +1,7 @@
 ---
 import { Image } from 'astro:assets';
 import { getServiceBySlug } from '@/data/services';
-import { resolveImageSrc } from '@/lib/resolveImageSrc';
+import Breadcrumbs from './Breadcrumbs.astro';
 
 interface Props {
   slug: string;
@@ -25,25 +25,9 @@ const titleParts = service.titleHighlight
   : { main: service.title, highlight: 'Melbourne' };
 ---
 
-<!-- Breadcrumbs -->
+<!-- Breadcrumbs (using shared component) -->
 <div class="bg-secondary pt-20">
-  <div class="container mx-auto px-4">
-    <nav aria-label="Breadcrumb" class="py-4 text-sm">
-      <ol class="flex items-center flex-wrap gap-2">
-        <li>
-          <a href="/" class="text-muted-foreground hover:text-primary transition-colors">Home</a>
-        </li>
-        <li class="text-muted-foreground">/</li>
-        <li>
-          <a href="/capabilities" class="text-muted-foreground hover:text-primary transition-colors">Services</a>
-        </li>
-        <li class="text-muted-foreground">/</li>
-        <li>
-          <span class="text-foreground font-medium">{service.name}</span>
-        </li>
-      </ol>
-    </nav>
-  </div>
+  <Breadcrumbs path={`/services/${slug}`} serviceName={service.name} />
 </div>
 
 <!-- Hero Section -->

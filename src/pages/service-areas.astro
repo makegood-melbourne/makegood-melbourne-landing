@@ -1,5 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Navigation from '../components/Navigation';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
 import ServiceAreasPage from '../page-components/ServiceAreas.tsx';
 ---
 
@@ -8,5 +10,9 @@ import ServiceAreasPage from '../page-components/ServiceAreas.tsx';
   description="Make good services across Melbourne and Victoria. We service commercial and industrial properties in all metropolitan and regional areas."
   canonicalUrl="https://makegood.melbourne/service-areas"
 >
+  <Navigation client:load />
+  <div class="bg-secondary pt-20">
+    <Breadcrumbs path="/service-areas" />
+  </div>
   <ServiceAreasPage client:idle />
 </BaseLayout>

@@ -1,7 +1,6 @@
 import { Helmet } from "@/lib/helmet";
 import { renderTextWithLinks } from "@/lib/textWithLinks";
 import { resolveImageSrc } from "@/lib/resolveImageSrc";
-import Breadcrumbs from "@/components/Breadcrumbs";
 import SimpleProcess from "@/components/SimpleProcess";
 import SectionServicesCarousel from "@/components/SectionServicesCarousel";
 import SectionServicesGrid from "@/components/SectionServicesGrid";
@@ -126,19 +125,8 @@ const SectionLandingTemplate = ({ data }: SectionLandingTemplateProps) => {
         )}
       </Helmet>
 
-      {/* Breadcrumbs */}
-      <div className="bg-secondary pt-20">
-        <div className="container mx-auto px-4">
-          <Breadcrumbs 
-            items={[
-              { label: "Services", href: "/capabilities" },
-              { label: data.title.replace(' Melbourne', '') }
-            ]} 
-          />
-        </div>
-      </div>
-
       {/* Hero Section */}
+      <div className="bg-secondary pt-20">
       <section className="bg-secondary pt-6 pb-10 md:pt-10 md:pb-12">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -334,7 +322,7 @@ const SectionLandingTemplate = ({ data }: SectionLandingTemplateProps) => {
         </section>
       )}
 
-
+      </div>
     </>
   );
 };

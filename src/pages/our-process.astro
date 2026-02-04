@@ -1,5 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Navigation from '../components/Navigation';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
 import OurProcessPage from '../page-components/OurProcess.tsx';
 ---
 
@@ -8,5 +10,9 @@ import OurProcessPage from '../page-components/OurProcess.tsx';
   description="How we deliver make good projects. From initial consultation to final handover, understand our streamlined process for commercial property restoration."
   canonicalUrl="https://makegood.melbourne/our-process"
 >
+  <Navigation client:load />
+  <div class="bg-secondary pt-20">
+    <Breadcrumbs path="/our-process" />
+  </div>
   <OurProcessPage client:idle />
 </BaseLayout>

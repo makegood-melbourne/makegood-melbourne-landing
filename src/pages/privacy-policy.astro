@@ -1,5 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Navigation from '../components/Navigation';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
 import PrivacyPolicyPage from '../page-components/PrivacyPolicy.tsx';
 ---
 
@@ -8,5 +10,9 @@ import PrivacyPolicyPage from '../page-components/PrivacyPolicy.tsx';
   description="Privacy policy for Make Good Melbourne. How we collect, use, and protect your personal information."
   canonicalUrl="https://makegood.melbourne/privacy-policy"
 >
+  <Navigation client:load />
+  <div class="bg-secondary pt-20">
+    <Breadcrumbs path="/privacy-policy" />
+  </div>
   <PrivacyPolicyPage client:idle />
 </BaseLayout>

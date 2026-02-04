@@ -1,9 +1,8 @@
 import { Helmet } from "@/lib/helmet";
 import { ArrowRight, CheckCircle, FileText, Building2, Users, AlertTriangle, Clock } from "lucide-react";
-import Navigation from "@/components/Navigation";
+
 import Footer from "@/components/Footer";
 import CtaBlockReact from "@/components/CtaBlockReact";
-import Breadcrumbs from "@/components/Breadcrumbs";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { resolveImageSrc } from "@/lib/resolveImageSrc";
@@ -46,14 +45,7 @@ const WhatIsMakeGood = () => {
         </script>
       </Helmet>
 
-      <Navigation />
 
-      {/* Breadcrumbs */}
-      <div className="pt-24 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto">
-          <Breadcrumbs items={[{ label: "What is Make Good" }]} />
-        </div>
-      </div>
 
       {/* Hero Section */}
       <section className="relative pb-20 px-4 sm:px-6 lg:px-8 min-h-[60vh] flex items-center">

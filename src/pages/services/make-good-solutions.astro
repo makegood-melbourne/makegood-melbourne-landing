@@ -2,20 +2,18 @@
 // Section Landing Page: Make Good
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Navigation from '../../components/Navigation';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import SectionLandingTemplate from '../../page-components/SectionLandingTemplate';
 import CtaBlock from '../../components/CtaBlock.astro';
 import Footer from '../../components/Footer';
 import { getSectionLandingBySlug } from '../../data/sectionLanding';
 import makeGoodHero from '../../assets/services/melbourne-warehouse-make-good-hero.jpg';
 import makeGoodHeroMobile from '../../assets/services/melbourne-warehouse-make-good-hero-mobile.jpg';
-
 const data = getSectionLandingBySlug('make-good-solutions');
-
 if (!data) {
   return Astro.redirect('/capabilities');
 }
 ---
-
 <BaseLayout 
   title={data.metaTitle}
   description={data.metaDescription}
@@ -34,6 +32,11 @@ if (!data) {
     </a>
     
     <Navigation client:idle />
+    
+    <!-- Breadcrumbs -->
+    <div class="bg-secondary pt-20">
+      <Breadcrumbs path="/services/make-good-solutions" />
+    </div>
     
     <main id="main-content" class="flex-1">
       <SectionLandingTemplate data={data} client:idle />

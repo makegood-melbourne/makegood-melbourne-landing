@@ -1,5 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Navigation from '../components/Navigation';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
 import TermsOfServicePage from '../page-components/TermsOfService.tsx';
 ---
 
@@ -8,5 +10,9 @@ import TermsOfServicePage from '../page-components/TermsOfService.tsx';
   description="Terms of service for Make Good Melbourne. Read our terms and conditions for using our website and services."
   canonicalUrl="https://makegood.melbourne/terms-of-service"
 >
+  <Navigation client:load />
+  <div class="bg-secondary pt-20">
+    <Breadcrumbs path="/terms-of-service" />
+  </div>
   <TermsOfServicePage client:idle />
 </BaseLayout>

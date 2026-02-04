@@ -1,5 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import Navigation from '../../components/Navigation';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import BlogPage from '../../page-components/Blog.tsx';
 ---
 
@@ -8,5 +10,9 @@ import BlogPage from '../../page-components/Blog.tsx';
   description="Expert insights on commercial property restoration, end of lease obligations, and make good best practices from Melbourne's trusted specialists."
   canonicalUrl="https://makegood.melbourne/blog"
 >
+  <Navigation client:load />
+  <div class="bg-secondary pt-20">
+    <Breadcrumbs path="/blog" />
+  </div>
   <BlogPage client:idle />
 </BaseLayout>

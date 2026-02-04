@@ -2,6 +2,7 @@
 import { Image } from 'astro:assets';
 import { getBlogPostBySlug } from '@/data/blogPosts';
 import { calculateReadingTime } from '@/lib/blogUtils';
+import Breadcrumbs from './Breadcrumbs.astro';
 
 // Import all blog images statically using relative path from src
 // Using the relative path pattern that works consistently in both dev and production builds
@@ -34,25 +35,9 @@ const imageModule = blogImages[absolutePath] || blogImages[relativePath];
 const heroImage = imageModule?.default;
 ---
 
-<!-- Breadcrumbs -->
+<!-- Breadcrumbs (using shared component) -->
 <div class="pt-20 bg-background">
-  <div class="container mx-auto px-4">
-    <nav aria-label="Breadcrumb" class="py-4 text-sm">
-      <ol class="flex items-center flex-wrap gap-2">
-        <li>
-          <a href="/" class="text-muted-foreground hover:text-primary transition-colors">Home</a>
-        </li>
-        <li class="text-muted-foreground">/</li>
-        <li>
-          <a href="/blog" class="text-muted-foreground hover:text-primary transition-colors">Blog</a>
-        </li>
-        <li class="text-muted-foreground">/</li>
-        <li>
-          <span class="text-foreground font-medium">{post.title.length > 40 ? post.title.slice(0, 37) + '...' : post.title}</span>
-        </li>
-      </ol>
-    </nav>
-  </div>
+  <Breadcrumbs path={`/blog/${slug}`} />
 </div>
 
 <!-- Hero Section -->

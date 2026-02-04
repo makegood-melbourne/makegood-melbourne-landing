@@ -1,6 +1,7 @@
 ---
 import { Image } from 'astro:assets';
 import { getLocationBySlug } from '@/data/locations';
+import Breadcrumbs from './Breadcrumbs.astro';
 
 // Import all location hero images statically
 import defaultHeroImage from "@/assets/locations/commercial-make-good-restoration-melbourne.jpeg";
@@ -36,25 +37,9 @@ const heroData = heroImages[slug] || {
 };
 ---
 
-<!-- Breadcrumbs -->
+<!-- Breadcrumbs (using shared component) -->
 <div class="pt-20 bg-background">
-  <div class="container mx-auto px-4">
-    <nav aria-label="Breadcrumb" class="py-4 text-sm">
-      <ol class="flex items-center flex-wrap gap-2">
-        <li>
-          <a href="/" class="text-muted-foreground hover:text-primary transition-colors">Home</a>
-        </li>
-        <li class="text-muted-foreground">/</li>
-        <li>
-          <a href="/service-areas" class="text-muted-foreground hover:text-primary transition-colors">Service Areas</a>
-        </li>
-        <li class="text-muted-foreground">/</li>
-        <li>
-          <span class="text-foreground font-medium">{location.name}</span>
-        </li>
-      </ol>
-    </nav>
-  </div>
+  <Breadcrumbs path={`/areas/${slug}`} />
 </div>
 
 <!-- Hero Section -->

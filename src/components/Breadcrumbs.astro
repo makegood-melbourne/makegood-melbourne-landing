@@ -1,0 +1,202 @@
+---
+import { getServiceBySlug } from '@/data/services';
+
+interface BreadcrumbItem {
+  label: string;
+  shortLabel?: string; // For mobile display
+  href?: string;
+}
+
+interface Props {
+  path?: string;
+  serviceName?: string; // Optional: pass service name for accurate display
+}
+
+// Get the current URL path (use prop if provided, otherwise use Astro.url)
+const { path, serviceName } = Astro.props;
+const currentPath = path || Astro.url.pathname;
+
+// Function to convert slug to title
+function slugToTitle(slug: string): string {
+  return slug
+    .split('-')
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(' ');
+}
+
+// Parent category mapping with short labels for mobile
+const parentCategories: Record<string, { label: string; shortLabel: string; href: string }> = {
+  'make-good-solutions': { label: 'Make Good Solutions', shortLabel: 'Make Good', href: '/services/make-good-solutions' },
+  'remediation-solutions': { label: 'Remediation Solutions', shortLabel: 'Remediation', href: '/services/remediation-solutions' },
+  'strip-out-solutions': { label: 'Strip Out Solutions', shortLabel: 'Strip Out', href: '/services/strip-out-solutions' },
+  'handover-solutions': { label: 'Handover Solutions', shortLabel: 'Handover', href: '/capabilities' },
+};
+
+// Parse the URL and generate breadcrumb items
+function generateBreadcrumbs(pathStr: string, serviceNameOverride?: string): BreadcrumbItem[] {
+  const segments = pathStr.split('/').filter(Boolean);
+  const breadcrumbs: BreadcrumbItem[] = [];
+  
+  if (segments.length === 0) return breadcrumbs;
+  
+  const firstSegment = segments[0];
+  
+  // Handle different page types
+  if (firstSegment === 'services') {
+    breadcrumbs.push({ label: 'Services', href: '/capabilities' });
+    
+    if (segments.length > 1) {
+      const serviceSlug = segments[1];
+      
+      // Check if it's a parent service category landing page
+      if (parentCategories[serviceSlug] && segments.length === 2) {
+        const parent = parentCategories[serviceSlug];
+        breadcrumbs.push({ label: parent.label, shortLabel: parent.shortLabel });
+      } else if (segments.length > 2) {
+        // It's a child service under a parent (e.g., /services/make-good-solutions/painting)
+        const parent = parentCategories[serviceSlug];
+        if (parent) {
+          breadcrumbs.push({ label: parent.label, shortLabel: parent.shortLabel, href: parent.href });
+        }
+        
+        // Get the actual service name if available
+        const fullSlug = `${serviceSlug}/${segments[2]}`;
+        const service = getServiceBySlug(fullSlug);
+        const childTitle = service?.name || serviceNameOverride || slugToTitle(segments[2]);
+        breadcrumbs.push({ label: childTitle });
+      } else {
+        // It's a direct service (not under a parent category)
+        const service = getServiceBySlug(serviceSlug);
+        const serviceTitle = service?.name || serviceNameOverride || slugToTitle(serviceSlug);
+        breadcrumbs.push({ label: serviceTitle });
+      }
+    }
+  } else if (firstSegment === 'industries') {
+    breadcrumbs.push({ label: 'Industries', href: '/capabilities' });
+    
+    if (segments.length > 1) {
+      const industryTitle = slugToTitle(segments[1]);
+      breadcrumbs.push({ label: industryTitle });
+    }
+  } else if (firstSegment === 'areas') {
+    breadcrumbs.push({ label: 'Service Areas', href: '/service-areas' });
+    
+    if (segments.length > 1) {
+      const areaTitle = slugToTitle(segments[1]);
+      breadcrumbs.push({ label: areaTitle });
+    }
+  } else if (firstSegment === 'learn') {
+    breadcrumbs.push({ label: 'Learn', href: '/faq' });
+    
+    if (segments.length > 1) {
+      const guideTitle = slugToTitle(segments[1]);
+      breadcrumbs.push({ label: guideTitle });
+    }
+  } else if (firstSegment === 'blog') {
+    breadcrumbs.push({ label: 'Blog', href: '/blog' });
+    
+    if (segments.length > 1) {
+      const postTitle = slugToTitle(segments[1]);
+      breadcrumbs.push({ label: postTitle });
+    }
+  } else if (firstSegment === 'downloads') {
+    breadcrumbs.push({ label: 'Downloads' });
+    
+    if (segments.length > 1) {
+      const pageTitle = slugToTitle(segments[1]);
+      breadcrumbs.push({ label: pageTitle });
+    }
+  } else {
+    // Check if it's a learn page (our-process, what-is-make-good, capabilities, faq, service-areas)
+    const learnPages = ['our-process', 'what-is-make-good', 'capabilities', 'faq', 'service-areas'];
+    
+    if (learnPages.includes(firstSegment)) {
+      breadcrumbs.push({ label: 'Learn', href: '/faq' });
+      const pageTitle = slugToTitle(firstSegment);
+      breadcrumbs.push({ label: pageTitle });
+    } else {
+      // Core pages and legal pages (about, contact, privacy-policy, terms-of-service)
+      const pageTitle = slugToTitle(firstSegment);
+      breadcrumbs.push({ label: pageTitle });
+    }
+  }
+  
+  return breadcrumbs;
+}
+
+// Don't render on homepage
+const isHomepage = currentPath === '/' || currentPath === '';
+const breadcrumbs = isHomepage ? [] : generateBreadcrumbs(currentPath, serviceName);
+
+// Generate JSON-LD structured data
+const breadcrumbSchema = breadcrumbs.length > 0 ? {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://makegood.melbourne/"
+    },
+    ...breadcrumbs.map((item, index) => ({
+      "@type": "ListItem",
+      "position": index + 2,
+      "name": item.label,
+      ...(item.href && { "item": `https://makegood.melbourne${item.href}` })
+    }))
+  ]
+} : null;
+---
+
+{!isHomepage && breadcrumbs.length > 0 && (
+  <>
+    {breadcrumbSchema && (
+      <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+    )}
+    <nav aria-label="Breadcrumb" class="container mx-auto px-4 py-4">
+      <ol class="flex items-center flex-wrap gap-2 text-sm">
+        <li>
+          <a 
+            href="/" 
+            class="text-muted-foreground hover:text-primary transition-colors"
+          >
+            Home
+          </a>
+        </li>
+        {breadcrumbs.map((item, index) => (
+          <li class="flex items-center gap-2">
+            <span class="text-muted-foreground/50">/</span>
+            {item.href ? (
+              <>
+                {/* Desktop: Show full label */}
+                <a 
+                  href={item.href}
+                  class="text-muted-foreground hover:text-primary transition-colors hidden sm:inline"
+                >
+                  {item.label}
+                </a>
+                {/* Mobile: Show short label if available */}
+                <a 
+                  href={item.href}
+                  class="text-muted-foreground hover:text-primary transition-colors sm:hidden"
+                >
+                  {item.shortLabel || item.label}
+                </a>
+              </>
+            ) : index === breadcrumbs.length - 1 ? (
+              <span class="text-foreground font-medium">{item.label}</span>
+            ) : (
+              <>
+                {/* Desktop: Show full label */}
+                <span class="text-muted-foreground hidden sm:inline">{item.label}</span>
+                {/* Mobile: Show short label if available */}
+                <span class="text-muted-foreground sm:hidden">{item.shortLabel || item.label}</span>
+              </>
+            )}
+          </li>
+        ))}
+      </ol>
+    </nav>
+  </>
+)}
