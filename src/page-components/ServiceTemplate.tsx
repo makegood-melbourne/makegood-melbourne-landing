@@ -4,6 +4,7 @@ import { getServiceBySlug, getPublishedServices } from "@/data/services";
 import { renderTextWithLinks } from "@/lib/textWithLinks";
 import { resolveImageSrc } from "@/lib/resolveImageSrc";
 import Navigation from "@/components/Navigation";
+import BreadcrumbsAuto from "@/components/BreadcrumbsAuto";
 import Footer from "@/components/Footer";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import BeforeAfterSlider from "@/components/BeforeAfterSlider";
@@ -105,6 +106,7 @@ const ServiceTemplate = ({ slug: propSlug }: ServiceTemplateProps) => {
       </Helmet>
 
       <Navigation />
+      <BreadcrumbsAuto />
 
       <main id="main-content" className="flex-1 pt-20">
         {/* Breadcrumbs */}

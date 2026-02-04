@@ -2,6 +2,7 @@ import { Helmet } from "@/lib/helmet";
 import { useParams } from "react-router-dom";
 import { ArrowRight, CheckCircle, AlertTriangle, ImageIcon } from "lucide-react";
 import Navigation from "@/components/Navigation";
+import BreadcrumbsAuto from "@/components/BreadcrumbsAuto";
 import Footer from "@/components/Footer";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { Button } from "@/components/ui/button";
@@ -87,6 +88,7 @@ const IndustryTemplate = ({ slug: propSlug }: IndustryTemplateProps) => {
       </Helmet>
 
       <Navigation />
+      <BreadcrumbsAuto />
 
       {/* Breadcrumbs */}
       <div className="pt-24 px-4 sm:px-6 lg:px-8">

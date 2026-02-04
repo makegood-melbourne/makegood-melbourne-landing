@@ -2,6 +2,7 @@ import { Helmet } from "@/lib/helmet";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { ArrowRight, Clock } from "lucide-react";
 import Navigation from "@/components/Navigation";
+import BreadcrumbsAuto from "@/components/BreadcrumbsAuto";
 import Footer from "@/components/Footer";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { blogPosts } from "@/data/blogPosts";
@@ -22,6 +23,7 @@ const Blog = () => {
       </Helmet>
       
       <Navigation />
+      <BreadcrumbsAuto />
       
       <main className="flex-1 pt-20">
         <div className="container mx-auto px-4 py-12">

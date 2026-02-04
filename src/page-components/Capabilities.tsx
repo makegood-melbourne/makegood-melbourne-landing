@@ -3,6 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Layers, Wrench, Shield, CheckCircle, ArrowRight, Phone } from "lucide-react";
 import Navigation from "@/components/Navigation";
+import BreadcrumbsAuto from "@/components/BreadcrumbsAuto";
 import Footer from "@/components/Footer";
 import CtaBlockReact from "@/components/CtaBlockReact";
 import Breadcrumbs from "@/components/Breadcrumbs";
@@ -65,6 +66,7 @@ const Capabilities = () => {
       </Helmet>
 
       <Navigation />
+      <BreadcrumbsAuto />
 
       <main className="flex-1 pt-20">
         <div className="container mx-auto px-4">

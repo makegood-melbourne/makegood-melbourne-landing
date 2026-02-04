@@ -2,6 +2,7 @@ import { Helmet } from "@/lib/helmet";
 import { useParams } from "react-router-dom";
 import { MapPin, Clock, Shield, Mail, ArrowRight, CheckCircle2, Building2, Wrench, Warehouse, Factory, HardHat, Truck, HelpCircle } from "lucide-react";
 import Navigation from "@/components/Navigation";
+import BreadcrumbsAuto from "@/components/BreadcrumbsAuto";
 import Footer from "@/components/Footer";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { Button } from "@/components/ui/button";
@@ -164,6 +165,7 @@ const LocationTemplate = ({ slug: propSlug }: LocationTemplateProps) => {
       </Helmet>
 
       <Navigation />
+      <BreadcrumbsAuto />
 
       {/* Breadcrumbs */}
       <div className="pt-20 bg-background">

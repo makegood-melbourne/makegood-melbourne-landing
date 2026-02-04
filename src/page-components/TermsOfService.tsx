@@ -1,5 +1,6 @@
 import { Helmet } from "@/lib/helmet";
 import Navigation from "@/components/Navigation";
+import BreadcrumbsAuto from "@/components/BreadcrumbsAuto";
 import Footer from "@/components/Footer";
 import Breadcrumbs from "@/components/Breadcrumbs";
 
@@ -17,6 +18,7 @@ const TermsOfService = () => {
       </Helmet>
 
       <Navigation />
+      <BreadcrumbsAuto />
 
       <main className="container mx-auto px-4 py-12">
         <Breadcrumbs items={breadcrumbItems} />

@@ -1,6 +1,7 @@
 import { Helmet } from "@/lib/helmet";
 import { ArrowRight, CheckCircle, FileText, Building2, Users, AlertTriangle, Clock } from "lucide-react";
 import Navigation from "@/components/Navigation";
+import BreadcrumbsAuto from "@/components/BreadcrumbsAuto";
 import Footer from "@/components/Footer";
 import CtaBlockReact from "@/components/CtaBlockReact";
 import Breadcrumbs from "@/components/Breadcrumbs";
@@ -47,6 +48,7 @@ const WhatIsMakeGood = () => {
       </Helmet>
 
       <Navigation />
+      <BreadcrumbsAuto />
 
       {/* Breadcrumbs */}
       <div className="pt-24 px-4 sm:px-6 lg:px-8">

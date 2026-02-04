@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Navigation from "@/components/Navigation";
+import BreadcrumbsAuto from "@/components/BreadcrumbsAuto";
 import Footer from "@/components/Footer";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { blogPosts } from "@/data/blogPosts";
@@ -22,6 +23,7 @@ const BlogPost = ({ slug: propSlug }: BlogPostProps) => {
     return (
       <div className="min-h-screen flex flex-col">
         <Navigation />
+      <BreadcrumbsAuto />
         <main className="flex-1 pt-20 flex items-center justify-center">
           <div className="text-center">
             <h1 className="text-4xl text-foreground mb-4">Post Not Found</h1>
@@ -77,6 +79,7 @@ const BlogPost = ({ slug: propSlug }: BlogPostProps) => {
       </Helmet>
       
       <Navigation />
+      <BreadcrumbsAuto />
       
       <main className="flex-1 pt-20">
         <article className="container mx-auto px-4 py-12 max-w-4xl">

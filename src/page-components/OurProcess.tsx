@@ -15,6 +15,7 @@ import {
   FileCheck
 } from "lucide-react";
 import Navigation from "@/components/Navigation";
+import BreadcrumbsAuto from "@/components/BreadcrumbsAuto";
 import Footer from "@/components/Footer";
 import CtaBlockReact from "@/components/CtaBlockReact";
 import ProblemSolution from "@/components/ProblemSolution";
@@ -172,6 +173,7 @@ const OurProcess = () => {
       </Helmet>
 
       <Navigation />
+      <BreadcrumbsAuto />
 
       {/* Breadcrumbs */}
       <div className="pt-24 px-4 sm:px-6 lg:px-8">

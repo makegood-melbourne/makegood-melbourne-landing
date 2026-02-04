@@ -1,5 +1,6 @@
 import { Helmet } from "@/lib/helmet";
 import Navigation from "@/components/Navigation";
+import BreadcrumbsAuto from "@/components/BreadcrumbsAuto";
 import Footer from "@/components/Footer";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { Button } from "@/components/ui/button";
@@ -136,6 +137,7 @@ const Contact = () => {
       </Helmet>
       
       <Navigation />
+      <BreadcrumbsAuto />
       
       <main className="pt-16">
         <div className="container mx-auto px-4 pt-4">
