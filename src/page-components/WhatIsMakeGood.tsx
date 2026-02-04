@@ -18,7 +18,7 @@ const WhatIsMakeGood = () => {
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": "What is a Make Good? Complete Guide for Melbourne Tenants",
+    "headline": "Make Good Guide | End of Lease Restoration Melbourne",
     "description": "Learn everything about make good clauses in commercial leases. Understand your obligations, typical costs, and how to prepare for lease end in Melbourne.",
     "author": {
       "@type": "Organization",
@@ -33,7 +33,7 @@ const WhatIsMakeGood = () => {
   return (
     <main className="min-h-screen bg-background text-foreground">
       <Helmet>
-        <title>What is a Make Good? | Commercial Lease Guide | Melbourne</title>
+        <title>Make Good Guide | End of Lease Restoration Melbourne</title>
         <meta 
           name="description" 
           content="Understand make good clauses in commercial leases. Learn what's required, typical costs, timelines, and how to prepare for your lease end in Melbourne. Expert guide for tenants." 
