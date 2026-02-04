@@ -115,7 +115,7 @@ const IndustryTemplate = ({ slug: propSlug }: IndustryTemplateProps) => {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button asChild size="lg">
                   <a href="/contact">
-                    Get a Quote
+                    Request a Quote
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </a>
                 </Button>

@@ -18,7 +18,7 @@ const FloatingCTAs = () => {
             className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
           >
             <MessageSquare className="h-4 w-4 mr-2" />
-            Get a Quote
+            Request a Quote
           </Button>
         </a>
       </div>
@@ -31,7 +31,7 @@ const FloatingCTAs = () => {
             className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
           >
             <MessageSquare className="h-5 w-5 mr-2" />
-            <span>Get a Quote</span>
+            <span>Request a Quote</span>
           </Button>
         </a>
       </div>

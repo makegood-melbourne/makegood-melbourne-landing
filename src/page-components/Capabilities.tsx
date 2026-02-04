@@ -90,7 +90,7 @@ const Capabilities = () => {
             <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
               <a href="/#contact">
                 <Phone className="mr-2 h-5 w-5" />
-                Get a Quote
+                Request a Quote
               </a>
             </Button>
           </div>
