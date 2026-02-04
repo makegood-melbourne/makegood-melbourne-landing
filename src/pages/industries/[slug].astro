@@ -5,6 +5,7 @@ import IndustryHeroSection from '../../components/IndustryHeroSection.astro';
 import IndustryContent from '../../page-components/IndustryContent.tsx';
 import CtaBlock from '../../components/CtaBlock.astro';
 import Footer from '../../components/Footer';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import { industries, getIndustryBySlug } from '../../data/industries';
 
 export function getStaticPaths() {
@@ -31,24 +32,10 @@ if (!industry) {
   <main class="min-h-screen bg-background text-foreground">
     <Navigation client:load />
     
-    <!-- Breadcrumbs -->
+    <!-- Breadcrumbs (using shared component) -->
     <div class="pt-24 px-4 sm:px-6 lg:px-8">
       <div class="max-w-6xl mx-auto">
-        <nav aria-label="Breadcrumb" class="text-sm">
-          <ol class="flex items-center flex-wrap gap-2">
-            <li>
-              <a href="/" class="text-muted-foreground hover:text-primary transition-colors">Home</a>
-            </li>
-            <li class="text-muted-foreground">/</li>
-            <li>
-              <a href="/capabilities" class="text-muted-foreground hover:text-primary transition-colors">Industries</a>
-            </li>
-            <li class="text-muted-foreground">/</li>
-            <li>
-              <span class="text-foreground font-medium">{industry.name}</span>
-            </li>
-          </ol>
-        </nav>
+        <Breadcrumbs path={`/industries/${slug}`} />
       </div>
     </div>
     
