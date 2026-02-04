@@ -19,7 +19,6 @@ import BreadcrumbsAuto from "@/components/BreadcrumbsAuto";
 import Footer from "@/components/Footer";
 import CtaBlockReact from "@/components/CtaBlockReact";
 import ProblemSolution from "@/components/ProblemSolution";
-import Breadcrumbs from "@/components/Breadcrumbs";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -178,7 +177,6 @@ const OurProcess = () => {
       {/* Breadcrumbs */}
       <div className="pt-24 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
-          <Breadcrumbs items={[{ label: "Our Process" }]} />
         </div>
       </div>
 

@@ -6,7 +6,6 @@ import { resolveImageSrc } from "@/lib/resolveImageSrc";
 import Navigation from "@/components/Navigation";
 import BreadcrumbsAuto from "@/components/BreadcrumbsAuto";
 import Footer from "@/components/Footer";
-import Breadcrumbs from "@/components/Breadcrumbs";
 import BeforeAfterSlider from "@/components/BeforeAfterSlider";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -111,16 +110,6 @@ const ServiceTemplate = ({ slug: propSlug }: ServiceTemplateProps) => {
       <main id="main-content" className="flex-1 pt-20">
         {/* Breadcrumbs */}
         <div className="bg-secondary">
-          <div className="container mx-auto px-4">
-            <Breadcrumbs 
-              items={[
-                { label: "Services", href: "/capabilities" },
-                { label: service.name }
-              ]} 
-            />
-          </div>
-        </div>
-
         {/* 1. Hero Section */}
         <section className="bg-secondary pt-6 pb-10 md:pt-10 md:pb-12">
           <div className="container mx-auto px-4">

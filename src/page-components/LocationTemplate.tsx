@@ -4,7 +4,6 @@ import { MapPin, Clock, Shield, Mail, ArrowRight, CheckCircle2, Building2, Wrenc
 import Navigation from "@/components/Navigation";
 import BreadcrumbsAuto from "@/components/BreadcrumbsAuto";
 import Footer from "@/components/Footer";
-import Breadcrumbs from "@/components/Breadcrumbs";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { getLocationBySlug } from "@/data/locations";
@@ -167,20 +166,8 @@ const LocationTemplate = ({ slug: propSlug }: LocationTemplateProps) => {
       <Navigation />
       <BreadcrumbsAuto />
 
-      {/* Breadcrumbs */}
-      <div className="pt-20 bg-background">
-        <div className="container mx-auto px-4">
-          <Breadcrumbs 
-            items={[
-              { label: "Service Areas", href: "/service-areas" },
-              { label: location.name }
-            ]} 
-          />
-        </div>
-      </div>
-
       {/* Hero Section */}
-      <section className="relative pt-6 md:pt-10 pb-16 flex items-center bg-background">
+      <section className="relative pt-20 md:pt-24 pb-16 flex items-center bg-background">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left: Content */}

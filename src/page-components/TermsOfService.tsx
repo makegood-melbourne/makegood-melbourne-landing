@@ -2,7 +2,6 @@ import { Helmet } from "@/lib/helmet";
 import Navigation from "@/components/Navigation";
 import BreadcrumbsAuto from "@/components/BreadcrumbsAuto";
 import Footer from "@/components/Footer";
-import Breadcrumbs from "@/components/Breadcrumbs";
 
 const TermsOfService = () => {
   const breadcrumbItems = [
@@ -21,7 +20,6 @@ const TermsOfService = () => {
       <BreadcrumbsAuto />
 
       <main className="container mx-auto px-4 py-12">
-        <Breadcrumbs items={breadcrumbItems} />
         
         <article className="max-w-3xl mx-auto prose prose-invert">
           <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-8">Terms of Service</h1>

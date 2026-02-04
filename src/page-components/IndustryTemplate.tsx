@@ -4,7 +4,6 @@ import { ArrowRight, CheckCircle, AlertTriangle, ImageIcon } from "lucide-react"
 import Navigation from "@/components/Navigation";
 import BreadcrumbsAuto from "@/components/BreadcrumbsAuto";
 import Footer from "@/components/Footer";
-import Breadcrumbs from "@/components/Breadcrumbs";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -93,7 +92,6 @@ const IndustryTemplate = ({ slug: propSlug }: IndustryTemplateProps) => {
       {/* Breadcrumbs */}
       <div className="pt-24 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
-          <Breadcrumbs items={[
             { label: "Industries", href: "/capabilities" },
             { label: industry.name }
           ]} />

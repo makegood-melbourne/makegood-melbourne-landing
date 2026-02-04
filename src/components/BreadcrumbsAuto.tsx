@@ -1,4 +1,3 @@
-import { Home } from "lucide-react";
 import { useEffect, useState } from "react";
 
 interface BreadcrumbItem {
@@ -140,10 +139,9 @@ const BreadcrumbsAuto = () => {
           <li>
             <a 
               href="/" 
-              className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-1"
+              className="text-muted-foreground hover:text-primary transition-colors"
             >
-              <Home className="h-4 w-4" />
-              <span className="sr-only sm:not-sr-only">Home</span>
+              Home
             </a>
           </li>
           {breadcrumbs.map((item, index) => (

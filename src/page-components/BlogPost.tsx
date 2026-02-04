@@ -6,7 +6,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import Navigation from "@/components/Navigation";
 import BreadcrumbsAuto from "@/components/BreadcrumbsAuto";
 import Footer from "@/components/Footer";
-import Breadcrumbs from "@/components/Breadcrumbs";
 import { blogPosts } from "@/data/blogPosts";
 import { getBlogImage, calculateReadingTime, parseMarkdown } from "@/lib/blogUtils";
 
@@ -84,12 +83,6 @@ const BlogPost = ({ slug: propSlug }: BlogPostProps) => {
       <main className="flex-1 pt-20">
         <article className="container mx-auto px-4 py-12 max-w-4xl">
           {/* Breadcrumbs */}
-          <Breadcrumbs 
-            items={[
-              { label: "Blog", href: "/blog" },
-              { label: post.title.length > 40 ? post.title.slice(0, 37) + '...' : post.title }
-            ]} 
-          />
 
           <header className="mb-6 mt-4">
             <h1 className="text-4xl md:text-5xl text-foreground mb-4">{post.title}</h1>

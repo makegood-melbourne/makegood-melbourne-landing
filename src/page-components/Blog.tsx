@@ -4,7 +4,6 @@ import { ArrowRight, Clock } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import BreadcrumbsAuto from "@/components/BreadcrumbsAuto";
 import Footer from "@/components/Footer";
-import Breadcrumbs from "@/components/Breadcrumbs";
 import { blogPosts } from "@/data/blogPosts";
 import { getBlogImage, sortBlogPostsByDate, calculateReadingTime } from "@/lib/blogUtils";
 
@@ -27,7 +26,6 @@ const Blog = () => {
       
       <main className="flex-1 pt-20">
         <div className="container mx-auto px-4 py-12">
-          <Breadcrumbs items={[{ label: "Blog" }]} />
           <div className="text-center mb-12">
             <h1 className="text-4xl md:text-5xl text-foreground mb-4">Make Good Melbourne Blog</h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">

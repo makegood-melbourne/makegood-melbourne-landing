@@ -5,7 +5,6 @@ import Navigation from "@/components/Navigation";
 import BreadcrumbsAuto from "@/components/BreadcrumbsAuto";
 import Footer from "@/components/Footer";
 import CtaBlockReact from "@/components/CtaBlockReact";
-import Breadcrumbs from "@/components/Breadcrumbs";
 import { Button } from "@/components/ui/button";
 import {
   Accordion,
@@ -509,7 +508,6 @@ const FAQPage = () => {
       {/* Breadcrumbs */}
       <div className="pt-24 px-4">
         <div className="container mx-auto">
-          <Breadcrumbs items={[{ label: "FAQ" }]} />
         </div>
       </div>
 
