@@ -223,7 +223,7 @@ const LocationTemplate = ({ slug: propSlug }: LocationTemplateProps) => {
                   asChild
                   className="text-lg px-8 py-6"
                 >
-                  <a href="mailto:enquiries@makegood.melbourne" className="flex items-center gap-2">
+                  <a href="mailto:info@makegood.melbourne" className="flex items-center gap-2">
                     <Mail className="w-5 h-5" />
                     Email Us
                   </a>

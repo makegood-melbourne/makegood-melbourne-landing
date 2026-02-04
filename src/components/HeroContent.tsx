@@ -43,7 +43,7 @@ const HeroContent = () => {
               size="lg" 
               className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8 py-6 group"
             >
-              Request a Quote
+              Get an Assessment
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Button>
           </a>

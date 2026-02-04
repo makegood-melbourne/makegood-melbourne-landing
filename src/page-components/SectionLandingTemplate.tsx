@@ -91,7 +91,7 @@ const SectionLandingTemplate = ({ data }: SectionLandingTemplateProps) => {
         "addressRegion": "VIC",
         "addressCountry": "AU"
       },
-      "email": "enquiries@makegood.melbourne"
+      "email": "info@makegood.melbourne"
     },
     "areaServed": {
       "@type": "City",
@@ -198,7 +198,7 @@ const SectionLandingTemplate = ({ data }: SectionLandingTemplateProps) => {
                   </a>
                 </Button>
                 <Button size="lg" variant="outline" className="border-accent text-accent hover:bg-accent hover:text-accent-foreground" asChild>
-                  <a href="mailto:enquiries@makegood.melbourne">
+                  <a href="mailto:info@makegood.melbourne">
                     <Mail className="mr-2 h-5 w-5" />
                     Email Us
                   </a>

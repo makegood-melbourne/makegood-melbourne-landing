@@ -55,9 +55,9 @@ const GuestPostsDownload = () => {
               Need help submitting? Email us at{" "}
               <a
                 className="underline underline-offset-4"
-                href="mailto:enquiries@makegood.melbourne"
+                href="mailto:info@makegood.melbourne"
               >
-                enquiries@makegood.melbourne
+                info@makegood.melbourne
               </a>
               .
             </p>
