@@ -1,18 +1,16 @@
 ---
-import { Home } from 'lucide-react';
-
 interface BreadcrumbItem {
   label: string;
   href?: string;
 }
 
-// Get the current URL path
-const currentPath = Astro.url.pathname;
-
-// Don't show breadcrumbs on homepage
-if (currentPath === '/') {
-  return null;
+interface Props {
+  path?: string;
 }
+
+// Get the current URL path (use prop if provided, otherwise use Astro.url)
+const { path } = Astro.props;
+const currentPath = path || Astro.url.pathname;
 
 // Function to convert slug to title
 function slugToTitle(slug: string): string {
@@ -23,8 +21,8 @@ function slugToTitle(slug: string): string {
 }
 
 // Parse the URL and generate breadcrumb items
-function generateBreadcrumbs(path: string): BreadcrumbItem[] {
-  const segments = path.split('/').filter(Boolean);
+function generateBreadcrumbs(pathStr: string): BreadcrumbItem[] {
+  const segments = pathStr.split('/').filter(Boolean);
   const breadcrumbs: BreadcrumbItem[] = [];
   
   if (segments.length === 0) return breadcrumbs;
@@ -33,18 +31,24 @@ function generateBreadcrumbs(path: string): BreadcrumbItem[] {
   
   // Handle different page types
   if (firstSegment === 'services') {
-    breadcrumbs.push({ label: 'Services', href: '/services' });
+    breadcrumbs.push({ label: 'Services', href: '/capabilities' });
     
     if (segments.length > 1) {
       const serviceSlug = segments[1];
       const serviceTitle = slugToTitle(serviceSlug);
       
-      // Check if it's a parent service (make-good-solutions, remediation-solutions, strip-out-solutions)
+      // Check if it's a parent service
       const parentServices = ['make-good-solutions', 'remediation-solutions', 'strip-out-solutions'];
       if (parentServices.includes(serviceSlug)) {
         breadcrumbs.push({ label: serviceTitle });
+      } else if (segments.length > 2) {
+        // It's a child service under a parent
+        const parentTitle = slugToTitle(serviceSlug);
+        breadcrumbs.push({ label: parentTitle, href: `/services/${serviceSlug}` });
+        const childTitle = slugToTitle(segments[2]);
+        breadcrumbs.push({ label: childTitle });
       } else {
-        // It's a child service
+        // It's a direct child service
         breadcrumbs.push({ label: serviceTitle });
       }
     }
@@ -63,7 +67,7 @@ function generateBreadcrumbs(path: string): BreadcrumbItem[] {
       breadcrumbs.push({ label: areaTitle });
     }
   } else if (firstSegment === 'learn') {
-    breadcrumbs.push({ label: 'Learn', href: '/learn' });
+    breadcrumbs.push({ label: 'Learn', href: '/faq' });
     
     if (segments.length > 1) {
       const guideTitle = slugToTitle(segments[1]);
@@ -76,12 +80,19 @@ function generateBreadcrumbs(path: string): BreadcrumbItem[] {
       const postTitle = slugToTitle(segments[1]);
       breadcrumbs.push({ label: postTitle });
     }
+  } else if (firstSegment === 'downloads') {
+    breadcrumbs.push({ label: 'Downloads' });
+    
+    if (segments.length > 1) {
+      const pageTitle = slugToTitle(segments[1]);
+      breadcrumbs.push({ label: pageTitle });
+    }
   } else {
     // Check if it's a learn page (our-process, what-is-make-good, capabilities, faq, service-areas)
     const learnPages = ['our-process', 'what-is-make-good', 'capabilities', 'faq', 'service-areas'];
     
     if (learnPages.includes(firstSegment)) {
-      breadcrumbs.push({ label: 'Learn', href: '/learn' });
+      breadcrumbs.push({ label: 'Learn', href: '/faq' });
       const pageTitle = slugToTitle(firstSegment);
       breadcrumbs.push({ label: pageTitle });
     } else {
@@ -94,10 +105,12 @@ function generateBreadcrumbs(path: string): BreadcrumbItem[] {
   return breadcrumbs;
 }
 
-const breadcrumbs = generateBreadcrumbs(currentPath);
+// Don't render on homepage
+const isHomepage = currentPath === '/' || currentPath === '';
+const breadcrumbs = isHomepage ? [] : generateBreadcrumbs(currentPath);
 
 // Generate JSON-LD structured data
-const breadcrumbSchema = {
+const breadcrumbSchema = breadcrumbs.length > 0 ? {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
@@ -114,36 +127,40 @@ const breadcrumbSchema = {
       ...(item.href && { "item": `https://makegood.melbourne${item.href}` })
     }))
   ]
-};
+} : null;
 ---
 
-<script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
-
-<nav aria-label="Breadcrumb" class="container mx-auto px-4 py-4">
-  <ol class="flex items-center flex-wrap gap-2 text-sm">
-    <li>
-      <a 
-        href="/" 
-        class="text-muted-foreground hover:text-primary transition-colors flex items-center gap-1"
-      >
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-home"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-        <span class="sr-only sm:not-sr-only">Home</span>
-      </a>
-    </li>
-    {breadcrumbs.map((item, index) => (
-      <li class="flex items-center gap-2">
-        <span class="text-muted-foreground/50">/</span>
-        {item.href && index < breadcrumbs.length - 1 ? (
+{!isHomepage && breadcrumbs.length > 0 && (
+  <>
+    {breadcrumbSchema && (
+      <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+    )}
+    <nav aria-label="Breadcrumb" class="container mx-auto px-4 py-4">
+      <ol class="flex items-center flex-wrap gap-2 text-sm">
+        <li>
           <a 
-            href={item.href}
+            href="/" 
             class="text-muted-foreground hover:text-primary transition-colors"
           >
-            {item.label}
+            Home
           </a>
-        ) : (
-          <span class="text-foreground font-medium">{item.label}</span>
-        )}
-      </li>
-    ))}
-  </ol>
-</nav>
+        </li>
+        {breadcrumbs.map((item, index) => (
+          <li class="flex items-center gap-2">
+            <span class="text-muted-foreground/50">/</span>
+            {item.href && index < breadcrumbs.length - 1 ? (
+              <a 
+                href={item.href}
+                class="text-muted-foreground hover:text-primary transition-colors"
+              >
+                {item.label}
+              </a>
+            ) : (
+              <span class="text-foreground font-medium">{item.label}</span>
+            )}
+          </li>
+        ))}
+      </ol>
+    </nav>
+  </>
+)}

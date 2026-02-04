@@ -1,6 +1,4 @@
 import { Helmet } from "@/lib/helmet";
-import Navigation from "@/components/Navigation";
-import BreadcrumbsAuto from "@/components/BreadcrumbsAuto";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -27,8 +25,6 @@ const GuestPostsDownload = () => {
 
       <div className="min-h-screen bg-background text-foreground">
         <header>
-          <Navigation />
-      <BreadcrumbsAuto />
         </header>
 
         <main className="mx-auto w-full max-w-3xl px-6 py-16">

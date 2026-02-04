@@ -1,8 +1,6 @@
 import { useState } from "react";
 import { Helmet } from "@/lib/helmet";
 import { ArrowRight } from "lucide-react";
-import Navigation from "@/components/Navigation";
-import BreadcrumbsAuto from "@/components/BreadcrumbsAuto";
 import Footer from "@/components/Footer";
 import CtaBlockReact from "@/components/CtaBlockReact";
 import { Button } from "@/components/ui/button";
@@ -502,8 +500,6 @@ const FAQPage = () => {
         </script>
       </Helmet>
 
-      <Navigation />
-      <BreadcrumbsAuto />
 
       {/* Breadcrumbs */}
       <div className="pt-24 px-4">

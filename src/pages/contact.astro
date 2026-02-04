@@ -1,5 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Navigation from '../components/Navigation';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
 import ContactPage from '../page-components/Contact.tsx';
 ---
 
@@ -8,5 +10,9 @@ import ContactPage from '../page-components/Contact.tsx';
   description="Get a free quote for your make good project. Contact Melbourne's trusted end of lease restoration specialists today."
   canonicalUrl="https://makegood.melbourne/contact"
 >
+  <Navigation client:load />
+  <div class="bg-secondary pt-20">
+    <Breadcrumbs path="/contact" />
+  </div>
   <ContactPage client:load />
 </BaseLayout>

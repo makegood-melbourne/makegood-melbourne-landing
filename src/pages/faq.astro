@@ -1,5 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Navigation from '../components/Navigation';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
 import FAQPage from '../page-components/FAQPage.tsx';
 
 // JSON-LD Schema for FAQPage - server-rendered for SEO
@@ -280,6 +282,10 @@ const faqSchema = {
   description="Your complete guide to make good costs, processes, and requirements in Melbourne. Get clear answers to your end-of-lease questions. Free quotes available."
   canonicalUrl="https://makegood.melbourne/faq"
 >
+  <Navigation client:load />
+  <div class="bg-secondary pt-20">
+    <Breadcrumbs path="/faq" />
+  </div>
   <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
   <FAQPage client:idle />
 </BaseLayout>

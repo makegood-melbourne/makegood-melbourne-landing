@@ -1,6 +1,4 @@
 import { Helmet } from "@/lib/helmet";
-import Navigation from "@/components/Navigation";
-import BreadcrumbsAuto from "@/components/BreadcrumbsAuto";
 import Footer from "@/components/Footer";
 
 const TermsOfService = () => {
@@ -16,8 +14,6 @@ const TermsOfService = () => {
         <link rel="canonical" href="https://makegood.melbourne/terms-of-service/" />
       </Helmet>
 
-      <Navigation />
-      <BreadcrumbsAuto />
 
       <main className="container mx-auto px-4 py-12">
         

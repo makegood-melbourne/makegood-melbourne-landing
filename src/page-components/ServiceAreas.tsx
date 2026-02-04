@@ -1,6 +1,4 @@
 import { Helmet } from "@/lib/helmet";
-import Navigation from "@/components/Navigation";
-import BreadcrumbsAuto from "@/components/BreadcrumbsAuto";
 import Footer from "@/components/Footer";
 import CtaBlockReact from "@/components/CtaBlockReact";
 import { Button } from "@/components/ui/button";
@@ -22,8 +20,6 @@ const ServiceAreas = () => {
         <link rel="canonical" href="https://makegood.melbourne/service-areas/" />
       </Helmet>
       
-      <Navigation />
-      <BreadcrumbsAuto />
       
       <main className="pt-16">
         <div className="container mx-auto px-4 pt-4">
