@@ -1,18 +1,566 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro';
-import Navigation from '../../components/Navigation';
-import Breadcrumbs from '../../components/Breadcrumbs.astro';
-import WhatIsMakeGoodPage from '../../page-components/WhatIsMakeGood.tsx';
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
+import CtaBlock from "@/components/CtaBlock.astro";
+import Breadcrumbs from "@/components/Breadcrumbs.astro";
+import { Button } from "@/components/ui/button";
+
+const title = "Make Good Guide | End of Lease Restoration Melbourne";
+const description = "A comprehensive guide to commercial make good works in Melbourne. Learn about lease obligations, typical costs, timelines and what to expect when preparing your tenancy for handover.";
+const canonicalURL = new URL("/learn/make-good-guide/", Astro.site);
+const ogImage = new URL("/images/learn/commercial-make-good-open-floor-industrial-windows-melbourne.jpeg", Astro.site);
 ---
 
-<BaseLayout 
-  title="Make Good Guide | End of Lease Restoration Melbourne"
-  description="Learn what make good means for commercial leases. Understand your end of lease obligations and how to prepare for property handover."
-  canonicalUrl="https://makegood.melbourne/learn/make-good-guide"
+<BaseLayout
+  title={title}
+  description={description}
+  canonicalURL={canonicalURL.toString()}
+  ogImage={ogImage.toString()}
+  ogType="article"
 >
-  <Navigation client:load />
-  <div class="bg-secondary pt-20">
-    <Breadcrumbs path="/learn/make-good-guide" />
+  <div class="min-h-screen flex flex-col bg-background">
+    <!-- Skip to Content Link for Accessibility -->
+    <a
+      href="#main-content"
+      class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:bg-primary focus:text-primary-foreground focus:rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
+    >
+      Skip to main content
+    </a>
+    
+    <Navigation client:idle />
+    
+    <main id="main-content" class="flex-1">
+      <!-- Breadcrumbs -->
+      <div class="bg-secondary pt-20">
+        <Breadcrumbs path="/learn/make-good-guide" />
+      </div>
+
+      <!-- Hero Section -->
+      <section class="bg-secondary pt-6 pb-10 md:pt-10 md:pb-12">
+        <div class="container mx-auto px-4">
+          <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
+                Make good guide for <span class="text-primary">Melbourne</span> tenants
+              </h1>
+              <p class="text-xl md:text-2xl text-white mb-6">
+                Preparing your tenancy for handover.
+              </p>
+              <p class="text-lg text-foreground/80 mb-4">
+                A make good is the process of returning a commercial property to its original condition when your lease ends. Whether you're in an office, warehouse or retail space, understanding your make good requirements early can save time, money and stress.
+              </p>
+              <p class="text-lg text-foreground/80">
+                This guide covers what make good works typically involve, how much they cost in Melbourne, and how to plan your timeline for a smooth handover.
+              </p>
+            </div>
+            <div class="relative">
+              <img
+                src="/images/learn/commercial-make-good-open-floor-industrial-windows-melbourne.jpeg"
+                alt="Commercial office space with industrial windows ready for make good restoration in Melbourne"
+                class="aspect-[4/3] w-full object-cover rounded-lg"
+                width="800"
+                height="600"
+                loading="eager"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- In This Guide Navigation -->
+      <section class="bg-muted/50 border-y border-border py-12">
+        <div class="container mx-auto px-4">
+          <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center uppercase tracking-wide">In this guide</h2>
+          <nav class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
+            <a href="#what-is-make-good" class="group block py-3 px-4 bg-card/50 border border-border/50 rounded-lg hover:bg-card hover:border-border hover:shadow-sm transition-all cursor-pointer min-h-[48px] flex items-center">
+              <span class="flex items-center justify-between w-full">
+                <span class="text-sm font-medium text-foreground group-hover:text-primary transition-colors">What is a make good</span>
+                <svg class="w-4 h-4 text-muted-foreground group-hover:text-primary group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+              </span>
+            </a>
+            <a href="#whats-included" class="group block py-3 px-4 bg-card/50 border border-border/50 rounded-lg hover:bg-card hover:border-border hover:shadow-sm transition-all cursor-pointer min-h-[48px] flex items-center">
+              <span class="flex items-center justify-between w-full">
+                <span class="text-sm font-medium text-foreground group-hover:text-primary transition-colors">What's typically included</span>
+                <svg class="w-4 h-4 text-muted-foreground group-hover:text-primary group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+              </span>
+            </a>
+            <a href="#understanding-lease" class="group block py-3 px-4 bg-card/50 border border-border/50 rounded-lg hover:bg-card hover:border-border hover:shadow-sm transition-all cursor-pointer min-h-[48px] flex items-center">
+              <span class="flex items-center justify-between w-full">
+                <span class="text-sm font-medium text-foreground group-hover:text-primary transition-colors">Understanding your lease</span>
+                <svg class="w-4 h-4 text-muted-foreground group-hover:text-primary group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+              </span>
+            </a>
+            <a href="#costs" class="group block py-3 px-4 bg-card/50 border border-border/50 rounded-lg hover:bg-card hover:border-border hover:shadow-sm transition-all cursor-pointer min-h-[48px] flex items-center">
+              <span class="flex items-center justify-between w-full">
+                <span class="text-sm font-medium text-foreground group-hover:text-primary transition-colors">Make good costs</span>
+                <svg class="w-4 h-4 text-muted-foreground group-hover:text-primary group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+              </span>
+            </a>
+            <a href="#timeline" class="group block py-3 px-4 bg-card/50 border border-border/50 rounded-lg hover:bg-card hover:border-border hover:shadow-sm transition-all cursor-pointer min-h-[48px] flex items-center">
+              <span class="flex items-center justify-between w-full">
+                <span class="text-sm font-medium text-foreground group-hover:text-primary transition-colors">Recommended timeline</span>
+                <svg class="w-4 h-4 text-muted-foreground group-hover:text-primary group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+              </span>
+            </a>
+            <a href="#make-good-vs-make-safe" class="group block py-3 px-4 bg-card/50 border border-border/50 rounded-lg hover:bg-card hover:border-border hover:shadow-sm transition-all cursor-pointer min-h-[48px] flex items-center">
+              <span class="flex items-center justify-between w-full">
+                <span class="text-sm font-medium text-foreground group-hover:text-primary transition-colors">Make good vs make safe</span>
+                <svg class="w-4 h-4 text-muted-foreground group-hover:text-primary group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+              </span>
+            </a>
+          </nav>
+        </div>
+      </section>
+
+      <!-- What is a Make Good -->
+      <section id="what-is-make-good" class="py-16 md:py-24">
+        <div class="container mx-auto px-4 max-w-4xl">
+          <h2 class="text-3xl md:text-4xl font-bold mb-6">What is a make good</h2>
+          <div class="prose prose-lg max-w-none space-y-6">
+            <p>
+              A <strong>make good</strong> (also known as "reinstatement" or "restoration") refers to the process of returning a commercial property to its original condition when your lease ends. This requirement is typically outlined in your commercial lease agreement under the "make good clause" or "reinstatement provisions."
+            </p>
+            <p>
+              For office tenants, this usually means removing partitions, restoring walls and ceilings, replacing carpet tiles and returning the space to base building condition. For warehouse tenants, it often involves pallet racking removal, floor repairs and line marking restoration, office strip-outs and industrial cleaning.
+            </p>
+            <p>
+              Unlike <a href="/learn/remediation-guide" class="text-primary hover:underline">remediation works</a>, which fix underlying building defects, make good works focus on restoring the tenancy to match the condition documented at lease commencement. The scope is defined by your lease agreement and the condition report taken when you moved in.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- JSON-LD Schema -->
+      <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Make good guide for Melbourne tenants",
+        "description": description,
+        "author": {
+          "@type": "Organization",
+          "name": "Make Good Melbourne"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Make Good Melbourne",
+          "logo": {
+            "@type": "ImageObject",
+            "url": new URL("/logo.png", Astro.site).toString()
+          }
+        },
+        "datePublished": "2026-02-04",
+        "dateModified": "2026-02-04",
+        "mainEntityOfPage": canonicalURL.toString(),
+        "image": ogImage.toString()
+      })} />
+
+      <!-- What's Typically Included -->
+      <section id="whats-included" class="py-16 md:py-24 bg-muted/30">
+        <div class="container mx-auto px-4">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4 text-center">What's typically included</h2>
+          <p class="text-lg text-white text-center mb-12 max-w-3xl mx-auto">
+            The scope of make good works varies depending on your lease terms and property type.
+          </p>
+          
+          <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <!-- Demolition & Removal -->
+            <div class="bg-card border border-border rounded-lg p-6">
+              <h3 class="text-xl font-semibold mb-4 text-primary">Demolition and removal</h3>
+              <ul class="space-y-3 text-muted-foreground">
+                <li class="flex items-start gap-3">
+                  <svg class="w-5 h-5 text-primary shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span>Removal of tenant-installed partitions and walls</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg class="w-5 h-5 text-primary shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span>Stripping out office fitouts and workstations</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg class="w-5 h-5 text-primary shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span>Removal of signage and branding</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg class="w-5 h-5 text-primary shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span>Pallet racking dismantling (warehouses)</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg class="w-5 h-5 text-primary shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span>Fixture and fitting removal</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Restoration Works -->
+            <div class="bg-card border border-border rounded-lg p-6">
+              <h3 class="text-xl font-semibold mb-4 text-primary">Restoration works</h3>
+              <ul class="space-y-3 text-muted-foreground">
+                <li class="flex items-start gap-3">
+                  <svg class="w-5 h-5 text-primary shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span>Patching holes and repairing walls</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg class="w-5 h-5 text-primary shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span>Repainting to uniform finish</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg class="w-5 h-5 text-primary shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span>Ceiling tile replacement</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg class="w-5 h-5 text-primary shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span>Floor restoration or replacement</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg class="w-5 h-5 text-primary shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span>Base building services restoration</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Electrical & Services -->
+            <div class="bg-card border border-border rounded-lg p-6">
+              <h3 class="text-xl font-semibold mb-4 text-primary">Electrical and services</h3>
+              <ul class="space-y-3 text-muted-foreground">
+                <li class="flex items-start gap-3">
+                  <svg class="w-5 h-5 text-primary shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span>Make safe and isolation of circuits</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg class="w-5 h-5 text-primary shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span>Removal of data and communications cabling</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg class="w-5 h-5 text-primary shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span>Testing and certification of systems</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg class="w-5 h-5 text-primary shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span>Mechanical services termination</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Final Works -->
+            <div class="bg-card border border-border rounded-lg p-6">
+              <h3 class="text-xl font-semibold mb-4 text-primary">Final works</h3>
+              <ul class="space-y-3 text-muted-foreground">
+                <li class="flex items-start gap-3">
+                  <svg class="w-5 h-5 text-primary shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span>Detailed cleaning to handover standard</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg class="w-5 h-5 text-primary shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span>Documentation and photography</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg class="w-5 h-5 text-primary shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span>Compliance certificates</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg class="w-5 h-5 text-primary shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span>Landlord inspection coordination</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Understanding Your Lease -->
+      <section id="understanding-lease" class="py-16 md:py-24">
+        <div class="container mx-auto px-4 max-w-4xl">
+          <h2 class="text-3xl md:text-4xl font-bold mb-6">Understanding your make good clause</h2>
+          <div class="prose prose-lg max-w-none space-y-6 mb-12">
+            <p>
+              Your make good requirements are defined in your lease agreement. Review this document when you first sign—and again 6 months before lease end. Look for sections titled "Make Good," "Reinstatement," "Restoration," or "Yield Up."
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-8">
+            <div>
+              <h3 class="text-xl font-semibold mb-4">Tenant vs landlord responsibilities</h3>
+              <p class="text-muted-foreground">
+                In most commercial leases, the tenant is responsible for all make good costs. However, terms can often be negotiated—especially if the landlord plans to renovate or if certain fitout elements add value to the property.
+              </p>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold mb-4">Things to watch out for</h3>
+              <ul class="space-y-2 text-muted-foreground">
+                <li><strong class="text-foreground">Waiting too long</strong> – Start planning 3-6 months before lease end</li>
+                <li><strong class="text-foreground">Not documenting condition</strong> – Take photos at lease start and end</li>
+                <li><strong class="text-foreground">Assuming scope</strong> – Always confirm requirements with your landlord in writing</li>
+                <li><strong class="text-foreground">DIY approach</strong> – Professional contractors understand landlord expectations</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Make Good Costs -->
+      <section id="costs" class="py-16 md:py-24 bg-muted/30">
+        <div class="container mx-auto px-4">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4 text-center">Make good costs in Melbourne</h2>
+          <p class="text-lg text-white text-center mb-12 max-w-3xl mx-auto">
+            Costs vary depending on your lease terms, property condition and the extent of modifications made during your tenancy.
+          </p>
+          
+          <div class="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto mb-8">
+            <!-- Standard Make Good -->
+            <div class="bg-card border border-border rounded-lg p-6">
+              <h3 class="text-xl font-semibold mb-4">Standard make good</h3>
+              <p class="text-3xl font-bold text-primary mb-2">$100 - $200</p>
+              <p class="text-muted-foreground mb-4">per square metre</p>
+              <ul class="space-y-2 text-sm text-muted-foreground">
+                <li>• General cleaning</li>
+                <li>• Minor repairs and patching</li>
+                <li>• Touch-up painting</li>
+                <li>• Carpet cleaning</li>
+              </ul>
+            </div>
+
+            <!-- Full Reinstatement -->
+            <div class="bg-card border-2 border-primary rounded-lg p-6">
+              <h3 class="text-xl font-semibold mb-4">Full reinstatement</h3>
+              <p class="text-3xl font-bold text-primary mb-2">$250 - $350+</p>
+              <p class="text-muted-foreground mb-4">per square metre</p>
+              <ul class="space-y-2 text-sm text-muted-foreground">
+                <li>• Complete strip-out</li>
+                <li>• Wall and ceiling restoration</li>
+                <li>• Floor replacement</li>
+                <li>• Services reinstatement</li>
+              </ul>
+            </div>
+          </div>
+
+          <p class="text-center text-muted-foreground max-w-2xl mx-auto">
+            These are indicative ranges only. For an accurate quote based on your specific requirements, 
+            <a href="/contact" class="text-primary hover:underline">contact us for a free assessment</a>.
+          </p>
+        </div>
+      </section>
+
+      <!-- Timeline -->
+      <section id="timeline" class="py-16 md:py-24">
+        <div class="container mx-auto px-4">
+          <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Recommended make good timeline</h2>
+            <p class="text-lg text-muted-foreground mb-8">
+              For a detailed breakdown of each step, see <a href="/learn/our-process" class="text-primary hover:underline">our full process guide</a>.
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-8">
+              <div>
+                <ol class="space-y-6">
+                  <li class="flex gap-4">
+                    <div class="flex-shrink-0 w-8 h-8 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-semibold">
+                      1
+                    </div>
+                    <div>
+                      <p class="text-sm text-primary font-medium mb-1">6 months before lease end</p>
+                      <h3 class="font-semibold text-lg mb-2">Start planning</h3>
+                      <p class="text-muted-foreground">
+                        Review your lease, understand your requirements, and conduct a preliminary site inspection. Get initial quotes from make good providers.
+                      </p>
+                    </div>
+                  </li>
+                  <li class="flex gap-4">
+                    <div class="flex-shrink-0 w-8 h-8 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-semibold">
+                      2
+                    </div>
+                    <div>
+                      <p class="text-sm text-primary font-medium mb-1">3-4 months before</p>
+                      <h3 class="font-semibold text-lg mb-2">Finalise scope</h3>
+                      <p class="text-muted-foreground">
+                        Agree on the scope of works with your landlord. Appoint your make good contractor and schedule works around your move-out date.
+                      </p>
+                    </div>
+                  </li>
+                  <li class="flex gap-4">
+                    <div class="flex-shrink-0 w-8 h-8 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-semibold">
+                      3
+                    </div>
+                    <div>
+                      <p class="text-sm text-primary font-medium mb-1">4-8 weeks before</p>
+                      <h3 class="font-semibold text-lg mb-2">Complete works</h3>
+                      <p class="text-muted-foreground">
+                        Execute all make good works according to the agreed scope. Allow time for any defect rectification.
+                      </p>
+                    </div>
+                  </li>
+                </ol>
+              </div>
+              <div>
+                <ol class="space-y-6" start="4">
+                  <li class="flex gap-4">
+                    <div class="flex-shrink-0 w-8 h-8 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-semibold">
+                      4
+                    </div>
+                    <div>
+                      <p class="text-sm text-primary font-medium mb-1">1-2 weeks before</p>
+                      <h3 class="font-semibold text-lg mb-2">Final inspection</h3>
+                      <p class="text-muted-foreground">
+                        Conduct internal inspection, address any remaining items, and prepare handover documentation.
+                      </p>
+                    </div>
+                  </li>
+                  <li class="flex gap-4">
+                    <div class="flex-shrink-0 w-8 h-8 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-semibold">
+                      5
+                    </div>
+                    <div>
+                      <p class="text-sm text-primary font-medium mb-1">Lease expiry</p>
+                      <h3 class="font-semibold text-lg mb-2">Handover</h3>
+                      <p class="text-muted-foreground">
+                        Final landlord inspection, key handover and completion sign-off.
+                      </p>
+                    </div>
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Make Good vs Make Safe -->
+      <section id="make-good-vs-make-safe" class="py-16 md:py-24 bg-muted/30">
+        <div class="container mx-auto px-4">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4 text-center">Make good vs make safe</h2>
+          <p class="text-lg text-white text-center mb-12 max-w-3xl mx-auto">
+            These terms are often confused, but they refer to different types of work.
+          </p>
+          
+          <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <!-- Make Good -->
+            <div class="bg-card border border-border rounded-lg p-6">
+              <h3 class="text-xl font-semibold mb-4 text-primary">Make good</h3>
+              <ul class="space-y-3 text-muted-foreground">
+                <li class="flex items-start gap-3">
+                  <svg class="w-5 h-5 text-primary shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span>End-of-lease restoration works</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg class="w-5 h-5 text-primary shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span>Planned process with timeline</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg class="w-5 h-5 text-primary shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span>Returns space to original condition</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg class="w-5 h-5 text-primary shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span>Required by lease agreement</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg class="w-5 h-5 text-primary shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span>Typically 2-8 weeks to complete</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Make Safe -->
+            <div class="bg-card border border-border rounded-lg p-6">
+              <h3 class="text-xl font-semibold mb-4 text-tertiary">Make safe</h3>
+              <ul class="space-y-3 text-muted-foreground">
+                <li class="flex items-start gap-3">
+                  <svg class="w-5 h-5 text-tertiary shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span>Urgent response works</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg class="w-5 h-5 text-tertiary shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span>Rapid response required</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg class="w-5 h-5 text-tertiary shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span>Eliminates immediate hazards</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg class="w-5 h-5 text-tertiary shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span>Required after damage or incidents</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg class="w-5 h-5 text-tertiary shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span>Completed as quickly as possible</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Block -->
+      <CtaBlock />
+    </main>
+    
+    <Footer client:idle />
   </div>
-  <WhatIsMakeGoodPage client:idle />
 </BaseLayout>

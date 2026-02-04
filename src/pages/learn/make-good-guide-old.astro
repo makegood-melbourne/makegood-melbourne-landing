@@ -1,0 +1,18 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Navigation from '../../components/Navigation';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import WhatIsMakeGoodPage from '../../page-components/WhatIsMakeGood.tsx';
+---
+
+<BaseLayout 
+  title="Make Good Guide | End of Lease Restoration Melbourne"
+  description="Learn what make good means for commercial leases. Understand your end of lease obligations and how to prepare for property handover."
+  canonicalUrl="https://makegood.melbourne/learn/make-good-guide"
+>
+  <Navigation client:load />
+  <div class="bg-secondary pt-20">
+    <Breadcrumbs path="/learn/make-good-guide" />
+  </div>
+  <WhatIsMakeGoodPage client:idle />
+</BaseLayout>
