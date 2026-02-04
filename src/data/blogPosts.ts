@@ -153,7 +153,7 @@ Sometimes. If water is extracted quickly (within hours), tiles are lifted and dr
 
 Waiting. The longer water sits, the more damage occurs—materials swell, adhesives fail, mould begins and costs escalate. Fast response in the first 48 hours makes the difference between a repair and a full remediation.
 
-**Is remediation different from [make good](/what-is-make-good)?**
+**Is remediation different from [make good](/learn/make-good-guide)?**
 
 Yes. Remediation addresses damage, contamination or defects—fixing the problem and restoring the building to a safe, functional state. Make good is about returning a tenancy to its original condition at lease end. Sometimes they overlap, but the drivers are different.
 
@@ -6644,52 +6644,60 @@ Specialists ensure:
 
 ## Make Good Planning Checklist
 
-**At Lease Commencement**:
-- [ ] Thoroughly review and understand make good clauses
-- [ ] Complete detailed condition report with photos
-- [ ] Document original premises layout
-- [ ] Set up make good budget provision system
+### At Lease Commencement
 
-**Throughout Tenancy**:
-- [ ] Obtain landlord approval for all alterations in writing
-- [ ] Maintain alteration records (photos, invoices, approvals)
-- [ ] Review make good requirements annually
-- [ ] Adjust budget provisions as needed
+- Thoroughly review and understand make good clauses
+- Complete detailed condition report with photos
+- Document original premises layout
+- Set up make good budget provision system
 
-**12 Months Before Lease End**:
-- [ ] Decide on lease renewal or termination
-- [ ] If terminating, begin formal make good planning
-- [ ] Review lease requirements with property manager
+### Throughout Tenancy
 
-**6 Months Before Lease End**:
-- [ ] Obtain multiple detailed make good quotes
-- [ ] Meet with landlord to clarify requirements
-- [ ] Select make good contractor
-- [ ] Finalise budget and timeline
+- Obtain landlord approval for all alterations in writing
+- Maintain alteration records (photos, invoices, approvals)
+- Review make good requirements annually
+- Adjust budget provisions as needed
 
-**3 Months Before Lease End**:
-- [ ] Confirm contractor booking
-- [ ] Coordinate work schedule with business operations
-- [ ] Arrange any necessary permits
-- [ ] Plan relocation timeline
+### 12 Months Before Lease End
 
-**6-8 Weeks Before Lease End**:
-- [ ] Commence make good works
-- [ ] Maintain regular progress communication with landlord
-- [ ] Document all work performed
+- Decide on lease renewal or termination
+- If terminating, begin formal make good planning
+- Review lease requirements with property manager
 
-**2-3 Weeks Before Lease End**:
-- [ ] Complete all works
-- [ ] Conduct pre-inspection walk-through
-- [ ] Address any deficiencies
-- [ ] Obtain final landlord approval
-- [ ] Complete final cleaning
+### 6 Months Before Lease End
 
-**At Lease End**:
-- [ ] Conduct final handover inspection
-- [ ] Provide all required documentation
-- [ ] Hand over keys
-- [ ] Confirm deposit refund timeline
+- Obtain multiple detailed make good quotes
+- Meet with landlord to clarify requirements
+- Select make good contractor
+- Finalise budget and timeline
+
+### 3 Months Before Lease End
+
+- Confirm contractor booking
+- Coordinate work schedule with business operations
+- Arrange any necessary permits
+- Plan relocation timeline
+
+### 6-8 Weeks Before Lease End
+
+- Commence make good works
+- Maintain regular progress communication with landlord
+- Document all work performed
+
+### 2-3 Weeks Before Lease End
+
+- Complete all works
+- Conduct pre-inspection walk-through
+- Address any deficiencies
+- Obtain final landlord approval
+- Complete final cleaning
+
+### At Lease End
+
+- Conduct final handover inspection
+- Provide all required documentation
+- Hand over keys
+- Confirm deposit refund timeline
 
 ## Conclusion
 

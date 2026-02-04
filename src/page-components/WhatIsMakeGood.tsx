@@ -18,7 +18,7 @@ const WhatIsMakeGood = () => {
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": "What is a Make Good? Complete Guide for Melbourne Tenants",
+    "headline": "Make Good Guide | End of Lease Restoration Melbourne",
     "description": "Learn everything about make good clauses in commercial leases. Understand your obligations, typical costs, and how to prepare for lease end in Melbourne.",
     "author": {
       "@type": "Organization",
@@ -33,13 +33,13 @@ const WhatIsMakeGood = () => {
   return (
     <main className="min-h-screen bg-background text-foreground">
       <Helmet>
-        <title>What is a Make Good? | Commercial Lease Guide | Melbourne</title>
+        <title>Make Good Guide | End of Lease Restoration Melbourne</title>
         <meta 
           name="description" 
           content="Understand make good clauses in commercial leases. Learn what's required, typical costs, timelines, and how to prepare for your lease end in Melbourne. Expert guide for tenants." 
         />
         <meta name="keywords" content="make good clause, commercial lease, make good Melbourne, lease obligations, tenant responsibilities" />
-        <link rel="canonical" href="https://makegood.melbourne/what-is-make-good/" />
+        <link rel="canonical" href="https://makegood.melbourne/learn/make-good-guide/" />
         <script type="application/ld+json">
           {JSON.stringify(articleSchema)}
         </script>
@@ -338,7 +338,7 @@ const WhatIsMakeGood = () => {
           </h2>
           <p className="text-center text-muted-foreground mb-8">
             For a detailed breakdown of each step, see{" "}
-            <a href="/our-process" className="text-primary hover:underline">
+            <a href="/learn/our-process" className="text-primary hover:underline">
               our full process guide
             </a>.
           </p>

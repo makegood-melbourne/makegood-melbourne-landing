@@ -173,30 +173,31 @@ const Navigation = () => {
                 ))}
               </DropdownMenuContent>
             </DropdownMenu>
+            {/* About Us as standalone nav item */}
+            <a href="/about" className="text-foreground hover:text-accent transition-colors">
+              About Us
+            </a>
+            {/* Learn dropdown - educational content only */}
             <DropdownMenu>
               <DropdownMenuTrigger className="flex items-center gap-1 text-foreground hover:text-accent transition-colors">
                 Learn
                 <ChevronDown className="h-4 w-4" />
               </DropdownMenuTrigger>
               <DropdownMenuContent align="start" className="bg-card border-border">
+                {/* Ordered by user intent/funnel: Awareness → Consideration → Decision → Support */}
                 <DropdownMenuItem asChild>
-                  <a href="/about" className="cursor-pointer">
-                    About Us
-                  </a>
-                </DropdownMenuItem>
-                <DropdownMenuItem asChild>
-                  <a href="/our-process" className="cursor-pointer">
-                    Our Process
-                  </a>
-                </DropdownMenuItem>
-                <DropdownMenuItem asChild>
-                  <a href="/what-is-make-good" className="cursor-pointer">
-                    What is a Make Good?
+                  <a href="/learn/make-good-guide" className="cursor-pointer">
+                    Make Good Guide
                   </a>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
                   <a href="/learn/remediation-guide" className="cursor-pointer">
                     Remediation Guide
+                  </a>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <a href="/learn/our-process" className="cursor-pointer">
+                    Our Process
                   </a>
                 </DropdownMenuItem>
                 <DropdownMenuSeparator />
@@ -262,13 +263,6 @@ const Navigation = () => {
                     </div>
                   );
                 })}
-                <a 
-                  href="/capabilities"
-                  className="text-accent hover:text-accent/80 transition-colors font-medium"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  View All Capabilities
-                </a>
               </div>
             </div>
             <div className="py-2">
@@ -284,13 +278,6 @@ const Navigation = () => {
                     {location.name}
                   </a>
                 ))}
-                <a 
-                  href="/service-areas"
-                  className="text-accent hover:text-accent/80 transition-colors font-medium"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  View All Service Areas
-                </a>
               </div>
             </div>
             <div className="py-2">
@@ -308,29 +295,41 @@ const Navigation = () => {
                 ))}
               </div>
             </div>
+            {/* About Us as standalone item in mobile menu */}
+            <div className="py-2">
+              <a 
+                href="/about" 
+                className="text-foreground font-medium hover:text-accent transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                About Us
+              </a>
+            </div>
+            {/* Learn section - educational content only */}
             <div className="py-2">
               <span className="text-foreground font-medium">Learn</span>
               <div className="pl-4 mt-2 flex flex-col gap-2">
+                {/* Ordered by user intent/funnel: Awareness → Consideration → Decision → Support */}
                 <a 
-                  href="/about" 
-                  className="text-left text-muted-foreground hover:text-accent transition-colors"
+                  href="/learn/make-good-guide" 
+                  className="text-muted-foreground hover:text-accent transition-colors"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  About Us
+                  Make Good Guide
                 </a>
                 <a 
-                  href="/our-process" 
+                  href="/learn/remediation-guide" 
+                  className="text-muted-foreground hover:text-accent transition-colors"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Remediation Guide
+                </a>
+                <a 
+                  href="/learn/our-process" 
                   className="text-muted-foreground hover:text-accent transition-colors"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Our Process
-                </a>
-                <a 
-                  href="/what-is-make-good" 
-                  className="text-muted-foreground hover:text-accent transition-colors"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  What is a Make Good?
                 </a>
                 <a 
                   href="/faq" 

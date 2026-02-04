@@ -164,7 +164,7 @@ const OurProcess = () => {
           content="Discover our proven 6-step make good process. From free consultation to successful handover, we make commercial lease restoration simple and stress-free." 
         />
         <meta name="keywords" content="make good process, commercial restoration Melbourne, lease end process, make good steps" />
-        <link rel="canonical" href="https://makegood.melbourne/our-process/" />
+        <link rel="canonical" href="https://makegood.melbourne/learn/our-process/" />
         <script type="application/ld+json">
           {JSON.stringify(processSchema)}
         </script>

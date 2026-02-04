@@ -15,10 +15,12 @@ export default defineConfig({
   site: 'https://makegood.melbourne',
   redirects: {
     // Page-level redirects for old site structure
-    '/tenants': '/what-is-make-good',
+    '/tenants': '/learn/make-good-guide',
     '/blogs': '/blog',
-    '/about': '/',
-    '/learn': '/blog',
+    
+    // Learn section URL restructure (301 redirects)
+    '/what-is-make-good': '/learn/make-good-guide',
+    '/our-process': '/learn/our-process',
     '/cart': '/',
     '/services': '/capabilities',
     
