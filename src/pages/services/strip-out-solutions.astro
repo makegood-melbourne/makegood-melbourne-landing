@@ -2,20 +2,18 @@
 // Section Landing Page: Strip Out
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Navigation from '../../components/Navigation';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import SectionLandingTemplate from '../../page-components/SectionLandingTemplate';
 import CtaBlock from '../../components/CtaBlock.astro';
 import Footer from '../../components/Footer';
 import { getSectionLandingBySlug } from '../../data/sectionLanding';
 import stripOutHero from '../../assets/services/commercial-industrial-strip-out-melbourne.jpg';
 import stripOutHeroMobile from '../../assets/services/commercial-industrial-strip-out-melbourne-mobile.jpg';
-
 const data = getSectionLandingBySlug('strip-out-solutions');
-
 if (!data) {
   return Astro.redirect('/capabilities');
 }
 ---
-
 <BaseLayout 
   title={data.metaTitle}
   description={data.metaDescription}
@@ -34,6 +32,11 @@ if (!data) {
     </a>
     
     <Navigation client:idle />
+    
+    <!-- Breadcrumbs -->
+    <div class="bg-secondary pt-20">
+      <Breadcrumbs path="/services/strip-out-solutions" />
+    </div>
     
     <main id="main-content" class="flex-1">
       <SectionLandingTemplate data={data} client:idle />
