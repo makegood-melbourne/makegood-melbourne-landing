@@ -7,6 +7,11 @@ interface Props {
   slug: string;
 }
 
+interface BreadcrumbItem {
+  label: string;
+  href?: string;
+}
+
 const { slug } = Astro.props;
 const service = getServiceBySlug(slug);
 
@@ -23,24 +28,102 @@ const heroImageTitle = service.heroImageTitle;
 const titleParts = service.titleHighlight 
   ? { main: service.title.replace(service.titleHighlight, '').trim(), highlight: service.titleHighlight }
   : { main: service.title, highlight: 'Melbourne' };
+
+// Generate breadcrumbs with full hierarchy
+function generateBreadcrumbs(serviceSlug: string, serviceName: string): BreadcrumbItem[] {
+  const breadcrumbs: BreadcrumbItem[] = [];
+  
+  // Parent category mapping
+  const parentCategories: Record<string, { label: string; href: string }> = {
+    'make-good-solutions': { label: 'Make Good Solutions', href: '/services/make-good-solutions' },
+    'remediation-solutions': { label: 'Remediation Solutions', href: '/services/remediation-solutions' },
+    'strip-out-solutions': { label: 'Strip Out Solutions', href: '/services/strip-out-solutions' },
+    'handover-solutions': { label: 'Handover Solutions', href: '/capabilities' }, // No dedicated landing page yet
+  };
+  
+  // Check if slug contains a parent category
+  const slugParts = serviceSlug.split('/');
+  
+  if (slugParts.length > 1) {
+    // It's a child service (e.g., make-good-solutions/painting)
+    const parentSlug = slugParts[0];
+    const parent = parentCategories[parentSlug];
+    
+    if (parent) {
+      breadcrumbs.push({ label: parent.label, href: parent.href });
+    }
+  }
+  
+  // Add the current service name (no href - it's the current page)
+  breadcrumbs.push({ label: serviceName });
+  
+  return breadcrumbs;
+}
+
+const breadcrumbs = generateBreadcrumbs(slug, service.name);
+
+// Generate JSON-LD structured data for breadcrumbs
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://makegood.melbourne/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Services",
+      "item": "https://makegood.melbourne/capabilities"
+    },
+    ...breadcrumbs.map((item, index) => ({
+      "@type": "ListItem",
+      "position": index + 3,
+      "name": item.label,
+      ...(item.href && { "item": `https://makegood.melbourne${item.href}` })
+    }))
+  ]
+};
 ---
+
+<!-- JSON-LD Structured Data -->
+<script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
 
 <!-- Breadcrumbs -->
 <div class="bg-secondary pt-20">
   <div class="container mx-auto px-4">
     <nav aria-label="Breadcrumb" class="py-4 text-sm">
-      <ol class="flex items-center flex-wrap gap-2">
-        <li>
-          <a href="/" class="text-muted-foreground hover:text-primary transition-colors">Home</a>
+      <ol class="flex items-center flex-wrap gap-x-2 gap-y-1">
+        <li class="flex items-center">
+          <a href="/" class="text-muted-foreground hover:text-primary transition-colors whitespace-nowrap">Home</a>
         </li>
         <li class="text-muted-foreground">/</li>
-        <li>
-          <a href="/capabilities" class="text-muted-foreground hover:text-primary transition-colors">Services</a>
+        <li class="flex items-center">
+          <a href="/capabilities" class="text-muted-foreground hover:text-primary transition-colors whitespace-nowrap">Services</a>
         </li>
-        <li class="text-muted-foreground">/</li>
-        <li>
-          <span class="text-foreground font-medium">{service.name}</span>
-        </li>
+        {breadcrumbs.map((item, index) => (
+          <>
+            <li class="text-muted-foreground">/</li>
+            <li class="flex items-center">
+              {item.href ? (
+                <a href={item.href} class="text-muted-foreground hover:text-primary transition-colors whitespace-nowrap hidden sm:inline">
+                  {item.label}
+                </a>
+              ) : (
+                <span class="text-foreground font-medium">{item.label}</span>
+              )}
+              {/* Mobile: Show abbreviated parent category */}
+              {item.href && (
+                <a href={item.href} class="text-muted-foreground hover:text-primary transition-colors whitespace-nowrap sm:hidden">
+                  {item.label.replace(' Solutions', '')}
+                </a>
+              )}
+            </li>
+          </>
+        ))}
       </ol>
     </nav>
   </div>
