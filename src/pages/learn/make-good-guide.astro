@@ -5,11 +5,12 @@ import Footer from "@/components/Footer";
 import CtaBlock from "@/components/CtaBlock.astro";
 import Breadcrumbs from "@/components/Breadcrumbs.astro";
 import { Button } from "@/components/ui/button";
+import heroImage from "@/assets/hero/commercial-office-make-good-melbourne.webp";
 
 const title = "Make Good Guide | End of Lease Restoration Melbourne";
 const description = "A comprehensive guide to commercial make good works in Melbourne. Learn about lease obligations, typical costs, timelines and what to expect when preparing your tenancy for handover.";
 const canonicalURL = new URL("/learn/make-good-guide/", Astro.site);
-const ogImage = new URL("/images/learn/commercial-make-good-open-floor-industrial-windows-melbourne.jpeg", Astro.site);
+const ogImage = new URL("/images/og/make-good-guide.jpg", Astro.site);
 ---
 
 <BaseLayout
@@ -56,11 +57,11 @@ const ogImage = new URL("/images/learn/commercial-make-good-open-floor-industria
             </div>
             <div class="relative">
               <img
-                src="/images/learn/commercial-make-good-open-floor-industrial-windows-melbourne.jpeg"
-                alt="Commercial office space with industrial windows ready for make good restoration in Melbourne"
+                src={heroImage.src}
+                alt="Worker in hi-vis performing commercial office make good restoration in Melbourne CBD"
+                width="1200"
+                height="799"
                 class="aspect-[4/3] w-full object-cover rounded-lg"
-                width="800"
-                height="600"
                 loading="eager"
               />
             </div>
