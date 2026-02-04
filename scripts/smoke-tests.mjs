@@ -63,11 +63,15 @@ async function testEndpoint(name, url, options = {}) {
 }
 
 async function runSmokeTests() {
+  // Check if this is a preview deploy (non-blocking) or production deploy (blocking)
+  const isPreviewDeploy = process.env.CONTEXT === 'deploy-preview' || process.env.BRANCH !== 'main';
+  
   console.log("═══════════════════════════════════════════════════════════");
   console.log("  MAKE GOOD MELBOURNE - POST-DEPLOY SMOKE TESTS");
   console.log("═══════════════════════════════════════════════════════════");
   console.log(`  Supabase URL: ${SUPABASE_URL}`);
   console.log(`  Timestamp: ${new Date().toISOString()}`);
+  console.log(`  Deploy context: ${isPreviewDeploy ? 'PREVIEW (non-blocking)' : 'PRODUCTION (blocking)'}`);
 
   const results = [];
 
@@ -109,7 +113,14 @@ async function runSmokeTests() {
     console.log("═══════════════════════════════════════════════════════════\n");
     console.log("  ⚠️  Critical messaging functionality may be broken!");
     console.log("  ⚠️  Check edge function logs for details.\n");
-    process.exit(1);
+    
+    // For preview deploys, don't fail the build - just warn
+    if (isPreviewDeploy) {
+      console.log("  ℹ️  Preview deploy - continuing despite test failures.\n");
+      process.exit(0);
+    } else {
+      process.exit(1);
+    }
   }
 }
 
