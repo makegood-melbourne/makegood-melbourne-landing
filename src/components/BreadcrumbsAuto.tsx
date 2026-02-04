@@ -1,8 +1,10 @@
-import { useEffect, useState } from "react";
-
 interface BreadcrumbItem {
   label: string;
   href?: string;
+}
+
+interface BreadcrumbsAutoProps {
+  path?: string;
 }
 
 // Function to convert slug to title
@@ -24,7 +26,7 @@ function generateBreadcrumbs(path: string): BreadcrumbItem[] {
   
   // Handle different page types
   if (firstSegment === 'services') {
-    breadcrumbs.push({ label: 'Services', href: '/services' });
+    breadcrumbs.push({ label: 'Services', href: '/capabilities' });
     
     if (segments.length > 1) {
       const serviceSlug = segments[1];
@@ -34,8 +36,14 @@ function generateBreadcrumbs(path: string): BreadcrumbItem[] {
       const parentServices = ['make-good-solutions', 'remediation-solutions', 'strip-out-solutions'];
       if (parentServices.includes(serviceSlug)) {
         breadcrumbs.push({ label: serviceTitle });
+      } else if (segments.length > 2) {
+        // It's a child service under a parent
+        const parentTitle = slugToTitle(serviceSlug);
+        breadcrumbs.push({ label: parentTitle, href: `/services/${serviceSlug}` });
+        const childTitle = slugToTitle(segments[2]);
+        breadcrumbs.push({ label: childTitle });
       } else {
-        // It's a child service
+        // It's a direct child service
         breadcrumbs.push({ label: serviceTitle });
       }
     }
@@ -54,7 +62,7 @@ function generateBreadcrumbs(path: string): BreadcrumbItem[] {
       breadcrumbs.push({ label: areaTitle });
     }
   } else if (firstSegment === 'learn') {
-    breadcrumbs.push({ label: 'Learn', href: '/learn' });
+    breadcrumbs.push({ label: 'Learn', href: '/faq' });
     
     if (segments.length > 1) {
       const guideTitle = slugToTitle(segments[1]);
@@ -72,7 +80,7 @@ function generateBreadcrumbs(path: string): BreadcrumbItem[] {
     const learnPages = ['our-process', 'what-is-make-good', 'capabilities', 'faq', 'service-areas'];
     
     if (learnPages.includes(firstSegment)) {
-      breadcrumbs.push({ label: 'Learn', href: '/learn' });
+      breadcrumbs.push({ label: 'Learn', href: '/faq' });
       const pageTitle = slugToTitle(firstSegment);
       breadcrumbs.push({ label: pageTitle });
     } else {
@@ -85,26 +93,19 @@ function generateBreadcrumbs(path: string): BreadcrumbItem[] {
   return breadcrumbs;
 }
 
-const BreadcrumbsAuto = () => {
-  const [breadcrumbs, setBreadcrumbs] = useState<BreadcrumbItem[]>([]);
-  const [currentPath, setCurrentPath] = useState('');
-
-  useEffect(() => {
-    // Get current path from window.location
-    const path = window.location.pathname;
-    setCurrentPath(path);
-    
-    // Don't show breadcrumbs on homepage
-    if (path === '/') {
-      return;
-    }
-    
-    const items = generateBreadcrumbs(path);
-    setBreadcrumbs(items);
-  }, []);
-
-  // Don't render anything on homepage or if no breadcrumbs
-  if (currentPath === '/' || breadcrumbs.length === 0) {
+const BreadcrumbsAuto = ({ path }: BreadcrumbsAutoProps) => {
+  // Use provided path or try to get from window (client-side fallback)
+  const currentPath = path || (typeof window !== 'undefined' ? window.location.pathname : '/');
+  
+  // Don't render anything on homepage
+  if (currentPath === '/') {
+    return null;
+  }
+  
+  const breadcrumbs = generateBreadcrumbs(currentPath);
+  
+  // Don't render if no breadcrumbs
+  if (breadcrumbs.length === 0) {
     return null;
   }
 
