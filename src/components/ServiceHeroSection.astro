@@ -96,33 +96,30 @@ const breadcrumbSchema = {
 <div class="bg-secondary pt-20">
   <div class="container mx-auto px-4">
     <nav aria-label="Breadcrumb" class="py-4 text-sm">
-      <ol class="flex items-center flex-wrap gap-x-2 gap-y-1">
-        <li class="flex items-center">
-          <a href="/" class="text-muted-foreground hover:text-primary transition-colors whitespace-nowrap">Home</a>
+      <ol class="flex items-center flex-wrap gap-2">
+        <li>
+          <a href="/" class="text-muted-foreground hover:text-primary transition-colors">Home</a>
         </li>
-        <li class="text-muted-foreground">/</li>
-        <li class="flex items-center">
-          <a href="/capabilities" class="text-muted-foreground hover:text-primary transition-colors whitespace-nowrap">Services</a>
+        <li class="flex items-center gap-2">
+          <span class="text-muted-foreground/50">/</span>
+          <a href="/capabilities" class="text-muted-foreground hover:text-primary transition-colors">Services</a>
         </li>
         {breadcrumbs.map((item, index) => (
-          <>
-            <li class="text-muted-foreground">/</li>
-            <li class="flex items-center">
-              {item.href ? (
-                <a href={item.href} class="text-muted-foreground hover:text-primary transition-colors whitespace-nowrap hidden sm:inline">
+          <li class="flex items-center gap-2">
+            <span class="text-muted-foreground/50">/</span>
+            {item.href ? (
+              <>
+                <a href={item.href} class="text-muted-foreground hover:text-primary transition-colors hidden sm:inline">
                   {item.label}
                 </a>
-              ) : (
-                <span class="text-foreground font-medium">{item.label}</span>
-              )}
-              {/* Mobile: Show abbreviated parent category */}
-              {item.href && (
-                <a href={item.href} class="text-muted-foreground hover:text-primary transition-colors whitespace-nowrap sm:hidden">
+                <a href={item.href} class="text-muted-foreground hover:text-primary transition-colors sm:hidden">
                   {item.label.replace(' Solutions', '')}
                 </a>
-              )}
-            </li>
-          </>
+              </>
+            ) : (
+              <span class="text-foreground font-medium">{item.label}</span>
+            )}
+          </li>
         ))}
       </ol>
     </nav>
