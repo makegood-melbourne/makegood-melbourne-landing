@@ -5,6 +5,13 @@
 [build.environment]
   NODE_VERSION = "20"
 
+# Disable Netlify's automatic pretty URLs to prevent double redirects
+# Astro handles trailing slashes with trailingSlash: 'always'
+[build.processing]
+  skip_processing = false
+[build.processing.html]
+  pretty_urls = false
+
 # Domain canonicalization - redirect www to non-www
 [[redirects]]
   from = "https://www.makegood.melbourne/*"
@@ -15,7 +22,7 @@
 # Legacy blog URL redirect (/blogs/* -> /blog/*)
 [[redirects]]
   from = "/blogs/*"
-  to = "/blog/:splat"
+  to = "/blog/:splat/"
   status = 301
   force = true
 
@@ -28,13 +35,13 @@
 
 [[redirects]]
   from = "/#about"
-  to = "/about"
+  to = "/about/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/tenants"
-  to = "/what-is-make-good"
+  to = "/what-is-make-good/"
   status = 301
   force = true
 
@@ -42,184 +49,184 @@
 # IMPORTANT: keep /service-areas (the listing page) working and only redirect child routes.
 [[redirects]]
   from = "/service-areas"
-  to = "/service-areas"
+  to = "/service-areas/"
   status = 200
 
 [[redirects]]
   from = "/service-areas/*"
-  to = "/areas/:splat"
+  to = "/areas/:splat/"
   status = 301
   force = true
 
 # /areas index doesn't exist - redirect to service-areas listing
 [[redirects]]
   from = "/areas"
-  to = "/service-areas"
+  to = "/service-areas/"
   status = 301
   force = true
 
 # Renamed service page redirects
 [[redirects]]
   from = "/services/commercial-painting"
-  to = "/services/make-good-painting"
+  to = "/services/make-good-painting/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/services/make-good-cleaning"
-  to = "/services/handover-cleaning"
+  to = "/services/handover-cleaning/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/services/back-to-base-works"
-  to = "/services/make-safe-works"
+  to = "/services/make-safe-works/"
   status = 301
   force = true
 
 # Unpublished service page redirects (services exist in data but not published)
 [[redirects]]
   from = "/services/commercial-make-good"
-  to = "/capabilities"
+  to = "/capabilities/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/services/concrete-floor-repair"
-  to = "/services/warehouse-floor-restoration"
+  to = "/services/warehouse-floor-restoration/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/services/concrete-slab-restoration"
-  to = "/services/warehouse-floor-restoration"
+  to = "/services/warehouse-floor-restoration/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/services/warehouse-floor-repairs"
-  to = "/services/warehouse-floor-restoration"
+  to = "/services/warehouse-floor-restoration/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/services/electrical-make-safe"
-  to = "/capabilities"
+  to = "/capabilities/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/services/led-lighting"
-  to = "/capabilities"
+  to = "/capabilities/"
   status = 301
   force = true
 
 # Blog post redirects for renamed/legacy URLs
 [[redirects]]
   from = "/blog/year-end-planning-commercial-property"
-  to = "/blog/year-end-property-planning"
+  to = "/blog/year-end-property-planning/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/blog/waste-management-sustainability-commercial-demolition"
-  to = "/blog/waste-management-sustainability-make-good-works"
+  to = "/blog/waste-management-sustainability-make-good-works/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/blog/strategic-planning-commercial-makegood"
-  to = "/blog/strategic-make-good-planning"
+  to = "/blog/strategic-make-good-planning/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/blog/office-strip-out-demolition-best-practices"
-  to = "/blog/office-strip-out"
+  to = "/blog/office-strip-out/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/blog/building-defect-remediation-compliance-process"
-  to = "/blog/building-defect-remediation-commercial-property"
+  to = "/blog/building-defect-remediation-commercial-property/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/blog/parapet-failure-emergency-repair-structural-safety"
-  to = "/blog/parapet-failure-emergency-building-repairs"
+  to = "/blog/parapet-failure-emergency-building-repairs/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/blog/property-transformation-makegood-renovation"
-  to = "/blog/love-your-property"
+  to = "/blog/love-your-property/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/blog/commercial-makegood-complete-guide"
-  to = "/blog/what-are-make-goods"
+  to = "/blog/what-are-make-goods/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/blog/polycarbonate-roofing-replacement-commercial"
-  to = "/blog/warehouse-polycarbonate-roofing-replacement"
+  to = "/blog/warehouse-polycarbonate-roofing-replacement/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/blog/makegood-services-comprehensive-overview"
-  to = "/blog/tenants-guide-smooth-make-good-experience"
+  to = "/blog/tenants-guide-smooth-make-good-experience/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/blog/painting-commercial-property-makegood-standards"
-  to = "/blog/the-importance-of-painting"
+  to = "/blog/the-importance-of-painting/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/blog/warehouse-makegood-industrial-lease-obligations"
-  to = "/blog/strategic-make-good-planning"
+  to = "/blog/strategic-make-good-planning/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/blog/balcony-waterproofing-membrane-replacement"
-  to = "/blog/balcony-waterproofing-preventing-fixing-leaks"
+  to = "/blog/balcony-waterproofing-preventing-fixing-leaks/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/blog/car-park-line-marking-compliance-standards"
-  to = "/blog/car-park-repairs-line-marking-make-good"
+  to = "/blog/car-park-repairs-line-marking-make-good/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/blog/carpet-tile-replacement-commercial-office"
-  to = "/blog/carpet-tile-replacement-installation-floor-preparation"
+  to = "/blog/carpet-tile-replacement-installation-floor-preparation/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/blog/epoxy-flooring-industrial-applications"
-  to = "/blog/restoring-concrete-floors"
+  to = "/blog/restoring-concrete-floors/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/blog/commercial-cleaning-services-post-makegood"
-  to = "/blog/end-of-lease-cleaning-services"
+  to = "/blog/end-of-lease-cleaning-services/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/blog/electrical-make-safe-emergency-response"
-  to = "/blog/electrical-make-safe-decommissioning-demolition"
+  to = "/blog/electrical-make-safe-decommissioning-demolition/"
   status = 301
   force = true
 
@@ -227,106 +234,106 @@
 # Parent pages
 [[redirects]]
   from = "/services/strip-out"
-  to = "/services/strip-out-solutions"
+  to = "/services/strip-out-solutions/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/services/make-good"
-  to = "/services/make-good-solutions"
+  to = "/services/make-good-solutions/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/services/remediation"
-  to = "/services/remediation-solutions"
+  to = "/services/remediation-solutions/"
   status = 301
   force = true
 
 # Strip Out Solutions children
 [[redirects]]
   from = "/services/demolition-works"
-  to = "/services/strip-out-solutions/demolition"
+  to = "/services/strip-out-solutions/demolition/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/services/make-safe-works"
-  to = "/services/strip-out-solutions/make-safe"
+  to = "/services/strip-out-solutions/make-safe/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/services/pallet-racking-removal"
-  to = "/services/strip-out-solutions/pallet-racking-removal"
+  to = "/services/strip-out-solutions/pallet-racking-removal/"
   status = 301
   force = true
 
 # Make Good Solutions children
 [[redirects]]
   from = "/services/line-marking"
-  to = "/services/make-good-solutions/line-marking"
+  to = "/services/make-good-solutions/line-marking/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/services/make-good-painting"
-  to = "/services/make-good-solutions/painting"
+  to = "/services/make-good-solutions/painting/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/services/ceiling-tile-replacement"
-  to = "/services/make-good-solutions/suspended-ceilings"
+  to = "/services/make-good-solutions/suspended-ceilings/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/services/warehouse-floor-restoration"
-  to = "/services/make-good-solutions/warehouse-flooring"
+  to = "/services/make-good-solutions/warehouse-flooring/"
   status = 301
   force = true
 
 # Handover Solutions children
 [[redirects]]
   from = "/services/handover-cleaning"
-  to = "/services/handover-solutions/end-of-lease-cleaning"
+  to = "/services/handover-solutions/end-of-lease-cleaning/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/services/end-of-lease-relocation"
-  to = "/services/handover-solutions/end-of-lease-relocation"
+  to = "/services/handover-solutions/end-of-lease-relocation/"
   status = 301
   force = true
 
 # Remediation Solutions children
 [[redirects]]
   from = "/services/cladding-glazing"
-  to = "/services/remediation-solutions/cladding-glazing"
+  to = "/services/remediation-solutions/cladding-glazing/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/services/polycarbonate-roofing-skylights"
-  to = "/services/remediation-solutions/polycarbonate-roofing-skylights"
+  to = "/services/remediation-solutions/polycarbonate-roofing-skylights/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/services/structural-remediation"
-  to = "/services/remediation-solutions/structural"
+  to = "/services/remediation-solutions/structural/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/services/waterproofing"
-  to = "/services/remediation-solutions/waterproofing"
+  to = "/services/remediation-solutions/waterproofing/"
   status = 301
   force = true
 
 # 404 catch-all (must be last)
 [[redirects]]
   from = "/*"
-  to = "/404.html"
+  to = "/404.html/"
   status = 404
