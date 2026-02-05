@@ -118,12 +118,12 @@ const trustBadges = [
         <div class="container mx-auto px-4">
           <div class="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h1 class="text-4xl md:text-5xl lg:text-6xl text-foreground mb-4">
-                Make Good &<br class="hidden lg:block" />
-                Remediation Services<br class="hidden lg:block" />
-                <span class="text-primary">Melbourne</span>
+              <h1 class="services-hero__heading">
+                Make Good &<br />
+                Remediation Services<br />
+                <span class="services-hero__accent">Melbourne</span>
               </h1>
-              <h2 class="text-3xl md:text-4xl text-blue-500 mb-6">
+              <h2 class="services-hero__subheading">
                 What We Deliver
               </h2>
               
@@ -139,7 +139,7 @@ const trustBadges = [
                 />
               </div>
               
-              <p class="text-xl text-muted-foreground mb-8">
+              <p class="services-hero__copy">
                 End-of-lease make goods, strip outs, remediation and handover. All trades, one point of contact. We manage the full scope so your handover is completed on time.
               </p>
               
@@ -258,6 +258,40 @@ const trustBadges = [
 </BaseLayout>
 
 <style>
+  /* TODO: Update to standardised typography classes after brand guideline implementation */
+  
+  /* Hero Typography - Interim styling matching existing site patterns */
+  .services-hero__heading {
+    font-size: clamp(28px, 3.5vw, 40px);
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: -0.01em;
+    color: #ffffff;
+    margin-bottom: 12px;
+  }
+  .services-hero__accent {
+    color: #F28C3A;
+  }
+  .services-hero__subheading {
+    font-size: clamp(22px, 2.5vw, 28px);
+    font-weight: 600;
+    color: #3B82F6;
+    margin-bottom: 24px;
+    line-height: 1.3;
+  }
+  .services-hero__copy {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #ffffff;
+    margin-bottom: 32px;
+  }
+  
+  @media (max-width: 600px) {
+    .services-hero__copy {
+      font-size: 16px;
+    }
+  }
+
   .services-grid-section {
     background-color: hsl(0 0% 18%);
     padding: 5rem 0;
