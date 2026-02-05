@@ -22,7 +22,7 @@ export default defineConfig({
     '/what-is-make-good': '/learn/make-good-guide/',
     '/our-process': '/learn/our-process/',
     '/cart': '/',
-    '/services': '/capabilities/',
+    // '/services': '/capabilities/', // REMOVED - now have /services/index.astro
     
     // Old /blogs/ URLs -> new /blog/ URLs with slug changes
     '/blogs/year-end-planning-commercial-property': '/blog/year-end-property-planning/',
