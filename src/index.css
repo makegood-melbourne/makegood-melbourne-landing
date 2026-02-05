@@ -51,8 +51,26 @@ All colors MUST be HSL.
     --sidebar-ring: 25 85% 60%;
   }
 
+  /* Typography system - headings retain uppercase but use defined weights */
   h1, h2, h3, h4, h5, h6 {
-    @apply uppercase font-normal;
+    @apply uppercase;
+  }
+
+  /* Default heading styles using typography tokens */
+  h1 {
+    @apply text-heading-1;
+  }
+
+  h2 {
+    @apply text-heading-2;
+  }
+
+  h3 {
+    @apply text-heading-3;
+  }
+
+  h4 {
+    @apply text-heading-4;
   }
 }
 

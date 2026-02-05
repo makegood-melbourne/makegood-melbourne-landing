@@ -132,7 +132,7 @@ const SectionLandingTemplate = ({ data }: SectionLandingTemplateProps) => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               {/* Title with optional highlight */}
-              <h1 className="text-4xl md:text-5xl lg:text-6xl text-foreground mb-6">
+              <h1 className="text-heading-1 text-foreground mb-6">
                 {data.titleHighlight ? (
                   <>
                     {data.title.split(data.titleHighlight)[0]}
@@ -174,7 +174,7 @@ const SectionLandingTemplate = ({ data }: SectionLandingTemplateProps) => {
               </div>
               
               {/* Tagline */}
-              <p className="text-xl text-muted-foreground mb-8">
+              <p className="text-body-lead text-muted-foreground mb-8">
                 {renderTextWithLinks(data.tagline)}
               </p>
               
@@ -244,12 +244,12 @@ const SectionLandingTemplate = ({ data }: SectionLandingTemplateProps) => {
         <div className="container mx-auto px-4 max-w-5xl">
           <div className="prose prose-xl max-w-none">
             {/* Styled Header - matching homepage */}
-            <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6 text-center">
+            <h2 className="text-heading-2 text-foreground mb-6 text-center">
               {data.aboutTitlePrefix} <span className="text-primary">{data.aboutTitleHighlight}</span>
             </h2>
             
             {/* Two Column Content */}
-            <div className="grid md:grid-cols-2 gap-x-8 gap-y-4 text-xl text-muted-foreground">
+            <div className="grid md:grid-cols-2 gap-x-8 gap-y-4 text-body-lead text-muted-foreground">
               <div>
                 {data.aboutContentLeft.map((paragraph, index) => (
                   <p key={index} className="mb-4 leading-relaxed last:mb-0">
@@ -294,10 +294,10 @@ const SectionLandingTemplate = ({ data }: SectionLandingTemplateProps) => {
         <section className="py-12 md:py-16 bg-muted/30">
           <div className="container mx-auto px-4 max-w-4xl">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              <h2 className="text-heading-2 text-foreground mb-4">
                 Frequently Asked Questions
               </h2>
-              <p className="text-lg text-muted-foreground">
+              <p className="text-body-lg text-muted-foreground">
                 Everything you need to know about our remediation services
               </p>
             </div>

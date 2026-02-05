@@ -17,6 +17,18 @@ export default {
         sans: ['PP Neue Montreal', 'system-ui', 'sans-serif'],
         montreal: ['PP Neue Montreal', 'system-ui', 'sans-serif'],
       },
+      fontSize: {
+        // Heading scale with responsive clamp values
+        'heading-1': ['clamp(2.25rem, 5vw, 3.75rem)', { lineHeight: '1.1', fontWeight: '700' }],
+        'heading-2': ['clamp(1.875rem, 3vw, 2.25rem)', { lineHeight: '1.2', fontWeight: '700' }],
+        'heading-3': ['clamp(1.25rem, 2vw, 1.5rem)', { lineHeight: '1.3', fontWeight: '600' }],
+        'heading-4': ['clamp(1.125rem, 1.5vw, 1.25rem)', { lineHeight: '1.4', fontWeight: '600' }],
+        // Body text scale
+        'body-lead': ['1.25rem', { lineHeight: '1.6', fontWeight: '400' }],
+        'body-lg': ['1.125rem', { lineHeight: '1.6', fontWeight: '400' }],
+        'body-sm': ['0.875rem', { lineHeight: '1.5', fontWeight: '400' }],
+        'body-xs': ['0.75rem', { lineHeight: '1.4', fontWeight: '400' }],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

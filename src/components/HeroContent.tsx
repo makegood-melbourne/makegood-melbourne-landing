@@ -19,21 +19,21 @@ const HeroContent = () => {
   return (
     <div className="container mx-auto px-4 z-10 pt-16">
       <div className="max-w-3xl bg-background/80 backdrop-blur-sm p-8 md:p-12 rounded-lg">
-        <h1 className="text-4xl md:text-6xl text-foreground mb-4 leading-tight font-bold" style={{ fontFamily: "'PP Neue Montreal', sans-serif" }}>
+        <h1 className="text-heading-1 text-foreground mb-4">
           Commercial<br />
           Make Good &<br />
           Remedial Works
         </h1>
-        <h2 className="text-3xl md:text-4xl text-primary font-semibold mb-6" style={{ textTransform: 'none' }}>
+        <h2 className="text-heading-2 text-primary mb-6" style={{ textTransform: 'none' }}>
           Make good, BETTER.
         </h2>
-        <p className="text-lg md:text-xl text-white mb-4 leading-relaxed">
+        <p className="text-body-lead text-white mb-4">
           Commercial spaces get worn. Leases end. We put things right.
         </p>
-        <p className="text-lg md:text-xl text-white mb-4 leading-relaxed">
+        <p className="text-body-lead text-white mb-4">
           End-of-lease strip-out, make-safe and remedial works across Melbourne. Transparent quotes. Licensed trades.
         </p>
-        <p className="text-lg md:text-xl text-white mb-6 leading-relaxed">
+        <p className="text-body-lead text-white mb-6">
           A finish you can hand over.
         </p>
         

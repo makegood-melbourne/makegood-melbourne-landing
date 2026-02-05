@@ -36,7 +36,7 @@ const titleParts = service.titleHighlight
     <div class="grid lg:grid-cols-2 gap-12 items-center">
       <div>
         <!-- Title -->
-        <h1 class="text-4xl md:text-5xl lg:text-6xl text-foreground mb-6 font-bold leading-tight">
+        <h1 class="text-heading-1 text-foreground mb-6">
           {titleParts.highlight ? (
             <>
               {titleParts.main}{' '}<span class="text-primary">{titleParts.highlight}</span>
@@ -68,7 +68,7 @@ const titleParts = service.titleHighlight
         </div>
         
         <!-- Description -->
-        <p class="text-xl text-muted-foreground mb-8">
+        <p class="text-body-lead text-muted-foreground mb-8">
           {service.heroText}
         </p>
         

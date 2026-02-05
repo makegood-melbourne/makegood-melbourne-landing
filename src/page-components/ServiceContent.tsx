@@ -82,7 +82,7 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
       {service.capabilityCards && service.capabilityCards.length > 0 ? (
         <section className="py-16 bg-background">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl md:text-4xl text-foreground mb-2">
+            <h2 className="text-heading-2 text-foreground mb-2">
               {service.capabilitiesTitle || "Capabilities"}
             </h2>
             {service.capabilitiesSubtitle && (
@@ -95,7 +95,7 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
               {service.capabilityCards.map((card, index) => (
                 <Card key={index} className="bg-secondary border-border">
                   <CardContent className="pt-6">
-                    <h3 className="text-xl font-bold text-foreground mb-4">
+                    <h3 className="text-heading-4 text-foreground mb-4">
                       {card.title}
                     </h3>
                     <ul className="space-y-2">
@@ -115,7 +115,7 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
       ) : (
         <section className="py-16 bg-background">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl md:text-4xl text-foreground mb-10">
+            <h2 className="text-heading-2 text-foreground mb-10">
               What We Deliver
             </h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -183,7 +183,7 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
       {service.skipAboutSection && service.process && service.process.length > 0 && !service.processAfterScope && !service.processAfterSpotlight && (
         <section className="py-16 bg-background">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl md:text-4xl text-foreground mb-10">Our Process</h2>
+            <h2 className="text-heading-2 text-foreground mb-10">Our Process</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               {service.process.map((step, index) => (
                 <Card key={index} className="bg-secondary border-border">
@@ -191,7 +191,7 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
                     <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
                       <span className="text-xl font-bold text-primary">{index + 1}</span>
                     </div>
-                    <h3 className="text-xl font-semibold text-foreground mb-2">{step.step}</h3>
+                    <h3 className="text-heading-4 text-foreground mb-2">{step.step}</h3>
                     <p className="text-muted-foreground">{step.description}</p>
                   </CardContent>
                 </Card>
@@ -205,7 +205,7 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
       {service.spotlightCards && service.spotlightCards.length > 0 && (
         <section className="py-16 bg-background">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl md:text-4xl text-foreground mb-4">
+            <h2 className="text-heading-2 text-foreground mb-4">
               DELIVERING PROVEN <span className="text-primary">SOLUTIONS</span>
             </h2>
             <p className="text-lg text-muted-foreground mb-10">
@@ -229,7 +229,7 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
                     />
                   </div>
                   <CardContent className="p-6">
-                    <h3 className="text-xl font-semibold text-foreground mb-3">{card.title}</h3>
+                    <h3 className="text-heading-4 text-foreground mb-3">{card.title}</h3>
                     <p className="text-muted-foreground leading-relaxed">{card.description}</p>
                   </CardContent>
                 </Card>
@@ -243,7 +243,7 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
       {service.processAfterSpotlight && service.process && service.process.length > 0 && (
         <section className="py-16 bg-secondary">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl md:text-4xl text-foreground mb-10">Our Process</h2>
+            <h2 className="text-heading-2 text-foreground mb-10">Our Process</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               {service.process.map((step, index) => (
                 <Card key={index} className="bg-background border-border">
@@ -251,7 +251,7 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
                     <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
                       <span className="text-xl font-bold text-primary">{index + 1}</span>
                     </div>
-                    <h3 className="text-xl font-semibold text-foreground mb-2">{step.step}</h3>
+                    <h3 className="text-heading-4 text-foreground mb-2">{step.step}</h3>
                     <p className="text-muted-foreground">{step.description}</p>
                   </CardContent>
                 </Card>
@@ -266,7 +266,7 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
 
         <section className="py-16 bg-secondary">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl md:text-4xl text-foreground mb-6">{service.scopeTitle || `${service.name} Scope`}</h2>
+            <h2 className="text-heading-2 text-foreground mb-6">{service.scopeTitle || `${service.name} Scope`}</h2>
             
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
@@ -298,10 +298,10 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
                 )}
               </div>
               <div>
-                <p className="text-xl text-muted-foreground leading-relaxed">
+                <p className="text-body-lead text-muted-foreground leading-relaxed">
                   {renderTextWithLinks(service.description)}
                 </p>
-                <p className="text-xl text-muted-foreground leading-relaxed mt-4">
+                <p className="text-body-lead text-muted-foreground leading-relaxed mt-4">
                   {service.slug === 'cladding-glazing' 
                     ? `Our experienced team delivers professional ${service.name.toLowerCase()} services across Melbourne's commercial buildings. We understand the critical importance of bringing buildings up to compliance with Australian Standards and building code requirements, working efficiently to minimise disruption while achieving quality results.`
                     : `Our experienced team delivers professional ${service.name.toLowerCase()} services across Melbourne's commercial and industrial properties. We understand the importance of meeting lease obligations and landlord requirements, working efficiently to minimise disruption while achieving quality results.`
@@ -317,7 +317,7 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
       {service.processAfterScope && service.process && service.process.length > 0 && (
         <section className="py-16 bg-background">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl md:text-4xl text-foreground mb-10">Our Process</h2>
+            <h2 className="text-heading-2 text-foreground mb-10">Our Process</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               {service.process.map((step, index) => (
                 <Card key={index} className="bg-secondary border-border">
@@ -325,7 +325,7 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
                     <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
                       <span className="text-xl font-bold text-primary">{index + 1}</span>
                     </div>
-                    <h3 className="text-xl font-semibold text-foreground mb-2">{step.step}</h3>
+                    <h3 className="text-heading-4 text-foreground mb-2">{step.step}</h3>
                     <p className="text-muted-foreground">{step.description}</p>
                   </CardContent>
                 </Card>
@@ -339,7 +339,7 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
       {service.comparison && service.comparisonAfterSection === undefined && (
         <section className="py-16 bg-background">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl md:text-4xl text-foreground mb-10">
+            <h2 className="text-heading-2 text-foreground mb-10">
               {service.comparison.title || "Why Choose Specialists?"}
             </h2>
             <div className="overflow-x-auto">
@@ -382,7 +382,7 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
         const processSection = service.process && service.process.length > 0 && !service.processAfterScope && !service.processAfterSpotlight ? (
           <section key="process-section" className="py-16 bg-secondary">
             <div className="container mx-auto px-4">
-              <h2 className="text-3xl md:text-4xl text-foreground mb-10">Our Process</h2>
+              <h2 className="text-heading-2 text-foreground mb-10">Our Process</h2>
               <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                 {service.process.map((step, index) => (
                   <Card key={index} className="bg-background border-border">
@@ -390,7 +390,7 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
                       <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
                         <span className="text-xl font-bold text-primary">{index + 1}</span>
                       </div>
-                      <h3 className="text-xl font-semibold text-foreground mb-2">{step.step}</h3>
+                      <h3 className="text-heading-4 text-foreground mb-2">{step.step}</h3>
                       <p className="text-muted-foreground">{step.description}</p>
                     </CardContent>
                   </Card>
@@ -403,7 +403,7 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
         const comparisonSection = service.comparison && service.comparisonAfterSection !== undefined ? (
           <section key="comparison-section" className="py-16 bg-background">
             <div className="container mx-auto px-4">
-              <h2 className="text-3xl md:text-4xl text-foreground mb-10">
+              <h2 className="text-heading-2 text-foreground mb-10">
                 {service.comparison.title || "Why Choose Specialists?"}
               </h2>
               <div className="overflow-x-auto">
@@ -450,7 +450,7 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
           elements.push(
             <section key={`featured-${index}`} className="py-16 bg-secondary">
               <div className="container mx-auto px-4">
-                <h2 className="text-3xl md:text-4xl text-foreground mb-6">
+                <h2 className="text-heading-2 text-foreground mb-6">
                   {section.title}
                 </h2>
                 
@@ -475,7 +475,7 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
                   </div>
                   <div className={index % 2 === 0 ? 'lg:order-1' : ''}>
                     {paragraphs.map((para, pIndex) => (
-                      <p key={pIndex} className="text-xl text-muted-foreground leading-relaxed mt-4 first:mt-0">
+                      <p key={pIndex} className="text-body-lead text-muted-foreground leading-relaxed mt-4 first:mt-0">
                         {renderTextWithLinks(para)}
                       </p>
                     ))}
@@ -505,7 +505,7 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
       {!service.featuredSections && service.process && service.process.length > 0 && (
         <section className="py-16 bg-secondary">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl md:text-4xl text-foreground mb-10">Our Process</h2>
+            <h2 className="text-heading-2 text-foreground mb-10">Our Process</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               {service.process.map((step, index) => (
                 <Card key={index} className="bg-background border-border">
@@ -513,7 +513,7 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
                     <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
                       <span className="text-xl font-bold text-primary">{index + 1}</span>
                     </div>
-                    <h3 className="text-xl font-semibold text-foreground mb-2">{step.step}</h3>
+                    <h3 className="text-heading-4 text-foreground mb-2">{step.step}</h3>
                     <p className="text-muted-foreground">{step.description}</p>
                   </CardContent>
                 </Card>
@@ -532,7 +532,7 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
             <div className="container mx-auto px-4">
               <div className="grid lg:grid-cols-2 gap-12 items-center">
                 <div className={shouldReverseLayout ? 'lg:order-2' : ''}>
-                  <h2 className="text-3xl md:text-4xl text-foreground mb-6">
+                  <h2 className="text-heading-2 text-foreground mb-6">
                     {section.title}
                   </h2>
                   {paragraphs.map((para, pIndex) => (
@@ -569,7 +569,7 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
       {service.linkedSpotlightBlock && (
         <section className="py-16 bg-background">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl md:text-4xl text-foreground mb-4">
+            <h2 className="text-heading-2 text-foreground mb-4">
               {service.linkedSpotlightBlock.title}{" "}
               {service.linkedSpotlightBlock.titleHighlight && (
                 <span className="text-primary">{service.linkedSpotlightBlock.titleHighlight}</span>
@@ -608,7 +608,7 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
                         )}
                       </div>
                       <CardContent className="p-6">
-                        <h3 className="text-xl font-semibold text-foreground mb-3">{card.name}</h3>
+                        <h3 className="text-heading-4 text-foreground mb-3">{card.name}</h3>
                         <p className="text-muted-foreground leading-relaxed">{card.description}</p>
                       </CardContent>
                     </Card>
@@ -624,7 +624,7 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
       {!service.relatedServicesBlock && !service.linkedSpotlightBlock && relatedServices.length > 0 && (
         <section className="py-16 bg-background">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl md:text-4xl text-foreground mb-10">Related Services</h2>
+            <h2 className="text-heading-2 text-foreground mb-10">Related Services</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {relatedServices.map((relatedService) => (
                 <a 
@@ -678,7 +678,7 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
       {service.faqs && service.faqs.length > 0 && (
         <section className="py-16 bg-background">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl md:text-4xl text-foreground mb-10">
+            <h2 className="text-heading-2 text-foreground mb-10">
               {service.faqTitle || "Frequently Asked Questions"}
             </h2>
             <div className="max-w-3xl">
