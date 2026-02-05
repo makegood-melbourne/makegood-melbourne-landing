@@ -45,6 +45,19 @@
   status = 301
   force = true
 
+# Capabilities to Services redirect
+[[redirects]]
+  from = "/capabilities"
+  to = "/services/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/capabilities/"
+  to = "/services/"
+  status = 301
+  force = true
+
 # Legacy service-areas redirect (/service-areas/* -> /areas/*)
 # IMPORTANT: keep /service-areas (the listing page) working and only redirect child routes.
 [[redirects]]

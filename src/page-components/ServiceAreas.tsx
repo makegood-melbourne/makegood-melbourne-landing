@@ -132,7 +132,7 @@ const ServiceAreas = () => {
                   <p className="text-sm text-muted-foreground">Concrete cancer and structural repairs</p>
                 </div>
               </div>
-              <a href="/capabilities">
+              <a href="/services/">
                 <Button className="bg-accent hover:bg-accent/90 text-accent-foreground">
                   View All Our Capabilities
                 </Button>

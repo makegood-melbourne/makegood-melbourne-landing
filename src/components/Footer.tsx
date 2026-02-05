@@ -80,11 +80,7 @@ const Footer = () => {
                   About Us
                 </a>
               </li>
-              <li>
-                <a href="/capabilities" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Capabilities
-                </a>
-              </li>
+
             </ul>
           </div>
 

@@ -21,7 +21,7 @@ const fullSlug = Array.isArray(slug) ? slug.join('/') : slug;
 const service = getServiceBySlug(fullSlug);
 
 if (!service) {
-  return Astro.redirect('/capabilities');
+  return Astro.redirect('/services/');
 }
 ---
 

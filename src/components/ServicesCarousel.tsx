@@ -98,7 +98,7 @@ const ServicesCarousel = () => {
 
         <div className="text-center mt-8">
           <Button asChild variant="outline" size="lg">
-            <a href="/capabilities">
+            <a href="/services/">
               View All Services
               <ArrowRight className="ml-2 h-5 w-5" />
             </a>
