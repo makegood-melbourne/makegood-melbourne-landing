@@ -113,7 +113,7 @@ const LocationContent = ({ slug }: LocationContentProps) => {
             })}
           </div>
           <div className="text-center mt-12">
-            <Button variant="outline" size="lg" asChild><a href="/capabilities" className="group">View All Capabilities<ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" /></a></Button>
+            <Button variant="outline" size="lg" asChild><a href="/services/" className="group">View All Services<ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" /></a></Button>
           </div>
         </div>
       </section>

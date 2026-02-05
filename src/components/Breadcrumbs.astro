@@ -29,7 +29,7 @@ const parentCategories: Record<string, { label: string; shortLabel: string; href
   'make-good-solutions': { label: 'Make Good Solutions', shortLabel: 'Make Good', href: '/services/make-good-solutions' },
   'remediation-solutions': { label: 'Remediation Solutions', shortLabel: 'Remediation', href: '/services/remediation-solutions' },
   'strip-out-solutions': { label: 'Strip Out Solutions', shortLabel: 'Strip Out', href: '/services/strip-out-solutions' },
-  'handover-solutions': { label: 'Handover Solutions', shortLabel: 'Handover', href: '/capabilities' },
+  'handover-solutions': { label: 'Handover Solutions', shortLabel: 'Handover', href: '/services/' },
 };
 
 // Parse the URL and generate breadcrumb items
@@ -43,7 +43,7 @@ function generateBreadcrumbs(pathStr: string, serviceNameOverride?: string): Bre
   
   // Handle different page types
   if (firstSegment === 'services') {
-    breadcrumbs.push({ label: 'Services', href: '/capabilities' });
+    breadcrumbs.push({ label: 'Services', href: '/services/' });
     
     if (segments.length > 1) {
       const serviceSlug = segments[1];
@@ -72,7 +72,7 @@ function generateBreadcrumbs(pathStr: string, serviceNameOverride?: string): Bre
       }
     }
   } else if (firstSegment === 'industries') {
-    breadcrumbs.push({ label: 'Industries', href: '/capabilities' });
+    breadcrumbs.push({ label: 'Industries', href: '/services/' });
     
     if (segments.length > 1) {
       const industryTitle = slugToTitle(segments[1]);

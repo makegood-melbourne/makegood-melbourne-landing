@@ -10,7 +10,7 @@ export function generateSitemap(): string {
   // Static pages with proper priority hierarchy
   const staticPages = [
     { url: '/', lastmod: currentDate, priority: '1.0', changefreq: 'weekly' },
-    { url: '/capabilities', lastmod: currentDate, priority: '0.9', changefreq: 'monthly' },
+    { url: '/services/', lastmod: currentDate, priority: '0.9', changefreq: 'monthly' },
     { url: '/learn/make-good-guide', lastmod: currentDate, priority: '0.9', changefreq: 'monthly' },
     { url: '/learn/our-process', lastmod: currentDate, priority: '0.9', changefreq: 'monthly' },
     { url: '/learn/remediation-guide', lastmod: currentDate, priority: '0.9', changefreq: 'monthly' },

@@ -107,7 +107,7 @@ const ThankYouContent = () => {
                 </a>
               </Button>
               <Button asChild variant="outline" size="lg">
-                <a href="/capabilities">View Our Capabilities</a>
+                <a href="/services/">View Our Services</a>
               </Button>
             </div>
           </div>

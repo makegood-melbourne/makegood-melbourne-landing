@@ -120,10 +120,10 @@ const Navigation = () => {
                 <DropdownMenuSeparator />
                 <DropdownMenuItem asChild>
                   <a 
-                    href="/capabilities"
+                    href="/services/"
                     className="cursor-pointer font-medium text-accent"
                   >
-                    View All Capabilities
+                    View All Services
                   </a>
                 </DropdownMenuItem>
               </DropdownMenuContent>

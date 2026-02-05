@@ -12,7 +12,7 @@ const SectionLandingPage = ({ slug }: SectionLandingPageProps) => {
   const data = getSectionLandingBySlug(slug);
 
   if (!data) {
-    window.location.href = "/capabilities";
+    window.location.href = "/services/";
     return null;
   }
 
