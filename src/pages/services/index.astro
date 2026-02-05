@@ -140,7 +140,7 @@ const trustBadges = [
               </div>
               
               <p class="services-hero__copy">
-                End-of-lease make goods, strip outs, remediation and handover. All trades, one point of contact. We manage the full scope so your handover is completed on time.
+                Whether your lease is ending or your building needs structural repairs, we handle the full scope—strip outs, make goods, remediation and handover. Every trade coordinated through one point of contact. We manage it all so your handover is complete and on time.
               </p>
               
               <!-- CTA Buttons -->
@@ -245,6 +245,52 @@ const trustBadges = [
                 </div>
               </article>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section class="py-12 md:py-16 bg-muted/30">
+        <div class="container mx-auto px-4 max-w-4xl">
+          <div class="text-center mb-10">
+            <h2 class="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              Common Questions
+            </h2>
+          </div>
+          <div class="space-y-4">
+            <details class="faq-item bg-background border border-border rounded-lg px-6 group">
+              <summary class="faq-question text-left text-lg font-medium hover:text-primary py-5 cursor-pointer list-none flex items-center justify-between">
+                <span>Do you handle the entire project or just specific trades?</span>
+                <svg class="faq-chevron h-5 w-5 shrink-0 transition-transform duration-200 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+              </summary>
+              <div class="faq-answer text-muted-foreground text-base pb-5 leading-relaxed">
+                The entire project. We coordinate all trades—demolition, electrical, plumbing, painting, flooring, cleaning—through one point of contact. You deal with us, we deal with everyone else.
+              </div>
+            </details>
+            <details class="faq-item bg-background border border-border rounded-lg px-6 group">
+              <summary class="faq-question text-left text-lg font-medium hover:text-primary py-5 cursor-pointer list-none flex items-center justify-between">
+                <span>What types of properties do you work on?</span>
+                <svg class="faq-chevron h-5 w-5 shrink-0 transition-transform duration-200 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+              </summary>
+              <div class="faq-answer text-muted-foreground text-base pb-5 leading-relaxed">
+                Commercial and industrial. Offices, retail, warehouses, factories, showrooms. If it's a commercial lease or a building that needs remediation, we can help.
+              </div>
+            </details>
+            <details class="faq-item bg-background border border-border rounded-lg px-6 group">
+              <summary class="faq-question text-left text-lg font-medium hover:text-primary py-5 cursor-pointer list-none flex items-center justify-between">
+                <span>How do I know which service I need?</span>
+                <svg class="faq-chevron h-5 w-5 shrink-0 transition-transform duration-200 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+              </summary>
+              <div class="faq-answer text-muted-foreground text-base pb-5 leading-relaxed">
+                Tell us what's happening—lease ending, structural issue, damage repair—and we'll scope it. Most projects involve multiple services. We'll recommend what's needed and quote accordingly.
+              </div>
+            </details>
+          </div>
+          <div class="text-center mt-10">
+            <a href="/faq/" class="inline-flex items-center justify-center gap-2 rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-11 px-8">
+              More Questions? See Our FAQ
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
           </div>
         </div>
       </section>
@@ -491,5 +537,16 @@ const trustBadges = [
 
   .card-cta:hover .cta-arrow {
     transform: translateX(4px);
+  }
+
+  /* FAQ Styles */
+  details[open] .faq-chevron {
+    transform: rotate(180deg);
+  }
+  details[open] {
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  }
+  summary::-webkit-details-marker {
+    display: none;
   }
 </style>
