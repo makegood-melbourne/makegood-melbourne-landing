@@ -168,7 +168,7 @@ const trustBadges = [
       </section>
 
       <!-- What We Do Section -->
-      <section class="py-12 md:py-16 bg-secondary">
+      <section class="py-12 md:py-16 bg-muted/30">
         <div class="container mx-auto px-4 max-w-4xl">
           <h2 class="what-we-do__heading">WHAT WE DO</h2>
           <div class="what-we-do__content">
@@ -245,7 +245,7 @@ const trustBadges = [
       </section>
 
       <!-- FAQ Section -->
-      <section class="py-12 md:py-16 bg-muted/30">
+      <section class="py-12 md:py-16 bg-secondary">
         <div class="container mx-auto px-4 max-w-4xl">
           <div class="text-center mb-10">
             <h2 class="text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -291,7 +291,9 @@ const trustBadges = [
       </section>
 
       <!-- CTA Block -->
-      <CtaBlock />
+      <div class="cta-wrapper">
+        <CtaBlock />
+      </div>
     </main>
     
     <Footer client:idle />
@@ -343,7 +345,7 @@ const trustBadges = [
     letter-spacing: 0.02em;
   }
   .what-we-do__content {
-    color: hsl(0 0% 70%);
+    color: #ffffff;
     font-size: 18px;
     line-height: 1.7;
   }
@@ -569,5 +571,9 @@ const trustBadges = [
   }
   summary::-webkit-details-marker {
     display: none;
+  }
+  /* CTA Wrapper - Override component background for alternating pattern */
+  .cta-wrapper :global(section) {
+    background-color: hsl(0 0% 25% / 0.3);
   }
 </style>
