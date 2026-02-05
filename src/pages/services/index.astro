@@ -13,6 +13,7 @@ import Footer from '../../components/Footer';
 import { Image } from 'astro:assets';
 
 // Import hero images
+import servicesHero from "@/assets/images/hero/commercial-make-good-services-melbourne.webp";
 import stripOutHero from "@/assets/services/commercial-industrial-strip-out-melbourne.jpg";
 import makeGoodHero from "@/assets/services/melbourne-warehouse-make-good-hero.jpg";
 import buildingRemediationHero from "@/assets/services/building-remediation-melbourne-shotcrete.jpg";
@@ -124,8 +125,8 @@ const trustBadges = [
               <!-- Hero Image - Mobile only -->
               <div class="lg:hidden mb-6">
                 <Image 
-                  src={stripOutHero}
-                  alt="Commercial make good and remediation services in Melbourne"
+                  src={servicesHero}
+                  alt="Commercial make good team working in large Melbourne warehouse space"
                   class="aspect-[4/3] w-full object-cover rounded-lg"
                   width={800}
                   height={600}
@@ -152,11 +153,11 @@ const trustBadges = [
             <!-- Hero Image - Desktop only -->
             <div class="hidden lg:block">
               <Image 
-                src={stripOutHero}
-                alt="Commercial make good and remediation services in Melbourne"
+                src={servicesHero}
+                alt="Commercial make good team working in large Melbourne warehouse space"
                 class="aspect-[4/3] w-full object-cover rounded-lg"
-                width={800}
-                height={600}
+                width={1600}
+                height={1067}
                 loading="eager"
               />
             </div>
