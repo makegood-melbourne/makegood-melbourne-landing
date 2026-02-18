@@ -5,9 +5,27 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Mail, MapPin, Phone, Clock, AlertTriangle } from "lucide-react";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { toast } from "sonner";
 import { getBackendClient } from "@/lib/backendClient";
+
+const RECAPTCHA_SITE_KEY = "6LfptwEoAAAAACzcHJsltAkUS5FjHL1jNgPgJ2uX";
+
+// Load reCAPTCHA v3 script once
+function loadRecaptchaScript(): Promise<void> {
+  return new Promise((resolve, reject) => {
+    if (document.querySelector(`script[src*="recaptcha"]`)) {
+      resolve();
+      return;
+    }
+    const script = document.createElement("script");
+    script.src = `https://www.google.com/recaptcha/api.js?render=${RECAPTCHA_SITE_KEY}`;
+    script.async = true;
+    script.onload = () => resolve();
+    script.onerror = () => reject(new Error("Failed to load reCAPTCHA"));
+    document.head.appendChild(script);
+  });
+}
 import {
   Accordion,
   AccordionContent,
@@ -65,12 +83,46 @@ const Contact = () => {
     message: ''
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
+  // Honeypot field - bots will fill this, humans won't see it
+  const [website, setWebsite] = useState('');
+  // Track when the form was rendered to detect instant submissions
+  const formLoadTime = useRef(Date.now());
+
+  // Load reCAPTCHA script on mount
+  useEffect(() => {
+    loadRecaptchaScript().catch(console.error);
+  }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+
+    // Layer 1: Honeypot check - reject if hidden field is filled
+    if (website) {
+      window.location.href = "/thank-you";
+      return;
+    }
+
+    // Layer 2: Time-based check - reject if submitted in under 3 seconds
+    const timeElapsed = Date.now() - formLoadTime.current;
+    if (timeElapsed < 3000) {
+      window.location.href = "/thank-you";
+      return;
+    }
+
     setIsSubmitting(true);
 
     try {
+      // Layer 4: Get reCAPTCHA v3 token
+      let recaptchaToken = "";
+      try {
+        const grecaptcha = (window as any).grecaptcha;
+        if (grecaptcha) {
+          recaptchaToken = await grecaptcha.execute(RECAPTCHA_SITE_KEY, { action: "contact_form" });
+        }
+      } catch (recaptchaError) {
+        console.warn("reCAPTCHA failed, proceeding without token:", recaptchaError);
+      }
+
       const sourcePage = '/contact';
       const messageWithService = formData.serviceType 
         ? `[Service: ${formData.serviceType}]${formData.company ? ` [Company: ${formData.company}]` : ''}\n\n${formData.message}`
@@ -83,7 +135,10 @@ const Contact = () => {
           email: formData.email,
           phone: formData.phone,
           message: messageWithService,
-          sourcePage 
+          sourcePage,
+          _hp: website,
+          _ts: formLoadTime.current,
+          _rc: recaptchaToken,
         }
       });
 
@@ -219,6 +274,19 @@ const Contact = () => {
                         </SelectContent>
                       </Select>
                     </div>
+                    {/* Honeypot field - hidden from humans, visible to bots */}
+                    <div aria-hidden="true" style={{ position: 'absolute', left: '-9999px', top: '-9999px', opacity: 0, height: 0, width: 0, overflow: 'hidden', tabIndex: -1 }}>
+                      <label htmlFor="contact-website">Website</label>
+                      <input
+                        type="text"
+                        id="contact-website"
+                        name="website"
+                        value={website}
+                        onChange={(e) => setWebsite(e.target.value)}
+                        tabIndex={-1}
+                        autoComplete="off"
+                      />
+                    </div>
                     <div>
                       <Textarea
                         name="message"
@@ -237,6 +305,11 @@ const Contact = () => {
                     >
                       {isSubmitting ? "Sending..." : "Send Message"}
                     </Button>
+                    <p className="text-xs text-muted-foreground mt-3">
+                      This site is protected by reCAPTCHA and the Google{" "}
+                      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" className="underline">Privacy Policy</a> and{" "}
+                      <a href="https://policies.google.com/terms" target="_blank" rel="noopener noreferrer" className="underline">Terms of Service</a> apply.
+                    </p>
                   </form>
                 </CardContent>
               </Card>

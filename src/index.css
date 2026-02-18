@@ -65,3 +65,8 @@ All colors MUST be HSL.
     @apply bg-background text-foreground;
   }
 }
+
+/* Hide reCAPTCHA v3 badge - required disclaimer text shown near form submit button */
+.grecaptcha-badge {
+  visibility: hidden !important;
+}

@@ -5,11 +5,25 @@ import { z } from "https://deno.land/x/zod@v3.22.4/mod.ts";
 const RESEND_API_KEY = Deno.env.get("RESEND_API_KEY");
 const SUPABASE_URL = Deno.env.get("SUPABASE_URL");
 const SUPABASE_SERVICE_ROLE_KEY = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY");
+const RECAPTCHA_SECRET_KEY = Deno.env.get("RECAPTCHA_SECRET_KEY") || "6LfptwEoAAAAAPs5mYV7sAvI7AXmvCr-UwQ79XM9";
 
-const corsHeaders = {
-  "Access-Control-Allow-Origin": "*",
-  "Access-Control-Allow-Headers": "authorization, x-client-info, apikey, content-type",
-};
+// Layer 3: CORS restricted to production domain only
+const ALLOWED_ORIGINS = [
+  "https://makegood.melbourne",
+  "https://www.makegood.melbourne",
+];
+
+function getCorsHeaders(req: Request) {
+  const origin = req.headers.get("origin") || "";
+  // Allow Netlify deploy previews for testing
+  const isAllowed = ALLOWED_ORIGINS.includes(origin) || 
+    origin.includes("peaceful-arithmetic-d23971.netlify.app");
+  
+  return {
+    "Access-Control-Allow-Origin": isAllowed ? origin : ALLOWED_ORIGINS[0],
+    "Access-Control-Allow-Headers": "authorization, x-client-info, apikey, content-type",
+  };
+}
 
 // Input validation schema with length limits
 const ContactSchema = z.object({
@@ -18,6 +32,10 @@ const ContactSchema = z.object({
   phone: z.string().max(20, "Phone must be less than 20 characters").regex(/^[0-9\s\+\-\(\)]*$/, "Invalid phone format").optional().or(z.literal("")),
   message: z.string().trim().min(10, "Message must be at least 10 characters").max(2000, "Message must be less than 2000 characters"),
   sourcePage: z.string().max(500, "Source page URL too long").optional(),
+  // Spam protection fields (optional - older clients may not send these)
+  _hp: z.string().optional(),
+  _ts: z.number().optional(),
+  _rc: z.string().optional(),
 });
 
 // HTML escape function to prevent XSS in email clients
@@ -33,11 +51,26 @@ function escapeHtml(text: string): string {
 }
 
 const handler = async (req: Request): Promise<Response> => {
+  const corsHeaders = getCorsHeaders(req);
+  
   console.log("Received contact form submission");
 
   // Handle CORS preflight requests
   if (req.method === "OPTIONS") {
     return new Response(null, { headers: corsHeaders });
+  }
+
+  // Layer 3: Check origin header
+  const origin = req.headers.get("origin") || "";
+  const isAllowedOrigin = ALLOWED_ORIGINS.includes(origin) || 
+    origin.includes("peaceful-arithmetic-d23971.netlify.app");
+  
+  if (!isAllowedOrigin && origin !== "") {
+    console.warn("Blocked request from unauthorized origin:", origin);
+    return new Response(
+      JSON.stringify({ error: "Unauthorized" }),
+      { status: 403, headers: { ...corsHeaders, "Content-Type": "application/json" } }
+    );
   }
 
   try {
@@ -55,7 +88,70 @@ const handler = async (req: Request): Promise<Response> => {
       );
     }
 
-    const { name, email, phone, message, sourcePage } = validationResult.data;
+    const { name, email, phone, message, sourcePage, _hp, _ts, _rc } = validationResult.data;
+
+    // Layer 1 (server-side): Honeypot check
+    if (_hp && _hp.length > 0) {
+      console.warn("Honeypot triggered - spam blocked from:", email);
+      // Return success to not alert the bot
+      return new Response(
+        JSON.stringify({ success: true }),
+        { status: 200, headers: { ...corsHeaders, "Content-Type": "application/json" } }
+      );
+    }
+
+    // Layer 2 (server-side): Time-based check - reject if submitted in under 2 seconds
+    if (_ts) {
+      const submissionTime = Date.now() - _ts;
+      if (submissionTime < 2000) {
+        console.warn("Time-based spam check triggered - too fast:", submissionTime, "ms from:", email);
+        return new Response(
+          JSON.stringify({ success: true }),
+          { status: 200, headers: { ...corsHeaders, "Content-Type": "application/json" } }
+        );
+      }
+    }
+
+    // Layer 4 (server-side): reCAPTCHA v3 verification
+    if (_rc) {
+      try {
+        const recaptchaRes = await fetch("https://www.google.com/recaptcha/api/siteverify", {
+          method: "POST",
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: `secret=${RECAPTCHA_SECRET_KEY}&response=${_rc}`,
+        });
+        const recaptchaData = await recaptchaRes.json();
+        console.log("reCAPTCHA result:", JSON.stringify(recaptchaData));
+
+        if (!recaptchaData.success || recaptchaData.score < 0.3) {
+          console.warn("reCAPTCHA failed - score:", recaptchaData.score, "from:", email);
+          return new Response(
+            JSON.stringify({ success: true }),
+            { status: 200, headers: { ...corsHeaders, "Content-Type": "application/json" } }
+          );
+        }
+      } catch (recaptchaError) {
+        console.warn("reCAPTCHA verification error, proceeding:", recaptchaError);
+        // Don't block if reCAPTCHA service is down
+      }
+    } else {
+      console.warn("No reCAPTCHA token provided from:", email);
+    }
+
+    // Additional spam heuristics: check for gibberish names/messages
+    const hasOnlyAlphaName = /^[a-zA-Z]+$/.test(name.replace(/\s/g, ''));
+    const nameHasNoSpaces = !name.trim().includes(' ');
+    const messageHasNoSpaces = !message.trim().includes(' ');
+    const nameIsGibberish = name.length > 10 && hasOnlyAlphaName && nameHasNoSpaces;
+    const messageIsGibberish = message.length > 10 && messageHasNoSpaces && /^[a-zA-Z]+$/.test(message.replace(/\s/g, ''));
+    
+    if (nameIsGibberish && messageIsGibberish) {
+      console.warn("Gibberish spam detected - blocked:", name, message);
+      return new Response(
+        JSON.stringify({ success: true }),
+        { status: 200, headers: { ...corsHeaders, "Content-Type": "application/json" } }
+      );
+    }
     
     console.log("Processing enquiry from:", name, email);
 
