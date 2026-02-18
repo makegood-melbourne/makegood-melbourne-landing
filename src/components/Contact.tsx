@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { toast } from "sonner";
 import { getBackendClient } from "@/lib/backendClient";
 
@@ -15,30 +15,51 @@ const Contact = () => {
     message: ''
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
+  // Honeypot field - bots will fill this, humans won't see it
+  const [website, setWebsite] = useState('');
+  // Track when the form was rendered to detect instant submissions
+  const formLoadTime = useRef(Date.now());
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+
+    // Layer 1: Honeypot check - reject if hidden field is filled
+    if (website) {
+      // Silently redirect to thank-you to not alert the bot
+      window.location.href = "/thank-you";
+      return;
+    }
+
+    // Layer 2: Time-based check - reject if submitted in under 3 seconds
+    const timeElapsed = Date.now() - formLoadTime.current;
+    if (timeElapsed < 3000) {
+      window.location.href = "/thank-you";
+      return;
+    }
+
     setIsSubmitting(true);
 
     try {
       const sourcePage = window.location.href;
       const supabase = await loadBackendClient();
       const { data, error } = await supabase.functions.invoke("send-contact-email", {
-        body: { ...formData, sourcePage },
+        body: { 
+          ...formData, 
+          sourcePage,
+          _hp: website,
+          _ts: formLoadTime.current,
+        },
       });
 
       if (error) {
-        // Check if it's a validation error from the response
         const errorMessage = error.message || "Failed to send message";
         throw new Error(errorMessage);
       }
 
-      // Check for error in the response data (validation errors return 400 with error in body)
       if (data?.error) {
         throw new Error(data.error);
       }
 
-      // Redirect to thank you page with conversion tracking
       window.location.href = "/thank-you";
     } catch (error: any) {
       console.error("Error submitting form:", error);
@@ -103,6 +124,19 @@ const Contact = () => {
                     onChange={handleChange}
                     required
                     className="bg-background border-input"
+                  />
+                </div>
+                {/* Honeypot field - hidden from humans, visible to bots */}
+                <div aria-hidden="true" style={{ position: 'absolute', left: '-9999px', top: '-9999px', opacity: 0, height: 0, width: 0, overflow: 'hidden', tabIndex: -1 }}>
+                  <label htmlFor="website">Website</label>
+                  <input
+                    type="text"
+                    id="website"
+                    name="website"
+                    value={website}
+                    onChange={(e) => setWebsite(e.target.value)}
+                    tabIndex={-1}
+                    autoComplete="off"
                   />
                 </div>
                 <div>

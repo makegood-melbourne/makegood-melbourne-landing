@@ -5,7 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Mail, MapPin, Phone, Clock, AlertTriangle } from "lucide-react";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { toast } from "sonner";
 import { getBackendClient } from "@/lib/backendClient";
 import {
@@ -65,9 +65,27 @@ const Contact = () => {
     message: ''
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
+  // Honeypot field - bots will fill this, humans won't see it
+  const [website, setWebsite] = useState('');
+  // Track when the form was rendered to detect instant submissions
+  const formLoadTime = useRef(Date.now());
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+
+    // Layer 1: Honeypot check - reject if hidden field is filled
+    if (website) {
+      window.location.href = "/thank-you";
+      return;
+    }
+
+    // Layer 2: Time-based check - reject if submitted in under 3 seconds
+    const timeElapsed = Date.now() - formLoadTime.current;
+    if (timeElapsed < 3000) {
+      window.location.href = "/thank-you";
+      return;
+    }
+
     setIsSubmitting(true);
 
     try {
@@ -83,7 +101,9 @@ const Contact = () => {
           email: formData.email,
           phone: formData.phone,
           message: messageWithService,
-          sourcePage 
+          sourcePage,
+          _hp: website,
+          _ts: formLoadTime.current,
         }
       });
 
@@ -218,6 +238,19 @@ const Contact = () => {
                           <SelectItem value="other">Other Services</SelectItem>
                         </SelectContent>
                       </Select>
+                    </div>
+                    {/* Honeypot field - hidden from humans, visible to bots */}
+                    <div aria-hidden="true" style={{ position: 'absolute', left: '-9999px', top: '-9999px', opacity: 0, height: 0, width: 0, overflow: 'hidden', tabIndex: -1 }}>
+                      <label htmlFor="contact-website">Website</label>
+                      <input
+                        type="text"
+                        id="contact-website"
+                        name="website"
+                        value={website}
+                        onChange={(e) => setWebsite(e.target.value)}
+                        tabIndex={-1}
+                        autoComplete="off"
+                      />
                     </div>
                     <div>
                       <Textarea
