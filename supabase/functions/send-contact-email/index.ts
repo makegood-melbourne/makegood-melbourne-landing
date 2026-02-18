@@ -5,6 +5,7 @@ import { z } from "https://deno.land/x/zod@v3.22.4/mod.ts";
 const RESEND_API_KEY = Deno.env.get("RESEND_API_KEY");
 const SUPABASE_URL = Deno.env.get("SUPABASE_URL");
 const SUPABASE_SERVICE_ROLE_KEY = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY");
+const RECAPTCHA_SECRET_KEY = Deno.env.get("RECAPTCHA_SECRET_KEY") || "6LfptwEoAAAAAPs5mYV7sAvI7AXmvCr-UwQ79XM9";
 
 // Layer 3: CORS restricted to production domain only
 const ALLOWED_ORIGINS = [
@@ -34,6 +35,7 @@ const ContactSchema = z.object({
   // Spam protection fields (optional - older clients may not send these)
   _hp: z.string().optional(),
   _ts: z.number().optional(),
+  _rc: z.string().optional(),
 });
 
 // HTML escape function to prevent XSS in email clients
@@ -86,7 +88,7 @@ const handler = async (req: Request): Promise<Response> => {
       );
     }
 
-    const { name, email, phone, message, sourcePage, _hp, _ts } = validationResult.data;
+    const { name, email, phone, message, sourcePage, _hp, _ts, _rc } = validationResult.data;
 
     // Layer 1 (server-side): Honeypot check
     if (_hp && _hp.length > 0) {
@@ -108,6 +110,32 @@ const handler = async (req: Request): Promise<Response> => {
           { status: 200, headers: { ...corsHeaders, "Content-Type": "application/json" } }
         );
       }
+    }
+
+    // Layer 4 (server-side): reCAPTCHA v3 verification
+    if (_rc) {
+      try {
+        const recaptchaRes = await fetch("https://www.google.com/recaptcha/api/siteverify", {
+          method: "POST",
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: `secret=${RECAPTCHA_SECRET_KEY}&response=${_rc}`,
+        });
+        const recaptchaData = await recaptchaRes.json();
+        console.log("reCAPTCHA result:", JSON.stringify(recaptchaData));
+
+        if (!recaptchaData.success || recaptchaData.score < 0.3) {
+          console.warn("reCAPTCHA failed - score:", recaptchaData.score, "from:", email);
+          return new Response(
+            JSON.stringify({ success: true }),
+            { status: 200, headers: { ...corsHeaders, "Content-Type": "application/json" } }
+          );
+        }
+      } catch (recaptchaError) {
+        console.warn("reCAPTCHA verification error, proceeding:", recaptchaError);
+        // Don't block if reCAPTCHA service is down
+      }
+    } else {
+      console.warn("No reCAPTCHA token provided from:", email);
     }
 
     // Additional spam heuristics: check for gibberish names/messages

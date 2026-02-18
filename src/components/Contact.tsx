@@ -2,11 +2,30 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import { toast } from "sonner";
 import { getBackendClient } from "@/lib/backendClient";
 
+const RECAPTCHA_SITE_KEY = "6LfptwEoAAAAACzcHJsltAkUS5FjHL1jNgPgJ2uX";
+
 const loadBackendClient = async () => getBackendClient();
+
+// Load reCAPTCHA v3 script once
+function loadRecaptchaScript(): Promise<void> {
+  return new Promise((resolve, reject) => {
+    if (document.querySelector(`script[src*="recaptcha"]`)) {
+      resolve();
+      return;
+    }
+    const script = document.createElement("script");
+    script.src = `https://www.google.com/recaptcha/api.js?render=${RECAPTCHA_SITE_KEY}`;
+    script.async = true;
+    script.onload = () => resolve();
+    script.onerror = () => reject(new Error("Failed to load reCAPTCHA"));
+    document.head.appendChild(script);
+  });
+}
+
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -20,12 +39,16 @@ const Contact = () => {
   // Track when the form was rendered to detect instant submissions
   const formLoadTime = useRef(Date.now());
 
+  // Load reCAPTCHA script on mount
+  useEffect(() => {
+    loadRecaptchaScript().catch(console.error);
+  }, []);
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
     // Layer 1: Honeypot check - reject if hidden field is filled
     if (website) {
-      // Silently redirect to thank-you to not alert the bot
       window.location.href = "/thank-you";
       return;
     }
@@ -40,6 +63,17 @@ const Contact = () => {
     setIsSubmitting(true);
 
     try {
+      // Layer 4: Get reCAPTCHA v3 token
+      let recaptchaToken = "";
+      try {
+        const grecaptcha = (window as any).grecaptcha;
+        if (grecaptcha) {
+          recaptchaToken = await grecaptcha.execute(RECAPTCHA_SITE_KEY, { action: "contact_form" });
+        }
+      } catch (recaptchaError) {
+        console.warn("reCAPTCHA failed, proceeding without token:", recaptchaError);
+      }
+
       const sourcePage = window.location.href;
       const supabase = await loadBackendClient();
       const { data, error } = await supabase.functions.invoke("send-contact-email", {
@@ -48,6 +82,7 @@ const Contact = () => {
           sourcePage,
           _hp: website,
           _ts: formLoadTime.current,
+          _rc: recaptchaToken,
         },
       });
 

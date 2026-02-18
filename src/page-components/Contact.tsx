@@ -5,9 +5,27 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Mail, MapPin, Phone, Clock, AlertTriangle } from "lucide-react";
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import { toast } from "sonner";
 import { getBackendClient } from "@/lib/backendClient";
+
+const RECAPTCHA_SITE_KEY = "6LfptwEoAAAAACzcHJsltAkUS5FjHL1jNgPgJ2uX";
+
+// Load reCAPTCHA v3 script once
+function loadRecaptchaScript(): Promise<void> {
+  return new Promise((resolve, reject) => {
+    if (document.querySelector(`script[src*="recaptcha"]`)) {
+      resolve();
+      return;
+    }
+    const script = document.createElement("script");
+    script.src = `https://www.google.com/recaptcha/api.js?render=${RECAPTCHA_SITE_KEY}`;
+    script.async = true;
+    script.onload = () => resolve();
+    script.onerror = () => reject(new Error("Failed to load reCAPTCHA"));
+    document.head.appendChild(script);
+  });
+}
 import {
   Accordion,
   AccordionContent,
@@ -70,6 +88,11 @@ const Contact = () => {
   // Track when the form was rendered to detect instant submissions
   const formLoadTime = useRef(Date.now());
 
+  // Load reCAPTCHA script on mount
+  useEffect(() => {
+    loadRecaptchaScript().catch(console.error);
+  }, []);
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
@@ -89,6 +112,17 @@ const Contact = () => {
     setIsSubmitting(true);
 
     try {
+      // Layer 4: Get reCAPTCHA v3 token
+      let recaptchaToken = "";
+      try {
+        const grecaptcha = (window as any).grecaptcha;
+        if (grecaptcha) {
+          recaptchaToken = await grecaptcha.execute(RECAPTCHA_SITE_KEY, { action: "contact_form" });
+        }
+      } catch (recaptchaError) {
+        console.warn("reCAPTCHA failed, proceeding without token:", recaptchaError);
+      }
+
       const sourcePage = '/contact';
       const messageWithService = formData.serviceType 
         ? `[Service: ${formData.serviceType}]${formData.company ? ` [Company: ${formData.company}]` : ''}\n\n${formData.message}`
@@ -104,6 +138,7 @@ const Contact = () => {
           sourcePage,
           _hp: website,
           _ts: formLoadTime.current,
+          _rc: recaptchaToken,
         }
       });
 
