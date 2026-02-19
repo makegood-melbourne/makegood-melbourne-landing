@@ -1,14 +1,25 @@
 ---
-import Layout from '@/layouts/Layout.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Navigation from '../components/Navigation';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import CtaBlock from '../components/CtaBlock.astro';
+import Footer from '../components/Footer';
 import { Image } from 'astro:assets';
 import heroImage from '@/assets/make-good-melbourne-commercial-make-good.jpg';
 ---
 
-<Layout 
+<BaseLayout 
   title="About Us | Make Good Melbourne"
   description="Meet the team behind Make Good Melbourne. Commercial and industrial make good specialists delivering clear scopes, coordinated trades and reliable handover across Melbourne."
->  <!-- Hero Section -->
-  <section class="relative pt-20 md:pt-24 pb-16 flex items-center bg-background">>
+  canonicalUrl="https://makegood.melbourne/about"
+>
+  <Navigation client:load />
+  <div class="bg-secondary pt-20">
+    <Breadcrumbs path="/about" />
+  </div>
+
+  <!-- Hero Section -->
+  <section class="bg-secondary pt-6 pb-10 md:pt-10 md:pb-16">
     <div class="container mx-auto px-4">
       <div class="grid lg:grid-cols-2 gap-12 items-center">
         <!-- Left: Content -->
@@ -18,20 +29,8 @@ import heroImage from '@/assets/make-good-melbourne-commercial-make-good.jpg';
           </h1>
           <div class="text-xl text-muted-foreground mb-8 leading-relaxed max-w-lg space-y-4">
             <p>Make Good Melbourne specialises exclusively in commercial make good and restoration works across Melbourne.</p>
-            <p>We work with tenants, managing agents and owners to return spaces to agreed handback condition through clearly defined scopes, coordinated trades and accountable delivery.</p>
+            <p>We work with tenants, property managers and owners to return spaces to agreed handback condition through clearly defined scopes, coordinated trades and accountable delivery.</p>
             <p class="font-medium">Licensed trades. Fixed-price scopes. Reliable handover.</p>
-          </div>
-
-          <!-- CTA Buttons -->
-          <div class="flex flex-col sm:flex-row gap-4">
-            <a href="/#contact" class="inline-flex items-center justify-center h-11 px-8 rounded-md bg-primary text-primary-foreground font-medium hover:bg-primary/90 transition-colors">
-              Get an Assessment
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-            </a>
-            <a href="mailto:info@makegood.melbourne" class="inline-flex items-center justify-center h-11 px-8 rounded-md border border-input bg-background font-medium hover:bg-accent hover:text-accent-foreground transition-colors">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-              Email Us
-            </a>
           </div>
         </div>
 
@@ -51,4 +50,69 @@ import heroImage from '@/assets/make-good-melbourne-commercial-make-good.jpg';
       </div>
     </div>
   </section>
-</Layout>
+
+  <!-- What We Do -->
+  <section class="py-16 md:py-24">
+    <div class="container mx-auto px-4 max-w-4xl">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">What we do</h2>
+      <div class="prose prose-lg max-w-none space-y-6">
+        <p>
+          We deliver end-of-lease make goods, strip outs, remediation and handover services for commercial and industrial properties. Offices, warehouses, retail, medical, hospitality—if it's a commercial space that needs restoring, we handle it.
+        </p>
+        <p>
+          Most projects involve multiple trades: demolition, electrical, plumbing, plastering, painting, flooring, cleaning. We coordinate all of them. You get one point of contact, one scope, one quote. No chasing suppliers. No gaps between trades. We manage the full scope so your handover is complete and on time.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- How We Work -->
+  <section class="py-16 md:py-24 bg-secondary">
+    <div class="container mx-auto px-4 max-w-4xl">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">How we work</h2>
+      <div class="prose prose-lg max-w-none space-y-6">
+        <p>
+          We start with your lease and your landlord's requirements. We inspect the site, define the scope in writing, and provide a fixed-price quote. No surprises.
+        </p>
+        <p>
+          Once the scope is agreed, we schedule the works and coordinate every trade through to completion. We handle the project management, the compliance, and the documentation. When we're done, you get a handover pack and a space that's ready to hand back.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Who We Work With -->
+  <section class="py-16 md:py-24">
+    <div class="container mx-auto px-4 max-w-4xl">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">Who we work with</h2>
+      <div class="prose prose-lg max-w-none space-y-6">
+        <p>
+          We work with commercial tenants preparing for lease end, property managers coordinating make goods on behalf of owners, and building owners dealing with damage, defects or compliance issues.
+        </p>
+        <p>
+          Whether it's a small office strip-out or a large warehouse restoration, we approach every project the same way: clear scope, licensed trades, accountable delivery.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why We Exist -->
+  <section class="py-16 md:py-24 bg-secondary">
+    <div class="container mx-auto px-4 max-w-4xl">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">Why we exist</h2>
+      <div class="prose prose-lg max-w-none space-y-6">
+        <p>
+          Make good projects fall apart when the scope isn't clear, when trades aren't coordinated, or when no one takes ownership of the outcome. We started Make Good Melbourne to fix that.
+        </p>
+        <p>
+          We do make goods all day, every day. It's all we do. That focus means we understand what landlords expect, what leases require, and what it takes to get a space handed back without disputes or delays.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Block -->
+  <CtaBlock />
+
+  <Footer client:idle />
+</BaseLayout>
