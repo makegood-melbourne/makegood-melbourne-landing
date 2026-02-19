@@ -1618,7 +1618,7 @@ Professional floor preparation and carpet tile installation removes the stress f
   {
     id: "30",
     slug: "electrical-make-safe-decommissioning-demolition",
-    title: "Electrical Make Safe Melbourne | Decommissioning Before Demolition",
+    title: "Electrical Make Safe Melbourne | Decommissioning Guide",
     date: "1 August 2025",
     excerpt: "Electrical make safe is an essential preliminary step in make good and demolition projects, ensuring all electrical systems are safely decommissioned before strip-out works commence. Licensed electricians isolate, disconnect, and remove electrical installations, returning systems to base building configuration and creating a safe working environment. Learn about electrical make safe procedures, compliance requirements, and integration with make good projects.",
     metaDescription: "Electrical make safe is essential before demolition works. Learn about safe decommissioning, isolation procedures, and compliance requirements in Melbourne.",
@@ -3920,7 +3920,7 @@ Available during business hours`,
   {
     id: "25",
     slug: "car-park-repairs-line-marking-make-good",
-    title: "Car Park Repairs & Line Marking Melbourne | Commercial Make Good",
+    title: "Car Park Line Marking Melbourne | Repairs & Make Good",
     date: "1 March 2025",
     excerpt: "Car parks are high-traffic areas subject to constant wear, requiring regular maintenance, repairs, and line marking renewal. Whether for end-of-lease make good obligations, property presentation, or safety compliance, professional car park restoration ensures functionality, safety, and property value. Learn about repair processes, line marking standards, and make good requirements.",
     metaDescription: "Car park repairs and line marking for commercial properties. Expert guide on concrete restoration, safety compliance, and end of lease make good in Melbourne.",
@@ -4962,7 +4962,7 @@ Need professional assessment of your building's cladding or guidance on remediat
   {
     id: "23",
     slug: "warehouse-polycarbonate-roofing-replacement",
-    title: "Polycarbonate Roofing Replacement Melbourne | Skylights & Panels",
+    title: "Polycarbonate Roofing Melbourne | Warehouse Skylights",
     date: "15 January 2025",
     excerpt: "Translucent polycarbonate roof sheeting provides essential natural lighting in warehouses and industrial facilities. Over time, these panels deteriorate, discolour, and leak, requiring replacement to maintain property value, operational efficiency, and lease compliance. Learn about assessment, replacement processes, and make good obligations.",
     metaDescription: "Warehouse polycarbonate roofing replacement in Melbourne. Learn about panel deterioration, natural lighting restoration, and end of lease make good requirements.",
@@ -7060,7 +7060,7 @@ If you've identified building defects in your commercial property or want proact
   {
     id: "18",
     slug: "slab-rectification-concrete-floor-movement",
-    title: "Slab Rectification Melbourne | Concrete Floor Settlement Repairs",
+    title: "Slab Rectification Melbourne | Concrete Floor Repairs",
     date: "1 August 2024",
     excerpt: "Concrete slab movement and settlement are serious issues that can compromise the structural integrity and functionality of commercial and industrial properties. From uneven floors affecting equipment operation to cracks indicating foundation problems, understanding slab rectification is essential for property owners facing these challenges.",
     metaDescription: "Concrete slab movement affecting your property? Learn about slab rectification, floor settlement causes, and professional repair solutions for Melbourne buildings.",
@@ -8269,7 +8269,7 @@ As the curtains fall on this blog, we want to leave you with this thought: prope
   {
     id: "8",
     slug: "restoring-concrete-floors",
-    title: "Restoring Concrete Floors Melbourne | Warehouse Floor Repairs",
+    title: "Concrete Floor Restoration Melbourne | Warehouse Repairs",
     date: "1 October 2023",
     excerpt: "In the world of property management, one often-overlooked hero stands tall, quite literally—the concrete floors of warehouses. These sturdy foundations bear the weight of industry, but over time, they show signs of wear and tear, creating challenges for both safety and aesthetics.",
     metaDescription: "Warehouse concrete floor showing wear and tear? Learn about professional floor restoration, grinding, polishing, and repair solutions for Melbourne industrial spaces.",

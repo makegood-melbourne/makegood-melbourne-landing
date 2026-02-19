@@ -230,7 +230,7 @@ export const sectionLandingPages: SectionLandingData[] = [
   },
   {
     slug: "remediation-solutions",
-    metaTitle: "Building Remediation Melbourne | Structural Repairs & Compliance",
+    metaTitle: "Building Remediation Melbourne | Structural Repairs",
     metaDescription: "Building remediation services in Melbourne. Structural repairs, concrete cancer treatment, cladding compliance and waterproofing. Licensed contractors. Free site inspections.",
     ogImage: "/og/remediation.jpg",
     
