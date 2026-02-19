@@ -2064,10 +2064,10 @@ Creating safe working environments for make good and demolition`,
   {
     id: "29",
     slug: "ceiling-repairs-suspended-acoustic-tiles-make-good",
-    title: "Ceiling Repairs and Replacement: Suspended Ceilings, Water Damage, and Make Good Standards",
+    title: "Suspended Ceiling Repairs Melbourne | Acoustic Tile Replacement & Make Good",
     date: "1 July 2025",
     excerpt: "Ceiling repairs and replacement are critical components of commercial make good projects, addressing water damage, wear, and compliance requirements. From suspended ceiling grid systems and acoustic tiles to plasterboard ceilings and fire-rated systems, professional ceiling works ensure properties meet lease obligations and building standards. Learn about ceiling types, damage assessment, repair processes, and make good requirements.",
-    metaDescription: "Ceiling repairs for commercial make good projects. Expert guide on suspended ceilings, acoustic tiles, water damage restoration, and lease compliance in Melbourne.",
+    metaDescription: "Expert guide to suspended ceiling repairs and acoustic ceiling tile replacement for commercial make good projects in Melbourne. Water damage restoration, grid repairs and lease compliance.",
     image: "ceiling-repairs-suspended-acoustic.jpg",
     content: `Commercial ceiling systems serve multiple critical functions beyond aesthetics - they conceal services, provide acoustic control, contribute to fire safety, and define finished ceiling heights. During lease terms, ceilings often sustain damage from water leaks, mechanical impacts, wear, and modifications for services. Make good obligations typically require ceilings to be returned to original condition or specified standards, making ceiling repairs and replacement a significant component of commercial make good projects. This comprehensive guide explores ceiling types, common damage, repair and replacement processes, and make good considerations for Melbourne commercial properties.
 
