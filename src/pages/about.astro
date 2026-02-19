@@ -132,6 +132,22 @@ import secondImage from '@/assets/images/hero/melbourne-cbd-skyline-docklands.we
       </div>
     </section>
 
+    <!-- Full-Width Image Break -->
+    <section class="about-image-break">
+      <div class="about-image-break__inner">
+        <Image 
+          src={secondImage} 
+          alt="Melbourne CBD skyline and Docklands waterfront at dusk showing commercial property landscape"
+          class="about-image-break__img"
+          widths={[640, 1024, 1400]}
+          sizes="(max-width: 640px) 640px, (max-width: 1024px) 1024px, 1400px"
+          loading="lazy"
+          decoding="async"
+          quality={70}
+        />
+      </div>
+    </section>
+
     <!-- Who We Work With — Cards -->
     <section class="about-audience">
       <div class="about-audience__inner">
@@ -162,39 +178,6 @@ import secondImage from '@/assets/images/hero/melbourne-cbd-skyline-docklands.we
       </div>
     </section>
 
-    <!-- Full-Width Image Break -->
-    <section class="about-image-break">
-      <div class="about-image-break__inner">
-        <Image 
-          src={secondImage} 
-          alt="Melbourne CBD skyline and Docklands waterfront at dusk showing commercial property landscape"
-          class="about-image-break__img"
-          widths={[640, 1024, 1400]}
-          sizes="(max-width: 640px) 640px, (max-width: 1024px) 1024px, 1400px"
-          loading="lazy"
-          decoding="async"
-          quality={70}
-        />
-      </div>
-    </section>
-
-    <!-- Trust Strip -->
-    <section class="about-trust">
-      <div class="about-trust__inner">
-        <div class="about-trust__item">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="about-trust__icon"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/><path d="m9 12 2 2 4-4"/></svg>
-          <span>Licensed & Insured</span>
-        </div>
-        <div class="about-trust__item">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="about-trust__icon"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/><path d="m9 12 2 2 4-4"/></svg>
-          <span>Melbourne-Wide Service</span>
-        </div>
-        <div class="about-trust__item">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="about-trust__icon"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/><path d="m9 12 2 2 4-4"/></svg>
-          <span>Commercial & Industrial Specialists</span>
-        </div>
-      </div>
-    </section>
 
     <!-- CTA Block -->
     <CtaBlock />
