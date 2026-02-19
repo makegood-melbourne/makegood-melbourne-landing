@@ -28,12 +28,13 @@ const normaliseCanonicalUrl = (input?: string) => {
   url.protocol = 'https:';
   url.host = 'makegood.melbourne';
 
-  // Strip query/hash and normalise trailing slashes
+  // Strip query/hash and enforce trailing slash (matches trailingSlash: 'always')
   url.search = '';
   url.hash = '';
 
-  if (url.pathname.length > 1 && url.pathname.endsWith('/')) {
-    url.pathname = url.pathname.slice(0, -1);
+  // Homepage stays as-is; all other paths get a trailing slash
+  if (url.pathname.length > 1 && !url.pathname.endsWith('/')) {
+    url.pathname = url.pathname + '/';
   }
 
   return url.toString();

@@ -78,59 +78,59 @@
   status = 301
   force = true
 
-# Renamed service page redirects
+# Renamed service page redirects (updated to point directly to final destinations)
 [[redirects]]
   from = "/services/commercial-painting"
-  to = "/services/make-good-painting/"
+  to = "/services/make-good-solutions/painting/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/services/make-good-cleaning"
-  to = "/services/handover-cleaning/"
+  to = "/services/handover-solutions/end-of-lease-cleaning/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/services/back-to-base-works"
-  to = "/services/make-safe-works/"
+  to = "/services/strip-out-solutions/make-safe/"
   status = 301
   force = true
 
 # Unpublished service page redirects (services exist in data but not published)
 [[redirects]]
   from = "/services/commercial-make-good"
-  to = "/capabilities/"
+  to = "/services/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/services/concrete-floor-repair"
-  to = "/services/warehouse-floor-restoration/"
+  to = "/services/make-good-solutions/warehouse-flooring/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/services/concrete-slab-restoration"
-  to = "/services/warehouse-floor-restoration/"
+  to = "/services/make-good-solutions/warehouse-flooring/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/services/warehouse-floor-repairs"
-  to = "/services/warehouse-floor-restoration/"
+  to = "/services/make-good-solutions/warehouse-flooring/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/services/electrical-make-safe"
-  to = "/capabilities/"
+  to = "/services/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/services/led-lighting"
-  to = "/capabilities/"
+  to = "/services/"
   status = 301
   force = true
 
