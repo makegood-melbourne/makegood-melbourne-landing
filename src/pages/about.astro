@@ -6,6 +6,7 @@ import CtaBlock from '../components/CtaBlock.astro';
 import Footer from '../components/Footer';
 import { Image } from 'astro:assets';
 import heroImage from '@/assets/make-good-melbourne-commercial-make-good.jpg';
+import secondImage from '@/assets/services/empty-warehouse-after-makegood-melbourne.png';
 ---
 
 <BaseLayout 
@@ -22,7 +23,6 @@ import heroImage from '@/assets/make-good-melbourne-commercial-make-good.jpg';
   <section class="bg-secondary pt-6 pb-10 md:pt-10 md:pb-16">
     <div class="container mx-auto px-4">
       <div class="grid lg:grid-cols-2 gap-12 items-center">
-        <!-- Left: Content -->
         <div>
           <h1 class="text-4xl md:text-5xl lg:text-6xl mb-4 leading-tight font-bold">
             About Make Good Melbourne
@@ -33,8 +33,6 @@ import heroImage from '@/assets/make-good-melbourne-commercial-make-good.jpg';
             <p class="font-medium">Licensed trades. Fixed-price scopes. Reliable handover.</p>
           </div>
         </div>
-
-        <!-- Right: Hero Image -->
         <div>
           <Image 
             src={heroImage} 
@@ -51,8 +49,30 @@ import heroImage from '@/assets/make-good-melbourne-commercial-make-good.jpg';
     </div>
   </section>
 
+  <!-- Stats Strip -->
+  <section class="py-12 md:py-16 bg-background">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-16">
+        <div class="text-center">
+          <div class="text-4xl md:text-5xl font-bold text-primary mb-1">500+</div>
+          <div class="text-sm text-muted-foreground uppercase tracking-wider">Projects Completed</div>
+        </div>
+        <div class="hidden md:block w-px h-12 bg-border"></div>
+        <div class="text-center">
+          <div class="text-4xl md:text-5xl font-bold text-primary mb-1">12+</div>
+          <div class="text-sm text-muted-foreground uppercase tracking-wider">Years Experience</div>
+        </div>
+        <div class="hidden md:block w-px h-12 bg-border"></div>
+        <div class="text-center">
+          <div class="text-4xl md:text-5xl font-bold text-primary mb-1">100%</div>
+          <div class="text-sm text-muted-foreground uppercase tracking-wider">Licensed Trades</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- What We Do -->
-  <section class="py-16 md:py-24">
+  <section class="py-16 md:py-24 bg-secondary">
     <div class="container mx-auto px-4 max-w-4xl">
       <h2 class="text-3xl md:text-4xl font-bold mb-6">What we do</h2>
       <div class="prose prose-lg max-w-none space-y-6">
@@ -66,37 +86,113 @@ import heroImage from '@/assets/make-good-melbourne-commercial-make-good.jpg';
     </div>
   </section>
 
-  <!-- How We Work -->
-  <section class="py-16 md:py-24 bg-secondary">
-    <div class="container mx-auto px-4 max-w-4xl">
-      <h2 class="text-3xl md:text-4xl font-bold mb-6">How we work</h2>
-      <div class="prose prose-lg max-w-none space-y-6">
-        <p>
-          We start with your lease and your landlord's requirements. We inspect the site, define the scope in writing, and provide a fixed-price quote. No surprises.
-        </p>
-        <p>
-          Once the scope is agreed, we schedule the works and coordinate every trade through to completion. We handle the project management, the compliance, and the documentation. When we're done, you get a handover pack and a space that's ready to hand back.
-        </p>
+  <!-- How We Work — Visual Process Steps -->
+  <section class="py-16 md:py-24 bg-background">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">How we work</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+        <!-- Step 1: Review -->
+        <div class="relative text-center group">
+          <div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors">
+            <span class="text-2xl font-bold text-primary">01</span>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Review</h3>
+          <p class="text-muted-foreground leading-relaxed">We start with your lease and your landlord's requirements.</p>
+          <!-- Connector arrow (hidden on mobile, visible on lg) -->
+          <div class="hidden lg:block absolute top-8 -right-4 w-8">
+            <svg viewBox="0 0 32 8" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-primary/30">
+              <path d="M0 4H28M28 4L24 1M28 4L24 7" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </div>
+        </div>
+        <!-- Step 2: Quote -->
+        <div class="relative text-center group">
+          <div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors">
+            <span class="text-2xl font-bold text-primary">02</span>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Quote</h3>
+          <p class="text-muted-foreground leading-relaxed">We inspect the site, define the scope in writing, and provide a fixed-price quote.</p>
+          <div class="hidden lg:block absolute top-8 -right-4 w-8">
+            <svg viewBox="0 0 32 8" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-primary/30">
+              <path d="M0 4H28M28 4L24 1M28 4L24 7" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </div>
+        </div>
+        <!-- Step 3: Deliver -->
+        <div class="relative text-center group">
+          <div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors">
+            <span class="text-2xl font-bold text-primary">03</span>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Deliver</h3>
+          <p class="text-muted-foreground leading-relaxed">We schedule the works and coordinate every trade through to completion.</p>
+          <div class="hidden lg:block absolute top-8 -right-4 w-8">
+            <svg viewBox="0 0 32 8" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-primary/30">
+              <path d="M0 4H28M28 4L24 1M28 4L24 7" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </div>
+        </div>
+        <!-- Step 4: Handover -->
+        <div class="text-center group">
+          <div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors">
+            <span class="text-2xl font-bold text-primary">04</span>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Handover</h3>
+          <p class="text-muted-foreground leading-relaxed">You get a handover pack and a space that's ready to hand back.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Who We Work With -->
-  <section class="py-16 md:py-24">
-    <div class="container mx-auto px-4 max-w-4xl">
-      <h2 class="text-3xl md:text-4xl font-bold mb-6">Who we work with</h2>
-      <div class="prose prose-lg max-w-none space-y-6">
-        <p>
-          We work with commercial tenants preparing for lease end, property managers coordinating make goods on behalf of owners, and building owners dealing with damage, defects or compliance issues.
-        </p>
-        <p>
-          Whether it's a small office strip-out or a large warehouse restoration, we approach every project the same way: clear scope, licensed trades, accountable delivery.
-        </p>
+  <!-- Second Image — Full Width -->
+  <section class="bg-secondary">
+    <div class="container mx-auto px-4 py-12 md:py-16">
+      <Image 
+        src={secondImage} 
+        alt="Completed warehouse make good showing restored concrete floor and empty space ready for handover in Melbourne"
+        class="rounded-lg shadow-xl w-full aspect-[21/9] object-cover"
+        widths={[640, 1024, 1400]}
+        sizes="(max-width: 640px) 640px, (max-width: 1024px) 1024px, 1400px"
+        loading="lazy"
+        decoding="async"
+        quality={70}
+      />
+    </div>
+  </section>
+
+  <!-- Who We Work With — Cards -->
+  <section class="py-16 md:py-24 bg-background">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">Who we work with</h2>
+      <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <!-- Tenants -->
+        <div class="bg-card border border-border rounded-lg p-8 transition-all duration-300 hover:border-primary hover:shadow-lg hover:shadow-primary/10 hover:-translate-y-1 group">
+          <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-5 group-hover:bg-primary/20 transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary"><rect width="16" height="20" x="4" y="2" rx="2" ry="2"/><path d="M9 22v-4h6v4"/><path d="M8 6h.01"/><path d="M16 6h.01"/><path d="M12 6h.01"/><path d="M12 10h.01"/><path d="M12 14h.01"/><path d="M16 10h.01"/><path d="M16 14h.01"/><path d="M8 10h.01"/><path d="M8 14h.01"/></svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Tenants</h3>
+          <p class="text-muted-foreground leading-relaxed">Preparing for lease end. We handle the scope, the trades and the handover so you can focus on your move.</p>
+        </div>
+        <!-- Property Managers -->
+        <div class="bg-card border border-border rounded-lg p-8 transition-all duration-300 hover:border-primary hover:shadow-lg hover:shadow-primary/10 hover:-translate-y-1 group">
+          <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-5 group-hover:bg-primary/20 transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Property Managers</h3>
+          <p class="text-muted-foreground leading-relaxed">Coordinating make goods on behalf of owners. One contractor, one point of contact, complete documentation.</p>
+        </div>
+        <!-- Building Owners -->
+        <div class="bg-card border border-border rounded-lg p-8 transition-all duration-300 hover:border-primary hover:shadow-lg hover:shadow-primary/10 hover:-translate-y-1 group">
+          <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-5 group-hover:bg-primary/20 transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary"><path d="m2 7 4.41-4.41A2 2 0 0 1 7.83 2h8.34a2 2 0 0 1 1.42.59L22 7"/><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><path d="M15 22v-4a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v4"/><path d="M2 7h20"/><path d="M22 7v3a2 2 0 0 1-2 2a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 16 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 12 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 8 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 4 12a2 2 0 0 1-2-2V7"/></svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Building Owners</h3>
+          <p class="text-muted-foreground leading-relaxed">Dealing with damage, defects or compliance issues. We restore and remediate to protect the long-term value of your property.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Why We Exist -->
+  <!-- Why We Exist — with Pull Quote -->
   <section class="py-16 md:py-24 bg-secondary">
     <div class="container mx-auto px-4 max-w-4xl">
       <h2 class="text-3xl md:text-4xl font-bold mb-6">Why we exist</h2>
@@ -104,9 +200,39 @@ import heroImage from '@/assets/make-good-melbourne-commercial-make-good.jpg';
         <p>
           Make good projects fall apart when the scope isn't clear, when trades aren't coordinated, or when no one takes ownership of the outcome. We started Make Good Melbourne to fix that.
         </p>
-        <p>
-          We do make goods all day, every day. It's all we do. That focus means we understand what landlords expect, what leases require, and what it takes to get a space handed back without disputes or delays.
+      </div>
+      <!-- Pull Quote -->
+      <blockquote class="my-10 pl-6 border-l-4 border-primary">
+        <p class="text-2xl md:text-3xl font-semibold italic leading-snug">
+          "We do make goods all day, every day. It's all we do."
         </p>
+      </blockquote>
+      <div class="prose prose-lg max-w-none">
+        <p>
+          That focus means we understand what landlords expect, what leases require, and what it takes to get a space handed back without disputes or delays.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Strip -->
+  <section class="py-10 md:py-12 bg-background">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-16">
+        <div class="flex items-center gap-3">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/><path d="m9 12 2 2 4-4"/></svg>
+          <span class="text-lg font-medium">Licensed & Insured</span>
+        </div>
+        <div class="hidden md:block w-px h-8 bg-border"></div>
+        <div class="flex items-center gap-3">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span class="text-lg font-medium">Melbourne-Wide Service</span>
+        </div>
+        <div class="hidden md:block w-px h-8 bg-border"></div>
+        <div class="flex items-center gap-3">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary"><path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/></svg>
+          <span class="text-lg font-medium">Commercial & Industrial Specialists</span>
+        </div>
       </div>
     </div>
   </section>
