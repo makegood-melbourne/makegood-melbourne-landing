@@ -14,30 +14,36 @@ import secondImage from '@/assets/services/empty-warehouse-after-makegood-melbou
   description="Meet the team behind Make Good Melbourne. Commercial and industrial make good specialists delivering clear scopes, coordinated trades and reliable handover across Melbourne."
   canonicalUrl="https://makegood.melbourne/about"
 >
-  <Navigation client:load />
-  <div class="bg-secondary pt-20">
-    <Breadcrumbs path="/about" />
-  </div>
+  <main class="min-h-screen bg-background text-foreground">
+    <Navigation client:load />
+    <div class="bg-secondary pt-20">
+      <Breadcrumbs path="/about" />
+    </div>
 
-  <!-- Hero Section -->
-  <section class="bg-secondary pt-6 pb-10 md:pt-10 md:pb-16">
-    <div class="container mx-auto px-4">
-      <div class="grid lg:grid-cols-2 gap-12 items-center">
-        <div>
-          <h1 class="text-4xl md:text-5xl lg:text-6xl mb-4 leading-tight font-bold">
-            About Make Good Melbourne
+    <!-- Hero Section -->
+    <section class="about-hero">
+      <div class="about-hero__inner">
+        <div class="about-hero__content">
+          <h1 class="about-hero__heading">
+            About Make Good <span class="about-hero__accent">Melbourne</span>
           </h1>
-          <div class="text-xl text-muted-foreground mb-8 leading-relaxed max-w-lg space-y-4">
-            <p>Make Good Melbourne specialises exclusively in commercial make good and restoration works across Melbourne.</p>
-            <p>We work with tenants, property managers and owners to return spaces to agreed handback condition through clearly defined scopes, coordinated trades and accountable delivery.</p>
-            <p class="font-medium">Licensed trades. Fixed-price scopes. Reliable handover.</p>
+          <p class="about-hero__copy">
+            Make Good Melbourne specialises exclusively in commercial make good and restoration works across Melbourne.
+          </p>
+          <p class="about-hero__copy">
+            We work with tenants, property managers and owners to return spaces to agreed handback condition through clearly defined scopes, coordinated trades and accountable delivery.
+          </p>
+          <div class="about-hero__taglines">
+            <span>Licensed trades.</span>
+            <span>Fixed-price scopes.</span>
+            <span>Reliable handover.</span>
           </div>
         </div>
-        <div>
+        <div class="about-hero__image">
           <Image 
             src={heroImage} 
             alt="Commercial make good works completed by Make Good Melbourne"
-            class="rounded-lg shadow-xl w-full aspect-[4/3] object-cover"
+            class="about-hero__img"
             widths={[360, 640, 800, 1200]}
             sizes="(max-width: 640px) 360px, (max-width: 1024px) 640px, (max-width: 1280px) 800px, 1200px"
             loading="eager"
@@ -46,199 +52,502 @@ import secondImage from '@/assets/services/empty-warehouse-after-makegood-melbou
           />
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Stats Strip -->
-  <section class="py-12 md:py-16 bg-background">
-    <div class="container mx-auto px-4">
-      <div class="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-16">
-        <div class="text-center">
-          <div class="text-4xl md:text-5xl font-bold text-primary mb-1">500+</div>
-          <div class="text-sm text-muted-foreground uppercase tracking-wider">Projects Completed</div>
+    <!-- Stats Bar -->
+    <section class="about-stats">
+      <div class="about-stats__inner">
+        <div class="about-stats__item">
+          <div class="about-stats__number">500+</div>
+          <div class="about-stats__label">Projects Completed</div>
         </div>
-        <div class="hidden md:block w-px h-12 bg-border"></div>
-        <div class="text-center">
-          <div class="text-4xl md:text-5xl font-bold text-primary mb-1">12+</div>
-          <div class="text-sm text-muted-foreground uppercase tracking-wider">Years Experience</div>
+        <div class="about-stats__divider"></div>
+        <div class="about-stats__item">
+          <div class="about-stats__number">12+</div>
+          <div class="about-stats__label">Years Experience</div>
         </div>
-        <div class="hidden md:block w-px h-12 bg-border"></div>
-        <div class="text-center">
-          <div class="text-4xl md:text-5xl font-bold text-primary mb-1">100%</div>
-          <div class="text-sm text-muted-foreground uppercase tracking-wider">Licensed Trades</div>
+        <div class="about-stats__divider"></div>
+        <div class="about-stats__item">
+          <div class="about-stats__number">100%</div>
+          <div class="about-stats__label">Licensed Trades</div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- What We Do -->
-  <section class="py-16 md:py-24 bg-secondary">
-    <div class="container mx-auto px-4 max-w-4xl">
-      <h2 class="text-3xl md:text-4xl font-bold mb-6">What we do</h2>
-      <div class="prose prose-lg max-w-none space-y-6">
-        <p>
+    <!-- What We Do -->
+    <section class="about-section about-section--alt">
+      <div class="about-section__inner">
+        <h2 class="about-section__heading">What we do</h2>
+        <p class="about-section__copy">
           We deliver end-of-lease make goods, strip outs, remediation and handover services for commercial and industrial properties. Offices, warehouses, retail, medical, hospitality—if it's a commercial space that needs restoring, we handle it.
         </p>
-        <p>
+        <p class="about-section__copy">
           Most projects involve multiple trades: demolition, electrical, plumbing, plastering, painting, flooring, cleaning. We coordinate all of them. You get one point of contact, one scope, one quote. No chasing suppliers. No gaps between trades. We manage the full scope so your handover is complete and on time.
         </p>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- How We Work — Visual Process Steps -->
-  <section class="py-16 md:py-24 bg-background">
-    <div class="container mx-auto px-4">
-      <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">How we work</h2>
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
-        <!-- Step 1: Review -->
-        <div class="relative text-center group">
-          <div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors">
-            <span class="text-2xl font-bold text-primary">01</span>
+    <!-- How We Work — 4-Step Process -->
+    <section class="about-process">
+      <div class="about-process__inner">
+        <h2 class="about-process__heading">How we work</h2>
+        <div class="about-process__grid">
+          <div class="about-process__step">
+            <div class="about-process__number">01</div>
+            <h3 class="about-process__title">Review</h3>
+            <p class="about-process__desc">We start with your lease and your landlord's requirements.</p>
           </div>
-          <h3 class="text-xl font-bold mb-3">Review</h3>
-          <p class="text-muted-foreground leading-relaxed">We start with your lease and your landlord's requirements.</p>
-          <!-- Connector arrow (hidden on mobile, visible on lg) -->
-          <div class="hidden lg:block absolute top-8 -right-4 w-8">
-            <svg viewBox="0 0 32 8" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-primary/30">
-              <path d="M0 4H28M28 4L24 1M28 4L24 7" stroke="currentColor" stroke-width="1.5"/>
-            </svg>
+          <div class="about-process__step">
+            <div class="about-process__number">02</div>
+            <h3 class="about-process__title">Quote</h3>
+            <p class="about-process__desc">We inspect the site, define the scope in writing, and provide a fixed-price quote.</p>
           </div>
-        </div>
-        <!-- Step 2: Quote -->
-        <div class="relative text-center group">
-          <div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors">
-            <span class="text-2xl font-bold text-primary">02</span>
+          <div class="about-process__step">
+            <div class="about-process__number">03</div>
+            <h3 class="about-process__title">Deliver</h3>
+            <p class="about-process__desc">We schedule the works and coordinate every trade through to completion.</p>
           </div>
-          <h3 class="text-xl font-bold mb-3">Quote</h3>
-          <p class="text-muted-foreground leading-relaxed">We inspect the site, define the scope in writing, and provide a fixed-price quote.</p>
-          <div class="hidden lg:block absolute top-8 -right-4 w-8">
-            <svg viewBox="0 0 32 8" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-primary/30">
-              <path d="M0 4H28M28 4L24 1M28 4L24 7" stroke="currentColor" stroke-width="1.5"/>
-            </svg>
+          <div class="about-process__step">
+            <div class="about-process__number">04</div>
+            <h3 class="about-process__title">Handover</h3>
+            <p class="about-process__desc">You get a handover pack and a space that's ready to hand back.</p>
           </div>
-        </div>
-        <!-- Step 3: Deliver -->
-        <div class="relative text-center group">
-          <div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors">
-            <span class="text-2xl font-bold text-primary">03</span>
-          </div>
-          <h3 class="text-xl font-bold mb-3">Deliver</h3>
-          <p class="text-muted-foreground leading-relaxed">We schedule the works and coordinate every trade through to completion.</p>
-          <div class="hidden lg:block absolute top-8 -right-4 w-8">
-            <svg viewBox="0 0 32 8" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-primary/30">
-              <path d="M0 4H28M28 4L24 1M28 4L24 7" stroke="currentColor" stroke-width="1.5"/>
-            </svg>
-          </div>
-        </div>
-        <!-- Step 4: Handover -->
-        <div class="text-center group">
-          <div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors">
-            <span class="text-2xl font-bold text-primary">04</span>
-          </div>
-          <h3 class="text-xl font-bold mb-3">Handover</h3>
-          <p class="text-muted-foreground leading-relaxed">You get a handover pack and a space that's ready to hand back.</p>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Second Image — Full Width -->
-  <section class="bg-secondary">
-    <div class="container mx-auto px-4 py-12 md:py-16">
-      <Image 
-        src={secondImage} 
-        alt="Completed warehouse make good showing restored concrete floor and empty space ready for handover in Melbourne"
-        class="rounded-lg shadow-xl w-full aspect-[21/9] object-cover"
-        widths={[640, 1024, 1400]}
-        sizes="(max-width: 640px) 640px, (max-width: 1024px) 1024px, 1400px"
-        loading="lazy"
-        decoding="async"
-        quality={70}
-      />
-    </div>
-  </section>
+    <!-- Full-Width Image Break -->
+    <section class="about-image-break">
+      <div class="about-image-break__inner">
+        <Image 
+          src={secondImage} 
+          alt="Completed warehouse make good showing restored concrete floor and empty space ready for handover in Melbourne"
+          class="about-image-break__img"
+          widths={[640, 1024, 1400]}
+          sizes="(max-width: 640px) 640px, (max-width: 1024px) 1024px, 1400px"
+          loading="lazy"
+          decoding="async"
+          quality={70}
+        />
+      </div>
+    </section>
 
-  <!-- Who We Work With — Cards -->
-  <section class="py-16 md:py-24 bg-background">
-    <div class="container mx-auto px-4">
-      <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">Who we work with</h2>
-      <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-        <!-- Tenants -->
-        <div class="bg-card border border-border rounded-lg p-8 transition-all duration-300 hover:border-primary hover:shadow-lg hover:shadow-primary/10 hover:-translate-y-1 group">
-          <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-5 group-hover:bg-primary/20 transition-colors">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary"><rect width="16" height="20" x="4" y="2" rx="2" ry="2"/><path d="M9 22v-4h6v4"/><path d="M8 6h.01"/><path d="M16 6h.01"/><path d="M12 6h.01"/><path d="M12 10h.01"/><path d="M12 14h.01"/><path d="M16 10h.01"/><path d="M16 14h.01"/><path d="M8 10h.01"/><path d="M8 14h.01"/></svg>
+    <!-- Who We Work With — Cards -->
+    <section class="about-audience">
+      <div class="about-audience__inner">
+        <h2 class="about-audience__heading">Who we work with</h2>
+        <div class="about-audience__grid">
+          <div class="about-audience__card">
+            <div class="about-audience__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="20" x="4" y="2" rx="2" ry="2"/><path d="M9 22v-4h6v4"/><path d="M8 6h.01"/><path d="M16 6h.01"/><path d="M12 6h.01"/><path d="M12 10h.01"/><path d="M12 14h.01"/><path d="M16 10h.01"/><path d="M16 14h.01"/><path d="M8 10h.01"/><path d="M8 14h.01"/></svg>
+            </div>
+            <h3 class="about-audience__card-title">Tenants</h3>
+            <p class="about-audience__card-desc">Preparing for lease end. We handle the scope, the trades and the handover so you can focus on your move.</p>
           </div>
-          <h3 class="text-xl font-semibold mb-3">Tenants</h3>
-          <p class="text-muted-foreground leading-relaxed">Preparing for lease end. We handle the scope, the trades and the handover so you can focus on your move.</p>
-        </div>
-        <!-- Property Managers -->
-        <div class="bg-card border border-border rounded-lg p-8 transition-all duration-300 hover:border-primary hover:shadow-lg hover:shadow-primary/10 hover:-translate-y-1 group">
-          <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-5 group-hover:bg-primary/20 transition-colors">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          <div class="about-audience__card">
+            <div class="about-audience__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3 class="about-audience__card-title">Property Managers</h3>
+            <p class="about-audience__card-desc">Coordinating make goods on behalf of owners. One contractor, one point of contact, complete documentation.</p>
           </div>
-          <h3 class="text-xl font-semibold mb-3">Property Managers</h3>
-          <p class="text-muted-foreground leading-relaxed">Coordinating make goods on behalf of owners. One contractor, one point of contact, complete documentation.</p>
-        </div>
-        <!-- Building Owners -->
-        <div class="bg-card border border-border rounded-lg p-8 transition-all duration-300 hover:border-primary hover:shadow-lg hover:shadow-primary/10 hover:-translate-y-1 group">
-          <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-5 group-hover:bg-primary/20 transition-colors">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary"><path d="m2 7 4.41-4.41A2 2 0 0 1 7.83 2h8.34a2 2 0 0 1 1.42.59L22 7"/><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><path d="M15 22v-4a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v4"/><path d="M2 7h20"/><path d="M22 7v3a2 2 0 0 1-2 2a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 16 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 12 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 8 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 4 12a2 2 0 0 1-2-2V7"/></svg>
+          <div class="about-audience__card">
+            <div class="about-audience__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m2 7 4.41-4.41A2 2 0 0 1 7.83 2h8.34a2 2 0 0 1 1.42.59L22 7"/><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><path d="M15 22v-4a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v4"/><path d="M2 7h20"/><path d="M22 7v3a2 2 0 0 1-2 2a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 16 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 12 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 8 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 4 12a2 2 0 0 1-2-2V7"/></svg>
+            </div>
+            <h3 class="about-audience__card-title">Building Owners</h3>
+            <p class="about-audience__card-desc">Dealing with damage, defects or compliance issues. We restore and remediate to protect the long-term value of your property.</p>
           </div>
-          <h3 class="text-xl font-semibold mb-3">Building Owners</h3>
-          <p class="text-muted-foreground leading-relaxed">Dealing with damage, defects or compliance issues. We restore and remediate to protect the long-term value of your property.</p>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Why We Exist — with Pull Quote -->
-  <section class="py-16 md:py-24 bg-secondary">
-    <div class="container mx-auto px-4 max-w-4xl">
-      <h2 class="text-3xl md:text-4xl font-bold mb-6">Why we exist</h2>
-      <div class="prose prose-lg max-w-none space-y-6">
-        <p>
+    <!-- Why We Exist — with Pull Quote -->
+    <section class="about-section about-section--alt">
+      <div class="about-section__inner">
+        <h2 class="about-section__heading">Why we exist</h2>
+        <p class="about-section__copy">
           Make good projects fall apart when the scope isn't clear, when trades aren't coordinated, or when no one takes ownership of the outcome. We started Make Good Melbourne to fix that.
         </p>
-      </div>
-      <!-- Pull Quote -->
-      <blockquote class="my-10 pl-6 border-l-4 border-primary">
-        <p class="text-2xl md:text-3xl font-semibold italic leading-snug">
-          "We do make goods all day, every day. It's all we do."
-        </p>
-      </blockquote>
-      <div class="prose prose-lg max-w-none">
-        <p>
+        <blockquote class="about-quote">
+          <p>"We do make goods all day, every day. It's all we do."</p>
+        </blockquote>
+        <p class="about-section__copy">
           That focus means we understand what landlords expect, what leases require, and what it takes to get a space handed back without disputes or delays.
         </p>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Trust Strip -->
-  <section class="py-10 md:py-12 bg-background">
-    <div class="container mx-auto px-4">
-      <div class="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-16">
-        <div class="flex items-center gap-3">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/><path d="m9 12 2 2 4-4"/></svg>
-          <span class="text-lg font-medium">Licensed & Insured</span>
+    <!-- Trust Strip -->
+    <section class="about-trust">
+      <div class="about-trust__inner">
+        <div class="about-trust__item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="about-trust__icon"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/><path d="m9 12 2 2 4-4"/></svg>
+          <span>Licensed & Insured</span>
         </div>
-        <div class="hidden md:block w-px h-8 bg-border"></div>
-        <div class="flex items-center gap-3">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-          <span class="text-lg font-medium">Melbourne-Wide Service</span>
+        <div class="about-trust__item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="about-trust__icon"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/><path d="m9 12 2 2 4-4"/></svg>
+          <span>Melbourne-Wide Service</span>
         </div>
-        <div class="hidden md:block w-px h-8 bg-border"></div>
-        <div class="flex items-center gap-3">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary"><path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/></svg>
-          <span class="text-lg font-medium">Commercial & Industrial Specialists</span>
+        <div class="about-trust__item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="about-trust__icon"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/><path d="m9 12 2 2 4-4"/></svg>
+          <span>Commercial & Industrial Specialists</span>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- CTA Block -->
-  <CtaBlock />
+    <!-- CTA Block -->
+    <CtaBlock />
 
-  <Footer client:idle />
+    <Footer client:load />
+  </main>
 </BaseLayout>
+
+<style>
+  /* ===== Hero ===== */
+  .about-hero {
+    padding: 48px 24px 56px;
+    background: hsl(0, 0%, 18%);
+  }
+  .about-hero__inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: center;
+  }
+  .about-hero__heading {
+    font-size: clamp(32px, 4vw, 56px);
+    font-weight: 700;
+    line-height: 1.15;
+    color: #ffffff;
+    margin: 0 0 24px;
+  }
+  .about-hero__accent {
+    color: hsl(25, 85%, 60%);
+  }
+  .about-hero__copy {
+    font-size: 18px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.85);
+    margin: 0 0 16px;
+  }
+  .about-hero__taglines {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-top: 24px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+  }
+  .about-hero__img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+  @media (max-width: 768px) {
+    .about-hero {
+      padding: 32px 16px 40px;
+    }
+    .about-hero__inner {
+      grid-template-columns: 1fr;
+      gap: 32px;
+    }
+    .about-hero__copy {
+      font-size: 16px;
+    }
+    .about-hero__taglines {
+      font-size: 16px;
+    }
+  }
+
+  /* ===== Stats Bar ===== */
+  .about-stats {
+    padding: 48px 24px;
+    background: hsl(0, 0%, 13.3%);
+    text-align: center;
+  }
+  .about-stats__inner {
+    max-width: 820px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+  }
+  .about-stats__item {
+    text-align: center;
+  }
+  .about-stats__number {
+    font-size: clamp(36px, 4vw, 52px);
+    font-weight: 700;
+    color: hsl(25, 85%, 60%);
+    margin-bottom: 4px;
+  }
+  .about-stats__label {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.65);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  .about-stats__divider {
+    width: 1px;
+    height: 48px;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  @media (max-width: 600px) {
+    .about-stats {
+      padding: 40px 16px;
+    }
+    .about-stats__inner {
+      flex-direction: column;
+      gap: 24px;
+    }
+    .about-stats__divider {
+      display: none;
+    }
+  }
+
+  /* ===== Generic Content Sections ===== */
+  .about-section {
+    padding: 64px 24px;
+    background: hsl(0, 0%, 13.3%);
+  }
+  .about-section--alt {
+    background: hsl(0, 0%, 18%);
+  }
+  .about-section__inner {
+    max-width: 820px;
+    margin: 0 auto;
+  }
+  .about-section__heading {
+    font-size: clamp(28px, 3.5vw, 40px);
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 24px;
+  }
+  .about-section__copy {
+    font-size: 18px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.85);
+    margin: 0 0 20px;
+  }
+  .about-section__copy:last-of-type {
+    margin-bottom: 0;
+  }
+  @media (max-width: 768px) {
+    .about-section {
+      padding: 48px 16px;
+    }
+    .about-section__copy {
+      font-size: 16px;
+    }
+  }
+
+  /* ===== Pull Quote ===== */
+  .about-quote {
+    margin: 32px 0;
+    padding: 24px 0 24px 24px;
+    border-left: 4px solid hsl(25, 85%, 60%);
+  }
+  .about-quote p {
+    font-size: clamp(22px, 2.5vw, 30px);
+    font-weight: 600;
+    font-style: italic;
+    color: #ffffff;
+    line-height: 1.35;
+    margin: 0;
+  }
+
+  /* ===== Process Steps ===== */
+  .about-process {
+    padding: 64px 24px;
+    background: hsl(0, 0%, 13.3%);
+    text-align: center;
+  }
+  .about-process__inner {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  .about-process__heading {
+    font-size: clamp(28px, 3.5vw, 40px);
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 48px;
+  }
+  .about-process__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+  }
+  .about-process__step {
+    text-align: center;
+    padding: 24px 16px;
+  }
+  .about-process__number {
+    font-size: clamp(36px, 4vw, 52px);
+    font-weight: 700;
+    color: hsl(25, 85%, 60%);
+    margin-bottom: 12px;
+    line-height: 1;
+  }
+  .about-process__title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 12px;
+  }
+  .about-process__desc {
+    font-size: 16px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.75);
+    margin: 0;
+  }
+  @media (max-width: 768px) {
+    .about-process {
+      padding: 48px 16px;
+    }
+    .about-process__grid {
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+  }
+  @media (max-width: 480px) {
+    .about-process__grid {
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+  }
+
+  /* ===== Full-Width Image Break ===== */
+  .about-image-break {
+    padding: 0;
+    background: hsl(0, 0%, 18%);
+  }
+  .about-image-break__inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 48px 24px;
+  }
+  .about-image-break__img {
+    width: 100%;
+    aspect-ratio: 21/9;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+  @media (max-width: 768px) {
+    .about-image-break__inner {
+      padding: 32px 16px;
+    }
+    .about-image-break__img {
+      aspect-ratio: 16/9;
+    }
+  }
+
+  /* ===== Audience Cards ===== */
+  .about-audience {
+    padding: 64px 24px;
+    background: hsl(0, 0%, 13.3%);
+  }
+  .about-audience__inner {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  .about-audience__heading {
+    font-size: clamp(28px, 3.5vw, 40px);
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 48px;
+    text-align: center;
+  }
+  .about-audience__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+  .about-audience__card {
+    background: hsl(0, 0%, 16%);
+    border: 1px solid hsl(0, 0%, 22%);
+    border-radius: 12px;
+    padding: 32px 24px;
+    transition: all 0.3s ease;
+  }
+  .about-audience__card:hover {
+    border-color: hsl(25, 85%, 60%);
+    box-shadow: 0 8px 32px hsla(25, 85%, 60%, 0.1);
+    transform: translateY(-4px);
+  }
+  .about-audience__icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: hsla(25, 85%, 60%, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    color: hsl(25, 85%, 60%);
+  }
+  .about-audience__card-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 12px;
+  }
+  .about-audience__card-desc {
+    font-size: 16px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.75);
+    margin: 0;
+  }
+  @media (max-width: 768px) {
+    .about-audience {
+      padding: 48px 16px;
+    }
+    .about-audience__grid {
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+  }
+
+  /* ===== Trust Strip ===== */
+  .about-trust {
+    padding: 32px 24px;
+    background: hsl(0, 0%, 16%);
+    border-top: 1px solid hsl(0, 0%, 22%);
+    border-bottom: 1px solid hsl(0, 0%, 22%);
+  }
+  .about-trust__inner {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+  }
+  .about-trust__item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 16px;
+  }
+  .about-trust__icon {
+    color: hsl(25, 85%, 60%);
+    flex-shrink: 0;
+  }
+  @media (max-width: 600px) {
+    .about-trust {
+      padding: 24px 16px;
+    }
+    .about-trust__inner {
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+  }
+</style>
