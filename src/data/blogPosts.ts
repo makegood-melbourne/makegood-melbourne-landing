@@ -1618,7 +1618,7 @@ Professional floor preparation and carpet tile installation removes the stress f
   {
     id: "30",
     slug: "electrical-make-safe-decommissioning-demolition",
-    title: "Electrical Make Safe: Critical Decommissioning Before Demolition and Make Good Works",
+    title: "Electrical Make Safe Melbourne | Decommissioning Before Demolition",
     date: "1 August 2025",
     excerpt: "Electrical make safe is an essential preliminary step in make good and demolition projects, ensuring all electrical systems are safely decommissioned before strip-out works commence. Licensed electricians isolate, disconnect, and remove electrical installations, returning systems to base building configuration and creating a safe working environment. Learn about electrical make safe procedures, compliance requirements, and integration with make good projects.",
     metaDescription: "Electrical make safe is essential before demolition works. Learn about safe decommissioning, isolation procedures, and compliance requirements in Melbourne.",
@@ -2573,7 +2573,7 @@ Professional ceiling solutions for all commercial properties`,
   {
     id: "28",
     slug: "parapet-failure-emergency-building-repairs",
-    title: "Parapet Failure and Emergency Building Repairs: Responding to Structural Collapse in Commercial Properties",
+    title: "Parapet Failure Melbourne | Emergency Building Repairs",
     date: "1 June 2025",
     excerpt: "Parapet failure and facade collapse represent serious building emergencies requiring immediate response to protect public safety. From emergency site securing and debris removal to structural assessment and reconstruction, professional emergency repair services manage the complete response. Learn about causes of parapet failure, emergency procedures, council requirements, structural engineering, and reconstruction processes.",
     metaDescription: "Parapet failure or facade collapse? Learn about emergency building repairs, site securing, structural assessment, and reconstruction for Melbourne commercial properties.",
@@ -3920,7 +3920,7 @@ Available during business hours`,
   {
     id: "25",
     slug: "car-park-repairs-line-marking-make-good",
-    title: "Car Park Repairs and Line Marking: Essential Make Good and Maintenance for Commercial Properties",
+    title: "Car Park Repairs & Line Marking Melbourne | Commercial Make Good",
     date: "1 March 2025",
     excerpt: "Car parks are high-traffic areas subject to constant wear, requiring regular maintenance, repairs, and line marking renewal. Whether for end-of-lease make good obligations, property presentation, or safety compliance, professional car park restoration ensures functionality, safety, and property value. Learn about repair processes, line marking standards, and make good requirements.",
     metaDescription: "Car park repairs and line marking for commercial properties. Expert guide on concrete restoration, safety compliance, and end of lease make good in Melbourne.",
@@ -4440,7 +4440,7 @@ Need professional assessment of your car park condition or quotes for repairs an
   {
     id: "24",
     slug: "facade-cladding-remediation-fireproof-compliance",
-    title: "Façade Repairs and Cladding Remediation: Navigating Fireproof Compliance in Commercial Buildings",
+    title: "Facade Cladding Remediation Melbourne | Fire Compliance",
     date: "1 February 2025",
     excerpt: "Building façade and cladding remediation has become critical following national fire safety reforms. Non-compliant combustible cladding poses significant risks and legal obligations for property owners. Learn about assessment requirements, remediation processes, fireproof cladding solutions, and make good considerations for commercial properties.",
     metaDescription: "Combustible cladding on your building? Learn about facade remediation, fire safety compliance, assessment requirements, and make good obligations in Melbourne.",
@@ -4962,7 +4962,7 @@ Need professional assessment of your building's cladding or guidance on remediat
   {
     id: "23",
     slug: "warehouse-polycarbonate-roofing-replacement",
-    title: "Warehouse Polycarbonate Roofing Replacement: Restoring Natural Light and Weather Protection",
+    title: "Polycarbonate Roofing Replacement Melbourne | Skylights & Panels",
     date: "15 January 2025",
     excerpt: "Translucent polycarbonate roof sheeting provides essential natural lighting in warehouses and industrial facilities. Over time, these panels deteriorate, discolour, and leak, requiring replacement to maintain property value, operational efficiency, and lease compliance. Learn about assessment, replacement processes, and make good obligations.",
     metaDescription: "Warehouse polycarbonate roofing replacement in Melbourne. Learn about panel deterioration, natural lighting restoration, and end of lease make good requirements.",
@@ -6710,7 +6710,7 @@ Need help developing your make good strategy or obtaining accurate cost projecti
   {
     id: "19",
     slug: "building-defect-remediation-commercial-property",
-    title: "Building Defect Remediation: Comprehensive Solutions for Commercial Property Issues",
+    title: "Building Defect Remediation Melbourne | Commercial Solutions",
     date: "1 September 2024",
     excerpt: "Building defects in commercial properties can range from minor cosmetic issues to serious structural problems affecting safety and property value. Understanding the remediation process, common defects, and professional solutions helps property owners address issues efficiently before they escalate into costly emergencies.",
     metaDescription: "Building defects in your commercial property? Learn about common issues, remediation processes, and professional solutions before problems escalate. Melbourne guide.",
@@ -7060,7 +7060,7 @@ If you've identified building defects in your commercial property or want proact
   {
     id: "18",
     slug: "slab-rectification-concrete-floor-movement",
-    title: "Slab Rectification: Addressing Concrete Floor Movement and Settlement in Commercial Buildings",
+    title: "Slab Rectification Melbourne | Concrete Floor Settlement Repairs",
     date: "1 August 2024",
     excerpt: "Concrete slab movement and settlement are serious issues that can compromise the structural integrity and functionality of commercial and industrial properties. From uneven floors affecting equipment operation to cracks indicating foundation problems, understanding slab rectification is essential for property owners facing these challenges.",
     metaDescription: "Concrete slab movement affecting your property? Learn about slab rectification, floor settlement causes, and professional repair solutions for Melbourne buildings.",
@@ -7350,7 +7350,7 @@ If you've noticed signs of slab movement or settlement in your commercial or ind
   {
     id: "17",
     slug: "balcony-waterproofing-preventing-fixing-leaks",
-    title: "Balcony Waterproofing: Preventing and Fixing Leaks in Commercial Properties",
+    title: "Balcony Waterproofing Melbourne | Commercial Leak Repairs",
     date: "1 July 2024",
     excerpt: "Leaking balconies are one of the most common and costly problems in commercial buildings. During Melbourne's wet winter months, inadequate waterproofing becomes painfully obvious as water damage spreads to internal spaces. Understanding the causes, warning signs, and professional remediation solutions can save property owners thousands in structural repairs.",
     metaDescription: "Leaking balcony causing water damage? Learn about waterproofing solutions, warning signs, causes, and professional remediation for Melbourne commercial buildings.",
@@ -8058,7 +8058,7 @@ As we embark on this journey into the new year, let's not forget the importance 
   {
     id: "6",
     slug: "office-strip-out",
-    title: "Office Strip Out",
+    title: "Office Strip Out Melbourne | Commercial Lease Exit Guide",
     date: "1 December 2023",
     excerpt: "Are you planning an office strip out in Melbourne? Successfully executing an office strip out requires careful planning and flawless execution. In this article, we will guide you on how to effectively plan and execute an office strip out in Melbourne, ensuring you minimise disruption and maximise efficiency.",
     metaDescription: "Planning an office strip out in Melbourne? Expert guide on planning, execution, minimising disruption, and maximising efficiency for your commercial lease exit.",
@@ -8269,7 +8269,7 @@ As the curtains fall on this blog, we want to leave you with this thought: prope
   {
     id: "8",
     slug: "restoring-concrete-floors",
-    title: "Restoring Concrete Floors",
+    title: "Restoring Concrete Floors Melbourne | Warehouse Floor Repairs",
     date: "1 October 2023",
     excerpt: "In the world of property management, one often-overlooked hero stands tall, quite literally—the concrete floors of warehouses. These sturdy foundations bear the weight of industry, but over time, they show signs of wear and tear, creating challenges for both safety and aesthetics.",
     metaDescription: "Warehouse concrete floor showing wear and tear? Learn about professional floor restoration, grinding, polishing, and repair solutions for Melbourne industrial spaces.",

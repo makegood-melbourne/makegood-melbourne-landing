@@ -74,8 +74,8 @@ export interface SectionLandingData {
 export const sectionLandingPages: SectionLandingData[] = [
   {
     slug: "strip-out-solutions",
-    metaTitle: "Commercial Strip Out Melbourne | End of Lease Specialists",
-    metaDescription: "Expert commercial strip out and back to base services in Melbourne. Office, retail and warehouse defits. Licensed demolition. Hazardous waste removal. Free quotes.",
+    metaTitle: "Strip Out Services Melbourne | Commercial & Industrial",
+    metaDescription: "Commercial and industrial strip out services in Melbourne. Office defits, warehouse clearances and back-to-base works. Licensed demolition, all trades coordinated. Free quotes.",
     ogImage: "/og/strip-out.jpg",
     
     title: "EXPERT STRIP OUTS, MADE BETTER.",
@@ -155,8 +155,8 @@ export const sectionLandingPages: SectionLandingData[] = [
   },
   {
     slug: "make-good-solutions",
-    metaTitle: "Make Good Melbourne | End of Lease Restoration Services",
-    metaDescription: "Professional make good services for commercial and industrial properties. Flooring, painting, ceiling works, and wall repairs. Fixed-price quotes, lease compliance guaranteed.",
+    metaTitle: "Make Good Solutions Melbourne | End of Lease Restoration",
+    metaDescription: "Make good services for commercial and industrial properties across Melbourne. Flooring, painting, ceilings and wall repairs. Fixed-price quotes, lease compliance delivered.",
     ogImage: "/og/make-good.jpg",
     
     title: "MAKE GOOD, BETTER.",
@@ -231,7 +231,7 @@ export const sectionLandingPages: SectionLandingData[] = [
   {
     slug: "remediation-solutions",
     metaTitle: "Building Remediation Melbourne | Structural Repairs & Compliance",
-    metaDescription: "Expert building remediation services in Melbourne. Structural repairs, cladding compliance, waterproofing and defect rectification. Licensed contractors. Free site inspections.",
+    metaDescription: "Building remediation services in Melbourne. Structural repairs, concrete cancer treatment, cladding compliance and waterproofing. Licensed contractors. Free site inspections.",
     ogImage: "/og/remediation.jpg",
     
     title: "Building Remediation, Made BETTER.",
