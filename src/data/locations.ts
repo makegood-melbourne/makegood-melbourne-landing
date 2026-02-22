@@ -22,7 +22,7 @@ export const locations: Location[] = [
     name: "Melbourne CBD",
     slug: "melbourne-cbd",
     title: "Make Good Services Melbourne CBD",
-    metaTitle: "Make Good Services Melbourne CBD | Commercial Restoration Experts",
+    metaTitle: "Make Good Services Melbourne CBD | Commercial",
     description: "Professional make good and end of lease services for Melbourne CBD's premium commercial properties. From Collins Street towers to Bourke Street retail, we deliver expert restoration solutions.",
     metaDescription: "Expert make good services in Melbourne CBD. Office strip outs, retail restoration and commercial end of lease works. Licensed, insured, free quotes.",
     uniqueIntro: "Melbourne's Central Business District is Australia's corporate heartland—home to major financial institutions, legal firms, tech companies and flagship retail destinations. From the prestigious 'Paris End' of Collins Street to the bustling laneways of the Hoddle Grid, CBD commercial properties command premium rents and exacting standards.",

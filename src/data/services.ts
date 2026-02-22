@@ -1063,7 +1063,7 @@ export const services: Service[] = [
     name: "Warehouse Flooring",
     slug: "make-good-solutions/warehouse-flooring",
     title: "Warehouse Flooring Restoration",
-    metaTitle: "Warehouse Floor Restoration Melbourne | Make Good & Concrete Repairs",
+    metaTitle: "Warehouse Floor Restoration Melbourne | Make Good",
     description: "Complete warehouse floor restoration services across Melbourne. We remove flooring, strip coatings, grind adhesives, repair damage and restore concrete slabs to handover-ready condition. From carpet strip-out to dynabolt filling, crack repairs to epoxy finishes—we deliver the full scope in one comprehensive service.",
     metaDescription: "Warehouse floor restoration and make good services in Melbourne. Dynabolt removal, concrete grinding, crack repairs, epoxy coatings and floor sealing. End of lease specialists. Free quotes.",
     heroText: "Your lease requires the floor restored to original condition. We handle everything—flooring removal, coating grinding, dynabolt repairs and surface finishing. One contractor, one scope, handover-ready results.",
