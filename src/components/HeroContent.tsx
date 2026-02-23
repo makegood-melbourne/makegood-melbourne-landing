@@ -23,7 +23,7 @@ const HeroContent = () => {
           Make Good & Remediation
           <br />
           <span style={{ fontSize: '0.5em', color: '#ccc', textTransform: 'none', fontWeight: 'normal' }}>
-            For Offices, Warehouses & Industrial Sites
+            For Offices, Warehouses & Industrial Properties
           </span>
         </h1>
         <h2 className="text-3xl md:text-4xl text-primary font-semibold mb-6" style={{ textTransform: 'none' }}>
