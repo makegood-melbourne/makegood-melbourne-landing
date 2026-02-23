@@ -673,7 +673,7 @@ export const services: Service[] = [
     title: "Structural",
     metaTitle: "Structural Remediation Melbourne | Concrete Cancer Repairs",
     description: "The structural integrity of your building is non-negotiable. At Makegood Melbourne, we address the root causes of structural decay to restore strength, safety and long-term stability to your asset.\n\nOur specialists work with qualified engineers to deliver certified solutions for a comprehensive range of structural defects. From diagnosing concrete cancer and rectifying slab settlement to advanced concrete injection and carbon fibre strengthening, we have the expertise to manage complex projects that general builders can't. We handle the entire process, from initial assessment and engineering specifications through to project completion and final certification.",
-    metaDescription: "Structural remediation for commercial properties in Melbourne. Concrete cancer treatment, floor slab repairs, crack injection and waterproofing. Engineered solutions. Free quotes.",
+    metaDescription: "Structural remediation & concrete cancer repairs in Melbourne. Slab repairs, crack injection & waterproofing, assessed & certified by qualified engineers.",
     heroText: "From concrete cancer and spalling to slab settlement and corrosion, structural defects compromise the safety and longevity of your asset. We deliver engineered solutions that address these issues at their source, restoring foundational strength and ensuring your building is safe, compliant and secure.",
     ogImage: "/og/structural-remediation.jpg",
     heroImage: structuralRemediationHeroImage,
