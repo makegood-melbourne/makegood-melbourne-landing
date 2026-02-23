@@ -16,24 +16,6 @@
         Building problems need engineered solutions. Concrete cancer, water ingress, cladding compliance—we diagnose the cause and deliver certified repairs.
       </p>
     </div>
-    
-    <!-- Trust Indicators -->
-    <div class="mg-specialists__trust-indicators">
-      <div class="mg-specialists__trust-item">
-        <div class="mg-specialists__trust-number">500+</div>
-        <div class="mg-specialists__trust-label">Projects Completed</div>
-      </div>
-      <div class="mg-specialists__trust-divider"></div>
-      <div class="mg-specialists__trust-item">
-        <div class="mg-specialists__trust-number">12+</div>
-        <div class="mg-specialists__trust-label">Years Experience</div>
-      </div>
-      <div class="mg-specialists__trust-divider"></div>
-      <div class="mg-specialists__trust-item">
-        <div class="mg-specialists__trust-number">100%</div>
-        <div class="mg-specialists__trust-label">Licensed Trades</div>
-      </div>
-    </div>
   </div>
 </section>
 
@@ -66,7 +48,7 @@
   
   /* Remediation Micro-Callout */
   .mg-specialists__micro-callout {
-    margin: 24px auto 28px;
+    margin: 24px auto 0;
     max-width: 680px;
     text-align: center;
   }
@@ -81,35 +63,7 @@
     font-size: 18px;
     line-height: 1.6;
     color: rgba(255, 255, 255, 0.75);
-    margin: 0 0 16px;
-  }
-  /* Trust Indicators */
-  .mg-specialists__trust-indicators {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 32px;
-    margin-top: 32px;
-  }
-  .mg-specialists__trust-item {
-    text-align: center;
-  }
-  .mg-specialists__trust-number {
-    font-size: clamp(32px, 4vw, 48px);
-    font-weight: 700;
-    color: #ffffff;
-    margin-bottom: 4px;
-  }
-  .mg-specialists__trust-label {
-    font-size: 14px;
-    color: #3B82F6;
-    line-height: 1.4;
-  }
-  .mg-specialists__trust-divider {
-    width: 1px;
-    height: 48px;
-    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0;
   }
   
   @media (max-width: 600px) {
@@ -121,26 +75,13 @@
       margin-bottom: 24px;
     }
     .mg-specialists__micro-callout {
-      margin: 20px auto 24px;
+      margin: 20px auto 0;
     }
     .mg-specialists__micro-heading {
       font-size: 22px;
     }
     .mg-specialists__micro-body {
       font-size: 16px;
-    }
-    .mg-specialists__trust-indicators {
-      flex-direction: column;
-      gap: 24px;
-    }
-    .mg-specialists__trust-divider {
-      display: none;
-    }
-    .mg-specialists__trust-number {
-      font-size: 36px;
-    }
-    .mg-specialists__trust-label {
-      font-size: 13px;
     }
   }
 </style>
