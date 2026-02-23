@@ -20,9 +20,11 @@ const HeroContent = () => {
     <div className="container mx-auto px-4 z-10 pt-16">
       <div className="max-w-3xl bg-background/80 backdrop-blur-sm p-8 md:p-12 rounded-lg">
         <h1 className="text-4xl md:text-6xl text-foreground mb-4 leading-tight font-bold" style={{ fontFamily: "'PP Neue Montreal', sans-serif" }}>
-          Commercial<br />
-          Make Good &<br />
-          Remedial Works
+          Make Good & Remediation
+          <br />
+          <span style={{ fontSize: '0.5em', color: '#ccc', textTransform: 'none', fontWeight: 'normal' }}>
+            For Offices, Warehouses & Industrial Sites
+          </span>
         </h1>
         <h2 className="text-3xl md:text-4xl text-primary font-semibold mb-6" style={{ textTransform: 'none' }}>
           Make good, BETTER.
