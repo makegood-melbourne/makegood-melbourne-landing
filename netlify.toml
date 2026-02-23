@@ -5,12 +5,14 @@
 [build.environment]
   NODE_VERSION = "20"
 
-# Disable Netlify's automatic pretty URLs to prevent double redirects
-# Astro handles trailing slashes with trailingSlash: 'always'
+# Enable Netlify's Pretty URLs so that requests to /about are 301-redirected
+# to /about/ — matching Astro's trailingSlash: 'always' output structure.
+# Without this, both /about and /about/ serve 200, causing Google to report
+# "Alternate page with proper canonical tag" for every non-trailing-slash URL.
 [build.processing]
   skip_processing = false
 [build.processing.html]
-  pretty_urls = false
+  pretty_urls = true
 
 # Domain canonicalization - redirect www to non-www
 [[redirects]]
@@ -19,10 +21,16 @@
   status = 301
   force = true
 
-# Legacy blog URL redirect (/blogs/* -> /blog/*)
+# Legacy blog URL redirect (/blogs/SLUG -> /blog/SLUG/)
 [[redirects]]
-  from = "/blogs/*"
-  to = "/blog/:splat/"
+  from = "/blogs/:slug"
+  to = "/blog/:slug/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blogs/:slug/"
+  to = "/blog/:slug/"
   status = 301
   force = true
 
@@ -60,14 +68,20 @@
 
 # Legacy service-areas redirect (/service-areas/* -> /areas/*)
 # IMPORTANT: keep /service-areas (the listing page) working and only redirect child routes.
-[[redirects]]
-  from = "/service-areas"
-  to = "/service-areas/"
-  status = 200
+# The /service-areas -> /service-areas/ rewrite is handled by Astro's trailingSlash: 'always'
+# and the trailing-slash force-redirect rule below.
 
+# Redirect /service-areas/SLUG to /areas/SLUG/ (no trailing slash on :splat to avoid double-slash)
 [[redirects]]
-  from = "/service-areas/*"
-  to = "/areas/:splat/"
+  from = "/service-areas/:slug"
+  to = "/areas/:slug/"
+  status = 301
+  force = true
+
+# Redirect /service-areas/SLUG/ (with trailing slash) to /areas/SLUG/
+[[redirects]]
+  from = "/service-areas/:slug/"
+  to = "/areas/:slug/"
   status = 301
   force = true
 
@@ -405,5 +419,5 @@
 # 404 catch-all (must be last)
 [[redirects]]
   from = "/*"
-  to = "/404.html/"
+  to = "/404.html"
   status = 404
