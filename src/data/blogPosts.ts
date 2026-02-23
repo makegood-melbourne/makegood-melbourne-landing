@@ -99,6 +99,74 @@ A retail make good takes more planning than a standard commercial tenancy. There
 Planning a retail lease exit in Melbourne? [Get in touch.](/contact)`
   },
   {
+    id: "37",
+    title: "Dilapidation Reports Melbourne — What They Mean for Your Make Good",
+    slug: "dilapidation-reports-melbourne-make-good",
+    excerpt: "The most common friction point at the end of a commercial lease is arguing over the property's original condition. A detailed condition report at the start of the lease prevents this.",
+    metaDescription: "Dilapidation reports for Melbourne commercial make goods. A contractor's guide to condition reports, what they mean for your scope and what happens without one.",
+    date: "2025-12-15",
+    image: "dilapidation-report-commercial-tenancy-melbourne.webp",
+    imageAlt: "Empty commercial tenancy with scaffolding and exposed concrete ceiling during make good works in Melbourne",
+    content: `
+The most common friction point at the end of a commercial lease is arguing over the property's original condition. A landlord remembers a perfect tenancy. A tenant remembers pre-existing scuffs and scrapes. With no proof, it becomes a problem.
+
+A detailed report at the start of the lease prevents this. This post explains what dilapidation and condition reports are from a make good contractor's perspective. We do not write these reports. We use them to define a scope of works, price a job fairly and deliver a clear outcome for both tenants and landlords.
+
+## Dilapidation Report vs. Condition Report
+
+The terms are often used interchangeably, but they serve different purposes. For a make good, one matters far more than the other.
+
+A **Property Condition Report** — also called an ingoing or entry report — is the key document for a lease. It is created at the very start of a tenancy to document the exact condition of the property. It is the 'before' photo for the entire lease term. This is the report we use to define a make good scope.
+
+A **Dilapidation Report** is typically prepared to document the condition of a property *before* nearby construction, excavation or demolition work begins. It protects a property owner from damage caused by a neighbour's building works. While it is a detailed report, it is not tied to a lease agreement.
+
+For a make good, the ingoing condition report is the document that sets the standard. It is the benchmark for what the property needs to be returned to.
+
+## The Contractor's View: How We Use a Condition Report
+
+For a make good contractor, the ingoing condition report is the most important document after the lease itself. It is our primary tool for defining the scope, providing an accurate price and keeping the process fair for everyone.
+
+**It Defines the Scope.** The report is the benchmark we work back to. We use it to conduct a site inspection and compare the current state of the property to its original condition. This process creates a clear, itemised list of reinstatement works. There is no guesswork.
+
+**It Allows Accurate Quoting.** A detailed report with photos allows us to provide a fixed, accurate quote for the make good. We can see exactly what needs to be done. Without a report, there are too many variables and assumptions, which leads to price uncertainty and potential cost blowouts.
+
+**It Protects the Tenant.** The report is the tenant's proof of what the property looked like on day one. It shows what damage was already there. A tenant should not pay to fix pre-existing issues. The report is their evidence. It separates their liability from the building's history.
+
+**It Protects the Landlord.** The report provides clear, dated evidence if the property has been damaged beyond fair wear and tear. It ensures they get their property back in the agreed-upon condition, ready for the next tenant.
+
+**It Is the Final Benchmark.** We use the report at the end of the project. During the final walkthrough with the tenant and property manager, we use it to demonstrate that all make good obligations have been met and the property has been returned to the required standard.
+
+## What Happens When There Is No Condition Report?
+
+This is the worst-case scenario. With no agreed-upon record of the original condition, the make good process becomes a negotiation based on memory and opinion. This often leads to disputes, delays and unnecessary costs.
+
+When we are engaged for a make good with no ingoing report, the process is different. It involves more investigation. We might review old real estate listings or landlord photos to try and piece together the property's history. But ultimately, the scope becomes a point of negotiation between the tenant and the landlord.
+
+The risk is higher for both parties. Tenants risk paying for damage they did not cause. Landlords risk not having their property returned to the right standard. It creates an adversarial environment from the start.
+
+If you are in this situation, the best approach is to get everyone in a room. The tenant, landlord and make good contractor should walk the site together and agree on a fair scope of works. This agreed scope should be documented in writing and signed off by both tenant and landlord before any make good works begin. It becomes the new benchmark for the project.
+
+## What a Contractor Looks For in a Good Report
+
+Not all condition reports are created equal. A one-page checklist with a few blurry photos is almost as bad as having no report at all. From a contractor's perspective, a useful report is detailed, specific and leaves no room for interpretation. Here is what we look for.
+
+First, **high-resolution, date-stamped photos of everything.** We need to be able to zoom in on a wall, floor or ceiling and see the actual condition. Low-resolution images hide defects. Date-stamps are non-negotiable; they prove when the photo was taken and lock in the timeline. We need to see every wall, every floor, every ceiling, every window and every door. The more photos, the better.
+
+Second, **clear, specific written descriptions that support the photos.** A note that says "scratch on floor" is useless. A note that says "20cm gouge in concrete floor, 5 metres from roller door 3, appears to be old" is useful. It tells us the location, size and nature of the defect. We can price a repair for that. We cannot price a vague description.
+
+Third, **comprehensive coverage.** The report needs to cover the entire tenancy. This includes the main office or warehouse area, but also the amenities, kitchenettes, plant rooms, loading docks and any external facades or signage that are part of the lease. These are the areas that are often forgotten and they are where disputes tend to come up.
+
+Finally, **a good report notes good condition, not just defects.** A report that only lists existing damage is incomplete. A note that says "North wall, painted white, good condition, no visible defects" is just as important as a note about a hole in the wall. It establishes the baseline. If the wall was in 'good' condition at the start, it needs to be returned to 'good' condition at the end — not 'perfect' or 'newly painted' condition. This is crucial for defining fair wear and tear.
+
+## Conclusion
+
+A good condition report is the foundation of a smooth make good. It provides clarity. It reduces risk. It sets clear expectations for everyone involved. From a contractor's standpoint, it is the single most important document after the lease itself.
+
+If you take one thing away from this post, it is this: insist on a detailed, photographic report before you sign any commercial lease. It is the best investment you can make in a friction-free lease exit.
+
+Need to scope a make good in Melbourne? [Get in touch.](/contact)`
+  },
+  {
     id: "35",
     title: "Commercial Water Damage and Mould Remediation in Melbourne: What to Do in the First 48 Hours and How Reinstatement Works",
     slug: "commercial-water-damage-mould-remediation-melbourne",
