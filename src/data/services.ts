@@ -165,6 +165,7 @@ export interface Service {
   comparison?: Comparison;
   faqs?: FAQ[];
   faqTitle?: string; // Custom title for FAQ section (defaults to "Frequently Asked Questions")
+  faqSubtitle?: string; // Subtitle for FAQ section
   process?: {
     step: string;
     description: string;

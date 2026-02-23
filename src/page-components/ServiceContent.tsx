@@ -676,25 +676,29 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
       {/* FAQ Section */}
 
       {service.faqs && service.faqs.length > 0 && (
-        <section className="py-16 bg-background">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl md:text-4xl text-foreground mb-10">
+        <section className="py-16 px-4 sm:px-6 lg:px-8">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-center">
               {service.faqTitle || "Frequently Asked Questions"}
             </h2>
-            <div className="max-w-3xl">
-              <Accordion type="single" collapsible className="w-full">
-                {service.faqs.map((faq, index) => (
-                  <AccordionItem key={index} value={`faq-${index}`} className="border-border">
-                    <AccordionTrigger className="text-left text-lg text-foreground hover:text-primary">
-                      {faq.question}
-                    </AccordionTrigger>
-                    <AccordionContent className="text-muted-foreground text-base leading-relaxed">
-                      {faq.answer}
-                    </AccordionContent>
-                  </AccordionItem>
-                ))}
-              </Accordion>
-            </div>
+            {service.faqSubtitle && (
+              <p className="text-center text-muted-foreground mb-10">
+                {service.faqSubtitle}
+              </p>
+            )}
+
+            <Accordion type="single" collapsible className="w-full">
+              {service.faqs.map((faq, index) => (
+                <AccordionItem key={index} value={`faq-${index}`}>
+                  <AccordionTrigger className="text-left">
+                    {faq.question}
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground">
+                    {faq.answer}
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
           </div>
         </section>
       )}

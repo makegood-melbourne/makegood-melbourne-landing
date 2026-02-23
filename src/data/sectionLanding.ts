@@ -63,6 +63,8 @@ export interface SectionLandingData {
   relatedServicesBlock?: SectionLandingRelatedBlock;
   
   // FAQ
+  faqTitle?: string;  // e.g. "Make Good FAQs"
+  faqSubtitle?: string;  // e.g. "Common questions about make good services"
   faqs: SectionLandingFAQ[];
   
   // CTA
@@ -126,6 +128,8 @@ export const sectionLandingPages: SectionLandingData[] = [
       ]
     },
     
+    faqTitle: "Strip Out FAQs",
+    faqSubtitle: "Common questions about strip out services",
     faqs: [
       {
         question: "What does \"back to base\" or \"make good\" actually mean?",
@@ -197,6 +201,8 @@ export const sectionLandingPages: SectionLandingData[] = [
     carouselTitleHighlight: "SERVICES",
     carouselDescription: "Complete restoration solutions for commercial and industrial properties across Melbourne.",
     
+    faqTitle: "Make Good FAQs",
+    faqSubtitle: "Common questions about make good services",
     faqs: [
       {
         question: "What is included in make good works?",
@@ -269,6 +275,8 @@ export const sectionLandingPages: SectionLandingData[] = [
     carouselTitleHighlight: "Remediation Services",
     carouselDescription: "Engineered solutions that restore safety, compliance, and longevity.",
     
+    faqTitle: "Remediation FAQs",
+    faqSubtitle: "Common questions about remediation services",
     faqs: [
       {
         question: "What types of building defects do you remediate?",
