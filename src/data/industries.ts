@@ -1,11 +1,5 @@
 import commercialHeroImage from "@/assets/industries/commercial-office-make-good-polished-concrete-melbourne.jpeg";
-import commercialSitePreparationImage from "@/assets/industries/commercial-make-good-open-floor-industrial-windows-melbourne.jpeg";
-import commercialFitOutImage from "@/assets/industries/commercial-office-fitout-kitchen-breakroom-melbourne.jpeg";
-
 import industrialHeroImage from "@/assets/industries/industrial-warehouse-make-good-empty-floor-melbourne.jpeg";
-import industrialSitePreparationImage from "@/assets/industries/industrial-warehouse-steel-trusses-skylights-melbourne.jpeg";
-import industrialStructuralImage from "@/assets/industries/industrial-factory-roof-structure-racking-melbourne.jpeg";
-import industrialFitOutImage from "@/assets/industries/industrial-warehouse-polished-concrete-floor-melbourne.jpeg";
 
 import remediationHeroImage from "@/assets/services/glazing-facade-installation-commercial-building-melbourne.jpg";
 import remediationCladdingImage from "@/assets/services/cladding-remediation-facade-glazing-melbourne.jpeg";
@@ -50,26 +44,12 @@ export const industries: Industry[] = [
     slug: "commercial",
     title: "Commercial Make Good Melbourne",
     metaTitle: "Commercial Make Good Melbourne | Office & Retail",
-    metaDescription: "Expert commercial make good services across Melbourne. Office strip outs, retail fitout removal, painting, flooring and full restoration. Fixed-price quotes. Call today.",
+    metaDescription: "Commercial make good services across Melbourne. Office strip outs, retail fitout removal, painting, flooring and full restoration. Fixed-price quotes. Call today.",
     heroText: "Complete make good solutions for Melbourne's commercial properties—from office towers and retail spaces to multi-tenancy buildings.",
     heroImage: commercialHeroImage,
     heroImageAlt: "Completed commercial office make good with polished concrete floors and exposed ceiling services in Melbourne",
     ogImage: "/og/commercial.jpg",
     introduction: "Commercial make goods require precision, efficiency and minimal disruption to building operations. Whether you're vacating an office suite, retail tenancy or entire commercial floor, our team delivers comprehensive restoration that meets landlord specifications and building management requirements. We coordinate all trades, manage after-hours access and provide documentation to support a successful handover.",
-    featuredSections: [
-      {
-        title: "Site Preparation & Services Coordination",
-        description: "We start by ensuring your project foundations—both literally and operationally—are set for success. Comprehensive surveys, service location mapping, and pre-construction compliance checks ensure every aspect of the site is ready before major works commence. Underground services are installed or safeguarded early, and bulk earthworks are sequenced correctly to maintain a safe, organised, and disruption-free work environment—protecting timelines and budgets from the very start.",
-        image: commercialSitePreparationImage,
-        imageAlt: "Large open commercial floor with industrial windows after make good restoration in Melbourne"
-      },
-      {
-        title: "Services Integration & Quality Fit-Out",
-        description: "We integrate mechanical, electrical, and plumbing services seamlessly within the structural framework, using coordinated drawings and clash detection to avoid costly rework. Our fit-out delivery follows rigorous quality assurance procedures, ensuring every element—from mezzanines and partitions to specialist systems—meets specification. By the time we hand over, your building is fully functional, compliant, and ready for immediate operational use.",
-        image: commercialFitOutImage,
-        imageAlt: "Commercial office kitchen and breakroom fit-out with quality joinery in Melbourne"
-      }
-    ],
     challenges: [
       {
         title: "Building Access & Coordination",
@@ -123,26 +103,6 @@ export const industries: Industry[] = [
     heroImageAlt: "Empty industrial warehouse after make good restoration with polished concrete floor and steel trusses in Melbourne",
     ogImage: "/og/industrial.jpg",
     introduction: "Industrial properties present the most complex make good challenges. Decades of manufacturing operations, heavy machinery anchored to floors, oil-stained concrete, hazardous materials and substantial modifications all require specialist handling. We've restored factories and warehouses across Melbourne to handover-ready condition, regardless of what operations occurred there.",
-    featuredSections: [
-      {
-        title: "Site Preparation & Services Coordination",
-        description: "We start by ensuring your project foundations—both literally and operationally—are set for success. Comprehensive surveys, service location mapping, and pre-construction compliance checks ensure every aspect of the site is ready before major works commence. Underground services are installed or safeguarded early, and bulk earthworks are sequenced correctly to maintain a safe, organised, and disruption-free work environment—protecting timelines and budgets from the very start.",
-        image: industrialSitePreparationImage,
-        imageAlt: "Industrial warehouse interior with steel roof trusses and skylights during make good preparation in Melbourne"
-      },
-      {
-        title: "Structural Systems & Building Envelope",
-        description: "Our structural works are planned and executed with precision to deliver strength, accuracy, and efficiency. We coordinate fabrication, transport, and installation to ensure every lift, alignment, and connection meets engineering tolerances and safety requirements. Roofing, cladding, and glazing are installed to exacting standards, achieving early lock-up while delivering superior weatherproofing to protect your asset and enable internal works to progress without interruption.",
-        image: industrialStructuralImage,
-        imageAlt: "Industrial factory roof structure with steel trusses and pallet racking in Melbourne warehouse"
-      },
-      {
-        title: "Services Integration & Quality Fit-Out",
-        description: "We integrate mechanical, electrical, and plumbing services seamlessly within the structural framework, using coordinated drawings and clash detection to avoid costly rework. Our fit-out delivery follows rigorous quality assurance procedures, ensuring every element—from mezzanines and partitions to specialist systems—meets specification. By the time we hand over, your building is fully functional, compliant, and ready for immediate operational use.",
-        image: industrialFitOutImage,
-        imageAlt: "Symmetrical view of industrial warehouse with polished concrete floor and high bay lighting in Melbourne"
-      }
-    ],
     challenges: [
       {
         title: "Heavy Machinery Removal",
