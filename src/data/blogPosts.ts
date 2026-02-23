@@ -12,6 +12,161 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: "36",
+    title: "Retail Make Good Melbourne — What Shopping Centre Tenants Need to Know",
+    slug: "retail-make-good-melbourne-shopping-centre-tenants",
+    excerpt: "Exiting a retail lease is not the same as leaving an office or warehouse. Shopfronts, centre guidelines and strict timelines — here is what retail tenants in Melbourne need to know about the make good process.",
+    metaDescription: "Retail make good Melbourne. Shopfront removal, fitout strip-outs, centre guidelines and lease exit timelines — what retail tenants need to know.",
+    date: "2026-02-15",
+    image: "retail-make-good-shopping-centre-melbourne.webp",
+    imageAlt: "Multi-level shopping centre interior with glass storefronts and skylights in Melbourne retail precinct",
+    content: `
+Exiting a retail lease is not the same as leaving an office or warehouse. The make good process is more involved. You have your lease agreement, but you also have shopping centre management looking over your shoulder. Both have rules.
+
+For retail tenants in Melbourne, this means a different set of challenges. It is not just about a fresh coat of paint. It involves shopfronts, specialised fixtures and often strict centre guidelines that sit on top of your lease. This post covers the key differences, the typical scope of works and a practical timeline to get it done right.
+
+## What Makes a Retail Make Good Different?
+
+A retail make good goes further than a standard commercial tenancy. The work is more specific. It focuses on removing the unique elements of a retail fitout and returning the space to a bare shell or base building condition.
+
+**The Shopfront.** Your shopfront is your brand. The make good requires removing it entirely. That includes all external signage, window decals and any structural elements you installed. The landlord or centre management will expect the original facade and glazing reinstated to the condition it was in before your tenancy.
+
+**Fixtures and Fittings.** All custom-built joinery needs to come out. Point-of-sale counters, display units, shelving and feature walls. The base building walls, floors and ceilings need to be patched and repaired after removal.
+
+**Flooring.** Retail flooring is often a key part of the store's design. Whether it is timber, custom tiling or specialised carpet, your lease will likely require you to remove it and restore the original concrete slab or base flooring underneath.
+
+**Lighting.** Specialised track lighting, spotlights and feature pendants all need to be removed. The make good typically requires reinstating the original base building lighting layout — usually a simple grid of fluorescent or LED troffer lights.
+
+**Back-of-House.** Storerooms, staff kitchenettes and change rooms also need to be stripped out. This includes shelving, lockers and any plumbing or electrical services you added during your tenancy.
+
+## The Lease vs. Centre Management Guidelines
+
+As a retail tenant, you have two sets of rules to follow. The first is your lease agreement with the landlord. The second is the shopping centre's own fitout and make good guide. You need to comply with both.
+
+Your lease will contain a 'make good' or 'reinstatement' clause. This clause specifies the condition you need to return the premises to at the end of your tenancy. It is the primary legal document that defines what you are responsible for.
+
+But in a shopping centre environment, it is not the only document.
+
+Shopping centre management will have its own detailed guidelines. These typically cover practical site issues — hours for noisy work, waste removal procedures, hoarding requirements and public safety protocols. These guidelines are enforced to keep the centre running smoothly for other tenants and the public. Get a copy of both your lease and the centre's latest make good guide before you start planning your exit.
+
+In Victoria, the *Retail Leases Act 2003* governs retail tenancies. The VSBC provides guidance on tenant rights and obligations. Your specific make good scope, however, is defined by your lease agreement.
+
+## Common Retail Make Good Works — A Checklist
+
+This checklist covers the typical works involved in a full retail make good. Every tenancy is different, so refer to your specific lease and centre guidelines for the exact scope.
+
+| Category | Task | Notes |
+| :--- | :--- | :--- |
+| **De-Branding and Shopfront** | Remove all external and internal branding and signage | Includes window decals, 3D lettering and pylon signs |
+| | Reinstate original shopfront structure and glazing | Check for damage to mullions or frames |
+| **Fixtures and Joinery** | Dismantle and remove all custom joinery | Counters, display units, shelving and feature walls |
+| | Remove all loose fixtures and furniture | Racks, gondolas, seating and tables |
+| **Walls and Ceilings** | Remove any partition walls built by the tenant | Return to the original open-plan layout |
+| | Patch and sand all wall penetrations | From screws, fixings and services |
+| | Repaint all walls to the required base building colour | Check the lease for the specific paint colour and finish |
+| | Remove suspended ceilings or features to expose base grid | Reinstate ceiling tiles to match the base building standard |
+| **Flooring** | Remove all floor coverings installed by the tenant | Carpet, tiles, timber or vinyl |
+| | Grind concrete slab to remove adhesives and coatings | Prepare the slab for the next tenant |
+| | Repair any damage to the concrete slab | Cracks, chips or stains |
+| **Services** | Disconnect and make safe all tenant-installed electrical services | Lighting, power points and data cabling — licensed electrician required |
+| | Disconnect and cap all tenant-installed plumbing services | Sinks, basins and kitchenettes — licensed plumber required |
+| | Remove tenant-installed HVAC units and ducting | Reinstate the base building HVAC layout |
+| **Back of House** | Strip out storeroom shelving and racking | |
+| | Remove staff room kitchenettes, lockers and furniture | |
+| **Final Clean** | Detailed clean of the entire premises | Including windows, amenities and back-of-house areas |
+| | Remove all waste and debris from the site | Use approved shopping centre loading docks and procedures |
+
+## A Step-by-Step Timeline
+
+Timing is critical in a retail make good. Shopping centres have strict deadlines and you need to coordinate with multiple parties. A clear plan prevents delays and unexpected costs.
+
+### 3–6 Months Before Lease End
+
+Start here. Pull out your fully executed lease and the current shopping centre make good guidelines. Read the relevant clauses carefully. Contact centre management early — introduce yourself as the person managing the lease exit and ask them to confirm the process and any specific requirements. This is also the right time to engage a make good contractor to review your documents, inspect the site and provide an initial budget and timeline.
+
+### 1–2 Months Before Lease End
+
+Finalise the scope of works. Submit your make good plan to the landlord and centre management for approval. Do not start any work until you have written approval on the scope. Once approved, your contractor can lock in the necessary trades — good tradespeople are often booked weeks in advance. Plan your final trading days and start clearing stock. The site needs to be empty for the make good works to begin.
+
+### Lease End and Handover
+
+The make good works typically commence the day after you cease trading. This involves the strip-out, services disconnection, repairs and finishing. All waste needs to be removed from the site according to centre guidelines, which often means using specific loading docks and designated collection points. Once the works are complete, arrange a final inspection with both the landlord and centre management. Address any items they raise promptly. Once the works are approved, hand over the keys.
+
+## Wrapping Up
+
+A retail make good takes more planning than a standard commercial tenancy. There are more parties involved, stricter site rules and a wider scope of works. Understanding your lease, communicating with centre management early and engaging an experienced contractor are the three things that make the biggest difference.
+
+Planning a retail lease exit in Melbourne? [Get in touch.](/contact)`
+  },
+  {
+    id: "37",
+    title: "Dilapidation Reports Melbourne — What They Mean for Your Make Good",
+    slug: "dilapidation-reports-melbourne-make-good",
+    excerpt: "The most common friction point at the end of a commercial lease is arguing over the property's original condition. A detailed condition report at the start of the lease prevents this.",
+    metaDescription: "Dilapidation reports for Melbourne commercial make goods. A contractor's guide to condition reports, what they mean for your scope and what happens without one.",
+    date: "2025-12-15",
+    image: "dilapidation-report-commercial-tenancy-melbourne.webp",
+    imageAlt: "Empty commercial tenancy with scaffolding and exposed concrete ceiling during make good works in Melbourne",
+    content: `
+The most common friction point at the end of a commercial lease is arguing over the property's original condition. A landlord remembers a perfect tenancy. A tenant remembers pre-existing scuffs and scrapes. With no proof, it becomes a problem.
+
+A detailed report at the start of the lease prevents this. This post explains what dilapidation and condition reports are from a make good contractor's perspective. We do not write these reports. We use them to define a scope of works, price a job fairly and deliver a clear outcome for both tenants and landlords.
+
+## Dilapidation Report vs. Condition Report
+
+The terms are often used interchangeably, but they serve different purposes. For a make good, one matters far more than the other.
+
+A **Property Condition Report** — also called an ingoing or entry report — is the key document for a lease. It is created at the very start of a tenancy to document the exact condition of the property. It is the 'before' photo for the entire lease term. This is the report we use to define a make good scope.
+
+A **Dilapidation Report** is typically prepared to document the condition of a property *before* nearby construction, excavation or demolition work begins. It protects a property owner from damage caused by a neighbour's building works. While it is a detailed report, it is not tied to a lease agreement.
+
+For a make good, the ingoing condition report is the document that sets the standard. It is the benchmark for what the property needs to be returned to.
+
+## The Contractor's View: How We Use a Condition Report
+
+For a make good contractor, the ingoing condition report is the most important document after the lease itself. It is our primary tool for defining the scope, providing an accurate price and keeping the process fair for everyone.
+
+**It Defines the Scope.** The report is the benchmark we work back to. We use it to conduct a site inspection and compare the current state of the property to its original condition. This process creates a clear, itemised list of reinstatement works. There is no guesswork.
+
+**It Allows Accurate Quoting.** A detailed report with photos allows us to provide a fixed, accurate quote for the make good. We can see exactly what needs to be done. Without a report, there are too many variables and assumptions, which leads to price uncertainty and potential cost blowouts.
+
+**It Protects the Tenant.** The report is the tenant's proof of what the property looked like on day one. It shows what damage was already there. A tenant should not pay to fix pre-existing issues. The report is their evidence. It separates their liability from the building's history.
+
+**It Protects the Landlord.** The report provides clear, dated evidence if the property has been damaged beyond fair wear and tear. It ensures they get their property back in the agreed-upon condition, ready for the next tenant.
+
+**It Is the Final Benchmark.** We use the report at the end of the project. During the final walkthrough with the tenant and property manager, we use it to demonstrate that all make good obligations have been met and the property has been returned to the required standard.
+
+## What Happens When There Is No Condition Report?
+
+This is the worst-case scenario. With no agreed-upon record of the original condition, the make good process becomes a negotiation based on memory and opinion. This often leads to disputes, delays and unnecessary costs.
+
+When we are engaged for a make good with no ingoing report, the process is different. It involves more investigation. We might review old real estate listings or landlord photos to try and piece together the property's history. But ultimately, the scope becomes a point of negotiation between the tenant and the landlord.
+
+The risk is higher for both parties. Tenants risk paying for damage they did not cause. Landlords risk not having their property returned to the right standard. It creates an adversarial environment from the start.
+
+If you are in this situation, the best approach is to get everyone in a room. The tenant, landlord and make good contractor should walk the site together and agree on a fair scope of works. This agreed scope should be documented in writing and signed off by both tenant and landlord before any make good works begin. It becomes the new benchmark for the project.
+
+## What a Contractor Looks For in a Good Report
+
+Not all condition reports are created equal. A one-page checklist with a few blurry photos is almost as bad as having no report at all. From a contractor's perspective, a useful report is detailed, specific and leaves no room for interpretation. Here is what we look for.
+
+First, **high-resolution, date-stamped photos of everything.** We need to be able to zoom in on a wall, floor or ceiling and see the actual condition. Low-resolution images hide defects. Date-stamps are non-negotiable; they prove when the photo was taken and lock in the timeline. We need to see every wall, every floor, every ceiling, every window and every door. The more photos, the better.
+
+Second, **clear, specific written descriptions that support the photos.** A note that says "scratch on floor" is useless. A note that says "20cm gouge in concrete floor, 5 metres from roller door 3, appears to be old" is useful. It tells us the location, size and nature of the defect. We can price a repair for that. We cannot price a vague description.
+
+Third, **comprehensive coverage.** The report needs to cover the entire tenancy. This includes the main office or warehouse area, but also the amenities, kitchenettes, plant rooms, loading docks and any external facades or signage that are part of the lease. These are the areas that are often forgotten and they are where disputes tend to come up.
+
+Finally, **a good report notes good condition, not just defects.** A report that only lists existing damage is incomplete. A note that says "North wall, painted white, good condition, no visible defects" is just as important as a note about a hole in the wall. It establishes the baseline. If the wall was in 'good' condition at the start, it needs to be returned to 'good' condition at the end — not 'perfect' or 'newly painted' condition. This is crucial for defining fair wear and tear.
+
+## Conclusion
+
+A good condition report is the foundation of a smooth make good. It provides clarity. It reduces risk. It sets clear expectations for everyone involved. From a contractor's standpoint, it is the single most important document after the lease itself.
+
+If you take one thing away from this post, it is this: insist on a detailed, photographic report before you sign any commercial lease. It is the best investment you can make in a friction-free lease exit.
+
+Need to scope a make good in Melbourne? [Get in touch.](/contact)`
+  },
+  {
     id: "35",
     title: "Commercial Water Damage and Mould Remediation in Melbourne: What to Do in the First 48 Hours and How Reinstatement Works",
     slug: "commercial-water-damage-mould-remediation-melbourne",
