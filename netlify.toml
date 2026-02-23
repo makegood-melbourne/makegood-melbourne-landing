@@ -41,7 +41,7 @@
 
 [[redirects]]
   from = "/tenants"
-  to = "/what-is-make-good/"
+  to = "/learn/make-good-guide/"
   status = 301
   force = true
 
@@ -349,6 +349,56 @@
 [[redirects]]
   from = "/services/strip-out-solutions/racking-removal/"
   to = "/services/strip-out-solutions/pallet-racking-removal/"
+  status = 301
+  force = true
+
+# Fix meta refresh redirects — convert Astro client-side redirects to proper 301s
+[[redirects]]
+  from = "/what-is-make-good"
+  to = "/learn/make-good-guide/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/what-is-make-good/"
+  to = "/learn/make-good-guide/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/our-process"
+  to = "/learn/our-process/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/our-process/"
+  to = "/learn/our-process/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/cart"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/cart/"
+  to = "/"
+  status = 301
+  force = true
+
+# Redirect duplicate painting blog post to service page
+[[redirects]]
+  from = "/blog/commercial-painting-melbourne-make-good/"
+  to = "/services/make-good-solutions/painting/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog/commercial-painting-melbourne-make-good"
+  to = "/services/make-good-solutions/painting/"
   status = 301
   force = true
 

@@ -15,13 +15,13 @@ export default defineConfig({
   site: 'https://makegood.melbourne',
   redirects: {
     // Page-level redirects for old site structure
-    '/tenants': '/learn/make-good-guide/',
+    // '/tenants': '/learn/make-good-guide/', // MOVED to netlify.toml as proper 301
     '/blogs': '/blog/',
     
     // Learn section URL restructure (301 redirects)
-    '/what-is-make-good': '/learn/make-good-guide/',
-    '/our-process': '/learn/our-process/',
-    '/cart': '/',
+    // '/what-is-make-good': '/learn/make-good-guide/', // MOVED to netlify.toml as proper 301
+    // '/our-process': '/learn/our-process/', // MOVED to netlify.toml as proper 301
+    // '/cart': '/', // MOVED to netlify.toml as proper 301
     // '/services': '/capabilities/', // REMOVED - now have /services/index.astro
     
     // Old /blogs/ URLs -> new /blog/ URLs with slug changes
