@@ -52,6 +52,11 @@ const serviceCategories = [
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [openSections, setOpenSections] = useState<Record<string, boolean>>({});
+
+  const toggleSection = (section: string) => {
+    setOpenSections(prev => ({ ...prev, [section]: !prev[section] }));
+  };
 
   const getServicesByCategory = (slugs: string[]) => {
     const publishedServices = getPublishedServices();
@@ -226,132 +231,160 @@ const Navigation = () => {
         </div>
 
         {isMenuOpen && (
-          <div className="md:hidden pb-4 flex flex-col gap-3">
-            <div className="py-2">
-              <span className="text-foreground font-medium">Services</span>
-              <div className="pl-4 mt-2 flex flex-col gap-4">
-                {serviceCategories.map((category) => {
-                  const categoryServices = getServicesByCategory(category.slugs);
-                  if (categoryServices.length === 0) return null;
-                  return (
-                    <div key={category.label}>
-                      {category.href ? (
-                        <a 
-                          href={category.href}
-                          className="text-primary text-xs uppercase tracking-wider font-medium hover:text-primary/80"
-                          onClick={() => setIsMenuOpen(false)}
-                        >
-                          {category.label}
-                        </a>
-                      ) : (
-                        <span className="text-primary text-xs uppercase tracking-wider font-medium">
-                          {category.label}
-                        </span>
-                      )}
-                      <div className="flex flex-col gap-2 mt-1">
-                        {categoryServices.map((service) => (
-                          <a 
-                            key={service.slug}
-                            href={`/services/${service.slug}`}
-                            className="text-muted-foreground hover:text-accent transition-colors"
+          <div className="md:hidden pb-4 flex flex-col gap-1 max-h-[80vh] overflow-y-auto">
+
+            {/* Services */}
+            <div className="border-b border-border/50">
+              <button
+                className="w-full flex items-center justify-between py-3 text-foreground font-medium hover:text-accent transition-colors"
+                onClick={() => toggleSection('services')}
+              >
+                Services
+                <ChevronDown className={`h-4 w-4 transition-transform ${openSections['services'] ? 'rotate-180' : ''}`} />
+              </button>
+              {openSections['services'] && (
+                <div className="pl-4 pb-3 flex flex-col gap-4">
+                  {serviceCategories.map((category) => {
+                    const categoryServices = getServicesByCategory(category.slugs);
+                    if (categoryServices.length === 0) return null;
+                    return (
+                      <div key={category.label}>
+                        {category.href ? (
+                          <a
+                            href={category.href}
+                            className="text-primary text-xs uppercase tracking-wider font-medium hover:text-primary/80"
                             onClick={() => setIsMenuOpen(false)}
                           >
-                            {category.displayNames?.[service.slug] || service.name}
+                            {category.label}
                           </a>
-                        ))}
+                        ) : (
+                          <span className="text-primary text-xs uppercase tracking-wider font-medium">
+                            {category.label}
+                          </span>
+                        )}
+                        <div className="flex flex-col gap-2 mt-1">
+                          {categoryServices.map((service) => (
+                            <a
+                              key={service.slug}
+                              href={`/services/${service.slug}`}
+                              className="text-muted-foreground hover:text-accent transition-colors"
+                              onClick={() => setIsMenuOpen(false)}
+                            >
+                              {category.displayNames?.[service.slug] || service.name}
+                            </a>
+                          ))}
+                        </div>
                       </div>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-            <div className="py-2">
-              <span className="text-foreground font-medium">Service Areas</span>
-              <div className="pl-4 mt-2 flex flex-col gap-2">
-                {getSortedLocations().map((location) => (
-                  <a 
-                    key={location.slug}
-                    href={`/areas/${location.slug}`}
-                    className="text-muted-foreground hover:text-accent transition-colors"
+                    );
+                  })}
+                  <a
+                    href="/services/"
+                    className="text-accent font-medium hover:text-accent/80 transition-colors"
                     onClick={() => setIsMenuOpen(false)}
                   >
-                    {location.name}
+                    View All Services
                   </a>
-                ))}
-              </div>
+                </div>
+              )}
             </div>
-            <div className="py-2">
-              <span className="text-foreground font-medium">Industries</span>
-              <div className="pl-4 mt-2 flex flex-col gap-2">
-                {getAllIndustries().map((industry) => (
-                  <a 
-                    key={industry.slug}
-                    href={`/industries/${industry.slug}`}
-                    className="text-muted-foreground hover:text-accent transition-colors"
+
+            {/* Service Areas */}
+            <div className="border-b border-border/50">
+              <button
+                className="w-full flex items-center justify-between py-3 text-foreground font-medium hover:text-accent transition-colors"
+                onClick={() => toggleSection('areas')}
+              >
+                Service Areas
+                <ChevronDown className={`h-4 w-4 transition-transform ${openSections['areas'] ? 'rotate-180' : ''}`} />
+              </button>
+              {openSections['areas'] && (
+                <div className="pl-4 pb-3 flex flex-col gap-2">
+                  {getSortedLocations().map((location) => (
+                    <a
+                      key={location.slug}
+                      href={`/areas/${location.slug}`}
+                      className="text-muted-foreground hover:text-accent transition-colors"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      {location.name}
+                    </a>
+                  ))}
+                  <a
+                    href="/service-areas"
+                    className="text-accent font-medium hover:text-accent/80 transition-colors"
                     onClick={() => setIsMenuOpen(false)}
                   >
-                    {industry.name}
+                    View All Service Areas
                   </a>
-                ))}
-              </div>
+                </div>
+              )}
             </div>
-            {/* About Us as standalone item in mobile menu */}
-            <div className="py-2">
-              <a 
-                href="/about" 
-                className="text-foreground font-medium hover:text-accent transition-colors"
+
+            {/* Industries */}
+            <div className="border-b border-border/50">
+              <button
+                className="w-full flex items-center justify-between py-3 text-foreground font-medium hover:text-accent transition-colors"
+                onClick={() => toggleSection('industries')}
+              >
+                Industries
+                <ChevronDown className={`h-4 w-4 transition-transform ${openSections['industries'] ? 'rotate-180' : ''}`} />
+              </button>
+              {openSections['industries'] && (
+                <div className="pl-4 pb-3 flex flex-col gap-2">
+                  {getAllIndustries().map((industry) => (
+                    <a
+                      key={industry.slug}
+                      href={`/industries/${industry.slug}`}
+                      className="text-muted-foreground hover:text-accent transition-colors"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      {industry.name}
+                    </a>
+                  ))}
+                </div>
+              )}
+            </div>
+
+            {/* About Us */}
+            <div className="border-b border-border/50">
+              <a
+                href="/about"
+                className="block py-3 text-foreground font-medium hover:text-accent transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 About Us
               </a>
             </div>
-            {/* Learn section - educational content only */}
-            <div className="py-2">
-              <span className="text-foreground font-medium">Learn</span>
-              <div className="pl-4 mt-2 flex flex-col gap-2">
-                {/* Ordered by user intent/funnel: Awareness → Consideration → Decision → Support */}
-                <a 
-                  href="/learn/make-good-guide" 
-                  className="text-muted-foreground hover:text-accent transition-colors"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Make Good Guide
-                </a>
-                <a 
-                  href="/learn/remediation-guide" 
-                  className="text-muted-foreground hover:text-accent transition-colors"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Remediation Guide
-                </a>
-                <a 
-                  href="/learn/our-process" 
-                  className="text-muted-foreground hover:text-accent transition-colors"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Our Process
-                </a>
-                <a 
-                  href="/faq" 
-                  className="text-muted-foreground hover:text-accent transition-colors"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  FAQ
-                </a>
-                <a 
-                  href="/blog" 
-                  className="text-muted-foreground hover:text-accent transition-colors"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Blog
-                </a>
-              </div>
+
+            {/* Learn */}
+            <div className="border-b border-border/50">
+              <button
+                className="w-full flex items-center justify-between py-3 text-foreground font-medium hover:text-accent transition-colors"
+                onClick={() => toggleSection('learn')}
+              >
+                Learn
+                <ChevronDown className={`h-4 w-4 transition-transform ${openSections['learn'] ? 'rotate-180' : ''}`} />
+              </button>
+              {openSections['learn'] && (
+                <div className="pl-4 pb-3 flex flex-col gap-2">
+                  <a href="/learn/make-good-guide" className="text-muted-foreground hover:text-accent transition-colors" onClick={() => setIsMenuOpen(false)}>Make Good Guide</a>
+                  <a href="/learn/remediation-guide" className="text-muted-foreground hover:text-accent transition-colors" onClick={() => setIsMenuOpen(false)}>Remediation Guide</a>
+                  <a href="/learn/our-process" className="text-muted-foreground hover:text-accent transition-colors" onClick={() => setIsMenuOpen(false)}>Our Process</a>
+                  <a href="/faq" className="text-muted-foreground hover:text-accent transition-colors" onClick={() => setIsMenuOpen(false)}>FAQ</a>
+                  <a href="/blog" className="text-muted-foreground hover:text-accent transition-colors" onClick={() => setIsMenuOpen(false)}>Blog</a>
+                </div>
+              )}
             </div>
-            <a href="/contact" onClick={() => setIsMenuOpen(false)}>
-              <Button className="bg-accent hover:bg-accent/90 text-accent-foreground w-full">
-                Request a Quote
-              </Button>
-            </a>
+
+            {/* CTA */}
+            <div className="pt-3">
+              <a href="/contact" onClick={() => setIsMenuOpen(false)}>
+                <Button className="bg-accent hover:bg-accent/90 text-accent-foreground w-full">
+                  Request a Quote
+                </Button>
+              </a>
+            </div>
+
           </div>
         )}
       </div>
