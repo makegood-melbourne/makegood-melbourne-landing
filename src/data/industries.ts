@@ -68,7 +68,7 @@ export const industries: Industry[] = [
         description: "Suspended ceilings, lighting modifications and data cabling all need to be addressed to meet base building specifications."
       }
     ],
-    services: ["make-good-painting", "ceiling-tile-replacement", "handover-cleaning"],
+    services: ["make-good-solutions/painting", "make-good-solutions/suspended-ceilings", "handover-solutions/end-of-lease-cleaning", "make-good-solutions/patching-plastering", "make-good-solutions/flooring-reinstatement"],
     benefits: [
       "Experienced in Melbourne's major commercial buildings",
       "After-hours and weekend work available",
@@ -121,7 +121,7 @@ export const industries: Industry[] = [
         description: "Mezzanines, partition walls and structural additions often need removal and slab restoration."
       }
     ],
-    services: ["strip-out-solutions/pallet-racking-removal", "epoxy-flooring", "make-good-solutions/warehouse-flooring", "make-good-solutions/line-marking", "handover-solutions/end-of-lease-cleaning"],
+    services: ["strip-out-solutions/pallet-racking-removal", "epoxy-flooring", "make-good-solutions/warehouse-flooring", "make-good-solutions/line-marking", "handover-solutions/end-of-lease-cleaning", "remediation-solutions/structural"],
     benefits: [
       "Heavy machinery removal and disposal",
       "Floor anchor extraction and repair",
