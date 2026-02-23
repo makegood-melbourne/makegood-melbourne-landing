@@ -42,14 +42,14 @@ export const industries: Industry[] = [
   {
     name: "Commercial",
     slug: "commercial",
-    title: "Commercial Make Good Melbourne",
-    metaTitle: "Commercial Make Good Melbourne | Office & Retail",
+    title: "Office & Commercial Make Good Melbourne",
+    metaTitle: "Office & Commercial Make Good Melbourne | Retail Spaces",
     metaDescription: "Commercial make good services across Melbourne. Office strip outs, retail fitout removal, painting, flooring and full restoration. Fixed-price quotes. Call today.",
-    heroText: "Complete make good solutions for Melbourne's commercial properties—from office towers and retail spaces to multi-tenancy buildings.",
+    heroText: "Complete make good solutions for Melbourne offices, retail spaces and commercial properties — from single tenancies to entire commercial floors.",
     heroImage: commercialHeroImage,
     heroImageAlt: "Completed commercial office make good with polished concrete floors and exposed ceiling services in Melbourne",
     ogImage: "/og/commercial.jpg",
-    introduction: "Commercial make goods require precision, efficiency and minimal disruption to building operations. Whether you're vacating an office suite, retail tenancy or entire commercial floor, our team delivers comprehensive restoration that meets landlord specifications and building management requirements. We coordinate all trades, manage after-hours access and provide documentation to support a successful handover.",
+    introduction: "Office make goods require precision, coordination and minimal disruption to building operations. Whether you're vacating a single office suite, retail tenancy or an entire floor, we deliver comprehensive restoration that meets landlord specifications and building management requirements. We coordinate all trades, manage after-hours access and provide full documentation for a successful handover.",
     challenges: [
       {
         title: "Building Access & Coordination",
@@ -95,10 +95,10 @@ export const industries: Industry[] = [
   {
     name: "Industrial",
     slug: "industrial",
-    title: "Industrial Make Good Melbourne",
-    metaTitle: "Industrial Make Good Melbourne | Warehouse & Factory",
+    title: "Warehouse & Industrial Make Good Melbourne",
+    metaTitle: "Warehouse & Industrial Make Good Melbourne | Factories",
     metaDescription: "Industrial make good specialists Melbourne. Factory strip outs, warehouse restoration, racking removal, floor repair, hazardous material removal. Full compliance. Free quotes.",
-    heroText: "Expert industrial make good services for Melbourne factories, warehouses and manufacturing facilities—from machinery removal to complete site restoration.",
+    heroText: "Warehouse and industrial make good services for Melbourne factories, warehouses and manufacturing facilities — from pallet racking removal to complete site restoration.",
     heroImage: industrialHeroImage,
     heroImageAlt: "Empty industrial warehouse after make good restoration with polished concrete floor and steel trusses in Melbourne",
     ogImage: "/og/industrial.jpg",
