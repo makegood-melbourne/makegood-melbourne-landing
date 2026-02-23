@@ -33,6 +33,7 @@ import asbestosManagementImage from "@/assets/blog/asbestos-management.jpg";
 import portMelbourneWarehouseImage from "@/assets/blog/port-melbourne-warehouse.jpg";
 import commercialPaintingMelbourneImage from "@/assets/blog/commercial-painting-melbourne.jpg";
 import commercialWaterDamageCeilingImage from "@/assets/blog/commercial-water-damage-ceiling-melbourne.jpg";
+import retailMakeGoodShoppingCentreImage from "@/assets/blog/retail-make-good-shopping-centre-melbourne.webp";
 import { BlogPost } from "@/data/blogPosts";
 import { resolveImageSrc } from "@/lib/resolveImageSrc";
 
@@ -76,6 +77,7 @@ const imageMap: Record<string, unknown> = {
   'industrial-lease-make-good': warehouseImage,
   'office-fitout-make-good': officeStripOutImage,
   'retail-lease-make-good': commercialMakeGoodImage,
+  'retail-make-good-shopping-centre-melbourne': retailMakeGoodShoppingCentreImage,
 };
 
 // Normalize image imports across Astro + React builds.
