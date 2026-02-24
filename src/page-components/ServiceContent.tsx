@@ -138,7 +138,7 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
       {service.skipAboutSection && service.featuredSections && service.featuredSections.map((section, index) => {
         const paragraphs = section.description.split('\n\n');
         return (
-          <section key={`early-featured-${index}`} className={`py-16 ${index % 2 === 0 ? 'bg-secondary' : 'bg-background'}`}>
+          <section key={`early-featured-${index}`} className={`py-16 ${index % 2 === 0 ? 'bg-secondary' : 'bg-muted'}`}>
             <div className="container mx-auto px-4">
               <h2 
                 className="text-3xl md:text-4xl text-foreground mb-6 lg:col-span-2 lg:mb-0"
@@ -447,7 +447,7 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
         service.featuredSections.forEach((section, index) => {
           const paragraphs = section.description.split('\n\n');
           elements.push(
-            <section key={`featured-${index}`} className={`py-16 ${index % 2 === 0 ? 'bg-muted/30' : 'bg-secondary'}`}>
+            <section key={`featured-${index}`} className={`py-16 ${index % 2 === 0 ? 'bg-muted' : 'bg-secondary'}`}>
               <div className="container mx-auto px-4">
                 <h2 className="text-3xl md:text-4xl text-foreground mb-6">
                   {section.title}
@@ -526,7 +526,7 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
         const paragraphs = section.description.split('\n\n');
         const shouldReverseLayout = section.imageLeft || index % 2 === 1;
         return (
-          <section key={`post-comparison-${index}`} className={`py-16 ${index % 2 === 0 ? 'bg-background' : 'bg-secondary'}`}>
+          <section key={`post-comparison-${index}`} className={`py-16 ${index % 2 === 0 ? 'bg-muted' : 'bg-secondary'}`}>
             <div className="container mx-auto px-4">
               <div className="grid lg:grid-cols-2 gap-12 items-center">
                 <div className={shouldReverseLayout ? 'lg:order-2' : ''}>
