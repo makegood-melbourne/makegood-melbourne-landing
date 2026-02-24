@@ -631,6 +631,7 @@ export const services: Service[] = [
     heroImageAlt: "Worn and faded yellow line markings on warehouse concrete floor requiring restoration in Melbourne",
     secondaryImage: lineMarkingRestoredImage,
     secondaryImageAlt: "Restored yellow warehouse floor line markings with pedestrian walkways and safety zones in Melbourne",
+    skipAboutSection: true,
     benefits: [
       "Restore worn and faded line markings",
       "Remove tenant-specific delineations",
@@ -681,20 +682,11 @@ export const services: Service[] = [
     capabilitiesSubtitle: "Our service covers warehouse and car park line marking restoration for commercial make good projects.",
     featuredSections: [
       {
-        title: "WAREHOUSE LINE MARKING RESTORATION",
-        titleHighlight: "RESTORATION",
-        description: "Years of forklift traffic wear lines down to nothing. Tenant-specific bay layouts, added zones and custom delineations need to be removed and the original layout reinstated. We restore warehouse line markings to the condition your landlord expects—original layout, correct colours, compliant safety zones.\n\nWe work from your original lease drawings or coordinate with the property manager to confirm the required layout before starting. Old markings are removed or ground back, surfaces prepared and new lines applied with heavy-duty floor paints or thermoplastics. Fast-dry formulas mean minimal downtime and quick handover.",
-        image: lineMarkingWornFloorImage,
-        imageAlt: "Worn and faded yellow line markings on warehouse concrete floor requiring restoration in Melbourne",
+        title: "MARKED OUT. HANDED BACK.",
+        description: "Years of forklift traffic wear lines down to nothing. Tenant-specific bay layouts, added zones and custom delineations need to be removed and the original layout reinstated. In car parks, faded bays, worn directional arrows and eroded safety zones all need to come back to compliance standard \u2014 disabled bays, loading zones and visitor areas reinstated to the original layout.\n\nWe work from your original lease drawings or coordinate with the property manager to confirm the required layout before starting. Old markings are removed or ground back, surfaces prepared and new lines applied with heavy-duty floor paints or thermoplastics. Fast-dry formulas mean minimal downtime and quick handover.",
+        image: lineMarkingRestoredImage,
+        imageAlt: "Warehouse interior with fresh yellow line markings, bollards and pedestrian crossing on polished concrete floor in Melbourne",
         imageLeft: true
-      },
-      {
-        title: "CAR PARK LINE MARKING RESTORATION",
-        titleHighlight: "RESTORATION",
-        description: "Years of traffic have taken their toll. We bring car park markings back to compliance standard, restoring faded bays, worn directional arrows and eroded safety zones. Disabled bays, loading zones and visitor areas are reinstated to the original layout and current compliance requirements.\n\nWe work from the original car park layout drawings where available, or survey the existing markings to confirm what needs to be restored. All works are completed with durable, weather-resistant paints suited to exposed car park environments.",
-        image: carParkLineMarkingImage,
-        imageAlt: "Aerial view of commercial car park with restored white bay markings and yellow directional lines in Melbourne",
-        imageLeft: false
       }
     ],
     linkedSpotlightBlock: {
