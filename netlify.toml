@@ -416,6 +416,19 @@
   status = 301
   force = true
 
+# Missing blog slug redirect - office strip out (linked from make-good-guide page)
+[[redirects]]
+  from = "/blog/office-strip-out-demolition-melbourne"
+  to = "/blog/office-strip-out/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog/office-strip-out-demolition-melbourne/"
+  to = "/blog/office-strip-out/"
+  status = 301
+  force = true
+
 # 404 catch-all (must be last)
 [[redirects]]
   from = "/*"
