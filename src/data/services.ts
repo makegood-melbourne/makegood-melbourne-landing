@@ -768,7 +768,7 @@ export const services: Service[] = [
     heroImageAlt: "Worker sweeping concrete floor with industrial broom during make good cleaning Melbourne",
     secondaryImage: highPressureWarehouseCleaningImage,
     secondaryImageAlt: "High-pressure warehouse cleaning Melbourne - industrial cleaner pressure washing warehouse floor for lease end",
-    scopeTitle: "NOT YOUR REGULAR CLEANER.",
+    scopeTitle: "A FULL HANDOVER CLEAN.",
     scopeBody: "Lease ending? We handle the heavy-duty cleaning regular cleaners won\u2019t touch. Ride-on scrubbers for warehouse floors, industrial pressure washers for loading docks caked in years of grime, chemical treatment for oil stains and tyre marks. We work at scale \u2014 500sqm+ warehouse floors, multi-level office strip-outs, concrete aprons and external hard surfaces that need more than a mop.\n\nThis isn\u2019t maintenance cleaning. It\u2019s intensive restoration for lease handover \u2014 and it needs to pass your landlord\u2019s final inspection first time.",
     trustBadges: [
       "Industrial-Grade Equipment",
