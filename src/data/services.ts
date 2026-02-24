@@ -21,6 +21,7 @@ import ceilingTileReplacementHeroImage from "@/assets/services/ceiling-tile-repl
 import suspendedCeilingGridImage from "@/assets/services/suspended-ceiling-grid-led-panels-commercial-office-melbourne.jpeg";
 import lineMarkingWornFloorImage from "@/assets/services/warehouse-floor-worn-line-markings-restoration-melbourne.jpeg";
 import lineMarkingRestoredImage from "@/assets/services/warehouse-floor-worn-line-markings-restoration-melbourne.png";
+import lineMarkingFreshImage from "@/assets/services/warehouse-fresh-yellow-line-marking-polished-concrete-melbourne.jpg";
 import carParkLineMarkingImage from "@/assets/services/car-park-line-marking-restoration-aerial-melbourne.jpeg";
 import emptyWarehouseImage from "@/assets/services/empty-warehouse-after-makegood-melbourne.png";
 import manufacturingFacilityImage from "@/assets/services/manufacturing-facility-before-makegood-melbourne.jpeg";
@@ -627,10 +628,10 @@ export const services: Service[] = [
     metaDescription: "Warehouse and car park line marking in Melbourne. Line reinstatement, tenant marking removal and safety zone restoration for end of lease compliance. Free quotes.",
     heroText: "Years of forklift traffic have worn your lines away. Or maybe you added bays and zones to suit your operation—now they need to go. We restore original markings, remove tenant delineations and hand back floors that meet your make-good obligations.",
     ogImage: "/og/line-marking.jpg",
-    heroImage: lineMarkingWornFloorImage,
-    heroImageAlt: "Worn and faded yellow line markings on warehouse concrete floor requiring restoration in Melbourne",
-    secondaryImage: lineMarkingRestoredImage,
-    secondaryImageAlt: "Restored yellow warehouse floor line markings with pedestrian walkways and safety zones in Melbourne",
+    heroImage: lineMarkingRestoredImage,
+    heroImageAlt: "Restored yellow warehouse floor line markings with pedestrian walkways and safety zones in Melbourne",
+    secondaryImage: lineMarkingFreshImage,
+    secondaryImageAlt: "Fresh yellow forklift aisle line markings on polished concrete warehouse floor in Melbourne",
     skipAboutSection: true,
     benefits: [
       "Restore worn and faded line markings",
@@ -684,8 +685,8 @@ export const services: Service[] = [
       {
         title: "MARKED OUT. HANDED BACK.",
         description: "Years of forklift traffic wear lines down to nothing. Tenant-specific bay layouts, added zones and custom delineations need to be removed and the original layout reinstated. In car parks, faded bays, worn directional arrows and eroded safety zones all need to come back to compliance standard \u2014 disabled bays, loading zones and visitor areas reinstated to the original layout.\n\nWe work from your original lease drawings or coordinate with the property manager to confirm the required layout before starting. Old markings are removed or ground back, surfaces prepared and new lines applied with heavy-duty floor paints or thermoplastics. Fast-dry formulas mean minimal downtime and quick handover.",
-        image: lineMarkingRestoredImage,
-        imageAlt: "Warehouse interior with fresh yellow line markings, bollards and pedestrian crossing on polished concrete floor in Melbourne",
+        image: lineMarkingFreshImage,
+        imageAlt: "Fresh yellow forklift aisle line markings on polished concrete warehouse floor in Melbourne",
         imageLeft: true
       }
     ],
