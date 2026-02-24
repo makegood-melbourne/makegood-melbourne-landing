@@ -142,6 +142,7 @@ export interface Service {
   secondaryImage?: string;
   secondaryImageAlt?: string;
   scopeTitle?: string; // Custom title for the scope section (defaults to "{name} Scope")
+  scopeBody?: string; // Custom body copy for the scope section (overrides description)
   trustBadges?: (string | TrustBadge)[];
   featuredSection?: FeaturedSection;
   featuredSections?: FeaturedSection[];
@@ -1726,6 +1727,8 @@ export const services: Service[] = [
     heroImageAlt: "Large industrial warehouse with restored concrete slab floor showing completed floor restoration Melbourne",
     secondaryImage: warehouseFloorRepairsScopeImage,
     secondaryImageAlt: "Empty warehouse with polished concrete floor after complete floor restoration Melbourne",
+    scopeTitle: "STRIPPED BACK. RESTORED TO SPEC.",
+    scopeBody: "Your lease requires the floor handed back in its original condition — and warehouse floors take the full force of a tenancy. Coatings stripped, adhesives ground back, dynabolt holes core-drilled and filled, cracks injected, surface finished to the specification your lease requires. From carpet strip-out to epoxy recoat, we handle the full scope in one service — no separate contractors, no gaps between trades, one handover-ready result.",
     trustBadges: [
       "Diamond-Tipped Grinding Technology",
       "Industrial Floor Repair Systems",
