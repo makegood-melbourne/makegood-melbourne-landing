@@ -161,6 +161,16 @@ export interface Service {
     cards: RelatedServiceCard[];
   };
   processAfterSpotlight?: boolean; // Show process after spotlight section instead of default location
+  tabbedScope?: {
+    heading: string;
+    tabs: {
+      label: string;
+      title: string;
+      description: string;
+      image?: string;
+      imageAlt?: string;
+    }[];
+  }; // Tabbed panel block replacing zigzag featured sections
   benefits: string[];
   comparison?: Comparison;
   faqs?: FAQ[];
@@ -1719,38 +1729,47 @@ export const services: Service[] = [
       "Industrial Floor Repair Systems",
       "Warehouse & Factory Specialists"
     ],
-    featuredSections: [
-      {
-        title: "Flooring & Adhesive Removal",
-        description: "Complete removal of all floor coverings and their adhesives. We strip carpets and carpet tiles, vinyl and linoleum floorboards, ceramic and porcelain tiles and epoxy sealed concrete floors. Our industrial grinders then ablate adhesive beds, carpet glue, tile mortar, [waterproofing membranes](/services/waterproofing) and failed epoxy coatings—leaving concrete floor slabs ready for restoration.",
-        image: tileFlooringRemovalImage,
-        imageAlt: "Demolition hammer removing floor tiles during warehouse flooring strip out Melbourne"
-      },
-      {
-        title: "Floor Grinding & Levelling",
-        description: "Uneven floors, high spots and surface deterioration affect forklift operation and safety. Our industrial floor grinding equipment levels surfaces, removes coatings and prepares floors for epoxy systems or grind-and-seal finishes. We restore flatness tolerances required for efficient warehouse operations.",
-        image: floorGrindingPowerTrowelImage,
-        imageAlt: "Industrial concrete power trowel with protective cage and orange power cord on warehouse floor Melbourne"
-      },
-      {
-        title: "Dynabolt Hole Repairs",
-        description: "When pallet racking, machinery or equipment is removed, you're left with hundreds of anchor holes in your floor. We core drill out damaged concrete around dynabolt holes, fill with high-strength epoxy resin, and grind flush to restore a smooth, level surface. Essential for [lease end make goods](/learn/make-good-guide) and floor re-coating.",
-        image: warehouseDynaboltHoleRepairsImage,
-        imageAlt: "Industrial warehouse pallet racking with blue uprights and orange beams anchored to concrete floor Melbourne"
-      },
-      {
-        title: "Crack Injection & Joint Repairs",
-        description: "Cracks and deteriorated joints let water penetrate the slab and worsen under forklift traffic. We inject low-viscosity epoxy or polyurethane into cracks to restore structural integrity and prevent further damage. For failed expansion joints, we reseal with polyurethane caulking to keep water and debris out. Damaged joint edges (arrises) are rebuilt using quartz-filled epoxy resins designed for heavy traffic areas. We also handle complete expansion joint replacement—removing old fillers and installing new foam backer rods with modern sealants.",
-        image: warehouseJointRepairImage,
-        imageAlt: "Close-up of concrete floor expansion joint showing repair work on industrial warehouse floor Melbourne"
-      },
-      {
-        title: "Surface Finishing",
-        description: "Once the slab is restored and repaired, we provide the finish your lease requires. Grind and seal delivers a protected surface in matte, semi-gloss or high-gloss finish. Epoxy coatings provide chemical resistance and durability for continued operations. [Line marking](/services/line-marking) restores safety zones and traffic lanes. We match the specification in your lease.",
-        image: grindSealFloorCoatingImage,
-        imageAlt: "Worker applying protective floor sealant coating to ground concrete warehouse floor Melbourne"
-      }
-    ],
+    tabbedScope: {
+      heading: "WHAT'S INCLUDED IN THE SCOPE",
+      tabs: [
+        {
+          label: "FLOORING REMOVAL",
+          title: "Flooring Removal",
+          description: "Carpets, carpet tiles, vinyl, timber, ceramic, epoxy \u2014 whatever\u2019s on the floor, it comes off. We remove the coverings and grind out what\u2019s left behind: adhesive beds, carpet glue, tile mortar, failed coatings and waterproofing membranes. The slab underneath is left clean and ready for the next stage.",
+          image: tileFlooringRemovalImage,
+          imageAlt: "Demolition hammer removing floor tiles during warehouse flooring strip out Melbourne"
+        },
+        {
+          label: "FLOOR GRINDING",
+          title: "Floor Grinding",
+          description: "Years of forklift traffic leave floors uneven, pitted and coated in residue. Our industrial grinders level high spots, remove surface deterioration and prepare the slab for epoxy or grind-and-seal finishes. The result is a flat, consistent surface that meets the tolerances your lease and your next tenant require.",
+          image: floorGrindingPowerTrowelImage,
+          imageAlt: "Industrial concrete power trowel with protective cage and orange power cord on warehouse floor Melbourne"
+        },
+        {
+          label: "DYNABOLT REPAIRS",
+          title: "Dynabolt Repairs",
+          description: "Racking out means hundreds of anchor holes left in the concrete. We don\u2019t just fill them \u2014 we core drill out the damaged concrete around each hole, pack with high-strength epoxy resin and grind flush. No raised edges, no weak spots, no voids. Floor restored.",
+          image: warehouseDynaboltHoleRepairsImage,
+          imageAlt: "Industrial warehouse pallet racking with blue uprights and orange beams anchored to concrete floor Melbourne"
+        },
+        {
+          label: "CRACK INJECTION",
+          title: "Crack Injection",
+          description: "Cracks left untreated let water in and get worse under traffic. We inject low-viscosity epoxy or polyurethane to restore structural integrity and stop further movement. Failed expansion joints are resealed, damaged edges rebuilt with quartz-filled epoxy designed for heavy traffic. The floor leaves in better condition than it\u2019s been in years.",
+          image: warehouseJointRepairImage,
+          imageAlt: "Close-up of concrete floor expansion joint showing repair work on industrial warehouse floor Melbourne"
+        },
+        {
+          label: "SURFACE FINISHING",
+          title: "Surface Finishing",
+          description: "Once the slab is restored, we apply the finish your lease requires. Grind and seal in matte, semi-gloss or high-gloss. Epoxy coatings where chemical resistance and durability are needed. Line marking to reinstate safety zones and traffic lanes. We work from your lease specification \u2014 no guessing, no overscoping.",
+          image: grindSealFloorCoatingImage,
+          imageAlt: "Worker applying protective floor sealant coating to ground concrete warehouse floor Melbourne"
+        }
+      ]
+    },
+    featuredSections: [],
     benefits: [
       "Complete Flooring Strip-Out",
       "Carpet, Vinyl, Tile & Adhesive Removal",

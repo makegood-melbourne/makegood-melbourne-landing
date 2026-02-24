@@ -12,6 +12,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import TabbedScopePanel from "@/components/TabbedScopePanel";
 
 interface ServiceContentProps {
   slug: string;
@@ -129,6 +130,12 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
     bgProcessAfterScope = nextBg();
   }
 
+  // Tabbed scope panel (replaces featured sections when present)
+  let bgTabbedScope: string | null = null;
+  if (service.tabbedScope) {
+    bgTabbedScope = nextBg();
+  }
+
   // Comparison table (standalone — not inserted between featured sections)
   let bgComparison: string | null = null;
   if (service.comparison && service.comparisonAfterSection === undefined) {
@@ -139,7 +146,7 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
   const bgFeatured: string[] = [];
   let bgProcessInFeatured: string | null = null;
   let bgComparisonInFeatured: string | null = null;
-  if (service.featuredSections && !service.skipAboutSection) {
+  if (service.featuredSections && !service.skipAboutSection && !service.tabbedScope) {
     const processInsertAfterIndex = service.processAfterSection;
     const comparisonInsertAfterIndex = service.comparisonAfterSection;
     const hasProcess = service.process && service.process.length > 0 && !service.processAfterScope && !service.processAfterSpotlight;
@@ -502,8 +509,17 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
         </section>
       )}
 
+      {/* Tabbed Scope Panel (replaces featured sections when present) */}
+      {service.tabbedScope && bgTabbedScope && (
+        <TabbedScopePanel
+          heading={service.tabbedScope.heading}
+          tabs={service.tabbedScope.tabs}
+          bgClass={bgTabbedScope}
+        />
+      )}
+
       {/* Featured Sections (multiple) with optional Process and Comparison insertion */}
-      {service.featuredSections && !service.skipAboutSection && (() => {
+      {service.featuredSections && !service.tabbedScope && !service.skipAboutSection && (() => {
         const processSection = service.process && service.process.length > 0 && !service.processAfterScope && !service.processAfterSpotlight ? (
           <section key="process-section" className={`py-16 ${bgProcessInFeatured}`}>
             <div className="container mx-auto px-4">
