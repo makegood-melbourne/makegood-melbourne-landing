@@ -926,6 +926,8 @@ export const services: Service[] = [
     heroImageAlt: "Forklift loading dismantled pallet racking onto truck for end of lease warehouse relocation Melbourne",
     secondaryImage: flatbedTruckTransportImage,
     secondaryImageAlt: "Flatbed truck transporting pallet racking and industrial machinery with Melbourne city skyline in background",
+    scopeTitle: "MAKE GOOD HERE. MOVE IN THERE.",
+    scopeBody: "Vacating your warehouse, factory or office? We handle the make-good at your old site and transport your equipment to the new one — anywhere in Australia. One contractor, one point of contact, one timeline aligned to your lease end date.\n\nWhile we're restoring your old premises to handover condition, your essential equipment is being carefully loaded and moved. Old site handed back inspection-ready. New site ready to operate.",
     benefits: [
       "Complete make-good at vacating site",
       "Equipment transport to new location",
@@ -1321,6 +1323,8 @@ export const services: Service[] = [
     ],
     secondaryImage: glazingFacadeInstallationImage,
     secondaryImageAlt: "Professional glazing facade installation on commercial high-rise building with workers in safety harnesses Melbourne",
+    scopeTitle: "NON-COMPLIANT TODAY. FIXED FOR GOOD.",
+    scopeBody: "ACP cladding is banned. Non-compliant glazing is a liability. If your building has either, the clock is already running. We deliver end-to-end cladding and glazing remediation — assessment, removal, replacement with fire-rated compliant materials tested to AS 1530 and AS 5113, and final certification for the VBA, councils and building managers.\n\nFrom facade panels to glazing upgrades, every project is engineered, documented and signed off.",
     ctaBlock: {
       title: "Let Us Handle Your Cladding Remediation",
       subtitle: "We do makegoods all day, every day.",
@@ -1343,6 +1347,8 @@ export const services: Service[] = [
     heroImageAlt: "Worker applying waterproofing membrane to commercial rooftop in Melbourne",
     secondaryImage: waterproofingMembraneImage,
     secondaryImageAlt: "Close-up of waterproofing membrane application on commercial building surface in Melbourne",
+    scopeTitle: "SEALED AT THE SOURCE.",
+    scopeBody: "Failed waterproofing doesn't stay contained — balcony leaks penetrate into apartments below, roof failures flood commercial spaces, wet area failures cause damage that compounds over time. We identify where water is getting in, prepare the substrate properly and apply proven membrane systems that protect your building for the long term.\n\nBalconies, roofs, podiums, wet areas, box gutters — every application backed by manufacturer warranties.",
     benefits: [
       "Balcony and terrace membrane systems",
       "Flat roof and podium waterproofing",
@@ -1592,7 +1598,8 @@ export const services: Service[] = [
         }
       ]
     },
-    skipAboutSection: true,
+    scopeTitle: "PANELS OUT. LIGHT IN.",
+    scopeBody: "Yellowed, cracked or leaking polycarbonate panels reduce light transmission, compromise weather resistance and in older buildings may contain asbestos. We remove damaged panels and install new polycarbonate sheets with proper flashing, sealing and guttering — restoring natural light and weatherproofing to your facility.\n\nWhere asbestos-containing panels are present, we manage licensed removal and compliant disposal as part of the project. Every installation is completed to Australian Standards with workmanship warranties and documentation for your records.",
     comparison: {
       title: "When Skylights Need Replacing",
       specialistTitle: "New Polycarbonate Panels",
