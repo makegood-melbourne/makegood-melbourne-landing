@@ -419,9 +419,11 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
                 )}
               </div>
               <div>
-                <p className="text-xl text-foreground leading-relaxed">
-                  {renderTextWithLinks(service.scopeBody || service.description)}
-                </p>
+                {(service.scopeBody || service.description).split('\n\n').map((para, i) => (
+                  <p key={i} className={`text-xl text-foreground leading-relaxed${i > 0 ? ' mt-4' : ''}`}>
+                    {renderTextWithLinks(para)}
+                  </p>
+                ))}
                 {!service.scopeBody && (
                   <p className="text-xl text-foreground leading-relaxed mt-4">
                     {service.slug === 'cladding-glazing' 
