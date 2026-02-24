@@ -217,27 +217,6 @@ const SectionLandingTemplate = ({ data }: SectionLandingTemplateProps) => {
               )}
             </div>
           </div>
-          
-          {/* Trust Badges - 4 vertical badges */}
-          {data.trustBadges && data.trustBadges.length > 0 && (
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-10">
-              {data.trustBadges.map((badge, index) => {
-                const IconComponent = 
-                  badge.icon === "shield" ? Shield :
-                  badge.icon === "compass" ? Compass :
-                  badge.icon === "dollar" ? BadgeDollarSign :
-                  badge.icon === "document" ? FileText : 
-                  badge.icon === "clipboard" ? ClipboardCheck : Shield;
-                
-                return (
-                  <div key={index} className="flex flex-col items-center text-center gap-2">
-                    <IconComponent className="h-8 w-8 text-muted-foreground" />
-                    <span className="text-sm font-medium text-muted-foreground">{badge.title}</span>
-                  </div>
-                );
-              })}
-            </div>
-          )}
         </div>
       </section>
 
@@ -293,7 +272,7 @@ const SectionLandingTemplate = ({ data }: SectionLandingTemplateProps) => {
 
       {/* FAQ Section */}
       {data.faqs && data.faqs.length > 0 && (
-        <section className="py-16 px-4 sm:px-6 lg:px-8">
+        <section className="py-16 px-4 sm:px-6 lg:px-8 bg-secondary">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-center">
               {data.faqTitle || "Frequently Asked Questions"}

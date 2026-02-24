@@ -1,7 +1,5 @@
 import commercialCleaningImage from "@/assets/services/commercial-cleaning-melbourne-supplies.jpeg";
 import commercialFloorSweepingImage from "@/assets/services/commercial-floor-sweeping-concrete-melbourne.jpeg";
-import epoxyFlooringWarehouseImage from "@/assets/services/polished-epoxy-floor-industrial-warehouse-melbourne.jpeg";
-import epoxySpreadingApplicationImage from "@/assets/services/epoxy-floor-spreading-application-warehouse-melbourne.jpeg";
 import warehouseFloorScrubberImage from "@/assets/services/warehouse-floor-scrubber-cleaning-v4.jpg";
 import industrialFloorScrubberImage from "@/assets/services/industrial-warehouse-floor-scrubber-cleaning-melbourne.jpeg";
 import highPressureWarehouseCleaningImage from "@/assets/services/high-pressure-warehouse-cleaning-melbourne.png";
@@ -23,6 +21,7 @@ import ceilingTileReplacementHeroImage from "@/assets/services/ceiling-tile-repl
 import suspendedCeilingGridImage from "@/assets/services/suspended-ceiling-grid-led-panels-commercial-office-melbourne.jpeg";
 import lineMarkingWornFloorImage from "@/assets/services/warehouse-floor-worn-line-markings-restoration-melbourne.jpeg";
 import lineMarkingRestoredImage from "@/assets/services/warehouse-floor-worn-line-markings-restoration-melbourne.png";
+import lineMarkingFreshImage from "@/assets/services/warehouse-fresh-yellow-line-marking-polished-concrete-melbourne.jpg";
 import carParkLineMarkingImage from "@/assets/services/car-park-line-marking-restoration-aerial-melbourne.jpeg";
 import emptyWarehouseImage from "@/assets/services/empty-warehouse-after-makegood-melbourne.png";
 import manufacturingFacilityImage from "@/assets/services/manufacturing-facility-before-makegood-melbourne.jpeg";
@@ -143,6 +142,7 @@ export interface Service {
   secondaryImage?: string;
   secondaryImageAlt?: string;
   scopeTitle?: string; // Custom title for the scope section (defaults to "{name} Scope")
+  scopeBody?: string; // Custom body copy for the scope section (overrides description)
   trustBadges?: (string | TrustBadge)[];
   featuredSection?: FeaturedSection;
   featuredSections?: FeaturedSection[];
@@ -161,6 +161,16 @@ export interface Service {
     cards: RelatedServiceCard[];
   };
   processAfterSpotlight?: boolean; // Show process after spotlight section instead of default location
+  tabbedScope?: {
+    heading: string;
+    tabs: {
+      label: string;
+      title: string;
+      description: string;
+      image?: string;
+      imageAlt?: string;
+    }[];
+  }; // Tabbed panel block replacing zigzag featured sections
   benefits: string[];
   comparison?: Comparison;
   faqs?: FAQ[];
@@ -298,70 +308,6 @@ export const services: Service[] = [
     published: true
   },
   {
-    name: "Epoxy Flooring",
-    slug: "epoxy-flooring",
-    title: "Epoxy Flooring Melbourne",
-    metaTitle: "Epoxy Flooring Melbourne | Warehouse Floor Coatings",
-    description: "Tired concrete floors dragging down your warehouse? Epoxy transforms worn, stained slabs into durable, professional surfaces that impress clients and stand up to forklifts, chemicals and heavy traffic. New installs or restoration—we handle it.",
-    metaDescription: "Industrial epoxy flooring for warehouses and factories in Melbourne. Concrete repair, resurfacing and protective coatings. Chemical-resistant, anti-slip finishes. Free quotes.",
-    heroText: "Your warehouse floor takes a beating. Epoxy coating protects the concrete, hides the damage and gives you a surface that's easy to clean, safe to work on and built to last. For floors with cracks, bolt holes or joint damage, we handle [floor repairs](/services/make-good-solutions/warehouse-flooring) before coating. Whether you're refreshing for a new tenant or upgrading your own facility—we deliver.",
-    ogImage: "/og/epoxy-flooring.jpg",
-    heroImage: epoxySpreadingApplicationImage,
-    heroImageAlt: "Worker spreading epoxy floor coating in industrial warehouse Melbourne",
-    benefits: [
-      "Chemical and oil resistant finishes",
-      "Anti-slip coatings for safety compliance",
-      "Cracks and damage repaired first",
-      "Fast-cure options to minimise downtime",
-      "Range of colours including safety zones",
-      "20+ year lifespan with proper care"
-    ],
-    secondaryImage: epoxyFlooringWarehouseImage,
-    secondaryImageAlt: "Polished epoxy floor coating in large industrial warehouse with reflective finish Melbourne",
-    faqs: [
-      {
-        question: "How long does epoxy flooring take to install?",
-        answer: "Timing depends on floor size and condition. A standard warehouse (500-1000m²) typically takes 3-5 days including surface preparation, repairs, primer, epoxy coats and curing time. We use fast-cure systems where possible to minimise downtime and can stage work to maintain partial access during installation."
-      },
-      {
-        question: "How long does epoxy flooring last?",
-        answer: "Industrial epoxy flooring typically lasts 15-20+ years with proper care. Lifespan depends on traffic levels, chemical exposure and maintenance. High-traffic forklift areas may need touch-ups after 10-15 years. We use commercial-grade systems designed for warehouse and factory environments."
-      },
-      {
-        question: "Can you apply epoxy over damaged concrete?",
-        answer: "Yes, but the damage must be repaired first. Cracks, dynabolt holes, spalling and joint failures need proper treatment before coating—otherwise they'll telegraph through the epoxy and cause premature failure. We handle all floor repairs as part of our epoxy flooring service."
-      },
-      {
-        question: "What's the difference between epoxy and polyurethane floor coatings?",
-        answer: "Epoxy provides excellent adhesion, chemical resistance and durability—ideal for warehouses and factories. Polyurethane offers better UV stability and flexibility, making it suitable for outdoor areas or floors with movement. We often use epoxy as a base coat with polyurethane topcoat for maximum performance."
-      },
-      {
-        question: "Is epoxy flooring slip-resistant?",
-        answer: "Standard epoxy has a smooth, glossy finish. For safety compliance, we add anti-slip aggregates to create textured finishes rated to Australian standards. We can also incorporate coloured safety zones, walkways and forklift lanes into your floor design."
-      },
-      {
-        question: "How much does epoxy flooring cost in Melbourne?",
-        answer: "Costs vary based on floor condition, size and system specification. Basic single-coat systems start lower, while high-build chemical-resistant systems with anti-slip finishes cost more. We provide free, itemised quotes after inspecting your floor so you know exactly what to expect."
-      },
-      {
-        question: "Can the warehouse stay operational during epoxy installation?",
-        answer: "In many cases, yes. We can section off areas and work progressively to maintain access to operational zones. Fast-cure systems allow foot traffic within 12-24 hours and forklift traffic within 48-72 hours. We'll plan the work to minimise disruption to your operations."
-      },
-      {
-        question: "What preparation is needed before epoxy flooring?",
-        answer: "Proper preparation is critical for adhesion. We diamond grind the surface to create a profile, repair any cracks or damage, fill dynabolt holes, and ensure the concrete is clean and dry. Poor preparation is the main cause of epoxy failure—we don't cut corners."
-      }
-    ],
-    ctaBlock: {
-      title: "Let Us Handle Your Epoxy Flooring",
-      subtitle: "We do makegoods all day, every day.",
-      text: "From small workshops to large distribution centres, we've coated floors across Melbourne's industrial properties. Get in touch today for a free, no-obligation quote."
-    },
-    relatedServices: ["make-good-solutions/warehouse-flooring", "make-good-solutions/line-marking"],
-    category: "trade",
-    published: true
-  },
-  {
     name: "Painting",
     slug: "make-good-solutions/painting",
     title: "Painting",
@@ -375,6 +321,7 @@ export const services: Service[] = [
     secondaryImage: commercialPaintingScopeImage,
     secondaryImageAlt: "Commercial interior with plastered walls and ceiling surface preparation ready for professional painting in Melbourne",
     scopeTitle: "End of Lease Painting Scope",
+    skipAboutSection: true,
     trustBadges: ["Licensed & Insured", "Competitive Pricing", "Fixed-Price Quotes"],
     benefits: [
       "Accurate colour matching to original specifications",
@@ -383,24 +330,55 @@ export const services: Service[] = [
       "External painting solutions",
       "After-hours and weekend work available"
     ],
+    capabilityCards: [
+      {
+        icon: "brick",
+        title: "SURFACE PREPARATION",
+        items: [
+          "Fill all holes from removed fixtures and fittings",
+          "Repair plaster damage, cracks and surface defects",
+          "Sand patches smooth and feather edges",
+          "Apply appropriate primers and sealers",
+          "Coordinate with patching and plastering where required",
+          "Surfaces dust-free and ready for coating"
+        ]
+      },
+      {
+        icon: "structure",
+        title: "INTERNAL PAINTING",
+        items: [
+          "Walls, ceilings, columns and structural elements",
+          "Door frames, skirting boards and painted trim",
+          "Colour-matched to original specifications",
+          "Spray, roller or brush application to suit surface",
+          "Low-odour, fast-drying paints available",
+          "After-hours and weekend work available"
+        ]
+      },
+      {
+        icon: "waterproof",
+        title: "EXTERNAL PAINTING",
+        items: [
+          "Building facades and external wall surfaces",
+          "Painted concrete block, masonry and render",
+          "Steel structural elements and cladding panels",
+          "Access via boom lift, cherry picker or scaffold",
+          "Durable exterior-grade coatings",
+          "Weather and UV resistant finishes"
+        ]
+      }
+    ],
+    capabilitiesTitle: "PAINTING CAPABILITIES",
+    capabilitiesSubtitle: "Our service covers all painted surfaces for commercial and industrial make good projects.",
     featuredSections: [
       {
-        title: "Internal Painting — Walls, Ceilings and Trim",
-        description: "We prepare surfaces properly, match colours accurately and apply professional finishes across your entire tenancy. Offices, warehouses, showrooms, retail—whatever the space, we deliver results.\n\nThe outcome is a clean, consistent finish suited to commercial and industrial environments. Across offices, warehouses, showrooms and retail spaces, attention to detail and uniform presentation ensure the space is ready for inspection, handover or reoccupation.",
+        title: "COLOUR MATCHED. COAT APPLIED.",
+        description: "Your lease requires it painted back to original. We colour-match to specification, prepare every surface properly and apply professional finishes across internal walls, ceilings and trim — offices, warehouses, showrooms and retail. Where warehouse walls are in scope, we repair racking marks, forklift impact and penetrations from removed services before a single coat goes on, then apply industrial-grade coatings across the full height and run using spray application where the scale demands it.\n\nExternal facades get the same attention. We work across render, panel systems, concrete and cladding. Where access is needed — boom lifts, cherry pickers, elevated work platforms — we arrange it. Works are scheduled around weather conditions and surrounding site activity so the finish holds and the programme doesn't slip.\n\nThe outcome across all surfaces is a consistent, professional finish ready for inspection and handover.",
         image: industrialWarehouseInteriorPaintingImage,
         imageAlt: "Industrial warehouse interior wall painting using boom lift access equipment for high-reach surfaces in Melbourne",
         imageLeft: true
-      },
-      {
-        title: "External Painting — Building Facades and External Surfaces",
-        description: "We prepare external surfaces properly, match colours accurately and apply durable finishes suited to building facades and exposed external areas. Works are completed across commercial and industrial properties, with consideration given to access, weather conditions and surrounding site activity.\n\nThe outcome is a consistent, professional external presentation that aligns with lease requirements and overall building standards. Attention to detail and uniform finishes ensure the property is ready for inspection, handover or ongoing use.",
-        image: commercialBuildingFacadePaintingImage,
-        imageAlt: "Commercial building facade painting using cherry picker access equipment for exterior panel surfaces in Melbourne",
-        imageLeft: false
       }
     ],
-    processAfterScope: true, // Show process right after scope section
-    comparisonAfterSection: 0, // Insert comparison after Internal Painting section
     comparison: {
       title: "Make Good Painting vs General Commercial Painting",
       specialistTitle: "Make Good Painting Specialist",
@@ -470,6 +448,38 @@ export const services: Service[] = [
       { step: "Surface Preparation", description: "All holes are filled, patches repaired, surfaces sanded and cleaned. Primers applied where needed for proper adhesion." },
       { step: "Professional Application", description: "Quality paints applied by experienced commercial painters—spray, roller or brush depending on surface and finish requirements." }
     ],
+    linkedSpotlightBlock: {
+      title: "A COMPLETE MAKE GOOD",
+      titleHighlight: "SERVICE",
+      subtitle: "We coordinate painting with flooring, ceiling replacement and patching to deliver your end-of-lease project on time.",
+      cards: [
+        {
+          slug: "make-good-solutions/flooring-reinstatement",
+          name: "Flooring Reinstatement",
+          description: "Carpet tiles, vinyl, epoxy and timber flooring reinstated to original specification for lease handover."
+        },
+        {
+          slug: "make-good-solutions/line-marking",
+          name: "Line Marking",
+          description: "Professional line marking for car parks, warehouses and industrial facilities to meet lease compliance requirements."
+        },
+        {
+          slug: "make-good-solutions/patching-plastering",
+          name: "Patching & Plastering",
+          description: "Professional patching and plastering for commercial make good projects across Melbourne."
+        },
+        {
+          slug: "make-good-solutions/suspended-ceilings",
+          name: "Suspended Ceilings",
+          description: "Ceiling tile replacement and grid repairs to restore your commercial space to original condition."
+        },
+        {
+          slug: "make-good-solutions/warehouse-flooring",
+          name: "Warehouse Flooring",
+          description: "Complete warehouse floor restoration including concrete repairs, grinding and protective coatings."
+        }
+      ]
+    },
     ctaBlock: {
       title: "Let Us Handle Your Painting",
       subtitle: "We do makegoods all day, every day.",
@@ -492,6 +502,7 @@ export const services: Service[] = [
     heroImageAlt: "Commercial office ceiling tile replacement showing timber acoustic panels and white suspended grid with LED lighting in Melbourne",
     secondaryImage: suspendedCeilingGridImage,
     secondaryImageAlt: "Suspended ceiling grid with white acoustic tiles and rectangular LED panel lights in commercial office Melbourne",
+    skipAboutSection: true,
     benefits: [
       "Meet your make-good ceiling requirements",
       "Standard tiles and acoustic panels",
@@ -502,6 +513,114 @@ export const services: Service[] = [
       "Full grid restoration after tenant removal",
       "Fire services coordination when required"
     ],
+    capabilityCards: [
+      {
+        icon: "brick",
+        title: "TILE & PANEL REPLACEMENT",
+        items: [
+          "Standard white acoustic tiles and grid systems",
+          "Timber and premium acoustic panel replacement",
+          "Discontinued tile matching and sourcing alternatives",
+          "Post-partition removal ceiling repairs",
+          "Full grid restoration after tenant strip-out",
+          "Colour and texture matching to existing ceiling"
+        ]
+      },
+      {
+        icon: "structure",
+        title: "GRID & STRUCTURE",
+        items: [
+          "Suspended ceiling grid repairs and reinstallation",
+          "Main runner and cross-tee replacement",
+          "Wall angle and perimeter trim restoration",
+          "Grid levelling and re-alignment",
+          "Hanger wire replacement and adjustment",
+          "Structural fixing to slab where required"
+        ]
+      },
+      {
+        icon: "waterproof",
+        title: "SERVICES COORDINATION",
+        items: [
+          "LED panel repositioning and rebalancing",
+          "Air conditioning diffuser relocation",
+          "Fire sprinkler head coordination",
+          "Smoke detector repositioning",
+          "Exit and emergency light adjustment",
+          "Coordination with licensed trades as required"
+        ]
+      }
+    ],
+    capabilitiesTitle: "SUSPENDED CEILING CAPABILITIES",
+    capabilitiesSubtitle: "Our service covers all ceiling types and associated services for commercial make good projects.",
+    featuredSections: [
+      {
+        title: "GRID RESTORED. TILES MATCHED.",
+        description: "Suspended ceilings take a beating over a tenancy \u2014 tiles cracked or stained from leaks, grids damaged when partitions were removed, acoustic panels discontinued and no longer available. Whether it\u2019s a standard suspended grid or timber acoustic panels, we restore ceilings to the condition your landlord expects, matching tiles and panels to the original specification wherever possible.\n\nWhere original products are no longer manufactured, we source the closest available match and coordinate approval before installation. LED panels are repositioned to suit the restored grid layout, aircon diffusers relocated and fire services adjusted as required. One contractor for the full ceiling scope \u2014 no separate trades to coordinate.",
+        image: suspendedCeilingGridImage,
+        imageAlt: "Suspended ceiling grid with white acoustic tiles and rectangular LED panel lights in commercial office Melbourne",
+        imageLeft: true
+      }
+    ],
+    linkedSpotlightBlock: {
+      title: "A COMPLETE MAKE GOOD",
+      titleHighlight: "SERVICE",
+      subtitle: "We coordinate ceiling restoration with painting, flooring and patching to deliver your end-of-lease project on time.",
+      cards: [
+        {
+          slug: "make-good-solutions/flooring-reinstatement",
+          name: "Flooring Reinstatement",
+          description: "Carpet tiles, vinyl, epoxy and timber flooring reinstated to original specification for lease handover."
+        },
+        {
+          slug: "make-good-solutions/line-marking",
+          name: "Line Marking",
+          description: "Professional line marking for car parks, warehouses and industrial facilities to meet lease compliance requirements."
+        },
+        {
+          slug: "make-good-solutions/painting",
+          name: "Painting",
+          description: "End of lease painting services for commercial and industrial properties across Melbourne."
+        },
+        {
+          slug: "make-good-solutions/patching-plastering",
+          name: "Patching & Plastering",
+          description: "Professional patching and plastering for commercial make good projects across Melbourne."
+        },
+        {
+          slug: "make-good-solutions/warehouse-flooring",
+          name: "Warehouse Flooring",
+          description: "Complete warehouse floor restoration including concrete repairs, grinding and protective coatings."
+        }
+      ]
+    },
+    faqs: [
+      {
+        question: "Do I need to replace all ceiling tiles or just the damaged ones?",
+        answer: "It depends on your lease and the condition of the ceiling. Some leases require a full repaint or replacement to ensure consistency. Where tiles are from the same batch and in good condition, we can replace only damaged tiles. Where tiles are stained, faded or mismatched, a full replacement is usually required for owner approval. We'll advise after inspecting the space."
+      },
+      {
+        question: "What if my ceiling tiles are discontinued?",
+        answer: "This is common, particularly in older buildings. We source the closest available match from our supplier network—same grid size, similar texture and colour. Where an exact match isn't possible, we coordinate with the owner or property manager to agree on an acceptable alternative before proceeding."
+      },
+      {
+        question: "Can you repair ceilings damaged when partitions were removed?",
+        answer: "Yes. Partition removal often leaves gaps, damaged tiles and misaligned grids. We repair the grid structure, source matching tiles and restore the ceiling to a continuous, consistent finish. This is one of the most common ceiling scopes we handle on make good projects."
+      },
+      {
+        question: "Do you handle LED and aircon adjustments as part of the ceiling work?",
+        answer: "Yes. When ceiling tiles and grids are restored, LED panels and aircon diffusers often need to be repositioned to suit the new layout. We coordinate this as part of the ceiling scope—no need to engage separate trades for minor repositioning."
+      },
+      {
+        question: "How long does a ceiling restoration take?",
+        answer: "A standard office tenancy (200–500m²) typically takes 1–3 days depending on the extent of repairs and tile availability. Larger floors or complex acoustic panel work may take longer. We provide detailed timelines and coordinate with other make good trades to minimise your overall project duration."
+      },
+      {
+        question: "Do you work after hours or on weekends?",
+        answer: "Yes. Ceiling work can be disruptive in occupied buildings—dust, noise and access requirements. We regularly complete ceiling restoration after hours and on weekends to minimise disruption to adjacent tenancies."
+      }
+    ],
+    faqTitle: "SUSPENDED CEILING FAQS",
     ctaBlock: {
       title: "Let Us Handle Your Ceiling Restoration",
       subtitle: "We do makegoods all day, every day.",
@@ -520,10 +639,11 @@ export const services: Service[] = [
     metaDescription: "Warehouse and car park line marking in Melbourne. Line reinstatement, tenant marking removal and safety zone restoration for end of lease compliance. Free quotes.",
     heroText: "Years of forklift traffic have worn your lines away. Or maybe you added bays and zones to suit your operation—now they need to go. We restore original markings, remove tenant delineations and hand back floors that meet your make-good obligations.",
     ogImage: "/og/line-marking.jpg",
-    heroImage: lineMarkingWornFloorImage,
-    heroImageAlt: "Worn and faded yellow line markings on warehouse concrete floor requiring restoration in Melbourne",
-    secondaryImage: lineMarkingRestoredImage,
-    secondaryImageAlt: "Restored yellow warehouse floor line markings with pedestrian walkways and safety zones in Melbourne",
+    heroImage: lineMarkingRestoredImage,
+    heroImageAlt: "Restored yellow warehouse floor line markings with pedestrian walkways and safety zones in Melbourne",
+    secondaryImage: lineMarkingFreshImage,
+    secondaryImageAlt: "Fresh yellow forklift aisle line markings on polished concrete warehouse floor in Melbourne",
+    skipAboutSection: true,
     benefits: [
       "Restore worn and faded line markings",
       "Remove tenant-specific delineations",
@@ -532,12 +652,110 @@ export const services: Service[] = [
       "Heavy-duty paints and thermoplastics",
       "Fast-dry formulas for quick handover"
     ],
-    featuredSection: {
-      title: "Car Park Line Marking Restoration",
-      description: "Years of traffic have taken their toll. We bring car park markings back to compliance standard, restoring faded bays, worn directional arrows and eroded safety zones.",
-      image: carParkLineMarkingImage,
-      imageAlt: "Aerial view of commercial car park with restored white bay markings and yellow directional lines in Melbourne"
+    capabilityCards: [
+      {
+        icon: "brick",
+        title: "WAREHOUSE LINE MARKING",
+        items: [
+          "Restore worn and faded forklift aisle markings",
+          "Remove tenant-specific delineations",
+          "Reinstate original warehouse bay layouts",
+          "Pedestrian walkway and safety zone restoration",
+          "Hazard and no-go zone markings",
+          "Heavy-duty floor paints and thermoplastics"
+        ]
+      },
+      {
+        icon: "structure",
+        title: "CAR PARK LINE MARKING",
+        items: [
+          "Restore faded car park bay markings",
+          "Directional arrow and chevron restoration",
+          "Disabled bay and loading zone compliance",
+          "Kerb and island edge markings",
+          "Visitor and reserved bay delineation",
+          "Traffic flow and entry/exit markings"
+        ]
+      },
+      {
+        icon: "waterproof",
+        title: "SURFACE PREPARATION",
+        items: [
+          "Remove existing non-compliant markings",
+          "Grind or blast old line marking residue",
+          "Surface preparation for adhesion",
+          "Fast-dry formulas for quick handover",
+          "Works completed after hours if required",
+          "Coordinate with floor grinding and cleaning"
+        ]
+      }
+    ],
+    capabilitiesTitle: "LINE MARKING CAPABILITIES",
+    capabilitiesSubtitle: "Our service covers warehouse and car park line marking restoration for commercial make good projects.",
+    featuredSections: [
+      {
+        title: "MARKED OUT. HANDED BACK.",
+        description: "Years of forklift traffic wear lines down to nothing. Tenant-specific bay layouts, added zones and custom delineations need to be removed and the original layout reinstated. In car parks, faded bays, worn directional arrows and eroded safety zones all need to come back to compliance standard \u2014 disabled bays, loading zones and visitor areas reinstated to the original layout.\n\nWe work from your original lease drawings or coordinate with the property manager to confirm the required layout before starting. Old markings are removed or ground back, surfaces prepared and new lines applied with heavy-duty floor paints or thermoplastics. Fast-dry formulas mean minimal downtime and quick handover.",
+        image: lineMarkingFreshImage,
+        imageAlt: "Fresh yellow forklift aisle line markings on polished concrete warehouse floor in Melbourne",
+        imageLeft: true
+      }
+    ],
+    linkedSpotlightBlock: {
+      title: "A COMPLETE MAKE GOOD",
+      titleHighlight: "SERVICE",
+      subtitle: "We coordinate line marking with flooring, painting and warehouse floor restoration to deliver your end-of-lease project on time.",
+      cards: [
+        {
+          slug: "make-good-solutions/flooring-reinstatement",
+          name: "Flooring Reinstatement",
+          description: "Carpet tiles, vinyl, epoxy and timber flooring reinstated to original specification for lease handover."
+        },
+        {
+          slug: "make-good-solutions/painting",
+          name: "Painting",
+          description: "End of lease painting services for commercial and industrial properties across Melbourne."
+        },
+        {
+          slug: "make-good-solutions/patching-plastering",
+          name: "Patching & Plastering",
+          description: "Professional patching and plastering for commercial make good projects across Melbourne."
+        },
+        {
+          slug: "make-good-solutions/suspended-ceilings",
+          name: "Suspended Ceilings",
+          description: "Ceiling tile replacement and grid repairs to restore your commercial space to original condition."
+        },
+        {
+          slug: "make-good-solutions/warehouse-flooring",
+          name: "Warehouse Flooring",
+          description: "Complete warehouse floor restoration including concrete repairs, grinding and protective coatings."
+        }
+      ]
     },
+    faqs: [
+      {
+        question: "Do I need to restore the original line marking layout?",
+        answer: "Generally yes. If you modified the original warehouse or car park layout during your tenancy—adding bays, changing zones or installing tenant-specific delineations—your lease will typically require you to restore the original layout at handover. We work from your original lease drawings or coordinate with the property manager to confirm what's required."
+      },
+      {
+        question: "Can you remove line markings as well as apply new ones?",
+        answer: "Yes. Removing existing markings is often the first step. Depending on the floor type and marking material, we grind, blast or chemically strip old lines before applying new ones. Surface preparation is included as part of our line marking scope."
+      },
+      {
+        question: "What paint or materials do you use?",
+        answer: "We use heavy-duty floor paints and thermoplastics suited to the surface type and traffic conditions. For warehouse floors, we typically use solvent-based or water-based floor paints with fast-dry formulas to minimise downtime. For car parks, we use durable exterior-grade paints suited to exposed environments and vehicle traffic."
+      },
+      {
+        question: "How long does line marking take?",
+        answer: "A standard warehouse (500–1,000m²) typically takes 1–2 days including surface preparation and marking application. Car parks vary depending on the number of bays and complexity of the layout. We provide detailed timelines and can work after hours to minimise disruption."
+      },
+      {
+        question: "Do you coordinate with floor grinding or cleaning?",
+        answer: "Yes. Line marking is often part of a broader warehouse floor restoration scope that includes concrete grinding, epoxy coating and cleaning. We coordinate all related trades to deliver a complete, inspection-ready floor."
+      }
+    ],
+    faqTitle: "LINE MARKING FAQS",
     ctaBlock: {
       title: "Let Us Handle Your Line Marking",
       subtitle: "We do makegoods all day, every day.",
@@ -560,6 +778,8 @@ export const services: Service[] = [
     heroImageAlt: "Worker sweeping concrete floor with industrial broom during make good cleaning Melbourne",
     secondaryImage: highPressureWarehouseCleaningImage,
     secondaryImageAlt: "High-pressure warehouse cleaning Melbourne - industrial cleaner pressure washing warehouse floor for lease end",
+    scopeTitle: "A FULL HANDOVER CLEAN.",
+    scopeBody: "Lease ending? We handle the heavy-duty cleaning regular cleaners won\u2019t touch. Ride-on scrubbers for warehouse floors, industrial pressure washers for loading docks caked in years of grime, chemical treatment for oil stains and tyre marks. We work at scale \u2014 500sqm+ warehouse floors, multi-level office strip-outs, concrete aprons and external hard surfaces that need more than a mop.\n\nThis isn\u2019t maintenance cleaning. It\u2019s intensive restoration for lease handover \u2014 and it needs to pass your landlord\u2019s final inspection first time.",
     trustBadges: [
       "Industrial-Grade Equipment",
       "After-Hours Capability",
@@ -582,6 +802,69 @@ export const services: Service[] = [
       "Window and facade cleaning",
       "Graffiti removal"
     ],
+    capabilityCards: [
+      {
+        icon: "brick",
+        title: "WAREHOUSE & INDUSTRIAL",
+        items: [
+          "Ride-on scrubbers for large warehouse floors",
+          "High-pressure cleaning for concrete and loading docks",
+          "Chemical treatment for oil stains and tyre marks",
+          "Post-strip-out and post-construction clean-ups",
+          "Graffiti removal from internal and external surfaces",
+          "Waste removal and skip bin coordination"
+        ]
+      },
+      {
+        icon: "structure",
+        title: "OFFICE & COMMERCIAL",
+        items: [
+          "Post-strip-out office cleaning",
+          "Window and facade cleaning",
+          "Carpet and hard floor cleaning",
+          "Kitchen and amenities deep clean",
+          "Final inspection preparation",
+          "After-hours and weekend availability"
+        ]
+      },
+      {
+        icon: "waterproof",
+        title: "SPECIALIST SERVICES",
+        items: [
+          "Industrial steam cleaning for heavy-duty stains",
+          "Flood drying and water damage restoration",
+          "Hazardous waste handling (licensed)",
+          "Scrap metal recycling and large item disposal",
+          "Asbestos removal coordination (licensed)",
+          "Condition reports and photographic documentation"
+        ]
+      }
+    ],
+    capabilitiesTitle: "CLEANING CAPABILITIES",
+    capabilitiesSubtitle: "Our service covers the full scope of end-of-lease cleaning for commercial and industrial properties across Melbourne.",
+
+    linkedSpotlightBlock: {
+      title: "A COMPLETE HANDOVER",
+      titleHighlight: "SERVICE",
+      subtitle: "We coordinate end-of-lease cleaning with relocation and warehouse floor restoration to deliver your handover on time.",
+      cards: [
+        {
+          slug: "handover-solutions/end-of-lease-relocation",
+          name: "End of Lease Relocation",
+          description: "Vacating your warehouse or factory? We handle the make good and transport your equipment to your new site."
+        },
+        {
+          slug: "make-good-solutions/warehouse-flooring",
+          name: "Warehouse Flooring",
+          description: "Complete warehouse floor restoration including concrete repairs, grinding and protective coatings."
+        },
+        {
+          slug: "strip-out-solutions/pallet-racking-removal",
+          name: "Pallet Racking Removal",
+          description: "Safe and efficient pallet racking removal for end-of-lease make good projects across Melbourne."
+        }
+      ]
+    },
     comparison: {
       title: "Why Choose Make Good Melbourne?",
       specialistTitle: "Make Good Melbourne",
@@ -643,6 +926,8 @@ export const services: Service[] = [
     heroImageAlt: "Forklift loading dismantled pallet racking onto truck for end of lease warehouse relocation Melbourne",
     secondaryImage: flatbedTruckTransportImage,
     secondaryImageAlt: "Flatbed truck transporting pallet racking and industrial machinery with Melbourne city skyline in background",
+    scopeTitle: "MAKE GOOD HERE. MOVE IN THERE.",
+    scopeBody: "Vacating your warehouse, factory or office? We handle the make-good at your old site and transport your equipment to the new one — anywhere in Australia. One contractor, one point of contact, one timeline aligned to your lease end date.\n\nWhile we're restoring your old premises to handover condition, your essential equipment is being carefully loaded and moved. Old site handed back inspection-ready. New site ready to operate.",
     benefits: [
       "Complete make-good at vacating site",
       "Equipment transport to new location",
@@ -653,6 +938,92 @@ export const services: Service[] = [
       "No coordination between separate trades",
       "Smooth handover to landlord"
     ],
+    capabilityCards: [
+      {
+        icon: "brick",
+        title: "WAREHOUSE & FACTORY",
+        items: [
+          "Pallet racking dismantling and transport",
+          "Machinery and equipment relocation",
+          "Make good at vacating site",
+          "Warehouse floor restoration",
+          "End-of-lease cleaning",
+          "Landlord inspection preparation"
+        ]
+      },
+      {
+        icon: "structure",
+        title: "OFFICE RELOCATION",
+        items: [
+          "Office furniture and fitout removal",
+          "IT equipment and server room relocation",
+          "Make good at vacating office",
+          "Post-strip-out cleaning",
+          "Patching, painting and ceiling repairs",
+          "Handover documentation"
+        ]
+      },
+      {
+        icon: "waterproof",
+        title: "TRANSPORT & DELIVERY",
+        items: [
+          "Flatbed and curtainsider transport",
+          "Crane and forklift operations",
+          "Anywhere in Australia",
+          "Coordinated delivery scheduling",
+          "Optional install at new site",
+          "Single point of contact throughout"
+        ]
+      }
+    ],
+    capabilitiesTitle: "RELOCATION CAPABILITIES",
+    capabilitiesSubtitle: "We handle the complete end-of-lease relocation scope—make good at your old site and equipment delivery to your new one.",
+
+    linkedSpotlightBlock: {
+      title: "A COMPLETE HANDOVER",
+      titleHighlight: "SERVICE",
+      subtitle: "We coordinate relocation with end-of-lease cleaning and pallet racking removal to deliver your handover on time.",
+      cards: [
+        {
+          slug: "handover-solutions/end-of-lease-cleaning",
+          name: "End of Lease Cleaning",
+          description: "Heavy-duty cleaning for lease end and make good handovers across Melbourne."
+        },
+        {
+          slug: "strip-out-solutions/pallet-racking-removal",
+          name: "Pallet Racking Removal",
+          description: "Safe and efficient pallet racking removal for end-of-lease make good projects across Melbourne."
+        },
+        {
+          slug: "make-good-solutions/warehouse-flooring",
+          name: "Warehouse Flooring",
+          description: "Complete warehouse floor restoration including concrete repairs, grinding and protective coatings."
+        }
+      ]
+    },
+    faqs: [
+      {
+        question: "Can you handle the make good and the relocation at the same time?",
+        answer: "Yes—that's the core of what we offer. Our trades team handles the make good on your old site while we coordinate the equipment transport in parallel. This means your old premises are handed back to the landlord at the same time your equipment arrives at the new site, minimising downtime."
+      },
+      {
+        question: "What types of equipment can you relocate?",
+        answer: "We relocate pallet racking, industrial machinery, manufacturing equipment, office furniture and IT equipment. For heavy or oversized items, we coordinate crane lifts and specialised transport. Contact us with your specific equipment and we'll confirm scope."
+      },
+      {
+        question: "Can you transport interstate?",
+        answer: "Yes. We transport equipment anywhere in Australia. We coordinate interstate logistics including scheduling, permits for oversized loads and delivery to your new site."
+      },
+      {
+        question: "Do you install racking and equipment at the new site?",
+        answer: "Yes, installation at the new site is available. We can reinstall pallet racking, shelving and other equipment to your new layout. Let us know at the quoting stage and we'll include it in the scope."
+      },
+      {
+        question: "What make good works do you handle at the vacating site?",
+        answer: "We handle the full make good scope: pallet racking removal, warehouse floor restoration, patching and painting, ceiling repairs, end-of-lease cleaning and final inspection preparation. We coordinate all trades so you have one point of contact for the entire project."
+      }
+    ],
+    faqTitle: "RELOCATION FAQS",
     process: [
       { step: "Site Assessment", description: "We inspect your current site to scope make-good works and plan the equipment transport." },
       { step: "Coordinated Timeline", description: "Plan aligned with your lease end date and new site availability." },
@@ -824,6 +1195,92 @@ export const services: Service[] = [
       "Structural engineer coordination",
       "VBA and council liaison"
     ],
+    capabilityCards: [
+      {
+        icon: "brick",
+        title: "CLADDING REMEDIATION",
+        items: [
+          "ACP cladding removal and replacement",
+          "Fire-rated cladding systems (AS 1530, AS 5113)",
+          "NCC compliance assessment",
+          "Design and construct delivery",
+          "Structural engineer coordination",
+          "VBA and council liaison"
+        ]
+      },
+      {
+        icon: "structure",
+        title: "GLAZING REMEDIATION",
+        items: [
+          "Non-compliant glazing replacement",
+          "Thermal and acoustic performance upgrades",
+          "Curtain wall and window system remediation",
+          "Frameless and semi-frameless glazing",
+          "Spandrel and vision glass replacement",
+          "Glazing compliance certification"
+        ]
+      },
+      {
+        icon: "waterproof",
+        title: "COMPLIANCE & CERTIFICATION",
+        items: [
+          "NCC and BCA compliance assessment",
+          "Fire rating compliance documentation",
+          "Engineering sign-off and certification",
+          "VBA and council submission support",
+          "Photographic and written documentation",
+          "Final inspection and handover"
+        ]
+      }
+    ],
+    capabilitiesTitle: "CLADDING & GLAZING CAPABILITIES",
+    capabilitiesSubtitle: "We deliver end-to-end cladding and glazing remediation projects for commercial buildings across Melbourne.",
+
+    linkedSpotlightBlock: {
+      title: "COMPLETE BUILDING",
+      titleHighlight: "REMEDIATION",
+      subtitle: "We coordinate cladding and glazing remediation with structural repairs and waterproofing for a complete building envelope solution.",
+      cards: [
+        {
+          slug: "remediation-solutions/polycarbonate-roofing-skylights",
+          name: "Polycarbonate Roofing & Skylights",
+          description: "Polycarbonate roofing and skylight replacement for warehouses and industrial facilities across Melbourne."
+        },
+        {
+          slug: "remediation-solutions/structural",
+          name: "Structural Remediation",
+          description: "Engineered structural repairs for concrete cancer, slab settlement and facade defects across Melbourne."
+        },
+        {
+          slug: "remediation-solutions/waterproofing",
+          name: "Waterproofing",
+          description: "Commercial waterproofing for balconies, roofs, wet areas and podium decks across Melbourne."
+        }
+      ]
+    },
+    faqs: [
+      {
+        question: "Is ACP cladding banned in Victoria?",
+        answer: "Aluminium composite panels (ACP) with a polyethylene core are banned for use on buildings over a certain height in Victoria following the Lacrosse and Grenfell Tower fires. If your building has non-compliant ACP cladding, you are required to have it assessed and replaced with compliant materials. We can assist with the full remediation process."
+      },
+      {
+        question: "What fire rating is required for external cladding?",
+        answer: "Under the NCC, external cladding on buildings over 3 storeys must meet Group 1 or Group 2 fire spread requirements, tested to AS 1530.1 and AS 5113. The specific requirements depend on building height, use and location. We work with structural engineers to specify compliant systems for your building."
+      },
+      {
+        question: "Do you handle the VBA and council approvals?",
+        answer: "Yes. We assist with VBA and council submissions as part of our design and construct delivery. Our team coordinates the compliance documentation, engineering certification and submission requirements throughout the project."
+      },
+      {
+        question: "How long does a cladding remediation project take?",
+        answer: "Timelines vary depending on building size, cladding area and access requirements. A typical mid-rise commercial building takes 3-6 months from assessment to completion. We provide detailed project programmes at the quoting stage."
+      },
+      {
+        question: "Can you work on occupied buildings?",
+        answer: "Yes. We plan works to minimise disruption to building occupants, coordinating access, noise and dust management. For high-rise buildings, we use scaffolding or rope access as required."
+      }
+    ],
+    faqTitle: "CLADDING & GLAZING FAQS",
     process: [
       { step: "Cladding Compliance and Performance", description: "With ACP cladding now banned, demand for compliant cladding is surging. Our proven expertise delivers end-to-end D&C remediation, ensuring NCC compliance and building performance." },
       { step: "Glazing Compliance and Performance", description: "Many buildings contain non-compliant, underperforming glazing. Our deep experience delivers remediation projects that ensure compliance and enhance thermal and acoustic performance." },
@@ -832,6 +1289,8 @@ export const services: Service[] = [
     ],
     secondaryImage: glazingFacadeInstallationImage,
     secondaryImageAlt: "Professional glazing facade installation on commercial high-rise building with workers in safety harnesses Melbourne",
+    scopeTitle: "NON-COMPLIANT TODAY. FIXED FOR GOOD.",
+    scopeBody: "ACP cladding is banned. Non-compliant glazing is a liability. If your building has either, the clock is already running. We deliver end-to-end cladding and glazing remediation — assessment, removal, replacement with fire-rated compliant materials tested to AS 1530 and AS 5113, and final certification for the VBA, councils and building managers.\n\nFrom facade panels to glazing upgrades, every project is engineered, documented and signed off.",
     ctaBlock: {
       title: "Let Us Handle Your Cladding Remediation",
       subtitle: "We do makegoods all day, every day.",
@@ -854,6 +1313,8 @@ export const services: Service[] = [
     heroImageAlt: "Worker applying waterproofing membrane to commercial rooftop in Melbourne",
     secondaryImage: waterproofingMembraneImage,
     secondaryImageAlt: "Close-up of waterproofing membrane application on commercial building surface in Melbourne",
+    scopeTitle: "SEALED AT THE SOURCE.",
+    scopeBody: "Failed waterproofing doesn't stay contained — balcony leaks penetrate into apartments below, roof failures flood commercial spaces, wet area failures cause damage that compounds over time. We identify where water is getting in, prepare the substrate properly and apply proven membrane systems that protect your building for the long term.\n\nBalconies, roofs, podiums, wet areas, box gutters — every application backed by manufacturer warranties.",
     benefits: [
       "Balcony and terrace membrane systems",
       "Flat roof and podium waterproofing",
@@ -862,6 +1323,69 @@ export const services: Service[] = [
       "Box gutter and parapet waterproofing",
       "Long-term manufacturer warranties"
     ],
+    capabilityCards: [
+      {
+        icon: "brick",
+        title: "BALCONIES & TERRACES",
+        items: [
+          "Balcony and terrace membrane systems",
+          "Tile removal and substrate preparation",
+          "Drainage fall correction",
+          "Liquid and sheet membrane application",
+          "Tile reinstatement and finishing",
+          "Flood testing and certification"
+        ]
+      },
+      {
+        icon: "structure",
+        title: "ROOFS & PODIUMS",
+        items: [
+          "Flat roof and podium waterproofing",
+          "Box gutter and parapet sealing",
+          "Torch-on and cold-applied membranes",
+          "Concrete crack injection and sealing",
+          "Drainage and overflow assessment",
+          "Long-term manufacturer warranties"
+        ]
+      },
+      {
+        icon: "waterproof",
+        title: "WET AREAS & INTERNAL",
+        items: [
+          "Bathroom and kitchen wet area sealing",
+          "Internal concrete crack injection",
+          "Moisture mapping and leak tracing",
+          "Substrate repair and preparation",
+          "Tile and finish reinstatement",
+          "Compliance documentation"
+        ]
+      }
+    ],
+    capabilitiesTitle: "WATERPROOFING CAPABILITIES",
+    capabilitiesSubtitle: "We deliver professional waterproofing solutions for commercial and residential buildings across Melbourne.",
+
+    linkedSpotlightBlock: {
+      title: "COMPLETE BUILDING",
+      titleHighlight: "REMEDIATION",
+      subtitle: "We coordinate waterproofing with structural repairs and cladding remediation for a complete building envelope solution.",
+      cards: [
+        {
+          slug: "remediation-solutions/cladding-glazing",
+          name: "Cladding & Glazing",
+          description: "ACP cladding replacement and glazing remediation for commercial buildings across Melbourne."
+        },
+        {
+          slug: "remediation-solutions/polycarbonate-roofing-skylights",
+          name: "Polycarbonate Roofing & Skylights",
+          description: "Polycarbonate roofing and skylight replacement for warehouses and industrial facilities across Melbourne."
+        },
+        {
+          slug: "remediation-solutions/structural",
+          name: "Structural Remediation",
+          description: "Engineered structural repairs for concrete cancer, slab settlement and facade defects across Melbourne."
+        }
+      ]
+    },
     process: [
       {
         step: "Inspection & Assessment",
@@ -943,7 +1467,71 @@ export const services: Service[] = [
       "Energy efficiency",
       "Certification and warranty"
     ],
-    skipAboutSection: true,
+    capabilityCards: [
+      {
+        icon: "brick",
+        title: "SKYLIGHT REPLACEMENT",
+        items: [
+          "Yellowed and discoloured panel replacement",
+          "Cracked and storm-damaged panel repairs",
+          "Fibreglass and polycarbonate sheet supply",
+          "Profile matching to existing roof",
+          "Flashing and sealing",
+          "Workmanship warranty and documentation"
+        ]
+      },
+      {
+        icon: "structure",
+        title: "ROOF PANEL INSTALLATION",
+        items: [
+          "Clear polycarbonate sheet installation",
+          "Complete roof sheet replacement",
+          "Height-safety certified crews",
+          "Storm damage make-safe works",
+          "New skylight installations",
+          "VBA Certificate of Compliance"
+        ]
+      },
+      {
+        icon: "waterproof",
+        title: "ASBESTOS & COMPLIANCE",
+        items: [
+          "Asbestos roof panel identification",
+          "Licensed asbestos removal",
+          "Compliant asbestos disposal",
+          "Clearance certificates",
+          "Replacement with compliant materials",
+          "Landlord and property manager liaison"
+        ]
+      }
+    ],
+    capabilitiesTitle: "ROOFING CAPABILITIES",
+    capabilitiesSubtitle: "We supply and install polycarbonate roofing and skylights for warehouses and industrial facilities across Melbourne.",
+
+    linkedSpotlightBlock: {
+      title: "COMPLETE BUILDING",
+      titleHighlight: "REMEDIATION",
+      subtitle: "We coordinate roofing with waterproofing and cladding remediation for a complete building envelope solution.",
+      cards: [
+        {
+          slug: "remediation-solutions/cladding-glazing",
+          name: "Cladding & Glazing",
+          description: "ACP cladding replacement and glazing remediation for commercial buildings across Melbourne."
+        },
+        {
+          slug: "remediation-solutions/structural",
+          name: "Structural Remediation",
+          description: "Engineered structural repairs for concrete cancer, slab settlement and facade defects across Melbourne."
+        },
+        {
+          slug: "remediation-solutions/waterproofing",
+          name: "Waterproofing",
+          description: "Commercial waterproofing for balconies, roofs, wet areas and podium decks across Melbourne."
+        }
+      ]
+    },
+    scopeTitle: "PANELS OUT. LIGHT IN.",
+    scopeBody: "Yellowed, cracked or leaking polycarbonate panels reduce light transmission, compromise weather resistance and in older buildings may contain asbestos. We remove damaged panels and install new polycarbonate sheets with proper flashing, sealing and guttering — restoring natural light and weatherproofing to your facility.\n\nWhere asbestos-containing panels are present, we manage licensed removal and compliant disposal as part of the project. Every installation is completed to Australian Standards with workmanship warranties and documentation for your records.",
     comparison: {
       title: "When Skylights Need Replacing",
       specialistTitle: "New Polycarbonate Panels",
@@ -981,24 +1569,8 @@ export const services: Service[] = [
         }
       ]
     },
-    featuredSections: [
-      {
-        title: "Skylight &<br/>Roof Panel Replacement Scope",
-        description: "From removal of damaged, yellowed or leaking panels through to installation of new polycarbonate sheets that allow natural light to flow through. We handle proper flashing, sealing and all guttering requirements. For properties with asbestos-containing panels, we manage licensed removal and compliant disposal as part of the project. Every installation includes workmanship warranties and documentation for your records.\n\nOur experienced team delivers professional skylight & roof panel replacement services across Melbourne's commercial and industrial properties. We understand the importance of meeting lease obligations and landlord requirements, working efficiently to minimise disruption while achieving quality results.",
-        image: craneLiftingRoofPanelsImage,
-        imageAlt: "Crane lifting polycarbonate roof panels for industrial skylight installation Melbourne"
-      }
-    ],
-    postComparisonSections: [
-      {
-        title: "Roof Repairs for Leaks & Storm Damage",
-        description: "Melbourne's harsh weather can cause sudden damage to polycarbonate and fibreglass roof panels—cracking, lifting, or complete failure during storms. When leaks appear or panels are damaged, fast response is critical to prevent further water ingress and damage to stock, equipment, or flooring below.\n\nWe provide responsive repair services for storm-damaged and leaking roofs across Melbourne's industrial and commercial properties. From temporary make-safe works through to full panel replacement, we assess the damage, provide clear recommendations, and complete repairs efficiently to get your facility back to normal.",
-        image: warehouseRoofSkylightsImage,
-        imageAlt: "Storm damaged warehouse roof repair polycarbonate skylight panels Melbourne",
-        imageLeft: true
-      }
-    ],
-    processAfterSection: 0,
+
+
     process: [
       {
         step: "Skylight Assessment",
@@ -1073,43 +1645,54 @@ export const services: Service[] = [
     heroImageAlt: "Large industrial warehouse with restored concrete slab floor showing completed floor restoration Melbourne",
     secondaryImage: warehouseFloorRepairsScopeImage,
     secondaryImageAlt: "Empty warehouse with polished concrete floor after complete floor restoration Melbourne",
+    scopeTitle: "STRIPPED BACK. RESTORED TO SPEC.",
+    scopeBody: "Your lease requires the floor handed back in its original condition — and warehouse floors take the full force of a tenancy. Coatings stripped, adhesives ground back, dynabolt holes core-drilled and filled, cracks injected, surface finished to the specification your lease requires. From carpet strip-out to epoxy recoat, we handle the full scope in one service — no separate contractors, no gaps between trades, one handover-ready result.",
     trustBadges: [
       "Diamond-Tipped Grinding Technology",
       "Industrial Floor Repair Systems",
       "Warehouse & Factory Specialists"
     ],
-    featuredSections: [
-      {
-        title: "Flooring & Adhesive Removal",
-        description: "Complete removal of all floor coverings and their adhesives. We strip carpets and carpet tiles, vinyl and linoleum floorboards, ceramic and porcelain tiles and epoxy sealed concrete floors. Our industrial grinders then ablate adhesive beds, carpet glue, tile mortar, [waterproofing membranes](/services/waterproofing) and failed [epoxy coatings](/services/epoxy-flooring)—leaving concrete floor slabs ready for restoration.",
-        image: tileFlooringRemovalImage,
-        imageAlt: "Demolition hammer removing floor tiles during warehouse flooring strip out Melbourne"
-      },
-      {
-        title: "Floor Grinding & Levelling",
-        description: "Uneven floors, high spots and surface deterioration affect forklift operation and safety. Our industrial floor grinding equipment levels surfaces, removes coatings and prepares floors for [epoxy systems](/services/epoxy-flooring) or grind-and-seal finishes. We restore flatness tolerances required for efficient warehouse operations.",
-        image: floorGrindingPowerTrowelImage,
-        imageAlt: "Industrial concrete power trowel with protective cage and orange power cord on warehouse floor Melbourne"
-      },
-      {
-        title: "Dynabolt Hole Repairs",
-        description: "When pallet racking, machinery or equipment is removed, you're left with hundreds of anchor holes in your floor. We core drill out damaged concrete around dynabolt holes, fill with high-strength epoxy resin, and grind flush to restore a smooth, level surface. Essential for [lease end make goods](/learn/make-good-guide) and floor re-coating.",
-        image: warehouseDynaboltHoleRepairsImage,
-        imageAlt: "Industrial warehouse pallet racking with blue uprights and orange beams anchored to concrete floor Melbourne"
-      },
-      {
-        title: "Crack Injection & Joint Repairs",
-        description: "Cracks and deteriorated joints let water penetrate the slab and worsen under forklift traffic. We inject low-viscosity epoxy or polyurethane into cracks to restore structural integrity and prevent further damage. For failed expansion joints, we reseal with polyurethane caulking to keep water and debris out. Damaged joint edges (arrises) are rebuilt using quartz-filled epoxy resins designed for heavy traffic areas. We also handle complete expansion joint replacement—removing old fillers and installing new foam backer rods with modern sealants.",
-        image: warehouseJointRepairImage,
-        imageAlt: "Close-up of concrete floor expansion joint showing repair work on industrial warehouse floor Melbourne"
-      },
-      {
-        title: "Surface Finishing",
-        description: "Once the slab is restored and repaired, we provide the finish your lease requires. Grind and seal delivers a protected surface in matte, semi-gloss or high-gloss finish. [Epoxy coatings](/services/epoxy-flooring) provide chemical resistance and durability for continued operations. [Line marking](/services/line-marking) restores safety zones and traffic lanes. We match the specification in your lease.",
-        image: grindSealFloorCoatingImage,
-        imageAlt: "Worker applying protective floor sealant coating to ground concrete warehouse floor Melbourne"
-      }
-    ],
+    tabbedScope: {
+      heading: "WHAT'S INCLUDED IN THE SCOPE",
+      tabs: [
+        {
+          label: "FLOORING REMOVAL",
+          title: "Flooring Removal",
+          description: "Carpets, carpet tiles, vinyl, timber, ceramic, epoxy \u2014 whatever\u2019s on the floor, it comes off. We remove the coverings and grind out what\u2019s left behind: adhesive beds, carpet glue, tile mortar, failed coatings and waterproofing membranes. The slab underneath is left clean and ready for the next stage.",
+          image: tileFlooringRemovalImage,
+          imageAlt: "Demolition hammer removing floor tiles during warehouse flooring strip out Melbourne"
+        },
+        {
+          label: "FLOOR GRINDING",
+          title: "Floor Grinding",
+          description: "Years of forklift traffic leave floors uneven, pitted and coated in residue. Our industrial grinders level high spots, remove surface deterioration and prepare the slab for epoxy or grind-and-seal finishes. The result is a flat, consistent surface that meets the tolerances your lease and your next tenant require.",
+          image: floorGrindingPowerTrowelImage,
+          imageAlt: "Industrial concrete power trowel with protective cage and orange power cord on warehouse floor Melbourne"
+        },
+        {
+          label: "DYNABOLT REPAIRS",
+          title: "Dynabolt Repairs",
+          description: "Racking out means hundreds of anchor holes left in the concrete. We don\u2019t just fill them \u2014 we core drill out the damaged concrete around each hole, pack with high-strength epoxy resin and grind flush. No raised edges, no weak spots, no voids. Floor restored.",
+          image: warehouseDynaboltHoleRepairsImage,
+          imageAlt: "Industrial warehouse pallet racking with blue uprights and orange beams anchored to concrete floor Melbourne"
+        },
+        {
+          label: "CRACK INJECTION",
+          title: "Crack Injection",
+          description: "Cracks left untreated let water in and get worse under traffic. We inject low-viscosity epoxy or polyurethane to restore structural integrity and stop further movement. Failed expansion joints are resealed, damaged edges rebuilt with quartz-filled epoxy designed for heavy traffic. The floor leaves in better condition than it\u2019s been in years.",
+          image: warehouseJointRepairImage,
+          imageAlt: "Close-up of concrete floor expansion joint showing repair work on industrial warehouse floor Melbourne"
+        },
+        {
+          label: "SURFACE FINISHING",
+          title: "Surface Finishing",
+          description: "Once the slab is restored, we apply the finish your lease requires. Grind and seal in matte, semi-gloss or high-gloss. Epoxy coatings where chemical resistance and durability are needed. Line marking to reinstate safety zones and traffic lanes. We work from your lease specification \u2014 no guessing, no overscoping.",
+          image: grindSealFloorCoatingImage,
+          imageAlt: "Worker applying protective floor sealant coating to ground concrete warehouse floor Melbourne"
+        }
+      ]
+    },
+    featuredSections: [],
     benefits: [
       "Complete Flooring Strip-Out",
       "Carpet, Vinyl, Tile & Adhesive Removal",
@@ -1121,6 +1704,46 @@ export const services: Service[] = [
       "Grind & Seal Finishes",
       "End of Lease Specialists"
     ],
+    capabilityCards: [
+      {
+        icon: "brick",
+        title: "FLOORING REMOVAL",
+        items: [
+          "Carpet tiles, broadloom and vinyl removal",
+          "Ceramic, porcelain and quarry tile removal",
+          "Adhesive and mortar bed ablation",
+          "Epoxy coating and waterproofing membrane removal",
+          "Gripper rods, underlay and all associated fixtures",
+          "Waste removal and disposal included"
+        ]
+      },
+      {
+        icon: "structure",
+        title: "GRINDING & REPAIRS",
+        items: [
+          "Industrial concrete grinding and levelling",
+          "Dynabolt hole core drilling and epoxy filling",
+          "Crack injection with epoxy or polyurethane",
+          "Expansion joint repair and resealing",
+          "Slab stabilisation and levelling",
+          "Surface preparation for coatings"
+        ]
+      },
+      {
+        icon: "waterproof",
+        title: "SURFACE FINISHING",
+        items: [
+          "Grind and seal in matte, semi-gloss or high-gloss",
+          "Epoxy floor coatings for industrial use",
+          "Line marking restoration and reinstatement",
+          "Condition reports and documentation",
+          "Lease compliance sign-off",
+          "After-hours and weekend works available"
+        ]
+      }
+    ],
+    capabilitiesTitle: "WAREHOUSE FLOORING CAPABILITIES",
+    capabilitiesSubtitle: "Our service covers the complete warehouse floor restoration scope for end-of-lease make good projects.",
     comparison: {
       title: "Why Choose Make Good Melbourne?",
       specialistTitle: "Make Good Melbourne",
@@ -1197,6 +1820,38 @@ export const services: Service[] = [
         answer: "Yes, we provide photographic documentation of the floor condition before and after our work. This is useful for lease handovers and serves as evidence that make good requirements have been met."
       }
     ],
+    linkedSpotlightBlock: {
+      title: "A COMPLETE MAKE GOOD",
+      titleHighlight: "SERVICE",
+      subtitle: "We coordinate warehouse floor restoration with line marking, painting and flooring reinstatement to deliver your end-of-lease project on time.",
+      cards: [
+        {
+          slug: "make-good-solutions/flooring-reinstatement",
+          name: "Flooring Reinstatement",
+          description: "Carpet tiles, vinyl, epoxy and timber flooring reinstated to original specification for lease handover."
+        },
+        {
+          slug: "make-good-solutions/line-marking",
+          name: "Line Marking",
+          description: "Professional line marking for car parks, warehouses and industrial facilities to meet lease compliance requirements."
+        },
+        {
+          slug: "make-good-solutions/painting",
+          name: "Painting",
+          description: "End of lease painting services for commercial and industrial properties across Melbourne."
+        },
+        {
+          slug: "make-good-solutions/patching-plastering",
+          name: "Patching & Plastering",
+          description: "Professional patching and plastering for commercial make good projects across Melbourne."
+        },
+        {
+          slug: "make-good-solutions/suspended-ceilings",
+          name: "Suspended Ceilings",
+          description: "Ceiling tile replacement and grid repairs to restore your commercial space to original condition."
+        }
+      ]
+    },
     ctaBlock: {
       title: "Let Us Restore Your Warehouse Floor",
       subtitle: "We do makegoods all day, every day.",
@@ -1262,7 +1917,7 @@ export const services: Service[] = [
     capabilitiesSubtitle: "Our service covers the complete lifecycle of a commercial demolition project.",
     featuredSections: [
       {
-        title: "DEMOLITION, DONE RIGHT",
+        title: "DEMOLITION DONE RIGHT",
         description: "We approach every strip-out with a clear plan of works designed to meet your end-of-lease obligations on schedule. By coordinating directly with building management, we ensure a smooth process that fulfills all lease requirements without delays or complications.\n\nOur expertise extends beyond offices and warehouses to include retail, hospitality and medical centres. We are licensed, insured and have the capability to work after hours to avoid disrupting adjacent tenants. This thorough planning allows us to identify challenges early, delivering a successful handover with no surprise variations.",
         image: commercialDemolitionFeaturedImage,
         imageAlt: "Empty commercial office space after demolition and strip out in Melbourne, showing clean concrete floor and exposed ceiling infrastructure",
@@ -1363,7 +2018,7 @@ export const services: Service[] = [
     capabilitiesSubtitle: "Our service covers the complete disconnection of all building services for your end-of-lease make good.",
     featuredSections: [
       {
-        title: "BACK TO BASE WORKS",
+        title: "DISCONNECTED. CERTIFIED. SAFE.",
         description: "As part of your end-of-lease make good works, all building services need to be properly disconnected with all cabling returned back to base. We handle the complete disconnection of electrical, plumbing and HVAC systems. All certificates of completed works are provided upon handover.\n\nWe work within your project timeline, coordinating with our demolition crew throughout the entire strip out. From initial disconnection through to final certification, we manage the process to keep your make good on schedule.",
         image: backToBaseCablingImage,
         imageAlt: "Organized orange data cabling properly managed and routed back to base in commercial building Melbourne",
@@ -1514,8 +2169,7 @@ export const services: Service[] = [
     capabilitiesSubtitle: "Our service covers all flooring types for commercial make good projects.",
     featuredSections: [
       {
-        title: "FLOORING REINSTATEMENT WORKS",
-        titleHighlight: "WORKS",
+        title: "FLOOR FOR FLOOR",
         description: "Flooring damage from forklifts, office chairs, or years of heavy traffic can mean full replacement—or when the damage is localised, we reinstate specific sections to match the surrounding flooring. Carpet tiles, vinyl planks, epoxy coatings, engineered timber—our experienced team restores floors to match original specifications across all flooring types. We're make good specialists who understand lease obligations and work efficiently to meet handover deadlines.\n\nWe work from your lease schedule to match the original flooring—pattern, colour, finish. If the exact product is no longer available, we source the closest match and coordinate approval before installation. Substrate preparation is handled appropriately: damaged concrete repaired, uneven areas levelled, surfaces prepared. Reinstatement is completed to approved finishes schedule so your space is ready for a successful handover.",
         image: flooringReinstatementProcessImage,
         imageAlt: "Industrial floor grinding and preparation for flooring reinstatement in Melbourne warehouse",
@@ -1679,8 +2333,7 @@ export const services: Service[] = [
     capabilitiesSubtitle: "Our service covers all wall and ceiling repairs for commercial make good projects.",
     featuredSections: [
       {
-        title: "PATCHING & PLASTERING WORKS",
-        titleHighlight: "WORKS",
+        title: "WALLS REPAIRED & READY.",
         description: "Tenants leave marks. Fixtures get removed. Partitions come down. What's left behind—screw holes, anchor points, damaged plasterboard, rough edges where walls used to be—needs to be repaired before the painter can start.\n\nWe handle the repairs so your walls are smooth, even and ready for final coat. Surfaces are sanded flush, joints are invisible, textures are matched. No shortcuts. No visible patches. Just clean walls ready for handover.",
         image: patchingPlasteringFeaturedImage,
         imageAlt: "Professional plastering tools and equipment for commercial make good patching and plastering works in Melbourne",
