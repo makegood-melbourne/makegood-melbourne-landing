@@ -490,6 +490,7 @@ export const services: Service[] = [
     heroImageAlt: "Commercial office ceiling tile replacement showing timber acoustic panels and white suspended grid with LED lighting in Melbourne",
     secondaryImage: suspendedCeilingGridImage,
     secondaryImageAlt: "Suspended ceiling grid with white acoustic tiles and rectangular LED panel lights in commercial office Melbourne",
+    skipAboutSection: true,
     benefits: [
       "Meet your make-good ceiling requirements",
       "Standard tiles and acoustic panels",
@@ -542,12 +543,11 @@ export const services: Service[] = [
     capabilitiesSubtitle: "Our service covers all ceiling types and associated services for commercial make good projects.",
     featuredSections: [
       {
-        title: "CEILING RESTORATION WORKS",
-        titleHighlight: "WORKS",
-        description: "Suspended ceilings take a beating over a tenancy—tiles cracked or stained from leaks, grids damaged when partitions were removed, acoustic panels discontinued and no longer available. We restore ceilings to the condition your landlord expects, matching tiles and panels to the original specification wherever possible.\n\nWhere original products are no longer manufactured, we source the closest available match and coordinate approval before installation. LED panels are repositioned to suit the restored grid layout, aircon diffusers relocated and fire services adjusted as required. One contractor for the full ceiling scope—no separate trades to coordinate.",
-        image: ceilingTileReplacementHeroImage,
-        imageAlt: "Commercial office ceiling tile replacement showing timber acoustic panels and white suspended grid with LED lighting in Melbourne",
-        imageLeft: false
+        title: "GRID RESTORED. TILES MATCHED.",
+        description: "Suspended ceilings take a beating over a tenancy \u2014 tiles cracked or stained from leaks, grids damaged when partitions were removed, acoustic panels discontinued and no longer available. Whether it\u2019s a standard suspended grid or timber acoustic panels, we restore ceilings to the condition your landlord expects, matching tiles and panels to the original specification wherever possible.\n\nWhere original products are no longer manufactured, we source the closest available match and coordinate approval before installation. LED panels are repositioned to suit the restored grid layout, aircon diffusers relocated and fire services adjusted as required. One contractor for the full ceiling scope \u2014 no separate trades to coordinate.",
+        image: suspendedCeilingGridImage,
+        imageAlt: "Suspended ceiling grid with white acoustic tiles and rectangular LED panel lights in commercial office Melbourne",
+        imageLeft: true
       }
     ],
     linkedSpotlightBlock: {
