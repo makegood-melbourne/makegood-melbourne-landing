@@ -309,6 +309,7 @@ export const services: Service[] = [
     secondaryImage: commercialPaintingScopeImage,
     secondaryImageAlt: "Commercial interior with plastered walls and ceiling surface preparation ready for professional painting in Melbourne",
     scopeTitle: "End of Lease Painting Scope",
+    skipAboutSection: true,
     trustBadges: ["Licensed & Insured", "Competitive Pricing", "Fixed-Price Quotes"],
     benefits: [
       "Accurate colour matching to original specifications",
@@ -359,22 +360,13 @@ export const services: Service[] = [
     capabilitiesSubtitle: "Our service covers all painted surfaces for commercial and industrial make good projects.",
     featuredSections: [
       {
-        title: "Internal Painting — Walls, Ceilings and Trim",
-        description: "We prepare surfaces properly, match colours accurately and apply professional finishes across your entire tenancy. Offices, warehouses, showrooms, retail—whatever the space, we deliver results.\n\nThe outcome is a clean, consistent finish suited to commercial and industrial environments. Across offices, warehouses, showrooms and retail spaces, attention to detail and uniform presentation ensure the space is ready for inspection, handover or reoccupation.",
+        title: "COLOUR MATCHED. COAT APPLIED.",
+        description: "Your lease requires it painted back to original. We colour-match to specification, prepare every surface properly and apply professional finishes across internal walls, ceilings and trim — offices, warehouses, showrooms and retail. Where warehouse walls are in scope, we repair racking marks, forklift impact and penetrations from removed services before a single coat goes on, then apply industrial-grade coatings across the full height and run using spray application where the scale demands it.\n\nExternal facades get the same attention. We work across render, panel systems, concrete and cladding. Where access is needed — boom lifts, cherry pickers, elevated work platforms — we arrange it. Works are scheduled around weather conditions and surrounding site activity so the finish holds and the programme doesn't slip.\n\nThe outcome across all surfaces is a consistent, professional finish ready for inspection and handover.",
         image: industrialWarehouseInteriorPaintingImage,
         imageAlt: "Industrial warehouse interior wall painting using boom lift access equipment for high-reach surfaces in Melbourne",
         imageLeft: true
-      },
-      {
-        title: "External Painting — Building Facades and External Surfaces",
-        description: "We prepare external surfaces properly, match colours accurately and apply durable finishes suited to building facades and exposed external areas. Works are completed across commercial and industrial properties, with consideration given to access, weather conditions and surrounding site activity.\n\nThe outcome is a consistent, professional external presentation that aligns with lease requirements and overall building standards. Attention to detail and uniform finishes ensure the property is ready for inspection, handover or ongoing use.",
-        image: commercialBuildingFacadePaintingImage,
-        imageAlt: "Commercial building facade painting using cherry picker access equipment for exterior panel surfaces in Melbourne",
-        imageLeft: false
       }
     ],
-    processAfterScope: true, // Show process right after scope section
-    comparisonAfterSection: 0, // Insert comparison after Internal Painting section
     comparison: {
       title: "Make Good Painting vs General Commercial Painting",
       specialistTitle: "Make Good Painting Specialist",
