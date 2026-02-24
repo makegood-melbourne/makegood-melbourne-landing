@@ -1,7 +1,5 @@
 import commercialCleaningImage from "@/assets/services/commercial-cleaning-melbourne-supplies.jpeg";
 import commercialFloorSweepingImage from "@/assets/services/commercial-floor-sweeping-concrete-melbourne.jpeg";
-import epoxyFlooringWarehouseImage from "@/assets/services/polished-epoxy-floor-industrial-warehouse-melbourne.jpeg";
-import epoxySpreadingApplicationImage from "@/assets/services/epoxy-floor-spreading-application-warehouse-melbourne.jpeg";
 import warehouseFloorScrubberImage from "@/assets/services/warehouse-floor-scrubber-cleaning-v4.jpg";
 import industrialFloorScrubberImage from "@/assets/services/industrial-warehouse-floor-scrubber-cleaning-melbourne.jpeg";
 import highPressureWarehouseCleaningImage from "@/assets/services/high-pressure-warehouse-cleaning-melbourne.png";
@@ -295,70 +293,6 @@ export const services: Service[] = [
     },
     relatedServices: ["strip-out-solutions/demolition", "strip-out-solutions/make-safe"],
     category: "demolition",
-    published: true
-  },
-  {
-    name: "Epoxy Flooring",
-    slug: "epoxy-flooring",
-    title: "Epoxy Flooring Melbourne",
-    metaTitle: "Epoxy Flooring Melbourne | Warehouse Floor Coatings",
-    description: "Tired concrete floors dragging down your warehouse? Epoxy transforms worn, stained slabs into durable, professional surfaces that impress clients and stand up to forklifts, chemicals and heavy traffic. New installs or restoration—we handle it.",
-    metaDescription: "Industrial epoxy flooring for warehouses and factories in Melbourne. Concrete repair, resurfacing and protective coatings. Chemical-resistant, anti-slip finishes. Free quotes.",
-    heroText: "Your warehouse floor takes a beating. Epoxy coating protects the concrete, hides the damage and gives you a surface that's easy to clean, safe to work on and built to last. For floors with cracks, bolt holes or joint damage, we handle [floor repairs](/services/make-good-solutions/warehouse-flooring) before coating. Whether you're refreshing for a new tenant or upgrading your own facility—we deliver.",
-    ogImage: "/og/epoxy-flooring.jpg",
-    heroImage: epoxySpreadingApplicationImage,
-    heroImageAlt: "Worker spreading epoxy floor coating in industrial warehouse Melbourne",
-    benefits: [
-      "Chemical and oil resistant finishes",
-      "Anti-slip coatings for safety compliance",
-      "Cracks and damage repaired first",
-      "Fast-cure options to minimise downtime",
-      "Range of colours including safety zones",
-      "20+ year lifespan with proper care"
-    ],
-    secondaryImage: epoxyFlooringWarehouseImage,
-    secondaryImageAlt: "Polished epoxy floor coating in large industrial warehouse with reflective finish Melbourne",
-    faqs: [
-      {
-        question: "How long does epoxy flooring take to install?",
-        answer: "Timing depends on floor size and condition. A standard warehouse (500-1000m²) typically takes 3-5 days including surface preparation, repairs, primer, epoxy coats and curing time. We use fast-cure systems where possible to minimise downtime and can stage work to maintain partial access during installation."
-      },
-      {
-        question: "How long does epoxy flooring last?",
-        answer: "Industrial epoxy flooring typically lasts 15-20+ years with proper care. Lifespan depends on traffic levels, chemical exposure and maintenance. High-traffic forklift areas may need touch-ups after 10-15 years. We use commercial-grade systems designed for warehouse and factory environments."
-      },
-      {
-        question: "Can you apply epoxy over damaged concrete?",
-        answer: "Yes, but the damage must be repaired first. Cracks, dynabolt holes, spalling and joint failures need proper treatment before coating—otherwise they'll telegraph through the epoxy and cause premature failure. We handle all floor repairs as part of our epoxy flooring service."
-      },
-      {
-        question: "What's the difference between epoxy and polyurethane floor coatings?",
-        answer: "Epoxy provides excellent adhesion, chemical resistance and durability—ideal for warehouses and factories. Polyurethane offers better UV stability and flexibility, making it suitable for outdoor areas or floors with movement. We often use epoxy as a base coat with polyurethane topcoat for maximum performance."
-      },
-      {
-        question: "Is epoxy flooring slip-resistant?",
-        answer: "Standard epoxy has a smooth, glossy finish. For safety compliance, we add anti-slip aggregates to create textured finishes rated to Australian standards. We can also incorporate coloured safety zones, walkways and forklift lanes into your floor design."
-      },
-      {
-        question: "How much does epoxy flooring cost in Melbourne?",
-        answer: "Costs vary based on floor condition, size and system specification. Basic single-coat systems start lower, while high-build chemical-resistant systems with anti-slip finishes cost more. We provide free, itemised quotes after inspecting your floor so you know exactly what to expect."
-      },
-      {
-        question: "Can the warehouse stay operational during epoxy installation?",
-        answer: "In many cases, yes. We can section off areas and work progressively to maintain access to operational zones. Fast-cure systems allow foot traffic within 12-24 hours and forklift traffic within 48-72 hours. We'll plan the work to minimise disruption to your operations."
-      },
-      {
-        question: "What preparation is needed before epoxy flooring?",
-        answer: "Proper preparation is critical for adhesion. We diamond grind the surface to create a profile, repair any cracks or damage, fill dynabolt holes, and ensure the concrete is clean and dry. Poor preparation is the main cause of epoxy failure—we don't cut corners."
-      }
-    ],
-    ctaBlock: {
-      title: "Let Us Handle Your Epoxy Flooring",
-      subtitle: "We do makegoods all day, every day.",
-      text: "From small workshops to large distribution centres, we've coated floors across Melbourne's industrial properties. Get in touch today for a free, no-obligation quote."
-    },
-    relatedServices: ["make-good-solutions/warehouse-flooring", "make-good-solutions/line-marking"],
-    category: "trade",
     published: true
   },
   {
@@ -1815,13 +1749,13 @@ export const services: Service[] = [
     featuredSections: [
       {
         title: "Flooring & Adhesive Removal",
-        description: "Complete removal of all floor coverings and their adhesives. We strip carpets and carpet tiles, vinyl and linoleum floorboards, ceramic and porcelain tiles and epoxy sealed concrete floors. Our industrial grinders then ablate adhesive beds, carpet glue, tile mortar, [waterproofing membranes](/services/waterproofing) and failed [epoxy coatings](/services/epoxy-flooring)—leaving concrete floor slabs ready for restoration.",
+        description: "Complete removal of all floor coverings and their adhesives. We strip carpets and carpet tiles, vinyl and linoleum floorboards, ceramic and porcelain tiles and epoxy sealed concrete floors. Our industrial grinders then ablate adhesive beds, carpet glue, tile mortar, [waterproofing membranes](/services/waterproofing) and failed epoxy coatings—leaving concrete floor slabs ready for restoration.",
         image: tileFlooringRemovalImage,
         imageAlt: "Demolition hammer removing floor tiles during warehouse flooring strip out Melbourne"
       },
       {
         title: "Floor Grinding & Levelling",
-        description: "Uneven floors, high spots and surface deterioration affect forklift operation and safety. Our industrial floor grinding equipment levels surfaces, removes coatings and prepares floors for [epoxy systems](/services/epoxy-flooring) or grind-and-seal finishes. We restore flatness tolerances required for efficient warehouse operations.",
+        description: "Uneven floors, high spots and surface deterioration affect forklift operation and safety. Our industrial floor grinding equipment levels surfaces, removes coatings and prepares floors for epoxy systems or grind-and-seal finishes. We restore flatness tolerances required for efficient warehouse operations.",
         image: floorGrindingPowerTrowelImage,
         imageAlt: "Industrial concrete power trowel with protective cage and orange power cord on warehouse floor Melbourne"
       },
@@ -1839,7 +1773,7 @@ export const services: Service[] = [
       },
       {
         title: "Surface Finishing",
-        description: "Once the slab is restored and repaired, we provide the finish your lease requires. Grind and seal delivers a protected surface in matte, semi-gloss or high-gloss finish. [Epoxy coatings](/services/epoxy-flooring) provide chemical resistance and durability for continued operations. [Line marking](/services/line-marking) restores safety zones and traffic lanes. We match the specification in your lease.",
+        description: "Once the slab is restored and repaired, we provide the finish your lease requires. Grind and seal delivers a protected surface in matte, semi-gloss or high-gloss finish. Epoxy coatings provide chemical resistance and durability for continued operations. [Line marking](/services/line-marking) restores safety zones and traffic lanes. We match the specification in your lease.",
         image: grindSealFloorCoatingImage,
         imageAlt: "Worker applying protective floor sealant coating to ground concrete warehouse floor Melbourne"
       }
