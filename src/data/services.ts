@@ -2002,7 +2002,7 @@ export const services: Service[] = [
     capabilitiesSubtitle: "Our service covers the complete lifecycle of a commercial demolition project.",
     featuredSections: [
       {
-        title: "DEMOLITION, DONE RIGHT",
+        title: "DEMOLITION DONE RIGHT",
         description: "We approach every strip-out with a clear plan of works designed to meet your end-of-lease obligations on schedule. By coordinating directly with building management, we ensure a smooth process that fulfills all lease requirements without delays or complications.\n\nOur expertise extends beyond offices and warehouses to include retail, hospitality and medical centres. We are licensed, insured and have the capability to work after hours to avoid disrupting adjacent tenants. This thorough planning allows us to identify challenges early, delivering a successful handover with no surprise variations.",
         image: commercialDemolitionFeaturedImage,
         imageAlt: "Empty commercial office space after demolition and strip out in Melbourne, showing clean concrete floor and exposed ceiling infrastructure",
@@ -2103,7 +2103,7 @@ export const services: Service[] = [
     capabilitiesSubtitle: "Our service covers the complete disconnection of all building services for your end-of-lease make good.",
     featuredSections: [
       {
-        title: "BACK TO BASE WORKS",
+        title: "DISCONNECTED. CERTIFIED. SAFE.",
         description: "As part of your end-of-lease make good works, all building services need to be properly disconnected with all cabling returned back to base. We handle the complete disconnection of electrical, plumbing and HVAC systems. All certificates of completed works are provided upon handover.\n\nWe work within your project timeline, coordinating with our demolition crew throughout the entire strip out. From initial disconnection through to final certification, we manage the process to keep your make good on schedule.",
         image: backToBaseCablingImage,
         imageAlt: "Organized orange data cabling properly managed and routed back to base in commercial building Melbourne",
@@ -2254,8 +2254,7 @@ export const services: Service[] = [
     capabilitiesSubtitle: "Our service covers all flooring types for commercial make good projects.",
     featuredSections: [
       {
-        title: "FLOORING REINSTATEMENT WORKS",
-        titleHighlight: "WORKS",
+        title: "FLOOR FOR FLOOR",
         description: "Flooring damage from forklifts, office chairs, or years of heavy traffic can mean full replacement—or when the damage is localised, we reinstate specific sections to match the surrounding flooring. Carpet tiles, vinyl planks, epoxy coatings, engineered timber—our experienced team restores floors to match original specifications across all flooring types. We're make good specialists who understand lease obligations and work efficiently to meet handover deadlines.\n\nWe work from your lease schedule to match the original flooring—pattern, colour, finish. If the exact product is no longer available, we source the closest match and coordinate approval before installation. Substrate preparation is handled appropriately: damaged concrete repaired, uneven areas levelled, surfaces prepared. Reinstatement is completed to approved finishes schedule so your space is ready for a successful handover.",
         image: flooringReinstatementProcessImage,
         imageAlt: "Industrial floor grinding and preparation for flooring reinstatement in Melbourne warehouse",
@@ -2419,8 +2418,7 @@ export const services: Service[] = [
     capabilitiesSubtitle: "Our service covers all wall and ceiling repairs for commercial make good projects.",
     featuredSections: [
       {
-        title: "PATCHING & PLASTERING WORKS",
-        titleHighlight: "WORKS",
+        title: "WALLS REPAIRED & READY.",
         description: "Tenants leave marks. Fixtures get removed. Partitions come down. What's left behind—screw holes, anchor points, damaged plasterboard, rough edges where walls used to be—needs to be repaired before the painter can start.\n\nWe handle the repairs so your walls are smooth, even and ready for final coat. Surfaces are sanded flush, joints are invisible, textures are matched. No shortcuts. No visible patches. Just clean walls ready for handover.",
         image: patchingPlasteringFeaturedImage,
         imageAlt: "Professional plastering tools and equipment for commercial make good patching and plastering works in Melbourne",
