@@ -768,6 +768,8 @@ export const services: Service[] = [
     heroImageAlt: "Worker sweeping concrete floor with industrial broom during make good cleaning Melbourne",
     secondaryImage: highPressureWarehouseCleaningImage,
     secondaryImageAlt: "High-pressure warehouse cleaning Melbourne - industrial cleaner pressure washing warehouse floor for lease end",
+    scopeTitle: "NOT YOUR REGULAR CLEANER.",
+    scopeBody: "Lease ending? We handle the heavy-duty cleaning regular cleaners won\u2019t touch. Ride-on scrubbers for warehouse floors, industrial pressure washers for loading docks caked in years of grime, chemical treatment for oil stains and tyre marks. We work at scale \u2014 500sqm+ warehouse floors, multi-level office strip-outs, concrete aprons and external hard surfaces that need more than a mop.\n\nThis isn\u2019t maintenance cleaning. It\u2019s intensive restoration for lease handover \u2014 and it needs to pass your landlord\u2019s final inspection first time.",
     trustBadges: [
       "Industrial-Grade Equipment",
       "After-Hours Capability",
@@ -830,24 +832,7 @@ export const services: Service[] = [
     ],
     capabilitiesTitle: "CLEANING CAPABILITIES",
     capabilitiesSubtitle: "Our service covers the full scope of end-of-lease cleaning for commercial and industrial properties across Melbourne.",
-    featuredSections: [
-      {
-        title: "INDUSTRIAL FLOOR CLEANING",
-        titleHighlight: "FLOOR CLEANING",
-        description: "Years of grime, oil stains and tyre marks don't stand a chance. Our ride-on scrubbers and high-pressure systems restore warehouse floors to handover condition—ready for your landlord's final inspection. We handle the full scope: concrete degreasing, chemical treatment, line marking restoration and final detailing.\n\nThis isn't maintenance cleaning—it's intensive restoration for lease handover. We work at scale across 500sqm+ warehouse floors, multi-level office strip-outs and loading docks caked in years of grime.",
-        image: industrialFloorScrubberImage,
-        imageAlt: "Industrial ride-on floor scrubber machine cleaning polished concrete warehouse floor Melbourne",
-        imageLeft: true
-      },
-      {
-        title: "HIGH-PRESSURE WASHING",
-        titleHighlight: "WASHING",
-        description: "Loading docks, concrete aprons and external hard surfaces need more than a mop. Our industrial pressure washers cut through years of built-up grime, tyre marks and chemical residue to restore surfaces to handover condition.\n\nWe combine high-pressure washing with chemical treatment for oil-contaminated surfaces and coordinate waste removal to leave your site ready for final inspection.",
-        image: highPressureWarehouseCleaningImage,
-        imageAlt: "High-pressure warehouse cleaning Melbourne - industrial cleaner pressure washing warehouse floor for lease end",
-        imageLeft: false
-      }
-    ],
+
     linkedSpotlightBlock: {
       title: "A COMPLETE HANDOVER",
       titleHighlight: "SERVICE",
