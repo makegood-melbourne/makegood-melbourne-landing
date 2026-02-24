@@ -166,7 +166,7 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
                 </div>
                 <div className={index % 2 === 0 ? 'lg:order-1' : ''}>
                   {paragraphs.map((para, pIndex) => (
-                    <p key={pIndex} className="text-xl text-muted-foreground leading-relaxed mt-4 first:mt-0">
+                    <p key={pIndex} className="text-xl text-foreground leading-relaxed mt-4 first:mt-0">
                       {renderTextWithLinks(para)}
                     </p>
                   ))}
@@ -208,7 +208,7 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
             <h2 className="text-3xl md:text-4xl text-foreground mb-4">
               DELIVERING PROVEN <span className="text-primary">SOLUTIONS</span>
             </h2>
-            <p className="text-lg text-muted-foreground mb-10">
+            <p className="text-lg text-foreground mb-10">
               From concrete degradation to slab settlement, our team is equipped to manage complex structural challenges. We deliver proven, engineered solutions for a range of critical building failures.
             </p>
             <div className="grid md:grid-cols-3 gap-6">
@@ -297,10 +297,10 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
                 )}
               </div>
               <div>
-                <p className="text-xl text-muted-foreground leading-relaxed">
+                <p className="text-xl text-foreground leading-relaxed">
                   {renderTextWithLinks(service.description)}
                 </p>
-                <p className="text-xl text-muted-foreground leading-relaxed mt-4">
+                <p className="text-xl text-foreground leading-relaxed mt-4">
                   {service.slug === 'cladding-glazing' 
                     ? `Our experienced team delivers professional ${service.name.toLowerCase()} services across Melbourne's commercial buildings. We understand the critical importance of bringing buildings up to compliance with Australian Standards and building code requirements, working efficiently to minimise disruption while achieving quality results.`
                     : `Our experienced team delivers professional ${service.name.toLowerCase()} services across Melbourne's commercial and industrial properties. We understand the importance of meeting lease obligations and landlord requirements, working efficiently to minimise disruption while achieving quality results.`
@@ -447,7 +447,7 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
         service.featuredSections.forEach((section, index) => {
           const paragraphs = section.description.split('\n\n');
           elements.push(
-            <section key={`featured-${index}`} className={`py-16 ${index % 2 === 0 ? 'bg-background' : 'bg-secondary'}`}>
+            <section key={`featured-${index}`} className={`py-16 ${index % 2 === 0 ? 'bg-muted/30' : 'bg-secondary'}`}>
               <div className="container mx-auto px-4">
                 <h2 className="text-3xl md:text-4xl text-foreground mb-6">
                   {section.title}
@@ -474,7 +474,7 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
                   </div>
                   <div className={index % 2 === 0 ? 'lg:order-1' : ''}>
                     {paragraphs.map((para, pIndex) => (
-                      <p key={pIndex} className="text-xl text-muted-foreground leading-relaxed mt-4 first:mt-0">
+                      <p key={pIndex} className="text-xl text-foreground leading-relaxed mt-4 first:mt-0">
                         {renderTextWithLinks(para)}
                       </p>
                     ))}
@@ -483,7 +483,6 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
               </div>
             </section>
           );
-
           if (comparisonInsertAfterIndex !== undefined && index === comparisonInsertAfterIndex && comparisonSection) {
             elements.push(comparisonSection);
           }
@@ -535,7 +534,7 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
                     {section.title}
                   </h2>
                   {paragraphs.map((para, pIndex) => (
-                    <p key={pIndex} className="text-xl text-muted-foreground leading-relaxed mt-4 first:mt-0">
+                    <p key={pIndex} className="text-xl text-foreground leading-relaxed mt-4 first:mt-0">
                       {renderTextWithLinks(para)}
                     </p>
                   ))}
@@ -575,7 +574,7 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
               )}
             </h2>
             {service.linkedSpotlightBlock.subtitle && (
-              <p className="text-lg text-muted-foreground mb-10">
+              <p className="text-lg text-foreground mb-10">
                 {service.linkedSpotlightBlock.subtitle}
               </p>
             )}
