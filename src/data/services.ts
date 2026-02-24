@@ -978,24 +978,7 @@ export const services: Service[] = [
     ],
     capabilitiesTitle: "RELOCATION CAPABILITIES",
     capabilitiesSubtitle: "We handle the complete end-of-lease relocation scope—make good at your old site and equipment delivery to your new one.",
-    featuredSections: [
-      {
-        title: "WAREHOUSE & FACTORY RELOCATION",
-        titleHighlight: "RELOCATION",
-        description: "Vacating a warehouse or factory involves two things happening at the same time: the make good on your old site and getting your equipment to the new one. We handle both.\n\nWe dismantle and transport pallet racking, machinery and industrial equipment while our trades team restores your old site to handover condition. One contractor, one timeline, one point of contact. Your equipment arrives at the new site while the old one is ready for landlord inspection.",
-        image: warehouseRelocationImage,
-        imageAlt: "Forklift loading dismantled pallet racking onto truck for end of lease warehouse relocation Melbourne",
-        imageLeft: true
-      },
-      {
-        title: "TRANSPORT ANYWHERE IN AUSTRALIA",
-        titleHighlight: "AUSTRALIA",
-        description: "Whether you're relocating across Melbourne or interstate, we coordinate the transport. Flatbed trucks, curtainsiders, crane lifts and forklift operations—we have the equipment and logistics to move your operation wherever it needs to go.\n\nWe align delivery scheduling with your new site's availability and can coordinate installation of racking and equipment at the new location if required.",
-        image: flatbedTruckTransportImage,
-        imageAlt: "Flatbed truck transporting pallet racking and industrial machinery with Melbourne city skyline in background",
-        imageLeft: false
-      }
-    ],
+
     linkedSpotlightBlock: {
       title: "A COMPLETE HANDOVER",
       titleHighlight: "SERVICE",
@@ -1252,24 +1235,7 @@ export const services: Service[] = [
     ],
     capabilitiesTitle: "CLADDING & GLAZING CAPABILITIES",
     capabilitiesSubtitle: "We deliver end-to-end cladding and glazing remediation projects for commercial buildings across Melbourne.",
-    featuredSections: [
-      {
-        title: "ACP CLADDING REMEDIATION",
-        titleHighlight: "REMEDIATION",
-        description: "Non-compliant ACP cladding is a fire safety risk and a building compliance issue. We remove non-compliant panels and replace them with fire-rated cladding systems tested to AS 1530 and AS 5113, meeting NCC requirements for external wall fire spread.\n\nWe deliver the full scope on a design and construct basis: compliance assessment, engineering specification, removal, installation and certification. We coordinate with structural engineers, the VBA and council throughout the project.",
-        image: claddingRemediationImage,
-        imageAlt: "Commercial building cladding remediation work in progress with facade panels being replaced Melbourne",
-        imageLeft: true
-      },
-      {
-        title: "GLAZING FACADE REMEDIATION",
-        titleHighlight: "REMEDIATION",
-        description: "Non-compliant or underperforming glazing affects building safety, thermal performance and energy efficiency. We replace non-compliant glazing systems and upgrade existing facades to improve thermal and acoustic performance.\n\nFrom curtain wall systems to individual window replacements, we deliver glazing remediation projects that meet current NCC requirements and building performance standards.",
-        image: glazingFacadeInstallationImage,
-        imageAlt: "Professional glazing facade installation on commercial high-rise building with workers in safety harnesses Melbourne",
-        imageLeft: false
-      }
-    ],
+
     linkedSpotlightBlock: {
       title: "COMPLETE BUILDING",
       titleHighlight: "REMEDIATION",
@@ -1397,24 +1363,7 @@ export const services: Service[] = [
     ],
     capabilitiesTitle: "WATERPROOFING CAPABILITIES",
     capabilitiesSubtitle: "We deliver professional waterproofing solutions for commercial and residential buildings across Melbourne.",
-    featuredSections: [
-      {
-        title: "BALCONY & TERRACE WATERPROOFING",
-        titleHighlight: "WATERPROOFING",
-        description: "Failed balcony membranes are one of the most common building defects in Melbourne. Water penetrates through cracked or delaminated membranes and travels into the structure below, causing damage to ceilings, walls and building fabric.\n\nWe identify the failure mode, strip back to substrate, apply the correct membrane system and reinstate tiles and finishes. We flood test on completion and provide certification documentation.",
-        image: rooftopWaterproofingImage,
-        imageAlt: "Worker applying waterproofing membrane to commercial rooftop in Melbourne",
-        imageLeft: true
-      },
-      {
-        title: "ROOF & PODIUM WATERPROOFING",
-        titleHighlight: "WATERPROOFING",
-        description: "Flat roofs and podium decks are high-risk areas for water ingress. Deteriorated membranes, blocked drains and inadequate falls all contribute to failure. We assess the full drainage system and membrane condition before specifying the right solution.\n\nWe use premium membrane systems from Tremco, Sika and Wolfin with long-term manufacturer warranties. Our licensed applicators follow manufacturer specifications to ensure warranty validity.",
-        image: waterproofingMembraneImage,
-        imageAlt: "Close-up of waterproofing membrane application on commercial building surface in Melbourne",
-        imageLeft: false
-      }
-    ],
+
     linkedSpotlightBlock: {
       title: "COMPLETE BUILDING",
       titleHighlight: "REMEDIATION",
@@ -1558,24 +1507,7 @@ export const services: Service[] = [
     ],
     capabilitiesTitle: "ROOFING CAPABILITIES",
     capabilitiesSubtitle: "We supply and install polycarbonate roofing and skylights for warehouses and industrial facilities across Melbourne.",
-    featuredSections: [
-      {
-        title: "SKYLIGHT REPLACEMENT FOR MAKE GOOD",
-        titleHighlight: "MAKE GOOD",
-        description: "Skylights are one of the most commonly overlooked items in a make good scope. Yellowed, cracked or leaking panels are a clear sign of deterioration beyond fair wear and tear—and landlords will call it out at final inspection.\n\nWe assess skylight condition against your lease requirements, advise whether replacement is needed, and complete the work as part of your broader make good scope. One contractor, one timeline, one handover.",
-        image: skylightRoofPanelsImage,
-        imageAlt: "Clear polycarbonate roofing sheet installation industrial warehouse Melbourne",
-        imageLeft: true
-      },
-      {
-        title: "STORM DAMAGE REPAIRS",
-        titleHighlight: "REPAIRS",
-        description: "Melbourne's weather can cause sudden damage to polycarbonate and fibreglass roof panels—cracking, lifting or complete failure during storms. When leaks appear or panels are damaged, fast response is critical to prevent water ingress and damage to stock, equipment or flooring below.\n\nWe provide responsive repair services for storm-damaged and leaking roofs across Melbourne's industrial and commercial properties. From temporary make-safe works through to full panel replacement, we assess the damage and complete repairs efficiently.",
-        image: skylightSteelStructureImage,
-        imageAlt: "Polycarbonate skylight panels steel roof structure warehouse Melbourne",
-        imageLeft: false
-      }
-    ],
+
     linkedSpotlightBlock: {
       title: "COMPLETE BUILDING",
       titleHighlight: "REMEDIATION",
