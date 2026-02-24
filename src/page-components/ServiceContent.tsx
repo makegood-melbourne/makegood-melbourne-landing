@@ -64,6 +64,128 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
     }))
   } : null;
 
+  // ─── Global background alternation ───
+  // The hero section before this component uses bg-secondary (#2e2e2e, close to dark).
+  // We alternate between bg-muted (#404040, LIGHT) and bg-background (#222, DARK)
+  // starting with bg-muted so the first section contrasts with the hero.
+  // The CTA after this component uses bg-secondary, so the last section being
+  // bg-background will also contrast with it.
+  let sectionIndex = 0;
+  const nextBg = () => sectionIndex++ % 2 === 0 ? 'bg-muted' : 'bg-background';
+
+  // Pre-calculate backgrounds for all sections that will render,
+  // so we can reference them in JSX.
+  // Section order (conditional — only rendered sections consume an index):
+  // 1. Capabilities / What We Deliver (always)
+  // 2. Early featured sections (only if skipAboutSection)
+  // 3. Process after skip (only if skipAboutSection && process && !processAfterScope && !processAfterSpotlight)
+  // 4. Spotlight cards (only if spotlightCards)
+  // 5. Process after spotlight (only if processAfterSpotlight)
+  // 6. About/Scope section (only if !skipAboutSection)
+  // 7. Process after scope (only if processAfterScope)
+  // 8. Comparison table (only if comparison && comparisonAfterSection === undefined)
+  // 9. Featured sections with interleaved process/comparison (only if featuredSections && !skipAboutSection)
+  // 10. Process fallback (only if no featuredSections)
+  // 11. Post-comparison sections
+  // 12. Linked spotlight block OR Related services
+  // 13. FAQ
+
+  // We'll compute backgrounds eagerly for each section that will render.
+  const bgCapabilities = nextBg();
+
+  // Early featured sections (skipAboutSection path)
+  const bgEarlyFeatured: string[] = [];
+  if (service.skipAboutSection && service.featuredSections) {
+    service.featuredSections.forEach(() => bgEarlyFeatured.push(nextBg()));
+  }
+
+  // Process after skip
+  let bgProcessAfterSkip: string | null = null;
+  if (service.skipAboutSection && service.process && service.process.length > 0 && !service.processAfterScope && !service.processAfterSpotlight) {
+    bgProcessAfterSkip = nextBg();
+  }
+
+  // Spotlight cards
+  let bgSpotlight: string | null = null;
+  if (service.spotlightCards && service.spotlightCards.length > 0) {
+    bgSpotlight = nextBg();
+  }
+
+  // Process after spotlight
+  let bgProcessAfterSpotlight: string | null = null;
+  if (service.processAfterSpotlight && service.process && service.process.length > 0) {
+    bgProcessAfterSpotlight = nextBg();
+  }
+
+  // About/Scope section
+  let bgAbout: string | null = null;
+  if (!service.skipAboutSection) {
+    bgAbout = nextBg();
+  }
+
+  // Process after scope
+  let bgProcessAfterScope: string | null = null;
+  if (service.processAfterScope && service.process && service.process.length > 0) {
+    bgProcessAfterScope = nextBg();
+  }
+
+  // Comparison table (standalone — not inserted between featured sections)
+  let bgComparison: string | null = null;
+  if (service.comparison && service.comparisonAfterSection === undefined) {
+    bgComparison = nextBg();
+  }
+
+  // Featured sections with interleaved process/comparison (non-skipAboutSection path)
+  const bgFeatured: string[] = [];
+  let bgProcessInFeatured: string | null = null;
+  let bgComparisonInFeatured: string | null = null;
+  if (service.featuredSections && !service.skipAboutSection) {
+    const processInsertAfterIndex = service.processAfterSection;
+    const comparisonInsertAfterIndex = service.comparisonAfterSection;
+    const hasProcess = service.process && service.process.length > 0 && !service.processAfterScope && !service.processAfterSpotlight;
+    const hasComparison = service.comparison && service.comparisonAfterSection !== undefined;
+
+    service.featuredSections.forEach((_section, index) => {
+      bgFeatured.push(nextBg());
+
+      if (hasComparison && comparisonInsertAfterIndex !== undefined && index === comparisonInsertAfterIndex) {
+        bgComparisonInFeatured = nextBg();
+      }
+      if (hasProcess && processInsertAfterIndex !== undefined && index === processInsertAfterIndex) {
+        bgProcessInFeatured = nextBg();
+      }
+    });
+
+    // Process at end of featured sections (if no specific insertion point)
+    if (hasProcess && processInsertAfterIndex === undefined) {
+      bgProcessInFeatured = nextBg();
+    }
+  }
+
+  // Process fallback (no featured sections)
+  let bgProcessFallback: string | null = null;
+  if (!service.featuredSections && service.process && service.process.length > 0) {
+    bgProcessFallback = nextBg();
+  }
+
+  // Post-comparison sections
+  const bgPostComparison: string[] = [];
+  if (service.postComparisonSections) {
+    service.postComparisonSections.forEach(() => bgPostComparison.push(nextBg()));
+  }
+
+  // Linked spotlight block OR related services
+  let bgRelated: string | null = null;
+  if (service.linkedSpotlightBlock || (!service.relatedServicesBlock && !service.linkedSpotlightBlock && relatedServices.length > 0)) {
+    bgRelated = nextBg();
+  }
+
+  // FAQ
+  let bgFaq: string | null = null;
+  if (service.faqs && service.faqs.length > 0) {
+    bgFaq = nextBg();
+  }
+
   return (
     <>
       {/* JSON-LD structured data */}
@@ -80,7 +202,7 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
 
       {/* Capabilities / What's Included (varies by service) */}
       {service.capabilityCards && service.capabilityCards.length > 0 ? (
-        <section className="py-16 bg-background">
+        <section className={`py-16 ${bgCapabilities}`}>
           <div className="container mx-auto px-4">
             <h2 className="text-3xl md:text-4xl text-foreground mb-2">
               {service.capabilitiesTitle || "Capabilities"}
@@ -113,7 +235,7 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
           </div>
         </section>
       ) : (
-        <section className="py-16 bg-background">
+        <section className={`py-16 ${bgCapabilities}`}>
           <div className="container mx-auto px-4">
             <h2 className="text-3xl md:text-4xl text-foreground mb-10">
               What We Deliver
@@ -138,7 +260,7 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
       {service.skipAboutSection && service.featuredSections && service.featuredSections.map((section, index) => {
         const paragraphs = section.description.split('\n\n');
         return (
-          <section key={`early-featured-${index}`} className={`py-16 ${index % 2 === 0 ? 'bg-secondary' : 'bg-muted'}`}>
+          <section key={`early-featured-${index}`} className={`py-16 ${bgEarlyFeatured[index]}`}>
             <div className="container mx-auto px-4">
               <h2 
                 className="text-3xl md:text-4xl text-foreground mb-6 lg:col-span-2 lg:mb-0"
@@ -181,7 +303,7 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
 
       {/* Process Section - For services that skip the About section */}
       {service.skipAboutSection && service.process && service.process.length > 0 && !service.processAfterScope && !service.processAfterSpotlight && (
-        <section className="py-16 bg-background">
+        <section className={`py-16 ${bgProcessAfterSkip}`}>
           <div className="container mx-auto px-4">
             <h2 className="text-3xl md:text-4xl text-foreground mb-10">Our Process</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -203,7 +325,7 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
 
       {/* Key Service Spotlight Section - Only for services with spotlightCards */}
       {service.spotlightCards && service.spotlightCards.length > 0 && (
-        <section className="py-16 bg-background">
+        <section className={`py-16 ${bgSpotlight}`}>
           <div className="container mx-auto px-4">
             <h2 className="text-3xl md:text-4xl text-foreground mb-4">
               DELIVERING PROVEN <span className="text-primary">SOLUTIONS</span>
@@ -241,7 +363,7 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
 
       {/* Process Section - After Spotlight Cards (when processAfterSpotlight is true) */}
       {service.processAfterSpotlight && service.process && service.process.length > 0 && (
-        <section className="py-16 bg-secondary">
+        <section className={`py-16 ${bgProcessAfterSpotlight}`}>
           <div className="container mx-auto px-4">
             <h2 className="text-3xl md:text-4xl text-foreground mb-10">Our Process</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -263,7 +385,7 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
 
       {/* About Section - Optional */}
       {!service.skipAboutSection && (
-        <section className="py-16 bg-secondary">
+        <section className={`py-16 ${bgAbout}`}>
           <div className="container mx-auto px-4">
             <h2 className="text-3xl md:text-4xl text-foreground mb-6">{service.scopeTitle || `${service.name} Scope`}</h2>
             
@@ -314,7 +436,7 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
 
       {/* Process Section - After Scope (when processAfterScope is true) */}
       {service.processAfterScope && service.process && service.process.length > 0 && (
-        <section className="py-16 bg-background">
+        <section className={`py-16 ${bgProcessAfterScope}`}>
           <div className="container mx-auto px-4">
             <h2 className="text-3xl md:text-4xl text-foreground mb-10">Our Process</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -336,7 +458,7 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
 
       {/* Comparison Table - Optional (only render here if not inserted between featured sections) */}
       {service.comparison && service.comparisonAfterSection === undefined && (
-        <section className="py-16 bg-background">
+        <section className={`py-16 ${bgComparison}`}>
           <div className="container mx-auto px-4">
             <h2 className="text-3xl md:text-4xl text-foreground mb-10">
               {service.comparison.title || "Why Choose Specialists?"}
@@ -379,12 +501,12 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
       {/* Featured Sections (multiple) with optional Process and Comparison insertion */}
       {service.featuredSections && !service.skipAboutSection && (() => {
         const processSection = service.process && service.process.length > 0 && !service.processAfterScope && !service.processAfterSpotlight ? (
-          <section key="process-section" className="py-16 bg-background">
+          <section key="process-section" className={`py-16 ${bgProcessInFeatured}`}>
             <div className="container mx-auto px-4">
               <h2 className="text-3xl md:text-4xl text-foreground mb-10">Our Process</h2>
               <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                 {service.process.map((step, index) => (
-                  <Card key={index} className="bg-background border-border">
+                  <Card key={index} className="bg-secondary border-border">
                     <CardContent className="pt-6">
                       <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
                         <span className="text-xl font-bold text-primary">{index + 1}</span>
@@ -400,7 +522,7 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
         ) : null;
 
         const comparisonSection = service.comparison && service.comparisonAfterSection !== undefined ? (
-          <section key="comparison-section" className="py-16 bg-background">
+          <section key="comparison-section" className={`py-16 ${bgComparisonInFeatured}`}>
             <div className="container mx-auto px-4">
               <h2 className="text-3xl md:text-4xl text-foreground mb-10">
                 {service.comparison.title || "Why Choose Specialists?"}
@@ -447,7 +569,7 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
         service.featuredSections.forEach((section, index) => {
           const paragraphs = section.description.split('\n\n');
           elements.push(
-            <section key={`featured-${index}`} className={`py-16 ${index % 2 === 0 ? 'bg-muted' : 'bg-secondary'}`}>
+            <section key={`featured-${index}`} className={`py-16 ${bgFeatured[index]}`}>
               <div className="container mx-auto px-4">
                 <h2 className="text-3xl md:text-4xl text-foreground mb-6">
                   {section.title}
@@ -501,7 +623,7 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
 
       {/* Process Section - Only show if no featuredSections (fallback) */}
       {!service.featuredSections && service.process && service.process.length > 0 && (
-        <section className="py-16 bg-secondary">
+        <section className={`py-16 ${bgProcessFallback}`}>
           <div className="container mx-auto px-4">
             <h2 className="text-3xl md:text-4xl text-foreground mb-10">Our Process</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -526,7 +648,7 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
         const paragraphs = section.description.split('\n\n');
         const shouldReverseLayout = section.imageLeft || index % 2 === 1;
         return (
-          <section key={`post-comparison-${index}`} className={`py-16 ${index % 2 === 0 ? 'bg-muted' : 'bg-secondary'}`}>
+          <section key={`post-comparison-${index}`} className={`py-16 ${bgPostComparison[index]}`}>
             <div className="container mx-auto px-4">
               <div className="grid lg:grid-cols-2 gap-12 items-center">
                 <div className={shouldReverseLayout ? 'lg:order-2' : ''}>
@@ -565,7 +687,7 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
 
       {/* Linked Spotlight Block - Related Services (must sit directly above FAQ) */}
       {service.linkedSpotlightBlock && (
-        <section className="py-16 bg-secondary">
+        <section className={`py-16 ${bgRelated}`}>
           <div className="container mx-auto px-4">
             <h2 className="text-3xl md:text-4xl text-foreground mb-4">
               {service.linkedSpotlightBlock.title}{" "}
@@ -620,7 +742,7 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
 
       {/* Related Services - Only show if no custom relatedServicesBlock or linkedSpotlightBlock */}
       {!service.relatedServicesBlock && !service.linkedSpotlightBlock && relatedServices.length > 0 && (
-        <section className="py-16 bg-secondary">
+        <section className={`py-16 ${bgRelated}`}>
           <div className="container mx-auto px-4">
             <h2 className="text-3xl md:text-4xl text-foreground mb-10">Related Services</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -673,7 +795,7 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
 
        {/* FAQ Section */}
       {service.faqs && service.faqs.length > 0 && (
-        <section className="py-16 px-4 sm:px-6 lg:px-8 bg-background">
+        <section className={`py-16 px-4 sm:px-6 lg:px-8 ${bgFaq}`}>
           <div className="max-w-3xl mx-auto">
             <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-center">
               {service.faqTitle || "Frequently Asked Questions"}
