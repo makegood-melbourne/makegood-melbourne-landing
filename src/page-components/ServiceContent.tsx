@@ -130,16 +130,16 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
     bgProcessAfterScope = nextBg();
   }
 
-  // Tabbed scope panel (replaces featured sections when present)
-  let bgTabbedScope: string | null = null;
-  if (service.tabbedScope) {
-    bgTabbedScope = nextBg();
-  }
-
   // Comparison table (standalone — not inserted between featured sections)
   let bgComparison: string | null = null;
   if (service.comparison && service.comparisonAfterSection === undefined) {
     bgComparison = nextBg();
+  }
+
+  // Tabbed scope panel (replaces featured sections when present)
+  let bgTabbedScope: string | null = null;
+  if (service.tabbedScope) {
+    bgTabbedScope = nextBg();
   }
 
   // Featured sections with interleaved process/comparison (non-skipAboutSection path)
