@@ -567,7 +567,7 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
 
       {/* Linked Spotlight Block - Related Services (must sit directly above FAQ) */}
       {service.linkedSpotlightBlock && (
-        <section className="py-16 bg-background">
+        <section className="py-16 bg-secondary">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl md:text-4xl text-foreground mb-4">
               {service.linkedSpotlightBlock.title}{" "}
@@ -622,7 +622,7 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
 
       {/* Related Services - Only show if no custom relatedServicesBlock or linkedSpotlightBlock */}
       {!service.relatedServicesBlock && !service.linkedSpotlightBlock && relatedServices.length > 0 && (
-        <section className="py-16 bg-background">
+        <section className="py-16 bg-secondary">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl md:text-4xl text-foreground mb-10">Related Services</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -673,10 +673,9 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
         </section>
       )}
 
-      {/* FAQ Section */}
-
+       {/* FAQ Section */}
       {service.faqs && service.faqs.length > 0 && (
-        <section className="py-16 px-4 sm:px-6 lg:px-8">
+        <section className="py-16 px-4 sm:px-6 lg:px-8 bg-background">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-center">
               {service.faqTitle || "Frequently Asked Questions"}

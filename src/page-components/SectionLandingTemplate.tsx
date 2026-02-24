@@ -272,7 +272,7 @@ const SectionLandingTemplate = ({ data }: SectionLandingTemplateProps) => {
 
       {/* FAQ Section */}
       {data.faqs && data.faqs.length > 0 && (
-        <section className="py-16 px-4 sm:px-6 lg:px-8">
+        <section className="py-16 px-4 sm:px-6 lg:px-8 bg-secondary">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-center">
               {data.faqTitle || "Frequently Asked Questions"}
