@@ -183,22 +183,7 @@ const OurProcess = () => {
             Our proven 6-step process ensures your end-of-lease make good is completed 
             professionally, on time, and without stress.
           </p>
-          
-          {/* Trust Badges */}
-          <div className="flex flex-wrap justify-center gap-4 md:gap-8">
-            <div className="flex items-center gap-2 text-muted-foreground">
-              <CheckCircle className="h-5 w-5 text-primary" />
-              <span>Licensed & Insured</span>
-            </div>
-            <div className="flex items-center gap-2 text-muted-foreground">
-              <CheckCircle className="h-5 w-5 text-primary" />
-              <span>Fixed Pricing</span>
-            </div>
-            <div className="flex items-center gap-2 text-muted-foreground">
-              <CheckCircle className="h-5 w-5 text-primary" />
-              <span>Professional Handover</span>
-            </div>
-          </div>
+
         </div>
       </section>
 

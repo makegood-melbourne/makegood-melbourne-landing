@@ -217,27 +217,6 @@ const SectionLandingTemplate = ({ data }: SectionLandingTemplateProps) => {
               )}
             </div>
           </div>
-          
-          {/* Trust Badges - 4 vertical badges */}
-          {data.trustBadges && data.trustBadges.length > 0 && (
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-10">
-              {data.trustBadges.map((badge, index) => {
-                const IconComponent = 
-                  badge.icon === "shield" ? Shield :
-                  badge.icon === "compass" ? Compass :
-                  badge.icon === "dollar" ? BadgeDollarSign :
-                  badge.icon === "document" ? FileText : 
-                  badge.icon === "clipboard" ? ClipboardCheck : Shield;
-                
-                return (
-                  <div key={index} className="flex flex-col items-center text-center gap-2">
-                    <IconComponent className="h-8 w-8 text-muted-foreground" />
-                    <span className="text-sm font-medium text-muted-foreground">{badge.title}</span>
-                  </div>
-                );
-              })}
-            </div>
-          )}
         </div>
       </section>
 
