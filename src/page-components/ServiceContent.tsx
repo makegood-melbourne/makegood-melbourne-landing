@@ -138,7 +138,7 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
       {service.skipAboutSection && service.featuredSections && service.featuredSections.map((section, index) => {
         const paragraphs = section.description.split('\n\n');
         return (
-          <section key={`early-featured-${index}`} className="py-16 bg-secondary">
+          <section key={`early-featured-${index}`} className={`py-16 ${index % 2 === 0 ? 'bg-secondary' : 'bg-background'}`}>
             <div className="container mx-auto px-4">
               <h2 
                 className="text-3xl md:text-4xl text-foreground mb-6 lg:col-span-2 lg:mb-0"
@@ -263,7 +263,6 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
 
       {/* About Section - Optional */}
       {!service.skipAboutSection && (
-
         <section className="py-16 bg-secondary">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl md:text-4xl text-foreground mb-6">{service.scopeTitle || `${service.name} Scope`}</h2>
@@ -380,7 +379,7 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
       {/* Featured Sections (multiple) with optional Process and Comparison insertion */}
       {service.featuredSections && !service.skipAboutSection && (() => {
         const processSection = service.process && service.process.length > 0 && !service.processAfterScope && !service.processAfterSpotlight ? (
-          <section key="process-section" className="py-16 bg-secondary">
+          <section key="process-section" className="py-16 bg-background">
             <div className="container mx-auto px-4">
               <h2 className="text-3xl md:text-4xl text-foreground mb-10">Our Process</h2>
               <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -448,7 +447,7 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
         service.featuredSections.forEach((section, index) => {
           const paragraphs = section.description.split('\n\n');
           elements.push(
-            <section key={`featured-${index}`} className="py-16 bg-secondary">
+            <section key={`featured-${index}`} className={`py-16 ${index % 2 === 0 ? 'bg-background' : 'bg-secondary'}`}>
               <div className="container mx-auto px-4">
                 <h2 className="text-3xl md:text-4xl text-foreground mb-6">
                   {section.title}
