@@ -332,38 +332,126 @@ It depends on the cause. Landlords are typically responsible for building defect
     content: `
 Your lease is ending. The pressure is on. And the make good clause that seemed so far away is now a very real, very urgent problem. We get it. We have seen it all before. A last-minute make good is stressful but it is not impossible. The key is to move fast and get the right team on your side, right now.
 
-This is not the time for guesswork or trying to manage multiple trades yourself. You need one contractor who owns the whole job, from scoping the works to handing back the keys. This guide will walk you through what you need to do today to get your make good sorted.
+This is not the time for guesswork or trying to manage multiple trades yourself. You need one contractor who owns the whole job, from scoping the works to handing back the keys. This guide will walk you through exactly what you need to do today to get your make good sorted — and what to realistically expect when time is not on your side.
+
+
+## Why Last-Minute Make Goods Happen (And Why It's Not Always Your Fault)
+
+It happens more often than you'd think. A business is consumed by the day-to-day. The lease renewal slips off the radar. Someone assumed someone else was handling it. Or the business has been sold, the team has changed, and the make good obligation was never properly handed over.
+
+Sometimes it's simpler than that. The lease end date crept up faster than expected, and what felt like months away is now weeks. Suddenly the inbox is full of emails from the property manager and the landlord is asking for a handover plan.
+
+Whatever the reason, the situation is the same: you have a make good obligation, a hard deadline, and not much time. The worst thing you can do is freeze. The second worst thing is to start calling individual trades and trying to coordinate it yourself. Plumbers, electricians, painters, demolition crews — each one has their own schedule, their own lead times, and no accountability for what the other trades are doing. That approach burns time you don't have.
+
+What you need is a single team who does this every day. One call. One scope. One quote. One point of contact from start to finish.
+
+
+## What Is a Make Good, Exactly?
+
+Before we get into the how, it's worth being clear on the what — because make good obligations vary significantly from lease to lease.
+
+A make good clause in a commercial lease requires the tenant to return the premises to an agreed condition at the end of the tenancy. In most cases, that means returning the space to the condition it was in when you first took possession. This is evidenced by the ingoing [condition report](/blog/dilapidation-reports-melbourne-make-good), which should have been completed at the start of your lease and signed by both parties.
+
+Make good works typically include removing all the tenant's fit-out — partition walls, workstations, signage, cabling, storage racking, mezzanine floors — and repairing any damage caused during the tenancy. In some leases, it also includes repainting the entire premises, replacing flooring, or returning the space to a bare shell.
+
+What it does not usually include is damage that was already present when you moved in. That's exactly why the ingoing condition report matters so much. If something was already worn or damaged when you took the keys, you shouldn't be expected to fix it on the way out. But if you don't have that report, or it wasn't thorough, that distinction becomes very hard to argue.
+
 
 ## What Can Realistically Be Done in a Short Timeframe?
 
-Time is the biggest factor in a last-minute make good. A full strip-out and reinstatement that might normally take 4-6 weeks needs to be compressed. This means prioritising the works that are most critical to meeting your lease obligations.
+Time is the biggest factor in a last-minute make good. A full strip-out and reinstatement that might normally take four to six weeks needs to be compressed. This means prioritising the works that are most critical to meeting your lease obligations.
 
-In a 1-2 week timeframe, a lot can still be achieved. A typical urgent make good will focus on the essentials: removing your fit-out, [patching and painting](/services/make-good-solutions/patching-plastering/), repairing any damage and ensuring all services are safely disconnected. More complex structural work, like removing a large mezzanine floor, might not be possible without negotiating an extension with your landlord. The first step is always to get a professional on site to assess what is achievable in the time you have left.
+In a one to two week timeframe, a lot can still be achieved. A typical urgent make good will focus on the essentials: removing your fit-out, [patching and painting](/services/make-good-solutions/patching-plastering/), repairing any damage and ensuring all services are safely disconnected. More complex structural work, like removing a large mezzanine floor, might not be possible without negotiating an extension with your landlord. The first step is always to get a professional on site to assess what is achievable in the time you have left.
+
+### The Triage Process: What to Prioritise
+
+When time is short, we triage the make good works into three categories.
+
+**Must-Haves** are the non-negotiable items explicitly required by your lease. This usually includes removing all your property, repairing any damage you have caused and leaving the premises clean. Failure to do these things will almost certainly result in a claim against your bond.
+
+**Should-Haves** are items that are likely required but may have some room for negotiation. This could include repainting the entire premises or replacing worn-out carpet tiles. If the ingoing condition report is unclear, there may be an opportunity to negotiate a cash settlement for these items instead of doing the physical works. A good make good contractor will flag these opportunities. A great one will help you have that conversation with your landlord.
+
+**Nice-to-Haves** are items that are not strictly required but might be worth doing as a gesture of goodwill — especially if you need to ask the landlord for a lease extension. This could include a professional deep clean of the amenities or pressure washing an external facade. Small things that cost relatively little but show the landlord you've taken the obligation seriously.
+
+Getting this triage right is how you protect yourself from spending money on work that isn't required while making sure you cover everything that is.
+
 
 ## Your Step-by-Step Action Plan for Today
 
-If your lease ends in the next few weeks, you need to move fast. Here is your action plan.
+If your lease ends in the next few weeks, here is exactly what to do.
 
 **1. Find Your Lease and Condition Report.**
-Before you do anything else, locate your signed lease agreement and the original ingoing [condition report](/blog/dilapidation-reports-melbourne-make-good). These documents define your exact make good obligations. The condition report, with its photos and notes, is your proof of the property\u2019s original state. It is the benchmark for the make good.
+Before you do anything else, locate your signed lease agreement and the original ingoing condition report. These documents define your exact make good obligations. The condition report — with its photos and notes — is your proof of the property's original state. It is the benchmark for the make good. If you can't find it, contact your property manager or solicitor immediately. If it genuinely doesn't exist, that changes your negotiating position and you need to know that now.
 
 **2. Contact a Make Good Specialist.**
-Do not waste time trying to coordinate individual trades. You need a specialist make good contractor who can manage the entire project. Look for a company that has experience with urgent handovers and can provide a single point of contact. When you contact them, be ready to email your lease and condition report straight away.
+Do not waste time trying to coordinate individual trades. You need a specialist make good contractor who can manage the entire project. Look for a company that has direct experience with urgent handovers and can provide a single point of contact from inspection through to handover. When you call them, be ready to email your lease and condition report straight away. The more information they have upfront, the faster they can move.
 
 **3. Arrange an Urgent Site Inspection.**
-A good contractor will be able to meet you on site within 24-48 hours. The purpose of this inspection is to compare the current state of the property to the ingoing condition report and create a prioritised list of works. This is where the scope is defined and a realistic timeline is set.
+A good contractor will be able to meet you on site within 24 to 48 hours. The purpose of this inspection is to compare the current state of the property to the ingoing condition report and create a prioritised list of works. This is where the scope is defined and a realistic timeline is set. Come to the inspection with your lease and condition report. Be honest about the timeline. The contractor needs the full picture to give you a plan that actually works.
 
 **4. Get a Fixed Quote and Scope of Works.**
-Based on the site inspection, your contractor should provide a detailed scope of works and a fixed-price quote. This document should clearly list every task that will be completed. No surprises. No scope creep. Review it carefully and make sure it aligns with your lease obligations.
+Based on the site inspection, your contractor should provide a detailed scope of works and a fixed-price quote. This document should clearly list every task that will be completed. No surprises. No scope creep. Review it carefully and make sure it aligns with your lease obligations. If something in the scope doesn't match what your lease requires, raise it before you sign — not after the work has started.
 
 **5. Sign Off and Let Them Handle It.**
 Once you have signed off on the quote, your job is to step back and let the contractor do their work. They will coordinate the trades, manage the schedule and deal with any issues that come up. Your focus should be on moving your business, not managing a construction site.
 
+
+## What Happens If You Can't Meet the Deadline?
+
+Sometimes, despite everyone's best efforts, the timeline is just not achievable. If that's the case, it's far better to get ahead of it than to ignore it.
+
+Contact your landlord or property manager as soon as you know there's a problem. Explain the situation. Have a plan ready — who you've engaged, what the scope is, and how long the works will take. Most landlords would rather negotiate a short extension with a tenant who is clearly getting the work done than be handed back a half-finished space.
+
+If you need an extension, a written make good plan from your contractor is one of the most useful things you can bring to that conversation. It shows the landlord that you're not stalling — you're organised, you've engaged a professional, and the works are happening. That shifts the dynamic considerably.
+
+The one thing you don't want is to go silent. A landlord who hasn't heard from you and is staring at an unfinished space two days before lease end is a landlord who is calling their solicitor.
+
+
+## How Much Does a Last-Minute Make Good Cost?
+
+There's no way to answer this without knowing the specifics of your tenancy, but there are a few factors that will influence the cost.
+
+The size and complexity of the fit-out is the biggest driver. A basic office with partition walls and workstations is a very different job to a warehouse with a mezzanine floor, industrial racking and a custom-built reception area. The scope of what the lease actually requires also matters — some leases require a full repaint and flooring replacement, others simply require removal and clean.
+
+Urgency does have a cost impact. When work needs to happen faster — outside business hours, on weekends, or with additional crews brought in to compress the timeline — that will be reflected in the price. It's honest to say that a last-minute make good will typically cost more than one planned well in advance. But it's usually still significantly less than the cost of a landlord-managed make good charged back to you, which is what happens if you hand back the keys and leave the work undone.
+
+Getting a fixed-price quote upfront means you know exactly what you're up for. No surprises at the end of the job.
+
+
+## Common Last-Minute Make Good Scenarios
+
+We have handled hundreds of urgent make good projects across Melbourne. Here are some of the scenarios we see most often and how we approach them.
+
+### The Office Tenant Who Forgot About the Make Good
+
+An office tenant in the Melbourne CBD is moving to a new building. They have been so focused on the new fit-out that they completely forgot about their make good obligations on the old tenancy. With two weeks until the lease ends, they realise they need to strip out their entire office.
+
+**Our approach:** We conduct a site inspection the next day. We identify that the main works are the removal of partition walls, workstations and data cabling. We provide a fixed quote within 24 hours. Our team starts work the following Monday, works over the weekend to stay on schedule, and the office is stripped out, walls patched and painted, and the premises cleaned and ready for handover on the Friday.
+
+### The Warehouse Tenant with a Mezzanine Floor
+
+A logistics company is vacating a large warehouse in Dandenong. Their lease requires them to remove a substantial mezzanine floor they installed ten years ago. They have left it to the last minute and now have three weeks to get it done.
+
+**Our approach:** Removing a mezzanine floor is a structural job that requires careful planning. We engage a structural engineer to sign off on the removal method. We use a specialised crew with the right equipment to dismantle the mezzanine safely, the steel is recycled, and the floor is then ground and sealed. The job is completed in 18 days, just inside the lease end.
+
+### The Retail Tenant in a Shopping Centre
+
+A retail tenant in a major shopping centre is closing down. They have one week to de-brand the store, remove all their fixtures and fittings and return the tenancy to a bare shell. The shopping centre has strict rules about when noisy work can be done.
+
+**Our approach:** We have extensive experience working in live shopping centre environments. We work closely with centre management to schedule works outside of core trading hours. Our team works overnight to minimise disruption to other retailers. The shopfront is removed, the fixtures are stripped out, and the tenancy is cleaned and ready for handover within the one-week timeframe.
+
+### The Business That Was Sold Mid-Lease
+
+A business changes hands. The incoming owners are focused on operations. Nobody properly reviewed the lease obligations on the existing tenancy, which was coming to an end. Six weeks later, the property manager calls asking when the make good is happening. Nobody knows.
+
+**Our approach:** We start from scratch. We help the new owners locate the lease documents, work through the obligations clause by clause, and conduct a site inspection to scope the works. We provide a clear breakdown of what the lease requires, what's negotiable, and what we can realistically achieve in the time available. Then we get to work.
+
+
 ## We Can Start This Week
 
-We specialise in urgent make good projects. We do [make goods](/services/make-good-solutions/) all day, every day. Our team of experienced tradespeople is ready to go, and we can typically start works within a few days of a site inspection.
+We specialise in urgent make good projects. We do [make goods](/services/make-good-solutions/) all day, every day. Our team of experienced tradespeople is ready to go and we can typically start works within a few days of a site inspection.
 
-We manage the entire process, from the initial scope to the final handover. We deal with the landlord and property manager directly. That\u2019s not your problem. You get one point of contact and you\u2019ll know exactly who\u2019s handling it and what\u2019s getting done.
+We manage the entire process, from the initial scope to the final handover. We deal with the landlord and property manager directly. That's not your problem. You get one point of contact and you'll know exactly who's handling it and what's getting done.
 
 Left your make good to the last minute? [Get in touch.](/contact)`
   },
