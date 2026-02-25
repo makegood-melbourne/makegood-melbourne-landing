@@ -32,7 +32,7 @@ const Blog = () => {
       
       
       <main className="flex-1 pt-20">
-        <div className="container mx-auto px-4 py-12">
+        <div className="container mx-auto px-4 pt-4 pb-12">
           <div className="text-center mb-12">
             <h1 className="text-4xl md:text-5xl text-foreground mb-4">Make Good Melbourne Blog</h1>
             <p className="text-xl text-foreground max-w-2xl mx-auto">
