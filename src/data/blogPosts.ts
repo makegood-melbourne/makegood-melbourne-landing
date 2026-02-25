@@ -321,6 +321,53 @@ It depends on the cause. Landlords are typically responsible for building defect
   // Content removed; all remaining fields through closing brace also removed below
   
   {
+    id: "38",
+    title: "Left Your Make Good to the Last Minute? Here's What to Do.",
+    slug: "last-minute-make-good-melbourne",
+    excerpt: "Your lease is ending and the make good clause is now a very real problem. A last-minute make good is stressful but it is not impossible. Here is what to do today.",
+    metaDescription: "Left your commercial make good to the last minute? Here is your step-by-step action plan to get it sorted fast. Melbourne make good specialists.",
+    date: "2026-01-03",
+    image: "last-minute-make-good-melbourne.webp",
+    imageAlt: "Commercial warehouse interior being prepared for urgent end of lease make good works in Melbourne",
+    content: `
+Your lease is ending. The pressure is on. And the make good clause that seemed so far away is now a very real, very urgent problem. We get it. We have seen it all before. A last-minute make good is stressful but it is not impossible. The key is to move fast and get the right team on your side, right now.
+
+This is not the time for guesswork or trying to manage multiple trades yourself. You need one contractor who owns the whole job, from scoping the works to handing back the keys. This guide will walk you through what you need to do today to get your make good sorted.
+
+## What Can Realistically Be Done in a Short Timeframe?
+
+Time is the biggest factor in a last-minute make good. A full strip-out and reinstatement that might normally take 4-6 weeks needs to be compressed. This means prioritising the works that are most critical to meeting your lease obligations.
+
+In a 1-2 week timeframe, a lot can still be achieved. A typical urgent make good will focus on the essentials: removing your fit-out, [patching and painting](/services/make-good-solutions/patching-plastering/), repairing any damage and ensuring all services are safely disconnected. More complex structural work, like removing a large mezzanine floor, might not be possible without negotiating an extension with your landlord. The first step is always to get a professional on site to assess what is achievable in the time you have left.
+
+## Your Step-by-Step Action Plan for Today
+
+If your lease ends in the next few weeks, you need to move fast. Here is your action plan.
+
+**1. Find Your Lease and Condition Report.**
+Before you do anything else, locate your signed lease agreement and the original ingoing [condition report](/blog/dilapidation-reports-melbourne-make-good). These documents define your exact make good obligations. The condition report, with its photos and notes, is your proof of the property\u2019s original state. It is the benchmark for the make good.
+
+**2. Contact a Make Good Specialist.**
+Do not waste time trying to coordinate individual trades. You need a specialist make good contractor who can manage the entire project. Look for a company that has experience with urgent handovers and can provide a single point of contact. When you contact them, be ready to email your lease and condition report straight away.
+
+**3. Arrange an Urgent Site Inspection.**
+A good contractor will be able to meet you on site within 24-48 hours. The purpose of this inspection is to compare the current state of the property to the ingoing condition report and create a prioritised list of works. This is where the scope is defined and a realistic timeline is set.
+
+**4. Get a Fixed Quote and Scope of Works.**
+Based on the site inspection, your contractor should provide a detailed scope of works and a fixed-price quote. This document should clearly list every task that will be completed. No surprises. No scope creep. Review it carefully and make sure it aligns with your lease obligations.
+
+**5. Sign Off and Let Them Handle It.**
+Once you have signed off on the quote, your job is to step back and let the contractor do their work. They will coordinate the trades, manage the schedule and deal with any issues that come up. Your focus should be on moving your business, not managing a construction site.
+
+## We Can Start This Week
+
+We specialise in urgent make good projects. We do [make goods](/services/make-good-solutions/) all day, every day. Our team of experienced tradespeople is ready to go, and we can typically start works within a few days of a site inspection.
+
+We manage the entire process, from the initial scope to the final handover. We deal with the landlord and property manager directly. That\u2019s not your problem. You get one point of contact and you\u2019ll know exactly who\u2019s handling it and what\u2019s getting done.
+
+Left your make good to the last minute? [Get in touch.](/contact)`
+  },
+  {
     id: "33",
     title: "Port Melbourne Warehouse | End of Lease Make Good",
     slug: "port-melbourne-warehouse-end-of-lease-make-good",
