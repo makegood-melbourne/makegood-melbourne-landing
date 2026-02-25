@@ -13,12 +13,13 @@ export interface BlogPost {
 export const blogPosts: BlogPost[] = [
   {
     id: "40",
-    slug: "make-good-vs-strip-out-vs-defit-melbourne",
-    title: "Make Good vs. Strip Out vs. Defit: What's the Difference?",
-    description: "The terms make good, strip out and defit are used interchangeably but mean different things. Here is what each term means and why it matters when getting quotes.",
+    slug: "make-good-strip-out-defit-melbourne",
+    title: "Make Good vs Strip Out vs Defit Melbourne | What's the Difference | Make Good Melbourne",
+    excerpt: "The terms make good, strip out and defit are used interchangeably but mean different things. Here is what each term means and why it matters when getting quotes.",
+    metaDescription: "Make good, strip out, defit \u2014 not the same thing. We explain what each term means and which service your commercial lease actually requires.",
     date: "2026-03-28",
     readTime: "10 min read",
-    image: "make-good-vs-strip-out-vs-defit-melbourne",
+    image: "/src/assets/blog/make-good-strip-out-defit-melbourne.webp",
     imageAlt: "Commercial building interior undergoing strip out and make good works with scissor lift and construction workers in Melbourne",
     content: `The terms make good, strip out and defit are often used interchangeably, but they mean different things. Understanding the difference matters when you are approaching the end of a commercial lease. It ensures you know what you are actually obligated to do — and that you are comparing apples with apples when you get quotes from contractors.
 
