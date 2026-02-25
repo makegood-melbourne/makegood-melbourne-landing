@@ -21,7 +21,7 @@ export const blogPosts: BlogPost[] = [
     image: "retail-make-good-shopping-centre-melbourne.webp",
     imageAlt: "Multi-level shopping centre interior with glass storefronts and skylights in Melbourne retail precinct",
     content: `
-Exiting a retail lease is not the same as leaving an office or warehouse. The make good process is more involved. You have your lease agreement, but you also have shopping centre management looking over your shoulder. Both have rules.
+[Exiting a retail lease is not the same as leaving an office or warehouse](/blog/office-strip-out). The make good process is more involved. You have your lease agreement, but you also have shopping centre management looking over your shoulder. Both have rules.
 
 For retail tenants in Melbourne, this means a different set of challenges. It is not just about a fresh coat of paint. It involves shopfronts, specialised fixtures and often strict centre guidelines that sit on top of your lease. This post covers the key differences, the typical scope of works and a practical timeline to get it done right.
 
@@ -29,9 +29,9 @@ For retail tenants in Melbourne, this means a different set of challenges. It is
 
 A retail make good goes further than a standard commercial tenancy. The work is more specific. It focuses on removing the unique elements of a retail fitout and returning the space to a bare shell or base building condition.
 
-**The Shopfront.** Your shopfront is your brand. The make good requires removing it entirely. That includes all external signage, window decals and any structural elements you installed. The landlord or centre management will expect the original facade and glazing reinstated to the condition it was in before your tenancy.
+**The Shopfront.** Your shopfront is your brand. [The make good requires removing it entirely](/services/strip-out-solutions/). That includes all external signage, window decals and any structural elements you installed. The landlord or centre management will expect the original facade and glazing reinstated to the condition it was in before your tenancy.
 
-**Fixtures and Fittings.** All custom-built joinery needs to come out. Point-of-sale counters, display units, shelving and feature walls. The base building walls, floors and ceilings need to be patched and repaired after removal.
+**Fixtures and Fittings.** All custom-built joinery needs to come out. Point-of-sale counters, display units, shelving and feature walls. [The base building walls, floors and ceilings need to be patched and repaired after removal](/services/make-good-solutions/patching-plastering/).
 
 **Flooring.** Retail flooring is often a key part of the store's design. Whether it is timber, custom tiling or specialised carpet, your lease will likely require you to remove it and restore the original concrete slab or base flooring underneath.
 
@@ -41,7 +41,7 @@ A retail make good goes further than a standard commercial tenancy. The work is 
 
 ## The Lease vs. Centre Management Guidelines
 
-As a retail tenant, you have two sets of rules to follow. The first is your lease agreement with the landlord. The second is the shopping centre's own fitout and make good guide. You need to comply with both.
+As a retail tenant, you have two sets of rules to follow. [The first is your lease agreement with the landlord](/learn/make-good-guide/). The second is the shopping centre's own fitout and make good guide. You need to comply with both.
 
 Your lease will contain a 'make good' or 'reinstatement' clause. This clause specifies the condition you need to return the premises to at the end of your tenancy. It is the primary legal document that defines what you are responsible for.
 
@@ -49,7 +49,7 @@ But in a shopping centre environment, it is not the only document.
 
 Shopping centre management will have its own detailed guidelines. These typically cover practical site issues — hours for noisy work, waste removal procedures, hoarding requirements and public safety protocols. These guidelines are enforced to keep the centre running smoothly for other tenants and the public. Get a copy of both your lease and the centre's latest make good guide before you start planning your exit.
 
-In Victoria, the *Retail Leases Act 2003* governs retail tenancies. The VSBC provides guidance on tenant rights and obligations. Your specific make good scope, however, is defined by your lease agreement.
+In Victoria, the *Retail Leases Act 2003* governs retail tenancies. [The VSBC provides guidance on tenant rights and obligations](/blog/tenants-guide-smooth-make-good-experience). Your specific make good scope, however, is defined by your lease agreement.
 
 ## Common Retail Make Good Works — A Checklist
 
@@ -118,9 +118,9 @@ The terms are often used interchangeably, but they serve different purposes. For
 
 A **Property Condition Report** — also called an ingoing or entry report — is the key document for a lease. It is created at the very start of a tenancy to document the exact condition of the property. It is the 'before' photo for the entire lease term. This is the report we use to define a make good scope.
 
-A **Dilapidation Report** is typically prepared to document the condition of a property *before* nearby construction, excavation or demolition work begins. It protects a property owner from damage caused by a neighbour's building works. While it is a detailed report, it is not tied to a lease agreement.
+A **Dilapidation Report** is typically prepared to document the condition of a property *before* nearby construction, excavation or [demolition work begins](/services/strip-out-solutions/demolition/). It protects a property owner from damage caused by a neighbour's building works. While it is a detailed report, it is not tied to a lease agreement.
 
-For a make good, the ingoing condition report is the document that sets the standard. It is the benchmark for what the property needs to be returned to.
+For a make good, [the ingoing condition report is the document that sets the standard](/blog/understanding-property-condition-reports). It is the benchmark for what the property needs to be returned to.
 
 ## The Contractor's View: How We Use a Condition Report
 
@@ -160,7 +160,7 @@ Finally, **a good report notes good condition, not just defects.** A report that
 
 ## Conclusion
 
-A good condition report is the foundation of a smooth make good. It provides clarity. It reduces risk. It sets clear expectations for everyone involved. From a contractor's standpoint, it is the single most important document after the lease itself.
+A good condition report is the foundation of [a smooth make good](/blog/tenants-guide-smooth-make-good-experience). It provides clarity. It reduces risk. It sets clear expectations for everyone involved. From a contractor's standpoint, it is the single most important document after the lease itself.
 
 If you take one thing away from this post, it is this: insist on a detailed, photographic report before you sign any commercial lease. It is the best investment you can make in a friction-free lease exit.
 
@@ -252,7 +252,7 @@ Mould can begin within 24 to 48 hours in the right conditions. Common locations 
 
 ## Reinstatement: how the repair phase should run without rework
 
-[Ceilings](/services/make-good-solutions/suspended-ceilings), [walls](/services/make-good-solutions/patching-plastering), floors, joinery and finishing. Sequencing and quality control. The key rule: dry, verify, then reinstate.
+[Ceilings](/services/make-good-solutions/suspended-ceilings), [walls](/services/make-good-solutions/patching-plastering), [floors](/services/make-good-solutions/flooring-reinstatement/), joinery and finishing. Sequencing and quality control. The key rule: dry, verify, then reinstate.
 
 ## Handover documentation: what you should receive
 
@@ -338,7 +338,7 @@ Ending a warehouse lease in Port Melbourne doesn't have to be a nightmare. With 
 Make good is your contractual obligation to return the warehouse to the condition specified in your lease—usually matching the condition when you moved in, minus fair wear and tear. For most Port Melbourne warehouse tenants, this means:
 
 **Common Make Good Requirements:**
-- Removing racking, mezzanines, and other tenant installations
+- [Removing racking](/services/strip-out-solutions/pallet-racking-removal/), mezzanines, and other tenant installations
 - Repairing damaged concrete floors (wheel marks, gouges, chemical stains)
 - Removing or repainting line marking to landlord specifications
 - Disconnecting tenant electrical and plumbing installations
@@ -347,7 +347,7 @@ Make good is your contractual obligation to return the warehouse to the conditio
 - Professional cleaning of the entire premises
 - Waste removal and site clearance
 
-The key is your lease agreement and the **ingoing condition report**. If you didn't get a detailed condition report with photos when you moved in, you're already at a disadvantage. That's why we always tell tenants: document everything on day one.
+The key is your lease agreement and the **[ingoing condition report](/blog/dilapidation-reports-melbourne-make-good)**. If you didn't get a detailed condition report with photos when you moved in, you're already at a disadvantage. That's why we always tell tenants: document everything on day one.
 
 ### Fair Wear and Tear: What You're NOT Responsible For
 
@@ -389,7 +389,7 @@ We can't stress this enough: start early. We've seen tenants leave everything un
 **Get Your Ducks in a Row:**
 - Choose your make good contractor and lock in dates
 - Check if you need permits for any structural work (mezzanine removal, etc.)
-- Arrange asbestos testing if your warehouse was built pre-1990
+- Arrange [asbestos testing](/blog/asbestos-management-commercial-make-good-safe-removal) if your warehouse was built pre-1990
 - Start negotiating with your landlord about scope of works
 - Clear out equipment and inventory to allow access for contractors
 
@@ -419,7 +419,7 @@ Here's what different warehouse components typically involve:
 |-----------|----------------|------------------|----------------|
 | Pallet Racking | Dismantle, remove anchor bolts, patch and seal floor holes | 1-3 weeks | Moderate-High (depends on height/quantity) |
 | Mezzanine Floor | Structural dismantling, engineering sign-off may be required | 2-6 weeks | High (complex work + potential permits) |
-| Concrete Floor Repairs | Grinding, patching, epoxy coating or sealing | 1-2 weeks | Variable by area |
+| [Concrete Floor Repairs](/services/make-good-solutions/warehouse-flooring/) | Grinding, patching, epoxy coating or sealing | 1-2 weeks | Variable by area |
 | Line Marking | Chemical removal or paint-over | 3-7 days | Low-Moderate |
 | Electrical Work | Disconnect and cap-off (licensed electrician required) | 1-2 weeks | Moderate |
 | Internal Offices | Demolition, removal, patch walls and ceiling | 1-2 weeks | Moderate |
@@ -1153,7 +1153,7 @@ Asbestos removal can significantly increase make good costs, particularly:
 
 ## Make Good Australia: Licensed Asbestos Management
 
-At Make Good Australia, we prioritise the safety of workers, building occupants and the environment in all projects. We coordinate professional asbestos management as an integrated component of commercial make good services.
+At Make Good Australia, we prioritise the safety of workers, building occupants and the environment in all projects. We coordinate professional asbestos management as an integrated component of [commercial make good services](/services/make-good-solutions/).
 
 ### Our Asbestos Management Services
 
@@ -1231,7 +1231,7 @@ Safety first, compliance always, results guaranteed
     date: "2025-09-15",
     image: "carpet-tile-replacement.jpg",
     content: `
-When it comes to end of lease make good obligations, carpet tile replacement and installation is one of the most visible elements that determines whether a tenancy is returned to its original condition. Professional floor preparation is critical to achieving a uniform, compliant finish that meets lease requirements.
+When it comes to end of lease make good obligations, [carpet tile replacement and installation](/services/make-good-solutions/flooring-reinstatement/) is one of the most visible elements that determines whether a tenancy is returned to its original condition. Professional floor preparation is critical to achieving a uniform, compliant finish that meets lease requirements.
 
 ## The Importance of Proper Floor Preparation
 
@@ -1300,8 +1300,8 @@ The comprehensive floor grinding process we provide delivers multiple benefits:
 
 Carpet tile installation is typically one of the final stages of a make good project. We coordinate timing with:
 
-- Completion of ceiling works
-- Final paint touch-ups
+- [Completion of ceiling works](/services/make-good-solutions/suspended-ceilings/)
+- [Final paint touch-ups](/services/make-good-solutions/painting/)
 - Electrical and data reinstatement
 - Final clean
 
@@ -1356,7 +1356,7 @@ Our licensed and experienced team has completed thousands of square meters of co
 
 ## Get Started
 
-If your lease end is approaching and carpet replacement is required, contact our team early in your planning process. We'll assess your floor condition, provide detailed quotations, and schedule works to align with your make good timeline.
+If your lease end is approaching and carpet replacement is required, [contact our team](/contact/) early in your planning process. We'll assess your floor condition, provide detailed quotations, and schedule works to align with your [make good timeline](/learn/our-process/).
 
 Professional floor preparation and carpet tile installation removes the stress from one of the most visible aspects of your make good obligations, ensuring a smooth transition and full security deposit return.
     `
@@ -1376,7 +1376,7 @@ Professional floor preparation and carpet tile installation removes the stress f
 ### What is Electrical Make Safe?
 
 **Definition and Purpose**:
-Electrical make safe is the process of safely decommissioning, isolating, and disconnecting all electrical installations within a tenancy or area prior to demolition or strip-out works. The process ensures no live electrical connections remain that could pose hazards to demolition workers, and returns electrical systems to their base building or original configuration as required for make good compliance.
+Electrical make safe is the process of safely decommissioning, isolating, and disconnecting all electrical installations within a tenancy or area prior to [demolition or strip-out works](/services/strip-out-solutions/demolition/). The process ensures no live electrical connections remain that could pose hazards to demolition workers, and returns electrical systems to their base building or original configuration as required for make good compliance.
 
 **Why Electrical Make Safe is Essential**:
 - **Worker Safety**: Eliminates risk of electrocution during demolition
@@ -1821,7 +1821,7 @@ Creating safe working environments for make good and demolition`,
 
 ### Common Ceiling Types in Commercial Properties
 
-**Suspended Ceiling Grid Systems**:
+**[Suspended Ceiling Grid Systems](/services/make-good-solutions/suspended-ceilings/)**:
 - Metal grid framework suspended from structural ceiling
 - Acoustic ceiling tiles (typically 600mm x 600mm)
 - Integrated with light fittings, air conditioning diffusers, sprinklers
@@ -1829,7 +1829,7 @@ Creating safe working environments for make good and demolition`,
 - Most common in commercial offices
 - Various tile finishes: tegular edge, square edge, concealed edge
 
-**Plasterboard Ceilings**:
+**[Plasterboard Ceilings](/services/make-good-solutions/patching-plastering/)**:
 - Gypsum plasterboard sheets fixed to ceiling framework
 - Flush finished and painted surface
 - Services integration requires cut-outs and access panels
@@ -2324,7 +2324,7 @@ Professional ceiling solutions for all commercial properties`,
     excerpt: "Parapet failure and facade collapse represent serious building emergencies requiring immediate response to protect public safety. From emergency site securing and debris removal to structural assessment and reconstruction, professional emergency repair services manage the complete response. Learn about causes of parapet failure, emergency procedures, council requirements, structural engineering, and reconstruction processes.",
     metaDescription: "Parapet failure or facade collapse? Learn about emergency building repairs, site securing, structural assessment, and reconstruction for Melbourne commercial properties.",
     image: "parapet-failure-emergency-repairs.jpg",
-    content: `Parapet failure and facade collapse represent some of the most serious building emergencies in commercial properties, creating immediate public safety risks and requiring urgent professional response. When parapets or building facades fail and debris falls onto footpaths, roads, or adjacent properties, rapid action is essential to secure the site, remove hazards, assess structural integrity, and commence repairs. Professional emergency building repair services coordinate the entire response, from initial emergency securing through structural engineering assessment to complete reconstruction and compliance. This comprehensive guide explores parapet failure causes, emergency response procedures, regulatory requirements, and reconstruction processes for Melbourne commercial properties.
+    content: `Parapet failure and facade collapse represent some of the most serious building emergencies in commercial properties, creating immediate public safety risks and requiring urgent professional response. When parapets or building facades fail and debris falls onto footpaths, roads, or adjacent properties, rapid action is essential to secure the site, remove hazards, [assess structural integrity](/services/remediation-solutions/structural/), and commence repairs. Professional emergency building repair services coordinate the entire response, from initial emergency securing through structural engineering assessment to complete reconstruction and compliance. This comprehensive guide explores parapet failure causes, emergency response procedures, regulatory requirements, and reconstruction processes for Melbourne commercial properties.
 
 ## Understanding Parapet Failure
 
@@ -2819,7 +2819,7 @@ Available during business hours`,
 - Data and communications cabling
 
 **Hazardous and Regulated Waste**:
-- Asbestos-containing materials (if present in older buildings)
+- [Asbestos-containing materials](/blog/asbestos-management-commercial-make-good-safe-removal) (if present in older buildings)
 - Fluorescent tubes and lamps containing mercury
 - Electronic waste (e-waste) from office equipment
 - Paint and chemical waste
@@ -3535,7 +3535,7 @@ Committed to environmental responsibility in every project`,
 - Restoration works: 4-8 weeks
 - Total timeline: 2-3 months
 
-**Moderate Fire Damage** (significant areas affected, structural repairs):
+**Moderate Fire Damage** (significant areas affected, [structural repairs](/services/remediation-solutions/structural/)):
 - Assessment and scope: 2-3 weeks
 - Insurance approval: 4-6 weeks
 - Restoration works: 8-16 weeks
@@ -3822,7 +3822,7 @@ Available during business hours`,
 
 ### Epoxy and Polymer Coatings
 
-**Epoxy Floor Coatings** (particularly for basement or covered car parks):
+**[Epoxy Floor Coatings](/services/epoxy-flooring/)** (particularly for basement or covered car parks):
 
 **Benefits**:
 - Seals concrete surface against moisture and chemicals
@@ -4371,7 +4371,7 @@ External cladding refers to the protective and decorative covering applied to bu
 **Uncovered Issues**:
 - Water damage behind cladding
 - Deteriorated building wrap or membrane
-- Structural defects requiring repair
+- [Structural defects requiring repair](/services/remediation-solutions/structural/)
 - Inadequate insulation
 - Building movement or cracking
 - Contamination (asbestos, lead paint)
@@ -4901,7 +4901,7 @@ When active leaks are present:
 
 **Structural Inspection**:
 - Check purlin condition and alignment
-- Identify any structural repairs needed
+- Identify any [structural repairs](/services/remediation-solutions/structural/) needed
 - Assess fixing points for adequacy
 - Replace damaged or corroded purlins if necessary
 
