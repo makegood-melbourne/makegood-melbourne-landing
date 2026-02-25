@@ -437,145 +437,157 @@ Need to scope a make good in Melbourne? [Get in touch.](/contact)`
     image: "commercial-water-damage-ceiling-melbourne.jpg",
     imageAlt: "Commercial ceiling water damage showing exposed ceiling grid and damaged plasterboard requiring remediation in Melbourne office",
     content: `
-Water damage in a commercial building rarely stays small. A minor leak above a ceiling grid can become soaked insulation, damaged electrical components, stained walls, swollen joinery and, if left long enough, mould growth and odour complaints.
+Water damage in a commercial building rarely stays small. A minor leak above a ceiling grid can become soaked insulation, damaged electrical components, stained walls, swollen joinery and, if left long enough, mould growth and occupant complaints. What looks like a ceiling tile problem is often a much bigger problem hiding above it.
 
-In Melbourne, issues often show up after shutdown periods and holiday closures. Undetected leaks, failed HVAC condensate drains, roof penetrations or burst flexi hoses can drip quietly for days.
+In Melbourne, water damage issues frequently show up after shutdown periods and holiday closures. Undetected leaks, failed HVAC condensate drains, roof penetrations or burst flexi hoses can drip quietly for days before anyone notices. By the time the damage is visible, the clock has already been running.
 
-This guide covers what to do in the first 48 hours, when a repair becomes remediation and how the job should run from make safe through to reinstatement with proper handover documentation.
+This guide covers what to do in the first 48 hours, when a repair becomes remediation and how the job should run from make safe through to reinstatement — with the right documentation at the end.
 
-## When water damage needs remediation, not just repairs
+---
 
-Triggers and signs:
+## When Water Damage Needs Remediation, Not Just Repairs
 
-- [Ceiling](/services/make-good-solutions/suspended-ceilings) sagging, stained tiles or recurring water marks
-- Musty odour, especially when HVAC runs
-- Carpet tiles squelching, lifting or darkened edges
-- Blistering paint or bubbling plasterboard, swollen skirtings
-- Electrical risk from wet fittings, GPOs, comms rooms or plant rooms
-- Occupant complaints about indoor air quality
+Not every leak requires a full remediation response. But there are specific signs that tell you a repair is not enough.
 
-## First 48 hours checklist for property managers, tenants and owners
+Sagging, stained or recurring water marks on [ceiling tiles](/services/make-good-solutions/suspended-ceilings/) are the most visible indicator. If the same tile keeps staining after being replaced, the source has not been fixed and moisture is sitting above the grid. A musty or damp odour — particularly when the HVAC system runs — is a reliable early warning sign of mould growth in a ceiling void or wall cavity. Carpet tiles that squelch underfoot, lift at the edges or show dark discolouration along their borders have usually been wet for longer than they look.
 
-### 0 to 2 hours: stop the source and reduce risk
+Blistering paint, bubbling plasterboard and swollen skirtings all indicate that moisture has penetrated behind the surface layer. These materials need to come out before any reinstatement can begin — painting over damp plasterboard is one of the most common and costly mistakes made in reactive repair work.
 
-- Stop the water, isolate supply or plant and call a plumber if needed
-- If electrical exposure is possible, [isolate power to the affected area](/services/strip-out-solutions/make-safe)
-- Control access due to slip hazards and ceiling collapse risk
-- Record key details: time discovered, suspected source, areas affected
+The most urgent situation is water near electrical components. Wet fittings, saturated GPOs, compromised comms rooms or plant rooms require immediate electrical isolation before any other works proceed. This is not optional.
 
-### 2 to 12 hours: prevent secondary damage
+If any of these signs are present, you are likely dealing with remediation, not just a repair.
 
-- Remove standing water safely, do not push water into carpet edges
-- Lift and protect contents such as IT equipment, stock and furniture
-- Do not wait on bulging ceiling tiles as there is a collapse risk
-- Ventilate where safe but avoid uncontrolled airflow if mould is suspected
+---
 
-### 12 to 48 hours: move from drying to managed drying
+## The First 48 Hours: What to Do and When
 
-- Arrange an inspection with moisture mapping
-- Identify affected materials including plasterboard, insulation, tiles, joinery and flooring
-- Decide salvage versus strip out early
-- Plan containment, dehumidification and reinstatement sequencing
+The first 48 hours after water damage is discovered are the most critical. Decisions made — or not made — in this window determine whether the job stays manageable or escalates into a major reinstatement project.
 
-### What not to do
+### 0 to 2 Hours: Stop the Source and Reduce Risk
 
-- Do not repaint, seal or patch before it is dry
-- Do not rely on household fans alone
-- Do not ignore ceiling voids as damage is often worst above the grid
-- Do not disturb suspected mould without appropriate controls
+The first priority is stopping the water. Isolate the supply or plant and call a licensed plumber if the source is not immediately obvious or accessible. Do not assume a leak has stopped on its own.
 
-## Containment and make safe: what a professional response looks like
+If there is any possibility of electrical exposure — water near fittings, switchboards, GPOs or cabling — [isolate power to the affected area](/services/strip-out-solutions/make-safe/) immediately. This is a task for a licensed electrician. Wet electrical systems are a serious safety risk and nothing else should happen until they are made safe.
 
-[Electrical isolation and inspection](/services/strip-out-solutions/make-safe) by a licensed electrician is the first step. Making ceilings safe, removing water loaded tiles where required, barriers and signage for slip and access control, containment zones where required to reduce cross contamination risk, staged works for occupied sites and after hours coordination.
+Control access to the affected area. Wet floors are a slip hazard and water-loaded ceiling tiles can collapse without warning. Document everything as you go — time of discovery, suspected source, areas affected and any initial photos. This information matters later for insurance, for scope definition and for working out who is responsible.
 
-## Drying and dehumidification: what matters, and what does not
+### 2 to 12 Hours: Prevent Secondary Damage
 
-Moisture mapping with baseline readings and targets, correct dehumidification and air movement placement, concealed moisture checks behind skirtings, inside wall cavities and under flooring where relevant, monitoring and logs where required, why the rule is dry, verify, then reinstate.
+Once the source is stopped and the area is safe to access, the focus shifts to limiting how far the damage spreads. Remove standing water carefully — do not push it into carpet edges or adjacent areas where it will wick further. Lift and protect contents: IT equipment, stock, furniture and anything else that is at risk of further damage.
 
-## Mould: when it is likely, when it is not and how it is handled
+Do not leave water-loaded ceiling tiles in place. If tiles are sagging or visibly heavy with absorbed water, they need to come down — the collapse risk is real. Ventilate the space where it is safe to do so, but avoid uncontrolled airflow if mould is already suspected, as this can spread spores to unaffected areas.
 
-Mould can begin within 24 to 48 hours in the right conditions. Common locations in commercial buildings such as insulation, plasterboard backing, carpet tile backing and ceiling void dust. The principles: fix the moisture source, contain where required, remove unsalvageable porous materials, clean and dry remaining structures.
+### 12 to 48 Hours: Move from Reactive to Managed
 
-**Safety note:** If occupants report symptoms or the affected area is extensive, works should be carried out with appropriate controls and, where required, independent clearance.
+This is where a professional response separates itself from a reactive one. By this point you need moisture mapping — actual readings across all affected surfaces and materials, not a visual estimate. This tells you what is wet, how wet it is and what the target moisture levels need to be before reinstatement can begin.
 
-## Strip out versus salvage: how decisions are made
+Identify every affected material: plasterboard, insulation, ceiling tiles, carpet tiles, vinyl, joinery and flooring. Make the call early on what can be salvaged and what needs to come out. The longer you wait on this decision, the more salvageable materials become unsalvageable. Plan the containment, dehumidification and reinstatement sequence before any work starts.
+
+### What Not to Do
+
+Do not repaint, seal or patch over surfaces before they are fully dry. Trapping moisture behind a fresh paint layer or new plasterboard is how a problem gets hidden rather than fixed — and it will come back worse. Do not rely on household fans for drying. Commercial dehumidification equipment is a different class entirely. Do not ignore ceiling voids — the worst damage is almost always above the grid, not below it. And do not disturb suspected mould without appropriate controls in place.
+
+---
+
+## Containment and Make Safe: What a Professional Response Looks Like
+
+Before any drying or remediation works begin, the site needs to be [made safe](/services/strip-out-solutions/make-safe/). Electrical isolation and inspection by a licensed electrician is the first step — not something to defer until later in the process.
+
+Once electrical safety is confirmed, the focus shifts to physical containment. Water-loaded ceiling tiles are removed where required. Slip hazards are managed with appropriate barriers and signage. Where mould is suspected or confirmed, containment zones are established to prevent cross-contamination to unaffected areas of the building. On occupied sites, works are staged and scheduled to minimise disruption — often after hours for the most intrusive phases.
+
+This is not overly cautious. It is the correct sequencing. Skipping containment to get to the drying phase faster creates bigger problems downstream.
+
+---
+
+## Drying and Dehumidification: What Actually Matters
+
+Effective drying is not just about placing equipment in the room and waiting. It requires moisture mapping with baseline readings, clearly defined target moisture levels for each material type, correct placement of dehumidification and air movement equipment, and monitoring logs that track progress against those targets.
+
+Concealed moisture is the part that gets missed. Behind skirtings, inside wall cavities and under flooring, moisture levels can remain elevated long after surface readings look acceptable. These areas need to be checked — not assumed to be dry because the visible surfaces feel dry.
+
+The rule is simple: dry, verify, then reinstate. Any contractor who starts reinstatement work before moisture levels are confirmed and documented is skipping a step that will cost more to fix later.
+
+---
+
+## Mould: When It Is Likely, When It Is Not and How It Is Handled
+
+Mould can begin growing within 24 to 48 hours in warm conditions with the right combination of moisture and organic material. In commercial buildings, the most common locations are insulation batts, the paper backing of plasterboard, carpet tile backing and the dust that accumulates in ceiling voids over time.
+
+The approach is consistent regardless of the scale: fix the moisture source first, contain the affected area where required, remove all unsalvageable porous materials and clean and dry remaining structures before any reinstatement begins. Mould cannot be managed by painting over it or sealing it in.
+
+For smaller, quickly addressed incidents where the source is fixed and materials are removed promptly, independent clearance testing is often not required. Testing becomes more relevant when occupants report health symptoms, when the affected area is large or when there is genuine uncertainty about the extent of contamination. If occupants are reporting symptoms or the affected area is extensive, works should be carried out with appropriate controls and independent clearance should be obtained before reoccupation.
+
+---
+
+## Strip Out vs. Salvage: How Decisions Are Made
+
+One of the most important calls in a water damage job is deciding what can be saved and what needs to come out. Getting this wrong in either direction costs money — replacing materials that could have been dried costs the client unnecessarily, while salvaging materials that should have been removed sets up a mould problem down the track.
 
 | Material | Typical Decision |
-|----------|------------------|
+| --- | --- |
 | Ceiling tiles | Usually replace |
-| Ceiling grid | Often salvageable after drying and cleaning unless corroded |
-| Plasterboard | Depends on saturation and how long it has been wet |
-| Insulation | Often replace if wet or contaminated |
-| Carpet tiles | Depends on how quickly it is addressed and whether odour persists |
-| Vinyl or planks | Depends on migration under edges and adhesive condition |
-| Timber trims and joinery | Depends on swelling and warping |
+| Ceiling grid | Often salvageable after drying and cleaning, unless corroded |
+| Plasterboard | Depends on saturation level and how long it has been wet |
+| Insulation | Usually replace if wet or contaminated |
+| Carpet tiles | Depends on how quickly addressed and whether odour persists |
+| Vinyl or planks | Depends on moisture migration under edges and adhesive condition |
+| Timber trims and joinery | Depends on degree of swelling and warping |
 | Paint systems | Only after substrate dryness is verified |
 
-## Reinstatement: how the repair phase should run without rework
+These decisions should be made by an experienced contractor on site, with moisture readings to support them — not based on appearances alone.
 
-[Ceilings](/services/make-good-solutions/suspended-ceilings), [walls](/services/make-good-solutions/patching-plastering), [floors](/services/make-good-solutions/flooring-reinstatement/), joinery and finishing. Sequencing and quality control. The key rule: dry, verify, then reinstate.
+---
 
-## Handover documentation: what you should receive
+## Reinstatement: How the Repair Phase Should Run
 
-Note: no project photos required
+Once the affected area is dry and verified, reinstatement can begin. The sequencing here matters. Ceilings first, then walls, then floors — working from top to bottom ensures that reinstatement of one element is not compromised by works above it.
 
-Include:
+[Ceiling reinstatement](/services/make-good-solutions/suspended-ceilings/) involves replacing damaged tiles, repairing or replacing grid sections, reinstating any lighting or services that were affected and matching the finish to the surrounding area. [Wall repairs](/services/make-good-solutions/patching-plastering/) involve patching plasterboard, allowing adequate drying time between coats and [painting](/services/make-good-solutions/painting/) to the correct base building specification — not just touching up the affected area. [Floor reinstatement](/services/make-good-solutions/flooring-reinstatement/) depends on the material: carpet tiles, vinyl or timber each have their own process and their own sequencing requirements relative to wall and ceiling works.
 
-- Moisture readings and logs where applicable
-- Scope summary and what was repaired to prevent recurrence
-- Trade compliance documents where relevant such as electrical checks and SWMS
-- Waste disposal dockets where contaminated materials were removed
-- Final QA checklist and sign off
+Joinery and finishes are the last phase. These are the elements most visible to building users and they need to match the existing standard, not approximate it.
 
-## Common causes of commercial water damage in Melbourne sites
+Quality control throughout is what prevents rework. A final QA check against the original scope before handover is how you confirm the job is actually finished.
 
-- HVAC condensate drain blockages or overflow
-- Failed flexi hoses in kitchens and amenities
-- [Roof penetrations and flashing failures](/services/remediation-solutions/polycarbonate-roofing-skylights)
-- Gutter overflow onto facades and ceiling voids
-- Sprinkler or building services leaks
-- [Waterproofing failures](/services/remediation-solutions/waterproofing) in mixed use buildings
-- Plant room or riser leaks migrating through slabs or walls
+---
 
-## Need remediation and reinstatement under one contractor
+## Common Causes of Commercial Water Damage in Melbourne
 
-We handle water damage remediation from make safe through to reinstatement across Melbourne's commercial properties. From containment and drying to [structural repairs](/services/remediation-solutions/structural) and final finishes, we coordinate the entire process so your building is back in operation without the back and forth between multiple contractors.
+Most commercial water damage incidents we attend come down to a handful of recurring causes: HVAC condensate drain blockages or overflow; failed flexi hoses in kitchens and amenities; [roof penetrations and flashing failures](/services/remediation-solutions/polycarbonate-roofing-skylights/); gutter overflow onto facades and into ceiling voids; sprinkler or building services leaks; [waterproofing failures](/services/remediation-solutions/waterproofing/) in mixed-use buildings; and plant room or riser leaks migrating through slabs or walls.
 
-[Get in touch for a free quote](/contact)
+Several of these are maintenance issues — things that would be caught in a regular inspection and addressed before they cause damage. Others are building defects that the owner or landlord is responsible for. Understanding which category a damage event falls into matters for insurance, for responsibility and for making sure the underlying cause is actually fixed before reinstatement.
+
+---
+
+## Handover Documentation: What You Should Receive
+
+At the end of a water damage remediation and reinstatement project, you should receive a clear documentation package. This should include moisture readings and monitoring logs from the drying phase; a scope summary covering what was repaired and what was done to prevent recurrence; trade compliance documents where relevant, including electrical safety certificates and safe work method statements; [waste](/blog/waste-management-sustainability-make-good-works) disposal dockets where contaminated materials were removed from site; and a final QA checklist signed off against the completed scope.
+
+This documentation matters. It protects you if the damage reoccurs and the cause is disputed. It satisfies your insurer. And for a commercial tenant, it provides evidence that the reinstatement was carried out properly — which is relevant if the damage occurred during a lease and affects the [make good](/services/make-good-solutions/) at the end.
+
+---
 
 ## FAQs
 
 **How quickly can mould grow after a leak?**
-
-Mould can begin growing within 24 to 48 hours in the right conditions—warm temperatures, moisture and organic materials like plasterboard backing or insulation. The faster you dry affected areas, the lower the risk.
+Within 24 to 48 hours in warm conditions with moisture and organic material present. The faster affected areas are dried, the lower the risk.
 
 **Can remediation happen while the building is occupied?**
-
 Yes, with proper containment and staging. We work after hours where needed and use barriers to isolate affected zones. For larger jobs or where mould is present, temporary relocation of nearby occupants may be required.
 
 **Do we always need mould testing?**
-
-Not always. If the source is fixed quickly, affected materials are removed and the space is dried properly, testing is often unnecessary. Testing is more relevant when occupants report symptoms, the affected area is extensive or there is uncertainty about contamination levels.
-
-**Should ceiling tiles be removed immediately?**
-
-If tiles are sagging or water logged, yes—there is a collapse risk. If tiles are damp but stable, removal can wait until a proper assessment is done. Do not leave water loaded tiles in place for days.
-
-**Can carpet tiles be saved?**
-
-Sometimes. If water is extracted quickly (within hours), tiles are lifted and dried properly, and no odour develops, they can be salvaged. If water sits for more than 24 hours or odour persists after drying, replacement is usually required.
+Not always. If the source is fixed quickly, affected materials are removed and the space is dried properly, testing is often not required. It becomes more relevant when occupants report symptoms, the affected area is extensive or there is uncertainty about contamination levels.
 
 **What is the biggest mistake people make with water damage?**
+Waiting. The longer water sits, the more damage escalates — materials swell, adhesives fail, mould begins and costs compound. Fast response in the first 48 hours is what separates a contained repair from a full reinstatement project.
 
-Waiting. The longer water sits, the more damage occurs—materials swell, adhesives fail, mould begins and costs escalate. Fast response in the first 48 hours makes the difference between a repair and a full remediation.
+**Who is responsible — tenant or landlord?**
+It depends on the cause. Landlords are typically responsible for building defects, roof leaks, failed [waterproofing](/services/remediation-solutions/waterproofing/) and building services failures. Tenants are responsible for damage caused by their operations, equipment or failure to report issues promptly. Check your lease and notify the landlord immediately when water damage occurs.
 
-**Is remediation different from [make good](/learn/make-good-guide)?**
+---
 
-Yes. Remediation addresses damage, contamination or defects—fixing the problem and restoring the building to a safe, functional state. Make good is about returning a tenancy to its original condition at lease end. Sometimes they overlap, but the drivers are different.
+We handle water damage remediation from make safe through to reinstatement across Melbourne commercial properties. One contractor, coordinated from start to finish.
 
-**Who is responsible in a lease, tenant or landlord?**
-
-It depends on the cause. Landlords are typically responsible for building defects, roof leaks, failed waterproofing and building services failures. Tenants are responsible for damage caused by their operations, equipment or failure to report issues promptly. Check your lease and notify the landlord immediately when water damage occurs.`
+[Get in touch for a scope and quote.](/contact)`
   },
   // Blog post id:34 "commercial-painting-melbourne-make-good" REMOVED — duplicate of /services/make-good-solutions/painting/
   // 301 redirect added in netlify.toml
