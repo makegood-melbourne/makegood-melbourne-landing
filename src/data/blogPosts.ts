@@ -12,6 +12,137 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: "39",
+    slug: "warehouse-factory-make-good-melbourne",
+    title: "The Ultimate Guide to Warehouse & Factory Make Goods in Melbourne",
+    excerpt: "A warehouse or factory make good is a different beast to a standard office strip-out. The scale is larger, the machinery is heavier and the potential for disputes is higher. This guide breaks down the process from a contractor's perspective.",
+    date: "2026-02-25",
+    image: "/src/assets/blog/warehouse-factory-make-good-melbourne.webp",
+    imageAlt: "Empty industrial warehouse interior with steel frame structure and polished concrete floor ready for make good handover in Melbourne",
+    ogImage: "/og/blog/warehouse-factory-make-good-melbourne.jpg",
+    content: \`
+A warehouse or factory make good is a different beast to a standard office strip-out. The scale is larger, the machinery is heavier and the potential for disputes is higher. As specialists in industrial and commercial [make goods](/services/make-good-solutions/), we have seen what goes right and what goes wrong when tenants exit a warehouse or factory lease. This guide breaks down the process from a contractor's perspective — what's involved, what it costs, where tenants get caught out and how to get it done properly.
+
+---
+
+## Why Warehouse Make Goods Are More Complex Than You Think
+
+Most tenants underestimate what a warehouse make good actually involves. It is not just a clean-out. Over the course of a commercial lease, an industrial tenant often makes significant changes to a property — installing mezzanine floors, embedding [pallet racking](/services/strip-out-solutions/pallet-racking-removal/) into the concrete slab, running new electrical and plumbing services, building internal office structures and applying specialised floor coatings. All of that needs to be undone.
+
+The other thing that makes industrial make goods more complex is the sheer size of the space. A 3,000 square metre warehouse with a full racking system, a mezzanine floor and a tenant-installed amenities block is a major project. It involves structural engineers, licensed electricians and plumbers, [demolition](/services/strip-out-solutions/demolition/) crews, concrete specialists and waste removal contractors. Coordinating all of that while running a business and managing a [relocation](/services/handover-solutions/end-of-lease-relocation/) is a significant undertaking.
+
+The disputes are also bigger. In an office make good, a landlord might argue over a wall that was moved or a carpet that needs replacing. In a warehouse make good, the disagreements tend to involve concrete floor damage, incomplete racking removal or services that weren't properly decommissioned. These disputes can run into tens of thousands of dollars. Having a thorough ingoing [condition report](/blog/dilapidation-reports-melbourne-make-good) and a contractor who documents their work throughout the project is how you protect yourself.
+
+---
+
+## What Is Included in a Warehouse or Factory Make Good?
+
+While every lease is different, a typical industrial make good in Melbourne will involve a core set of works. The goal is to return the property to the condition it was in at the start of your lease, as documented in your ingoing condition report.
+
+**Racking and Shelving Removal:** All [pallet racking](/services/strip-out-solutions/pallet-racking-removal/), cantilever racking and shelving systems you have installed need to be dismantled and removed from site. This includes removing all anchor bolts from the concrete slab — not just the racking itself.
+
+**Mezzanine Floor Removal:** If you have installed a mezzanine floor for extra storage or office space, this will almost always need to be removed. This is a structural job that requires careful planning and engineering sign-off. It is not something you can hand off to a general labour crew.
+
+**Concrete Floor Repairs:** The concrete slab is one of the most important parts of a warehouse make good. We grind the floor to remove anchor bolt residue, patch any cracks or holes and clean up oil or chemical stains. The goal is a clean, safe and level [warehouse floor](/services/make-good-solutions/warehouse-flooring/).
+
+**Machinery and Equipment Disconnection:** Any specialised machinery you have installed needs to be professionally disconnected and removed. This often involves licensed electricians and plumbers to [make the services safe](/services/strip-out-solutions/make-safe/) before anything can be touched.
+
+**Internal Structure Removal:** Any offices, partition walls or lunchrooms you have built within the warehouse need to be [demolished](/services/strip-out-solutions/demolition/) and removed. That includes the slab penetrations and any services that were run to those areas.
+
+**Service Reinstatement:** We reinstate base building services like lighting, plumbing and fire systems to their original layout. If you've moved sprinkler heads to accommodate racking, those need to go back.
+
+**Full Site Clean:** This includes a high-pressure clean of the walls and floors, [cleaning](/services/handover-solutions/end-of-lease-cleaning/) of amenities and a final removal of all [waste](/blog/waste-management-sustainability-make-good-works) from the site. Waste disposal in a warehouse make good is not a small line item — construction and industrial waste needs to be handled by a licensed contractor.
+
+---
+
+## The Biggest Mistakes We See Warehouse Tenants Make
+
+**Underestimating the Timeline.**
+A warehouse make good takes time. Assuming it can all be done in the last week of the lease is one of the most common and costly mistakes we see. For a large warehouse with significant infrastructure, the make good process can take four to eight weeks. Start planning at least three to six months before your lease ends. If you are already inside that window, you need to [move fast](/blog/last-minute-make-good-melbourne) — but you still need a plan, not a scramble.
+
+**Not Having a Detailed Condition Report.**
+With no clear record of the property's original condition, you are exposed to the landlord's interpretation of the make good clause. A detailed ingoing [condition report](/blog/dilapidation-reports-melbourne-make-good) with high-resolution photos is your best protection against unfair claims. We have seen this single document save tenants tens of thousands of dollars. If you do not have one, or it was not thorough, your negotiating position weakens considerably.
+
+**Trying to Manage the Trades Themselves.**
+Coordinating multiple trades in a high-risk industrial environment is a full-time job. You need to manage sequencing — racking can't come out before the structural engineer has signed off, concrete can't be ground before all the bolts are removed, services can't be reinstated before the demolition is finished. One contractor who manages the whole project is faster, safer and almost always cheaper than trying to run it yourself.
+
+**Leaving It to the Landlord.**
+If you hand back keys on a space that isn't fully made good, the landlord will arrange the works themselves and charge it back to you — with their margin on top. That bill will be higher than if you had managed the project yourself. It also puts you in a reactive position with no say over who does the work, what standard it's done to, or what it costs.
+
+---
+
+## How We Handle a Warehouse Make Good
+
+We have a proven process for managing industrial make goods. It is built around clear communication and detailed planning.
+
+We start with a site inspection. We walk the site with you, review your lease and ingoing condition report, and identify every item that needs to be addressed. We build a detailed scope of works that maps directly to your lease obligations — not a generic checklist, but a document specific to your tenancy.
+
+From there, we provide a fixed-price quote based on that scope. No hidden costs, no surprises. You know exactly what the project will cost before we start.
+
+Once the quote is approved, our project manager takes over. They create a detailed schedule, induct all trades onto site and manage the day-to-day works. They are your single point of contact from start to finish. You do not need to be on site every day managing trades who are not talking to each other — that is our job.
+
+Finally, we conduct a final walkthrough with you and the landlord or property manager to sign off on the completed works. We hand over a property that is fully compliant with your lease obligations, documented and ready for the next tenant.
+
+---
+
+## A Deeper Dive into Warehouse Make Good Components
+
+### Concrete Floor Remediation
+
+The concrete floor is the workhorse of any warehouse and it is often the most contentious part of a make good. Years of forklift traffic, pallet dragging and chemical spills leave their mark. What is fair wear and tear and what is damage requiring repair is a conversation worth having before you start — because the landlord will have a view on it.
+
+A typical [warehouse floor](/services/make-good-solutions/warehouse-flooring/) make good will involve diamond grinding to remove old [line marking](/services/make-good-solutions/line-marking/), epoxy coatings and surface contaminants. We then repair any cracks or damaged joints using specialised fillers. After racking removal, hundreds of bolt holes are left in the slab — we patch these with high-strength, fast-curing mortar to create a smooth, level finish. Depending on the lease requirements, we can apply a new epoxy coating or a penetrating sealer to finish the surface.
+
+### Mezzanine Floor Removal
+
+Removing a mezzanine floor is a major structural undertaking. It is not a job for a general labourer or a demo crew without the right experience. Our process starts with engaging a structural engineer to assess the mezzanine and develop a safe removal plan — this protects the structural integrity of the base building and satisfies the landlord's requirements for sign-off.
+
+Our team uses cranes, hoists and specialised equipment to dismantle the mezzanine in a controlled sequence. All steel and materials are removed from site and recycled where possible. Once the mezzanine is out, we reinstate the floor and walls to their original condition — [patching](/services/make-good-solutions/patching-plastering/) holes, repairing any damage and [painting](/services/make-good-solutions/painting/) to match.
+
+### Services Decommissioning
+
+This is where tenants most often get caught out. You cannot disconnect electrical or plumbing services yourself. All services need to be [made safe](/services/strip-out-solutions/make-safe/) by licensed tradespeople, and you need the compliance certificates to prove it.
+
+Our licensed electricians disconnect all tenant-installed power and lighting, remove all cabling and switchboards, and provide a certificate of electrical safety. Our licensed plumbers disconnect all tenant-installed fixtures, cap off water and waste pipes, and provide a compliance certificate. We also work with qualified fire services contractors to reinstate the base building fire system — moving sprinkler heads, smoke detectors and fire indicator panels back to their original locations.
+
+These certificates matter. A landlord or their agent will ask for them. Without them, you have not completed the make good.
+
+---
+
+## Warehouse Make Good FAQs
+
+**Do I have to remove my pallet racking?**
+Almost always, yes. Unless you can negotiate with the landlord or the incoming tenant to keep it, [pallet racking](/services/strip-out-solutions/pallet-racking-removal/) is a tenant's fixture and must be removed. This includes the anchor bolts — the holes then need to be patched and the floor ground smooth. Do not assume the next tenant wants your racking. That conversation needs to happen explicitly and in writing.
+
+**What about fair wear and tear?**
+In a warehouse context, fair wear and tear generally means the normal deterioration from ordinary use of the premises. Minor scuff marks on the walls from forklift traffic might qualify. A large hole in a wall from a forklift accident does not. The best way to avoid disputes is a comprehensive ingoing condition report that documents the state of the property at the start of the lease. If something was already worn when you moved in, you should not be expected to fix it on the way out.
+
+**Can I get a cash settlement instead of doing the make good?**
+Sometimes. A cash settlement — where you pay the landlord an agreed amount instead of doing the physical works — can work well if you are short on time or the landlord wants to redevelop the property. But you are in a much stronger negotiating position if you have a quote from a reputable make good contractor for the physical works. That gives you a defensible baseline for the settlement amount. Without it, you are negotiating against a number the landlord's agent has come up with.
+
+**What are the most common hidden costs?**
+Services and compliance catch people out most often. Tenants sometimes do not realise they need a licensed electrician to disconnect machinery, or a structural engineer to sign off on a mezzanine removal, or a licensed waste contractor to remove construction materials. These are not optional extras — they are required. A good make good contractor will include them in the scope upfront so there are no surprises at the end.
+
+---
+
+## What Good Documentation Looks Like
+
+The paperwork that comes out of a warehouse make good matters as much as the physical works. At the end of a project, you should be able to hand your landlord a complete package that includes a signed-off scope of works, certificates of compliance for all electrical and plumbing works, an engineer's sign-off for any structural works, a waste disposal manifest from a licensed contractor and a set of before and after photos for every area of work.
+
+That documentation closes the loop. It gives the landlord everything they need to confirm the make good is complete and gives you a clear record if anything is disputed later.
+
+---
+
+## Planning a Warehouse or Factory Lease Exit in Melbourne?
+
+We handle industrial make goods from Dandenong to the CBD, from small factory units to large-format distribution centres. We manage the entire project — from initial scope through to final handover — so you can focus on the move, not the site.
+
+One point of contact. Fixed price. Done properly.
+
+[Get in touch.](/contact)
+\`,
+  },
+  {
     id: "36",
     title: "Retail Make Good Melbourne — What Shopping Centre Tenants Need to Know",
     slug: "retail-make-good-melbourne-shopping-centre-tenants",
@@ -359,9 +490,9 @@ What it does not usually include is damage that was already present when you mov
 
 ## What Can Realistically Be Done in a Short Timeframe?
 
-Time is the biggest factor in a last-minute make good. A full strip-out and reinstatement that might normally take four to six weeks needs to be compressed. This means prioritising the works that are most critical to meeting your lease obligations.
+Time is the biggest factor in a last-minute make good. A full [strip-out](/services/strip-out-solutions/demolition/) and reinstatement that might normally take four to six weeks needs to be compressed. This means prioritising the works that are most critical to meeting your lease obligations.
 
-In a one to two week timeframe, a lot can still be achieved. A typical urgent make good will focus on the essentials: removing your fit-out, [patching and painting](/services/make-good-solutions/patching-plastering/), repairing any damage and ensuring all services are safely disconnected. More complex structural work, like removing a large mezzanine floor, might not be possible without negotiating an extension with your landlord. The first step is always to get a professional on site to assess what is achievable in the time you have left.
+In a one to two week timeframe, a lot can still be achieved. A typical urgent make good will focus on the essentials: removing your fit-out, [patching and painting](/services/make-good-solutions/patching-plastering/), repairing any damage and ensuring all services are [safely disconnected](/services/strip-out-solutions/make-safe/). More complex structural work, like removing a large mezzanine floor, might not be possible without negotiating an extension with your landlord. The first step is always to get a professional on site to assess what is achievable in the time you have left.
 
 ### The Triage Process: What to Prioritise
 
@@ -430,7 +561,7 @@ An office tenant in the Melbourne CBD is moving to a new building. They have bee
 
 ### The Warehouse Tenant with a Mezzanine Floor
 
-A logistics company is vacating a large warehouse in Dandenong. Their lease requires them to remove a substantial mezzanine floor they installed ten years ago. They have left it to the last minute and now have three weeks to get it done.
+A logistics company is vacating a large [warehouse in Dandenong](/blog/warehouse-factory-make-good-melbourne). Their lease requires them to remove a substantial mezzanine floor they installed ten years ago. They have left it to the last minute and now have three weeks to get it done.
 
 **Our approach:** Removing a mezzanine floor is a structural job that requires careful planning. We engage a structural engineer to sign off on the removal method. We use a specialised crew with the right equipment to dismantle the mezzanine safely, the steel is recycled, and the floor is then ground and sealed. The job is completed in 18 days, just inside the lease end.
 
