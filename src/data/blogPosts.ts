@@ -1639,134 +1639,117 @@ Safety first, compliance always, results guaranteed
     date: "2025-09-15",
     image: "carpet-tile-replacement.jpg",
     content: `
-When it comes to end of lease make good obligations, [carpet tile replacement and installation](/services/make-good-solutions/flooring-reinstatement/) is one of the most visible elements that determines whether a tenancy is returned to its original condition. Professional floor preparation is critical to achieving a uniform, compliant finish that meets lease requirements.
+Carpet tile replacement is one of the most visible parts of a commercial [make good](/services/make-good-solutions/). When a tenant hands back keys, the floor is one of the first things a landlord or property manager looks at. Stained tiles, lifted edges, patchy replacement sections or a floor that is clearly not the same product as the base build spec are all reasons a make good gets rejected at the final inspection.
 
-## The Importance of Proper Floor Preparation
+Done properly, a carpet tile replacement is straightforward. Done cheaply or without proper floor preparation, it fails — and the tenant ends up paying twice. This guide covers what a compliant carpet tile replacement actually involves, why floor preparation is the part that most people underestimate and how it fits into a broader make good project.
 
-Many carpet tile installations fail because the underlying floor surface hasn't been properly prepared. Residual glue, uneven surfaces, and contamination can all compromise the installation quality and longevity of new carpet tiles.
+---
 
-Our comprehensive approach ensures your floor is ready for a perfect installation that will pass the most stringent landlord inspections.
+## What Your Lease Actually Requires
 
-## Floor Grinding: The Foundation of Quality Installation
+Before any tiles are ordered or floors are ground, the starting point is the lease. Most commercial leases that include a carpet tile replacement obligation will specify one of two things: a return to the original base build specification, or a return to a condition consistent with the ingoing [condition report](/blog/dilapidation-reports-melbourne-make-good).
 
-We provide comprehensive grinding of the floor surface to ensure uniform installation. This process involves:
+In practice, this usually means matching the original carpet tile product — or, if that product is no longer available, finding a tile of comparable quality, colour and pile weight that the landlord will accept. It does not mean installing the cheapest tile that technically covers the floor. A landlord who specified a mid-range commercial carpet tile at lease commencement is entitled to have it returned to that standard.
 
-### Surface Leveling
-Professional grinding equipment removes high spots and creates a level substrate. An uneven floor will cause carpet tiles to lift, curl, or wear unevenly over time.
+The condition report is the key document here. If the original tile specification is noted in the report — and ideally photographed — there is no argument about what the standard is. If the report is unclear or missing, it becomes a conversation with the landlord. That conversation goes better if you have a make good contractor who knows what base build commercial carpet tiles look like and can identify a compliant match.
 
-### Glue Removal
-Complete removal of residual adhesive from previous flooring installations is essential. Old glue can prevent new adhesive from bonding properly and create visible irregularities through the carpet tiles.
+---
 
-### Surface Preparation
-Grinding opens the concrete pores, creating an ideal surface for adhesive bonding. This ensures carpet tiles remain securely in place throughout the new tenancy period.
+## Why Floor Preparation Is the Part People Get Wrong
 
-### Contamination Elimination
-The grinding process removes oil, paint, sealers, and other contaminants that could interfere with adhesive performance or cause staining through the new carpet.
+Most tenants focus on the tile itself. The floor underneath it rarely gets the attention it deserves — and this is where most carpet tile installations fail.
 
-## Professional Installation Standards
+A concrete floor at the end of a commercial tenancy is not a clean slate. It has residual adhesive from the previous installation, high spots and low spots from wear and movement, oil or chemical contamination in industrial spaces, paint or sealant from previous works and sometimes significant damage from furniture loading, heavy equipment or water events. All of that needs to be dealt with before a new tile goes down.
 
-Following thorough floor preparation, our installation process includes:
+**Adhesive residue** is the most common issue. Old pressure-sensitive adhesive left on a floor prevents new adhesive from bonding correctly. Even when the new tile appears to sit flat initially, residual adhesive creates irregular bonding surfaces that cause tiles to lift, shift or develop visible ridges over time. The landlord will see it at the final inspection. Getting it removed properly at the start is significantly cheaper than replacing tiles that fail after installation.
 
-### Moisture Testing
-Concrete floors are tested for moisture levels that could compromise adhesive bonding or damage carpet tiles over time.
+**Surface level** matters more than most people realise. Carpet tiles are thin. An uneven substrate — even a minor high spot — telegraphs through the tile surface and causes premature wear at that point. Over a tenancy, a floor that was installed on an uneven surface will look noticeably worse than one that was installed on a properly prepared substrate. For a make good, where the goal is a floor that looks uniform and compliant, an uneven surface is a problem from day one.
 
-### Layout Planning
-Tiles are carefully planned to minimise cuts, maximise symmetry and ensure consistent pattern alignment throughout the space.
+**Contamination** — oil, paint, sealers and similar substances — prevents adhesive from bonding to the concrete at all. Even where contamination is not visible to the eye, it can cause adhesive failure in specific areas. Professional grinding removes contamination from the surface layer of the concrete and opens the concrete pores to create the ideal bonding surface.
 
-### Quality Adhesive Application
-We use commercial-grade pressure-sensitive adhesives specifically formulated for carpet tile installation, ensuring reliable bonding without damaging the substrate.
+---
 
-### Precision Installation
-Each tile is carefully placed, aligned, and rolled to ensure proper adhesive contact and eliminate air pockets.
+## What Professional Floor Grinding Involves
 
-## End of Lease Compliance
+Diamond grinding is the standard method for commercial floor preparation before carpet tile installation. It is not the same as a light sand or a mop with a cleaning solution. Commercial diamond grinding equipment removes material from the top layer of the concrete slab, taking adhesive residue, contamination, high spots and surface irregularities with it.
 
-Carpet tile replacement is often a major component of make good obligations. Our installation service ensures:
+The process uses HEPA-filtered dust extraction to contain the grinding dust — important both for site safety and for the cleanliness of the floor surface. A contaminated surface after grinding defeats the purpose.
 
-- **Match to Original Specification**: We source carpet tiles that match or exceed the original base build specifications
-- **Professional Finish**: Installation quality that meets commercial property standards
-- **Documented Process**: Photographic records of preparation and installation for landlord verification
-- **Warranty Coverage**: Professional installation backed by manufacturer warranty requirements
+After grinding, a 24 to 48 hour stabilisation period allows the floor to off-gas and fully cure before adhesive is applied. Skipping this period is a shortcut that compromises the bond. The rule that applies to every other stage of a make good applies here too: you cannot rush the substrate preparation and expect the finish to hold.
 
-## Why Floor Grinding Makes the Difference
+Moisture testing is the other step that gets overlooked. Concrete floors can retain or transmit moisture at levels that affect adhesive performance and, over time, cause tiles to lift or develop mould growth beneath them. Australian standards provide clear moisture thresholds for carpet tile installation. A floor that exceeds those thresholds needs remediation before tiles go down — not after.
 
-The comprehensive floor grinding process we provide delivers multiple benefits:
+---
 
-### Immediate Benefits
-- Uniform surface for consistent tile placement
-- Superior adhesive bonding
-- Elimination of previous installation defects
-- Clean, professional appearance
+## Matching the Original Specification
 
-### Long-Term Advantages
-- Extended carpet tile lifespan
-- Reduced maintenance requirements
-- Prevented tile lifting or movement
-- Protection of your security deposit
+Sourcing the right tile is more nuanced than it sounds. Commercial carpet tile products change. Manufacturers update their ranges, discontinue products and change colour names between collections. A tile that was installed five or ten years ago may no longer be available in its original form.
 
-## Integration with Complete Make Good
+When the original product is still available, the job is straightforward — same product, same colour, same batch where possible to minimise variation. When it is not, the goal is a compliant match: a tile of equivalent pile weight, construction and colour profile that the landlord will accept as meeting the base build standard.
 
-Carpet tile installation is typically one of the final stages of a make good project. We coordinate timing with:
+This is where the condition report and any original fitout documentation helps. If there is a product code in the original fitout specification, sourcing becomes much easier. If there is nothing in writing, a site visit and comparison against any remaining original tiles is how the match gets established.
 
-- [Completion of ceiling works](/services/make-good-solutions/suspended-ceilings/)
-- [Final paint touch-ups](/services/make-good-solutions/painting/)
-- Electrical and data reinstatement
-- Final clean
+One thing worth understanding: not all carpet tile products are equal. The difference between a heavy commercial tile rated for high-traffic environments and a light commercial or residential-grade tile is significant, both in terms of durability and in how it reads to an experienced landlord or property manager. Specifying the right product grade for the tenancy type is part of what a make good contractor brings to this process.
 
-This sequencing prevents damage to new carpet and ensures the entire space is returned to base build condition simultaneously.
+---
 
-## Technical Specifications
+## The Installation Process
 
-Our carpet tile installation service includes:
+With the floor prepared, moisture-tested and the product confirmed, installation follows a clear sequence.
 
-- Commercial-grade diamond grinding equipment
-- HEPA-filtered dust extraction
-- Moisture testing to AS/NZS standards
-- Pressure-sensitive adhesive systems
-- Pattern matching and alignment
-- Edge trimming and transition installation
+Layout planning comes first. Carpet tiles are installed in a grid pattern and the layout needs to be planned to minimise cuts at the edges, maintain pattern alignment across the space and work with the room geometry. A poorly planned layout results in thin cut tiles at perimeters and misaligned patterns that are immediately obvious on inspection.
 
-## Project Scheduling
+Adhesive application is the next phase. Commercial carpet tile installations use pressure-sensitive adhesive systems — not permanent glue, which would make future removal and replacement unnecessarily difficult. The adhesive is applied to the prepared floor and allowed to flash off to the correct tackiness before tiles are laid. Applying tiles too early or too late in the adhesive's open time affects the bond.
 
-Floor preparation and carpet installation requires careful timing:
+Each tile is placed, aligned and rolled to ensure full adhesive contact and eliminate air pockets. Edge trimming and transition installation — where carpet tiles meet other flooring types, door thresholds or walls — is the detail work that separates a professional installation from an amateur one. These transitions are what the landlord looks at closely.
 
-1. **Floor Assessment**: Initial inspection and specification confirmation
-2. **Grinding Phase**: Typically 1-2 days depending on area size
-3. **Curing Period**: 24-48 hours for floor to stabilise
-4. **Installation**: Usually 1-2 days for standard office spaces
-5. **Final Inspection**: Walk-through and documentation
+---
 
-## Cost Considerations
+## How Carpet Tile Replacement Fits Into a Make Good
 
-While comprehensive floor preparation adds to project cost, it protects against:
+Flooring is almost always one of the last phases of a make good project, and the sequencing matters. Carpet tiles should go down after [ceiling works](/services/make-good-solutions/suspended-ceilings/) are complete, after all [patching and painting](/services/make-good-solutions/patching-plastering/) is done, after electrical and data reinstatement is finished and after the bulk of the final clean has occurred.
 
-- Failed installations requiring costly replacement
-- Landlord rejection of make good works
-- Security deposit withholding
-- Legal disputes over tenancy condition
+The reason is simple. Carpet tiles are vulnerable to damage from trades working above them. A painter who drops a drop sheet, a sparky who runs a cable across a fresh floor, a cleaner who drags equipment across newly laid tiles — all of these create problems that require re-laying affected areas. Installing flooring at the right point in the sequence protects the investment.
 
-Professional preparation is an investment in compliance and peace of mind.
+The [final clean](/services/handover-solutions/end-of-lease-cleaning/) happens after the tiles are laid — a final vacuum and wipe-down of the entire space to remove any dust or debris from the installation itself. This is what the floor looks like when the landlord does the final walkthrough.
 
-## Environmental Considerations
+Documentation matters here too. Photographic records of the floor preparation phase, the moisture test results, the product specification and the completed installation give the landlord and property manager confidence that the work has been done properly. For a tenant who needs to demonstrate make good compliance, this documentation is as important as the physical result.
 
-Our floor preparation process includes:
+---
 
-- Dust containment and HEPA filtration
-- Responsible disposal of removed materials
-- Low-VOC adhesive systems
-- Recycling of packaging materials
+## When Partial Replacement Is and Isn't Acceptable
 
-## Why Professional Service Matters
+One of the most common questions we get is whether a partial replacement — replacing only the stained or damaged tiles rather than the entire floor — is acceptable for a make good.
 
-DIY or budget carpet installation approaches often fail to address floor preparation adequately. The result is visible defects, premature failure, and make good rejection by landlords.
+The answer depends on the lease, the extent of the damage and the condition of the remaining tiles. If the lease requires the floor to be returned to its original condition and the existing tiles are significantly worn or discoloured from years of use, replacing only the visibly damaged tiles will not produce a compliant result. The replaced tiles will look different from the originals — different colour, different pile compression — and the landlord will notice.
 
-Our licensed and experienced team has completed thousands of square meters of commercial carpet tile installations, consistently delivering results that pass final inspections.
+If the existing tiles are in genuinely good condition and the damage is localised, a well-matched partial replacement may be acceptable. But this is a decision to make in consultation with the landlord or property manager before works start, not an assumption to make and then present as a fait accompli.
 
-## Get Started
+Where a partial replacement is agreed, sourcing a match from the same manufacturer, same product line and same dye lot is essential. Even within the same product, tiles from different dye lots can vary noticeably. This is a detail that matters.
 
-If your lease end is approaching and carpet replacement is required, [contact our team](/contact/) early in your planning process. We'll assess your floor condition, provide detailed quotations, and schedule works to align with your [make good timeline](/learn/our-process/).
+---
 
-Professional floor preparation and carpet tile installation removes the stress from one of the most visible aspects of your make good obligations, ensuring a smooth transition and full security deposit return.
+## Common Carpet Tile FAQs
+
+**Does the lease always require full carpet tile replacement?**
+Not necessarily. If the ingoing condition report shows the floor was in good condition at the start of the lease and the tiles are only showing fair wear and tear, the landlord may accept a clean rather than a replacement. However, staining, significant pile wear or damage beyond fair wear and tear will typically require replacement.
+
+**Can carpet tiles be removed and reinstalled?**
+Pressure-sensitive adhesive tiles can sometimes be removed and reinstalled if they are in good condition and have not been down for too long. However, for a make good, the question is usually whether the existing tiles meet the required standard — and if they do not, reinstalling them does not solve the problem.
+
+**How long does a carpet tile replacement take?**
+For a standard office floor, floor grinding and preparation typically takes one to two days. The floor then needs 24 to 48 hours to stabilise. Installation for a medium-sized office is usually one to two days. Allow a week from start to finish to be safe, with the installation scheduled to be one of the last phases of the [make good](/services/make-good-solutions/).
+
+**What happens if the original tile product is discontinued?**
+We source a compliant match — same construction type, equivalent pile weight and a colour that is acceptable to the landlord. The match should be presented to the landlord or property manager for approval before installation. Do not assume a match will be accepted without prior confirmation.
+
+---
+
+The cost of a proper carpet tile replacement — with correct floor preparation, the right product and professional installation — is almost always less than the cost of doing it twice. A rejected make good means more contractor fees, a delayed handover and a landlord who is no longer being patient about timeline.
+
+The floor is one of the most visible things in a tenancy. It gets looked at closely. Getting it right the first time is not just about compliance — it is the fastest way to close out the make good and move on.
+
+Carpet tile replacement as part of a make good in Melbourne? [Get in touch.](/contact)
     `
   },
   {
