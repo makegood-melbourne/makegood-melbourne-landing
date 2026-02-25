@@ -12,6 +12,170 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: "40",
+    slug: "make-good-vs-strip-out-vs-defit-melbourne",
+    title: "Make Good vs. Strip Out vs. Defit: What's the Difference?",
+    description: "The terms make good, strip out and defit are used interchangeably but mean different things. Here is what each term means and why it matters when getting quotes.",
+    date: "2026-03-28",
+    readTime: "10 min read",
+    image: "make-good-vs-strip-out-vs-defit-melbourne",
+    imageAlt: "Commercial building interior undergoing strip out and make good works with scissor lift and construction workers in Melbourne",
+    content: `The terms make good, strip out and defit are often used interchangeably, but they mean different things. Understanding the difference matters when you are approaching the end of a commercial lease. It ensures you know what you are actually obligated to do — and that you are comparing apples with apples when you get quotes from contractors.
+
+As [make good specialists](/services/make-good-solutions/), we deal with this confusion all the time. Tenants get a quote for a "strip out" and assume that covers their lease obligations, only to find out later there is a significant reinstatement component they hadn't budgeted for. Or they hear "defit" and assume it is something more extensive than what they need. Getting clear on these terms upfront saves a lot of stress later.
+
+Here is what each term means from a contractor's perspective.
+
+---
+
+## What is a Make Good?
+
+A make good is the broadest of the three terms. It refers to the process of returning the property to the condition it was in at the start of the lease. The exact scope is defined by the make good clause in your lease agreement and the ingoing [condition report](/blog/dilapidation-reports-melbourne-make-good).
+
+A make good can involve a wide range of works, from a simple patch and paint to a full strip-out and reinstatement of the base building. The key thing to understand is that a make good is about reinstatement. It is about putting things back the way they were — not just clearing out your stuff.
+
+### What Does a Make Good Typically Include?
+
+A full make good project will usually cover removal of all tenant fixtures, fittings and equipment; [demolition](/services/strip-out-solutions/demolition/) and removal of any partition walls, offices or other structures the tenant has built; removal of all data and electrical cabling installed by the tenant; [patching and repairing walls, ceilings and floors](/services/make-good-solutions/patching-plastering/) to their original condition; repainting the entire tenancy to the base building standard; reinstating [flooring](/services/make-good-solutions/flooring-reinstatement/) to its original condition; reinstating base building services such as lighting, plumbing and fire systems; and a thorough [final clean](/services/handover-solutions/end-of-lease-cleaning/) of the entire premises.
+
+The scope varies depending on the property type. An office make good is different to a [warehouse make good](/blog/warehouse-factory-make-good-melbourne), which is different again to a [retail make good](/blog/retail-lease-make-good). The lease and the condition report are always the starting point — not assumptions about what is "standard."
+
+---
+
+## What is a Strip Out?
+
+A strip out is a more specific term. It refers to the process of removing the tenant's fit-out and installations from the property. A strip out is often one component of a larger make good project — it is the [demolition](/services/strip-out-solutions/demolition/) phase, not the whole job.
+
+A typical strip out involves the removal of partition walls and offices; workstations and joinery; floor coverings such as [carpet tiles](/blog/carpet-tile-replacement-installation-floor-preparation) or vinyl; ceiling features such as bulkheads or [suspended ceiling tiles](/services/make-good-solutions/suspended-ceilings/); data and electrical cabling; kitchenettes and breakout areas; and signage and branding.
+
+After a strip out, the tenancy is usually left as an empty shell. But a strip out alone does not always fulfil a tenant's make good requirements. There may still be repairs, painting and reinstatement works needed to bring the property back to its original condition. This is a distinction that catches a lot of tenants out.
+
+### When is a Strip Out Enough?
+
+In some cases, a strip out is all that is required. This is usually the case when the landlord is planning to redevelop the property or do a major refurbishment; when the incoming tenant wants a bare shell to build their own fit-out; or when the lease specifically states that a strip out is the only requirement.
+
+If any of these apply, you may be able to negotiate a reduced scope of works with your landlord. But you need that agreement in writing before you start — a verbal nod is not protection when you are handing back keys and the landlord has a different recollection of the conversation.
+
+---
+
+## What is a Defit?
+
+Defit is another term for a strip out. The two are essentially interchangeable. Some people in the industry use defit to refer to a more comprehensive strip out that includes the removal of all services, but there is no hard and fast rule. For all practical purposes, a defit and a strip out are the same thing.
+
+The term defit is more commonly used in the commercial office sector, particularly by fit-out companies. If someone says "we need to defit the tenancy," they are talking about a strip out.
+
+---
+
+## Comparing the Three
+
+Here is a simple way to think about the difference:
+
+| Term | What it Means | Scope |
+| :--- | :--- | :--- |
+| **Make Good** | Returning the property to its original condition | Full process — strip out plus reinstatement |
+| **Strip Out** | Removing the tenant's fit-out | Removal only — no reinstatement |
+| **Defit** | Another word for a strip out | Same as strip out |
+
+The simplest way to think about it: a strip out (or defit) is the demolition phase. A make good is the full project — demolition plus reinstatement.
+
+---
+
+## Why the Distinction Matters When Getting Quotes
+
+This is where the terminology confusion causes real financial problems. If you ask three contractors for a "strip out quote" and one of them has interpreted that as a full make good including reinstatement, you will get wildly different numbers back. You will not be comparing the same scope of work.
+
+Always provide contractors with your lease and ingoing condition report when requesting quotes. Ask them to quote against your specific lease obligations, not a generic strip out or make good. A contractor who will not do that — or who gives you a price without seeing the documents — is not someone you want managing your handover.
+
+A detailed, fixed-price scope of works that maps directly to your lease obligations is the only quote worth accepting. It tells you exactly what will be done, by whom and for how much. No surprises at the end.
+
+---
+
+## Which Service Do You Need?
+
+The service you need depends entirely on your lease. Your make good clause will specify what is required. In most cases, you will need a full make good, which will include a strip out as part of the process.
+
+If you are unsure what is involved, the best first step is to have a [make good specialist](/services/make-good-solutions/) review your lease and ingoing condition report. They can give you a clear interpretation of the requirements and a detailed scope of works — so you know exactly what you are up for before anyone starts work.
+
+---
+
+## The Make Good Process from Start to Finish
+
+To show how these terms fit together in practice, here is how a typical make good project runs.
+
+### Phase 1: The Lease Review
+
+The first step is always the lease. The make good clause is the source of truth. We review it alongside the ingoing condition report to understand the baseline condition of the property. If there is no condition report, we conduct our own assessment and work with the landlord to agree on a reasonable scope. This conversation is much easier to have at the start than at the end.
+
+### Phase 2: The Site Inspection and Scope of Works
+
+Based on the lease and a physical site inspection, we develop a detailed scope of works. This document itemises every task that needs to be completed. We walk the site with the tenant and, where possible, the landlord or [property manager](/blog/property-manager-guide-end-of-lease-make-good-melbourne) — so everyone agrees on what needs to be done before a dollar is spent.
+
+### Phase 3: The Strip Out
+
+If a strip out is required, this is the first major phase of work. Our team systematically removes all tenant fixtures and fittings — partition walls, workstations, floor coverings, data cabling. All [waste is removed from site](/blog/waste-management-sustainability-make-good-works) and recycled where possible. In a warehouse, this phase also covers [pallet racking](/services/strip-out-solutions/pallet-racking-removal/), mezzanine floors and specialised machinery.
+
+### Phase 4: The Reinstatement
+
+Once the strip out is complete, reinstatement begins. This is the part of the make good that brings the property back to its original condition.
+
+**[Patching and Painting](/services/make-good-solutions/patching-plastering/)** covers repairing holes and damage to walls and ceilings, then repainting to the base building standard. It is one of the most visible parts of the make good and it needs to be done properly — not just touched up.
+
+**[Flooring Reinstatement](/services/make-good-solutions/flooring-reinstatement/)** means repairing any damage to the base building flooring or installing new flooring if required by the lease. In a warehouse, this typically involves grinding and sealing the concrete slab.
+
+**Services Reinstatement** requires licensed trades to reinstate base building [electrical](/blog/electrical-make-safe-decommissioning-demolition), plumbing and fire services to their original layout. This is not optional and it is not DIY.
+
+**[Ceiling Reinstatement](/services/make-good-solutions/suspended-ceilings/)** covers replacing any damaged or missing ceiling tiles and reinstating the ceiling grid to its original layout.
+
+### Phase 5: The Final Clean
+
+A detailed [clean](/services/handover-solutions/end-of-lease-cleaning/) of the entire premises — all surfaces, windows, amenities and common areas within the tenancy. The goal is to hand over a property that is genuinely ready for the next tenant to move straight into.
+
+### Phase 6: The Handover
+
+We conduct a final walkthrough with the tenant and the landlord or property manager. We go through the scope of works item by item to confirm everything has been completed. Once everyone is satisfied, the property is formally handed over — with documentation to prove it.
+
+---
+
+## Make Good Terminology FAQs
+
+**Does a make good always involve a strip out?**
+Not always. If you have made minimal changes to the property, your make good might only involve a deep clean and a fresh coat of paint. But if you have installed any kind of fit-out, a strip out will almost certainly be part of the scope.
+
+**Who is responsible for the make good?**
+The tenant. It is a condition of your lease to return the property to its original state. The landlord does not absorb the cost of undoing your fit-out — that is on you.
+
+**Can I do the make good myself?**
+Technically, but it is rarely a good idea. A commercial make good involves licensed trades, construction waste disposal and compliance documentation. If the work is not done to the required standard, the landlord can send you back to fix it — which costs more than doing it right the first time.
+
+**How long does a make good take?**
+It depends on the scope. A small office strip out and make good might take one to two weeks. A large [warehouse](/blog/warehouse-factory-make-good-melbourne) with a mezzanine removal and floor reinstatement could take six to eight weeks. The only way to get an accurate timeline is to have a contractor inspect the site and scope the works.
+
+**What happens if I don't complete the make good?**
+The landlord will arrange the works themselves and charge it back to you — with their margin on top. If the cost exceeds your security deposit, they can pursue you for the shortfall. It is always cheaper and less stressful to [manage the make good yourself](/blog/last-minute-make-good-melbourne).
+
+---
+
+## Common Misconceptions We Hear All the Time
+
+**"The landlord said I just need to clean it up."**
+Verbal assurances from a landlord or their agent are not binding. Until you have a written agreement confirming the reduced scope, your make good requirements remain exactly as your lease describes them. Always get it in writing.
+
+**"The new tenant is keeping our fit-out so we don't need to do anything."**
+This is a common assumption and it is often wrong. Even if the incoming tenant wants your fit-out, your legal requirement is to the landlord — not the next tenant. The landlord needs to formally agree in writing to release you from the make good clause. If that arrangement falls through after your lease has ended, you could still be liable.
+
+**"We'll just get a cleaner in and that should cover it."**
+A clean is the last step of a make good, not the whole thing. If you have installed partition walls, data cabling, a kitchen or any other fit-out, those need to come out. A clean does not substitute for a strip out.
+
+**"Our landlord won't notice."**
+They will. And their property manager will. If the make good is incomplete, you will be chased for the cost — and the landlord's version of "getting it done" will be more expensive than yours.
+
+---
+
+Understanding the terminology is the first step to a smooth lease exit. The next is engaging a contractor who will scope the work properly, price it fairly and get it done on time.
+
+Need to scope a make good in Melbourne? [Get in touch.](/contact)`,
+  },
+  {
     id: "39",
     slug: "warehouse-factory-make-good-melbourne",
     title: "Warehouse & Factory Make Good Melbourne | Industrial Tenant Guide | Make Good Melbourne",
