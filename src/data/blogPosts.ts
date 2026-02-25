@@ -153,42 +153,83 @@ One point of contact. Fixed price. Done properly.
     image: "retail-make-good-shopping-centre-melbourne.webp",
     imageAlt: "Multi-level shopping centre interior with glass storefronts and skylights in Melbourne retail precinct",
     content: `
-[Exiting a retail lease is not the same as leaving an office or warehouse](/blog/office-strip-out). The make good process is more involved. You have your lease agreement, but you also have shopping centre management looking over your shoulder. Both have rules.
+Exiting a retail lease is not the same as leaving an office or warehouse. The [make good](/services/make-good-solutions/) process is more involved. You have your lease agreement, but you also have shopping centre management looking over your shoulder. Both have rules.
 
-For retail tenants in Melbourne, this means a different set of challenges. It is not just about a fresh coat of paint. It involves shopfronts, specialised fixtures and often strict centre guidelines that sit on top of your lease. This post covers the key differences, the typical scope of works and a practical timeline to get it done right.
+For retail tenants in Melbourne, this means a different set of challenges. It is not just about a fresh coat of paint. It involves shopfronts, specialised fixtures and strict centre guidelines that sit on top of your lease. Add to that the complexity of working in a live retail environment — where the centre is trading around you — and you have a make good that requires more planning, more coordination and more experience than most tenants expect.
+
+This guide covers the key differences between a retail make good and a standard commercial tenancy, the typical scope of works, the mistakes that cost tenants the most and a practical timeline to get it done without losing your bond.
+
+---
 
 ## What Makes a Retail Make Good Different?
 
 A retail make good goes further than a standard commercial tenancy. The work is more specific. It focuses on removing the unique elements of a retail fitout and returning the space to a bare shell or base building condition.
 
-**The Shopfront.** Your shopfront is your brand. [The make good requires removing it entirely](/services/strip-out-solutions/). That includes all external signage, window decals and any structural elements you installed. The landlord or centre management will expect the original facade and glazing reinstated to the condition it was in before your tenancy.
+**The Shopfront.** Your shopfront is your brand. The make good requires removing it entirely. That includes all external signage, window decals and any structural elements you installed. The landlord or centre management will expect the original facade and glazing reinstated to the condition it was in before your tenancy.
 
-**Fixtures and Fittings.** All custom-built joinery needs to come out. Point-of-sale counters, display units, shelving and feature walls. [The base building walls, floors and ceilings need to be patched and repaired after removal](/services/make-good-solutions/patching-plastering/).
+**Fixtures and Fittings.** All custom-built joinery needs to come out. Point-of-sale counters, display units, shelving and feature walls. The base building walls, floors and ceilings need to be [patched and repaired](/services/make-good-solutions/patching-plastering/) after removal.
 
-**Flooring.** Retail flooring is often a key part of the store's design. Whether it is timber, custom tiling or specialised carpet, your lease will likely require you to remove it and restore the original concrete slab or base flooring underneath.
+**Flooring.** Retail flooring is often a key part of the store's design. Whether it is timber, custom tiling or specialised carpet, your lease will likely require you to remove it and [restore the original concrete slab](/services/make-good-solutions/flooring-reinstatement/) or base flooring underneath.
 
 **Lighting.** Specialised track lighting, spotlights and feature pendants all need to be removed. The make good typically requires reinstating the original base building lighting layout — usually a simple grid of fluorescent or LED troffer lights.
 
-**Back-of-House.** Storerooms, staff kitchenettes and change rooms also need to be stripped out. This includes shelving, lockers and any plumbing or electrical services you added during your tenancy.
+**Back-of-House.** Storerooms, staff kitchenettes and change rooms also need to be [stripped out](/services/strip-out-solutions/demolition/). This includes shelving, lockers and any plumbing or electrical services you added during your tenancy.
+
+---
 
 ## The Lease vs. Centre Management Guidelines
 
-As a retail tenant, you have two sets of rules to follow. [The first is your lease agreement with the landlord](/learn/make-good-guide/). The second is the shopping centre's own fitout and make good guide. You need to comply with both.
+As a retail tenant, you have two sets of rules to follow. The first is your lease agreement with the landlord. The second is the shopping centre's own fitout and make good guide. You need to comply with both.
 
-Your lease will contain a 'make good' or 'reinstatement' clause. This clause specifies the condition you need to return the premises to at the end of your tenancy. It is the primary legal document that defines what you are responsible for.
+Your lease will contain a make good or reinstatement clause. This clause specifies the condition you need to return the premises to at the end of your tenancy. It is the primary legal document that defines what you are responsible for.
 
 But in a shopping centre environment, it is not the only document.
 
-Shopping centre management will have its own detailed guidelines. These typically cover practical site issues — hours for noisy work, waste removal procedures, hoarding requirements and public safety protocols. These guidelines are enforced to keep the centre running smoothly for other tenants and the public. Get a copy of both your lease and the centre's latest make good guide before you start planning your exit.
+Shopping centre management will have its own detailed guidelines. These cover practical site issues — hours for noisy work, waste removal procedures, hoarding requirements and public safety protocols. These guidelines are enforced to keep the centre running smoothly for other tenants and the public. Some centres require you to use their approved contractors list. Others require works to be done entirely out of hours. Get a copy of both your lease and the centre's latest make good guide before you start planning your exit.
 
-In Victoria, the *Retail Leases Act 2003* governs retail tenancies. [The VSBC provides guidance on tenant rights and obligations](/blog/tenants-guide-smooth-make-good-experience). Your specific make good scope, however, is defined by your lease agreement.
+In Victoria, the *Retail Leases Act 2003* governs retail tenancies. Your specific make good scope, however, is defined by your lease agreement — not general assumptions about what is standard.
+
+---
+
+## Working in a Live Centre Environment
+
+This is one of the biggest differences between a retail make good and any other type of commercial handover. You are not working in an empty building. The shopping centre is trading around you, often seven days a week.
+
+Most centres will not allow noisy or disruptive works during trading hours. That means [demolition](/services/strip-out-solutions/demolition/), grinding, drilling and anything else that creates noise, dust or disruption needs to happen overnight or in the early hours of the morning. A strip-out that would take two days in an empty building might take four or five when you are restricted to a six-hour overnight window.
+
+There are also strict protocols around how you access the site and how you remove [waste](/blog/waste-management-sustainability-make-good-works). Most centres require you to use designated loading docks, during specific hours, with pre-approved contractors. You cannot just book a skip bin and start throwing debris out the front. Each waste run needs to be coordinated with centre management and logged.
+
+Hoarding is another requirement in most centres. If your tenancy faces the mall, you will need to install temporary hoarding panels to screen the works from the public. This needs to meet the centre's visual standards — usually branded or in a neutral colour — and be maintained throughout the works.
+
+All of this adds time and cost. A contractor who has not worked in a live shopping centre environment before will learn on your job. A contractor who does it regularly has the processes, the relationships with centre management and the night crews ready to go.
+
+---
+
+## The Biggest Mistakes Retail Tenants Make
+
+**Starting Without Approval.**
+You cannot begin make good works without written approval from both the landlord and centre management. Some tenants — usually in a rush — start the strip-out before sign-off and then discover the scope they agreed with the landlord does not match what centre management requires. Works get stopped, items need to be redone and the handover is delayed. Get everything in writing before a single screw is removed.
+
+**Not Accounting for Centre Rules.**
+Tenants who have previously done office or [warehouse make goods](/blog/warehouse-factory-make-good-melbourne) are often caught off guard by the additional layer of centre management requirements. Assuming the process is the same is an expensive mistake. Read the centre's make good guide early and call their facilities team before engaging a contractor.
+
+**Underestimating the Timeline.**
+Because of the overnight work restrictions, a retail make good almost always takes longer than it looks on paper. A store that feels like a week's work might be two or three weeks when you factor in centre trading hours, hoarding installation and waste removal logistics. Start planning at least three to six months before lease end. If you have [left it to the last minute](/blog/last-minute-make-good-melbourne), you still have options — but the earlier you start, the better.
+
+**Leaving the Concrete in a Poor State.**
+The concrete slab underneath retail flooring often has significant adhesive residue from tiles, carpet glue or timber flooring underlays. Leaving this in place — or grinding it inadequately — is one of the most common reasons a retail make good gets rejected at the final inspection. The slab needs to be clean, level and free of any coatings before handover.
+
+**Assuming the Landlord and Centre Management Want the Same Thing.**
+They usually agree, but not always. In some cases the landlord is happy with a reduced scope, but centre management requires a full shell reinstatement regardless. Make sure you have had conversations with both parties, not just one.
+
+---
 
 ## Common Retail Make Good Works — A Checklist
 
-This checklist covers the typical works involved in a full retail make good. Every tenancy is different, so refer to your specific lease and centre guidelines for the exact scope.
+Every tenancy is different, so refer to your specific lease and centre guidelines for the exact scope. This covers the typical works involved in a full retail make good.
 
 | Category | Task | Notes |
-| :--- | :--- | :--- |
+| --- | --- | --- |
 | **De-Branding and Shopfront** | Remove all external and internal branding and signage | Includes window decals, 3D lettering and pylon signs |
 | | Reinstate original shopfront structure and glazing | Check for damage to mullions or frames |
 | **Fixtures and Joinery** | Dismantle and remove all custom joinery | Counters, display units, shelving and feature walls |
@@ -196,37 +237,69 @@ This checklist covers the typical works involved in a full retail make good. Eve
 | **Walls and Ceilings** | Remove any partition walls built by the tenant | Return to the original open-plan layout |
 | | Patch and sand all wall penetrations | From screws, fixings and services |
 | | Repaint all walls to the required base building colour | Check the lease for the specific paint colour and finish |
-| | Remove suspended ceilings or features to expose base grid | Reinstate ceiling tiles to match the base building standard |
+| | Remove [suspended ceilings](/services/make-good-solutions/suspended-ceilings/) or features to expose base grid | Reinstate ceiling tiles to match the base building standard |
 | **Flooring** | Remove all floor coverings installed by the tenant | Carpet, tiles, timber or vinyl |
 | | Grind concrete slab to remove adhesives and coatings | Prepare the slab for the next tenant |
 | | Repair any damage to the concrete slab | Cracks, chips or stains |
-| **Services** | Disconnect and make safe all tenant-installed electrical services | Lighting, power points and data cabling — licensed electrician required |
-| | Disconnect and cap all tenant-installed plumbing services | Sinks, basins and kitchenettes — licensed plumber required |
-| | Remove tenant-installed HVAC units and ducting | Reinstate the base building HVAC layout |
+| **Services** | Disconnect and [make safe](/services/strip-out-solutions/make-safe/) all tenant-installed electrical services | Licensed electrician required |
+| | Disconnect and cap all tenant-installed plumbing services | Licensed plumber required |
+| | Remove tenant-installed HVAC units and ducting | Reinstate base building HVAC layout |
 | **Back of House** | Strip out storeroom shelving and racking | |
 | | Remove staff room kitchenettes, lockers and furniture | |
-| **Final Clean** | Detailed clean of the entire premises | Including windows, amenities and back-of-house areas |
-| | Remove all waste and debris from the site | Use approved shopping centre loading docks and procedures |
+| **Final Clean** | Detailed [clean](/services/handover-solutions/end-of-lease-cleaning/) of the entire premises | Including windows, amenities and back-of-house |
+| | Remove all waste and debris from site | Use approved loading docks and centre procedures |
+
+---
+
+## How Much Does a Retail Make Good Cost?
+
+There is no single answer without knowing your tenancy, but a few factors consistently drive the cost.
+
+The size of the store is the obvious one. A 50sqm kiosk is a very different job to a 400sqm flagship store. But within the same floor area, the complexity of the fitout matters just as much. A store with a timber floor, custom tiling, feature lighting, a full joinery fit-out and a tenant-installed cool room will cost significantly more to make good than a store with [carpet tiles](/blog/carpet-tile-replacement-installation-floor-preparation), standard track lighting and a basic counter.
+
+The overnight work requirement adds cost. Night rates for trades are higher than day rates. When a job that would take two days is spread across four or five overnight shifts, that premium adds up. It is honest to say that retail make goods in shopping centres cost more per square metre than office or warehouse make goods — the site constraints are real and they have a direct impact on price.
+
+Centre-specific requirements like hoarding installation and waste removal logistics are also real cost items. They are not optional and they should be included in any quote you accept.
+
+Getting a fixed-price quote based on your actual scope — not a ballpark figure — is how you protect yourself. You should know the number before works start, not after.
+
+---
 
 ## A Step-by-Step Timeline
 
-Timing is critical in a retail make good. Shopping centres have strict deadlines and you need to coordinate with multiple parties. A clear plan prevents delays and unexpected costs.
-
 ### 3–6 Months Before Lease End
 
-Start here. Pull out your fully executed lease and the current shopping centre make good guidelines. Read the relevant clauses carefully. Contact centre management early — introduce yourself as the person managing the lease exit and ask them to confirm the process and any specific requirements. This is also the right time to engage a make good contractor to review your documents, inspect the site and provide an initial budget and timeline.
+Start here. Pull out your fully executed lease and the current shopping centre make good guidelines. Read the relevant clauses carefully. Contact centre management early — introduce yourself as the person managing the lease exit and ask them to confirm the process and any specific requirements. Engage a make good contractor to review your documents, inspect the site and provide an initial budget and timeline. A [dilapidation report](/blog/dilapidation-reports-melbourne-make-good) at this stage can help document the existing condition and protect you from disputes later. The earlier you do this, the more options you have.
 
 ### 1–2 Months Before Lease End
 
-Finalise the scope of works. Submit your make good plan to the landlord and centre management for approval. Do not start any work until you have written approval on the scope. Once approved, your contractor can lock in the necessary trades — good tradespeople are often booked weeks in advance. Plan your final trading days and start clearing stock. The site needs to be empty for the make good works to begin.
+Finalise the scope of works and submit your make good plan to the landlord and centre management for approval. Do not start any work until you have written approval from both. Once approved, lock in your contractor and the necessary trades — good tradespeople are often booked weeks in advance and night crews even more so. Plan your final trading days and start clearing stock. The site needs to be empty before make good works begin.
 
 ### Lease End and Handover
 
-The make good works typically commence the day after you cease trading. This involves the strip-out, services disconnection, repairs and finishing. All waste needs to be removed from the site according to centre guidelines, which often means using specific loading docks and designated collection points. Once the works are complete, arrange a final inspection with both the landlord and centre management. Address any items they raise promptly. Once the works are approved, hand over the keys.
+Make good works typically commence the day after you cease trading. This involves the strip-out, services disconnection, repairs and finishing — mostly overnight. All waste needs to be removed according to centre guidelines. Once the works are complete, arrange a final inspection with both the landlord and centre management. Address any items they raise promptly. Once both parties are satisfied, hand over the keys.
 
-## Wrapping Up
+---
 
-A retail make good takes more planning than a standard commercial tenancy. There are more parties involved, stricter site rules and a wider scope of works. Understanding your lease, communicating with centre management early and engaging an experienced contractor are the three things that make the biggest difference.
+## Retail Make Good FAQs
+
+**Do I need separate approval from the landlord and centre management?**
+Yes. They are separate parties with separate requirements. Your lease is with the landlord. Centre management enforce the operational guidelines. In most cases you need written sign-off from both before works can start.
+
+**Can I do the works during trading hours?**
+For noisy or disruptive works, almost certainly not. Most centres restrict these to overnight or early morning windows. Light, non-disruptive works like minor patching or [painting](/services/make-good-solutions/painting/) may be permitted during the day, but check with centre management before assuming.
+
+**What happens if the incoming tenant wants to keep my fitout?**
+Your make good obligation is to the landlord, not the incoming tenant. Even if the next tenant wants your joinery or fittings, you need a written agreement from the landlord that releases you from the make good clause for those specific items. Without that in writing, you remain liable.
+
+**How long does a retail make good take?**
+For a small store, allow one to two weeks. For a larger tenancy with significant fitout, three to four weeks is more realistic when you account for overnight work restrictions. Always get a site-specific timeline from your contractor based on the actual scope.
+
+---
+
+## One More Thing
+
+A retail make good takes more planning than a standard commercial tenancy. There are more parties involved, stricter site rules and a wider scope of works. The tenants who get through it smoothly are the ones who start early, read their documents properly and engage a contractor who has done this before — in a shopping centre, not just in a warehouse or office building.
 
 Planning a retail lease exit in Melbourne? [Get in touch.](/contact)`
   },
