@@ -14,8 +14,9 @@ export const blogPosts: BlogPost[] = [
   {
     id: "39",
     slug: "warehouse-factory-make-good-melbourne",
-    title: "The Ultimate Guide to Warehouse & Factory Make Goods in Melbourne",
+    title: "Warehouse & Factory Make Good Melbourne | Industrial Tenant Guide | Make Good Melbourne",
     excerpt: "A warehouse or factory make good is a different beast to a standard office strip-out. The scale is larger, the machinery is heavier and the potential for disputes is higher. This guide breaks down the process from a contractor's perspective.",
+    metaDescription: "Everything industrial tenants need to know about warehouse make goods in Melbourne \u2014 racking removal, mezzanine floors, concrete repairs and compliance.",
     date: "2026-02-25",
     image: "/src/assets/blog/warehouse-factory-make-good-melbourne.webp",
     imageAlt: "Empty industrial warehouse interior with steel frame structure and polished concrete floor ready for make good handover in Melbourne",
@@ -453,10 +454,10 @@ It depends on the cause. Landlords are typically responsible for building defect
   
   {
     id: "38",
-    title: "Left Your Make Good to the Last Minute? Here's What to Do.",
+    title: "Last Minute Make Good Melbourne | Urgent End of Lease Guide | Make Good Melbourne",
     slug: "last-minute-make-good-melbourne",
     excerpt: "Your lease is ending and the make good clause is now a very real problem. A last-minute make good is stressful but it is not impossible. Here is what to do today.",
-    metaDescription: "Left your commercial make good to the last minute? Here is your step-by-step action plan to get it sorted fast. Melbourne make good specialists.",
+    metaDescription: "Lease ending and make good left to the last minute? We handle urgent commercial make goods across Melbourne. Site inspection within 48 hours.",
     date: "2026-01-03",
     image: "last-minute-make-good-melbourne.webp",
     imageAlt: "Commercial warehouse interior being prepared for urgent end of lease make good works in Melbourne",
