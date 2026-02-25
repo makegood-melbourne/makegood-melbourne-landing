@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Helmet } from "@/lib/helmet";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { ArrowRight, Clock } from "lucide-react";
@@ -5,8 +6,18 @@ import Footer from "@/components/Footer";
 import { blogPosts } from "@/data/blogPosts";
 import { getBlogImage, sortBlogPostsByDate, calculateReadingTime } from "@/lib/blogUtils";
 
+const POSTS_PER_PAGE = 12;
+
 const Blog = () => {
   const sortedPosts = sortBlogPostsByDate(blogPosts);
+  const [visibleCount, setVisibleCount] = useState(POSTS_PER_PAGE);
+
+  const visiblePosts = sortedPosts.slice(0, visibleCount);
+  const hasMore = visibleCount < sortedPosts.length;
+
+  const handleLoadMore = () => {
+    setVisibleCount((prev) => Math.min(prev + POSTS_PER_PAGE, sortedPosts.length));
+  };
   
   return (
     <div className="min-h-screen flex flex-col">
@@ -24,15 +35,15 @@ const Blog = () => {
         <div className="container mx-auto px-4 py-12">
           <div className="text-center mb-12">
             <h1 className="text-4xl md:text-5xl text-foreground mb-4">Make Good Melbourne Blog</h1>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Expert insights on make good services, end of lease works, and property restoration in Melbourne
+            <p className="text-xl text-foreground max-w-2xl mx-auto">
+              Expert insights on make good services, end of lease works and property restoration in Melbourne
             </p>
           </div>
 
           {/* Intro Section for SEO */}
           <div className="max-w-4xl mx-auto mb-16 prose prose-lg">
             <p className="text-muted-foreground mb-6 leading-relaxed">
-              Welcome to the Make Good Melbourne blog, your comprehensive resource for professional insights into commercial and industrial property restoration. Our team of industry experts shares practical knowledge, compliance guidance, and best practices for end of lease make good projects across Melbourne and Victoria.
+              Welcome to the Make Good Melbourne blog, your comprehensive resource for professional insights into commercial and industrial property restoration. Our team of industry experts shares practical knowledge, compliance guidance and best practices for end of lease make good projects across Melbourne and Victoria.
             </p>
             <p className="text-muted-foreground mb-6 leading-relaxed">
               Whether you're a property manager, real estate agent, strata manager or tenant preparing for lease expiry, our articles cover everything from asbestos management and concrete cancer remediation to electrical make-safe procedures and waste management compliance. We understand that make good obligations can be complex and costly, which is why we provide detailed guides to help you navigate the process with confidence.
@@ -46,7 +57,7 @@ const Blog = () => {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {sortedPosts.map((post) => (
+            {visiblePosts.map((post) => (
               <Card key={post.id} className="border-border hover:shadow-lg transition-shadow overflow-hidden group">
                 <a href={`/blog/${post.slug}`} className="block aspect-video overflow-hidden">
                   <img 
@@ -64,7 +75,10 @@ const Blog = () => {
                       {calculateReadingTime(post.content)} min read
                     </span>
                   </div>
-                  <h2 className="text-2xl text-card-foreground mb-3">{post.title}</h2>
+                  <h2 className="text-2xl text-card-foreground mb-1">{post.title}</h2>
+                  {post.subtitle && (
+                    <p className="text-base text-accent font-medium">{post.subtitle}</p>
+                  )}
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground mb-4 line-clamp-3">
@@ -81,6 +95,17 @@ const Blog = () => {
               </Card>
             ))}
           </div>
+
+          {hasMore && (
+            <div className="flex justify-center mt-12">
+              <button
+                onClick={handleLoadMore}
+                className="inline-flex items-center px-8 py-3 border border-accent text-accent hover:bg-accent hover:text-background transition-colors rounded-md text-lg font-medium"
+              >
+                Load More Articles
+              </button>
+            </div>
+          )}
         </div>
       </main>
 
