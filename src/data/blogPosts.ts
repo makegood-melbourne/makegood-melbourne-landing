@@ -13,13 +13,14 @@ export interface BlogPost {
 export const blogPosts: BlogPost[] = [
   {
     id: "40",
-    slug: "property-manager-guide-end-of-lease-make-good-melbourne",
-    title: "The Property Manager's Guide to a Smooth End of Lease Make Good",
+    slug: "property-manager-make-good-melbourne",
+    title: "Property Manager's Make Good Guide Melbourne | End of Lease | Make Good Melbourne",
     excerpt: "A smooth tenancy handover is the ideal outcome. But the make good process is often the biggest point of friction. This guide helps property managers manage the process more effectively.",
+    metaDescription: "A practical guide for property managers on running a smooth commercial make good in Melbourne. One contractor, fixed price, no surprises.",
     date: "2026-03-15",
-    image: "/src/assets/blog/property-manager-guide-end-of-lease-make-good-melbourne.webp",
+    image: "/src/assets/blog/property-manager-make-good-melbourne.webp",
     imageAlt: "Property manager presenting commercial property management and end of lease make good services in Melbourne",
-    ogImage: "/og/blog/property-manager-guide-end-of-lease-make-good-melbourne.jpg",
+    ogImage: "/og/blog/property-manager-make-good-melbourne.jpg",
     content: `
 As a property manager, a smooth tenancy handover is the ideal outcome. But the make good process is often the biggest point of friction. Disagreements over scope, disputes about fair wear and tear and delays in completion cost the landlord time and money — and create unnecessary work for you.
 
