@@ -20,7 +20,7 @@ export const blogPosts: BlogPost[] = [
     image: "/src/assets/blog/warehouse-factory-make-good-melbourne.webp",
     imageAlt: "Empty industrial warehouse interior with steel frame structure and polished concrete floor ready for make good handover in Melbourne",
     ogImage: "/og/blog/warehouse-factory-make-good-melbourne.jpg",
-    content: \`
+    content: `
 A warehouse or factory make good is a different beast to a standard office strip-out. The scale is larger, the machinery is heavier and the potential for disputes is higher. As specialists in industrial and commercial [make goods](/services/make-good-solutions/), we have seen what goes right and what goes wrong when tenants exit a warehouse or factory lease. This guide breaks down the process from a contractor's perspective — what's involved, what it costs, where tenants get caught out and how to get it done properly.
 
 ---
@@ -140,7 +140,7 @@ We handle industrial make goods from Dandenong to the CBD, from small factory un
 One point of contact. Fixed price. Done properly.
 
 [Get in touch.](/contact)
-\`,
+`,
   },
   {
     id: "36",
