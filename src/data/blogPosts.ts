@@ -12,6 +12,154 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: "40",
+    slug: "property-manager-guide-end-of-lease-make-good-melbourne",
+    title: "The Property Manager's Guide to a Smooth End of Lease Make Good",
+    excerpt: "A smooth tenancy handover is the ideal outcome. But the make good process is often the biggest point of friction. This guide helps property managers manage the process more effectively.",
+    date: "2026-03-15",
+    image: "/src/assets/blog/property-manager-guide-end-of-lease-make-good-melbourne.webp",
+    imageAlt: "Property manager presenting commercial property management and end of lease make good services in Melbourne",
+    ogImage: "/og/blog/property-manager-guide-end-of-lease-make-good-melbourne.jpg",
+    content: `
+As a property manager, a smooth tenancy handover is the ideal outcome. But the make good process is often the biggest point of friction. Disagreements over scope, disputes about fair wear and tear and delays in completion cost the landlord time and money — and create unnecessary work for you.
+
+This guide is designed to help you manage the make good process more effectively, whether you are dealing with a well-organised tenant with months to prepare or one who has [left it to the last minute](/blog/last-minute-make-good-melbourne). It also covers how to use a reliable make good contractor as a genuine partner — someone who makes your job easier rather than adding to your workload.
+
+---
+
+## What a Make Good Actually Involves
+
+It is worth being clear on what a commercial make good requires, because the scope varies significantly from tenancy to tenancy — and misunderstandings about scope are where most disputes start.
+
+A make good clause in a commercial lease requires the tenant to return the premises to the condition it was in at the start of the tenancy, as documented in the ingoing condition report. In practice, this usually means removing the tenant's fit-out, repairing any damage caused during the lease and leaving the premises clean and functional for the next tenant.
+
+For an office tenancy, that might mean removing partition walls, workstations, data cabling and signage, then [patching and repainting](/services/make-good-solutions/patching-plastering/) the walls and replacing [flooring](/services/make-good-solutions/flooring-reinstatement/). For a [warehouse or industrial tenancy](/blog/warehouse-factory-make-good-melbourne), it can mean removing [racking](/services/strip-out-solutions/pallet-racking-removal/) and mezzanine floors, grinding and patching concrete, decommissioning services and reinstating base building fire systems.
+
+The scope is defined by two documents: the lease agreement and the ingoing condition report. Those two documents together tell you exactly what the tenant is obligated to do — and what they are not. When one or both of those documents is missing, unclear or poorly prepared, that is when disputes become expensive and time-consuming for everyone involved.
+
+---
+
+## Why a Single Contractor is Better for Everyone
+
+When a tenant tries to manage a [make good](/services/make-good-solutions/) themselves — hiring individual trades, coordinating schedules, trying to hold everyone accountable — it rarely goes smoothly. A plumber does not show up on time, which delays the painter. The painter does not have the right spec, requiring a re-paint. The cleaner has no experience in a post-construction environment. The result is a disjointed project that often fails to meet the lease requirements and drags past the handover date.
+
+Using a specialist make good contractor solves this. One team. One scope. One fixed price. One point of contact for you and the tenant from inspection through to handover.
+
+The contractor manages the sequencing, the trades, the safety compliance and the quality control. If something comes up mid-project — and in a make good, something always does — they deal with it without it becoming your problem. You stay informed, but you are not the one making calls to find out why the sparky hasn't shown up.
+
+For the tenant, it means cost certainty and a guaranteed scope. For you, it means a faster handover, fewer disputes and a property that is genuinely ready for the next tenant.
+
+---
+
+## The Process: How We Work with Agents and Tenants
+
+Our process is designed to be transparent and straightforward. We work with you and the tenant to make sure everyone is on the same page from the start.
+
+**Initial Review.** We start by reviewing the lease agreement and the ingoing condition report. These are the source of truth for the make good. If there are ambiguities in the lease or gaps in the condition report, we flag them early so they can be addressed before works begin — not argued about after.
+
+**Site Inspection.** We conduct a joint site inspection with you and the tenant. Walking the site together and agreeing on scope upfront is how you avoid surprises later. Everyone leaves the inspection with the same understanding of what is required.
+
+**Fixed-Price Quote.** We provide a detailed, itemised fixed-price quote. Every task is listed. The tenant knows exactly what they are up for. No surprises at the end of the job.
+
+**Project Management.** Our project manager coordinates all trades and manages the works on site. We provide regular progress updates to you and the tenant throughout the project. You will always know where things are up to.
+
+**Final Handover.** We conduct a final walkthrough with you to sign off on the completed works. We hand over a compliant property, documented and ready for the next tenant.
+
+---
+
+## What We See Go Wrong — And How to Get Ahead of It
+
+We have managed hundreds of end-of-lease handovers across Melbourne. The same problems come up again and again. Here is what to watch for and how to deal with each one.
+
+### Tenants Who Leave It Too Late
+
+This is the single most common problem. A tenant signs a new lease, gets absorbed in the move and suddenly realises they have two weeks to complete a make good that needs six. The result is rushed work, missed items and a handover that does not meet the required standard.
+
+The fix is simple: get in front of it early. Send your tenant a reminder at least six months before the lease end date. Point them to a [make good specialist](/services/make-good-solutions/) and encourage them to get a scope done well in advance — even if works are months away. Understanding what is required early gives the tenant time to budget, plan and make good decisions rather than reactive ones. We are happy to be that referral.
+
+### Disputes Over Fair Wear and Tear
+
+Fair wear and tear is one of the most argued-about topics in commercial leasing. The tenant believes the scuff marks on the walls are normal deterioration. The landlord disagrees. Without a clear ingoing condition report, these disputes can drag on for months and sometimes end up in VCAT.
+
+The ingoing condition report is everything. A detailed report with high-resolution photos taken at the start of the lease makes disputes far easier to resolve because the baseline is documented and agreed upon. We always recommend that property managers insist on a thorough condition report at the start of every tenancy.
+
+If you do not have one — or the one you have is inadequate — we can prepare a [dilapidation report](/blog/dilapidation-reports-melbourne-make-good) at the end of the lease. This documents the current condition of the property and provides an independent assessment of the works required. It is not as clean as having a solid ingoing report, but it gives you something to work from.
+
+### Incomplete or Substandard Work
+
+When a tenant engages someone underqualified to manage their make good, the result is predictable. Walls are patched but not painted to spec. Cabling is left in the ceiling. Anchor bolts are cut flush with the floor instead of being properly ground out. Services are left disconnected without compliance certificates.
+
+You send the tenant back to fix it. They push back. Time passes. The handover is delayed and the landlord is frustrated.
+
+A specialist make good contractor eliminates this risk. We provide a detailed scope of works that is agreed upon before any work begins. Our project manager inspects the work at every stage. We do not hand over until it is right — and we have the documentation to prove it.
+
+### No Communication During the Works
+
+A common frustration for property managers is being left in the dark. The tenant says they are "handling it" and you have no visibility on progress. The lease end date arrives and the property is half-finished.
+
+We provide regular progress updates directly to you throughout the project. You know what has been completed, what is still to come and whether the project is on track. If anything changes — a delay, an unexpected scope item, a complication on site — you hear about it from us before it becomes a problem.
+
+### The Abandoned or Insolvent Tenant
+
+It happens. A business closes, goes into administration or simply walks away from the tenancy without completing the make good. The landlord is left with a property that needs significant work before it can be re-leased.
+
+In these situations, we work directly for the landlord or the appointed administrator. We conduct a site inspection, document the current condition, scope the works and provide a fixed-price quote. We manage the entire project and hand back a compliant, re-leasable property as quickly as possible. The faster the property is ready, the sooner rental income resumes.
+
+---
+
+## The Financial Case for Getting It Right
+
+A poorly managed make good costs more than the make good itself. Consider what is at stake when a handover is delayed or disputed.
+
+Every week the property sits empty waiting for a make good to be completed is a week of lost rent for the landlord. On a commercial tenancy with a monthly rent of $15,000, a two-week delay costs $7,500 in lost income. A four-week delay doubles that. If the property cannot be shown to prospective tenants while make good works are ongoing, the vacancy period extends further still.
+
+Add to that the cost of managing a dispute — your time, potentially a solicitor's involvement, VCAT fees — and the financial case for a well-managed make good becomes very clear.
+
+A specialist contractor with a fixed-price quote, a documented scope and a proper handover process is not an additional cost. It is how you protect the landlord's investment and minimise vacancy.
+
+---
+
+## How a Good Make Good Contractor Makes Your Job Easier
+
+**We save you time.** One point of contact instead of chasing multiple trades. We handle the project management so you can focus on leasing the property.
+
+**We reduce your risk.** We are fully licensed and insured. We take full responsibility for the site, including safety and compliance. You and your client are protected.
+
+**We deliver a better result.** We know what landlords expect and we know how to deliver it. We hand over a property that is compliant and ready for the next tenant. Fewer disputes. Faster re-leasing.
+
+**We become a long-term partner.** Once you have a reliable make good contractor on your books, every future lease exit becomes easier. A go-to referral for tenants and a trusted team that knows your standards.
+
+---
+
+## Property Manager FAQs
+
+**How do you handle disputes between tenants and landlords?**
+Our role is to be an independent expert, not to take sides. We provide a clear, evidence-based scope of works based on the lease and the ingoing condition report. That removes the subjectivity. If there is a genuine disagreement over specific items, we can provide a cost breakdown that gives both parties something concrete to negotiate from.
+
+**What if the tenant has no money to do the make good?**
+In most cases, the landlord will use the security deposit to cover the cost of works. If the make good exceeds the deposit, the landlord may need to take legal action to recover the shortfall. The best outcome for everyone is planning ahead — which is why early referrals to a make good specialist matter.
+
+**Can you work directly for the landlord?**
+Yes. While we are most often engaged by the tenant, we also work directly for landlords — particularly where a tenant has abandoned the property, gone into administration or where the landlord has taken a cash settlement and wants to manage the works themselves. We can quote directly to you and manage the full project on your behalf.
+
+**Do you handle both office and industrial properties?**
+Yes. We manage make goods across offices, [warehouses](/blog/warehouse-factory-make-good-melbourne), factories and retail tenancies. Each has its own requirements and challenges. Our team has experience across all of them and we adapt our approach to suit the property and the lease.
+
+**How quickly can you start?**
+We can usually conduct a site inspection within 24 to 48 hours and have a quote ready within a few days. For [urgent projects](/blog/last-minute-make-good-melbourne), we can often mobilise within a week of the quote being approved.
+
+---
+
+## Partner with a Make Good Specialist
+
+We work with property managers across Melbourne to deliver smooth, on-time [make good](/services/make-good-solutions/) projects. We understand the importance of a timely handover and a high-quality finish. Our goal is simple: make your job easier and protect your client's property.
+
+One point of contact. Fixed price. Done properly.
+
+Need a reliable make good partner in Melbourne? [Get in touch.](/contact)
+`,
+  },
+  {
     id: "39",
     slug: "warehouse-factory-make-good-melbourne",
     title: "Warehouse & Factory Make Good Melbourne | Industrial Tenant Guide | Make Good Melbourne",
