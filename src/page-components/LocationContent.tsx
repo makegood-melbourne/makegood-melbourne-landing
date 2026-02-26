@@ -56,7 +56,7 @@ const LocationContent = ({ slug }: LocationContentProps) => {
       </Helmet>
 
       {/* Local Content Section with Expertise Card */}
-      <section className="py-16 bg-secondary">
+      <section className="py-16" style={{ backgroundColor: 'hsl(0 0% 22%)' }}>
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             {location.localExpertise && location.localExpertise.length > 0 ? (
@@ -149,7 +149,7 @@ const LocationContent = ({ slug }: LocationContentProps) => {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-16 bg-secondary">
+      <section className="py-16" style={{ backgroundColor: 'hsl(0 0% 22%)' }}>
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -193,7 +193,7 @@ const LocationContent = ({ slug }: LocationContentProps) => {
 
       {/* FAQ Section - matching service page style */}
       {location.faqs && location.faqs.length > 0 && (
-        <section className="py-16 bg-secondary">
+        <section className="py-16" style={{ backgroundColor: 'hsl(0 0% 22%)' }}>
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto">
               <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-center uppercase tracking-tight">
