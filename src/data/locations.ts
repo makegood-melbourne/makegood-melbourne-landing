@@ -3,6 +3,11 @@ export interface LocationFAQ {
   answer: string;
 }
 
+interface LocalExpertiseItem {
+  title: string;
+  description: string;
+}
+
 export interface Location {
   name: string;
   slug: string;
@@ -14,6 +19,8 @@ export interface Location {
   localContext: string;
   keyAreas: string[];
   businessTypes: string[];
+  localExpertise?: LocalExpertiseItem[];
+  endOfLeaseContent?: string;
   faqs?: LocationFAQ[];
 }
 
@@ -43,6 +50,13 @@ export const locations: Location[] = [
       "Co-working spaces",
       "Creative agencies"
     ],
+    localExpertise: [
+      { title: "High-Rise Access", description: "Specialised equipment and scheduling for make good work in multi-storey office towers common around Collins and Bourke Streets." },
+      { title: "Heritage Compliance", description: "Experience restoring interiors within heritage-listed buildings while respecting strict council and building regulations." },
+      { title: "After-Hours Work", description: "Coordinating with building managers to carry out make good tasks outside normal business hours to avoid disrupting tenants." },
+      { title: "Premium Finish Standards", description: "Delivering high-quality repairs and finishes that meet the expectations of Melbourne CBD’s corporate and retail precincts." }
+    ],
+    endOfLeaseContent: "Make Good Melbourne specialises in make good work across Melbourne CBD’s office towers and retail spaces on Collins, Bourke and Elizabeth Streets. We understand the building management requirements and heritage considerations unique to this precinct, ensuring your property is restored to the expected standard.",
     faqs: [
       {
         question: "What are typical make good requirements for CBD office buildings?",
@@ -86,7 +100,15 @@ export const locations: Location[] = [
       "Retail spaces",
       "Automotive services",
       "Food processing"
-    ]
+    ],
+    localExpertise: [
+      { title: "Warehouse Floor Repair", description: "Specialised in fixing worn concrete and heavy-duty flooring common in Altona North’s older warehouse stock to meet lease exit standards." },
+      { title: "Industrial Paint Restoration", description: "Experienced in restoring industrial paintwork affected by manufacturing processes and vehicle traffic in the Aircraft Industrial Estate precinct." },
+      { title: "Loading Dock Refurbishment", description: "Skilled at repairing and restoring loading docks and roller doors used heavily in distribution centres along the Western Ring Road corridor." },
+      { title: "Hazardous Waste Removal", description: "Knowledgeable in safely removing industrial residues and waste materials typical in Altona’s manufacturing and logistics facilities." }
+    ],
+    endOfLeaseContent: "Make Good Melbourne specialises in end of lease make good for industrial and commercial properties across Altona, including warehouses on Millers Road and manufacturing sites near the Aircraft Industrial Estate. We understand the specific restoration needs of these spaces and deliver practical, compliant repairs to help you meet lease exit requirements.",
+
   },
   {
     name: "Clayton",
@@ -112,7 +134,15 @@ export const locations: Location[] = [
       "Warehouses and logistics",
       "Manufacturing facilities",
       "Retail spaces"
-    ]
+    ],
+    localExpertise: [
+      { title: "Lab Equipment Removal", description: "Handling specialised lab fittings and fixtures common in Monash University research spaces requires careful disassembly and disposal." },
+      { title: "Medical Suite Compliance", description: "Restoring medical suites to original condition involves meeting strict hygiene and safety standards unique to Clayton’s health precinct." },
+      { title: "Industrial Site Repairs", description: "Clayton South industrial properties often have heavy-duty flooring and structural wear needing targeted restoration methods." },
+      { title: "Knowledge Precinct Fitouts", description: "Undoing custom fitouts in tech and innovation offices demands precision to preserve building integrity and meet landlord expectations." }
+    ],
+    endOfLeaseContent: "Make Good Melbourne specialises in end of lease restoration across Clayton’s diverse properties, including Monash University precinct offices, medical suites on Centre Road and industrial spaces in Clayton South. We understand local requirements and deliver practical solutions to leave your commercial space ready for handover.",
+
   },
   {
     name: "Dandenong",
@@ -139,6 +169,13 @@ export const locations: Location[] = [
       "Automotive industry",
       "Food production"
     ],
+    localExpertise: [
+      { title: "Industrial Zone Compliance", description: "Handling make good tasks in Dandenong South requires adherence to strict industrial regulations and environmental standards unique to heavy manufacturing areas." },
+      { title: "Logistics Facility Restoration", description: "Expertise in restoring large warehouse and logistics properties along Cheltenham Road with focus on durable surfaces and heavy-duty fittings." },
+      { title: "Revitalised CBD Adaptations", description: "Experience adapting make good work to meet modern standards in Dandenong’s revitalised CBD retail and office spaces." },
+      { title: "Heavy-Duty Surface Repairs", description: "Specialised in repairing concrete floors and loading docks common in Dandenong’s industrial precincts to withstand ongoing operational demands." }
+    ],
+    endOfLeaseContent: "Make Good Melbourne understands the varied property types across Dandenong, from industrial units in Dandenong South to offices in the revitalised CBD along Lonsdale Street. We provide practical end of lease make good solutions tailored to local site conditions and council requirements.",
     faqs: [
       {
         question: "Who is responsible for the make good at the end of a commercial lease in Dandenong?",
@@ -182,7 +219,15 @@ export const locations: Location[] = [
       "Commercial offices",
       "Retail spaces",
       "Automotive services"
-    ]
+    ],
+    localExpertise: [
+      { title: "Aged Industrial Buildings", description: "Restoring 1980s-1990s warehouses requires specialised repairs to outdated materials and structures common along Canterbury Road." },
+      { title: "Trade Service Adaptations", description: "Kilsyth’s prevalence of trade service businesses means addressing heavy-duty wear and tailored fixture removals is often needed." },
+      { title: "Eastlink Access Coordination", description: "Easy Eastlink access allows efficient transport of materials but demands precise scheduling to avoid peak industrial traffic delays." },
+      { title: "Yarra Ranges Gateway Compliance", description: "Properties near Yarra Ranges need make good work mindful of environmental regulations and local council standards unique to the area." }
+    ],
+    endOfLeaseContent: "Make Good Melbourne handles end of lease make good in Kilsyth’s industrial precincts, including Canterbury Road and nearby trade estates. We focus on restoring ageing commercial buildings and coordinating work around Eastlink access, ensuring your property meets local standards without delay.",
+
   },
   {
     name: "Moorabbin",
@@ -208,7 +253,15 @@ export const locations: Location[] = [
       "Manufacturing facilities",
       "Retail spaces",
       "Trade services"
-    ]
+    ],
+    localExpertise: [
+      { title: "Aviation Facility Repairs", description: "Experienced in restoring specialised aviation hangars and workshops to meet strict safety and operational standards unique to Moorabbin Airport precinct." },
+      { title: "High-Security Premises", description: "Skilled at managing make good work in aerospace and defence sites requiring controlled access and compliance with security protocols." },
+      { title: "Industrial South Road Corridor", description: "Familiar with the heavy vehicle access and wear issues common in industrial properties along South Road, ensuring durable restoration results." },
+      { title: "Bayside Environmental Considerations", description: "Knowledgeable about local bayside regulations affecting waste disposal and environmental controls during make good projects near Moorabbin’s coastal zones." }
+    ],
+    endOfLeaseContent: "Make Good Melbourne specialises in end of lease restorations across Moorabbin’s diverse properties, from aviation hangars near the airport to industrial units along South Road. We understand the specific requirements of high-security and bayside sites, delivering practical solutions that align with local standards and conditions.",
+
   },
   {
     name: "Mulgrave",
@@ -234,7 +287,15 @@ export const locations: Location[] = [
       "Manufacturing facilities",
       "Retail spaces",
       "Healthcare facilities"
-    ]
+    ],
+    localExpertise: [
+      { title: "Corporate HQ Fitouts", description: "Handling complex make good requirements for large-scale corporate offices common in Mulgrave’s premium business parks." },
+      { title: "Technology Facility Standards", description: "Working within strict technical and cabling layouts typical of Mulgrave’s technology company premises during restoration." },
+      { title: "Traffic Access Coordination", description: "Managing site access and scheduling around Eastlink and Monash Freeway traffic to minimise disruption to commercial operations." },
+      { title: "Springvale Road Compliance", description: "Navigating local council regulations for business properties along Springvale Road to ensure compliant end of lease works." }
+    ],
+    endOfLeaseContent: "Make Good Melbourne specialises in end of lease restorations for Mulgrave’s commercial properties, including offices along Springvale Road and facilities within business parks near Monash Freeway. We understand the specific requirements of corporate and technology tenants and provide practical solutions tailored to this precinct.",
+
   },
   {
     name: "Port Melbourne",
@@ -261,6 +322,13 @@ export const locations: Location[] = [
       "Creative studios",
       "Automotive services"
     ],
+    localExpertise: [
+      { title: "Heritage Warehouse Restoration", description: "Specialised repairs and restoration that respect Port Melbourne’s historic warehouse features and heritage overlays." },
+      { title: "Fishermans Bend Compliance", description: "Make good work aligned with Fishermans Bend’s evolving urban renewal standards and environmental guidelines." },
+      { title: "Logistics Facility Repairs", description: "Durable restoration solutions suited to Webb Dock’s heavy vehicle access and industrial loading zones." },
+      { title: "Creative Space Adaptations", description: "Restoring boutique commercial spaces in Port Melbourne’s creative precincts while preserving unique architectural details." }
+    ],
+    endOfLeaseContent: "Make Good Melbourne handles end of lease restorations across Port Melbourne’s key areas, including Bay Street and the Webb Dock precinct. We understand local building requirements for heritage warehouses, logistics hubs and creative offices, delivering practical repairs that meet landlord expectations.",
     faqs: [
       {
         question: "What is a make good clause and why does it matter in Port Melbourne?",
@@ -304,7 +372,15 @@ export const locations: Location[] = [
       "Manufacturing facilities",
       "Medical practices",
       "Hospitality"
-    ]
+    ],
+    localExpertise: [
+      { title: "Heritage Building Works", description: "Restoring heritage façades and interiors on Church Street requires careful attention to original materials and Victorian era construction methods." },
+      { title: "Tech Fitout Removal", description: "Dismantling complex tech fittings common in Swan Street offices involves managing cabling and specialised equipment safely and efficiently." },
+      { title: "Retail Strip Restoration", description: "Make good on Bridge Road retail spaces demands quick turnaround to minimise downtime in this busy shopping precinct." },
+      { title: "Mixed-Use Property Challenges", description: "Victoria Gardens properties combine residential and commercial areas, requiring coordination of different compliance and restoration standards." }
+    ],
+    endOfLeaseContent: "Make Good Melbourne offers thorough end of lease services across Richmond’s key areas like Bridge Road, Swan Street and Victoria Gardens. We handle the unique challenges of heritage shops and tech-heavy offices to restore your property to the landlord’s expectations with practical know-how and local experience.",
+
   },
   {
     name: "Ringwood",
@@ -331,6 +407,13 @@ export const locations: Location[] = [
       "Medical and healthcare",
       "Hospitality"
     ],
+    localExpertise: [
+      { title: "Retail Precinct Standards", description: "Eastland’s retail outlets require make good work that meets strict presentation rules to maintain high foot traffic and brand consistency." },
+      { title: "Mixed-Use Property Repairs", description: "Ringwood’s blend of commercial and residential buildings demands adaptable restoration approaches for both office and apartment spaces." },
+      { title: "Maroondah Highway Compliance", description: "Properties along Maroondah Highway often need specific façade and signage restoration to comply with local council requirements." },
+      { title: "High-Traffic Surface Restoration", description: "Heavy pedestrian and vehicle use in Ringwood’s shopping and business areas requires durable floor and wall repairs to withstand wear." }
+    ],
+    endOfLeaseContent: "Make Good Melbourne specialises in end of lease restorations across Ringwood, including Eastland precinct shops, Maroondah Highway offices and mixed-use buildings. We understand local repair standards and complete work to help tenants and landlords meet their lease exit requirements efficiently.",
     faqs: [
       {
         question: "When should I start planning my make good in Ringwood?",
@@ -374,7 +457,15 @@ export const locations: Location[] = [
       "Retail spaces",
       "Hospitality venues",
       "Medical practices"
-    ]
+    ],
+    localExpertise: [
+      { title: "Heritage Overlay Repairs", description: "Restoring walls and fixtures in heritage-listed Clarendon Street buildings requires complying with local heritage rules and preserving original features." },
+      { title: "Bespoke Fitout Removal", description: "Many design studios have custom fitouts that need careful dismantling and repair without damaging specialised materials or finishes." },
+      { title: "Commercial Precinct Knowledge", description: "Understanding South Melbourne Market and surrounding commercial zones means managing access and timing to minimise disruption to busy businesses." },
+      { title: "Creative Space Restoration", description: "Working with advertising agencies and creative firms involves restoring open-plan areas while maintaining the integrity of modern office elements." }
+    ],
+    endOfLeaseContent: "Make Good Melbourne provides expert end of lease make good services across South Melbourne, including Clarendon Street and the South Melbourne Market precinct. We specialise in restoring commercial spaces such as design studios and advertising agencies, balancing heritage requirements with practical repairs to meet lease exit conditions.",
+
   },
   {
     name: "Truganina",
@@ -400,7 +491,15 @@ export const locations: Location[] = [
       "Manufacturing facilities",
       "Cold storage",
       "Transport and freight"
-    ]
+    ],
+    localExpertise: [
+      { title: "Large Warehouse Floors", description: "Handling make good for expansive 10,000sqm plus floor plates requires specialised equipment and efficient labour to minimise downtime." },
+      { title: "High-Bay Warehouse Ceilings", description: "Working on modern high-bay warehouses with tall ceilings demands expertise in elevated access and safety compliance unique to Truganina’s industrial buildings." },
+      { title: "Logistics Hub Demands", description: "Truganina’s role as a logistics centre means frequent tight deadlines to restore spaces in active distribution precincts like Forsyth Road." },
+      { title: "E-commerce Facility Standards", description: "Make good work must meet specific standards for clean, functional spaces suitable for e-commerce fulfilment centres common around Boundary Road." }
+    ],
+    endOfLeaseContent: "Make Good Melbourne specialises in end of lease make good services across Truganina’s industrial precincts including Forsyth Road and Boundary Road. We understand the challenges of restoring large-scale warehouses and logistics facilities to meet lease exit requirements efficiently and with minimal disruption.",
+
   },
   {
     name: "Fitzroy",
@@ -427,6 +526,13 @@ export const locations: Location[] = [
       "Medical and allied health",
       "Professional services"
     ],
+    localExpertise: [
+      { title: "Heritage Overlay Compliance", description: "Work respects Fitzroy’s strict heritage regulations on buildings along Brunswick and Smith Streets, ensuring restorations preserve original features." },
+      { title: "Exposed Brick Restoration", description: "Specialised repairs maintain the character of exposed brick walls common in converted factories and warehouses throughout Fitzroy." },
+      { title: "Bespoke Fitout Reversal", description: "Careful removal of customised fitouts in creative offices and retail spaces avoids damage to underlying surfaces unique to Fitzroy’s style." },
+      { title: "Narrow Lane Access", description: "Experience working in tight laneways and alleyways typical to Fitzroy’s urban layout, ensuring equipment and materials are delivered without hassle." }
+    ],
+    endOfLeaseContent: "Make Good Melbourne handles end of lease restorations across Fitzroy’s creative precincts including Brunswick Street and converted warehouses near Smith Street. We understand the heritage overlays and unique fitouts common here, providing practical solutions that suit Fitzroy’s distinctive commercial properties.",
     faqs: [
       {
         question: "How do you handle make goods in Fitzroy's heritage-listed buildings?",
@@ -471,6 +577,13 @@ export const locations: Location[] = [
       "Hospitality venues",
       "Retail spaces"
     ],
+    localExpertise: [
+      { title: "Heritage Warehouse Restoration", description: "Specialising in restoring original brickwork and timber features common in Collingwood’s converted industrial warehouses to meet lease exit standards." },
+      { title: "A-Grade Office Finishes", description: "Experienced in refurbishing high-spec Wellington Street offices, including advanced lighting and flooring systems typical of Collingwood’s tech precinct." },
+      { title: "Mass Timber Building Repairs", description: "Skilled in working with exposed mass timber elements in new developments, ensuring repairs maintain structural and aesthetic integrity." },
+      { title: "Collingwood Yards Site Works", description: "Familiar with the unique mixed-use spaces at Collingwood Yards, handling diverse make good needs from retail fit-outs to creative studios." }
+    ],
+    endOfLeaseContent: "Make Good Melbourne knows Collingwood’s blend of heritage warehouses along Smith Street and modern offices on Wellington Street. We handle make good repairs tailored to these diverse properties, ensuring spaces in precincts like Collingwood Yards meet lease expectations with practical, local expertise.",
     faqs: [
       {
         question: "What make good standards apply to Collingwood's newer office buildings?",
@@ -511,6 +624,13 @@ export const locations: Location[] = [
       "Creative studios",
       "Hospitality venues"
     ],
+    localExpertise: [
+      { title: "Server Room Handling", description: "Specialised care for tech startups’ server rooms ensures sensitive equipment areas are restored without disrupting network infrastructure." },
+      { title: "Tight Streets Access", description: "Navigating Cremorne’s narrow streets and limited loading zones requires precise planning for equipment delivery and waste removal." },
+      { title: "Commercial Fitouts", description: "Experience restoring high-tech office fitouts along Church Street and Balmain Street back to landlord standards efficiently and accurately." },
+      { title: "Digital Hub Compliance", description: "Understanding Cremorne Digital Hub’s unique building codes and tenant requirements helps us meet specific make good conditions in this precinct." }
+    ],
+    endOfLeaseContent: "Make Good Melbourne specialises in end of lease make good for Cremorne’s tech offices and retail spaces around Church and Balmain Streets. We manage tight site access and restore fitouts in the Cremorne Digital Hub with local know-how, ensuring properties are ready for handover without hassle.",
     faqs: [
       {
         question: "How do you handle server room decommissioning in Cremorne tech offices?",
@@ -551,6 +671,13 @@ export const locations: Location[] = [
       "Food production facilities",
       "Medical and allied health"
     ],
+    localExpertise: [
+      { title: "Sydney Road Retail Fitouts", description: "Restoring shopfronts along Sydney Road requires careful attention to heritage facades and varied retail layouts unique to this bustling strip." },
+      { title: "Industrial Workshop Repairs", description: "Brunswick’s light industrial spaces often need specialised floor and wall make good to address wear from machinery and heavy use." },
+      { title: "Creative Studio Adaptations", description: "Many creative studios have custom installations that require sensitive removal and repair without damaging original structures." },
+      { title: "Food Production Compliance", description: "Make good in food production facilities demands strict hygiene and surface restoration aligned with local health standards." }
+    ],
+    endOfLeaseContent: "Make Good Melbourne specialises in end of lease restorations across Brunswick, covering busy precincts like Sydney Road and Lygon Street. We handle diverse properties from retail shops to industrial workshops, ensuring spaces are returned to landlords’ expectations with expert knowledge of local building styles.",
     faqs: [
       {
         question: "What are the make good requirements for Sydney Road retail tenancies?",
@@ -591,6 +718,13 @@ export const locations: Location[] = [
       "Medical practices",
       "Trade services"
     ],
+    localExpertise: [
+      { title: "Preston Market Restorations", description: "Experience handling make good works in heritage-listed Preston Market, balancing modern requirements with preservation of original structures." },
+      { title: "Mixed-Use Property Expertise", description: "Skilled in managing make good tasks in multi-level retail and residential buildings common along High Street and Plenty Road." },
+      { title: "Industrial Site Repairs", description: "Proficient in restoring Bell Street industrial properties with heavy-duty flooring and specialised wall finishes." },
+      { title: "Rapid Development Adaptations", description: "Adapt make good approaches to suit Preston's fast-changing commercial precincts, ensuring compliance with evolving local council standards." }
+    ],
+    endOfLeaseContent: "Make Good Melbourne provides thorough end of lease restoration for Preston’s diverse commercial spaces, including High Street shops, Plenty Road offices and Bell Street industrial sites. Our team understands local building requirements and delivers practical make good solutions tailored to Preston’s unique property mix.",
     faqs: [
       {
         question: "What make good services do you provide for Preston's retail tenancies?",
@@ -631,6 +765,13 @@ export const locations: Location[] = [
       "Medical and community services",
       "Trade services"
     ],
+    localExpertise: [
+      { title: "Heritage Retail Repairs", description: "Restoring shopfronts along Barkly Street involves careful work to preserve heritage features while meeting modern lease requirements." },
+      { title: "Industrial Site Restoration", description: "Whitehall Street’s industrial sites often require specialised surface repairs and waste removal due to heavy equipment use." },
+      { title: "Urban Renewal Adaptations", description: "Footscray’s ongoing urban renewal means adapting make good work to upgraded building codes and new precinct developments." },
+      { title: "Diverse Property Types", description: "Working across mixed-use properties in the Hopkins Street area demands flexible restoration approaches for retail, office and light industrial spaces." }
+    ],
+    endOfLeaseContent: "Make Good Melbourne handles end of lease restorations across Footscray’s varied precincts like Barkly Street and Whitehall Street. We understand the mix of heritage retail and industrial properties here and deliver practical repairs suited to local building standards and lease conditions.",
     faqs: [
       {
         question: "What make good challenges are common in Footscray's older commercial buildings?",
@@ -671,6 +812,13 @@ export const locations: Location[] = [
       "Education-related businesses",
       "Hospitality venues"
     ],
+    localExpertise: [
+      { title: "Heritage Building Care", description: "Specialising in restoring and repairing heritage facades common on Burwood Road while respecting council heritage overlays and permit requirements." },
+      { title: "Medical Practice Fitouts", description: "Experienced in reinstating clinical spaces on Glenferrie Road to meet health regulations and specific end of lease standards for medical tenants." },
+      { title: "University Precinct Restorations", description: "Skilled at managing make good works near Swinburne University, addressing frequent student tenancy changes and high foot traffic wear." },
+      { title: "Professional Office Spaces", description: "Focused on reinstating offices for legal and financial services firms, ensuring professional finishes that match Hawthorn’s commercial character." }
+    ],
+    endOfLeaseContent: "Make Good Melbourne delivers reliable end of lease restorations across Hawthorn’s key commercial areas including Glenferrie Road and Burwood Road. We understand the repair and reinstatement needs of heritage properties, medical suites and professional offices, providing trade expertise tailored to this established business precinct.",
     faqs: [
       {
         question: "What are the typical make good requirements for Hawthorn office spaces?",
@@ -711,6 +859,13 @@ export const locations: Location[] = [
       "Government services",
       "Hospitality venues"
     ],
+    localExpertise: [
+      { title: "High Tenant Turnover", description: "Frequent tenant changes in Box Hill’s commercial spaces require quick, efficient make good work to prepare properties for new occupants without delay." },
+      { title: "Medical Practice Fitouts", description: "Specialised restoration for clinics around Whitehorse Road involves careful handling of partitions, plumbing and strict hygiene standards." },
+      { title: "Heritage Facade Repairs", description: "Box Hill’s Station Street towers blend modern and older buildings, needing restoration that respects heritage-listed facades and council requirements." },
+      { title: "Government Office Spaces", description: "Make good work in government precincts includes restoring secure office fitouts and managing access restrictions during business hours." }
+    ],
+    endOfLeaseContent: "Make Good Melbourne handles end of lease make good in Box Hill’s busy commercial zones including Station Street and Whitehorse Road. We understand the specific needs of medical clinics, government offices and mixed-use towers, delivering practical restoration tailored to the local property types and tenant expectations.",
     faqs: [
       {
         question: "How do you manage make goods in Box Hill's multi-storey office buildings?",

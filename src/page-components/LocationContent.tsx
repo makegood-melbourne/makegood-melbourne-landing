@@ -1,5 +1,5 @@
 import { Helmet } from "@/lib/helmet";
-import { MapPin, Clock, Shield, Mail, ArrowRight, CheckCircle2, Building2, Wrench, Warehouse, Factory, HardHat, Truck, HelpCircle } from "lucide-react";
+import { MapPin, Clock, Shield, Mail, ArrowRight, CheckCircle2, Building2, Wrench, Warehouse, Factory, HardHat, Truck } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { getLocationBySlug } from "@/data/locations";
@@ -55,19 +55,49 @@ const LocationContent = ({ slug }: LocationContentProps) => {
         )}
       </Helmet>
 
-      {/* Local Content Section */}
+      {/* Local Content Section with Expertise Card */}
       <section className="py-16 bg-secondary">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
-            <div className="mb-12">
-              <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
-                Commercial & Industrial Property in <span className="text-primary">{location.name}</span>
-              </h2>
-              <div className="text-muted-foreground space-y-4">
-                <p className="leading-relaxed">{location.uniqueIntro}</p>
-                <p className="leading-relaxed">{location.localContext}</p>
+            {location.localExpertise && location.localExpertise.length > 0 ? (
+              <div className="grid lg:grid-cols-2 gap-12 mb-12">
+                <div>
+                  <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
+                    Commercial & Industrial Property in <span className="text-primary">{location.name}</span>
+                  </h2>
+                  <div className="text-muted-foreground space-y-4">
+                    <p className="leading-relaxed">{location.uniqueIntro}</p>
+                    <p className="leading-relaxed">{location.localContext}</p>
+                  </div>
+                </div>
+                <div className="bg-card border border-border rounded-lg p-8">
+                  <h3 className="text-xl md:text-2xl font-bold text-foreground mb-6">{location.name} Make Good Expertise</h3>
+                  <div className="space-y-6">
+                    {location.localExpertise.map((item, index) => (
+                      <div key={index} className="flex items-start gap-4">
+                        <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center flex-shrink-0">
+                          <span className="text-sm font-bold text-primary-foreground">{index + 1}</span>
+                        </div>
+                        <div>
+                          <h4 className="font-semibold text-foreground">{item.title}</h4>
+                          <p className="text-muted-foreground text-sm leading-relaxed">{item.description}</p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
               </div>
-            </div>
+            ) : (
+              <div className="mb-12">
+                <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
+                  Commercial & Industrial Property in <span className="text-primary">{location.name}</span>
+                </h2>
+                <div className="text-muted-foreground space-y-4">
+                  <p className="leading-relaxed">{location.uniqueIntro}</p>
+                  <p className="leading-relaxed">{location.localContext}</p>
+                </div>
+              </div>
+            )}
             <h3 className="text-xl md:text-2xl font-bold text-primary text-center mb-10">We do make goods all day, every day.</h3>
             <div className="grid md:grid-cols-2 gap-12 max-w-3xl mx-auto">
               <div>
@@ -143,32 +173,44 @@ const LocationContent = ({ slug }: LocationContentProps) => {
       </section>
 
       {/* SEO Content */}
-      <section className="py-16 bg-background border-t border-border">
+      <section className="py-16 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">End of Lease Make Good Specialists in {location.name}</h2>
             <div className="prose prose-lg max-w-none text-muted-foreground space-y-4">
-              <p className="leading-relaxed">When your commercial or industrial lease ends in {location.name}, meeting your make good obligations can feel overwhelming. That's where Make Good Melbourne comes in.</p>
-              <p className="leading-relaxed">Our experienced team works with real estate agents, property managers, strata managers and tenants throughout {location.name}.</p>
+              {location.endOfLeaseContent ? (
+                <p className="leading-relaxed">{location.endOfLeaseContent}</p>
+              ) : (
+                <>
+                  <p className="leading-relaxed">When your commercial or industrial lease ends in {location.name}, meeting your make good obligations can feel overwhelming. That's where Make Good Melbourne comes in.</p>
+                  <p className="leading-relaxed">Our experienced team works with real estate agents, property managers, strata managers and tenants throughout {location.name}.</p>
+                </>
+              )}
             </div>
           </div>
         </div>
       </section>
 
-      {/* FAQ Section */}
+      {/* FAQ Section - matching service page style */}
       {location.faqs && location.faqs.length > 0 && (
         <section className="py-16 bg-secondary">
           <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto">
-              <div className="flex items-center gap-3 mb-8">
-                <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center"><HelpCircle className="h-6 w-6 text-primary" /></div>
-                <h2 className="text-2xl md:text-3xl font-bold text-foreground">Frequently Asked Questions About {location.name} Make Goods</h2>
-              </div>
-              <Accordion type="single" collapsible className="space-y-4">
+            <div className="max-w-3xl mx-auto">
+              <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-center uppercase tracking-tight">
+                {location.name} Make Good FAQs
+              </h2>
+              <p className="text-center text-muted-foreground mb-10">
+                Common questions about make good services in {location.name}
+              </p>
+              <Accordion type="single" collapsible className="w-full">
                 {location.faqs.map((faq, index) => (
-                  <AccordionItem key={index} value={`faq-${index}`} className="bg-card border border-border rounded-lg px-6">
-                    <AccordionTrigger className="text-left text-foreground font-medium hover:text-primary hover:no-underline py-5">{faq.question}</AccordionTrigger>
-                    <AccordionContent className="text-muted-foreground pb-5 leading-relaxed">{faq.answer}</AccordionContent>
+                  <AccordionItem key={index} value={`faq-${index}`}>
+                    <AccordionTrigger className="text-left">
+                      {faq.question}
+                    </AccordionTrigger>
+                    <AccordionContent className="text-muted-foreground">
+                      {faq.answer}
+                    </AccordionContent>
                   </AccordionItem>
                 ))}
               </Accordion>
