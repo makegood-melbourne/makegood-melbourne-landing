@@ -401,6 +401,330 @@ export const locations: Location[] = [
       "Cold storage",
       "Transport and freight"
     ]
+  },
+  {
+    name: "Fitzroy",
+    slug: "fitzroy",
+    title: "Make Good Services Fitzroy",
+    metaTitle: "Make Good Services Fitzroy | Melbourne Experts",
+    description: "Professional make good and end of lease services for Fitzroy's creative and commercial properties. From Brunswick Street agencies to Smith Street retail, we deliver expert restoration that respects heritage character.",
+    metaDescription: "Expert make good services in Fitzroy. Creative office strip outs, heritage warehouse restoration and commercial end of lease works. Free quotes.",
+    uniqueIntro: "Fitzroy is Melbourne's creative heartland—where heritage warehouses, converted factories and character buildings house some of the city's most innovative businesses. Brunswick Street and Smith Street form the commercial spine, lined with creative agencies, design studios, hospitality venues and boutique retailers operating from buildings that blend 19th-century architecture with contemporary fitouts.",
+    localContext: "Fitzroy's commercial properties present distinct make good challenges. Heritage overlays are common, requiring careful restoration that preserves original features like exposed brick, timber trusses and pressed metal ceilings. Creative tenants often invest heavily in bespoke fitouts—polished concrete, custom joinery and open-plan layouts—that need thoughtful removal without damaging the underlying building fabric. We understand the balance between meeting lease obligations and respecting Fitzroy's architectural character.",
+    keyAreas: [
+      "Brunswick Street precinct",
+      "Smith Street corridor",
+      "Gertrude Street businesses",
+      "Rose Street area",
+      "Johnston Street precinct",
+      "Alexandra Parade corridor"
+    ],
+    businessTypes: [
+      "Creative agencies and studios",
+      "Hospitality and retail",
+      "Commercial offices",
+      "Co-working spaces",
+      "Medical and allied health",
+      "Professional services"
+    ],
+    faqs: [
+      {
+        question: "How do you handle make goods in Fitzroy's heritage-listed buildings?",
+        answer: "Many Fitzroy buildings have heritage overlays or are individually listed. Our team works carefully to preserve original features—exposed brick, timber floors, pressed metal ceilings—while removing tenant fitouts and restoring the space to base building condition. Where heritage consultants are required, we coordinate that process. The key is understanding what's original fabric versus tenant addition, which our experience in the area gives us."
+      },
+      {
+        question: "What are the typical make good challenges for creative offices on Brunswick Street?",
+        answer: "Creative tenants in Fitzroy often install bespoke fitouts—custom joinery, feature lighting, polished concrete overlays and open-plan configurations. Removing these without damaging heritage fabric requires precision. Common challenges include restoring original floor surfaces beneath modern coverings, patching walls where custom shelving was anchored into brick, and reinstating ceiling systems. We handle the full scope from strip out through to final presentation."
+      },
+      {
+        question: "Can you work around operating businesses in Fitzroy's mixed-use buildings?",
+        answer: "Absolutely. Many Fitzroy buildings have retail at ground level with offices or studios above. We coordinate work schedules to minimise disruption—managing noise, dust and access around trading hours. After-hours and weekend work is common in these environments. We also handle all communication with building management and neighbouring tenants."
+      },
+      {
+        question: "What does a typical Fitzroy office make good cost?",
+        answer: "Costs vary depending on the space and fitout complexity. A standard creative office strip out and make good in Fitzroy typically ranges from $50-$120 per square metre. Heritage buildings with sensitive restoration requirements sit at the higher end. We provide fixed-price quotes after inspection so there are no surprises."
+      }
+    ]
+  },
+  {
+    name: "Collingwood",
+    slug: "collingwood",
+    title: "Make Good Services Collingwood",
+    metaTitle: "Make Good Services Collingwood | Melbourne Experts",
+    description: "Professional make good and end of lease services for Collingwood's commercial and creative properties. From Wellington Street offices to converted warehouses, we deliver expert restoration solutions.",
+    metaDescription: "Expert make good services in Collingwood. Tech office strip outs, warehouse restoration and creative space make goods. Licensed and insured. Free quotes.",
+    uniqueIntro: "Collingwood has transformed from Melbourne's industrial backbone into one of the city's most sought-after commercial precincts. Wellington Street now hosts A-grade office buildings including Australia's tallest mass timber commercial tower, while the surrounding streets are filled with converted warehouses housing tech companies, creative agencies and design firms. The Collingwood Yards arts precinct adds cultural depth to this evolving neighbourhood.",
+    localContext: "The mix of heritage industrial buildings and modern commercial developments creates varied make good requirements. Older warehouse conversions often feature exposed structural elements, mezzanine levels and industrial-character finishes that need careful handling during restoration. Newer buildings on Wellington Street and Gipps Street demand corporate-standard make good outcomes. We work across both ends of the spectrum with equal confidence.",
+    keyAreas: [
+      "Wellington Street precinct",
+      "Gipps Street corridor",
+      "Smith Street commercial",
+      "Collingwood Yards area",
+      "Langridge Street precinct",
+      "Peel Street industrial"
+    ],
+    businessTypes: [
+      "Technology companies",
+      "Creative agencies",
+      "Commercial offices",
+      "Warehouses and studios",
+      "Hospitality venues",
+      "Retail spaces"
+    ],
+    faqs: [
+      {
+        question: "What make good standards apply to Collingwood's newer office buildings?",
+        answer: "Modern commercial buildings on Wellington Street and surrounds typically require restoration to base building specification—removal of all tenant fitout, reinstatement of ceiling grids, floor coverings returned to or removed to base condition, and all services made safe and compliant. Building management often has specific contractor requirements and access protocols. We work within these frameworks regularly."
+      },
+      {
+        question: "How do you approach make goods in Collingwood's converted warehouses?",
+        answer: "Converted warehouses are Collingwood's signature commercial spaces. Make good works in these buildings require understanding what's original structure versus tenant addition. Exposed brick walls, timber beams and concrete floors are typically building fabric that stays. Mezzanines, partitions, custom lighting and modern services installed by tenants need removal. We document everything clearly to avoid disputes over what constitutes base building condition."
+      },
+      {
+        question: "Do you handle asbestos in older Collingwood industrial buildings?",
+        answer: "Yes. Many of Collingwood's older industrial buildings—particularly those built before 1990—contain asbestos in various forms: eaves linings, electrical backing boards, vinyl floor tiles and pipe lagging. We engage licensed asbestos assessors and removalists as part of our make good scope. All removal is conducted in accordance with WorkSafe Victoria regulations, with clearance certificates provided."
+      }
+    ]
+  },
+  {
+    name: "Cremorne",
+    slug: "cremorne",
+    title: "Make Good Services Cremorne",
+    metaTitle: "Make Good Services Cremorne | Melbourne Experts",
+    description: "Professional make good and end of lease services for Cremorne's tech precinct and commercial properties. From digital hub offices to converted warehouses, we deliver expert restoration solutions.",
+    metaDescription: "Make good specialists in Cremorne tech precinct. Office strip outs, warehouse restoration and end of lease works for digital businesses. Free quotes.",
+    uniqueIntro: "Cremorne has earned its reputation as Victoria's digital and technology hub. The Cremorne Digital Hub anchors a precinct that attracts global tech companies, startups and scale-ups to its mix of converted warehouses and purpose-built offices. Church Street, Balmain Street and Dover Street form the core of this compact but high-value commercial neighbourhood, just minutes from Richmond station and the CBD.",
+    localContext: "Tech tenants in Cremorne invest heavily in their workspaces—server rooms, collaborative open-plan layouts, breakout areas and high-spec AV installations are standard. When leases end, these complex fitouts require methodical strip out and restoration. The tight streetscapes and limited loading zones add logistical challenges that our team navigates daily. We deliver efficient, compliant make goods that match the pace Cremorne's tech sector expects.",
+    keyAreas: [
+      "Church Street precinct",
+      "Balmain Street corridor",
+      "Dover Street offices",
+      "Cremorne Digital Hub area",
+      "Stephenson Street precinct",
+      "Swan Street commercial"
+    ],
+    businessTypes: [
+      "Technology companies",
+      "Digital agencies",
+      "Co-working spaces",
+      "Commercial offices",
+      "Creative studios",
+      "Hospitality venues"
+    ],
+    faqs: [
+      {
+        question: "How do you handle server room decommissioning in Cremorne tech offices?",
+        answer: "Server rooms and comms rooms are common in Cremorne's tech offices. Our make good scope includes safe disconnection and removal of all IT infrastructure—racks, cabling, cooling units and raised floor systems. We coordinate with your IT team to ensure data security during the process. All electrical and data services are made safe and terminated to building standard."
+      },
+      {
+        question: "What are the access challenges for make good works in Cremorne?",
+        answer: "Cremorne's narrow streets and limited loading zones require careful logistics planning. We schedule deliveries and skip bin placements during off-peak hours, use smaller vehicles where needed, and coordinate with council for temporary parking permits when required. Our experience in the precinct means we know which streets work for what—and we plan accordingly to keep projects on schedule."
+      },
+      {
+        question: "What's the typical timeline for a tech office make good in Cremorne?",
+        answer: "A standard Cremorne tech office make good—strip out of fitout, removal of IT infrastructure, patching, painting and floor restoration—typically takes 2-4 weeks for spaces under 500sqm. Larger or more complex spaces with extensive server infrastructure or custom installations may take 4-6 weeks. We provide detailed timelines during quoting and can fast-track where needed."
+      }
+    ]
+  },
+  {
+    name: "Brunswick",
+    slug: "brunswick",
+    title: "Make Good Services Brunswick",
+    metaTitle: "Make Good Services Brunswick | Melbourne Experts",
+    description: "Professional make good and end of lease services for Brunswick's commercial and industrial properties. From Sydney Road retail to industrial precincts, we deliver expert restoration solutions.",
+    metaDescription: "Expert make good services in Brunswick. Retail strip outs, warehouse restoration and commercial end of lease works along Sydney Road. Free quotes.",
+    uniqueIntro: "Brunswick is one of Melbourne's most dynamic inner-north suburbs, where Sydney Road—one of the longest continuous shopping strips in the Southern Hemisphere—anchors a diverse commercial landscape. Beyond the retail frontages, Brunswick's back streets house a thriving mix of light industrial workshops, creative studios, food production facilities and converted warehouse offices that reflect the suburb's evolving character.",
+    localContext: "The variety of Brunswick's commercial property stock creates diverse make good requirements. Sydney Road retail tenancies demand rapid turnaround and high presentation standards. Industrial units along Lygon Street and Albert Street require practical restoration of older building stock. Creative spaces in converted factories need sensitive handling of character features. We bring the right approach to each property type.",
+    keyAreas: [
+      "Sydney Road precinct",
+      "Lygon Street corridor",
+      "Albert Street industrial",
+      "Dawson Street businesses",
+      "Barkly Street area",
+      "Brunswick East commercial"
+    ],
+    businessTypes: [
+      "Retail and hospitality",
+      "Creative studios",
+      "Light industrial workshops",
+      "Commercial offices",
+      "Food production facilities",
+      "Medical and allied health"
+    ],
+    faqs: [
+      {
+        question: "What are the make good requirements for Sydney Road retail tenancies?",
+        answer: "Sydney Road retail make goods typically require removal of all tenant fixtures, signage and branding, restoration of shopfront to base condition, patching and painting of walls and ceilings, and ensuring all services are functional. Landlords on Sydney Road generally expect a high standard of presentation given the strip's foot traffic and demand for tenancies. We handle the full scope including final presentation cleaning."
+      },
+      {
+        question: "How do you manage make goods in Brunswick's older industrial buildings?",
+        answer: "Brunswick has significant older industrial stock—many buildings date from the mid-20th century and feature concrete slab floors, brick walls and basic services. Make good works in these properties often involve floor repair and sealing, removal of racking and fixtures, electrical compliance checks and general remediation. We're experienced with this building type and understand what constitutes reasonable restoration versus improvement."
+      },
+      {
+        question: "Do you service Brunswick East and Brunswick West as well?",
+        answer: "Yes, our Brunswick coverage extends across Brunswick, Brunswick East and Brunswick West. Whether it's a Nicholson Street office, a Lygon Street retail space or an industrial unit near the Upfield rail line, our team services the entire area."
+      }
+    ]
+  },
+  {
+    name: "Preston",
+    slug: "preston",
+    title: "Make Good Services Preston",
+    metaTitle: "Make Good Services Preston | Melbourne Experts",
+    description: "Professional make good and end of lease services for Preston's commercial and industrial properties. From High Street retail to industrial precincts, we deliver expert restoration solutions.",
+    metaDescription: "Make good services in Preston. Retail tenancy restoration, industrial strip outs and commercial make goods along High Street. Free quotes.",
+    uniqueIntro: "Preston is the commercial engine of Melbourne's inner north. High Street and Plenty Road form major retail and commercial corridors, while the surrounding industrial zones—particularly around Bell Street and Cramer Street—house significant manufacturing, warehousing and trade operations. The suburb is undergoing substantial development, with new mixed-use projects transforming the commercial landscape.",
+    localContext: "Preston's property market spans everything from heritage shopfronts on High Street to large-format industrial facilities near Bell Street. The suburb's rapid development means landlords are increasingly focused on timely, high-quality make good outcomes to prepare properties for the next tenant or redevelopment. We understand the urgency and standards expected across Preston's varied commercial property types.",
+    keyAreas: [
+      "High Street precinct",
+      "Plenty Road corridor",
+      "Bell Street industrial",
+      "Cramer Street area",
+      "Gilbert Road businesses",
+      "Preston Market surrounds"
+    ],
+    businessTypes: [
+      "Retail and hospitality",
+      "Commercial offices",
+      "Warehouses and logistics",
+      "Manufacturing facilities",
+      "Medical practices",
+      "Trade services"
+    ],
+    faqs: [
+      {
+        question: "What make good services do you provide for Preston's retail tenancies?",
+        answer: "For retail tenancies along High Street and Plenty Road, we provide complete strip out of tenant fixtures, signage removal, shopfront restoration, wall and ceiling repairs, floor restoration and final presentation. Preston's retail market is competitive, so landlords expect properties returned to a lettable standard quickly. We work to tight timelines without compromising quality."
+      },
+      {
+        question: "How do you handle make goods for properties being redeveloped in Preston?",
+        answer: "With Preston's significant development pipeline, many make goods are for properties heading into redevelopment. In these cases, the scope may be reduced—focused on safe removal of tenant items, hazardous material management and basic site preparation rather than full cosmetic restoration. We work with property owners and developers to define the appropriate scope and avoid unnecessary costs."
+      },
+      {
+        question: "What's the typical cost of an industrial make good in Preston?",
+        answer: "Industrial make good costs in Preston typically range from $25-$70 per square metre depending on the property condition and scope. A standard warehouse strip out and restoration for a 1,000sqm unit might cost $25,000-$70,000. Older buildings with contamination or asbestos issues will sit at the higher end. We provide fixed-price quotes after inspection."
+      }
+    ]
+  },
+  {
+    name: "Footscray",
+    slug: "footscray",
+    title: "Make Good Services Footscray",
+    metaTitle: "Make Good Services Footscray | Melbourne Experts",
+    description: "Professional make good and end of lease services for Footscray's commercial and industrial properties. From Hopkins Street retail to industrial precincts, we deliver expert restoration solutions.",
+    metaDescription: "Expert make good services in Footscray. Commercial strip outs, industrial restoration and retail make goods near Footscray station. Free quotes.",
+    uniqueIntro: "Footscray is Melbourne's western gateway—a suburb in the midst of significant transformation. The Hopkins Street and Barkly Street retail precincts serve a diverse community, while the surrounding industrial areas along Whitehall Street and Bunbury Street continue to support manufacturing, logistics and trade operations. Major infrastructure investment and urban renewal are reshaping Footscray's commercial landscape.",
+    localContext: "Footscray's commercial properties range from heritage retail shopfronts near the station to large industrial facilities in the surrounding streets. The suburb's transformation means properties are frequently changing hands, driving demand for efficient, quality make good services. Whether it's a retail tenancy on Nicholson Street or a warehouse on Whitehall Street, we deliver compliant restoration that meets the expectations of Footscray's evolving property market.",
+    keyAreas: [
+      "Hopkins Street precinct",
+      "Barkly Street corridor",
+      "Whitehall Street industrial",
+      "Bunbury Street area",
+      "Nicholson Street businesses",
+      "Footscray station surrounds"
+    ],
+    businessTypes: [
+      "Retail and hospitality",
+      "Commercial offices",
+      "Warehouses and logistics",
+      "Manufacturing facilities",
+      "Medical and community services",
+      "Trade services"
+    ],
+    faqs: [
+      {
+        question: "What make good challenges are common in Footscray's older commercial buildings?",
+        answer: "Many of Footscray's commercial buildings date from the early to mid-20th century. Common challenges include asbestos-containing materials in older fitouts, lead paint on original surfaces, deteriorated floor coverings over concrete slabs, and outdated electrical systems. We assess all of these during our initial inspection and include any required remediation in our fixed-price quote."
+      },
+      {
+        question: "Do you handle retail make goods near Footscray station?",
+        answer: "Yes, we regularly service retail tenancies in the Footscray station precinct and along Hopkins Street. These high-traffic locations require efficient work scheduling to minimise disruption, and landlords expect a high standard of finish given the area's growing profile. We coordinate access around trading hours and deliver rapid turnaround."
+      },
+      {
+        question: "How is Footscray's urban renewal affecting make good requirements?",
+        answer: "Footscray's ongoing transformation means many properties are transitioning between uses—industrial to commercial, retail to mixed-use. Make good requirements in these situations can vary significantly depending on whether the property is being re-let in its current form or heading into redevelopment. We work with landlords and property managers to define the right scope for each situation."
+      }
+    ]
+  },
+  {
+    name: "Hawthorn",
+    slug: "hawthorn",
+    title: "Make Good Services Hawthorn",
+    metaTitle: "Make Good Services Hawthorn | Melbourne Experts",
+    description: "Professional make good and end of lease services for Hawthorn's commercial properties. From Glenferrie Road offices to Burwood Road professional suites, we deliver expert restoration solutions.",
+    metaDescription: "Make good services in Hawthorn. Professional office restoration, retail strip outs and commercial end of lease works on Glenferrie Road. Free quotes.",
+    uniqueIntro: "Hawthorn is one of Melbourne's most established commercial suburbs, anchored by the Glenferrie Road and Burwood Road retail and office precincts. The suburb's proximity to Swinburne University drives demand for professional services, education-related businesses and technology firms. Character buildings line the main streets, with larger commercial developments concentrated around Glenferrie station and the Burwood Road corridor.",
+    localContext: "Hawthorn's commercial tenants—predominantly professional services firms, medical practices and education-sector businesses—invest in quality fitouts that reflect the suburb's premium positioning. Make good works here require attention to detail: precise patching and painting, careful restoration of heritage features in older buildings, and thorough reinstatement of base building services. We deliver the standard Hawthorn's landlords and property managers expect.",
+    keyAreas: [
+      "Glenferrie Road precinct",
+      "Burwood Road corridor",
+      "Auburn Road businesses",
+      "Glenferrie station area",
+      "Swinburne University surrounds",
+      "Church Street precinct"
+    ],
+    businessTypes: [
+      "Professional services",
+      "Medical and dental practices",
+      "Commercial offices",
+      "Retail spaces",
+      "Education-related businesses",
+      "Hospitality venues"
+    ],
+    faqs: [
+      {
+        question: "What are the typical make good requirements for Hawthorn office spaces?",
+        answer: "Hawthorn office make goods typically require removal of all tenant fixtures and partitions, restoration of walls and ceilings to a uniform finish, floor covering removal or restoration, and reinstatement of base building services. Professional services firms in Hawthorn often have high-quality fitouts with custom joinery and feature walls that require careful removal. We ensure the space is returned to a presentable, lettable condition."
+      },
+      {
+        question: "Do you handle medical practice make goods in Hawthorn?",
+        answer: "Yes, medical and dental practice make goods are a regular part of our work in Hawthorn. These spaces often have specialised requirements—plumbing for dental chairs, lead-lined walls for X-ray rooms, and clinical-grade flooring. We handle the removal of all medical-specific fitout elements and restore the space to standard commercial condition, including any required compliance documentation."
+      },
+      {
+        question: "How do heritage considerations affect make goods on Glenferrie Road?",
+        answer: "Several buildings along Glenferrie Road have heritage overlays. Make good works in these properties require preservation of original features—ornate facades, ceiling roses, timber joinery—while removing modern tenant additions. We take a careful, documented approach to ensure heritage elements are protected throughout the process and the final result satisfies both lease requirements and heritage controls."
+      }
+    ]
+  },
+  {
+    name: "Box Hill",
+    slug: "box-hill",
+    title: "Make Good Services Box Hill",
+    metaTitle: "Make Good Services Box Hill | Melbourne Experts",
+    description: "Professional make good and end of lease services for Box Hill's commercial properties. From Station Street offices to Whitehorse Road retail, we deliver expert restoration solutions.",
+    metaDescription: "Make good services in Box Hill. Office strip outs, retail restoration and commercial make goods in Melbourne's eastern CBD. Free quotes.",
+    uniqueIntro: "Box Hill has evolved into Melbourne's second CBD—a major commercial, retail and transport hub serving the eastern suburbs. The Box Hill Central precinct, Station Street office towers and Whitehorse Road corridor house a dense concentration of professional services, medical practices, retail operations and government services. The suburb's status as a Metropolitan Activity Centre drives ongoing commercial development and high tenant turnover.",
+    localContext: "Box Hill's commercial density means make good works need to be well-coordinated—multi-storey office buildings require building management liaison, freight lift bookings and after-hours scheduling. The suburb's diverse tenant mix, from large corporate offices to small retail tenancies in Box Hill Central, demands flexibility in approach and scope. We handle the full range with the professionalism Box Hill's competitive commercial market requires.",
+    keyAreas: [
+      "Station Street offices",
+      "Whitehorse Road corridor",
+      "Box Hill Central precinct",
+      "Prospect Street commercial",
+      "Nelson Road businesses",
+      "Elgar Road area"
+    ],
+    businessTypes: [
+      "Professional services",
+      "Medical and specialist clinics",
+      "Commercial offices",
+      "Retail and shopping centres",
+      "Government services",
+      "Hospitality venues"
+    ],
+    faqs: [
+      {
+        question: "How do you manage make goods in Box Hill's multi-storey office buildings?",
+        answer: "Box Hill's office towers require coordination with building management for access, freight lifts and work scheduling. Most buildings restrict noisy work to outside business hours. We handle all building management liaison, arrange required permits and inductions, and schedule our crews to work efficiently within these constraints. Our experience in high-rise commercial environments means we know the process well."
+      },
+      {
+        question: "What make good services do you provide for Box Hill Central retail tenancies?",
+        answer: "For retail tenancies in Box Hill Central and surrounding shopping precincts, we provide complete strip out of tenant fixtures and signage, shopfront restoration, wall and ceiling repairs, floor restoration and final presentation. Shopping centre management typically has specific requirements around work hours, access routes and waste removal—we coordinate all of this as part of our service."
+      },
+      {
+        question: "Do you service medical practice make goods in Box Hill?",
+        answer: "Yes, Box Hill has a high concentration of medical and specialist practices. We handle the removal of medical-specific fitout elements—consulting room partitions, specialised plumbing, clinical flooring and any lead-lined areas. The space is restored to standard commercial condition with all required compliance documentation provided."
+      }
+    ]
   }
 ];
 
