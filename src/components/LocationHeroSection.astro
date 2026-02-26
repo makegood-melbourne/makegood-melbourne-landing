@@ -3,8 +3,7 @@ import { Image } from 'astro:assets';
 import { getLocationBySlug } from '@/data/locations';
 import Breadcrumbs from './Breadcrumbs.astro';
 
-// Import all location hero images statically
-import defaultHeroImage from "@/assets/locations/commercial-make-good-restoration-melbourne.jpeg";
+// Import only unique location hero images
 import southMelbourneImage from "@/assets/locations/south-melbourne-market-commercial-precinct.jpeg";
 import melbourneCbdImage from "@/assets/locations/melbourne-cbd-skyline-yarra-river-commercial-district.jpeg";
 
@@ -19,7 +18,7 @@ if (!location) {
   return;
 }
 
-// Map slugs to images with alt text
+// Only pages with unique images get a hero image
 const heroImages: Record<string, { image: ImageMetadata; alt: string }> = {
   "south-melbourne": {
     image: southMelbourneImage,
@@ -31,10 +30,8 @@ const heroImages: Record<string, { image: ImageMetadata; alt: string }> = {
   }
 };
 
-const heroData = heroImages[slug] || {
-  image: defaultHeroImage,
-  alt: "Commercial property make good restoration services Melbourne"
-};
+const heroData = heroImages[slug] || null;
+const hasImage = heroData !== null;
 ---
 
 <!-- Breadcrumbs (using shared component) -->
@@ -45,14 +42,14 @@ const heroData = heroImages[slug] || {
 <!-- Hero Section -->
 <section class="relative pt-6 md:pt-10 pb-16 flex items-center bg-background">
   <div class="container mx-auto px-4">
-    <div class="grid lg:grid-cols-2 gap-12 items-center">
+    <div class={hasImage ? "grid lg:grid-cols-2 gap-12 items-center" : ""}>
       <!-- Left: Content -->
       <div>
         <h1 class="text-4xl md:text-5xl lg:text-6xl mb-4 leading-tight font-bold">
-          <span class="font-light block">Make Good Services in</span>
+          <span class="font-light block">Make Good Services&nbsp;in</span>
           <span class="font-bold text-primary">{location.name}</span>
         </h1>
-        <p class="text-xl text-muted-foreground mb-8 leading-relaxed max-w-lg">
+        <p class={`text-xl text-foreground mb-8 leading-relaxed ${hasImage ? 'max-w-lg' : ''}`}>
           {location.description}
         </p>
 
@@ -85,19 +82,21 @@ const heroData = heroImages[slug] || {
         </div>
       </div>
 
-      <!-- Right: Hero Image -->
-      <div>
-        <Image 
-          src={heroData.image} 
-          alt={heroData.alt}
-          class="rounded-lg shadow-xl w-full aspect-[4/3] object-cover"
-          widths={[360, 640, 800, 1200]}
-          sizes="(max-width: 640px) 360px, (max-width: 1024px) 640px, (max-width: 1280px) 800px, 1200px"
-          loading="eager"
-          decoding="async"
-          quality={70}
-        />
-      </div>
+      <!-- Right: Hero Image (only for pages with unique images) -->
+      {hasImage && (
+        <div>
+          <Image 
+            src={heroData.image} 
+            alt={heroData.alt}
+            class="rounded-lg shadow-xl w-full aspect-[4/3] object-cover"
+            widths={[360, 640, 800, 1200]}
+            sizes="(max-width: 640px) 360px, (max-width: 1024px) 640px, (max-width: 1280px) 800px, 1200px"
+            loading="eager"
+            decoding="async"
+            quality={70}
+          />
+        </div>
+      )}
     </div>
   </div>
 </section>

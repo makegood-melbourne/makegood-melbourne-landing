@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Menu, ChevronDown } from "lucide-react";
 import { useState } from "react";
 import logo from "@/assets/makegood-melbourne-logo.png";
-import { getSortedLocations } from "@/data/locations";
+import { getFeaturedLocations } from "@/data/locations";
 import { getPublishedServices } from "@/data/services";
 import { getAllIndustries } from "@/data/industries";
 import { resolveImageSrc } from "@/lib/resolveImageSrc";
@@ -139,7 +139,7 @@ const Navigation = () => {
                 <ChevronDown className="h-4 w-4" />
               </DropdownMenuTrigger>
               <DropdownMenuContent align="start" className="bg-card border-border">
-                {getSortedLocations().map((location) => (
+                {getFeaturedLocations().map((location) => (
                   <DropdownMenuItem key={location.slug} asChild>
                     <a 
                       href={`/areas/${location.slug}`}
@@ -299,7 +299,7 @@ const Navigation = () => {
               </button>
               {openSections['areas'] && (
                 <div className="pl-4 pb-3 flex flex-col gap-2">
-                  {getSortedLocations().map((location) => (
+                  {getFeaturedLocations().map((location) => (
                     <a
                       key={location.slug}
                       href={`/areas/${location.slug}`}

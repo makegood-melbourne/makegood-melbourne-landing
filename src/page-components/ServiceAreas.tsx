@@ -107,30 +107,30 @@ const ServiceAreas = () => {
                 Regardless of location, we offer our full range of commercial make good services:
               </p>
               <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-10">
-                <div className="bg-card border border-border rounded-lg p-4">
-                  <h3 className="font-semibold text-card-foreground">End of Lease Make Good</h3>
+                <a href="/services/make-good-solutions/" className="bg-card border border-border rounded-lg p-4 hover:border-accent/50 transition-colors group">
+                  <h3 className="font-semibold text-card-foreground group-hover:text-accent transition-colors">End of Lease Make Good</h3>
                   <p className="text-sm text-muted-foreground">Complete restoration to lease conditions</p>
-                </div>
-                <div className="bg-card border border-border rounded-lg p-4">
-                  <h3 className="font-semibold text-card-foreground">Make Safe Works</h3>
+                </a>
+                <a href="/services/strip-out-solutions/make-safe/" className="bg-card border border-border rounded-lg p-4 hover:border-accent/50 transition-colors group">
+                  <h3 className="font-semibold text-card-foreground group-hover:text-accent transition-colors">Make Safe Works</h3>
                   <p className="text-sm text-muted-foreground">Emergency and preventive safety works</p>
-                </div>
-                <div className="bg-card border border-border rounded-lg p-4">
-                  <h3 className="font-semibold text-card-foreground">Office Strip Outs</h3>
+                </a>
+                <a href="/services/strip-out-solutions/" className="bg-card border border-border rounded-lg p-4 hover:border-accent/50 transition-colors group">
+                  <h3 className="font-semibold text-card-foreground group-hover:text-accent transition-colors">Office Strip Outs</h3>
                   <p className="text-sm text-muted-foreground">Complete fitout removal and disposal</p>
-                </div>
-                <div className="bg-card border border-border rounded-lg p-4">
-                  <h3 className="font-semibold text-card-foreground">Warehouse Restoration</h3>
+                </a>
+                <a href="/services/handover-solutions/" className="bg-card border border-border rounded-lg p-4 hover:border-accent/50 transition-colors group">
+                  <h3 className="font-semibold text-card-foreground group-hover:text-accent transition-colors">Warehouse Restoration</h3>
                   <p className="text-sm text-muted-foreground">Industrial floor and structural repairs</p>
-                </div>
-                <div className="bg-card border border-border rounded-lg p-4">
-                  <h3 className="font-semibold text-card-foreground">Commercial Painting</h3>
+                </a>
+                <a href="/services/commercial-painting/" className="bg-card border border-border rounded-lg p-4 hover:border-accent/50 transition-colors group">
+                  <h3 className="font-semibold text-card-foreground group-hover:text-accent transition-colors">Commercial Painting</h3>
                   <p className="text-sm text-muted-foreground">Professional interior and exterior finishes</p>
-                </div>
-                <div className="bg-card border border-border rounded-lg p-4">
-                  <h3 className="font-semibold text-card-foreground">Structural Remediation</h3>
+                </a>
+                <a href="/services/remediation-solutions/" className="bg-card border border-border rounded-lg p-4 hover:border-accent/50 transition-colors group">
+                  <h3 className="font-semibold text-card-foreground group-hover:text-accent transition-colors">Structural Remediation</h3>
                   <p className="text-sm text-muted-foreground">Concrete cancer and structural repairs</p>
-                </div>
+                </a>
               </div>
               <a href="/services/">
                 <Button className="bg-accent hover:bg-accent/90 text-accent-foreground">
