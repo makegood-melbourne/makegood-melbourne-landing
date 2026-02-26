@@ -55,12 +55,12 @@ const LocationContent = ({ slug }: LocationContentProps) => {
         )}
       </Helmet>
 
-      {/* Local Content Section with Expertise Card */}
-      <section className="py-16" style={{ backgroundColor: 'hsl(0 0% 30%)' }}>
+      {/* Section 1: Local Content + Expertise Card — LIGHT */}
+      <section className="py-16 bg-secondary">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             {location.localExpertise && location.localExpertise.length > 0 ? (
-              <div className="grid lg:grid-cols-2 gap-12 mb-12">
+              <div className="grid lg:grid-cols-2 gap-12">
                 <div>
                   <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
                     Commercial & Industrial Property in <span className="text-primary">{location.name}</span>
@@ -88,7 +88,7 @@ const LocationContent = ({ slug }: LocationContentProps) => {
                 </div>
               </div>
             ) : (
-              <div className="mb-12">
+              <div>
                 <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
                   Commercial & Industrial Property in <span className="text-primary">{location.name}</span>
                 </h2>
@@ -98,6 +98,14 @@ const LocationContent = ({ slug }: LocationContentProps) => {
                 </div>
               </div>
             )}
+          </div>
+        </div>
+      </section>
+
+      {/* Section 2: Areas We Service + Property Types — DARK */}
+      <section className="py-16 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto">
             <h3 className="text-xl md:text-2xl font-bold text-primary text-center mb-10">We do make goods all day, every day.</h3>
             <div className="grid md:grid-cols-2 gap-12 max-w-3xl mx-auto">
               <div>
@@ -121,8 +129,8 @@ const LocationContent = ({ slug }: LocationContentProps) => {
         </div>
       </section>
 
-      {/* Services Grid */}
-      <section className="py-20 bg-background">
+      {/* Section 3: Services Grid — LIGHT */}
+      <section className="py-20 bg-secondary">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Our Services in {location.name}</h2>
@@ -148,8 +156,8 @@ const LocationContent = ({ slug }: LocationContentProps) => {
         </div>
       </section>
 
-      {/* Why Choose Us */}
-      <section className="py-16" style={{ backgroundColor: 'hsl(0 0% 30%)' }}>
+      {/* Section 4: Why Choose Us — DARK */}
+      <section className="py-16 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -172,8 +180,8 @@ const LocationContent = ({ slug }: LocationContentProps) => {
         </div>
       </section>
 
-      {/* SEO Content */}
-      <section className="py-16 bg-background">
+      {/* Section 5: End of Lease — LIGHT */}
+      <section className="py-16 bg-secondary">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">End of Lease Make Good Specialists in {location.name}</h2>
@@ -191,9 +199,9 @@ const LocationContent = ({ slug }: LocationContentProps) => {
         </div>
       </section>
 
-      {/* FAQ Section - matching service page style */}
+      {/* Section 6: FAQ — DARK */}
       {location.faqs && location.faqs.length > 0 && (
-        <section className="py-16" style={{ backgroundColor: 'hsl(0 0% 30%)' }}>
+        <section className="py-16 bg-background">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto">
               <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-center uppercase tracking-tight">
@@ -218,7 +226,6 @@ const LocationContent = ({ slug }: LocationContentProps) => {
           </div>
         </section>
       )}
-
 
     </>
   );
