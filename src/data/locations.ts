@@ -1371,7 +1371,7 @@ export const getSortedLocations = (): Location[] => {
 
 // Top 12 locations for navigation dropdown (alphabetical in dropdown)
 const featuredSlugs = new Set([
-  "box-hill",
+  "altona",
   "brunswick",
   "dandenong",
   "fitzroy",
