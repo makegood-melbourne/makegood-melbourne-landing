@@ -15,6 +15,20 @@
   pretty_urls = true
 
 # Domain canonicalization - redirect www to non-www
+# Specific www + legacy path rules (single hop to final destination)
+[[redirects]]
+  from = "https://www.makegood.melbourne/home"
+  to = "https://makegood.melbourne/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.makegood.melbourne/capabilities"
+  to = "https://makegood.melbourne/services/"
+  status = 301
+  force = true
+
+# Generic www catch-all
 [[redirects]]
   from = "https://www.makegood.melbourne/*"
   to = "https://makegood.melbourne/:splat"
@@ -100,8 +114,38 @@
   force = true
 
 [[redirects]]
+  from = "/services/commercial-cleaning"
+  to = "/services/handover-solutions/end-of-lease-cleaning/"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/services/make-good-cleaning"
   to = "/services/handover-solutions/end-of-lease-cleaning/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/services/carpet-removal"
+  to = "/services/make-good-solutions/warehouse-flooring/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/services/vinyl-removal"
+  to = "/services/make-good-solutions/warehouse-flooring/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/services/tile-removal"
+  to = "/services/make-good-solutions/warehouse-flooring/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/services/adhesive-removal"
+  to = "/services/make-good-solutions/warehouse-flooring/"
   status = 301
   force = true
 

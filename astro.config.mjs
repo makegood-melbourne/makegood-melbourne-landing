@@ -50,12 +50,13 @@ export default defineConfig({
     '/blogs/[slug]': '/blog/[slug]',
     
     // Service page redirects for consolidated/renamed pages
-    '/services/carpet-removal': '/services/concrete-slab-restoration/',
-    '/services/vinyl-removal': '/services/concrete-slab-restoration/',
-    '/services/tile-removal': '/services/concrete-slab-restoration/',
-    '/services/adhesive-removal': '/services/concrete-slab-restoration/',
-    '/services/commercial-cleaning': '/services/make-good-cleaning/',
-    '/services/commercial-painting': '/services/make-good-painting/',
+    // Updated to point directly to final destinations (avoid redirect chains)
+    '/services/carpet-removal': '/services/make-good-solutions/warehouse-flooring/',
+    '/services/vinyl-removal': '/services/make-good-solutions/warehouse-flooring/',
+    '/services/tile-removal': '/services/make-good-solutions/warehouse-flooring/',
+    '/services/adhesive-removal': '/services/make-good-solutions/warehouse-flooring/',
+    '/services/commercial-cleaning': '/services/handover-solutions/end-of-lease-cleaning/',
+    '/services/commercial-painting': '/services/make-good-solutions/painting/',
     
     // Blog post redirects for renamed/legacy URLs
     '/blog/year-end-planning-commercial-property': '/blog/year-end-property-planning/',
