@@ -57,6 +57,7 @@ export default defineConfig({
     '/services/adhesive-removal': '/services/make-good-solutions/warehouse-flooring/',
     '/services/commercial-cleaning': '/services/handover-solutions/end-of-lease-cleaning/',
     '/services/commercial-painting': '/services/make-good-solutions/painting/',
+    '/services/epoxy-flooring': '/services/make-good-solutions/warehouse-flooring/',
     
     // Blog post redirects for renamed/legacy URLs
     '/blog/year-end-planning-commercial-property': '/blog/year-end-property-planning/',

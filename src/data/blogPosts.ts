@@ -736,7 +736,7 @@ Left your make good to the last minute? [Get in touch.](/contact)`
   },
   {
     id: "33",
-    title: "Port Melbourne Warehouse",
+    title: "Port Melbourne Warehouse Make Good | Case Study",
     subtitle: "A case study in getting it done on time",
     slug: "port-melbourne-warehouse-end-of-lease-make-good",
     excerpt: "Planning your warehouse lease exit in Port Melbourne? Learn about make good obligations, fair wear and tear, cost management, and negotiation strategies to avoid disputes and protect your bond in Victoria's industrial property market.",
@@ -1159,7 +1159,7 @@ Don't wait until the last minute. Smart planning today saves thousands tomorrow.
   },
   {
     id: "32",
-    title: "Asbestos Management Melbourne",
+    title: "Asbestos Management Melbourne | Safe Removal for Make Goods",
     subtitle: "What to do when asbestos is in scope",
     slug: "asbestos-management-commercial-make-good-safe-removal",
     excerpt: "Asbestos-containing materials remain prevalent in older commercial buildings, requiring careful management during make good projects. Learn about asbestos identification, licensed removal procedures, health risks, legal requirements, and safe demolition practices for commercial properties.",
@@ -2721,7 +2721,7 @@ Professional ceiling solutions for all commercial properties`,
   {
     id: "28",
     slug: "parapet-failure-emergency-building-repairs",
-    title: "Parapet Failure Melbourne",
+    title: "Parapet Failure Melbourne | Emergency Building Repairs",
     subtitle: "What to do when a wall becomes a safety issue",
     date: "1 June 2025",
     excerpt: "Parapet failure and facade collapse represent serious building emergencies requiring immediate response to protect public safety. From emergency site securing and debris removal to structural assessment and reconstruction, professional emergency repair services manage the complete response. Learn about causes of parapet failure, emergency procedures, council requirements, structural engineering, and reconstruction processes.",
@@ -3185,7 +3185,7 @@ Available during business hours`,
   {
     id: "27",
     slug: "waste-management-sustainability-make-good-works",
-    title: "Waste Management Melbourne",
+    title: "Waste Management Melbourne | Sustainable Make Good Works",
     subtitle: "What happens to everything we remove from site",
     date: "1 May 2025",
     excerpt: "Sustainable waste management practices are increasingly critical in commercial make good projects, with regulations, tenant expectations and environmental responsibility driving the need for waste minimisation, recycling and responsible disposal. Professional waste management reduces landfill contributions, ensures regulatory compliance and can reduce project costs. Learn about waste streams, recycling strategies, EPA compliance and sustainability reporting.",
@@ -4228,7 +4228,7 @@ Available during business hours`,
 
 ### Epoxy and Polymer Coatings
 
-**[Epoxy Floor Coatings](/services/epoxy-flooring/)** (particularly for basement or covered car parks):
+**[Epoxy Floor Coatings](/services/make-good-solutions/warehouse-flooring/)** (particularly for basement or covered car parks):
 
 **Benefits**:
 - Seals concrete surface against moisture and chemicals
@@ -7218,7 +7218,7 @@ If you've identified building defects in your commercial property or want proact
   {
     id: "18",
     slug: "slab-rectification-concrete-floor-movement",
-    title: "Slab Rectification Melbourne",
+    title: "Slab Rectification Melbourne | Concrete Floor Movement",
     subtitle: "What a worn or damaged slab actually needs",
     date: "1 August 2024",
     excerpt: "Concrete slab movement and settlement are serious issues that can compromise the structural integrity and functionality of commercial and industrial properties. From uneven floors affecting equipment operation to cracks indicating foundation problems, understanding slab rectification is essential for property owners facing these challenges.",
@@ -7730,7 +7730,7 @@ If you've noticed signs of balcony leaks in your commercial property, don't dela
   {
     id: "16",
     slug: "concrete-cancer-prevention-remediation",
-    title: "Concrete Cancer Melbourne",
+    title: "Concrete Cancer Melbourne | Prevention and Remediation",
     subtitle: "What it is, what causes it and when to act",
     date: "1 June 2024",
     excerpt: "Concrete cancer, also known as concrete spalling, is one of the most serious structural issues facing commercial and industrial properties. Left untreated, this progressive deterioration can compromise building safety and lead to expensive repairs. Understanding the causes, signs, and remediation options is essential for property owners and managers.",
@@ -7961,7 +7961,7 @@ Whether you're a tenant vacating a commercial property or a real estate agent pr
   {
     id: "4",
     slug: "love-your-property",
-    title: "Love Your Property",
+    title: "Love Your Property | Commercial Make Good Melbourne",
     subtitle: "Why the condition of your property matters beyond the lease",
     date: "1 February 2024",
     excerpt: "As the month of February unfolds there's no better time to extend that love to your property. Join us as we explore how our make good services can bring a touch of love and renewal to your property this February.",
@@ -7999,7 +7999,7 @@ This February, let's celebrate love in all its forms, including the love we have
   {
     id: "2",
     slug: "the-importance-of-painting",
-    title: "The Importance of Painting",
+    title: "The Importance of Painting | End of Lease Make Good",
     subtitle: "Why painting is one of the most scrutinised parts of a make good",
     date: "1 April 2024",
     excerpt: "Finding the right tenant for a vacant office or warehouse can be a challenging process. Prospective tenants often form their first impressions within moments of viewing a property, and a dull, outdated appearance can be a major obstacle to securing a lease. One simple yet highly effective way to make a property more appealing is by applying a fresh coat of paint.",
@@ -8088,7 +8088,7 @@ Contact us today to discuss how we can help you transform your listings with exp
   {
     id: "3",
     slug: "what-are-make-goods",
-    title: "What Are Make Goods?",
+    title: "What Are Make Goods? | A Complete Guide for Tenants",
     subtitle: "The lease obligation most tenants underestimate",
     date: "1 March 2024",
     excerpt: "The end of a lease can be a stressful time for tenants, whether in industrial or commercial properties. Among the responsibilities during this period, one critical task often overlooked or misunderstood is the make-good process. But what exactly are make goods, and why are they so essential?",
@@ -8224,7 +8224,7 @@ As we embark on this journey into the new year, let's not forget the importance 
   {
     id: "6",
     slug: "office-strip-out",
-    title: "Office Strip Out Melbourne",
+    title: "Office Strip Out Melbourne | Commercial Demolition Guide",
     subtitle: "Everything that needs to come out before you hand back the keys",
     date: "1 December 2023",
     excerpt: "Are you planning an office strip out in Melbourne? Successfully executing an office strip out requires careful planning and flawless execution. In this article, we will guide you on how to effectively plan and execute an office strip out in Melbourne, ensuring you minimise disruption and maximise efficiency.",
@@ -8744,7 +8744,7 @@ A Property Condition Report is an indispensable document that protects both land
   {
     id: "12",
     slug: "mastering-lease-transitions",
-    title: "Mastering Lease Transitions",
+    title: "Mastering Lease Transitions | Commercial Property Guide",
     subtitle: "What smooth handovers actually look like in practice",
     date: "1 June 2023",
     excerpt: "As the curtain draws to a close on a lease agreement, the collective goal is to leave no trace of occupancy behind. Whether you're a tenant striving to recoup your security deposit, an agent aiming to uphold your reputation, or an owner keen on preserving your investment, these trade secrets hold the key to a successful lease legacy.",
