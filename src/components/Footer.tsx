@@ -46,27 +46,27 @@ const Footer = () => {
             <ul className="space-y-2">
               {/* Ordered by user intent/funnel: Awareness → Consideration → Decision → Support */}
               <li>
-                <a href="/learn/make-good-guide" className="text-muted-foreground hover:text-foreground transition-colors">
+                <a href="/learn/make-good-guide/" className="text-muted-foreground hover:text-foreground transition-colors">
                   Make Good Guide
                 </a>
               </li>
               <li>
-                <a href="/learn/remediation-guide" className="text-muted-foreground hover:text-foreground transition-colors">
+                <a href="/learn/remediation-guide/" className="text-muted-foreground hover:text-foreground transition-colors">
                   Remediation Guide
                 </a>
               </li>
               <li>
-                <a href="/learn/our-process" className="text-muted-foreground hover:text-foreground transition-colors">
+                <a href="/learn/our-process/" className="text-muted-foreground hover:text-foreground transition-colors">
                   Our Process
                 </a>
               </li>
               <li>
-                <a href="/faq" className="text-muted-foreground hover:text-foreground transition-colors">
+                <a href="/faq/" className="text-muted-foreground hover:text-foreground transition-colors">
                   FAQ
                 </a>
               </li>
               <li>
-                <a href="/blog" className="text-muted-foreground hover:text-foreground transition-colors">
+                <a href="/blog/" className="text-muted-foreground hover:text-foreground transition-colors">
                   Blog
                 </a>
               </li>
@@ -76,7 +76,7 @@ const Footer = () => {
             <h4 className="font-semibold mt-6 mb-4 text-foreground">Company</h4>
             <ul className="space-y-2">
               <li>
-                <a href="/about" className="text-muted-foreground hover:text-foreground transition-colors">
+                <a href="/about/" className="text-muted-foreground hover:text-foreground transition-colors">
                   About Us
                 </a>
               </li>
@@ -93,7 +93,7 @@ const Footer = () => {
               </p>
             </div>
             <a 
-              href="/service-areas"
+              href="/service-areas/"
               className="inline-flex items-center gap-2 text-accent hover:text-accent/80 transition-colors font-medium"
             >
               View all service areas →
@@ -102,7 +102,7 @@ const Footer = () => {
             <h4 className="font-semibold mt-6 mb-4 text-foreground">Contact</h4>
             <ul className="space-y-2">
               <li>
-                <a href="/contact" className="text-muted-foreground hover:text-foreground transition-colors">
+                <a href="/contact/" className="text-muted-foreground hover:text-foreground transition-colors">
                   Request a Quote
                 </a>
               </li>
@@ -117,13 +117,13 @@ const Footer = () => {
             </p>
             <div className="flex gap-6">
               <a 
-                href="/privacy-policy" 
+                href="/privacy-policy/" 
                 className="text-muted-foreground hover:text-foreground transition-colors text-sm"
               >
                 Privacy Policy
               </a>
               <a 
-                href="/terms-of-service" 
+                href="/terms-of-service/" 
                 className="text-muted-foreground hover:text-foreground transition-colors text-sm"
               >
                 Terms of Service

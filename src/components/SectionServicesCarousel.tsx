@@ -68,7 +68,7 @@ const SectionServicesCarousel = ({
           <CarouselContent className="-ml-4">
             {sectionServices.map((service) => (
               <CarouselItem key={service.slug} className="pl-4 md:basis-1/2 lg:basis-1/3">
-                <a href={`/services/${service.slug}`} className="block group">
+                <a href={`/services/${service.slug}/`} className="block group">
                   <Card className="overflow-hidden border-border bg-card h-full transition-all duration-300 group-hover:border-primary/50 group-hover:shadow-xl">
                     <div className="aspect-[4/3] overflow-hidden relative">
                       {service.heroImage ? (

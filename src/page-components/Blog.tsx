@@ -59,7 +59,7 @@ const Blog = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {visiblePosts.map((post) => (
               <Card key={post.id} className="border-border hover:shadow-lg transition-shadow overflow-hidden group">
-                <a href={`/blog/${post.slug}`} className="block aspect-video overflow-hidden">
+                <a href={`/blog/${post.slug}/`} className="block aspect-video overflow-hidden">
                   <img 
                     src={getBlogImage(post.image)}
                     alt={post.imageAlt || post.title}
@@ -85,7 +85,7 @@ const Blog = () => {
                     {post.excerpt}
                   </p>
                   <a 
-                    href={`/blog/${post.slug}`}
+                    href={`/blog/${post.slug}/`}
                     className="inline-flex items-center text-accent hover:text-accent/80 transition-colors"
                   >
                     Read More

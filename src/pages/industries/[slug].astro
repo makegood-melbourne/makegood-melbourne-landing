@@ -27,7 +27,7 @@ if (!industry) {
   title={industry.metaTitle}
   description={industry.metaDescription}
   ogImage={industry.ogImage || "/og-default.jpg"}
-  canonicalUrl={`https://makegood.melbourne/industries/${industry.slug}`}
+  canonicalUrl={`https://makegood.melbourne/industries/${industry.slug}/`}
 >
   <main class="min-h-screen bg-background text-foreground">
     <Navigation client:load />
@@ -35,7 +35,7 @@ if (!industry) {
     <!-- Breadcrumbs (using shared component) -->
     <div class="pt-24 px-4 sm:px-6 lg:px-8">
       <div class="max-w-6xl mx-auto">
-        <Breadcrumbs path={`/industries/${slug}`} />
+        <Breadcrumbs path={`/industries/${slug}/`} />
       </div>
     </div>
     

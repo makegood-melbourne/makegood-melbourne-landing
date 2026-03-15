@@ -190,7 +190,7 @@ const IndustryContent = ({ slug }: IndustryContentProps) => {
                 service && (
                   <a
                     key={service.slug}
-                    href={`/services/${service.slug}`}
+                    href={`/services/${service.slug}/`}
                     className="group block"
                   >
                     <Card className="bg-card border-border h-full transition-all duration-300 group-hover:border-primary/50 group-hover:shadow-lg">

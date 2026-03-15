@@ -210,7 +210,7 @@ export function Chatbot() {
                 Chat temporarily unavailable
               </p>
               <a
-                href="/contact"
+                href="/contact/"
                 className="text-accent underline hover:no-underline inline-flex items-center gap-1 mt-1"
               >
                 <Mail className="w-3 h-3" />
@@ -288,7 +288,7 @@ export function Chatbot() {
               asChild
               className="w-full bg-accent hover:bg-accent/90 text-accent-foreground"
             >
-              <a href="/contact">
+              <a href="/contact/">
                 <Mail className="w-4 h-4 mr-2" />
                 Contact Us Instead
               </a>

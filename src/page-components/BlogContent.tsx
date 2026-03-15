@@ -17,7 +17,7 @@ const BlogContent = ({ slug }: BlogContentProps) => {
       <main className="flex-1 pt-20 flex items-center justify-center">
         <div className="text-center">
           <h1 className="text-4xl text-foreground mb-4">Post Not Found</h1>
-          <a href="/blog">
+          <a href="/blog/">
             <Button variant="outline">
               <ArrowLeft className="mr-2 h-4 w-4" />
               Back to Blog
@@ -119,7 +119,7 @@ const BlogContent = ({ slug }: BlogContentProps) => {
 
 
         <div className="mt-8 pt-8 border-t border-border">
-          <a href="/blog">
+          <a href="/blog/">
             <Button variant="outline">
               <ArrowLeft className="mr-2 h-4 w-4" />
               Back to All Posts

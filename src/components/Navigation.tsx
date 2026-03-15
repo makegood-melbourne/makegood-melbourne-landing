@@ -19,7 +19,7 @@ import {
 const serviceCategories = [
   {
     label: "Strip Out Solutions",
-    href: "/services/strip-out-solutions",  // Clickable category header
+    href: "/services/strip-out-solutions/",  // Clickable category header
     slugs: ['strip-out-solutions/demolition', 'strip-out-solutions/make-safe', 'strip-out-solutions/pallet-racking-removal'],
     displayNames: {
       'strip-out-solutions/demolition': 'Demolition',
@@ -29,17 +29,17 @@ const serviceCategories = [
   },
   {
     label: "Make Good Solutions",
-    href: "/services/make-good-solutions",  // Clickable category header
+    href: "/services/make-good-solutions/",  // Clickable category header
     slugs: ['make-good-solutions/flooring-reinstatement', 'make-good-solutions/line-marking', 'make-good-solutions/patching-plastering', 'make-good-solutions/painting', 'make-good-solutions/suspended-ceilings', 'make-good-solutions/warehouse-flooring']
   },
   {
     label: "Handover Solutions",
-    href: "/services/handover-solutions/end-of-lease-cleaning",  // Temporary link until parent page created
+    href: "/services/handover-solutions/end-of-lease-cleaning/",  // Temporary link until parent page created
     slugs: ['handover-solutions/end-of-lease-cleaning', 'handover-solutions/end-of-lease-relocation']
   },
   {
     label: "Remediation Solutions",
-    href: "/services/remediation-solutions",  // Clickable category header
+    href: "/services/remediation-solutions/",  // Clickable category header
     slugs: ['remediation-solutions/structural', 'remediation-solutions/polycarbonate-roofing-skylights', 'remediation-solutions/cladding-glazing', 'remediation-solutions/waterproofing'],
     displayNames: {
       'remediation-solutions/structural': 'Structural',
@@ -111,7 +111,7 @@ const Navigation = () => {
                       {categoryServices.map((service) => (
                         <DropdownMenuItem key={service.slug} asChild>
                           <a 
-                            href={`/services/${service.slug}`}
+                            href={`/services/${service.slug}/`}
                             className="cursor-pointer"
                           >
                             {category.displayNames?.[service.slug] || service.name}
@@ -142,7 +142,7 @@ const Navigation = () => {
                 {getFeaturedLocations().map((location) => (
                   <DropdownMenuItem key={location.slug} asChild>
                     <a 
-                      href={`/areas/${location.slug}`}
+                      href={`/areas/${location.slug}/`}
                       className="cursor-pointer"
                     >
                       {location.name}
@@ -152,7 +152,7 @@ const Navigation = () => {
                 <DropdownMenuSeparator />
                 <DropdownMenuItem asChild>
                   <a 
-                    href="/service-areas"
+                    href="/service-areas/"
                     className="cursor-pointer font-medium text-accent"
                   >
                     View All Service Areas
@@ -169,7 +169,7 @@ const Navigation = () => {
                 {getAllIndustries().map((industry) => (
                   <DropdownMenuItem key={industry.slug} asChild>
                     <a 
-                      href={`/industries/${industry.slug}`}
+                      href={`/industries/${industry.slug}/`}
                       className="cursor-pointer"
                     >
                       {industry.name}
@@ -179,7 +179,7 @@ const Navigation = () => {
               </DropdownMenuContent>
             </DropdownMenu>
             {/* About Us as standalone nav item */}
-            <a href="/about" className="text-foreground hover:text-accent transition-colors">
+            <a href="/about/" className="text-foreground hover:text-accent transition-colors">
               About Us
             </a>
             {/* Learn dropdown - educational content only */}
@@ -191,34 +191,34 @@ const Navigation = () => {
               <DropdownMenuContent align="start" className="bg-card border-border">
                 {/* Ordered by user intent/funnel: Awareness → Consideration → Decision → Support */}
                 <DropdownMenuItem asChild>
-                  <a href="/learn/make-good-guide" className="cursor-pointer">
+                  <a href="/learn/make-good-guide/" className="cursor-pointer">
                     Make Good Guide
                   </a>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
-                  <a href="/learn/remediation-guide" className="cursor-pointer">
+                  <a href="/learn/remediation-guide/" className="cursor-pointer">
                     Remediation Guide
                   </a>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
-                  <a href="/learn/our-process" className="cursor-pointer">
+                  <a href="/learn/our-process/" className="cursor-pointer">
                     Our Process
                   </a>
                 </DropdownMenuItem>
                 <DropdownMenuSeparator />
                 <DropdownMenuItem asChild>
-                  <a href="/faq" className="cursor-pointer">
+                  <a href="/faq/" className="cursor-pointer">
                     FAQ
                   </a>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
-                  <a href="/blog" className="cursor-pointer">
+                  <a href="/blog/" className="cursor-pointer">
                     Blog
                   </a>
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
-            <a href="/contact">
+            <a href="/contact/">
               <Button className="bg-accent hover:bg-accent/90 text-accent-foreground">
                 Request a Quote
               </Button>
@@ -266,7 +266,7 @@ const Navigation = () => {
                           {categoryServices.map((service) => (
                             <a
                               key={service.slug}
-                              href={`/services/${service.slug}`}
+                              href={`/services/${service.slug}/`}
                               className="text-muted-foreground hover:text-accent transition-colors"
                               onClick={() => setIsMenuOpen(false)}
                             >
@@ -302,7 +302,7 @@ const Navigation = () => {
                   {getFeaturedLocations().map((location) => (
                     <a
                       key={location.slug}
-                      href={`/areas/${location.slug}`}
+                      href={`/areas/${location.slug}/`}
                       className="text-muted-foreground hover:text-accent transition-colors"
                       onClick={() => setIsMenuOpen(false)}
                     >
@@ -310,7 +310,7 @@ const Navigation = () => {
                     </a>
                   ))}
                   <a
-                    href="/service-areas"
+                    href="/service-areas/"
                     className="text-accent font-medium hover:text-accent/80 transition-colors"
                     onClick={() => setIsMenuOpen(false)}
                   >
@@ -334,7 +334,7 @@ const Navigation = () => {
                   {getAllIndustries().map((industry) => (
                     <a
                       key={industry.slug}
-                      href={`/industries/${industry.slug}`}
+                      href={`/industries/${industry.slug}/`}
                       className="text-muted-foreground hover:text-accent transition-colors"
                       onClick={() => setIsMenuOpen(false)}
                     >
@@ -348,7 +348,7 @@ const Navigation = () => {
             {/* About Us */}
             <div className="border-b border-border/50">
               <a
-                href="/about"
+                href="/about/"
                 className="block py-3 text-foreground font-medium hover:text-accent transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
@@ -367,18 +367,18 @@ const Navigation = () => {
               </button>
               {openSections['learn'] && (
                 <div className="pl-4 pb-3 flex flex-col gap-2">
-                  <a href="/learn/make-good-guide" className="text-muted-foreground hover:text-accent transition-colors" onClick={() => setIsMenuOpen(false)}>Make Good Guide</a>
-                  <a href="/learn/remediation-guide" className="text-muted-foreground hover:text-accent transition-colors" onClick={() => setIsMenuOpen(false)}>Remediation Guide</a>
-                  <a href="/learn/our-process" className="text-muted-foreground hover:text-accent transition-colors" onClick={() => setIsMenuOpen(false)}>Our Process</a>
-                  <a href="/faq" className="text-muted-foreground hover:text-accent transition-colors" onClick={() => setIsMenuOpen(false)}>FAQ</a>
-                  <a href="/blog" className="text-muted-foreground hover:text-accent transition-colors" onClick={() => setIsMenuOpen(false)}>Blog</a>
+                  <a href="/learn/make-good-guide/" className="text-muted-foreground hover:text-accent transition-colors" onClick={() => setIsMenuOpen(false)}>Make Good Guide</a>
+                  <a href="/learn/remediation-guide/" className="text-muted-foreground hover:text-accent transition-colors" onClick={() => setIsMenuOpen(false)}>Remediation Guide</a>
+                  <a href="/learn/our-process/" className="text-muted-foreground hover:text-accent transition-colors" onClick={() => setIsMenuOpen(false)}>Our Process</a>
+                  <a href="/faq/" className="text-muted-foreground hover:text-accent transition-colors" onClick={() => setIsMenuOpen(false)}>FAQ</a>
+                  <a href="/blog/" className="text-muted-foreground hover:text-accent transition-colors" onClick={() => setIsMenuOpen(false)}>Blog</a>
                 </div>
               )}
             </div>
 
             {/* CTA */}
             <div className="pt-3">
-              <a href="/contact" onClick={() => setIsMenuOpen(false)}>
+              <a href="/contact/" onClick={() => setIsMenuOpen(false)}>
                 <Button className="bg-accent hover:bg-accent/90 text-accent-foreground w-full">
                   Request a Quote
                 </Button>

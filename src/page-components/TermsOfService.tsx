@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 
 const TermsOfService = () => {
   const breadcrumbItems = [
-    { label: "Terms of Service", href: "/terms-of-service", current: true }
+    { label: "Terms of Service", href: "/terms-of-service/", current: true }
   ];
 
   return (
