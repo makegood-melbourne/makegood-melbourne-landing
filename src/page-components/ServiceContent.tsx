@@ -728,7 +728,7 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
                   : undefined;
 
                 return (
-                  <a key={index} href={`/services/${card.slug}`} className="block group">
+                  <a key={index} href={`/services/${card.slug}/`} className="block group">
                     <Card className="bg-secondary border-border hover:border-primary/50 transition-colors overflow-hidden h-full">
                       <div className="aspect-[4/3] overflow-hidden">
                         {imageSrc ? (
@@ -769,7 +769,7 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
               {relatedServices.map((relatedService) => (
                 <a 
                   key={relatedService.slug} 
-                  href={`/services/${relatedService.slug}`}
+                  href={`/services/${relatedService.slug}/`}
                   className="block group"
                 >
                   <Card className="overflow-hidden border-border bg-card h-full transition-all duration-300 group-hover:border-primary/50 group-hover:shadow-xl">

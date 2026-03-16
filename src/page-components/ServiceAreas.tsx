@@ -41,7 +41,7 @@ const ServiceAreas = () => {
           <div className="container mx-auto px-4">
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
               {locations.map((location) => (
-                <a key={location.slug} href={`/areas/${location.slug}`}>
+                <a key={location.slug} href={`/areas/${location.slug}/`}>
                   <Card className="border-border hover:border-accent/50 transition-all duration-300 h-full group">
                     <CardContent className="pt-6">
                       <div className="flex items-start gap-4">

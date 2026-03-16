@@ -194,7 +194,7 @@ const OurProcess = () => {
             <strong className="text-tertiary">Note:</strong> This process applies to end-of-lease make good projects. 
             For simpler works (cleaning, minor repairs) or specialist services (structural remediation, cladding), 
             we offer a streamlined approach tailored to your specific needs.{" "}
-            <a href="/contact" className="text-primary hover:underline">Get in touch</a> to discuss.
+            <a href="/contact/" className="text-primary hover:underline">Get in touch</a> to discuss.
           </p>
         </div>
       </section>

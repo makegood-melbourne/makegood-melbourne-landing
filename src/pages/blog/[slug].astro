@@ -33,7 +33,7 @@ const ogImage = `/og/blog/${imageBaseName}.jpg`;
   title={post.title}
   description={description}
   ogImage={ogImage}
-  canonicalUrl={`https://makegood.melbourne/blog/${post.slug}`}
+  canonicalUrl={`https://makegood.melbourne/blog/${post.slug}/`}
 >
   <script slot="head" type="application/ld+json" set:html={JSON.stringify({
     "@context": "https://schema.org",

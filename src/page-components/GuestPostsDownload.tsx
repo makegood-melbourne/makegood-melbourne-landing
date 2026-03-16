@@ -45,7 +45,7 @@ const GuestPostsDownload = () => {
                 </a>
               </Button>
               <Button asChild variant="outline" size="lg">
-                <a href="/blog">Back to blog</a>
+                <a href="/blog/">Back to blog</a>
               </Button>
             </div>
 

@@ -408,7 +408,7 @@ const Contact = () => {
               </Accordion>
               <div className="text-center mt-8">
                 <a 
-                  href="/faq" 
+                  href="/faq/" 
                   className="inline-flex items-center gap-2 text-primary hover:text-primary/80 font-medium transition-colors"
                 >
                   More Questions? See Our FAQ

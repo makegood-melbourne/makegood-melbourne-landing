@@ -8,26 +8,28 @@ export function generateSitemap(): string {
   const currentDate = new Date().toISOString().split('T')[0];
   
   // Static pages with proper priority hierarchy
+  // All URLs MUST include trailing slashes to match Astro's trailingSlash: 'always'
+  // and avoid 301 redirect chains that cause Google "Page with redirect" issues.
   const staticPages = [
     { url: '/', lastmod: currentDate, priority: '1.0', changefreq: 'weekly' },
     { url: '/services/', lastmod: currentDate, priority: '0.9', changefreq: 'monthly' },
-    { url: '/learn/make-good-guide', lastmod: currentDate, priority: '0.9', changefreq: 'monthly' },
-    { url: '/learn/our-process', lastmod: currentDate, priority: '0.9', changefreq: 'monthly' },
-    { url: '/learn/remediation-guide', lastmod: currentDate, priority: '0.9', changefreq: 'monthly' },
-    { url: '/about', lastmod: currentDate, priority: '0.8', changefreq: 'monthly' },
-    { url: '/service-areas', lastmod: currentDate, priority: '0.8', changefreq: 'monthly' },
-    { url: '/blog', lastmod: currentDate, priority: '0.8', changefreq: 'weekly' },
-    { url: '/faq', lastmod: currentDate, priority: '0.7', changefreq: 'monthly' },
-    { url: '/contact', lastmod: currentDate, priority: '0.7', changefreq: 'monthly' },
-    { url: '/privacy-policy', lastmod: currentDate, priority: '0.3', changefreq: 'yearly' },
-    { url: '/terms-of-service', lastmod: currentDate, priority: '0.3', changefreq: 'yearly' },
+    { url: '/learn/make-good-guide/', lastmod: currentDate, priority: '0.9', changefreq: 'monthly' },
+    { url: '/learn/our-process/', lastmod: currentDate, priority: '0.9', changefreq: 'monthly' },
+    { url: '/learn/remediation-guide/', lastmod: currentDate, priority: '0.9', changefreq: 'monthly' },
+    { url: '/about/', lastmod: currentDate, priority: '0.8', changefreq: 'monthly' },
+    { url: '/service-areas/', lastmod: currentDate, priority: '0.8', changefreq: 'monthly' },
+    { url: '/blog/', lastmod: currentDate, priority: '0.8', changefreq: 'weekly' },
+    { url: '/faq/', lastmod: currentDate, priority: '0.7', changefreq: 'monthly' },
+    { url: '/contact/', lastmod: currentDate, priority: '0.7', changefreq: 'monthly' },
+    { url: '/privacy-policy/', lastmod: currentDate, priority: '0.3', changefreq: 'yearly' },
+    { url: '/terms-of-service/', lastmod: currentDate, priority: '0.3', changefreq: 'yearly' },
   ];
 
   // Service pages - high priority for SEO (only published services)
   const serviceUrls = services
     .filter(service => service.published === true)
     .map(service => ({
-      url: `/services/${service.slug}`,
+      url: `/services/${service.slug}/`,
       lastmod: currentDate,
       priority: '0.9',
       changefreq: 'monthly'
@@ -35,7 +37,7 @@ export function generateSitemap(): string {
 
   // Industry pages
   const industryUrls = industries.map(industry => ({
-    url: `/industries/${industry.slug}`,
+    url: `/industries/${industry.slug}/`,
     lastmod: currentDate,
     priority: '0.8',
     changefreq: 'monthly'
@@ -43,7 +45,7 @@ export function generateSitemap(): string {
 
   // Location pages
   const locationUrls = locations.map(location => ({
-    url: `/areas/${location.slug}`,
+    url: `/areas/${location.slug}/`,
     lastmod: currentDate,
     priority: '0.8',
     changefreq: 'monthly'
@@ -51,7 +53,7 @@ export function generateSitemap(): string {
 
   // Blog posts - use actual post dates
   const blogUrls = blogPosts.map(post => ({
-    url: `/blog/${post.slug}`,
+    url: `/blog/${post.slug}/`,
     lastmod: post.date,
     priority: '0.7',
     changefreq: 'monthly'

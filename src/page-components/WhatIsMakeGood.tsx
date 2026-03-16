@@ -323,7 +323,7 @@ const WhatIsMakeGood = () => {
           <p className="text-center text-muted-foreground">
             Actual costs depend on your specific lease terms, the condition of the premises, 
             and the extent of modifications made during your tenancy. 
-            <a href="/contact" className="text-primary hover:underline ml-1">
+            <a href="/contact/" className="text-primary hover:underline ml-1">
               Contact us for a free, no-obligation quote.
             </a>
           </p>
@@ -338,7 +338,7 @@ const WhatIsMakeGood = () => {
           </h2>
           <p className="text-center text-muted-foreground mb-8">
             For a detailed breakdown of each step, see{" "}
-            <a href="/learn/our-process" className="text-primary hover:underline">
+            <a href="/learn/our-process/" className="text-primary hover:underline">
               our full process guide
             </a>.
           </p>

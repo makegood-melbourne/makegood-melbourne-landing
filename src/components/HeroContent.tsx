@@ -121,7 +121,7 @@ const HeroContent = () => {
             }`}
             style={{ transitionDelay: "700ms" }}
           >
-            <a href="/contact">
+            <a href="/contact/">
               <Button
                 size="lg"
                 className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8 py-6 group"

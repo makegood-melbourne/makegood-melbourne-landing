@@ -62,7 +62,7 @@ const ServiceAreasGrid = () => {
             area.slug ? (
               <a 
                 key={index}
-                href={`/areas/${area.slug}`}
+                href={`/areas/${area.slug}/`}
                 className="group bg-background border border-border rounded-lg p-5 hover:border-primary/50 hover:shadow-md transition-all duration-300"
               >
                 <div className="flex items-start gap-3">
@@ -105,7 +105,7 @@ const ServiceAreasGrid = () => {
             size="lg"
             className="text-lg group"
           >
-            <a href="/service-areas">
+            <a href="/service-areas/">
               View All Service Areas
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </a>
