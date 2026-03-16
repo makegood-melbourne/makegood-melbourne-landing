@@ -15,9 +15,16 @@
   pretty_urls = true
 
 # Domain canonicalization - redirect www to non-www
-# Specific www + legacy path rules (single hop to final destination)
+# Specific www + legacy path rules MUST come before the generic catch-all
+# so they resolve in a single hop (avoiding double redirects).
 [[redirects]]
   from = "https://www.makegood.melbourne/home"
+  to = "https://makegood.melbourne/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.makegood.melbourne/home/"
   to = "https://makegood.melbourne/"
   status = 301
   force = true
@@ -28,7 +35,13 @@
   status = 301
   force = true
 
-# Generic www catch-all
+[[redirects]]
+  from = "https://www.makegood.melbourne/capabilities/"
+  to = "https://makegood.melbourne/services/"
+  status = 301
+  force = true
+
+# Generic www catch-all (must be AFTER specific www rules)
 [[redirects]]
   from = "https://www.makegood.melbourne/*"
   to = "https://makegood.melbourne/:splat"
