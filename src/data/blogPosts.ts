@@ -189,7 +189,7 @@ Need to scope a make good in Melbourne? [Get in touch.](/contact)`,
     imageAlt: "Empty industrial warehouse interior with steel frame structure and polished concrete floor ready for make good handover in Melbourne",
     ogImage: "/og/blog/warehouse-factory-make-good-melbourne.jpg",
     content: `
-A warehouse or factory make good is a different beast to a standard office strip-out. The scale is larger, the machinery is heavier and the potential for disputes is higher. As specialists in industrial and commercial [make goods](/services/make-good-solutions/), we have seen what goes right and what goes wrong when tenants exit a warehouse or factory lease. This guide breaks down the process from a contractor's perspective — what's involved, what it costs, where tenants get caught out and how to get it done properly.
+A warehouse or factory make good is a different beast to a standard office [strip-out](/blog/make-good-strip-out-defit-melbourne). The scale is larger, the machinery is heavier and the potential for disputes is higher. As specialists in industrial and commercial [make goods](/services/make-good-solutions/), we have seen what goes right and what goes wrong when tenants exit a warehouse or factory lease. This guide breaks down the process from a contractor's perspective — what's involved, what it costs, where tenants get caught out and how to get it done properly.
 
 ---
 
@@ -321,7 +321,7 @@ One point of contact. Fixed price. Done properly.
     image: "retail-make-good-shopping-centre-melbourne.webp",
     imageAlt: "Multi-level shopping centre interior with glass storefronts and skylights in Melbourne retail precinct",
     content: `
-Exiting a retail lease is not the same as leaving an office or warehouse. The [make good](/services/make-good-solutions/) process is more involved. You have your lease agreement, but you also have shopping centre management looking over your shoulder. Both have rules.
+Exiting a retail lease is not the same as leaving an office or warehouse. The [make good](/services/make-good-solutions/) process is more involved — and the [terminology itself](/blog/make-good-strip-out-defit-melbourne) can be confusing. You have your lease agreement, but you also have shopping centre management looking over your shoulder. Both have rules.
 
 For retail tenants in Melbourne, this means a different set of challenges. It is not just about a fresh coat of paint. It involves shopfronts, specialised fixtures and strict centre guidelines that sit on top of your lease. Add to that the complexity of working in a live retail environment — where the centre is trading around you — and you have a make good that requires more planning, more coordination and more experience than most tenants expect.
 
@@ -484,7 +484,7 @@ Planning a retail lease exit in Melbourne? [Get in touch.](/contact)`
     content: `
 The most common friction point at the end of a commercial lease is arguing over the property's original condition. A landlord remembers a perfect tenancy. A tenant remembers pre-existing scuffs and scrapes. With no proof, it becomes a problem — and problems at lease end cost everyone time and money.
 
-A detailed report at the start of the lease prevents this. This post explains what dilapidation and condition reports are from a [make good](/services/make-good-solutions/) contractor's perspective. We do not write these reports. We use them to define a scope of works, price a job fairly and deliver a clear outcome for both tenants and landlords.
+A detailed report at the start of the lease prevents this. This post explains what dilapidation and condition reports are from a [make good](/services/make-good-solutions/) contractor's perspective. If you are still getting your head around the [difference between a make good, a strip out and a defit](/blog/make-good-strip-out-defit-melbourne), start there first. We do not write these reports. We use them to define a scope of works, price a job fairly and deliver a clear outcome for both tenants and landlords.
 
 ---
 
@@ -691,7 +691,7 @@ For smaller, quickly addressed incidents where the source is fixed and materials
 
 ## Strip Out vs. Salvage: How Decisions Are Made
 
-One of the most important calls in a water damage job is deciding what can be saved and what needs to come out. Getting this wrong in either direction costs money — replacing materials that could have been dried costs the client unnecessarily, while salvaging materials that should have been removed sets up a mould problem down the track.
+The term [strip out](/blog/make-good-strip-out-defit-melbourne) in this context refers to the removal of damaged materials rather than a full tenant fit-out removal, but the principle is the same. One of the most important calls in a water damage job is deciding what can be saved and what needs to come out. Getting this wrong in either direction costs money — replacing materials that could have been dried costs the client unnecessarily, while salvaging materials that should have been removed sets up a mould problem down the track.
 
 | Material | Typical Decision |
 | --- | --- |
@@ -792,7 +792,7 @@ What you need is a single team who does this every day. One call. One scope. One
 
 ## What Is a Make Good, Exactly?
 
-Before we get into the how, it's worth being clear on the what — because make good obligations vary significantly from lease to lease.
+Before we get into the how, it's worth being clear on the what — because [make good, strip out and defit](/blog/make-good-strip-out-defit-melbourne) are often used interchangeably, and make good obligations vary significantly from lease to lease.
 
 A make good clause in a commercial lease requires the tenant to return the premises to an agreed condition at the end of the tenancy. In most cases, that means returning the space to the condition it was in when you first took possession. This is evidenced by the ingoing [condition report](/blog/dilapidation-reports-melbourne-make-good), which should have been completed at the start of your lease and signed by both parties.
 
