@@ -13,6 +13,145 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: "41",
+    slug: "warehouse-demolition-mezzanine-cool-room-removal",
+    title: "Warehouse Demolition: Removing Mezzanines, Cool Rooms and Heavy Infrastructure",
+    subtitle: "The heavy lifting most tenants don\u2019t see coming",
+    excerpt: "A warehouse strip out is a completely different category of work to an office. We are talking structural steel, engineered systems, refrigerant gas, heavy machinery, and a concrete slab that has taken a decade of punishment.",
+    metaDescription: "Warehouse demolition in Melbourne \u2014 mezzanine removal, cool room decommissioning, heavy machinery and concrete slab reinstatement. What industrial tenants need to know.",
+    date: "2026-04-09",
+    readTime: "11 min read",
+    image: "/src/assets/blog/warehouse-demolition-mezzanine-cool-room-removal-melbourne.webp",
+    imageAlt: "Industrial warehouse interior during demolition and strip out works showing mezzanine removal and concrete slab in Melbourne",
+    content: `You signed a lease on a warehouse ten years ago. At the time, it was an empty shell. Concrete floor, steel portal frame, roller doors. That was it.
+
+Since then, you have built a mezzanine floor to double your storage capacity. You have installed a cool room the size of a small house. You have bolted conveyor systems and gantry cranes into the slab. You have run three-phase power to every corner of the building.
+
+Now the lease is ending and your landlord wants the building back the way they gave it to you. Empty shell. Concrete floor. Steel portal frame. Roller doors.
+
+This is where a lot of industrial tenants get a very unpleasant surprise.
+
+Stripping out an office is one thing. Pull up the carpet, knock down some plasterboard walls, disconnect some data cabling. It is a straightforward job. A warehouse strip out is a completely different category of work. We are talking about structural steel, engineered systems, refrigerant gas, heavy machinery, and a concrete slab that has taken a decade of punishment from everything you bolted into it.
+
+This post covers the four big-ticket items in a [warehouse demolition](/services/strip-out-solutions/demolition/) and what is actually involved in removing them properly.
+
+---
+
+## Mezzanine Floors: This is Not a DIY Job
+
+A mezzanine floor feels like furniture. You brought it in, you bolted it down, surely you can just unbolt it and take it away. Some tenants even try to do exactly that, usually with a crew of their own guys and a couple of angle grinders.
+
+That is a serious mistake.
+
+A commercial mezzanine floor is a structural steel system. It has been engineered to carry significant loads, which means every connection point, every column base plate and every beam junction has been designed to work together as a system. When you start removing components without understanding that system, you create instability. Sections can shift unexpectedly. Columns can kick out. People get hurt.
+
+The right way to remove a mezzanine starts before anyone picks up a tool. You need engineering sign-off on the demolition sequence. A structural engineer looks at how the mezzanine was built and works out the order in which it can be safely dismantled without compromising the structure mid-job. That sequence gets followed precisely.
+
+Then there is the physical reality of the work. Mezzanine decking and beams are heavy. The larger sections cannot simply be carried down a staircase. You need elevated work platforms to access connection points safely, rigging equipment to control the descent of heavy steel sections, and in many cases a crane or telehandler to manage pieces that are too large or too heavy to manhandle.
+
+The column base plates are another issue. They are typically chemically anchored or through-bolted into the concrete slab. Removing them without damaging the slab is a skilled job, and the holes they leave behind need to be filled with high-strength epoxy and ground flush. More on the slab later.
+
+If the mezzanine was engineered and permitted when it was installed, there will be council records. Preparing your tenancy for handover almost certainly requires you to obtain a demolition permit before the work starts. This is not optional.
+
+Bottom line: mezzanine removal is a structural demolition job. It requires engineering oversight, the right equipment and the right sequence. Budget accordingly.
+
+---
+
+## Cool Rooms and Freezers: More Than Just Panels
+
+A commercial cool room or blast freezer is not just a big insulated box. It is a system. There is the insulated panel structure, the refrigeration plant, the electrical supply, the drainage, and in many cases a purpose-built concrete pad or suspended floor system underneath it.
+
+Removing it properly means decommissioning every part of that system in the right order.
+
+The refrigeration plant comes first. Commercial refrigeration systems use refrigerant gases, many of which are controlled substances under Australian environmental law. You cannot simply disconnect the lines and let the gas vent. It has to be recovered by a licensed refrigeration technician using certified recovery equipment. The gas is then either reclaimed for reuse or disposed of through an approved facility. Skipping this step is not just an environmental issue, it is a legal one.
+
+Once the refrigeration plant is decommissioned and the gas is recovered, the electrical supply to the cool room needs to be isolated and made safe. This is work for a licensed electrician. The supply cables back to the switchboard need to be properly terminated or removed, not just cut and left live in the wall. As we discuss in our guide to [electrical make safe procedures](/blog/electrical-make-safe-decommissioning-demolition), this is the crucial first step before any physical strip out begins.
+
+Then you can start on the panels themselves. Commercial cool room panels are heavy, typically 100mm to 150mm of polyurethane foam sandwiched between steel skins. They are also awkward. The panels interlock with cam-lock connectors and they need to be disassembled in sequence without damaging the surrounding structure. The panels themselves are generally recyclable and reputable demolition crews will separate them from general waste accordingly.
+
+What is left once the panels are gone is often a floor that is in a different condition to the rest of the warehouse. Cool room floors are frequently built up with a vapour barrier, insulated base panels and a top screed. All of that needs to come out and the area needs to be reinstated to match the level and finish of the surrounding floor. In some cases the original concrete under a cool room has been protected from the wear and tear the rest of the slab has experienced, so there can be a visible difference in surface condition that needs to be addressed.
+
+If the cool room had any refrigerant pipework running through walls or the roof, that needs to be traced and removed in full, not just cut off at the cool room end and left in place.
+
+---
+
+## Heavy Machinery and Infrastructure: Unbolting Ten Years of Operations
+
+Warehouses accumulate infrastructure. Conveyor systems, gantry cranes, pallet inverters, manufacturing equipment, compressed air lines, high-pressure water systems. Most of it is bolted, welded or chemically anchored to the slab, the walls or the structural steel frame.
+
+Removing it is not just a matter of undoing the bolts and wheeling it out.
+
+Gantry cranes are a good example. A gantry crane runs on rails that are typically bolted or welded to the top flange of the portal frame columns. The crane itself needs to be lowered to the floor, which requires rigging and a plan for how to support it safely while the end carriages are detached from the rails. The rails then need to be removed from the structural steel, and any penetrations or damage to the steelwork need to be assessed and made good.
+
+Conveyor systems that are bolted to the slab leave the same problem as everything else that has been anchored to the concrete. The anchor points need to come out and the slab needs to be reinstated.
+
+Compressed air and process pipework is often the most overlooked item. Over a decade of operations, compressed air lines get run along walls, suspended from the roof structure, dropped down to individual machines. When the machines go, the pipework often stays. It should not. The lease requirements almost certainly dictate you need to remove it, and leaving a slab of redundant pipework hanging from the roof is not a good look when the landlord does their final inspection.
+
+High-voltage electrical infrastructure deserves particular attention. If you have had specialised power supplies installed for heavy machinery, three-phase outlets, motor control centres or sub-distribution boards, the decommissioning and removal of that infrastructure needs to be handled by a licensed electrician and in some cases needs to be notified to your electricity distributor.
+
+The rule across all of this is the same: document what was there before you start, remove it in a logical sequence, and leave no traces behind in the structure.
+
+---
+
+## The Concrete Aftermath: The Part Nobody Budgets For
+
+Here is the thing about warehouse slabs. They are tough. They are designed to handle forklifts, heavy racking and years of industrial use. But ten years of dyna-bolts, chemical anchors, core holes and floor-mounted equipment takes a toll.
+
+When you pull out a mezzanine, a cool room, a gantry crane and ten years of production equipment, what you are left with is a slab that looks like it has been in a war. Hundreds of anchor holes, some of them 20mm or 30mm in diameter and 150mm deep. Core holes where services were run through the slab. Areas of surface damage where equipment was dragged or dropped. Possible slab damage in areas where heavy loads have caused cracking or where water from the cool room has found its way into the concrete.
+
+This is not cosmetic. Your landlord is not going to accept a slab full of open anchor holes. And they are right not to. Open holes in an industrial floor are a trip hazard and a structural weak point. They need to be filled.
+
+The correct repair for anchor holes in an industrial slab is to clean out the hole, ensure it is free of dust and debris, and fill it with a high-strength epoxy mortar or cementitious repair compound rated for the loads the floor will be expected to carry. The repair needs to be flush with the surrounding surface and compatible with the finish of the existing slab.
+
+In areas where the surface has been damaged or where the finish has been ground away by years of forklift traffic, the slab may need to be mechanically prepared with a floor grinder and either resealed or given a fresh surface treatment to bring it back to a consistent condition. This is a core part of our [warehouse flooring reinstatement](/services/make-good-solutions/warehouse-flooring/) process.
+
+In more serious cases, where there is cracking, delamination or areas of slab that have been undermined by water ingress from a cool room, you may be looking at partial slab replacement or injection grouting to stabilise the substrate. This is the kind of thing that needs to be assessed on site by someone who knows what they are looking at.
+
+The slab work is the last thing that happens on a warehouse demolition, but it is not the least important. It is what your landlord sees when they walk in for the final inspection.
+
+---
+
+## Safety and Compliance: The Stuff That Cannot Be Cut
+
+Industrial demolition sits in a different risk category to standard commercial strip outs. The loads are heavier, the heights are greater, the systems are more complex and the consequences of getting it wrong are more serious.
+
+A few things that need to be properly managed:
+
+**Working at height.** Mezzanine demolition and roof-level work requires proper elevated work platforms or scaffolding. Working off ladders at height on a demolition job is a serious safety breach and a very good way to end up with a Worksafe investigation on your hands.
+
+**Crane and rigging operations.** Any work involving a crane or rigging requires a licensed dogman and, depending on the crane capacity, a licensed crane operator. Rigging plans need to be prepared in advance. Lift studies need to be done for anything complex.
+
+**Hazardous materials.** Older warehouses can contain asbestos in unexpected places. Roof sheeting, backing boards behind wall panels, pipe lagging, floor tiles. Before any demolition work starts in a warehouse built before 1990, a hazardous materials assessment should be completed by a licensed assessor. If asbestos is found, it needs to be removed by a licensed asbestos removalist before demolition proceeds.
+
+**Waste management.** Industrial demolition generates significant quantities of waste. Steel, concrete, insulated panelling, refrigerant, electrical components, general construction waste. These streams need to be separated and each needs to go to an appropriate facility. Mixing them together and tipping the lot is not acceptable and in many cases is not legal.
+
+**Permits.** Depending on the scope of work, you may need a demolition permit from your local council, a WorkSafe high-risk work notification, or both. These need to be in place before work starts, not applied for after the fact.
+
+---
+
+## What This Looks Like in Practice
+
+A complete warehouse demolition and make good is a sequenced job. It moves in a specific order and each stage clears the way for the next one.
+
+It starts with the planning. Review the lease, document existing conditions, engage an engineer if there is a mezzanine, complete the hazardous materials assessment, confirm permits and notifications. Understanding [what the lease requires](/blog/warehouse-factory-make-good-melbourne) is critical to getting the scope right from day one.
+
+Then services get isolated. Electrical, refrigeration, compressed air, gas, water. Everything gets made safe before any physical demolition starts. This is not optional and it is not just paperwork. It protects the crew doing the work.
+
+Then the heavy infrastructure comes out. Mezzanine first if there is one, followed by the cool room, then machinery and infrastructure. Each stage is followed by an inspection to confirm the structure is in the condition required before moving on.
+
+Then the slab gets attended to. All anchor holes filled, surface damage repaired, floor ground and finished to the required standard.
+
+Then cleaning. A proper industrial clean, not a sweep with a broom. The landlord is going to inspect this space and it needs to look like the shell they originally handed over.
+
+If you are approaching the end of a warehouse lease and you are looking at the scope of what needs to come out, the best thing you can do is start the conversation early. The earlier we can get on site to assess the scope, the more options you have in terms of sequencing, timing and cost.
+
+Leave it until the last month and you are paying for urgency as well as the work.
+
+---
+
+*Planning a warehouse strip out or make good? Talk to MakeGood Melbourne. We handle the heavy end of industrial demolition, from mezzanine removal and cool room decommissioning through to slab reinstatement and final clean. Get in touch to arrange a site assessment.*`
+  },
+  {
     id: "40",
     slug: "make-good-strip-out-defit-melbourne",
     title: "Make Good vs Strip Out vs Defit: What's the Difference?",
