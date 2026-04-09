@@ -22,7 +22,7 @@ export const blogPosts: BlogPost[] = [
     date: "2026-04-09",
     readTime: "11 min read",
     image: "/src/assets/blog/warehouse-demolition-mezzanine-cool-room-removal-melbourne.webp",
-    imageAlt: "Industrial warehouse interior during demolition and strip out works showing mezzanine removal and concrete slab in Melbourne",
+    imageAlt: "Large commercial warehouse interior mid-demolition with exposed concrete slab, steel columns and construction debris during strip out works in Melbourne",
     content: `You signed a lease on a warehouse ten years ago. At the time, it was an empty shell. Concrete floor, steel portal frame, roller doors. That was it.
 
 Since then, you have built a mezzanine floor to double your storage capacity. You have installed a cool room the size of a small house. You have bolted conveyor systems and gantry cranes into the slab. You have run three-phase power to every corner of the building.
