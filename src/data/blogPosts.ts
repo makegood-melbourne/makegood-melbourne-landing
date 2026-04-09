@@ -155,6 +155,7 @@ Leave it until the last month and you are paying for urgency as well as the work
     id: "40",
     slug: "make-good-strip-out-defit-melbourne",
     title: "Make Good vs Strip Out vs Defit: What's the Difference?",
+    subtitle: "Know the difference before you get a quote",
     excerpt: "The terms make good, strip out and defit are used interchangeably but mean different things. Here is what each term means and why it matters when getting quotes.",
     metaDescription: "Make good, strip out, defit \u2014 not the same thing. We explain what each term means and which service your commercial lease actually requires.",
     date: "2026-03-28",
