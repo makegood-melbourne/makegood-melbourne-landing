@@ -17,12 +17,12 @@ export const blogPosts: BlogPost[] = [
     slug: "warehouse-floor-restoration-racking-removal",
     title: "Warehouse Floor Restoration After Racking Removal: From Dynabolts to Done",
     subtitle: "What your slab actually needs before handback",
-    date: "2026-04-09",
+    date: "2026-05-15",
     readTime: "11 min read",
     excerpt: "A warehouse strip out leaves hundreds of anchor holes, surface damage and years of forklift wear. Here is the full process for restoring a warehouse slab to handback condition.",
     metaDescription: "Warehouse floor restoration after racking removal in Melbourne — anchor removal, epoxy repairs, floor grinding and sealing. What industrial tenants need to know before handback.",
-    image: "/src/assets/blog/warehouse-floor-restoration-racking-removal-melbourne.webp",
-    imageAlt: "Warehouse concrete floor being restored after pallet racking removal showing anchor hole repairs and floor grinding works in Melbourne",
+    image: "/src/assets/blog/warehouse-floor-dynatbolt-racking-anchor-removal-melbourne.webp",
+    imageAlt: "Close-up of a dynatbolt anchor protruding from a concrete warehouse floor slab with debris around the base plate prior to removal during a warehouse make good in Melbourne",
     content: `Most warehouse tenants do not think about the floor until it is too late.
 
 You have spent years focused on what is sitting on the floor. The racking, the product, the forklifts moving between rows. The concrete underneath is just the thing that holds it all up. It has done its job without complaint and you have not had to think about it much.
