@@ -13,6 +13,153 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: "42",
+    slug: "warehouse-floor-restoration-racking-removal",
+    title: "Warehouse Floor Restoration After Racking Removal: From Dynabolts to Done",
+    subtitle: "What your slab actually needs before handback",
+    date: "2026-04-09",
+    readTime: "11 min read",
+    excerpt: "A warehouse strip out leaves hundreds of anchor holes, surface damage and years of forklift wear. Here is the full process for restoring a warehouse slab to handback condition.",
+    metaDescription: "Warehouse floor restoration after racking removal in Melbourne — anchor removal, epoxy repairs, floor grinding and sealing. What industrial tenants need to know before handback.",
+    image: "/src/assets/blog/warehouse-floor-restoration-racking-removal-melbourne.webp",
+    imageAlt: "Warehouse concrete floor being restored after pallet racking removal showing anchor hole repairs and floor grinding works in Melbourne",
+    content: `Most warehouse tenants do not think about the floor until it is too late.
+
+You have spent years focused on what is sitting on the floor. The racking, the product, the forklifts moving between rows. The concrete underneath is just the thing that holds it all up. It has done its job without complaint and you have not had to think about it much.
+
+Then the lease ends. The racking comes out. And suddenly the floor is the only thing in the room and it looks like a war zone. Hundreds of anchor holes, surface staining, scuff damage from years of forklift traffic, maybe some cracking around heavily loaded base plates. Your landlord is walking in for the final inspection in six weeks and this is what they are going to see.
+
+This is the point where a lot of tenants realise they have seriously underestimated what is involved in handing back a warehouse floor.
+
+The good news is that restoring a warehouse slab after racking removal is a well-understood process. It is not cheap and it takes time, but it is not mysterious either. This post walks you through every step, from pulling out the first rack leg to handing over the keys.
+
+---
+
+## Start Here: What Does Your Lease Actually Require?
+
+Before you start planning any floor work, pull out your lease and your entry condition report. These two documents are what determine how much work you actually need to do.
+
+Some leases are specific. They require the floor to be returned to its original condition, which typically means anchor holes filled, surface damage repaired and the floor finished to the same standard as when you moved in. If the floor was sealed when you took occupancy, it needs to be sealed when you leave. If it was bare concrete, bare concrete may be acceptable at handback.
+
+Some leases are more general, simply requiring the tenant to remove all fixtures and fittings and make good any damage. In those cases, the condition report becomes the reference point for what counts as damage and what was already there when you arrived.
+
+The entry condition report is your best friend here. If the floor had existing cracking, staining or surface wear when you moved in and it is documented in the report, you are not responsible for reinstating that damage. If the report shows a clean, sealed floor and you are handing back a slab full of anchor holes and grinding marks, that gap is your liability.
+
+Get clear on your obligations before you spend any money. A quick review with your property lawyer or even a conversation with your property manager can save you from either over-spending on work you do not need to do or under-doing it and losing part of your bond.
+
+That said, the process below covers the full scope of what a typical warehouse floor restoration involves. Depending on your lease, you may need all of it or just part of it.
+
+---
+
+## Step One: Getting the Racking Out
+
+The floor restoration starts with the racking removal, and how the racking was installed determines what you are dealing with once it is gone.
+
+Pallet racking is anchored to the floor in one of two ways. Bolt-down systems use dynabolts (also called expansion anchors or sleeve anchors) that are driven into pre-drilled holes and expanded to grip the concrete. Chemical anchor systems use a two-part epoxy resin injected into the hole before the anchor rod is inserted. The resin cures around the rod and bonds it chemically to the concrete.
+
+Both systems do their job well, which is exactly the problem. They are designed to resist serious loads and they grip accordingly. Getting them out cleanly requires the right approach for each type.
+
+Before you get to the anchors though, you need the racking itself gone. If your racking is quality steel from a recognised manufacturer such as Dexion, Colby or Schaefer, it is worth getting a racking reseller or second-hand dealer to assess it before you call a demolition crew. Good condition racking from these brands holds its value and can be sold or relocated rather than scrapped. That resale value can meaningfully offset the cost of the removal labour. It is not always possible depending on the condition and configuration, but it is worth the phone call.
+
+Once the racking is dismantled and out of the building, you are left with the anchors. This is where the real floor work begins.
+
+For more detail on the full scope of a warehouse strip out, including what happens when you are also removing mezzanines, cool rooms and heavy machinery, have a read of our [warehouse demolition guide](/blog/warehouse-demolition-mezzanine-cool-room-removal). The floor restoration process is the same regardless of what else is coming out.
+
+---
+
+## Step Two: Grinding Dynabolts Flush
+
+The first option some tenants consider is the cheapest one. Rent an angle grinder, cut the protruding anchor bolts off flush with the slab surface, and call it done.
+
+This approach has one thing going for it: it is fast and inexpensive.
+
+It has several things going against it, the main one being that most landlords will not accept it.
+
+Grinding a bolt flush does not remove it. The anchor body is still fully embedded in the concrete, taking up the full depth of the hole. What you are left with is a slab that looks superficially tidy until someone looks closely or runs their hand across the surface and finds every bolt position by feel. The ground-down bolt face is also a different colour and texture to the surrounding concrete, so on a light-coloured slab it reads clearly as a patch job rather than a proper repair.
+
+More importantly, the anchor body still occupying the hole means the concrete around it is still under the stress of the expansion load. Over time, and particularly under forklift traffic, that can contribute to surface cracking around the anchor point.
+
+For a tenant trying to minimise costs, grinding flush might feel like a reasonable compromise. For a landlord taking back a building they intend to re-lease, it is not. Expect pushback if you try to settle for this.
+
+---
+
+## Step Three: Core-Holing the Anchors Out
+
+The proper way to remove floor anchors is to core-hole them out.
+
+A diamond-tipped core drill is used to drill a clean circular hole centred on the anchor. The core drill cuts through the surrounding concrete and captures the anchor body inside the core. The core and anchor come out together as a single piece, leaving a clean circular hole in the slab.
+
+The size of the core is slightly larger than the anchor. For common anchor sizes used in pallet racking, M12 anchors typically require a 40-50mm core, M16 anchors around 50-60mm and M20 anchors 60-75mm. The depth of the core needs to exceed the embedment depth of the anchor, which on standard racking base plates is usually between 70mm and 120mm.
+
+The reason you cannot simply hammer the anchors out without core-drilling is straightforward. Expansion anchors work by being forced outward against the concrete as the bolt is tightened. That expansion has created stress in the concrete around the anchor. If you try to drive the anchor out by force rather than cutting it free, you transfer that stress suddenly and the concrete around the hole cracks. You go from a clean anchor hole to a hole surrounded by radiating cracks, which is a significantly worse repair problem.
+
+Core-holing is slower and costs more than grinding, but it leaves a clean, repairable hole. It is the method that holds up to landlord inspection and it is the method that gives you a substrate you can actually patch properly.
+
+---
+
+## Step Four: Filling the Holes with Epoxy Resin
+
+Now you have a slab full of clean circular holes, typically between 40mm and 75mm in diameter and 100mm or more in depth. These need to be filled.
+
+The filler material matters. This is where some cheaper operators cut corners and where the repair either lasts or fails.
+
+Standard cementitious patching compounds are widely used for concrete repairs and they work well in many applications. In an industrial floor that is going to see forklift traffic, they are often not the right choice. Cementitious patches can shrink slightly as they cure, leaving a slight depression at the fill point. They also have lower compressive and bond strength than the surrounding concrete, which means under repeated impact and dynamic loading they can crack, loosen and eventually pop out of the hole.
+
+The correct product for anchor hole repairs in an industrial floor is a two-component epoxy mortar. Properly specified epoxy mortars have compressive strengths that match or exceed the surrounding concrete, excellent bond to the hole walls, and minimal shrinkage during cure. They are rated for dynamic and impact loading, which is exactly what a working warehouse floor experiences.
+
+Preparation of the hole before filling is as important as the filler itself. The hole needs to be clean and free of dust, oil and debris. Any loose material needs to be blown out. On deeper holes, a backer rod is sometimes used to reduce the volume of filler required and ensure the repair is built up in layers rather than poured in one shot, which can cause shrinkage issues even in quality products.
+
+Done properly, an epoxy-filled core hole in a warehouse slab is effectively invisible once the surface is ground level and sealed. Done with the wrong product or without proper prep, it becomes a recurring maintenance issue for whoever takes on the building next.
+
+---
+
+## Step Five: Grinding the Floor
+
+Once the holes are filled and cured, the floor typically needs grinding. How much grinding depends on what condition the slab is in and what your lease requires.
+
+Think of floor grinding as a menu with three levels.
+
+A light grind is the minimum intervention. It removes surface contamination, light staining and the very top layer of the concrete surface. It levels off the filled anchor holes so they sit flush and consistent with the rest of the slab. It provides a clean, open surface that takes sealant properly. If your slab is in reasonable condition and your lease just requires it to be clean and properly repaired, a light grind is often all you need.
+
+A medium grind goes deeper. It removes old floor coatings, adhesive residue, paint, oil contamination that has penetrated the surface, and minor surface damage. If the floor had a coating when you moved in and that coating is now worn, stained or damaged, a medium grind strips it back to bare concrete so it can be re-coated to the original standard.
+
+A heavy grind is for floors with significant surface damage. Deep scratch marks, areas where the surface has delaminated, low spots that have collected water, or sections where the surface finish is inconsistent due to previous repairs or damage. A heavy grind levels the surface and removes enough material to get back to sound, consistent concrete. In some cases this grades into slab rectification work, which is a separate scope again.
+
+Grinding also does something important beyond just fixing the surface. It opens up the pores of the concrete, removing the carbonated surface layer that forms over time and making the surface receptive to sealants and coatings. If you are planning to seal the floor after grinding, the grind and the sealing are one continuous process. You do not grind and then leave the floor sitting for weeks before sealing.
+
+Our [warehouse flooring service](/services/make-good-solutions/warehouse-flooring/) covers the full range of floor work we carry out, from basic anchor repairs through to full slab rectification and coating.
+
+---
+
+## Step Six: Sealing the Floor
+
+The final step is sealing, and whether you need it and what type you need comes back to the lease and the entry condition report.
+
+If the floor was sealed when you took occupancy, it needs to be sealed when you hand back. If it was bare concrete, you may not need to seal at all, though a penetrating sealant is often worth doing regardless to protect the repairs and present a clean surface for the inspection.
+
+There are broadly two categories of sealant used on industrial concrete floors.
+
+Penetrating sealants work by soaking into the concrete and reacting chemically with the substrate to form a barrier against moisture and contamination. They do not change the appearance of the floor significantly. The concrete still looks like concrete. They are durable, breathable and economical. For a floor that just needs to be protected and presented in good condition, a penetrating sealant does the job.
+
+Film-forming coatings sit on top of the concrete surface and provide a visible finish. The most common in industrial applications is a two-pack epoxy coating. Two-pack epoxy is hard, chemical-resistant, easy to clean and available in a range of colours. It is what most people picture when they think of a freshly finished warehouse floor. If the floor had an epoxy coating when you moved in, this is what you need to reinstate.
+
+Between those two ends of the range there are polyurethane coatings, moisture cure urethanes and a range of other products suited to specific applications. The right choice depends on the existing floor condition, the lease requirements and what the next tenant is likely to need from the space.
+
+---
+
+## Putting It All Together
+
+A full warehouse floor restoration after racking removal is a sequenced job. Racking out, anchors removed, holes filled, floor ground, floor sealed. Each step depends on the previous one being done correctly.
+
+The scope of work that applies to your situation depends on what your lease requires, what the entry condition report documents and what condition the floor is actually in. For some tenants, it is anchor removal and epoxy fills and a light grind. For others, it is the full process from bare slab to re-coated floor.
+
+Either way, the time to start planning is not the week before handback. Floor work takes time. The epoxy fills need to cure properly before the floor is ground. The grind needs to happen before the sealing. If you are using a two-pack epoxy coating, the application and cure schedule needs to be factored in. Rush any of those steps and the results show.
+
+If you are approaching end of lease and you are not sure what your floor obligations are, start with the lease and the condition report. If you want someone to walk the floor with you and give you a straight read on what needs doing, that is what we are here for.
+
+For a broader picture of what a full warehouse make good involves beyond just the floor, the [warehouse and factory make good guide](/blog/warehouse-and-factory-make-good) is a good place to start. And if your strip out involves more than just racking, our [demolition services](/services/strip-out-solutions/demolition/) cover the heavy end of the work.`,
+  },
+  {
     id: "41",
     slug: "warehouse-demolition-mezzanine-cool-room-removal",
     title: "Warehouse Demolition: Removing Mezzanines, Cool Rooms and Heavy Infrastructure",
