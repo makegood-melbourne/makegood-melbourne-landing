@@ -13,6 +13,147 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: "43",
+    slug: "patching-plastering-commercial-lease-handback",
+    title: "Patching and Plastering: What Landlords Actually Inspect at Handback",
+    subtitle: "The wall repairs most tenants get wrong",
+    date: "2026-06-11",
+    readTime: "12 min read",
+    excerpt: "Walls attract more attention at handback than almost anything else in a commercial tenancy. Here is what a proper plaster repair involves and why colour matching is harder than it looks.",
+    metaDescription: "Commercial patching and plastering at lease handback in Melbourne — partition removal repairs, cable penetrations, colour matching and EOFY timing. What tenants need to know before inspection.",
+    image: "/src/assets/blog/commercial-office-patching-plastering-partition-removal-make-good-melbourne.webp",
+    imageAlt: "Stripped-out commercial office floor mid-make good in Melbourne showing exposed concrete ceiling, columns with fixing holes and removed partition walls prior to patching and plastering works",
+    content: `There is a moment that happens at almost every commercial lease handback inspection. The tenant walks in feeling reasonably confident. The office has been cleaned out, the carpet looks acceptable, the kitchen has been wiped down. Then the landlord or property manager walks slowly along a wall, stops, tilts their head slightly, and points at something the tenant had completely forgotten about.
+
+A cable penetration that got filled with a blob of white caulk and painted over. A partition wall removal that left a shadow line across the ceiling and a row of raw holes in the slab. A whiteboard mounting that was patched with the wrong compound and has since cracked back open. A door frame that got nudged by a removal truck and was quietly ignored for the last three years of the tenancy.
+
+Walls attract more attention at handback than almost anything else in a commercial tenancy. Understanding why, and understanding what a proper repair actually involves, is the difference between sailing through the inspection and getting hit with a list of items to fix or costs to cover.
+
+---
+
+## Why Landlords Focus on Walls
+
+Walls are the most visible surface in any tenancy. You look at them constantly. Your clients looked at them when they visited. The landlord looks at them when they walk in for the inspection.
+
+More than that, the condition of the walls tells a story about how the tenancy was maintained. A wall with properly repaired nail holes, clean paint and no visible damage says the tenant looked after the space. A wall with mismatched patches, exposed fixings, shadow lines from removed partitions and scuff marks at every corner says the opposite.
+
+Landlords also know that wall damage is one of the more expensive things to fix if it is not done properly the first time. A bad patch job that needs to be stripped back and redone costs more than a good patch job done right the first time. If the tenant has left behind a series of half-done repairs that a tradesperson now needs to undo and redo, that cost comes out of the bond or gets invoiced directly.
+
+The other factor is paint. Paint is almost always tied to the plastering work. You cannot do one without doing the other, and painting a commercial space at lease end is a significant cost in its own right. If the wall repairs are not done to the right standard, the painting that follows cannot do its job either. More on that later.
+
+---
+
+## The Difference Between a Cosmetic Patch and a Proper Repair
+
+This is where a lot of tenants, and some cheaper contractors, get it wrong.
+
+A cosmetic patch looks fine in the right light. You fill the hole with a ready-mix compound, sand it back roughly flat, roll paint over the top and step back. From across the room, in flat overhead lighting, it looks acceptable. The landlord walks in with a torch, holds it at a raking angle across the wall surface, and every imperfection jumps out.
+
+Raking light is the enemy of a bad patch. Any variation in surface level, any edge that has not been properly feathered, any area where the compound has shrunk slightly back from the surrounding surface, all of it becomes immediately visible. Property managers know this. They have seen it a hundred times and they know exactly how to find it.
+
+A proper plaster repair is a different process. The damaged area is prepared correctly, which means loose material is removed, edges are undercut slightly to give the filler something to key into, and the substrate is primed if it needs it. The repair compound is applied in layers if the depth requires it, with each layer allowed to cure before the next goes on. The outer layer is feathered out well beyond the edges of the damage so there is no hard line. It is sanded progressively with the right grit sequence to get a surface that is genuinely flat and consistent with the surrounding plaster. Then it is sealed before painting.
+
+The compound matters too. There is a range of products used for plaster repairs and they are not interchangeable. A lightweight ready-mix compound is fine for small nail holes. For deeper repairs or repairs in areas that will see any moisture or movement, you want a harder-setting compound. For repairs to hebel or masonry substrates, different products again. Using the wrong product in the wrong application gives you a repair that looks fine for six months and then starts to crack, shrink or separate from the edges.
+
+Our [patching and plastering service](/services/make-good-solutions/patching-plastering/) covers the full range of repair types across commercial tenancies, from minor fixings through to full wall reinstatement.
+
+---
+
+## Common Damage Types and How They Are Repaired
+
+### Nail Holes and Screw Fixings
+
+The lowest level of damage and the most common. Ten years of hanging things on walls leaves a lot of holes. The repair process is straightforward: fill, sand, seal, paint. The key is doing it consistently across every single hole rather than patching the obvious ones and hoping the small ones get missed. They do not.
+
+### Cable and Conduit Penetrations
+
+These get underestimated. A cable penetration through a plasterboard wall is not just a hole, it is a hole with potentially rough or burnt edges from wherever the cable was pushed through, sometimes with the cable still partially in it, and often with a collar or grommet that has been pulled out and left a ragged opening.
+
+The right repair is not to push a bit of caulk in and paint over it. The penetration needs to be cleaned up, any backing material installed if the depth requires it, filled with the appropriate compound in layers and finished flush. If the penetration is large enough, a plasterboard patch may be the right approach rather than trying to fill it solid.
+
+### Partition Wall Removal Scars
+
+This is where things get more involved. When a partition wall comes down, the damage is not just in the plasterboard. It is in every surface the partition touched.
+
+The floor track is typically fixed to the slab with powder-actuated fasteners or masonry screws. When you pull the track, you are left with fixings that need to be removed and holes in the slab or screed that need to be filled. The floor covering in that zone is often damaged or discoloured where the track sat.
+
+The ceiling track tells the same story. If the partition ran up to a suspended ceiling grid, the grid has been modified to accommodate it. Tiles have been cut, grid members have been moved or removed. If the partition ran to the structural ceiling, there are fixings and potentially plasterboard patches where the wall met the ceiling.
+
+The wall fixing points at each end of the partition, where it met the existing walls, leave their own damage. The partition was fixed to those walls and when it comes away it takes paint, sometimes plaster, sometimes chunks of the wall surface with it.
+
+A partition removal is not just a demolition job. It is a make good job, and the making good covers four surfaces: floor, ceiling and both end walls. This is a scope that surprises tenants who assumed pulling the wall down was most of the work.
+
+If you are planning a full office strip out and there are multiple partitions involved, it is worth reading our [office strip out guide](/blog/office-strip-out) before you scope the work. The plastering is only part of what needs to happen.
+
+### Door Frame and Architrave Damage
+
+Often overlooked because it is not flat wall surface and people stop noticing it. Timber architraves get bumped and split. Door frames get knocked out of square by furniture moving. Stops get damaged. Hinges get stripped.
+
+If the fit-out involved removing internal doors and frames, the rough openings left behind need to be properly made good, not just painted over. If frames were damaged during the tenancy, they need to be repaired or replaced before handback.
+
+### Larger Holes from Equipment Mounting
+
+TV wall mounts, projector brackets, heavy shelving systems, whiteboard rails and kitchen joinery fixings all leave significant damage when they come out. A 75-inch TV bracket into plasterboard typically involves four or more large-diameter fixings, often with toggle bolts that have expanded behind the plasterboard. When those come out, the holes are irregular and there is often damage to the surrounding surface from the bracket itself.
+
+These are not nail hole repairs. They need to be treated as plasterboard patches, with proper backing installed, the patch set, jointed and feathered correctly, and the surface finished to match the surrounding wall.
+
+---
+
+## Why Colour Matching is Harder Than It Looks
+
+Here is where tenants often push back. The holes are filled, the repairs are done, surely you can just touch up the paint and move on.
+
+Paint fades. It oxidises. It changes colour over time in ways that vary depending on how much light the wall gets, how close it is to ventilation, whether people have been touching it regularly and what cleaning products have been used near it. A wall that was painted five years ago with a specific colour is not that colour anymore, even if it looks close.
+
+Paint a fresh patch with what was supposedly the original colour and it will stand out. It might stand out obviously or it might be subtle, but under raking light in a well-lit space, the difference will show. Property managers see it constantly.
+
+The more reliable outcome in most cases is to repaint the full wall from corner to corner, or in a smaller space, to repaint the full room. A fresh coat of paint over a properly prepared surface eliminates the colour matching problem entirely and gives the landlord a result that is genuinely consistent and fresh.
+
+The cost of repainting a full wall is often not significantly more than the cost of attempting spot repairs that then get rejected and need to be redone. Doing it right the first time is almost always the more economical path.
+
+Painting at lease end is its own topic and worth understanding in detail before you get to inspection day. The [painting at lease handback guide](/blog/the-importance-of-painting) covers what landlords look for and why painting is typically the most scrutinised part of the make good process. Our [commercial painting service](/services/make-good-solutions/painting/) covers what the work actually involves.
+
+---
+
+## Partition Wall Removal: The Full Scope
+
+It is worth going into more detail on partition removal because it is one of the most commonly underscoped items at commercial lease end.
+
+When a tenant installs a partition during a fit-out, it touches every surface in the room. When that partition comes out, every one of those contact points needs to be addressed.
+
+The plasterboard or glazing panels and the steel frame are the easy part. That comes down cleanly if it was built correctly and the material goes to waste or recycling. What remains after the frame is gone is the damage to the surrounding structure.
+
+Floor track. The track that holds the bottom of the partition is fixed to the floor. In most commercial tenancies that floor is either concrete, a screed or a raised access floor panel system. Powder-actuated fasteners into concrete leave small holes that need epoxy fills. Screws into a screed can lift the surface when removed. Raised access floor panels may have been drilled through or modified.
+
+Ceiling track. Same story at the top. If the partition ran to a suspended ceiling, the grid above it has been modified. Missing or repositioned grid members, cut ceiling tiles, exposed framing above the tile line. All of that needs to be put back before handback.
+
+End wall connections. The partition was fixed to the walls at each end. Depending on how it was built, that connection involved a steel channel fixed to the existing wall, plasterboard returns, or both. Removing those fixings damages the existing wall surface and the repair needs to be done properly, not just painted over.
+
+Services. Any partition that was built as a permanent office wall likely had services run into it. Power outlets, data points, light switches. Those services were drawn from the ceiling space or the floor and terminated in the wall. When the wall comes out, those terminations need to be properly made safe, not just cut back and left open. That is electrical work and it sits outside the scope of the plastering, but it needs to happen before the plaster repairs can be completed.
+
+A partition removal that has been scoped and priced properly accounts for all of this. One that has just been priced as "demo the wall" probably has not.
+
+---
+
+## EOFY: Why June 30 Catches Tenants Every Year
+
+The biggest lease expiry date in Australian commercial property is 30 June. The financial year end drives lease terms across the market and a significant proportion of commercial leases expire in June.
+
+This creates a predictable problem. Every year, Melbourne commercial tenants with June lease ends start thinking about make good work in May or even June. By that point, the availability of plasterers, painters and make good contractors is stretched. The good operators are booked. What is left is either expensive because of the urgency premium or cheap because of the reason it is available at short notice.
+
+Plastering and painting work also has practical lead time built in. Plaster repairs need to cure before they can be painted. Some compounds take 24 to 48 hours. If you are doing partition removal and significant wall reinstatement, the repair, cure and painting sequence might take several days across a working week. That assumes the work can be done while the tenancy is still occupied or in a narrow window after the office has been cleared out.
+
+Add in the time required to get a contractor on site to assess the scope, quote the work, schedule it and complete it, and you are realistically looking at a four to six week lead time for anything beyond a minor patch and paint job.
+
+If your lease expires in June, the right time to start this process is no later than the end of April. May is workable if the scope is not large. June is too late to be comfortable about it.
+
+The cost of booking early is zero. The cost of leaving it too late is either a rushed job that does not pass inspection, a holdover rent period while remedial work gets organised, or both.
+
+---
+
+*For more on what the full make good process involves across a commercial office tenancy, the [office strip out guide](/blog/office-strip-out) is a good starting point.*`,
+  },
+  {
     id: "41",
     slug: "warehouse-demolition-mezzanine-cool-room-removal",
     title: "Warehouse Demolition: Removing Mezzanines, Cool Rooms and Heavy Infrastructure",
