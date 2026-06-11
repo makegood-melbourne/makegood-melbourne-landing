@@ -40,6 +40,7 @@ import warehouseFactoryMakeGoodImage from "@/assets/blog/warehouse-factory-make-
 import makeGoodTerminologyImage from "@/assets/blog/make-good-strip-out-defit-melbourne.webp";
 import warehouseDemolitionImage from "@/assets/blog/warehouse-demolition-mezzanine-cool-room-removal-melbourne.webp";
 import warehouseFloorRestorationImage from "@/assets/blog/warehouse-floor-dynatbolt-racking-anchor-removal-melbourne.webp";
+import patchingPlasteringImage from "@/assets/blog/commercial-office-patching-plastering-partition-removal-make-good-melbourne.webp";
 import { BlogPost } from "@/data/blogPosts";
 import { resolveImageSrc } from "@/lib/resolveImageSrc";
 
@@ -90,6 +91,7 @@ const imageMap: Record<string, unknown> = {
   'make-good-strip-out-defit-melbourne': makeGoodTerminologyImage,
   'warehouse-demolition-mezzanine-cool-room-removal-melbourne': warehouseDemolitionImage,
   'warehouse-floor-dynatbolt-racking-anchor-removal-melbourne': warehouseFloorRestorationImage,
+  'commercial-office-patching-plastering-partition-removal-make-good-melbourne': patchingPlasteringImage,
 };
 
 // Normalize image imports across Astro + React builds.
