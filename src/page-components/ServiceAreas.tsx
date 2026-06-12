@@ -119,11 +119,11 @@ const ServiceAreas = () => {
                   <h3 className="font-semibold text-card-foreground group-hover:text-accent transition-colors">Office Strip Outs</h3>
                   <p className="text-sm text-muted-foreground">Complete fitout removal and disposal</p>
                 </a>
-                <a href="/services/handover-solutions/" className="bg-card border border-border rounded-lg p-4 hover:border-accent/50 transition-colors group">
+                <a href="/services/make-good-solutions/warehouse-flooring/" className="bg-card border border-border rounded-lg p-4 hover:border-accent/50 transition-colors group">
                   <h3 className="font-semibold text-card-foreground group-hover:text-accent transition-colors">Warehouse Restoration</h3>
                   <p className="text-sm text-muted-foreground">Industrial floor and structural repairs</p>
                 </a>
-                <a href="/services/commercial-painting/" className="bg-card border border-border rounded-lg p-4 hover:border-accent/50 transition-colors group">
+                <a href="/services/make-good-solutions/painting/" className="bg-card border border-border rounded-lg p-4 hover:border-accent/50 transition-colors group">
                   <h3 className="font-semibold text-card-foreground group-hover:text-accent transition-colors">Commercial Painting</h3>
                   <p className="text-sm text-muted-foreground">Professional interior and exterior finishes</p>
                 </a>

@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 
 const PrivacyPolicy = () => {
   const breadcrumbItems = [
-    { label: "Privacy Policy", href: "/privacy-policy", current: true }
+    { label: "Privacy Policy", href: "/privacy-policy/", current: true }
   ];
 
   return (

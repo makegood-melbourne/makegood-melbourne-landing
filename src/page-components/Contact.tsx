@@ -123,7 +123,7 @@ const Contact = () => {
         console.warn("reCAPTCHA failed, proceeding without token:", recaptchaError);
       }
 
-      const sourcePage = '/contact';
+      const sourcePage = '/contact/';
       const messageWithService = formData.serviceType 
         ? `[Service: ${formData.serviceType}]${formData.company ? ` [Company: ${formData.company}]` : ''}\n\n${formData.message}`
         : formData.message;

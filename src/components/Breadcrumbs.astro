@@ -29,7 +29,7 @@ const parentCategories: Record<string, { label: string; shortLabel: string; href
   'make-good-solutions': { label: 'Make Good Solutions', shortLabel: 'Make Good', href: '/services/make-good-solutions/' },
   'remediation-solutions': { label: 'Remediation Solutions', shortLabel: 'Remediation', href: '/services/remediation-solutions/' },
   'strip-out-solutions': { label: 'Strip Out Solutions', shortLabel: 'Strip Out', href: '/services/strip-out-solutions/' },
-  'handover-solutions': { label: 'Handover Solutions', shortLabel: 'Handover', href: '/services/' },
+  'handover-solutions': { label: 'Handover Solutions', shortLabel: 'Handover', href: '/services/handover-solutions/end-of-lease-relocation/' },
 };
 
 // Parse the URL and generate breadcrumb items
@@ -79,21 +79,21 @@ function generateBreadcrumbs(pathStr: string, serviceNameOverride?: string): Bre
       breadcrumbs.push({ label: industryTitle });
     }
   } else if (firstSegment === 'areas') {
-    breadcrumbs.push({ label: 'Service Areas', href: '/service-areas' });
+    breadcrumbs.push({ label: 'Service Areas', href: '/service-areas/' });
     
     if (segments.length > 1) {
       const areaTitle = slugToTitle(segments[1]);
       breadcrumbs.push({ label: areaTitle });
     }
   } else if (firstSegment === 'learn') {
-    breadcrumbs.push({ label: 'Learn', href: '/faq' });
+    breadcrumbs.push({ label: 'Learn', href: '/learn/make-good-guide/' });
     
     if (segments.length > 1) {
       const guideTitle = slugToTitle(segments[1]);
       breadcrumbs.push({ label: guideTitle });
     }
   } else if (firstSegment === 'blog') {
-    breadcrumbs.push({ label: 'Blog', href: '/blog' });
+    breadcrumbs.push({ label: 'Blog', href: '/blog/' });
     
     if (segments.length > 1) {
       const postTitle = slugToTitle(segments[1]);
@@ -112,7 +112,7 @@ function generateBreadcrumbs(pathStr: string, serviceNameOverride?: string): Bre
     const learnPages = ['capabilities', 'faq', 'service-areas'];
     
     if (learnPages.includes(firstSegment)) {
-      breadcrumbs.push({ label: 'Learn', href: '/faq' });
+      breadcrumbs.push({ label: 'Learn', href: '/learn/make-good-guide/' });
       const pageTitle = slugToTitle(firstSegment);
       breadcrumbs.push({ label: pageTitle });
     } else {

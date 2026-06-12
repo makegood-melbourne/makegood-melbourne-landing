@@ -18,7 +18,7 @@ const { slug } = Astro.params;
 const post = getBlogPostBySlug(slug);
 
 if (!post) {
-  return Astro.redirect('/blog');
+  return Astro.redirect('/blog/');
 }
 
 const description = post.metaDescription || post.excerpt;

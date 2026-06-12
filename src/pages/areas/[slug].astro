@@ -18,7 +18,7 @@ const { slug } = Astro.params;
 const location = getLocationBySlug(slug);
 
 if (!location) {
-  return Astro.redirect('/service-areas');
+  return Astro.redirect('/service-areas/');
 }
 ---
 
