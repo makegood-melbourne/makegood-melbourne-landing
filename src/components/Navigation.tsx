@@ -15,6 +15,23 @@ import {
   DropdownMenuSeparator,
 } from "@/components/ui/dropdown-menu";
 
+// Priority service links are duplicated at the top of the Services menu so new high-intent pages are easy to find in preview and production.
+const priorityServiceSlugs = [
+  'make-good-solutions/end-of-lease-make-good',
+  'make-good-solutions/office-make-good',
+  'strip-out-solutions/office-strip-out',
+  'remediation-solutions/water-damage-mould-remediation',
+  'remediation-solutions/fire-compliance-facade-cladding-remediation',
+];
+
+const priorityServiceDisplayNames: Record<string, string> = {
+  'make-good-solutions/end-of-lease-make-good': 'End of Lease Make Good',
+  'make-good-solutions/office-make-good': 'Office Make Good',
+  'strip-out-solutions/office-strip-out': 'Office Strip Out',
+  'remediation-solutions/water-damage-mould-remediation': 'Water Damage & Mould Remediation',
+  'remediation-solutions/fire-compliance-facade-cladding-remediation': 'Fire Compliance & Facade Cladding Remediation',
+};
+
 // Service categories for navigation grouping - 4 main sections
 const serviceCategories = [
   {
@@ -50,7 +67,7 @@ const serviceCategories = [
       'remediation-solutions/structural': 'Structural',
       'remediation-solutions/polycarbonate-roofing-skylights': 'Polycarbonate Roofing & Skylights',
       'remediation-solutions/cladding-glazing': 'Cladding & Glazing',
-      'remediation-solutions/fire-compliance-facade-cladding-remediation': 'Fire Compliance & Cladding Remediation',
+      'remediation-solutions/fire-compliance-facade-cladding-remediation': 'Fire Compliance & Facade Cladding Remediation',
       'remediation-solutions/waterproofing': 'Waterproofing',
       'remediation-solutions/water-damage-mould-remediation': 'Water Damage & Mould Remediation'
     }
@@ -67,10 +84,11 @@ const Navigation = () => {
 
   const getServicesByCategory = (slugs: string[]) => {
     const publishedServices = getPublishedServices();
-    return publishedServices
-      .filter(s => slugs.includes(s.slug))
-      .sort((a, b) => a.name.localeCompare(b.name));
+    return slugs
+      .map(slug => publishedServices.find(service => service.slug === slug))
+      .filter((service): service is NonNullable<typeof service> => Boolean(service));
   };
+  const priorityServices = getServicesByCategory(priorityServiceSlugs);
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -251,6 +269,25 @@ const Navigation = () => {
               </button>
               {openSections['services'] && (
                 <div className="pl-4 pb-3 flex flex-col gap-4">
+                  {priorityServices.length > 0 && (
+                    <div>
+                      <span className="text-primary text-xs uppercase tracking-wider font-medium">
+                        Priority Services
+                      </span>
+                      <div className="flex flex-col gap-2 mt-1">
+                        {priorityServices.map((service) => (
+                          <a
+                            key={`priority-${service.slug}`}
+                            href={`/services/${service.slug}/`}
+                            className="text-foreground font-medium hover:text-accent transition-colors"
+                            onClick={() => setIsMenuOpen(false)}
+                          >
+                            {priorityServiceDisplayNames[service.slug] || service.name}
+                          </a>
+                        ))}
+                      </div>
+                    </div>
+                  )}
                   {serviceCategories.map((category) => {
                     const categoryServices = getServicesByCategory(category.slugs);
                     if (categoryServices.length === 0) return null;
