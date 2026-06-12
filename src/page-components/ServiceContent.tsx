@@ -25,6 +25,14 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
     return null;
   }
 
+  const processHiddenServiceSlugs = new Set([
+    "make-good-solutions/end-of-lease-make-good",
+    "make-good-solutions/office-make-good",
+    "strip-out-solutions/office-strip-out",
+    "remediation-solutions/water-damage-mould-remediation",
+    "remediation-solutions/fire-compliance-facade-cladding-remediation",
+  ]);
+  const shouldShowProcess = !processHiddenServiceSlugs.has(service.slug);
   const relatedServices = getPublishedServices().filter(s => 
     service.relatedServices.includes(s.slug) && s.slug !== service.slug
   ).slice(0, 3);
@@ -102,7 +110,7 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
 
   // Process after skip
   let bgProcessAfterSkip: string | null = null;
-  if (service.skipAboutSection && service.process && service.process.length > 0 && !service.processAfterScope && !service.processAfterSpotlight) {
+  if (shouldShowProcess && service.skipAboutSection && service.process && service.process.length > 0 && !service.processAfterScope && !service.processAfterSpotlight) {
     bgProcessAfterSkip = nextBg();
   }
 
@@ -114,7 +122,7 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
 
   // Process after spotlight
   let bgProcessAfterSpotlight: string | null = null;
-  if (service.processAfterSpotlight && service.process && service.process.length > 0) {
+  if (shouldShowProcess && service.processAfterSpotlight && service.process && service.process.length > 0) {
     bgProcessAfterSpotlight = nextBg();
   }
 
@@ -126,7 +134,7 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
 
   // Process after scope
   let bgProcessAfterScope: string | null = null;
-  if (service.processAfterScope && service.process && service.process.length > 0) {
+  if (shouldShowProcess && service.processAfterScope && service.process && service.process.length > 0) {
     bgProcessAfterScope = nextBg();
   }
 
@@ -149,7 +157,7 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
   if (service.featuredSections && !service.skipAboutSection && !service.tabbedScope) {
     const processInsertAfterIndex = service.processAfterSection;
     const comparisonInsertAfterIndex = service.comparisonAfterSection;
-    const hasProcess = service.process && service.process.length > 0 && !service.processAfterScope && !service.processAfterSpotlight;
+    const hasProcess = shouldShowProcess && service.process && service.process.length > 0 && !service.processAfterScope && !service.processAfterSpotlight;
     const hasComparison = service.comparison && service.comparisonAfterSection !== undefined;
 
     service.featuredSections.forEach((_section, index) => {
@@ -171,7 +179,7 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
 
   // Process fallback (no featured sections)
   let bgProcessFallback: string | null = null;
-  if (!service.featuredSections && service.process && service.process.length > 0) {
+  if (shouldShowProcess && !service.featuredSections && service.process && service.process.length > 0) {
     bgProcessFallback = nextBg();
   }
 
@@ -270,7 +278,7 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
           <section key={`early-featured-${index}`} className={`py-16 ${bgEarlyFeatured[index]}`}>
             <div className="container mx-auto px-4">
               <h2 
-                className="text-3xl md:text-4xl text-foreground mb-6 lg:col-span-2 lg:mb-0"
+                className="text-3xl md:text-4xl text-foreground mb-12 md:mb-16 lg:col-span-2"
                 dangerouslySetInnerHTML={{ __html: section.title }}
               />
               
@@ -309,7 +317,7 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
 
 
       {/* Process Section - For services that skip the About section */}
-      {service.skipAboutSection && service.process && service.process.length > 0 && !service.processAfterScope && !service.processAfterSpotlight && (
+      {shouldShowProcess && service.skipAboutSection && service.process && service.process.length > 0 && !service.processAfterScope && !service.processAfterSpotlight && (
         <section className={`py-16 ${bgProcessAfterSkip}`}>
           <div className="container mx-auto px-4">
             <h2 className="text-3xl md:text-4xl text-foreground mb-10">Our Process</h2>
@@ -369,7 +377,7 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
       )}
 
       {/* Process Section - After Spotlight Cards (when processAfterSpotlight is true) */}
-      {service.processAfterSpotlight && service.process && service.process.length > 0 && (
+      {shouldShowProcess && service.processAfterSpotlight && service.process && service.process.length > 0 && (
         <section className={`py-16 ${bgProcessAfterSpotlight}`}>
           <div className="container mx-auto px-4">
             <h2 className="text-3xl md:text-4xl text-foreground mb-10">Our Process</h2>
@@ -446,7 +454,7 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
       )}
 
       {/* Process Section - After Scope (when processAfterScope is true) */}
-      {service.processAfterScope && service.process && service.process.length > 0 && (
+      {shouldShowProcess && service.processAfterScope && service.process && service.process.length > 0 && (
         <section className={`py-16 ${bgProcessAfterScope}`}>
           <div className="container mx-auto px-4">
             <h2 className="text-3xl md:text-4xl text-foreground mb-10">Our Process</h2>
@@ -520,7 +528,7 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
 
       {/* Featured Sections (multiple) with optional Process and Comparison insertion */}
       {service.featuredSections && !service.tabbedScope && !service.skipAboutSection && (() => {
-        const processSection = service.process && service.process.length > 0 && !service.processAfterScope && !service.processAfterSpotlight ? (
+        const processSection = shouldShowProcess && service.process && service.process.length > 0 && !service.processAfterScope && !service.processAfterSpotlight ? (
           <section key="process-section" className={`py-16 ${bgProcessInFeatured}`}>
             <div className="container mx-auto px-4">
               <h2 className="text-3xl md:text-4xl text-foreground mb-10">Our Process</h2>
@@ -642,7 +650,7 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
       })()}
 
       {/* Process Section - Only show if no featuredSections (fallback) */}
-      {!service.featuredSections && service.process && service.process.length > 0 && (
+      {shouldShowProcess && !service.featuredSections && service.process && service.process.length > 0 && (
         <section className={`py-16 ${bgProcessFallback}`}>
           <div className="container mx-auto px-4">
             <h2 className="text-3xl md:text-4xl text-foreground mb-10">Our Process</h2>

@@ -53,6 +53,8 @@ import flooringReinstatementHeroImage from "@/assets/services/flooring-reinstate
 import flooringReinstatementProcessImage from "@/assets/services/flooring-reinstatement-process.webp";
 import patchingPlasteringHeroImage from "@/assets/services/patching-plastering-commercial-office-walls-ceiling-melbourne.jpeg";
 import patchingPlasteringFeaturedImage from "@/assets/services/patching-plastering-tools-bucket.jpg";
+import officeCeilingTilesImage from "@/assets/services/commercial-office-ceiling-tiles-led-panels-melbourne.jpeg";
+import officeStripOutHeroImage from "@/assets/services/commercial-industrial-strip-out-melbourne.jpg";
 
 export interface FeaturedSection {
   title: string;
@@ -2418,6 +2420,497 @@ export const services: Service[] = [
       }
     ],
     category: "make-good",
+    published: true
+  },
+  {
+    name: "End of Lease Make Good",
+    slug: "make-good-solutions/end-of-lease-make-good",
+    title: "End of Lease Make Good",
+    metaTitle: "End of Lease Make Good Melbourne | Commercial Lease Handover",
+    description: "When your commercial lease is ending, Make Good Melbourne coordinates the works needed to return the tenancy to the agreed handover condition. We handle strip out, repairs, reinstatement and trade coordination for offices, warehouses, showrooms and commercial properties across Melbourne.",
+    metaDescription: "End of lease make good services in Melbourne for offices, warehouses and commercial tenancies. Strip out, repairs, painting, flooring and handover works.",
+    heroText: "When your commercial lease is ending, Make Good Melbourne coordinates the works needed to return the tenancy to the agreed handover condition. We handle strip out, repairs, reinstatement and trade coordination for offices, warehouses, showrooms and commercial properties across Melbourne. One scope, one team, ready for inspection.",
+    ogImage: "/og/end-of-lease-make-good.jpg",
+    heroImage: emptyWarehouseImage,
+    heroImageAlt: "Empty commercial warehouse tenancy cleared and prepared for end of lease make good handover in Melbourne",
+    heroImageTitle: "Makegood Melbourne - End of Lease Make Good Service",
+    secondaryImage: manufacturingFacilityImage,
+    secondaryImageAlt: "Commercial tenancy before end of lease make good works begin in Melbourne",
+    skipAboutSection: true,
+    trustBadges: ["Licensed & Insured", "Fixed-Price Quotes", "Full Trade Coordination", "Handover Ready"],
+    benefits: [
+      "Strip out and removal of redundant fitout, fixtures, partitions and racking",
+      "Wall and ceiling patching, plastering and surface repairs",
+      "Internal painting and commercial-grade finishes for handover",
+      "Flooring reinstatement and concrete restoration",
+      "Warehouse floor restoration including dynabolt removal and line marking",
+      "Make safe coordination before demolition or reinstatement works",
+      "Final handover preparation and waste removal"
+    ],
+    capabilityCards: [
+      {
+        icon: "brick",
+        title: "STRIP OUT & MAKE SAFE",
+        items: [
+          "Removal of tenancy fitout, redundant fixtures and partitions",
+          "Removal of joinery, racking, loose items and nominated building elements",
+          "Make safe coordination before demolition or reinstatement works proceed",
+          "Waste removal and site preparation for the next trade stage"
+        ]
+      },
+      {
+        icon: "structure",
+        title: "REPAIRS & REINSTATEMENT",
+        items: [
+          "Wall patching, plastering and surface preparation for repainting",
+          "Ceiling tile replacement, grid repairs and related ceiling works",
+          "Floor repairs, grinding, patching and concrete restoration",
+          "Replacement finishes where required for lease handover"
+        ]
+      },
+      {
+        icon: "waterproof",
+        title: "HANDOVER PREPARATION",
+        items: [
+          "Internal repainting, touch-ups and commercial-grade finishes",
+          "Dynabolt removal, epoxy filling, slab repairs and warehouse presentation works",
+          "Line marking removal or reinstatement where required",
+          "Final trade items completed before inspection"
+        ]
+      }
+    ],
+    capabilitiesTitle: "END OF LEASE MAKE GOOD CAPABILITIES",
+    capabilitiesSubtitle: "Our service brings the strip out, repair, reinstatement and final handover works into one coordinated make good scope.",
+    featuredSections: [
+      {
+        title: "MAKE GOOD WORKS, DONE PROPERLY BEFORE HANDOVER",
+        description: "End of lease make good works are rarely a single-trade job. A proper handover can involve demolition, removal of fixtures, patching, painting, flooring reinstatement, ceiling repairs, warehouse floor restoration, line marking, rubbish removal and final presentation of the tenancy.\n\nA tenancy can look serviceable day to day, but lease end inspections often reveal the amount of work needed to return the site to its agreed condition. Fitout items may need to be removed, services made safe, walls patched, floors repaired, ceilings reinstated and warehouse slabs restored where racking, machinery or partitions have been fixed down.\n\nThese issues become harder to manage when they are dealt with separately. A painter cannot properly finish damaged walls until redundant fixtures are removed. Flooring cannot be reinstated until the strip out is complete. Warehouse slab repairs need to happen after anchors, bolts and equipment have been taken out. The order of works matters, and our role is to bring the full scope together so the site can be handed back in a controlled and practical way.",
+        image: manufacturingFacilityImage,
+        imageAlt: "Commercial tenancy before end of lease make good works begin in Melbourne",
+        imageLeft: true
+      },
+      {
+        title: "ONE TEAM FOR THE FULL MAKE GOOD SCOPE",
+        description: "Make Good Melbourne provides a complete end of lease make good service. We assess the site, define the works, coordinate the trades and complete the restoration required for handover.\n\nThe scope can be narrow or broad depending on the tenancy. For some clients we are engaged for painting, patching and flooring. For others we manage a full strip out, warehouse slab restoration, ceiling reinstatement, line marking, trade services and final handover preparation.\n\nMake Good Melbourne is built around commercial make good work. That means we understand the timing, sequencing and practical detail involved in preparing a tenancy for handover, whether the next step is a new lease, a sale campaign, a fitout or landlord works. Our team works across offices, warehouses, retail spaces, showrooms and commercial buildings throughout Melbourne, and we understand access rules, noisy works restrictions, loading dock coordination and after-hours requirements."
+      }
+    ],
+    process: [
+      { step: "Site Review", description: "We inspect the tenancy, review the likely make good scope and identify the practical order of works." },
+      { step: "Scope and Quote", description: "We prepare a clear scope covering the trades, access requirements, site constraints and handover timing." },
+      { step: "Strip Out and Preparation", description: "Redundant fitout, fixtures or warehouse items are removed first so repair and reinstatement works can proceed properly." },
+      { step: "Restoration Works", description: "We complete patching, painting, flooring, slab repairs, ceiling works, line marking and related trade works." },
+      { step: "Handover Readiness", description: "We work through final items and prepare the site for inspection and return of the premises." }
+    ],
+    processAfterScope: true,
+    faqs: [
+      { question: "What is included in an end of lease make good?", answer: "An end of lease make good can include strip out, removal of tenant fixtures, patching, plastering, painting, flooring reinstatement, ceiling repairs, warehouse floor restoration, line marking, waste removal and other works needed to return the premises to the agreed handover condition." },
+      { question: "Do you work from the lease make good clause?", answer: "Yes. We can review the lease make good requirements, site condition and property manager notes to help define the practical scope. The final scope depends on the lease, the condition of the tenancy and the level of reinstatement requested for handover." },
+      { question: "Can you manage multiple trades?", answer: "Yes. Most make good projects involve several trades. We coordinate the order of works so strip out, repairs, painting, flooring, ceiling works and other trade items are handled as one project rather than as disconnected jobs." },
+      { question: "Do you complete office and warehouse make goods?", answer: "Yes. We complete make good works for offices, warehouses, showrooms, retail premises and mixed commercial sites across Melbourne. Warehouse projects often include racking removal, slab repair, anchor removal and line marking work." },
+      { question: "How early should we book make good works?", answer: "It is best to allow enough time before the lease handover date for inspection, quoting, approval, access coordination and the works themselves. Short timeframes can still be assessed, but earlier planning gives more control over cost and scheduling." },
+      { question: "Can you help if the property manager has already inspected the site?", answer: "Yes. If you have inspection notes, a defect list or photos from the property manager, we can use them to prepare a practical make good scope and quote." },
+      { question: "Can you quote from photos or a walkthrough video?", answer: "Photos and walkthrough videos are useful for a first review. For larger tenancies, warehouses or sites with several trades involved, a site inspection is usually needed before the final quote is confirmed." }
+    ],
+    ctaBlock: {
+      title: "Need Your Tenancy Ready for Handover?",
+      subtitle: "We do make goods all day, every day.",
+      text: "Send us your lease end date, site address, photos and any property manager notes. We will review the scope and prepare a practical make good quote for your Melbourne commercial tenancy."
+    },
+    relatedServices: ["make-good-solutions/flooring-reinstatement", "make-good-solutions/painting", "make-good-solutions/patching-plastering"],
+    category: "make-good",
+    published: true
+  },
+  {
+    name: "Office Make Good",
+    slug: "make-good-solutions/office-make-good",
+    title: "Office Make Good",
+    metaTitle: "Office Make Good Melbourne | Commercial Office Lease Handover",
+    description: "Office make good works for commercial tenants, property managers and landlords across Melbourne. We remove redundant fitout, repair surfaces, reinstate finishes and prepare office tenancies for lease handover.",
+    metaDescription: "Office make good services in Melbourne. Strip out, patching, painting, flooring, ceilings and tenancy handover works for commercial offices.",
+    heroText: "Office make good works for commercial tenants, property managers and landlords across Melbourne. We remove redundant fitout, repair surfaces, reinstate finishes and prepare office tenancies for lease handover, re-leasing or landlord works.",
+    ogImage: "/og/office-make-good.jpg",
+    heroImage: patchingPlasteringHeroImage,
+    heroImageAlt: "Commercial office walls and ceiling being patched and prepared for office make good handover in Melbourne",
+    heroImageTitle: "Makegood Melbourne - Office Make Good Service",
+    secondaryImage: officeCeilingTilesImage,
+    secondaryImageAlt: "Commercial office ceiling tiles and LED panels reinstated as part of an office make good in Melbourne",
+    skipAboutSection: true,
+    trustBadges: ["Licensed & Insured", "Fixed-Price Quotes", "Full Trade Coordination", "Handover Ready"],
+    benefits: [
+      "Office strip out including partitions, workstations and meeting room fitout",
+      "Wall repairs, patching and surface preparation for painting",
+      "Commercial painting of walls, feature walls, doors and trims",
+      "Flooring reinstatement for carpet tiles, vinyl and concrete surfaces",
+      "Ceiling tile replacement and grid repairs around removed services",
+      "Removal of signage, wall graphics, decals and adhesive residue",
+      "Final handover preparation and presentation"
+    ],
+    capabilityCards: [
+      {
+        icon: "brick",
+        title: "OFFICE STRIP OUT",
+        items: [
+          "Removal of partitions, workstations and meeting room fitout",
+          "Removal of joinery, loose fixtures and nominated tenancy alterations",
+          "Signage, wall graphics, decals and adhesive residue removal",
+          "Fitout removal planned around building access and handover timing"
+        ]
+      },
+      {
+        icon: "structure",
+        title: "SURFACE REPAIRS",
+        items: [
+          "Patching plasterboard and repairing fixing holes",
+          "Preparing walls and restoring surfaces for painting",
+          "Commercial painting of office walls, feature walls, doors and trims",
+          "Ceiling tile replacement and grid adjustments around removed services"
+        ]
+      },
+      {
+        icon: "waterproof",
+        title: "FINAL PRESENTATION",
+        items: [
+          "Flooring reinstatement for carpet tiles, vinyl, timber-look finishes or concrete surfaces",
+          "Floor removal, patching or reinstatement depending on the site condition",
+          "Completion of remaining presentation items before inspection",
+          "Office tenancy prepared for handover, re-leasing or landlord works"
+        ]
+      }
+    ],
+    capabilitiesTitle: "OFFICE MAKE GOOD CAPABILITIES",
+    capabilitiesSubtitle: "Our office make good service covers the practical strip out, repair, reinstatement and presentation works needed for lease handover.",
+    featuredSections: [
+      {
+        title: "OFFICE MAKE GOOD, BETTER.",
+        description: "Office handovers need more than a quick repaint. Meeting rooms, partitions, workstations, cabling, flooring, ceiling grids, signage, wall damage and tenancy alterations all need to be assessed and brought back to the required condition.\n\nOffice fitouts often leave behind more work than expected. Partition walls need to be removed. Floors may carry glue, wear patterns or different finishes from previous layouts. Ceiling tiles may be damaged or missing where services were changed. Walls may need patching where screens, shelving, whiteboards, signage or joinery were fixed.\n\nThere may also be base building requirements to consider. Tenancy modifications, meeting rooms, redundant cabling, loose fixtures, decals and floor boxes all need to be handled correctly before handover. A well-planned office make good keeps the work in the right order. Strip out comes first, then surface repairs, then reinstatement and finishing.",
+        image: officeCeilingTilesImage,
+        imageAlt: "Commercial office ceiling tiles and LED panels reinstated as part of an office make good in Melbourne",
+        imageLeft: true
+      },
+      {
+        title: "A COORDINATED OFFICE HANDOVER SERVICE",
+        description: "Make Good Melbourne provides a coordinated office make good service that covers the practical trade work needed for handover. We start by identifying what needs to remain, what needs to be removed and what needs to be restored.\n\nThe scope may include office strip out, partition removal, patching, plastering, commercial painting, flooring reinstatement, suspended ceiling repairs, joinery removal, signage removal and final site presentation. Our approach is direct: define the scope, plan the works, coordinate the trades and get the tenancy ready for inspection.\n\nOffice make good works need to be planned around building access, lifts, loading docks, after-hours restrictions and neighbouring tenants. We understand how commercial buildings operate and how to sequence works to reduce friction during the handover period, managing the scope as one commercial make good project rather than separate demolition, painting and flooring jobs."
+      }
+    ],
+    process: [
+      { step: "Site Inspection", description: "We inspect the office, review access conditions and identify the make good scope." },
+      { step: "Scope Confirmation", description: "We confirm which items are being removed, retained, repaired or reinstated." },
+      { step: "Strip Out", description: "Redundant fitout, partitions, fixtures, signage and selected office items are removed." },
+      { step: "Repairs and Reinstatement", description: "We complete patching, painting, flooring, ceiling and related trade works." },
+      { step: "Handover Preparation", description: "We complete final items so the office is ready for inspection." }
+    ],
+    processAfterScope: true,
+    faqs: [
+      { question: "What does office make good include?", answer: "Office make good can include partition removal, workstation and joinery removal, wall patching, plaster repairs, repainting, flooring reinstatement, suspended ceiling repairs, signage removal, waste removal and final handover preparation." },
+      { question: "Do you remove office partitions and meeting rooms?", answer: "Yes. We can remove partitions, meeting room walls, joinery, fixtures, signage and other nominated fitout items as part of the office strip out and make good scope." },
+      { question: "Can you repaint the office after the strip out?", answer: "Yes. Painting is often completed after strip out and patching. We can prepare and repaint internal office walls, feature walls, doors, trims and other nominated surfaces." },
+      { question: "Can you repair carpet tiles or flooring?", answer: "Yes. We can remove, repair or reinstate commercial flooring depending on the lease requirements and site condition. This may include carpet tiles, vinyl, adhesive removal, floor preparation or concrete surface works." },
+      { question: "Can you coordinate with building management?", answer: "Yes. We can plan access, loading dock use, lift protection, work hours and site rules where the building management process requires coordination." },
+      { question: "Do you work in occupied buildings?", answer: "Yes. Many office make good projects are completed in active commercial buildings. We can plan the work around access requirements, neighbouring tenants and building rules." },
+      { question: "How long does an office make good take?", answer: "Timing depends on the office size, amount of strip out, required repairs and approval process. A small office may be completed quickly, while larger fitouts or multi-floor tenancies need more planning and staged works." }
+    ],
+    ctaBlock: {
+      title: "Need Your Office Ready for Lease Handover?",
+      subtitle: "We do make goods all day, every day.",
+      text: "Send us the office address, lease end timing, photos and any make good notes you have. We will assess the scope and provide a clear quote for the office make good works."
+    },
+    relatedServices: ["make-good-solutions/flooring-reinstatement", "make-good-solutions/painting", "make-good-solutions/suspended-ceilings"],
+    category: "make-good",
+    published: true
+  },
+  {
+    name: "Office Strip Out",
+    slug: "strip-out-solutions/office-strip-out",
+    title: "Office Strip Out",
+    metaTitle: "Office Strip Out Melbourne | Commercial Office Defit & Make Good",
+    description: "Commercial office strip out and defit works for lease exits, make good projects and tenancy handovers. We remove redundant fitout and prepare the office for repair, reinstatement or the next stage of works.",
+    metaDescription: "Office strip out services in Melbourne for commercial lease exits, defits and make good works. Partitions, joinery, flooring, ceilings and waste removal.",
+    heroText: "Commercial office strip out and defit works for lease exits, make good projects and tenancy handovers across Melbourne. We remove redundant fitout and prepare the office for repair, reinstatement or the next stage of works.",
+    ogImage: "/og/office-strip-out.jpg",
+    heroImage: officeStripOutHeroImage,
+    heroImageAlt: "Commercial office under strip out with partitions and fitout removed ahead of make good works in Melbourne",
+    heroImageTitle: "Makegood Melbourne - Office Strip Out Service",
+    secondaryImage: tileFlooringRemovalImage,
+    secondaryImageAlt: "Commercial floor finish removal during an office strip out in Melbourne",
+    skipAboutSection: true,
+    trustBadges: ["Licensed & Insured", "Fixed-Price Quotes", "Make Safe Coordination", "Waste Removal Included"],
+    benefits: [
+      "Removal of plasterboard, glazed or modular partitions and meeting rooms",
+      "Removal of built-in joinery, cupboards, counters, shelving and fixtures",
+      "Removal of carpet tiles, vinyl, timber-look flooring and adhesives",
+      "Coordination of make safe works around nominated services",
+      "Removal of internal signage, decals and tenancy branding",
+      "Sorting, loading and disposal of strip out material",
+      "Preparation of the tenancy for patching, painting and flooring reinstatement"
+    ],
+    capabilityCards: [
+      {
+        icon: "brick",
+        title: "STRIP OUT SCOPE",
+        items: [
+          "Removal of plasterboard, glazed or modular partitions and meeting rooms",
+          "Removal of office layout alterations and selected tenancy fitout",
+          "Removal of built-in cupboards, counters, shelving and wall fixtures",
+          "Removal of screens, whiteboards, selected furniture and nominated loose items"
+        ]
+      },
+      {
+        icon: "structure",
+        title: "SERVICES & SURFACE PROTECTION",
+        items: [
+          "Removal of carpet tiles, vinyl, timber-look flooring and adhesives",
+          "Removal or adjustment of nominated ceiling elements",
+          "Coordination of make safe requirements where required",
+          "Protection of surfaces and building elements that need to remain"
+        ]
+      },
+      {
+        icon: "waterproof",
+        title: "WASTE & MAKE GOOD PREPARATION",
+        items: [
+          "Removal of internal signs, decals, wall graphics and tenancy branding",
+          "Sorting, loading and disposal of strip out material",
+          "Tenancy prepared for patching, painting and flooring reinstatement",
+          "Site left ready for final handover works or the next trade stage"
+        ]
+      }
+    ],
+    capabilitiesTitle: "OFFICE STRIP OUT CAPABILITIES",
+    capabilitiesSubtitle: "Our office strip out service removes the redundant fitout while preparing the tenancy for repair, reinstatement and handover.",
+    featuredSections: [
+      {
+        title: "STRIP OUT WORKS THAT SET UP THE MAKE GOOD",
+        description: "An office strip out is the first stage of many lease end make good projects. Partitions, workstations, joinery, floor finishes, ceiling alterations, signage and redundant fixtures need to be removed before the tenancy can be repaired and reinstated.\n\nA rushed office strip out can damage walls, ceilings, floors, door frames, services and common areas. It can also leave behind adhesive, anchors, redundant fixtures and unfinished surfaces that slow down the make good works that follow. Office buildings also bring practical constraints. Lifts, loading docks, after-hours access, noise limits, protection of common areas and disposal arrangements all need to be planned before work begins.\n\nMake Good Melbourne completes office strip out works across Melbourne for commercial tenants, landlords, property managers and builders. We focus on controlled removal, practical sequencing and preparing the site for the next stage, whether that is make good, refurbishment, re-leasing or base building works. A good strip out removes what needs to go while protecting the surfaces and building elements that need to remain.",
+        image: tileFlooringRemovalImage,
+        imageAlt: "Commercial floor finish removal during an office strip out in Melbourne",
+        imageLeft: true
+      },
+      {
+        title: "OFFICE DEFIT, REMOVAL AND PREPARATION",
+        description: "Make Good Melbourne provides office strip out services as a standalone scope or as part of a broader make good project. We can remove partition walls, workstations, built-in joinery, meeting room fitouts, floor finishes, signage, loose fixtures and nominated tenancy alterations.\n\nWhere required, we coordinate make safe works, waste removal and preparation for patching, painting, flooring or ceiling reinstatement, with the goal of leaving the tenancy ready for the next trade stage.\n\nBecause we complete make good works every day, we understand what the next trade needs after the strip out. We remove the fitout with the handover outcome in mind, not just the demolition task in front of us. That makes a difference on office projects where the strip out, wall repairs, painting, flooring and ceiling works need to connect properly. Our team can complete the strip out alone or manage the full make good scope from start to finish."
+      }
+    ],
+    process: [
+      { step: "Walk Through", description: "We inspect the office and confirm what is being removed, retained or protected." },
+      { step: "Scope and Access Planning", description: "We prepare the strip out scope and plan lift use, loading, work hours and site controls." },
+      { step: "Make Safe Coordination", description: "Where required, relevant services are made safe before removal works begin." },
+      { step: "Strip Out Works", description: "Fitout items, partitions, fixtures, flooring and nominated elements are removed in the correct order." },
+      { step: "Site Preparation", description: "The space is prepared for patching, painting, flooring, ceiling reinstatement or handover." }
+    ],
+    processAfterScope: true,
+    faqs: [
+      { question: "What is included in an office strip out?", answer: "An office strip out can include removal of partitions, workstations, joinery, fixtures, signage, floor finishes, ceiling alterations, loose items and nominated tenancy fitout. The exact scope depends on the lease requirements and the next use of the space." },
+      { question: "Is office strip out the same as office make good?", answer: "No. Office strip out is usually one stage of the make good process. Make good may also include patching, painting, flooring reinstatement, ceiling repairs and final handover preparation after the strip out is complete." },
+      { question: "Can you remove office partitions?", answer: "Yes. We remove plasterboard, glazed and modular partitions, meeting rooms and office layout alterations, and we prepare the remaining surfaces for repair where required." },
+      { question: "Can you remove carpet tiles and floor finishes?", answer: "Yes. We can remove carpet tiles, vinyl, timber-look flooring, adhesives and selected floor finishes as part of the strip out or flooring reinstatement scope." },
+      { question: "Do you handle waste removal?", answer: "Yes. We can manage loading and disposal of strip out material according to the site requirements and project scope." },
+      { question: "Can you work after hours in office buildings?", answer: "Yes, where permitted. We can plan works around building rules, access requirements and noise restrictions." },
+      { question: "Can you also complete the make good after the strip out?", answer: "Yes. We can complete patching, painting, flooring, ceiling repairs and final handover works after the strip out." }
+    ],
+    ctaBlock: {
+      title: "Need an Office Stripped Out for Handover?",
+      subtitle: "We do make goods all day, every day.",
+      text: "Send through the office address, photos, lease timing and any make good notes. We will assess the strip out scope and provide a practical quote."
+    },
+    relatedServices: ["make-good-solutions/office-make-good", "strip-out-solutions/demolition", "strip-out-solutions/make-safe"],
+    category: "demolition",
+    published: true
+  },
+  {
+    name: "Water Damage & Mould Remediation",
+    slug: "remediation-solutions/water-damage-mould-remediation",
+    title: "Water Damage & Mould Remediation",
+    metaTitle: "Commercial Water Damage & Mould Remediation Melbourne",
+    description: "Water damage and mould remediation for commercial buildings, offices, warehouses and tenancy handovers across Melbourne. We remove affected materials, coordinate drying and restore damaged areas ready for safe use, reinstatement or make good.",
+    metaDescription: "Commercial water damage and mould remediation in Melbourne. Leak damage repairs, affected material removal, drying coordination and reinstatement works.",
+    heroText: "Water damage and mould remediation for commercial buildings, offices, warehouses and tenancy handovers across Melbourne. We remove affected materials, coordinate drying and restore damaged areas ready for safe use, reinstatement or make good.",
+    ogImage: "/og/water-damage-mould-remediation.jpg",
+    heroImage: waterproofingMembraneImage,
+    heroImageAlt: "Waterproofing membrane application as part of commercial water damage remediation works in Melbourne",
+    heroImageTitle: "Makegood Melbourne - Water Damage & Mould Remediation Service",
+    secondaryImage: concreteCancerImage,
+    secondaryImageAlt: "Water damaged concrete column with exposed reinforcement before remediation works in a Melbourne commercial building",
+    skipAboutSection: true,
+    trustBadges: ["Licensed & Insured", "Fixed-Price Quotes", "Full Reinstatement Included", "Commercial Site Coordination"],
+    benefits: [
+      "Removal of water-damaged plasterboard, ceiling tiles, insulation and flooring",
+      "Controlled removal of mould-affected materials and preparation for treatment",
+      "Drying coordination planned around access, ventilation and specialist advice",
+      "Leak damage repairs to walls, ceilings, flooring and surrounding elements",
+      "Coordination with waterproofing works at membranes, joints and ingress points",
+      "Patching, painting, ceiling and flooring reinstatement of affected areas",
+      "Works planned around tenancy operations and building access"
+    ],
+    capabilityCards: [
+      {
+        icon: "brick",
+        title: "DAMAGE ASSESSMENT & REMOVAL",
+        items: [
+          "Removal of water-damaged plasterboard, ceiling tiles and insulation",
+          "Removal of affected flooring, joinery and nominated materials",
+          "Controlled removal of mould-affected building materials",
+          "Preparation of affected areas for treatment or reinstatement"
+        ]
+      },
+      {
+        icon: "structure",
+        title: "REMEDIATION WORKS",
+        items: [
+          "Drying coordination planned around access, ventilation and specialist advice",
+          "Repairs to walls, ceilings, flooring and surrounding building elements",
+          "Coordination with waterproofing works at membranes, joints and water ingress points",
+          "Works planned around tenancy operations and property management requirements"
+        ]
+      },
+      {
+        icon: "waterproof",
+        title: "REINSTATEMENT",
+        items: [
+          "Patching, plastering and painting after damaged material is removed",
+          "Ceiling repairs and replacement of affected ceiling elements",
+          "Flooring reinstatement and related building repairs",
+          "Final presentation of affected areas for safe use, handover or continued occupation"
+        ]
+      }
+    ],
+    capabilitiesTitle: "WATER DAMAGE & MOULD REMEDIATION CAPABILITIES",
+    capabilitiesSubtitle: "Our remediation service connects affected material removal, drying coordination, leak damage repairs and final reinstatement into one practical building scope.",
+    featuredSections: [
+      {
+        title: "WATER DAMAGE REPAIRS THAT CONNECT BACK TO THE BUILDING",
+        description: "Water damage in a commercial property can affect walls, ceilings, flooring, insulation, joinery, services and structural elements. The visible staining is often only part of the issue. The affected area needs to be assessed, damaged material removed and the building properly reinstated.\n\nWater can travel through ceiling cavities, wall framing, floor build-ups, insulation and service penetrations. By the time staining, swelling, odour or mould appears, the affected materials may extend beyond the first visible mark.\n\nCommercial sites also need the work handled in a way that considers access, business continuity, occupant safety, documentation and the planned use of the space. In some cases the job is part of a lease exit. In others it is part of a landlord repair, insurance process, building maintenance program or larger remediation project. The remediation works need to deal with the source, affected materials and reinstatement pathway.",
+        image: concreteCancerImage,
+        imageAlt: "Water damaged concrete column with exposed reinforcement before remediation works in a Melbourne commercial building",
+        imageLeft: true
+      },
+      {
+        title: "ASSESS, REMOVE, REMEDIATE AND REINSTATE",
+        description: "Make Good Melbourne coordinates the trade work needed to remediate water-damaged and mould-affected commercial areas. Depending on the project, this may include demolition of affected plasterboard or ceilings, removal of damaged floor finishes, disposal of affected material, drying coordination, surface treatment, waterproofing repairs, patching, painting, flooring reinstatement and related building works.\n\nWe can work alongside plumbers, roofers, hygienists, insurers, building managers and property managers where their involvement is required. Once the affected materials are removed and the area is ready for reinstatement, we complete the make good and repair works needed to bring the space back to a usable condition.\n\nWater damage work does not finish when the affected material is removed. Make Good Melbourne is well suited to this work because our team already handles strip out, make safe, plastering, painting, ceilings, flooring and waterproofing interfaces, and we can manage the building remediation scope with the end use in mind."
+      }
+    ],
+    process: [
+      { step: "Site Review", description: "We inspect the affected areas, visible damage and access requirements." },
+      { step: "Scope Planning", description: "We define the removal, remediation and reinstatement works required for the building area." },
+      { step: "Material Removal", description: "Water-damaged or mould-affected materials are removed as required by the scope." },
+      { step: "Drying and Preparation", description: "The area is prepared for treatment, drying, specialist assessment or repair works as needed." },
+      { step: "Reinstatement", description: "We complete patching, painting, flooring, ceiling and associated repair works." },
+      { step: "Final Review", description: "The affected area is reviewed against the agreed remediation and reinstatement scope." }
+    ],
+    processAfterScope: true,
+    faqs: [
+      { question: "What causes commercial water damage?", answer: "Commercial water damage can come from roof leaks, plumbing failures, storm events, blocked drainage, failed waterproofing, burst pipes, air conditioning leaks or long-term moisture ingress." },
+      { question: "Do you remove mould affected materials?", answer: "Yes. We can remove mould-affected building materials such as plasterboard, ceiling tiles, flooring, insulation or joinery where the project scope requires it. Specialist hygienist advice can be incorporated where required." },
+      { question: "Can you repair the area after damaged material is removed?", answer: "Yes. Reinstatement is a key part of the service. We can patch, plaster, paint, replace ceiling elements, reinstate flooring and complete related building repairs once remediation works are ready for the next stage." },
+      { question: "Do you fix the source of the water leak?", answer: "We can coordinate with the relevant trade where the source relates to plumbing, roofing, waterproofing or building fabric. The repair pathway depends on the cause and the specialist trade required." },
+      { question: "Can you work in offices and warehouses?", answer: "Yes. We complete water damage and mould remediation works in offices, warehouses, retail premises, commercial buildings and multi-use properties across Melbourne." },
+      { question: "Is this service suitable for lease handover issues?", answer: "Yes. Water damage and mould-affected areas often need attention before a tenancy can be handed back. We can include remediation and reinstatement works as part of a broader make good scope." },
+      { question: "Can you provide a quote from photos?", answer: "Photos are useful for an initial review, but water damage often needs a site inspection to confirm the extent, access requirements and reinstatement scope." }
+    ],
+    ctaBlock: {
+      title: "Need Water Damage or Mould-Affected Areas Restored?",
+      subtitle: "We do make goods all day, every day.",
+      text: "Send us the site address, photos and a short description of what happened. We will review the damage and prepare a practical remediation and reinstatement quote."
+    },
+    relatedServices: ["make-good-solutions/patching-plastering", "remediation-solutions/structural", "remediation-solutions/waterproofing"],
+    category: "structural",
+    published: true
+  },
+  {
+    name: "Fire Compliance & Facade Cladding Remediation",
+    slug: "remediation-solutions/fire-compliance-facade-cladding-remediation",
+    title: "Fire Compliance & Facade Cladding Remediation",
+    metaTitle: "Fire Compliance & Facade Cladding Remediation Melbourne",
+    description: "Commercial fire compliance and facade cladding remediation works for Melbourne buildings. We coordinate building repairs, cladding-related works and associated make good requirements as part of broader remediation projects.",
+    metaDescription: "Fire compliance and facade cladding remediation in Melbourne. Commercial building remediation, cladding replacement coordination and make good works.",
+    heroText: "Commercial fire compliance and facade cladding remediation works for Melbourne buildings. We coordinate building repairs, cladding-related works and associated make good requirements as part of broader remediation projects.",
+    ogImage: "/og/fire-compliance-cladding-remediation.jpg",
+    heroImage: claddingRemediationImage,
+    heroImageAlt: "Facade cladding and glazing remediation works on a commercial building in Melbourne",
+    heroImageTitle: "Makegood Melbourne - Fire Compliance & Facade Cladding Remediation Service",
+    secondaryImage: glazingFacadeInstallationImage,
+    secondaryImageAlt: "Glazing and facade installation works on a commercial building in Melbourne",
+    skipAboutSection: true,
+    trustBadges: ["Licensed & Insured", "Fixed-Price Quotes", "Consultant Coordination", "Internal Make Good Included"],
+    benefits: [
+      "Removal, repair and reinstatement works connected to facade or cladding scopes",
+      "Coordination of cladding replacement support and adjacent surface repairs",
+      "Building repair works connected to consultant-defined fire compliance scopes",
+      "Works around facade penetrations, glazing interfaces and framing",
+      "Coordination with waterproofing and weatherproofing details affected by facade works",
+      "Internal patching, painting, ceiling, wall and floor repairs",
+      "Staged programming and access planning with consultants and builders"
+    ],
+    capabilityCards: [
+      {
+        icon: "brick",
+        title: "FACADE & CLADDING WORKS",
+        items: [
+          "Removal, repair and reinstatement works connected to facade or cladding scopes",
+          "Coordination of cladding replacement support and adjacent surface repairs",
+          "Make good of affected facade and surrounding areas",
+          "Building repair works connected to consultant-defined fire compliance scopes"
+        ]
+      },
+      {
+        icon: "structure",
+        title: "INTERFACE REPAIRS",
+        items: [
+          "Works around facade penetrations, glazing interfaces and framing",
+          "Repairs to surrounding finishes affected by remediation works",
+          "Coordination with waterproofing and weatherproofing details",
+          "Support for structural, patching, painting and repair scopes where required"
+        ]
+      },
+      {
+        icon: "waterproof",
+        title: "INTERNAL MAKE GOOD",
+        items: [
+          "Patching, painting, ceiling, wall or floor repairs where external works affect internal areas",
+          "Final make good of affected internal and external areas",
+          "Staged programming and access planning with consultants and builders",
+          "Coordination with building managers, property managers and project teams"
+        ]
+      }
+    ],
+    capabilitiesTitle: "FIRE COMPLIANCE & FACADE REMEDIATION CAPABILITIES",
+    capabilitiesSubtitle: "Our remediation service supports the physical building repairs, interfaces and make good works connected to defined facade, cladding and fire compliance scopes.",
+    featuredSections: [
+      {
+        title: "REMEDIATION WORKS FOR COMMERCIAL BUILDINGS",
+        description: "Fire compliance and facade cladding remediation often involve more than replacing a visible panel. Commercial buildings may need assessment support, access planning, removal of affected materials, installation coordination, wall and facade repairs, waterproofing interfaces, glazing interfaces and reinstatement of surrounding finishes.\n\nFacade and fire compliance works can involve occupied buildings, height access, staged programming, weather exposure, tenant communication, material lead times and coordination with engineers or consultants. The remediation work also affects surrounding finishes, fixings, penetrations, waterproofing details, glazing interfaces and internal areas.\n\nWhen these works are treated as isolated trade tasks, important repair items can be missed. The facade may be addressed, but internal make good, surface repairs, penetrations, water ingress issues or adjacent finishes still need attention. A proper remediation scope connects the external compliance works with the practical building repairs required around them.",
+        image: glazingFacadeInstallationImage,
+        imageAlt: "Glazing and facade installation works on a commercial building in Melbourne",
+        imageLeft: true
+      },
+      {
+        title: "COORDINATED CLADDING, FACADE AND MAKE GOOD WORKS",
+        description: "Make Good Melbourne provides practical building remediation works for commercial properties across Melbourne. We work with property managers, owners, builders, consultants and specialist trades to complete the physical repair and reinstatement work connected to fire compliance and facade remediation projects.\n\nDepending on the project, the scope may include removal support, facade repairs, cladding-related works, glazing interfaces, waterproofing interfaces, patching, painting, structural repairs, access coordination and final make good of affected areas. We do not replace the role of the building surveyor, fire engineer or compliance consultant. Instead, we support the physical remediation and reinstatement works required once the scope has been defined.\n\nWe work across cladding, glazing, waterproofing, structural, patching, painting and internal reinstatement scopes, connecting those trades into a clear remediation pathway suited to occupancy, handover, re-leasing or ongoing property management. This makes the service suitable for property managers, building owners, facility managers and builders who need a practical remediation contractor for commercial sites."
+      }
+    ],
+    process: [
+      { step: "Scope Review", description: "We review the consultant, builder or property manager scope and inspect the affected building areas." },
+      { step: "Access and Sequencing", description: "We plan the works around building access, height access, occupied areas and weather exposure where relevant." },
+      { step: "Remediation Works", description: "We complete the agreed removal, repair, cladding-related or facade remediation works." },
+      { step: "Interface Repairs", description: "We address surrounding finishes, penetrations, waterproofing interfaces, glazing interfaces and affected internal areas." },
+      { step: "Make Good and Presentation", description: "We complete the final repair and reinstatement works required under the agreed scope." }
+    ],
+    processAfterScope: true,
+    faqs: [
+      { question: "What is fire compliance remediation?", answer: "Fire compliance remediation refers to building works required to address fire safety issues identified by a consultant, building surveyor, engineer or property manager. The scope can include facade, cladding, penetrations, materials, fire separation or associated repair works." },
+      { question: "Do you replace combustible cladding?", answer: "We can support cladding-related remediation works and coordinate the physical building repairs connected to a defined scope. The exact replacement system and compliance pathway should be guided by the relevant consultants, engineers or building surveyor." },
+      { question: "Do you provide compliance certification?", answer: "No. Certification should come from the relevant building surveyor, fire engineer, consultant or authority. Make Good Melbourne supports the physical remediation, repair and reinstatement works required by the project scope." },
+      { question: "Can you work with consultants and engineers?", answer: "Yes. We can work from consultant notes, builder scopes, engineer details, property manager instructions and site inspection findings to complete the agreed remediation works." },
+      { question: "Can you repair internal areas affected by facade works?", answer: "Yes. Facade and cladding works can affect internal walls, ceilings, floors, penetrations and finishes. We can complete internal make good works as part of the remediation scope." },
+      { question: "Do you handle waterproofing interfaces?", answer: "Yes. Where facade or cladding works interact with waterproofing, weatherproofing or water ingress issues, we can coordinate the relevant trade works and associated repairs." },
+      { question: "Is this service for commercial buildings only?", answer: "Our focus is commercial and multi-use properties across Melbourne, including offices, industrial buildings, retail premises, showrooms, strata-managed buildings and larger property assets." }
+    ],
+    ctaBlock: {
+      title: "Need a Practical Contractor for Cladding or Fire Compliance Works?",
+      subtitle: "We do make goods all day, every day.",
+      text: "Send us the site details, photos and any consultant or building manager notes. We will review the scope and prepare a practical remediation quote for the building works."
+    },
+    relatedServices: ["remediation-solutions/cladding-glazing", "remediation-solutions/structural", "remediation-solutions/waterproofing"],
+    category: "structural",
     published: true
   }
 ];

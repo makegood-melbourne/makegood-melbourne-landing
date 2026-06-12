@@ -15,22 +15,44 @@ import {
   DropdownMenuSeparator,
 } from "@/components/ui/dropdown-menu";
 
+// Priority service links are duplicated at the top of the Services menu so new high-intent pages are easy to find in preview and production.
+const priorityServiceSlugs = [
+  'make-good-solutions/end-of-lease-make-good',
+  'make-good-solutions/office-make-good',
+  'strip-out-solutions/office-strip-out',
+  'remediation-solutions/water-damage-mould-remediation',
+  'remediation-solutions/fire-compliance-facade-cladding-remediation',
+];
+
+const priorityServiceDisplayNames: Record<string, string> = {
+  'make-good-solutions/end-of-lease-make-good': 'End of Lease Make Good',
+  'make-good-solutions/office-make-good': 'Office Make Good',
+  'strip-out-solutions/office-strip-out': 'Office Strip Out',
+  'remediation-solutions/water-damage-mould-remediation': 'Water Damage & Mould Remediation',
+  'remediation-solutions/fire-compliance-facade-cladding-remediation': 'Fire Compliance & Facade Cladding Remediation',
+};
+
 // Service categories for navigation grouping - 4 main sections
 const serviceCategories = [
   {
     label: "Strip Out Solutions",
     href: "/services/strip-out-solutions/",  // Clickable category header
-    slugs: ['strip-out-solutions/demolition', 'strip-out-solutions/make-safe', 'strip-out-solutions/pallet-racking-removal'],
+    slugs: ['strip-out-solutions/demolition', 'strip-out-solutions/make-safe', 'strip-out-solutions/office-strip-out', 'strip-out-solutions/pallet-racking-removal'],
     displayNames: {
       'strip-out-solutions/demolition': 'Demolition',
       'strip-out-solutions/make-safe': 'Make Safe',
+      'strip-out-solutions/office-strip-out': 'Office Strip Out',
       'strip-out-solutions/pallet-racking-removal': 'Pallet Racking Removal'
     }
   },
   {
     label: "Make Good Solutions",
     href: "/services/make-good-solutions/",  // Clickable category header
-    slugs: ['make-good-solutions/flooring-reinstatement', 'make-good-solutions/line-marking', 'make-good-solutions/patching-plastering', 'make-good-solutions/painting', 'make-good-solutions/suspended-ceilings', 'make-good-solutions/warehouse-flooring']
+    slugs: ['make-good-solutions/end-of-lease-make-good', 'make-good-solutions/flooring-reinstatement', 'make-good-solutions/line-marking', 'make-good-solutions/office-make-good', 'make-good-solutions/patching-plastering', 'make-good-solutions/painting', 'make-good-solutions/suspended-ceilings', 'make-good-solutions/warehouse-flooring'],
+    displayNames: {
+      'make-good-solutions/end-of-lease-make-good': 'End of Lease Make Good',
+      'make-good-solutions/office-make-good': 'Office Make Good'
+    }
   },
   {
     label: "Handover Solutions",
@@ -40,12 +62,14 @@ const serviceCategories = [
   {
     label: "Remediation Solutions",
     href: "/services/remediation-solutions/",  // Clickable category header
-    slugs: ['remediation-solutions/structural', 'remediation-solutions/polycarbonate-roofing-skylights', 'remediation-solutions/cladding-glazing', 'remediation-solutions/waterproofing'],
+    slugs: ['remediation-solutions/structural', 'remediation-solutions/polycarbonate-roofing-skylights', 'remediation-solutions/cladding-glazing', 'remediation-solutions/fire-compliance-facade-cladding-remediation', 'remediation-solutions/waterproofing', 'remediation-solutions/water-damage-mould-remediation'],
     displayNames: {
       'remediation-solutions/structural': 'Structural',
       'remediation-solutions/polycarbonate-roofing-skylights': 'Polycarbonate Roofing & Skylights',
       'remediation-solutions/cladding-glazing': 'Cladding & Glazing',
-      'remediation-solutions/waterproofing': 'Waterproofing'
+      'remediation-solutions/fire-compliance-facade-cladding-remediation': 'Fire Compliance & Facade Cladding Remediation',
+      'remediation-solutions/waterproofing': 'Waterproofing',
+      'remediation-solutions/water-damage-mould-remediation': 'Water Damage & Mould Remediation'
     }
   }
 ];
@@ -60,10 +84,11 @@ const Navigation = () => {
 
   const getServicesByCategory = (slugs: string[]) => {
     const publishedServices = getPublishedServices();
-    return publishedServices
-      .filter(s => slugs.includes(s.slug))
-      .sort((a, b) => a.name.localeCompare(b.name));
+    return slugs
+      .map(slug => publishedServices.find(service => service.slug === slug))
+      .filter((service): service is NonNullable<typeof service> => Boolean(service));
   };
+  const priorityServices = getServicesByCategory(priorityServiceSlugs);
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -244,6 +269,25 @@ const Navigation = () => {
               </button>
               {openSections['services'] && (
                 <div className="pl-4 pb-3 flex flex-col gap-4">
+                  {priorityServices.length > 0 && (
+                    <div>
+                      <span className="text-primary text-xs uppercase tracking-wider font-medium">
+                        Priority Services
+                      </span>
+                      <div className="flex flex-col gap-2 mt-1">
+                        {priorityServices.map((service) => (
+                          <a
+                            key={`priority-${service.slug}`}
+                            href={`/services/${service.slug}/`}
+                            className="text-foreground font-medium hover:text-accent transition-colors"
+                            onClick={() => setIsMenuOpen(false)}
+                          >
+                            {priorityServiceDisplayNames[service.slug] || service.name}
+                          </a>
+                        ))}
+                      </div>
+                    </div>
+                  )}
                   {serviceCategories.map((category) => {
                     const categoryServices = getServicesByCategory(category.slugs);
                     if (categoryServices.length === 0) return null;
