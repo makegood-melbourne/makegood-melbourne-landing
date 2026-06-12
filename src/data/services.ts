@@ -2447,6 +2447,40 @@ export const services: Service[] = [
       "Make safe coordination before demolition or reinstatement works",
       "Final handover preparation and waste removal"
     ],
+    capabilityCards: [
+      {
+        icon: "brick",
+        title: "STRIP OUT & MAKE SAFE",
+        items: [
+          "Removal of tenancy fitout, redundant fixtures and partitions",
+          "Removal of joinery, racking, loose items and nominated building elements",
+          "Make safe coordination before demolition or reinstatement works proceed",
+          "Waste removal and site preparation for the next trade stage"
+        ]
+      },
+      {
+        icon: "structure",
+        title: "REPAIRS & REINSTATEMENT",
+        items: [
+          "Wall patching, plastering and surface preparation for repainting",
+          "Ceiling tile replacement, grid repairs and related ceiling works",
+          "Floor repairs, grinding, patching and concrete restoration",
+          "Replacement finishes where required for lease handover"
+        ]
+      },
+      {
+        icon: "waterproof",
+        title: "HANDOVER PREPARATION",
+        items: [
+          "Internal repainting, touch-ups and commercial-grade finishes",
+          "Dynabolt removal, epoxy filling, slab repairs and warehouse presentation works",
+          "Line marking removal or reinstatement where required",
+          "Final trade items completed before inspection"
+        ]
+      }
+    ],
+    capabilitiesTitle: "END OF LEASE MAKE GOOD CAPABILITIES",
+    capabilitiesSubtitle: "Our service brings the strip out, repair, reinstatement and final handover works into one coordinated make good scope.",
     featuredSections: [
       {
         title: "MAKE GOOD WORKS, DONE PROPERLY BEFORE HANDOVER",
@@ -2467,6 +2501,7 @@ export const services: Service[] = [
       { step: "Restoration Works", description: "We complete patching, painting, flooring, slab repairs, ceiling works, line marking and related trade works." },
       { step: "Handover Readiness", description: "We work through final items and prepare the site for inspection and return of the premises." }
     ],
+    processAfterScope: true,
     faqs: [
       { question: "What is included in an end of lease make good?", answer: "An end of lease make good can include strip out, removal of tenant fixtures, patching, plastering, painting, flooring reinstatement, ceiling repairs, warehouse floor restoration, line marking, waste removal and other works needed to return the premises to the agreed handover condition." },
       { question: "Do you work from the lease make good clause?", answer: "Yes. We can review the lease make good requirements, site condition and property manager notes to help define the practical scope. The final scope depends on the lease, the condition of the tenancy and the level of reinstatement requested for handover." },
@@ -2510,6 +2545,40 @@ export const services: Service[] = [
       "Removal of signage, wall graphics, decals and adhesive residue",
       "Final handover preparation and presentation"
     ],
+    capabilityCards: [
+      {
+        icon: "brick",
+        title: "OFFICE STRIP OUT",
+        items: [
+          "Removal of partitions, workstations and meeting room fitout",
+          "Removal of joinery, loose fixtures and nominated tenancy alterations",
+          "Signage, wall graphics, decals and adhesive residue removal",
+          "Fitout removal planned around building access and handover timing"
+        ]
+      },
+      {
+        icon: "structure",
+        title: "SURFACE REPAIRS",
+        items: [
+          "Patching plasterboard and repairing fixing holes",
+          "Preparing walls and restoring surfaces for painting",
+          "Commercial painting of office walls, feature walls, doors and trims",
+          "Ceiling tile replacement and grid adjustments around removed services"
+        ]
+      },
+      {
+        icon: "waterproof",
+        title: "FINAL PRESENTATION",
+        items: [
+          "Flooring reinstatement for carpet tiles, vinyl, timber-look finishes or concrete surfaces",
+          "Floor removal, patching or reinstatement depending on the site condition",
+          "Completion of remaining presentation items before inspection",
+          "Office tenancy prepared for handover, re-leasing or landlord works"
+        ]
+      }
+    ],
+    capabilitiesTitle: "OFFICE MAKE GOOD CAPABILITIES",
+    capabilitiesSubtitle: "Our office make good service covers the practical strip out, repair, reinstatement and presentation works needed for lease handover.",
     featuredSections: [
       {
         title: "OFFICE MAKE GOOD, BETTER.",
@@ -2530,6 +2599,7 @@ export const services: Service[] = [
       { step: "Repairs and Reinstatement", description: "We complete patching, painting, flooring, ceiling and related trade works." },
       { step: "Handover Preparation", description: "We complete final items so the office is ready for inspection." }
     ],
+    processAfterScope: true,
     faqs: [
       { question: "What does office make good include?", answer: "Office make good can include partition removal, workstation and joinery removal, wall patching, plaster repairs, repainting, flooring reinstatement, suspended ceiling repairs, signage removal, waste removal and final handover preparation." },
       { question: "Do you remove office partitions and meeting rooms?", answer: "Yes. We can remove partitions, meeting room walls, joinery, fixtures, signage and other nominated fitout items as part of the office strip out and make good scope." },
@@ -2573,6 +2643,40 @@ export const services: Service[] = [
       "Sorting, loading and disposal of strip out material",
       "Preparation of the tenancy for patching, painting and flooring reinstatement"
     ],
+    capabilityCards: [
+      {
+        icon: "brick",
+        title: "STRIP OUT SCOPE",
+        items: [
+          "Removal of plasterboard, glazed or modular partitions and meeting rooms",
+          "Removal of office layout alterations and selected tenancy fitout",
+          "Removal of built-in cupboards, counters, shelving and wall fixtures",
+          "Removal of screens, whiteboards, selected furniture and nominated loose items"
+        ]
+      },
+      {
+        icon: "structure",
+        title: "SERVICES & SURFACE PROTECTION",
+        items: [
+          "Removal of carpet tiles, vinyl, timber-look flooring and adhesives",
+          "Removal or adjustment of nominated ceiling elements",
+          "Coordination of make safe requirements where required",
+          "Protection of surfaces and building elements that need to remain"
+        ]
+      },
+      {
+        icon: "waterproof",
+        title: "WASTE & MAKE GOOD PREPARATION",
+        items: [
+          "Removal of internal signs, decals, wall graphics and tenancy branding",
+          "Sorting, loading and disposal of strip out material",
+          "Tenancy prepared for patching, painting and flooring reinstatement",
+          "Site left ready for final handover works or the next trade stage"
+        ]
+      }
+    ],
+    capabilitiesTitle: "OFFICE STRIP OUT CAPABILITIES",
+    capabilitiesSubtitle: "Our office strip out service removes the redundant fitout while preparing the tenancy for repair, reinstatement and handover.",
     featuredSections: [
       {
         title: "STRIP OUT WORKS THAT SET UP THE MAKE GOOD",
@@ -2593,6 +2697,7 @@ export const services: Service[] = [
       { step: "Strip Out Works", description: "Fitout items, partitions, fixtures, flooring and nominated elements are removed in the correct order." },
       { step: "Site Preparation", description: "The space is prepared for patching, painting, flooring, ceiling reinstatement or handover." }
     ],
+    processAfterScope: true,
     faqs: [
       { question: "What is included in an office strip out?", answer: "An office strip out can include removal of partitions, workstations, joinery, fixtures, signage, floor finishes, ceiling alterations, loose items and nominated tenancy fitout. The exact scope depends on the lease requirements and the next use of the space." },
       { question: "Is office strip out the same as office make good?", answer: "No. Office strip out is usually one stage of the make good process. Make good may also include patching, painting, flooring reinstatement, ceiling repairs and final handover preparation after the strip out is complete." },
@@ -2636,6 +2741,40 @@ export const services: Service[] = [
       "Patching, painting, ceiling and flooring reinstatement of affected areas",
       "Works planned around tenancy operations and building access"
     ],
+    capabilityCards: [
+      {
+        icon: "brick",
+        title: "DAMAGE ASSESSMENT & REMOVAL",
+        items: [
+          "Removal of water-damaged plasterboard, ceiling tiles and insulation",
+          "Removal of affected flooring, joinery and nominated materials",
+          "Controlled removal of mould-affected building materials",
+          "Preparation of affected areas for treatment or reinstatement"
+        ]
+      },
+      {
+        icon: "structure",
+        title: "REMEDIATION WORKS",
+        items: [
+          "Drying coordination planned around access, ventilation and specialist advice",
+          "Repairs to walls, ceilings, flooring and surrounding building elements",
+          "Coordination with waterproofing works at membranes, joints and water ingress points",
+          "Works planned around tenancy operations and property management requirements"
+        ]
+      },
+      {
+        icon: "waterproof",
+        title: "REINSTATEMENT",
+        items: [
+          "Patching, plastering and painting after damaged material is removed",
+          "Ceiling repairs and replacement of affected ceiling elements",
+          "Flooring reinstatement and related building repairs",
+          "Final presentation of affected areas for safe use, handover or continued occupation"
+        ]
+      }
+    ],
+    capabilitiesTitle: "WATER DAMAGE & MOULD REMEDIATION CAPABILITIES",
+    capabilitiesSubtitle: "Our remediation service connects affected material removal, drying coordination, leak damage repairs and final reinstatement into one practical building scope.",
     featuredSections: [
       {
         title: "WATER DAMAGE REPAIRS THAT CONNECT BACK TO THE BUILDING",
@@ -2657,6 +2796,7 @@ export const services: Service[] = [
       { step: "Reinstatement", description: "We complete patching, painting, flooring, ceiling and associated repair works." },
       { step: "Final Review", description: "The affected area is reviewed against the agreed remediation and reinstatement scope." }
     ],
+    processAfterScope: true,
     faqs: [
       { question: "What causes commercial water damage?", answer: "Commercial water damage can come from roof leaks, plumbing failures, storm events, blocked drainage, failed waterproofing, burst pipes, air conditioning leaks or long-term moisture ingress." },
       { question: "Do you remove mould affected materials?", answer: "Yes. We can remove mould-affected building materials such as plasterboard, ceiling tiles, flooring, insulation or joinery where the project scope requires it. Specialist hygienist advice can be incorporated where required." },
@@ -2700,6 +2840,40 @@ export const services: Service[] = [
       "Internal patching, painting, ceiling, wall and floor repairs",
       "Staged programming and access planning with consultants and builders"
     ],
+    capabilityCards: [
+      {
+        icon: "brick",
+        title: "FACADE & CLADDING WORKS",
+        items: [
+          "Removal, repair and reinstatement works connected to facade or cladding scopes",
+          "Coordination of cladding replacement support and adjacent surface repairs",
+          "Make good of affected facade and surrounding areas",
+          "Building repair works connected to consultant-defined fire compliance scopes"
+        ]
+      },
+      {
+        icon: "structure",
+        title: "INTERFACE REPAIRS",
+        items: [
+          "Works around facade penetrations, glazing interfaces and framing",
+          "Repairs to surrounding finishes affected by remediation works",
+          "Coordination with waterproofing and weatherproofing details",
+          "Support for structural, patching, painting and repair scopes where required"
+        ]
+      },
+      {
+        icon: "waterproof",
+        title: "INTERNAL MAKE GOOD",
+        items: [
+          "Patching, painting, ceiling, wall or floor repairs where external works affect internal areas",
+          "Final make good of affected internal and external areas",
+          "Staged programming and access planning with consultants and builders",
+          "Coordination with building managers, property managers and project teams"
+        ]
+      }
+    ],
+    capabilitiesTitle: "FIRE COMPLIANCE & FACADE REMEDIATION CAPABILITIES",
+    capabilitiesSubtitle: "Our remediation service supports the physical building repairs, interfaces and make good works connected to defined facade, cladding and fire compliance scopes.",
     featuredSections: [
       {
         title: "REMEDIATION WORKS FOR COMMERCIAL BUILDINGS",
@@ -2720,6 +2894,7 @@ export const services: Service[] = [
       { step: "Interface Repairs", description: "We address surrounding finishes, penetrations, waterproofing interfaces, glazing interfaces and affected internal areas." },
       { step: "Make Good and Presentation", description: "We complete the final repair and reinstatement works required under the agreed scope." }
     ],
+    processAfterScope: true,
     faqs: [
       { question: "What is fire compliance remediation?", answer: "Fire compliance remediation refers to building works required to address fire safety issues identified by a consultant, building surveyor, engineer or property manager. The scope can include facade, cladding, penetrations, materials, fire separation or associated repair works." },
       { question: "Do you replace combustible cladding?", answer: "We can support cladding-related remediation works and coordinate the physical building repairs connected to a defined scope. The exact replacement system and compliance pathway should be guided by the relevant consultants, engineers or building surveyor." },
