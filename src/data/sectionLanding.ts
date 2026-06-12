@@ -105,7 +105,8 @@ export const sectionLandingPages: SectionLandingData[] = [
     
     serviceSlugs: [
       "strip-out-solutions/demolition",
-      "strip-out-solutions/make-safe", 
+      "strip-out-solutions/make-safe",
+      "strip-out-solutions/office-strip-out",
       "strip-out-solutions/pallet-racking-removal"
     ],
     carouselTitle: "OUR STRIP OUT SERVICES",
@@ -190,6 +191,8 @@ export const sectionLandingPages: SectionLandingData[] = [
     ],
     
     serviceSlugs: [
+      "make-good-solutions/end-of-lease-make-good",
+      "make-good-solutions/office-make-good",
       "make-good-solutions/flooring-reinstatement",
       "make-good-solutions/line-marking",
       "make-good-solutions/patching-plastering",
@@ -267,9 +270,11 @@ export const sectionLandingPages: SectionLandingData[] = [
     
     serviceSlugs: [
       "remediation-solutions/cladding-glazing",
-      "remediation-solutions/polycarbonate-roofing-skylights", 
+      "remediation-solutions/polycarbonate-roofing-skylights",
       "remediation-solutions/structural",
-      "remediation-solutions/waterproofing"
+      "remediation-solutions/waterproofing",
+      "remediation-solutions/water-damage-mould-remediation",
+      "remediation-solutions/fire-compliance-facade-cladding-remediation"
     ],
     carouselTitle: "Our Remediation Services",
     carouselTitleHighlight: "Remediation Services",
