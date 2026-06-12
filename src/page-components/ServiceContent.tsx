@@ -1,17 +1,10 @@
 import { Helmet } from "@/lib/helmet";
-import { getServiceBySlug, getPublishedServices, type Service } from "@/data/services";
+import { getServiceBySlug, getPublishedServices } from "@/data/services";
 import { renderTextWithLinks } from "@/lib/textWithLinks";
 import { resolveImageSrc } from "@/lib/resolveImageSrc";
 import BeforeAfterSlider from "@/components/BeforeAfterSlider";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
 import { CheckCircle, Mail, ArrowRight, Shield, Check, X } from "lucide-react";
 import {
   Accordion,
@@ -40,15 +33,9 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
     "remediation-solutions/fire-compliance-facade-cladding-remediation",
   ]);
   const shouldShowProcess = !processHiddenServiceSlugs.has(service.slug);
-  const serviceCategory = service.slug.split("/")[0];
-  const sortByServiceName = (a: Service, b: Service) => a.name.localeCompare(b.name);
-  const siblingServices = getPublishedServices()
-    .filter(s => s.slug !== service.slug && s.slug.startsWith(`${serviceCategory}/`))
-    .sort(sortByServiceName);
-  const explicitRelatedServices = getPublishedServices()
-    .filter(s => service.relatedServices.includes(s.slug) && s.slug !== service.slug)
-    .sort(sortByServiceName);
-  const relatedServices = siblingServices.length > 0 ? siblingServices : explicitRelatedServices;
+  const relatedServices = getPublishedServices().filter(s => 
+    service.relatedServices.includes(s.slug) && s.slug !== service.slug
+  ).slice(0, 3);
 
   const structuredData = {
     "@context": "https://schema.org",
@@ -291,7 +278,7 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
           <section key={`early-featured-${index}`} className={`py-16 ${bgEarlyFeatured[index]}`}>
             <div className="container mx-auto px-4">
               <h2 
-                className="text-3xl md:text-4xl text-foreground mb-6 lg:col-span-2 lg:mb-0"
+                className="text-3xl md:text-4xl text-foreground mb-12 md:mb-16 lg:col-span-2"
                 dangerouslySetInnerHTML={{ __html: section.title }}
               />
               
@@ -781,70 +768,55 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
         </section>
       )}
 
-      {/* Related Services - sibling services from the same subcategory */}
+      {/* Related Services - Only show if no custom relatedServicesBlock or linkedSpotlightBlock */}
       {!service.relatedServicesBlock && !service.linkedSpotlightBlock && relatedServices.length > 0 && (
         <section className={`py-16 ${bgRelated}`}>
           <div className="container mx-auto px-4">
             <h2 className="text-3xl md:text-4xl text-foreground mb-10">Related Services</h2>
-            <Carousel
-              opts={{
-                align: "start",
-                loop: relatedServices.length > 3,
-              }}
-              className="w-full"
-            >
-              <CarouselContent className="-ml-4">
-                {relatedServices.map((relatedService) => (
-                  <CarouselItem key={relatedService.slug} className="pl-4 md:basis-1/2 lg:basis-1/3">
-                    <a 
-                      href={`/services/${relatedService.slug}/`}
-                      className="block group h-full"
-                    >
-                      <Card className="overflow-hidden border-border bg-card h-full transition-all duration-300 group-hover:border-primary/50 group-hover:shadow-xl">
-                        <div className="aspect-[4/3] overflow-hidden relative">
-                          {relatedService.heroImage ? (
-                            <img
-                              src={resolveImageSrc(relatedService.heroImage)}
-                              alt={relatedService.heroImageAlt || relatedService.name}
-                              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                              loading="lazy"
-                              decoding="async"
-                              width={400}
-                              height={300}
-                            />
-                          ) : (
-                            <div className="w-full h-full bg-muted/30 flex items-center justify-center">
-                              <span className="text-muted-foreground/50 text-sm">Service Image</span>
-                            </div>
-                          )}
-                          <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent" />
-                          <div className="absolute bottom-0 left-0 right-0 p-4">
-                            <h3 className="text-xl font-bold text-foreground mb-1">
-                              {relatedService.name}
-                            </h3>
-                          </div>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {relatedServices.map((relatedService) => (
+                <a 
+                  key={relatedService.slug} 
+                  href={`/services/${relatedService.slug}/`}
+                  className="block group"
+                >
+                  <Card className="overflow-hidden border-border bg-card h-full transition-all duration-300 group-hover:border-primary/50 group-hover:shadow-xl">
+                    <div className="aspect-[4/3] overflow-hidden relative">
+                      {relatedService.heroImage ? (
+                        <img
+                          src={resolveImageSrc(relatedService.heroImage)}
+                          alt={relatedService.heroImageAlt || relatedService.name}
+                          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                          loading="lazy"
+                          decoding="async"
+                          width={400}
+                          height={300}
+                        />
+                      ) : (
+                        <div className="w-full h-full bg-muted/30 flex items-center justify-center">
+                          <span className="text-muted-foreground/50 text-sm">Service Image</span>
                         </div>
-                        <CardContent className="p-4">
-                          <p className="text-sm text-muted-foreground line-clamp-2 mb-3">
-                            {relatedService.description}
-                          </p>
-                          <span className="inline-flex items-center text-primary text-sm font-medium group-hover:gap-2 transition-all">
-                            Learn More
-                            <ArrowRight className="h-4 w-4 ml-1 transition-transform group-hover:translate-x-1" />
-                          </span>
-                        </CardContent>
-                      </Card>
-                    </a>
-                  </CarouselItem>
-                ))}
-              </CarouselContent>
-              {relatedServices.length > 3 && (
-                <>
-                  <CarouselPrevious className="hidden md:flex -left-4 bg-card border-border hover:bg-primary hover:text-primary-foreground" />
-                  <CarouselNext className="hidden md:flex -right-4 bg-card border-border hover:bg-primary hover:text-primary-foreground" />
-                </>
-              )}
-            </Carousel>
+                      )}
+                      <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent" />
+                      <div className="absolute bottom-0 left-0 right-0 p-4">
+                        <h3 className="text-xl font-bold text-foreground mb-1">
+                          {relatedService.name}
+                        </h3>
+                      </div>
+                    </div>
+                    <CardContent className="p-4">
+                      <p className="text-sm text-muted-foreground line-clamp-2 mb-3">
+                        {relatedService.description}
+                      </p>
+                      <span className="inline-flex items-center text-primary text-sm font-medium group-hover:gap-2 transition-all">
+                        Learn More
+                        <ArrowRight className="h-4 w-4 ml-1 transition-transform group-hover:translate-x-1" />
+                      </span>
+                    </CardContent>
+                  </Card>
+                </a>
+              ))}
+            </div>
           </div>
         </section>
       )}
