@@ -20,17 +20,22 @@ const serviceCategories = [
   {
     label: "Strip Out Solutions",
     href: "/services/strip-out-solutions/",  // Clickable category header
-    slugs: ['strip-out-solutions/demolition', 'strip-out-solutions/make-safe', 'strip-out-solutions/pallet-racking-removal'],
+    slugs: ['strip-out-solutions/demolition', 'strip-out-solutions/make-safe', 'strip-out-solutions/office-strip-out', 'strip-out-solutions/pallet-racking-removal'],
     displayNames: {
       'strip-out-solutions/demolition': 'Demolition',
       'strip-out-solutions/make-safe': 'Make Safe',
+      'strip-out-solutions/office-strip-out': 'Office Strip Out',
       'strip-out-solutions/pallet-racking-removal': 'Pallet Racking Removal'
     }
   },
   {
     label: "Make Good Solutions",
     href: "/services/make-good-solutions/",  // Clickable category header
-    slugs: ['make-good-solutions/flooring-reinstatement', 'make-good-solutions/line-marking', 'make-good-solutions/patching-plastering', 'make-good-solutions/painting', 'make-good-solutions/suspended-ceilings', 'make-good-solutions/warehouse-flooring']
+    slugs: ['make-good-solutions/end-of-lease-make-good', 'make-good-solutions/flooring-reinstatement', 'make-good-solutions/line-marking', 'make-good-solutions/office-make-good', 'make-good-solutions/patching-plastering', 'make-good-solutions/painting', 'make-good-solutions/suspended-ceilings', 'make-good-solutions/warehouse-flooring'],
+    displayNames: {
+      'make-good-solutions/end-of-lease-make-good': 'End of Lease Make Good',
+      'make-good-solutions/office-make-good': 'Office Make Good'
+    }
   },
   {
     label: "Handover Solutions",
@@ -40,12 +45,14 @@ const serviceCategories = [
   {
     label: "Remediation Solutions",
     href: "/services/remediation-solutions/",  // Clickable category header
-    slugs: ['remediation-solutions/structural', 'remediation-solutions/polycarbonate-roofing-skylights', 'remediation-solutions/cladding-glazing', 'remediation-solutions/waterproofing'],
+    slugs: ['remediation-solutions/structural', 'remediation-solutions/polycarbonate-roofing-skylights', 'remediation-solutions/cladding-glazing', 'remediation-solutions/fire-compliance-cladding-remediation', 'remediation-solutions/waterproofing', 'remediation-solutions/water-damage-mould-remediation'],
     displayNames: {
       'remediation-solutions/structural': 'Structural',
       'remediation-solutions/polycarbonate-roofing-skylights': 'Polycarbonate Roofing & Skylights',
       'remediation-solutions/cladding-glazing': 'Cladding & Glazing',
-      'remediation-solutions/waterproofing': 'Waterproofing'
+      'remediation-solutions/fire-compliance-cladding-remediation': 'Fire Compliance & Cladding Remediation',
+      'remediation-solutions/waterproofing': 'Waterproofing',
+      'remediation-solutions/water-damage-mould-remediation': 'Water Damage & Mould Remediation'
     }
   }
 ];

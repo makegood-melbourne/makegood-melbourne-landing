@@ -299,7 +299,7 @@ Either way, the time to start planning is not the week before handback. Floor wo
 
 If you are approaching end of lease and you are not sure what your floor obligations are, start with the lease and the condition report. If you want someone to walk the floor with you and give you a straight read on what needs doing, that is what we are here for.
 
-For a broader picture of what a full warehouse make good involves beyond just the floor, the [warehouse and factory make good guide](/blog/warehouse-and-factory-make-good) is a good place to start. And if your strip out involves more than just racking, our [demolition services](/services/strip-out-solutions/demolition/) cover the heavy end of the work.`,
+For a broader picture of what a full warehouse make good involves beyond just the floor, the [warehouse and factory make good guide](/blog/warehouse-factory-make-good-melbourne) is a good place to start. And if your strip out involves more than just racking, our [demolition services](/services/strip-out-solutions/demolition/) cover the heavy end of the work.`,
   },
   {
     id: "41",
@@ -469,7 +469,7 @@ A make good can involve a wide range of works, from a simple patch and paint to 
 
 A full make good project will usually cover removal of all tenant fixtures, fittings and equipment; [demolition](/services/strip-out-solutions/demolition/) and removal of any partition walls, offices or other structures the tenant has built; removal of all data and electrical cabling installed by the tenant; [patching and repairing walls, ceilings and floors](/services/make-good-solutions/patching-plastering/) to their original condition; repainting the entire tenancy to the base building standard; reinstating [flooring](/services/make-good-solutions/flooring-reinstatement/) to its original condition; reinstating base building services such as lighting, plumbing and fire systems; and a thorough [final clean](/services/handover-solutions/end-of-lease-cleaning/) of the entire premises.
 
-The scope varies depending on the property type. An office make good is different to a [warehouse make good](/blog/warehouse-factory-make-good-melbourne), which is different again to a [retail make good](/blog/retail-lease-make-good). The lease and the condition report are always the starting point — not assumptions about what is "standard."
+The scope varies depending on the property type. An office make good is different to a [warehouse make good](/blog/warehouse-factory-make-good-melbourne), which is different again to a [retail make good](/blog/retail-make-good-melbourne-shopping-centre-tenants). The lease and the condition report are always the starting point — not assumptions about what is "standard."
 
 ---
 
@@ -539,7 +539,7 @@ The first step is always the lease. The make good clause is the source of truth.
 
 ### Phase 2: The Site Inspection and Scope of Works
 
-Based on the lease and a physical site inspection, we develop a detailed scope of works. This document itemises every task that needs to be completed. We walk the site with the tenant and, where possible, the landlord or [property manager](/blog/property-manager-guide-end-of-lease-make-good-melbourne) — so everyone agrees on what needs to be done before a dollar is spent.
+Based on the lease and a physical site inspection, we develop a detailed scope of works. This document itemises every task that needs to be completed. We walk the site with the tenant and, where possible, the landlord or [property manager](/blog/simplifying-property-management) — so everyone agrees on what needs to be done before a dollar is spent.
 
 ### Phase 3: The Strip Out
 
