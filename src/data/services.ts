@@ -258,17 +258,22 @@ export const services: Service[] = [
     linkedSpotlightBlock: {
       title: "A COMPLETE STRIP OUT",
       titleHighlight: "SERVICE",
-      subtitle: "Our pallet racking removal is part of a comprehensive strip out solution. We coordinate all related works to deliver a seamless end-of-lease project.",
+      subtitle: "We coordinate pallet racking removal with demolition, make safe works and office strip out services to deliver your end-of-lease project on time.",
       cards: [
-        {
-          slug: "strip-out-solutions/make-safe",
-          name: "MAKE SAFE WORKS",
-          description: "We manage the full 'back to base' process, including the disconnection and make-safe of all essential building services."
-        },
         {
           slug: "strip-out-solutions/demolition",
           name: "Demolition Works",
-          description: "Our licensed teams perform precise internal demolition, safely removing non-structural partitions, ceilings, flooring and fixtures."
+          description: "Internal demolition for partitions, ceilings, flooring and fixed fitout that need to be removed before handover."
+        },
+        {
+          slug: "strip-out-solutions/make-safe",
+          name: "Make Safe Works",
+          description: "Electrical, plumbing, HVAC and fire service coordination before removal works begin."
+        },
+        {
+          slug: "strip-out-solutions/office-strip-out",
+          name: "Office Strip Out",
+          description: "Office defit works for partitions, workstations, flooring, fixtures and lease handover preparation."
         }
       ]
     },
@@ -307,7 +312,7 @@ export const services: Service[] = [
       subtitle: "We do Make Goods all day, every day.",
       text: "Whether you're moving, upgrading, or handing back the keys, our professional racking removal service ensures the process is safe, efficient, and compliant. Contact us today for a site assessment and a no-obligation quote, including a potential valuation for your used racking."
     },
-    relatedServices: ["strip-out-solutions/demolition", "strip-out-solutions/make-safe"],
+    relatedServices: ["strip-out-solutions/demolition", "strip-out-solutions/make-safe", "strip-out-solutions/office-strip-out"],
     category: "demolition",
     published: true
   },
@@ -1963,7 +1968,29 @@ export const services: Service[] = [
       "After-hours work capability",
       "Fixed-price quotes with no variations"
     ],
-    relatedServices: ["strip-out-solutions/make-safe", "strip-out-solutions/pallet-racking-removal"],
+    linkedSpotlightBlock: {
+      title: "A COMPLETE STRIP OUT",
+      titleHighlight: "SERVICE",
+      subtitle: "We coordinate demolition with make safe works, office strip out and pallet racking removal to deliver your end-of-lease project on time.",
+      cards: [
+        {
+          slug: "strip-out-solutions/make-safe",
+          name: "Make Safe Works",
+          description: "Electrical, plumbing, HVAC and fire service coordination before removal works begin."
+        },
+        {
+          slug: "strip-out-solutions/office-strip-out",
+          name: "Office Strip Out",
+          description: "Office defit works for partitions, workstations, flooring, fixtures and lease handover preparation."
+        },
+        {
+          slug: "strip-out-solutions/pallet-racking-removal",
+          name: "Pallet Racking Removal",
+          description: "Racking dismantling, slab anchor removal and warehouse floor preparation for lease handback."
+        }
+      ]
+    },
+    relatedServices: ["strip-out-solutions/make-safe", "strip-out-solutions/office-strip-out", "strip-out-solutions/pallet-racking-removal"],
     category: "demolition",
     published: true
   },
@@ -2033,17 +2060,22 @@ export const services: Service[] = [
     linkedSpotlightBlock: {
       title: "A COMPLETE STRIP OUT",
       titleHighlight: "SERVICE",
-      subtitle: "Our make safe works are part of a comprehensive strip out solution. We coordinate all related works to deliver your end-of-lease project on time.",
+      subtitle: "We coordinate make safe works with demolition, office strip out and pallet racking removal to deliver your end-of-lease project on time.",
       cards: [
         {
           slug: "strip-out-solutions/demolition",
-          name: "DEMOLITION WORKS",
-          description: "Our licensed teams perform precise internal demolition, safely removing non-structural partitions, ceilings, flooring and fixtures."
+          name: "Demolition Works",
+          description: "Internal demolition for partitions, ceilings, flooring and fixed fitout that need to be removed before handover."
+        },
+        {
+          slug: "strip-out-solutions/office-strip-out",
+          name: "Office Strip Out",
+          description: "Office defit works for partitions, workstations, flooring, fixtures and lease handover preparation."
         },
         {
           slug: "strip-out-solutions/pallet-racking-removal",
-          name: "PALLET RACKING REMOVAL",
-          description: "We manage the full 'back to base' process, including the disconnection and make-safe of all essential building services."
+          name: "Pallet Racking Removal",
+          description: "Racking dismantling, slab anchor removal and warehouse floor preparation for lease handback."
         }
       ]
     },
@@ -2082,7 +2114,7 @@ export const services: Service[] = [
       "After-hours work capability",
       "Fixed-price quotes with no variations"
     ],
-    relatedServices: ["strip-out-solutions/demolition", "strip-out-solutions/pallet-racking-removal"],
+    relatedServices: ["strip-out-solutions/demolition", "strip-out-solutions/office-strip-out", "strip-out-solutions/pallet-racking-removal"],
     category: "demolition",
     published: true
   },
@@ -2698,6 +2730,28 @@ export const services: Service[] = [
       { step: "Site Preparation", description: "The space is prepared for patching, painting, flooring, ceiling reinstatement or handover." }
     ],
     processAfterScope: true,
+    linkedSpotlightBlock: {
+      title: "A COMPLETE STRIP OUT",
+      titleHighlight: "SERVICE",
+      subtitle: "We coordinate office strip out with demolition, make safe works and pallet racking removal to deliver your end-of-lease project on time.",
+      cards: [
+        {
+          slug: "strip-out-solutions/demolition",
+          name: "Demolition Works",
+          description: "Internal demolition for partitions, ceilings, flooring and fixed fitout that need to be removed before handover."
+        },
+        {
+          slug: "strip-out-solutions/make-safe",
+          name: "Make Safe Works",
+          description: "Electrical, plumbing, HVAC and fire service coordination before removal works begin."
+        },
+        {
+          slug: "strip-out-solutions/pallet-racking-removal",
+          name: "Pallet Racking Removal",
+          description: "Racking dismantling, slab anchor removal and warehouse floor preparation for lease handback."
+        }
+      ]
+    },
     faqs: [
       { question: "What is an office strip out?", answer: "An office strip out is the removal of tenant-installed office fitout so the tenancy can be repaired, reinstated or handed back. It can include partitions, meeting rooms, workstations, joinery, floor finishes, ceiling changes, signage and redundant fixtures." },
       { question: "What is included in an office strip out?", answer: "A typical office strip out includes removing plasterboard or glazed partitions, built-in joinery, cupboards, counters, shelving, selected loose items, signage, floor finishes, adhesives and nominated ceiling alterations. We confirm the scope from your lease, handover notes and site inspection." },
@@ -2715,7 +2769,7 @@ export const services: Service[] = [
       subtitle: "We do make goods all day, every day.",
       text: "Send through the office address, photos, lease timing and any make good notes. We will assess the strip out scope and provide a practical quote."
     },
-    relatedServices: ["make-good-solutions/office-make-good", "strip-out-solutions/demolition", "strip-out-solutions/make-safe"],
+    relatedServices: ["make-good-solutions/office-make-good", "strip-out-solutions/demolition", "strip-out-solutions/make-safe", "strip-out-solutions/pallet-racking-removal"],
     category: "demolition",
     published: true
   },
