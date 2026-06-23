@@ -23,8 +23,8 @@ import lineMarkingWornFloorImage from "@/assets/services/warehouse-floor-worn-li
 import lineMarkingRestoredImage from "@/assets/services/warehouse-floor-worn-line-markings-restoration-melbourne.png";
 import lineMarkingFreshImage from "@/assets/services/warehouse-fresh-yellow-line-marking-polished-concrete-melbourne.jpg";
 import carParkLineMarkingImage from "@/assets/services/car-park-line-marking-restoration-aerial-melbourne.jpeg";
-import emptyWarehouseImage from "@/assets/services/empty-warehouse-after-makegood-melbourne.png";
-import manufacturingFacilityImage from "@/assets/services/manufacturing-facility-before-makegood-melbourne.jpeg";
+import endOfLeaseMakeGoodHeroImage from "@/assets/services/end-of-lease-make-good-empty-commercial-tenancy-melbourne.webp";
+import endOfLeaseMakeGoodScopeImage from "@/assets/services/end-of-lease-make-good-warehouse-handover-ceiling-services-melbourne.webp";
 import concreteSlabRestorationHeroImage from "@/assets/services/concrete-slab-restoration-warehouse-floor-melbourne.jpeg";
 import concreteFloorGrinderImage from "@/assets/services/industrial-concrete-floor-grinding-warehouse-melbourne.jpeg";
 import concreteFloorJointImage from "@/assets/services/concrete-floor-joint-metal-expansion-strip-melbourne.jpeg";
@@ -402,54 +402,15 @@ export const services: Service[] = [
       ]
     },
     faqs: [
-      {
-        question: "Is internal painting always required in a make good?",
-        answer: "Almost always, yes. Standard commercial leases require tenants to return all painted surfaces within their tenancy to original condition. This includes walls, ceilings and any painted trim. Even if the paint looks 'acceptable' to you, owners typically require a full repaint to ensure consistency for the next tenant. We recommend getting written confirmation of requirements before handover."
-      },
-      {
-        question: "What about external painting—is that my responsibility?",
-        answer: "Rarely. External facades, building exteriors and common areas are typically the owner's responsibility to maintain. However, there are exceptions—standalone tenancies, spaces with direct external access, or situations where tenants have modified external surfaces may require restoration. Check your lease and any variation agreements carefully, or we can help you interpret what's required."
-      },
-      {
-        question: "How do you match the original paint colours?",
-        answer: "We use spectrophotometer colour matching technology to analyse existing surfaces and create precise colour formulas. For older spaces, we may need to sample from an inconspicuous area where the original colour is preserved. We can also work from original specifications if they're available from the owner or property manager."
-      },
-      {
-        question: "Do I need to paint if I only made minor modifications?",
-        answer: "Usually, yes—if your modifications left any marks, holes or patches on painted surfaces. Owners expect a consistent finish, not a patchwork of touch-ups. Even well-matched touch-ups often show differently under certain lighting conditions. A full repaint is usually the only way to guarantee acceptance."
-      },
-      {
-        question: "Can you work outside business hours?",
-        answer: "Yes. We regularly complete painting work after hours and on weekends—particularly important when adjacent tenancies are occupied and paint odours or access would cause disruption. We use low-odour, fast-drying paints where possible to minimise impact."
-      },
-      {
-        question: "How long does commercial painting take?",
-        answer: "Timing depends on the size of the space, surface condition and access requirements. A typical office tenancy (200-500m²) takes 2-4 days including preparation. Larger warehouses or spaces with high ceilings may take longer. We provide detailed timelines and coordinate with other make good trades to minimise your overall project duration."
-      },
-      {
-        question: "What surfaces do you paint?",
-        answer: "All internal painted surfaces within your tenancy—walls (plasterboard, masonry, timber), ceilings (plasterboard, fibrous plaster), columns, beams, door frames, skirting boards and any other painted trim. For warehouses, this includes painted concrete block walls and steel structural elements if they were painted at lease commencement."
-      },
-      {
-        question: "Do you handle patching and repairs before painting?",
-        answer: "Yes. Painting over holes, cracks or damaged surfaces is a waste of time and money—the defects show through. We fill all holes from removed fixtures, repair any plaster damage, sand patches smooth and apply appropriate primers before the finish coats. This is included in our make good painting service. For more extensive wall damage, see our [patching and plastering](/services/make-good-solutions/patching-plastering) service."
-      },
-      {
-        question: "How much does end of lease painting cost in Melbourne?",
-        answer: "Costs vary based on floor area, ceiling height, surface condition and preparation requirements. Office spaces typically cost less per square metre than warehouses due to accessibility. We provide free, detailed quotes after inspecting your space—itemised so you know exactly what you're paying for."
-      },
-      {
-        question: "What is a make good clause?",
-        answer: "A make good clause is a standard provision in commercial leases requiring tenants to restore the premises to its original condition at lease end. This typically includes removing fitouts, repairing damage, restoring floors, and repainting all surfaces within the tenancy. The clause protects the owner's investment and ensures the space is ready for the next tenant."
-      },
-      {
-        question: "Who pays for end of lease painting?",
-        answer: "The tenant pays for end of lease painting as part of their make good obligations under the lease. This is a contractual requirement, not optional maintenance. Some tenants try to negotiate reduced scope with owners, but painting is rarely excluded from make good requirements. We can help you understand exactly what's required before you commit."
-      },
-      {
-        question: "Can I do my own end of lease painting?",
-        answer: "Technically yes, but owner rejection is common with DIY work. Commercial leases typically require 'professional' restoration, and owners know the difference. Poor preparation, colour mismatches, roller marks and drips are obvious to experienced property managers. Failed inspections cost more to rectify than doing it right the first time."
-      }
+      { question: "What is included in an end of lease make good?", answer: "An end of lease make good can include strip out, removal of tenant fixtures, patching, plastering, painting, flooring reinstatement, ceiling repairs, warehouse floor restoration, line marking, waste removal and other works needed to return the premises to the agreed handover condition." },
+      { question: "Do you work from the lease make good clause?", answer: "Yes. We can review the lease make good requirements, site condition and property manager notes to help define the practical scope. The final scope depends on the lease, the condition of the tenancy and the level of reinstatement requested for handover." },
+      { question: "Can you manage multiple trades?", answer: "Yes. Most make good projects involve several trades. We coordinate the order of works so strip out, repairs, painting, flooring, ceiling works and other trade items are handled as one project rather than as disconnected jobs." },
+      { question: "Can you coordinate with our own trades?", answer: "Yes. If you already have a preferred painter, electrician or other trade, we can coordinate with them and handle the remaining make good scope. The aim is to keep the programme practical, clear and ready for handover." },
+      { question: "Do you complete office and warehouse make goods?", answer: "Yes. We complete make good works for offices, warehouses, showrooms, retail premises and mixed commercial sites across Melbourne. Warehouse projects often include racking removal, slab repair, anchor removal and line marking work." },
+      { question: "How early should we book make good works?", answer: "It is best to allow enough time before the lease handover date for inspection, quoting, approval, access coordination and the works themselves. Short timeframes can still be assessed, but earlier planning gives more control over cost and scheduling." },
+      { question: "Can you help if the property manager has already inspected the site?", answer: "Yes. If you have inspection notes, a defect list or photos from the property manager, we can use them to prepare a practical make good scope and quote." },
+      { question: "Can you quote from photos or a walkthrough video?", answer: "Photos and walkthrough videos are useful for a first review. For larger tenancies, warehouses or sites with several trades involved, a site inspection is usually needed before the final quote is confirmed." },
+      { question: "What information helps with an end of lease make good quote?", answer: "Helpful information includes the site address, lease end date, floor area, access rules, photos, walkthrough videos, lease notes and any property manager comments. We can then advise whether a site inspection is needed before confirming the quote." }
     ],
     process: [
       { step: "Scope Review", description: "We review your lease obligations and inspect the space to confirm exactly what painting is required for make good compliance." },
@@ -460,8 +421,13 @@ export const services: Service[] = [
     linkedSpotlightBlock: {
       title: "A COMPLETE MAKE GOOD",
       titleHighlight: "SERVICE",
-      subtitle: "We coordinate painting with flooring, ceiling replacement and patching to deliver your end-of-lease project on time.",
+      subtitle: "We coordinate the right mix of make good services so your commercial tenancy is ready for end-of-lease handover.",
       cards: [
+        {
+          slug: "make-good-solutions/end-of-lease-make-good",
+          name: "End of Lease Make Good",
+          description: "A coordinated make good service for lease handovers covering strip out, repairs, reinstatement and final presentation."
+        },
         {
           slug: "make-good-solutions/flooring-reinstatement",
           name: "Flooring Reinstatement",
@@ -470,22 +436,27 @@ export const services: Service[] = [
         {
           slug: "make-good-solutions/line-marking",
           name: "Line Marking",
-          description: "Professional line marking for car parks, warehouses and industrial facilities to meet lease compliance requirements."
+          description: "Warehouse and car park line marking restored to the agreed layout for lease handover."
+        },
+        {
+          slug: "make-good-solutions/office-make-good",
+          name: "Office Make Good",
+          description: "Office strip out, surface repairs, flooring, ceilings and final presentation for commercial lease handover."
         },
         {
           slug: "make-good-solutions/patching-plastering",
           name: "Patching & Plastering",
-          description: "Professional patching and plastering for commercial make good projects across Melbourne."
+          description: "Fixture holes, wall damage and post-demolition surfaces repaired ready for painting and handover."
         },
         {
           slug: "make-good-solutions/suspended-ceilings",
           name: "Suspended Ceilings",
-          description: "Ceiling tile replacement and grid repairs to restore your commercial space to original condition."
+          description: "Ceiling tile replacement, grid repairs and service coordination to restore commercial ceiling layouts."
         },
         {
           slug: "make-good-solutions/warehouse-flooring",
           name: "Warehouse Flooring",
-          description: "Complete warehouse floor restoration including concrete repairs, grinding and protective coatings."
+          description: "Warehouse floor restoration including flooring removal, concrete grinding, slab repairs and protective finishes."
         }
       ]
     },
@@ -494,7 +465,15 @@ export const services: Service[] = [
       subtitle: "We do makegoods all day, every day.",
       text: "Our painters have delivered inspection-ready finishes across Melbourne's commercial and industrial properties for years. We understand what owners expect and deliver work that gets accepted first time. Get in touch today for a free, no-obligation quote."
     },
-    relatedServices: ["make-good-solutions/flooring-reinstatement", "make-good-solutions/line-marking", "make-good-solutions/patching-plastering", "make-good-solutions/suspended-ceilings", "make-good-solutions/warehouse-flooring"],
+    relatedServices: [
+      "make-good-solutions/end-of-lease-make-good",
+      "make-good-solutions/flooring-reinstatement",
+      "make-good-solutions/line-marking",
+      "make-good-solutions/office-make-good",
+      "make-good-solutions/patching-plastering",
+      "make-good-solutions/suspended-ceilings",
+      "make-good-solutions/warehouse-flooring"
+    ],
     category: "make-good",
     published: true
   },
@@ -574,8 +553,13 @@ export const services: Service[] = [
     linkedSpotlightBlock: {
       title: "A COMPLETE MAKE GOOD",
       titleHighlight: "SERVICE",
-      subtitle: "We coordinate ceiling restoration with painting, flooring and patching to deliver your end-of-lease project on time.",
+      subtitle: "We coordinate the right mix of make good services so your commercial tenancy is ready for end-of-lease handover.",
       cards: [
+        {
+          slug: "make-good-solutions/end-of-lease-make-good",
+          name: "End of Lease Make Good",
+          description: "A coordinated make good service for lease handovers covering strip out, repairs, reinstatement and final presentation."
+        },
         {
           slug: "make-good-solutions/flooring-reinstatement",
           name: "Flooring Reinstatement",
@@ -584,22 +568,27 @@ export const services: Service[] = [
         {
           slug: "make-good-solutions/line-marking",
           name: "Line Marking",
-          description: "Professional line marking for car parks, warehouses and industrial facilities to meet lease compliance requirements."
+          description: "Warehouse and car park line marking restored to the agreed layout for lease handover."
+        },
+        {
+          slug: "make-good-solutions/office-make-good",
+          name: "Office Make Good",
+          description: "Office strip out, surface repairs, flooring, ceilings and final presentation for commercial lease handover."
         },
         {
           slug: "make-good-solutions/painting",
           name: "Painting",
-          description: "End of lease painting services for commercial and industrial properties across Melbourne."
+          description: "Commercial painting and colour-matched finishes for offices, warehouses and industrial make good projects."
         },
         {
           slug: "make-good-solutions/patching-plastering",
           name: "Patching & Plastering",
-          description: "Professional patching and plastering for commercial make good projects across Melbourne."
+          description: "Fixture holes, wall damage and post-demolition surfaces repaired ready for painting and handover."
         },
         {
           slug: "make-good-solutions/warehouse-flooring",
           name: "Warehouse Flooring",
-          description: "Complete warehouse floor restoration including concrete repairs, grinding and protective coatings."
+          description: "Warehouse floor restoration including flooring removal, concrete grinding, slab repairs and protective finishes."
         }
       ]
     },
@@ -635,7 +624,15 @@ export const services: Service[] = [
       subtitle: "We do makegoods all day, every day.",
       text: "From single rooms to multi-floor offices, we've restored ceilings across Melbourne's commercial properties. Get in touch today for a free, no-obligation quote."
     },
-    relatedServices: ["make-good-solutions/flooring-reinstatement", "make-good-solutions/line-marking", "make-good-solutions/painting", "make-good-solutions/patching-plastering", "make-good-solutions/warehouse-flooring"],
+    relatedServices: [
+      "make-good-solutions/end-of-lease-make-good",
+      "make-good-solutions/flooring-reinstatement",
+      "make-good-solutions/line-marking",
+      "make-good-solutions/office-make-good",
+      "make-good-solutions/painting",
+      "make-good-solutions/patching-plastering",
+      "make-good-solutions/warehouse-flooring"
+    ],
     category: "make-good",
     published: true
   },
@@ -713,32 +710,42 @@ export const services: Service[] = [
     linkedSpotlightBlock: {
       title: "A COMPLETE MAKE GOOD",
       titleHighlight: "SERVICE",
-      subtitle: "We coordinate line marking with flooring, painting and warehouse floor restoration to deliver your end-of-lease project on time.",
+      subtitle: "We coordinate the right mix of make good services so your commercial tenancy is ready for end-of-lease handover.",
       cards: [
+        {
+          slug: "make-good-solutions/end-of-lease-make-good",
+          name: "End of Lease Make Good",
+          description: "A coordinated make good service for lease handovers covering strip out, repairs, reinstatement and final presentation."
+        },
         {
           slug: "make-good-solutions/flooring-reinstatement",
           name: "Flooring Reinstatement",
           description: "Carpet tiles, vinyl, epoxy and timber flooring reinstated to original specification for lease handover."
         },
         {
+          slug: "make-good-solutions/office-make-good",
+          name: "Office Make Good",
+          description: "Office strip out, surface repairs, flooring, ceilings and final presentation for commercial lease handover."
+        },
+        {
           slug: "make-good-solutions/painting",
           name: "Painting",
-          description: "End of lease painting services for commercial and industrial properties across Melbourne."
+          description: "Commercial painting and colour-matched finishes for offices, warehouses and industrial make good projects."
         },
         {
           slug: "make-good-solutions/patching-plastering",
           name: "Patching & Plastering",
-          description: "Professional patching and plastering for commercial make good projects across Melbourne."
+          description: "Fixture holes, wall damage and post-demolition surfaces repaired ready for painting and handover."
         },
         {
           slug: "make-good-solutions/suspended-ceilings",
           name: "Suspended Ceilings",
-          description: "Ceiling tile replacement and grid repairs to restore your commercial space to original condition."
+          description: "Ceiling tile replacement, grid repairs and service coordination to restore commercial ceiling layouts."
         },
         {
           slug: "make-good-solutions/warehouse-flooring",
           name: "Warehouse Flooring",
-          description: "Complete warehouse floor restoration including concrete repairs, grinding and protective coatings."
+          description: "Warehouse floor restoration including flooring removal, concrete grinding, slab repairs and protective finishes."
         }
       ]
     },
@@ -770,7 +777,15 @@ export const services: Service[] = [
       subtitle: "We do makegoods all day, every day.",
       text: "We've restored line markings in warehouses and car parks across Melbourne. Get in touch today for a free, no-obligation quote."
     },
-    relatedServices: ["make-good-solutions/flooring-reinstatement", "make-good-solutions/painting", "make-good-solutions/patching-plastering", "make-good-solutions/suspended-ceilings", "make-good-solutions/warehouse-flooring"],
+    relatedServices: [
+      "make-good-solutions/end-of-lease-make-good",
+      "make-good-solutions/flooring-reinstatement",
+      "make-good-solutions/office-make-good",
+      "make-good-solutions/painting",
+      "make-good-solutions/patching-plastering",
+      "make-good-solutions/suspended-ceilings",
+      "make-good-solutions/warehouse-flooring"
+    ],
     category: "trade",
     published: true
   },
@@ -1832,8 +1847,13 @@ export const services: Service[] = [
     linkedSpotlightBlock: {
       title: "A COMPLETE MAKE GOOD",
       titleHighlight: "SERVICE",
-      subtitle: "We coordinate warehouse floor restoration with line marking, painting and flooring reinstatement to deliver your end-of-lease project on time.",
+      subtitle: "We coordinate the right mix of make good services so your commercial tenancy is ready for end-of-lease handover.",
       cards: [
+        {
+          slug: "make-good-solutions/end-of-lease-make-good",
+          name: "End of Lease Make Good",
+          description: "A coordinated make good service for lease handovers covering strip out, repairs, reinstatement and final presentation."
+        },
         {
           slug: "make-good-solutions/flooring-reinstatement",
           name: "Flooring Reinstatement",
@@ -1842,22 +1862,27 @@ export const services: Service[] = [
         {
           slug: "make-good-solutions/line-marking",
           name: "Line Marking",
-          description: "Professional line marking for car parks, warehouses and industrial facilities to meet lease compliance requirements."
+          description: "Warehouse and car park line marking restored to the agreed layout for lease handover."
+        },
+        {
+          slug: "make-good-solutions/office-make-good",
+          name: "Office Make Good",
+          description: "Office strip out, surface repairs, flooring, ceilings and final presentation for commercial lease handover."
         },
         {
           slug: "make-good-solutions/painting",
           name: "Painting",
-          description: "End of lease painting services for commercial and industrial properties across Melbourne."
+          description: "Commercial painting and colour-matched finishes for offices, warehouses and industrial make good projects."
         },
         {
           slug: "make-good-solutions/patching-plastering",
           name: "Patching & Plastering",
-          description: "Professional patching and plastering for commercial make good projects across Melbourne."
+          description: "Fixture holes, wall damage and post-demolition surfaces repaired ready for painting and handover."
         },
         {
           slug: "make-good-solutions/suspended-ceilings",
           name: "Suspended Ceilings",
-          description: "Ceiling tile replacement and grid repairs to restore your commercial space to original condition."
+          description: "Ceiling tile replacement, grid repairs and service coordination to restore commercial ceiling layouts."
         }
       ]
     },
@@ -1866,7 +1891,15 @@ export const services: Service[] = [
       subtitle: "We do makegoods all day, every day.",
       text: "From flooring strip-out to finished surface, we've restored warehouse floors across Melbourne. Get in touch today for a free, no-obligation quote."
     },
-    relatedServices: ["make-good-solutions/flooring-reinstatement", "make-good-solutions/line-marking", "make-good-solutions/painting", "make-good-solutions/patching-plastering", "make-good-solutions/suspended-ceilings"],
+    relatedServices: [
+      "make-good-solutions/end-of-lease-make-good",
+      "make-good-solutions/flooring-reinstatement",
+      "make-good-solutions/line-marking",
+      "make-good-solutions/office-make-good",
+      "make-good-solutions/painting",
+      "make-good-solutions/patching-plastering",
+      "make-good-solutions/suspended-ceilings"
+    ],
     category: "structural",
     published: true
   },
@@ -2217,32 +2250,42 @@ export const services: Service[] = [
     linkedSpotlightBlock: {
       title: "A COMPLETE MAKE GOOD",
       titleHighlight: "SERVICE",
-      subtitle: "We coordinate flooring reinstatement with painting, ceiling replacement and floor restoration to deliver your end-of-lease project on time.",
+      subtitle: "We coordinate the right mix of make good services so your commercial tenancy is ready for end-of-lease handover.",
       cards: [
+        {
+          slug: "make-good-solutions/end-of-lease-make-good",
+          name: "End of Lease Make Good",
+          description: "A coordinated make good service for lease handovers covering strip out, repairs, reinstatement and final presentation."
+        },
         {
           slug: "make-good-solutions/line-marking",
           name: "Line Marking",
-          description: "Professional line marking for car parks, warehouses and industrial facilities to meet lease compliance requirements."
+          description: "Warehouse and car park line marking restored to the agreed layout for lease handover."
+        },
+        {
+          slug: "make-good-solutions/office-make-good",
+          name: "Office Make Good",
+          description: "Office strip out, surface repairs, flooring, ceilings and final presentation for commercial lease handover."
         },
         {
           slug: "make-good-solutions/painting",
           name: "Painting",
-          description: "End of lease painting services for commercial and industrial properties across Melbourne."
+          description: "Commercial painting and colour-matched finishes for offices, warehouses and industrial make good projects."
         },
         {
           slug: "make-good-solutions/patching-plastering",
           name: "Patching & Plastering",
-          description: "Professional patching and plastering for commercial make good projects across Melbourne."
+          description: "Fixture holes, wall damage and post-demolition surfaces repaired ready for painting and handover."
         },
         {
           slug: "make-good-solutions/suspended-ceilings",
           name: "Suspended Ceilings",
-          description: "Ceiling tile replacement and grid repairs to restore your commercial space to original condition."
+          description: "Ceiling tile replacement, grid repairs and service coordination to restore commercial ceiling layouts."
         },
         {
           slug: "make-good-solutions/warehouse-flooring",
           name: "Warehouse Flooring",
-          description: "Complete warehouse floor restoration including concrete repairs, grinding and protective coatings."
+          description: "Warehouse floor restoration including flooring removal, concrete grinding, slab repairs and protective finishes."
         }
       ]
     },
@@ -2259,7 +2302,9 @@ export const services: Service[] = [
       "Lease compliance"
     ],
     relatedServices: [
+      "make-good-solutions/end-of-lease-make-good",
       "make-good-solutions/line-marking",
+      "make-good-solutions/office-make-good",
       "make-good-solutions/painting",
       "make-good-solutions/patching-plastering",
       "make-good-solutions/suspended-ceilings",
@@ -2381,32 +2426,42 @@ export const services: Service[] = [
     linkedSpotlightBlock: {
       title: "A COMPLETE MAKE GOOD",
       titleHighlight: "SERVICE",
-      subtitle: "We coordinate patching and plastering with painting, ceiling replacement and flooring reinstatement to deliver your end-of-lease project on time.",
+      subtitle: "We coordinate the right mix of make good services so your commercial tenancy is ready for end-of-lease handover.",
       cards: [
+        {
+          slug: "make-good-solutions/end-of-lease-make-good",
+          name: "End of Lease Make Good",
+          description: "A coordinated make good service for lease handovers covering strip out, repairs, reinstatement and final presentation."
+        },
         {
           slug: "make-good-solutions/flooring-reinstatement",
           name: "Flooring Reinstatement",
-          description: "Professional flooring reinstatement for lease handovers and make good compliance across Melbourne."
+          description: "Carpet tiles, vinyl, epoxy and timber flooring reinstated to original specification for lease handover."
         },
         {
           slug: "make-good-solutions/line-marking",
           name: "Line Marking",
-          description: "Professional line marking for car parks, warehouses and industrial facilities to meet lease compliance requirements."
+          description: "Warehouse and car park line marking restored to the agreed layout for lease handover."
+        },
+        {
+          slug: "make-good-solutions/office-make-good",
+          name: "Office Make Good",
+          description: "Office strip out, surface repairs, flooring, ceilings and final presentation for commercial lease handover."
         },
         {
           slug: "make-good-solutions/painting",
           name: "Painting",
-          description: "End of lease painting services for commercial and industrial properties across Melbourne."
+          description: "Commercial painting and colour-matched finishes for offices, warehouses and industrial make good projects."
         },
         {
           slug: "make-good-solutions/suspended-ceilings",
           name: "Suspended Ceilings",
-          description: "Ceiling tile replacement and grid repairs to restore your commercial space to original condition."
+          description: "Ceiling tile replacement, grid repairs and service coordination to restore commercial ceiling layouts."
         },
         {
           slug: "make-good-solutions/warehouse-flooring",
           name: "Warehouse Flooring",
-          description: "Complete warehouse floor restoration including concrete repairs, grinding and protective coatings."
+          description: "Warehouse floor restoration including flooring removal, concrete grinding, slab repairs and protective finishes."
         }
       ]
     },
@@ -2421,8 +2476,10 @@ export const services: Service[] = [
       "Paint-ready finish"
     ],
     relatedServices: [
+      "make-good-solutions/end-of-lease-make-good",
       "make-good-solutions/flooring-reinstatement",
       "make-good-solutions/line-marking",
+      "make-good-solutions/office-make-good",
       "make-good-solutions/painting",
       "make-good-solutions/suspended-ceilings",
       "make-good-solutions/warehouse-flooring"
@@ -2460,16 +2517,16 @@ export const services: Service[] = [
     name: "End of Lease Make Good",
     slug: "make-good-solutions/end-of-lease-make-good",
     title: "End of Lease Make Good",
-    metaTitle: "End of Lease Make Good Melbourne | Commercial Lease Handover",
+    metaTitle: "End of Lease Make Good Melbourne | Make Good, BETTER.",
     description: "When your commercial lease is ending, Make Good Melbourne coordinates the works needed to return the tenancy to the agreed handover condition. We handle strip out, repairs, reinstatement and trade coordination for offices, warehouses, showrooms and commercial properties across Melbourne.",
     metaDescription: "End of lease make good services in Melbourne for offices, warehouses and commercial tenancies. Strip out, repairs, painting, flooring and handover works.",
     heroText: "When your commercial lease is ending, Make Good Melbourne coordinates the works needed to return the tenancy to the agreed handover condition. We handle strip out, repairs, reinstatement and trade coordination for offices, warehouses, showrooms and commercial properties across Melbourne. One scope, one team, ready for inspection.",
     ogImage: "/og/end-of-lease-make-good.jpg",
-    heroImage: emptyWarehouseImage,
-    heroImageAlt: "Empty commercial warehouse tenancy cleared and prepared for end of lease make good handover in Melbourne",
+    heroImage: endOfLeaseMakeGoodHeroImage,
+    heroImageAlt: "Large empty commercial tenancy with exposed ceiling services and polished floor prepared for end of lease make good handover in Melbourne",
     heroImageTitle: "Makegood Melbourne - End of Lease Make Good Service",
-    secondaryImage: manufacturingFacilityImage,
-    secondaryImageAlt: "Commercial tenancy before end of lease make good works begin in Melbourne",
+    secondaryImage: endOfLeaseMakeGoodScopeImage,
+    secondaryImageAlt: "Large empty commercial floor plate with exposed ceiling services ready for make good inspection in Melbourne",
     skipAboutSection: true,
     trustBadges: ["Licensed & Insured", "Fixed-Price Quotes", "Full Trade Coordination", "Handover Ready"],
     benefits: [
@@ -2519,8 +2576,8 @@ export const services: Service[] = [
       {
         title: "MAKE GOOD WORKS, DONE PROPERLY BEFORE HANDOVER",
         description: "End of lease make good works are rarely a single-trade job. A proper handover can involve demolition, removal of fixtures, patching, painting, flooring reinstatement, ceiling repairs, warehouse floor restoration, line marking, rubbish removal and final presentation of the tenancy.\n\nA tenancy can look serviceable day to day, but lease end inspections often reveal the amount of work needed to return the site to its agreed condition. Fitout items may need to be removed, services made safe, walls patched, floors repaired, ceilings reinstated and warehouse slabs restored where racking, machinery or partitions have been fixed down.\n\nThese issues become harder to manage when they are dealt with separately. A painter cannot properly finish damaged walls until redundant fixtures are removed. Flooring cannot be reinstated until the strip out is complete. Warehouse slab repairs need to happen after anchors, bolts and equipment have been taken out. The order of works matters, and our role is to bring the full scope together so the site can be handed back in a controlled and practical way.",
-        image: manufacturingFacilityImage,
-        imageAlt: "Commercial tenancy before end of lease make good works begin in Melbourne",
+        image: endOfLeaseMakeGoodScopeImage,
+        imageAlt: "Large empty commercial floor plate with exposed ceiling services ready for make good inspection in Melbourne",
         imageLeft: true
       },
       {
@@ -2540,17 +2597,69 @@ export const services: Service[] = [
       { question: "What is included in an end of lease make good?", answer: "An end of lease make good can include strip out, removal of tenant fixtures, patching, plastering, painting, flooring reinstatement, ceiling repairs, warehouse floor restoration, line marking, waste removal and other works needed to return the premises to the agreed handover condition." },
       { question: "Do you work from the lease make good clause?", answer: "Yes. We can review the lease make good requirements, site condition and property manager notes to help define the practical scope. The final scope depends on the lease, the condition of the tenancy and the level of reinstatement requested for handover." },
       { question: "Can you manage multiple trades?", answer: "Yes. Most make good projects involve several trades. We coordinate the order of works so strip out, repairs, painting, flooring, ceiling works and other trade items are handled as one project rather than as disconnected jobs." },
+      { question: "Can you coordinate with our own trades?", answer: "Yes. If you already have a preferred painter, electrician or other trade, we can coordinate with them and handle the remaining make good scope. The aim is to keep the programme practical, clear and ready for handover." },
       { question: "Do you complete office and warehouse make goods?", answer: "Yes. We complete make good works for offices, warehouses, showrooms, retail premises and mixed commercial sites across Melbourne. Warehouse projects often include racking removal, slab repair, anchor removal and line marking work." },
       { question: "How early should we book make good works?", answer: "It is best to allow enough time before the lease handover date for inspection, quoting, approval, access coordination and the works themselves. Short timeframes can still be assessed, but earlier planning gives more control over cost and scheduling." },
       { question: "Can you help if the property manager has already inspected the site?", answer: "Yes. If you have inspection notes, a defect list or photos from the property manager, we can use them to prepare a practical make good scope and quote." },
-      { question: "Can you quote from photos or a walkthrough video?", answer: "Photos and walkthrough videos are useful for a first review. For larger tenancies, warehouses or sites with several trades involved, a site inspection is usually needed before the final quote is confirmed." }
+      { question: "Can you quote from photos or a walkthrough video?", answer: "Photos and walkthrough videos are useful for a first review. For larger tenancies, warehouses or sites with several trades involved, a site inspection is usually needed before the final quote is confirmed." },
+      { question: "What information helps with an end of lease make good quote?", answer: "Helpful information includes the site address, lease end date, floor area, access rules, photos, walkthrough videos, lease notes and any property manager comments. We can then advise whether a site inspection is needed before confirming the quote." }
     ],
+    linkedSpotlightBlock: {
+      title: "A COMPLETE MAKE GOOD",
+      titleHighlight: "SERVICE",
+      subtitle: "We coordinate the right mix of make good services so your commercial tenancy is ready for end-of-lease handover.",
+      cards: [
+        {
+          slug: "make-good-solutions/flooring-reinstatement",
+          name: "Flooring Reinstatement",
+          description: "Carpet tiles, vinyl, epoxy and timber flooring reinstated to original specification for lease handover."
+        },
+        {
+          slug: "make-good-solutions/line-marking",
+          name: "Line Marking",
+          description: "Warehouse and car park line marking restored to the agreed layout for lease handover."
+        },
+        {
+          slug: "make-good-solutions/office-make-good",
+          name: "Office Make Good",
+          description: "Office strip out, surface repairs, flooring, ceilings and final presentation for commercial lease handover."
+        },
+        {
+          slug: "make-good-solutions/painting",
+          name: "Painting",
+          description: "Commercial painting and colour-matched finishes for offices, warehouses and industrial make good projects."
+        },
+        {
+          slug: "make-good-solutions/patching-plastering",
+          name: "Patching & Plastering",
+          description: "Fixture holes, wall damage and post-demolition surfaces repaired ready for painting and handover."
+        },
+        {
+          slug: "make-good-solutions/suspended-ceilings",
+          name: "Suspended Ceilings",
+          description: "Ceiling tile replacement, grid repairs and service coordination to restore commercial ceiling layouts."
+        },
+        {
+          slug: "make-good-solutions/warehouse-flooring",
+          name: "Warehouse Flooring",
+          description: "Warehouse floor restoration including flooring removal, concrete grinding, slab repairs and protective finishes."
+        }
+      ]
+    },
     ctaBlock: {
       title: "Need Your Tenancy Ready for Handover?",
       subtitle: "We do make goods all day, every day.",
       text: "Send us your lease end date, site address, photos and any property manager notes. We will review the scope and prepare a practical make good quote for your Melbourne commercial tenancy."
     },
-    relatedServices: ["make-good-solutions/flooring-reinstatement", "make-good-solutions/painting", "make-good-solutions/patching-plastering"],
+    relatedServices: [
+      "make-good-solutions/flooring-reinstatement",
+      "make-good-solutions/line-marking",
+      "make-good-solutions/office-make-good",
+      "make-good-solutions/painting",
+      "make-good-solutions/patching-plastering",
+      "make-good-solutions/suspended-ceilings",
+      "make-good-solutions/warehouse-flooring"
+    ],
     category: "make-good",
     published: true
   },
@@ -2643,12 +2752,62 @@ export const services: Service[] = [
       { question: "Do you work in occupied buildings?", answer: "Yes. Many office make good projects are completed in active commercial buildings. We can plan the work around access requirements, neighbouring tenants and building rules." },
       { question: "How long does an office make good take?", answer: "Timing depends on the office size, amount of strip out, required repairs and approval process. A small office may be completed quickly, while larger fitouts or multi-floor tenancies need more planning and staged works." }
     ],
+    linkedSpotlightBlock: {
+      title: "A COMPLETE MAKE GOOD",
+      titleHighlight: "SERVICE",
+      subtitle: "We coordinate the right mix of make good services so your commercial tenancy is ready for end-of-lease handover.",
+      cards: [
+        {
+          slug: "make-good-solutions/end-of-lease-make-good",
+          name: "End of Lease Make Good",
+          description: "A coordinated make good service for lease handovers covering strip out, repairs, reinstatement and final presentation."
+        },
+        {
+          slug: "make-good-solutions/flooring-reinstatement",
+          name: "Flooring Reinstatement",
+          description: "Carpet tiles, vinyl, epoxy and timber flooring reinstated to original specification for lease handover."
+        },
+        {
+          slug: "make-good-solutions/line-marking",
+          name: "Line Marking",
+          description: "Warehouse and car park line marking restored to the agreed layout for lease handover."
+        },
+        {
+          slug: "make-good-solutions/painting",
+          name: "Painting",
+          description: "Commercial painting and colour-matched finishes for offices, warehouses and industrial make good projects."
+        },
+        {
+          slug: "make-good-solutions/patching-plastering",
+          name: "Patching & Plastering",
+          description: "Fixture holes, wall damage and post-demolition surfaces repaired ready for painting and handover."
+        },
+        {
+          slug: "make-good-solutions/suspended-ceilings",
+          name: "Suspended Ceilings",
+          description: "Ceiling tile replacement, grid repairs and service coordination to restore commercial ceiling layouts."
+        },
+        {
+          slug: "make-good-solutions/warehouse-flooring",
+          name: "Warehouse Flooring",
+          description: "Warehouse floor restoration including flooring removal, concrete grinding, slab repairs and protective finishes."
+        }
+      ]
+    },
     ctaBlock: {
       title: "Need Your Office Ready for Lease Handover?",
       subtitle: "We do make goods all day, every day.",
       text: "Send us the office address, lease end timing, photos and any make good notes you have. We will assess the scope and provide a clear quote for the office make good works."
     },
-    relatedServices: ["make-good-solutions/flooring-reinstatement", "make-good-solutions/painting", "make-good-solutions/suspended-ceilings"],
+    relatedServices: [
+      "make-good-solutions/end-of-lease-make-good",
+      "make-good-solutions/flooring-reinstatement",
+      "make-good-solutions/line-marking",
+      "make-good-solutions/painting",
+      "make-good-solutions/patching-plastering",
+      "make-good-solutions/suspended-ceilings",
+      "make-good-solutions/warehouse-flooring"
+    ],
     category: "make-good",
     published: true
   },
