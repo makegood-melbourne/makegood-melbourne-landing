@@ -2688,10 +2688,6 @@ export const services: Service[] = [
         imageAlt: "Exposed ceiling services in a stripped out Melbourne commercial office tenancy ready for make good sequencing",
         imageTitle: "Office Strip Out Melbourne Exposed Services Sequencing",
         imageLeft: true
-      },
-      {
-        title: "OFFICE DEFIT, REMOVAL AND PREPARATION",
-        description: "Make Good Melbourne provides office strip out services as a standalone scope or as part of a broader make good project. We can remove partition walls, workstations, built-in joinery, meeting room fitouts, floor finishes, signage, loose fixtures and nominated tenancy alterations.\n\nWhere required, we coordinate make safe works, waste removal and preparation for patching, painting, flooring or ceiling reinstatement, with the goal of leaving the tenancy ready for the next trade stage.\n\nBecause we complete make good works every day, we understand what the next trade needs after the strip out. We remove the fitout with the handover outcome in mind, not just the demolition task in front of us. That makes a difference on office projects where the strip out, wall repairs, painting, flooring and ceiling works need to connect properly. Our team can complete the strip out alone or manage the full make good scope from start to finish."
       }
     ],
     process: [
@@ -2703,13 +2699,16 @@ export const services: Service[] = [
     ],
     processAfterScope: true,
     faqs: [
-      { question: "What is included in an office strip out?", answer: "An office strip out can include removal of partitions, workstations, joinery, fixtures, signage, floor finishes, ceiling alterations, loose items and nominated tenancy fitout. The exact scope depends on the lease requirements and the next use of the space." },
-      { question: "Is office strip out the same as office make good?", answer: "No. Office strip out is usually one stage of the make good process. Make good may also include patching, painting, flooring reinstatement, ceiling repairs and final handover preparation after the strip out is complete." },
-      { question: "Can you remove office partitions?", answer: "Yes. We remove plasterboard, glazed and modular partitions, meeting rooms and office layout alterations, and we prepare the remaining surfaces for repair where required." },
-      { question: "Can you remove carpet tiles and floor finishes?", answer: "Yes. We can remove carpet tiles, vinyl, timber-look flooring, adhesives and selected floor finishes as part of the strip out or flooring reinstatement scope." },
-      { question: "Do you handle waste removal?", answer: "Yes. We can manage loading and disposal of strip out material according to the site requirements and project scope." },
-      { question: "Can you work after hours in office buildings?", answer: "Yes, where permitted. We can plan works around building rules, access requirements and noise restrictions." },
-      { question: "Can you also complete the make good after the strip out?", answer: "Yes. We can complete patching, painting, flooring, ceiling repairs and final handover works after the strip out." }
+      { question: "What is an office strip out?", answer: "An office strip out is the removal of tenant-installed office fitout so the tenancy can be repaired, reinstated or handed back. It can include partitions, meeting rooms, workstations, joinery, floor finishes, ceiling changes, signage and redundant fixtures." },
+      { question: "What is included in an office strip out?", answer: "A typical office strip out includes removing plasterboard or glazed partitions, built-in joinery, cupboards, counters, shelving, selected loose items, signage, floor finishes, adhesives and nominated ceiling alterations. We confirm the scope from your lease, handover notes and site inspection." },
+      { question: "Is an office strip out the same as an office defit or make good?", answer: "Office strip out and office defit are often used for the removal stage. Make good is broader. It can include the strip out plus patching, painting, flooring reinstatement, ceiling repairs, service certification and final handover preparation." },
+      { question: "Does an office strip out include make good repairs?", answer: "It can. Some projects only need fitout removal. Others need patching, painting, flooring, ceiling repairs and other reinstatement works after the office has been stripped out. We price the strip out and make good scope together when that is the better handover path." },
+      { question: "How long does an office strip out take?", answer: "Small office strip outs can take a few days. Larger tenancies, multi-level sites, heavy flooring removal, after-hours restrictions or tight lift access can push the programme to one or more weeks. We confirm timing after the walk through and access review." },
+      { question: "What affects the cost of an office strip out in Melbourne?", answer: "Cost is driven by floor area, the amount of fitout being removed, flooring and adhesive removal, services make safe requirements, lift and loading dock access, waste volume, after-hours work and the repairs needed for handover." },
+      { question: "Do you coordinate lift bookings, loading docks and building management requirements?", answer: "Yes. Melbourne office strip outs often rely on lift bookings, loading dock windows, induction rules, noise controls and after-hours access. We plan these items before works start so the strip out runs properly inside the building rules." },
+      { question: "Can office strip out work be completed after hours?", answer: "Yes, where the building permits it. After-hours work is common in occupied offices, CBD buildings and retail-adjacent spaces. We allow for access, noise rules, security and waste movements in the programme." },
+      { question: "What should we remove before the office strip out starts?", answer: "Remove personal items, confidential documents, computers, business equipment, retained furniture and anything your team wants to keep. It also helps to send through the lease make good clause, landlord notes, floor plans and access requirements before the site visit." },
+      { question: "What happens before final handback inspection?", answer: "After the strip out, we check the tenancy against the agreed scope and prepare it for the next stage. That may include patching, painting, flooring, ceiling repairs, rubbish removal, photos, certificates and handover records where required." }
     ],
     ctaBlock: {
       title: "Need an Office Stripped Out for Handover?",
