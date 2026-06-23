@@ -54,7 +54,8 @@ import flooringReinstatementProcessImage from "@/assets/services/flooring-reinst
 import patchingPlasteringHeroImage from "@/assets/services/patching-plastering-commercial-office-walls-ceiling-melbourne.jpeg";
 import patchingPlasteringFeaturedImage from "@/assets/services/patching-plastering-tools-bucket.jpg";
 import officeCeilingTilesImage from "@/assets/services/commercial-office-ceiling-tiles-led-panels-melbourne.jpeg";
-import officeStripOutHeroImage from "@/assets/services/office-strip-out-melbourne-commercial-defit.webp";
+import officeStripOutHeroImage from "@/assets/services/office-strip-out-melbourne-empty-commercial-tenancy.webp";
+import officeStripOutSequencingImage from "@/assets/services/office-strip-out-melbourne-exposed-services-sequencing.webp";
 
 export interface FeaturedSection {
   title: string;
@@ -143,6 +144,7 @@ export interface Service {
   ogImage?: string; // Public URL for Open Graph image (e.g., "/og/service-name.jpg")
   secondaryImage?: string;
   secondaryImageAlt?: string;
+  secondaryImageTitle?: string;
   scopeTitle?: string; // Custom title for the scope section (defaults to "{name} Scope")
   scopeBody?: string; // Custom body copy for the scope section (overrides description)
   trustBadges?: (string | TrustBadge)[];
@@ -2628,10 +2630,11 @@ export const services: Service[] = [
     heroText: "Commercial office strip out and defit works for lease exits, make good projects and tenancy handovers across Melbourne. We remove redundant fitout, partitions, workstations, floor finishes and fixtures, then prepare the office for make safe works, repair, reinstatement or the next stage.",
     ogImage: "/og/office-strip-out.jpg",
     heroImage: officeStripOutHeroImage,
-    heroImageAlt: "Empty commercial office tenancy with exposed ceiling services prepared for office strip out and defit works in Melbourne",
-    heroImageTitle: "Office Strip Out Melbourne Commercial Defit",
-    secondaryImage: tileFlooringRemovalImage,
-    secondaryImageAlt: "Commercial floor finish removal during an office strip out in Melbourne",
+    heroImageAlt: "Empty commercial office tenancy prepared for office strip out, defit and make good works in Melbourne",
+    heroImageTitle: "Office Strip Out Melbourne Empty Commercial Tenancy",
+    secondaryImage: officeStripOutSequencingImage,
+    secondaryImageAlt: "Exposed ceiling services in a stripped out Melbourne commercial office tenancy ready for make good sequencing",
+    secondaryImageTitle: "Office Strip Out Melbourne Exposed Services Sequencing",
     skipAboutSection: true,
     trustBadges: ["Licensed & Insured", "Fixed-Price Quotes", "Make Safe Coordination", "Waste Removal Included"],
     benefits: [
@@ -2679,10 +2682,11 @@ export const services: Service[] = [
     capabilitiesSubtitle: "Our office strip out service removes the redundant fitout while preparing the tenancy for repair, reinstatement and handover.",
     featuredSections: [
       {
-        title: "STRIP OUT WORKS THAT SET UP THE MAKE GOOD",
-        description: "An office strip out is the first stage of many lease end make good projects. Partitions, workstations, joinery, floor finishes, ceiling alterations, signage and redundant fixtures need to be removed before the tenancy can be repaired and reinstated.\n\nA rushed office strip out can damage walls, ceilings, floors, door frames, services and common areas. It can also leave behind adhesive, anchors, redundant fixtures and unfinished surfaces that slow down the make good works that follow. Office buildings also bring practical constraints. Lifts, loading docks, after-hours access, noise limits, protection of common areas and disposal arrangements all need to be planned before work begins.\n\nMake Good Melbourne completes office strip out works across Melbourne for commercial tenants, landlords, property managers and builders. We focus on controlled removal, practical sequencing and preparing the site for the next stage, whether that is make good, refurbishment, re-leasing or base building works. A good strip out removes what needs to go while protecting the surfaces and building elements that need to remain.",
-        image: tileFlooringRemovalImage,
-        imageAlt: "Commercial floor finish removal during an office strip out in Melbourne",
+        title: "STRIPPED OUT. READY TO HAND BACK.",
+        description: "The strip out is where the make good begins. Get the sequencing wrong and you are handing damaged walls, torn floors and knocked ceiling grids to the trades that follow. We plan the order of works before anyone sets foot on site, so patching, painting and flooring are starting from the right position, not cleaning up after the strip out.\n\nWe work in active commercial buildings across Melbourne every day. Lifts booked, loading docks coordinated, after hours access arranged, building management in the loop. The office comes out properly and the tenancy gets handed back in a condition that is actually ready for inspection.",
+        image: officeStripOutSequencingImage,
+        imageAlt: "Exposed ceiling services in a stripped out Melbourne commercial office tenancy ready for make good sequencing",
+        imageTitle: "Office Strip Out Melbourne Exposed Services Sequencing",
         imageLeft: true
       },
       {

@@ -288,6 +288,7 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
                     <img 
                       src={resolveImageSrc(section.image)} 
                       alt={section.imageAlt || `${service.name} professional services Melbourne`}
+                      title={section.imageTitle}
                       className="aspect-[4/3] w-full object-cover rounded-lg"
                       style={{ objectPosition: section.imagePosition === 'left' ? 'left center' : section.imagePosition === 'right' ? 'right center' : 'center' }}
                       width={800}
@@ -410,6 +411,7 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
                   <img 
                     src={resolveImageSrc(service.secondaryImage)} 
                     alt={service.secondaryImageAlt || `${service.name} Melbourne - professional commercial services`}
+                    title={service.secondaryImageTitle}
                     className="aspect-[4/3] w-full object-cover rounded-lg"
                     style={{ objectPosition: service.slug === 'epoxy-flooring' ? '100% center' : 'center' }}
                     width={800}
