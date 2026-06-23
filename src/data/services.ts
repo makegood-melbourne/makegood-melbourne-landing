@@ -54,7 +54,7 @@ import flooringReinstatementProcessImage from "@/assets/services/flooring-reinst
 import patchingPlasteringHeroImage from "@/assets/services/patching-plastering-commercial-office-walls-ceiling-melbourne.jpeg";
 import patchingPlasteringFeaturedImage from "@/assets/services/patching-plastering-tools-bucket.jpg";
 import officeCeilingTilesImage from "@/assets/services/commercial-office-ceiling-tiles-led-panels-melbourne.jpeg";
-import officeStripOutHeroImage from "@/assets/services/commercial-industrial-strip-out-melbourne.jpg";
+import officeStripOutHeroImage from "@/assets/services/office-strip-out-melbourne-commercial-defit.webp";
 
 export interface FeaturedSection {
   title: string;
@@ -2622,14 +2622,14 @@ export const services: Service[] = [
     name: "Office Strip Out",
     slug: "strip-out-solutions/office-strip-out",
     title: "Office Strip Out",
-    metaTitle: "Office Strip Out Melbourne | Commercial Office Defit & Make Good",
-    description: "Commercial office strip out and defit works for lease exits, make good projects and tenancy handovers. We remove redundant fitout and prepare the office for repair, reinstatement or the next stage of works.",
-    metaDescription: "Office strip out services in Melbourne for commercial lease exits, defits and make good works. Partitions, joinery, flooring, ceilings and waste removal.",
-    heroText: "Commercial office strip out and defit works for lease exits, make good projects and tenancy handovers across Melbourne. We remove redundant fitout and prepare the office for repair, reinstatement or the next stage of works.",
+    metaTitle: "Office Strip Out Melbourne | Make Good, BETTER.",
+    description: "Commercial office strip out and defit works for lease exits, make good projects and tenancy handovers across Melbourne. We remove partitions, workstations, flooring and fixtures before repair, reinstatement or the next stage of works.",
+    metaDescription: "Office strip out Melbourne services for commercial lease exits, defits and make good works. Partition, workstation, flooring, ceiling and fixture removal.",
+    heroText: "Commercial office strip out and defit works for lease exits, make good projects and tenancy handovers across Melbourne. We remove redundant fitout, partitions, workstations, floor finishes and fixtures, then prepare the office for make safe works, repair, reinstatement or the next stage.",
     ogImage: "/og/office-strip-out.jpg",
     heroImage: officeStripOutHeroImage,
-    heroImageAlt: "Commercial office under strip out with partitions and fitout removed ahead of make good works in Melbourne",
-    heroImageTitle: "Makegood Melbourne - Office Strip Out Service",
+    heroImageAlt: "Empty commercial office tenancy with exposed ceiling services prepared for office strip out and defit works in Melbourne",
+    heroImageTitle: "Office Strip Out Melbourne Commercial Defit",
     secondaryImage: tileFlooringRemovalImage,
     secondaryImageAlt: "Commercial floor finish removal during an office strip out in Melbourne",
     skipAboutSection: true,
