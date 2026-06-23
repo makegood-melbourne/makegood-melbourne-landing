@@ -605,7 +605,7 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
                   {section.title}
                 </h2>
                 
-                <div className={`grid lg:grid-cols-2 gap-12 items-center`}>
+                <div className={`grid lg:grid-cols-2 gap-12 items-start`}>
                   <div className={index % 2 === 0 ? 'lg:order-2' : ''}>
                     {section.image ? (
                       <img 
