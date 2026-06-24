@@ -2582,11 +2582,11 @@ export const services: Service[] = [
       }
     ],
     process: [
-      { step: "Site Review", description: "We inspect the tenancy, review the likely make good scope and identify the practical order of works." },
-      { step: "Scope and Quote", description: "We prepare a clear scope covering the trades, access requirements, site constraints and handover timing." },
-      { step: "Strip Out and Preparation", description: "Redundant fitout, fixtures or warehouse items are removed first so repair and reinstatement works can proceed properly." },
-      { step: "Restoration Works", description: "We complete patching, painting, flooring, slab repairs, ceiling works, line marking and related trade works." },
-      { step: "Handover Readiness", description: "We work through final items and prepare the site for inspection and return of the premises." }
+      { step: "Site Walkthrough", description: "We inspect the tenancy, review the likely make good scope and identify the practical order of works." },
+      { step: "Scope & Quotation", description: "We prepare a clear scope covering the trades, access requirements, site constraints and handover timing." },
+      { step: "Strip Out Works", description: "Redundant fitout, fixtures or warehouse items are removed first so repair and reinstatement works can proceed properly." },
+      { step: "Make Good Works", description: "We complete patching, painting, flooring, slab repairs, ceiling works, line marking and related trade works." },
+      { step: "Clean Handover", description: "We work through final items and prepare the site for inspection and return of the premises." }
     ],
     processAfterScope: true,
     faqs: [
