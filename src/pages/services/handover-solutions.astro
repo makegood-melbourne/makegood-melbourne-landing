@@ -1,0 +1,48 @@
+---
+// Section Landing Page: Handover Solutions
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Navigation from '../../components/Navigation';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import SectionLandingTemplate from '../../page-components/SectionLandingTemplate';
+import CtaBlock from '../../components/CtaBlock.astro';
+import Footer from '../../components/Footer';
+import { getSectionLandingBySlug } from '../../data/sectionLanding';
+import handoverHero from '../../assets/services/commercial-industrial-handover-ready-warehouse-melbourne.webp';
+import handoverHeroMobile from '../../assets/services/commercial-industrial-handover-ready-warehouse-melbourne-mobile.webp';
+const data = getSectionLandingBySlug('handover-solutions');
+if (!data) {
+  return Astro.redirect('/services/');
+}
+---
+<BaseLayout
+  title={data.metaTitle}
+  description={data.metaDescription}
+  ogImage={data.ogImage || "/og-default.jpg"}
+  canonicalUrl="https://makegood.melbourne/services/handover-solutions/"
+>
+  <link slot="head" rel="preload" as="image" href={handoverHeroMobile.src} fetchpriority="high" media="(max-width: 1023px)" />
+  <link slot="head" rel="preload" as="image" href={handoverHero.src} fetchpriority="high" media="(min-width: 1024px)" />
+  <div class="min-h-screen flex flex-col bg-background">
+    <!-- Skip to Content Link for Accessibility -->
+    <a
+      href="#main-content"
+      class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:bg-primary focus:text-primary-foreground focus:rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
+    >
+      Skip to main content
+    </a>
+
+    <Navigation client:idle />
+
+    <!-- Breadcrumbs -->
+    <div class="bg-secondary pt-20">
+      <Breadcrumbs path="/services/handover-solutions/" />
+    </div>
+
+    <main id="main-content" class="flex-1">
+      <SectionLandingTemplate data={data} client:idle />
+      <CtaBlock bg="bg-background" />
+    </main>
+
+    <Footer client:idle />
+  </div>
+</BaseLayout>

@@ -7,6 +7,8 @@ import stripOutHero from "@/assets/services/commercial-industrial-strip-out-melb
 import stripOutHeroMobile from "@/assets/services/commercial-industrial-strip-out-melbourne-mobile.jpg";
 import makeGoodHero from "@/assets/services/melbourne-warehouse-make-good-hero.jpg";
 import makeGoodHeroMobile from "@/assets/services/melbourne-warehouse-make-good-hero-mobile.jpg";
+import commercialIndustrialHandoverHero from "@/assets/services/commercial-industrial-handover-ready-warehouse-melbourne.webp";
+import commercialIndustrialHandoverHeroMobile from "@/assets/services/commercial-industrial-handover-ready-warehouse-melbourne-mobile.webp";
 import commercialFloorSweepingImage from "@/assets/services/commercial-floor-sweeping-concrete-melbourne.jpeg";
 import commercialDemolitionHeroImage from "@/assets/services/commercial-demolition-melbourne-hero.jpg";
 import flooringReinstatementHeroImage from "@/assets/services/flooring-reinstatement-hero.webp";
@@ -462,6 +464,143 @@ export const sectionLandingPages: SectionLandingData[] = [
     ctaTitle: "NEED A COMMERCIAL OR INDUSTRIAL MAKE GOOD?",
     ctaSubtitle: "We do Make Goods all day, every day.",
     ctaText: "Send through the property address, lease timing, photos and any handover notes. We will review the make good scope, confirm the practical order of works and provide a fixed-price quote."
+  },
+  {
+    slug: "handover-solutions",
+    metaTitle: "Handover Solutions Melbourne | End of Lease Handover Services",
+    metaDescription: "Commercial handover solutions in Melbourne for end-of-lease cleaning, relocation, final inspection preparation and key handback. One coordinated team for lease exits. Free quotes.",
+    ogImage: "/og/handover-solutions.jpg",
+
+    title: "HANDOVER SOLUTIONS MELBOURNE",
+    titleHighlight: "MELBOURNE",
+    tagline: "The final stage of a lease exit needs more than a quick clean. We coordinate end-of-lease cleaning, relocation support, waste removal, final presentation and inspection preparation so commercial and industrial tenants can hand back the keys without loose ends.",
+    trustBadges: [
+      { icon: "shield", title: "Licensed & Insured" },
+      { icon: "clipboard", title: "Lease Handover Ready" },
+      { icon: "dollar", title: "Fixed-Price Quotes" },
+      { icon: "compass", title: "Cleaning + Relocation Coordination" }
+    ],
+    heroImage: commercialIndustrialHandoverHero,
+    heroImageMobile: commercialIndustrialHandoverHeroMobile,
+    heroImageAlt: "Clean empty commercial warehouse ready for lease handover in Melbourne",
+    heroImageTitle: "Makegood Melbourne - Commercial and Industrial Handover Solutions",
+
+    aboutTitlePrefix: "THE FINAL STAGE OF",
+    aboutTitleHighlight: "A COMPLETE HANDOVER",
+    aboutContentLeft: [
+      "A handover is where all the earlier work needs to come together. The strip out may be done, repairs complete and the new site ready, but the old premises still needs to be cleaned, cleared, presented and prepared for inspection.",
+      "That final stage often has more moving parts than expected. Industrial floor cleaning, post-strip-out cleaning, waste removal, equipment movement, loading dock coordination, final touch-ups and timing around the landlord or property manager inspection all need to land in the right order."
+    ],
+    aboutContentRight: [
+      "We handle handover works for offices, warehouses, factories, retail spaces and mixed commercial sites across Melbourne. The scope changes by property type, but the aim is the same. Get the tenancy ready for key handback without cleaning, relocation and inspection items scattered across three different contractors.",
+      "Where the handover requires more than cleaning, we can coordinate end-of-lease cleaning with make good works, strip out support and waste removal as one managed scope."
+    ],
+
+    serviceSlugs: [
+      "handover-solutions/end-of-lease-cleaning",
+      "handover-solutions/end-of-lease-relocation"
+    ],
+    carouselTitle: "OUR HANDOVER SERVICES",
+    carouselTitleHighlight: "SERVICES",
+    carouselDescription: "Commercial and industrial handover support for cleaning, relocation, presentation and key handback across Melbourne.",
+    useGrid: true,
+
+    scopeTitle: "HANDOVER WORKS",
+    scopeTitleHighlight: "WORKS",
+    scopeSubtitle: "A practical handover scope brings cleaning, clearing, relocation and inspection preparation into one coordinated programme.",
+    scopeRows: [
+      {
+        scope: "End-of-lease cleaning",
+        worksIncluded: "Heavy-duty cleaning, warehouse floor scrubbing, pressure washing, amenities, offices, loading docks and final presentation.",
+        link: "/services/handover-solutions/end-of-lease-cleaning/",
+        linkLabel: "View end-of-lease cleaning"
+      },
+      {
+        scope: "Industrial floor cleaning",
+        worksIncluded: "Ride-on scrubbing, degreasing, tyre mark removal, concrete cleaning and warehouse floor presentation for inspection.",
+        link: "/services/handover-solutions/end-of-lease-cleaning/",
+        linkLabel: "View floor cleaning scope"
+      },
+      {
+        scope: "Relocation and load-out",
+        worksIncluded: "Equipment movement, racking transport, office relocation support, loading coordination and optional delivery to the new site.",
+        link: "/services/handover-solutions/end-of-lease-relocation/",
+        linkLabel: "View relocation support"
+      },
+      {
+        scope: "Waste removal and site clearing",
+        worksIncluded: "Skip coordination, large item removal, scrap handling, post-strip-out waste and final site clearing.",
+        link: "/services/handover-solutions/end-of-lease-cleaning/",
+        linkLabel: "View cleaning and clearing"
+      },
+      {
+        scope: "Inspection preparation",
+        worksIncluded: "Final presentation, touch-ups and handover readiness for landlord or property manager inspection.",
+        link: "/services/handover-solutions/end-of-lease-cleaning/",
+        linkLabel: "View inspection preparation"
+      },
+      {
+        scope: "Make good coordination",
+        worksIncluded: "Patching, painting, floor reinstatement, ceiling repairs and trade works where the handover requires more than cleaning.",
+        link: "/services/make-good-solutions/",
+        linkLabel: "View make good solutions"
+      }
+    ],
+
+    propertyTypesTitle: "HANDOVER PROPERTY TYPES",
+    propertyTypesTitleHighlight: "PROPERTY TYPES",
+    propertyTypesSubtitle: "We prepare commercial and industrial sites across Melbourne for landlord inspection and key handback.",
+    propertyTypes: [
+      { title: "Office", description: "Final clean, workstation and furniture removal support, amenities, kitchens, windows, floor presentation and inspection preparation." },
+      { title: "Warehouse", description: "Floor cleaning, loading dock cleaning, racking-related cleanup, waste removal, concrete presentation and final access coordination." },
+      { title: "Factory", description: "Equipment-zone cleanup, floor degreasing, waste removal, industrial cleaning and coordination around machinery relocation or make good works." },
+      { title: "Retail", description: "Back-of-house cleaning, display fixture removal support, floor presentation, signage-related cleanup and centre access requirements." },
+      { title: "Medical Tenancy", description: "Treatment room cleaning, cabinetry and waste coordination, flooring presentation and handover preparation around sensitive tenancy conditions." },
+      { title: "Mixed Commercial", description: "Cleaning, relocation, waste, repairs and final presentation coordinated across sites with office, warehouse and trade areas in one tenancy." }
+    ],
+
+    processTitle: "A CLEAR HANDOVER PROCESS",
+    processSubtitle: "We sequence the final works so the site is clean, cleared and ready for inspection before the handover date.",
+    processSteps: [
+      { step: "Handover Review", description: "We review the lease timing, property condition, photos, access rules and what needs to be done before key handback." },
+      { step: "Scope and Quote", description: "Fixed-price scope covering cleaning, relocation, waste, inspection preparation and any make good coordination required." },
+      { step: "Clean, Clear and Coordinate", description: "End-of-lease cleaning, waste removal, equipment movement and final trade coordination completed in the right order." },
+      { step: "Final Presentation", description: "Floors, amenities, offices, loading areas and remaining touch-points presented for landlord or property manager inspection." },
+      { step: "Key Handover", description: "Site left ready for final inspection, with the handover pathway closed out." }
+    ],
+
+    faqTitle: "Handover Solutions FAQs",
+    faqSubtitle: "Common questions about commercial and industrial lease handover support in Melbourne.",
+    faqs: [
+      {
+        question: "What are Handover Solutions?",
+        answer: "The final stage of a commercial or industrial lease exit. This can include end-of-lease cleaning, waste removal, relocation support, final presentation, inspection preparation and coordination with make good works where required."
+      },
+      {
+        question: "Is this different from end-of-lease cleaning?",
+        answer: "Yes. End-of-lease cleaning is one part of the handover. Handover Solutions covers the full picture, including relocation, waste, final presentation and coordination with any outstanding make good works."
+      },
+      {
+        question: "Do you handle warehouse and factory handovers?",
+        answer: "Yes. Floor cleaning, loading dock cleaning, racking-related cleanup, waste removal, equipment movement support and inspection preparation across Melbourne."
+      },
+      {
+        question: "Can you coordinate relocation and cleaning together?",
+        answer: "Yes. We can run relocation and end-of-lease cleaning as one programme so the old site is being prepared for handover while the move to the new location is underway."
+      },
+      {
+        question: "Can you help if the property manager has flagged additional works?",
+        answer: "Yes. If the landlord or property manager identifies additional cleaning, presentation or make good items, we can review the notes and prepare a practical scope to address them."
+      },
+      {
+        question: "What information helps with a handover quote?",
+        answer: "Site address, lease end date, property type, floor area, photos or videos, access rules, relocation date, any property manager comments and the expected handover condition."
+      }
+    ],
+
+    ctaTitle: "NEED A COMMERCIAL OR INDUSTRIAL HANDOVER?",
+    ctaSubtitle: "We do make goods all day, every day.",
+    ctaText: "Send through the property address, lease timing, photos and any handover notes. We will review the cleaning, relocation and final presentation scope and provide a practical fixed-price quote."
   },
   {
     slug: "remediation-solutions",
