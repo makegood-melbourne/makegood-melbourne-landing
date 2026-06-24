@@ -48,7 +48,7 @@ import palletRackingRemovalHeroImage from "@/assets/services/pallet-racking-remo
 import commercialDemolitionHeroImage from "@/assets/services/commercial-demolition-melbourne-hero.jpg";
 import commercialDemolitionFeaturedImage from "@/assets/services/commercial-demolition-melbourne-featured.jpg";
 import makeSafeWorksHeroImage from "@/assets/services/make-safe-works-melbourne-hero.jpg";
-import backToBaseCablingImage from "@/assets/services/back-to-base-cabling-melbourne.jpg";
+import commercialElectricalMakeSafeSwitchboardsImage from "@/assets/services/commercial-electrical-make-safe-switchboards-strip-out-melbourne.webp";
 import flooringReinstatementHeroImage from "@/assets/services/flooring-reinstatement-hero.webp";
 import flooringReinstatementProcessImage from "@/assets/services/flooring-reinstatement-process.webp";
 import patchingPlasteringHeroImage from "@/assets/services/patching-plastering-commercial-office-walls-ceiling-melbourne.jpeg";
@@ -2074,9 +2074,9 @@ export const services: Service[] = [
       {
         title: "DISCONNECTED. CERTIFIED. SAFE.",
         description: "As part of your end-of-lease make good works, all building services need to be properly disconnected with all cabling returned back to base. We handle the complete disconnection of electrical, plumbing and HVAC systems. All certificates of completed works are provided upon handover.\n\nWe work within your project timeline, coordinating with our demolition crew throughout the entire strip out. From initial disconnection through to final certification, we manage the process to keep your make good on schedule.",
-        image: backToBaseCablingImage,
-        imageAlt: "Organized orange data cabling properly managed and routed back to base in commercial building Melbourne",
-        imageTitle: "Professional Back to Base Cabling - Delivered On Time",
+        image: commercialElectricalMakeSafeSwitchboardsImage,
+        imageAlt: "Commercial electrical switchboards and conduit on a concrete wall prepared for make safe and strip out works in Melbourne",
+        imageTitle: "Commercial Electrical Make Safe and Strip Out Melbourne",
         imageLeft: true
       }
     ],
