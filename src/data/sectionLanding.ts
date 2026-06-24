@@ -7,6 +7,12 @@ import stripOutHero from "@/assets/services/commercial-industrial-strip-out-melb
 import stripOutHeroMobile from "@/assets/services/commercial-industrial-strip-out-melbourne-mobile.jpg";
 import makeGoodHero from "@/assets/services/melbourne-warehouse-make-good-hero.jpg";
 import makeGoodHeroMobile from "@/assets/services/melbourne-warehouse-make-good-hero-mobile.jpg";
+import commercialFloorSweepingImage from "@/assets/services/commercial-floor-sweeping-concrete-melbourne.jpeg";
+import commercialDemolitionHeroImage from "@/assets/services/commercial-demolition-melbourne-hero.jpg";
+import flooringReinstatementHeroImage from "@/assets/services/flooring-reinstatement-hero.webp";
+import makeSafeWorksHeroImage from "@/assets/services/make-safe-works-melbourne-hero.jpg";
+import palletRackingRemovalHeroImage from "@/assets/services/pallet-racking-removal-melbourne-warehouse.jpeg";
+import patchingPlasteringHeroImage from "@/assets/services/patching-plastering-commercial-office-walls-ceiling-melbourne.jpeg";
 
 export interface SectionLandingFAQ {
   question: string;
@@ -34,6 +40,9 @@ export interface SectionLandingScopeRow {
   worksIncluded: string;
   link?: string;
   linkLabel?: string;
+  image?: unknown;
+  imageAlt?: string;
+  imageTitle?: string;
 }
 
 export interface SectionLandingPropertyType {
@@ -109,7 +118,7 @@ export const sectionLandingPages: SectionLandingData[] = [
     tagline: "Strip out works are where a make good project starts to take shape. We remove redundant fitout, fixtures, partitions, flooring, racking, signage and tenancy alterations so the space is ready for repair, reinstatement or handover. Offices, warehouses, factories, retail stores, medical tenancies and hospitality spaces across Melbourne.",
     trustBadges: [
       { icon: "shield", title: "Licensed & Insured" },
-      { icon: "clipboard", title: "Make Safe Coordination" },
+      { icon: "clipboard", title: "Make Safe" },
       { icon: "dollar", title: "Fixed-Price Quotes" },
       { icon: "document", title: "Waste Removal Included" }
     ],
@@ -139,14 +148,69 @@ export const sectionLandingPages: SectionLandingData[] = [
     carouselDescription: "Commercial and industrial strip out support for offices, warehouses, factories, retail, medical and hospitality spaces.",
     
     scopeRows: [
-      { scope: "Internal fitout removal", worksIncluded: "Partitions, meeting rooms, workstations, joinery, counters, cupboards, shelving and fixtures", link: "/services/strip-out-solutions/demolition/", linkLabel: "View demolition works" },
-      { scope: "Flooring removal", worksIncluded: "Carpet tiles, vinyl, timber-look flooring, trims, adhesives and selected floor preparation" },
-      { scope: "Ceiling and wall elements", worksIncluded: "Bulkheads, selected ceiling features, wall linings, signage, decals and wall graphics" },
-      { scope: "Warehouse and factory items", worksIncluded: "Pallet racking, shelving, anchor bolts, storage structures, tenant-built offices and selected equipment zones", link: "/services/strip-out-solutions/pallet-racking-removal/", linkLabel: "View pallet racking removal" },
-      { scope: "Electrical make safe", worksIncluded: "Isolation, disconnection and return of redundant electrical runs back to the main switchboard where required, coordinated by licensed electricians before removal works begin", link: "/services/strip-out-solutions/make-safe/", linkLabel: "View make safe works" },
-      { scope: "Service make safe coordination", worksIncluded: "Plumbing, HVAC, fire services and data cabling coordination before removal works begin where required", link: "/services/strip-out-solutions/make-safe/", linkLabel: "View make safe works" },
-      { scope: "Waste removal", worksIncluded: "Sorting, loading, disposal and recycling where suitable" },
-      { scope: "Handover preparation", worksIncluded: "Tenancy prepared for patching, painting, flooring, ceiling repairs or final inspection" }
+      {
+        scope: "Internal fitout removal",
+        worksIncluded: "Partitions, meeting rooms, workstations, joinery, counters, cupboards, shelving and fixtures",
+        link: "/services/strip-out-solutions/demolition/",
+        linkLabel: "View demolition works",
+        image: commercialDemolitionHeroImage,
+        imageAlt: "Empty commercial office space after demolition and strip out works in Melbourne",
+        imageTitle: "Commercial Demolition Works Melbourne"
+      },
+      {
+        scope: "Flooring removal",
+        worksIncluded: "Carpet tiles, vinyl, timber-look flooring, trims, adhesives and selected floor preparation",
+        link: "/services/make-good-solutions/flooring-reinstatement/",
+        linkLabel: "View flooring reinstatement",
+        image: flooringReinstatementHeroImage,
+        imageAlt: "Commercial flooring reinstatement in progress showing carpet tile installation in a Melbourne office",
+        imageTitle: "Flooring Reinstatement Melbourne"
+      },
+      {
+        scope: "Patching and Plastering",
+        worksIncluded: "Bulkheads, selected ceiling features, wall linings, signage, decals, wall graphics and post-strip-out surface repairs",
+        link: "/services/make-good-solutions/patching-plastering/",
+        linkLabel: "View patching and plastering",
+        image: patchingPlasteringHeroImage,
+        imageAlt: "Commercial office space with freshly plastered white walls and suspended ceiling ready for make good handover in Melbourne",
+        imageTitle: "Patching and Plastering Melbourne"
+      },
+      {
+        scope: "Warehouse and factory items",
+        worksIncluded: "Pallet racking, shelving, anchor bolts, storage structures, tenant-built offices and selected equipment zones",
+        link: "/services/strip-out-solutions/pallet-racking-removal/",
+        linkLabel: "View pallet racking removal",
+        image: palletRackingRemovalHeroImage,
+        imageAlt: "Warehouse pallet racking removal works in a Melbourne industrial tenancy",
+        imageTitle: "Pallet Racking Removal Melbourne"
+      },
+      {
+        scope: "Make Safe",
+        worksIncluded: "Electrical make safe, service isolation, plumbing, HVAC, fire services and data cabling coordination before removal works begin, including returning redundant electrical runs back to the main switchboard where required",
+        link: "/services/strip-out-solutions/make-safe/",
+        linkLabel: "View make safe works",
+        image: makeSafeWorksHeroImage,
+        imageAlt: "Electrical switchboard and meter panels with organised conduit and cabling for make safe works in Melbourne",
+        imageTitle: "Make Safe Works Melbourne"
+      },
+      {
+        scope: "Waste removal",
+        worksIncluded: "Sorting, loading, disposal, recycling where suitable and post-strip-out site presentation",
+        link: "/services/handover-solutions/end-of-lease-cleaning/",
+        linkLabel: "View end of lease cleaning",
+        image: commercialFloorSweepingImage,
+        imageAlt: "Worker sweeping a concrete floor with an industrial broom during make good cleaning in Melbourne",
+        imageTitle: "End of Lease Cleaning Melbourne"
+      },
+      {
+        scope: "Handover preparation",
+        worksIncluded: "Tenancy prepared for patching, painting, flooring, ceiling repairs or final inspection",
+        link: "/services/make-good-solutions/",
+        linkLabel: "View make good solutions",
+        image: makeGoodHero,
+        imageAlt: "Restored Melbourne warehouse space showing completed make good works ready for handover",
+        imageTitle: "Make Good Solutions Melbourne"
+      }
     ],
     propertyTypes: [
       { title: "Office Strip Outs", description: "Partitions, meeting rooms, workstations, floor finishes, signage and joinery. Planned around lift access, loading dock windows, building rules and the make good works that follow." },
@@ -161,7 +225,7 @@ export const sectionLandingPages: SectionLandingData[] = [
     processSteps: [
       { step: "Site Walkthrough", description: "We inspect the tenancy, confirm what is being removed, retained or protected and identify access or building constraints." },
       { step: "Scope & Quotation", description: "We prepare a fixed-price quote based on the lease, site conditions, access requirements and handover pathway." },
-      { step: "Make Safe Coordination", description: "Electrical make safe, service isolation, plumbing, HVAC, fire services and data cabling are coordinated before removal works begin where required." },
+      { step: "Make Safe", description: "Electrical make safe, service isolation, plumbing, HVAC, fire services and data cabling are coordinated before removal works begin where required." },
       { step: "Strip Out Works", description: "Fitout, partitions, fixtures, flooring, racking and nominated tenancy alterations are removed in the correct sequence." },
       { step: "Handover Preparation", description: "The site is prepared for patching, painting, flooring reinstatement, ceiling repairs or final inspection." }
     ],

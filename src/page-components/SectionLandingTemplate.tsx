@@ -35,6 +35,9 @@ interface ScopeRow {
   worksIncluded: string;
   link?: string;
   linkLabel?: string;
+  image?: unknown;
+  imageAlt?: string;
+  imageTitle?: string;
 }
 
 interface PropertyType {
@@ -289,15 +292,32 @@ const SectionLandingTemplate = ({ data }: SectionLandingTemplateProps) => {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {data.scopeRows.map((row) => {
                 const cardContent = (
-                  <div className="rounded-lg border border-border border-t-4 border-t-primary/70 bg-card p-6 h-full transition-all duration-300 hover:border-primary/50 hover:shadow-lg">
-                    <h3 className="text-lg font-semibold text-foreground mb-3">{row.scope}</h3>
-                    <p className="text-muted-foreground leading-relaxed mb-4">{row.worksIncluded}</p>
-                    {row.link && (
-                      <span className="inline-flex items-center text-primary text-sm font-medium group-hover:underline">
-                        {row.linkLabel || 'Learn more'}
-                        <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                      </span>
+                  <div className="rounded-lg border border-border bg-card h-full overflow-hidden shadow-sm transition-all duration-300 hover:border-primary/50 hover:shadow-lg">
+                    {row.image && (
+                      <div className="relative aspect-[16/10] overflow-hidden bg-muted/20">
+                        <img
+                          src={resolveImageSrc(row.image)}
+                          alt={row.imageAlt || `${row.scope} Melbourne strip out scope`}
+                          title={row.imageTitle}
+                          className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                          width={600}
+                          height={375}
+                          loading="lazy"
+                          decoding="async"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
+                      </div>
                     )}
+                    <div className="border-t-4 border-t-primary/70 p-6">
+                      <h3 className="text-lg font-semibold text-foreground mb-3">{row.scope}</h3>
+                      <p className="text-muted-foreground leading-relaxed mb-4">{row.worksIncluded}</p>
+                      {row.link && (
+                        <span className="inline-flex items-center text-primary text-sm font-medium group-hover:underline">
+                          {row.linkLabel || 'Learn more'}
+                          <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                        </span>
+                      )}
+                    </div>
                   </div>
                 );
 
@@ -366,7 +386,6 @@ const SectionLandingTemplate = ({ data }: SectionLandingTemplateProps) => {
           title={data.carouselTitle || "Our Services"}
           titleHighlight={data.carouselTitleHighlight}
           description={data.carouselDescription}
-          backgroundClassName={data.processSteps && data.processSteps.length > 0 ? "bg-background" : undefined}
         />
       ) : (
         <SectionServicesCarousel 
