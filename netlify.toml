@@ -336,6 +336,18 @@
 
 # Strip Out Solutions children
 [[redirects]]
+  from = "/services/strip-out-solutions/office-strip-out/"
+  to = "/services/strip-out-solutions/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/services/strip-out-solutions/office-strip-out"
+  to = "/services/strip-out-solutions/"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/services/demolition-works"
   to = "/services/strip-out-solutions/demolition/"
   status = 301

@@ -29,6 +29,21 @@ interface RelatedServicesBlock {
   cards: RelatedCard[];
 }
 
+interface ScopeRow {
+  scope: string;
+  worksIncluded: string;
+}
+
+interface PropertyType {
+  title: string;
+  description: string;
+}
+
+interface ProcessStep {
+  step: string;
+  description: string;
+}
+
 interface SectionLandingData {
   // Meta
   slug: string;
@@ -60,6 +75,13 @@ interface SectionLandingData {
   
   // Related Services Block (optional - appears between carousel and FAQ)
   relatedServicesBlock?: RelatedServicesBlock;
+
+  // Expanded content blocks (optional)
+  scopeRows?: ScopeRow[];
+  propertyTypes?: PropertyType[];
+  processTitle?: string;
+  processSubtitle?: string;
+  processSteps?: ProcessStep[];
   
   // FAQ
   faqTitle?: string;  // e.g. "Make Good FAQs"
@@ -251,7 +273,68 @@ const SectionLandingTemplate = ({ data }: SectionLandingTemplateProps) => {
       </section>
 
       {/* How It Works Section */}
-      <SimpleProcess />
+      {(!data.processSteps || data.processSteps.length === 0) && <SimpleProcess />}
+
+      {/* Scope Areas */}
+      {data.scopeRows && data.scopeRows.length > 0 && (
+        <section className="py-16 bg-secondary border-y border-border">
+          <div className="container mx-auto px-4 max-w-5xl">
+            <div className="text-center mb-10">
+              <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">STRIP OUT SCOPE</h2>
+              <p className="text-muted-foreground text-lg">What we can remove, coordinate and prepare during a commercial or industrial strip out.</p>
+            </div>
+            <div className="overflow-hidden rounded-lg border border-border bg-background">
+              {data.scopeRows.map((row, index) => (
+                <div key={row.scope} className={`grid md:grid-cols-[260px_1fr] gap-4 p-5 ${index === 0 ? '' : 'border-t border-border'}`}>
+                  <div className="font-semibold text-foreground">{row.scope}</div>
+                  <div className="text-muted-foreground">{row.worksIncluded}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Property Types */}
+      {data.propertyTypes && data.propertyTypes.length > 0 && (
+        <section className="py-16 bg-background">
+          <div className="container mx-auto px-4 max-w-6xl">
+            <div className="text-center mb-10">
+              <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">PROPERTY TYPES WE STRIP OUT</h2>
+              <p className="text-muted-foreground text-lg max-w-3xl mx-auto">Office, warehouse, factory, retail, medical and hospitality tenancies each need a different strip out sequence. We plan the work around the site, access and handover path.</p>
+            </div>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {data.propertyTypes.map((property) => (
+                <article key={property.title} className="rounded-lg border border-border bg-card p-6 shadow-sm">
+                  <h3 className="text-xl font-semibold text-foreground mb-3">{property.title}</h3>
+                  <p className="text-muted-foreground leading-relaxed">{property.description}</p>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Custom Process */}
+      {data.processSteps && data.processSteps.length > 0 && (
+        <section className="py-16 bg-secondary border-y border-border">
+          <div className="container mx-auto px-4 max-w-5xl">
+            <div className="text-center mb-10">
+              <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">{data.processTitle || 'OUR PROCESS'}</h2>
+              {data.processSubtitle && <p className="text-muted-foreground text-lg max-w-3xl mx-auto">{data.processSubtitle}</p>}
+            </div>
+            <div className="space-y-4">
+              {data.processSteps.map((step, index) => (
+                <div key={step.step} className="grid md:grid-cols-[88px_260px_1fr] gap-4 rounded-lg border border-border bg-background p-5">
+                  <div className="text-primary font-bold text-lg">{String(index + 1).padStart(2, '0')}</div>
+                  <h3 className="font-semibold text-foreground">{step.step}</h3>
+                  <p className="text-muted-foreground leading-relaxed">{step.description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Services Carousel or Grid */}
       {data.useGrid ? (
@@ -296,6 +379,18 @@ const SectionLandingTemplate = ({ data }: SectionLandingTemplateProps) => {
           </div>
         </section>
       )}
+
+      {/* CTA Section */}
+      <section className="py-16 bg-background">
+        <div className="container mx-auto px-4 max-w-4xl text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">{data.ctaTitle}</h2>
+          {data.ctaSubtitle && <p className="text-xl text-primary font-semibold mb-4">{data.ctaSubtitle}</p>}
+          <p className="text-lg text-muted-foreground mb-8">{renderTextWithLinks(data.ctaText)}</p>
+          <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground" asChild>
+            <a href="/#contact">Get a Fixed-Price Quote</a>
+          </Button>
+        </div>
+      </section>
 
       </div>
     </>
