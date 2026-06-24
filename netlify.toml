@@ -119,6 +119,27 @@
   status = 301
   force = true
 
+# Consolidated Make Good child pages to canonical parent
+[[redirects]]
+  from = "/services/make-good-solutions/end-of-lease-make-good"
+  to = "/services/make-good-solutions/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/services/make-good-solutions/end-of-lease-make-good/"
+  to = "/services/make-good-solutions/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/services/make-good-solutions/office-make-good"
+  to = "/services/make-good-solutions/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/services/make-good-solutions/office-make-good/"
+  to = "/services/make-good-solutions/"
+  status = 301
+  force = true
 # Renamed service page redirects (updated to point directly to final destinations)
 [[redirects]]
   from = "/services/commercial-painting"
