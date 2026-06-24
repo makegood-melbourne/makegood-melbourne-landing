@@ -7,6 +7,12 @@ import stripOutHero from "@/assets/services/commercial-industrial-strip-out-melb
 import stripOutHeroMobile from "@/assets/services/commercial-industrial-strip-out-melbourne-mobile.jpg";
 import makeGoodHero from "@/assets/services/melbourne-warehouse-make-good-hero.jpg";
 import makeGoodHeroMobile from "@/assets/services/melbourne-warehouse-make-good-hero-mobile.jpg";
+import commercialFloorSweepingImage from "@/assets/services/commercial-floor-sweeping-concrete-melbourne.jpeg";
+import commercialDemolitionHeroImage from "@/assets/services/commercial-demolition-melbourne-hero.jpg";
+import flooringReinstatementHeroImage from "@/assets/services/flooring-reinstatement-hero.webp";
+import makeSafeWorksHeroImage from "@/assets/services/make-safe-works-melbourne-hero.jpg";
+import palletRackingRemovalHeroImage from "@/assets/services/pallet-racking-removal-melbourne-warehouse.jpeg";
+import patchingPlasteringHeroImage from "@/assets/services/patching-plastering-commercial-office-walls-ceiling-melbourne.jpeg";
 
 export interface SectionLandingFAQ {
   question: string;
@@ -27,6 +33,26 @@ export interface SectionLandingRelatedCard {
 export interface SectionLandingRelatedBlock {
   title: string;
   cards: SectionLandingRelatedCard[];
+}
+
+export interface SectionLandingScopeRow {
+  scope: string;
+  worksIncluded: string;
+  link?: string;
+  linkLabel?: string;
+  image?: unknown;
+  imageAlt?: string;
+  imageTitle?: string;
+}
+
+export interface SectionLandingPropertyType {
+  title: string;
+  description: string;
+}
+
+export interface SectionLandingProcessStep {
+  step: string;
+  description: string;
 }
 
 export interface SectionLandingData {
@@ -61,6 +87,13 @@ export interface SectionLandingData {
   
   // Related Services Block (optional - appears between carousel and FAQ)
   relatedServicesBlock?: SectionLandingRelatedBlock;
+
+  // Expanded content blocks (optional)
+  scopeRows?: SectionLandingScopeRow[];
+  propertyTypes?: SectionLandingPropertyType[];
+  processTitle?: string;
+  processSubtitle?: string;
+  processSteps?: SectionLandingProcessStep[];
   
   // FAQ
   faqTitle?: string;  // e.g. "Make Good FAQs"
@@ -76,87 +109,167 @@ export interface SectionLandingData {
 export const sectionLandingPages: SectionLandingData[] = [
   {
     slug: "strip-out-solutions",
-    metaTitle: "Strip Out Services Melbourne | Commercial & Industrial",
-    metaDescription: "Commercial and industrial strip out services in Melbourne. Office defits, warehouse clearances and back-to-base works. Licensed demolition, all trades coordinated. Free quotes.",
+    metaTitle: "Strip Out Services Melbourne | Make Good, BETTER.",
+    metaDescription: "Commercial and industrial strip out services in Melbourne for offices, warehouses, factories, retail, medical and hospitality tenancies. Fitout removal, make safe coordination, waste removal and handover preparation.",
     ogImage: "/og/strip-out.jpg",
     
-    title: "EXPERT STRIP OUTS, MADE BETTER.",
-    titleHighlight: "MADE BETTER.",
-    tagline: "Preparing a commercial or industrial space for its next chapter requires more than just demolition. It demands precision, safety, and a deep understanding of lease obligations. Our expert strip out and 'back to base' services for office, retail, and warehouse properties across Melbourne ensure your project is completed on time, on budget, and ready for handover.",
+    title: "COMMERCIAL & INDUSTRIAL STRIP OUTS MELBOURNE",
+    titleHighlight: "MELBOURNE",
+    tagline: "Strip out works are where a make good project starts to take shape. We remove redundant fitout, fixtures, partitions, flooring, racking, signage and tenancy alterations so the space is ready for repair, reinstatement or handover. Offices, warehouses, factories, retail stores, medical tenancies and hospitality spaces across Melbourne.",
     trustBadges: [
       { icon: "shield", title: "Licensed & Insured" },
-      { icon: "clipboard", title: "Lease Compliance Experts" },
+      { icon: "clipboard", title: "Make Safe" },
       { icon: "dollar", title: "Fixed-Price Quotes" },
-      { icon: "document", title: "Full Project Documentation" }
+      { icon: "document", title: "Waste Removal Included" }
     ],
     heroImage: stripOutHero,
     heroImageMobile: stripOutHeroMobile,
-    heroImageAlt: "A large commercial space undergoing a full strip out and back to base works by the Makegood Melbourne team.",
-    heroImageTitle: "Makegood Melbourne - Commercial and Industrial Strip Out Specialists",
+    heroImageAlt: "Commercial and industrial strip out works in a Melbourne tenancy prepared for make good and handover",
+    heroImageTitle: "Makegood Melbourne - Commercial and Industrial Strip Out Services",
     
-    aboutTitlePrefix: "YOUR END-OF-LEASE,",
-    aboutTitleHighlight: "SIMPLIFIED",
+    aboutTitlePrefix: "STRIP OUTS THAT SET UP",
+    aboutTitleHighlight: "THE HANDOVER PROPERLY",
     aboutContentLeft: [
-      "The transition between tenants is a critical moment for any property. A 'back to base' provision is not merely a checklist item; it is a complex project involving numerous trades, strict compliance standards, and significant financial risk. An improperly managed strip out can result in project delays, disputes over the final condition, and a longer vacancy period, all of which directly impact your return on investment."
+      "A commercial strip out is not just taking things out of a tenancy. The order matters. Partitions, joinery, workstations, floor coverings, services, signage, racking and redundant fixtures all need to come out without damaging the parts of the building that stay.",
+      "We look at what needs to be removed, what needs to be protected, what services need to be made safe and what trades follow after the strip out is done. That is what separates a strip out that sets up the handover from one that creates more work than it solves."
     ],
     aboutContentRight: [
-      "We provide a considered, methodical approach to end-of-lease projects. As integrated specialists, we manage every facet of the process, from the precise removal of internal structures to the certified decommissioning of essential services. By providing a single, accountable point of contact, we eliminate coordination failures and ensure a seamless workflow. Our objective is to return your property to its specified condition efficiently and correctly, ensuring it is ready for the next tenant without delay."
+      "Our team works across offices, industrial sites, retail centres, medical suites and hospitality tenancies throughout Melbourne. Lift bookings, loading dock coordination, access windows, after-hours requirements and waste removal are planned before anyone sets foot on site.",
+      "The strip out is done when the tenancy is genuinely ready for the next stage, not just when the last skip bin leaves. That means surfaces protected, waste gone, access closed out and the site is ready for patching, painting, flooring, repair, reinstatement or handover."
     ],
     
     serviceSlugs: [
       "strip-out-solutions/demolition",
       "strip-out-solutions/make-safe",
-      "strip-out-solutions/office-strip-out",
       "strip-out-solutions/pallet-racking-removal"
     ],
     carouselTitle: "OUR STRIP OUT SERVICES",
     carouselTitleHighlight: "SERVICES",
-    carouselDescription: "Comprehensive solutions to return any commercial or industrial space to base condition.",
+    carouselDescription: "Commercial and industrial strip out support for offices, warehouses, factories, retail, medical and hospitality spaces.",
     
-    relatedServicesBlock: {
-      title: "A COMPLETE STRIP OUT SERVICE",
-      cards: [
-        {
-          slug: "strip-out-solutions/demolition",
-          name: "DEMOLITION WORKS",
-          description: "Our licensed teams perform precise internal demolition, safely removing non-structural partitions, ceilings, flooring and fixtures."
-        },
-        {
-          slug: "strip-out-solutions/make-safe",
-          name: "MAKE SAFE WORKS",
-          description: "We manage the full 'back to base' process, including the disconnection and make-safe of all essential building services."
-        }
-      ]
-    },
+    scopeRows: [
+      {
+        scope: "Internal fitout removal",
+        worksIncluded: "Partitions, meeting rooms, workstations, joinery, counters, cupboards, shelving and fixtures",
+        link: "/services/strip-out-solutions/demolition/",
+        linkLabel: "View demolition works",
+        image: commercialDemolitionHeroImage,
+        imageAlt: "Empty commercial office space after demolition and strip out works in Melbourne",
+        imageTitle: "Commercial Demolition Works Melbourne"
+      },
+      {
+        scope: "Flooring removal",
+        worksIncluded: "Carpet tiles, vinyl, timber-look flooring, trims, adhesives and selected floor preparation",
+        link: "/services/make-good-solutions/flooring-reinstatement/",
+        linkLabel: "View flooring reinstatement",
+        image: flooringReinstatementHeroImage,
+        imageAlt: "Commercial flooring reinstatement in progress showing carpet tile installation in a Melbourne office",
+        imageTitle: "Flooring Reinstatement Melbourne"
+      },
+      {
+        scope: "Patching and Plastering",
+        worksIncluded: "Bulkheads, selected ceiling features, wall linings, signage, decals, wall graphics and post-strip-out surface repairs",
+        link: "/services/make-good-solutions/patching-plastering/",
+        linkLabel: "View patching and plastering",
+        image: patchingPlasteringHeroImage,
+        imageAlt: "Commercial office space with freshly plastered white walls and suspended ceiling ready for make good handover in Melbourne",
+        imageTitle: "Patching and Plastering Melbourne"
+      },
+      {
+        scope: "Warehouse and factory items",
+        worksIncluded: "Pallet racking, shelving, anchor bolts, storage structures, tenant-built offices and selected equipment zones",
+        link: "/services/strip-out-solutions/pallet-racking-removal/",
+        linkLabel: "View pallet racking removal",
+        image: palletRackingRemovalHeroImage,
+        imageAlt: "Warehouse pallet racking removal works in a Melbourne industrial tenancy",
+        imageTitle: "Pallet Racking Removal Melbourne"
+      },
+      {
+        scope: "Make Safe",
+        worksIncluded: "Electrical make safe, service isolation, plumbing, HVAC, fire services and data cabling coordination before removal works begin, including returning redundant electrical runs back to the main switchboard where required",
+        link: "/services/strip-out-solutions/make-safe/",
+        linkLabel: "View make safe works",
+        image: makeSafeWorksHeroImage,
+        imageAlt: "Electrical switchboard and meter panels with organised conduit and cabling for make safe works in Melbourne",
+        imageTitle: "Make Safe Works Melbourne"
+      },
+      {
+        scope: "Waste removal",
+        worksIncluded: "Sorting, loading, disposal, recycling where suitable and post-strip-out site presentation",
+        link: "/services/handover-solutions/end-of-lease-cleaning/",
+        linkLabel: "View end of lease cleaning",
+        image: commercialFloorSweepingImage,
+        imageAlt: "Worker sweeping a concrete floor with an industrial broom during make good cleaning in Melbourne",
+        imageTitle: "End of Lease Cleaning Melbourne"
+      },
+      {
+        scope: "Handover preparation",
+        worksIncluded: "Tenancy prepared for patching, painting, flooring, ceiling repairs or final inspection",
+        link: "/services/make-good-solutions/",
+        linkLabel: "View make good solutions",
+        image: makeGoodHero,
+        imageAlt: "Restored Melbourne warehouse space showing completed make good works ready for handover",
+        imageTitle: "Make Good Solutions Melbourne"
+      }
+    ],
+    propertyTypes: [
+      { title: "Office", description: "Partitions, meeting rooms, workstations, floor finishes, signage and joinery. Planned around lift access, loading dock windows, building rules and the make good works that follow." },
+      { title: "Warehouse", description: "Pallet racking, anchor bolt grinding, tenant-built offices, shelving, flooring preparation and service disconnection. Coordinated so the warehouse moves into repair, reinstatement or handover without the strip out creating extra works." },
+      { title: "Factory", description: "Production areas, work zones, storage structures, services, flooring treatments and equipment-related alterations. We assess what can come out safely, what needs specialist trade coordination and what needs to be restored for handover." },
+      { title: "Retail", description: "Tight access, after-hours works, centre rules, hoarding, signage removal, display fixture removal, flooring and back-of-house works. Planned around trading environments and centre management requirements." },
+      { title: "Medical Tenancy", description: "Treatment rooms, plumbing points, cabinetry, specialist flooring, partitions and compliance-sensitive areas. Removed with the right sequencing so the site is ready for reinstatement or the next tenancy stage." },
+      { title: "Hospitality", description: "Counters, kitchen equipment zones, seating, flooring, wall linings, exhaust coordination, plumbing points and electrical services. Planned around building access, waste movement and the reinstatement path." }
+    ],
+    processTitle: "OUR STRIP OUT PROCESS",
+    processSubtitle: "The strip out sets up everything that follows. We plan the sequence before works start so repair, reinstatement and handover works can follow from the right position.",
+    processSteps: [
+      { step: "Site Walkthrough", description: "We inspect the tenancy, confirm what is being removed, retained or protected and identify access or building constraints." },
+      { step: "Scope & Quotation", description: "We prepare a fixed-price quote based on the lease, site conditions, access requirements and handover pathway." },
+      { step: "Make Safe", description: "Electrical make safe, service isolation, plumbing, HVAC, fire services and data cabling are coordinated before removal works begin where required." },
+      { step: "Strip Out Works", description: "Fitout, partitions, fixtures, flooring, racking and nominated tenancy alterations are removed in the correct sequence." },
+      { step: "Handover Preparation", description: "The site is prepared for patching, painting, flooring reinstatement, ceiling repairs or final inspection." }
+    ],
     
     faqTitle: "Strip Out FAQs",
-    faqSubtitle: "Common questions about strip out services",
+    faqSubtitle: "Common questions about commercial and industrial strip out works",
     faqs: [
       {
-        question: "What does \"back to base\" or \"make good\" actually mean?",
-        answer: "It refers to the clause in most commercial leases that requires a tenant to return the property to its original condition at the end of the lease term. This typically involves removing all partitions, fixtures, data cabling, and other additions, and making good any damage to the base building."
+        question: "What is included in a commercial strip out?",
+        answer: "A commercial strip out can include tenant-installed partitions, meeting rooms, workstations, joinery, flooring, ceiling alterations, signage, racking, shelving and redundant fixtures. It can also include make safe coordination, waste removal and preparation for patching, painting, flooring or handover."
       },
       {
-        question: "How is a commercial strip out different from standard demolition?",
-        answer: "A commercial strip out is a form of selective, internal demolition. Unlike a full building demolition, the goal is to carefully remove internal elements without damaging the base building's structure, essential services, or surrounding tenancies. It requires precision, planning, and a deep understanding of live environments."
+        question: "Do you handle office, warehouse and factory strip outs?",
+        answer: "Yes. We handle office, warehouse, factory, retail, medical and hospitality strip outs across Melbourne. The scope changes by property type, so we confirm the removal works, access requirements, services and handover pathway during the site walkthrough."
       },
       {
-        question: "Can you handle the removal of hazardous materials like asbestos?",
-        answer: "Yes. We are licensed and certified to manage the identification, testing, and removal of hazardous materials, including asbestos, in full compliance with all Victorian regulations and WorkSafe standards. We provide all necessary clearance certificates for your peace of mind."
+        question: "Is a strip out the same as demolition?",
+        answer: "A strip out is selective internal removal. It focuses on tenant-installed fitout and alterations while protecting the base building. Demolition can form part of the strip out where partitions, ceilings, flooring or fixed structures need to come out."
       },
       {
-        question: "How do you manage waste and recycling?",
-        answer: "We are committed to responsible waste management. We develop a waste management plan for every project, maximising the amount of material that can be recycled or repurposed. We provide full documentation of waste disposal, helping you meet your project's sustainability goals."
+        question: "Does a strip out include make safe works?",
+        answer: "It can. Many strip outs need electrical make safe before removal works begin, including isolation, disconnection and returning redundant electrical runs back to the main switchboard where required. Plumbing, HVAC, fire service and data cabling requirements are also confirmed during scoping and coordinated with the relevant licensed trades."
       },
       {
-        question: "How long does a typical office strip out in Melbourne take?",
-        answer: "A standard office strip out can take anywhere from a few days to several weeks, depending on the size of the space, the complexity of the fit-out, and any building restrictions (like noise or working hours). We provide a detailed and reliable timeline with every quote."
+        question: "Can strip out works be completed after hours?",
+        answer: "Yes, where the building permits it. After-hours work is common in offices, retail centres, hospitality sites and medical premises. Access, security, noise limits, lift bookings, loading docks and waste movement are factored into the programme."
+      },
+      {
+        question: "What affects the cost of a strip out in Melbourne?",
+        answer: "Tenancy size, the amount of fitout being removed, flooring and adhesive removal, make safe requirements, waste volume, lift or loading access, after-hours restrictions and the repair works needed after the strip out can all affect the cost."
+      },
+      {
+        question: "Do you remove pallet racking and warehouse shelving?",
+        answer: "Yes. We remove pallet racking and warehouse shelving as part of warehouse and industrial strip out works. This can include dismantling, anchor removal, slab preparation and coordination of any required floor repairs."
+      },
+      {
+        question: "What happens after the strip out is complete?",
+        answer: "Depending on the lease and handover condition, the next stage can include patching, painting, flooring reinstatement, ceiling repairs, service certification, waste records and final inspection preparation."
       }
     ],
     
-    ctaTitle: "EXPERTS IN COMMERCIAL & INDUSTRIAL STRIP OUTS",
-    ctaSubtitle: "Make Good, BETTER.",
-    ctaText: "We are Melbourne's end-of-lease make good specialists. From a simple office defit to a complex industrial strip out, we deliver a seamless, reliable, and fully compliant service. Contact us today for a free site assessment and a detailed, fixed-price quote."
+    ctaTitle: "NEED A COMMERCIAL OR INDUSTRIAL STRIP OUT?",
+    ctaSubtitle: "We do Make Goods all day, every day.",
+    ctaText: "Send through the property address, photos, lease timing and any handover notes. We will review the strip out scope, confirm what needs to be removed and provide a practical fixed-price quote."
   },
   {
     slug: "make-good-solutions",

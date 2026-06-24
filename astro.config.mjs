@@ -50,6 +50,7 @@ export default defineConfig({
     '/blogs/[slug]': '/blog/[slug]',
     
     // Service page redirects for consolidated/renamed pages
+    '/services/strip-out-solutions/office-strip-out': '/services/strip-out-solutions/',
     // Updated to point directly to final destinations (avoid redirect chains)
     '/services/carpet-removal': '/services/make-good-solutions/warehouse-flooring/',
     '/services/vinyl-removal': '/services/make-good-solutions/warehouse-flooring/',

@@ -130,6 +130,31 @@ const faqs: FAQ[] = [
   },
   {
     category: "services",
+    question: "What is included in an end of lease make good?",
+    answer: "An end of lease make good can include strip out, removal of tenant fixtures, patching, plastering, painting, flooring reinstatement, ceiling repairs, warehouse floor restoration, line marking, waste removal and other works needed to return the premises to the agreed handover condition."
+  },
+  {
+    category: "services",
+    question: "Do you work from the lease make good clause?",
+    answer: "Yes. We can review the lease make good requirements, site condition and property manager notes to help define the practical scope. The final scope depends on the lease, the condition of the tenancy and the level of reinstatement requested for handover."
+  },
+  {
+    category: "services",
+    question: "Can you manage multiple trades?",
+    answer: "Yes. Most make good projects involve several trades. We coordinate the order of works so strip out, repairs, painting, flooring, ceiling works and other trade items are handled as one project rather than as disconnected jobs."
+  },
+  {
+    category: "services",
+    question: "Can you coordinate with our own trades?",
+    answer: "Yes. If you already have a preferred painter, electrician or other trade, we can coordinate with them and handle the remaining make good scope. The aim is to keep the programme practical, clear and ready for handover."
+  },
+  {
+    category: "services",
+    question: "What information helps with an end of lease make good quote?",
+    answer: "Helpful information includes the site address, lease end date, floor area, access rules, photos, walkthrough videos, lease notes and any property manager comments. We can then advise whether a site inspection is needed before confirming the quote."
+  },
+  {
+    category: "services",
     question: "Can you work outside business hours?",
     answer: "Yes, when required. Often necessary in occupied buildings or retail environments. We'll discuss scheduling during the quoting process."
   },
