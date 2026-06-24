@@ -26,7 +26,6 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
   }
 
   const processHiddenServiceSlugs = new Set([
-    "make-good-solutions/office-make-good",
     "strip-out-solutions/office-strip-out",
     "remediation-solutions/water-damage-mould-remediation",
     "remediation-solutions/fire-compliance-facade-cladding-remediation",

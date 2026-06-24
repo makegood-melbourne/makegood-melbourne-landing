@@ -419,11 +419,6 @@ export const services: Service[] = [
       subtitle: "We coordinate the right mix of make good services so your commercial tenancy is ready for end-of-lease handover.",
       cards: [
         {
-          slug: "make-good-solutions/end-of-lease-make-good",
-          name: "End of Lease Make Good",
-          description: "A coordinated make good service for lease handovers covering strip out, repairs, reinstatement and final presentation."
-        },
-        {
           slug: "make-good-solutions/flooring-reinstatement",
           name: "Flooring Reinstatement",
           description: "Carpet tiles, vinyl, epoxy and timber flooring reinstated to original specification for lease handover."
@@ -432,11 +427,6 @@ export const services: Service[] = [
           slug: "make-good-solutions/line-marking",
           name: "Line Marking",
           description: "Warehouse and car park line marking restored to the agreed layout for lease handover."
-        },
-        {
-          slug: "make-good-solutions/office-make-good",
-          name: "Office Make Good",
-          description: "Office strip out, surface repairs, flooring, ceilings and final presentation for commercial lease handover."
         },
         {
           slug: "make-good-solutions/patching-plastering",
@@ -461,16 +451,14 @@ export const services: Service[] = [
       text: "Our painters have delivered inspection-ready finishes across Melbourne's commercial and industrial properties for years. We understand what owners expect and deliver work that gets accepted first time. Get in touch today for a free, no-obligation quote."
     },
     relatedServices: [
-      "make-good-solutions/end-of-lease-make-good",
       "make-good-solutions/flooring-reinstatement",
       "make-good-solutions/line-marking",
-      "make-good-solutions/office-make-good",
       "make-good-solutions/patching-plastering",
       "make-good-solutions/suspended-ceilings",
       "make-good-solutions/warehouse-flooring"
     ],
     category: "make-good",
-    published: true
+    published: false
   },
   {
     name: "Suspended Ceilings",
@@ -551,11 +539,6 @@ export const services: Service[] = [
       subtitle: "We coordinate the right mix of make good services so your commercial tenancy is ready for end-of-lease handover.",
       cards: [
         {
-          slug: "make-good-solutions/end-of-lease-make-good",
-          name: "End of Lease Make Good",
-          description: "A coordinated make good service for lease handovers covering strip out, repairs, reinstatement and final presentation."
-        },
-        {
           slug: "make-good-solutions/flooring-reinstatement",
           name: "Flooring Reinstatement",
           description: "Carpet tiles, vinyl, epoxy and timber flooring reinstated to original specification for lease handover."
@@ -564,11 +547,6 @@ export const services: Service[] = [
           slug: "make-good-solutions/line-marking",
           name: "Line Marking",
           description: "Warehouse and car park line marking restored to the agreed layout for lease handover."
-        },
-        {
-          slug: "make-good-solutions/office-make-good",
-          name: "Office Make Good",
-          description: "Office strip out, surface repairs, flooring, ceilings and final presentation for commercial lease handover."
         },
         {
           slug: "make-good-solutions/painting",
@@ -620,10 +598,8 @@ export const services: Service[] = [
       text: "From single rooms to multi-floor offices, we've restored ceilings across Melbourne's commercial properties. Get in touch today for a free, no-obligation quote."
     },
     relatedServices: [
-      "make-good-solutions/end-of-lease-make-good",
       "make-good-solutions/flooring-reinstatement",
       "make-good-solutions/line-marking",
-      "make-good-solutions/office-make-good",
       "make-good-solutions/painting",
       "make-good-solutions/patching-plastering",
       "make-good-solutions/warehouse-flooring"
@@ -708,19 +684,9 @@ export const services: Service[] = [
       subtitle: "We coordinate the right mix of make good services so your commercial tenancy is ready for end-of-lease handover.",
       cards: [
         {
-          slug: "make-good-solutions/end-of-lease-make-good",
-          name: "End of Lease Make Good",
-          description: "A coordinated make good service for lease handovers covering strip out, repairs, reinstatement and final presentation."
-        },
-        {
           slug: "make-good-solutions/flooring-reinstatement",
           name: "Flooring Reinstatement",
           description: "Carpet tiles, vinyl, epoxy and timber flooring reinstated to original specification for lease handover."
-        },
-        {
-          slug: "make-good-solutions/office-make-good",
-          name: "Office Make Good",
-          description: "Office strip out, surface repairs, flooring, ceilings and final presentation for commercial lease handover."
         },
         {
           slug: "make-good-solutions/painting",
@@ -773,9 +739,7 @@ export const services: Service[] = [
       text: "We've restored line markings in warehouses and car parks across Melbourne. Get in touch today for a free, no-obligation quote."
     },
     relatedServices: [
-      "make-good-solutions/end-of-lease-make-good",
       "make-good-solutions/flooring-reinstatement",
-      "make-good-solutions/office-make-good",
       "make-good-solutions/painting",
       "make-good-solutions/patching-plastering",
       "make-good-solutions/suspended-ceilings",
@@ -1845,11 +1809,6 @@ export const services: Service[] = [
       subtitle: "We coordinate the right mix of make good services so your commercial tenancy is ready for end-of-lease handover.",
       cards: [
         {
-          slug: "make-good-solutions/end-of-lease-make-good",
-          name: "End of Lease Make Good",
-          description: "A coordinated make good service for lease handovers covering strip out, repairs, reinstatement and final presentation."
-        },
-        {
           slug: "make-good-solutions/flooring-reinstatement",
           name: "Flooring Reinstatement",
           description: "Carpet tiles, vinyl, epoxy and timber flooring reinstated to original specification for lease handover."
@@ -1858,11 +1817,6 @@ export const services: Service[] = [
           slug: "make-good-solutions/line-marking",
           name: "Line Marking",
           description: "Warehouse and car park line marking restored to the agreed layout for lease handover."
-        },
-        {
-          slug: "make-good-solutions/office-make-good",
-          name: "Office Make Good",
-          description: "Office strip out, surface repairs, flooring, ceilings and final presentation for commercial lease handover."
         },
         {
           slug: "make-good-solutions/painting",
@@ -1887,10 +1841,8 @@ export const services: Service[] = [
       text: "From flooring strip-out to finished surface, we've restored warehouse floors across Melbourne. Get in touch today for a free, no-obligation quote."
     },
     relatedServices: [
-      "make-good-solutions/end-of-lease-make-good",
       "make-good-solutions/flooring-reinstatement",
       "make-good-solutions/line-marking",
-      "make-good-solutions/office-make-good",
       "make-good-solutions/painting",
       "make-good-solutions/patching-plastering",
       "make-good-solutions/suspended-ceilings"
@@ -2238,19 +2190,9 @@ export const services: Service[] = [
       subtitle: "We coordinate the right mix of make good services so your commercial tenancy is ready for end-of-lease handover.",
       cards: [
         {
-          slug: "make-good-solutions/end-of-lease-make-good",
-          name: "End of Lease Make Good",
-          description: "A coordinated make good service for lease handovers covering strip out, repairs, reinstatement and final presentation."
-        },
-        {
           slug: "make-good-solutions/line-marking",
           name: "Line Marking",
           description: "Warehouse and car park line marking restored to the agreed layout for lease handover."
-        },
-        {
-          slug: "make-good-solutions/office-make-good",
-          name: "Office Make Good",
-          description: "Office strip out, surface repairs, flooring, ceilings and final presentation for commercial lease handover."
         },
         {
           slug: "make-good-solutions/painting",
@@ -2287,9 +2229,7 @@ export const services: Service[] = [
       "Lease compliance"
     ],
     relatedServices: [
-      "make-good-solutions/end-of-lease-make-good",
       "make-good-solutions/line-marking",
-      "make-good-solutions/office-make-good",
       "make-good-solutions/painting",
       "make-good-solutions/patching-plastering",
       "make-good-solutions/suspended-ceilings",
@@ -2414,11 +2354,6 @@ export const services: Service[] = [
       subtitle: "We coordinate the right mix of make good services so your commercial tenancy is ready for end-of-lease handover.",
       cards: [
         {
-          slug: "make-good-solutions/end-of-lease-make-good",
-          name: "End of Lease Make Good",
-          description: "A coordinated make good service for lease handovers covering strip out, repairs, reinstatement and final presentation."
-        },
-        {
           slug: "make-good-solutions/flooring-reinstatement",
           name: "Flooring Reinstatement",
           description: "Carpet tiles, vinyl, epoxy and timber flooring reinstated to original specification for lease handover."
@@ -2427,11 +2362,6 @@ export const services: Service[] = [
           slug: "make-good-solutions/line-marking",
           name: "Line Marking",
           description: "Warehouse and car park line marking restored to the agreed layout for lease handover."
-        },
-        {
-          slug: "make-good-solutions/office-make-good",
-          name: "Office Make Good",
-          description: "Office strip out, surface repairs, flooring, ceilings and final presentation for commercial lease handover."
         },
         {
           slug: "make-good-solutions/painting",
@@ -2461,10 +2391,8 @@ export const services: Service[] = [
       "Paint-ready finish"
     ],
     relatedServices: [
-      "make-good-solutions/end-of-lease-make-good",
       "make-good-solutions/flooring-reinstatement",
       "make-good-solutions/line-marking",
-      "make-good-solutions/office-make-good",
       "make-good-solutions/painting",
       "make-good-solutions/suspended-ceilings",
       "make-good-solutions/warehouse-flooring"
@@ -2601,11 +2529,6 @@ export const services: Service[] = [
           description: "Warehouse and car park line marking restored to the agreed layout for lease handover."
         },
         {
-          slug: "make-good-solutions/office-make-good",
-          name: "Office Make Good",
-          description: "Office strip out, surface repairs, flooring, ceilings and final presentation for commercial lease handover."
-        },
-        {
           slug: "make-good-solutions/painting",
           name: "Painting",
           description: "Commercial painting and colour-matched finishes for offices, warehouses and industrial make good projects."
@@ -2635,18 +2558,18 @@ export const services: Service[] = [
     relatedServices: [
       "make-good-solutions/flooring-reinstatement",
       "make-good-solutions/line-marking",
-      "make-good-solutions/office-make-good",
       "make-good-solutions/painting",
       "make-good-solutions/patching-plastering",
       "make-good-solutions/suspended-ceilings",
       "make-good-solutions/warehouse-flooring"
     ],
     category: "make-good",
-    published: true
+    published: false
   },
   {
     name: "Office Make Good",
     slug: "make-good-solutions/office-make-good",
+    published: false,
     title: "Office Make Good",
     metaTitle: "Office Make Good Melbourne | Commercial Office Lease Handover",
     description: "Office make good works for commercial tenants, property managers and landlords across Melbourne. We remove redundant fitout, repair surfaces, reinstate finishes and prepare office tenancies for lease handover.",
@@ -2739,11 +2662,6 @@ export const services: Service[] = [
       subtitle: "We coordinate the right mix of make good services so your commercial tenancy is ready for end-of-lease handover.",
       cards: [
         {
-          slug: "make-good-solutions/end-of-lease-make-good",
-          name: "End of Lease Make Good",
-          description: "A coordinated make good service for lease handovers covering strip out, repairs, reinstatement and final presentation."
-        },
-        {
           slug: "make-good-solutions/flooring-reinstatement",
           name: "Flooring Reinstatement",
           description: "Carpet tiles, vinyl, epoxy and timber flooring reinstated to original specification for lease handover."
@@ -2781,7 +2699,6 @@ export const services: Service[] = [
       text: "Send us the office address, lease end timing, photos and any make good notes you have. We will assess the scope and provide a clear quote for the office make good works."
     },
     relatedServices: [
-      "make-good-solutions/end-of-lease-make-good",
       "make-good-solutions/flooring-reinstatement",
       "make-good-solutions/line-marking",
       "make-good-solutions/painting",
@@ -2790,7 +2707,7 @@ export const services: Service[] = [
       "make-good-solutions/warehouse-flooring"
     ],
     category: "make-good",
-    published: true
+    published: false
   },
   {
     name: "Office Strip Out",
@@ -2909,7 +2826,7 @@ export const services: Service[] = [
       subtitle: "We do make goods all day, every day.",
       text: "Send through the office address, photos, lease timing and any make good notes. We will assess the strip out scope and provide a practical quote."
     },
-    relatedServices: ["make-good-solutions/office-make-good", "strip-out-solutions/demolition", "strip-out-solutions/make-safe", "strip-out-solutions/pallet-racking-removal"],
+    relatedServices: ["strip-out-solutions/demolition", "strip-out-solutions/make-safe", "strip-out-solutions/pallet-racking-removal"],
     category: "demolition",
     published: false
   },

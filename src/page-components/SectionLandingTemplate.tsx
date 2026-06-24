@@ -83,7 +83,13 @@ interface SectionLandingData {
   relatedServicesBlock?: RelatedServicesBlock;
 
   // Expanded content blocks (optional)
+  scopeTitle?: string;
+  scopeTitleHighlight?: string;
+  scopeSubtitle?: string;
   scopeRows?: ScopeRow[];
+  propertyTypesTitle?: string;
+  propertyTypesTitleHighlight?: string;
+  propertyTypesSubtitle?: string;
   propertyTypes?: PropertyType[];
   processTitle?: string;
   processSubtitle?: string;
@@ -286,8 +292,8 @@ const SectionLandingTemplate = ({ data }: SectionLandingTemplateProps) => {
         <section className="py-16 bg-secondary border-y border-border">
           <div className="container mx-auto px-4 max-w-6xl">
             <div className="text-center mb-10">
-              <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">STRIP OUT <span className="text-primary">SCOPE</span></h2>
-              <p className="text-muted-foreground text-lg">What we can remove, coordinate and prepare during a commercial or industrial strip out.</p>
+              <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">{data.scopeTitle || 'STRIP OUT'} <span className="text-primary">{data.scopeTitleHighlight || 'SCOPE'}</span></h2>
+              <p className="text-muted-foreground text-lg">{data.scopeSubtitle || 'What we can remove, coordinate and prepare during a commercial or industrial strip out.'}</p>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {data.scopeRows.map((row) => {
@@ -339,8 +345,8 @@ const SectionLandingTemplate = ({ data }: SectionLandingTemplateProps) => {
         <section className="py-16 bg-background">
           <div className="container mx-auto px-4 max-w-6xl">
             <div className="text-center mb-10">
-              <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">PROPERTY TYPES WE <span className="text-primary">STRIP OUT</span></h2>
-              <p className="text-muted-foreground text-lg max-w-3xl mx-auto">Office, warehouse, factory, retail, medical and hospitality tenancies each need a different strip out sequence. We plan the work around the site, access and handover path.</p>
+              <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">{data.propertyTypesTitle || 'PROPERTY TYPES WE'} <span className="text-primary">{data.propertyTypesTitleHighlight || 'STRIP OUT'}</span></h2>
+              <p className="text-muted-foreground text-lg max-w-3xl mx-auto">{data.propertyTypesSubtitle || 'Office, warehouse, factory, retail, medical and hospitality tenancies each need a different strip out sequence. We plan the work around the site, access and handover path.'}</p>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {data.propertyTypes.map((property) => (

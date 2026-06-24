@@ -17,15 +17,11 @@ import {
 
 // Priority service links are duplicated at the top of the Services menu so new high-intent pages are easy to find in preview and production.
 const priorityServiceSlugs = [
-  'make-good-solutions/end-of-lease-make-good',
-  'make-good-solutions/office-make-good',
   'remediation-solutions/water-damage-mould-remediation',
   'remediation-solutions/fire-compliance-facade-cladding-remediation',
 ];
 
 const priorityServiceDisplayNames: Record<string, string> = {
-  'make-good-solutions/end-of-lease-make-good': 'End of Lease Make Good',
-  'make-good-solutions/office-make-good': 'Office Make Good',
   'remediation-solutions/water-damage-mould-remediation': 'Water Damage & Mould Remediation',
   'remediation-solutions/fire-compliance-facade-cladding-remediation': 'Fire Compliance & Facade Cladding Remediation',
 };
@@ -45,11 +41,7 @@ const serviceCategories = [
   {
     label: "Make Good Solutions",
     href: "/services/make-good-solutions/",  // Clickable category header
-    slugs: ['make-good-solutions/end-of-lease-make-good', 'make-good-solutions/flooring-reinstatement', 'make-good-solutions/line-marking', 'make-good-solutions/office-make-good', 'make-good-solutions/patching-plastering', 'make-good-solutions/painting', 'make-good-solutions/suspended-ceilings', 'make-good-solutions/warehouse-flooring'],
-    displayNames: {
-      'make-good-solutions/end-of-lease-make-good': 'End of Lease Make Good',
-      'make-good-solutions/office-make-good': 'Office Make Good'
-    }
+    slugs: ['make-good-solutions/flooring-reinstatement', 'make-good-solutions/line-marking', 'make-good-solutions/patching-plastering', 'make-good-solutions/painting', 'make-good-solutions/suspended-ceilings', 'make-good-solutions/warehouse-flooring']
   },
   {
     label: "Handover Solutions",
