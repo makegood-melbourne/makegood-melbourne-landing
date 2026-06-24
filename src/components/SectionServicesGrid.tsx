@@ -8,13 +8,15 @@ interface SectionServicesGridProps {
   title?: string;
   titleHighlight?: string;  // Optional words to highlight in orange
   description?: string;
+  backgroundClassName?: string;
 }
 
 const SectionServicesGrid = ({ 
   serviceSlugs, 
   title = "Our Services",
   titleHighlight,
-  description 
+  description,
+  backgroundClassName = "bg-secondary/20"
 }: SectionServicesGridProps) => {
   const publishedServices = getPublishedServices();
   
@@ -26,7 +28,7 @@ const SectionServicesGrid = ({
   if (sectionServices.length === 0) return null;
 
   return (
-    <section className="py-16 px-4 sm:px-6 lg:px-8 bg-secondary/20">
+    <section className={`py-16 px-4 sm:px-6 lg:px-8 ${backgroundClassName}`}>
       <div className="max-w-6xl mx-auto">
         {(title || description) && (
           <div className="text-center mb-10">

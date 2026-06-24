@@ -32,6 +32,8 @@ export interface SectionLandingRelatedBlock {
 export interface SectionLandingScopeRow {
   scope: string;
   worksIncluded: string;
+  link?: string;
+  linkLabel?: string;
 }
 
 export interface SectionLandingPropertyType {
@@ -137,11 +139,12 @@ export const sectionLandingPages: SectionLandingData[] = [
     carouselDescription: "Commercial and industrial strip out support for offices, warehouses, factories, retail, medical and hospitality spaces.",
     
     scopeRows: [
-      { scope: "Internal fitout removal", worksIncluded: "Partitions, meeting rooms, workstations, joinery, counters, cupboards, shelving and fixtures" },
+      { scope: "Internal fitout removal", worksIncluded: "Partitions, meeting rooms, workstations, joinery, counters, cupboards, shelving and fixtures", link: "/services/strip-out-solutions/demolition/", linkLabel: "View demolition works" },
       { scope: "Flooring removal", worksIncluded: "Carpet tiles, vinyl, timber-look flooring, trims, adhesives and selected floor preparation" },
       { scope: "Ceiling and wall elements", worksIncluded: "Bulkheads, selected ceiling features, wall linings, signage, decals and wall graphics" },
-      { scope: "Warehouse and factory items", worksIncluded: "Pallet racking, shelving, anchor bolts, storage structures, tenant-built offices and selected equipment zones" },
-      { scope: "Make safe coordination", worksIncluded: "Electrical, plumbing, HVAC, fire services and data cabling coordination before removal works begin" },
+      { scope: "Warehouse and factory items", worksIncluded: "Pallet racking, shelving, anchor bolts, storage structures, tenant-built offices and selected equipment zones", link: "/services/strip-out-solutions/pallet-racking-removal/", linkLabel: "View pallet racking removal" },
+      { scope: "Electrical make safe", worksIncluded: "Isolation, disconnection and return of redundant electrical runs back to the main switchboard where required, coordinated by licensed electricians before removal works begin", link: "/services/strip-out-solutions/make-safe/", linkLabel: "View make safe works" },
+      { scope: "Service make safe coordination", worksIncluded: "Plumbing, HVAC, fire services and data cabling coordination before removal works begin where required", link: "/services/strip-out-solutions/make-safe/", linkLabel: "View make safe works" },
       { scope: "Waste removal", worksIncluded: "Sorting, loading, disposal and recycling where suitable" },
       { scope: "Handover preparation", worksIncluded: "Tenancy prepared for patching, painting, flooring, ceiling repairs or final inspection" }
     ],
@@ -158,7 +161,7 @@ export const sectionLandingPages: SectionLandingData[] = [
     processSteps: [
       { step: "Site Walkthrough", description: "We inspect the tenancy, confirm what is being removed, retained or protected and identify access or building constraints." },
       { step: "Scope & Quotation", description: "We prepare a fixed-price quote based on the lease, site conditions, access requirements and handover pathway." },
-      { step: "Make Safe Coordination", description: "Electrical, plumbing, HVAC, fire services and data cabling are coordinated before removal works begin where required." },
+      { step: "Make Safe Coordination", description: "Electrical make safe, service isolation, plumbing, HVAC, fire services and data cabling are coordinated before removal works begin where required." },
       { step: "Strip Out Works", description: "Fitout, partitions, fixtures, flooring, racking and nominated tenancy alterations are removed in the correct sequence." },
       { step: "Handover Preparation", description: "The site is prepared for patching, painting, flooring reinstatement, ceiling repairs or final inspection." }
     ],
@@ -180,7 +183,7 @@ export const sectionLandingPages: SectionLandingData[] = [
       },
       {
         question: "Does a strip out include make safe works?",
-        answer: "It can. Many strip outs need electrical, plumbing, HVAC, fire service or data cabling coordination before removal works begin. We confirm those requirements during scoping and coordinate the relevant licensed trades where required."
+        answer: "It can. Many strip outs need electrical make safe before removal works begin, including isolation, disconnection and returning redundant electrical runs back to the main switchboard where required. Plumbing, HVAC, fire service and data cabling requirements are also confirmed during scoping and coordinated with the relevant licensed trades."
       },
       {
         question: "Can strip out works be completed after hours?",
