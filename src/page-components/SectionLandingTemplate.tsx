@@ -356,7 +356,7 @@ const SectionLandingTemplate = ({ data }: SectionLandingTemplateProps) => {
 
       {/* Custom Process */}
       {data.processSteps && data.processSteps.length > 0 && (
-        <section className="py-16 bg-secondary/20 border-y border-border">
+        <section className="py-16 bg-secondary border-y border-border">
           <div className="container mx-auto px-4 max-w-6xl">
             <div className="mb-10">
               <h2 className="text-3xl md:text-4xl text-foreground mb-4">{data.processTitle || 'OUR PROCESS'}</h2>
@@ -386,6 +386,7 @@ const SectionLandingTemplate = ({ data }: SectionLandingTemplateProps) => {
           title={data.carouselTitle || "Our Services"}
           titleHighlight={data.carouselTitleHighlight}
           description={data.carouselDescription}
+          backgroundClassName={data.processSteps && data.processSteps.length > 0 ? "bg-background" : undefined}
         />
       ) : (
         <SectionServicesCarousel 
@@ -393,6 +394,7 @@ const SectionLandingTemplate = ({ data }: SectionLandingTemplateProps) => {
           title={data.carouselTitle || "Remediation Services"}
           titleHighlight={data.carouselTitleHighlight}
           description={data.carouselDescription}
+          backgroundClassName={data.processSteps && data.processSteps.length > 0 ? "bg-background" : undefined}
         />
       )}
 
