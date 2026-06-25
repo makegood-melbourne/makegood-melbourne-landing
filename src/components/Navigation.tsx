@@ -136,15 +136,6 @@ const Navigation = () => {
                   );
                   return acc;
                 }, [])}
-                <DropdownMenuSeparator />
-                <DropdownMenuItem asChild>
-                  <a 
-                    href="/services/"
-                    className="cursor-pointer font-medium text-accent"
-                  >
-                    View All Services
-                  </a>
-                </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
             <DropdownMenu>
@@ -310,13 +301,6 @@ const Navigation = () => {
                       </div>
                     );
                   })}
-                  <a
-                    href="/services/"
-                    className="text-accent font-medium hover:text-accent/80 transition-colors"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    View All Services
-                  </a>
                 </div>
               )}
             </div>
