@@ -10,6 +10,10 @@ import makeGoodHeroMobile from "@/assets/services/melbourne-warehouse-make-good-
 import commercialIndustrialHandoverHero from "@/assets/services/commercial-industrial-handover-ready-warehouse-melbourne.webp";
 import commercialIndustrialHandoverHeroMobile from "@/assets/services/commercial-industrial-handover-ready-warehouse-melbourne-mobile.webp";
 import commercialFloorSweepingImage from "@/assets/services/commercial-floor-sweeping-concrete-melbourne.jpeg";
+import industrialFloorScrubberImage from "@/assets/services/industrial-warehouse-floor-scrubber-cleaning-melbourne.jpeg";
+import highPressureWarehouseCleaningImage from "@/assets/services/high-pressure-warehouse-cleaning-melbourne.png";
+import warehouseRelocationImage from "@/assets/services/warehouse-relocation-forklift-loading-racking-melbourne.png";
+import flatbedTruckTransportImage from "@/assets/services/flatbed-truck-transporting-pallet-racking-melbourne-skyline.png";
 import commercialDemolitionHeroImage from "@/assets/services/commercial-demolition-melbourne-hero.jpg";
 import flooringReinstatementHeroImage from "@/assets/services/flooring-reinstatement-hero.webp";
 import makeSafeWorksHeroImage from "@/assets/services/make-safe-works-melbourne-hero.jpg";
@@ -505,43 +509,61 @@ export const sectionLandingPages: SectionLandingData[] = [
     carouselDescription: "Commercial and industrial handover support for cleaning, relocation, presentation and key handback across Melbourne.",
     useGrid: true,
 
-    scopeTitle: "HANDOVER WORKS",
+    scopeTitle: "HANDOVER",
     scopeTitleHighlight: "WORKS",
     scopeSubtitle: "A practical handover scope brings cleaning, clearing, relocation and inspection preparation into one coordinated programme.",
     scopeRows: [
       {
         scope: "End-of-lease cleaning",
         worksIncluded: "Heavy-duty cleaning, warehouse floor scrubbing, pressure washing, amenities, offices, loading docks and final presentation.",
+        image: commercialFloorSweepingImage,
+        imageAlt: "Commercial concrete floor cleaning during lease handover in Melbourne",
+        imageTitle: "Makegood Melbourne - End-of-Lease Cleaning",
         link: "/services/handover-solutions/end-of-lease-cleaning/",
         linkLabel: "View end-of-lease cleaning"
       },
       {
         scope: "Industrial floor cleaning",
         worksIncluded: "Ride-on scrubbing, degreasing, tyre mark removal, concrete cleaning and warehouse floor presentation for inspection.",
+        image: industrialFloorScrubberImage,
+        imageAlt: "Industrial warehouse floor scrubbing for commercial handover in Melbourne",
+        imageTitle: "Makegood Melbourne - Industrial Floor Cleaning",
         link: "/services/handover-solutions/end-of-lease-cleaning/",
         linkLabel: "View floor cleaning scope"
       },
       {
         scope: "Relocation and load-out",
         worksIncluded: "Equipment movement, racking transport, office relocation support, loading coordination and optional delivery to the new site.",
+        image: warehouseRelocationImage,
+        imageAlt: "Warehouse relocation and load-out support for lease handover in Melbourne",
+        imageTitle: "Makegood Melbourne - Relocation and Load-Out",
         link: "/services/handover-solutions/end-of-lease-relocation/",
         linkLabel: "View relocation support"
       },
       {
         scope: "Waste removal and site clearing",
         worksIncluded: "Skip coordination, large item removal, scrap handling, post-strip-out waste and final site clearing.",
+        image: highPressureWarehouseCleaningImage,
+        imageAlt: "Commercial site clearing and final warehouse clean for lease handover in Melbourne",
+        imageTitle: "Makegood Melbourne - Waste Removal and Site Clearing",
         link: "/services/handover-solutions/end-of-lease-cleaning/",
         linkLabel: "View cleaning and clearing"
       },
       {
         scope: "Inspection preparation",
         worksIncluded: "Final presentation, touch-ups and handover readiness for landlord or property manager inspection.",
+        image: commercialIndustrialHandoverHero,
+        imageAlt: "Clean empty commercial warehouse prepared for landlord inspection in Melbourne",
+        imageTitle: "Makegood Melbourne - Inspection Preparation",
         link: "/services/handover-solutions/end-of-lease-cleaning/",
         linkLabel: "View inspection preparation"
       },
       {
         scope: "Make good coordination",
         worksIncluded: "Patching, painting, floor reinstatement, ceiling repairs and trade works where the handover requires more than cleaning.",
+        image: endOfLeaseMakeGoodHeroImage,
+        imageAlt: "Empty commercial tenancy prepared for make good and handover works in Melbourne",
+        imageTitle: "Makegood Melbourne - Make Good Coordination",
         link: "/services/make-good-solutions/",
         linkLabel: "View make good solutions"
       }

@@ -162,8 +162,8 @@ const SectionLandingTemplate = ({ data }: SectionLandingTemplateProps) => {
       </Helmet>
 
       {/* Hero Section */}
-      <div className="bg-secondary pt-20">
-      <section className="bg-secondary pt-6 pb-10 md:pt-10 md:pb-12">
+      <div className="bg-secondary">
+      <section className="bg-secondary pt-4 pb-10 md:pt-6 md:pb-12">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
