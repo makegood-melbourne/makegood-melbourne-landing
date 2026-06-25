@@ -149,13 +149,13 @@
 
 [[redirects]]
   from = "/services/commercial-cleaning"
-  to = "/services/handover-solutions/end-of-lease-cleaning/"
+  to = "/services/handover-solutions/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/services/make-good-cleaning"
-  to = "/services/handover-solutions/end-of-lease-cleaning/"
+  to = "/services/handover-solutions/"
   status = 301
   force = true
 

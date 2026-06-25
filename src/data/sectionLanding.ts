@@ -7,7 +7,13 @@ import stripOutHero from "@/assets/services/commercial-industrial-strip-out-melb
 import stripOutHeroMobile from "@/assets/services/commercial-industrial-strip-out-melbourne-mobile.jpg";
 import makeGoodHero from "@/assets/services/melbourne-warehouse-make-good-hero.jpg";
 import makeGoodHeroMobile from "@/assets/services/melbourne-warehouse-make-good-hero-mobile.jpg";
+import commercialIndustrialHandoverHero from "@/assets/services/commercial-industrial-handover-ready-warehouse-melbourne.webp";
+import commercialIndustrialHandoverHeroMobile from "@/assets/services/commercial-industrial-handover-ready-warehouse-melbourne-mobile.webp";
 import commercialFloorSweepingImage from "@/assets/services/commercial-floor-sweeping-concrete-melbourne.jpeg";
+import industrialFloorScrubberImage from "@/assets/services/industrial-warehouse-floor-scrubber-cleaning-melbourne.jpeg";
+import highPressureWarehouseCleaningImage from "@/assets/services/high-pressure-warehouse-cleaning-melbourne.png";
+import warehouseRelocationImage from "@/assets/services/warehouse-relocation-forklift-loading-racking-melbourne.png";
+import flatbedTruckTransportImage from "@/assets/services/flatbed-truck-transporting-pallet-racking-melbourne-skyline.png";
 import commercialDemolitionHeroImage from "@/assets/services/commercial-demolition-melbourne-hero.jpg";
 import flooringReinstatementHeroImage from "@/assets/services/flooring-reinstatement-hero.webp";
 import makeSafeWorksHeroImage from "@/assets/services/make-safe-works-melbourne-hero.jpg";
@@ -19,6 +25,12 @@ import concreteSlabRestorationHeroImage from "@/assets/services/concrete-slab-re
 import endOfLeaseMakeGoodHeroImage from "@/assets/services/end-of-lease-make-good-empty-commercial-tenancy-melbourne.webp";
 import lineMarkingFreshImage from "@/assets/services/warehouse-fresh-yellow-line-marking-polished-concrete-melbourne.jpg";
 import officeCeilingTilesImage from "@/assets/services/commercial-office-ceiling-tiles-led-panels-melbourne.jpeg";
+import waterproofingMembraneImage from "@/assets/services/waterproofing-membrane-application-commercial-melbourne.jpeg";
+import rooftopWaterproofingImage from "@/assets/services/rooftop-waterproofing-membrane-application-melbourne.jpeg";
+import claddingRemediationImage from "@/assets/services/cladding-remediation-facade-glazing-melbourne.jpeg";
+import skylightRoofPanelsImage from "@/assets/services/industrial-skylight-roof-panels-steel-structure-melbourne.jpeg";
+import structuralRemediationHeroImage from "@/assets/services/structural-remediation-concrete-cancer-repair-melbourne.jpg";
+import shotcreteApplicationImage from "@/assets/services/shotcrete-application-structural-repair-melbourne.jpg";
 
 export interface SectionLandingFAQ {
   question: string;
@@ -54,6 +66,11 @@ export interface SectionLandingScopeRow {
 export interface SectionLandingPropertyType {
   title: string;
   description: string;
+  image?: string;
+  imageAlt?: string;
+  imageTitle?: string;
+  href?: string;
+  linkLabel?: string;
 }
 
 export interface SectionLandingProcessStep {
@@ -231,14 +248,61 @@ export const sectionLandingPages: SectionLandingData[] = [
     propertyTypesTitleHighlight: "STRIP OUT",
     propertyTypesSubtitle: "Office, warehouse, factory, retail, medical and hospitality tenancies each need a different strip out sequence. We plan the work around the site, access and handover path.",
     propertyTypes: [
-      { title: "Office", description: "Partitions, meeting rooms, workstations, floor finishes, signage and joinery. Planned around lift access, loading dock windows, building rules and the make good works that follow." },
-      { title: "Warehouse", description: "Pallet racking, anchor bolt grinding, tenant-built offices, shelving, flooring preparation and service disconnection. Coordinated so the warehouse moves into repair, reinstatement or handover without the strip out creating extra works." },
-      { title: "Factory", description: "Production areas, work zones, storage structures, services, flooring treatments and equipment-related alterations. We assess what can come out safely, what needs specialist trade coordination and what needs to be restored for handover." },
-      { title: "Retail", description: "Tight access, after-hours works, centre rules, hoarding, signage removal, display fixture removal, flooring and back-of-house works. Planned around trading environments and centre management requirements." },
-      { title: "Medical Tenancy", description: "Treatment rooms, plumbing points, cabinetry, specialist flooring, partitions and compliance-sensitive areas. Removed with the right sequencing so the site is ready for reinstatement or the next tenancy stage." },
-      { title: "Hospitality", description: "Counters, kitchen equipment zones, seating, flooring, wall linings, exhaust coordination, plumbing points and electrical services. Planned around building access, waste movement and the reinstatement path." }
-    ],
-    processTitle: "OUR STRIP OUT PROCESS",
+      {
+        title: "Offices",
+        description: "Partitions out. Workstations removed. Walls ready for the make good works that follow.",
+        image: "/images/industries/commercial-office-make-good-melbourne.jpg",
+        imageAlt: "Professional commercial office space after make good restoration in Melbourne",
+        imageTitle: "Office make good and commercial property services Melbourne",
+        href: "/industries/commercial/",
+        linkLabel: "Learn more"
+      },
+      {
+        title: "Warehouses & Logistics",
+        description: "Racking dismantled. Anchors ground. Floors prepared for repair, reinstatement or handover.",
+        image: "/images/industries/warehouse-logistics-make-good-melbourne.jpg",
+        imageAlt: "Industrial warehouse and logistics facility make good services in Melbourne",
+        imageTitle: "Warehouse and logistics make good services Melbourne",
+        href: "/industries/industrial/",
+        linkLabel: "Learn more"
+      },
+      {
+        title: "Retail",
+        description: "Shopfront stripped. Display fixtures removed. Back-of-house areas prepared for centre requirements.",
+        image: "/images/industries/retail-shopfront-make-good-melbourne.jpg",
+        imageAlt: "Retail shopfront and commercial space make good services in Melbourne",
+        imageTitle: "Retail shopfront make good and strip out services Melbourne",
+        href: "/industries/commercial/",
+        linkLabel: "Learn more"
+      },
+      {
+        title: "Medical Centres & Suites",
+        description: "Treatment rooms de-fitted. Cabinetry removed. Services coordinated for reinstatement.",
+        image: "/images/industries/medical-centre-make-good-melbourne.jpg",
+        imageAlt: "Medical centre and healthcare suite make good services in Melbourne",
+        imageTitle: "Medical centre and suite make good services Melbourne",
+        href: "/industries/commercial/",
+        linkLabel: "Learn more"
+      },
+      {
+        title: "Industrial & Manufacturing",
+        description: "Plant zones cleared. Storage structures removed. Services isolated before the next trade stage.",
+        image: "/images/industries/industrial-manufacturing-make-good-melbourne.jpg",
+        imageAlt: "Industrial manufacturing facility make good and restoration services in Melbourne",
+        imageTitle: "Industrial and manufacturing property services Melbourne",
+        href: "/industries/industrial/",
+        linkLabel: "Learn more"
+      },
+      {
+        title: "Hospitality & Venues",
+        description: "Counters removed. Kitchen-adjacent zones stripped. Floors and walls prepared for handover.",
+        image: "/images/industries/hospitality-venue-kitchen-make-good-melbourne.jpg",
+        imageAlt: "Commercial hospitality venue and kitchen make good services in Melbourne",
+        imageTitle: "Hospitality venue make good and handover services Melbourne",
+        href: "/industries/commercial/",
+        linkLabel: "Learn more"
+      }
+    ],    processTitle: "OUR STRIP OUT PROCESS",
     processSubtitle: "The strip out sets up everything that follows. We plan the sequence before works start so repair, reinstatement and handover works can follow from the right position.",
     processSteps: [
       { step: "Site Walkthrough", description: "We inspect the tenancy, confirm what is being removed, retained or protected and identify access or building constraints." },
@@ -405,14 +469,61 @@ export const sectionLandingPages: SectionLandingData[] = [
     propertyTypesTitleHighlight: "MAKE GOOD",
     propertyTypesSubtitle: "Office, warehouse, factory, retail, medical and hospitality tenancies each have different handover expectations. We plan the make good around the lease, site condition and inspection pathway.",
     propertyTypes: [
-      { title: "Office", description: "Partitions, meeting rooms, workstations, flooring, ceiling grids, signage, wall damage and tenancy alterations assessed and brought back to the agreed handover condition." },
-      { title: "Warehouse", description: "Racking removal, anchor grinding, slab repairs, line marking, warehouse floor presentation and selected service disconnection planned around access and inspection timing." },
-      { title: "Factory", description: "Production areas, work zones, storage structures, flooring treatments and equipment-related tenancy changes assessed before repair, reinstatement and presentation works proceed." },
-      { title: "Retail", description: "Display fixtures, signage, wall graphics, flooring, back-of-house areas and centre access requirements coordinated around trading environments and handover rules." },
-      { title: "Medical Tenancy", description: "Treatment rooms, cabinetry, plumbing points, specialist flooring, partitions and compliance-sensitive areas prepared for reinstatement or the next tenancy stage." },
-      { title: "Hospitality", description: "Counters, seating areas, flooring, wall linings, kitchen-adjacent zones, plumbing points and electrical services coordinated with the broader make good pathway." }
-    ],
-    processTitle: "OUR MAKE GOOD PROCESS",
+      {
+        title: "Offices",
+        description: "Partitions down. Walls patched. Ceilings, floors and finishes brought back for handover.",
+        image: "/images/industries/commercial-office-make-good-melbourne.jpg",
+        imageAlt: "Professional commercial office space after make good restoration in Melbourne",
+        imageTitle: "Office make good and commercial property services Melbourne",
+        href: "/industries/commercial/",
+        linkLabel: "Learn more"
+      },
+      {
+        title: "Warehouses & Logistics",
+        description: "Racking out. Slabs repaired. Line marking, floors and loading areas prepared for inspection.",
+        image: "/images/industries/warehouse-logistics-make-good-melbourne.jpg",
+        imageAlt: "Industrial warehouse and logistics facility make good services in Melbourne",
+        imageTitle: "Warehouse and logistics make good services Melbourne",
+        href: "/industries/industrial/",
+        linkLabel: "Learn more"
+      },
+      {
+        title: "Retail",
+        description: "Fitout removed. Surfaces repaired. Shopfront and back-of-house areas prepared for centre standards.",
+        image: "/images/industries/retail-shopfront-make-good-melbourne.jpg",
+        imageAlt: "Retail shopfront and commercial space make good services in Melbourne",
+        imageTitle: "Retail shopfront make good and strip out services Melbourne",
+        href: "/industries/commercial/",
+        linkLabel: "Learn more"
+      },
+      {
+        title: "Medical Centres & Suites",
+        description: "Rooms reinstated. Plumbing points reviewed. Floors, walls and cabinetry areas prepared for return.",
+        image: "/images/industries/medical-centre-make-good-melbourne.jpg",
+        imageAlt: "Medical centre and healthcare suite make good services in Melbourne",
+        imageTitle: "Medical centre and suite make good services Melbourne",
+        href: "/industries/commercial/",
+        linkLabel: "Learn more"
+      },
+      {
+        title: "Industrial & Manufacturing",
+        description: "Plant out. Floor damage repaired. Work zones restored around the agreed handover scope.",
+        image: "/images/industries/industrial-manufacturing-make-good-melbourne.jpg",
+        imageAlt: "Industrial manufacturing facility make good and restoration services in Melbourne",
+        imageTitle: "Industrial and manufacturing property services Melbourne",
+        href: "/industries/industrial/",
+        linkLabel: "Learn more"
+      },
+      {
+        title: "Hospitality & Venues",
+        description: "Fixtures removed. Service points coordinated. Floors, walls and seating areas prepared for handover.",
+        image: "/images/industries/hospitality-venue-kitchen-make-good-melbourne.jpg",
+        imageAlt: "Commercial hospitality venue and kitchen make good services in Melbourne",
+        imageTitle: "Hospitality venue make good and handover services Melbourne",
+        href: "/industries/commercial/",
+        linkLabel: "Learn more"
+      }
+    ],    processTitle: "OUR MAKE GOOD PROCESS",
     processSubtitle: "The make good works are planned around the handover condition, the lease timing and the order each trade needs to follow.",
     processSteps: [
       { step: "Site Walkthrough", description: "We inspect the tenancy, review the practical make good scope and identify access, building rules and handover constraints." },
@@ -464,14 +575,217 @@ export const sectionLandingPages: SectionLandingData[] = [
     ctaText: "Send through the property address, lease timing, photos and any handover notes. We will review the make good scope, confirm the practical order of works and provide a fixed-price quote."
   },
   {
+    slug: "handover-solutions",
+    metaTitle: "Handover Solutions Melbourne | End of Lease Handover Services",
+    metaDescription: "Commercial handover solutions in Melbourne for end-of-lease cleaning, relocation, final inspection preparation and key handback. One coordinated team for lease exits. Free quotes.",
+    ogImage: "/og/handover-solutions.jpg",
+
+    title: "HANDOVER SOLUTIONS MELBOURNE",
+    titleHighlight: "MELBOURNE",
+    tagline: "The final stage of a lease exit needs more than a quick clean. We coordinate end-of-lease cleaning, relocation support, waste removal, final presentation and inspection preparation so commercial and industrial tenants can hand back the keys without loose ends.",
+    trustBadges: [
+      { icon: "shield", title: "Licensed & Insured" },
+      { icon: "clipboard", title: "Lease Handover Ready" },
+      { icon: "dollar", title: "Fixed-Price Quotes" },
+      { icon: "compass", title: "Cleaning + Relocation Coordination" }
+    ],
+    heroImage: commercialIndustrialHandoverHero,
+    heroImageMobile: commercialIndustrialHandoverHeroMobile,
+    heroImageAlt: "Clean empty commercial warehouse ready for lease handover in Melbourne",
+    heroImageTitle: "Makegood Melbourne - Commercial and Industrial Handover Solutions",
+
+    aboutTitlePrefix: "THE FINAL STAGE OF",
+    aboutTitleHighlight: "A COMPLETE HANDOVER",
+    aboutContentLeft: [
+      "A handover is where all the earlier work needs to come together. The strip out may be done, repairs complete and the new site ready, but the old premises still needs to be cleaned, cleared, presented and prepared for inspection.",
+      "That final stage often has more moving parts than expected. Industrial floor cleaning, post-strip-out cleaning, waste removal, equipment movement, loading dock coordination, final touch-ups and timing around the landlord or property manager inspection all need to land in the right order."
+    ],
+    aboutContentRight: [
+      "We handle handover works for offices, warehouses, factories, retail spaces and mixed commercial sites across Melbourne. The scope changes by property type, but the aim is the same. Get the tenancy ready for key handback without cleaning, relocation and inspection items scattered across three different contractors.",
+      "Where the handover requires more than cleaning, we can coordinate end-of-lease cleaning with make good works, strip out support and waste removal as one managed scope."
+    ],
+
+    serviceSlugs: [
+      "handover-solutions/end-of-lease-cleaning",
+      "handover-solutions/end-of-lease-relocation"
+    ],
+    carouselTitle: "OUR HANDOVER SERVICES",
+    carouselTitleHighlight: "SERVICES",
+    carouselDescription: "Commercial and industrial handover support for cleaning, relocation, presentation and key handback across Melbourne.",
+    useGrid: true,
+
+    scopeTitle: "HANDOVER",
+    scopeTitleHighlight: "WORKS",
+    scopeSubtitle: "A practical handover scope brings cleaning, clearing, relocation and inspection preparation into one coordinated programme.",
+    scopeRows: [
+      {
+        scope: "End-of-lease cleaning",
+        worksIncluded: "Heavy-duty cleaning, warehouse floor scrubbing, pressure washing, amenities, offices, loading docks and final presentation.",
+        image: commercialFloorSweepingImage,
+        imageAlt: "Commercial concrete floor cleaning during lease handover in Melbourne",
+        imageTitle: "Makegood Melbourne - End-of-Lease Cleaning",
+        link: "/services/handover-solutions/end-of-lease-cleaning/",
+        linkLabel: "View end-of-lease cleaning"
+      },
+      {
+        scope: "Industrial floor cleaning",
+        worksIncluded: "Ride-on scrubbing, degreasing, tyre mark removal, concrete cleaning and warehouse floor presentation for inspection.",
+        image: industrialFloorScrubberImage,
+        imageAlt: "Industrial warehouse floor scrubbing for commercial handover in Melbourne",
+        imageTitle: "Makegood Melbourne - Industrial Floor Cleaning",
+        link: "/services/handover-solutions/end-of-lease-cleaning/",
+        linkLabel: "View floor cleaning scope"
+      },
+      {
+        scope: "Relocation and load-out",
+        worksIncluded: "Equipment movement, racking transport, office relocation support, loading coordination and optional delivery to the new site.",
+        image: warehouseRelocationImage,
+        imageAlt: "Warehouse relocation and load-out support for lease handover in Melbourne",
+        imageTitle: "Makegood Melbourne - Relocation and Load-Out",
+        link: "/services/handover-solutions/end-of-lease-relocation/",
+        linkLabel: "View relocation support"
+      },
+      {
+        scope: "Waste removal and site clearing",
+        worksIncluded: "Skip coordination, large item removal, scrap handling, post-strip-out waste and final site clearing.",
+        image: highPressureWarehouseCleaningImage,
+        imageAlt: "Commercial site clearing and final warehouse clean for lease handover in Melbourne",
+        imageTitle: "Makegood Melbourne - Waste Removal and Site Clearing",
+        link: "/services/handover-solutions/end-of-lease-cleaning/",
+        linkLabel: "View cleaning and clearing"
+      },
+      {
+        scope: "Inspection preparation",
+        worksIncluded: "Final presentation, touch-ups and handover readiness for landlord or property manager inspection.",
+        image: commercialIndustrialHandoverHero,
+        imageAlt: "Clean empty commercial warehouse prepared for landlord inspection in Melbourne",
+        imageTitle: "Makegood Melbourne - Inspection Preparation",
+        link: "/services/handover-solutions/end-of-lease-cleaning/",
+        linkLabel: "View inspection preparation"
+      },
+      {
+        scope: "Make good coordination",
+        worksIncluded: "Patching, painting, floor reinstatement, ceiling repairs and trade works where the handover requires more than cleaning.",
+        image: endOfLeaseMakeGoodHeroImage,
+        imageAlt: "Empty commercial tenancy prepared for make good and handover works in Melbourne",
+        imageTitle: "Makegood Melbourne - Make Good Coordination",
+        link: "/services/make-good-solutions/",
+        linkLabel: "View make good solutions"
+      }
+    ],
+
+    propertyTypesTitle: "HANDOVER",
+    propertyTypesTitleHighlight: "PROPERTY TYPES",
+    propertyTypesSubtitle: "We prepare commercial and industrial sites across Melbourne for landlord inspection and key handback.",
+    propertyTypes: [
+      {
+        title: "Offices",
+        description: "Final presentation arranged. Amenities checked. Floors, kitchens and work areas ready for inspection.",
+        image: "/images/industries/commercial-office-make-good-melbourne.jpg",
+        imageAlt: "Professional commercial office space after make good restoration in Melbourne",
+        imageTitle: "Office make good and commercial property services Melbourne",
+        href: "/industries/commercial/",
+        linkLabel: "Learn more"
+      },
+      {
+        title: "Warehouses & Logistics",
+        description: "Floors presented. Waste removed. Loading areas, docks and access points ready for handback.",
+        image: "/images/industries/warehouse-logistics-make-good-melbourne.jpg",
+        imageAlt: "Industrial warehouse and logistics facility make good services in Melbourne",
+        imageTitle: "Warehouse and logistics make good services Melbourne",
+        href: "/industries/industrial/",
+        linkLabel: "Learn more"
+      },
+      {
+        title: "Retail",
+        description: "Display areas cleared. Shopfront touch-points checked. Back-of-house areas prepared for centre review.",
+        image: "/images/industries/retail-shopfront-make-good-melbourne.jpg",
+        imageAlt: "Retail shopfront and commercial space make good services in Melbourne",
+        imageTitle: "Retail shopfront make good and strip out services Melbourne",
+        href: "/industries/commercial/",
+        linkLabel: "Learn more"
+      },
+      {
+        title: "Medical Centres & Suites",
+        description: "Treatment rooms presented. Flooring, cabinetry zones and service areas prepared for inspection.",
+        image: "/images/industries/medical-centre-make-good-melbourne.jpg",
+        imageAlt: "Medical centre and healthcare suite make good services in Melbourne",
+        imageTitle: "Medical centre and suite make good services Melbourne",
+        href: "/industries/commercial/",
+        linkLabel: "Learn more"
+      },
+      {
+        title: "Industrial & Manufacturing",
+        description: "Equipment zones cleared. Floors, drains and work areas prepared for the final handover path.",
+        image: "/images/industries/industrial-manufacturing-make-good-melbourne.jpg",
+        imageAlt: "Industrial manufacturing facility make good and restoration services in Melbourne",
+        imageTitle: "Industrial and manufacturing property services Melbourne",
+        href: "/industries/industrial/",
+        linkLabel: "Learn more"
+      },
+      {
+        title: "Hospitality & Venues",
+        description: "Kitchen-adjacent areas presented. Service points checked. Floors and seating areas ready to hand over.",
+        image: "/images/industries/hospitality-venue-kitchen-make-good-melbourne.jpg",
+        imageAlt: "Commercial hospitality venue and kitchen make good services in Melbourne",
+        imageTitle: "Hospitality venue make good and handover services Melbourne",
+        href: "/industries/commercial/",
+        linkLabel: "Learn more"
+      }
+    ],
+
+    processTitle: "A CLEAR HANDOVER PROCESS",
+    processSubtitle: "We sequence the final works so the site is clean, cleared and ready for inspection before the handover date.",
+    processSteps: [
+      { step: "Handover Review", description: "We review the lease timing, property condition, photos, access rules and what needs to be done before key handback." },
+      { step: "Scope and Quote", description: "Fixed-price scope covering cleaning, relocation, waste, inspection preparation and any make good coordination required." },
+      { step: "Clean, Clear and Coordinate", description: "End-of-lease cleaning, waste removal, equipment movement and final trade coordination completed in the right order." },
+      { step: "Final Presentation", description: "Floors, amenities, offices, loading areas and remaining touch-points presented for landlord or property manager inspection." },
+      { step: "Key Handover", description: "Site left ready for final inspection, with the handover pathway closed out." }
+    ],
+
+    faqTitle: "Handover Solutions FAQs",
+    faqSubtitle: "Common questions about commercial and industrial lease handover support in Melbourne.",
+    faqs: [
+      {
+        question: "What are Handover Solutions?",
+        answer: "The final stage of a commercial or industrial lease exit. This can include end-of-lease cleaning, waste removal, relocation support, final presentation, inspection preparation and coordination with make good works where required."
+      },
+      {
+        question: "Is this different from end-of-lease cleaning?",
+        answer: "Yes. End-of-lease cleaning is one part of the handover. Handover Solutions covers the full picture, including relocation, waste, final presentation and coordination with any outstanding make good works."
+      },
+      {
+        question: "Do you handle warehouse and factory handovers?",
+        answer: "Yes. Floor cleaning, loading dock cleaning, racking-related cleanup, waste removal, equipment movement support and inspection preparation across Melbourne."
+      },
+      {
+        question: "Can you coordinate relocation and cleaning together?",
+        answer: "Yes. We can run relocation and end-of-lease cleaning as one programme so the old site is being prepared for handover while the move to the new location is underway."
+      },
+      {
+        question: "Can you help if the property manager has flagged additional works?",
+        answer: "Yes. If the landlord or property manager identifies additional cleaning, presentation or make good items, we can review the notes and prepare a practical scope to address them."
+      },
+      {
+        question: "What information helps with a handover quote?",
+        answer: "Site address, lease end date, property type, floor area, photos or videos, access rules, relocation date, any property manager comments and the expected handover condition."
+      }
+    ],
+
+    ctaTitle: "NEED A COMMERCIAL OR INDUSTRIAL HANDOVER?",
+    ctaSubtitle: "We do make goods all day, every day.",
+    ctaText: "Send through the property address, lease timing, photos and any handover notes. We will review the cleaning, relocation and final presentation scope and provide a practical fixed-price quote."
+  },
+  {
     slug: "remediation-solutions",
     metaTitle: "Remediation Solutions Melbourne | Make Good, BETTER.",
-    metaDescription: "Building remediation services in Melbourne. Structural repairs, concrete cancer treatment, cladding compliance and waterproofing. Licensed contractors. Free site inspections.",
+    metaDescription: "Commercial and industrial remediation solutions in Melbourne for structural repairs, waterproofing, facade cladding, glazing, roof sheet replacement, water damage and mould remediation.",
     ogImage: "/og/remediation.jpg",
-    
-    title: "Building Remediation, Made BETTER.",
-    titleHighlight: "Made BETTER.",  // The word to highlight in orange
-    tagline: "Your commercial property is a significant investment. We protect it. Our expert remediation services address structural decay, water damage, and facade issues at their source—restoring structural integrity, ensuring building compliance, and securing its long-term stability.",
+
+    title: "REMEDIATION SOLUTIONS MELBOURNE",
+    titleHighlight: "MELBOURNE",
+    tagline: "Commercial and industrial remediation works protect the building fabric before defects turn into larger handover, compliance or asset issues. We coordinate structural repairs, waterproofing, facade cladding, glazing, polycarbonate roofing, water damage and mould remediation across Melbourne.",
     trustBadges: [
       { icon: "shield", title: "Licensed & Insured" },
       { icon: "compass", title: "Engineered Solutions" },
@@ -480,20 +794,20 @@ export const sectionLandingPages: SectionLandingData[] = [
     ],
     heroImage: buildingRemediationHero,
     heroImageMobile: buildingRemediationHeroMobile,
-    heroImageAlt: "Close-up of a worker applying shotcrete for concrete remediation services in Melbourne",
-    heroImageTitle: "Makegood Melbourne - Expert Building Remediation Services",
-    
-    aboutTitlePrefix: "Restoring",
-    aboutTitleHighlight: "Your Building's Integrity",
+    heroImageAlt: "Worker applying shotcrete during commercial building remediation works in Melbourne",
+    heroImageTitle: "Makegood Melbourne - Remediation Solutions Melbourne",
+
+    aboutTitlePrefix: "REMEDIATION THAT PROTECTS",
+    aboutTitleHighlight: "THE BUILDING FABRIC",
     aboutContentLeft: [
-      "Time and exposure are unforgiving. Concrete spalls, steel corrodes, and waterproof membranes inevitably fail. What starts as a hairline crack or a minor leak can quickly escalate, compromising the structural safety, regulatory compliance, and operational continuity of your property. Ignoring these symptoms isn't just risky—it's a liability in the making.",
-      "Our remediation specialists work alongside structural engineers and building surveyors to diagnose defects at their source. We go beyond the surface to deliver certified, engineered solutions that solve the problem permanently."
+      "Remediation works need to deal with the cause of the defect, not just the visible surface damage. Concrete spalling, cracking, leaking membranes, facade deterioration, glazing issues, roof sheet failure, water damage and mould can all affect the way a commercial or industrial property performs.",
+      "We look at the building condition, access requirements, lease or compliance requirements and the sequence of trades required to stabilise, repair and reinstate the affected area. That keeps the remediation scope practical, documented and connected to the outcome the property needs."
     ],
     aboutContentRight: [
-      "Every remediation project starts with a thorough building assessment. We identify the root cause—not just the visible symptoms—and provide a detailed, costed scope of works so you can make an informed decision about your asset.",
-      "Whether you're an owner facing urgent structural repairs, a body corporate addressing cladding compliance, or a tenant managing end-of-lease obligations, our licensed contractors deliver solutions that meet all Australian building standards, protecting your investment and providing certainty for the long term."
+      "Our team works across warehouses, factories, offices, retail buildings, mixed commercial sites and body corporate assets throughout Melbourne. Some projects are urgent make-safe repairs. Others are planned rectification works, end-of-lease requirements or preventative maintenance before a defect escalates.",
+      "Where the scope needs specialist input, we coordinate with engineers, building managers, insurers, property managers and client-appointed consultants so the repair pathway is clear before works begin. The aim is an organised remediation process, not a disconnected set of trade visits."
     ],
-    
+
     serviceSlugs: [
       "remediation-solutions/cladding-glazing",
       "remediation-solutions/polycarbonate-roofing-skylights",
@@ -502,38 +816,172 @@ export const sectionLandingPages: SectionLandingData[] = [
       "remediation-solutions/water-damage-mould-remediation",
       "remediation-solutions/fire-compliance-facade-cladding-remediation"
     ],
-    carouselTitle: "Our Remediation Services",
-    carouselTitleHighlight: "Remediation Services",
-    carouselDescription: "Engineered solutions that restore safety, compliance, and longevity.",
-    
-    faqTitle: "Remediation FAQs",
-    faqSubtitle: "Common questions about remediation services",
+    carouselTitle: "OUR REMEDIATION SERVICES",
+    carouselTitleHighlight: "SERVICES",
+    carouselDescription: "Commercial and industrial remediation support for structural, waterproofing, facade, glazing, roofing, water damage and compliance-related building defects.",
+
+    scopeTitle: "REMEDIATION",
+    scopeTitleHighlight: "SCOPE",
+    scopeSubtitle: "What we can assess, coordinate, repair and reinstate during commercial and industrial remediation works.",
+    scopeRows: [
+      {
+        scope: "Structural remediation",
+        worksIncluded: "Concrete cancer repairs, spalling treatment, exposed reinforcement, cracking, slab deterioration and engineered repair coordination.",
+        link: "/services/remediation-solutions/structural/",
+        linkLabel: "View structural remediation",
+        image: structuralRemediationHeroImage,
+        imageAlt: "Structural concrete remediation and concrete cancer repair works in Melbourne",
+        imageTitle: "Structural Remediation Melbourne"
+      },
+      {
+        scope: "Concrete defects and shotcrete",
+        worksIncluded: "Concrete breakout, steel treatment, repair mortar, shotcrete application, patch repairs and reinstatement of damaged concrete elements.",
+        link: "/services/remediation-solutions/structural/",
+        linkLabel: "View concrete repair works",
+        image: shotcreteApplicationImage,
+        imageAlt: "Shotcrete application during structural concrete repair works in Melbourne",
+        imageTitle: "Concrete Repair and Shotcrete Melbourne"
+      },
+      {
+        scope: "Waterproofing remediation",
+        worksIncluded: "Failed membranes, roof leaks, podium and wet area defects, water ingress, detailing issues and commercial waterproofing repairs.",
+        link: "/services/remediation-solutions/waterproofing/",
+        linkLabel: "View waterproofing",
+        image: waterproofingMembraneImage,
+        imageAlt: "Commercial waterproofing membrane application for remediation works in Melbourne",
+        imageTitle: "Waterproofing Remediation Melbourne"
+      },
+      {
+        scope: "Cladding and glazing",
+        worksIncluded: "Facade cladding repairs, glazing remediation, ACP replacement pathways, sealant failure, facade leaks and building envelope coordination.",
+        link: "/services/remediation-solutions/cladding-glazing/",
+        linkLabel: "View cladding and glazing",
+        image: claddingRemediationImage,
+        imageAlt: "Commercial facade cladding and glazing remediation works in Melbourne",
+        imageTitle: "Cladding and Glazing Remediation Melbourne"
+      },
+      {
+        scope: "Polycarbonate roofing and skylights",
+        worksIncluded: "Yellowed, cracked, leaking or storm-damaged roof sheets and skylight panels replaced with compliant industrial roofing solutions.",
+        link: "/services/remediation-solutions/polycarbonate-roofing-skylights/",
+        linkLabel: "View roofing and skylights",
+        image: skylightRoofPanelsImage,
+        imageAlt: "Industrial warehouse polycarbonate roofing and skylight panels in Melbourne",
+        imageTitle: "Polycarbonate Roofing and Skylights Melbourne"
+      },
+      {
+        scope: "Water damage and mould",
+        worksIncluded: "Leak-related damage, affected material removal, drying coordination, mould-affected areas and reinstatement planning after water ingress.",
+        link: "/services/remediation-solutions/water-damage-mould-remediation/",
+        linkLabel: "View water damage remediation",
+        image: rooftopWaterproofingImage,
+        imageAlt: "Rooftop waterproofing membrane works used to address commercial water ingress in Melbourne",
+        imageTitle: "Water Damage and Mould Remediation Melbourne"
+      }
+    ],
+
+    propertyTypesTitle: "PROPERTY TYPES WE",
+    propertyTypesTitleHighlight: "REMEDIATE",
+    propertyTypesSubtitle: "Different commercial and industrial sites need different remediation pathways. We plan the scope around the defect, access constraints, building use and documentation requirements.",
+    propertyTypes: [
+      {
+        title: "Offices",
+        description: "Facade leaks, glazing issues and water ingress managed around occupied commercial buildings.",
+        image: "/images/industries/commercial-office-make-good-melbourne.jpg",
+        imageAlt: "Professional commercial office space after make good restoration in Melbourne",
+        imageTitle: "Office make good and commercial property services Melbourne",
+        href: "/industries/commercial/",
+        linkLabel: "Learn more"
+      },
+      {
+        title: "Warehouses & Logistics",
+        description: "Roof sheets, skylights, slab defects and loading area damage addressed around site access.",
+        image: "/images/industries/warehouse-logistics-make-good-melbourne.jpg",
+        imageAlt: "Industrial warehouse and logistics facility make good services in Melbourne",
+        imageTitle: "Warehouse and logistics make good services Melbourne",
+        href: "/industries/industrial/",
+        linkLabel: "Learn more"
+      },
+      {
+        title: "Retail",
+        description: "Facade presentation, glazing, water damage and access windows coordinated around trading environments.",
+        image: "/images/industries/retail-shopfront-make-good-melbourne.jpg",
+        imageAlt: "Retail shopfront and commercial space make good services in Melbourne",
+        imageTitle: "Retail shopfront make good and strip out services Melbourne",
+        href: "/industries/commercial/",
+        linkLabel: "Learn more"
+      },
+      {
+        title: "Medical Centres & Suites",
+        description: "Water ingress, mould-affected areas and sensitive room reinstatement planned around building use.",
+        image: "/images/industries/medical-centre-make-good-melbourne.jpg",
+        imageAlt: "Medical centre and healthcare suite make good services in Melbourne",
+        imageTitle: "Medical centre and suite make good services Melbourne",
+        href: "/industries/commercial/",
+        linkLabel: "Learn more"
+      },
+      {
+        title: "Industrial & Manufacturing",
+        description: "Structural wear, slab deterioration, roof leaks and drainage issues repaired around production zones.",
+        image: "/images/industries/industrial-manufacturing-make-good-melbourne.jpg",
+        imageAlt: "Industrial manufacturing facility make good and restoration services in Melbourne",
+        imageTitle: "Industrial and manufacturing property services Melbourne",
+        href: "/industries/industrial/",
+        linkLabel: "Learn more"
+      },
+      {
+        title: "Hospitality & Venues",
+        description: "Water damage, flooring defects, service leaks and back-of-house repairs coordinated for venue use.",
+        image: "/images/industries/hospitality-venue-kitchen-make-good-melbourne.jpg",
+        imageAlt: "Commercial hospitality venue and kitchen make good services in Melbourne",
+        imageTitle: "Hospitality venue make good and handover services Melbourne",
+        href: "/industries/commercial/",
+        linkLabel: "Learn more"
+      }
+    ],
+
+    processTitle: "OUR REMEDIATION PROCESS",
+    processSubtitle: "Remediation works are scoped around the defect, the building use, the required documentation and the order each trade needs to follow.",
+    processSteps: [
+      { step: "Site Assessment", description: "We inspect the affected area, review photos, access constraints, visible defects and the practical risk of further deterioration." },
+      { step: "Cause and Scope", description: "We identify the likely cause, confirm whether specialist input is needed and prepare a clear remediation scope for the required repair pathway." },
+      { step: "Fixed-Price Quote", description: "We provide a practical quote based on access, materials, sequencing, documentation requirements and any engineer or consultant coordination." },
+      { step: "Remediation Works", description: "Structural, waterproofing, facade, glazing, roofing, water damage or mould remediation works are completed in the correct order." },
+      { step: "Close Out", description: "The affected area is reinstated, presented and documented so the repair can be handed back with a clear record of the completed works." }
+    ],
+
+    faqTitle: "Remediation Solutions FAQs",
+    faqSubtitle: "Common questions about commercial and industrial remediation works in Melbourne.",
     faqs: [
       {
         question: "What types of building defects do you remediate?",
-        answer: "We remediate a comprehensive range of building defects at their source. This includes concrete cancer and spalling, structural cracking, non-compliant facade and cladding issues, and complete waterproofing failures on roofs, basements, and podiums. Every project begins with a thorough assessment to ensure we recommend the correct, long-term solution."
+        answer: "We remediate commercial and industrial building defects including concrete cancer, spalling, cracking, waterproofing failure, water ingress, mould-affected areas, cladding and glazing issues, polycarbonate roof sheet failure and facade-related defects. The final scope depends on the site condition and the cause of the defect."
       },
       {
-        question: "Do you work with structural engineers?",
-        answer: "Yes, always. For any project involving structural integrity, we work directly with qualified structural engineers. They provide the independent specifications and certifications required to ensure all repairs are not only effective but also fully compliant with Australian Standards. We manage this entire process for you."
+        question: "Do you work with structural engineers or building consultants?",
+        answer: "Yes. Where the remediation scope requires engineering input, consultant review, building manager approval or independent documentation, we can coordinate with the relevant parties and align the works to the agreed repair pathway."
       },
       {
-        question: "Can remediation work be done while the building is occupied?",
-        answer: "Yes, in most cases. Our project management is centred on minimising disruption. We develop detailed work plans to maintain safe access and schedule noisy or intrusive work after hours whenever possible. We coordinate closely with building managers to ensure tenants are informed and operations continue smoothly."
+        question: "Can remediation work be completed while the building is occupied?",
+        answer: "In many cases, yes. We plan access, staging, dust control, noise, safety zones and after-hours requirements around the building use. Occupied sites need careful sequencing so tenants, staff and operations are protected while the works proceed."
       },
       {
-        question: "Is our building covered by the Victorian Cladding Rectification Scheme?",
-        answer: "The government's scheme is primarily focused on residential buildings, meaning commercial and industrial properties are typically the owner's responsibility to rectify. We can definitively assess your building's cladding, advise on your compliance obligations under the National Construction Code, and provide a clear pathway to rectification."
+        question: "Is remediation different from make good works?",
+        answer: "Yes, but the two can overlap. Make good works focus on returning a tenancy to the agreed handover condition. Remediation focuses on defects such as water ingress, concrete deterioration, facade issues or structural damage. If a lease exit includes remediation items, we can coordinate those works within the broader make good pathway."
       },
       {
-        question: "What warranties do you provide on your work?",
-        answer: "We stand behind our work with comprehensive warranties. While specific periods vary—for example, waterproofing systems often carry 10-15 year manufacturer warranties—all our workmanship is guaranteed. Upon completion, we provide a full handover package with all warranty documentation, certifications, and maintenance requirements for your records."
+        question: "Do you handle cladding, glazing and waterproofing together?",
+        answer: "Yes. Building envelope defects often involve more than one trade. A leak may involve cladding, glazing, sealants, flashings, roof sheets or waterproofing. We can coordinate the required trades so the defect is addressed as one remediation scope."
+      },
+      {
+        question: "What information helps with a remediation quote?",
+        answer: "Helpful information includes the site address, photos or videos of the defect, leak history, building plans if available, access restrictions, consultant or property manager notes, urgency, operating hours and whether the building is occupied."
       }
     ],
-    
-    ctaTitle: "SECURE YOUR ASSET'S LONGEVITY",
-    ctaSubtitle: "Make Good, BETTER.",
-    ctaText: "We've built our reputation on delivering engineered remediation solutions for commercial and industrial properties across Melbourne. Don't let building defects compromise your safety or your investment. Contact us for a comprehensive site assessment and a clear, detailed proposal."
+
+    ctaTitle: "NEED COMMERCIAL OR INDUSTRIAL REMEDIATION?",
+    ctaSubtitle: "We do Make Goods all day, every day.",
+    ctaText: "Send through the property address, photos, defect notes, access details and any consultant or property manager comments. We will review the remediation pathway, confirm the practical order of works and provide a fixed-price quote."
   }
 ];
 
