@@ -569,7 +569,7 @@ export const sectionLandingPages: SectionLandingData[] = [
       }
     ],
 
-    propertyTypesTitle: "HANDOVER PROPERTY TYPES",
+    propertyTypesTitle: "HANDOVER",
     propertyTypesTitleHighlight: "PROPERTY TYPES",
     propertyTypesSubtitle: "We prepare commercial and industrial sites across Melbourne for landlord inspection and key handback.",
     propertyTypes: [
