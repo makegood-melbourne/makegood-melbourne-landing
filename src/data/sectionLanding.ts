@@ -25,6 +25,12 @@ import concreteSlabRestorationHeroImage from "@/assets/services/concrete-slab-re
 import endOfLeaseMakeGoodHeroImage from "@/assets/services/end-of-lease-make-good-empty-commercial-tenancy-melbourne.webp";
 import lineMarkingFreshImage from "@/assets/services/warehouse-fresh-yellow-line-marking-polished-concrete-melbourne.jpg";
 import officeCeilingTilesImage from "@/assets/services/commercial-office-ceiling-tiles-led-panels-melbourne.jpeg";
+import waterproofingMembraneImage from "@/assets/services/waterproofing-membrane-application-commercial-melbourne.jpeg";
+import rooftopWaterproofingImage from "@/assets/services/rooftop-waterproofing-membrane-application-melbourne.jpeg";
+import claddingRemediationImage from "@/assets/services/cladding-remediation-facade-glazing-melbourne.jpeg";
+import skylightRoofPanelsImage from "@/assets/services/industrial-skylight-roof-panels-steel-structure-melbourne.jpeg";
+import structuralRemediationHeroImage from "@/assets/services/structural-remediation-concrete-cancer-repair-melbourne.jpg";
+import shotcreteApplicationImage from "@/assets/services/shotcrete-application-structural-repair-melbourne.jpg";
 
 export interface SectionLandingFAQ {
   question: string;
@@ -627,12 +633,12 @@ export const sectionLandingPages: SectionLandingData[] = [
   {
     slug: "remediation-solutions",
     metaTitle: "Remediation Solutions Melbourne | Make Good, BETTER.",
-    metaDescription: "Building remediation services in Melbourne. Structural repairs, concrete cancer treatment, cladding compliance and waterproofing. Licensed contractors. Free site inspections.",
+    metaDescription: "Commercial and industrial remediation solutions in Melbourne for structural repairs, waterproofing, facade cladding, glazing, roof sheet replacement, water damage and mould remediation.",
     ogImage: "/og/remediation.jpg",
-    
-    title: "Building Remediation, Made BETTER.",
-    titleHighlight: "Made BETTER.",  // The word to highlight in orange
-    tagline: "Your commercial property is a significant investment. We protect it. Our expert remediation services address structural decay, water damage, and facade issues at their source—restoring structural integrity, ensuring building compliance, and securing its long-term stability.",
+
+    title: "REMEDIATION SOLUTIONS MELBOURNE",
+    titleHighlight: "MELBOURNE",
+    tagline: "Commercial and industrial remediation works protect the building fabric before defects turn into larger handover, compliance or asset issues. We coordinate structural repairs, waterproofing, facade cladding, glazing, polycarbonate roofing, water damage and mould remediation across Melbourne.",
     trustBadges: [
       { icon: "shield", title: "Licensed & Insured" },
       { icon: "compass", title: "Engineered Solutions" },
@@ -641,20 +647,20 @@ export const sectionLandingPages: SectionLandingData[] = [
     ],
     heroImage: buildingRemediationHero,
     heroImageMobile: buildingRemediationHeroMobile,
-    heroImageAlt: "Close-up of a worker applying shotcrete for concrete remediation services in Melbourne",
-    heroImageTitle: "Makegood Melbourne - Expert Building Remediation Services",
-    
-    aboutTitlePrefix: "Restoring",
-    aboutTitleHighlight: "Your Building's Integrity",
+    heroImageAlt: "Worker applying shotcrete during commercial building remediation works in Melbourne",
+    heroImageTitle: "Makegood Melbourne - Remediation Solutions Melbourne",
+
+    aboutTitlePrefix: "REMEDIATION THAT PROTECTS",
+    aboutTitleHighlight: "THE BUILDING FABRIC",
     aboutContentLeft: [
-      "Time and exposure are unforgiving. Concrete spalls, steel corrodes, and waterproof membranes inevitably fail. What starts as a hairline crack or a minor leak can quickly escalate, compromising the structural safety, regulatory compliance, and operational continuity of your property. Ignoring these symptoms isn't just risky—it's a liability in the making.",
-      "Our remediation specialists work alongside structural engineers and building surveyors to diagnose defects at their source. We go beyond the surface to deliver certified, engineered solutions that solve the problem permanently."
+      "Remediation works need to deal with the cause of the defect, not just the visible surface damage. Concrete spalling, cracking, leaking membranes, facade deterioration, glazing issues, roof sheet failure, water damage and mould can all affect the way a commercial or industrial property performs.",
+      "We look at the building condition, access requirements, lease or compliance requirements and the sequence of trades required to stabilise, repair and reinstate the affected area. That keeps the remediation scope practical, documented and connected to the outcome the property needs."
     ],
     aboutContentRight: [
-      "Every remediation project starts with a thorough building assessment. We identify the root cause—not just the visible symptoms—and provide a detailed, costed scope of works so you can make an informed decision about your asset.",
-      "Whether you're an owner facing urgent structural repairs, a body corporate addressing cladding compliance, or a tenant managing end-of-lease obligations, our licensed contractors deliver solutions that meet all Australian building standards, protecting your investment and providing certainty for the long term."
+      "Our team works across warehouses, factories, offices, retail buildings, mixed commercial sites and body corporate assets throughout Melbourne. Some projects are urgent make-safe repairs. Others are planned rectification works, end-of-lease requirements or preventative maintenance before a defect escalates.",
+      "Where the scope needs specialist input, we coordinate with engineers, building managers, insurers, property managers and client-appointed consultants so the repair pathway is clear before works begin. The aim is an organised remediation process, not a disconnected set of trade visits."
     ],
-    
+
     serviceSlugs: [
       "remediation-solutions/cladding-glazing",
       "remediation-solutions/polycarbonate-roofing-skylights",
@@ -663,38 +669,124 @@ export const sectionLandingPages: SectionLandingData[] = [
       "remediation-solutions/water-damage-mould-remediation",
       "remediation-solutions/fire-compliance-facade-cladding-remediation"
     ],
-    carouselTitle: "Our Remediation Services",
-    carouselTitleHighlight: "Remediation Services",
-    carouselDescription: "Engineered solutions that restore safety, compliance, and longevity.",
-    
-    faqTitle: "Remediation FAQs",
-    faqSubtitle: "Common questions about remediation services",
+    carouselTitle: "OUR REMEDIATION SERVICES",
+    carouselTitleHighlight: "SERVICES",
+    carouselDescription: "Commercial and industrial remediation support for structural, waterproofing, facade, glazing, roofing, water damage and compliance-related building defects.",
+
+    scopeTitle: "REMEDIATION",
+    scopeTitleHighlight: "SCOPE",
+    scopeSubtitle: "What we can assess, coordinate, repair and reinstate during commercial and industrial remediation works.",
+    scopeRows: [
+      {
+        scope: "Structural remediation",
+        worksIncluded: "Concrete cancer repairs, spalling treatment, exposed reinforcement, cracking, slab deterioration and engineered repair coordination.",
+        link: "/services/remediation-solutions/structural/",
+        linkLabel: "View structural remediation",
+        image: structuralRemediationHeroImage,
+        imageAlt: "Structural concrete remediation and concrete cancer repair works in Melbourne",
+        imageTitle: "Structural Remediation Melbourne"
+      },
+      {
+        scope: "Concrete defects and shotcrete",
+        worksIncluded: "Concrete breakout, steel treatment, repair mortar, shotcrete application, patch repairs and reinstatement of damaged concrete elements.",
+        link: "/services/remediation-solutions/structural/",
+        linkLabel: "View concrete repair works",
+        image: shotcreteApplicationImage,
+        imageAlt: "Shotcrete application during structural concrete repair works in Melbourne",
+        imageTitle: "Concrete Repair and Shotcrete Melbourne"
+      },
+      {
+        scope: "Waterproofing remediation",
+        worksIncluded: "Failed membranes, roof leaks, podium and wet area defects, water ingress, detailing issues and commercial waterproofing repairs.",
+        link: "/services/remediation-solutions/waterproofing/",
+        linkLabel: "View waterproofing",
+        image: waterproofingMembraneImage,
+        imageAlt: "Commercial waterproofing membrane application for remediation works in Melbourne",
+        imageTitle: "Waterproofing Remediation Melbourne"
+      },
+      {
+        scope: "Cladding and glazing",
+        worksIncluded: "Facade cladding repairs, glazing remediation, ACP replacement pathways, sealant failure, facade leaks and building envelope coordination.",
+        link: "/services/remediation-solutions/cladding-glazing/",
+        linkLabel: "View cladding and glazing",
+        image: claddingRemediationImage,
+        imageAlt: "Commercial facade cladding and glazing remediation works in Melbourne",
+        imageTitle: "Cladding and Glazing Remediation Melbourne"
+      },
+      {
+        scope: "Polycarbonate roofing and skylights",
+        worksIncluded: "Yellowed, cracked, leaking or storm-damaged roof sheets and skylight panels replaced with compliant industrial roofing solutions.",
+        link: "/services/remediation-solutions/polycarbonate-roofing-skylights/",
+        linkLabel: "View roofing and skylights",
+        image: skylightRoofPanelsImage,
+        imageAlt: "Industrial warehouse polycarbonate roofing and skylight panels in Melbourne",
+        imageTitle: "Polycarbonate Roofing and Skylights Melbourne"
+      },
+      {
+        scope: "Water damage and mould",
+        worksIncluded: "Leak-related damage, affected material removal, drying coordination, mould-affected areas and reinstatement planning after water ingress.",
+        link: "/services/remediation-solutions/water-damage-mould-remediation/",
+        linkLabel: "View water damage remediation",
+        image: rooftopWaterproofingImage,
+        imageAlt: "Rooftop waterproofing membrane works used to address commercial water ingress in Melbourne",
+        imageTitle: "Water Damage and Mould Remediation Melbourne"
+      }
+    ],
+
+    propertyTypesTitle: "PROPERTY TYPES WE",
+    propertyTypesTitleHighlight: "REMEDIATE",
+    propertyTypesSubtitle: "Different commercial and industrial sites need different remediation pathways. We plan the scope around the defect, access constraints, building use and documentation requirements.",
+    propertyTypes: [
+      { title: "Office Buildings", description: "Facade leaks, glazing issues, waterproofing defects, ceiling damage, water ingress and occupied-building access requirements coordinated around tenants and building management." },
+      { title: "Warehouses", description: "Concrete slab defects, roof sheet and skylight replacement, water ingress, loading area damage, wall repairs and industrial access constraints planned around operations." },
+      { title: "Factories", description: "Structural wear, slab deterioration, roof leaks, equipment-zone damage, drainage issues and remediation sequencing around production areas and safety controls." },
+      { title: "Retail", description: "Facade presentation, water damage, glazing, back-of-house defects, access windows and remediation works coordinated around trading environments and centre rules." },
+      { title: "Body Corporate", description: "Shared facade, balcony, roof, waterproofing, cladding and structural issues documented clearly for committees, owners, managers and consultants." },
+      { title: "Mixed Commercial", description: "Buildings with office, warehouse, showroom, loading, storage and trade areas assessed as one remediation pathway rather than isolated defects." }
+    ],
+
+    processTitle: "OUR REMEDIATION PROCESS",
+    processSubtitle: "Remediation works are scoped around the defect, the building use, the required documentation and the order each trade needs to follow.",
+    processSteps: [
+      { step: "Site Assessment", description: "We inspect the affected area, review photos, access constraints, visible defects and the practical risk of further deterioration." },
+      { step: "Cause and Scope", description: "We identify the likely cause, confirm whether specialist input is needed and prepare a clear remediation scope for the required repair pathway." },
+      { step: "Fixed-Price Quote", description: "We provide a practical quote based on access, materials, sequencing, documentation requirements and any engineer or consultant coordination." },
+      { step: "Remediation Works", description: "Structural, waterproofing, facade, glazing, roofing, water damage or mould remediation works are completed in the correct order." },
+      { step: "Close Out", description: "The affected area is reinstated, presented and documented so the repair can be handed back with a clear record of the completed works." }
+    ],
+
+    faqTitle: "Remediation Solutions FAQs",
+    faqSubtitle: "Common questions about commercial and industrial remediation works in Melbourne.",
     faqs: [
       {
         question: "What types of building defects do you remediate?",
-        answer: "We remediate a comprehensive range of building defects at their source. This includes concrete cancer and spalling, structural cracking, non-compliant facade and cladding issues, and complete waterproofing failures on roofs, basements, and podiums. Every project begins with a thorough assessment to ensure we recommend the correct, long-term solution."
+        answer: "We remediate commercial and industrial building defects including concrete cancer, spalling, cracking, waterproofing failure, water ingress, mould-affected areas, cladding and glazing issues, polycarbonate roof sheet failure and facade-related defects. The final scope depends on the site condition and the cause of the defect."
       },
       {
-        question: "Do you work with structural engineers?",
-        answer: "Yes, always. For any project involving structural integrity, we work directly with qualified structural engineers. They provide the independent specifications and certifications required to ensure all repairs are not only effective but also fully compliant with Australian Standards. We manage this entire process for you."
+        question: "Do you work with structural engineers or building consultants?",
+        answer: "Yes. Where the remediation scope requires engineering input, consultant review, building manager approval or independent documentation, we can coordinate with the relevant parties and align the works to the agreed repair pathway."
       },
       {
-        question: "Can remediation work be done while the building is occupied?",
-        answer: "Yes, in most cases. Our project management is centred on minimising disruption. We develop detailed work plans to maintain safe access and schedule noisy or intrusive work after hours whenever possible. We coordinate closely with building managers to ensure tenants are informed and operations continue smoothly."
+        question: "Can remediation work be completed while the building is occupied?",
+        answer: "In many cases, yes. We plan access, staging, dust control, noise, safety zones and after-hours requirements around the building use. Occupied sites need careful sequencing so tenants, staff and operations are protected while the works proceed."
       },
       {
-        question: "Is our building covered by the Victorian Cladding Rectification Scheme?",
-        answer: "The government's scheme is primarily focused on residential buildings, meaning commercial and industrial properties are typically the owner's responsibility to rectify. We can definitively assess your building's cladding, advise on your compliance obligations under the National Construction Code, and provide a clear pathway to rectification."
+        question: "Is remediation different from make good works?",
+        answer: "Yes, but the two can overlap. Make good works focus on returning a tenancy to the agreed handover condition. Remediation focuses on defects such as water ingress, concrete deterioration, facade issues or structural damage. If a lease exit includes remediation items, we can coordinate those works within the broader make good pathway."
       },
       {
-        question: "What warranties do you provide on your work?",
-        answer: "We stand behind our work with comprehensive warranties. While specific periods vary—for example, waterproofing systems often carry 10-15 year manufacturer warranties—all our workmanship is guaranteed. Upon completion, we provide a full handover package with all warranty documentation, certifications, and maintenance requirements for your records."
+        question: "Do you handle cladding, glazing and waterproofing together?",
+        answer: "Yes. Building envelope defects often involve more than one trade. A leak may involve cladding, glazing, sealants, flashings, roof sheets or waterproofing. We can coordinate the required trades so the defect is addressed as one remediation scope."
+      },
+      {
+        question: "What information helps with a remediation quote?",
+        answer: "Helpful information includes the site address, photos or videos of the defect, leak history, building plans if available, access restrictions, consultant or property manager notes, urgency, operating hours and whether the building is occupied."
       }
     ],
-    
-    ctaTitle: "SECURE YOUR ASSET'S LONGEVITY",
-    ctaSubtitle: "Make Good, BETTER.",
-    ctaText: "We've built our reputation on delivering engineered remediation solutions for commercial and industrial properties across Melbourne. Don't let building defects compromise your safety or your investment. Contact us for a comprehensive site assessment and a clear, detailed proposal."
+
+    ctaTitle: "NEED COMMERCIAL OR INDUSTRIAL REMEDIATION?",
+    ctaSubtitle: "We do Make Goods all day, every day.",
+    ctaText: "Send through the property address, photos, defect notes, access details and any consultant or property manager comments. We will review the remediation pathway, confirm the practical order of works and provide a fixed-price quote."
   }
 ];
 
