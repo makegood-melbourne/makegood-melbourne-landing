@@ -43,6 +43,11 @@ interface ScopeRow {
 interface PropertyType {
   title: string;
   description: string;
+  image?: unknown;
+  imageAlt?: string;
+  imageTitle?: string;
+  href?: string;
+  linkLabel?: string;
 }
 
 interface ProcessStep {
@@ -349,12 +354,46 @@ const SectionLandingTemplate = ({ data }: SectionLandingTemplateProps) => {
               <p className="text-muted-foreground text-lg max-w-3xl mx-auto">{data.propertyTypesSubtitle || 'Office, warehouse, factory, retail, medical and hospitality tenancies each need a different strip out sequence. We plan the work around the site, access and handover path.'}</p>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {data.propertyTypes.map((property) => (
-                <article key={property.title} className="rounded-lg border border-border border-t-4 border-t-primary/70 bg-card p-6 shadow-sm transition-all duration-300 hover:border-primary/50 hover:shadow-lg">
-                  <h3 className="text-xl font-semibold text-foreground mb-3">{property.title}</h3>
-                  <p className="text-muted-foreground leading-relaxed">{property.description}</p>
-                </article>
-              ))}
+              {data.propertyTypes.map((property) => {
+                const propertyCard = (
+                  <Card className="overflow-hidden border-border bg-card h-full transition-all duration-300 group-hover:border-primary/50 group-hover:shadow-xl">
+                    {property.image && (
+                      <div className="aspect-[4/3] overflow-hidden relative bg-muted/30">
+                        <img
+                          src={resolveImageSrc(property.image)}
+                          alt={property.imageAlt || `${property.title} commercial property services in Melbourne`}
+                          title={property.imageTitle}
+                          className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                          loading="lazy"
+                          decoding="async"
+                          width={800}
+                          height={600}
+                        />
+                      </div>
+                    )}
+                    <CardContent className="p-6">
+                      <h3 className="text-xl font-bold text-foreground mb-3 uppercase">{property.title}</h3>
+                      <p className="text-sm text-muted-foreground mb-4 leading-relaxed">{property.description}</p>
+                      {property.href && (
+                        <span className="inline-flex items-center text-primary text-sm font-medium group-hover:underline">
+                          {property.linkLabel || 'Learn more'}
+                          <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                        </span>
+                      )}
+                    </CardContent>
+                  </Card>
+                );
+
+                return property.href ? (
+                  <a key={property.title} href={property.href} className="block group">
+                    {propertyCard}
+                  </a>
+                ) : (
+                  <article key={property.title} className="group">
+                    {propertyCard}
+                  </article>
+                );
+              })}
             </div>
           </div>
         </section>

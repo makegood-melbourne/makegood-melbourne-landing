@@ -66,6 +66,11 @@ export interface SectionLandingScopeRow {
 export interface SectionLandingPropertyType {
   title: string;
   description: string;
+  image?: string;
+  imageAlt?: string;
+  imageTitle?: string;
+  href?: string;
+  linkLabel?: string;
 }
 
 export interface SectionLandingProcessStep {
@@ -243,14 +248,61 @@ export const sectionLandingPages: SectionLandingData[] = [
     propertyTypesTitleHighlight: "STRIP OUT",
     propertyTypesSubtitle: "Office, warehouse, factory, retail, medical and hospitality tenancies each need a different strip out sequence. We plan the work around the site, access and handover path.",
     propertyTypes: [
-      { title: "Office", description: "Partitions, meeting rooms, workstations, floor finishes, signage and joinery. Planned around lift access, loading dock windows, building rules and the make good works that follow." },
-      { title: "Warehouse", description: "Pallet racking, anchor bolt grinding, tenant-built offices, shelving, flooring preparation and service disconnection. Coordinated so the warehouse moves into repair, reinstatement or handover without the strip out creating extra works." },
-      { title: "Factory", description: "Production areas, work zones, storage structures, services, flooring treatments and equipment-related alterations. We assess what can come out safely, what needs specialist trade coordination and what needs to be restored for handover." },
-      { title: "Retail", description: "Tight access, after-hours works, centre rules, hoarding, signage removal, display fixture removal, flooring and back-of-house works. Planned around trading environments and centre management requirements." },
-      { title: "Medical Tenancy", description: "Treatment rooms, plumbing points, cabinetry, specialist flooring, partitions and compliance-sensitive areas. Removed with the right sequencing so the site is ready for reinstatement or the next tenancy stage." },
-      { title: "Hospitality", description: "Counters, kitchen equipment zones, seating, flooring, wall linings, exhaust coordination, plumbing points and electrical services. Planned around building access, waste movement and the reinstatement path." }
-    ],
-    processTitle: "OUR STRIP OUT PROCESS",
+      {
+        title: "Offices",
+        description: "Partitions out. Workstations removed. Walls ready for the make good works that follow.",
+        image: "/images/industries/commercial-office-make-good-melbourne.jpg",
+        imageAlt: "Professional commercial office space after make good restoration in Melbourne",
+        imageTitle: "Office make good and commercial property services Melbourne",
+        href: "/industries/commercial/",
+        linkLabel: "Learn more"
+      },
+      {
+        title: "Warehouses & Logistics",
+        description: "Racking dismantled. Anchors ground. Floors prepared for repair, reinstatement or handover.",
+        image: "/images/industries/warehouse-logistics-make-good-melbourne.jpg",
+        imageAlt: "Industrial warehouse and logistics facility make good services in Melbourne",
+        imageTitle: "Warehouse and logistics make good services Melbourne",
+        href: "/industries/industrial/",
+        linkLabel: "Learn more"
+      },
+      {
+        title: "Retail",
+        description: "Shopfront stripped. Display fixtures removed. Back-of-house areas prepared for centre requirements.",
+        image: "/images/industries/retail-shopfront-make-good-melbourne.jpg",
+        imageAlt: "Retail shopfront and commercial space make good services in Melbourne",
+        imageTitle: "Retail shopfront make good and strip out services Melbourne",
+        href: "/industries/commercial/",
+        linkLabel: "Learn more"
+      },
+      {
+        title: "Medical Centres & Suites",
+        description: "Treatment rooms de-fitted. Cabinetry removed. Services coordinated for reinstatement.",
+        image: "/images/industries/medical-centre-make-good-melbourne.jpg",
+        imageAlt: "Medical centre and healthcare suite make good services in Melbourne",
+        imageTitle: "Medical centre and suite make good services Melbourne",
+        href: "/industries/commercial/",
+        linkLabel: "Learn more"
+      },
+      {
+        title: "Industrial & Manufacturing",
+        description: "Plant zones cleared. Storage structures removed. Services isolated before the next trade stage.",
+        image: "/images/industries/industrial-manufacturing-make-good-melbourne.jpg",
+        imageAlt: "Industrial manufacturing facility make good and restoration services in Melbourne",
+        imageTitle: "Industrial and manufacturing property services Melbourne",
+        href: "/industries/industrial/",
+        linkLabel: "Learn more"
+      },
+      {
+        title: "Hospitality & Venues",
+        description: "Counters removed. Kitchen-adjacent zones stripped. Floors and walls prepared for handover.",
+        image: "/images/industries/hospitality-venue-kitchen-make-good-melbourne.jpg",
+        imageAlt: "Commercial hospitality venue and kitchen make good services in Melbourne",
+        imageTitle: "Hospitality venue make good and handover services Melbourne",
+        href: "/industries/commercial/",
+        linkLabel: "Learn more"
+      }
+    ],    processTitle: "OUR STRIP OUT PROCESS",
     processSubtitle: "The strip out sets up everything that follows. We plan the sequence before works start so repair, reinstatement and handover works can follow from the right position.",
     processSteps: [
       { step: "Site Walkthrough", description: "We inspect the tenancy, confirm what is being removed, retained or protected and identify access or building constraints." },
@@ -417,14 +469,61 @@ export const sectionLandingPages: SectionLandingData[] = [
     propertyTypesTitleHighlight: "MAKE GOOD",
     propertyTypesSubtitle: "Office, warehouse, factory, retail, medical and hospitality tenancies each have different handover expectations. We plan the make good around the lease, site condition and inspection pathway.",
     propertyTypes: [
-      { title: "Office", description: "Partitions, meeting rooms, workstations, flooring, ceiling grids, signage, wall damage and tenancy alterations assessed and brought back to the agreed handover condition." },
-      { title: "Warehouse", description: "Racking removal, anchor grinding, slab repairs, line marking, warehouse floor presentation and selected service disconnection planned around access and inspection timing." },
-      { title: "Factory", description: "Production areas, work zones, storage structures, flooring treatments and equipment-related tenancy changes assessed before repair, reinstatement and presentation works proceed." },
-      { title: "Retail", description: "Display fixtures, signage, wall graphics, flooring, back-of-house areas and centre access requirements coordinated around trading environments and handover rules." },
-      { title: "Medical Tenancy", description: "Treatment rooms, cabinetry, plumbing points, specialist flooring, partitions and compliance-sensitive areas prepared for reinstatement or the next tenancy stage." },
-      { title: "Hospitality", description: "Counters, seating areas, flooring, wall linings, kitchen-adjacent zones, plumbing points and electrical services coordinated with the broader make good pathway." }
-    ],
-    processTitle: "OUR MAKE GOOD PROCESS",
+      {
+        title: "Offices",
+        description: "Partitions down. Walls patched. Ceilings, floors and finishes brought back for handover.",
+        image: "/images/industries/commercial-office-make-good-melbourne.jpg",
+        imageAlt: "Professional commercial office space after make good restoration in Melbourne",
+        imageTitle: "Office make good and commercial property services Melbourne",
+        href: "/industries/commercial/",
+        linkLabel: "Learn more"
+      },
+      {
+        title: "Warehouses & Logistics",
+        description: "Racking out. Slabs repaired. Line marking, floors and loading areas prepared for inspection.",
+        image: "/images/industries/warehouse-logistics-make-good-melbourne.jpg",
+        imageAlt: "Industrial warehouse and logistics facility make good services in Melbourne",
+        imageTitle: "Warehouse and logistics make good services Melbourne",
+        href: "/industries/industrial/",
+        linkLabel: "Learn more"
+      },
+      {
+        title: "Retail",
+        description: "Fitout removed. Surfaces repaired. Shopfront and back-of-house areas prepared for centre standards.",
+        image: "/images/industries/retail-shopfront-make-good-melbourne.jpg",
+        imageAlt: "Retail shopfront and commercial space make good services in Melbourne",
+        imageTitle: "Retail shopfront make good and strip out services Melbourne",
+        href: "/industries/commercial/",
+        linkLabel: "Learn more"
+      },
+      {
+        title: "Medical Centres & Suites",
+        description: "Rooms reinstated. Plumbing points reviewed. Floors, walls and cabinetry areas prepared for return.",
+        image: "/images/industries/medical-centre-make-good-melbourne.jpg",
+        imageAlt: "Medical centre and healthcare suite make good services in Melbourne",
+        imageTitle: "Medical centre and suite make good services Melbourne",
+        href: "/industries/commercial/",
+        linkLabel: "Learn more"
+      },
+      {
+        title: "Industrial & Manufacturing",
+        description: "Plant out. Floor damage repaired. Work zones restored around the agreed handover scope.",
+        image: "/images/industries/industrial-manufacturing-make-good-melbourne.jpg",
+        imageAlt: "Industrial manufacturing facility make good and restoration services in Melbourne",
+        imageTitle: "Industrial and manufacturing property services Melbourne",
+        href: "/industries/industrial/",
+        linkLabel: "Learn more"
+      },
+      {
+        title: "Hospitality & Venues",
+        description: "Fixtures removed. Service points coordinated. Floors, walls and seating areas prepared for handover.",
+        image: "/images/industries/hospitality-venue-kitchen-make-good-melbourne.jpg",
+        imageAlt: "Commercial hospitality venue and kitchen make good services in Melbourne",
+        imageTitle: "Hospitality venue make good and handover services Melbourne",
+        href: "/industries/commercial/",
+        linkLabel: "Learn more"
+      }
+    ],    processTitle: "OUR MAKE GOOD PROCESS",
     processSubtitle: "The make good works are planned around the handover condition, the lease timing and the order each trade needs to follow.",
     processSteps: [
       { step: "Site Walkthrough", description: "We inspect the tenancy, review the practical make good scope and identify access, building rules and handover constraints." },
@@ -579,12 +678,60 @@ export const sectionLandingPages: SectionLandingData[] = [
     propertyTypesTitleHighlight: "PROPERTY TYPES",
     propertyTypesSubtitle: "We prepare commercial and industrial sites across Melbourne for landlord inspection and key handback.",
     propertyTypes: [
-      { title: "Office", description: "Final clean, workstation and furniture removal support, amenities, kitchens, windows, floor presentation and inspection preparation." },
-      { title: "Warehouse", description: "Floor cleaning, loading dock cleaning, racking-related cleanup, waste removal, concrete presentation and final access coordination." },
-      { title: "Factory", description: "Equipment-zone cleanup, floor degreasing, waste removal, industrial cleaning and coordination around machinery relocation or make good works." },
-      { title: "Retail", description: "Back-of-house cleaning, display fixture removal support, floor presentation, signage-related cleanup and centre access requirements." },
-      { title: "Medical Tenancy", description: "Treatment room cleaning, cabinetry and waste coordination, flooring presentation and handover preparation around sensitive tenancy conditions." },
-      { title: "Mixed Commercial", description: "Cleaning, relocation, waste, repairs and final presentation coordinated across sites with office, warehouse and trade areas in one tenancy." }
+      {
+        title: "Offices",
+        description: "Final presentation arranged. Amenities checked. Floors, kitchens and work areas ready for inspection.",
+        image: "/images/industries/commercial-office-make-good-melbourne.jpg",
+        imageAlt: "Professional commercial office space after make good restoration in Melbourne",
+        imageTitle: "Office make good and commercial property services Melbourne",
+        href: "/industries/commercial/",
+        linkLabel: "Learn more"
+      },
+      {
+        title: "Warehouses & Logistics",
+        description: "Floors presented. Waste removed. Loading areas, docks and access points ready for handback.",
+        image: "/images/industries/warehouse-logistics-make-good-melbourne.jpg",
+        imageAlt: "Industrial warehouse and logistics facility make good services in Melbourne",
+        imageTitle: "Warehouse and logistics make good services Melbourne",
+        href: "/industries/industrial/",
+        linkLabel: "Learn more"
+      },
+      {
+        title: "Retail",
+        description: "Display areas cleared. Shopfront touch-points checked. Back-of-house areas prepared for centre review.",
+        image: "/images/industries/retail-shopfront-make-good-melbourne.jpg",
+        imageAlt: "Retail shopfront and commercial space make good services in Melbourne",
+        imageTitle: "Retail shopfront make good and strip out services Melbourne",
+        href: "/industries/commercial/",
+        linkLabel: "Learn more"
+      },
+      {
+        title: "Medical Centres & Suites",
+        description: "Treatment rooms presented. Flooring, cabinetry zones and service areas prepared for inspection.",
+        image: "/images/industries/medical-centre-make-good-melbourne.jpg",
+        imageAlt: "Medical centre and healthcare suite make good services in Melbourne",
+        imageTitle: "Medical centre and suite make good services Melbourne",
+        href: "/industries/commercial/",
+        linkLabel: "Learn more"
+      },
+      {
+        title: "Industrial & Manufacturing",
+        description: "Equipment zones cleared. Floors, drains and work areas prepared for the final handover path.",
+        image: "/images/industries/industrial-manufacturing-make-good-melbourne.jpg",
+        imageAlt: "Industrial manufacturing facility make good and restoration services in Melbourne",
+        imageTitle: "Industrial and manufacturing property services Melbourne",
+        href: "/industries/industrial/",
+        linkLabel: "Learn more"
+      },
+      {
+        title: "Hospitality & Venues",
+        description: "Kitchen-adjacent areas presented. Service points checked. Floors and seating areas ready to hand over.",
+        image: "/images/industries/hospitality-venue-kitchen-make-good-melbourne.jpg",
+        imageAlt: "Commercial hospitality venue and kitchen make good services in Melbourne",
+        imageTitle: "Hospitality venue make good and handover services Melbourne",
+        href: "/industries/commercial/",
+        linkLabel: "Learn more"
+      }
     ],
 
     processTitle: "A CLEAR HANDOVER PROCESS",
@@ -737,12 +884,60 @@ export const sectionLandingPages: SectionLandingData[] = [
     propertyTypesTitleHighlight: "REMEDIATE",
     propertyTypesSubtitle: "Different commercial and industrial sites need different remediation pathways. We plan the scope around the defect, access constraints, building use and documentation requirements.",
     propertyTypes: [
-      { title: "Office Buildings", description: "Facade leaks, glazing issues, waterproofing defects, ceiling damage, water ingress and occupied-building access requirements coordinated around tenants and building management." },
-      { title: "Warehouses", description: "Concrete slab defects, roof sheet and skylight replacement, water ingress, loading area damage, wall repairs and industrial access constraints planned around operations." },
-      { title: "Factories", description: "Structural wear, slab deterioration, roof leaks, equipment-zone damage, drainage issues and remediation sequencing around production areas and safety controls." },
-      { title: "Retail", description: "Facade presentation, water damage, glazing, back-of-house defects, access windows and remediation works coordinated around trading environments and centre rules." },
-      { title: "Body Corporate", description: "Shared facade, balcony, roof, waterproofing, cladding and structural issues documented clearly for committees, owners, managers and consultants." },
-      { title: "Mixed Commercial", description: "Buildings with office, warehouse, showroom, loading, storage and trade areas assessed as one remediation pathway rather than isolated defects." }
+      {
+        title: "Offices",
+        description: "Facade leaks, glazing issues and water ingress managed around occupied commercial buildings.",
+        image: "/images/industries/commercial-office-make-good-melbourne.jpg",
+        imageAlt: "Professional commercial office space after make good restoration in Melbourne",
+        imageTitle: "Office make good and commercial property services Melbourne",
+        href: "/industries/commercial/",
+        linkLabel: "Learn more"
+      },
+      {
+        title: "Warehouses & Logistics",
+        description: "Roof sheets, skylights, slab defects and loading area damage addressed around site access.",
+        image: "/images/industries/warehouse-logistics-make-good-melbourne.jpg",
+        imageAlt: "Industrial warehouse and logistics facility make good services in Melbourne",
+        imageTitle: "Warehouse and logistics make good services Melbourne",
+        href: "/industries/industrial/",
+        linkLabel: "Learn more"
+      },
+      {
+        title: "Retail",
+        description: "Facade presentation, glazing, water damage and access windows coordinated around trading environments.",
+        image: "/images/industries/retail-shopfront-make-good-melbourne.jpg",
+        imageAlt: "Retail shopfront and commercial space make good services in Melbourne",
+        imageTitle: "Retail shopfront make good and strip out services Melbourne",
+        href: "/industries/commercial/",
+        linkLabel: "Learn more"
+      },
+      {
+        title: "Medical Centres & Suites",
+        description: "Water ingress, mould-affected areas and sensitive room reinstatement planned around building use.",
+        image: "/images/industries/medical-centre-make-good-melbourne.jpg",
+        imageAlt: "Medical centre and healthcare suite make good services in Melbourne",
+        imageTitle: "Medical centre and suite make good services Melbourne",
+        href: "/industries/commercial/",
+        linkLabel: "Learn more"
+      },
+      {
+        title: "Industrial & Manufacturing",
+        description: "Structural wear, slab deterioration, roof leaks and drainage issues repaired around production zones.",
+        image: "/images/industries/industrial-manufacturing-make-good-melbourne.jpg",
+        imageAlt: "Industrial manufacturing facility make good and restoration services in Melbourne",
+        imageTitle: "Industrial and manufacturing property services Melbourne",
+        href: "/industries/industrial/",
+        linkLabel: "Learn more"
+      },
+      {
+        title: "Hospitality & Venues",
+        description: "Water damage, flooring defects, service leaks and back-of-house repairs coordinated for venue use.",
+        image: "/images/industries/hospitality-venue-kitchen-make-good-melbourne.jpg",
+        imageAlt: "Commercial hospitality venue and kitchen make good services in Melbourne",
+        imageTitle: "Hospitality venue make good and handover services Melbourne",
+        href: "/industries/commercial/",
+        linkLabel: "Learn more"
+      }
     ],
 
     processTitle: "OUR REMEDIATION PROCESS",
