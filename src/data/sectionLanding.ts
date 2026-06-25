@@ -139,7 +139,7 @@ export const sectionLandingPages: SectionLandingData[] = [
   {
     slug: "strip-out-solutions",
     metaTitle: "Strip Out Services Melbourne | Make Good, BETTER.",
-    metaDescription: "Commercial and industrial strip out services in Melbourne for offices, warehouses, factories, retail, medical and hospitality tenancies. Fitout removal, make safe coordination, waste removal and handover preparation.",
+    metaDescription: "Commercial strip out services in Melbourne for offices, warehouses, factories, retail and medical sites. Fitout removal, make safe works and handover prep.",
     ogImage: "/og/strip-out.jpg",
     
     title: "COMMERCIAL & INDUSTRIAL STRIP OUTS MELBOURNE",
@@ -356,7 +356,7 @@ export const sectionLandingPages: SectionLandingData[] = [
   {
     slug: "make-good-solutions",
     metaTitle: "Make Good Solutions Melbourne | Make Good, BETTER.",
-    metaDescription: "Commercial end-of-lease make good services in Melbourne for offices, warehouses, factories, retail, medical and hospitality tenancies. Strip out, repairs, painting, flooring, ceilings and handover preparation.",
+    metaDescription: "Commercial make good services in Melbourne for offices, warehouses, factories, retail, medical and hospitality sites. Strip out, repairs and handover prep.",
     ogImage: "/og/make-good.jpg",
     
     title: "MAKE GOOD SOLUTIONS MELBOURNE",
@@ -576,8 +576,8 @@ export const sectionLandingPages: SectionLandingData[] = [
   },
   {
     slug: "handover-solutions",
-    metaTitle: "Handover Solutions Melbourne | End of Lease Handover Services",
-    metaDescription: "Commercial handover solutions in Melbourne for end-of-lease cleaning, relocation, final inspection preparation and key handback. One coordinated team for lease exits. Free quotes.",
+    metaTitle: "Handover Solutions Melbourne | Make Good, BETTER.",
+    metaDescription: "Commercial handover solutions in Melbourne for end-of-lease cleaning, relocation, final inspection preparation and key handback. Free quotes.",
     ogImage: "/og/handover-solutions.jpg",
 
     title: "HANDOVER SOLUTIONS MELBOURNE",
@@ -780,7 +780,7 @@ export const sectionLandingPages: SectionLandingData[] = [
   {
     slug: "remediation-solutions",
     metaTitle: "Remediation Solutions Melbourne | Make Good, BETTER.",
-    metaDescription: "Commercial and industrial remediation solutions in Melbourne for structural repairs, waterproofing, facade cladding, glazing, roof sheet replacement, water damage and mould remediation.",
+    metaDescription: "Commercial remediation solutions in Melbourne for structural repairs, waterproofing, facade cladding, glazing, water damage and mould remediation.",
     ogImage: "/og/remediation.jpg",
 
     title: "REMEDIATION SOLUTIONS MELBOURNE",
