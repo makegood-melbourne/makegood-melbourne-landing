@@ -2933,7 +2933,7 @@ export const services: Service[] = [
     name: "Fire Compliance & Facade Cladding Remediation",
     slug: "remediation-solutions/fire-compliance-facade-cladding-remediation",
     title: "Fire Compliance & Facade Cladding Remediation",
-    metaTitle: "Fire Compliance & Facade Cladding Remediation Melbourne | Make Good, BETTER.",
+    metaTitle: "Fire & Cladding Remediation Melbourne | Make Good, BETTER.",
     description: "Commercial fire compliance and facade cladding remediation works for Melbourne buildings. We coordinate building repairs, cladding-related works and associated make good requirements as part of broader remediation projects.",
     metaDescription: "Fire compliance and facade cladding remediation in Melbourne. Commercial building remediation, cladding replacement coordination and make good works.",
     heroText: "Commercial fire compliance and facade cladding remediation works for Melbourne buildings. We coordinate building repairs, cladding-related works and associated make good requirements as part of broader remediation projects.",

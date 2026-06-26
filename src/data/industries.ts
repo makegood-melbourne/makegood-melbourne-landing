@@ -149,7 +149,7 @@ export const industries: Industry[] = [
     name: "Remediation",
     slug: "remediation",
     title: "Building Remediation Melbourne",
-    metaTitle: "Remediation for Commercial & Industrial Properties | Make Good Melbourne",
+    metaTitle: "Building Remediation Melbourne | Make Good, BETTER.",
     metaDescription: "Specialist building remediation services in Melbourne. Cladding & glazing repairs, structural remediation, concrete cancer treatment, waterproofing solutions. Licensed contractors.",
     heroText: "Expert building remediation services across Melbourne—structural repairs, cladding replacement, concrete restoration and waterproofing solutions.",
     heroImage: remediationHeroImage,

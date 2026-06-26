@@ -15,7 +15,7 @@ export const blogPosts: BlogPost[] = [
   {
     id: "43",
     slug: "patching-plastering-commercial-lease-handback",
-    title: "Patching and Plastering: What Landlords Actually Inspect at Handback",
+    title: "Patching & Plastering at Commercial Handback",
     subtitle: "The wall repairs most tenants get wrong",
     date: "2026-06-11",
     readTime: "12 min read",
@@ -157,7 +157,7 @@ The cost of booking early is zero. The cost of leaving it too late is either a r
   {
     id: "42",
     slug: "warehouse-floor-restoration-racking-removal",
-    title: "Warehouse Floor Restoration After Racking Removal: From Dynabolts to Done",
+    title: "Warehouse Floor Restoration After Racking Removal",
     subtitle: "What your slab actually needs before handback",
     date: "2026-05-15",
     readTime: "11 min read",
@@ -304,7 +304,7 @@ For a broader picture of what a full warehouse make good involves beyond just th
   {
     id: "41",
     slug: "warehouse-demolition-mezzanine-cool-room-removal",
-    title: "Warehouse Demolition: Removing Mezzanines, Cool Rooms and Heavy Infrastructure",
+    title: "Warehouse Demolition: Mezzanines & Cool Rooms",
     subtitle: "The heavy lifting most tenants don\u2019t see coming",
     excerpt: "A warehouse strip out is a completely different category of work to an office. We are talking structural steel, engineered systems, refrigerant gas, heavy machinery, and a concrete slab that has taken a decade of punishment.",
     metaDescription: "Warehouse demolition in Melbourne \u2014 mezzanine removal, cool room decommissioning, heavy machinery and concrete slab reinstatement. What industrial tenants need to know.",
