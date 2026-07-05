@@ -26,6 +26,12 @@ export interface Industry {
   heroImagePlaceholder?: string; // Description of ideal hero image
   ogImage?: string; // Public URL for Open Graph image
   introduction: string;
+  aboutTitlePrefix?: string;
+  aboutTitleHighlight?: string;
+  aboutContentLeft?: string[];
+  aboutContentRight?: string[];
+  faqTitle?: string;
+  faqSubtitle?: string;
   featuredSections?: FeaturedSection[];
   challenges: {
     title: string;
@@ -147,40 +153,57 @@ export const industries: Industry[] = [
     ]
   },
   {
-    name: "Warehouses & Fulfilment",
+    name: "Warehouses & Logistics",
     slug: "warehouses-logistics",
-    title: "Warehouse & Fulfilment Centre Make Good Melbourne",
-    metaTitle: "Warehouse Make Good Melbourne | Make Good, BETTER.",
-    metaDescription: "Warehouse and fulfilment centre make good in Melbourne, including racking removal, slab repairs, floor restoration, line marking, strip out and handover works.",
+    title: "WAREHOUSE & LOGISTICS MAKE GOOD MELBOURNE",
+    metaTitle: "Warehouse & Logistics Make Good Melbourne | Make Good, BETTER.",
+    metaDescription: "Warehouse and logistics make good services in Melbourne. Pallet racking removal, slab repairs, line marking, strip out and handover works for lease compliance.",
     heroText: "Warehouse and fulfilment tenancies leave behind racking, slab anchors, worn traffic areas, line marking, office pods, packing benches and service changes. Make Good Melbourne coordinates the strip out, floor restoration and handover works needed to return the property in line with the lease requirements.",
     heroImage: warehouseFulfilmentHeroImage,
     heroImageAlt: "Warehouse fulfilment centre with pallet racking and clear concrete floors in Melbourne",
     ogImage: "/og/industrial.jpg",
-    introduction: "Warehouse make good is not just a larger office defit. The physical wear in a fulfilment centre, distribution warehouse or 3PL facility is concentrated in the slab, racking zones, loading areas and dispatch routes. Racking comes out before slab repairs start. Anchor holes are filled before grinding. Line marking is removed or reinstated in the right sequence. Make Good Melbourne works across warehouses, fulfilment centres, 3PL facilities, storage sites, dispatch operations and distribution warehouses throughout Melbourne, coordinating the strip out, floor restoration and handover works as one practical scope.",
-    challenges: [
+    introduction: "",
+    aboutTitlePrefix: "NOT JUST A LARGER",
+    aboutTitleHighlight: "OFFICE DE-FIT",
+    aboutContentLeft: [
+      "Warehouse make good is not just a larger office de-fit. The physical wear in a fulfilment centre, distribution warehouse or 3PL facility is concentrated in the slab, racking zones, loading areas and dispatch routes."
+    ],
+    aboutContentRight: [
+      "Racking comes out before slab repairs start. Anchor holes are filled before grinding. Line marking is removed or reinstated in the right sequence.",
+      "Make Good Melbourne works across warehouses, fulfilment centres, 3PL facilities, storage sites, dispatch operations and distribution warehouses throughout Melbourne, coordinating the strip out, floor restoration and handover works as one practical scope."
+    ],
+    scopeTitle: "WAREHOUSE & LOGISTICS MAKE GOOD",
+    scopeTitleHighlight: "SCOPE",
+    scopeRows: [
       {
-        title: "Pallet Racking Removal",
-        description: "Dismantling racking systems, removing fixings and preparing slab areas after anchors are taken out so floor repair works can follow without delay."
+        scope: "Pallet Racking Removal",
+        worksIncluded: "Dismantling racking systems, removing fixings and preparing slab areas after anchors are taken out so floor repair works can follow without delay.",
+        link: "/services/strip-out-solutions/pallet-racking-removal/"
       },
       {
-        title: "Slab and Floor Repairs",
-        description: "Anchor holes, concrete damage, traffic wear, floor coating removal and surface preparation are assessed against the lease requirements and slab condition."
+        scope: "Slab and Floor Repairs",
+        worksIncluded: "Anchor holes, concrete damage, traffic wear, floor coating removal and surface preparation are assessed against the lease requirements and slab condition.",
+        link: "/services/make-good-solutions/warehouse-flooring/"
       },
       {
-        title: "Line Marking",
-        description: "Removal, reinstatement or updating of warehouse, loading bay and pedestrian line marking to match the agreed handover condition."
+        scope: "Line Marking",
+        worksIncluded: "Removal, reinstatement or updating of warehouse, loading bay and pedestrian line marking to match the agreed handover condition.",
+        link: "/services/make-good-solutions/line-marking/"
       },
       {
-        title: "Internal Strip Out",
-        description: "Packing benches, office pods, partitions, redundant fixtures and tenancy-specific fitout removed in the right order so floor and wall repairs can follow properly."
+        scope: "Internal Strip Out",
+        worksIncluded: "Packing benches, office pods, partitions, redundant fixtures and tenancy-specific fitout removed in the right order so floor and wall repairs can follow properly.",
+        link: "/services/strip-out-solutions/demolition/"
       },
       {
-        title: "Make Safe Coordination",
-        description: "Electrical, plumbing, fire services, HVAC and data isolation coordinated before removal works begin where the scope requires it."
+        scope: "Make Safe Coordination",
+        worksIncluded: "Electrical, plumbing, fire services, HVAC and data isolation coordinated before removal works begin where the scope requires it.",
+        link: "/services/strip-out-solutions/make-safe/"
       },
       {
-        title: "End-of-Lease Cleaning and Site Clearing",
-        description: "Final warehouse floor cleaning, loading dock presentation, waste removal and site clearing for landlord or property manager inspection."
+        scope: "End-of-Lease Cleaning and Site Clearing",
+        worksIncluded: "Final warehouse floor cleaning, loading dock presentation, waste removal and site clearing for landlord or property manager inspection.",
+        link: "/services/handover-solutions/end-of-lease-cleaning/"
       }
     ],
     services: [
@@ -194,18 +217,31 @@ export const industries: Industry[] = [
       "make-good-solutions/patching-plastering",
       "make-good-solutions/warehouse-flooring"
     ],
-    benefits: [
-      "Racking out. Floor restored. Ready to hand back.",
-      "Built for fulfilment centres, distribution warehouses, 3PL facilities and e-commerce storage sites",
-      "Slab, anchor, traffic-wear and coating issues assessed before the work sequence is locked in",
-      "Strip out, floor restoration, line marking, cleaning and handover works coordinated under one project scope",
-      "Able to coordinate with nominated trades while managing the remaining make good works",
-      "Handover works planned around lease requirements, photos, make good notes and inspection timing"
+    processTitle: "OUR WAREHOUSE MAKE GOOD PROCESS",
+    processSteps: [
+      { step: "Site Walkthrough", description: "We inspect the warehouse, review the racking layout, slab condition, line marking and lease requirements and identify access or dock constraints." },
+      { step: "Scope & Quotation", description: "We prepare a fixed-price scope based on the lease, make good notes, photos and the trade sequence the floor works require." },
+      { step: "Make Safe & Racking Removal", description: "Services are isolated where required, then racking, shelving and tenancy fitout come out with anchors removed ready for floor repairs." },
+      { step: "Floor Restoration & Make Good Works", description: "Anchor holes filled, slab repairs, grinding, line marking removal or reinstatement, patching, painting and related trade items completed in order." },
+      { step: "Handover Preparation", description: "Final cleaning, waste removal and presentation completed so the warehouse is ready for landlord or property manager inspection." }
     ],
+    ctaTitle: "NEED A WAREHOUSE OR LOGISTICS MAKE GOOD?",
+    ctaSubtitle: "We do Make Goods all day, every day.",
+    ctaText: "Send through the property address, lease timing, photos, racking layout and any make good notes. We will review the strip out, floor restoration and handover scope and provide a practical fixed-price quote.",
+    faqTitle: "WAREHOUSES & LOGISTICS MAKE GOOD FAQS",
+    faqSubtitle: "Common questions about warehouse make goods",
     faqs: [
       {
         question: "Do you remove pallet racking before warehouse handover?",
-        answer: "Yes. We dismantle racking systems, remove anchors and prepare the slab areas for repair. The removal sequence is planned so floor works can follow without starting from a worse position than necessary."
+        answer: "Yes. We dismantle racking systems, remove anchors and prepare the slab areas for repair. The removal sequence is planned so floor works can follow without starting from a worse position than necessary. Learn more about our [pallet racking removal](/services/strip-out-solutions/pallet-racking-removal/) services."
+      },
+      {
+        question: "What affects the cost of a warehouse make good?",
+        answer: "The size of the facility, the extent of racking to be removed, the condition of the slab, the amount of line marking and any specific lease requirements all affect the cost. We provide a fixed-price quote after our initial site walkthrough."
+      },
+      {
+        question: "How early should we book warehouse make good works?",
+        answer: "We recommend booking at least 4-6 weeks before your lease end date. This allows time for a proper assessment, quotation and coordination of the necessary trades, especially if you have a staged relocation."
       },
       {
         question: "Can you repair slab damage from racking anchors and forklift traffic?",
