@@ -347,6 +347,19 @@ const IndustryContent = ({ slug }: IndustryContentProps) => {
         </div>
       </section>
 
+      {/* CTA Section */}
+      {industry.ctaTitle && (
+        <section className="py-16 bg-background">
+          <div className="container mx-auto px-4 max-w-4xl text-center">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">{industry.ctaTitle}</h2>
+            {industry.ctaSubtitle && <p className="text-xl text-primary font-semibold mb-4">{industry.ctaSubtitle}</p>}
+            {industry.ctaText && <p className="text-lg text-muted-foreground mb-8">{renderTextWithLinks(industry.ctaText)}</p>}
+            <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground" asChild>
+              <a href="/#contact">Get a Fixed-Price Quote</a>
+            </Button>
+          </div>
+        </section>
+      )}
 
     </>
   );
