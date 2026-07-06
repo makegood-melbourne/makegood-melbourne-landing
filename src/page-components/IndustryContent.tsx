@@ -1,12 +1,21 @@
 import { Helmet } from "@/lib/helmet";
 import { renderTextWithLinks } from "@/lib/textWithLinks";
-import { ArrowRight, CheckCircle, AlertTriangle, ImageIcon } from "lucide-react";
+import { ArrowRight, CheckCircle, AlertTriangle, ImageIcon, Warehouse, Package, Truck, Snowflake, Factory, Container } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { getIndustryBySlug } from "@/data/industries";
 import { getServiceBySlug } from "@/data/services";
 import { resolveImageSrc } from "@/lib/resolveImageSrc";
+
+const propertyIcons: Record<string, typeof Warehouse> = {
+  warehouse: Warehouse,
+  package: Package,
+  truck: Truck,
+  snowflake: Snowflake,
+  factory: Factory,
+  container: Container,
+};
 
 const ImagePlaceholder = ({ description, className = "" }: { description: string; className?: string }) => (
   <div className={`bg-secondary/50 border-2 border-dashed border-border rounded-lg flex flex-col items-center justify-center p-8 ${className}`}>
@@ -127,29 +136,24 @@ const IndustryContent = ({ slug }: IndustryContentProps) => {
               )}
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {industry.propertyTypes.map((property) => (
-                <article key={property.title} className="group">
-                  <Card className="overflow-hidden border-border bg-card h-full transition-all duration-300 group-hover:border-primary/50 group-hover:shadow-xl">
-                    {property.image && (
-                      <div className="aspect-[4/3] overflow-hidden relative bg-muted/30">
-                        <img
-                          src={resolveImageSrc(property.image)}
-                          alt={property.imageAlt || `${property.title} warehouse make good in Melbourne`}
-                          className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                          loading="lazy"
-                          decoding="async"
-                          width={800}
-                          height={600}
-                        />
-                      </div>
-                    )}
-                    <CardContent className="p-6">
-                      <h3 className="text-xl font-bold text-foreground mb-3 uppercase">{property.title}</h3>
-                      <p className="text-sm text-muted-foreground leading-relaxed">{property.description}</p>
-                    </CardContent>
-                  </Card>
-                </article>
-              ))}
+              {industry.propertyTypes.map((property) => {
+                const Icon = property.icon ? propertyIcons[property.icon] : null;
+                return (
+                  <article key={property.title} className="group">
+                    <Card className="border-border bg-card h-full transition-all duration-300 group-hover:border-primary/50 group-hover:-translate-y-1 group-hover:shadow-xl">
+                      <CardContent className="p-8">
+                        {Icon && (
+                          <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-5">
+                            <Icon className="h-7 w-7 text-primary" />
+                          </div>
+                        )}
+                        <h3 className="text-lg font-bold text-foreground mb-3 uppercase">{property.title}</h3>
+                        <p className="text-sm text-muted-foreground leading-relaxed">{property.description}</p>
+                      </CardContent>
+                    </Card>
+                  </article>
+                );
+              })}
             </div>
           </div>
         </section>
