@@ -1,6 +1,11 @@
 import commercialHeroImage from "@/assets/industries/commercial-office-make-good-polished-concrete-melbourne.jpeg";
 import industrialHeroImage from "@/assets/industries/industrial-warehouse-make-good-empty-floor-melbourne.jpeg";
 import warehouseFulfilmentHeroImage from "@/assets/industries/warehouse-fulfilment-centre-racking-make-good-melbourne.webp";
+import warehousePolishedFloorImage from "@/assets/industries/industrial-warehouse-polished-concrete-floor-melbourne.jpeg";
+import warehouseEmptyFloorImage from "@/assets/industries/industrial-warehouse-make-good-empty-floor-melbourne.jpeg";
+import warehouseSteelTrussesImage from "@/assets/industries/industrial-warehouse-steel-trusses-skylights-melbourne.jpeg";
+import warehouseFactoryRackingImage from "@/assets/industries/industrial-factory-roof-structure-racking-melbourne.jpeg";
+import warehouseOpenFloorImage from "@/assets/industries/commercial-make-good-open-floor-industrial-windows-melbourne.jpeg";
 
 import remediationHeroImage from "@/assets/services/glazing-facade-installation-commercial-building-melbourne.jpg";
 import remediationCladdingImage from "@/assets/services/cladding-remediation-facade-glazing-melbourne.jpeg";
@@ -30,6 +35,15 @@ export interface Industry {
   aboutTitleHighlight?: string;
   aboutContentLeft?: string[];
   aboutContentRight?: string[];
+  propertyTypesTitle?: string;
+  propertyTypesTitleHighlight?: string;
+  propertyTypesSubtitle?: string;
+  propertyTypes?: {
+    title: string;
+    description: string;
+    image?: unknown;
+    imageAlt?: string;
+  }[];
   faqTitle?: string;
   faqSubtitle?: string;
   featuredSections?: FeaturedSection[];
@@ -171,6 +185,47 @@ export const industries: Industry[] = [
     aboutContentRight: [
       "Racking comes out before slab repairs start. Anchor holes are filled before grinding. Line marking is removed or reinstated in the right sequence.",
       "Make Good Melbourne works across warehouses, fulfilment centres, 3PL facilities, storage sites, dispatch operations and distribution warehouses throughout Melbourne, coordinating the strip out, floor restoration and handover works as one practical scope."
+    ],
+    propertyTypesTitle: "PROPERTY TYPES WE",
+    propertyTypesTitleHighlight: "MAKE GOOD",
+    propertyTypesSubtitle: "Distribution warehouses, fulfilment centres and 3PL facilities each wear differently and hand back differently. We plan the scope around the slab, the racking and the lease.",
+    propertyTypes: [
+      {
+        title: "Distribution Warehouses",
+        description: "High-turnover sites with heavy forklift traffic and racking runs. We strip the racking, repair the slab and get the floor back to handover condition.",
+        image: warehouseEmptyFloorImage,
+        imageAlt: "Empty distribution warehouse floor after make good in Melbourne"
+      },
+      {
+        title: "Fulfilment Centres",
+        description: "Pick-and-pack fitouts leave behind mezzanines, packing benches and cabling. We clear it out in the right order so the base building reads clean.",
+        image: warehouseFulfilmentHeroImage,
+        imageAlt: "Fulfilment centre with pallet racking during make good in Melbourne"
+      },
+      {
+        title: "3PL Facilities",
+        description: "Multi-tenant logistics sites with shared docks and tight handover windows. We work around the schedule so your exit does not hold up the next tenant.",
+        image: warehousePolishedFloorImage,
+        imageAlt: "Polished concrete floor in a 3PL logistics facility in Melbourne"
+      },
+      {
+        title: "Cold Storage & Temperature-Controlled",
+        description: "Insulated panel, refrigeration mounts and specialised flooring need careful removal. We make safe the services first, then bring the space back to base.",
+        image: warehouseSteelTrussesImage,
+        imageAlt: "Steel trusses and skylights in a temperature-controlled warehouse in Melbourne"
+      },
+      {
+        title: "Manufacturing & Light Industrial",
+        description: "Machinery bolts, bunding, three-phase feeds and slab damage from production lines. We handle the make safe, the removal and the slab repairs as one scope.",
+        image: warehouseFactoryRackingImage,
+        imageAlt: "Factory roof structure and racking during industrial make good in Melbourne"
+      },
+      {
+        title: "Storage & Self-Storage",
+        description: "Partition walls, roller doors and unit fitouts stripped back to an open shell. We patch, repair and clean so the site presents for the next lease.",
+        image: warehouseOpenFloorImage,
+        imageAlt: "Open industrial floor with windows after storage facility make good in Melbourne"
+      }
     ],
     scopeTitle: "WAREHOUSE & LOGISTICS MAKE GOOD",
     scopeTitleHighlight: "SCOPE",
