@@ -93,9 +93,7 @@ const IndustryContent = ({ slug }: IndustryContentProps) => {
         <section className="py-12 bg-secondary border-y border-border">
           <div className="container mx-auto px-4 max-w-5xl">
             <div className="prose prose-xl max-w-none">
-              <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6 text-center">
-                {industry.aboutTitlePrefix} <span className="text-primary">{industry.aboutTitleHighlight}</span>
-              </h2>
+              <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6 text-center">{industry.aboutTitlePrefix} <span className="text-primary">{industry.aboutTitleHighlight}</span></h2>
               
               <div className="grid md:grid-cols-2 gap-x-8 gap-y-4 text-xl text-muted-foreground">
                 <div>
@@ -113,6 +111,45 @@ const IndustryContent = ({ slug }: IndustryContentProps) => {
                   ))}
                 </div>
               </div>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Property Types */}
+      {industry.propertyTypes && industry.propertyTypes.length > 0 && (
+        <section className="py-16 bg-background">
+          <div className="container mx-auto px-4 max-w-6xl">
+            <div className="text-center mb-10">
+              <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">{industry.propertyTypesTitle} <span className="text-primary">{industry.propertyTypesTitleHighlight}</span></h2>
+              {industry.propertyTypesSubtitle && (
+                <p className="text-muted-foreground text-lg max-w-3xl mx-auto">{industry.propertyTypesSubtitle}</p>
+              )}
+            </div>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {industry.propertyTypes.map((property) => (
+                <article key={property.title} className="group">
+                  <Card className="overflow-hidden border-border bg-card h-full transition-all duration-300 group-hover:border-primary/50 group-hover:shadow-xl">
+                    {property.image && (
+                      <div className="aspect-[4/3] overflow-hidden relative bg-muted/30">
+                        <img
+                          src={resolveImageSrc(property.image)}
+                          alt={property.imageAlt || `${property.title} warehouse make good in Melbourne`}
+                          className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                          loading="lazy"
+                          decoding="async"
+                          width={800}
+                          height={600}
+                        />
+                      </div>
+                    )}
+                    <CardContent className="p-6">
+                      <h3 className="text-xl font-bold text-foreground mb-3 uppercase">{property.title}</h3>
+                      <p className="text-sm text-muted-foreground leading-relaxed">{property.description}</p>
+                    </CardContent>
+                  </Card>
+                </article>
+              ))}
             </div>
           </div>
         </section>
@@ -162,7 +199,7 @@ const IndustryContent = ({ slug }: IndustryContentProps) => {
       
       {/* Scope Areas (replaces Challenges for Warehouse page) */}
       {industry.scopeRows && industry.scopeRows.length > 0 ? (
-        <section className="py-16 bg-background">
+        <section className="py-16 bg-secondary border-y border-border">
           <div className="container mx-auto px-4 max-w-6xl">
             <div className="text-center mb-10">
               <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">{industry.scopeTitle} <span className="text-primary">{industry.scopeTitleHighlight}</span></h2>
@@ -228,7 +265,7 @@ const IndustryContent = ({ slug }: IndustryContentProps) => {
       
       {/* Custom Process (replaces Benefits for Warehouse page) */}
       {industry.processSteps && industry.processSteps.length > 0 ? (
-        <section className="py-16 bg-secondary border-y border-border">
+        <section className="py-16 bg-background">
           <div className="container mx-auto px-4 max-w-6xl">
             <div className="mb-10 text-center">
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">{industry.processTitle}</h2>
@@ -274,7 +311,7 @@ const IndustryContent = ({ slug }: IndustryContentProps) => {
       
       {/* Related Services */}
       {relatedServices.length > 0 && (
-        <section className="py-16 px-4 sm:px-6 lg:px-8 bg-background">
+        <section className="py-16 px-4 sm:px-6 lg:px-8 bg-secondary border-y border-border">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-center">
               SERVICES FOR {industry.name.toUpperCase()}
@@ -325,7 +362,7 @@ const IndustryContent = ({ slug }: IndustryContentProps) => {
 
 
       {/* FAQs */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-secondary">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-background">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-center">
             {industry.faqTitle || `${industry.name} Make Good FAQs`}
@@ -351,7 +388,7 @@ const IndustryContent = ({ slug }: IndustryContentProps) => {
 
       {/* CTA Section */}
       {industry.ctaTitle && (
-        <section className="py-16 bg-background">
+        <section className="py-16 bg-secondary border-t border-border">
           <div className="container mx-auto px-4 max-w-4xl text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">{industry.ctaTitle}</h2>
             {industry.ctaSubtitle && <p className="text-xl text-primary font-semibold mb-4">{industry.ctaSubtitle}</p>}
