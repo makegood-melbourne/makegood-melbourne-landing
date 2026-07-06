@@ -267,29 +267,8 @@ const IndustryContent = ({ slug }: IndustryContentProps) => {
 
 
       
-      {/* Custom Process (replaces Benefits for Warehouse page) */}
-      {industry.processSteps && industry.processSteps.length > 0 ? (
-        <section className="py-16 bg-background">
-          <div className="container mx-auto px-4 max-w-6xl">
-            <div className="mb-10 text-center">
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">{industry.processTitle}</h2>
-            </div>
-            <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
-              {industry.processSteps.map((step, index) => (
-                <Card key={step.step} className="bg-card border-border h-full transition-all duration-300 hover:border-primary/50 hover:shadow-lg">
-                  <CardContent className="pt-6">
-                    <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
-                      <span className="text-xl font-bold text-primary">{index + 1}</span>
-                    </div>
-                    <h3 className="text-xl font-semibold text-foreground mb-2">{step.step}</h3>
-                    <p className="text-muted-foreground">{step.description}</p>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </div>
-        </section>
-      ) : (
+      {/* Process section intentionally hidden for warehouse page to reduce text-heavy blocks */}
+      {(!industry.processSteps || industry.processSteps.length === 0) && (
         <section className="py-16 px-4 sm:px-6 lg:px-8">
           <div className="max-w-5xl mx-auto">
             <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-center">
@@ -315,7 +294,7 @@ const IndustryContent = ({ slug }: IndustryContentProps) => {
       
       {/* Related Services */}
       {relatedServices.length > 0 && (
-        <section className="py-16 px-4 sm:px-6 lg:px-8 bg-secondary border-y border-border">
+        <section className="py-16 px-4 sm:px-6 lg:px-8 bg-background">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-center">
               SERVICES FOR {industry.name.toUpperCase()}
@@ -366,7 +345,7 @@ const IndustryContent = ({ slug }: IndustryContentProps) => {
 
 
       {/* FAQs */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-background">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-secondary border-y border-border">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-center">
             {industry.faqTitle || `${industry.name} Make Good FAQs`}
@@ -392,7 +371,7 @@ const IndustryContent = ({ slug }: IndustryContentProps) => {
 
       {/* CTA Section */}
       {industry.ctaTitle && (
-        <section className="py-16 bg-secondary border-t border-border">
+        <section className="py-16 bg-background border-t border-border">
           <div className="container mx-auto px-4 max-w-4xl text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">{industry.ctaTitle}</h2>
             {industry.ctaSubtitle && <p className="text-xl text-primary font-semibold mb-4">{industry.ctaSubtitle}</p>}
