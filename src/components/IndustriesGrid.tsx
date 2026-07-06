@@ -21,11 +21,11 @@ const industries: Industry[] = [
   },
   {
     id: "warehouses-logistics",
-    title: "Warehouses & Logistics",
+    title: "Warehouses & Fulfilment",
     description: "Racking out. Floors restored. Ready for the next tenant.",
-    href: "/industries/industrial/",
+    href: "/industries/warehouses-logistics/",
     image: "/images/industries/warehouse-logistics-make-good-melbourne.jpg",
-    alt: "Industrial warehouse and logistics facility make good services in Melbourne"
+    alt: "Warehouse and fulfilment centre make good services in Melbourne"
   },
   {
     id: "retail",

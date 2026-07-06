@@ -258,12 +258,12 @@ export const sectionLandingPages: SectionLandingData[] = [
         linkLabel: "Learn more"
       },
       {
-        title: "Warehouses & Logistics",
+        title: "Warehouses & Fulfilment",
         description: "Racking dismantled. Anchors ground. Floors prepared for repair, reinstatement or handover.",
         image: "/images/industries/warehouse-logistics-make-good-melbourne.jpg",
         imageAlt: "Industrial warehouse and logistics facility make good services in Melbourne",
-        imageTitle: "Warehouse and logistics make good services Melbourne",
-        href: "/industries/industrial/",
+        imageTitle: "Warehouse and fulfilment centre make good services Melbourne",
+        href: "/industries/warehouses-logistics/",
         linkLabel: "Learn more"
       },
       {
@@ -479,12 +479,12 @@ export const sectionLandingPages: SectionLandingData[] = [
         linkLabel: "Learn more"
       },
       {
-        title: "Warehouses & Logistics",
+        title: "Warehouses & Fulfilment",
         description: "Racking out. Slabs repaired. Line marking, floors and loading areas prepared for inspection.",
         image: "/images/industries/warehouse-logistics-make-good-melbourne.jpg",
         imageAlt: "Industrial warehouse and logistics facility make good services in Melbourne",
-        imageTitle: "Warehouse and logistics make good services Melbourne",
-        href: "/industries/industrial/",
+        imageTitle: "Warehouse and fulfilment centre make good services Melbourne",
+        href: "/industries/warehouses-logistics/",
         linkLabel: "Learn more"
       },
       {
@@ -688,12 +688,12 @@ export const sectionLandingPages: SectionLandingData[] = [
         linkLabel: "Learn more"
       },
       {
-        title: "Warehouses & Logistics",
+        title: "Warehouses & Fulfilment",
         description: "Floors presented. Waste removed. Loading areas, docks and access points ready for handback.",
         image: "/images/industries/warehouse-logistics-make-good-melbourne.jpg",
         imageAlt: "Industrial warehouse and logistics facility make good services in Melbourne",
-        imageTitle: "Warehouse and logistics make good services Melbourne",
-        href: "/industries/industrial/",
+        imageTitle: "Warehouse and fulfilment centre make good services Melbourne",
+        href: "/industries/warehouses-logistics/",
         linkLabel: "Learn more"
       },
       {
@@ -894,12 +894,12 @@ export const sectionLandingPages: SectionLandingData[] = [
         linkLabel: "Learn more"
       },
       {
-        title: "Warehouses & Logistics",
+        title: "Warehouses & Fulfilment",
         description: "Roof sheets, skylights, slab defects and loading area damage addressed around site access.",
         image: "/images/industries/warehouse-logistics-make-good-melbourne.jpg",
         imageAlt: "Industrial warehouse and logistics facility make good services in Melbourne",
-        imageTitle: "Warehouse and logistics make good services Melbourne",
-        href: "/industries/industrial/",
+        imageTitle: "Warehouse and fulfilment centre make good services Melbourne",
+        href: "/industries/warehouses-logistics/",
         linkLabel: "Learn more"
       },
       {

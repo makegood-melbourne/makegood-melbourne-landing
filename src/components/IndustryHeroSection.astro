@@ -7,6 +7,7 @@ import { getIndustryBySlug } from '@/data/industries';
 // Import all industry hero images statically
 import commercialHeroImage from "@/assets/industries/commercial-office-make-good-polished-concrete-melbourne.jpeg";
 import industrialHeroImage from "@/assets/industries/industrial-warehouse-make-good-empty-floor-melbourne.jpeg";
+import warehouseFulfilmentHeroImage from "@/assets/industries/warehouse-fulfilment-centre-racking-make-good-melbourne.webp";
 import remediationHeroImage from "@/assets/services/glazing-facade-installation-commercial-building-melbourne.jpg";
 
 interface Props {
@@ -24,6 +25,7 @@ if (!industry) {
 const heroImages: Record<string, ImageMetadata> = {
   "commercial": commercialHeroImage,
   "industrial": industrialHeroImage,
+  "warehouses-logistics": warehouseFulfilmentHeroImage,
   "remediation": remediationHeroImage
 };
 
