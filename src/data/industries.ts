@@ -41,6 +41,7 @@ export interface Industry {
   propertyTypes?: {
     title: string;
     description: string;
+    icon?: string;
     image?: unknown;
     imageAlt?: string;
   }[];
@@ -180,10 +181,11 @@ export const industries: Industry[] = [
     aboutTitlePrefix: "NOT JUST A LARGER",
     aboutTitleHighlight: "OFFICE DE-FIT",
     aboutContentLeft: [
-      "Warehouse make good is not just a larger office de-fit. The physical wear in a fulfilment centre, distribution warehouse or 3PL facility is concentrated in the slab, racking zones, loading areas and dispatch routes."
+      "Warehouse make good is not just a larger office de-fit. The physical wear in a fulfilment centre, distribution warehouse or 3PL facility is concentrated in the slab, racking zones, loading areas and dispatch routes.",
+      "Racking comes out before slab repairs start. Anchor holes are filled before grinding. Line marking is removed or reinstated in the right sequence."
     ],
     aboutContentRight: [
-      "Racking comes out before slab repairs start. Anchor holes are filled before grinding. Line marking is removed or reinstated in the right sequence.",
+      "Every site hands back differently. The lease sets the standard, the slab sets the work and the racking layout sets the order it all happens in.",
       "Make Good Melbourne works across warehouses, fulfilment centres, 3PL facilities, storage sites, dispatch operations and distribution warehouses throughout Melbourne, coordinating the strip out, floor restoration and handover works as one practical scope."
     ],
     propertyTypesTitle: "PROPERTY TYPES WE",
@@ -192,36 +194,42 @@ export const industries: Industry[] = [
     propertyTypes: [
       {
         title: "Distribution Warehouses",
+        icon: "warehouse",
         description: "High-turnover sites with heavy forklift traffic and racking runs. We strip the racking, repair the slab and get the floor back to handover condition.",
         image: warehouseEmptyFloorImage,
         imageAlt: "Empty distribution warehouse floor after make good in Melbourne"
       },
       {
         title: "Fulfilment Centres",
+        icon: "package",
         description: "Pick-and-pack fitouts leave behind mezzanines, packing benches and cabling. We clear it out in the right order so the base building reads clean.",
         image: warehouseFulfilmentHeroImage,
         imageAlt: "Fulfilment centre with pallet racking during make good in Melbourne"
       },
       {
         title: "3PL Facilities",
+        icon: "truck",
         description: "Multi-tenant logistics sites with shared docks and tight handover windows. We work around the schedule so your exit does not hold up the next tenant.",
         image: warehousePolishedFloorImage,
         imageAlt: "Polished concrete floor in a 3PL logistics facility in Melbourne"
       },
       {
         title: "Cold Storage & Temperature-Controlled",
+        icon: "snowflake",
         description: "Insulated panel, refrigeration mounts and specialised flooring need careful removal. We make safe the services first, then bring the space back to base.",
         image: warehouseSteelTrussesImage,
         imageAlt: "Steel trusses and skylights in a temperature-controlled warehouse in Melbourne"
       },
       {
         title: "Manufacturing & Light Industrial",
+        icon: "factory",
         description: "Machinery bolts, bunding, three-phase feeds and slab damage from production lines. We handle the make safe, the removal and the slab repairs as one scope.",
         image: warehouseFactoryRackingImage,
         imageAlt: "Factory roof structure and racking during industrial make good in Melbourne"
       },
       {
         title: "Storage & Self-Storage",
+        icon: "container",
         description: "Partition walls, roller doors and unit fitouts stripped back to an open shell. We patch, repair and clean so the site presents for the next lease.",
         image: warehouseOpenFloorImage,
         imageAlt: "Open industrial floor with windows after storage facility make good in Melbourne"
