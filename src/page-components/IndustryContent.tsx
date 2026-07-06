@@ -77,13 +77,15 @@ const IndustryContent = ({ slug }: IndustryContentProps) => {
       </Helmet>
 
       {/* Introduction */}
-      <section className="py-12 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-3xl mx-auto">
-          <p className="text-lg text-muted-foreground leading-relaxed">
-            {industry.introduction}
-          </p>
-        </div>
-      </section>
+      {industry.introduction && (
+        <section className="py-12 px-4 sm:px-6 lg:px-8">
+          <div className="max-w-3xl mx-auto">
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              {industry.introduction}
+            </p>
+          </div>
+        </section>
+      )}
 
       
       {/* About Section - 2 Column Layout (for Warehouse page) */}
@@ -194,7 +196,7 @@ const IndustryContent = ({ slug }: IndustryContentProps) => {
           </div>
         </section>
       ) : (
-        <section className="py-16 px-4 sm:px-6 lg:px-8 bg-secondary/30">
+        <section className="py-16 px-4 sm:px-6 lg:px-8 bg-secondary border-y border-border">
           <div className="max-w-5xl mx-auto">
             <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-center">
               {industry.name} Make Good Challenges
@@ -226,7 +228,7 @@ const IndustryContent = ({ slug }: IndustryContentProps) => {
       
       {/* Custom Process (replaces Benefits for Warehouse page) */}
       {industry.processSteps && industry.processSteps.length > 0 ? (
-        <section className="py-16 bg-secondary border-y border-border">
+        <section className="py-16 bg-background">
           <div className="container mx-auto px-4 max-w-6xl">
             <div className="mb-10 text-center">
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">{industry.processTitle}</h2>
@@ -272,7 +274,7 @@ const IndustryContent = ({ slug }: IndustryContentProps) => {
       
       {/* Related Services */}
       {relatedServices.length > 0 && (
-        <section className="py-16 px-4 sm:px-6 lg:px-8 bg-background">
+        <section className="py-16 px-4 sm:px-6 lg:px-8 bg-secondary border-y border-border">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-center">
               SERVICES FOR {industry.name.toUpperCase()}
@@ -323,7 +325,7 @@ const IndustryContent = ({ slug }: IndustryContentProps) => {
 
 
       {/* FAQs */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-secondary">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-center">
             {industry.faqTitle || `${industry.name} Make Good FAQs`}
