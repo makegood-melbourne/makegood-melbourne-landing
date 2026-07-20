@@ -13,6 +13,138 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: "44",
+    slug: "warehouse-hardstand-loading-dock-repair-melbourne",
+    title: "Warehouse Hardstand and Loading Dock Repair: Wear and Tear, or a Make Good Problem?",
+    subtitle: "Telling fair wear and tear from a make good repair in the yard",
+    date: "2026-07-20",
+    readTime: "10 min read",
+    excerpt: "Cracked hardstand and a damaged loading dock at lease end. Here's how to tell fair wear and tear from a make good repair, and what fixing it properly costs.",
+    metaDescription: "Cracked hardstand and a damaged loading dock at lease end. Here's how to tell fair wear and tear from a make good repair, and what fixing it properly costs.",
+    image: "/src/assets/blog/warehouse-hardstand-loading-dock-repair-melbourne.webp",
+    imageAlt: "Cracked warehouse hardstand and loading dock area in Melbourne showing spalled construction joints and concrete damage around a dock leveller pit prior to make good repair",
+    content: `Every warehouse make good conversation starts with the same thing. Racking out, floor patched, walls repainted, keys handed back. Then someone walks the yard and finds a spiderweb of cracking around the dock leveller, a dip near the truck turning circle and a construction joint that has been spalling for years.
+
+That's when the questions start. Is this fair wear and tear from years of forty tonne semis backing in and out. Is it a make good item the tenant has to fix before handover. Or is it a structural problem that goes beyond a coat of sealant, no matter whose name is on the lease.
+
+The internal warehouse slab gets most of the attention in a make good, because that's where the racking anchor holes are and that's what everyone photographs during the ingoing and outgoing condition reports. The hardstand and loading dock outside get overlooked, right up until the final inspection, when they can hold up handover just as easily as the floor inside.
+
+It's an easy area to underestimate. A tenant assumes cracking in a truck yard is just what happens to concrete that trucks drive on. A landlord assumes any cracking found at handback must be the tenant's doing. Neither assumption holds up once you actually look at what's causing the damage, and getting it wrong either way costs someone money they didn't need to spend.
+
+## Why the yard fails differently to the warehouse floor
+
+Internal warehouse floors take forklift traffic, pallet racking point loads and the occasional dropped load. It's tough wear, but it's relatively even and predictable.
+
+Hardstand and loading dock concrete copes with a different kind of punishment:
+
+- Semi-trailers and B-doubles turning and braking on the same few square metres, day after day
+- Point loads from dock leveller plates and truck axles concentrated in a small area
+- Constant exposure to weather, since it's outdoors and uncovered
+- Diesel, hydraulic fluid and oil staining and chemical attack on the surface
+- Sub-base movement from drainage that was never quite right to begin with
+
+Because the loads and the exposure are different, the failure patterns are different too. A warehouse floor tends to wear and chip. A hardstand tends to crack along construction joints, sink where the sub-base has washed out, or spall around dock leveller pits where steel meets concrete and both move independently.
+
+## The usual failure points
+
+### Construction and expansion joints
+
+Joints are built into hardstand concrete on purpose, to control where cracking happens as the slab expands, contracts and settles. When the joint filler breaks down or the joint itself spalls, water gets into the sub-base underneath and the problem accelerates. What starts as a hairline gap becomes a pothole that catches forklift wheels and truck tyres.
+
+### Dock leveller pits and edges
+
+The steel and concrete around a dock leveller move at different rates. Truck impact against the bumpers, constant flexing of the leveller plate and water pooling in the pit all chip away at the surrounding concrete. Left long enough, the leveller itself stops sealing properly against the truck, which is a safety issue as much as a cosmetic one.
+
+### Sub-base subsidence and washout
+
+If drainage falls were never right, or a stormwater pipe underneath has failed, water finds its way under the slab. Over years this washes out the sub-base material, and the concrete above it settles unevenly. You'll see this as a dip, a rocking slab panel, or cracking that radiates out from one low point.
+
+### Drainage and ponding
+
+Flat spots that should fall to a drain instead hold water after rain. Standing water accelerates every other problem on this list, feeds any existing cracking and turns into a slip hazard around loading areas.
+
+## Wear and tear, a make good repair, or a remediation job
+
+Not every crack means the same thing, and it's worth being clear about which category something falls into before anyone starts arguing about who pays.
+
+| What you're looking at | Usually fair wear and tear | Usually a make good repair | Usually a remediation job |
+|---|---|---|---|
+| Fine surface cracking, no movement | Yes | Sometimes, if outside the ingoing condition | Rarely |
+| Cracking with a visible step or lip | No | Sometimes | Often |
+| Spalling at a construction joint | No | Often | Sometimes, if extensive |
+| Cracked or leaking dock leveller pit | No | Often | Often, if the pit structure has failed |
+| A sunken or rocking slab panel | No | No | Yes |
+| Oil and chemical staining | No | Yes, usually cleaning or resurfacing | Rarely |
+| Ponding water on a flat area | No | No, this is a design or drainage fault | Yes |
+
+Fair wear and tear covers the gradual, low level surface cracking you'd expect from normal truck traffic over the life of a lease. A make good repair covers damage beyond that normal wear, things like a cracked dock leveller edge or joint spalling that has clearly gotten worse than reasonable use would explain. A remediation job is different again. It's a structural problem with a cause underneath the surface, sub-base failure, a broken drainage line or a design fault that a patch won't fix regardless of whose obligation it is.
+
+## Who's on the hook at handback
+
+This comes back to two documents. The ingoing condition report, which shows the state of the hardstand when the lease started, and the lease itself, which sets out what the tenant is obligated to hand back. Without a proper ingoing report, arguments over hardstand condition are exactly the kind of dispute that drags out a lease exit. If that documentation was never done properly, it's worth reading through our [guide on dilapidation reports](/blog/dilapidation-reports-melbourne-make-good/) before the conversation with the landlord happens rather than after.
+
+A few things generally hold true, though every lease is different:
+
+- Damage clearly caused by the tenant's operation, like a leveller pit cracked by repeated overloaded truck impacts, sits with the tenant.
+- Genuine wear and tear from ordinary use over the lease term generally doesn't.
+- Pre-existing sub-base or drainage problems that predate the tenancy are a landlord issue, and ideally a remediation issue rather than a make good one.
+- Where cause is unclear, an independent assessment before works start is worth far more than a dispute after they're finished.
+
+We cover this same wear and tear versus damage distinction for the internal slab in our [guide to what a warehouse and factory lease actually requires](/blog/warehouse-factory-make-good-melbourne/), and the same logic applies outside on the hardstand.
+
+## Scenarios that catch tenants and landlords out
+
+A distribution tenant in Melbourne's west assumed their internal [warehouse floor restoration after racking removal](/blog/warehouse-floor-restoration-racking-removal/) covered the yard as well, since both are concrete. It doesn't. The floor scope stops at the roller door. The hardstand and dock are assessed and quoted separately, because the damage mechanisms and repair methods aren't the same.
+
+A property manager in the outer east flagged every crack in the yard as tenant damage at final inspection. Half of it turned out to be sub-base subsidence from a stormwater junction that had been failing since well before the current lease began, visible in photos from the ingoing report. That's a remediation cost for the landlord to wear, not a make good item for the tenant.
+
+A logistics operator kept operating out of a site with a badly cracked dock leveller pit for over a year, on the basis that "it still works." By the time it was assessed, what would have been a joint repair had become a full pit reconstruction, because water ingress had undermined the surrounding slab. Deferring a small repair on hardstand rarely saves money. It usually multiplies the eventual bill.
+
+A manufacturing tenant in Dandenong got a contractor to resurface a ponding area with a decorative concrete coating a few months before lease end, without asking why the water was pooling there in the first place. The coating looked fine at handback. Six months later the landlord's new tenant reported the same ponding, because the underlying fall in the slab was never corrected. A cosmetic fix over a drainage fault doesn't satisfy a make good obligation, it just delays the argument to whoever finds out next.
+
+## What to check before your final inspection
+
+If you're a tenant approaching lease end, or a property manager preparing for one, a walk of the hardstand and dock area is worth doing early, not at the final inspection when there's no time left to fix anything properly:
+
+- Walk the full hardstand in daylight after rain, since ponding and low spots show up far more clearly with water sitting in them.
+- Check every construction and expansion joint for gaps, spalling or missing filler, not just the ones near the dock.
+- Look closely at the concrete immediately around the dock leveller pit and bumpers, where damage concentrates.
+- Compare what you find against the ingoing condition report, photo by photo where possible.
+- Get anything that looks structural, a step, a lip, a rocking panel, assessed by someone who can tell you the cause, not just quote a patch.
+
+Doing this with time left on the lease means there's room to get quotes, agree scope with the landlord and get the work done properly, instead of scrambling in the final fortnight.
+
+## What proper hardstand and loading dock repair actually involves
+
+The right fix depends entirely on the cause, which is why diagnosis comes before any concrete gets cut:
+
+- **Assessment and cause diagnosis.** Establishing whether the issue is surface level, joint related or sub-base related, since these need completely different repairs.
+- **Joint repair or replacement.** Removing failed joint filler, cleaning out the joint properly and reinstating it with a product rated for heavy vehicle movement.
+- **Partial or full depth patching.** Cutting back to sound concrete around spalled or cracked sections and reinstating with a repair mortar or concrete mix that bonds properly and cures fast enough to get the yard back in operation.
+- **Dock leveller pit repair.** Restoring the pit structure and the seal between the leveller and the truck bed, which is a safety item as much as a cosmetic one.
+- **Sub-base rectification.** Where subsidence or washout is the actual cause, this means addressing the drainage fault first, then reinstating the slab above it. Patching over a moving sub-base is a false economy, since the same crack reappears within a season or two.
+- **Engineering sign off.** For anything structural, meaning a sunken panel or a compromised dock structure, a structural engineer needs to assess the cause and certify the fix. This overlaps with our [structural remediation service](/services/remediation-solutions/structural/), which handles slab settlement, crack injection and engineered repairs on exactly this kind of defect.
+
+Where the problem is genuinely a make good item rather than a remediation one, this sits alongside our [warehouse flooring service](/services/make-good-solutions/warehouse-flooring/), so the internal slab and the external hardstand can be scoped, quoted and completed under the one project rather than as two separate jobs with two separate contractors.
+
+## How much it costs and how long it takes
+
+Cost comes down to three things: how much area is affected, whether the cause is surface level or structural, and whether the yard needs to keep operating while the work happens.
+
+- Joint repair and resealing is the cheapest fix and the fastest, often completed section by section without shutting down truck access.
+- Partial depth patching sits in the middle, and can usually be staged around loading schedules if planned properly.
+- Dock leveller pit reconstruction and full depth slab replacement take longer, since concrete needs curing time before it can take truck loads again, and access around an active loading dock adds complexity.
+- Sub-base rectification is the most involved and the most expensive, because the drainage or structural cause has to be fixed before the surface repair happens, not instead of it.
+
+We quote hardstand and loading dock work after a site inspection, since the same crack can mean a half day joint repair or a multi week sub-base rectification depending on what's actually happening underneath. There's no honest way to price it without seeing it.
+
+## Getting the scope right before handover
+
+Whether it's a make good obligation, a remediation job, or a bit of both, the same trades end up involved: concreters, an engineer if it's structural, and someone coordinating access around an operating loading dock. That's the exact situation our [make good and remediation services](/services/) are built for, one point of contact managing the trades rather than a tenant or landlord chasing three different contractors and three different invoices.
+
+Send through the property address and some photos of the cracking and we'll tell you what's actually involved. [Get in touch.](/contact/)`
+  },
+  {
     id: "43",
     slug: "patching-plastering-commercial-lease-handback",
     title: "Patching & Plastering at Commercial Handback",
