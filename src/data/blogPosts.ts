@@ -15,8 +15,8 @@ export const blogPosts: BlogPost[] = [
   {
     id: "44",
     slug: "warehouse-hardstand-loading-dock-repair-melbourne",
-    title: "Warehouse Hardstand and Loading Dock Repair: Wear and Tear, or a Make Good Problem?",
-    subtitle: "Telling fair wear and tear from a make good repair in the yard",
+        title: "Warehouse Hardstand and Loading Dock Repair",
+        subtitle: "Wear and tear, or a make good problem?",
     date: "2026-07-20",
     readTime: "10 min read",
     excerpt: "Cracked hardstand and a damaged loading dock at lease end. Here's how to tell fair wear and tear from a make good repair, and what fixing it properly costs.",
