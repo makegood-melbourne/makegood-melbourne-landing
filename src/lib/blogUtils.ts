@@ -92,6 +92,8 @@ const imageMap: Record<string, unknown> = {
   'warehouse-demolition-mezzanine-cool-room-removal-melbourne': warehouseDemolitionImage,
   'warehouse-floor-dynatbolt-racking-anchor-removal-melbourne': warehouseFloorRestorationImage,
   'commercial-office-patching-plastering-partition-removal-make-good-melbourne': patchingPlasteringImage,
+  // Mapped to the existing warehouse floor image until a dedicated hardstand asset is supplied
+  'warehouse-hardstand-loading-dock-repair-melbourne': warehouseFloorRestorationImage,
 };
 
 // Normalize image imports across Astro + React builds.
