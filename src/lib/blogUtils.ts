@@ -1,3 +1,4 @@
+import warehouseHardstandImage from "@/assets/blog/warehouse-hardstand-loading-dock-repair-melbourne.webp";
 import cleaningImage from "@/assets/blog/cleaning-services.webp";
 import paintingImage from "@/assets/blog/painting-wall.webp";
 import warehouseImage from "@/assets/blog/warehouse-makegood.webp";
@@ -92,8 +93,8 @@ const imageMap: Record<string, unknown> = {
   'warehouse-demolition-mezzanine-cool-room-removal-melbourne': warehouseDemolitionImage,
   'warehouse-floor-dynatbolt-racking-anchor-removal-melbourne': warehouseFloorRestorationImage,
   'commercial-office-patching-plastering-partition-removal-make-good-melbourne': patchingPlasteringImage,
-  // Mapped to the existing warehouse floor image until a dedicated hardstand asset is supplied
-  'warehouse-hardstand-loading-dock-repair-melbourne': warehouseFloorRestorationImage,
+  // Dedicated hardstand asset
+    'warehouse-hardstand-loading-dock-repair-melbourne': warehouseHardstandImage,
 };
 
 // Normalize image imports across Astro + React builds.
