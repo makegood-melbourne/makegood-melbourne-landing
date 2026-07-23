@@ -14,86 +14,9 @@ export default defineConfig({
   trailingSlash: 'always',
   site: 'https://makegood.melbourne',
   redirects: {
-    // Page-level redirects for old site structure
-    // '/tenants': '/learn/make-good-guide/', // MOVED to netlify.toml as proper 301
-    '/blogs': '/blog/',
-    
-    // Learn section URL restructure (301 redirects)
-    // '/what-is-make-good': '/learn/make-good-guide/', // MOVED to netlify.toml as proper 301
-    // '/our-process': '/learn/our-process/', // MOVED to netlify.toml as proper 301
-    // '/cart': '/', // MOVED to netlify.toml as proper 301
-    // '/services': '/capabilities/', // REMOVED - now have /services/index.astro
-    
-    // Old /blogs/ URLs -> new /blog/ URLs with slug changes
-    '/blogs/year-end-planning-commercial-property': '/blog/year-end-property-planning/',
-    '/blogs/waste-management-sustainability-commercial-demolition': '/blog/waste-management-sustainability-make-good-works/',
-    '/blogs/strategic-planning-commercial-makegood': '/blog/strategic-make-good-planning/',
-    '/blogs/office-strip-out-demolition-best-practices': '/blog/office-strip-out/',
-    '/blogs/building-defect-remediation-compliance-process': '/blog/building-defect-remediation-commercial-property/',
-    '/blogs/parapet-failure-emergency-repair-structural-safety': '/blog/parapet-failure-emergency-building-repairs/',
-    '/blogs/property-transformation-makegood-renovation': '/blog/new-year-property-transformations/',
-    '/blogs/commercial-makegood-complete-guide': '/blog/what-are-make-goods/',
-    '/blogs/polycarbonate-roofing-replacement-commercial': '/blog/warehouse-polycarbonate-roofing-replacement/',
-    '/blogs/makegood-services-comprehensive-overview': '/blog/ultimate-guide-to-make-good-services/',
-    '/blogs/painting-commercial-property-makegood-standards': '/blog/the-importance-of-painting/',
-    '/blogs/warehouse-makegood-industrial-lease-obligations': '/blog/port-melbourne-warehouse-end-of-lease-make-good/',
-    '/blogs/balcony-waterproofing-membrane-replacement': '/blog/balcony-waterproofing-preventing-fixing-leaks/',
-    '/blogs/car-park-line-marking-compliance-standards': '/blog/car-park-repairs-line-marking-make-good/',
-    '/blogs/carpet-tile-replacement-commercial-office': '/blog/carpet-tile-replacement-installation-floor-preparation/',
-    '/blogs/epoxy-flooring-industrial-applications': '/blog/restoring-concrete-floors/',
-    '/blogs/commercial-cleaning-services-post-makegood': '/blog/end-of-lease-cleaning-services/',
-    '/blogs/electrical-make-safe-emergency-response': '/blog/electrical-make-safe-decommissioning-demolition/',
-    '/blogs/the-ultimate-guide-to-pallet-racking-solutions': '/blog/guide-to-pallet-racking-solutions/',
-    '/blogs/property-condition-report': '/blog/understanding-property-condition-reports/',
-    
-    // Catch-all for any other /blogs/ URLs -> same slug under /blog/
-    '/blogs/[slug]': '/blog/[slug]',
-    
-    // Service page redirects for consolidated/renamed pages
-    '/services/strip-out-solutions/office-strip-out': '/services/strip-out-solutions/',
-    // Updated to point directly to final destinations (avoid redirect chains)
-    '/services/carpet-removal': '/services/make-good-solutions/warehouse-flooring/',
-    '/services/vinyl-removal': '/services/make-good-solutions/warehouse-flooring/',
-    '/services/tile-removal': '/services/make-good-solutions/warehouse-flooring/',
-    '/services/adhesive-removal': '/services/make-good-solutions/warehouse-flooring/',
-    '/services/commercial-cleaning': '/services/handover-solutions/end-of-lease-cleaning/',
-    '/services/commercial-painting': '/services/make-good-solutions/painting/',
-    '/services/epoxy-flooring': '/services/make-good-solutions/warehouse-flooring/',
-    
-    // Blog post redirects for renamed/legacy URLs
-    '/blog/year-end-planning-commercial-property': '/blog/year-end-property-planning/',
-    '/blog/waste-management-sustainability-commercial-demolition': '/blog/waste-management-sustainability-make-good-works/',
-    '/blog/strategic-planning-commercial-makegood': '/blog/strategic-make-good-planning/',
-    '/blog/office-strip-out-demolition-best-practices': '/blog/office-strip-out/',
-    '/blog/building-defect-remediation-compliance-process': '/blog/building-defect-remediation-commercial-property/',
-    '/blog/parapet-failure-emergency-repair-structural-safety': '/blog/parapet-failure-emergency-building-repairs/',
-    '/blog/property-transformation-makegood-renovation': '/blog/love-your-property/',
-    '/blog/commercial-makegood-complete-guide': '/blog/what-are-make-goods/',
-    '/blog/polycarbonate-roofing-replacement-commercial': '/blog/warehouse-polycarbonate-roofing-replacement/',
-    '/blog/makegood-services-comprehensive-overview': '/blog/tenants-guide-smooth-make-good-experience/',
-    '/blog/painting-commercial-property-makegood-standards': '/blog/the-importance-of-painting/',
-    '/blog/warehouse-makegood-industrial-lease-obligations': '/blog/strategic-make-good-planning/',
-    '/blog/balcony-waterproofing-membrane-replacement': '/blog/balcony-waterproofing-preventing-fixing-leaks/',
-    '/blog/car-park-line-marking-compliance-standards': '/blog/car-park-repairs-line-marking-make-good/',
-    '/blog/carpet-tile-replacement-commercial-office': '/blog/carpet-tile-replacement-installation-floor-preparation/',
-    '/blog/epoxy-flooring-industrial-applications': '/blog/restoring-concrete-floors/',
-    '/blog/commercial-cleaning-services-post-makegood': '/blog/end-of-lease-cleaning-services/',
-    '/blog/electrical-make-safe-emergency-response': '/blog/electrical-make-safe-decommissioning-demolition/',
-    
-    // Old /service-areas/ URLs -> new /areas/ URLs
-    '/service-areas/melbourne-cbd': '/areas/melbourne-cbd/',
-    '/service-areas/port-melbourne': '/areas/port-melbourne/',
-    '/service-areas/dandenong': '/areas/dandenong/',
-    '/service-areas/clayton': '/areas/clayton/',
-    '/service-areas/moorabbin': '/areas/moorabbin/',
-    '/service-areas/richmond': '/areas/richmond/',
-    '/service-areas/ringwood': '/areas/ringwood/',
-    '/service-areas/altona': '/areas/altona/',
-    '/service-areas/kilsyth': '/areas/kilsyth/',
-    '/service-areas/mulgrave': '/areas/mulgrave/',
-    '/service-areas/south-melbourne': '/areas/south-melbourne/',
-    '/service-areas/truganina': '/areas/truganina/',
-    '/service-areas/[slug]': '/areas/[slug]',
+    // Redirects live in netlify.toml as real server-side 301s.
+    // Do not add entries here, Astro static output renders them as client-side
+    // meta-refresh redirects, which Googlebot treats as weak or duplicate signals.
   },
   vite: {
     resolve: {

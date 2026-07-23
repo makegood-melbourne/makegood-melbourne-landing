@@ -49,6 +49,207 @@
   status = 301
   force = true
 
+# Migrated from astro.config.mjs client-side redirects (2026-07-22)
+# These were previously Astro meta-refresh redirects, weak signals for Googlebot.
+# Moved here so they are real server-side 301s.
+[[redirects]]
+  from = "/blogs"
+  to = "/blog/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blogs/year-end-planning-commercial-property"
+  to = "/blog/year-end-property-planning/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blogs/waste-management-sustainability-commercial-demolition"
+  to = "/blog/waste-management-sustainability-make-good-works/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blogs/strategic-planning-commercial-makegood"
+  to = "/blog/strategic-make-good-planning/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blogs/office-strip-out-demolition-best-practices"
+  to = "/blog/office-strip-out/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blogs/building-defect-remediation-compliance-process"
+  to = "/blog/building-defect-remediation-commercial-property/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blogs/parapet-failure-emergency-repair-structural-safety"
+  to = "/blog/parapet-failure-emergency-building-repairs/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blogs/property-transformation-makegood-renovation"
+  to = "/blog/new-year-property-transformations/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blogs/commercial-makegood-complete-guide"
+  to = "/blog/what-are-make-goods/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blogs/polycarbonate-roofing-replacement-commercial"
+  to = "/blog/warehouse-polycarbonate-roofing-replacement/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blogs/makegood-services-comprehensive-overview"
+  to = "/blog/ultimate-guide-to-make-good-services/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blogs/painting-commercial-property-makegood-standards"
+  to = "/blog/the-importance-of-painting/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blogs/warehouse-makegood-industrial-lease-obligations"
+  to = "/blog/port-melbourne-warehouse-end-of-lease-make-good/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blogs/balcony-waterproofing-membrane-replacement"
+  to = "/blog/balcony-waterproofing-preventing-fixing-leaks/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blogs/car-park-line-marking-compliance-standards"
+  to = "/blog/car-park-repairs-line-marking-make-good/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blogs/carpet-tile-replacement-commercial-office"
+  to = "/blog/carpet-tile-replacement-installation-floor-preparation/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blogs/epoxy-flooring-industrial-applications"
+  to = "/blog/restoring-concrete-floors/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blogs/commercial-cleaning-services-post-makegood"
+  to = "/blog/end-of-lease-cleaning-services/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blogs/electrical-make-safe-emergency-response"
+  to = "/blog/electrical-make-safe-decommissioning-demolition/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blogs/the-ultimate-guide-to-pallet-racking-solutions"
+  to = "/blog/guide-to-pallet-racking-solutions/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blogs/property-condition-report"
+  to = "/blog/understanding-property-condition-reports/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/service-areas/melbourne-cbd"
+  to = "/areas/melbourne-cbd/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/service-areas/port-melbourne"
+  to = "/areas/port-melbourne/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/service-areas/dandenong"
+  to = "/areas/dandenong/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/service-areas/clayton"
+  to = "/areas/clayton/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/service-areas/moorabbin"
+  to = "/areas/moorabbin/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/service-areas/richmond"
+  to = "/areas/richmond/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/service-areas/ringwood"
+  to = "/areas/ringwood/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/service-areas/altona"
+  to = "/areas/altona/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/service-areas/kilsyth"
+  to = "/areas/kilsyth/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/service-areas/mulgrave"
+  to = "/areas/mulgrave/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/service-areas/south-melbourne"
+  to = "/areas/south-melbourne/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/service-areas/truganina"
+  to = "/areas/truganina/"
+  status = 301
+  force = true
+
 # Legacy blog URL redirect (/blogs/SLUG -> /blog/SLUG/)
 [[redirects]]
   from = "/blogs/:slug"
@@ -150,7 +351,7 @@
 
 [[redirects]]
   from = "/services/commercial-cleaning"
-  to = "/services/handover-solutions/"
+  to = "/services/handover-solutions/end-of-lease-cleaning/"
   status = 301
   force = true
 
@@ -187,6 +388,23 @@
 [[redirects]]
   from = "/services/back-to-base-works"
   to = "/services/strip-out-solutions/make-safe/"
+  status = 301
+  force = true
+
+# Restored from astro.config.mjs: /services/epoxy-flooring has no actual page
+# behind it (confirmed via deploy preview: without this rule it 404s), despite
+# being listed in the sitemap. The sitemap entry itself is the bug, not this
+# redirect. Keeping the working behaviour: redirect to the real warehouse
+# flooring page rather than let it 404.
+[[redirects]]
+  from = "/services/epoxy-flooring"
+  to = "/services/make-good-solutions/warehouse-flooring/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/services/epoxy-flooring/"
+  to = "/services/make-good-solutions/warehouse-flooring/"
   status = 301
   force = true
 
