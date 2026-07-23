@@ -391,6 +391,23 @@
   status = 301
   force = true
 
+# Restored from astro.config.mjs: /services/epoxy-flooring has no actual page
+# behind it (confirmed via deploy preview: without this rule it 404s), despite
+# being listed in the sitemap. The sitemap entry itself is the bug, not this
+# redirect. Keeping the working behaviour: redirect to the real warehouse
+# flooring page rather than let it 404.
+[[redirects]]
+  from = "/services/epoxy-flooring"
+  to = "/services/make-good-solutions/warehouse-flooring/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/services/epoxy-flooring/"
+  to = "/services/make-good-solutions/warehouse-flooring/"
+  status = 301
+  force = true
+
 # Unpublished service page redirects (services exist in data but not published)
 [[redirects]]
   from = "/services/commercial-make-good"
