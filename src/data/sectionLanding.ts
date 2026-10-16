@@ -1041,7 +1041,7 @@ export const sectionLandingPages: SectionLandingData[] = [
       },
       {
         scope: "Metal roof replacement",
-        worksIncluded: "One rusted sheet or the whole roof. Colorbond and Zincalume, done properly.",
+        worksIncluded: "One rusted sheet, an old fibre cement roof or the whole lot. Colorbond and Zincalume, done properly.",
         image: metalRoofSheetingImage,
         imageAlt: "New metal deck roof sheeting across a large industrial warehouse roof",
         imageTitle: "Metal Roof Replacement Melbourne"
