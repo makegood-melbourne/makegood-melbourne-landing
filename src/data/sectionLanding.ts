@@ -34,7 +34,7 @@ import shotcreteApplicationImage from "@/assets/services/shotcrete-application-s
 import roofingAerialHero from "@/assets/services/warehouse-metal-roof-skylights-aerial-melbourne.webp";
 import roofingAerialHeroMobile from "@/assets/services/warehouse-metal-roof-skylights-aerial-melbourne-mobile.webp";
 import rooferHarnessImage from "@/assets/services/roofer-safety-harness-metal-roof-repair-melbourne.webp";
-import craneLiftingRoofSheetsImage from "@/assets/services/crane-lifting-roof-panels-melbourne.webp";
+import metalRoofSheetingImage from "@/assets/services/commercial-metal-roof-sheeting-industrial-warehouse-melbourne.webp";
 import warehouseRoofInteriorImage from "@/assets/services/warehouse-roof-skylights-steel-structure-melbourne.jpeg";
 import skylightSteelTrussesImage from "@/assets/services/industrial-warehouse-skylight-steel-trusses-melbourne.jpeg";
 
@@ -1042,8 +1042,8 @@ export const sectionLandingPages: SectionLandingData[] = [
       {
         scope: "Metal roof replacement",
         worksIncluded: "One rusted sheet or the whole roof. Colorbond and Zincalume, done properly.",
-        image: craneLiftingRoofSheetsImage,
-        imageAlt: "Crane lifting a bundle of metal roof sheets into place",
+        image: metalRoofSheetingImage,
+        imageAlt: "New metal deck roof sheeting across a large industrial warehouse roof",
         imageTitle: "Metal Roof Replacement Melbourne"
       },
       {
