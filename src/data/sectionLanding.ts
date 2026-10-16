@@ -36,7 +36,7 @@ import roofingAerialHeroMobile from "@/assets/services/warehouse-metal-roof-skyl
 import rooferHarnessImage from "@/assets/services/roofer-safety-harness-metal-roof-repair-melbourne.webp";
 import metalRoofSheetingImage from "@/assets/services/commercial-metal-roof-sheeting-industrial-warehouse-melbourne.webp";
 import warehouseRoofInteriorImage from "@/assets/services/warehouse-roof-skylights-steel-structure-melbourne.jpeg";
-import skylightSteelTrussesImage from "@/assets/services/industrial-warehouse-skylight-steel-trusses-melbourne.jpeg";
+import roofPlantPlatformImage from "@/assets/services/warehouse-roof-plant-platform-walkways-melbourne.webp";
 
 export interface SectionLandingFAQ {
   question: string;
@@ -1063,11 +1063,11 @@ export const sectionLandingPages: SectionLandingData[] = [
         imageTitle: "Polycarbonate Roofing and Skylights Melbourne"
       },
       {
-        scope: "Asbestos roofs",
-        worksIncluded: "Old fibre cement off by licensed removalists. New metal on. Paperwork done.",
-        image: skylightSteelTrussesImage,
-        imageAlt: "Industrial warehouse roof with skylights and steel trusses in Melbourne",
-        imageTitle: "Asbestos Roof Replacement Melbourne"
+        scope: "Roof maintenance",
+        worksIncluded: "Scheduled roof checks for property managers. Gutters cleared and small problems fixed before the tenant calls.",
+        image: roofPlantPlatformImage,
+        imageAlt: "Warehouse metal roof with an air conditioning plant platform, walkways and handrails",
+        imageTitle: "Commercial Roof Maintenance Melbourne"
       },
       {
         scope: "Storm make safe",
