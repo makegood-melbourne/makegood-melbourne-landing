@@ -35,7 +35,7 @@ import roofingAerialHero from "@/assets/services/warehouse-metal-roof-skylights-
 import roofingAerialHeroMobile from "@/assets/services/warehouse-metal-roof-skylights-aerial-melbourne-mobile.webp";
 import rooferHarnessImage from "@/assets/services/roofer-safety-harness-metal-roof-repair-melbourne.webp";
 import metalRoofSheetingImage from "@/assets/services/commercial-metal-roof-sheeting-industrial-warehouse-melbourne.webp";
-import warehouseRoofInteriorImage from "@/assets/services/warehouse-roof-skylights-steel-structure-melbourne.jpeg";
+import boxGutterImage from "@/assets/services/commercial-box-gutter-metal-roof-melbourne.webp";
 import roofPlantPlatformImage from "@/assets/services/warehouse-roof-plant-platform-walkways-melbourne.webp";
 
 export interface SectionLandingFAQ {
@@ -1049,8 +1049,8 @@ export const sectionLandingPages: SectionLandingData[] = [
       {
         scope: "Box gutters and drainage",
         worksIncluded: "Where most warehouse leaks really begin. Gutters, sumps and downpipes sorted.",
-        image: warehouseRoofInteriorImage,
-        imageAlt: "Warehouse metal roof and skylights seen from below, above pallet racking",
+        image: boxGutterImage,
+        imageAlt: "Galvanised box gutter and flashings between corrugated metal roof sheets on a commercial building",
         imageTitle: "Box Gutters and Roof Drainage Melbourne"
       },
       {
