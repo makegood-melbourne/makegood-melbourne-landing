@@ -31,7 +31,9 @@ import claddingRemediationImage from "@/assets/services/cladding-remediation-fac
 import skylightRoofPanelsImage from "@/assets/services/industrial-skylight-roof-panels-steel-structure-melbourne.jpeg";
 import structuralRemediationHeroImage from "@/assets/services/structural-remediation-concrete-cancer-repair-melbourne.jpg";
 import shotcreteApplicationImage from "@/assets/services/shotcrete-application-structural-repair-melbourne.jpg";
-import warehouseRoofHeroImage from "@/assets/services/industrial-warehouse-skylight-fibreglass-roof-melbourne.png";
+import roofingAerialHero from "@/assets/services/warehouse-metal-roof-skylights-aerial-melbourne.webp";
+import roofingAerialHeroMobile from "@/assets/services/warehouse-metal-roof-skylights-aerial-melbourne-mobile.webp";
+import rooferHarnessImage from "@/assets/services/roofer-safety-harness-metal-roof-repair-melbourne.webp";
 import craneLiftingRoofSheetsImage from "@/assets/services/crane-lifting-roof-panels-melbourne.webp";
 import warehouseRoofInteriorImage from "@/assets/services/warehouse-roof-skylights-steel-structure-melbourne.jpeg";
 import skylightSteelTrussesImage from "@/assets/services/industrial-warehouse-skylight-steel-trusses-melbourne.jpeg";
@@ -991,7 +993,7 @@ export const sectionLandingPages: SectionLandingData[] = [
     slug: "roofing-solutions",
     metaTitle: "Roofing Solutions Melbourne | Make Good, BETTER.",
     metaDescription: "Commercial and industrial roofing across Melbourne. Metal roof replacement, box gutters, leak repairs, skylights and asbestos roofs. Fixed-price quotes.",
-    ogImage: "/og/polycarbonate-roofing-skylights.jpg",
+    ogImage: "/og/roofing-solutions.jpg",
 
     title: "ROOFING SOLUTIONS MELBOURNE",
     titleHighlight: "MELBOURNE",
@@ -1002,9 +1004,10 @@ export const sectionLandingPages: SectionLandingData[] = [
       { icon: "clipboard", title: "Make Good Ready" },
       { icon: "document", title: "Compliance Certificates" }
     ],
-    heroImage: warehouseRoofHeroImage,
-    heroImageAlt: "Empty Melbourne warehouse with a metal roof and rows of skylight sheets",
-    heroImageTitle: "Makegood Melbourne - Roofing Solutions Melbourne",
+    heroImage: roofingAerialHero,
+    heroImageMobile: roofingAerialHeroMobile,
+    heroImageAlt: "Aerial view of commercial warehouse metal roofs with rows of skylights, Melbourne",
+    heroImageTitle: "Makegood Melbourne - Commercial Roofing Solutions Melbourne",
 
     aboutTitlePrefix: "ONE CALL.",
     aboutTitleHighlight: "THE WHOLE ROOF.",
@@ -1032,8 +1035,8 @@ export const sectionLandingPages: SectionLandingData[] = [
       {
         scope: "Leak detection and repairs",
         worksIncluded: "We follow the water back to where it starts, flashings and fan penetrations included. Then we fix that bit.",
-        image: rooftopWaterproofingImage,
-        imageAlt: "Rooftop works on a commercial building in Melbourne",
+        image: rooferHarnessImage,
+        imageAlt: "Roofer in a safety harness fixing metal roof sheets on a commercial warehouse",
         imageTitle: "Commercial Roof Leak Repairs Melbourne"
       },
       {

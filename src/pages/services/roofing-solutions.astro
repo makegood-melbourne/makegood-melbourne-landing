@@ -6,7 +6,8 @@ import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import SectionLandingTemplate from '../../page-components/SectionLandingTemplate';
 import Footer from '../../components/Footer';
 import { getSectionLandingBySlug } from '../../data/sectionLanding';
-import roofingHero from '../../assets/services/industrial-warehouse-skylight-fibreglass-roof-melbourne.png';
+import roofingHero from '../../assets/services/warehouse-metal-roof-skylights-aerial-melbourne.webp';
+import roofingHeroMobile from '../../assets/services/warehouse-metal-roof-skylights-aerial-melbourne-mobile.webp';
 const data = getSectionLandingBySlug('roofing-solutions');
 if (!data) {
   return Astro.redirect('/services/');
@@ -18,7 +19,8 @@ if (!data) {
   ogImage={data.ogImage || "/og-default.jpg"}
   canonicalUrl="https://makegood.melbourne/services/roofing-solutions/"
 >
-  <link slot="head" rel="preload" as="image" href={roofingHero.src} fetchpriority="high" />
+  <link slot="head" rel="preload" as="image" href={roofingHeroMobile.src} fetchpriority="high" media="(max-width: 1023px)" />
+  <link slot="head" rel="preload" as="image" href={roofingHero.src} fetchpriority="high" media="(min-width: 1024px)" />
   <div class="min-h-screen flex flex-col bg-background">
     <!-- Skip to Content Link for Accessibility -->
     <a
