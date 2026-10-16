@@ -36,6 +36,7 @@ import roofingAerialHeroMobile from "@/assets/services/warehouse-metal-roof-skyl
 import rooferHarnessImage from "@/assets/services/roofer-safety-harness-metal-roof-repair-melbourne.webp";
 import metalRoofSheetingImage from "@/assets/services/commercial-metal-roof-sheeting-industrial-warehouse-melbourne.webp";
 import boxGutterImage from "@/assets/services/commercial-box-gutter-metal-roof-melbourne.webp";
+import stormRainGutterImage from "@/assets/services/storm-rain-overflowing-roof-gutter-warehouse.webp";
 import roofPlantPlatformImage from "@/assets/services/warehouse-roof-plant-platform-walkways-melbourne.webp";
 
 export interface SectionLandingFAQ {
@@ -1072,8 +1073,8 @@ export const sectionLandingPages: SectionLandingData[] = [
       {
         scope: "Storm make safe",
         worksIncluded: "Storm hits, we stop the water first. The proper fix comes after.",
-        image: waterproofingMembraneImage,
-        imageAlt: "Commercial roof sealing works in Melbourne",
+        image: stormRainGutterImage,
+        imageAlt: "Heavy rain pouring over a gutter beneath a metal warehouse roof during a storm",
         imageTitle: "Storm Damage Roof Make Safe Melbourne"
       }
     ],
