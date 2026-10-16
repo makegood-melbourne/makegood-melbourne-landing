@@ -35,7 +35,8 @@ CORE SERVICE GROUPS
 1. Strip Out Solutions: commercial and industrial strip outs for offices, warehouses, factories, retail, medical and hospitality tenancies. Work can include demolition, make safe coordination, pallet racking removal, flooring removal, partition removal, signage removal, fixture removal, waste removal and preparation for repair or handover.
 2. Make Good Solutions: end-of-lease works that bring a tenancy back to the agreed handover condition. Work can include painting, patching and plastering, suspended ceilings, line marking, flooring reinstatement, warehouse flooring and coordination of the trade sequence.
 3. Handover Solutions: end-of-lease cleaning, relocation support, waste removal, final presentation, inspection preparation and key handback support.
-4. Remediation Solutions: building-fabric and defect works, including structural remediation, waterproofing, cladding and glazing, polycarbonate roofing and skylights, water damage and mould remediation, and fire compliance and facade cladding remediation.
+4. Remediation Solutions: building-fabric and defect works, including structural remediation, waterproofing, cladding and glazing, water damage and mould remediation, and fire compliance and facade cladding remediation.
+5. Roofing Solutions: commercial and industrial roofing only (no residential), including roof leak repairs and maintenance, metal roof replacement and asbestos roofs, box gutters and roof drainage, polycarbonate roofing and skylights, and storm damage make safe.
 
 PUBLISHED SERVICE PAGES TO RECOMMEND
 - /services/strip-out-solutions/ - Strip Out Services
@@ -56,7 +57,12 @@ PUBLISHED SERVICE PAGES TO RECOMMEND
 - /services/remediation-solutions/structural/ - Structural
 - /services/remediation-solutions/waterproofing/ - Waterproofing
 - /services/remediation-solutions/cladding-glazing/ - Cladding and Glazing
+- /services/roofing-solutions/ - Roofing Solutions (commercial and industrial roofing only)
+- /services/roofing-solutions/roof-leak-repairs-maintenance/ - Roof Leak Repairs and Maintenance
+- /services/roofing-solutions/metal-roof-replacement/ - Metal Roof Replacement (including asbestos roofs)
+- /services/roofing-solutions/box-gutters-roof-drainage/ - Box Gutters and Roof Drainage
 - /services/roofing-solutions/polycarbonate-roofing-skylights/ - Polycarbonate Roofing and Skylights
+- /services/roofing-solutions/storm-damage-make-safe/ - Storm Damage and Make Safe
 - /services/remediation-solutions/water-damage-mould-remediation/ - Water Damage and Mould Remediation
 - /services/remediation-solutions/fire-compliance-facade-cladding-remediation/ - Fire Compliance and Facade Cladding Remediation
 

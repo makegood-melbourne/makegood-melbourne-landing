@@ -1022,7 +1022,11 @@ export const sectionLandingPages: SectionLandingData[] = [
     ],
 
     serviceSlugs: [
-      "roofing-solutions/polycarbonate-roofing-skylights"
+      "roofing-solutions/roof-leak-repairs-maintenance",
+      "roofing-solutions/metal-roof-replacement",
+      "roofing-solutions/box-gutters-roof-drainage",
+      "roofing-solutions/polycarbonate-roofing-skylights",
+      "roofing-solutions/storm-damage-make-safe"
     ],
     useGrid: true,
     carouselTitle: "OUR ROOFING SERVICES",
@@ -1036,6 +1040,8 @@ export const sectionLandingPages: SectionLandingData[] = [
       {
         scope: "Leak detection and repairs",
         worksIncluded: "We follow the water back to where it starts, flashings and fan penetrations included. Then we fix that bit.",
+        link: "/services/roofing-solutions/roof-leak-repairs-maintenance/",
+        linkLabel: "View leak repairs",
         image: rooferHarnessImage,
         imageAlt: "Roofer in a safety harness fixing metal roof sheets on a commercial warehouse",
         imageTitle: "Commercial Roof Leak Repairs Melbourne"
@@ -1043,6 +1049,8 @@ export const sectionLandingPages: SectionLandingData[] = [
       {
         scope: "Metal roof replacement",
         worksIncluded: "One rusted sheet, an old fibre cement roof or the whole lot. Colorbond and Zincalume, done properly.",
+        link: "/services/roofing-solutions/metal-roof-replacement/",
+        linkLabel: "View metal roof replacement",
         image: metalRoofSheetingImage,
         imageAlt: "New metal deck roof sheeting across a large industrial warehouse roof",
         imageTitle: "Metal Roof Replacement Melbourne"
@@ -1050,6 +1058,8 @@ export const sectionLandingPages: SectionLandingData[] = [
       {
         scope: "Box gutters and drainage",
         worksIncluded: "Where most warehouse leaks really begin. Gutters, sumps and downpipes sorted.",
+        link: "/services/roofing-solutions/box-gutters-roof-drainage/",
+        linkLabel: "View box gutters",
         image: boxGutterImage,
         imageAlt: "Galvanised box gutter and flashings between corrugated metal roof sheets on a commercial building",
         imageTitle: "Box Gutters and Roof Drainage Melbourne"
@@ -1066,6 +1076,8 @@ export const sectionLandingPages: SectionLandingData[] = [
       {
         scope: "Roof maintenance",
         worksIncluded: "Scheduled roof checks for property managers. Gutters cleared and small problems fixed before the tenant calls.",
+        link: "/services/roofing-solutions/roof-leak-repairs-maintenance/",
+        linkLabel: "View roof maintenance",
         image: roofPlantPlatformImage,
         imageAlt: "Warehouse metal roof with an air conditioning plant platform, walkways and handrails",
         imageTitle: "Commercial Roof Maintenance Melbourne"
@@ -1073,6 +1085,8 @@ export const sectionLandingPages: SectionLandingData[] = [
       {
         scope: "Storm make safe",
         worksIncluded: "Storm hits, we stop the water first. The proper fix comes after.",
+        link: "/services/roofing-solutions/storm-damage-make-safe/",
+        linkLabel: "View storm make safe",
         image: stormRainGutterImage,
         imageAlt: "Heavy rain pouring over a gutter beneath a metal warehouse roof during a storm",
         imageTitle: "Storm Damage Roof Make Safe Melbourne"
