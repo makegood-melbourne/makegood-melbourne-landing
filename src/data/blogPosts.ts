@@ -1283,7 +1283,7 @@ Quality control throughout is what prevents rework. A final QA check against the
 
 ## Common Causes of Commercial Water Damage in Melbourne
 
-Most commercial water damage incidents we attend come down to a handful of recurring causes: HVAC condensate drain blockages or overflow; failed flexi hoses in kitchens and amenities; [roof penetrations and flashing failures](/services/remediation-solutions/polycarbonate-roofing-skylights/); gutter overflow onto facades and into ceiling voids; sprinkler or building services leaks; [waterproofing failures](/services/remediation-solutions/waterproofing/) in mixed-use buildings; and plant room or riser leaks migrating through slabs or walls.
+Most commercial water damage incidents we attend come down to a handful of recurring causes: HVAC condensate drain blockages or overflow; failed flexi hoses in kitchens and amenities; [roof penetrations and flashing failures](/services/roofing-solutions/polycarbonate-roofing-skylights/); gutter overflow onto facades and into ceiling voids; sprinkler or building services leaks; [waterproofing failures](/services/remediation-solutions/waterproofing/) in mixed-use buildings; and plant room or riser leaks migrating through slabs or walls.
 
 Several of these are maintenance issues — things that would be caught in a regular inspection and addressed before they cause damage. Others are building defects that the owner or landlord is responsible for. Understanding which category a damage event falls into matters for insurance, for responsibility and for making sure the underlying cause is actually fixed before reinstatement.
 

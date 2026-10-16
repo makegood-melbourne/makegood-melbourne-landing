@@ -26,7 +26,7 @@ const priorityServiceDisplayNames: Record<string, string> = {
   'remediation-solutions/fire-compliance-facade-cladding-remediation': 'Fire Compliance & Facade Cladding Remediation',
 };
 
-// Service categories for navigation grouping - 4 main sections
+// Service categories for navigation grouping - 5 main sections
 const serviceCategories = [
   {
     label: "Strip Out Solutions",
@@ -51,14 +51,21 @@ const serviceCategories = [
   {
     label: "Remediation Solutions",
     href: "/services/remediation-solutions/",  // Clickable category header
-    slugs: ['remediation-solutions/structural', 'remediation-solutions/polycarbonate-roofing-skylights', 'remediation-solutions/cladding-glazing', 'remediation-solutions/fire-compliance-facade-cladding-remediation', 'remediation-solutions/waterproofing', 'remediation-solutions/water-damage-mould-remediation'],
+    slugs: ['remediation-solutions/structural', 'remediation-solutions/cladding-glazing', 'remediation-solutions/fire-compliance-facade-cladding-remediation', 'remediation-solutions/waterproofing', 'remediation-solutions/water-damage-mould-remediation'],
     displayNames: {
       'remediation-solutions/structural': 'Structural',
-      'remediation-solutions/polycarbonate-roofing-skylights': 'Polycarbonate Roofing & Skylights',
       'remediation-solutions/cladding-glazing': 'Cladding & Glazing',
       'remediation-solutions/fire-compliance-facade-cladding-remediation': 'Fire Compliance & Facade Cladding Remediation',
       'remediation-solutions/waterproofing': 'Waterproofing',
       'remediation-solutions/water-damage-mould-remediation': 'Water Damage & Mould Remediation'
+    }
+  },
+  {
+    label: "Roofing Solutions",
+    href: "/services/roofing-solutions/",  // Clickable category header
+    slugs: ['roofing-solutions/polycarbonate-roofing-skylights'],
+    displayNames: {
+      'roofing-solutions/polycarbonate-roofing-skylights': 'Polycarbonate Roofing & Skylights'
     }
   }
 ];
