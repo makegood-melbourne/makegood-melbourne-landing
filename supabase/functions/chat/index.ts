@@ -56,7 +56,7 @@ PUBLISHED SERVICE PAGES TO RECOMMEND
 - /services/remediation-solutions/structural/ - Structural
 - /services/remediation-solutions/waterproofing/ - Waterproofing
 - /services/remediation-solutions/cladding-glazing/ - Cladding and Glazing
-- /services/remediation-solutions/polycarbonate-roofing-skylights/ - Polycarbonate Roofing and Skylights
+- /services/roofing-solutions/polycarbonate-roofing-skylights/ - Polycarbonate Roofing and Skylights
 - /services/remediation-solutions/water-damage-mould-remediation/ - Water Damage and Mould Remediation
 - /services/remediation-solutions/fire-compliance-facade-cladding-remediation/ - Fire Compliance and Facade Cladding Remediation
 
