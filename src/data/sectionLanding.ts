@@ -1,5 +1,5 @@
-// Section landing page data for the 4 main service categories:
-// Strip Out, Make Good, Handover, Remediation
+// Section landing page data for the 5 main service categories:
+// Strip Out, Make Good, Handover, Remediation, Roofing
 
 import buildingRemediationHero from "@/assets/services/building-remediation-melbourne-shotcrete.jpg";
 import buildingRemediationHeroMobile from "@/assets/services/building-remediation-melbourne-shotcrete-mobile.jpg";
@@ -31,6 +31,13 @@ import claddingRemediationImage from "@/assets/services/cladding-remediation-fac
 import skylightRoofPanelsImage from "@/assets/services/industrial-skylight-roof-panels-steel-structure-melbourne.jpeg";
 import structuralRemediationHeroImage from "@/assets/services/structural-remediation-concrete-cancer-repair-melbourne.jpg";
 import shotcreteApplicationImage from "@/assets/services/shotcrete-application-structural-repair-melbourne.jpg";
+import roofingAerialHero from "@/assets/services/warehouse-metal-roof-skylights-aerial-melbourne.webp";
+import roofingAerialHeroMobile from "@/assets/services/warehouse-metal-roof-skylights-aerial-melbourne-mobile.webp";
+import rooferHarnessImage from "@/assets/services/roofer-safety-harness-metal-roof-repair-melbourne.webp";
+import metalRoofSheetingImage from "@/assets/services/commercial-metal-roof-sheeting-industrial-warehouse-melbourne.webp";
+import boxGutterImage from "@/assets/services/commercial-box-gutter-metal-roof-melbourne.webp";
+import stormRainGutterImage from "@/assets/services/storm-rain-overflowing-roof-gutter-warehouse.webp";
+import roofPlantPlatformImage from "@/assets/services/warehouse-roof-plant-platform-walkways-melbourne.webp";
 
 export interface SectionLandingFAQ {
   question: string;
@@ -810,7 +817,7 @@ export const sectionLandingPages: SectionLandingData[] = [
 
     serviceSlugs: [
       "remediation-solutions/cladding-glazing",
-      "remediation-solutions/polycarbonate-roofing-skylights",
+      "roofing-solutions/polycarbonate-roofing-skylights",
       "remediation-solutions/structural",
       "remediation-solutions/waterproofing",
       "remediation-solutions/water-damage-mould-remediation",
@@ -863,7 +870,7 @@ export const sectionLandingPages: SectionLandingData[] = [
       {
         scope: "Polycarbonate roofing and skylights",
         worksIncluded: "Yellowed, cracked, leaking or storm-damaged roof sheets and skylight panels replaced with compliant industrial roofing solutions.",
-        link: "/services/remediation-solutions/polycarbonate-roofing-skylights/",
+        link: "/services/roofing-solutions/polycarbonate-roofing-skylights/",
         linkLabel: "View roofing and skylights",
         image: skylightRoofPanelsImage,
         imageAlt: "Industrial warehouse polycarbonate roofing and skylight panels in Melbourne",
@@ -982,6 +989,220 @@ export const sectionLandingPages: SectionLandingData[] = [
     ctaTitle: "NEED COMMERCIAL OR INDUSTRIAL REMEDIATION?",
     ctaSubtitle: "We do Make Goods all day, every day.",
     ctaText: "Send through the property address, photos, defect notes, access details and any consultant or property manager comments. We will review the remediation pathway, confirm the practical order of works and provide a fixed-price quote."
+  },
+  {
+    slug: "roofing-solutions",
+    metaTitle: "Roofing Solutions Melbourne | Make Good, BETTER.",
+    metaDescription: "Commercial and industrial roofing across Melbourne. Metal roof replacement, box gutters, leak repairs, skylights and asbestos roofs. Fixed-price quotes.",
+    ogImage: "/og/roofing-solutions.jpg",
+
+    title: "ROOFING SOLUTIONS MELBOURNE",
+    titleHighlight: "MELBOURNE",
+    tagline: "Roofs on warehouses, factories and offices across Melbourne. We find the leak, fix what's broken and only replace what's past saving. Licensed roof plumbers, one quote, and the rest of your make good handled while we're up there.",
+    trustBadges: [
+      { icon: "shield", title: "Licensed & Insured" },
+      { icon: "dollar", title: "Fixed-Price Quotes" },
+      { icon: "clipboard", title: "Make Good Ready" },
+      { icon: "document", title: "Compliance Certificates" }
+    ],
+    heroImage: roofingAerialHero,
+    heroImageMobile: roofingAerialHeroMobile,
+    heroImageAlt: "Aerial view of commercial warehouse metal roofs with rows of skylights, Melbourne",
+    heroImageTitle: "Makegood Melbourne - Commercial Roofing Solutions Melbourne",
+
+    aboutTitlePrefix: "ONE CALL.",
+    aboutTitleHighlight: "THE WHOLE ROOF.",
+    aboutContentLeft: [
+      "A leaking roof is never just a roof problem. The water ends up in your stock, your ceilings and your switchboard, and at lease end it ends up in the make good negotiation. So we fix where it's getting in, then fix what it ruined.",
+      "Here's the thing about warehouse leaks. They rarely start where the water drips. It's usually a box gutter, a sump, a flashing around an exhaust fan or a skylight that gave up years ago. We walk the whole roof before we quote, not just the bit above the puddle."
+    ],
+    aboutContentRight: [
+      "Most metal deck, polycarbonate and fibre cement roofs don't need replacing. They need someone honest enough to say so. When a few sheets, a gutter or new flashings will do the job, that's what we'll quote. When the roof is done, we'll tell you straight and show you the photos.",
+      "And because roofing sits with our make good work, the same team that fixes the roof can patch the ceiling, sort the floor and hand back the keys. One quote. One contact. No chasing five different trades."
+    ],
+
+    serviceSlugs: [
+      "roofing-solutions/roof-leak-repairs-maintenance",
+      "roofing-solutions/metal-roof-replacement",
+      "roofing-solutions/box-gutters-roof-drainage",
+      "roofing-solutions/polycarbonate-roofing-skylights",
+      "roofing-solutions/storm-damage-make-safe"
+    ],
+    useGrid: true,
+    carouselTitle: "OUR ROOFING SERVICES",
+    carouselTitleHighlight: "SERVICES",
+    carouselDescription: "Commercial and industrial roofing services across Melbourne.",
+
+    scopeTitle: "ROOFING",
+    scopeTitleHighlight: "SCOPE",
+    scopeSubtitle: "Everything that keeps the water on the outside of your building.",
+    scopeRows: [
+      {
+        scope: "Leak detection and repairs",
+        worksIncluded: "We follow the water back to where it starts, flashings and fan penetrations included. Then we fix that bit.",
+        link: "/services/roofing-solutions/roof-leak-repairs-maintenance/",
+        linkLabel: "View leak repairs",
+        image: rooferHarnessImage,
+        imageAlt: "Roofer in a safety harness fixing metal roof sheets on a commercial warehouse",
+        imageTitle: "Commercial Roof Leak Repairs Melbourne"
+      },
+      {
+        scope: "Metal roof replacement",
+        worksIncluded: "One rusted sheet, an old fibre cement roof or the whole lot. Colorbond and Zincalume, done properly.",
+        link: "/services/roofing-solutions/metal-roof-replacement/",
+        linkLabel: "View metal roof replacement",
+        image: metalRoofSheetingImage,
+        imageAlt: "New metal deck roof sheeting across a large industrial warehouse roof",
+        imageTitle: "Metal Roof Replacement Melbourne"
+      },
+      {
+        scope: "Box gutters and drainage",
+        worksIncluded: "Where most warehouse leaks really begin. Gutters, sumps and downpipes sorted.",
+        link: "/services/roofing-solutions/box-gutters-roof-drainage/",
+        linkLabel: "View box gutters",
+        image: boxGutterImage,
+        imageAlt: "Galvanised box gutter and flashings between corrugated metal roof sheets on a commercial building",
+        imageTitle: "Box Gutters and Roof Drainage Melbourne"
+      },
+      {
+        scope: "Skylights and polycarbonate",
+        worksIncluded: "Yellowed panels out. Light back in. Water stays out.",
+        link: "/services/roofing-solutions/polycarbonate-roofing-skylights/",
+        linkLabel: "View roofing and skylights",
+        image: skylightRoofPanelsImage,
+        imageAlt: "Industrial warehouse polycarbonate roofing and skylight panels in Melbourne",
+        imageTitle: "Polycarbonate Roofing and Skylights Melbourne"
+      },
+      {
+        scope: "Roof maintenance",
+        worksIncluded: "Scheduled roof checks for property managers. Gutters cleared and small problems fixed before the tenant calls.",
+        link: "/services/roofing-solutions/roof-leak-repairs-maintenance/",
+        linkLabel: "View roof maintenance",
+        image: roofPlantPlatformImage,
+        imageAlt: "Warehouse metal roof with an air conditioning plant platform, walkways and handrails",
+        imageTitle: "Commercial Roof Maintenance Melbourne"
+      },
+      {
+        scope: "Storm make safe",
+        worksIncluded: "Storm hits, we stop the water first. The proper fix comes after.",
+        link: "/services/roofing-solutions/storm-damage-make-safe/",
+        linkLabel: "View storm make safe",
+        image: stormRainGutterImage,
+        imageAlt: "Heavy rain pouring over a gutter beneath a metal warehouse roof during a storm",
+        imageTitle: "Storm Damage Roof Make Safe Melbourne"
+      }
+    ],
+
+    propertyTypesTitle: "PROPERTY TYPES WE",
+    propertyTypesTitleHighlight: "ROOF",
+    propertyTypesSubtitle: "Every roof has something different underneath it. We plan around that.",
+    propertyTypes: [
+      {
+        title: "Offices",
+        description: "Leak fixed. Ceiling tiles replaced. Nobody moves desks.",
+        image: "/images/industries/commercial-office-make-good-melbourne.jpg",
+        imageAlt: "Professional commercial office space after make good restoration in Melbourne",
+        imageTitle: "Office make good and commercial property services Melbourne",
+        href: "/industries/commercial/",
+        linkLabel: "Learn more"
+      },
+      {
+        title: "Warehouses & Fulfilment",
+        description: "Sheets replaced. Box gutters cleared. Stock kept dry.",
+        image: "/images/industries/warehouse-logistics-make-good-melbourne.jpg",
+        imageAlt: "Industrial warehouse and logistics facility make good services in Melbourne",
+        imageTitle: "Warehouse and fulfilment centre make good services Melbourne",
+        href: "/industries/warehouses-logistics/",
+        linkLabel: "Learn more"
+      },
+      {
+        title: "Retail",
+        description: "Fixed before opening. Shoppers none the wiser.",
+        image: "/images/industries/retail-shopfront-make-good-melbourne.jpg",
+        imageAlt: "Retail shopfront and commercial space make good services in Melbourne",
+        imageTitle: "Retail shopfront make good and strip out services Melbourne",
+        href: "/industries/commercial/",
+        linkLabel: "Learn more"
+      },
+      {
+        title: "Medical Centres & Suites",
+        description: "Water kept well away from the treatment rooms.",
+        image: "/images/industries/medical-centre-make-good-melbourne.jpg",
+        imageAlt: "Medical centre and healthcare suite make good services in Melbourne",
+        imageTitle: "Medical centre and suite make good services Melbourne",
+        href: "/industries/commercial/",
+        linkLabel: "Learn more"
+      },
+      {
+        title: "Industrial & Manufacturing",
+        description: "The line keeps running while we work above it.",
+        image: "/images/industries/industrial-manufacturing-make-good-melbourne.jpg",
+        imageAlt: "Industrial manufacturing facility make good and restoration services in Melbourne",
+        imageTitle: "Industrial and manufacturing property services Melbourne",
+        href: "/industries/industrial/",
+        linkLabel: "Learn more"
+      },
+      {
+        title: "Hospitality & Venues",
+        description: "Exhaust flues resealed. Service carries on.",
+        image: "/images/industries/hospitality-venue-kitchen-make-good-melbourne.jpg",
+        imageAlt: "Commercial hospitality venue and kitchen make good services in Melbourne",
+        imageTitle: "Hospitality venue make good and handover services Melbourne",
+        href: "/industries/commercial/",
+        linkLabel: "Learn more"
+      }
+    ],
+
+    processTitle: "OUR ROOFING PROCESS",
+    processSubtitle: "No guessing from the ground. Here's how it goes.",
+    processSteps: [
+      { step: "Roof Inspection", description: "Full roof walk with photos of sheets, gutters, flashings, skylights and penetrations, plus height safety and access checks." },
+      { step: "Cause and Scope", description: "Identify where the water is getting in, check for asbestos and define the repair or replacement pathway." },
+      { step: "Fixed-Price Quote", description: "Pricing based on roof area, access, materials, safety requirements and any internal reinstatement." },
+      { step: "Roofing Works", description: "Licensed roof plumbers complete the work with height safety in place, sequenced around building use." },
+      { step: "Close Out", description: "Final inspection, photo record, compliance certificate and warranty documentation for your records or lease handover." }
+    ],
+
+    faqTitle: "Roofing Solutions FAQs",
+    faqSubtitle: "Common questions about commercial and industrial roofing in Melbourne.",
+    faqs: [
+      {
+        question: "Do you do residential roofing?",
+        answer: "No, and we'd rather be upfront about that. We stick to warehouses, factories, offices, retail and commercial sites, because that's what we know best."
+      },
+      {
+        question: "Are your roofers licensed?",
+        answer: "Yes. Every bit of roof plumbing is done by licensed roof plumbers, with a compliance certificate wherever one is required."
+      },
+      {
+        question: "Can you find a leak other contractors couldn't?",
+        answer: "Often, yes. Water travels before it drips, so the stain on the ceiling is rarely the culprit. We walk the whole roof and follow the water back to where it starts."
+      },
+      {
+        question: "Do I need to replace the whole roof?",
+        answer: "Probably not. Plenty of roofs just need a few sheets, a gutter or new flashings. If yours is genuinely finished, we'll show you why with photos, not a sales pitch."
+      },
+      {
+        question: "What if my roof contains asbestos?",
+        answer: "We'll flag it during the inspection. Licensed removalists take it off safely, you get a clearance certificate, then the new roof goes on."
+      },
+      {
+        question: "Is roofing part of my make good?",
+        answer: "Often, and it catches people out. Plenty of leases want the roof, gutters and skylights watertight at handover. We'll check your lease and fold the roof into the same quote."
+      },
+      {
+        question: "Can you work while the building is occupied?",
+        answer: "Yes. Most of the time we're up top while you're working below. We'll plan access and protect what's underneath so you can get on with your day."
+      },
+      {
+        question: "What information helps with a roofing quote?",
+        answer: "The address, photos of the roof and any water damage inside, how we get up there and whether it's tied to a lease exit. Phone photos are perfect."
+      }
+    ],
+
+    ctaTitle: "NEED COMMERCIAL OR INDUSTRIAL ROOFING?",
+    ctaSubtitle: "We do make goods all day, every day. Now we do the roof too.",
+    ctaText: "Send us the address, a few photos and how we get up there. We'll find the cause and come back with a fixed price. No surprises later."
   }
 ];
 

@@ -652,7 +652,20 @@
 
 [[redirects]]
   from = "/services/polycarbonate-roofing-skylights"
-  to = "/services/remediation-solutions/polycarbonate-roofing-skylights/"
+  to = "/services/roofing-solutions/polycarbonate-roofing-skylights/"
+  status = 301
+  force = true
+
+# Polycarbonate Roofing & Skylights moved from Remediation to the Roofing Solutions parent (2026-10)
+[[redirects]]
+  from = "/services/remediation-solutions/polycarbonate-roofing-skylights"
+  to = "/services/roofing-solutions/polycarbonate-roofing-skylights/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/services/remediation-solutions/polycarbonate-roofing-skylights/"
+  to = "/services/roofing-solutions/polycarbonate-roofing-skylights/"
   status = 301
   force = true
 

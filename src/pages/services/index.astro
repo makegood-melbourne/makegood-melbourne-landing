@@ -17,6 +17,7 @@ import servicesHero from "@/assets/images/hero/commercial-make-good-services-mel
 import stripOutHero from "@/assets/services/commercial-industrial-strip-out-melbourne.jpg";
 import makeGoodHero from "@/assets/services/melbourne-warehouse-make-good-hero.jpg";
 import buildingRemediationHero from "@/assets/services/building-remediation-melbourne-shotcrete.jpg";
+import roofingHero from "@/assets/services/warehouse-metal-roof-skylights-aerial-melbourne.webp";
 import handoverHero from "@/assets/services/commercial-industrial-handover-ready-warehouse-melbourne.webp";
 
 // Service cards data
@@ -49,7 +50,6 @@ const serviceCards = [
       { label: 'Water Damage & Mould Remediation', href: '/services/remediation-solutions/water-damage-mould-remediation/' },
       { label: 'Fire Compliance & Facade Cladding', href: '/services/remediation-solutions/fire-compliance-facade-cladding-remediation/' },
       { label: 'Cladding & Glazing', href: '/services/remediation-solutions/cladding-glazing/' },
-      { label: 'Polycarbonate Roofing & Skylights', href: '/services/remediation-solutions/polycarbonate-roofing-skylights/' },
     ],
   },
   {
@@ -80,6 +80,21 @@ const serviceCards = [
     chips: [
       { label: 'End of Lease Cleaning', href: '/services/handover-solutions/end-of-lease-cleaning/' },
       { label: 'End of Lease Relocation', href: '/services/handover-solutions/end-of-lease-relocation/' },
+    ],
+  },  {
+    id: 'roofing',
+    title: 'ROOFING SOLUTIONS',
+    description: 'Leaks, gutters, sheets and skylights. One call, the whole roof.',
+    categoryLink: '/services/roofing-solutions/',
+    ctaLabel: 'Roofing Solutions',
+    heroImage: roofingHero,
+    heroImageAlt: 'Aerial view of commercial warehouse metal roofs with rows of skylights, Melbourne',
+    chips: [
+      { label: 'Leak Repairs & Maintenance', href: '/services/roofing-solutions/roof-leak-repairs-maintenance/' },
+      { label: 'Metal Roof Replacement', href: '/services/roofing-solutions/metal-roof-replacement/' },
+      { label: 'Box Gutters & Drainage', href: '/services/roofing-solutions/box-gutters-roof-drainage/' },
+      { label: 'Polycarbonate Roofing & Skylights', href: '/services/roofing-solutions/polycarbonate-roofing-skylights/' },
+      { label: 'Storm Damage & Make Safe', href: '/services/roofing-solutions/storm-damage-make-safe/' },
     ],
   },
 ];
@@ -198,11 +213,11 @@ const trustBadges = [
               <span class="title-orange">SERVICES</span>
             </h2>
             <p class="section-subtitle">
-              Strip out, make good, handover and building remediation — delivered by one contractor.
+              Strip out, make good, handover, remediation and roofing, delivered by one contractor.
             </p>
           </div>
 
-          <!-- 2x2 Grid -->
+          <!-- Two-column Grid -->
           <div class="services-grid">
             {serviceCards.map((card) => (
               <article class="service-card" data-card={card.id}>
@@ -410,6 +425,15 @@ const trustBadges = [
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
+  }
+
+  /* An odd final card sits centred at half width rather than stranded on the left */
+  @media (min-width: 769px) {
+    .services-grid > .service-card:last-child:nth-child(odd) {
+      grid-column: 1 / -1;
+      justify-self: center;
+      width: calc(50% - 0.75rem);
+    }
   }
 
   @media (max-width: 768px) {

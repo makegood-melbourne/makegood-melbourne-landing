@@ -94,6 +94,12 @@
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
+  <url>
+    <loc>https://makegood.melbourne/services/roofing-solutions/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
   <!-- Strip Out Solutions - Service Pages -->
   <url>
     <loc>https://makegood.melbourne/services/strip-out-solutions/demolition/</loc>
@@ -183,8 +189,32 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://makegood.melbourne/services/remediation-solutions/polycarbonate-roofing-skylights/</loc>
-    <lastmod>2026-02-19</lastmod>
+    <loc>https://makegood.melbourne/services/roofing-solutions/polycarbonate-roofing-skylights/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://makegood.melbourne/services/roofing-solutions/roof-leak-repairs-maintenance/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://makegood.melbourne/services/roofing-solutions/metal-roof-replacement/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://makegood.melbourne/services/roofing-solutions/box-gutters-roof-drainage/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://makegood.melbourne/services/roofing-solutions/storm-damage-make-safe/</loc>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
