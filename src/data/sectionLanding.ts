@@ -1178,7 +1178,7 @@ export const sectionLandingPages: SectionLandingData[] = [
       },
       {
         question: "What if my roof contains asbestos?",
-        answer: "We'll flag it during the inspection. Licensed removalists take it off safely, you get a clearance certificate, then the new roof goes on."
+        answer: "We'll flag it during the inspection and organise licensed removal. It comes off safely, you get a clearance certificate, then the new roof goes on."
       },
       {
         question: "Is roofing part of my make good?",
