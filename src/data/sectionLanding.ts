@@ -37,7 +37,6 @@ import rooferHarnessImage from "@/assets/services/roofer-safety-harness-metal-ro
 import metalRoofSheetingImage from "@/assets/services/commercial-metal-roof-sheeting-industrial-warehouse-melbourne.webp";
 import boxGutterImage from "@/assets/services/commercial-box-gutter-metal-roof-melbourne.webp";
 import stormRainGutterImage from "@/assets/services/storm-rain-overflowing-roof-gutter-warehouse.webp";
-import roofPlantPlatformImage from "@/assets/services/warehouse-roof-plant-platform-walkways-melbourne.webp";
 
 export interface SectionLandingFAQ {
   question: string;
@@ -123,6 +122,7 @@ export interface SectionLandingData {
   scopeTitleHighlight?: string;
   scopeSubtitle?: string;
   scopeRows?: SectionLandingScopeRow[];
+  scopeCentred?: boolean; // Centre a short last row of scope cards
   propertyTypesTitle?: string;
   propertyTypesTitleHighlight?: string;
   propertyTypesSubtitle?: string;
@@ -1022,7 +1022,7 @@ export const sectionLandingPages: SectionLandingData[] = [
     ],
 
     serviceSlugs: [
-      "roofing-solutions/roof-leak-repairs-maintenance",
+      "roofing-solutions/roof-leak-repairs",
       "roofing-solutions/metal-roof-replacement",
       "roofing-solutions/box-gutters-roof-drainage",
       "roofing-solutions/polycarbonate-roofing-skylights",
@@ -1033,6 +1033,7 @@ export const sectionLandingPages: SectionLandingData[] = [
     carouselTitleHighlight: "SERVICES",
     carouselDescription: "Commercial and industrial roofing services across Melbourne.",
 
+    scopeCentred: true,
     scopeTitle: "ROOFING",
     scopeTitleHighlight: "SCOPE",
     scopeSubtitle: "Everything that keeps the water on the outside of your building.",
@@ -1040,7 +1041,7 @@ export const sectionLandingPages: SectionLandingData[] = [
       {
         scope: "Leak detection and repairs",
         worksIncluded: "We follow the water back to where it starts, flashings and fan penetrations included. Then we fix that bit.",
-        link: "/services/roofing-solutions/roof-leak-repairs-maintenance/",
+        link: "/services/roofing-solutions/roof-leak-repairs/",
         linkLabel: "View leak repairs",
         image: rooferHarnessImage,
         imageAlt: "Roofer in a safety harness fixing metal roof sheets on a commercial warehouse",
@@ -1072,15 +1073,6 @@ export const sectionLandingPages: SectionLandingData[] = [
         image: skylightRoofPanelsImage,
         imageAlt: "Industrial warehouse polycarbonate roofing and skylight panels in Melbourne",
         imageTitle: "Polycarbonate Roofing and Skylights Melbourne"
-      },
-      {
-        scope: "Roof maintenance",
-        worksIncluded: "Scheduled roof checks for property managers. Gutters cleared and small problems fixed before the tenant calls.",
-        link: "/services/roofing-solutions/roof-leak-repairs-maintenance/",
-        linkLabel: "View roof maintenance",
-        image: roofPlantPlatformImage,
-        imageAlt: "Warehouse metal roof with an air conditioning plant platform, walkways and handrails",
-        imageTitle: "Commercial Roof Maintenance Melbourne"
       },
       {
         scope: "Storm make safe",

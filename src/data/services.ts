@@ -61,7 +61,7 @@ import metalRoofReplacementHeroImage from "@/assets/services/metal-roof-replacem
 import boxGutterHeroImage from "@/assets/services/box-gutter-replacement-commercial-roof-melbourne.webp";
 import rainDrippingGutterImage from "@/assets/services/rain-dripping-roof-gutter-steel-frame-warehouse.webp";
 import leakRepairHeroImage from "@/assets/services/commercial-roof-leak-repair-roofer-harness-melbourne.webp";
-import roofMaintenancePlantImage from "@/assets/services/commercial-roof-maintenance-plant-walkways-melbourne.webp";
+import roofPlantPenetrationsImage from "@/assets/services/commercial-roof-plant-penetrations-melbourne.webp";
 import stormMakeSafeHeroImage from "@/assets/services/storm-damage-roof-make-safe-heavy-rain-melbourne.webp";
 import asbestosRoofImage from "@/assets/blog/asbestos-management.jpg";
 
@@ -2938,7 +2938,7 @@ export const services: Service[] = [
       subtitle: "We do make goods all day, every day.",
       text: "Send us the site address, photos and a short description of what happened. We will review the damage and prepare a practical remediation and reinstatement quote."
     },
-    relatedServices: ["roofing-solutions/roof-leak-repairs-maintenance", "roofing-solutions/storm-damage-make-safe", "remediation-solutions/waterproofing"],
+    relatedServices: ["roofing-solutions/roof-leak-repairs", "roofing-solutions/storm-damage-make-safe", "remediation-solutions/waterproofing"],
     category: "structural",
     published: true
   },
@@ -3148,10 +3148,10 @@ export const services: Service[] = [
       cards: [
         { slug: "roofing-solutions/box-gutters-roof-drainage", name: "Box Gutters & Roof Drainage", description: "Box gutters, sumps and downpipes replaced in the same job so the new roof drains properly." },
         { slug: "roofing-solutions/polycarbonate-roofing-skylights", name: "Polycarbonate Roofing & Skylights", description: "Yellowed skylight sheets swapped out while the roof is open. Light back in, water out." },
-        { slug: "roofing-solutions/roof-leak-repairs-maintenance", name: "Roof Leak Repairs & Maintenance", description: "Not ready for a new roof yet? We'll fix the leaks and keep an eye on it." }
+        { slug: "roofing-solutions/roof-leak-repairs", name: "Roof Leak Repairs", description: "Not ready for a new roof yet? We'll fix the leaks that matter now." }
       ]
     },
-    relatedServices: ["roofing-solutions/box-gutters-roof-drainage", "roofing-solutions/polycarbonate-roofing-skylights", "roofing-solutions/roof-leak-repairs-maintenance"],
+    relatedServices: ["roofing-solutions/box-gutters-roof-drainage", "roofing-solutions/polycarbonate-roofing-skylights", "roofing-solutions/roof-leak-repairs"],
     category: "trade",
     published: true
   },
@@ -3160,9 +3160,9 @@ export const services: Service[] = [
     slug: "roofing-solutions/box-gutters-roof-drainage",
     title: "Box Gutters & Roof Drainage",
     metaTitle: "Box Gutters & Roof Drainage Melbourne | Make Good, BETTER.",
-    description: "Box gutters, sumps, rainwater heads and downpipes for warehouses, factories and commercial buildings across Melbourne. Repaired, replaced and kept clear by licensed roof plumbers.",
+    description: "Box gutters, sumps, rainwater heads and downpipes for warehouses, factories and commercial buildings across Melbourne. Repaired and replaced by licensed roof plumbers.",
     metaDescription: "Commercial box gutter repairs and replacement in Melbourne. Sumps, rainwater heads, overflows and downpipes for warehouses and factories. Fixed-price quotes.",
-    heroText: "When a box gutter fails, the water doesn't go over the edge. It comes inside. We repair, replace and clear box gutters, sumps and downpipes on warehouses, factories and commercial buildings across Melbourne.",
+    heroText: "When a box gutter fails, the water doesn't go over the edge. It comes inside. We repair and replace box gutters, sumps and downpipes on warehouses, factories and commercial buildings across Melbourne.",
     ogImage: "/og/box-gutters-roof-drainage.jpg",
     heroImage: boxGutterHeroImage,
     heroImageAlt: "Galvanised box gutter and flashings between corrugated metal roof sheets on a commercial building",
@@ -3179,8 +3179,8 @@ export const services: Service[] = [
       "Box gutter repairs and replacement",
       "Sumps, rainwater heads and overflows",
       "Downpipe replacement and upsizing",
-      "Gutter and sump clearing",
-      "Photo reports after every visit",
+      "Blocked gutters and sumps cleared",
+      "Photo record of every job",
       "Compliance certificate on completion"
     ],
     capabilityCards: [
@@ -3210,33 +3210,33 @@ export const services: Service[] = [
       },
       {
         icon: "brick",
-        title: "CLEARING & UPKEEP",
+        title: "BLOCKAGES & OVERFLOWS",
         items: [
-          "Box gutter and sump clearing",
+          "Blocked box gutters and sumps cleared",
           "Blocked downpipes cleared",
-          "Clear outs before winter rain",
-          "Small repairs done on the visit",
-          "Photo report after every visit",
-          "Part of a roof maintenance plan"
+          "Cause of the blockage fixed",
+          "Overflow damage inside sorted",
+          "Photo record of what we found",
+          "Water tested where practical"
         ]
       }
     ],
     capabilitiesTitle: "WHAT WE DO",
     capabilitiesSubtitle: "Everything that moves water off a commercial roof and away from the building.",
     scopeTitle: "WHERE MOST WAREHOUSE LEAKS BEGIN",
-    scopeBody: "A box gutter sits inside the roof, not on the edge of it. That's what makes it good at catching water, and good at causing trouble. When it blocks, rusts or can't keep up with a downpour, the overflow doesn't spill harmlessly over the side. It runs back under the sheets and into the building.\n\nWe walk the full length of the gutter, check every joint, sump and outlet, and look at whether the overflows can actually cope with a Melbourne storm. Then we tell you whether it needs a clear out, a repair or a replacement.\n\nIf it's already rained inside, we can fix that too. Our [water damage and mould](/services/remediation-solutions/water-damage-mould-remediation/) team handles the ceilings, walls and floors.",
+    scopeBody: "A box gutter sits inside the roof, not on the edge of it. That's what makes it good at catching water, and good at causing trouble. When it blocks, rusts or can't keep up with a downpour, the overflow doesn't spill harmlessly over the side. It runs back under the sheets and into the building.\n\nWe walk the full length of the gutter, check every joint, sump and outlet, and look at whether the overflows can actually cope with a Melbourne storm. Then we tell you whether it needs a repair or a replacement.\n\nIf it's already rained inside, we can fix that too. Our [water damage and mould](/services/remediation-solutions/water-damage-mould-remediation/) team handles the ceilings, walls and floors.",
     process: [
       { step: "Gutter Inspection", description: "We walk every box gutter, sump and outlet and photograph joints, rust, blockages and overflow points." },
       { step: "Cause and Scope", description: "We work out why it's failing: blocked, rusted, undersized or poorly detailed. Then we tell you what it needs." },
       { step: "Fixed-Price Quote", description: "Pricing based on gutter length, access, materials and any internal reinstatement." },
-      { step: "Gutter Works", description: "Licensed roof plumbers clear, repair or replace the gutters, sumps and downpipes, sequenced around your operations." },
+      { step: "Gutter Works", description: "Licensed roof plumbers repair or replace the gutters, sumps and downpipes, sequenced around your operations." },
       { step: "Close Out", description: "Water test where it's practical, photo record and compliance certificate for your records." }
     ],
     faqs: [
       { question: "What is a box gutter?", answer: "A box gutter is a flat bottomed channel built into the roof, usually between two roof slopes or behind a parapet wall. Unlike an eaves gutter on the outside edge, anything it can't carry ends up inside the building." },
       { question: "Why does my box gutter leak?", answer: "The usual causes are blockages from leaves and debris, rust at joints and low spots, failed seals at laps and stop ends, outlets that are too small and missing overflows. Often it's more than one of these at once." },
       { question: "Should I repair or replace my box gutter?", answer: "If the rust is limited to a few joints or sections, repairs make sense. If the gutter is rusted through along its length or was never big enough, replacement is the better spend. We'll show you photos and tell you which." },
-      { question: "How often should box gutters be cleared?", answer: "At least twice a year, and more often if there are trees nearby. Autumn, before the winter rain, is the most important time. We can put your site on a regular schedule so it isn't forgotten." },
+      { question: "Why does my box gutter keep blocking?", answer: "Usually overhanging trees, outlets that are too small or a gutter laid without enough fall. Clearing it fixes today's leak. Fixing the cause stops the next one, and that might mean guards, bigger outlets or a regraded gutter." },
       { question: "Can you work while the building is in use?", answer: "Yes. Most gutter work happens from the roof while you carry on underneath. If the work needs internal access or protection, we'll plan it around you." },
       { question: "Do you do house gutters?", answer: "No. We stick to warehouses, factories, offices, retail and other commercial buildings." }
     ],
@@ -3250,30 +3250,30 @@ export const services: Service[] = [
       titleHighlight: "THE WHOLE ROOF.",
       subtitle: "Gutters are part of the roof. So is everything else.",
       cards: [
-        { slug: "roofing-solutions/roof-leak-repairs-maintenance", name: "Roof Leak Repairs & Maintenance", description: "Not sure it's the gutter? We'll trace the leak back to where it actually starts." },
+        { slug: "roofing-solutions/roof-leak-repairs", name: "Roof Leak Repairs", description: "Not sure it's the gutter? We'll trace the leak back to where it actually starts." },
         { slug: "roofing-solutions/storm-damage-make-safe", name: "Storm Damage & Make Safe", description: "Gutter overflowed in a storm? We stop the water first and sort the damage after." },
         { slug: "roofing-solutions/metal-roof-replacement", name: "Metal Roof Replacement", description: "Gutters and roof both past it? Replace them together in one job." }
       ]
     },
-    relatedServices: ["roofing-solutions/roof-leak-repairs-maintenance", "roofing-solutions/storm-damage-make-safe", "roofing-solutions/metal-roof-replacement"],
+    relatedServices: ["roofing-solutions/roof-leak-repairs", "roofing-solutions/storm-damage-make-safe", "roofing-solutions/metal-roof-replacement"],
     category: "trade",
     published: true
   },
   {
-    name: "Roof Leak Repairs & Maintenance",
-    slug: "roofing-solutions/roof-leak-repairs-maintenance",
-    title: "Roof Leak Repairs & Maintenance",
-    metaTitle: "Roof Leak Repairs & Maintenance Melbourne | Make Good, BETTER.",
-    description: "Leak detection, repairs, flashings, inspections and scheduled roof maintenance for warehouses, factories, offices and retail across Melbourne.",
-    metaDescription: "Commercial roof leak repairs and maintenance in Melbourne. Leak detection, flashings, roof inspections and condition reports for property managers.",
-    heroText: "We follow the water back to where it starts. Then we fix that bit. Leak repairs, flashings, inspections and scheduled maintenance for warehouses, factories, offices and retail across Melbourne.",
-    ogImage: "/og/roof-leak-repairs-maintenance.jpg",
+    name: "Roof Leak Repairs",
+    slug: "roofing-solutions/roof-leak-repairs",
+    title: "Roof Leak Repairs",
+    metaTitle: "Commercial Roof Leak Repairs Melbourne | Make Good, BETTER.",
+    description: "Leak detection and repairs, flashings and roof penetrations for warehouses, factories, offices and retail across Melbourne.",
+    metaDescription: "Commercial roof leak repairs in Melbourne. Leaks traced to the source, flashings and penetrations fixed, and water damaged ceilings put right. Fixed prices.",
+    heroText: "We follow the water back to where it starts. Then we fix that bit. Leak repairs, flashings and roof penetrations for warehouses, factories, offices and retail across Melbourne.",
+    ogImage: "/og/roof-leak-repairs.jpg",
     heroImage: leakRepairHeroImage,
     heroImageAlt: "Roofer in a safety harness fixing metal roof sheets on a commercial warehouse",
     heroImageTitle: "Commercial Roof Leak Repairs Melbourne",
-    secondaryImage: roofMaintenancePlantImage,
+    secondaryImage: roofPlantPenetrationsImage,
     secondaryImageAlt: "Warehouse metal roof with an air conditioning plant platform, walkways and handrails",
-    secondaryImageTitle: "Commercial Roof Maintenance Melbourne",
+    secondaryImageTitle: "Roof Plant and Penetrations Melbourne",
     trustBadges: [
       "Licensed Roof Plumbers",
       "Fixed-Price Quotes",
@@ -3282,10 +3282,10 @@ export const services: Service[] = [
     benefits: [
       "Leak detection and repairs",
       "Flashings and roof penetrations",
-      "Scheduled roof inspections",
-      "Written condition reports with photos",
-      "Gutter and sump clearing",
-      "Ceiling reinstatement after the fix"
+      "Rusted and loose fixings replaced",
+      "Photo record of every repair",
+      "Ceiling reinstatement after the fix",
+      "Water damage sorted by the same team"
     ],
     capabilityCards: [
       {
@@ -3297,7 +3297,7 @@ export const services: Service[] = [
           "Laps and side joints resealed",
           "Cracked and damaged sheets replaced",
           "Ridge capping and barge flashings repaired",
-          "Ceilings reinstated after the fix"
+          "Water tested to confirm the fix"
         ]
       },
       {
@@ -3314,34 +3314,32 @@ export const services: Service[] = [
       },
       {
         icon: "brick",
-        title: "INSPECTIONS & MAINTENANCE",
+        title: "AFTER THE LEAK",
         items: [
-          "Scheduled roof inspections",
-          "Box gutter, sump and downpipe clearing",
-          "Written condition reports with photos",
-          "Pre-lease and end of lease roof reports",
-          "Small repairs done on the visit",
-          "One contact for every site you manage"
+          "Ceiling tiles replaced",
+          "Plasterboard patched and painted",
+          "Water damaged flooring repaired",
+          "Mould affected areas remediated",
+          "Photo record for your files",
+          "One quote for roof and inside"
         ]
       }
     ],
     capabilitiesTitle: "WHAT WE DO",
-    capabilitiesSubtitle: "Fix what's leaking now, then keep it from happening again.",
+    capabilitiesSubtitle: "Find it, fix it, then put right whatever the water ruined.",
     scopeTitle: "THE STAIN IS RARELY THE CULPRIT",
-    scopeBody: "Water travels before it drips. The stain on your ceiling might be metres from where the water is getting in. That's why patch jobs keep failing. We walk the whole roof, check the fixings, laps, flashings and penetrations, and follow the water back to the source. Then we fix that, not just the bit above the puddle.\n\nMost commercial roof leaks start in the same places: around plant and exhaust fans, at old holes from services that were removed years ago, at tired flashings and in the [box gutters](/services/roofing-solutions/box-gutters-roof-drainage/). Fixing them early costs a fraction of what a wet ceiling, ruined stock or a [new roof](/services/roofing-solutions/metal-roof-replacement/) does.\n\nFor property managers, we can look after the roof on a schedule. Two visits a year, gutters and sumps cleared, small problems fixed on the spot and a photo report for your records. Fewer tenant calls, no surprises at lease end.",
+    scopeBody: "Water travels before it drips. The stain on your ceiling might be metres from where the water is getting in. That's why patch jobs keep failing. We walk the whole roof, check the fixings, laps, flashings and penetrations, and follow the water back to the source. Then we fix that, not just the bit above the puddle.\n\nMost commercial roof leaks start in the same places: around plant and exhaust fans, at old holes from services that were removed years ago, at tired flashings and in the [box gutters](/services/roofing-solutions/box-gutters-roof-drainage/). Fixing them early costs a fraction of what a wet ceiling, ruined stock or a [new roof](/services/roofing-solutions/metal-roof-replacement/) does.\n\nAnd because roofing sits with our make good work, the same team can fix what the water damaged inside: ceiling tiles, plasterboard, flooring and [water damage and mould](/services/remediation-solutions/water-damage-mould-remediation/). One quote, roof and all.",
     process: [
       { step: "Roof Inspection", description: "Full roof walk with photos of fixings, laps, flashings, penetrations, gutters and sumps, plus height safety and access checks." },
       { step: "Find the Source", description: "We trace the leak back to where the water is actually getting in, not where it shows up inside." },
       { step: "Fixed-Price Quote", description: "A clear scope and price for the repair, with photos of what we found." },
       { step: "Repair Works", description: "Licensed roof plumbers fix the cause and, if you need it, we reinstate the ceiling or wall it damaged." },
-      { step: "Report and Schedule", description: "Photo record of the work, plus an optional maintenance schedule so you're not calling us after the next storm." }
+      { step: "Close Out", description: "Photo record of the repair, a water test where it's practical and anything inside reinstated." }
     ],
     faqs: [
       { question: "Why does my roof only leak in heavy rain?", answer: "Usually because a box gutter or sump can't keep up, or wind is pushing water uphill under a lap or flashing. Light rain drains away. Heavy rain finds the weak spot. It's a sign the problem is in the drainage or the detailing, not necessarily the sheets." },
       { question: "How do you find the leak?", answer: "We walk the whole roof and check fixings, laps, flashings, penetrations and gutters, then match what we find to where the water is showing up inside. Where it's practical, we water test the suspect area to confirm it." },
-      { question: "How often should a commercial roof be inspected?", answer: "Twice a year is a good rule, with one visit in autumn before the winter rain. It's also worth a check after any major storm or when a tenant moves in or out." },
-      { question: "What's in a roof condition report?", answer: "Photos of the whole roof, the condition of sheets, fixings, flashings, gutters and penetrations, anything that needs fixing now, what to watch and what to budget for. It's useful for property managers, owners, tenants at lease end and buyers." },
-      { question: "Can you look after multiple sites?", answer: "Yes. We can schedule inspections and gutter clearing across your portfolio, with one contact and consistent reports for every building." },
+      { question: "Is a leaking roof part of my make good?", answer: "Often. Many leases want the roof watertight at handover, and water stains on ceilings get noticed at inspection. We can fix the leak and the damage it caused under the same make good quote." },
       { question: "Do you fix the water damage inside too?", answer: "Yes. Because roofing sits with our make good and remediation work, the same team can replace ceiling tiles, patch and paint and sort water damaged floors once the leak is fixed." }
     ],
     ctaBlock: {
@@ -3431,7 +3429,7 @@ export const services: Service[] = [
     capabilitiesTitle: "WHAT WE DO",
     capabilitiesSubtitle: "Stop the water, document the damage, then fix it properly.",
     scopeTitle: "WATER FIRST. EVERYTHING ELSE SECOND.",
-    scopeBody: "After a storm, the first job is stopping more water getting in. Lifted sheets get secured, broken skylights get covered and blocked gutters get cleared. If water has reached lights, power or switchboards, we coordinate [electrical make safe](/services/strip-out-solutions/make-safe/) before anyone works near it.\n\nThen we document everything. Photos, a written report and an itemised scope that separates storm damage from old wear and tear, which is exactly what insurers and assessors ask for.\n\nOnce it's dry and approved, we do the permanent repairs: [sheets and flashings](/services/roofing-solutions/roof-leak-repairs-maintenance/), [box gutters](/services/roofing-solutions/box-gutters-roof-drainage/) and [skylights](/services/roofing-solutions/polycarbonate-roofing-skylights/). And because we do make goods, we can sort the ceilings, walls and floors underneath too, including [water damage and mould](/services/remediation-solutions/water-damage-mould-remediation/).",
+    scopeBody: "After a storm, the first job is stopping more water getting in. Lifted sheets get secured, broken skylights get covered and blocked gutters get cleared. If water has reached lights, power or switchboards, we coordinate [electrical make safe](/services/strip-out-solutions/make-safe/) before anyone works near it.\n\nThen we document everything. Photos, a written report and an itemised scope that separates storm damage from old wear and tear, which is exactly what insurers and assessors ask for.\n\nOnce it's dry and approved, we do the permanent repairs: [sheets and flashings](/services/roofing-solutions/roof-leak-repairs/), [box gutters](/services/roofing-solutions/box-gutters-roof-drainage/) and [skylights](/services/roofing-solutions/polycarbonate-roofing-skylights/). And because we do make goods, we can sort the ceilings, walls and floors underneath too, including [water damage and mould](/services/remediation-solutions/water-damage-mould-remediation/).",
     process: [
       { step: "Make Safe", description: "Temporary covers, secured sheets and cleared drainage to stop more water getting in." },
       { step: "Damage Report", description: "Photos and a written report of the storm damage, ready for your insurer or property manager." },
