@@ -37,6 +37,9 @@ import rooferHarnessImage from "@/assets/services/roofer-safety-harness-metal-ro
 import metalRoofSheetingImage from "@/assets/services/commercial-metal-roof-sheeting-industrial-warehouse-melbourne.webp";
 import boxGutterImage from "@/assets/services/commercial-box-gutter-metal-roof-melbourne.webp";
 import stormRainGutterImage from "@/assets/services/storm-rain-overflowing-roof-gutter-warehouse.webp";
+import roofCoatingCardImage from "@/assets/services/commercial-roof-coating-card-melbourne.webp";
+import roofMaintenanceCardImage from "@/assets/services/commercial-roof-inspection-maintenance-card-melbourne.webp";
+import roofSafetyCardImage from "@/assets/services/roof-safety-walkways-guardrails-card-melbourne.webp";
 
 export interface SectionLandingFAQ {
   question: string;
@@ -1027,7 +1030,10 @@ export const sectionLandingPages: SectionLandingData[] = [
       "roofing-solutions/metal-roof-replacement",
       "roofing-solutions/box-gutters-roof-drainage",
       "roofing-solutions/polycarbonate-roofing-skylights",
-      "roofing-solutions/storm-damage-make-safe"
+      "roofing-solutions/storm-damage-make-safe",
+      "roofing-solutions/metal-roof-restoration",
+      "roofing-solutions/roof-inspections-maintenance",
+      "roofing-solutions/roof-safety-access"
     ],
     hideServices: true,
     useGrid: true,
@@ -1059,6 +1065,15 @@ export const sectionLandingPages: SectionLandingData[] = [
         imageTitle: "Metal Roof Replacement Melbourne"
       },
       {
+        scope: "Metal roof restoration",
+        worksIncluded: "Roof tired but not finished? Rust treated, failures fixed, then coated for years more life.",
+        link: "/services/roofing-solutions/metal-roof-restoration/",
+        linkLabel: "View roof restoration",
+        image: roofCoatingCardImage,
+        imageAlt: "Roofer applying a protective coating to a commercial roof with a roller",
+        imageTitle: "Metal Roof Restoration Melbourne"
+      },
+      {
         scope: "Box gutters and drainage",
         worksIncluded: "Where most warehouse leaks really begin. Gutters, sumps and downpipes sorted.",
         link: "/services/roofing-solutions/box-gutters-roof-drainage/",
@@ -1084,6 +1099,24 @@ export const sectionLandingPages: SectionLandingData[] = [
         image: stormRainGutterImage,
         imageAlt: "Heavy rain pouring over a gutter beneath a metal warehouse roof during a storm",
         imageTitle: "Storm Damage Roof Make Safe Melbourne"
+      },
+      {
+        scope: "Roof inspections and maintenance",
+        worksIncluded: "Twice a year, every roof you manage. A photo report, small fixes on the spot and no surprises at lease end.",
+        link: "/services/roofing-solutions/roof-inspections-maintenance/",
+        linkLabel: "View roof maintenance",
+        image: roofMaintenanceCardImage,
+        imageAlt: "Aerial view of commercial warehouse roofs with skylights and loading yard",
+        imageTitle: "Commercial Roof Maintenance Melbourne"
+      },
+      {
+        scope: "Roof safety and access",
+        worksIncluded: "Anchor points, static lines, walkways and guardrails. Installed, tagged and certified so people get down safely.",
+        link: "/services/roofing-solutions/roof-safety-access/",
+        linkLabel: "View roof safety",
+        image: roofSafetyCardImage,
+        imageAlt: "Warehouse roof walkways and guardrails around an air conditioning plant platform",
+        imageTitle: "Roof Safety and Access Melbourne"
       }
     ],
 

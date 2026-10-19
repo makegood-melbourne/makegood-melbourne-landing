@@ -12,7 +12,7 @@ import {
 } from "@/components/ui/accordion";
 import { cn } from "@/lib/utils";
 
-type FAQCategory = "all" | "understanding" | "costs" | "process" | "services" | "remediation" | "working";
+type FAQCategory = "all" | "understanding" | "costs" | "process" | "services" | "remediation" | "roofing" | "working";
 
 interface FAQ {
   question: string;
@@ -215,7 +215,58 @@ const faqs: FAQ[] = [
     answer: "Yes. We find the source, repair the damage and restore affected areas. Water damage left untreated leads to bigger problems."
   },
 
-  // Category 6: Working With Us (merged with Common Concerns)
+  // Category 6: Roofing
+  {
+    category: "roofing",
+    question: "Do you do residential roofing?",
+    answer: "No. We only work on commercial and industrial roofs: warehouses, factories, offices, retail and other commercial buildings."
+  },
+  {
+    category: "roofing",
+    question: "What commercial roofing work do you do?",
+    answer: "Roof leak repairs, metal roof replacement and restoration, box gutters and roof drainage, polycarbonate roofing and skylights, storm damage make safe, scheduled roof inspections and maintenance, and roof safety systems. All of it can sit in the same quote as your make good."
+  },
+  {
+    category: "roofing",
+    question: "How quickly can you get to a roof leak or storm damage?",
+    answer: "We'll have someone on site within one business day of your call. Tell us what's happening when you get in touch so we can bring what's needed to stop the water."
+  },
+  {
+    category: "roofing",
+    question: "Is the roof part of my make good?",
+    answer: "Often. Plenty of leases ask for the roof, gutters and skylights to be watertight at handover. We'll check the roof against your lease and include any roofing in the same make good quote."
+  },
+  {
+    category: "roofing",
+    question: "Does my roof need replacing?",
+    answer: "Probably not. Most metal roofs need a few sheets, a gutter or new flashings, and a tired but sound roof can often be restored and coated. If yours is genuinely finished, we'll show you why with photos."
+  },
+  {
+    category: "roofing",
+    question: "What if my roof contains asbestos?",
+    answer: "We'll flag suspect sheets at inspection and organise licensed removal. The old sheets come off safely, you get a clearance certificate, and then the new metal roof goes on."
+  },
+  {
+    category: "roofing",
+    question: "Will insurance cover storm damage to my roof?",
+    answer: "That depends on your policy. On commercial claims your insurer will usually send a loss adjuster, who still needs a contractor's report and quote to approve the repair. We provide photos, a written report and an itemised scope."
+  },
+  {
+    category: "roofing",
+    question: "Do you offer roof maintenance for property managers?",
+    answer: "Yes. We can inspect your roofs on a schedule, usually twice a year, clear the gutters and sumps, fix small problems on the spot and send a photo report after every visit."
+  },
+  {
+    category: "roofing",
+    question: "Do I need height safety on my roof?",
+    answer: "If anyone goes on the roof for maintenance, plant servicing or repairs, a safe way to do it is generally needed. We install, tag and certify anchor points, static lines, walkways and guardrails. Your safety adviser can confirm your specific obligations."
+  },
+  {
+    category: "roofing",
+    question: "Can roofing work happen while the building is occupied?",
+    answer: "Yes. Most roof work happens up top while you carry on below. We plan access, staging and any internal protection around your operations."
+  },
+  // Category 7: Working With Us (merged with Common Concerns)
   {
     category: "working",
     question: "Are you licensed and insured?",
@@ -270,6 +321,7 @@ const categories: { id: FAQCategory; label: string }[] = [
   { id: "process", label: "Process & Timeline" },
   { id: "services", label: "Services" },
   { id: "remediation", label: "Remediation" },
+  { id: "roofing", label: "Roofing" },
   { id: "working", label: "Working With Us" },
 ];
 
@@ -321,7 +373,7 @@ const FAQPage = () => {
             Frequently Asked Questions
           </h1>
           <p className="text-xl text-primary font-medium">
-            Everything you need to know about make good, office strip out, remediation and working with us.
+            Everything you need to know about make good, office strip out, remediation, roofing and working with us.
           </p>
         </div>
       </section>
