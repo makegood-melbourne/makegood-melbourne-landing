@@ -123,6 +123,7 @@ export interface SectionLandingData {
   scopeSubtitle?: string;
   scopeRows?: SectionLandingScopeRow[];
   scopeCentred?: boolean; // Centre a short last row of scope cards
+  hideServices?: boolean; // Skip the services grid or carousel
   propertyTypesTitle?: string;
   propertyTypesTitleHighlight?: string;
   propertyTypesSubtitle?: string;
@@ -1028,6 +1029,7 @@ export const sectionLandingPages: SectionLandingData[] = [
       "roofing-solutions/polycarbonate-roofing-skylights",
       "roofing-solutions/storm-damage-make-safe"
     ],
+    hideServices: true,
     useGrid: true,
     carouselTitle: "OUR ROOFING SERVICES",
     carouselTitleHighlight: "SERVICES",
