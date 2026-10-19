@@ -3088,7 +3088,7 @@ export const services: Service[] = [
         title: "ASBESTOS ROOFS",
         items: [
           "Suspect sheets flagged at inspection",
-          "Removal by licensed asbestos removalists",
+          "Licensed asbestos removal organised",
           "Clearance certificate before the new roof",
           "Compliant disposal",
           "New metal roof installed",
@@ -3104,7 +3104,7 @@ export const services: Service[] = [
       {
         title: "REPLACING AN ASBESTOS ROOF",
         titleHighlight: "ASBESTOS ROOF",
-        description: "Plenty of older Melbourne warehouses still have fibre cement roofs that contain asbestos. In good condition and left alone, they're rarely an emergency. Once they're cracked, leaking or breaking down, they need to come off.\n\nWe flag suspect sheets at inspection. Licensed asbestos removalists take them off and dispose of them properly, you get a clearance certificate, and then the new metal roof goes on. One quote covers the lot.\n\nWant the detail first? Read our guide to [asbestos management during make goods](/blog/asbestos-management-commercial-make-good-safe-removal/).",
+        description: "Plenty of older Melbourne warehouses still have fibre cement roofs that contain asbestos. In good condition and left alone, they're rarely an emergency. Once they're cracked, leaking or breaking down, they need to come off.\n\nWe flag suspect sheets at inspection and organise licensed removal. The old sheets come off safely and are disposed of properly, you get a clearance certificate, and then the new metal roof goes on. One quote covers the lot.\n\nWant the detail first? Read our guide to [asbestos management during make goods](/blog/asbestos-management-commercial-make-good-safe-removal/).",
         image: asbestosRoofImage,
         imageAlt: "Weathered corrugated fibre cement roof sheets with lichen and staining",
         imageTitle: "Asbestos Roof Replacement Melbourne"
@@ -3121,7 +3121,7 @@ export const services: Service[] = [
       { question: "How do I know if my roof needs replacing?", answer: "Rust through the sheets, leaks that keep coming back after repairs, loose or lifting sheets and fixings that won't hold are the usual signs. One rusty patch doesn't mean a new roof. We'll inspect the whole roof and show you photos of what we find before recommending anything." },
       { question: "Can you replace just part of the roof?", answer: "Yes. If the damage is limited to certain runs or one end of the building, we replace those sheets and match the profile to what's already there. It's often the smarter spend." },
       { question: "Can we keep working while you re-roof?", answer: "Usually, yes. We replace the roof in stages so only a small section is open at a time, and we plan the work around deliveries, staff and stock underneath." },
-      { question: "What if my roof contains asbestos?", answer: "We'll flag suspect sheets at inspection. Licensed asbestos removalists take them off safely and dispose of them properly, you get a clearance certificate, and then we install the new metal roof. It's all in one quote." },
+      { question: "What if my roof contains asbestos?", answer: "We'll flag suspect sheets at inspection and organise licensed removal. They come off safely and are disposed of properly, you get a clearance certificate, and then we install the new metal roof. It's all in one quote." },
       { question: "What happens to the solar panels on our roof?", answer: "We work with your solar installer to have the panels lifted before the old sheets come off and refitted once the new roof is on. Tell us about the system when you ask for a quote so we can plan for it." },
       { question: "Is a new roof part of my make good?", answer: "Sometimes. Many leases require the roof to be watertight and in good repair at handover. If yours does, we'll check the roof against the lease and include any roofing in the same make good quote." },
       { question: "How long does a re-roof take?", answer: "It depends on the size of the roof, access and the weather. A few sheets can be done in a day. A full warehouse re-roof is usually a matter of weeks, staged so the building stays covered. You'll get a programme with the quote." }
@@ -3403,7 +3403,7 @@ export const services: Service[] = [
           "Written damage report",
           "Itemised repair scope",
           "Storm damage separated from wear and tear",
-          "Liaison with assessors and property managers",
+          "Ready for your insurer or loss adjuster",
           "Paperwork for your claim file"
         ]
       },
@@ -3426,14 +3426,15 @@ export const services: Service[] = [
     scopeBody: "After a storm, the first job is stopping more water getting in. Lifted sheets get secured, broken skylights get covered and blocked gutters get cleared. If water has reached lights, power or switchboards, we coordinate [electrical make safe](/services/strip-out-solutions/make-safe/) before anyone works near it.\n\nThen we document everything. Photos, a written report and an itemised scope that separates storm damage from old wear and tear, which is exactly what insurers and assessors ask for.\n\nOnce it's dry and approved, we do the permanent repairs: [sheets and flashings](/services/roofing-solutions/roof-leak-repairs/), [box gutters](/services/roofing-solutions/box-gutters-roof-drainage/) and [skylights](/services/roofing-solutions/polycarbonate-roofing-skylights/). And because we do make goods, we can sort the ceilings, walls and floors underneath too, including [water damage and mould](/services/remediation-solutions/water-damage-mould-remediation/).",
     process: [
       { step: "Make Safe", description: "Temporary covers, secured sheets and cleared drainage to stop more water getting in." },
-      { step: "Damage Report", description: "Photos and a written report of the storm damage, ready for your insurer or property manager." },
+      { step: "Damage Report", description: "Photos and a written report of the storm damage, ready for your insurer, loss adjuster or property manager." },
       { step: "Scope & Quote", description: "An itemised repair scope and fixed price, with storm damage separated from existing wear." },
       { step: "Permanent Repairs", description: "Licensed roof plumbers replace damaged sheets, flashings, gutters and skylights." },
       { step: "Reinstatement", description: "Ceilings, walls and floors damaged by the water are repaired and the site is handed back." }
     ],
     faqs: [
+      { question: "How quickly can you get here?", answer: "We'll have someone on site within one business day of your call. Tell us what's happening when you call, so we can bring what's needed to stop the water." },
       { question: "What's the difference between make safe and repair?", answer: "Make safe is the temporary work that stops more damage, like tarps, covers and securing loose sheets. The repair is the permanent fix that comes once the weather clears and the scope is agreed." },
-      { question: "Will my insurance cover storm damage to the roof?", answer: "That depends on your policy. Insurers usually separate sudden storm damage from long term wear and tear. We provide photos, a written report and an itemised scope that make that clear, but your insurer makes the call." },
+      { question: "Will my insurance cover storm damage to the roof?", answer: "That depends on your policy. On commercial claims your insurer will usually send a loss adjuster, who still needs a contractor's report and quote to approve the repair. We provide photos, a written report and an itemised scope that separates storm damage from wear and tear. Your insurer makes the call." },
       { question: "What should we do while we wait?", answer: "Stay off the roof. Move stock and equipment away from leaks, keep people clear of wet areas near lights and power, and take photos of the damage inside. Call us with the address and what you can see." },
       { question: "Is it safe to keep working in the building?", answer: "If water is near lights, power or switchboards, keep people away from that area until it's been checked. We coordinate electrical isolation as part of the make safe." },
       { question: "Can you fix the damage inside as well?", answer: "Yes. Once the roof is sorted, our make good and remediation teams repair ceilings, walls and floors, and handle any water damage and mould." },
