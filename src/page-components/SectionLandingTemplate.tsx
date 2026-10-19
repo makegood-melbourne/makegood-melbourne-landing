@@ -93,6 +93,7 @@ interface SectionLandingData {
   scopeSubtitle?: string;
   scopeRows?: ScopeRow[];
   scopeCentred?: boolean; // Centre a short last row of scope cards
+  hideServices?: boolean; // Skip the services grid or carousel
   propertyTypesTitle?: string;
   propertyTypesTitleHighlight?: string;
   propertyTypesSubtitle?: string;
@@ -427,8 +428,8 @@ const SectionLandingTemplate = ({ data }: SectionLandingTemplateProps) => {
         </section>
       )}
 
-      {/* Services Carousel or Grid */}
-      {data.useGrid ? (
+      {/* Services Carousel or Grid (hidden when the scope cards already link to every child page) */}
+      {data.hideServices ? null : data.useGrid ? (
         <SectionServicesGrid 
           serviceSlugs={data.serviceSlugs}
           title={data.carouselTitle || "Our Services"}
