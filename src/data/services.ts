@@ -1500,25 +1500,14 @@ export const services: Service[] = [
     capabilitiesSubtitle: "We supply and install polycarbonate roofing and skylights for warehouses and industrial facilities across Melbourne.",
 
     linkedSpotlightBlock: {
-      title: "COMPLETE BUILDING",
-      titleHighlight: "REMEDIATION",
-      subtitle: "We coordinate roofing with waterproofing and cladding remediation for a complete building envelope solution.",
+      title: "ONE CALL.",
+      titleHighlight: "THE WHOLE ROOF.",
+      subtitle: "Every part of a commercial roof, from one contractor.",
       cards: [
-        {
-          slug: "remediation-solutions/cladding-glazing",
-          name: "Cladding & Glazing",
-          description: "ACP cladding replacement and glazing remediation for commercial buildings across Melbourne."
-        },
-        {
-          slug: "remediation-solutions/structural",
-          name: "Structural Remediation",
-          description: "Engineered structural repairs for concrete cancer, slab settlement and facade defects across Melbourne."
-        },
-        {
-          slug: "remediation-solutions/waterproofing",
-          name: "Waterproofing",
-          description: "Commercial waterproofing for balconies, roofs, wet areas and podium decks across Melbourne."
-        }
+        { slug: "roofing-solutions/roof-leak-repairs", name: "Roof Leak Repairs", description: "Leaks traced back to where they start, fixed properly, and the damage inside put right." },
+        { slug: "roofing-solutions/metal-roof-replacement", name: "Metal Roof Replacement", description: "One rusted sheet, an old fibre cement roof or the whole lot. Colorbond and Zincalume, done properly." },
+        { slug: "roofing-solutions/box-gutters-roof-drainage", name: "Box Gutters & Roof Drainage", description: "Where most warehouse leaks really begin. Gutters, sumps and downpipes repaired or replaced." },
+        { slug: "roofing-solutions/storm-damage-make-safe", name: "Storm Damage & Make Safe", description: "Storm hits, we stop the water first. The proper fix comes after." }
       ]
     },
     scopeTitle: "PANELS OUT. LIGHT IN.",
@@ -1619,7 +1608,7 @@ export const services: Service[] = [
       subtitle: "We do makegoods all day, every day.",
       text: "Whether you're completing end of lease obligations or upgrading your vacant property, we deliver complete skylight replacement as part of our make good service. One quote, one project manager, complete documentation for handover. Get in touch for a free assessment."
     },
-    relatedServices: ["remediation-solutions/waterproofing", "remediation-solutions/structural", "make-good-solutions/warehouse-flooring"],
+    relatedServices: ["roofing-solutions/roof-leak-repairs", "roofing-solutions/metal-roof-replacement", "roofing-solutions/box-gutters-roof-drainage"],
     category: "structural",
     published: true
   },
@@ -3144,14 +3133,15 @@ export const services: Service[] = [
     linkedSpotlightBlock: {
       title: "ONE CALL.",
       titleHighlight: "THE WHOLE ROOF.",
-      subtitle: "A new roof is the best time to sort everything around it.",
+      subtitle: "Every part of a commercial roof, from one contractor.",
       cards: [
-        { slug: "roofing-solutions/box-gutters-roof-drainage", name: "Box Gutters & Roof Drainage", description: "Box gutters, sumps and downpipes replaced in the same job so the new roof drains properly." },
-        { slug: "roofing-solutions/polycarbonate-roofing-skylights", name: "Polycarbonate Roofing & Skylights", description: "Yellowed skylight sheets swapped out while the roof is open. Light back in, water out." },
-        { slug: "roofing-solutions/roof-leak-repairs", name: "Roof Leak Repairs", description: "Not ready for a new roof yet? We'll fix the leaks that matter now." }
+        { slug: "roofing-solutions/roof-leak-repairs", name: "Roof Leak Repairs", description: "Leaks traced back to where they start, fixed properly, and the damage inside put right." },
+        { slug: "roofing-solutions/box-gutters-roof-drainage", name: "Box Gutters & Roof Drainage", description: "Where most warehouse leaks really begin. Gutters, sumps and downpipes repaired or replaced." },
+        { slug: "roofing-solutions/polycarbonate-roofing-skylights", name: "Polycarbonate Roofing & Skylights", description: "Yellowed panels out. Light back in. Water stays out." },
+        { slug: "roofing-solutions/storm-damage-make-safe", name: "Storm Damage & Make Safe", description: "Storm hits, we stop the water first. The proper fix comes after." }
       ]
     },
-    relatedServices: ["roofing-solutions/box-gutters-roof-drainage", "roofing-solutions/polycarbonate-roofing-skylights", "roofing-solutions/roof-leak-repairs"],
+    relatedServices: ["roofing-solutions/roof-leak-repairs", "roofing-solutions/box-gutters-roof-drainage", "roofing-solutions/polycarbonate-roofing-skylights"],
     category: "trade",
     published: true
   },
@@ -3248,14 +3238,15 @@ export const services: Service[] = [
     linkedSpotlightBlock: {
       title: "ONE CALL.",
       titleHighlight: "THE WHOLE ROOF.",
-      subtitle: "Gutters are part of the roof. So is everything else.",
+      subtitle: "Every part of a commercial roof, from one contractor.",
       cards: [
-        { slug: "roofing-solutions/roof-leak-repairs", name: "Roof Leak Repairs", description: "Not sure it's the gutter? We'll trace the leak back to where it actually starts." },
-        { slug: "roofing-solutions/storm-damage-make-safe", name: "Storm Damage & Make Safe", description: "Gutter overflowed in a storm? We stop the water first and sort the damage after." },
-        { slug: "roofing-solutions/metal-roof-replacement", name: "Metal Roof Replacement", description: "Gutters and roof both past it? Replace them together in one job." }
+        { slug: "roofing-solutions/roof-leak-repairs", name: "Roof Leak Repairs", description: "Leaks traced back to where they start, fixed properly, and the damage inside put right." },
+        { slug: "roofing-solutions/metal-roof-replacement", name: "Metal Roof Replacement", description: "One rusted sheet, an old fibre cement roof or the whole lot. Colorbond and Zincalume, done properly." },
+        { slug: "roofing-solutions/polycarbonate-roofing-skylights", name: "Polycarbonate Roofing & Skylights", description: "Yellowed panels out. Light back in. Water stays out." },
+        { slug: "roofing-solutions/storm-damage-make-safe", name: "Storm Damage & Make Safe", description: "Storm hits, we stop the water first. The proper fix comes after." }
       ]
     },
-    relatedServices: ["roofing-solutions/roof-leak-repairs", "roofing-solutions/storm-damage-make-safe", "roofing-solutions/metal-roof-replacement"],
+    relatedServices: ["roofing-solutions/roof-leak-repairs", "roofing-solutions/metal-roof-replacement", "roofing-solutions/polycarbonate-roofing-skylights"],
     category: "trade",
     published: true
   },
@@ -3350,14 +3341,15 @@ export const services: Service[] = [
     linkedSpotlightBlock: {
       title: "ONE CALL.",
       titleHighlight: "THE WHOLE ROOF.",
-      subtitle: "Leaks have a habit of leading somewhere else.",
+      subtitle: "Every part of a commercial roof, from one contractor.",
       cards: [
-        { slug: "roofing-solutions/box-gutters-roof-drainage", name: "Box Gutters & Roof Drainage", description: "Where most warehouse leaks really begin. Gutters, sumps and downpipes sorted." },
-        { slug: "roofing-solutions/storm-damage-make-safe", name: "Storm Damage & Make Safe", description: "Leak started in a storm? We stop the water first and sort the damage after." },
-        { slug: "roofing-solutions/metal-roof-replacement", name: "Metal Roof Replacement", description: "When the leaks keep coming back, it may be time for the honest conversation." }
+        { slug: "roofing-solutions/metal-roof-replacement", name: "Metal Roof Replacement", description: "One rusted sheet, an old fibre cement roof or the whole lot. Colorbond and Zincalume, done properly." },
+        { slug: "roofing-solutions/box-gutters-roof-drainage", name: "Box Gutters & Roof Drainage", description: "Where most warehouse leaks really begin. Gutters, sumps and downpipes repaired or replaced." },
+        { slug: "roofing-solutions/polycarbonate-roofing-skylights", name: "Polycarbonate Roofing & Skylights", description: "Yellowed panels out. Light back in. Water stays out." },
+        { slug: "roofing-solutions/storm-damage-make-safe", name: "Storm Damage & Make Safe", description: "Storm hits, we stop the water first. The proper fix comes after." }
       ]
     },
-    relatedServices: ["roofing-solutions/box-gutters-roof-drainage", "roofing-solutions/storm-damage-make-safe", "roofing-solutions/metal-roof-replacement"],
+    relatedServices: ["roofing-solutions/metal-roof-replacement", "roofing-solutions/box-gutters-roof-drainage", "roofing-solutions/polycarbonate-roofing-skylights"],
     category: "trade",
     published: true
   },
@@ -3451,16 +3443,17 @@ export const services: Service[] = [
       text: "Send us the address, photos of the roof and the damage inside, and tell us what's happening now. We'll make it safe, document the damage and come back with a fixed price for the repairs."
     },
     linkedSpotlightBlock: {
-      title: "AFTER THE",
-      titleHighlight: "STORM",
-      subtitle: "Make safe is the first step. Here's what usually comes next.",
+      title: "ONE CALL.",
+      titleHighlight: "THE WHOLE ROOF.",
+      subtitle: "Every part of a commercial roof, from one contractor.",
       cards: [
-        { slug: "strip-out-solutions/make-safe", name: "Make Safe", description: "Electrical, plumbing and services isolated and certified where water has got in." },
-        { slug: "remediation-solutions/water-damage-mould-remediation", name: "Water Damage & Mould Remediation", description: "Wet materials removed, drying coordinated and damaged areas reinstated." },
-        { slug: "roofing-solutions/box-gutters-roof-drainage", name: "Box Gutters & Roof Drainage", description: "Gutters that overflowed in the storm repaired or replaced so it doesn't happen again." }
+        { slug: "roofing-solutions/roof-leak-repairs", name: "Roof Leak Repairs", description: "Leaks traced back to where they start, fixed properly, and the damage inside put right." },
+        { slug: "roofing-solutions/metal-roof-replacement", name: "Metal Roof Replacement", description: "One rusted sheet, an old fibre cement roof or the whole lot. Colorbond and Zincalume, done properly." },
+        { slug: "roofing-solutions/box-gutters-roof-drainage", name: "Box Gutters & Roof Drainage", description: "Where most warehouse leaks really begin. Gutters, sumps and downpipes repaired or replaced." },
+        { slug: "roofing-solutions/polycarbonate-roofing-skylights", name: "Polycarbonate Roofing & Skylights", description: "Yellowed panels out. Light back in. Water stays out." }
       ]
     },
-    relatedServices: ["strip-out-solutions/make-safe", "remediation-solutions/water-damage-mould-remediation", "roofing-solutions/box-gutters-roof-drainage"],
+    relatedServices: ["roofing-solutions/roof-leak-repairs", "roofing-solutions/metal-roof-replacement", "roofing-solutions/box-gutters-roof-drainage"],
     category: "trade",
     published: true
   }
