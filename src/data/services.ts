@@ -64,6 +64,7 @@ import leakRepairHeroImage from "@/assets/services/commercial-roof-leak-repair-r
 import roofPlantPenetrationsImage from "@/assets/services/commercial-roof-plant-penetrations-melbourne.webp";
 import stormMakeSafeHeroImage from "@/assets/services/storm-damage-roof-make-safe-heavy-rain-melbourne.webp";
 import asbestosRoofImage from "@/assets/blog/asbestos-management.jpg";
+import stormCeilingDamageImage from "@/assets/services/storm-water-damaged-ceiling-tiles-commercial-melbourne.webp";
 
 export interface FeaturedSection {
   title: string;
@@ -3365,8 +3366,9 @@ export const services: Service[] = [
     heroImage: stormMakeSafeHeroImage,
     heroImageAlt: "Heavy rain pouring over a gutter beneath a metal warehouse roof during a storm",
     heroImageTitle: "Storm Damage Roof Make Safe Melbourne",
-    secondaryImage: skylightSteelStructureImage,
-    secondaryImageAlt: "Warehouse roof skylights and steel trusses seen from inside",
+    secondaryImage: stormCeilingDamageImage,
+    secondaryImageAlt: "Water stained and collapsed suspended ceiling tile in a commercial building after a roof leak",
+    secondaryImageTitle: "Storm Water Damage Melbourne",
     trustBadges: [
       "Licensed Roof Plumbers",
       "Photo Reports for Insurers",
