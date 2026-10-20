@@ -1225,7 +1225,7 @@ export const services: Service[] = [
       subtitle: "We coordinate cladding and glazing remediation with structural repairs and waterproofing for a complete building envelope solution.",
       cards: [
         {
-          slug: "remediation-solutions/polycarbonate-roofing-skylights",
+          slug: "roofing-solutions/polycarbonate-roofing-skylights",
           name: "Polycarbonate Roofing & Skylights",
           description: "Polycarbonate roofing and skylight replacement for warehouses and industrial facilities across Melbourne."
         },
@@ -1279,7 +1279,7 @@ export const services: Service[] = [
       subtitle: "We do makegoods all day, every day.",
       text: "We've delivered cladding and glazing compliance projects across Melbourne's commercial buildings. Get in touch today for a free, no-obligation quote."
     },
-    relatedServices: ["remediation-solutions/structural", "remediation-solutions/waterproofing", "remediation-solutions/polycarbonate-roofing-skylights"],
+    relatedServices: ["remediation-solutions/structural", "remediation-solutions/waterproofing", "roofing-solutions/polycarbonate-roofing-skylights"],
     category: "structural",
     published: true
   },
@@ -1358,7 +1358,7 @@ export const services: Service[] = [
           description: "ACP cladding replacement and glazing remediation for commercial buildings across Melbourne."
         },
         {
-          slug: "remediation-solutions/polycarbonate-roofing-skylights",
+          slug: "roofing-solutions/polycarbonate-roofing-skylights",
           name: "Polycarbonate Roofing & Skylights",
           description: "Polycarbonate roofing and skylight replacement for warehouses and industrial facilities across Melbourne."
         },
@@ -1418,13 +1418,13 @@ export const services: Service[] = [
       subtitle: "We do makegoods all day, every day.",
       text: "From balcony remediation to full roof systems, we've waterproofed commercial and residential buildings across Melbourne. Get in touch today for a free, no-obligation quote."
     },
-    relatedServices: ["remediation-solutions/structural", "remediation-solutions/cladding-glazing", "remediation-solutions/polycarbonate-roofing-skylights"],
+    relatedServices: ["remediation-solutions/structural", "remediation-solutions/cladding-glazing", "roofing-solutions/polycarbonate-roofing-skylights"],
     category: "structural",
     published: true
   },
   {
     name: "Polycarbonate Roofing & Skylights",
-    slug: "remediation-solutions/polycarbonate-roofing-skylights",
+    slug: "roofing-solutions/polycarbonate-roofing-skylights",
     title: "Polycarbonate Roofing & Skylights",
     metaTitle: "Polycarbonate Roofing & Skylights Melbourne | Make Good, BETTER.",
     description: "We supply and install clear polycarbonate roofing sheets designed for industrial and warehouse environments. Our installations improve natural light, resist harsh weather and are completed in accordance with Australian Standards and safety requirements. From new installations to repairs and upgrades, we deliver practical roofing solutions suited to Melbourne's demanding conditions.",

@@ -92,6 +92,8 @@ interface SectionLandingData {
   scopeTitleHighlight?: string;
   scopeSubtitle?: string;
   scopeRows?: ScopeRow[];
+  scopeCentred?: boolean; // Centre a short last row of scope cards
+  hideServices?: boolean; // Skip the services grid or carousel
   propertyTypesTitle?: string;
   propertyTypesTitleHighlight?: string;
   propertyTypesSubtitle?: string;
@@ -300,8 +302,10 @@ const SectionLandingTemplate = ({ data }: SectionLandingTemplateProps) => {
               <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">{data.scopeTitle || 'STRIP OUT'} <span className="text-primary">{data.scopeTitleHighlight || 'SCOPE'}</span></h2>
               <p className="text-muted-foreground text-lg">{data.scopeSubtitle || 'What we can remove, coordinate and prepare during a commercial or industrial strip out.'}</p>
             </div>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className={data.scopeCentred ? "flex flex-wrap justify-center gap-6" : "grid md:grid-cols-2 lg:grid-cols-3 gap-6"}>
               {data.scopeRows.map((row) => {
+                // When centred, cards keep the three-column width and a short last row sits in the middle
+                const itemWidth = data.scopeCentred ? " w-full md:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)]" : "";
                 const cardContent = (
                   <div className="rounded-lg border border-border bg-card h-full overflow-hidden shadow-sm transition-all duration-300 hover:border-primary/50 hover:shadow-lg">
                     {row.image && (
@@ -333,11 +337,11 @@ const SectionLandingTemplate = ({ data }: SectionLandingTemplateProps) => {
                 );
 
                 return row.link ? (
-                  <a key={row.scope} href={row.link} className="block group">
+                  <a key={row.scope} href={row.link} className={`block group${itemWidth}`}>
                     {cardContent}
                   </a>
                 ) : (
-                  <article key={row.scope}>{cardContent}</article>
+                  <article key={row.scope} className={itemWidth.trim() || undefined}>{cardContent}</article>
                 );
               })}
             </div>
@@ -424,8 +428,8 @@ const SectionLandingTemplate = ({ data }: SectionLandingTemplateProps) => {
         </section>
       )}
 
-      {/* Services Carousel or Grid */}
-      {data.useGrid ? (
+      {/* Services Carousel or Grid (hidden when the scope cards already link to every child page) */}
+      {data.hideServices ? null : data.useGrid ? (
         <SectionServicesGrid 
           serviceSlugs={data.serviceSlugs}
           title={data.carouselTitle || "Our Services"}
