@@ -9,7 +9,6 @@ insert into public.keep_alive (id) values (1) on conflict (id) do nothing;
 
 alter table public.keep_alive enable row level security;
 
-drop policy if exists "Anyone can read keep_alive" on public.keep_alive;
 create policy "Anyone can read keep_alive"
   on public.keep_alive for select
   to anon
