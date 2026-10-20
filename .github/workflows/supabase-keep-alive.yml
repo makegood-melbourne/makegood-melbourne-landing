@@ -1,0 +1,38 @@
+name: Supabase keep alive
+
+# Free Supabase projects pause after about a week without database activity.
+# This runs a tiny read against the database once a day so the project stays awake.
+# If the request fails (for example the project is already paused), the run fails
+# and GitHub emails the repo owner.
+
+on:
+  schedule:
+    - cron: "17 20 * * *" # daily, around 7am Melbourne time
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      # Public anon key, already shipped in the site's front end (see .env)
+      SUPABASE_URL: https://krgbykvrigbbkvyprqnb.supabase.co
+      SUPABASE_ANON_KEY: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtyZ2J5a3ZyaWdiYmt2eXBycW5iIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjkyMzk1NjYsImV4cCI6MjA4NDgxNTU2Nn0.8aCUrnJnMUVJ-BES78V13uZu671oQo6rNvu3ZrRV8vs
+    steps:
+      - name: Query the database
+        run: |
+          # Row level security means anon sees no rows, but Postgres still runs the query,
+          # which counts as activity. Expect HTTP 200 and an empty list.
+          status=$(curl -sS -o body.txt -w "%{http_code}" \
+            "$SUPABASE_URL/rest/v1/contact_enquiries?select=id&limit=1" \
+            -H "apikey: $SUPABASE_ANON_KEY" \
+            -H "Authorization: Bearer $SUPABASE_ANON_KEY")
+          echo "HTTP $status"
+          cat body.txt; echo
+          if [ "$status" != "200" ]; then
+            echo "::error::Supabase did not respond normally (HTTP $status). The project may be paused. Resume it at https://supabase.com/dashboard/project/krgbykvrigbbkvyprqnb"
+            exit 1
+          fi
