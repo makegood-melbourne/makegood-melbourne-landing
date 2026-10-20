@@ -38,7 +38,6 @@ import metalRoofSheetingImage from "@/assets/services/commercial-metal-roof-shee
 import boxGutterImage from "@/assets/services/commercial-box-gutter-metal-roof-melbourne.webp";
 import stormRainGutterImage from "@/assets/services/storm-rain-overflowing-roof-gutter-warehouse.webp";
 import roofMaintenanceCardImage from "@/assets/services/commercial-roof-inspection-maintenance-card-melbourne.webp";
-import roofSafetyCardImage from "@/assets/services/roof-safety-walkways-guardrails-card-melbourne.webp";
 
 export interface SectionLandingFAQ {
   question: string;
@@ -1030,8 +1029,7 @@ export const sectionLandingPages: SectionLandingData[] = [
       "roofing-solutions/box-gutters-roof-drainage",
       "roofing-solutions/polycarbonate-roofing-skylights",
       "roofing-solutions/storm-damage-make-safe",
-      "roofing-solutions/roof-inspections-maintenance",
-      "roofing-solutions/roof-safety-access"
+      "roofing-solutions/roof-inspections-maintenance"
     ],
     hideServices: true,
     useGrid: true,
@@ -1097,15 +1095,6 @@ export const sectionLandingPages: SectionLandingData[] = [
         image: roofMaintenanceCardImage,
         imageAlt: "Aerial view of commercial warehouse roofs with skylights and loading yard",
         imageTitle: "Commercial Roof Maintenance Melbourne"
-      },
-      {
-        scope: "Roof safety and access",
-        worksIncluded: "Anchor points, static lines, walkways and guardrails. Installed, tagged and certified so people get down safely.",
-        link: "/services/roofing-solutions/roof-safety-access/",
-        linkLabel: "View roof safety",
-        image: roofSafetyCardImage,
-        imageAlt: "Warehouse roof walkways and guardrails around an air conditioning plant platform",
-        imageTitle: "Roof Safety and Access Melbourne"
       }
     ],
 

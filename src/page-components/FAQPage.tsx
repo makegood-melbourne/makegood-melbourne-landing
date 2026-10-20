@@ -224,7 +224,7 @@ const faqs: FAQ[] = [
   {
     category: "roofing",
     question: "What commercial roofing work do you do?",
-    answer: "Roof leak repairs, metal roof replacement and restoration, box gutters and roof drainage, polycarbonate roofing and skylights, storm damage make safe, scheduled roof inspections and maintenance, and roof safety systems. All of it can sit in the same quote as your make good."
+    answer: "Roof leak repairs, metal roof replacement and restoration, box gutters and roof drainage, polycarbonate roofing and skylights, storm damage make safe, and scheduled roof inspections and maintenance. All of it can sit in the same quote as your make good."
   },
   {
     category: "roofing",
@@ -255,11 +255,6 @@ const faqs: FAQ[] = [
     category: "roofing",
     question: "Do you offer roof maintenance for property managers?",
     answer: "Yes. We can inspect your roofs on a schedule, usually twice a year, clear the gutters and sumps, fix small problems on the spot and send a photo report after every visit."
-  },
-  {
-    category: "roofing",
-    question: "Do I need height safety on my roof?",
-    answer: "If anyone goes on the roof for maintenance, plant servicing or repairs, a safe way to do it is generally needed. We install, tag and certify anchor points, static lines, walkways and guardrails. Your safety adviser can confirm your specific obligations."
   },
   {
     category: "roofing",

@@ -65,7 +65,6 @@ import roofPlantPenetrationsImage from "@/assets/services/commercial-roof-plant-
 import stormMakeSafeHeroImage from "@/assets/services/storm-damage-roof-make-safe-heavy-rain-melbourne.webp";
 import asbestosRoofImage from "@/assets/blog/asbestos-management.jpg";
 import roofMaintenanceHeroImage from "@/assets/services/commercial-roof-inspection-maintenance-aerial-melbourne.webp";
-import roofSafetyHeroImage from "@/assets/services/roof-safety-walkways-guardrails-plant-platform-melbourne.webp";
 import stormCeilingDamageImage from "@/assets/services/storm-water-damaged-ceiling-tiles-commercial-melbourne.webp";
 
 export interface FeaturedSection {
@@ -1511,8 +1510,7 @@ export const services: Service[] = [
         { slug: "roofing-solutions/metal-roof-replacement", name: "Metal Roof Replacement", description: "One rusted sheet, a tired roof that needs coating or the whole lot. Colorbond and Zincalume, done properly." },
         { slug: "roofing-solutions/box-gutters-roof-drainage", name: "Box Gutters & Roof Drainage", description: "Where most warehouse leaks really begin. Gutters, sumps and downpipes repaired or replaced." },
         { slug: "roofing-solutions/storm-damage-make-safe", name: "Storm Damage & Make Safe", description: "Storm hits, we stop the water first. The proper fix comes after." },
-        { slug: "roofing-solutions/roof-inspections-maintenance", name: "Roof Inspections & Maintenance", description: "Twice a year, every roof you manage. Photo reports and small fixes on the spot." },
-        { slug: "roofing-solutions/roof-safety-access", name: "Roof Safety & Access", description: "Anchor points, static lines, walkways and guardrails. Installed, tagged and certified." }
+        { slug: "roofing-solutions/roof-inspections-maintenance", name: "Roof Inspections & Maintenance", description: "Twice a year, every roof you manage. Photo reports and small fixes on the spot." }
       ]
     },
     scopeTitle: "PANELS OUT. LIGHT IN.",
@@ -1613,7 +1611,7 @@ export const services: Service[] = [
       subtitle: "We do makegoods all day, every day.",
       text: "Whether you're completing end of lease obligations or upgrading your vacant property, we deliver complete skylight replacement as part of our make good service. One quote, one project manager, complete documentation for handover. Get in touch for a free assessment."
     },
-    relatedServices: ["roofing-solutions/roof-safety-access", "roofing-solutions/metal-roof-replacement", "roofing-solutions/storm-damage-make-safe"],
+    relatedServices: ["roofing-solutions/metal-roof-replacement", "roofing-solutions/storm-damage-make-safe", "roofing-solutions/roof-leak-repairs"],
     category: "structural",
     published: true
   },
@@ -3148,11 +3146,10 @@ export const services: Service[] = [
         { slug: "roofing-solutions/box-gutters-roof-drainage", name: "Box Gutters & Roof Drainage", description: "Where most warehouse leaks really begin. Gutters, sumps and downpipes repaired or replaced." },
         { slug: "roofing-solutions/polycarbonate-roofing-skylights", name: "Polycarbonate Roofing & Skylights", description: "Yellowed panels out. Light back in. Water stays out." },
         { slug: "roofing-solutions/storm-damage-make-safe", name: "Storm Damage & Make Safe", description: "Storm hits, we stop the water first. The proper fix comes after." },
-        { slug: "roofing-solutions/roof-inspections-maintenance", name: "Roof Inspections & Maintenance", description: "Twice a year, every roof you manage. Photo reports and small fixes on the spot." },
-        { slug: "roofing-solutions/roof-safety-access", name: "Roof Safety & Access", description: "Anchor points, static lines, walkways and guardrails. Installed, tagged and certified." }
+        { slug: "roofing-solutions/roof-inspections-maintenance", name: "Roof Inspections & Maintenance", description: "Twice a year, every roof you manage. Photo reports and small fixes on the spot." }
       ]
     },
-    relatedServices: ["roofing-solutions/box-gutters-roof-drainage", "roofing-solutions/roof-inspections-maintenance", "roofing-solutions/roof-safety-access"],
+    relatedServices: ["roofing-solutions/box-gutters-roof-drainage", "roofing-solutions/roof-inspections-maintenance", "roofing-solutions/polycarbonate-roofing-skylights"],
     category: "trade",
     published: true
   },
@@ -3255,8 +3252,7 @@ export const services: Service[] = [
         { slug: "roofing-solutions/metal-roof-replacement", name: "Metal Roof Replacement", description: "One rusted sheet, a tired roof that needs coating or the whole lot. Colorbond and Zincalume, done properly." },
         { slug: "roofing-solutions/polycarbonate-roofing-skylights", name: "Polycarbonate Roofing & Skylights", description: "Yellowed panels out. Light back in. Water stays out." },
         { slug: "roofing-solutions/storm-damage-make-safe", name: "Storm Damage & Make Safe", description: "Storm hits, we stop the water first. The proper fix comes after." },
-        { slug: "roofing-solutions/roof-inspections-maintenance", name: "Roof Inspections & Maintenance", description: "Twice a year, every roof you manage. Photo reports and small fixes on the spot." },
-        { slug: "roofing-solutions/roof-safety-access", name: "Roof Safety & Access", description: "Anchor points, static lines, walkways and guardrails. Installed, tagged and certified." }
+        { slug: "roofing-solutions/roof-inspections-maintenance", name: "Roof Inspections & Maintenance", description: "Twice a year, every roof you manage. Photo reports and small fixes on the spot." }
       ]
     },
     relatedServices: ["roofing-solutions/roof-leak-repairs", "roofing-solutions/roof-inspections-maintenance", "roofing-solutions/storm-damage-make-safe"],
@@ -3360,8 +3356,7 @@ export const services: Service[] = [
         { slug: "roofing-solutions/box-gutters-roof-drainage", name: "Box Gutters & Roof Drainage", description: "Where most warehouse leaks really begin. Gutters, sumps and downpipes repaired or replaced." },
         { slug: "roofing-solutions/polycarbonate-roofing-skylights", name: "Polycarbonate Roofing & Skylights", description: "Yellowed panels out. Light back in. Water stays out." },
         { slug: "roofing-solutions/storm-damage-make-safe", name: "Storm Damage & Make Safe", description: "Storm hits, we stop the water first. The proper fix comes after." },
-        { slug: "roofing-solutions/roof-inspections-maintenance", name: "Roof Inspections & Maintenance", description: "Twice a year, every roof you manage. Photo reports and small fixes on the spot." },
-        { slug: "roofing-solutions/roof-safety-access", name: "Roof Safety & Access", description: "Anchor points, static lines, walkways and guardrails. Installed, tagged and certified." }
+        { slug: "roofing-solutions/roof-inspections-maintenance", name: "Roof Inspections & Maintenance", description: "Twice a year, every roof you manage. Photo reports and small fixes on the spot." }
       ]
     },
     relatedServices: ["roofing-solutions/box-gutters-roof-drainage", "roofing-solutions/roof-inspections-maintenance", "roofing-solutions/storm-damage-make-safe"],
@@ -3468,8 +3463,7 @@ export const services: Service[] = [
         { slug: "roofing-solutions/metal-roof-replacement", name: "Metal Roof Replacement", description: "One rusted sheet, a tired roof that needs coating or the whole lot. Colorbond and Zincalume, done properly." },
         { slug: "roofing-solutions/box-gutters-roof-drainage", name: "Box Gutters & Roof Drainage", description: "Where most warehouse leaks really begin. Gutters, sumps and downpipes repaired or replaced." },
         { slug: "roofing-solutions/polycarbonate-roofing-skylights", name: "Polycarbonate Roofing & Skylights", description: "Yellowed panels out. Light back in. Water stays out." },
-        { slug: "roofing-solutions/roof-inspections-maintenance", name: "Roof Inspections & Maintenance", description: "Twice a year, every roof you manage. Photo reports and small fixes on the spot." },
-        { slug: "roofing-solutions/roof-safety-access", name: "Roof Safety & Access", description: "Anchor points, static lines, walkways and guardrails. Installed, tagged and certified." }
+        { slug: "roofing-solutions/roof-inspections-maintenance", name: "Roof Inspections & Maintenance", description: "Twice a year, every roof you manage. Photo reports and small fixes on the spot." }
       ]
     },
     relatedServices: ["roofing-solutions/roof-leak-repairs", "roofing-solutions/box-gutters-roof-drainage", "roofing-solutions/polycarbonate-roofing-skylights"],
@@ -3512,7 +3506,7 @@ export const services: Service[] = [
           "Twice a year, or to suit the site",
           "Sheets, fixings, laps and flashings checked",
           "Skylights and penetrations checked",
-          "Roof safety and access checked",
+          "Solar mounts and plant checked",
           "After major storms",
           "Every site on one schedule"
         ]
@@ -3574,117 +3568,10 @@ export const services: Service[] = [
         { slug: "roofing-solutions/metal-roof-replacement", name: "Metal Roof Replacement", description: "One rusted sheet, a tired roof that needs coating or the whole lot. Colorbond and Zincalume, done properly." },
         { slug: "roofing-solutions/box-gutters-roof-drainage", name: "Box Gutters & Roof Drainage", description: "Where most warehouse leaks really begin. Gutters, sumps and downpipes repaired or replaced." },
         { slug: "roofing-solutions/polycarbonate-roofing-skylights", name: "Polycarbonate Roofing & Skylights", description: "Yellowed panels out. Light back in. Water stays out." },
-        { slug: "roofing-solutions/storm-damage-make-safe", name: "Storm Damage & Make Safe", description: "Storm hits, we stop the water first. The proper fix comes after." },
-        { slug: "roofing-solutions/roof-safety-access", name: "Roof Safety & Access", description: "Anchor points, static lines, walkways and guardrails. Installed, tagged and certified." }
+        { slug: "roofing-solutions/storm-damage-make-safe", name: "Storm Damage & Make Safe", description: "Storm hits, we stop the water first. The proper fix comes after." }
       ]
     },
-    relatedServices: ["roofing-solutions/roof-leak-repairs", "roofing-solutions/box-gutters-roof-drainage", "roofing-solutions/roof-safety-access"],
-    category: "trade",
-    published: true
-  },
-  {
-    name: "Roof Safety & Access",
-    slug: "roofing-solutions/roof-safety-access",
-    title: "Roof Safety & Access",
-    metaTitle: "Roof Safety & Access Melbourne | Make Good, BETTER.",
-    description: "Roof anchor points, static lines, walkways, guardrails, skylight protection and ladders installed, inspected and certified for warehouses, factories and commercial buildings across Melbourne.",
-    metaDescription: "Commercial roof safety systems in Melbourne. Anchor points, static lines, walkways, guardrails and skylight protection installed, inspected and certified.",
-    heroText: "Anchor points, static lines, walkways and guardrails. Installed, tagged and checked so anyone who goes up on your roof comes back down.",
-    ogImage: "/og/roof-safety-access.jpg",
-    heroImage: roofSafetyHeroImage,
-    heroImageAlt: "Warehouse roof with walkways, guardrails and a plant platform around air conditioning units",
-    heroImageTitle: "Roof Safety and Access Melbourne",
-    secondaryImage: leakRepairHeroImage,
-    secondaryImageAlt: "Roofer in a safety harness and lanyard working on a commercial metal roof",
-    secondaryImageTitle: "Height Safety Melbourne",
-    trustBadges: [
-      "Licensed Roof Plumbers",
-      "Installed and Certified",
-      "Fixed-Price Quotes"
-    ],
-    benefits: [
-      "Roof anchor points",
-      "Static lines",
-      "Roof walkways and platforms",
-      "Guardrails and edge protection",
-      "Skylight protection",
-      "Inspection and recertification"
-    ],
-    capabilityCards: [
-      {
-        icon: "structure",
-        title: "ANCHORS & STATIC LINES",
-        items: [
-          "Roof anchor points",
-          "Static line systems",
-          "Installed to suit your roof profile",
-          "Tagged and certified on completion",
-          "Layout drawing for your records",
-          "Existing systems assessed"
-        ]
-      },
-      {
-        icon: "brick",
-        title: "WALKWAYS & GUARDRAILS",
-        items: [
-          "Roof walkways and platforms",
-          "Guardrails and edge protection",
-          "Access to plant and air conditioning",
-          "Skylight protection",
-          "Fixed ladders and roof access",
-          "Planned around your plant layout"
-        ]
-      },
-      {
-        icon: "waterproof",
-        title: "INSPECTION & RECERTIFICATION",
-        items: [
-          "Periodic inspection of anchors and lines",
-          "Recertification and tagging",
-          "Faulty or outdated parts replaced",
-          "Photo report for your records",
-          "Inspection dates tracked for you",
-          "One contact for every site"
-        ]
-      }
-    ],
-    capabilitiesTitle: "WHAT WE INSTALL",
-    capabilitiesSubtitle: "Everything that lets people work on a roof without falling off it, or through it.",
-    scopeTitle: "NOBODY SHOULD GO UP UNPROTECTED",
-    scopeBody: "Air conditioning techs, solar installers, plumbers and roofers all end up on commercial roofs. Every one of them needs a safe way up, a safe way across and something to clip on to. Fragile skylight sheets make it worse, because they look solid until someone steps on one.\n\nWe install anchor points, static lines, walkways, guardrails and skylight protection to suit your roof and your plant, then tag and certify the system so you've got the paperwork. Anchors and lines need regular inspection and recertification, typically every 12 months, and we can keep track of that for you.\n\nThe best time to sort it is during a [re-roof](/services/roofing-solutions/metal-roof-replacement/) or [skylight replacement](/services/roofing-solutions/polycarbonate-roofing-skylights/), when the roof is already open.",
-    process: [
-      { step: "Roof Assessment", description: "We look at how people get on, across and off your roof, where the plant is and where the fall risks are." },
-      { step: "System Design", description: "Anchor, line, walkway and guardrail layout planned around your roof profile and plant." },
-      { step: "Fixed-Price Quote", description: "Supply, installation and certification priced in full." },
-      { step: "Install and Certify", description: "Licensed crews install the system, then tag and certify it with a layout drawing for your records." },
-      { step: "Ongoing Inspection", description: "Periodic inspection and recertification, with dates tracked so nothing lapses." }
-    ],
-    faqs: [
-      { question: "Do I need height safety on my roof?", answer: "If anyone accesses the roof for maintenance, plant servicing or repairs, the building owner or manager generally needs to provide a safe way to do it. A roof safety system is the usual answer. Your safety adviser can confirm your specific obligations." },
-      { question: "How often do anchor points need inspecting?", answer: "Typically every 12 months, or as the manufacturer specifies. We inspect, tag and record each anchor and line so you've got the paperwork." },
-      { question: "Can you inspect a system someone else installed?", answer: "Yes. We'll assess it, recertify what's compliant and quote to replace anything that isn't." },
-      { question: "Do you protect skylights?", answer: "Yes. Fragile skylight sheets are a common fall hazard. We can fit protection over or under them, or replace them with new sheets as part of a skylight upgrade." },
-      { question: "Can you install it while the building is operating?", answer: "Yes. The work happens on the roof, and we plan access and any internal protection around your operations." }
-    ],
-    ctaBlock: {
-      title: "Not Sure Your Roof Is Safe to Work On?",
-      subtitle: "We do make goods all day, every day. Now we do the roof too.",
-      text: "Send us the address, photos of the roof and how people get up there. We'll assess it and come back with a fixed price to make it safe."
-    },
-    linkedSpotlightBlock: {
-      title: "ONE CALL.",
-      titleHighlight: "THE WHOLE ROOF.",
-      subtitle: "Every part of a commercial roof, from one contractor.",
-      cards: [
-        { slug: "roofing-solutions/roof-leak-repairs", name: "Roof Leak Repairs", description: "Leaks traced back to where they start, fixed properly, and the damage inside put right." },
-        { slug: "roofing-solutions/metal-roof-replacement", name: "Metal Roof Replacement", description: "One rusted sheet, a tired roof that needs coating or the whole lot. Colorbond and Zincalume, done properly." },
-        { slug: "roofing-solutions/box-gutters-roof-drainage", name: "Box Gutters & Roof Drainage", description: "Where most warehouse leaks really begin. Gutters, sumps and downpipes repaired or replaced." },
-        { slug: "roofing-solutions/polycarbonate-roofing-skylights", name: "Polycarbonate Roofing & Skylights", description: "Yellowed panels out. Light back in. Water stays out." },
-        { slug: "roofing-solutions/storm-damage-make-safe", name: "Storm Damage & Make Safe", description: "Storm hits, we stop the water first. The proper fix comes after." },
-        { slug: "roofing-solutions/roof-inspections-maintenance", name: "Roof Inspections & Maintenance", description: "Twice a year, every roof you manage. Photo reports and small fixes on the spot." }
-      ]
-    },
-    relatedServices: ["roofing-solutions/polycarbonate-roofing-skylights", "roofing-solutions/roof-inspections-maintenance", "roofing-solutions/metal-roof-replacement"],
+    relatedServices: ["roofing-solutions/roof-leak-repairs", "roofing-solutions/box-gutters-roof-drainage", "roofing-solutions/metal-roof-replacement"],
     category: "trade",
     published: true
   }

@@ -36,7 +36,7 @@ CORE SERVICE GROUPS
 2. Make Good Solutions: end-of-lease works that bring a tenancy back to the agreed handover condition. Work can include painting, patching and plastering, suspended ceilings, line marking, flooring reinstatement, warehouse flooring and coordination of the trade sequence.
 3. Handover Solutions: end-of-lease cleaning, relocation support, waste removal, final presentation, inspection preparation and key handback support.
 4. Remediation Solutions: building-fabric and defect works, including structural remediation, waterproofing, cladding and glazing, water damage and mould remediation, and fire compliance and facade cladding remediation.
-5. Roofing Solutions: commercial and industrial roofing only (no residential), including roof leak repairs, metal roof replacement (including restoration, coating and asbestos roofs), box gutters and roof drainage, polycarbonate roofing and skylights, storm damage make safe, roof inspections and maintenance, and roof safety and access systems.
+5. Roofing Solutions: commercial and industrial roofing only (no residential), including roof leak repairs, metal roof replacement (including restoration, coating and asbestos roofs), box gutters and roof drainage, polycarbonate roofing and skylights, storm damage make safe, and roof inspections and maintenance.
 
 PUBLISHED SERVICE PAGES TO RECOMMEND
 - /services/strip-out-solutions/ - Strip Out Services
@@ -64,7 +64,6 @@ PUBLISHED SERVICE PAGES TO RECOMMEND
 - /services/roofing-solutions/polycarbonate-roofing-skylights/ - Polycarbonate Roofing and Skylights
 - /services/roofing-solutions/storm-damage-make-safe/ - Storm Damage and Make Safe
 - /services/roofing-solutions/roof-inspections-maintenance/ - Roof Inspections and Maintenance
-- /services/roofing-solutions/roof-safety-access/ - Roof Safety and Access (anchor points, static lines, walkways, guardrails)
 - /services/remediation-solutions/water-damage-mould-remediation/ - Water Damage and Mould Remediation
 - /services/remediation-solutions/fire-compliance-facade-cladding-remediation/ - Fire Compliance and Facade Cladding Remediation
 
@@ -98,7 +97,7 @@ ROOFING GUIDANCE
 - Box Gutters and Roof Drainage: box gutters, sumps, rainwater heads, overflows and downpipes repaired or replaced, and blockages cleared. Box gutters are a common cause of warehouse leaks because overflow runs back into the building.
 - Storm Damage and Make Safe: temporary covers, secured sheets, covered skylights and cleared drainage first, then photos, a written report and an itemised scope ready for the insurer or loss adjuster, then permanent repairs and internal reinstatement. Whether insurance covers the damage is the insurer's decision.
 - Roof Inspections and Maintenance: scheduled inspections (usually twice a year, one in autumn before winter rain), gutter and sump clearing, small repairs on the visit, photo condition reports, pre-lease and end of lease roof reports, and multi-site schedules for property managers.
-- Roof Safety and Access: anchor points, static lines, walkways, guardrails, skylight protection and fixed ladders, installed, tagged and certified, with periodic inspection and recertification (typically every 12 months). The building's safety adviser confirms specific legal obligations.
+- Make Good Melbourne does not offer roof height safety systems (anchor points, static lines, guardrails). Do not offer them.
 - Roofing can be included in the same quote as a make good, strip out or remediation project.
 - Water Damage and Mould Remediation: make safe, containment, drying coordination, material assessment, removal, remediation and reinstatement planning.
 - Fire Compliance and Facade Cladding Remediation: facade and cladding remediation where compliance or handover requirements need a coordinated trade pathway.
