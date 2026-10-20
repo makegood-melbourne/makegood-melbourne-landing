@@ -22,9 +22,21 @@ jobs:
       SUPABASE_URL: https://krgbykvrigbbkvyprqnb.supabase.co
       SUPABASE_ANON_KEY: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtyZ2J5a3ZyaWdiYmt2eXBycW5iIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjkyMzk1NjYsImV4cCI6MjA4NDgxNTU2Nn0.8aCUrnJnMUVJ-BES78V13uZu671oQo6rNvu3ZrRV8vs
     steps:
-      - name: Diagnose endpoints
+      - name: Query the database
         run: |
-          for path in "rest/v1/contact_enquiries?select=id&limit=1" "rest/v1/content_drafts?select=id&limit=1" "rest/v1/user_roles?select=id&limit=1" "rest/v1/" "auth/v1/health"; do
-            status=$(curl -sS -o body.txt -w "%{http_code}" "$SUPABASE_URL/$path" -H "apikey: $SUPABASE_ANON_KEY" -H "Authorization: Bearer $SUPABASE_ANON_KEY")
-            echo "::notice::$path -> HTTP $status $(head -c 300 body.txt | tr -d '\n')"
-          done
+          # keep_alive is a one-row table that anon can read, so this is a real Postgres query.
+          # Expect HTTP 200 and [{"id":1}].
+          status=$(curl -sS -o body.txt -w "%{http_code}" \
+            "$SUPABASE_URL/rest/v1/keep_alive?select=id&limit=1" \
+            -H "apikey: $SUPABASE_ANON_KEY" \
+            -H "Authorization: Bearer $SUPABASE_ANON_KEY")
+          echo "HTTP $status"
+          cat body.txt; echo
+          if [ "$status" != "200" ]; then
+            echo "::error::Supabase did not respond normally (HTTP $status). The project may be paused. Resume it at https://supabase.com/dashboard/project/krgbykvrigbbkvyprqnb"
+            exit 1
+          fi
+          if ! grep -q '"id"' body.txt; then
+            echo "::error::Supabase answered but the keep_alive row was missing. Check the keep_alive table in the Table Editor."
+            exit 1
+          fi
