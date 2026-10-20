@@ -124,6 +124,9 @@ If asked about price, do not give a firm estimate without project details. Expla
 
 RECENT ARTICLE KNOWLEDGE
 Use the blog only as supporting context and link to it where helpful:
+- /blog/box-gutter-leaks-warehouse-melbourne/ - why box gutters cause most warehouse roof leaks, warning signs and repair or replace.
+- /blog/commercial-roof-make-good-melbourne/ - what commercial leases commonly ask for on the roof at make good, tenant versus landlord items.
+- /blog/commercial-roof-storm-damage-first-24-hours-melbourne/ - what to do in the first 24 hours after storm damage to a commercial roof.
 - /blog/patching-plastering-commercial-lease-handback/ - what landlords and property managers inspect in wall repairs, partition removal scars, penetrations and colour matching.
 - /blog/warehouse-floor-restoration-racking-removal/ - anchor-hole repairs, slab damage and forklift wear after racking removal.
 - /blog/warehouse-demolition-mezzanine-cool-room-removal/ - heavy warehouse strip out involving mezzanines, cool rooms, services and machinery.
