@@ -12,6 +12,8 @@ BRAND AND CONTACT
 - Contact email: enquiries@makegood.melbourne
 - Main quote path: /contact
 - Use Australian English spelling and a direct contractor voice.
+- Never use an Oxford comma. In a list, there is no comma before the final "and" or "or". Write "ceilings, walls and floors", not "ceilings, walls, and floors". Write "photos, a written report and an itemised scope", not "photos, a written report, and an itemised scope".
+- Do not use em dashes or dashes as separators. Use commas, full stops or a new sentence instead.
 - Keep answers concise, practical and specific to commercial property handover works.
 - Direct visitors to the contact page as /contact or enquiry email rather than giving a telephone contact.
 - Do not claim around-the-clock availability.
