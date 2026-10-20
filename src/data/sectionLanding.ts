@@ -37,7 +37,6 @@ import rooferHarnessImage from "@/assets/services/roofer-safety-harness-metal-ro
 import metalRoofSheetingImage from "@/assets/services/commercial-metal-roof-sheeting-industrial-warehouse-melbourne.webp";
 import boxGutterImage from "@/assets/services/commercial-box-gutter-metal-roof-melbourne.webp";
 import stormRainGutterImage from "@/assets/services/storm-rain-overflowing-roof-gutter-warehouse.webp";
-import roofCoatingCardImage from "@/assets/services/commercial-roof-coating-card-melbourne.webp";
 import roofMaintenanceCardImage from "@/assets/services/commercial-roof-inspection-maintenance-card-melbourne.webp";
 import roofSafetyCardImage from "@/assets/services/roof-safety-walkways-guardrails-card-melbourne.webp";
 
@@ -1031,7 +1030,6 @@ export const sectionLandingPages: SectionLandingData[] = [
       "roofing-solutions/box-gutters-roof-drainage",
       "roofing-solutions/polycarbonate-roofing-skylights",
       "roofing-solutions/storm-damage-make-safe",
-      "roofing-solutions/metal-roof-restoration",
       "roofing-solutions/roof-inspections-maintenance",
       "roofing-solutions/roof-safety-access"
     ],
@@ -1057,21 +1055,12 @@ export const sectionLandingPages: SectionLandingData[] = [
       },
       {
         scope: "Metal roof replacement",
-        worksIncluded: "One rusted sheet, an old fibre cement roof or the whole lot. Colorbond and Zincalume, done properly.",
+        worksIncluded: "One rusted sheet, a tired roof that needs coating or the whole lot. Colorbond and Zincalume, done properly.",
         link: "/services/roofing-solutions/metal-roof-replacement/",
         linkLabel: "View metal roof replacement",
         image: metalRoofSheetingImage,
         imageAlt: "New metal deck roof sheeting across a large industrial warehouse roof",
         imageTitle: "Metal Roof Replacement Melbourne"
-      },
-      {
-        scope: "Metal roof restoration",
-        worksIncluded: "Roof tired but not finished? Rust treated, failures fixed, then coated for years more life.",
-        link: "/services/roofing-solutions/metal-roof-restoration/",
-        linkLabel: "View roof restoration",
-        image: roofCoatingCardImage,
-        imageAlt: "Roofer applying a protective coating to a commercial roof with a roller",
-        imageTitle: "Metal Roof Restoration Melbourne"
       },
       {
         scope: "Box gutters and drainage",

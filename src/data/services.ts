@@ -64,7 +64,6 @@ import leakRepairHeroImage from "@/assets/services/commercial-roof-leak-repair-r
 import roofPlantPenetrationsImage from "@/assets/services/commercial-roof-plant-penetrations-melbourne.webp";
 import stormMakeSafeHeroImage from "@/assets/services/storm-damage-roof-make-safe-heavy-rain-melbourne.webp";
 import asbestosRoofImage from "@/assets/blog/asbestos-management.jpg";
-import roofCoatingHeroImage from "@/assets/services/commercial-roof-coating-roller-application-melbourne.webp";
 import roofMaintenanceHeroImage from "@/assets/services/commercial-roof-inspection-maintenance-aerial-melbourne.webp";
 import roofSafetyHeroImage from "@/assets/services/roof-safety-walkways-guardrails-plant-platform-melbourne.webp";
 import stormCeilingDamageImage from "@/assets/services/storm-water-damaged-ceiling-tiles-commercial-melbourne.webp";
@@ -1509,8 +1508,7 @@ export const services: Service[] = [
       subtitle: "Every part of a commercial roof, from one contractor.",
       cards: [
         { slug: "roofing-solutions/roof-leak-repairs", name: "Roof Leak Repairs", description: "Leaks traced back to where they start, fixed properly, and the damage inside put right." },
-        { slug: "roofing-solutions/metal-roof-replacement", name: "Metal Roof Replacement", description: "One rusted sheet, an old fibre cement roof or the whole lot. Colorbond and Zincalume, done properly." },
-        { slug: "roofing-solutions/metal-roof-restoration", name: "Metal Roof Restoration", description: "Roof tired but not finished? Rust treated, failures fixed, then coated for years more life." },
+        { slug: "roofing-solutions/metal-roof-replacement", name: "Metal Roof Replacement", description: "One rusted sheet, a tired roof that needs coating or the whole lot. Colorbond and Zincalume, done properly." },
         { slug: "roofing-solutions/box-gutters-roof-drainage", name: "Box Gutters & Roof Drainage", description: "Where most warehouse leaks really begin. Gutters, sumps and downpipes repaired or replaced." },
         { slug: "roofing-solutions/storm-damage-make-safe", name: "Storm Damage & Make Safe", description: "Storm hits, we stop the water first. The proper fix comes after." },
         { slug: "roofing-solutions/roof-inspections-maintenance", name: "Roof Inspections & Maintenance", description: "Twice a year, every roof you manage. Photo reports and small fixes on the spot." },
@@ -3041,9 +3039,9 @@ export const services: Service[] = [
     slug: "roofing-solutions/metal-roof-replacement",
     title: "Metal Roof Replacement",
     metaTitle: "Metal Roof Replacement Melbourne | Make Good, BETTER.",
-    description: "Re-roofing for warehouses, factories and commercial buildings across Melbourne. One rusted sheet, an old fibre cement roof or the whole lot, replaced in Colorbond or Zincalume by licensed roof plumbers, with the building kept running underneath.",
-    metaDescription: "Commercial metal roof replacement in Melbourne. Colorbond and Zincalume re-sheeting, asbestos roof replacement and staged re-roofs for warehouses and factories.",
-    heroText: "One rusted sheet, an old fibre cement roof or the whole lot. We re-roof warehouses, factories and commercial buildings across Melbourne in Colorbond and Zincalume, and keep the building running underneath while we do it.",
+    description: "Re-roofing, re-sheeting and roof restoration for warehouses, factories and commercial buildings across Melbourne. One rusted sheet, a tired roof that needs coating, an old fibre cement roof or the whole lot, done by licensed roof plumbers with the building kept running underneath.",
+    metaDescription: "Commercial metal roof replacement in Melbourne. Re-sheeting, roof restoration and coating, asbestos roof replacement and staged re-roofs for warehouses.",
+    heroText: "One rusted sheet, a tired roof that needs coating, an old fibre cement roof or the whole lot. We re-roof and restore warehouses, factories and commercial buildings across Melbourne, and keep the building running underneath while we do it.",
     ogImage: "/og/metal-roof-replacement.jpg",
     heroImage: metalRoofReplacementHeroImage,
     heroImageAlt: "New metal deck roof sheeting across a large industrial warehouse roof",
@@ -3058,6 +3056,7 @@ export const services: Service[] = [
     ],
     benefits: [
       "Rusted and damaged sheet replacement",
+      "Roof restoration and coating",
       "Full commercial re-roofs",
       "Asbestos roof replacement",
       "Colorbond and Zincalume",
@@ -3091,21 +3090,21 @@ export const services: Service[] = [
       },
       {
         icon: "waterproof",
-        title: "ASBESTOS ROOFS",
+        title: "RESTORATION & COATING",
         items: [
-          "Suspect sheets flagged at inspection",
-          "Licensed asbestos removal organised",
-          "Clearance certificate before the new roof",
-          "Compliant disposal",
-          "New metal roof installed",
-          "Landlord and property manager liaison"
+          "For tired roofs that are still sound",
+          "Roof washed and surface rust treated",
+          "Failed sheets and fixings replaced",
+          "Leaks fixed before anything is coated",
+          "Primer and protective roof coating",
+          "Heat reflective coating options"
         ]
       }
     ],
     capabilitiesTitle: "WHAT'S INCLUDED",
-    capabilitiesSubtitle: "From a handful of rusted sheets to a full warehouse re-roof, done by licensed roof plumbers.",
-    scopeTitle: "PATCH IT OR REPLACE IT?",
-    scopeBody: "Most metal roofs don't need replacing all at once. Rust usually starts at the laps, the fixings and the low end of the sheets where water sits. If that's all it is, we'll replace those sheets, re-fix the rest and tell you honestly how long you've got.\n\nWhen the roof is past that, a full re-roof is the right call. We strip it in stages so the building stays covered, check the purlins and fixings underneath and lay new sheets with safety mesh, sarking and insulation where they're needed. You get photos before, during and after, and a compliance certificate at the end.\n\nWhile we're up there, it's the cheapest time to sort the rest. Tired [box gutters](/services/roofing-solutions/box-gutters-roof-drainage/) and yellowed [skylights](/services/roofing-solutions/polycarbonate-roofing-skylights/) can go in the same quote.",
+    capabilitiesSubtitle: "From a handful of rusted sheets to a coated roof or a full warehouse re-roof, done by licensed roof plumbers.",
+    scopeTitle: "PATCH, RESTORE OR REPLACE?",
+    scopeBody: "Most metal roofs don't need replacing all at once. Rust usually starts at the laps, the fixings and the low end of the sheets where water sits. If that's all it is, we'll replace those sheets, re-fix the rest and tell you honestly how long you've got.\n\nIf the roof is faded and patchy but the sheets are still sound, it doesn't need replacing either. We treat the rust, fix what's failed and coat it, which buys years more life for a fraction of the cost. Coating only works on a roof worth saving, though. Paint over rust that's gone through and you've hidden the problem for a season.\n\nWhen the roof is past both, a full re-roof is the right call. We strip it in stages so the building stays covered, check the purlins and fixings underneath and lay new sheets with safety mesh, sarking and insulation where they're needed. You get photos before, during and after, and a compliance certificate at the end.\n\nWhile we're up there, it's the cheapest time to sort the rest. Tired [box gutters](/services/roofing-solutions/box-gutters-roof-drainage/) and yellowed [skylights](/services/roofing-solutions/polycarbonate-roofing-skylights/) can go in the same quote.",
     featuredSections: [
       {
         title: "REPLACING AN ASBESTOS ROOF",
@@ -3118,13 +3117,16 @@ export const services: Service[] = [
     ],
     process: [
       { step: "Roof Inspection", description: "Full roof walk with photos of every sheet run, lap, fixing, gutter and penetration, plus height safety and access checks." },
-      { step: "Repair or Replace", description: "We tell you straight whether a partial re-sheet will do or the roof is done, and check for asbestos." },
+      { step: "Patch, Restore or Replace", description: "We tell you straight whether a partial re-sheet or a coating will do, or the roof is done, and check for asbestos." },
       { step: "Fixed-Price Quote", description: "Pricing based on roof area, profile, access, safety requirements and anything else you want sorted while we're up there." },
-      { step: "Staged Re-Roof", description: "Licensed roof plumbers replace the roof in sections, sequenced around your deliveries, staff and stock." },
+      { step: "Roof Works", description: "Licensed roof plumbers re-sheet, restore or replace the roof in sections, sequenced around your deliveries, staff and stock." },
       { step: "Close Out", description: "Final inspection, photo record, compliance certificate and warranty documentation for your records or lease handover." }
     ],
     faqs: [
       { question: "How do I know if my roof needs replacing?", answer: "Rust through the sheets, leaks that keep coming back after repairs, loose or lifting sheets and fixings that won't hold are the usual signs. One rusty patch doesn't mean a new roof. We'll inspect the whole roof and show you photos of what we find before recommending anything." },
+      { question: "Can you restore or coat the roof instead of replacing it?", answer: "Yes, if the sheets are still sound. We treat the rust, replace failed sheets and fixings, fix any leaks and then prime and coat the roof. It costs much less than a re-roof. If the roof has rusted through, coating stops making sense and we'll say so." },
+      { question: "Will a coating fix my leaks?", answer: "Not on its own. Leaks come from fixings, laps, flashings and gutters, and we fix those before anything is coated. The coating protects the roof. It isn't a patch." },
+      { question: "Can you coat an asbestos roof?", answer: "No. Fibre cement roofs that contain asbestos shouldn't be pressure cleaned or disturbed for coating. We'll recommend replacing them instead." },
       { question: "Can you replace just part of the roof?", answer: "Yes. If the damage is limited to certain runs or one end of the building, we replace those sheets and match the profile to what's already there. It's often the smarter spend." },
       { question: "Can we keep working while you re-roof?", answer: "Usually, yes. We replace the roof in stages so only a small section is open at a time, and we plan the work around deliveries, staff and stock underneath." },
       { question: "What if my roof contains asbestos?", answer: "We'll flag suspect sheets at inspection and organise licensed removal. They come off safely and are disposed of properly, you get a clearance certificate, and then we install the new metal roof. It's all in one quote." },
@@ -3133,9 +3135,9 @@ export const services: Service[] = [
       { question: "How long does a re-roof take?", answer: "It depends on the size of the roof, access and the weather. A few sheets can be done in a day. A full warehouse re-roof is usually a matter of weeks, staged so the building stays covered. You'll get a programme with the quote." }
     ],
     ctaBlock: {
-      title: "Roof Past Patching?",
+      title: "Roof Looking Tired?",
       subtitle: "We do make goods all day, every day. Now we do the roof too.",
-      text: "Send us the address, a few photos of the roof and any leaks inside, and tell us if there's solar or asbestos involved. We'll inspect, give you the honest call and come back with a fixed price."
+      text: "Send us the address, a few photos of the roof and any leaks inside, and tell us if there's solar or asbestos involved. We'll inspect, tell you whether it needs patching, restoring or replacing, and come back with a fixed price."
     },
     linkedSpotlightBlock: {
       title: "ONE CALL.",
@@ -3143,7 +3145,6 @@ export const services: Service[] = [
       subtitle: "Every part of a commercial roof, from one contractor.",
       cards: [
         { slug: "roofing-solutions/roof-leak-repairs", name: "Roof Leak Repairs", description: "Leaks traced back to where they start, fixed properly, and the damage inside put right." },
-        { slug: "roofing-solutions/metal-roof-restoration", name: "Metal Roof Restoration", description: "Roof tired but not finished? Rust treated, failures fixed, then coated for years more life." },
         { slug: "roofing-solutions/box-gutters-roof-drainage", name: "Box Gutters & Roof Drainage", description: "Where most warehouse leaks really begin. Gutters, sumps and downpipes repaired or replaced." },
         { slug: "roofing-solutions/polycarbonate-roofing-skylights", name: "Polycarbonate Roofing & Skylights", description: "Yellowed panels out. Light back in. Water stays out." },
         { slug: "roofing-solutions/storm-damage-make-safe", name: "Storm Damage & Make Safe", description: "Storm hits, we stop the water first. The proper fix comes after." },
@@ -3151,7 +3152,7 @@ export const services: Service[] = [
         { slug: "roofing-solutions/roof-safety-access", name: "Roof Safety & Access", description: "Anchor points, static lines, walkways and guardrails. Installed, tagged and certified." }
       ]
     },
-    relatedServices: ["roofing-solutions/metal-roof-restoration", "roofing-solutions/box-gutters-roof-drainage", "roofing-solutions/roof-safety-access"],
+    relatedServices: ["roofing-solutions/box-gutters-roof-drainage", "roofing-solutions/roof-inspections-maintenance", "roofing-solutions/roof-safety-access"],
     category: "trade",
     published: true
   },
@@ -3251,8 +3252,7 @@ export const services: Service[] = [
       subtitle: "Every part of a commercial roof, from one contractor.",
       cards: [
         { slug: "roofing-solutions/roof-leak-repairs", name: "Roof Leak Repairs", description: "Leaks traced back to where they start, fixed properly, and the damage inside put right." },
-        { slug: "roofing-solutions/metal-roof-replacement", name: "Metal Roof Replacement", description: "One rusted sheet, an old fibre cement roof or the whole lot. Colorbond and Zincalume, done properly." },
-        { slug: "roofing-solutions/metal-roof-restoration", name: "Metal Roof Restoration", description: "Roof tired but not finished? Rust treated, failures fixed, then coated for years more life." },
+        { slug: "roofing-solutions/metal-roof-replacement", name: "Metal Roof Replacement", description: "One rusted sheet, a tired roof that needs coating or the whole lot. Colorbond and Zincalume, done properly." },
         { slug: "roofing-solutions/polycarbonate-roofing-skylights", name: "Polycarbonate Roofing & Skylights", description: "Yellowed panels out. Light back in. Water stays out." },
         { slug: "roofing-solutions/storm-damage-make-safe", name: "Storm Damage & Make Safe", description: "Storm hits, we stop the water first. The proper fix comes after." },
         { slug: "roofing-solutions/roof-inspections-maintenance", name: "Roof Inspections & Maintenance", description: "Twice a year, every roof you manage. Photo reports and small fixes on the spot." },
@@ -3356,8 +3356,7 @@ export const services: Service[] = [
       titleHighlight: "THE WHOLE ROOF.",
       subtitle: "Every part of a commercial roof, from one contractor.",
       cards: [
-        { slug: "roofing-solutions/metal-roof-replacement", name: "Metal Roof Replacement", description: "One rusted sheet, an old fibre cement roof or the whole lot. Colorbond and Zincalume, done properly." },
-        { slug: "roofing-solutions/metal-roof-restoration", name: "Metal Roof Restoration", description: "Roof tired but not finished? Rust treated, failures fixed, then coated for years more life." },
+        { slug: "roofing-solutions/metal-roof-replacement", name: "Metal Roof Replacement", description: "One rusted sheet, a tired roof that needs coating or the whole lot. Colorbond and Zincalume, done properly." },
         { slug: "roofing-solutions/box-gutters-roof-drainage", name: "Box Gutters & Roof Drainage", description: "Where most warehouse leaks really begin. Gutters, sumps and downpipes repaired or replaced." },
         { slug: "roofing-solutions/polycarbonate-roofing-skylights", name: "Polycarbonate Roofing & Skylights", description: "Yellowed panels out. Light back in. Water stays out." },
         { slug: "roofing-solutions/storm-damage-make-safe", name: "Storm Damage & Make Safe", description: "Storm hits, we stop the water first. The proper fix comes after." },
@@ -3466,8 +3465,7 @@ export const services: Service[] = [
       subtitle: "Every part of a commercial roof, from one contractor.",
       cards: [
         { slug: "roofing-solutions/roof-leak-repairs", name: "Roof Leak Repairs", description: "Leaks traced back to where they start, fixed properly, and the damage inside put right." },
-        { slug: "roofing-solutions/metal-roof-replacement", name: "Metal Roof Replacement", description: "One rusted sheet, an old fibre cement roof or the whole lot. Colorbond and Zincalume, done properly." },
-        { slug: "roofing-solutions/metal-roof-restoration", name: "Metal Roof Restoration", description: "Roof tired but not finished? Rust treated, failures fixed, then coated for years more life." },
+        { slug: "roofing-solutions/metal-roof-replacement", name: "Metal Roof Replacement", description: "One rusted sheet, a tired roof that needs coating or the whole lot. Colorbond and Zincalume, done properly." },
         { slug: "roofing-solutions/box-gutters-roof-drainage", name: "Box Gutters & Roof Drainage", description: "Where most warehouse leaks really begin. Gutters, sumps and downpipes repaired or replaced." },
         { slug: "roofing-solutions/polycarbonate-roofing-skylights", name: "Polycarbonate Roofing & Skylights", description: "Yellowed panels out. Light back in. Water stays out." },
         { slug: "roofing-solutions/roof-inspections-maintenance", name: "Roof Inspections & Maintenance", description: "Twice a year, every roof you manage. Photo reports and small fixes on the spot." },
@@ -3475,114 +3473,6 @@ export const services: Service[] = [
       ]
     },
     relatedServices: ["roofing-solutions/roof-leak-repairs", "roofing-solutions/box-gutters-roof-drainage", "roofing-solutions/polycarbonate-roofing-skylights"],
-    category: "trade",
-    published: true
-  },
-  {
-    name: "Metal Roof Restoration",
-    slug: "roofing-solutions/metal-roof-restoration",
-    title: "Metal Roof Restoration",
-    metaTitle: "Metal Roof Restoration Melbourne | Make Good, BETTER.",
-    description: "Metal roof restoration and coating for warehouses, factories and commercial buildings across Melbourne. Rust treated, failed sheets and fixings replaced, then coated to buy the roof years more life.",
-    metaDescription: "Commercial metal roof restoration in Melbourne. Rust treatment, sheet and fixing repairs and protective roof coatings for warehouses and factories.",
-    heroText: "Roof tired, but not finished? We treat the rust, fix what's failed and coat it, so a warehouse or factory roof keeps going for years without the cost of a re-roof.",
-    ogImage: "/og/metal-roof-restoration.jpg",
-    heroImage: roofCoatingHeroImage,
-    heroImageAlt: "Roofer applying a protective coating to a commercial roof with a roller",
-    heroImageTitle: "Metal Roof Restoration Melbourne",
-    secondaryImage: metalRoofReplacementHeroImage,
-    secondaryImageAlt: "Metal deck roof sheeting across a large industrial warehouse roof",
-    secondaryImageTitle: "Commercial Metal Roof Coating Melbourne",
-    trustBadges: [
-      "Licensed Roof Plumbers",
-      "Fixed-Price Quotes",
-      "Photo Records"
-    ],
-    benefits: [
-      "Surface rust treated",
-      "Failed sheets and fixings replaced",
-      "Protective roof coatings",
-      "Heat reflective coating options",
-      "Less than the cost of a re-roof",
-      "Building kept running underneath"
-    ],
-    capabilityCards: [
-      {
-        icon: "brick",
-        title: "PREPARATION",
-        items: [
-          "Roof washed down",
-          "Surface rust treated",
-          "Failed sheets replaced",
-          "Loose and rusted fixings replaced",
-          "Laps, flashings and penetrations resealed",
-          "Leaks fixed before anything is coated"
-        ]
-      },
-      {
-        icon: "waterproof",
-        title: "COATING",
-        items: [
-          "Primer matched to the roof",
-          "Protective roof coating system",
-          "Heat reflective coating options",
-          "Flashings and gutters coated to match",
-          "Applied by roller or spray",
-          "Manufacturer warranty documentation"
-        ]
-      },
-      {
-        icon: "structure",
-        title: "THE HONEST CALL",
-        items: [
-          "Roof checked before we quote",
-          "Rust through? We'll say so",
-          "Asbestos roofs replaced, not coated",
-          "Photos of what we found",
-          "Restore or replace, priced side by side",
-          "Staged around your operations"
-        ]
-      }
-    ],
-    capabilitiesTitle: "WHAT'S INVOLVED",
-    capabilitiesSubtitle: "Proper preparation first. Coating second.",
-    scopeTitle: "RESTORE IT OR REPLACE IT?",
-    scopeBody: "Plenty of metal roofs look worse than they are. Faded, chalky and patchy with surface rust, but the sheets are still sound. That roof doesn't need replacing. It needs the rust treated, the bad bits fixed and a proper coating on top.\n\nCoating only works on a roof that's still worth saving. If the sheets have rusted through, a coat of paint just hides the problem for a season. We'll check it first and tell you straight, and if it's past saving we'll price a [metal roof replacement](/services/roofing-solutions/metal-roof-replacement/) instead.\n\nA restored roof also looks the part. Handy before re-leasing, selling or handing a building back at the end of a lease.",
-    process: [
-      { step: "Roof Inspection", description: "Full roof walk with photos of the sheets, rust, fixings, laps and flashings, plus height safety and access checks." },
-      { step: "Restore or Replace", description: "We tell you whether the roof is worth coating, and price the alternative if it isn't." },
-      { step: "Fixed-Price Quote", description: "Preparation, repairs and coating system priced in full, with nothing left to add later." },
-      { step: "Prepare and Coat", description: "Wash down, rust treatment and repairs first, then primer and coating, staged around your operations." },
-      { step: "Close Out", description: "Final inspection, photo record and the coating manufacturer's warranty documentation." }
-    ],
-    faqs: [
-      { question: "Is restoring a metal roof cheaper than replacing it?", answer: "Usually, yes, as long as the sheets are still sound. Once the roof has rusted through, coating stops making sense and replacement is the better spend. We'll price both if it's close." },
-      { question: "Will a coating fix my leaks?", answer: "Not on its own. Leaks come from fixings, laps, flashings and gutters, and we fix those before anything is coated. The coating protects the roof. It isn't a patch." },
-      { question: "Can you coat an asbestos roof?", answer: "No. Older fibre cement roofs that contain asbestos shouldn't be pressure cleaned or disturbed for coating. We'll recommend replacing them instead." },
-      { question: "How long does a roof coating last?", answer: "It depends on the coating system, how well the roof was prepared and how exposed it is. You'll get the manufacturer's warranty details with the quote." },
-      { question: "Can a coating keep the building cooler?", answer: "Heat reflective coatings can reduce how much heat the roof absorbs, which can help the space underneath on hot days. We'll talk you through the options." },
-      { question: "Can we keep working while you coat the roof?", answer: "Yes. The work happens on top of the roof in sections, and we plan around your operations, deliveries and staff." }
-    ],
-    ctaBlock: {
-      title: "Roof Tired but Not Finished?",
-      subtitle: "We do make goods all day, every day. Now we do the roof too.",
-      text: "Send us the address and a few photos of the roof. We'll tell you whether it's worth restoring and come back with a fixed price."
-    },
-    linkedSpotlightBlock: {
-      title: "ONE CALL.",
-      titleHighlight: "THE WHOLE ROOF.",
-      subtitle: "Every part of a commercial roof, from one contractor.",
-      cards: [
-        { slug: "roofing-solutions/roof-leak-repairs", name: "Roof Leak Repairs", description: "Leaks traced back to where they start, fixed properly, and the damage inside put right." },
-        { slug: "roofing-solutions/metal-roof-replacement", name: "Metal Roof Replacement", description: "One rusted sheet, an old fibre cement roof or the whole lot. Colorbond and Zincalume, done properly." },
-        { slug: "roofing-solutions/box-gutters-roof-drainage", name: "Box Gutters & Roof Drainage", description: "Where most warehouse leaks really begin. Gutters, sumps and downpipes repaired or replaced." },
-        { slug: "roofing-solutions/polycarbonate-roofing-skylights", name: "Polycarbonate Roofing & Skylights", description: "Yellowed panels out. Light back in. Water stays out." },
-        { slug: "roofing-solutions/storm-damage-make-safe", name: "Storm Damage & Make Safe", description: "Storm hits, we stop the water first. The proper fix comes after." },
-        { slug: "roofing-solutions/roof-inspections-maintenance", name: "Roof Inspections & Maintenance", description: "Twice a year, every roof you manage. Photo reports and small fixes on the spot." },
-        { slug: "roofing-solutions/roof-safety-access", name: "Roof Safety & Access", description: "Anchor points, static lines, walkways and guardrails. Installed, tagged and certified." }
-      ]
-    },
-    relatedServices: ["roofing-solutions/metal-roof-replacement", "roofing-solutions/roof-leak-repairs", "roofing-solutions/roof-inspections-maintenance"],
     category: "trade",
     published: true
   },
@@ -3681,8 +3571,7 @@ export const services: Service[] = [
       subtitle: "Every part of a commercial roof, from one contractor.",
       cards: [
         { slug: "roofing-solutions/roof-leak-repairs", name: "Roof Leak Repairs", description: "Leaks traced back to where they start, fixed properly, and the damage inside put right." },
-        { slug: "roofing-solutions/metal-roof-replacement", name: "Metal Roof Replacement", description: "One rusted sheet, an old fibre cement roof or the whole lot. Colorbond and Zincalume, done properly." },
-        { slug: "roofing-solutions/metal-roof-restoration", name: "Metal Roof Restoration", description: "Roof tired but not finished? Rust treated, failures fixed, then coated for years more life." },
+        { slug: "roofing-solutions/metal-roof-replacement", name: "Metal Roof Replacement", description: "One rusted sheet, a tired roof that needs coating or the whole lot. Colorbond and Zincalume, done properly." },
         { slug: "roofing-solutions/box-gutters-roof-drainage", name: "Box Gutters & Roof Drainage", description: "Where most warehouse leaks really begin. Gutters, sumps and downpipes repaired or replaced." },
         { slug: "roofing-solutions/polycarbonate-roofing-skylights", name: "Polycarbonate Roofing & Skylights", description: "Yellowed panels out. Light back in. Water stays out." },
         { slug: "roofing-solutions/storm-damage-make-safe", name: "Storm Damage & Make Safe", description: "Storm hits, we stop the water first. The proper fix comes after." },
@@ -3788,8 +3677,7 @@ export const services: Service[] = [
       subtitle: "Every part of a commercial roof, from one contractor.",
       cards: [
         { slug: "roofing-solutions/roof-leak-repairs", name: "Roof Leak Repairs", description: "Leaks traced back to where they start, fixed properly, and the damage inside put right." },
-        { slug: "roofing-solutions/metal-roof-replacement", name: "Metal Roof Replacement", description: "One rusted sheet, an old fibre cement roof or the whole lot. Colorbond and Zincalume, done properly." },
-        { slug: "roofing-solutions/metal-roof-restoration", name: "Metal Roof Restoration", description: "Roof tired but not finished? Rust treated, failures fixed, then coated for years more life." },
+        { slug: "roofing-solutions/metal-roof-replacement", name: "Metal Roof Replacement", description: "One rusted sheet, a tired roof that needs coating or the whole lot. Colorbond and Zincalume, done properly." },
         { slug: "roofing-solutions/box-gutters-roof-drainage", name: "Box Gutters & Roof Drainage", description: "Where most warehouse leaks really begin. Gutters, sumps and downpipes repaired or replaced." },
         { slug: "roofing-solutions/polycarbonate-roofing-skylights", name: "Polycarbonate Roofing & Skylights", description: "Yellowed panels out. Light back in. Water stays out." },
         { slug: "roofing-solutions/storm-damage-make-safe", name: "Storm Damage & Make Safe", description: "Storm hits, we stop the water first. The proper fix comes after." },

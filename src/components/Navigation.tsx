@@ -63,14 +63,13 @@ const serviceCategories = [
   {
     label: "Roofing Solutions",
     href: "/services/roofing-solutions/",  // Clickable category header
-    slugs: ['roofing-solutions/roof-leak-repairs', 'roofing-solutions/metal-roof-replacement', 'roofing-solutions/metal-roof-restoration', 'roofing-solutions/box-gutters-roof-drainage', 'roofing-solutions/polycarbonate-roofing-skylights', 'roofing-solutions/storm-damage-make-safe', 'roofing-solutions/roof-inspections-maintenance', 'roofing-solutions/roof-safety-access'],
+    slugs: ['roofing-solutions/roof-leak-repairs', 'roofing-solutions/metal-roof-replacement', 'roofing-solutions/box-gutters-roof-drainage', 'roofing-solutions/polycarbonate-roofing-skylights', 'roofing-solutions/storm-damage-make-safe', 'roofing-solutions/roof-inspections-maintenance', 'roofing-solutions/roof-safety-access'],
     displayNames: {
       'roofing-solutions/roof-leak-repairs': 'Roof Leak Repairs',
       'roofing-solutions/metal-roof-replacement': 'Metal Roof Replacement',
       'roofing-solutions/box-gutters-roof-drainage': 'Box Gutters & Drainage',
       'roofing-solutions/polycarbonate-roofing-skylights': 'Polycarbonate Roofing & Skylights',
       'roofing-solutions/storm-damage-make-safe': 'Storm Damage & Make Safe',
-      'roofing-solutions/metal-roof-restoration': 'Metal Roof Restoration',
       'roofing-solutions/roof-inspections-maintenance': 'Roof Inspections & Maintenance',
       'roofing-solutions/roof-safety-access': 'Roof Safety & Access'
     }
