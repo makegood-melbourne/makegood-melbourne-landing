@@ -61,7 +61,7 @@ import metalRoofReplacementHeroImage from "@/assets/services/metal-roof-replacem
 import boxGutterHeroImage from "@/assets/services/box-gutter-replacement-commercial-roof-melbourne.webp";
 import rainDrippingGutterImage from "@/assets/services/rain-dripping-roof-gutter-steel-frame-warehouse.webp";
 import leakRepairHeroImage from "@/assets/services/commercial-roof-leak-repair-roofer-harness-melbourne.webp";
-import roofPlantPenetrationsImage from "@/assets/services/commercial-roof-plant-penetrations-melbourne.webp";
+import roofLeakCeilingImage from "@/assets/services/roof-leak-water-stained-ceiling-tile-commercial-melbourne.webp";
 import stormMakeSafeHeroImage from "@/assets/services/storm-damage-roof-make-safe-heavy-rain-melbourne.webp";
 import asbestosRoofImage from "@/assets/blog/asbestos-management.jpg";
 import roofMaintenanceHeroImage from "@/assets/services/commercial-roof-inspection-maintenance-aerial-melbourne.webp";
@@ -3271,9 +3271,9 @@ export const services: Service[] = [
     heroImage: leakRepairHeroImage,
     heroImageAlt: "Roofer in a safety harness fixing metal roof sheets on a commercial warehouse",
     heroImageTitle: "Commercial Roof Leak Repairs Melbourne",
-    secondaryImage: roofPlantPenetrationsImage,
-    secondaryImageAlt: "Warehouse metal roof with an air conditioning plant platform, walkways and handrails",
-    secondaryImageTitle: "Roof Plant and Penetrations Melbourne",
+    secondaryImage: roofLeakCeilingImage,
+    secondaryImageAlt: "Water stained and sagging suspended ceiling tiles in a commercial building from a roof leak",
+    secondaryImageTitle: "Commercial Roof Leak Repairs Melbourne",
     trustBadges: [
       "Licensed Roof Plumbers",
       "Fixed-Price Quotes",
