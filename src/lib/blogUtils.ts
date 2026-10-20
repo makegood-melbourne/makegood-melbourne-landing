@@ -1,3 +1,6 @@
+import boxGutterLeaksImage from "@/assets/blog/box-gutter-leaks-warehouse-melbourne.webp";
+import commercialRoofMakeGoodImage from "@/assets/blog/commercial-roof-make-good-melbourne.webp";
+import commercialRoofStormDamageImage from "@/assets/blog/commercial-roof-storm-damage-first-24-hours-melbourne.webp";
 import warehouseHardstandImage from "@/assets/blog/warehouse-hardstand-loading-dock-repair-melbourne.webp";
 import cleaningImage from "@/assets/blog/cleaning-services.webp";
 import paintingImage from "@/assets/blog/painting-wall.webp";
@@ -95,6 +98,9 @@ const imageMap: Record<string, unknown> = {
   'commercial-office-patching-plastering-partition-removal-make-good-melbourne': patchingPlasteringImage,
   // Dedicated hardstand asset
     'warehouse-hardstand-loading-dock-repair-melbourne': warehouseHardstandImage,
+  'box-gutter-leaks-warehouse-melbourne': boxGutterLeaksImage,
+  'commercial-roof-make-good-melbourne': commercialRoofMakeGoodImage,
+  'commercial-roof-storm-damage-first-24-hours-melbourne': commercialRoofStormDamageImage,
 };
 
 // Normalize image imports across Astro + React builds.

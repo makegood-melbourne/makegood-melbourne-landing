@@ -13,6 +13,301 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: "47",
+    slug: "commercial-roof-storm-damage-first-24-hours-melbourne",
+    title: "Storm Damage on a Commercial Roof",
+    subtitle: "What to do in the first 24 hours",
+    date: "2026-10-15",
+    readTime: "5 min read",
+    excerpt: "A storm has damaged your warehouse or office roof. Here's what to do in the first 24 hours to keep people safe, limit the damage and keep your insurance claim on track.",
+    metaDescription: "Storm damaged commercial roof in Melbourne? What to do in the first 24 hours: safety, make safe, photos for your insurer or loss adjuster and permanent repairs.",
+    image: "/src/assets/blog/commercial-roof-storm-damage-first-24-hours-melbourne.webp",
+    imageAlt: "Heavy rain pouring over a gutter beneath a metal warehouse roof during a storm in Melbourne",
+    content: `Spring in Melbourne brings the kind of storms that test every commercial roof in the city. Wind lifts loose sheets, hail cracks skylights and the rain comes down faster than the box gutters can carry it away.
+
+If a storm has damaged your warehouse, factory or office roof, what you do in the first 24 hours makes a big difference to how much damage you end up with and how smoothly any insurance claim goes. Here's what to do, in order.
+
+## First, keep people safe
+
+Before anything else:
+
+- **Stay off the roof.** A storm damaged roof is dangerous. Wet sheets are slippery, damaged sheets may not hold weight and skylights can give way under a person.
+- **Keep people away from water near power.** If water is coming through near lights, switchboards, power points or machinery, keep everyone clear of that area until it's been checked.
+- **Watch for sagging ceilings.** A ceiling holding water can come down without much warning. Keep people out from under it.
+- **Call 000 if anyone is in danger.** A roofer and your insurer can sort the rest once everyone is safe.
+
+## Then, limit the damage inside
+
+Once it's safe, protect what you can:
+
+- Move stock, equipment, files and anything valuable away from leaks
+- Put buckets or bins under drips and cover anything that can't be moved
+- If you can do it safely from inside, isolate the power to wet areas
+- Squeegee or mop standing water so it doesn't spread across the floor
+
+Don't climb onto the roof to try a temporary fix yourself. That's the job for a roofer with the right access and safety gear.
+
+## Photograph everything
+
+Before anything gets cleaned up or moved too far, take photos and videos of:
+
+- Water coming through the ceiling or walls
+- Damaged stock, equipment and fittings
+- Stained or collapsed ceiling tiles
+- Any damage you can see from the ground outside, like lifted sheets or debris on the roof
+- The time and date, if your phone doesn't record it
+
+These photos are what your insurer and property manager will ask for first. You can't take them again once the mess is cleaned up.
+
+## Get the roof made safe
+
+Make safe is the temporary work that stops more water getting in. It's not the permanent repair. It usually involves:
+
+- Securing lifted or loose roof sheets
+- Covering broken skylights and damaged areas
+- Clearing blocked box gutters, sumps and downpipes so the next rain drains away
+- Coordinating electrical isolation where water has reached the services
+
+Make safe comes first because every hour that water keeps coming in adds to the damage underneath. Most insurance policies also expect you to take reasonable steps to stop further damage, so keep a record of what was done and when.
+
+## Tell your insurer and your property manager
+
+If you're a tenant, let your property manager or landlord know straight away. Roof damage often falls under the building owner's insurance, while stock and equipment usually fall under the tenant's own policy.
+
+On a commercial claim, the insurer will often appoint a loss adjuster to inspect the damage. The adjuster decides what's covered, but they still need a contractor's report and quote to approve the repair. That's where good documentation from the roofer matters:
+
+- Photos of the roof before, during and after the make safe
+- A written report of the storm damage found
+- An itemised repair scope that separates storm damage from existing wear and tear
+
+That last point matters more than most people realise. A roof with old rust or tired skylights doesn't stop a claim, but the insurer will want to know which damage the storm caused. A clear scope saves a lot of back and forth.
+
+Whether the damage is covered is always the insurer's decision. Check your policy and ask your broker if you're unsure.
+
+## What the permanent repair usually involves
+
+Once the weather clears and the scope is agreed, the permanent repairs start. On a commercial roof that might mean:
+
+| Storm damage | Usual permanent fix |
+|---|---|
+| Lifted or bent roof sheets | Replace the sheets and refix with new fasteners |
+| Hail cracked skylights | Replace with new polycarbonate sheets matched to the roof profile |
+| Overflowed box gutter | Repair or upsize the gutter and add overflows |
+| Damaged flashings | Replace and reseal |
+| Collapsed or stained ceiling tiles | Replace tiles and repair the grid |
+| Wet insulation, plasterboard or flooring | Remove, dry and reinstate |
+
+If the storm found an existing weakness, like a box gutter that was never big enough, it's worth fixing that properly while the roofer is there. Otherwise the same thing happens in the next storm.
+
+## Don't forget what's under the roof
+
+The roof is only half the job. Water that got inside can leave wet insulation, damaged ceilings and walls and, if left too long, mould. Our guide to [commercial water damage and mould remediation](/blog/commercial-water-damage-mould-remediation-melbourne/) covers what to do in the first 48 hours inside the building.
+
+## One contractor for the roof and the damage underneath
+
+Storm damage usually needs a roofer, an electrician, a ceiling fixer and someone to sort the water damage, all coordinated around an insurer. That's a lot of phone calls in the middle of a crisis.
+
+Our [storm damage and make safe](/services/roofing-solutions/storm-damage-make-safe/) service handles the make safe, the photos and report for your insurer, the permanent roof repairs and the reinstatement inside. We'll have someone on site within one business day of your call, and we coordinate [electrical make safe](/services/strip-out-solutions/make-safe/) and [water damage and mould remediation](/services/remediation-solutions/water-damage-mould-remediation/) as part of the same job.
+
+Send us the address, photos of the roof and the damage inside and tell us what's happening now. [Get in touch.](/contact/)`
+  },
+  {
+    id: "46",
+    slug: "commercial-roof-make-good-melbourne",
+    title: "Is the Roof Part of Your Make Good?",
+    subtitle: "What commercial leases usually ask for up top",
+    date: "2026-08-15",
+    readTime: "5 min read",
+    excerpt: "The roof rarely makes a tenant's make good list until the final inspection. Here's what leases commonly ask for up top, and who usually pays.",
+    metaDescription: "Is the roof part of your make good? What Melbourne commercial leases commonly ask for on the roof, tenant versus landlord items, plant removal, skylights and leaks.",
+    image: "/src/assets/blog/commercial-roof-make-good-melbourne.webp",
+    imageAlt: "Commercial warehouse roof with tenant air conditioning plant on a platform, walkways and solar panels",
+    content: `Most tenants planning a lease exit think about the inside of the building. Partitions out, walls patched, carpet replaced, racking removed, floor restored. The roof rarely makes the list.
+
+Then the final inspection comes around and someone asks about the water stain on the ceiling, the yellowed skylights or the holes left in the roof where the air conditioning units used to sit. Suddenly the roof is very much part of the make good.
+
+Here's how to work out what your lease is likely to ask for on the roof, what usually sits with the tenant and what sits with the landlord, and how to deal with it before it holds up handover.
+
+This is general information, not legal advice. Every lease is different, so read yours and get advice on anything unclear.
+
+## Why the roof gets missed
+
+The roof is out of sight. Tenants rarely go up there, condition reports often don't cover it in detail and the make good conversation tends to focus on what people walk past every day.
+
+But leases commonly ask the tenant to hand the premises back in the condition they took them, allowing for fair wear and tear, and to keep the premises in repair during the lease. On many commercial and industrial buildings the roof, gutters and skylights fall within the premises. If they've been damaged or altered during the tenancy, they can end up on the make good list.
+
+## What leases commonly ask for on the roof
+
+Lease wording varies, but these are the roof items that most often come up at handover:
+
+- **Watertight roof.** No active leaks, and no damage caused during the tenancy left unrepaired.
+- **Clear gutters and drainage.** Box gutters, sumps and downpipes clear and working.
+- **Skylights in reasonable condition.** Cracked or broken skylight sheets are often raised, especially if they weren't like that at the start.
+- **Tenant installations removed.** Plant, signage, exhaust fans, antennas and anything else the tenant added, taken off with the roof made good underneath.
+- **Penetrations sealed.** Every hole the tenant cut for services, flues or cabling properly flashed or the sheet replaced.
+- **Water damage inside repaired.** Stained ceiling tiles and damaged linings from roof leaks during the tenancy.
+
+## Tenant or landlord?
+
+This comes back to your lease, the condition the roof was in when you moved in and what caused the problem. A few things generally hold true:
+
+| Roof item | Usually tenant | Usually landlord |
+|---|---|---|
+| Removing plant, signage or exhaust fans the tenant installed | Yes | |
+| Sealing penetrations the tenant created | Yes | |
+| Damage caused by the tenant's contractors on the roof | Yes | |
+| Gutters blocked from lack of clearing, where the lease requires it | Often | |
+| Ceiling damage from leaks the tenant didn't report | Sometimes | |
+| Old age rust and general wear of roof sheets | | Usually |
+| A roof at the end of its life that needs replacing | | Usually |
+| Original skylights that have aged and yellowed | | Usually, unless the lease says otherwise |
+| Asbestos roofs that pre-date the tenancy | | Usually |
+
+For retail premises in Victoria, the Retail Leases Act 2003 generally makes the landlord responsible for maintaining the structure of the premises, which often includes the roof. Industrial and office leases are usually governed by the lease terms alone, so the wording matters even more.
+
+Where the cause is unclear, an independent look at the roof before works start is worth far more than an argument after the inspection. Good records help both sides, which is why we always recommend a proper ingoing condition report. Our guide to [dilapidation reports and make good](/blog/dilapidation-reports-melbourne-make-good/) covers why.
+
+## The items that catch tenants out
+
+### Holes where the plant used to be
+
+When a tenant removes rooftop air conditioning, exhaust fans or a cool room condenser, the roof underneath is left with penetrations. Sometimes there's a plinth, frames and a mess of old sealant too. Patching those holes with a dab of silicone won't pass a decent inspection and won't stay watertight. They need proper flashings or replacement sheets.
+
+### Skylights
+
+Polycarbonate and fibreglass skylight sheets yellow and become brittle with age. A forklift driver or contractor stepping on one leaves an obvious crack. Whether the tenant replaces them depends on their condition at the start and what caused the damage, so photos from the ingoing report matter. Our [polycarbonate roofing and skylights](/services/roofing-solutions/polycarbonate-roofing-skylights/) page covers what replacement involves.
+
+### Water stains on the ceiling
+
+Stained ceiling tiles are one of the first things a property manager notices. If the leak was reported promptly, it's often a landlord repair. If it wasn't, or it was caused by the tenant's plant or contractors, it's likely to end up on the make good list along with the ceiling tiles it damaged.
+
+### Gutters nobody cleared
+
+If the lease asks the tenant to keep gutters clear and they haven't been touched for years, blockages and the damage they caused can come back to the tenant.
+
+## Check the roof early, not at the final inspection
+
+The roof is the one part of a make good you can't see from the floor, so it's the one most likely to surprise you. A roof inspection a few months before lease end gives you time to:
+
+- Compare the roof's condition with the ingoing report
+- Work out which items are likely to be yours and which aren't
+- Agree the roof scope with the landlord or property manager in writing
+- Get any repairs done in dry weather, without rushing in the final fortnight
+
+## One quote for the roof and everything under it
+
+Roof work and make good work are usually connected. Plant comes off the roof at the same time as the fitout comes out underneath. A roof leak means a ceiling repair. Skylights get replaced while the warehouse floor is being restored.
+
+That's why we include roofing in our make good scope. Our [roofing solutions](/services/roofing-solutions/) cover leak repairs, [metal roof replacement and restoration](/services/roofing-solutions/metal-roof-replacement/), box gutters, skylights and storm damage, alongside the strip out, repairs and handover work inside. One contractor, one quote, one handover.
+
+Send us the address, your lease timing and any photos of the roof. We'll check it against the lease and come back with a fixed price. [Get in touch.](/contact/)`
+  },
+  {
+    id: "45",
+    slug: "box-gutter-leaks-warehouse-melbourne",
+    title: "Box Gutters and Warehouse Leaks",
+    subtitle: "Why they cause most commercial roof leaks, and how to stop it",
+    date: "2026-03-12",
+    readTime: "6 min read",
+    excerpt: "Most warehouse roof leaks start in the box gutter, not the sheets. Here's why box gutters fail, the warning signs inside and whether to clear, repair or replace.",
+    metaDescription: "Why box gutters cause most warehouse roof leaks in Melbourne. Blockages, rust, failed seals, undersized outlets and missing overflows, plus when to repair or replace.",
+    image: "/src/assets/blog/box-gutter-leaks-warehouse-melbourne.webp",
+    imageAlt: "Galvanised box gutter and flashings between corrugated metal roof sheets on a commercial building",
+    content: `Ask anyone who has managed a warehouse for long enough where their worst roof leak came from and you'll hear the same answer more often than not. It wasn't the sheets. It wasn't the skylights. It was the box gutter.
+
+Box gutters do a big job quietly. On most Melbourne warehouses and factories they collect the water off two roof slopes and carry it to the sumps and downpipes. When they work, nobody thinks about them. When they don't, the water doesn't spill harmlessly over the edge of the building. It runs back under the roof sheets and comes down inside, onto stock, ceilings, switchboards and floors.
+
+Here's why that happens, what the warning signs look like and what actually fixes it.
+
+## What a box gutter is, and why it's different
+
+An eaves gutter hangs off the outside edge of a roof. If it overflows, the water falls to the ground outside. Annoying, but rarely a disaster.
+
+A box gutter sits inside the roof. It's a flat bottomed channel, usually running along the valley between two roof slopes or behind a parapet wall. Water that it can't carry has nowhere to go except back over the edge of the gutter, under the roof sheets and into the building.
+
+That single design difference is why box gutters cause so many commercial leaks. An eaves gutter fails outside. A box gutter fails inside.
+
+## The five usual causes of a leaking box gutter
+
+Most box gutter leaks come down to one or more of these.
+
+### 1. Blockages
+
+Leaves, sticks, sediment, dead birds, tennis balls and the occasional forgotten tool. A box gutter only has so many outlets, and once a sump or outlet blocks, the gutter fills behind it. Sites near trees or with flat, slow draining gutters block faster than most.
+
+### 2. Rust at joints and low spots
+
+Box gutters are made in lengths and joined. The joints, the stop ends and any low spots where water sits after rain are where rust starts. Once it gets through, every downpour drips straight through the hole.
+
+### 3. Failed seals and laps
+
+Joints are sealed and riveted when the gutter goes in. Over years of heat, cold and movement those seals dry out and crack. The gutter can look fine from a distance and still leak at every joint.
+
+### 4. Outlets and sumps that are too small
+
+Some gutters were never big enough for the roof area they drain, or the building was extended and the drainage wasn't upgraded to match. They cope with light rain and overflow in a heavy storm, which is why some leaks only ever show up in a downpour.
+
+### 5. No overflows, or overflows that don't work
+
+When a box gutter blocks or can't keep up, it needs somewhere safe for the extra water to go. That's what overflows are for, whether they're overflow outlets, rainwater heads or weirs that spill outside the building. Older warehouses often have none, or have overflows that are blocked, too small or sitting higher than the point where water gets into the building.
+
+## Warning signs you'll see from the inside
+
+You don't need to get on the roof to spot a box gutter problem early. These are the signs to look for underneath:
+
+- Water stains or drips along a straight line, often under the valley between two roof slopes
+- Leaks that only appear in heavy rain, not light showers
+- Rust staining on purlins, beams or the underside of the roof sheets near the gutter line
+- Wet patches on the floor in the same spot after every storm
+- Water running down columns or walls near the middle of the building rather than the outside edge
+
+If you're seeing any of these, the box gutter is the first place to check.
+
+## Clear it, repair it or replace it?
+
+Not every box gutter problem needs a new gutter. The right fix depends on what's actually wrong.
+
+| What we find | Usually the fix |
+|---|---|
+| Blocked sumps and outlets, gutter in good condition | Clear it, then fix whatever keeps blocking it |
+| A few rusted joints or leaking laps | Repair and reseal those sections |
+| Rust through along the length of the gutter | Replace the gutter |
+| Gutter too small for the roof it drains | Upsize the outlets and downpipes, or replace the gutter |
+| No overflows, or overflows that don't work | Add or rebuild overflows so water spills outside |
+
+Clearing a blocked gutter fixes today's leak. It doesn't fix the reason it blocked. If the same gutter keeps blocking, it usually needs leaf guards, bigger outlets or a gutter with more fall, otherwise you'll be back on the roof after the next storm.
+
+Box gutter design and installation in Australia is covered by the roof drainage section of the plumbing standards (AS/NZS 3500.3), which sets out how gutters, sumps and overflows should be sized. Replacement and resizing should be done by licensed roof plumbers who work to it.
+
+## Scenarios we see all the time
+
+A logistics tenant in the west kept buying new pallets of stock to replace the ones ruined under one corner of the warehouse. Three different contractors had sealed the roof sheets above it. The leak was coming from a box gutter twenty metres away, where a blocked sump was backing water up under the sheets and the water was running along a purlin before it dripped.
+
+A manufacturer in the south east only ever had leaks in summer thunderstorms. The gutter was in good condition. It simply wasn't big enough. The building had been extended a decade earlier and the new roof area drained into the original gutter. Bigger outlets and a new overflow fixed it.
+
+A property manager arranged a gutter clear every autumn for years and still got tenant calls every winter. The gutter was clear. The joints had rusted through. Clearing was the right maintenance, but it couldn't fix a gutter that had reached the end of its life.
+
+## How to keep box gutters out of trouble
+
+Box gutters reward a little attention. A few habits go a long way:
+
+- **Clear them before winter.** Autumn, after the leaves have dropped and before the heavy rain, is the most important time.
+- **Check after big storms.** A storm can drop a season's worth of debris in one night.
+- **Look at the joints, not just the debris.** A clean gutter can still leak at every lap.
+- **Make sure there's an overflow.** If water has nowhere safe to go, it will find somewhere unsafe.
+- **Photograph it.** A photo record of the gutter's condition makes it much easier to see what's changing year to year.
+
+If you look after several buildings, putting the roofs on a schedule saves a lot of reactive call outs. Our [roof inspections and maintenance](/services/roofing-solutions/roof-inspections-maintenance/) service covers gutter and sump clearing, small repairs on the spot and a photo report after every visit.
+
+## Getting it fixed properly
+
+Box gutter leaks are usually fixable without replacing the whole roof. The key is finding the actual cause before anyone starts sealing things. Our [box gutters and roof drainage](/services/roofing-solutions/box-gutters-roof-drainage/) team repairs and replaces gutters, sumps, rainwater heads and downpipes on warehouses, factories and commercial buildings across Melbourne. If you're not sure the gutter is the problem, our [roof leak repairs](/services/roofing-solutions/roof-leak-repairs/) service traces the water back to where it starts.
+
+And because roofing sits with our make good work, the same team can repair the ceilings, walls and floors the water damaged. One quote, roof and all.
+
+Send us the address, photos of the gutter and any water marks inside and tell us when it leaks. [Get in touch.](/contact/)`
+  },
+  {
     id: "44",
     slug: "warehouse-hardstand-loading-dock-repair-melbourne",
         title: "Warehouse Hardstand and Loading Dock Repair",
