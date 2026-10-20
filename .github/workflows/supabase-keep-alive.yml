@@ -24,15 +24,19 @@ jobs:
     steps:
       - name: Query the database
         run: |
-          # Row level security means anon sees no rows, but Postgres still runs the query,
-          # which counts as activity. Expect HTTP 200 and an empty list.
+          # keep_alive is a one-row table that anon can read, so this is a real Postgres query.
+          # Expect HTTP 200 and [{"id":1}].
           status=$(curl -sS -o body.txt -w "%{http_code}" \
-            "$SUPABASE_URL/rest/v1/contact_enquiries?select=id&limit=1" \
+            "$SUPABASE_URL/rest/v1/keep_alive?select=id&limit=1" \
             -H "apikey: $SUPABASE_ANON_KEY" \
             -H "Authorization: Bearer $SUPABASE_ANON_KEY")
           echo "HTTP $status"
           cat body.txt; echo
           if [ "$status" != "200" ]; then
             echo "::error::Supabase did not respond normally (HTTP $status). The project may be paused. Resume it at https://supabase.com/dashboard/project/krgbykvrigbbkvyprqnb"
+            exit 1
+          fi
+          if ! grep -q '"id"' body.txt; then
+            echo "::error::Supabase answered but the keep_alive row was missing. Check the keep_alive table in the Table Editor."
             exit 1
           fi
