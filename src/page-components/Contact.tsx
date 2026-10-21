@@ -144,6 +144,14 @@ const Contact = () => {
 
       if (error) throw error;
 
+      // Flag a genuine submission so the thank-you page only counts real leads in Google Analytics
+      // (bots caught by the honeypot or time check are also sent to /thank-you, but without this flag)
+      try {
+        sessionStorage.setItem("mg_lead_submitted", sourcePage);
+      } catch {
+        // Storage unavailable (e.g. private mode); the lead just won't be tracked
+      }
+
       // Redirect to thank you page with conversion tracking
       window.location.href = "/thank-you";
     } catch (error: any) {

@@ -7,29 +7,33 @@ import { CheckCircle, ArrowRight, Clock, Mail } from "lucide-react";
 
 const ThankYouContent = () => {
   useEffect(() => {
-    // Track conversion event
-    if (typeof window !== "undefined") {
-      // Fire custom event for analytics (Google Analytics, etc.)
-      window.dispatchEvent(
-        new CustomEvent("contact_form_conversion", {
-          detail: {
-            timestamp: new Date().toISOString(),
-            page: window.location.href,
-          },
-        })
-      );
+    // Only count a lead when the contact form flagged a genuine submission.
+    // Direct visits, refreshes and bots caught by the spam checks are ignored.
+    let formLocation: string | null = null;
+    try {
+      formLocation = sessionStorage.getItem("mg_lead_submitted");
+      sessionStorage.removeItem("mg_lead_submitted");
+    } catch {
+      return;
+    }
+    if (!formLocation) return;
 
-      // Google Analytics 4 event (if gtag is available)
-      if ("gtag" in window && typeof (window as any).gtag === "function") {
-        (window as any).gtag("event", "generate_lead", {
-          event_category: "Contact",
-          event_label: "Contact Form Submission",
-          value: 1,
-        });
-      }
+    // Fire custom event for any other listeners
+    window.dispatchEvent(
+      new CustomEvent("contact_form_conversion", {
+        detail: {
+          timestamp: new Date().toISOString(),
+          page: formLocation,
+        },
+      })
+    );
 
-      // Console log for debugging/verification
-      console.log("[Conversion] Contact form submission confirmed");
+    // Google Analytics 4 key event (gtag is defined in BaseLayout on the live domain only)
+    const gtag = (window as any).gtag;
+    if (typeof gtag === "function") {
+      gtag("event", "generate_lead", {
+        form_location: formLocation,
+      });
     }
   }, []);
 
