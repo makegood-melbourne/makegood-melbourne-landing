@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Mail, MapPin, Phone, Clock, AlertTriangle } from "lucide-react";
+import { Mail, MapPin, Phone, Clock } from "lucide-react";
 import { useState, useRef, useEffect } from "react";
 import { toast } from "sonner";
 import { getBackendClient } from "@/lib/backendClient";
@@ -278,6 +278,7 @@ const Contact = () => {
                           <SelectItem value="make-safe">Make Safe Works</SelectItem>
                           <SelectItem value="remediation">Remediation & Rectification</SelectItem>
                           <SelectItem value="strip-out">Office/Warehouse Strip Out</SelectItem>
+                          <SelectItem value="roofing">Roofing Solutions</SelectItem>
                           <SelectItem value="other">Other Services</SelectItem>
                         </SelectContent>
                       </Select>
@@ -365,23 +366,6 @@ const Contact = () => {
                         <h3 className="font-semibold text-lg text-card-foreground mb-1">Email Response</h3>
                         <p className="text-muted-foreground">All enquiries answered within 24 hours</p>
                         <p className="text-muted-foreground">Available 7 days a week</p>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-
-                <Card className="border-accent/30 bg-accent/5">
-                  <CardContent className="pt-6">
-                    <div className="flex items-start gap-4">
-                      <div className="w-12 h-12 rounded-lg bg-accent/20 flex items-center justify-center flex-shrink-0">
-                        <AlertTriangle className="h-6 w-6 text-accent" />
-                      </div>
-                      <div>
-                        <h3 className="font-semibold text-lg text-foreground mb-1">Urgent Make Safe?</h3>
-                        <p className="text-muted-foreground mb-2">
-                          We handle urgent works during business hours—water damage, fire damage, structural concerns.
-                        </p>
-                        <p className="text-accent font-medium">Contact us during business hours for a rapid response</p>
                       </div>
                     </div>
                   </CardContent>
