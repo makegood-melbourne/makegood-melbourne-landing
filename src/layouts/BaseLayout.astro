@@ -142,6 +142,23 @@ const ogImageType = ogImage.toLowerCase().endsWith('.png')
       }
     </style>
     
+    <!-- Google Analytics (GA4). Only loads on the live domain so Netlify deploy previews and local dev don't pollute reports. -->
+    <script is:inline>
+      (function () {
+        var host = window.location.hostname;
+        if (host !== 'makegood.melbourne' && host !== 'www.makegood.melbourne') return;
+        var id = 'G-NRFEK9QS75';
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=' + id;
+        document.head.appendChild(s);
+        window.dataLayer = window.dataLayer || [];
+        window.gtag = function () { window.dataLayer.push(arguments); };
+        window.gtag('js', new Date());
+        window.gtag('config', id);
+      })();
+    </script>
+
     <!-- Additional head content from pages -->
     <slot name="head" />
   </head>
