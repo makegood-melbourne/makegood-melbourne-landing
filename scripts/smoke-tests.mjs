@@ -15,7 +15,8 @@ const SUPABASE_ANON_KEY = process.env.VITE_SUPABASE_PUBLISHABLE_KEY || "eyJhbGci
 const CONTACT_ENDPOINT = `${SUPABASE_URL}/functions/v1/send-contact-email`;
 const CHAT_ENDPOINT = `${SUPABASE_URL}/functions/v1/chat`;
 
-const TIMEOUT_MS = 10000;
+// 30s: the chatbot only returns headers once the AI model starts replying, which can take over 10s
+const TIMEOUT_MS = 30000;
 
 async function testEndpoint(name, url, options = {}) {
   console.log(`\n🔍 Testing ${name}...`);
