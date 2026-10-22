@@ -1,6 +1,9 @@
 import { Mail, Shield, MapPin } from "lucide-react";
 import logo from "@/assets/makegood-melbourne-logo.png";
 import { resolveImageSrc } from "@/lib/resolveImageSrc";
+import { serviceCategories, getServicesByCategory } from "@/data/serviceCategories";
+import { getFeaturedLocations } from "@/data/locations";
+import { getAllIndustries } from "@/data/industries";
 
 const Footer = () => {
   return (
@@ -109,6 +112,64 @@ const Footer = () => {
             </ul>
           </div>
         </div>
+
+        {/* Site links: plain links on every page so visitors and search engines can reach every service, area and industry page */}
+        <nav aria-label="Footer" className="border-t border-border pt-8 mb-8">
+          <h4 className="font-semibold mb-4 text-foreground">Services</h4>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 mb-8">
+            {serviceCategories.map((category) => {
+              const categoryServices = getServicesByCategory(category.slugs);
+              return (
+                <div key={category.label}>
+                  <a href={category.href} className="text-sm font-semibold text-accent hover:text-accent/80 transition-colors">
+                    {category.label}
+                  </a>
+                  <ul className="mt-2 space-y-1.5">
+                    {categoryServices.map((service) => (
+                      <li key={service.slug}>
+                        <a href={`/services/${service.slug}/`} className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                          {category.displayNames?.[service.slug] || service.name}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              );
+            })}
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            <div>
+              <h4 className="font-semibold mb-3 text-foreground">Popular Service Areas</h4>
+              <ul className="flex flex-wrap gap-x-4 gap-y-1.5">
+                {getFeaturedLocations().map((location) => (
+                  <li key={location.slug}>
+                    <a href={`/areas/${location.slug}/`} className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                      {location.name}
+                    </a>
+                  </li>
+                ))}
+                <li>
+                  <a href="/service-areas/" className="text-sm font-medium text-accent hover:text-accent/80 transition-colors">
+                    All service areas
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="font-semibold mb-3 text-foreground">Industries</h4>
+              <ul className="flex flex-wrap gap-x-4 gap-y-1.5">
+                {getAllIndustries().map((industry) => (
+                  <li key={industry.slug}>
+                    <a href={`/industries/${industry.slug}/`} className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                      {industry.name}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </nav>
 
         <div className="border-t border-border pt-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">

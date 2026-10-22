@@ -12,7 +12,8 @@ const Blog = () => {
   const sortedPosts = sortBlogPostsByDate(blogPosts);
   const [visibleCount, setVisibleCount] = useState(POSTS_PER_PAGE);
 
-  const visiblePosts = sortedPosts.slice(0, visibleCount);
+  // Every post is rendered into the HTML so search engines can find them all;
+  // posts beyond visibleCount are just hidden until "Load More" is clicked.
   const hasMore = visibleCount < sortedPosts.length;
 
   const handleLoadMore = () => {
@@ -57,8 +58,8 @@ const Blog = () => {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {visiblePosts.map((post) => (
-              <Card key={post.id} className="border-border hover:shadow-lg transition-shadow overflow-hidden group">
+            {sortedPosts.map((post, index) => (
+              <Card key={post.id} className={`border-border hover:shadow-lg transition-shadow overflow-hidden group${index >= visibleCount ? " hidden" : ""}`}>
                 <a href={`/blog/${post.slug}/`} className="block aspect-video overflow-hidden">
                   <img 
                     src={getBlogImage(post.image)}
