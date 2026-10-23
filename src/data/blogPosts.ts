@@ -590,7 +590,7 @@ Send us the address, photos of the gutter and any water marks inside and tell us
     slug: "restaurant-cafe-make-good-melbourne",
     title: "Restaurant and Café Make Goods",
     subtitle: "Kitchens, canopies, grease traps and the floor underneath",
-    date: "2026-11-17",
+    date: "2026-10-01",
     readTime: "11 min read",
     excerpt: "Closing a restaurant or café means the kitchen, canopy, grease trap and cool room all need dealing with. Here's how a food tenancy make good runs, in the right order.",
     metaDescription: "Restaurant and café make goods in Melbourne: kitchen strip out, exhaust canopies, grease traps, cool rooms and floor reinstatement, done by licensed trades.",
