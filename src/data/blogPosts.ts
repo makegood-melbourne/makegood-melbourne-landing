@@ -214,7 +214,7 @@ Send us the address, photos of the roof and the damage inside and tell us what's
     slug: "asbestos-cement-roof-restore-overclad-replace-melbourne",
     title: "Asbestos Cement Roofs: Restore, Overclad or Replace?",
     subtitle: "Your options for an old fibre cement warehouse roof",
-    date: "2026-11-03",
+    date: "2026-09-01",
     readTime: "11 min read",
     excerpt: "An old asbestos cement roof on a Melbourne warehouse leaves owners with three options. Here's what restoring, overcladding and replacing each involve, and when each makes sense.",
     metaDescription: "Asbestos cement warehouse roof in Melbourne? Restore, overclad or replace explained, with licensed asbestos removal, clearance certificates and one fixed price.",
