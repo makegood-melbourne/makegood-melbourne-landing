@@ -22,7 +22,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "Two make good quotes for the same tenancy can be miles apart. Here's what actually drives the price, and what to send a contractor to get an accurate quote.",
     metaDescription: "What drives make good costs in Melbourne: tenancy size, condition, lease clauses, scope and timing. What to send a contractor for an accurate fixed price quote.",
     image: "/src/assets/blog/make-good-cost-quote-site-inspection-melbourne.webp",
-    imageAlt: "Contractor inspecting an empty commercial office tenancy with partitions and carpet ahead of a make good quote in Melbourne",
+    imageAlt: "Contractor in a hard hat and hi vis vest walking a warehouse aisle lined with pallet racking, drums and IBCs ahead of a make good quote in Melbourne",
     content: `Two make good quotes land on your desk for the same tenancy. One is half the other. Neither comes with much explanation.
 
 That's the most common call we get from tenants approaching lease end. They want to know what a make good should cost, and why the numbers are all over the place.
