@@ -219,7 +219,7 @@ Send us the address, photos of the roof and the damage inside and tell us what's
     excerpt: "An old asbestos cement roof on a Melbourne warehouse leaves owners with three options. Here's what restoring, overcladding and replacing each involve, and when each makes sense.",
     metaDescription: "Asbestos cement warehouse roof in Melbourne? Restore, overclad or replace explained, with licensed asbestos removal, clearance certificates and one fixed price.",
     image: "/src/assets/blog/asbestos-cement-warehouse-roof-replacement-melbourne.webp",
-    imageAlt: "Weathered corrugated fibre cement roof on an older industrial warehouse being assessed for replacement in Melbourne",
+    imageAlt: "Weathered corrugated fibre cement roof with lichen, ridge capping and a roof vent on an older industrial building in Melbourne",
     content: `Plenty of Melbourne warehouses and factories built before the late 1980s still have a fibre cement roof. Corrugated, grey, often streaked with moss and lichen. On many of them, that sheet contains asbestos.
 
 Sooner or later the roof starts leaking, a sheet cracks or an insurer starts asking questions. Then the owner or property manager has three options on the table. Restore it, overclad it or replace it.
