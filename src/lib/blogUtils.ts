@@ -5,6 +5,7 @@ import commercialRoofStormDamageImage from "@/assets/blog/commercial-roof-storm-
 import warehouseHardstandImage from "@/assets/blog/warehouse-hardstand-loading-dock-repair-melbourne.webp";
 import cleaningImage from "@/assets/blog/cleaning-services.webp";
 import paintingImage from "@/assets/blog/painting-wall.webp";
+import asbestosCementRoofImage from "@/assets/blog/asbestos-cement-warehouse-roof-replacement-melbourne.webp";
 import warehouseImage from "@/assets/blog/warehouse-makegood.webp";
 import propertyImage from "@/assets/blog/property-transformation.webp";
 import newYearImage from "@/assets/blog/new-year-makegood.webp";
@@ -61,6 +62,7 @@ const imageMap: Record<string, unknown> = {
   'office-strip-out': officeStripOutImage,
   'construction-site-meeting': constructionMeetingImage,
   'epoxy-flooring': epoxyFlooringImage,
+  'asbestos-cement-warehouse-roof-replacement-melbourne': asbestosCementRoofImage,
   'pallet-racking': palletRackingImage,
   'commercial-make-good': commercialMakeGoodImage,
   'condition-report': conditionReportImage,

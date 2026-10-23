@@ -452,6 +452,220 @@ Our [storm damage and make safe](/services/roofing-solutions/storm-damage-make-s
 Send us the address, photos of the roof and the damage inside and tell us what's happening now. [Get in touch.](/contact/)`
   },
   {
+    id: "49",
+    slug: "asbestos-cement-roof-restore-overclad-replace-melbourne",
+    title: "Asbestos Cement Roofs: Restore, Overclad or Replace?",
+    subtitle: "Your options for an old fibre cement warehouse roof",
+    date: "2026-09-01",
+    readTime: "11 min read",
+    excerpt: "An old asbestos cement roof on a Melbourne warehouse leaves owners with three options. Here's what restoring, overcladding and replacing each involve, and when each makes sense.",
+    metaDescription: "Asbestos cement warehouse roof in Melbourne? Restore, overclad or replace explained, with licensed asbestos removal, clearance certificates and one fixed price.",
+    image: "/src/assets/blog/asbestos-cement-warehouse-roof-replacement-melbourne.webp",
+    imageAlt: "Weathered corrugated fibre cement roof with lichen, ridge capping and a roof vent on an older industrial building in Melbourne",
+    content: `Plenty of Melbourne warehouses and factories built before the late 1980s still have a fibre cement roof. Corrugated, grey, often streaked with moss and lichen. On many of them, that sheet contains asbestos.
+
+Sooner or later the roof starts leaking, a sheet cracks or an insurer starts asking questions. Then the owner or property manager has three options on the table. Restore it, overclad it or replace it.
+
+This post walks through each option for commercial and industrial roofs, what it involves and when it makes sense. One thing up front. Any work that disturbs asbestos cement is done by a licensed asbestos removalist, not a general roofer. We coordinate that work. We don't skip it.
+
+This is general information. Every roof is different, and the right answer for yours comes from an inspection, the asbestos register and advice from the right licensed people.
+
+## How to tell if your roof is asbestos cement
+
+You can't confirm asbestos by looking. But a few signs point to it:
+
+- The building was built or reroofed before the late 1980s
+- The sheets are grey fibre cement, often corrugated or deep profile
+- The surface is weathered, rough or covered in moss and lichen
+- The building's asbestos register lists the roof
+
+Victorian workplaces in buildings built before 2004 need an asbestos register. Ask the owner or property manager for it. If the roof isn't listed and you suspect it, get a sample tested by a competent person before anyone works on it.
+
+Until it's confirmed either way, treat it as asbestos.
+
+## Why asbestos cement roofs become a problem
+
+Asbestos cement is stable while it's sound and left alone. The trouble is that roofs don't get left alone, and they don't stay sound forever.
+
+- **Weathering.** Decades of sun, rain and frost erode the surface. Fibres sit closer to the face of the sheet.
+- **Brittleness.** Old sheets crack under foot traffic, hail and fallen branches.
+- **Fixings.** Bolts and washers rust. Sheets loosen and lift in wind.
+- **Leaks.** Cracks and failed laps let water into the building below.
+- **Fall risk.** An old fibre cement roof won't take a person's weight. People have fallen through these roofs doing simple maintenance.
+
+So the roof that was fine for forty years starts costing money in leaks, repairs and safety controls. That's usually when the restore, overclad or replace conversation starts.
+
+## The rules you can't work around
+
+Before looking at the options, a few things apply to every one of them:
+
+- **No high pressure water.** Water blasting or using compressed air on asbestos materials is illegal in every Australian state. That rules out the usual roof cleaning methods.
+- **No power tools that release dust.** Grinding, sanding, abrasive cutting and wire brushing are off the table.
+- **Licensed removal.** Removing asbestos cement sheet beyond a small area needs a licensed asbestos removalist. In practice, a commercial roof is always licensed work.
+- **Notification and clearance.** Licensed removal work is notified to WorkSafe Victoria before it starts. Once the work is done, a clearance inspection and certificate confirm the area is safe.
+- **Fall protection.** Fibre cement roofs are fragile. Safety mesh, walkways, scaffolding or edge protection are part of any job up there.
+
+Any contractor who suggests a quick pressure clean and a coat of paint on an asbestos roof is telling you something you shouldn't do.
+
+## Option 1: Restore the roof
+
+Restoring means repairing and sealing the existing sheets so they last longer. On an asbestos cement roof, the work has to happen without disturbing the sheet surface.
+
+What it usually involves:
+
+- Replacing individual cracked or broken sheets, with the old sheets removed by a licensed removalist
+- Replacing rusted fixings and failed flashings
+- Treating moss and lichen with methods that don't abrade the surface
+- Applying a coating designed to seal and encapsulate the sheet, applied without high pressure
+
+When restoration can make sense:
+
+- The sheets are still mostly sound
+- The building has a limited remaining life or a sale or redevelopment is planned
+- The budget needs to be spread out
+- The owner wants to keep disruption inside the building to a minimum
+
+The catches:
+
+- It doesn't remove the asbestos. The roof stays on the register and has to be managed.
+- Old, brittle sheets keep cracking. Coating doesn't fix that.
+- It's a short to medium term answer, not a permanent one.
+- Not every coating or contractor is suitable for asbestos cement. The method matters as much as the product.
+
+## Option 2: Overclad the roof
+
+Overcladding means installing a new metal roof over the top of the existing asbestos cement sheets. The old roof stays in place, sealed underneath the new one.
+
+What it usually involves:
+
+- An inspection and engineering check that the structure can carry the extra load
+- New purlins or brackets fixed through the old roof to the structure below
+- New Colorbond or Zincalume sheets fixed over the top
+- New flashings, gutters and capping to suit the new roof line
+- Work to the fixing points through the asbestos sheet done under asbestos controls
+
+When overcladding can make sense:
+
+- The structure is sound and can take the extra weight
+- The building needs to keep running underneath with minimal disruption
+- Full removal would mean exposing stock, machinery or operations to the weather
+- The owner wants a watertight roof without the full cost and complexity of removal right now
+
+The catches:
+
+- The asbestos is still there. It stays on the register and must be dealt with when the building is eventually demolished or reroofed again.
+- Every fixing through the old roof is work on asbestos material, so it needs a licensed and properly controlled approach.
+- Future buyers, tenants and insurers will still see asbestos on the register.
+- Box gutters, skylights and penetrations need careful detailing or they become the next leak.
+
+## Option 3: Replace the roof
+
+Replacing means removing the asbestos cement sheets completely and installing a new metal roof.
+
+What it usually involves:
+
+- A licensed asbestos removalist removing the sheets under a controlled process
+- Notification to WorkSafe before the removal starts
+- Air monitoring during removal, where required
+- Wrapping, transporting and disposing of the asbestos waste at an approved facility
+- A clearance inspection and certificate once the asbestos is gone
+- New insulation and sarking, if specified
+- New metal roof sheets, flashings, gutters and skylights
+- An updated asbestos register showing the roof has been removed
+
+When replacement makes sense:
+
+- The sheets are brittle, cracked or failing in many places
+- Leaks are causing damage to stock, plant or the building below
+- The building has a long future ahead of it
+- The owner wants the asbestos gone for good, including for sale, finance or insurance reasons
+- Solar or new plant is planned for the roof
+
+The catches:
+
+- It's the biggest of the three jobs in cost, time and planning.
+- The building below is exposed while sections are open, so staging and weather planning matter.
+- Operations underneath may need to move or stop in the area being worked on.
+
+## Restore, overclad or replace: side by side
+
+| | Restore | Overclad | Replace |
+|---|---|---|---|
+| Asbestos stays in place | Yes | Yes | No |
+| Stays on the asbestos register | Yes | Yes | No |
+| Licensed asbestos work needed | For any sheet removal | For fixings and any removal | Yes, for the whole roof |
+| Disruption below | Low | Low to medium | Medium to high |
+| Expected life | Shortest | Long | Longest |
+| Relative cost | Lowest | Middle | Highest |
+| Good fit for | Sound sheets, short horizon | Sound structure, can't stop operations | Failing roof, long term building |
+
+## What drives the choice
+
+There's no single right answer. The decision usually comes down to these questions:
+
+- **How bad are the sheets?** A roof with a few cracked sheets is a very different case to one that's brittle all over.
+- **Can the structure carry an overclad?** If not, that option is out.
+- **How long will the building be kept?** A building facing redevelopment in five years doesn't need a thirty year roof.
+- **What's happening underneath?** Cold storage, food production and high value stock change the risk of opening the roof.
+- **What do the insurer, financier or buyer need?** Some will push for removal.
+- **Is solar or new plant coming?** Fixing new equipment through asbestos cement is a problem you don't want twice.
+- **Who's responsible under the lease?** For a tenanted building, the roof structure usually sits with the owner. Check the lease before anyone commits.
+
+## Tenants and asbestos roofs at lease end
+
+If you're a tenant, an asbestos cement roof that was there before you moved in usually isn't yours to replace. But a few things can come back to you:
+
+- Damage to sheets caused by your contractors or plant
+- Rooftop plant, signage or exhaust fans you fixed through the roof
+- Penetrations you made that now need sealing
+
+Removing your plant from an asbestos roof isn't a quick unbolt job. The fixings go through asbestos material, so removal and making good the sheets needs licensed controls. Our guide to [what the roof means for your make good](/blog/commercial-roof-make-good-melbourne/) covers the tenant and landlord split in more detail.
+
+## Real situations we see
+
+A food distributor in the south east had an asbestos cement roof with leaks over the cold storage area. Full removal would have meant shutting part of the operation down. The structure checked out, so the owner chose to overclad. The building stayed running, the leaks stopped and the asbestos stayed on the register for a future project.
+
+An owner in the north had a 1970s factory with sheets cracking every time someone walked to the gutter. They'd spent years patching it. With a long term tenant signing on, they replaced the whole roof in stages, section by section, with clearance certificates at each stage.
+
+A landlord in the west wanted to install solar before selling. The roof was asbestos cement in fair condition. Fixing panels through it would have meant more asbestos work and a harder sale. Replacement came first, solar second.
+
+## How to plan the work
+
+Whatever option you land on, the order is the same:
+
+- Check the asbestos register and get the roof sampled if it's not listed
+- Get a roof inspection with photos, focusing on sheet condition, fixings, gutters and skylights
+- Get the structure checked if overcladding is on the table
+- Decide on the option with the owner, tenant and insurer in the loop
+- Plan staging around operations below and the weather
+- Book the licensed asbestos removalist and roofers as one coordinated program
+- Make sure clearance certificates and an updated register are part of the handover
+
+Spring and early summer are usually the best windows. Plan in winter, work in the dry. Our full guide to [asbestos management and safe removal](/blog/asbestos-management-commercial-make-good-safe-removal/) covers the removal process in more depth.
+
+## Asbestos roof questions owners ask
+
+**Can we just leave it alone?**
+If the sheets are sound, it's on the register and nobody needs to work on it, leaving it can be a reasonable short term choice. But it still has to be managed, inspected and kept off limits to foot traffic. Leaks and cracked sheets don't stay small.
+
+**Can we paint over it?**
+Coating can be part of a restoration, but only with methods that don't disturb the sheet. Painting doesn't make the asbestos go away, and it doesn't fix brittle sheets.
+
+**How long does a replacement take?**
+It depends on roof size, staging and the weather. A small factory roof can be done in a few weeks. A large warehouse done in stages around operations takes longer. The program is set once the scope and staging are agreed.
+
+**Will the building be empty while it happens?**
+Not necessarily. Most replacements are staged so the building keeps running, with areas under open sections cleared or protected while that part is worked on.
+
+## One contractor for the whole roof
+
+An asbestos roof job involves licensed removalists, roof plumbers, sometimes an engineer and sometimes electricians for plant and solar. Coordinating them yourself means a lot of handoffs.
+
+Our [metal roof replacement](/services/roofing-solutions/metal-roof-replacement/) service covers restoration, overcladding and full asbestos roof replacement for warehouses, factories and commercial buildings. Licensed asbestos removalists handle the asbestos work, our roofers handle the new roof and you get one program and one fixed price. Our wider [roofing services](/services/roofing-solutions/) cover box gutters, skylights and leak repairs on the same job.
+
+Send through the property address, any photos of the roof and the asbestos register if you have it. We'll come back with the options and a fixed price. [Get in touch.](/contact/)`
+  },
+  {
     id: "46",
     slug: "commercial-roof-make-good-melbourne",
     title: "Is the Roof Part of Your Make Good?",
