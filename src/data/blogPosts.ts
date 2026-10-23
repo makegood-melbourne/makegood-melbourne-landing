@@ -776,7 +776,7 @@ More tenants are putting solar on their roofs. At lease end, unless you've agree
 
 ### Asbestos roofs
 
-Some older warehouses still have fibre cement roofs that contain asbestos. A tenant isn't usually responsible for replacing an asbestos roof that was there before they arrived. But if tenant work damaged it, or the tenant's plant was fixed through it, removing that plant needs care, a licensed removalist and a clearance certificate. Our [asbestos guide](/blog/asbestos-management-commercial-make-good-safe-removal/) covers the process.
+Some older warehouses still have fibre cement roofs that contain asbestos. A tenant isn't usually responsible for replacing an asbestos roof that was there before they arrived. But if tenant work damaged it, or the tenant's plant was fixed through it, removing that plant needs care, a licensed removalist and a clearance certificate. Our [asbestos guide](/blog/asbestos-management-commercial-make-good-safe-removal/) covers the process. If you own the building and are weighing up the whole roof, our guide to [restoring, overcladding or replacing an asbestos cement roof](/blog/asbestos-cement-roof-restore-overclad-replace-melbourne/) walks through the options.
 
 ## Real situations we see
 
@@ -1320,7 +1320,7 @@ A licensed plumber disconnects and caps sinks, hand basins, dishwashers, glass w
 
 ## Exhaust canopies and ductwork
 
-The kitchen exhaust is usually the most complicated single item in a restaurant make good. It's not just a stainless hood on the wall.
+The kitchen exhaust is usually the most complicated single item in a restaurant make good. The canopy is the big stainless steel hood over the cooking line, sometimes called a range hood or exhaust hood. It catches grease, smoke and steam and sends it up the ductwork to an exhaust fan. The hood is only the part you can see.
 
 A typical system has:
 
@@ -1942,6 +1942,8 @@ What is left once the panels are gone is often a floor that is in a different co
 
 If the cool room had any refrigerant pipework running through walls or the roof, that needs to be traced and removed in full, not just cut off at the cool room end and left in place.
 
+Restaurants and cafés deal with the same problem on a smaller scale, alongside canopies and grease traps. Our guide to [restaurant and café make goods](/blog/restaurant-cafe-make-good-melbourne/) covers the kitchen side.
+
 ---
 
 ## Heavy Machinery and Infrastructure: Unbolting Ten Years of Operations
@@ -2438,6 +2440,8 @@ The overnight work requirement adds cost. Night rates for trades are higher than
 
 Centre-specific requirements like hoarding installation and waste removal logistics are also real cost items. They are not optional and they should be included in any quote you accept.
 
+Food tenancies add another layer again, with canopies, grease traps and cool rooms. Our guide to [restaurant and café make goods](/blog/restaurant-cafe-make-good-melbourne/) covers them.
+
 Getting a fixed-price quote based on your actual scope — not a ballpark figure — is how you protect yourself. You should know the number before works start, not after.
 
 ---
@@ -2515,7 +2519,7 @@ For a make good contractor, the ingoing condition report is the most important d
 
 **It defines the scope.** The report is the benchmark we work back to. We use it to conduct a site inspection and compare the current state of the property to its original condition. This process creates a clear, itemised list of reinstatement works. There is no guesswork and no argument — the report either shows something was there at the start or it does not.
 
-**It allows accurate quoting.** A detailed report with photos lets us provide a fixed, accurate quote for the make good. We can see exactly what needs to be done. Without a report, there are too many variables and assumptions, which leads to price uncertainty and potential cost blowouts for the tenant.
+**It allows accurate quoting.** A detailed report with photos lets us provide a fixed, accurate quote for the make good. We can see exactly what needs to be done. Without a report, there are too many variables and assumptions, which leads to price uncertainty and potential cost blowouts for the tenant. Our guide to [what drives make good costs](/blog/make-good-cost-drivers-melbourne/) explains how the report fits alongside the lease, the scope and the timing.
 
 **It protects the tenant.** The report is the tenant's proof of what the property looked like on day one. It shows what damage was already there before they moved in. A tenant should not pay to fix pre-existing issues — and with a solid condition report, they do not have to.
 
@@ -3668,6 +3672,8 @@ Before any make good demolition or strip-out works commence, asbestos assessment
 
 ### Common Make Good Scenarios Involving Asbestos
 
+Roofs are a case of their own. Our guide to [asbestos cement roofs](/blog/asbestos-cement-roof-restore-overclad-replace-melbourne/) compares restoring, overcladding and replacing them.
+
 **Ceiling Removal**:
 - Acoustic ceiling tiles may contain asbestos
 - Ceiling panel backing boards
@@ -4220,6 +4226,8 @@ Electrical make safe is the process of safely decommissioning, isolating, and di
 - Large HVAC systems
 - Specialty equipment
 - Requires licensed electrician familiar with three-phase systems
+
+Kitchens and medical clinics carry the most dedicated circuits of any tenancy. Our guides to [restaurant and café make goods](/blog/restaurant-cafe-make-good-melbourne/) and [medical and dental clinic make goods](/blog/medical-dental-clinic-make-good-melbourne/) cover how the make safe fits into those jobs.
 
 ### Warehouse and Industrial Electrical
 
@@ -8703,6 +8711,8 @@ Budget surprises are among the most common sources of lease-end stress:
 
 ### 1. Early Cost Assessment
 
+For a breakdown of what actually moves the price, see our guide to [what drives make good costs in Melbourne](/blog/make-good-cost-drivers-melbourne/).
+
 **Initial Planning (First Year of Tenancy)**:
 - Obtain preliminary quotes for eventual make good works
 - Set aside monthly provisions in your operating budget
@@ -10427,7 +10437,7 @@ Furthermore, an office strip out can also enhance your company's image and reput
 
 ## Understanding the process of an office strip out.
 
-Before diving into the planning and execution of an office strip out, it's important to understand the process involved. An office strip out typically involves the removal of furniture, fixtures, and equipment, as well as the demolition and disposal of any unwanted materials.
+Before diving into the planning and execution of an office strip out, it's important to understand the process involved. An office strip out typically involves the removal of furniture, fixtures, and equipment, as well as the demolition and disposal of any unwanted materials. Some tenancies carry far more services than a standard office. Medical and dental clinics are the main example, and our [clinic make good guide](/blog/medical-dental-clinic-make-good-melbourne/) covers what's different.
 
 The process begins with a thorough assessment of the space and its requirements. This includes identifying the areas to be stripped out, evaluating the condition of existing furniture and equipment, and determining any salvageable items. It's important to involve key stakeholders in this assessment to ensure all needs and preferences are considered.
 
