@@ -16,6 +16,7 @@ import conditionReportImage from "@/assets/blog/condition-report.webp";
 import leaseTransitionsImage from "@/assets/blog/lease-transitions.webp";
 import makeGoodServicesImage from "@/assets/blog/make-good-services.webp";
 import tenantLandlordImage from "@/assets/blog/tenant-landlord-communication.webp";
+import restaurantCafeMakeGoodImage from "@/assets/blog/commercial-kitchen-strip-out-make-good-melbourne.webp";
 import smoothMakeGoodImage from "@/assets/blog/smooth-make-good-experience.webp";
 import concreteCancerImage from "@/assets/blog/concrete-cancer.webp";
 import balconyWaterproofingImage from "@/assets/blog/balcony-waterproofing.webp";
@@ -76,6 +77,7 @@ const imageMap: Record<string, unknown> = {
   'polycarbonate-roofing': polycarbonateRoofingImage,
   'facade-cladding-remediation': facadeCladdingRemediationImage,
   'car-park-line-marking': carParkLineMarkingImage,
+  'commercial-kitchen-strip-out-make-good-melbourne': restaurantCafeMakeGoodImage,
   'fire-damage-restoration': fireDamageRestorationImage,
   'waste-management-sustainability': wasteManagementSustainabilityImage,
   'parapet-failure-emergency-repairs': parapetFailureEmergencyRepairsImage,
