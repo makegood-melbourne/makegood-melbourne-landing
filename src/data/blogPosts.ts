@@ -405,7 +405,7 @@ Send us the address, your lease timing and any photos of the roof. We'll check i
     excerpt: "Medical and dental clinics are some of the most heavily serviced tenancies to make good. Here's how plumbing, lead lined x-ray rooms and specialist fitout come out properly.",
     metaDescription: "Medical and dental clinic make goods in Melbourne: plumbing and services removal, lead lined x-ray rooms, specialist fitout strip out and floor reinstatement.",
     image: "/src/assets/blog/dental-clinic-strip-out-make-good-melbourne.webp",
-    imageAlt: "Empty dental surgery with floor service box and capped plumbing after fitout removal during a clinic make good in Melbourne",
+    imageAlt: "Dental surgery with patient chair, operating light, hand piece unit and clinical cabinetry ahead of a clinic make good in Melbourne",
     content: `A medical or dental clinic is one of the most heavily serviced fitouts a commercial tenancy will ever hold. Hand basins in every room. Plumbing under the floor to every chair. Compressors, suction plant, medical gases, data, nurse call. Sometimes a room lined with lead.
 
 All of it went in for a reason. At lease end, most of it has to come out again, and the shell has to go back to what the lease asks for.
