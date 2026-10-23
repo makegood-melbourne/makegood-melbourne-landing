@@ -17,7 +17,7 @@ export const blogPosts: BlogPost[] = [
     slug: "make-good-cost-drivers-melbourne",
     title: "What Drives Make Good Costs in Melbourne",
     subtitle: "Why two quotes for the same tenancy look so different",
-    date: "2026-10-27",
+    date: "2026-08-01",
     readTime: "11 min read",
     excerpt: "Two make good quotes for the same tenancy can be miles apart. Here's what actually drives the price, and what to send a contractor to get an accurate quote.",
     metaDescription: "What drives make good costs in Melbourne: tenancy size, condition, lease clauses, scope and timing. What to send a contractor for an accurate fixed price quote.",
