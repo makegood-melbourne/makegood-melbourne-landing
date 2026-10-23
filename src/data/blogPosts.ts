@@ -400,7 +400,7 @@ Send us the address, your lease timing and any photos of the roof. We'll check i
     slug: "medical-dental-clinic-make-good-melbourne",
     title: "Medical and Dental Clinic Make Goods",
     subtitle: "Plumbing, x-ray rooms and the specialist fitout underneath",
-    date: "2026-11-10",
+    date: "2026-09-15",
     readTime: "11 min read",
     excerpt: "Medical and dental clinics are some of the most heavily serviced tenancies to make good. Here's how plumbing, lead lined x-ray rooms and specialist fitout come out properly.",
     metaDescription: "Medical and dental clinic make goods in Melbourne: plumbing and services removal, lead lined x-ray rooms, specialist fitout strip out and floor reinstatement.",
