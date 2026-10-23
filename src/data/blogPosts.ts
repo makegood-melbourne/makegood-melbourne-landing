@@ -1247,6 +1247,220 @@ And because roofing sits with our make good work, the same team can repair the c
 Send us the address, photos of the gutter and any water marks inside and tell us when it leaks. [Get in touch.](/contact/)`
   },
   {
+    id: "51",
+    slug: "restaurant-cafe-make-good-melbourne",
+    title: "Restaurant and Café Make Goods",
+    subtitle: "Kitchens, canopies, grease traps and the floor underneath",
+    date: "2026-10-01",
+    readTime: "11 min read",
+    excerpt: "Closing a restaurant or café means the kitchen, canopy, grease trap and cool room all need dealing with. Here's how a food tenancy make good runs, in the right order.",
+    metaDescription: "Restaurant and café make goods in Melbourne: kitchen strip out, exhaust canopies, grease traps, cool rooms and floor reinstatement, done by licensed trades.",
+    image: "/src/assets/blog/commercial-kitchen-strip-out-make-good-melbourne.webp",
+    imageAlt: "Stainless steel commercial kitchen with exhaust canopy, ovens, prep benches and floor grate ahead of a restaurant make good in Melbourne",
+    content: `Closing a restaurant or café is hard enough. Then the lease asks for the kitchen to come out, the canopy to come down and the floor to go back to how it was. And the landlord wants it done in three weeks.
+
+Food tenancies are some of the most involved make goods we do. Gas, grease, refrigeration, exhaust through the roof, tiles bonded to the slab. Every part needs the right trade, in the right order.
+
+This post walks through what a restaurant or café make good involves, from the kitchen strip out to the floor reinstatement, so you can plan it properly and avoid the expensive surprises.
+
+This is general information. Your lease decides what you owe, so read it and get advice on anything unclear.
+
+## Check what the landlord wants to keep
+
+Before anything gets pulled out, find out what stays. This is the biggest single factor in the cost of a food tenancy make good.
+
+Many landlords want to re-lease to another food business. A working canopy, grease trap or cool room can be worth a lot to the next tenant. Pulling them out, then having the next tenant put them back, wastes everyone's money.
+
+Ask the landlord or property manager about:
+
+- The exhaust canopy and ductwork
+- The grease trap
+- The cool room and freezer
+- Gas and three phase power
+- Floor wastes and kitchen floor finishes
+- The shopfront and outdoor dining fixtures
+
+Get the answer in writing. A verbal "leave the canopy" can turn into "why is the canopy still here" at the final inspection.
+
+## The order of work
+
+A food tenancy make good usually runs in this order:
+
+- Clear food, stock and waste
+- Disconnect gas and isolate power
+- Decommission refrigeration and recover refrigerant
+- Decommission the canopy fire suppression and exhaust
+- Remove equipment and the kitchen fitout
+- Remove the canopy, ductwork and roof or riser penetrations
+- Pump out and decommission the grease trap, if it's coming out
+- Remove the cool room
+- Strip floor and wall finishes
+- Reinstate floors, walls, ceilings and services
+- Clean and hand over
+
+Skip a step or swap the order and trades end up waiting on each other, or work gets done twice.
+
+## Kitchen strip out
+
+### Gas and power first
+
+A licensed gasfitter disconnects and caps every gas appliance, and makes the gas supply safe back to where the lease says it ends. A licensed electrician isolates and terminates the kitchen circuits, including three phase supplies to cooking equipment, dishwashers and refrigeration. Nothing gets unbolted until both are done.
+
+### Equipment
+
+Cooktops, ovens, fryers, combi ovens, dishwashers, fridges and benches all come out. Some is owned outright, some is leased or financed and some belongs to the landlord. Check what's yours before it goes in the skip. Finance companies and landlords both get upset about missing equipment.
+
+### Stainless steel and joinery
+
+Stainless benches, shelving, splashbacks and wall cladding are unfixed and removed. Front of house counters, display fridges, banquettes and joinery come out too. Wall fixings and hole patching come later, during reinstatement.
+
+### Plumbing
+
+A licensed plumber disconnects and caps sinks, hand basins, dishwashers, glass washers, ice machines and coffee machine water supplies. Any floor wastes and drainage added during the fitout get capped below the floor so they don't become a leak or a smell later.
+
+## Exhaust canopies and ductwork
+
+The kitchen exhaust is usually the most complicated single item in a restaurant make good. It's not just a stainless hood on the wall.
+
+A typical system has:
+
+- The canopy over the cooking line, with grease filters
+- Ductwork running up through the ceiling and out through the roof or a riser
+- An exhaust fan on the roof or in a plant area
+- A make up air system supplying fresh air
+- A wet chemical fire suppression system in many kitchens
+- Fire rated duct enclosures in multi storey buildings
+
+### Removing it properly
+
+- **Fire suppression first.** A fire services contractor decommissions the wet chemical system and disconnects it from any fire alarm panel in the building.
+- **Clean before removal.** Ducts and canopies are coated in grease. Cleaning first stops grease ending up through the building during removal.
+- **Canopy and duct removal.** The canopy is unfixed and the duct dismantled section by section, back to the roof or riser.
+- **Roof penetrations.** Where the duct went through the roof, the penetration is sealed with proper flashings or new roof sheets. Silicone over a hole isn't a repair.
+- **Fire rating.** Where the duct passed through a fire rated wall, floor or riser, the openings have to be reinstated to their fire rating, with a certificate.
+- **Fans and make up air.** Roof fans and make up air units come off, and their bases and penetrations get made good.
+
+In a shopping centre or multi storey building, the centre or building manager usually has rules about riser access, roof access and fire system works. Book those early.
+
+## Grease traps
+
+Most Melbourne food businesses discharge to sewer under a trade waste agreement with their water retailer, and that agreement usually includes a grease trap.
+
+At lease end, the grease trap needs:
+
+- **A final pump out and clean.** Done by a licensed liquid waste contractor.
+- **A decision on whether it stays.** Many landlords want it left for the next food tenant. If it stays, hand it over clean and serviced, with the records.
+- **Decommissioning if it goes.** A licensed plumber disconnects it and removes or decommissions it to the water retailer's and landlord's requirements. The pit is filled and the surface made good.
+- **The trade waste agreement closed.** Tell your water retailer you're leaving. Charges keep running until the agreement is cancelled.
+
+A grease trap that's been missed for a few months before closing can need more than a standard pump out. Get it looked at well before handover.
+
+## Cool rooms and freezers
+
+Walk in cool rooms and freezers are common in restaurants and cafés, and often sit on their own insulated floor or set down slab.
+
+Removing them involves:
+
+- Refrigerant recovered by a licensed refrigeration technician before any lines are cut
+- Electrical isolation and termination by a licensed electrician
+- Refrigeration plant, condensers and pipework removed, including anything on the roof
+- Insulated panels dismantled and separated for recycling where possible
+- Insulated floor panels, screeds and vapour barriers removed
+- Drains capped and the floor reinstated to match the surrounding area
+
+Condensers on the roof leave fixing points and penetrations behind, just like the exhaust fan. Those need proper roof repairs too.
+
+The same principles apply at a much bigger scale in warehouses. Our guide to [removing mezzanines and cool rooms in a warehouse make good](/blog/warehouse-demolition-mezzanine-cool-room-removal/) covers the process in more detail.
+
+## Floor reinstatement
+
+The kitchen floor is often the part of a food make good that costs the most to put right, and the part tenants budget least for.
+
+Commercial kitchen floors are built to be wet, hot and greasy. That usually means:
+
+- Ceramic or quarry tiles bonded to a screed
+- Epoxy or polyurethane flooring with coved skirtings
+- Welded vinyl
+- Floor wastes, drainage channels and set down areas built into the slab
+- Grease and oil soaked into anything porous
+
+### What reinstatement involves
+
+- Removing tiles, screeds, epoxy or vinyl down to the slab
+- Removing coved skirtings and the adhesive behind them
+- Cutting out and capping floor wastes and drainage channels the tenant added
+- Filling set downs and channels to match the surrounding slab level
+- Grinding to remove grease, adhesive and coatings
+- Levelling and preparing the slab for the finish the lease asks for
+
+### Front of house floors
+
+The dining room usually has its own finish. Timber, polished concrete, tiles or carpet. Same principle. Back to the condition the lease requires, with any holes from fixed seating, bars and counters patched and levelled.
+
+## Walls, ceilings and the shopfront
+
+The rest of the tenancy needs attention too:
+
+- Patching holes from stainless cladding, shelving and fixings
+- Removing grease staining before painting, or it bleeds through
+- Replacing ceiling tiles stained by steam and grease
+- Removing bulkheads and ceiling features built for the fitout
+- Removing signage inside and out, and repairing the fixing points
+- Reinstating the shopfront if it was altered
+- Removing outdoor dining fixtures, planter boxes and screens
+
+## Handover cleaning
+
+Food tenancies need more than a vacuum. Grease gets everywhere, including walls, ceilings, high ledges and the air conditioning grilles. A proper degrease and clean before the final inspection is part of the job, not an extra. Our [handover services](/services/handover-solutions/) cover the final clean so the tenancy is ready to inspect.
+
+## Shopping centre food courts and retail strips
+
+Food tenancies in shopping centres follow the centre's rules on top of the lease. That usually means night work, hoarding, booked loading dock times and centre approval for fire system and roof works. Our guide to [retail make goods in shopping centres](/blog/retail-make-good-melbourne-shopping-centre-tenants/) covers how those rules affect timing and cost.
+
+Strip shop cafés are simpler on access, but often have older buildings with less documentation. Roof access, old drainage and unknown services behind wall linings are more common.
+
+## Real situations we see
+
+A café in an inner north strip removed everything, including a grease trap the landlord had wanted kept. The next tenant was a café too. The landlord asked for the trap to be reinstalled at the outgoing tenant's cost.
+
+A restaurant in a CBD building removed its canopy but left the duct penetrations through a fire rated riser open. The building manager wouldn't sign off until the riser was reinstated and certified, delaying the bond return by a month.
+
+A bakery in the south east had a quarry tile kitchen floor with a long drainage channel cut into the slab. The tenant's budget covered tile removal only. Filling the channel and levelling the set down doubled the floor cost.
+
+## Planning your food tenancy make good
+
+- Read the lease make good clause and find the ingoing condition report
+- Ask the landlord what stays, in writing
+- Book the gasfitter, electrician and refrigeration technician first
+- Organise the final grease trap pump out and close the trade waste agreement
+- Arrange building or centre approvals for roof, riser and fire works
+- Get a site inspection and a fixed price for the whole scope
+- Allow time for floor reinstatement, it's usually longer than people expect
+- Finish with a proper degrease and clean
+
+## Restaurant make good questions we get asked
+
+**Can I sell the kitchen to the next tenant?**
+Often, yes, if the landlord agrees. Selling equipment and fitout to an incoming food business is common. Get the landlord's written consent and agree who's responsible for what before anything changes hands.
+
+**Who pays if the grease trap belongs to the landlord?**
+If the landlord installed it, it's usually theirs to keep. You're still normally expected to hand it back pumped out, clean and working, since you used it. Check the lease.
+
+**How long does a restaurant make good take?**
+A small café can be done in a week or two. A full restaurant with a canopy through the roof, a cool room and a tiled kitchen floor takes longer, especially if roof or riser work needs building approval. Floor reinstatement is usually the longest stage.
+
+**Can we keep trading while the make good is planned?**
+Yes. Inspections, quotes and approvals can all happen while you're open. The physical work starts once you've closed and cleared the stock.
+
+## One contractor, kitchen to keys
+
+A restaurant or café make good involves more licensed trades than almost any other tenancy. Gasfitters, electricians, plumbers, refrigeration technicians, fire services, roofers, floor specialists, painters and cleaners.
+
+Our [strip out service](/services/strip-out-solutions/) covers the full kitchen and fitout removal, and our [handover services](/services/handover-solutions/) take care of the final clean and the keys. One program, one fixed price, one point of contact.
+
+Send through the property address and lease timing and we can review the scope. [Get in touch.](/contact/)`
+  },
+  {
     id: "44",
     slug: "warehouse-hardstand-loading-dock-repair-melbourne",
         title: "Warehouse Hardstand and Loading Dock Repair",
