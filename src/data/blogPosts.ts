@@ -595,7 +595,7 @@ Send us the address, photos of the gutter and any water marks inside and tell us
     excerpt: "Closing a restaurant or café means the kitchen, canopy, grease trap and cool room all need dealing with. Here's how a food tenancy make good runs, in the right order.",
     metaDescription: "Restaurant and café make goods in Melbourne: kitchen strip out, exhaust canopies, grease traps, cool rooms and floor reinstatement, done by licensed trades.",
     image: "/src/assets/blog/commercial-kitchen-strip-out-make-good-melbourne.webp",
-    imageAlt: "Commercial restaurant kitchen with stainless steel benches and exhaust canopy ready for strip out at lease end in Melbourne",
+    imageAlt: "Stainless steel commercial kitchen with exhaust canopy, ovens, prep benches and floor grate ahead of a restaurant make good in Melbourne",
     content: `Closing a restaurant or café is hard enough. Then the lease asks for the kitchen to come out, the canopy to come down and the floor to go back to how it was. And the landlord wants it done in three weeks.
 
 Food tenancies are some of the most involved make goods we do. Gas, grease, refrigeration, exhaust through the roof, tiles bonded to the slab. Every part needs the right trade, in the right order.
