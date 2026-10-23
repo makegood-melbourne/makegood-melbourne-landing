@@ -1,4 +1,5 @@
 import boxGutterLeaksImage from "@/assets/blog/box-gutter-leaks-warehouse-melbourne.webp";
+import makeGoodCostDriversImage from "@/assets/blog/make-good-cost-quote-site-inspection-melbourne.webp";
 import commercialRoofMakeGoodImage from "@/assets/blog/commercial-roof-make-good-melbourne.webp";
 import commercialRoofStormDamageImage from "@/assets/blog/commercial-roof-storm-damage-first-24-hours-melbourne.webp";
 import warehouseHardstandImage from "@/assets/blog/warehouse-hardstand-loading-dock-repair-melbourne.webp";
@@ -50,6 +51,7 @@ import { resolveImageSrc } from "@/lib/resolveImageSrc";
 
 const imageMap: Record<string, unknown> = {
   'commercial-water-damage-ceiling-melbourne': commercialWaterDamageCeilingImage,
+  'make-good-cost-quote-site-inspection-melbourne': makeGoodCostDriversImage,
   'commercial-painting-melbourne': commercialPaintingMelbourneImage,
   'cleaning-services': cleaningImage,
   'painting-wall': paintingImage,

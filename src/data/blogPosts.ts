@@ -13,6 +13,248 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: "48",
+    slug: "make-good-cost-drivers-melbourne",
+    title: "What Drives Make Good Costs in Melbourne",
+    subtitle: "Why two quotes for the same tenancy look so different",
+    date: "2026-10-27",
+    readTime: "11 min read",
+    excerpt: "Two make good quotes for the same tenancy can be miles apart. Here's what actually drives the price, and what to send a contractor to get an accurate quote.",
+    metaDescription: "What drives make good costs in Melbourne: tenancy size, condition, lease clauses, scope and timing. What to send a contractor for an accurate fixed price quote.",
+    image: "/src/assets/blog/make-good-cost-quote-site-inspection-melbourne.webp",
+    imageAlt: "Contractor inspecting an empty commercial office tenancy with partitions and carpet ahead of a make good quote in Melbourne",
+    content: `Two make good quotes land on your desk for the same tenancy. One is half the other. Neither comes with much explanation.
+
+That's the most common call we get from tenants approaching lease end. They want to know what a make good should cost, and why the numbers are all over the place.
+
+There's no honest square metre rate for a make good. Two tenancies of the same size can need completely different work. What we can do is explain what actually moves the price, so you can read a quote properly and give a contractor what they need to price it accurately.
+
+This is general information, not legal or financial advice. Your lease decides what you owe, so read it and get advice on anything unclear.
+
+## Why there's no standard make good price
+
+A make good isn't a product. It's whatever your lease says has to happen, measured against the condition the premises were in when you moved in.
+
+That means the price comes from three things:
+
+- What your lease asks for
+- What you changed or damaged during the tenancy
+- How, when and where the work has to happen
+
+A contractor who quotes a rate per square metre over the phone is guessing. Sometimes the guess is close. Often it isn't, and the difference shows up as variations once work starts.
+
+## The five things that drive make good costs
+
+### 1. Tenancy size
+
+Size matters, but less than most people think. Floor area drives the obvious items:
+
+- Square metres of carpet or vinyl to lift and replace
+- Square metres of ceiling to repair or retile
+- Lineal metres of wall to patch and paint
+- Volume of waste to remove
+
+But a large, simple space can cost less than a small, complicated one. A 2,000 square metre warehouse with bare walls and a sound slab is a lighter job than a 300 square metre office with partitions, a kitchen, comms rooms and a raised floor.
+
+### 2. Condition at the end versus condition at the start
+
+This is the one that swings the price most. The make good is measured against the ingoing condition, so the gap between the two is the scope.
+
+Things that widen the gap:
+
+- Partition walls, offices and rooms you built
+- Holes from signage, shelving, screens and fixings
+- Damaged or stained carpet and ceiling tiles
+- Slab damage from forklifts, racking anchors and machinery
+- Services you added, like extra power, data, plumbing or air conditioning
+- Rooftop plant and the penetrations under it
+
+Things that narrow it:
+
+- A detailed ingoing condition report showing existing wear
+- Alterations the landlord agreed could stay
+- Repairs you've kept up with during the lease
+
+Without an ingoing report, the scope becomes whatever the landlord's agent says it is. That almost always costs the tenant more. Our guide to [dilapidation reports and make good](/blog/dilapidation-reports-melbourne-make-good/) explains why that document matters so much.
+
+### 3. What the lease clauses actually say
+
+Two leases can describe the same tenancy and ask for very different things. The wording drives the scope, and the scope drives the price.
+
+Clauses that change the number:
+
+- **Reinstate to original condition.** Everything you added comes out and the space goes back to how it was. This is the heaviest version.
+- **Fair wear and tear allowed.** Normal ageing isn't your problem. Faded paint and worn carpet in traffic areas may not need replacing.
+- **Repaint and recarpet clauses.** Some leases require full repainting and new floor coverings regardless of condition. That's a big fixed cost.
+- **Return to base building.** You hand back a shell to the landlord's specification, which may be different to what you moved into.
+- **Removal at landlord's election.** The landlord decides near the end what stays and what goes. Until they decide, the scope is open.
+- **Payment in lieu.** The landlord takes money instead of the work. Worth knowing about before you book trades.
+
+If your lease gives the landlord a choice, push for that decision in writing as early as you can. A contractor can't give you a firm price for a scope nobody has agreed.
+
+### 4. Scope of works
+
+Once the lease and the condition are known, the scope is the list of actual work. Some items carry far more weight than others.
+
+The lighter items:
+
+- Patching small fixing holes
+- Repainting walls in good condition
+- Replacing a handful of ceiling tiles
+- Removing loose furniture and fittings
+
+The heavier items:
+
+- Demolishing partitions, offices and mezzanines
+- Removing and replacing floor coverings across the whole tenancy
+- Grinding and repairing slab damage
+- Removing cool rooms, racking or machinery
+- Capping and removing services back to base building
+- Electrical make safe and disconnection
+- Roof penetrations from removed plant
+- Asbestos, if it's found in anything being disturbed
+
+Any item that needs a licensed trade, a certificate or specialist equipment adds cost and time. That's not padding. It's the work.
+
+### 5. Timing and access
+
+When and how the work happens changes the price as much as what the work is.
+
+Things that push costs up:
+
+- **Short notice.** Trades booked at a week's notice cost more and limit your options.
+- **After hours work.** Shopping centres, office towers and occupied buildings often restrict noisy work to nights or weekends. Night rates are higher.
+- **Building rules.** Loading dock bookings, goods lift times, security inductions and protection of common areas all take time.
+- **Working around operations.** If you're still trading while the make good happens, work is staged and slower.
+- **Hard access.** Upper floors with no goods lift, tight laneways, no parking for skips.
+- **Peak season.** The end of the financial year and December are busy. Everyone wants trades at once.
+
+Things that bring costs down:
+
+- An empty tenancy with clear access
+- Normal working hours
+- Enough lead time to sequence trades properly
+- A loading dock or skip location sorted in advance
+
+## Hidden items that blow out a quote
+
+Most budget blowouts come from things nobody saw at quote stage. The usual suspects:
+
+- **Asbestos.** Older buildings can have it in floor tiles, adhesives, wall linings and roof sheets. If it's in something being disturbed, it has to be handled by a licensed removalist.
+- **Slab damage under floor coverings.** Lift the carpet or vinyl and you might find cracked, stained or uneven concrete.
+- **Services hidden in ceilings and walls.** Old cabling, abandoned data and redundant pipework the landlord wants removed.
+- **Damage behind fitout.** Partitions and joinery can hide holes, water damage or patched walls.
+- **Roof issues.** Leaks and penetrations nobody looked at until the final inspection.
+
+You can't remove every unknown. But a proper site inspection, a look under the floor coverings in a few spots and an asbestos register check before quoting cut the surprises right down.
+
+## Why quotes for the same job can vary so much
+
+When two quotes are far apart, it's usually one of these reasons:
+
+| Reason | What it looks like on the quote |
+|---|---|
+| Different scope | One quote includes items the other left out |
+| Assumptions | Lower quote assumes fair wear and tear on items the lease may not allow |
+| Exclusions | Asbestos, after hours work or slab repairs listed as excluded |
+| Provisional sums | A placeholder amount for unknown work that may increase later |
+| Rates versus fixed price | Hourly or daywork pricing that grows with the job |
+| Site inspection | One contractor walked the site, the other priced from photos |
+| Certificates | One includes electrical certificates and clearances, one doesn't |
+
+The cheaper quote isn't always the cheaper job. Read the exclusions first. That's where the real difference usually sits.
+
+## How to get an accurate make good quote
+
+The better the information you give a contractor, the tighter the price. Here's what to have ready.
+
+### Documents to send
+
+- The make good, repair and alterations clauses from your lease
+- Your ingoing condition report or dilapidation report, with photos
+- Any written list of works from the landlord or property manager
+- Floor plans, if you have them
+- A list of alterations you made, and which ones the landlord agreed could stay
+- The asbestos register for the building, if it's an older property
+- Your lease end date and when you need the space empty
+
+### What to ask for
+
+- A site inspection before the price, not after
+- A fixed price against a clear scope
+- Every exclusion listed in writing
+- Any provisional sums explained, with what triggers them
+- Which certificates are included at handover
+- A program showing how long each stage takes
+
+### What to watch for
+
+- Prices given without a site visit
+- Vague line items like "make good works" with no breakdown
+- Long exclusion lists that move the risk back to you
+- No mention of waste removal, permits or building requirements
+
+## Real situations we see
+
+An engineering firm in the eastern suburbs got two quotes. The lower one excluded slab repairs entirely. Once the machinery came out, the floor had dozens of anchor holes and two cracked bays. The work still had to be done, at variation rates, in the final week.
+
+A professional services tenant in the CBD budgeted for a full strip out. Their lease said the landlord could elect what stayed. The incoming tenant wanted the meeting rooms and kitchen. Once that was agreed in writing, the scope dropped by more than half.
+
+A distribution tenant in the west had no ingoing condition report. The property manager's list included worn line marking, faded paint and old hairline cracks in the slab. Without photos from the start of the lease, the tenant had little to push back with and paid for most of it.
+
+## When to get your quote
+
+Earlier is cheaper. Not because contractors charge less for early work, but because time gives you options.
+
+With time on your side you can:
+
+- Get the scope agreed with the landlord before anyone prices it
+- Compare quotes properly instead of signing the first one that fits the date
+- Book trades in normal hours rather than nights and weekends
+- Sort out surprises before they turn into handover delays
+- Negotiate payment in lieu if that works out better
+
+We cover the full planning timeline in our guide to [strategic make good planning](/blog/strategic-make-good-planning/). The short version: start talking to contractors three to six months before your lease ends, not three weeks.
+
+## What a good make good quote looks like
+
+A quote you can rely on is boring to read. It should have:
+
+- The site address and tenancy area clearly stated
+- A line by line scope tied back to the lease and condition report
+- What's included and what isn't
+- Who handles each licensed trade
+- Waste removal and disposal
+- Building requirements, access and protection
+- Certificates provided at the end
+- A fixed price, or a clear explanation of anything that isn't fixed
+- A start date and a finish date
+
+If you can't match each line on the quote to something in your lease or your condition report, ask why it's there.
+
+## Make good cost questions we get asked
+
+**Can the landlord just keep my bank guarantee instead?**
+Sometimes. That's a payment in lieu by another name. It can be simpler, but the landlord's own number is rarely lower than a properly scoped quote. Know what the work would cost before you agree.
+
+**Can we do some of the work ourselves?**
+Moving furniture, clearing stock and taking down your own signage, yes. Anything that needs a licence, a certificate or a sign off, no. A cheap job that fails the inspection costs more than doing it right once.
+
+**Does a bigger quote mean better work?**
+Not by itself. A bigger quote may just carry more risk allowances. What matters is a clear scope, a short list of exclusions and a contractor who has walked the site.
+
+**Can the price change once work starts?**
+On a fixed price, only if the scope changes or something genuinely hidden turns up. That's why the exclusions and provisional sums matter so much at quote stage.
+
+## One contractor, one price
+
+Make goods usually involve demolition, electrical, plumbing, ceilings, flooring, painting and cleaning. Getting separate prices for each and lining them up yourself is slow, and gaps between trades are where costs creep in.
+
+Our [make good service](/services/make-good-solutions/) covers the full scope under one fixed price, from the [strip out](/services/strip-out-solutions/) through to repairs and handover. We inspect the site, check the scope against your lease and condition report and give you a number you can plan around.
+
+Send through the property address and lease timing and we can review the scope. [Get in touch.](/contact/)`
+  },
+  {
     id: "47",
     slug: "commercial-roof-storm-damage-first-24-hours-melbourne",
     title: "Storm Damage on a Commercial Roof",
