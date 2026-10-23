@@ -11,6 +11,7 @@ import propertyImage from "@/assets/blog/property-transformation.webp";
 import newYearImage from "@/assets/blog/new-year-makegood.webp";
 import officeStripOutImage from "@/assets/blog/office-strip-out.webp";
 import constructionMeetingImage from "@/assets/blog/construction-site-meeting.webp";
+import medicalDentalClinicImage from "@/assets/blog/dental-clinic-strip-out-make-good-melbourne.webp";
 import epoxyFlooringImage from "@/assets/blog/epoxy-flooring.webp";
 import palletRackingImage from "@/assets/blog/pallet-racking.webp";
 import commercialMakeGoodImage from "@/assets/blog/commercial-make-good.webp";
@@ -73,6 +74,7 @@ const imageMap: Record<string, unknown> = {
   'concrete-cancer': concreteCancerImage,
   'balcony-waterproofing': balconyWaterproofingImage,
   'slab-rectification': slabRectificationImage,
+  'dental-clinic-strip-out-make-good-melbourne': medicalDentalClinicImage,
   'building-defect-remediation': buildingDefectRemediationImage,
   'strategic-planning': strategicPlanningImage,
   'maximising-property-value': maximisingPropertyValueImage,

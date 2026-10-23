@@ -852,6 +852,211 @@ That's why we include roofing in our make good scope. Our [roofing solutions](/s
 Send us the address, your lease timing and any photos of the roof. We'll check it against the lease and come back with a fixed price. [Get in touch.](/contact/)`
   },
   {
+    id: "50",
+    slug: "medical-dental-clinic-make-good-melbourne",
+    title: "Medical and Dental Clinic Make Goods",
+    subtitle: "Plumbing, x-ray rooms and the specialist fitout underneath",
+    date: "2026-09-15",
+    readTime: "11 min read",
+    excerpt: "Medical and dental clinics are some of the most heavily serviced tenancies to make good. Here's how plumbing, lead lined x-ray rooms and specialist fitout come out properly.",
+    metaDescription: "Medical and dental clinic make goods in Melbourne: plumbing and services removal, lead lined x-ray rooms, specialist fitout strip out and floor reinstatement.",
+    image: "/src/assets/blog/dental-clinic-strip-out-make-good-melbourne.webp",
+    imageAlt: "Dental surgery with patient chair, operating light, hand piece unit and clinical cabinetry ahead of a clinic make good in Melbourne",
+    content: `A medical or dental clinic is one of the most heavily serviced fitouts a commercial tenancy will ever hold. Hand basins in every room. Plumbing under the floor to every chair. Compressors, suction plant, medical gases, data, nurse call. Sometimes a room lined with lead.
+
+All of it went in for a reason. At lease end, most of it has to come out again, and the shell has to go back to what the lease asks for.
+
+This post covers what a clinic make good actually involves: the services, the x-ray room, the specialist fitout and the reinstatement underneath. One rule runs through all of it. Anything that needs a licence, a radiation or medical gas specialist or a hygienist's sign off is confirmed and carried out by that licensed trade or consultant. We coordinate them. We don't guess.
+
+This is general information. Your lease decides what you owe, so read it and get advice on anything unclear.
+
+## Why clinic make goods are different
+
+An office make good is mostly partitions, ceilings, carpet and paint. A clinic has all of that plus a second layer of services and specialist equipment.
+
+What sets a clinic apart:
+
+- **Plumbing everywhere.** Basins, sinks, sterilisation benches, dental chair water and waste, plaster traps.
+- **Services in the slab.** Conduits and pipes cut into or under the floor to reach chairs and treatment beds.
+- **Plant rooms.** Dental compressors, suction pumps, vacuum systems and amalgam separators.
+- **Medical gases.** Oxygen, nitrous oxide and medical air lines in some practices.
+- **Radiation shielding.** Lead lined walls, doors and viewing windows in x-ray and OPG rooms.
+- **Hygienic finishes.** Welded vinyl with coved skirtings, wet area membranes and wipeable wall linings.
+- **Clinical waste.** Sharps, chemicals and clinical waste streams that need proper disposal.
+
+Each of those has its own trade, its own rules and its own order of work. Get the order wrong and you end up paying twice.
+
+## Before the strip out starts
+
+The practice has jobs to do before any contractor arrives. These sit with the clinic, not the builder.
+
+- **Remove clinical waste.** Sharps containers, clinical waste, pharmaceuticals and chemicals go out through the practice's licensed waste contractor.
+- **Decommission and remove the x-ray equipment.** Under Victoria's radiation rules, the practice's management licence covers how the unit is disposed of. That usually means the supplier or a radiation service technician removes it, makes it inoperable and the practice notifies the Department of Health.
+- **Remove dental chairs and medical equipment.** Usually by the equipment supplier, who can disconnect and relocate or dispose of it properly.
+- **Sort patient records.** Paper records and computers with patient data must not end up in a skip.
+- **Agree what stays.** Some landlords want basins, plumbing or even the whole fitout left for the next medical tenant. Get that in writing first.
+
+Once the clinical side is clear, the building side can start.
+
+## Plumbing and services removal
+
+This is usually the biggest part of a clinic make good, and the part that's easiest to underestimate.
+
+### Plumbing
+
+A licensed plumber disconnects and caps everything back to where the base building supply and waste allow. That typically covers:
+
+- Hand basins and clinical sinks in every consult and treatment room
+- Sterilisation room sinks and benches
+- Dental chair water supply and waste lines
+- Plaster traps and amalgam separators
+- Hot water units added for the fitout
+- Floor wastes added during the tenancy
+
+Waste lines that run through the slab are capped and the floor made good above them. Pipes left live and cut short behind a wall are exactly what a landlord's inspector looks for.
+
+### Dental chair services
+
+Dental chairs are fed from a floor box or service column. Under it is a bundle of air, water, suction and waste lines, plus power and data, often running in trenches cut into the slab back to the plant room.
+
+Removing them properly means:
+
+- Isolating and removing every line back to the plant room
+- Removing the floor boxes and service columns
+- Filling and levelling trenches and core holes in the slab
+- Repairing the floor so it's ready for the landlord's finish
+
+### Compressors, suction and plant
+
+Dental plant rooms hold compressors, suction pumps, separators and sometimes dedicated air conditioning. All of it is disconnected by the right trade and removed, with the room made good to the lease.
+
+### Medical gases
+
+Practices with piped oxygen, nitrous oxide or medical air need those systems decommissioned by a medical gas specialist. Cylinders go back to the supplier. Pipework, outlets and alarm panels are removed or capped as the specialist and the lease require.
+
+### Electrical and data
+
+A licensed electrician makes the tenancy safe before anything else gets pulled out. That covers dedicated circuits to equipment, extra power, nurse call, emergency lighting the tenant added and data cabling. Our guide to [electrical make safe and decommissioning](/blog/electrical-make-safe-decommissioning-demolition/) explains why this step always comes first.
+
+## Lead lined x-ray rooms
+
+Rooms built for x-ray, OPG or CT equipment are shielded to stop radiation reaching the rooms around them. The shielding is usually lead sheet bonded to plasterboard, lead lined doors and frames and lead glass viewing windows. Sometimes it runs into the ceiling or floor.
+
+At lease end the question is whether the shielding stays or goes.
+
+### When it may stay
+
+- The landlord is re-leasing to another medical or dental tenant
+- The lease or the landlord agrees in writing it can remain
+- The next tenant has confirmed they want it
+
+### When it comes out
+
+- The lease requires reinstatement to the original condition
+- The landlord wants a standard office or retail shell back
+
+### How it comes out
+
+Removing lead lined walls isn't a sledgehammer job. Lead is toxic, and cutting or breaking lead lined sheets creates dust and fragments that need to be controlled.
+
+The work usually involves:
+
+- Confirming the radiation equipment is already removed and the room is no longer a radiation area
+- Assessing the lead work with the right consultant before demolition
+- Removing lead lined sheets in a controlled way, without grinding or abrasive cutting
+- Separating lead from general waste so it can be recycled or disposed of correctly
+- Removing lead lined doors, frames and viewing windows as whole units where possible
+- Cleaning up properly before the space is reinstated
+
+The specialist requirements for lead work, testing and disposal are confirmed by the appropriate licensed trade or consultant on each job. We plan the strip out around their advice, not the other way round.
+
+## Specialist fitout removal
+
+Once services are out of the way, the fitout itself comes down.
+
+What usually comes out:
+
+- Consult room and treatment room partitions
+- Sterilisation room joinery and stainless steel benches
+- Reception counters and waiting room fixtures
+- Specialist ceilings, operating lights and ceiling mounted equipment supports
+- Privacy curtain tracks
+- Hand rails and grab rails
+- Signage, inside and out
+
+Ceiling mounted supports for dental lights and operating lights are worth flagging. They're usually fixed through the ceiling to the structure above. Removing them leaves holes in the slab soffit or steelwork that need patching, and gaps in the ceiling grid.
+
+Our guide to [office strip out](/blog/office-strip-out/) covers the general partition and ceiling side of the job.
+
+## Reinstatement after the strip out
+
+With everything out, the tenancy gets put back to what the lease asks for.
+
+Typical reinstatement work in a clinic:
+
+- **Floors.** Lift welded vinyl and remove adhesive. Fill trenches and core holes. Grind and level. Lay the floor finish the lease requires.
+- **Walls.** Patch holes left by basins, rails, cabinetry and fixings. Repair or replace damaged plasterboard, including where lead lining came out.
+- **Ceilings.** Replace damaged tiles and grid. Reinstate any areas opened for services or equipment supports.
+- **Wet areas.** Remove clinic specific wet areas or reinstate them to the original layout.
+- **Paint.** Repaint to the colour and standard the lease asks for.
+- **Services.** Reinstate the base building lighting, air conditioning and fire services to suit an open floor, with the right certificates.
+
+## Common mistakes in clinic make goods
+
+These come up again and again:
+
+- **Leaving plumbing for last.** Plumbing and slab works need to happen before floors and walls are finished. Doing it at the end means redoing finishes.
+- **Assuming the x-ray room can stay.** If the lease says reinstate, the shielding usually has to go unless the landlord agrees otherwise in writing.
+- **Forgetting the slab.** Chair trenches and core holes are a real cost. They're not visible until the vinyl comes up.
+- **Mixing waste streams.** Clinical waste, lead and general demolition waste all go to different places.
+- **Not budgeting for specialists.** Medical gas, radiation and lead work can't be done by general trades.
+
+## Real situations we see
+
+A dental practice in the inner east had six surgeries, each with a chair, a floor box and trenches back to the plant room. The lease asked for an open office shell. The practice booked a builder for partitions and paint only. When the vinyl came up, the trenches and core holes added a full extra week of slab work.
+
+A GP clinic in the north west had a small x-ray room with lead lined walls. The landlord was re-leasing to a radiology group. The lead lining stayed, the rest of the clinic came out and both sides signed off on a reduced scope in writing.
+
+A specialist practice in the south east had piped oxygen and nitrous oxide. The tenant's general builder didn't know who should decommission it. The medical gas specialist was booked late, and the strip out sat idle for four days waiting.
+
+## Planning the clinic make good
+
+A practical order of work:
+
+- Read the lease make good clause and find the ingoing condition report
+- Ask the landlord what stays, especially plumbing and shielding
+- Book the equipment supplier, waste contractor and radiation technician
+- Get a site inspection and fixed price for the building works
+- Book the electrical make safe and plumbing disconnection first
+- Strip out the fitout, then remove lead lining and slab services
+- Reinstate floors, walls, ceilings and paint
+- Hand over with certificates and a clean, empty tenancy
+
+Start three to six months out. Clinic make goods have more trades and more sign offs than an office, and they rarely go well when they're squeezed into the last fortnight.
+
+## Clinic make good questions we get asked
+
+**Can the next tenant take over our fitout?**
+Sometimes, if the landlord and the incoming tenant both agree in writing. A medical fitout handed straight to another practice can save everyone time and money. Get the agreement signed before you cancel any trades.
+
+**Who removes the x-ray unit, us or the builder?**
+The practice. The unit sits under the practice's radiation management licence, so its removal and disposal is handled through the supplier or a radiation service technician, with the department notified. The builder starts once it's gone.
+
+**Do we have to remove the amalgam separator?**
+If it was installed for your practice, it's usually yours to remove. It needs to be emptied and disposed of through the right waste contractor, not thrown in a skip.
+
+**How long does a clinic make good take?**
+A small GP clinic might take a couple of weeks. A multi chair dental practice with slab services and a lead lined room takes longer. Lead times for specialists often decide the program more than the building work does.
+
+## One contractor for the whole strip out
+
+A clinic make good needs plumbers, electricians, demolition crews, plasterers, floor layers and painters, plus the specialists the clinical side brings. That's a lot of handoffs.
+
+Our [strip out service](/services/strip-out-solutions/) covers the full removal and reinstatement under one fixed price, starting with [electrical make safe](/services/strip-out-solutions/make-safe/) and finishing with a tenancy ready for inspection. We coordinate the specialist trades and consultants and plan the work around what they confirm.
+
+Send through the property address, lease timing and a floor plan if you have one, and we can review the scope. [Get in touch.](/contact/)`
+  },
+  {
     id: "45",
     slug: "box-gutter-leaks-warehouse-melbourne",
     title: "Box Gutters and Warehouse Leaks",
