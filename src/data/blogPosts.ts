@@ -11408,8 +11408,8 @@ Congratulations! You are now equipped with the knowledge and tools to have a suc
     readTime: "12 min read",
     excerpt: "Rusted roof sheets, a tired roof that needs coating, or a full re-roof. Here's how to tell which one you've got, and what each one costs in Melbourne.",
     metaDescription: "Rusted roof sheets, a tired roof that needs coating, or a full re-roof. Here's how to tell which one you've got, and what each one costs in Melbourne.",
-    image: "/src/assets/blog/metal-roof-replacement-warehouse-melbourne.webp",
-    imageAlt: "Rusted and corroded Colorbond roof sheeting on a Melbourne warehouse roof showing corrosion at the sheet laps prior to repair or replacement",
+    image: "/src/assets/blog/metal-roof-sheeting-warehouse-melbourne.webp",
+    imageAlt: "Trapezoidal profile metal roof sheeting on a commercial warehouse roof against a blue sky, the sheeting type used in most Melbourne warehouse re-roofs",
     content: `Someone finally gets up on the roof. Maybe it's a tenant walking it before a lease ends, maybe it's a property manager doing an annual check, maybe it's just someone chasing a leak. Either way, the sheets are streaked with rust, a few have gone through at the laps, and now there's a decision to make.
 
 Patch it, coat it, or pull the whole thing off and start again.
