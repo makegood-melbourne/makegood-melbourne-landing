@@ -110,7 +110,7 @@ const imageMap: Record<string, unknown> = {
   'box-gutter-leaks-warehouse-melbourne': boxGutterLeaksImage,
   'commercial-roof-make-good-melbourne': commercialRoofMakeGoodImage,
   'commercial-roof-storm-damage-first-24-hours-melbourne': commercialRoofStormDamageImage,
-  'metal-roof-replacement-warehouse-melbourne': metalRoofReplacementWarehouseImage,
+  'metal-roof-sheeting-warehouse-melbourne': metalRoofReplacementWarehouseImage,
 };
 
 // Normalize image imports across Astro + React builds.
