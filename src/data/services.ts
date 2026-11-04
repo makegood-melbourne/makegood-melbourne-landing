@@ -273,12 +273,12 @@ export const services: Service[] = [
         {
           slug: "strip-out-solutions/demolition",
           name: "Demolition Works",
-          description: "Internal demolition for partitions, ceilings, flooring and fixed fitout that need to be removed before handover."
+          description: "Internal walls, ceilings and flooring often come out in the same strip out as the racking."
         },
         {
           slug: "strip-out-solutions/make-safe",
           name: "Make Safe Works",
-          description: "Electrical, plumbing, HVAC and fire service coordination before removal works begin."
+          description: "Circuits running to old racking and warehouse equipment get isolated before we start dismantling."
         }
       ]
     },
@@ -431,27 +431,27 @@ export const services: Service[] = [
         {
           slug: "make-good-solutions/flooring-reinstatement",
           name: "Flooring Reinstatement",
-          description: "Carpet tiles, vinyl, epoxy and timber flooring reinstated to original specification for lease handover."
+          description: "Floors go in before or after painting depending on the trade sequence, we plan it either way."
         },
         {
           slug: "make-good-solutions/line-marking",
           name: "Line Marking",
-          description: "Warehouse and car park line marking restored to the agreed layout for lease handover."
+          description: "Warehouse floor lines get repainted once wall and structural painting is finished."
         },
         {
           slug: "make-good-solutions/patching-plastering",
           name: "Patching & Plastering",
-          description: "Fixture holes, wall damage and post-demolition surfaces repaired ready for painting and handover."
+          description: "Every wall gets patched and sanded flush before a single coat of paint goes on."
         },
         {
           slug: "make-good-solutions/suspended-ceilings",
           name: "Suspended Ceilings",
-          description: "Ceiling tile replacement, grid repairs and service coordination to restore commercial ceiling layouts."
+          description: "Ceiling tiles and grids are usually restored before the final paint coat, so repairs don't show."
         },
         {
           slug: "make-good-solutions/warehouse-flooring",
           name: "Warehouse Flooring",
-          description: "Warehouse floor restoration including flooring removal, concrete grinding, slab repairs and protective finishes."
+          description: "Where the warehouse floor itself needs restoring, not just the walls, this is the full scope."
         }
       ]
     },
@@ -551,27 +551,27 @@ export const services: Service[] = [
         {
           slug: "make-good-solutions/flooring-reinstatement",
           name: "Flooring Reinstatement",
-          description: "Carpet tiles, vinyl, epoxy and timber flooring reinstated to original specification for lease handover."
+          description: "Floor and ceiling works are often scheduled together so dust from one doesn't land on the other."
         },
         {
           slug: "make-good-solutions/line-marking",
           name: "Line Marking",
-          description: "Warehouse and car park line marking restored to the agreed layout for lease handover."
+          description: "In warehouses, ceiling and floor restoration can run as one coordinated scope."
         },
         {
           slug: "make-good-solutions/painting",
           name: "Painting",
-          description: "Commercial painting and colour-matched finishes for offices, warehouses and industrial make good projects."
+          description: "Walls get their final coat once the ceiling grid and tiles are back in place."
         },
         {
           slug: "make-good-solutions/patching-plastering",
           name: "Patching & Plastering",
-          description: "Fixture holes, wall damage and post-demolition surfaces repaired ready for painting and handover."
+          description: "Wall damage where partitions met the ceiling gets patched as part of the same job."
         },
         {
           slug: "make-good-solutions/warehouse-flooring",
           name: "Warehouse Flooring",
-          description: "Warehouse floor restoration including flooring removal, concrete grinding, slab repairs and protective finishes."
+          description: "Where warehouse floors need restoring alongside the ceiling, this covers the full scope."
         }
       ]
     },
@@ -696,27 +696,27 @@ export const services: Service[] = [
         {
           slug: "make-good-solutions/flooring-reinstatement",
           name: "Flooring Reinstatement",
-          description: "Carpet tiles, vinyl, epoxy and timber flooring reinstated to original specification for lease handover."
+          description: "New carpet tiles, vinyl or epoxy often go down before the lines get repainted on top."
         },
         {
           slug: "make-good-solutions/painting",
           name: "Painting",
-          description: "Commercial painting and colour-matched finishes for offices, warehouses and industrial make good projects."
+          description: "Warehouse walls and bollards usually get repainted in the same visit as the floor lines."
         },
         {
           slug: "make-good-solutions/patching-plastering",
           name: "Patching & Plastering",
-          description: "Fixture holes, wall damage and post-demolition surfaces repaired ready for painting and handover."
+          description: "Wall and column damage near marked areas gets patched before we remark the floor."
         },
         {
           slug: "make-good-solutions/suspended-ceilings",
           name: "Suspended Ceilings",
-          description: "Ceiling tile replacement, grid repairs and service coordination to restore commercial ceiling layouts."
+          description: "Office ceilings restored as part of the same make good, scheduled separately from floor works."
         },
         {
           slug: "make-good-solutions/warehouse-flooring",
           name: "Warehouse Flooring",
-          description: "Warehouse floor restoration including flooring removal, concrete grinding, slab repairs and protective finishes."
+          description: "Where the slab itself needs grinding or repair, not just new lines, this covers the full floor restoration."
         }
       ]
     },
@@ -1811,27 +1811,27 @@ export const services: Service[] = [
         {
           slug: "make-good-solutions/flooring-reinstatement",
           name: "Flooring Reinstatement",
-          description: "Carpet tiles, vinyl, epoxy and timber flooring reinstated to original specification for lease handover."
+          description: "For office carpet tiles, vinyl or timber rather than a warehouse slab, this is the service you want."
         },
         {
           slug: "make-good-solutions/line-marking",
           name: "Line Marking",
-          description: "Warehouse and car park line marking restored to the agreed layout for lease handover."
+          description: "Once the slab is ground and sealed, forklift aisles and safety zones get remarked on top."
         },
         {
           slug: "make-good-solutions/painting",
           name: "Painting",
-          description: "Commercial painting and colour-matched finishes for offices, warehouses and industrial make good projects."
+          description: "Warehouse walls and structural steel are often repainted once the floor works are done."
         },
         {
           slug: "make-good-solutions/patching-plastering",
           name: "Patching & Plastering",
-          description: "Fixture holes, wall damage and post-demolition surfaces repaired ready for painting and handover."
+          description: "Wall damage from racking removal or impact gets patched separately from the floor."
         },
         {
           slug: "make-good-solutions/suspended-ceilings",
           name: "Suspended Ceilings",
-          description: "Ceiling tile replacement, grid repairs and service coordination to restore commercial ceiling layouts."
+          description: "Where the warehouse has an office fit within it, ceiling restoration runs as a separate scope."
         }
       ]
     },
@@ -1956,12 +1956,12 @@ export const services: Service[] = [
         {
           slug: "strip-out-solutions/make-safe",
           name: "Make Safe Works",
-          description: "Electrical, plumbing, HVAC and fire service coordination before removal works begin."
+          description: "Before we start pulling down partitions, electrical, plumbing and HVAC need to be isolated and made safe."
         },
         {
           slug: "strip-out-solutions/pallet-racking-removal",
           name: "Pallet Racking Removal",
-          description: "Racking dismantling, slab anchor removal and warehouse floor preparation for lease handback."
+          description: "Where a warehouse strip out includes racking, we dismantle it and restore the slab in the same scope."
         }
       ]
     },
@@ -2040,17 +2040,17 @@ export const services: Service[] = [
         {
           slug: "strip-out-solutions/demolition",
           name: "Demolition Works",
-          description: "Internal demolition for partitions, ceilings, flooring and fixed fitout that need to be removed before handover."
+          description: "Once services are disconnected and certified, demolition and partition removal can go ahead safely."
         },
         {
           slug: "strip-out-solutions/pallet-racking-removal",
           name: "Pallet Racking Removal",
-          description: "Racking dismantling, slab anchor removal and warehouse floor preparation for lease handback."
+          description: "Circuits running to old racking and warehouse equipment get isolated before dismantling begins."
         },
         {
           slug: "roofing-solutions/storm-damage-make-safe",
           name: "Storm Damage & Make Safe",
-          description: "Storm got into the building? We secure the roof, stop the water and coordinate isolation where it reached the services."
+          description: "A storm got into the building? We secure the roof, stop the water and isolate any services it reached."
         }
       ]
     },
@@ -2180,8 +2180,8 @@ export const services: Service[] = [
     capabilitiesSubtitle: "Our service covers all flooring types for commercial make good projects.",
     featuredSections: [
       {
-        title: "FLOOR FOR FLOOR",
-        description: "Flooring damage from forklifts, office chairs, or years of heavy traffic can mean full replacement—or when the damage is localised, we reinstate specific sections to match the surrounding flooring. Carpet tiles, vinyl planks, epoxy coatings, engineered timber—our experienced team restores floors to match original specifications across all flooring types. We're make good specialists who understand lease obligations and work efficiently to meet handover deadlines.\n\nWe work from your lease schedule to match the original flooring—pattern, colour, finish. If the exact product is no longer available, we source the closest match and coordinate approval before installation. Substrate preparation is handled appropriately: damaged concrete repaired, uneven areas levelled, surfaces prepared. Reinstatement is completed to approved finishes schedule so your space is ready for a successful handover.",
+        title: "MATCHED, PREPPED, HANDED OVER",
+        description: "Most make good floors fail inspection for the same reason. The new covering goes down over a substrate that was never properly prepared. Dynabolt holes from old racking, uneven patches and leftover adhesive all telegraph through a fresh carpet tile or epoxy coat if they are not dealt with first.\n\nWe check the substrate before anything new goes down. Concrete is repaired, high spots ground back, low spots levelled. Where the original product is discontinued, we source the closest match and get it approved before we order, so there are no surprises at handover.\n\nWork can be staged section by section in an occupied tenancy. Carpet tiles and vinyl in particular suit this well, and we coordinate around your operating hours rather than closing the whole floor at once.",
         image: flooringReinstatementProcessImage,
         imageAlt: "Industrial floor grinding and preparation for flooring reinstatement in Melbourne warehouse",
         imageTitle: "Makegood Melbourne - Flooring Reinstatement Works",
@@ -2197,27 +2197,27 @@ export const services: Service[] = [
         {
           slug: "make-good-solutions/line-marking",
           name: "Line Marking",
-          description: "Warehouse and car park line marking restored to the agreed layout for lease handover."
+          description: "Once new flooring goes down in a warehouse, the forklift aisles and safety zones often need remarking to match."
         },
         {
           slug: "make-good-solutions/painting",
           name: "Painting",
-          description: "Commercial painting and colour-matched finishes for offices, warehouses and industrial make good projects."
+          description: "Walls and ceilings are usually painted around the same time as the floor goes in, so the finishes land together."
         },
         {
           slug: "make-good-solutions/patching-plastering",
           name: "Patching & Plastering",
-          description: "Fixture holes, wall damage and post-demolition surfaces repaired ready for painting and handover."
+          description: "Wall damage from the old flooring removal gets patched before the new floor goes down, not after."
         },
         {
           slug: "make-good-solutions/suspended-ceilings",
           name: "Suspended Ceilings",
-          description: "Ceiling tile replacement, grid repairs and service coordination to restore commercial ceiling layouts."
+          description: "Where the ceiling above needs restoring too, we sequence the work so dust and debris never land on your new floor."
         },
         {
           slug: "make-good-solutions/warehouse-flooring",
           name: "Warehouse Flooring",
-          description: "Warehouse floor restoration including flooring removal, concrete grinding, slab repairs and protective finishes."
+          description: "For a full concrete slab restoration rather than a surface covering, this is the broader warehouse floor service."
         }
       ]
     },
@@ -2344,8 +2344,8 @@ export const services: Service[] = [
     capabilitiesSubtitle: "Our service covers all wall and ceiling repairs for commercial make good projects.",
     featuredSections: [
       {
-        title: "WALLS REPAIRED & READY.",
-        description: "Tenants leave marks. Fixtures get removed. Partitions come down. What's left behind—screw holes, anchor points, damaged plasterboard, rough edges where walls used to be—needs to be repaired before the painter can start.\n\nWe handle the repairs so your walls are smooth, even and ready for final coat. Surfaces are sanded flush, joints are invisible, textures are matched. No shortcuts. No visible patches. Just clean walls ready for handover.",
+        title: "WHAT GETS FOUND ON SITE",
+        description: "Every strip out leaves its own trail. Shelving brackets drilled into plasterboard. Anchor points from signage that has been up for years. Corners knocked square by pallet jacks and trolleys. Scars where a reception desk or partition wall used to sit. None of it gets painted over, it gets fixed first.\n\nTypical scope on a commercial make good covers screw and anchor holes from removed fixtures, impact damage to corners and door jambs, water stains from an old leak once the source is fixed, and full wall sections where a partition has come down. Plasterboard is cut back to sound material, new sheet is scribed in where needed, and joints are taped, stopped and sanded to a feather edge.\n\nPatching and plastering runs right before painting in the sequence, never after. Every repair is primed and sealed so it takes paint the same way as the surrounding wall. Rush this step and the patch shows through the final coat as a different sheen or texture, exactly the kind of thing a property manager flags at inspection.",
         image: patchingPlasteringFeaturedImage,
         imageAlt: "Professional plastering tools and equipment for commercial make good patching and plastering works in Melbourne",
         imageTitle: "Makegood Melbourne - Patching & Plastering Works",
@@ -2361,27 +2361,27 @@ export const services: Service[] = [
         {
           slug: "make-good-solutions/flooring-reinstatement",
           name: "Flooring Reinstatement",
-          description: "Carpet tiles, vinyl, epoxy and timber flooring reinstated to original specification for lease handover."
+          description: "Once walls are patched and sanded flush, flooring goes in to finish the space."
         },
         {
           slug: "make-good-solutions/line-marking",
           name: "Line Marking",
-          description: "Warehouse and car park line marking restored to the agreed layout for lease handover."
+          description: "In warehouses, wall patching near racking damage is often followed by a floor line remark."
         },
         {
           slug: "make-good-solutions/painting",
           name: "Painting",
-          description: "Commercial painting and colour-matched finishes for offices, warehouses and industrial make good projects."
+          description: "Every patch and plaster repair we do is prepped and sanded ready for the painter."
         },
         {
           slug: "make-good-solutions/suspended-ceilings",
           name: "Suspended Ceilings",
-          description: "Ceiling tile replacement, grid repairs and service coordination to restore commercial ceiling layouts."
+          description: "Ceiling repairs often run alongside wall patching where partitions came down."
         },
         {
           slug: "make-good-solutions/warehouse-flooring",
           name: "Warehouse Flooring",
-          description: "Warehouse floor restoration including flooring removal, concrete grinding, slab repairs and protective finishes."
+          description: "For floor damage rather than wall damage, this covers the full warehouse floor scope."
         }
       ]
     },

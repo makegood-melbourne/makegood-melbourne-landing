@@ -1575,6 +1575,8 @@ The right fix depends entirely on the cause, which is why diagnosis comes before
 
 Where the problem is genuinely a make good item rather than a remediation one, this sits alongside our [warehouse flooring service](/services/make-good-solutions/warehouse-flooring/), so the internal slab and the external hardstand can be scoped, quoted and completed under the one project rather than as two separate jobs with two separate contractors.
 
+Loading bays and truck lanes on the hardstand often get remarked once the concrete repairs are done, since faded or damaged [line marking](/services/make-good-solutions/line-marking/) is one of the first things a property manager notices on a final walkthrough.
+
 ## How much it costs and how long it takes
 
 Cost comes down to three things: how much area is affected, whether the cause is surface level or structural, and whether the yard needs to keep operating while the work happens.
@@ -6010,7 +6012,7 @@ Committed to environmental responsibility in every project`,
 
 **Building Envelope**:
 - Roof repairs or replacement
-- External wall repairs and repainting
+- External wall repairs, [cladding remediation](/services/remediation-solutions/cladding-glazing/) and repainting
 - Window and door replacement
 - Weather sealing and insulation
 - External finishes restoration
@@ -6452,6 +6454,8 @@ Available during business hours`,
 
 ## Line Marking Services
 
+Our [line marking](/services/make-good-solutions/line-marking/) team handles both the removal of worn or tenant-specific markings and the reinstatement of the compliant layout underneath.
+
 ### Line Marking Standards and Compliance
 
 **Relevant Australian Standards**:
@@ -6886,6 +6890,8 @@ External cladding refers to the protective and decorative covering applied to bu
 - Previous fire damage or scorching
 
 ## Cladding Remediation Process
+
+Our [cladding and glazing remediation](/services/remediation-solutions/cladding-glazing/) team runs this process end to end, from the initial engineering assessment through to final compliance sign off.
 
 ### 1. Planning and Engineering
 
@@ -9118,7 +9124,7 @@ Issues affecting building integrity and load-bearing capacity:
 
 ### 3. Facade and Cladding Issues
 
-External envelope defects affecting weather protection and appearance:
+External envelope defects affecting weather protection and appearance, the kind of work our [cladding and glazing remediation](/services/remediation-solutions/cladding-glazing/) team handles:
 
 **Common Problems**:
 - Cladding delamination or detachment

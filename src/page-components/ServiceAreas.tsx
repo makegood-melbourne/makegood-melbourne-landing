@@ -123,13 +123,17 @@ const ServiceAreas = () => {
                   <h3 className="font-semibold text-card-foreground group-hover:text-accent transition-colors">Warehouse Restoration</h3>
                   <p className="text-sm text-muted-foreground">Industrial floor and structural repairs</p>
                 </a>
-                <a href="/services/make-good-solutions/painting/" className="bg-card border border-border rounded-lg p-4 hover:border-accent/50 transition-colors group">
-                  <h3 className="font-semibold text-card-foreground group-hover:text-accent transition-colors">Commercial Painting</h3>
-                  <p className="text-sm text-muted-foreground">Professional interior and exterior finishes</p>
-                </a>
                 <a href="/services/remediation-solutions/" className="bg-card border border-border rounded-lg p-4 hover:border-accent/50 transition-colors group">
                   <h3 className="font-semibold text-card-foreground group-hover:text-accent transition-colors">Structural Remediation</h3>
                   <p className="text-sm text-muted-foreground">Concrete cancer and structural repairs</p>
+                </a>
+                <a href="/services/handover-solutions/" className="bg-card border border-border rounded-lg p-4 hover:border-accent/50 transition-colors group">
+                  <h3 className="font-semibold text-card-foreground group-hover:text-accent transition-colors">Handover Solutions</h3>
+                  <p className="text-sm text-muted-foreground">Cleaning and final inspection preparation</p>
+                </a>
+                <a href="/services/roofing-solutions/" className="bg-card border border-border rounded-lg p-4 hover:border-accent/50 transition-colors group">
+                  <h3 className="font-semibold text-card-foreground group-hover:text-accent transition-colors">Roofing Solutions</h3>
+                  <p className="text-sm text-muted-foreground">Leak repairs, re-roofing and storm damage</p>
                 </a>
               </div>
               <a href="/services/">
