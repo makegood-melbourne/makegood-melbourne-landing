@@ -2027,7 +2027,7 @@ Leave it until the last month and you are paying for urgency as well as the work
   {
     id: "40",
     slug: "make-good-strip-out-defit-melbourne",
-    title: "Make Good vs Strip Out vs Defit: What's the Difference?",
+    title: "Make Good vs Strip Out vs Defit",
     subtitle: "Know the difference before you get a quote",
     excerpt: "The terms make good, strip out and defit are used interchangeably but mean different things. Here is what each term means and why it matters when getting quotes.",
     metaDescription: "Make good, strip out, defit \u2014 not the same thing. We explain what each term means and which service your commercial lease actually requires.",
@@ -2193,7 +2193,7 @@ Need to scope a make good in Melbourne? [Get in touch.](/contact)`,
   {
     id: "39",
     slug: "warehouse-factory-make-good-melbourne",
-    title: "Warehouse and Factory Make Goods: What the Lease Requires",
+    title: "Warehouse and Factory Make Goods",
     subtitle: "What every warehouse tenant gets wrong",
     excerpt: "A warehouse or factory make good is a different beast to a standard office strip-out. The scale is larger, the machinery is heavier and the potential for disputes is higher. This guide breaks down the process from a contractor's perspective.",
     metaDescription: "Everything industrial tenants need to know about warehouse make goods in Melbourne \u2014 racking removal, mezzanine floors, concrete repairs and compliance.",
@@ -2613,7 +2613,7 @@ Need to scope a make good in Melbourne? [Get in touch.](/contact)`
   },
   {
     id: "35",
-    title: "Commercial Water Damage: What to Do in the First 48 Hours",
+    title: "Commercial Water Damage: The First 48 Hours",
     subtitle: "What to Do in the First 48 Hours",
     slug: "commercial-water-damage-mould-remediation-melbourne",
     excerpt: "What to do in the first 48 hours after a leak in a commercial building. Make safe actions, containment, drying, mould protocols, salvage decisions, reinstatement and handover documentation across Melbourne.",
@@ -3946,7 +3946,7 @@ Carpet tile replacement as part of a make good in Melbourne? [Get in touch.](/co
   {
     id: "30",
     slug: "electrical-make-safe-decommissioning-demolition",
-    title: "Electrical Make Safe: The Crucial First Step in Demolition",
+    title: "Electrical Make Safe Before Demolition",
     subtitle: "The step that has to happen before anything else",
     date: "1 August 2025",
     excerpt: "Electrical make safe is an essential preliminary step in make good and demolition projects, ensuring all electrical systems are safely decommissioned before strip-out works commence. Licensed electricians isolate, disconnect, and remove electrical installations, returning systems to base building configuration and creating a safe working environment. Learn about electrical make safe procedures, compliance requirements, and integration with make good projects.",
@@ -4905,7 +4905,7 @@ Professional ceiling solutions for all commercial properties`,
   {
     id: "28",
     slug: "parapet-failure-emergency-building-repairs",
-    title: "Parapet Failure: What to Do When a Wall Becomes a Hazard",
+    title: "Parapet Failure: Emergency Building Repairs",
     subtitle: "What to do when a wall becomes a safety issue",
     date: "1 June 2025",
     excerpt: "Parapet failure and facade collapse represent serious building emergencies requiring immediate response to protect public safety. From emergency site securing and debris removal to structural assessment and reconstruction, professional emergency repair services manage the complete response. Learn about causes of parapet failure, emergency procedures, council requirements, structural engineering, and reconstruction processes.",
@@ -5369,7 +5369,7 @@ Available during business hours`,
   {
     id: "27",
     slug: "waste-management-sustainability-make-good-works",
-    title: "Waste Removal in Commercial Make Goods: How to Do It Responsibly",
+    title: "Waste Removal in Commercial Make Goods",
     subtitle: "What happens to everything we remove from site",
     date: "1 May 2025",
     excerpt: "Sustainable waste management practices are increasingly critical in commercial make good projects, with regulations, tenant expectations and environmental responsibility driving the need for waste minimisation, recycling and responsible disposal. Professional waste management reduces landfill contributions, ensures regulatory compliance and can reduce project costs. Learn about waste streams, recycling strategies, EPA compliance and sustainability reporting.",
@@ -6778,7 +6778,7 @@ Need professional assessment of your car park condition or quotes for repairs an
   {
     id: "24",
     slug: "facade-cladding-remediation-fireproof-compliance",
-    title: "Facade Cladding Remediation: What the Fire Safety Rules Require",
+    title: "Facade Cladding Remediation and Fire Safety",
     subtitle: "What building owners need to know about cladding risk",
     date: "1 February 2025",
     excerpt: "Building façade and cladding remediation has become critical following national fire safety reforms. Non-compliant combustible cladding poses significant risks and legal obligations for property owners. Learn about assessment requirements, remediation processes, fireproof cladding solutions, and make good considerations for commercial properties.",
@@ -7751,7 +7751,7 @@ Need professional assessment of your warehouse polycarbonate roofing or quotes f
   {
     id: "22",
     slug: "year-end-property-planning",
-    title: "Year-End Lease Exits: Why Waiting Until December is a Bad Idea",
+    title: "Year-End Lease Exits: Don't Wait Until December",
     subtitle: "Getting ahead of lease exits before the rush",
     date: "1 December 2024",
     excerpt: "As the year draws to a close, strategic property planning ensures your commercial premises enter 2025 in optimal condition. From maintenance assessments and budget planning to lease reviews and compliance audits, year-end is the perfect time to evaluate your property strategy and set your business up for success.",
@@ -8150,7 +8150,7 @@ Need help conducting property assessments, planning for lease end obligations or
   {
     id: "21",
     slug: "maximising-property-value-lease-end",
-    title: "How a Good Make Good Actually Adds Property Value",
+    title: "How a Make Good Adds Property Value",
     subtitle: "What owners do differently when they plan ahead",
     date: "1 November 2024",
     excerpt: "Landlords can significantly increase rental returns and minimise vacancy periods through strategic property management as leases conclude. From proper make good enforcement and value-adding improvements to effective marketing timing, this guide explores how to maximise property value and tenant attraction when leases end.",
@@ -8662,7 +8662,7 @@ Need assistance managing lease end processes, conducting property assessments, o
   {
     id: "20",
     slug: "strategic-make-good-planning",
-    title: "Strategic Make Good Planning: Why Early Preparation Saves Money",
+    title: "Strategic Make Good Planning Saves Money",
     subtitle: "Why the tenants who plan early spend less",
     date: "1 October 2024",
     excerpt: "Strategic planning for commercial make good obligations can save thousands of dollars and prevent lease-end disputes. Understanding requirements early, budgeting appropriately, and engaging professionals at the right time ensures smooth property transitions and protects both tenant deposits and landlord-tenant relationships.",
@@ -9920,7 +9920,7 @@ If you've noticed signs of balcony leaks in your commercial property, don't dela
   {
     id: "16",
     slug: "concrete-cancer-prevention-remediation",
-    title: "Concrete Cancer: How to Spot It and What to Do Next",
+    title: "Concrete Cancer: Prevention and Remediation",
     subtitle: "What it is, what causes it and when to act",
     date: "1 June 2024",
     excerpt: "Concrete cancer, also known as concrete spalling, is one of the most serious structural issues facing commercial and industrial properties. Left untreated, this progressive deterioration can compromise building safety and lead to expensive repairs. Understanding the causes, signs, and remediation options is essential for property owners and managers.",
@@ -10055,7 +10055,7 @@ If you've noticed signs of concrete deterioration in your commercial or industri
   {
     id: "1",
     slug: "end-of-lease-cleaning-services",
-    title: "End of Lease Cleaning: The Final Step Before Handover",
+    title: "End of Lease Cleaning Services",
     subtitle: "The last thing that happens before the keys go back",
     date: "1 May 2024",
     excerpt: "At the end of a commercial lease, tenants and real estate agents often face the challenging task of restoring the property to its original condition. It requires meticulous attention to detail to meet lease obligations. That's where our professional cleaning services come in. We provide a comprehensive solution designed to save you time, effort, and stress.",
@@ -10189,7 +10189,7 @@ This February, let's celebrate love in all its forms, including the love we have
   {
     id: "2",
     slug: "the-importance-of-painting",
-    title: "Why Painting is the Most Scrutinised Part of a Make Good",
+    title: "Painting: The Most Scrutinised Make Good Item",
     subtitle: "Why painting is one of the most scrutinised parts of a make good",
     date: "1 April 2024",
     excerpt: "Finding the right tenant for a vacant office or warehouse can be a challenging process. Prospective tenants often form their first impressions within moments of viewing a property, and a dull, outdated appearance can be a major obstacle to securing a lease. One simple yet highly effective way to make a property more appealing is by applying a fresh coat of paint.",
@@ -10278,7 +10278,7 @@ Contact us today to discuss how we can help you transform your listings with exp
   {
     id: "3",
     slug: "what-are-make-goods",
-    title: "What is a Make Good? Everything Tenants Need to Know",
+    title: "What is a Make Good?",
     subtitle: "The lease obligation most tenants underestimate",
     date: "1 March 2024",
     excerpt: "The end of a lease can be a stressful time for tenants, whether in industrial or commercial properties. Among the responsibilities during this period, one critical task often overlooked or misunderstood is the make-good process. But what exactly are make goods, and why are they so essential?",
@@ -10378,7 +10378,7 @@ If you're approaching the end of your lease and want to ensure everything is han
   {
     id: "5",
     slug: "new-year-property-transformations",
-    title: "New Year Make Goods: Get Your Property Ready to Hand Back",
+    title: "New Year Make Goods: Ready to Hand Back",
     subtitle: "Turning lease exit obligations into a fresh start",
     date: "1 January 2024",
     excerpt: "Start the new year right with our make good services, transforming properties for success. Contact us today for a fresh start.",
@@ -10758,7 +10758,7 @@ We encourage agents and warehouse operators to consider two-pack epoxy sealing a
   {
     id: "9",
     slug: "guide-to-pallet-racking-solutions",
-    title: "Warehouse Pallet Racking: What You Need to Sort Before You Leave",
+    title: "Warehouse Pallet Racking: Removal and Reinstatement",
     subtitle: "Removal, reinstatement and everything in between",
     date: "1 September 2023",
     excerpt: "Pallet racking systems are the backbone of any well-organised warehouse. In this blog post, we will discuss various aspects of pallet racking solutions, and how our make good services can maximise storage space and streamline inventory management to increase efficiency and reduce operational costs.",
@@ -10824,7 +10824,7 @@ Ready to maximise the efficiency of your warehouse with superior pallet racking 
   {
     id: "10",
     slug: "importance-of-commercial-property-make-good",
-    title: "Commercial Make Goods: How to Leave Without a Fight",
+    title: "Commercial Make Goods: Leaving Without a Fight",
     subtitle: "The full picture of what commercial make good involves",
     date: "1 August 2023",
     excerpt: "When it comes to commercial property, a smooth exit strategy is just as important as a successful entrance. Whether you're a tenant or landlord, understanding the concept of make good is vital for a seamless transition.",
@@ -10880,7 +10880,7 @@ In conclusion, commercial property make good is a crucial aspect of a smooth exi
   {
     id: "11",
     slug: "understanding-property-condition-reports",
-    title: "Property Condition Reports: Know What You Owe Before You Leave",
+    title: "Property Condition Reports: What You Owe",
     subtitle: "The document that determines what you owe at the end",
     date: "1 July 2023",
     excerpt: "A Property Condition Report (PCR) is an essential document that outlines the state of a property at the onset or conclusion of a lease, offering legal protection and clarity for both landlords and tenants.",
@@ -10934,7 +10934,7 @@ A Property Condition Report is an indispensable document that protects both land
   {
     id: "12",
     slug: "mastering-lease-transitions",
-    title: "Lease Transitions: How to Hand Back a Property Without Drama",
+    title: "Lease Transitions: Handing Back Without Drama",
     subtitle: "What smooth handovers actually look like in practice",
     date: "1 June 2023",
     excerpt: "As the curtain draws to a close on a lease agreement, the collective goal is to leave no trace of occupancy behind. Whether you're a tenant striving to recoup your security deposit, an agent aiming to uphold your reputation, or an owner keen on preserving your investment, these trade secrets hold the key to a successful lease legacy.",
@@ -11084,7 +11084,7 @@ Restoring a property at the end of a lease is not only a responsible tenant's du
   {
     id: "13",
     slug: "ultimate-guide-to-make-good-services",
-    title: "Make Good Services: What Every Commercial Tenant Should Know",
+    title: "Make Good Services for Commercial Tenants",
     subtitle: "Everything you need to know before your lease ends",
     date: "1 May 2023",
     excerpt: "An in-depth overview of make good services including the benefits, process, and key considerations for tenants and landlords. Offering insights and expert advice to help you navigate this aspect of property management.",
@@ -11404,6 +11404,138 @@ By considering these key factors specific to Melbourne, you can navigate the mak
 ## Conclusion
 
 Congratulations! You are now equipped with the knowledge and tools to have a successful make good experience as a tenant in Melbourne. By understanding the make good service, knowing your rights and responsibilities, following our step-by-step guide, and maintaining effective communication, you can navigate this process with confidence. Remember, the make good service should be a collaborative effort between tenants and landlords, ensuring a fair and satisfactory outcome for both parties. Should you have any further questions or require additional support, feel free to reach out to our team. Best of luck with your make good journey!`
+  },
+  {
+    id: "52",
+    slug: "metal-roof-replacement-warehouse-melbourne",
+    title: "Warehouse Metal Roofs: Patch, Restore or Replace",
+    subtitle: "When a few rusted sheets are fine, and when the whole roof has to go",
+    date: "2026-11-04",
+    readTime: "12 min read",
+    excerpt: "Rusted roof sheets, a tired roof that needs coating, or a full re-roof. Here's how to tell which one you've got, and what each one costs in Melbourne.",
+    metaDescription: "Rusted roof sheets, a tired roof that needs coating, or a full re-roof. Here's how to tell which one you've got, and what each one costs in Melbourne.",
+    image: "/src/assets/blog/metal-roof-sheeting-warehouse-melbourne.webp",
+    imageAlt: "Trapezoidal profile metal roof sheeting on a commercial warehouse roof against a blue sky, the sheeting type used in most Melbourne warehouse re-roofs",
+    content: `Someone finally gets up on the roof. Maybe it's a tenant walking it before a lease ends, maybe it's a property manager doing an annual check, maybe it's just someone chasing a leak. Either way, the sheets are streaked with rust, a few have gone through at the laps, and now there's a decision to make.
+
+Patch it, coat it, or pull the whole thing off and start again.
+
+Get this decision wrong and it costs real money either way. Pay for a full re-roof when a coating would have done the job for a fraction of the price, or coat a roof that's actually failed and you'll be back up there again within a year, except now the ceiling underneath is wet too. Here's how to tell which one you've actually got.
+
+## Why warehouse roofs rust where they do
+
+Colorbond and Zincalume are both steel with a protective coating, and that coating is what actually stops the rust. Once it's compromised, the steel underneath starts corroding, and it rarely happens evenly across the whole roof.
+
+A few spots do most of the damage:
+
+- **The laps**, where one sheet overlaps the next. Water sits here longer than anywhere else on the roof, and the coating wears thinnest at the overlap.
+- **The low end of each run**, where gravity and ponding water concentrate whatever moisture the roof sheds.
+- **Around fasteners**, where the screw has worked loose, the washer has perished, or the coating was scratched during the original install.
+- **Valleys and box gutters**, which sit wet for longer after rain than the open sheet runs either side of them.
+- **Where two different metals touch**, such as a steel sheet against an aluminium flashing or a copper pipe penetration, which sets up galvanic corrosion that eats through the weaker metal fast.
+
+None of this happens overnight. A roof that's fifteen or twenty years old with a few rust spots at the laps is behaving exactly as expected. The question is what to do about it, not whether rust at that age is a surprise.
+
+Location plays a part too. A warehouse near Port Melbourne or along the bay copes with salt-laden air that eats through a protective coating faster than the same roof would corrode out in Dandenong or Campbellfield. Buildings near industrial exhaust, chemical storage or heavy truck routes see faster corrosion as well, since airborne contaminants land on the roof and sit there until rain washes them off, if it washes them off at all. None of this changes the three options available, but it does change the timeline for how soon a roof that looked fine five years ago needs a proper look now.
+
+## Patch, restore or replace
+
+There are three real options, and which one applies depends on how far the corrosion has actually gone, not how bad it looks from the ground.
+
+### Patch
+
+If the rust is isolated to a handful of sheets and the rest of the roof is sound, you replace those sheets and re-fix the surrounding ones. This is the cheapest option by a wide margin and it's appropriate more often than people assume, because most roof problems start as a few failed sheets rather than a roof-wide failure.
+
+### Restore and coat
+
+If the roof is faded, patchy and starting to show surface rust across a wider area, but the steel itself is still structurally sound, a wash, rust treatment and protective coating buys years of life for a fraction of a full re-roof. This only works on a roof that's actually worth saving. Coating over rust that has gone through the sheet doesn't fix anything, it just hides the problem under a fresh colour until it reappears as a leak.
+
+### Full re-roof
+
+Once rust has gone through in multiple places, or the roof is old enough that patching one area just reveals the next one needs doing too, a full re-roof is the honest answer. This is also the point where the lifetime cost of coating a roof every few years starts to outweigh the one-off cost of replacing it properly.
+
+A full re-roof is also staged rather than done all at once. Sections come off and go back on in sequence, with the purlins and fixings underneath checked as each section is opened up, so the building stays weathertight overnight and the roof never comes off faster than it can safely go back on. This is the core of what our [metal roof replacement](/services/roofing-solutions/metal-roof-replacement/) service covers, from a handful of sheets through to a full warehouse re-roof.
+
+## Working out which one you've got
+
+| What you're seeing | Usually means |
+|---|---|
+| A handful of rusted or holed sheets, rest of the roof sound | Patch |
+| Surface rust and fading across a wide area, no holes yet | Restore and coat |
+| Rust through the steel in several places | Full re-roof |
+| Consistent leaks from different spots after every rain event | Full re-roof |
+| One sheet rusted badly near a dissimilar metal penetration | Patch, plus fix the penetration detail |
+| Roof over 25 years old with rust appearing roof-wide | Full re-roof, even if some sections still look fine |
+
+The table is a starting point, not a verdict. A proper roof walk with someone who can tell surface rust from rust that's gone through the sheet is worth more than a guess from the ground, because the two can look similar from a distance and cost very different amounts to fix.
+
+## What a full re-roof actually costs in Melbourne
+
+Pricing varies with roof area, pitch, access and what's underneath, but current Melbourne benchmarks give a reasonable starting point. A standard warehouse re-sheet in Colorbond or Zincalume runs somewhere around $120 per square metre installed, which puts a typical 500 to 1,000 square metre warehouse re-roof at roughly $45,000 to $140,000 all in, covering strip out, disposal, new sheeting, flashings and gutters. Larger sites of 1,000 to 3,000 square metres commonly land between $90,000 and $400,000.
+
+Restoration and coating sits well below that, since no sheets are being removed or replaced, just washed, treated and coated. It's a fraction of the re-roof cost, which is exactly why it's worth confirming the roof actually qualifies for it before paying for a full re-roof it didn't need.
+
+Patching sits well under the restoration price, since it's a handful of sheets rather than the whole roof. Restoration and coating sits below that again in total cost but above patching per square metre, since the whole roof gets washed and treated even though nothing is being removed. We quote after a roof inspection, since the same amount of visible rust can mean a half day patch job or a six figure re-roof depending on what's actually happening under the surface.
+
+## Working around a building that's still operating
+
+A warehouse roof almost never comes off a building that's sitting empty. Staff are still in the office below, stock is still moving through the loading dock, and the business doesn't stop while the roof gets sorted.
+
+A few things make this manageable rather than disruptive:
+
+- **Staging the work in sections** rather than opening the whole roof at once, so there's always a weathertight roof over the building at the end of each day.
+- **Access equipment chosen for the site**, whether that's a crane for lifting bundles of sheets, a boom lift for spot repairs, or scaffold and safety mesh for a full re-roof.
+- **Scheduling around deliveries and operating hours**, particularly where a loading dock or a specific area of the warehouse needs to stay clear.
+- **Weather windows**, since steel roofing can't go down wet and Melbourne's rain doesn't always cooperate with a tight schedule.
+
+None of this is a reason to delay a roof that actually needs the work. It's a reason to plan the sequence properly before the crew turns up, rather than finding out mid-job that the loading dock needed to stay open all along.
+
+## What's worth doing at the same time
+
+Once access is up and the roof is open, it's the cheapest point in years to sort everything else up there rather than paying for a second mobilisation later.
+
+- **Box gutters.** These fail for different reasons to the sheet runs either side of them, and tired box gutters are one of the most common causes of warehouse leaks that have nothing to do with the roof sheeting itself.
+- **Skylights and polycarbonate panels.** Yellowed, brittle or cracked panels get swapped out in the same sequence as the sheets around them.
+- **Solar panels.** If the roof carries an array, it gets lifted and refitted by your installer as part of the same program rather than worked around.
+- **Gutters and downpipes.** Easy to overlook from the ground, and easy to replace while the roof is already open.
+
+If box gutters are the actual source of the leak rather than the sheets themselves, our guide to [box gutters and warehouse leaks](/blog/box-gutter-leaks-warehouse-melbourne/) covers why they fail and how that gets fixed, separately from a roof sheet problem.
+
+## Whose problem is this, exactly
+
+If you're a tenant reading this because your lease is ending, the short version is that roof condition from age and ordinary wear is almost always a landlord item, not something a make good obligation puts back on you. We cover this properly in our guide to [whether the roof is part of your make good](/blog/commercial-roof-make-good-melbourne/), including the specific things a tenant does need to sort before handover, like plant removed and penetrations sealed.
+
+If you're the landlord or the property manager, the roof is yours to manage as a capital asset regardless of who's leasing the building, and that's really what this article is about. Catching corrosion early, through regular [roof inspections](/services/roofing-solutions/roof-inspections-maintenance/), is what keeps a patch job a patch job instead of letting it become a re-roof by the time anyone notices.
+
+## Mistakes that turn a cheap fix into an expensive one
+
+A logistics tenant in Melbourne's north had a handful of rusted sheets near the loading dock for over a year, deferred because the roof "wasn't leaking yet." By the time it was assessed, water had been tracking along the underside of the sheets into the purlins, and what would have been a same day patch became a structural check on the roof framing before any new sheets could go on.
+
+A property manager in the outer east had an entire warehouse roof coated to freshen it up before a new tenant moved in, without checking whether any of the existing rust had gone through. Two winters later the new tenant was reporting leaks in exactly the same spots, because the coating had sealed over active corrosion rather than stopping it. The coating cost was effectively wasted, and the re-roof still had to happen.
+
+A factory owner in Dandenong kept recoating the same roof every few years because it was cheaper each time than committing to a re-roof. Add up three coating jobs over a decade and the total often lands close to what a proper re-roof would have cost once, except the roof is still the same age it was when the first coating went on, and still getting closer to the point where coating stops being an option at all.
+
+The pattern in all three is the same. Treating a structural problem as a cosmetic one, or a cosmetic problem as structural, costs more than getting the diagnosis right the first time.
+
+## Check for asbestos before anything else
+
+Plenty of older Melbourne warehouses have roofs that aren't Colorbond or Zincalume at all. If the building is from the 1980s or earlier and the roof sheets look flat and chalky rather than corrugated steel, there's a real chance it's fibre cement, which commonly contains asbestos. That changes the process entirely, since it needs licensed removal rather than a standard re-sheet. If that sounds like your roof, our guide to [restoring, overcladding or replacing an asbestos cement roof](/blog/asbestos-cement-roof-restore-overclad-replace-melbourne/) covers the options properly before you get a metal roofing quote that doesn't apply to what's actually up there.
+
+## What the process actually looks like
+
+Whichever option the roof needs, the sequence is the same:
+
+- **Full roof walk.** Every sheet run, lap, fixing and penetration checked and photographed, not just the sections visible from the ground.
+- **An honest call on patch, restore or replace.** Including whether what looks like a small problem is hiding a bigger one underneath.
+- **A fixed-price quote**, based on roof area, access, height safety requirements and anything else worth sorting while the crew is already up there, like tired box gutters or yellowed skylights.
+- **The works themselves**, staged in sections so the building stays covered and operating underneath, rather than opened up all at once.
+- **A compliance certificate on completion**, which matters for insurance and for any future lease or sale of the property.
+
+## Get the diagnosis right before you spend anything
+
+The roof rarely fails all at once, which is exactly why it's easy to either ignore it too long or overspend fixing it. A proper inspection tells you which of the three options you're actually dealing with, before any money gets spent on the wrong one.
+
+Send through the property address and some photos from the ground and we'll tell you honestly whether you're looking at a patch, a coating, or a re-roof. [Get in touch.](/contact/)`
   }
 ];
 

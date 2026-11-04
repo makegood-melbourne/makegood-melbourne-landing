@@ -23,14 +23,23 @@ if (!post) {
 
 const description = post.metaDescription || post.excerpt;
 
+// Build the browser title tag as "[Page title] | Make Good Melbourne" so the
+// brand and location both show, but drop the suffix on long titles rather
+// than let Google truncate the keyword itself. 60 characters is the usual
+// safe limit before a search result title gets cut off with an ellipsis.
+const brandSuffix = ' | Make Good Melbourne';
+const titleTag = post.title.length + brandSuffix.length <= 60
+  ? `${post.title}${brandSuffix}`
+  : post.title;
+
 // Construct OG image path from the blog image filename (strip extension and use .jpg)
 const imageFileName = (post.image?.split('/').pop() || post.image).replace(/^\.+\//, '');
 const imageBaseName = imageFileName.replace(/\.(webp|jpg|jpeg|png)$/i, '');
 const ogImage = `/og/blog/${imageBaseName}.jpg`;
 ---
 
-<BaseLayout 
-  title={post.title}
+<BaseLayout
+  title={titleTag}
   description={description}
   ogImage={ogImage}
   canonicalUrl={`https://makegood.melbourne/blog/${post.slug}/`}
