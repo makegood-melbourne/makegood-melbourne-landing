@@ -21,14 +21,48 @@ const industry = getIndustryBySlug(slug);
 if (!industry) {
   return Astro.redirect('/');
 }
+
+// JSON-LD, rendered server-side here rather than via the React component's
+// Helmet (which is a no-op shim, see src/lib/helmet.ts) so this actually
+// reaches the page.
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": industry.title,
+  "description": industry.metaDescription,
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "Make Good Melbourne",
+    "url": "https://makegood.melbourne"
+  },
+  "areaServed": {
+    "@type": "City",
+    "name": "Melbourne"
+  }
+};
+
+const faqSchema = industry.faqs && industry.faqs.length > 0 ? {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": industry.faqs.map((faq) => ({
+    "@type": "Question",
+    "name": faq.question,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": faq.answer
+    }
+  }))
+} : null;
 ---
 
-<BaseLayout 
+<BaseLayout
   title={industry.metaTitle}
   description={industry.metaDescription}
   ogImage={industry.ogImage || "/og-default.jpg"}
   canonicalUrl={`https://makegood.melbourne/industries/${industry.slug}/`}
 >
+  <script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
+  {faqSchema && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
   <main class="min-h-screen bg-background text-foreground">
     <Navigation client:load />
     

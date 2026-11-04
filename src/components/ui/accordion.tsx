@@ -38,9 +38,16 @@ const AccordionContent = React.forwardRef<
   React.ElementRef<typeof AccordionPrimitive.Content>,
   React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Content>
 >(({ className, children, ...props }, ref) => (
+  // forceMount keeps this content in the DOM (and in the server-rendered HTML)
+  // even while the accordion item is closed, so crawlers and screen readers
+  // relying on the static markup still get the answer text. The closed resting
+  // state is clamped to zero height via data-[state=closed]:h-0 below, since the
+  // accordion-up/down keyframes only apply during the open/close transition and
+  // don't persist afterwards (no animation-fill-mode is set).
   <AccordionPrimitive.Content
     ref={ref}
-    className="overflow-hidden text-sm transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down"
+    forceMount
+    className="overflow-hidden text-sm transition-all data-[state=closed]:h-0 data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down"
     {...props}
   >
     <div className={cn("pb-4 pt-0", className)}>{children}</div>
