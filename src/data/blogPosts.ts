@@ -11398,6 +11398,138 @@ By considering these key factors specific to Melbourne, you can navigate the mak
 ## Conclusion
 
 Congratulations! You are now equipped with the knowledge and tools to have a successful make good experience as a tenant in Melbourne. By understanding the make good service, knowing your rights and responsibilities, following our step-by-step guide, and maintaining effective communication, you can navigate this process with confidence. Remember, the make good service should be a collaborative effort between tenants and landlords, ensuring a fair and satisfactory outcome for both parties. Should you have any further questions or require additional support, feel free to reach out to our team. Best of luck with your make good journey!`
+  },
+  {
+    id: "52",
+    slug: "metal-roof-replacement-warehouse-melbourne",
+    title: "Warehouse Metal Roofs: Patch, Restore or Replace",
+    subtitle: "When a few rusted sheets are fine, and when the whole roof has to go",
+    date: "2026-11-04",
+    readTime: "12 min read",
+    excerpt: "Rusted roof sheets, a tired roof that needs coating, or a full re-roof. Here's how to tell which one you've got, and what each one costs in Melbourne.",
+    metaDescription: "Rusted roof sheets, a tired roof that needs coating, or a full re-roof. Here's how to tell which one you've got, and what each one costs in Melbourne.",
+    image: "/src/assets/blog/metal-roof-replacement-warehouse-melbourne.webp",
+    imageAlt: "Rusted and corroded Colorbond roof sheeting on a Melbourne warehouse roof showing corrosion at the sheet laps prior to repair or replacement",
+    content: `Someone finally gets up on the roof. Maybe it's a tenant walking it before a lease ends, maybe it's a property manager doing an annual check, maybe it's just someone chasing a leak. Either way, the sheets are streaked with rust, a few have gone through at the laps, and now there's a decision to make.
+
+Patch it, coat it, or pull the whole thing off and start again.
+
+Get this decision wrong and it costs real money either way. Pay for a full re-roof when a coating would have done the job for a fraction of the price, or coat a roof that's actually failed and you'll be back up there again within a year, except now the ceiling underneath is wet too. Here's how to tell which one you've actually got.
+
+## Why warehouse roofs rust where they do
+
+Colorbond and Zincalume are both steel with a protective coating, and that coating is what actually stops the rust. Once it's compromised, the steel underneath starts corroding, and it rarely happens evenly across the whole roof.
+
+A few spots do most of the damage:
+
+- **The laps**, where one sheet overlaps the next. Water sits here longer than anywhere else on the roof, and the coating wears thinnest at the overlap.
+- **The low end of each run**, where gravity and ponding water concentrate whatever moisture the roof sheds.
+- **Around fasteners**, where the screw has worked loose, the washer has perished, or the coating was scratched during the original install.
+- **Valleys and box gutters**, which sit wet for longer after rain than the open sheet runs either side of them.
+- **Where two different metals touch**, such as a steel sheet against an aluminium flashing or a copper pipe penetration, which sets up galvanic corrosion that eats through the weaker metal fast.
+
+None of this happens overnight. A roof that's fifteen or twenty years old with a few rust spots at the laps is behaving exactly as expected. The question is what to do about it, not whether rust at that age is a surprise.
+
+Location plays a part too. A warehouse near Port Melbourne or along the bay copes with salt-laden air that eats through a protective coating faster than the same roof would corrode out in Dandenong or Campbellfield. Buildings near industrial exhaust, chemical storage or heavy truck routes see faster corrosion as well, since airborne contaminants land on the roof and sit there until rain washes them off, if it washes them off at all. None of this changes the three options available, but it does change the timeline for how soon a roof that looked fine five years ago needs a proper look now.
+
+## Patch, restore or replace
+
+There are three real options, and which one applies depends on how far the corrosion has actually gone, not how bad it looks from the ground.
+
+### Patch
+
+If the rust is isolated to a handful of sheets and the rest of the roof is sound, you replace those sheets and re-fix the surrounding ones. This is the cheapest option by a wide margin and it's appropriate more often than people assume, because most roof problems start as a few failed sheets rather than a roof-wide failure.
+
+### Restore and coat
+
+If the roof is faded, patchy and starting to show surface rust across a wider area, but the steel itself is still structurally sound, a wash, rust treatment and protective coating buys years of life for a fraction of a full re-roof. This only works on a roof that's actually worth saving. Coating over rust that has gone through the sheet doesn't fix anything, it just hides the problem under a fresh colour until it reappears as a leak.
+
+### Full re-roof
+
+Once rust has gone through in multiple places, or the roof is old enough that patching one area just reveals the next one needs doing too, a full re-roof is the honest answer. This is also the point where the lifetime cost of coating a roof every few years starts to outweigh the one-off cost of replacing it properly.
+
+A full re-roof is also staged rather than done all at once. Sections come off and go back on in sequence, with the purlins and fixings underneath checked as each section is opened up, so the building stays weathertight overnight and the roof never comes off faster than it can safely go back on. This is the core of what our [metal roof replacement](/services/roofing-solutions/metal-roof-replacement/) service covers, from a handful of sheets through to a full warehouse re-roof.
+
+## Working out which one you've got
+
+| What you're seeing | Usually means |
+|---|---|
+| A handful of rusted or holed sheets, rest of the roof sound | Patch |
+| Surface rust and fading across a wide area, no holes yet | Restore and coat |
+| Rust through the steel in several places | Full re-roof |
+| Consistent leaks from different spots after every rain event | Full re-roof |
+| One sheet rusted badly near a dissimilar metal penetration | Patch, plus fix the penetration detail |
+| Roof over 25 years old with rust appearing roof-wide | Full re-roof, even if some sections still look fine |
+
+The table is a starting point, not a verdict. A proper roof walk with someone who can tell surface rust from rust that's gone through the sheet is worth more than a guess from the ground, because the two can look similar from a distance and cost very different amounts to fix.
+
+## What a full re-roof actually costs in Melbourne
+
+Pricing varies with roof area, pitch, access and what's underneath, but current Melbourne benchmarks give a reasonable starting point. A standard warehouse re-sheet in Colorbond or Zincalume runs somewhere around $120 per square metre installed, which puts a typical 500 to 1,000 square metre warehouse re-roof at roughly $45,000 to $140,000 all in, covering strip out, disposal, new sheeting, flashings and gutters. Larger sites of 1,000 to 3,000 square metres commonly land between $90,000 and $400,000.
+
+Restoration and coating sits well below that, since no sheets are being removed or replaced, just washed, treated and coated. It's a fraction of the re-roof cost, which is exactly why it's worth confirming the roof actually qualifies for it before paying for a full re-roof it didn't need.
+
+Patching sits well under the restoration price, since it's a handful of sheets rather than the whole roof. Restoration and coating sits below that again in total cost but above patching per square metre, since the whole roof gets washed and treated even though nothing is being removed. We quote after a roof inspection, since the same amount of visible rust can mean a half day patch job or a six figure re-roof depending on what's actually happening under the surface.
+
+## Working around a building that's still operating
+
+A warehouse roof almost never comes off a building that's sitting empty. Staff are still in the office below, stock is still moving through the loading dock, and the business doesn't stop while the roof gets sorted.
+
+A few things make this manageable rather than disruptive:
+
+- **Staging the work in sections** rather than opening the whole roof at once, so there's always a weathertight roof over the building at the end of each day.
+- **Access equipment chosen for the site**, whether that's a crane for lifting bundles of sheets, a boom lift for spot repairs, or scaffold and safety mesh for a full re-roof.
+- **Scheduling around deliveries and operating hours**, particularly where a loading dock or a specific area of the warehouse needs to stay clear.
+- **Weather windows**, since steel roofing can't go down wet and Melbourne's rain doesn't always cooperate with a tight schedule.
+
+None of this is a reason to delay a roof that actually needs the work. It's a reason to plan the sequence properly before the crew turns up, rather than finding out mid-job that the loading dock needed to stay open all along.
+
+## What's worth doing at the same time
+
+Once access is up and the roof is open, it's the cheapest point in years to sort everything else up there rather than paying for a second mobilisation later.
+
+- **Box gutters.** These fail for different reasons to the sheet runs either side of them, and tired box gutters are one of the most common causes of warehouse leaks that have nothing to do with the roof sheeting itself.
+- **Skylights and polycarbonate panels.** Yellowed, brittle or cracked panels get swapped out in the same sequence as the sheets around them.
+- **Solar panels.** If the roof carries an array, it gets lifted and refitted by your installer as part of the same program rather than worked around.
+- **Gutters and downpipes.** Easy to overlook from the ground, and easy to replace while the roof is already open.
+
+If box gutters are the actual source of the leak rather than the sheets themselves, our guide to [box gutters and warehouse leaks](/blog/box-gutter-leaks-warehouse-melbourne/) covers why they fail and how that gets fixed, separately from a roof sheet problem.
+
+## Whose problem is this, exactly
+
+If you're a tenant reading this because your lease is ending, the short version is that roof condition from age and ordinary wear is almost always a landlord item, not something a make good obligation puts back on you. We cover this properly in our guide to [whether the roof is part of your make good](/blog/commercial-roof-make-good-melbourne/), including the specific things a tenant does need to sort before handover, like plant removed and penetrations sealed.
+
+If you're the landlord or the property manager, the roof is yours to manage as a capital asset regardless of who's leasing the building, and that's really what this article is about. Catching corrosion early, through regular [roof inspections](/services/roofing-solutions/roof-inspections-maintenance/), is what keeps a patch job a patch job instead of letting it become a re-roof by the time anyone notices.
+
+## Mistakes that turn a cheap fix into an expensive one
+
+A logistics tenant in Melbourne's north had a handful of rusted sheets near the loading dock for over a year, deferred because the roof "wasn't leaking yet." By the time it was assessed, water had been tracking along the underside of the sheets into the purlins, and what would have been a same day patch became a structural check on the roof framing before any new sheets could go on.
+
+A property manager in the outer east had an entire warehouse roof coated to freshen it up before a new tenant moved in, without checking whether any of the existing rust had gone through. Two winters later the new tenant was reporting leaks in exactly the same spots, because the coating had sealed over active corrosion rather than stopping it. The coating cost was effectively wasted, and the re-roof still had to happen.
+
+A factory owner in Dandenong kept recoating the same roof every few years because it was cheaper each time than committing to a re-roof. Add up three coating jobs over a decade and the total often lands close to what a proper re-roof would have cost once, except the roof is still the same age it was when the first coating went on, and still getting closer to the point where coating stops being an option at all.
+
+The pattern in all three is the same. Treating a structural problem as a cosmetic one, or a cosmetic problem as structural, costs more than getting the diagnosis right the first time.
+
+## Check for asbestos before anything else
+
+Plenty of older Melbourne warehouses have roofs that aren't Colorbond or Zincalume at all. If the building is from the 1980s or earlier and the roof sheets look flat and chalky rather than corrugated steel, there's a real chance it's fibre cement, which commonly contains asbestos. That changes the process entirely, since it needs licensed removal rather than a standard re-sheet. If that sounds like your roof, our guide to [restoring, overcladding or replacing an asbestos cement roof](/blog/asbestos-cement-roof-restore-overclad-replace-melbourne/) covers the options properly before you get a metal roofing quote that doesn't apply to what's actually up there.
+
+## What the process actually looks like
+
+Whichever option the roof needs, the sequence is the same:
+
+- **Full roof walk.** Every sheet run, lap, fixing and penetration checked and photographed, not just the sections visible from the ground.
+- **An honest call on patch, restore or replace.** Including whether what looks like a small problem is hiding a bigger one underneath.
+- **A fixed-price quote**, based on roof area, access, height safety requirements and anything else worth sorting while the crew is already up there, like tired box gutters or yellowed skylights.
+- **The works themselves**, staged in sections so the building stays covered and operating underneath, rather than opened up all at once.
+- **A compliance certificate on completion**, which matters for insurance and for any future lease or sale of the property.
+
+## Get the diagnosis right before you spend anything
+
+The roof rarely fails all at once, which is exactly why it's easy to either ignore it too long or overspend fixing it. A proper inspection tells you which of the three options you're actually dealing with, before any money gets spent on the wrong one.
+
+Send through the property address and some photos from the ground and we'll tell you honestly whether you're looking at a patch, a coating, or a re-roof. [Get in touch.](/contact/)`
   }
 ];
 
