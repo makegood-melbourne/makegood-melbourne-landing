@@ -12,6 +12,44 @@ const data = getSectionLandingBySlug('strip-out-solutions');
 if (!data) {
   return Astro.redirect('/services/');
 }
+
+// JSON-LD, rendered server-side here rather than via the React component's
+// Helmet (which is a no-op shim, see src/lib/helmet.ts) so this actually
+// reaches the page.
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": data.title,
+  "description": data.metaDescription,
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "MakeGOOD Melbourne",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Melbourne",
+      "addressRegion": "VIC",
+      "addressCountry": "AU"
+    },
+    "email": "info@makegood.melbourne"
+  },
+  "areaServed": {
+    "@type": "City",
+    "name": "Melbourne"
+  }
+};
+
+const faqSchema = data.faqs && data.faqs.length > 0 ? {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": data.faqs.map((faq) => ({
+    "@type": "Question",
+    "name": faq.question,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": faq.answer
+    }
+  }))
+} : null;
 ---
 <BaseLayout 
   title={data.metaTitle}
@@ -21,6 +59,8 @@ if (!data) {
 >
   <link slot="head" rel="preload" as="image" href={stripOutHeroMobile.src} fetchpriority="high" media="(max-width: 1023px)" />
   <link slot="head" rel="preload" as="image" href={stripOutHero.src} fetchpriority="high" media="(min-width: 1024px)" />
+  <script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
+  {faqSchema && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
   <div class="min-h-screen flex flex-col bg-background">
     <!-- Skip to Content Link for Accessibility -->
     <a

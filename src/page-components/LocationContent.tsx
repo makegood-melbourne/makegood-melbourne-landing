@@ -1,4 +1,3 @@
-import { Helmet } from "@/lib/helmet";
 import { MapPin, Clock, Shield, Mail, ArrowRight, CheckCircle2, Building2, Wrench, Warehouse, Factory, HardHat, Truck } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -32,28 +31,9 @@ const LocationContent = ({ slug }: LocationContentProps) => {
 
   return (
     <>
-      <Helmet>
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Service",
-            "name": `Make Good Services ${location.name}`,
-            "description": location.metaDescription,
-            "provider": { "@type": "LocalBusiness", "name": "Make Good Melbourne", "url": "https://makegood.melbourne" },
-            "areaServed": { "@type": "City", "name": location.name, "containedIn": "Victoria, Australia" },
-            "serviceType": "Make Good Services"
-          })}
-        </script>
-        {location.faqs && location.faqs.length > 0 && (
-          <script type="application/ld+json">
-            {JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "FAQPage",
-              "mainEntity": location.faqs.map(faq => ({ "@type": "Question", "name": faq.question, "acceptedAnswer": { "@type": "Answer", "text": faq.answer } }))
-            })}
-          </script>
-        )}
-      </Helmet>
+      {/* JSON-LD structured data is rendered server-side in the Astro page
+          ([slug].astro), built from the same location data, since Helmet
+          is a no-op shim and never reaches the page. */}
 
       {/* Section 1: Local Content + Expertise Card — LIGHT */}
       <section className="py-16 bg-secondary">

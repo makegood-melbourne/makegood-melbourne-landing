@@ -23,14 +23,54 @@ const service = getServiceBySlug(fullSlug);
 if (!service) {
   return Astro.redirect('/services/');
 }
+
+// JSON-LD, rendered server-side here rather than via the React component's
+// Helmet (which is a no-op shim, see src/lib/helmet.ts) so this actually
+// reaches the page.
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": service.name,
+  "description": service.description,
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "MakeGOOD Melbourne",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Melbourne",
+      "addressRegion": "VIC",
+      "addressCountry": "AU"
+    },
+    "email": "info@makegood.melbourne"
+  },
+  "areaServed": {
+    "@type": "City",
+    "name": "Melbourne"
+  }
+};
+
+const faqSchema = service.faqs && service.faqs.length > 0 ? {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": service.faqs.map((faq) => ({
+    "@type": "Question",
+    "name": faq.question,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": faq.answer
+    }
+  }))
+} : null;
 ---
 
-<BaseLayout 
+<BaseLayout
   title={service.metaTitle}
   description={service.metaDescription}
   ogImage={service.ogImage || "/og-default.jpg"}
   canonicalUrl={`https://makegood.melbourne/services/${service.slug}/`}
 >
+  <script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
+  {faqSchema && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
   <div class="min-h-screen flex flex-col bg-background">
     <!-- Skip to Content Link for Accessibility -->
     <a
@@ -39,7 +79,7 @@ if (!service) {
     >
       Skip to main content
     </a>
-    
+
     <Navigation client:idle />
     
     <main id="main-content" class="flex-1">

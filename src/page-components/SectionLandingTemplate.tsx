@@ -1,4 +1,3 @@
-import { Helmet } from "@/lib/helmet";
 import { renderTextWithLinks } from "@/lib/textWithLinks";
 import { resolveImageSrc } from "@/lib/resolveImageSrc";
 import SimpleProcess from "@/components/SimpleProcess";
@@ -118,55 +117,16 @@ interface SectionLandingTemplateProps {
 }
 
 const SectionLandingTemplate = ({ data }: SectionLandingTemplateProps) => {
-  // Structured data for SEO
-  const structuredData = {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "name": data.title,
-    "description": data.metaDescription,
-    "provider": {
-      "@type": "LocalBusiness",
-      "name": "MakeGOOD Melbourne",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Melbourne",
-        "addressRegion": "VIC",
-        "addressCountry": "AU"
-      },
-      "email": "info@makegood.melbourne"
-    },
-    "areaServed": {
-      "@type": "City",
-      "name": "Melbourne"
-    }
-  };
-
-  // FAQ Schema for rich snippets
-  const faqSchema = data.faqs && data.faqs.length > 0 ? {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": data.faqs.map(faq => ({
-      "@type": "Question",
-      "name": faq.question,
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": faq.answer
-      }
-    }))
-  } : null;
+  // JSON-LD structured data for this section (Service + FAQPage schema) is
+  // built and rendered server-side in each section's Astro page (e.g.
+  // strip-out-solutions.astro) from the same section data, not here, since
+  // Helmet is a no-op shim.
 
   return (
     <>
-      <Helmet>
-        <script type="application/ld+json">
-          {JSON.stringify(structuredData)}
-        </script>
-        {faqSchema && (
-          <script type="application/ld+json">
-            {JSON.stringify(faqSchema)}
-          </script>
-        )}
-      </Helmet>
+      {/* JSON-LD structured data is rendered server-side in each section's
+          Astro page, built from the same section data, since Helmet is a
+          no-op shim and never reaches the page. */}
 
       {/* Hero Section */}
       <div className="bg-secondary">

@@ -1,4 +1,3 @@
-import { Helmet } from "@/lib/helmet";
 import { renderTextWithLinks } from "@/lib/textWithLinks";
 import { ArrowRight, CheckCircle, AlertTriangle, ImageIcon, Warehouse, Package, Truck, Snowflake, Factory, Container } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -41,49 +40,15 @@ const IndustryContent = ({ slug }: IndustryContentProps) => {
     .map(serviceSlug => getServiceBySlug(serviceSlug))
     .filter(Boolean);
 
-  // Service schema
-  const industrySchema = {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "name": industry.title,
-    "description": industry.metaDescription,
-    "provider": {
-      "@type": "LocalBusiness",
-      "name": "Make Good Melbourne",
-      "url": "https://makegood.melbourne"
-    },
-    "areaServed": {
-      "@type": "City",
-      "name": "Melbourne"
-    }
-  };
-
-  // FAQ Schema for rich snippets
-  const faqSchema = industry.faqs && industry.faqs.length > 0 ? {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": industry.faqs.map(faq => ({
-      "@type": "Question",
-      "name": faq.question,
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": faq.answer
-      }
-    }))
-  } : null;
+  // JSON-LD structured data for this industry (Service + FAQPage schema) is
+  // built and rendered server-side in the Astro page ([slug].astro) from
+  // the same industry data, not here, since Helmet is a no-op shim.
 
   return (
     <>
-      <Helmet>
-        <script type="application/ld+json">
-          {JSON.stringify(industrySchema)}
-        </script>
-        {faqSchema && (
-          <script type="application/ld+json">
-            {JSON.stringify(faqSchema)}
-          </script>
-        )}
-      </Helmet>
+      {/* JSON-LD structured data is rendered server-side in the Astro page
+          ([slug].astro), built from the same industry data, since Helmet
+          is a no-op shim and never reaches the page. */}
 
       {/* Introduction */}
       {industry.introduction && (

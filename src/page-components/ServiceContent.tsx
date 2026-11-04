@@ -1,4 +1,3 @@
-import { Helmet } from "@/lib/helmet";
 import { getServiceBySlug, getPublishedServices } from "@/data/services";
 import { renderTextWithLinks } from "@/lib/textWithLinks";
 import { resolveImageSrc } from "@/lib/resolveImageSrc";
@@ -35,41 +34,9 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
     service.relatedServices.includes(s.slug) && s.slug !== service.slug
   ).slice(0, 3);
 
-  const structuredData = {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "name": service.name,
-    "description": service.description,
-    "provider": {
-      "@type": "LocalBusiness",
-      "name": "MakeGOOD Melbourne",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Melbourne",
-        "addressRegion": "VIC",
-        "addressCountry": "AU"
-      },
-      "email": "info@makegood.melbourne"
-    },
-    "areaServed": {
-      "@type": "City",
-      "name": "Melbourne"
-    }
-  };
-
-  // FAQ Schema for rich snippets
-  const faqSchema = service.faqs && service.faqs.length > 0 ? {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": service.faqs.map(faq => ({
-      "@type": "Question",
-      "name": faq.question,
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": faq.answer
-      }
-    }))
-  } : null;
+  // JSON-LD structured data for this service (Service + FAQPage schema) is
+  // built and rendered server-side in the Astro page ([...slug].astro) from
+  // the same service data, not here, since Helmet is a no-op shim.
 
   // ─── Global background alternation ───
   // The hero section before this component uses bg-secondary (#2e2e2e, close to dark).
@@ -201,17 +168,9 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
 
   return (
     <>
-      {/* JSON-LD structured data */}
-      <Helmet>
-        <script type="application/ld+json">
-          {JSON.stringify(structuredData)}
-        </script>
-        {faqSchema && (
-          <script type="application/ld+json">
-            {JSON.stringify(faqSchema)}
-          </script>
-        )}
-      </Helmet>
+      {/* JSON-LD structured data is rendered server-side in the Astro page
+          ([...slug].astro), built from the same service data, since Helmet
+          is a no-op shim and never reaches the page. */}
 
       {/* Capabilities / What's Included (varies by service) */}
       {service.capabilityCards && service.capabilityCards.length > 0 ? (
