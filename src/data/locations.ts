@@ -1362,6 +1362,110 @@ export const locations: Location[] = [
       { question: "How does Glen Waverley’s mixed-use developments affect end of lease make good obligations?", answer: "Mixed-use buildings in Glen Waverley combine residential and commercial spaces, which means tenants must consider both commercial lease conditions and residential body corporate rules. Make good works may include noise mitigation repairs and ensuring common areas are restored, making the process more complex than standard commercial leases." }
     ],
   }
+,
+  {
+    "name": "Dandenong South",
+    "slug": "dandenong-south",
+    "title": "Make Good Services Dandenong South",
+    "metaTitle": "Make Good Services Dandenong South | MakeGOOD Melbourne",
+    "description": "Make good, strip out and warehouse restoration for Dandenong South's large industrial and distribution properties, including Abbotts Road, Greens Road and the Frankston-Dandenong Road corridor.",
+    "metaDescription": "Make good and warehouse restoration in Dandenong South. Racking removal, slab repairs, line marking and handover. Free site inspection and fixed price quote.",
+    "uniqueIntro": "Dandenong South is one of Melbourne's major industrial precincts, with large warehouses, distribution centres and manufacturing sites along Abbotts Road, Greens Road and the Frankston-Dandenong Road corridor. Leases here commonly require tenants to hand back big floor areas in a clean, repaired and compliant condition.",
+    "localContext": "Large warehouse tenancies bring work that scales with the floor area: pallet racking removal, anchor hole filling, slab repairs, line marking removal and a full handover clean. We plan the sequence so the racking comes out first, the slab is repaired next and the site is ready for the landlord's inspection.",
+    "keyAreas": [
+      "Abbotts Road",
+      "Greens Road",
+      "Frankston-Dandenong Road corridor",
+      "Dandenong South industrial precinct"
+    ],
+    "businessTypes": [
+      "Distribution warehouses",
+      "Logistics and 3PL facilities",
+      "Manufacturing facilities",
+      "Industrial units",
+      "Trade and wholesale premises"
+    ],
+    "localExpertise": [
+      {
+        "title": "Pallet Racking Removal",
+        "description": "Racking is dismantled and removed, with anchor holes filled and the slab prepared for repair."
+      },
+      {
+        "title": "Warehouse Slab Repairs",
+        "description": "Worn, cracked and stained concrete floors are repaired to the lease handback standard."
+      },
+      {
+        "title": "Line Marking Removal & Reinstatement",
+        "description": "Floor markings are removed or reinstated depending on what the lease requires."
+      },
+      {
+        "title": "Large Site Handover Cleaning",
+        "description": "A handover clean sized for big floor areas so the site is ready for landlord inspection."
+      }
+    ],
+    "endOfLeaseContent": "MakeGOOD Melbourne delivers end of lease make good for Dandenong South industrial properties, from racking removal and slab repairs to line marking and handover cleaning. We review your lease, inspect the site and provide a fixed price quote covering every trade.",
+    "faqs": [
+      {
+        "question": "Do you make good large warehouses in Dandenong South?",
+        "answer": "Yes. We handle racking removal, slab repairs, line marking, strip out and handover cleaning for large industrial and distribution properties."
+      },
+      {
+        "question": "How long does a warehouse make good take?",
+        "answer": "A large warehouse restoration typically takes 4 to 8 weeks, depending on size, complexity and coordination with the landlord."
+      }
+    ]
+  },
+  {
+    "name": "Hallam",
+    "slug": "hallam",
+    "title": "Make Good Services Hallam",
+    "metaTitle": "Make Good Services Hallam | MakeGOOD Melbourne",
+    "description": "Make good, strip out and restoration for Hallam's industrial units, trade premises and logistics properties around Hallam Road and the Princes Highway corridor.",
+    "metaDescription": "Make good services in Hallam. Industrial unit restoration, strip out, floor repairs and handover. Free site inspection and fixed price quote.",
+    "uniqueIntro": "Hallam is part of Melbourne's south east industrial belt, with industrial units, trade premises and logistics properties around Hallam Road and the Princes Highway corridor. Many tenancies are mid sized units where the lease asks for fitout and fixtures to be removed and the shell returned in good order.",
+    "localContext": "Typical Hallam handbacks include office pods and mezzanines, racking, added partitions, damaged slab areas and repainting. We inspect the unit, confirm the lease requirements and quote every trade as one fixed price so you can plan the exit date.",
+    "keyAreas": [
+      "Hallam Road",
+      "Princes Highway corridor",
+      "Hallam industrial area"
+    ],
+    "businessTypes": [
+      "Industrial units",
+      "Trade and wholesale premises",
+      "Logistics and storage",
+      "Light manufacturing",
+      "Warehouse offices"
+    ],
+    "localExpertise": [
+      {
+        "title": "Industrial Unit Strip Out",
+        "description": "Mezzanines, office pods, partitions and added fitout are removed back to the base condition."
+      },
+      {
+        "title": "Floor & Wall Repairs",
+        "description": "Slab damage, anchor holes and wall damage are repaired and repainted to the lease standard."
+      },
+      {
+        "title": "Racking & Equipment Removal",
+        "description": "Racking and fixed equipment are disconnected and removed from the unit."
+      },
+      {
+        "title": "Handover Cleaning",
+        "description": "A final clean so the unit is ready for the landlord's inspection."
+      }
+    ],
+    "endOfLeaseContent": "MakeGOOD Melbourne delivers end of lease make good for Hallam industrial units and trade premises. We review your lease, inspect the property and provide a fixed price quote that covers strip out, repairs, painting and handover cleaning.",
+    "faqs": [
+      {
+        "question": "Do you service industrial units in Hallam?",
+        "answer": "Yes. We handle strip out, racking removal, floor and wall repairs, painting and handover cleaning for industrial units and trade premises in Hallam."
+      },
+      {
+        "question": "Do you offer a free site inspection in Hallam?",
+        "answer": "Yes. We provide a free site inspection, lease review and fixed price quote with no obligation."
+      }
+    ]
+  }
 ];
 
 // Get locations sorted alphabetically for display
@@ -1369,9 +1473,13 @@ export const getSortedLocations = (): Location[] => {
   return [...locations].sort((a, b) => a.name.localeCompare(b.name));
 };
 
-// Top 12 locations for navigation dropdown (alphabetical in dropdown)
+// Featured locations for navigation dropdown (alphabetical in dropdown)
 const featuredSlugs = new Set([
   "altona",
+  "clayton",
+  "dandenong-south",
+  "hallam",
+  "mulgrave",
   "brunswick",
   "dandenong",
   "fitzroy",

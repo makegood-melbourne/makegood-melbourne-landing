@@ -45,7 +45,7 @@ const Navigation = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
+    <nav aria-label="Main" className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <a href="/" className="flex items-center">
@@ -53,46 +53,65 @@ const Navigation = () => {
           </a>
           
           <div className="hidden md:flex items-center gap-6">
-            <DropdownMenu>
-              <DropdownMenuTrigger className="flex items-center gap-1 text-foreground hover:text-accent transition-colors">
+            {/* Services: a real link plus a mega panel. The panel is always in the DOM (hidden with CSS)
+                so every service link is present in the server-rendered HTML for crawlers,
+                and it opens on hover or keyboard focus with no JavaScript. */}
+            <div className="relative group">
+              <a
+                href="/services/"
+                className="flex items-center gap-1 text-foreground hover:text-accent transition-colors py-2"
+                aria-haspopup="true"
+              >
                 Services
                 <ChevronDown className="h-4 w-4" />
-              </DropdownMenuTrigger>
-              <DropdownMenuContent align="start" className="bg-card border-border w-64">
-                {serviceCategories.reduce((acc: React.ReactNode[], category, index) => {
-                  const categoryServices = getServicesByCategory(category.slugs);
-                  if (categoryServices.length === 0) return acc;
-                  
-                  acc.push(
-                    <div key={category.label}>
-                      {acc.length > 0 && <DropdownMenuSeparator />}
-                      {category.href ? (
-                        <DropdownMenuItem asChild className="p-0 focus:bg-primary focus:text-primary-foreground">
-                          <a href={category.href} className="block w-full px-2 py-1.5 group">
-                            <span className="text-primary text-xs uppercase tracking-wider font-semibold group-hover:text-primary-foreground group-focus:text-primary-foreground">
-                              {category.label}
-                            </span>
-                          </a>
-                        </DropdownMenuItem>
-                      ) : (
-                        <DropdownMenuLabel className="text-primary text-xs uppercase tracking-wider">
+              </a>
+              <div className="invisible opacity-0 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100 transition-opacity duration-150 absolute left-1/2 -translate-x-1/3 top-full pt-2 z-50">
+                <div className="bg-card border border-border rounded-md shadow-xl p-6 grid grid-cols-5 gap-6 w-[1000px] max-w-[calc(100vw-2rem)]">
+                  {serviceCategories.map((category) => {
+                    const categoryServices = getServicesByCategory(category.slugs);
+                    if (categoryServices.length === 0) return null;
+                    return (
+                      <div key={category.label}>
+                        <a
+                          href={category.href}
+                          className="block text-primary text-xs uppercase tracking-wider font-semibold mb-3 hover:underline"
+                        >
                           {category.label}
-                        </DropdownMenuLabel>
-                      )}
-                      {categoryServices.map((service) => (
-                        <DropdownMenuItem key={service.slug} asChild>
-                          <a 
-                            href={`/services/${service.slug}/`}
-                            className="cursor-pointer"
-                          >
-                            {category.displayNames?.[service.slug] || service.name}
-                          </a>
-                        </DropdownMenuItem>
-                      ))}
-                    </div>
-                  );
-                  return acc;
-                }, [])}
+                        </a>
+                        <ul className="space-y-2">
+                          {categoryServices.map((service) => (
+                            <li key={service.slug}>
+                              <a
+                                href={`/services/${service.slug}/`}
+                                className="text-sm text-foreground hover:text-accent transition-colors"
+                              >
+                                {category.displayNames?.[service.slug] || service.name}
+                              </a>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            </div>
+            <DropdownMenu>
+              <DropdownMenuTrigger className="flex items-center gap-1 text-foreground hover:text-accent transition-colors">
+                Industries
+                <ChevronDown className="h-4 w-4" />
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="start" className="bg-card border-border">
+                {getAllIndustries().map((industry) => (
+                  <DropdownMenuItem key={industry.slug} asChild>
+                    <a 
+                      href={`/industries/${industry.slug}/`}
+                      className="cursor-pointer"
+                    >
+                      {industry.name}
+                    </a>
+                  </DropdownMenuItem>
+                ))}
               </DropdownMenuContent>
             </DropdownMenu>
             <DropdownMenu>
@@ -122,32 +141,14 @@ const Navigation = () => {
                 </DropdownMenuItem>
             </DropdownMenuContent>
             </DropdownMenu>
-            <DropdownMenu>
-              <DropdownMenuTrigger className="flex items-center gap-1 text-foreground hover:text-accent transition-colors">
-                Industries
-                <ChevronDown className="h-4 w-4" />
-              </DropdownMenuTrigger>
-              <DropdownMenuContent align="start" className="bg-card border-border">
-                {getAllIndustries().map((industry) => (
-                  <DropdownMenuItem key={industry.slug} asChild>
-                    <a 
-                      href={`/industries/${industry.slug}/`}
-                      className="cursor-pointer"
-                    >
-                      {industry.name}
-                    </a>
-                  </DropdownMenuItem>
-                ))}
-              </DropdownMenuContent>
-            </DropdownMenu>
             {/* About Us as standalone nav item */}
             <a href="/about/" className="text-foreground hover:text-accent transition-colors">
               About Us
             </a>
-            {/* Learn dropdown - educational content only */}
+            {/* Resources dropdown - educational content only */}
             <DropdownMenu>
               <DropdownMenuTrigger className="flex items-center gap-1 text-foreground hover:text-accent transition-colors">
-                Learn
+                Resources
                 <ChevronDown className="h-4 w-4" />
               </DropdownMenuTrigger>
               <DropdownMenuContent align="start" className="bg-card border-border">
@@ -180,14 +181,19 @@ const Navigation = () => {
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
-            <a href="/contact/">
+            <a href="/contact/" data-track="nav_quote_desktop">
               <Button className="bg-accent hover:bg-accent/90 text-accent-foreground">
                 Request a Quote
               </Button>
             </a>
           </div>
 
-          <button className="md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+          <button
+            className="md:hidden p-2 -mr-2"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+            aria-expanded={isMenuOpen}
+          >
             <Menu className="h-6 w-6 text-foreground" />
           </button>
         </div>
@@ -209,7 +215,7 @@ const Navigation = () => {
                   {priorityServices.length > 0 && (
                     <div>
                       <span className="text-primary text-xs uppercase tracking-wider font-medium">
-                        Priority Services
+                        Most requested
                       </span>
                       <div className="flex flex-col gap-2 mt-1">
                         {priorityServices.map((service) => (
@@ -330,13 +336,13 @@ const Navigation = () => {
               </a>
             </div>
 
-            {/* Learn */}
+            {/* Resources */}
             <div className="border-b border-border/50">
               <button
                 className="w-full flex items-center justify-between py-3 text-foreground font-medium hover:text-accent transition-colors"
                 onClick={() => toggleSection('learn')}
               >
-                Learn
+                Resources
                 <ChevronDown className={`h-4 w-4 transition-transform ${openSections['learn'] ? 'rotate-180' : ''}`} />
               </button>
               {openSections['learn'] && (
@@ -352,7 +358,7 @@ const Navigation = () => {
 
             {/* CTA */}
             <div className="pt-3">
-              <a href="/contact/" onClick={() => setIsMenuOpen(false)}>
+              <a href="/contact/" data-track="nav_quote_mobile" onClick={() => setIsMenuOpen(false)}>
                 <Button className="bg-accent hover:bg-accent/90 text-accent-foreground w-full">
                   Request a Quote
                 </Button>

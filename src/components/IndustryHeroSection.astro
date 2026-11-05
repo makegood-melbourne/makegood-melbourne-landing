@@ -58,7 +58,17 @@ const heroImageAlt = industry.heroImageAlt || industry.title;
         </div>
       </div>
       <div>
-        {heroImage ? (
+        {!heroImage && typeof industry.heroImage === 'string' ? (
+          <img
+            src={industry.heroImage}
+            alt={heroImageAlt}
+            class="rounded-lg shadow-xl w-full aspect-[4/3] object-cover"
+            width="800"
+            height="600"
+            loading="eager"
+            decoding="async"
+          />
+        ) : heroImage ? (
           <Image 
             src={heroImage} 
             alt={heroImageAlt}

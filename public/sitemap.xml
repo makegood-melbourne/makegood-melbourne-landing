@@ -3,7 +3,7 @@
   <!-- Core Pages -->
   <url>
     <loc>https://makegood.melbourne/</loc>
-    <lastmod>2026-02-19</lastmod>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -339,6 +339,24 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://makegood.melbourne/industries/retail/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://makegood.melbourne/industries/medical-centres/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://makegood.melbourne/industries/hospitality-venues/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
   <!-- Location Pages -->
   <url>
     <loc>https://makegood.melbourne/areas/melbourne-cbd/</loc>
@@ -361,6 +379,18 @@
   <url>
     <loc>https://makegood.melbourne/areas/dandenong/</loc>
     <lastmod>2026-01-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://makegood.melbourne/areas/dandenong-south/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://makegood.melbourne/areas/hallam/</loc>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

@@ -1,0 +1,73 @@
+---
+// Trust strip shown directly under the hero. Only claims already made elsewhere
+// on the site (footer, FAQs, llms.txt) belong here. Add reviews, named clients and
+// accreditations only once they can be verified and published.
+const items = [
+  { title: 'Licensed & insured', body: 'Licensed trades, fully insured' },
+  { title: 'Fixed price quotes', body: 'No variations, no surprises' },
+  { title: 'Free site inspection', body: 'Lease review included, no obligation' },
+  { title: 'One contractor', body: 'Every trade, one point of contact' },
+];
+---
+
+<section class="trust-strip" aria-label="Why clients choose MakeGOOD Melbourne">
+  <ul class="trust-strip__list">
+    {items.map((item) => (
+      <li class="trust-strip__item">
+        <svg class="trust-strip__tick" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="trust-strip__text">
+          <strong>{item.title}</strong>
+          <span>{item.body}</span>
+        </span>
+      </li>
+    ))}
+  </ul>
+</section>
+
+<style>
+  .trust-strip {
+    background-color: hsl(0 0% 14%);
+    border-top: 1px solid hsl(0 0% 24%);
+    border-bottom: 1px solid hsl(0 0% 24%);
+    padding: 1.25rem 1.5rem;
+  }
+  .trust-strip__list {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25rem;
+  }
+  .trust-strip__item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+  .trust-strip__tick {
+    flex-shrink: 0;
+    margin-top: 2px;
+    color: hsl(25 85% 60%);
+  }
+  .trust-strip__text {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.875rem;
+    line-height: 1.4;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .trust-strip__text strong {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  @media (max-width: 900px) {
+    .trust-strip__list { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 480px) {
+    .trust-strip__list { grid-template-columns: 1fr; gap: 0.9rem; }
+  }
+</style>

@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Navigation from '../components/Navigation';
 import HeroSection from '../components/HeroSection.astro';
+import TrustStrip from '../components/TrustStrip.astro';
 import SpecialistsSection from '../components/SpecialistsSection.astro';
 import ServicesGrid from '../components/ServicesGrid.astro';
 import IndexContent from '../components/IndexContent';
@@ -25,13 +26,28 @@ const faqSchema = {
   }))
 };
 
-// LocalBusiness schema
+// Suburbs we feature on the homepage, reused for areaServed
+const featuredAreas = [
+  "Melbourne CBD", "Port Melbourne", "Richmond", "Moorabbin", "Ringwood",
+  "Dandenong", "Dandenong South", "Clayton", "Mulgrave", "Hallam", "Braeside",
+];
+
+const serviceCatalog = [
+  { name: "Strip Out Solutions", url: "https://makegood.melbourne/services/strip-out-solutions/" },
+  { name: "Make Good Solutions", url: "https://makegood.melbourne/services/make-good-solutions/" },
+  { name: "Handover Solutions", url: "https://makegood.melbourne/services/handover-solutions/" },
+  { name: "Remediation Solutions", url: "https://makegood.melbourne/services/remediation-solutions/" },
+  { name: "Roofing Solutions", url: "https://makegood.melbourne/services/roofing-solutions/" },
+];
+
+// LocalBusiness schema (service area business: suburb level address only, no street address)
 const businessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "additionalType": "https://schema.org/HomeAndConstructionBusiness",
   "@id": "https://makegood.melbourne/#localbusiness",
-  "name": "Make Good Melbourne",
+  "name": "MakeGOOD Melbourne",
+  "alternateName": "Make Good Melbourne",
   "url": "https://makegood.melbourne/",
   "logo": "https://makegood.melbourne/makegood-melbourne-logo.png",
   "image": [
@@ -39,7 +55,7 @@ const businessSchema = {
     "https://makegood.melbourne/images/commercial-property-restoration-capabilities-melbourne.jpg"
   ],
   "email": "info@makegood.melbourne",
-  "description": "Professional make good, make safe and remediation services for commercial and industrial properties across Melbourne. Expert end-of-lease restoration, office strip-outs, warehouse restoration, and building remediation throughout Victoria.",
+  "description": "Commercial make good, strip out, remediation and roofing for offices, warehouses and industrial properties across Melbourne. Free site inspection and fixed price quotes.",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Melbourne",
@@ -49,17 +65,14 @@ const businessSchema = {
   "contactPoint": {
     "@type": "ContactPoint",
     "email": "info@makegood.melbourne",
-    "contactType": "customer service"
+    "contactType": "customer service",
+    "areaServed": "AU-VIC",
+    "availableLanguage": "English"
   },
   "areaServed": [
-    {
-      "@type": "City",
-      "name": "Melbourne"
-    },
-    {
-      "@type": "State",
-      "name": "Victoria"
-    }
+    { "@type": "State", "name": "Victoria" },
+    { "@type": "City", "name": "Melbourne" },
+    ...featuredAreas.map((name) => ({ "@type": "Place", "name": `${name}, Victoria` })),
   ],
   "serviceType": [
     "Make Good Services",
@@ -68,14 +81,45 @@ const businessSchema = {
     "Warehouse Restoration",
     "Building Remediation",
     "Make Safe Services",
+    "Commercial Roofing",
     "Commercial Property Restoration"
-  ]
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Commercial make good, strip out, remediation and roofing services",
+    "itemListElement": serviceCatalog.map((service) => ({
+      "@type": "Offer",
+      "itemOffered": { "@type": "Service", "name": service.name, "url": service.url }
+    }))
+  }
+};
+
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://makegood.melbourne/#organization",
+  "name": "MakeGOOD Melbourne",
+  "alternateName": "Make Good Melbourne",
+  "url": "https://makegood.melbourne/",
+  "logo": "https://makegood.melbourne/makegood-melbourne-logo.png",
+  "email": "info@makegood.melbourne"
+};
+
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://makegood.melbourne/#website",
+  "name": "MakeGOOD Melbourne",
+  "alternateName": "Make Good Melbourne",
+  "url": "https://makegood.melbourne/",
+  "inLanguage": "en-AU",
+  "publisher": { "@id": "https://makegood.melbourne/#organization" }
 };
 ---
 
 <BaseLayout 
-  title="Make Good & Remediation Melbourne | Make Good, BETTER."
-  description="Melbourne's make good specialists for offices, warehouses and industrial properties. Strip outs, restoration and remediation. All trades, one contact."
+  title="Commercial Make Good & Strip Out Melbourne | MakeGOOD Melbourne"
+  description="End of lease make good, strip out, remediation and roofing for Melbourne offices, warehouses and industrial sites. Free site inspection and fixed price quote."
   ogImage="/og/commercial.jpg"
   canonicalUrl="https://makegood.melbourne/"
 >
@@ -83,11 +127,14 @@ const businessSchema = {
   <Fragment slot="head">
     <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
     <script type="application/ld+json" set:html={JSON.stringify(businessSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(organizationSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />
   </Fragment>
 
   <main class="min-h-screen bg-background text-foreground">
     <Navigation client:load />
     <HeroSection />
+    <TrustStrip />
     <SpecialistsSection />
     <ServicesGrid />
     <IndexContent client:idle />

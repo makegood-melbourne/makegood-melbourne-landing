@@ -395,6 +395,187 @@ export const industries: Industry[] = [
       }
     ]
   }
+,
+  {
+    "name": "Retail",
+    "slug": "retail",
+    "title": "Retail Shop & Shopfront Make Good Melbourne",
+    "metaTitle": "Retail Make Good Melbourne | Shopfront & Shopping Centre | MakeGOOD",
+    "metaDescription": "Retail make good for Melbourne shops, shopfronts and shopping centre tenancies. Fitout removal, flooring, ceilings, painting and handover to landlord standard. Fixed price quotes.",
+    "heroText": "Retail make good for Melbourne shopfronts, strip shops and shopping centre tenancies. We remove the fitout, restore the shell and hand back to your landlord's standard.",
+    "heroImage": "/images/industries/retail-shopfront-make-good-melbourne.jpg",
+    "heroImageAlt": "Retail shopfront tenancy stripped back for make good in Melbourne",
+    "ogImage": "/og/commercial.jpg",
+    "introduction": "Retail leases usually set a clear handback standard: fixtures and signage out, services capped, and floors, walls and ceilings returned to the landlord's base condition. Shopping centres add design criteria, trading hours and access rules on top. We review your lease, plan the works around centre requirements and deliver every trade under one fixed price quote.",
+    "challenges": [
+      {
+        "title": "Landlord & Centre Requirements",
+        "description": "Shopping centre handbacks follow landlord design criteria, approved contractor rules and strict access hours. We plan the program around them."
+      },
+      {
+        "title": "Shopfront & Signage Removal",
+        "description": "Fascias, signage, display fittings and shopfront changes need to be removed and the façade repaired to the original condition."
+      },
+      {
+        "title": "Floors, Walls & Ceilings",
+        "description": "Tiles, timber and carpet, feature walls and custom ceilings all need to be removed, patched and repainted to the lease standard."
+      },
+      {
+        "title": "Services & Lighting",
+        "description": "Added power, data, lighting and signage circuits need to be made safe and capped by licensed trades."
+      }
+    ],
+    "services": [
+      "strip-out-solutions/demolition",
+      "strip-out-solutions/make-safe",
+      "make-good-solutions/patching-plastering",
+      "make-good-solutions/painting",
+      "make-good-solutions/flooring-reinstatement",
+      "handover-solutions/end-of-lease-cleaning"
+    ],
+    "benefits": [
+      "Lease and handback standard reviewed before quoting",
+      "After-hours and overnight works for centre tenancies",
+      "Shopfront and signage removal with façade repair",
+      "Licensed trades for services capping",
+      "One contractor and one fixed price quote",
+      "Documentation for landlord sign off"
+    ],
+    "faqs": [
+      {
+        "question": "What does a retail make good usually include?",
+        "answer": "It depends on your lease, but it commonly includes removing shopfit joinery, signage and fixtures, capping services, repairing floors, walls and ceilings, repainting and a final clean. We review the lease clause and confirm the scope before we quote."
+      },
+      {
+        "question": "Can you work around shopping centre trading hours?",
+        "answer": "Yes. Centre tenancies often require after-hours or overnight works, approved contractors and set access times. We plan the program around the centre's rules."
+      },
+      {
+        "question": "Do you offer a fixed price for a retail make good?",
+        "answer": "Yes. We inspect the tenancy, review your lease and provide a fixed price quote covering every trade. See our [make good guide](/learn/make-good-guide/) for how the process works."
+      }
+    ]
+  },
+  {
+    "name": "Medical Centres & Suites",
+    "slug": "medical-centres",
+    "title": "Medical Centre & Clinic Make Good Melbourne",
+    "metaTitle": "Medical Centre Make Good Melbourne | Clinics & Suites | MakeGOOD",
+    "metaDescription": "Make good for Melbourne medical centres, clinics and consulting suites. Fitout and joinery removal, services capping, flooring, painting and compliant handover. Fixed price quotes.",
+    "heroText": "Make good for Melbourne medical centres, dental and allied health clinics and consulting suites. Fitout removed, services capped and the space cleared for handover.",
+    "heroImage": "/images/industries/medical-centre-make-good-melbourne.jpg",
+    "heroImageAlt": "Medical centre consulting suite after fitout removal and make good in Melbourne",
+    "ogImage": "/og/commercial.jpg",
+    "introduction": "Clinical fitouts are more heavily serviced than a standard office. Hand basins, plumbing to treatment rooms, specialised joinery, medical gas outlets and imaging rooms all have to be dealt with before the space can be handed back. We coordinate licensed trades, disposal and cleaning under one fixed price quote so you can meet your lease end date.",
+    "challenges": [
+      {
+        "title": "Plumbing & Clinical Services",
+        "description": "Added hand basins, sinks and treatment room plumbing need to be disconnected and capped by licensed plumbers."
+      },
+      {
+        "title": "Specialised Joinery & Fixtures",
+        "description": "Clinical cabinetry, benches, dental and treatment room fixtures need careful removal and repair of the surfaces behind them."
+      },
+      {
+        "title": "Imaging & Special Rooms",
+        "description": "Rooms built for imaging or similar equipment may have specialised wall construction that has to be removed and disposed of correctly."
+      },
+      {
+        "title": "Flooring & Hygiene Finishes",
+        "description": "Sheet vinyl, coved flooring and washable wall finishes need to be removed or restored to what your lease requires."
+      }
+    ],
+    "services": [
+      "strip-out-solutions/demolition",
+      "strip-out-solutions/make-safe",
+      "make-good-solutions/flooring-reinstatement",
+      "make-good-solutions/patching-plastering",
+      "make-good-solutions/painting",
+      "handover-solutions/end-of-lease-cleaning"
+    ],
+    "benefits": [
+      "Licensed trades for plumbing and electrical capping",
+      "Careful removal of clinical joinery and fixtures",
+      "Waste removal and disposal handled for you",
+      "Lease reviewed before quoting",
+      "One contractor and one fixed price quote",
+      "Final clean ready for handover"
+    ],
+    "faqs": [
+      {
+        "question": "Can you make good a medical or dental clinic?",
+        "answer": "Yes. We remove clinical joinery and fixtures, disconnect and cap services using licensed trades, repair floors, walls and ceilings and finish with a handover clean."
+      },
+      {
+        "question": "What happens to plumbing and specialised equipment?",
+        "answer": "Plumbing is disconnected and capped by licensed plumbers. Equipment owned by the tenant is removed under the agreed scope. We confirm responsibilities in the quote."
+      },
+      {
+        "question": "How do you quote a medical centre make good?",
+        "answer": "We inspect the premises, review your lease and provide a fixed price quote covering every trade. Learn more about the [make good process](/learn/our-process/)."
+      }
+    ]
+  },
+  {
+    "name": "Hospitality & Venues",
+    "slug": "hospitality-venues",
+    "title": "Commercial Kitchen & Hospitality Make Good Melbourne",
+    "metaTitle": "Hospitality & Kitchen Make Good Melbourne | Venues | MakeGOOD",
+    "metaDescription": "Make good for Melbourne restaurants, cafes, bars and commercial kitchens. Kitchen strip out, services capping, flooring and handover. Fixed price quotes, one contractor.",
+    "heroText": "Make good for Melbourne restaurants, cafes, bars and venues. Kitchen equipment removed, services made safe and the floor ready to hand over.",
+    "heroImage": "/images/industries/hospitality-venue-kitchen-make-good-melbourne.jpg",
+    "heroImageAlt": "Commercial kitchen stripped out for hospitality make good in Melbourne",
+    "ogImage": "/og/commercial.jpg",
+    "introduction": "Hospitality tenancies carry heavy fixed equipment and extensive services. Exhaust canopies and ducting, grease traps, gas and electrical connections, coolrooms and bar fitouts all need to be removed or capped before handback. We plan the sequence, use licensed trades for services and deliver the whole scope under one fixed price quote.",
+    "challenges": [
+      {
+        "title": "Kitchen Equipment & Canopies",
+        "description": "Cooking lines, exhaust canopies, ducting and coolrooms need to be disconnected and removed, with the openings and surfaces repaired."
+      },
+      {
+        "title": "Gas, Electrical & Plumbing",
+        "description": "Gas, power and water connections must be capped by licensed trades before equipment comes out."
+      },
+      {
+        "title": "Grease Traps & Drainage",
+        "description": "Grease traps and floor drainage need to be dealt with in line with your lease and local requirements."
+      },
+      {
+        "title": "Floors, Bars & Front of House",
+        "description": "Bars, booths, feature joinery and commercial floor finishes need to be removed and the surfaces restored."
+      }
+    ],
+    "services": [
+      "strip-out-solutions/demolition",
+      "strip-out-solutions/make-safe",
+      "make-good-solutions/flooring-reinstatement",
+      "make-good-solutions/patching-plastering",
+      "make-good-solutions/painting",
+      "handover-solutions/end-of-lease-cleaning"
+    ],
+    "benefits": [
+      "Kitchen strip out and equipment removal",
+      "Licensed trades for gas, electrical and plumbing capping",
+      "Bar, booth and joinery removal",
+      "Waste removal and disposal handled for you",
+      "One contractor and one fixed price quote",
+      "Final clean ready for handover"
+    ],
+    "faqs": [
+      {
+        "question": "Can you strip out a commercial kitchen?",
+        "answer": "Yes. We disconnect and remove cooking equipment, canopies, ducting and coolrooms, cap services with licensed trades and repair the surfaces left behind."
+      },
+      {
+        "question": "Do you handle grease traps and drainage?",
+        "answer": "We coordinate grease trap and drainage works as part of the scope where your lease requires it, and confirm what is included in the fixed price quote."
+      },
+      {
+        "question": "Do you work to venue closing dates?",
+        "answer": "We plan the program around your lease end date and any access limits. The earlier you contact us, the easier it is to meet your handover. See our [make good guide](/learn/make-good-guide/)."
+      }
+    ]
+  }
 ];
 
 export const getIndustryBySlug = (slug: string): Industry | undefined => {

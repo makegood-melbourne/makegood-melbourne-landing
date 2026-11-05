@@ -24,7 +24,7 @@ export const homepageFaqs: FAQ[] = [
   },
   {
     question: "What areas of Melbourne do you service?",
-    answer: "Melbourne and surrounding areas. CBD, inner suburbs, outer growth corridors, industrial precincts."
+    answer: "All of metropolitan Melbourne, including the CBD, Port Melbourne, Richmond and the inner suburbs, plus the south east industrial belt of Clayton, Mulgrave, Dandenong, Dandenong South, Hallam and Braeside, and outer growth corridors. We also work across Victoria."
   },
   {
     question: "What is building remediation and when is it needed?",
