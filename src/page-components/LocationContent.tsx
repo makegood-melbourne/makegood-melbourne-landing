@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { getLocationBySlug } from "@/data/locations";
 import { resolveImageSrc } from "@/lib/resolveImageSrc";
-import workerImage from "@/assets/locations/melbourne-make-good-contractor-with-tools.jpeg";
+import handoverImage from "@/assets/locations/handover-ready-warehouse-mezzanine-polished-concrete-melbourne.jpg";
 
 interface LocationContentProps {
   slug: string;
@@ -143,7 +143,7 @@ const LocationContent = ({ slug }: LocationContentProps) => {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="order-2 lg:order-1">
                 <div className="aspect-[4/3] rounded-lg overflow-hidden">
-                  <img src={resolveImageSrc(workerImage)} alt={`Licensed make good contractor in ${location.name}`} className="w-full h-full object-cover" width={800} height={600} loading="lazy" decoding="async" />
+                  <img src={resolveImageSrc(handoverImage)} alt="Empty warehouse with polished concrete floor and mezzanine, ready for lease handover" className="w-full h-full object-cover" width={800} height={600} loading="lazy" decoding="async" />
                 </div>
               </div>
               <div className="order-1 lg:order-2">

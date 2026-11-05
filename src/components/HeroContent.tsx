@@ -18,11 +18,11 @@ const HeroContent = () => {
         }}
       />
 
-      <div className="container mx-auto px-4 z-10 pt-16 pb-12">
+      <div className="container mx-auto px-4 z-10 pt-20 pb-8">
         <div className="max-w-3xl">
           {/* H1: primary keywords (service + location) */}
           <h1
-            className="hero-reveal text-4xl md:text-6xl text-foreground leading-tight font-bold"
+            className="hero-reveal text-3xl sm:text-4xl md:text-5xl text-foreground leading-tight font-bold"
             style={{ fontFamily: "'PP Neue Montreal', sans-serif", ...reveal(0) }}
           >
             Commercial Make Good, Strip Out &amp; Remediation in Melbourne
@@ -39,14 +39,14 @@ const HeroContent = () => {
           {/* Brand tagline: styled as a heading but not a heading element,
               so the H2 outline stays descriptive */}
           <p
-            className="hero-reveal text-4xl md:text-5xl lg:text-6xl text-primary font-semibold mt-8 mb-8 leading-tight"
+            className="hero-reveal text-3xl md:text-4xl lg:text-5xl text-primary font-semibold mt-5 mb-5 leading-tight"
             style={reveal(120)}
           >
             Make good, BETTER.
           </p>
 
           <p
-            className="hero-reveal text-lg md:text-xl text-white/80 mb-8 leading-relaxed"
+            className="hero-reveal text-lg md:text-xl text-white/80 mb-6 leading-relaxed"
             style={reveal(180)}
           >
             One contractor. Every trade. From strip-out to handover.
@@ -54,7 +54,7 @@ const HeroContent = () => {
 
           {/* Stats row */}
           <div
-            className="hero-reveal flex flex-row items-center gap-6 md:gap-10 mb-10"
+            className="hero-reveal flex flex-row items-center gap-6 md:gap-10 mb-8"
             style={reveal(240)}
           >
             <div className="text-center">

@@ -12,7 +12,7 @@ const FloatingCTAs = () => {
   return (
     <>
       {/* Mobile: Fixed bottom bar */}
-      <div className="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-background/95 backdrop-blur-sm border-t border-border p-3">
+      <div className="floating-cta fixed bottom-0 left-0 right-0 z-50 md:hidden bg-background/95 backdrop-blur-sm border-t border-border p-3">
         <a href="/contact/" className="block">
           <Button 
             className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
@@ -24,7 +24,7 @@ const FloatingCTAs = () => {
       </div>
 
       {/* Desktop: Quote CTA in bottom-left */}
-      <div className="hidden md:block fixed bottom-6 left-6 z-40">
+      <div className="floating-cta hidden md:block fixed bottom-6 left-6 z-40">
         <a href="/contact/">
           <Button 
             size="lg"

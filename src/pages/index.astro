@@ -125,6 +125,25 @@ const websiteSchema = {
 >
   <!-- JSON-LD Schemas -->
   <Fragment slot="head">
+    <!-- Homepage only: keep the floating quote button and chat launcher out of the way until the visitor scrolls,
+         so they never cover the hero buttons or the trust strip. -->
+    <script is:inline>
+      (function () {
+        var root = document.documentElement;
+        function update() { root.classList.toggle('hero-in-view', window.scrollY < 300); }
+        update();
+        window.addEventListener('scroll', update, { passive: true });
+      })();
+    </script>
+    <style is:global>
+      .hero-in-view .floating-cta,
+      .hero-in-view .chat-launcher {
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(12px);
+      }
+      .floating-cta, .chat-launcher { transition: opacity 0.25s ease, transform 0.25s ease; }
+    </style>
     <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
     <script type="application/ld+json" set:html={JSON.stringify(businessSchema)} />
     <script type="application/ld+json" set:html={JSON.stringify(organizationSchema)} />
