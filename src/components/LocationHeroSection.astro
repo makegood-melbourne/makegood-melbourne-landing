@@ -7,6 +7,7 @@ import Breadcrumbs from './Breadcrumbs.astro';
 import southMelbourneImage from "@/assets/locations/south-melbourne-market-commercial-precinct.jpeg";
 import melbourneCbdImage from "@/assets/locations/melbourne-cbd-skyline-yarra-river-commercial-district.jpeg";
 import dandenongImage from "@/assets/locations/dandenong-street-corner-commercial-buildings-melbourne.jpg";
+import dandenongSouthImage from "@/assets/locations/dandenong-south-civic-building-plaza-melbourne.jpg";
 
 interface Props {
   slug: string;
@@ -21,6 +22,10 @@ if (!location) {
 
 // Only pages with unique images get a hero image
 const heroImages: Record<string, { image: ImageMetadata; alt: string }> = {
+  "dandenong-south": {
+    image: dandenongSouthImage,
+    alt: "Colourful civic building and outdoor plaza in Dandenong, Victoria - make good services for Dandenong South industrial and commercial properties"
+  },
   "dandenong": {
     image: dandenongImage,
     alt: "Street corner and commercial buildings in central Dandenong, Melbourne - make good services for offices, retail and industrial properties"
