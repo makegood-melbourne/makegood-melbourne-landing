@@ -9,7 +9,6 @@ import IndexContent from '../components/IndexContent';
 import FAQ from '../components/FAQ.astro';
 import CtaBlock from '../components/CtaBlock.astro';
 import Footer from '../components/Footer';
-import FloatingCTAs from '../components/FloatingCTAs';
 import { homepageFaqs } from '../data/faqs';
 
 // Generate FAQPage schema from homepage FAQs
@@ -160,6 +159,5 @@ const websiteSchema = {
     <FAQ />
     <CtaBlock bg="bg-muted/30" />
     <Footer client:load />
-    <FloatingCTAs client:load />
   </main>
 </BaseLayout>

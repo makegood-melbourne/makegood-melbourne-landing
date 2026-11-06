@@ -2,6 +2,7 @@
 import '../index.css';
 import { Toaster } from '../components/ui/sonner';
 import { Chatbot } from '../components/Chatbot';
+import FloatingCTAs from '../components/FloatingCTAs';
 
 interface Props {
   title: string;
@@ -9,6 +10,7 @@ interface Props {
   ogImage?: string;
   canonicalUrl?: string;
   robots?: string;
+  showFloatingCta?: boolean;
 }
 
 const { 
@@ -16,7 +18,8 @@ const {
   description, 
   ogImage = '/og-default.jpg',
   canonicalUrl: canonicalUrlProp,
-  robots = 'index, follow'
+  robots = 'index, follow',
+  showFloatingCta = true
 } = Astro.props;
 
 const siteUrl = 'https://makegood.melbourne';
@@ -183,6 +186,7 @@ const ogImageType = ogImage.toLowerCase().endsWith('.png')
   </head>
   <body>
     <slot />
+    {showFloatingCta && <FloatingCTAs client:idle />}
     <Chatbot client:idle />
     <Toaster client:load richColors position="top-center" />
   </body>

@@ -80,7 +80,7 @@ const HeroContent = () => {
                 size="lg"
                 className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8 py-6 group"
               >
-                Get an Assessment
+                Request a Quote
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
             </a>
@@ -90,6 +90,17 @@ const HeroContent = () => {
               </Button>
             </a>
           </div>
+
+          <p className="hero-reveal mt-4 text-sm" style={{ color: "rgba(255, 255, 255, 0.75)", ...reveal(420) }}>
+            Free site inspection and a fixed price quote. Prefer email?{" "}
+            <a
+              href="mailto:info@makegood.melbourne"
+              data-track="hero_email"
+              className="text-white underline underline-offset-4 hover:text-primary transition-colors"
+            >
+              info@makegood.melbourne
+            </a>
+          </p>
         </div>
       </div>
     </>

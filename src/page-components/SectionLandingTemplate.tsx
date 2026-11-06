@@ -184,8 +184,8 @@ const SectionLandingTemplate = ({ data }: SectionLandingTemplateProps) => {
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground" asChild>
-                  <a href="/#contact">
-                    Get an Assessment
+                  <a href="/contact/" data-track="section_hero_cta">
+                    Request a Quote
                   </a>
                 </Button>
                 <Button size="lg" variant="outline" className="border-accent text-accent hover:bg-accent hover:text-accent-foreground" asChild>
@@ -441,7 +441,7 @@ const SectionLandingTemplate = ({ data }: SectionLandingTemplateProps) => {
           {data.ctaSubtitle && <p className="text-xl text-primary font-semibold mb-4">{data.ctaSubtitle}</p>}
           <p className="text-lg text-muted-foreground mb-8">{renderTextWithLinks(data.ctaText)}</p>
           <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground" asChild>
-            <a href="/#contact">Get a Fixed-Price Quote</a>
+            <a href="/contact/" data-track="section_hero_cta">Get a Fixed-Price Quote</a>
           </Button>
         </div>
       </section>
