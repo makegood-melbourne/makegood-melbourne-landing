@@ -82,3 +82,8 @@ All colors MUST be HSL.
 @media (prefers-reduced-motion: reduce) {
   .hero-reveal { animation: none; }
 }
+
+/* Mobile sticky quote bar: leave room at the bottom of every page so it never covers the footer */
+@media (max-width: 767px) {
+  body { padding-bottom: calc(4.5rem + env(safe-area-inset-bottom)); }
+}
