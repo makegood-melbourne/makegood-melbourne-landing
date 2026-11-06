@@ -3,46 +3,18 @@ import { Button } from "@/components/ui/button";
 
 const ServiceAreasGrid = () => {
   const areas = [
-    {
-      name: "Melbourne CBD",
-      description: "Office buildings, corporate headquarters",
-      slug: "melbourne-cbd"
-    },
-    {
-      name: "Port Melbourne",
-      description: "Warehouses, Fishermans Bend precinct",
-      slug: "port-melbourne"
-    },
-    {
-      name: "Dandenong",
-      description: "Industrial facilities, manufacturing",
-      slug: "dandenong"
-    },
-    {
-      name: "Clayton",
-      description: "Research facilities, commercial offices",
-      slug: "clayton"
-    },
-    {
-      name: "Richmond",
-      description: "Creative studios, tech offices",
-      slug: "richmond"
-    },
-    {
-      name: "Moorabbin",
-      description: "Aviation precinct, logistics",
-      slug: "moorabbin"
-    },
-    {
-      name: "Ringwood",
-      description: "Retail centres, business parks",
-      slug: "ringwood"
-    },
-    {
-      name: "All Victoria",
-      description: "Statewide commercial coverage",
-      slug: null
-    }
+    { name: "Melbourne CBD", description: "Office buildings, corporate headquarters", slug: "melbourne-cbd" },
+    { name: "Port Melbourne", description: "Warehouses, Fishermans Bend precinct", slug: "port-melbourne" },
+    { name: "Clayton", description: "Research facilities, commercial offices", slug: "clayton" },
+    { name: "Mulgrave", description: "Business parks, offices, light industrial", slug: "mulgrave" },
+    { name: "Dandenong", description: "Industrial facilities, manufacturing", slug: "dandenong" },
+    { name: "Dandenong South", description: "Large warehouses, distribution centres", slug: "dandenong-south" },
+    { name: "Hallam", description: "Industrial units, trade and logistics", slug: "hallam" },
+    { name: "Braeside", description: "Industrial estates, manufacturing", slug: "braeside" },
+    { name: "Moorabbin", description: "Aviation precinct, logistics", slug: "moorabbin" },
+    { name: "Richmond", description: "Creative studios, tech offices", slug: "richmond" },
+    { name: "Ringwood", description: "Retail centres, business parks", slug: "ringwood" },
+    { name: "All Victoria", description: "Statewide commercial coverage", slug: null },
   ];
 
   return (
@@ -50,10 +22,10 @@ const ServiceAreasGrid = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-5xl md:text-5xl font-bold text-foreground mb-4">
-            Where We Work
+            Make Good Contractors Across Melbourne
           </h2>
           <p className="text-xl text-white opacity-90 max-w-2xl mx-auto">
-            Offices, warehouses and industrial sites across Melbourne and Victoria.
+            Offices, warehouses and industrial sites across Melbourne, with a strong presence in the south east.
           </p>
         </div>
 

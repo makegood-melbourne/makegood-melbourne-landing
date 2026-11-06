@@ -6,6 +6,11 @@ import Breadcrumbs from './Breadcrumbs.astro';
 // Import only unique location hero images
 import southMelbourneImage from "@/assets/locations/south-melbourne-market-commercial-precinct.jpeg";
 import melbourneCbdImage from "@/assets/locations/melbourne-cbd-skyline-yarra-river-commercial-district.jpeg";
+import dandenongImage from "@/assets/locations/dandenong-street-corner-commercial-buildings-melbourne.jpg";
+import dandenongSouthImage from "@/assets/locations/dandenong-south-civic-building-plaza-melbourne.jpg";
+import richmondImage from "@/assets/locations/richmond-yarra-river-bridge-commercial-district-melbourne.jpg";
+import brunswickImage from "@/assets/locations/brunswick-aerial-view-towards-melbourne-cbd.jpg";
+import fitzroyImage from "@/assets/locations/fitzroy-street-sign-heritage-buildings-melbourne.jpg";
 
 interface Props {
   slug: string;
@@ -20,6 +25,26 @@ if (!location) {
 
 // Only pages with unique images get a hero image
 const heroImages: Record<string, { image: ImageMetadata; alt: string }> = {
+  "dandenong-south": {
+    image: dandenongSouthImage,
+    alt: "Colourful civic building and outdoor plaza in Dandenong, Victoria - make good services for Dandenong South industrial and commercial properties"
+  },
+  "dandenong": {
+    image: dandenongImage,
+    alt: "Street corner and commercial buildings in central Dandenong, Melbourne - make good services for offices, retail and industrial properties"
+  },
+  "richmond": {
+    image: richmondImage,
+    alt: "Bridge over the Yarra River with commercial buildings behind in Richmond, Melbourne - make good services for Richmond offices, retail and warehouses"
+  },
+  "brunswick": {
+    image: brunswickImage,
+    alt: "Aerial view of Brunswick looking towards the Melbourne CBD - make good services for Brunswick commercial and industrial properties"
+  },
+  "fitzroy": {
+    image: fitzroyImage,
+    alt: "Fitzroy Street sign with heritage buildings behind in Fitzroy, Melbourne - make good services for Fitzroy creative offices and heritage properties"
+  },
   "south-melbourne": {
     image: southMelbourneImage,
     alt: "South Melbourne Market commercial precinct - make good services for retail and commercial spaces in South Melbourne"

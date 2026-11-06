@@ -64,7 +64,7 @@ const ogImageType = ogImage.toLowerCase().endsWith('.png')
     
     <title>{title}</title>
     <meta name="description" content={description} />
-    <meta name="author" content="Make Good Melbourne" />
+    <meta name="author" content="MakeGOOD Melbourne" />
     <meta name="robots" content={robots} />
     <link rel="canonical" href={canonicalUrl} />
     
@@ -76,7 +76,7 @@ const ogImageType = ogImage.toLowerCase().endsWith('.png')
     <!-- Open Graph -->
     <meta property="og:locale" content="en_AU" />
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Make Good Melbourne" />
+    <meta property="og:site_name" content="MakeGOOD Melbourne" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonicalUrl} />
@@ -157,6 +157,25 @@ const ogImageType = ogImage.toLowerCase().endsWith('.png')
         window.gtag('js', new Date());
         window.gtag('config', id);
       })();
+    </script>
+
+    <!-- Conversion tracking: delegated click events, only active where GA4 is loaded (live domain). -->
+    <script is:inline>
+      document.addEventListener('click', function (event) {
+        if (typeof window.gtag !== 'function') return;
+        var link = event.target && event.target.closest ? event.target.closest('a') : null;
+        if (!link) return;
+        var href = link.getAttribute('href') || '';
+        var label = link.getAttribute('data-track') || '';
+        var page = window.location.pathname;
+        if (href.indexOf('mailto:') === 0) {
+          window.gtag('event', 'email_click', { link_location: label || 'mailto', page_path: page });
+        } else if (href.indexOf('tel:') === 0) {
+          window.gtag('event', 'phone_click', { link_location: label || 'tel', page_path: page });
+        } else if (href.indexOf('/contact') === 0 || label) {
+          window.gtag('event', 'cta_click', { link_location: label || 'contact_link', link_url: href, page_path: page });
+        }
+      }, true);
     </script>
 
     <!-- Additional head content from pages -->

@@ -35,7 +35,7 @@ const Footer = () => {
               Professional make good, make safe and remediation services for commercial and industrial properties across Melbourne.
             </p>
             <a 
-              href="mailto:info@makegood.melbourne" 
+              href="mailto:info@makegood.melbourne" data-track="footer_email"
               className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
             >
               <Mail className="h-4 w-4" />
@@ -174,7 +174,7 @@ const Footer = () => {
         <div className="border-t border-border pt-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-muted-foreground">
-              © {new Date().getFullYear()} Make Good Melbourne. All rights reserved.
+              © {new Date().getFullYear()} MakeGOOD Melbourne. All rights reserved.
             </p>
             <div className="flex gap-6">
               <a 

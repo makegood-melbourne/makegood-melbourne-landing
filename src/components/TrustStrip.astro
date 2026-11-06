@@ -1,0 +1,80 @@
+---
+// Trust strip sitting directly under the hero, above the fold, on the brand orange.
+// Dark text is used because white on this orange only reaches about 2.5:1 contrast,
+// while near black reaches about 7.4:1 (WCAG AA needs 4.5:1).
+// Only claims already made elsewhere on the site belong here. Add reviews, named
+// clients and accreditations once they can be verified and published.
+const items = [
+  { title: 'Licensed & insured', body: 'Licensed trades, fully insured' },
+  { title: 'Fixed price quotes', body: 'No variations, no surprises' },
+  { title: 'Free site inspection', body: 'Lease review included, no obligation' },
+  { title: 'One contractor', body: 'Every trade, one point of contact' },
+];
+---
+
+<section class="trust-strip" aria-label="Why clients choose MakeGOOD Melbourne">
+  <ul class="trust-strip__list">
+    {items.map((item) => (
+      <li class="trust-strip__item">
+        <svg class="trust-strip__tick" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="trust-strip__text">
+          <strong>{item.title}</strong>
+          <span class="trust-strip__body">{item.body}</span>
+        </span>
+      </li>
+    ))}
+  </ul>
+</section>
+
+<style>
+  .trust-strip {
+    background-color: hsl(25 85% 60%);
+    color: #141414;
+    padding: 1.1rem 1.5rem;
+  }
+  .trust-strip__list {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25rem;
+  }
+  .trust-strip__item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.65rem;
+  }
+  .trust-strip__tick {
+    flex-shrink: 0;
+    margin-top: 2px;
+    color: #141414;
+  }
+  .trust-strip__text {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.875rem;
+    line-height: 1.35;
+    color: rgba(20, 20, 20, 0.85);
+  }
+  .trust-strip__text strong {
+    color: #141414;
+    font-weight: 700;
+    font-size: 1rem;
+  }
+  /* Tablet: two columns with the supporting line */
+  @media (max-width: 900px) {
+    .trust-strip__list { grid-template-columns: repeat(2, 1fr); gap: 0.9rem 1.25rem; }
+  }
+  /* Phone: compact 2 x 2 with titles only, so the strip stays above the fold */
+  @media (max-width: 600px) {
+    .trust-strip { padding: 0.85rem 1rem; }
+    .trust-strip__list { gap: 0.7rem 0.75rem; }
+    .trust-strip__body { display: none; }
+    .trust-strip__text strong { font-size: 0.9rem; }
+    .trust-strip__tick { width: 18px; height: 18px; }
+  }
+</style>

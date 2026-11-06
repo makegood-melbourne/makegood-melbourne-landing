@@ -4,7 +4,7 @@ import heroImage from '@/assets/melbourne-warehouse-make-good-services.jpg';
 import HeroContent from './HeroContent';
 ---
 
-<section class="relative min-h-screen flex items-center overflow-hidden">
+<section class="hero-section relative flex items-center overflow-hidden">
   <!-- Optimized hero background image with responsive srcset -->
   <div class="absolute inset-0 z-0">
     <Image 
@@ -23,3 +23,18 @@ import HeroContent from './HeroContent';
   <!-- Interactive content as React island -->
   <HeroContent client:load />
 </section>
+
+<style>
+  /* The trust strip sits directly under the hero. The hero is sized so the strip's bottom edge lands at the
+     bottom of the viewport: strip heights are about 5rem (desktop and phone) and 7.5rem (tablet, two rows). */
+  .hero-section {
+    min-height: calc(100vh - 5rem);
+    min-height: calc(100svh - 5rem);
+  }
+  @media (min-width: 601px) and (max-width: 900px) {
+    .hero-section {
+      min-height: calc(100vh - 7.5rem);
+      min-height: calc(100svh - 7.5rem);
+    }
+  }
+</style>

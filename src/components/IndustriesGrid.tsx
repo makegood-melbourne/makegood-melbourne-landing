@@ -31,7 +31,7 @@ const industries: Industry[] = [
     id: "retail",
     title: "Retail",
     description: "Shopfront stripped. Surfaces finished. Handed back to centre standards.",
-    href: "/industries/commercial/",
+    href: "/industries/retail/",
     image: "/images/industries/retail-shopfront-make-good-melbourne.jpg",
     alt: "Retail shopfront and commercial space make good services in Melbourne"
   },
@@ -39,7 +39,7 @@ const industries: Industry[] = [
     id: "medical-centres",
     title: "Medical Centres & Suites",
     description: "Fitout removed. Services capped. Compliant and cleared.",
-    href: "/industries/commercial/",
+    href: "/industries/medical-centres/",
     image: "/images/industries/medical-centre-make-good-melbourne.jpg",
     alt: "Medical centre and healthcare suite make good services in Melbourne"
   },
@@ -55,7 +55,7 @@ const industries: Industry[] = [
     id: "hospitality-venues",
     title: "Hospitality & Venues",
     description: "Kitchen stripped. Services made safe. Floor ready to hand over.",
-    href: "/industries/commercial/",
+    href: "/industries/hospitality-venues/",
     image: "/images/industries/hospitality-venue-kitchen-make-good-melbourne.jpg",
     alt: "Commercial hospitality venue and kitchen make good services in Melbourne"
   }
@@ -68,7 +68,7 @@ const IndustriesGrid = () => {
         {/* Header */}
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4 uppercase tracking-wide text-foreground">
-            Industries We Serve
+            Make Good for Every Commercial Property Type
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             From corporate offices to industrial facilities, we deliver professional make good solutions across diverse commercial sectors throughout Melbourne.
