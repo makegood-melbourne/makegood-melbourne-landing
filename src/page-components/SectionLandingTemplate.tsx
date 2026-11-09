@@ -195,6 +195,12 @@ const SectionLandingTemplate = ({ data }: SectionLandingTemplateProps) => {
                   </a>
                 </Button>
               </div>
+              <p className="mt-4 text-sm text-muted-foreground">
+                Proposal, works, handover.{" "}
+                <a href="/learn/our-process/" data-track="section_process_link" className="text-primary underline underline-offset-4 hover:text-primary/80">
+                  See how our process works
+                </a>
+              </p>
             </div>
             
             {/* Hero Image - Desktop only */}
