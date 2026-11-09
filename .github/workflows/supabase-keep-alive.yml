@@ -1,13 +1,14 @@
 name: Supabase keep alive
 
-# Free Supabase projects pause after about a week without database activity.
-# This runs a tiny read against the database once a day so the project stays awake.
+# Free Supabase projects pause after about a week without "sufficient" database activity.
+# A daily read was not enough (Supabase warning email, 9 Nov 2026), so this now runs
+# every four hours and does a read plus a write (the keep_alive_ping function).
 # If the request fails (for example the project is already paused), the run fails
 # and GitHub emails the repo owner.
 
 on:
   schedule:
-    - cron: "17 20 * * *" # daily, around 7am Melbourne time
+    - cron: "17 */4 * * *" # every four hours
   workflow_dispatch: {}
 
 permissions:
@@ -22,21 +23,29 @@ jobs:
       SUPABASE_URL: https://krgbykvrigbbkvyprqnb.supabase.co
       SUPABASE_ANON_KEY: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtyZ2J5a3ZyaWdiYmt2eXBycW5iIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjkyMzk1NjYsImV4cCI6MjA4NDgxNTU2Nn0.8aCUrnJnMUVJ-BES78V13uZu671oQo6rNvu3ZrRV8vs
     steps:
-      - name: Query the database
+      - name: Read the keep_alive table
         run: |
-          # keep_alive is a one-row table that anon can read, so this is a real Postgres query.
-          # Expect HTTP 200 and [{"id":1}].
           status=$(curl -sS -o body.txt -w "%{http_code}" \
-            "$SUPABASE_URL/rest/v1/keep_alive?select=id&limit=1" \
+            "$SUPABASE_URL/rest/v1/keep_alive?select=id,ping_count,pinged_at&limit=1" \
             -H "apikey: $SUPABASE_ANON_KEY" \
             -H "Authorization: Bearer $SUPABASE_ANON_KEY")
-          echo "HTTP $status"
-          cat body.txt; echo
-          if [ "$status" != "200" ]; then
-            echo "::error::Supabase did not respond normally (HTTP $status). The project may be paused. Resume it at https://supabase.com/dashboard/project/krgbykvrigbbkvyprqnb"
+          echo "HTTP $status"; cat body.txt; echo
+          if [ "$status" != "200" ] || ! grep -q '"id"' body.txt; then
+            echo "::error::Supabase read failed (HTTP $status). The project may be paused. Resume it at https://supabase.com/dashboard/project/krgbykvrigbbkvyprqnb"
             exit 1
           fi
-          if ! grep -q '"id"' body.txt; then
-            echo "::error::Supabase answered but the keep_alive row was missing. Check the keep_alive table in the Table Editor."
+
+      - name: Write a ping
+        run: |
+          status=$(curl -sS -o body.txt -w "%{http_code}" -X POST \
+            "$SUPABASE_URL/rest/v1/rpc/keep_alive_ping" \
+            -H "apikey: $SUPABASE_ANON_KEY" \
+            -H "Authorization: Bearer $SUPABASE_ANON_KEY" \
+            -H "Content-Type: application/json" \
+            -d '{"p_source":"github"}')
+          echo "HTTP $status"; cat body.txt; echo
+          if [ "$status" != "200" ] || ! grep -q '"ping_count"' body.txt; then
+            echo "::error::Supabase write ping failed (HTTP $status): $(head -c 200 body.txt)"
             exit 1
           fi
+          echo "::notice::Ping recorded: $(cat body.txt)"
