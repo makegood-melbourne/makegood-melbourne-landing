@@ -68,7 +68,7 @@ const IndustriesGrid = () => {
         {/* Header */}
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4 uppercase tracking-wide text-foreground">
-            Make Good for Every Commercial Property Type
+            Make Good for Every <span className="text-primary">Commercial Property Type</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             From corporate offices to industrial facilities, we deliver professional make good solutions across diverse commercial sectors throughout Melbourne.
