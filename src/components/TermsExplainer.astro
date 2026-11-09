@@ -1,0 +1,62 @@
+---
+// Homepage explainer: make good vs strip out vs defit. Links through to the full blog comparison.
+const terms = [
+  {
+    name: "Make good",
+    tag: "The obligation and the result",
+    body: "Returning the space to the condition your lease requires, including repairs and cleaning, with the landlord signing it off at handover.",
+  },
+  {
+    name: "Strip out",
+    tag: "The removal work",
+    body: "Taking out partitions, ceilings, flooring, cabling and joinery. It is one stage of a make good, and it is also done before a refurbishment or new fitout.",
+  },
+  {
+    name: "Defit",
+    tag: "Also written de-fit",
+    body: "Removing the tenant's fitout and equipment back to a shell. Often used to mean the same as strip out, so always check what a quote actually includes.",
+  },
+];
+---
+
+<section class="py-16 md:py-20 border-t border-border">
+  <div class="container mx-auto px-4 max-w-5xl">
+    <h2 class="text-4xl md:text-5xl font-bold mb-5 text-center">
+      Make Good, Strip Out or Defit: <span class="text-primary">What's the Difference?</span>
+    </h2>
+    <p class="text-xl text-white/90 text-center max-w-3xl mx-auto mb-10 leading-relaxed">
+      These terms get used interchangeably when quoting, which is how two quotes for the same tenancy end up far apart. Here is how we use them.
+    </p>
+
+    <div class="grid gap-6 md:grid-cols-3">
+      {terms.map((term) => (
+        <div class="rounded-lg border border-border bg-card p-6">
+          <h3 class="text-2xl font-bold mb-1">{term.name}</h3>
+          <p class="text-base font-medium text-primary mb-3">{term.tag}</p>
+          <p class="text-lg text-white/75 leading-relaxed">{term.body}</p>
+        </div>
+      ))}
+    </div>
+
+    <p class="text-center text-lg md:text-xl text-foreground mt-8 max-w-3xl mx-auto leading-relaxed">
+      Strip out and defit are the work. A make good is the full job, including reinstatement and landlord sign off. Always ask contractors to quote against your lease, not a generic label.
+    </p>
+
+    <div class="mt-6 flex flex-col sm:flex-row gap-4 justify-center items-center">
+      <a
+        href="/blog/make-good-strip-out-defit-melbourne/"
+        data-track="explainer_blog"
+        class="inline-flex items-center justify-center h-11 px-8 rounded-md bg-primary text-primary-foreground font-medium hover:bg-primary/90 transition-colors"
+      >
+        Read the full comparison
+      </a>
+      <a
+        href="/contact/"
+        data-track="explainer_quote"
+        class="inline-flex items-center justify-center h-11 px-8 rounded-md border border-input bg-background font-medium hover:bg-accent hover:text-accent-foreground transition-colors"
+      >
+        Get a quote against your lease
+      </a>
+    </div>
+  </div>
+</section>

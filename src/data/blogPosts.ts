@@ -2101,7 +2101,7 @@ This is where the terminology confusion causes real financial problems. If you a
 
 Always provide contractors with your lease and ingoing condition report when requesting quotes. Ask them to quote against your specific lease obligations, not a generic strip out or make good. A contractor who will not do that — or who gives you a price without seeing the documents — is not someone you want managing your handover.
 
-A detailed, fixed-price scope of works that maps directly to your lease obligations is the only quote worth accepting. It tells you exactly what will be done, by whom and for how much. No surprises at the end.
+A detailed, fixed-price scope of works that maps directly to your lease obligations is the only quote worth accepting. It tells you exactly what will be done, by whom and for how much. No surprises at the end. For more on why quotes vary so much, read [what drives make good costs in Melbourne](/blog/make-good-cost-drivers-melbourne).
 
 ---
 

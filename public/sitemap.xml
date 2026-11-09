@@ -3,7 +3,7 @@
   <!-- Core Pages -->
   <url>
     <loc>https://makegood.melbourne/</loc>
-    <lastmod>2026-11-06</lastmod>
+    <lastmod>2026-11-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -75,7 +75,7 @@
   </url>
   <url>
     <loc>https://makegood.melbourne/blog/make-good-strip-out-defit-melbourne/</loc>
-    <lastmod>2026-03-28</lastmod>
+    <lastmod>2026-11-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -118,7 +118,7 @@
   <!-- Learn Pages -->
   <url>
     <loc>https://makegood.melbourne/learn/make-good-guide/</loc>
-    <lastmod>2026-02-19</lastmod>
+    <lastmod>2026-11-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
