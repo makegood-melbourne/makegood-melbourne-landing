@@ -1,6 +1,9 @@
 import commercialHeroImage from "@/assets/industries/commercial-office-make-good-polished-concrete-melbourne.jpeg";
 import industrialHeroImage from "@/assets/industries/industrial-warehouse-make-good-empty-floor-melbourne.jpeg";
 import fulfilmentFitOutHeroImage from "@/assets/industries/fulfilment-warehouse-fit-out-carton-flow-racking-melbourne.webp";
+import fitOutRackingImage from "@/assets/industries/warehouse-fulfilment-centre-racking-make-good-melbourne.webp";
+import fitOutSlabImage from "@/assets/services/warehouse-floor-repairs-scope-polished-concrete-melbourne.jpeg";
+import fitOutLineMarkingImage from "@/assets/services/warehouse-fresh-yellow-line-marking-polished-concrete-melbourne.jpg";
 
 import remediationHeroImage from "@/assets/services/glazing-facade-installation-commercial-building-melbourne.jpg";
 import remediationCladdingImage from "@/assets/services/cladding-remediation-facade-glazing-melbourne.jpeg";
@@ -203,6 +206,26 @@ export const industries: Industry[] = [
         description: "Full pallets in, full pallets out. Selective racking, aisles set for your forklifts and a floor that takes the traffic."
       }
     ],
+    featuredSections: [
+      {
+        title: "Racking Laid Out for Picking, Not Just Storage",
+        description: "A fulfilment warehouse isn't a storage shed. Stock comes in on pallets and leaves in small parcels, so the layout has to work for both. We put bulk stock in selective pallet racking up high and fast movers on longspan shelving at pick height, close to the packing benches. Aisle widths are set for your forklifts, bay sizes for your pallets and beam levels for your stock, with room left for the SKUs you'll add next year. Every bay is installed to AS 4084 with load signs fitted, so the racking is compliant from day one.",
+        image: fitOutRackingImage,
+        imageAlt: "Selective pallet racking installed in a Melbourne fulfilment warehouse fit out"
+      },
+      {
+        title: "Floor First, Then Racking",
+        description: "Racking is only as good as the slab it's bolted into. Most fit outs skip this step and anchor new frames straight into cracked joints, broken edges and old anchor holes left by the last tenant. We fix warehouse floors every day, so we check the slab before anything goes in. Cracks and joints are repaired, old holes filled and the surface ground or sealed where it needs it. Your racking sits on something solid and your forklifts run on a floor that won't break up under them.",
+        image: fitOutSlabImage,
+        imageAlt: "Warehouse concrete slab repaired and prepared before a racking fit out in Melbourne"
+      },
+      {
+        title: "Marked, Signed and Ready for Peak",
+        description: "Once the racking is in, we mark the aisles, pedestrian walkways, loading bays and forklift zones to suit the new layout. Column guards and end of aisle barriers go where forklifts turn. Then the site is cleared and handed over ready for stock. Moving in before peak season? Talk to us early. We work across Melbourne's south east warehouse belt, including Dandenong South, Hallam, Clayton and Mulgrave, and can stage a fit out so you're shipping before the October rush.",
+        image: fitOutLineMarkingImage,
+        imageAlt: "Fresh yellow aisle line marking on a polished concrete floor in a Melbourne warehouse"
+      }
+    ],
     scopeTitle: "FULFILMENT WAREHOUSE FIT OUT",
     scopeTitleHighlight: "SCOPE",
     scopeRows: [
@@ -278,6 +301,10 @@ export const industries: Industry[] = [
       {
         question: "Do you remove racking and repair the slab at lease end?",
         answer: "Yes. Every anchor is core drilled out, the hole is epoxy filled and the repair is ground flush. See [pallet racking removal](/services/strip-out-solutions/pallet-racking-removal/)."
+      },
+      {
+        question: "What affects the cost of a fulfilment warehouse fit out?",
+        answer: "The floor area, how much racking and shelving you need, the racking height, the condition of the slab and how much line marking is involved. Moving existing racking usually costs less than buying new. We give a fixed price after a site visit."
       },
       {
         question: "How early should we get in touch?",
