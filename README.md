@@ -1,73 +1,28 @@
-# Welcome to your Lovable project
+# makegood.melbourne
 
-## Project info
+Website for MakeGOOD Melbourne: commercial make good, strip out, remediation, roofing, racking and handover.
 
-**URL**: https://lovable.dev/projects/20e17ba9-b3a8-4660-a5f8-9b87a6166537
+## Stack
 
-## How can I edit this code?
+- [Astro](https://astro.build) with React islands and Tailwind CSS
+- Hosted on Netlify (site `peaceful-arithmetic-d23971`). Every pull request gets a deploy preview, and merges to `main` go live
+- Backend: Supabase project `krgbykvrigbbkvyprqnb` (set in `src/lib/backendClient.ts`)
+  - `chat`: website chatbot (OpenAI)
+  - `send-contact-email`: contact form emails via Resend, with an enquiry backup in `contact_enquiries`
+  - Edge functions in `supabase/functions/` are **not** deployed automatically. After changing one, deploy it in the Supabase dashboard
 
-There are several ways of editing your application.
-
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/20e17ba9-b3a8-4660-a5f8-9b87a6166537) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
+## Working on the site
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+pnpm install    # Netlify installs with pnpm from pnpm-lock.yaml
+pnpm dev        # local dev server
+pnpm build      # production build
 ```
 
-**Edit a file directly in GitHub**
+If you add or remove a package, update `pnpm-lock.yaml` too (Netlify uses a frozen lockfile and the build fails if it's out of date).
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+The Netlify build runs `scripts/smoke-tests.mjs` after building to check the chatbot and contact form endpoints are reachable.
 
-**Use GitHub Codespaces**
+## Rules
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/20e17ba9-b3a8-4660-a5f8-9b87a6166537) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+See `CLAUDE.md`: never push to `main` directly, always open a pull request and only merge after the deploy preview has been reviewed and approved.
