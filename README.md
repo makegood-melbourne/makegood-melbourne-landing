@@ -14,10 +14,12 @@ Website for MakeGOOD Melbourne: commercial make good, strip out, remediation, ro
 ## Working on the site
 
 ```sh
-npm install
-npm run dev     # local dev server
-npm run build   # production build
+pnpm install    # Netlify installs with pnpm from pnpm-lock.yaml
+pnpm dev        # local dev server
+pnpm build      # production build
 ```
+
+If you add or remove a package, update `pnpm-lock.yaml` too (Netlify uses a frozen lockfile and the build fails if it's out of date).
 
 The Netlify build runs `scripts/smoke-tests.mjs` after building to check the chatbot and contact form endpoints are reachable.
 
