@@ -13,6 +13,195 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: "53",
+    slug: "racking-removal-anchor-holes-lease-melbourne",
+    title: "Racking Removal and Your Lease",
+    subtitle: "Why anchor holes cost Melbourne tenants money",
+    date: "2026-11-16",
+    readTime: "12 min read",
+    excerpt: "Taking the racking out is the easy part. The anchor holes it leaves in the slab are what cost warehouse tenants money at lease end. Here's why, and how to avoid paying twice.",
+    metaDescription: "Racking removal at lease end in Melbourne. Why anchor holes become a make good claim, what landlords check and how to plan the racking and floor as one job.",
+    image: "/src/assets/blog/racking-removal-anchor-holes-warehouse-lease-melbourne.webp",
+    imageAlt: "Empty warehouse slab after pallet racking removal with rows of anchor holes waiting to be core drilled and filled before lease handback in Melbourne",
+    content: `The racking has been sold. The trucks have gone. The warehouse is empty for the first time in years.
+
+Then you look down. The slab is covered in anchor bolts, snapped studs and holes. Hundreds of them. In a big site it can be thousands. And the landlord's agent is booked in for the final inspection in three weeks.
+
+This is where a lot of warehouse tenants find out that taking the racking out is the easy part. The floor it leaves behind is what costs money. Sometimes a lot of money, and often money that never needed to be spent.
+
+This post covers why anchor holes are a lease problem, where tenants lose money on them and how to plan the racking removal so the floor doesn't turn into a claim against your security deposit.
+
+## Why anchor holes are a lease problem
+
+Most commercial leases say two things about the end of the tenancy. Remove your fixtures and fittings. Make good any damage caused by installing or removing them.
+
+Pallet racking is a tenant fixture. It's bolted into the landlord's slab. Every anchor that went in drilled a hole into a building you don't own. When the racking comes out, those holes are damage caused by your fitout. That puts them on your side of the ledger.
+
+Landlords care about this more than tenants expect, for good reasons:
+
+- **The slab is the building.** In a warehouse, the floor is the asset. A landlord leasing out a distribution centre is selling floor space.
+- **Holes collect trouble.** Open holes trap water, oil and dirt. Over time the edges break down and small holes become bigger ones.
+- **Forklifts hate them.** Snapped studs and open holes chew up forklift wheels and can catch a pallet jack. That's a safety issue for the next tenant.
+- **The next layout won't match yours.** The incoming tenant will want their own racking in their own positions. Your holes are in their way.
+
+So the question isn't whether the holes get fixed. It's who fixes them, how well and who pays.
+
+## Count the holes before you count the cost
+
+Tenants underestimate anchor holes because they never counted them. Here's the rough maths.
+
+A standard selective racking frame has two base plates. Each base plate takes one or two anchors. A single run of 20 bays has 21 frames, which means 42 base plates and somewhere between 42 and 84 anchors.
+
+Now scale that up. A mid sized distribution warehouse with 30 runs of racking can easily have 1,500 to 2,500 anchors in the slab. Then add:
+
+- Column guards and upright protectors
+- End of aisle barriers and rack end frames
+- Guard rails along walkways and dock areas
+- Bollards around offices, doors and switchboards
+- Pallet wrappers, conveyors and mezzanine posts
+- Holes from previous layouts, if the racking was ever moved
+
+That last one catches people out. If you reconfigured the racking five years ago and the old holes were never filled properly, they're still your holes.
+
+Every one of those holes is its own small repair. That's why anchor hole work is priced on volume. And it's why a rough guess at the floor costs is almost always wrong. Walk the site with a racking layout drawing and count.
+
+## Where tenants lose money on anchor holes
+
+The repair itself isn't the expensive part. Doing it wrong, doing it late or letting someone else do it is where the money goes.
+
+### Doing it badly the first time
+
+The cheapest approach is to cut the bolts off flush with a grinder and walk away. It looks tidy from the doorway. Up close, every bolt is still in the slab, a different colour to the concrete around it and easy to find by feel.
+
+Plenty of landlords reject it. When they do, someone has to come back and core drill every one of those cut bolts out, fill the holes properly and grind the floor again. You pay for the shortcut and then you pay for the proper job.
+
+Cheap cementitious patching has the same problem. It can shrink, crack and pop out under forklift traffic. If it fails before the inspection, it gets rejected. If it fails after, it can turn up in the landlord's claim later on.
+
+The proper method is to core drill the anchors out, fill the holes with a two part epoxy mortar and grind the surface flush. We cover that process step by step in our guide to [warehouse floor restoration after racking removal](/blog/warehouse-floor-restoration-racking-removal/).
+
+### Letting the landlord do it
+
+Some tenants hand back the keys and let the landlord sort out the floor. It feels like the easy option. It usually costs the most.
+
+When the landlord does the work, they choose the contractor, they set the scope and they send you the bill. Some leases let the landlord ask for a payment instead of make good works. Either way, the money often comes out of your bank guarantee or security deposit before you've had a chance to question it.
+
+You lose control of three things at once:
+
+- **The scope.** The landlord's contractor may quote a full grind and seal when filling and spot grinding would have done the job.
+- **The price.** You're paying someone else's rates plus any management margin, with no competing quote.
+- **The evidence.** Once the work is done, there's nothing left to inspect. Arguing about whether it was needed gets much harder.
+
+### Running out of time
+
+Floor work has to happen in order. Racking out, anchors out, holes filled, fills cured, surface ground, sealed if needed, line marking last. You can't rush the cure time on epoxy fills.
+
+When the racking removal is booked for the last week of the lease, the floor work spills past the end date. That can mean paying extra rent while you finish, or handing back an unfinished floor and copping a claim for it.
+
+### Assuming the racking company has it covered
+
+Many racking companies quote the dismantle and disposal and stop there. Look for a line in the exclusions like "floor repairs by others" or "anchors cut flush only." That line means the floor is still your problem.
+
+It's not a dodgy practice. Racking installers install racking. Floor repair is a different trade with different gear. The trouble is the gap between the two quotes, and the tenant usually finds it in the last fortnight.
+
+## What your landlord will actually check
+
+At the final inspection, a landlord or their building consultant will walk the slab. Here's what they're looking for:
+
+- Anchors fully removed, not just cut flush
+- Holes filled level with the slab, with no dips or high spots
+- Fills that sound solid when tapped, not hollow
+- No cracking around the repairs
+- A reasonable colour match, especially on a sealed or polished floor
+- Old line marking removed or reinstated to the agreed layout
+- A floor condition that matches the entry condition report, less fair wear and tear
+
+That last point is the big one. The entry condition report, or a [dilapidation report](/blog/dilapidation-reports-melbourne-make-good/) done at the start of the lease, sets the benchmark. If the slab was bare and scarred when you moved in, you're not paying to make it perfect. If it was sealed and clean, that's the standard you're handing back to.
+
+## Your options, side by side
+
+| Option | What happens | Likely landlord reaction | Real cost to you |
+|---|---|---|---|
+| Cut bolts flush | Bolts stay in the slab, cut off at surface level | Often rejected | Low upfront, high if it has to be redone |
+| Core drill, epoxy fill and grind | Anchors removed, holes filled and finished flush | Usually accepted | Moderate, and you control the price |
+| Leave it for the landlord | Landlord's contractor does the work and bills you | Fine for them | Usually the highest, with the least control |
+| Leave the racking for the next tenant | Racking and anchors stay, with written approval | Depends on the landlord | Lowest, if it's agreed in writing |
+
+## Common situations we see
+
+**"The racking company said the floor was included."**
+Check the quote. If it says "remove anchors," ask how. Cutting flush and core drilling are both technically removing the anchor at the surface. Only one of them gets past most landlords.
+
+**"The incoming tenant wants to keep the racking."**
+This can save everyone money. But the landlord has to agree, and it needs to be in writing. Without it, you're still on the hook for the racking and the floor at the end of the lease. Get a letter or a lease variation that says the racking stays and you're released from removing it.
+
+**"Those holes were already there when we moved in."**
+Prove it. If the entry condition report shows existing holes, you shouldn't be paying for them. If the report is vague or there isn't one, that argument gets very hard to win. Photos from move in help.
+
+**"There's only a few hundred holes, nobody will notice."**
+They will. A building consultant walking a warehouse slab is looking for exactly this. A few hundred unfilled holes is a few hundred line items in a claim.
+
+**"We'll fill them ourselves on the weekend."**
+Some tenants try it with a bag of patching compound from the hardware store. On a forklift floor, it rarely survives. The patches are usually visible, often proud of the surface and sometimes already cracking by the inspection.
+
+## Big sites, bigger bills
+
+The scale of the problem grows quickly with the size of the building. In big distribution sites around [Dandenong South](/areas/dandenong-south/) and [Hallam](/areas/hallam/), we regularly see slabs with thousands of anchor points and racking that has been moved two or three times over the life of the lease.
+
+Large logistics sites bring a few extra issues:
+
+- **High bay racking.** Taller racking often uses bigger or more anchors per base plate, which means larger cores and more fill material.
+- **Very narrow aisle floors.** Sites built for very narrow aisle forklifts can have strict floor flatness requirements. A fill left even slightly high can matter on these floors. The repairs need to be ground to match.
+- **Sealed and coated floors.** Many newer distribution centres have sealed slabs. Patching without resealing leaves a patchwork that's hard to argue is "make good."
+- **Line marking.** Aisle markings, pedestrian walkways and loading zones may need to be removed or redone to suit the base building layout. Our [line marking service](/services/make-good-solutions/line-marking/) covers both.
+
+On sites this size, small differences in method add up. A cheaper rate per hole across 2,500 holes looks good on paper. It looks a lot worse when the work is rejected and redone.
+
+## How to plan it so the floor doesn't cost you twice
+
+Start early. Six months out from lease end isn't too soon for a large warehouse. Here's the order that works:
+
+- **Read the lease.** Find the make good clause and any clause about tenant fixtures. Check whether the landlord can ask for a payment instead of works.
+- **Find the entry condition report.** That's your benchmark for the floor.
+- **Count the anchors.** Use the racking layout drawing and walk the site. Include guards, barriers and bollards.
+- **Get the racking and the floor quoted together.** One scope, one price, no gap in the middle.
+- **Talk to the landlord early.** Agree the floor standard before work starts. Ask whether the incoming tenant wants any of the racking.
+- **Leave time for the floor.** Book the racking removal well before the final weeks so the floor work, cure times and line marking all fit before handback.
+- **Photograph everything.** Before, during and after. If there's a dispute later, photos are your evidence.
+
+If the racking is part of a bigger exit, our guide to [warehouse and factory make goods](/blog/warehouse-factory-make-good-melbourne/) covers the rest of the building. And if you're trying to make sense of quotes that are miles apart, read [what drives make good costs in Melbourne](/blog/make-good-cost-drivers-melbourne/).
+
+## Why we price the racking and the floor as one job
+
+Most of the expensive mistakes on a warehouse floor happen in the gap between two contractors. The racking crew finishes and leaves. The floor contractor turns up later and finds something nobody planned for. The tenant is stuck in the middle with the lease end date coming.
+
+We handle [pallet racking removal](/services/strip-out-solutions/pallet-racking-removal/) and the [warehouse flooring](/services/make-good-solutions/warehouse-flooring/) repairs as one scope. The same people who take the racking out are responsible for what the floor looks like after. That means:
+
+- Anchors core drilled out, not cut flush
+- Holes filled with epoxy mortar and ground level with the slab
+- Grinding, sealing and line marking matched to your lease and condition report
+- One fixed price for the lot
+- A floor that's ready for the inspection, with photos to back it up
+
+## Questions we get asked
+
+**Do I have to fill every anchor hole?**
+If your lease says to make good damage caused by your fixtures, yes, in almost every case. The exception is holes that were there before you moved in and are recorded in the entry condition report.
+
+**Can I leave the anchors in if I cut them flush?**
+You can try. Many landlords reject it because the bolt is still in the slab. Check with the landlord before you choose this option, and get their answer in writing.
+
+**How long does the floor work take?**
+It depends on the number of anchors and the finish your lease needs. Epoxy fills need time to cure before grinding. Plan for the floor work to start straight after the racking is out, not in the last few days.
+
+**Is the floor work cheaper if the racking company does it?**
+Sometimes. The bigger saving is having one contractor responsible for both, so nothing falls through the gap.
+
+**What if the landlord has already sent a claim?**
+Don't pay it straight away. Ask for the itemised scope and compare it to your lease and the entry condition report. An independent quote for the same work gives you something to negotiate with.
+
+Racking out and floor finished, one contractor, one fixed price. Send through the site address, a rough count of racking bays and your lease end date. [Get in touch.](/contact/)`
+  },
+  {
     id: "48",
     slug: "make-good-cost-drivers-melbourne",
     title: "What Drives Make Good Costs in Melbourne",
@@ -1769,7 +1958,7 @@ Some leases are more general, simply requiring the tenant to remove all fixtures
 
 The entry condition report is your best friend here. If the floor had existing cracking, staining or surface wear when you moved in and it is documented in the report, you are not responsible for reinstating that damage. If the report shows a clean, sealed floor and you are handing back a slab full of anchor holes and grinding marks, that gap is your liability.
 
-Get clear on your obligations before you spend any money. A quick review with your property lawyer or even a conversation with your property manager can save you from either over-spending on work you do not need to do or under-doing it and losing part of your bond.
+Get clear on your obligations before you spend any money. Our post on [racking removal and your lease](/blog/racking-removal-anchor-holes-lease-melbourne/) explains why anchor holes so often end up in a landlord's claim. A quick review with your property lawyer or even a conversation with your property manager can save you from either over-spending on work you do not need to do or under-doing it and losing part of your bond.
 
 That said, the process below covers the full scope of what a typical warehouse floor restoration involves. Depending on your lease, you may need all of it or just part of it.
 

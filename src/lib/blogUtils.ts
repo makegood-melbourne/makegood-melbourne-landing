@@ -50,10 +50,12 @@ import warehouseDemolitionImage from "@/assets/blog/warehouse-demolition-mezzani
 import warehouseFloorRestorationImage from "@/assets/blog/warehouse-floor-dynatbolt-racking-anchor-removal-melbourne.webp";
 import patchingPlasteringImage from "@/assets/blog/commercial-office-patching-plastering-partition-removal-make-good-melbourne.webp";
 import metalRoofReplacementWarehouseImage from "@/assets/blog/metal-roof-sheeting-warehouse-melbourne.webp";
+import rackingAnchorHolesLeaseImage from "@/assets/blog/racking-removal-anchor-holes-warehouse-lease-melbourne.webp";
 import { BlogPost } from "@/data/blogPosts";
 import { resolveImageSrc } from "@/lib/resolveImageSrc";
 
 const imageMap: Record<string, unknown> = {
+  'racking-removal-anchor-holes-warehouse-lease-melbourne': rackingAnchorHolesLeaseImage,
   'commercial-water-damage-ceiling-melbourne': commercialWaterDamageCeilingImage,
   'make-good-cost-quote-site-inspection-melbourne': makeGoodCostDriversImage,
   'commercial-painting-melbourne': commercialPaintingMelbourneImage,
