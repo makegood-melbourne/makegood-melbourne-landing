@@ -55,11 +55,10 @@ export const serviceCategories: {
   {
     label: "Racking Solutions",
     href: "/services/racking-solutions/",  // Clickable category header
-    slugs: ['racking-solutions/pallet-racking-installation', 'racking-solutions/racking-relocation-reconfiguration', 'strip-out-solutions/pallet-racking-removal'],
+    slugs: ['racking-solutions/pallet-racking-installation', 'racking-solutions/racking-relocation-reconfiguration'],
     displayNames: {
       'racking-solutions/pallet-racking-installation': 'Pallet Racking Installation',
-      'racking-solutions/racking-relocation-reconfiguration': 'Relocation & Reconfiguration',
-      'strip-out-solutions/pallet-racking-removal': 'Pallet Racking Removal'
+      'racking-solutions/racking-relocation-reconfiguration': 'Relocation & Reconfiguration'
     }
   }
 ];

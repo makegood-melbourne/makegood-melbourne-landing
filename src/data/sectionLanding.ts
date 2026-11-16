@@ -1294,20 +1294,20 @@ export const sectionLandingPages: SectionLandingData[] = [
       {
         title: "E-commerce & Fulfilment",
         description: "Bulk stock up high. Pick faces down low. Orders out the door faster.",
-        image: "/images/industries/warehouse-logistics-make-good-melbourne.jpg",
-        imageAlt: "Warehouse fulfilment centre with pallet racking in Melbourne",
+        image: "/images/industries/ecommerce-fulfilment-carton-flow-racking-melbourne.jpg",
+        imageAlt: "Carton flow racking with roller lanes for order picking in a Melbourne fulfilment warehouse",
         imageTitle: "E-commerce fulfilment warehouse racking Melbourne",
         href: "/industries/warehouses-logistics/",
-        linkLabel: "Learn more"
+        linkLabel: "Fulfilment warehouse fit out"
       },
       {
         title: "3PL & Distribution",
-        description: "Full pallets in, full pallets out. Aisles set for your forklifts.",
+        description: "Clients change and layouts change with them. Racking reworked without shutting the dock.",
         image: "/images/industries/warehouse-logistics-make-good-melbourne.jpg",
         imageAlt: "Distribution warehouse and logistics facility in Melbourne",
         imageTitle: "3PL and distribution warehouse racking Melbourne",
-        href: "/industries/warehouses-logistics/",
-        linkLabel: "Learn more"
+        href: "/services/racking-solutions/racking-relocation-reconfiguration/",
+        linkLabel: "Racking reconfiguration"
       },
       {
         title: "Industrial & Manufacturing",
