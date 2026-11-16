@@ -136,6 +136,27 @@ const LocationContent = ({ slug }: LocationContentProps) => {
         </div>
       </section>
 
+      {/* Section 3b: Racking — DARK (only where a suburb has local racking content) */}
+      {location.rackingContent && location.rackingContent.length > 0 && (
+        <section className="py-16 bg-background border-b border-border">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">Pallet Racking in {location.name}</h2>
+              <div className="space-y-4 text-lg text-muted-foreground">
+                {location.rackingContent.map((paragraph, i) => (
+                  <p key={i} className="leading-relaxed">{paragraph}</p>
+                ))}
+              </div>
+              <div className="flex flex-col sm:flex-row flex-wrap gap-3 mt-8">
+                <Button size="lg" asChild><a href="/services/racking-solutions/pallet-racking-installation/" className="group">Racking Installation<ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" /></a></Button>
+                <Button variant="outline" size="lg" asChild><a href="/services/racking-solutions/racking-relocation-reconfiguration/">Racking Relocation</a></Button>
+                <Button variant="outline" size="lg" asChild><a href="/services/strip-out-solutions/pallet-racking-removal/">Racking Removal</a></Button>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* Section 4: Why Choose Us — DARK */}
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4">

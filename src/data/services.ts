@@ -65,6 +65,7 @@ import roofLeakCeilingImage from "@/assets/services/roof-leak-water-stained-ceil
 import stormMakeSafeHeroImage from "@/assets/services/storm-damage-roof-make-safe-heavy-rain-melbourne.webp";
 import asbestosRoofImage from "@/assets/blog/asbestos-management.jpg";
 import roofMaintenanceHeroImage from "@/assets/services/commercial-roof-inspection-maintenance-aerial-melbourne.webp";
+import rackingInstallationHeroImage from "@/assets/services/warehouse-pallet-racking-installation-melbourne.webp";
 import stormCeilingDamageImage from "@/assets/services/storm-water-damaged-ceiling-tiles-commercial-melbourne.webp";
 
 export interface FeaturedSection {
@@ -3574,9 +3575,215 @@ export const services: Service[] = [
     relatedServices: ["roofing-solutions/roof-leak-repairs", "roofing-solutions/box-gutters-roof-drainage", "roofing-solutions/metal-roof-replacement"],
     category: "trade",
     published: true
+  },
+  {
+    name: "Pallet Racking Installation",
+    slug: "racking-solutions/pallet-racking-installation",
+    title: "Pallet Racking Installation",
+    metaTitle: "Pallet Racking Installation Melbourne | Make Good, BETTER.",
+    description: "Pallet racking and longspan shelving designed and installed for warehouses, fulfilment centres, 3PL and e-commerce operations across Melbourne.",
+    metaDescription: "Pallet racking installation in Melbourne for warehouses, 3PL and e-commerce fulfilment. Layout, supply and install to AS 4084. Free site visit and fixed price quote.",
+    heroText: "Racking laid out around your stock, your forklifts and how you pick. Then installed properly, bolted into a slab we've actually checked. Pallet racking and longspan shelving for warehouses, fulfilment centres and 3PL sites across Melbourne.",
+    ogImage: "/og/pallet-racking-installation.jpg",
+    heroImage: rackingInstallationHeroImage,
+    heroImageAlt: "Newly installed blue and orange selective pallet racking in a large Melbourne fulfilment warehouse",
+    heroImageTitle: "Pallet Racking Installation Melbourne",
+    secondaryImage: flatbedTruckTransportImage,
+    secondaryImageAlt: "Flatbed truck delivering bundled pallet racking frames and beams to a Melbourne warehouse",
+    secondaryImageTitle: "Pallet Racking Supply and Delivery Melbourne",
+    trustBadges: [
+      "Installed to AS 4084",
+      "Fixed-Price Quotes",
+      "Slab Checked First"
+    ],
+    benefits: [
+      "Warehouse layout and aisle planning",
+      "Selective pallet racking",
+      "Longspan shelving for pick faces",
+      "Load signs fitted to every bay",
+      "Column guards and end of aisle protection",
+      "Installed to AS 4084"
+    ],
+    capabilityCards: [
+      {
+        icon: "structure",
+        title: "LAYOUT & DESIGN",
+        items: [
+          "Site measure and floor plan",
+          "Aisle widths set for your forklifts",
+          "Bay sizes set for your pallets",
+          "Beam levels set for your stock",
+          "Pick faces planned for e-commerce orders",
+          "Room left to grow"
+        ]
+      },
+      {
+        icon: "brick",
+        title: "SUPPLY & INSTALL",
+        items: [
+          "Selective pallet racking",
+          "Longspan shelving",
+          "Mesh decks and pallet supports",
+          "Frames anchored to the slab",
+          "Load signs on every bay",
+          "Installed to AS 4084"
+        ]
+      },
+      {
+        icon: "waterproof",
+        title: "PROTECTION & FLOOR",
+        items: [
+          "Column guards",
+          "End of aisle barriers",
+          "Slab checked before anchoring",
+          "Cracks and joints repaired first",
+          "Aisle and pedestrian line marking",
+          "Site cleared when we leave"
+        ]
+      }
+    ],
+    capabilitiesTitle: "WHAT WE DO",
+    capabilitiesSubtitle: "From an empty slab to a warehouse ready to receive stock.",
+    scopeTitle: "RACKING IS ONLY AS GOOD AS THE FLOOR UNDER IT",
+    scopeBody: "Most racking installers turn up, bolt frames into whatever slab is there and leave. We don't work that way. We do warehouse floors every day, so we check the slab before a single anchor goes in. Cracks, failed joints and old anchor holes get fixed first, because a frame anchored into a broken slab is a problem waiting for a forklift.\n\nThen we lay the racking out around how you actually work. Pallet sizes, forklift reach, aisle widths, how many SKUs you carry and how orders leave the building. An e-commerce operation picking hundreds of small orders a day needs a different layout to a 3PL moving full pallets, and both need room to grow.\n\nEvery bay gets a load sign. Columns get guards where forklifts turn. And because we do [line marking](/services/make-good-solutions/line-marking/) and [warehouse flooring](/services/make-good-solutions/warehouse-flooring/) too, the aisles are marked and the floor is ready before your first delivery lands.\n\nMoving in from another site? We can [move your existing racking](/services/racking-solutions/racking-relocation-reconfiguration/) and make good the old warehouse while we're at it.",
+    process: [
+      { step: "Site Visit", description: "We measure the warehouse, check the slab, ceiling height, sprinklers and lighting. Then we talk through your stock, pallets and forklifts." },
+      { step: "Layout", description: "A racking layout drawn around your aisles, bays and beam levels, with pick faces and room to grow." },
+      { step: "Fixed-Price Quote", description: "Supply, install, protection and any floor or line marking work, all in one price." },
+      { step: "Install", description: "Frames up, beams in, anchored and checked. Load signs, guards and barriers fitted." },
+      { step: "Handover", description: "Final check, layout drawing and load signs in place. Site cleared and ready for stock." }
+    ],
+    faqs: [
+      { question: "Do you supply the racking as well as install it?", answer: "Yes. We supply and install, or install racking you've already bought. Either way we confirm the bay sizes and load ratings suit what you're storing before anything goes up." },
+      { question: "What do you need from us for a quote?", answer: "The address, a floor plan or rough measurements, the ceiling height, your pallet sizes and weights and the forklifts you use. Phone photos of the empty space help a lot." },
+      { question: "Can you set up racking for an e-commerce or fulfilment operation?", answer: "Yes. We'll mix pallet racking for bulk stock with longspan shelving for pick faces, and lay out the aisles so pickers aren't walking further than they need to." },
+      { question: "Why do you check the slab first?", answer: "Because racking is anchored into it. Cracks, failed joints and old anchor holes can undermine a frame. We fix those before install so the racking is sitting on something solid." },
+      { question: "Can you install while we're still operating?", answer: "Often, yes. We stage the install by zone so receiving and dispatch keep moving, and we'll work around your busy periods." }
+    ],
+    ctaBlock: {
+      title: "Setting Up a New Warehouse?",
+      subtitle: "Racking, floors and line marking. One contractor.",
+      text: "Send us the address, a floor plan and what you're storing. We'll come out, check the slab and come back with a layout and a fixed price."
+    },
+    linkedSpotlightBlock: {
+      title: "ONE CONTRACTOR.",
+      titleHighlight: "THE WHOLE WAREHOUSE.",
+      subtitle: "Racking in, racking moved, racking out. Floors fixed every time.",
+      cards: [
+        { slug: "racking-solutions/racking-relocation-reconfiguration", name: "Racking Relocation & Reconfiguration", description: "Moving sites or outgrowing the layout. We take it down, move it and put it back up properly." },
+        { slug: "strip-out-solutions/pallet-racking-removal", name: "Pallet Racking Removal", description: "Racking out, anchors core drilled, holes filled and the slab ground flush for handover." },
+        { slug: "make-good-solutions/warehouse-flooring", name: "Warehouse Flooring", description: "Slab repairs, joint repairs and grinding so the floor is ready for racking and forklifts." }
+      ]
+    },
+    relatedServices: ["racking-solutions/racking-relocation-reconfiguration", "strip-out-solutions/pallet-racking-removal", "make-good-solutions/line-marking"],
+    category: "trade",
+    published: true
+  },
+  {
+    name: "Racking Relocation & Reconfiguration",
+    slug: "racking-solutions/racking-relocation-reconfiguration",
+    title: "Racking Relocation & Reconfiguration",
+    metaTitle: "Pallet Racking Relocation Melbourne | Make Good, BETTER.",
+    description: "Pallet racking dismantled, moved and reinstalled at your new warehouse, or reconfigured where it stands, with the old site made good for handover.",
+    metaDescription: "Pallet racking relocation and reconfiguration in Melbourne. Dismantle, transport and reinstall, plus make good of the old warehouse in one fixed price quote.",
+    heroText: "New warehouse, same racking. Or same warehouse, new layout. We dismantle, move and reinstall your pallet racking, then make good the site you're leaving. One crew, one quote, both ends of the move.",
+    ogImage: "/og/racking-relocation-reconfiguration.jpg",
+    heroImage: warehouseRelocationImage,
+    heroImageAlt: "Forklift loading bundled pallet racking onto a truck during a Melbourne warehouse relocation",
+    heroImageTitle: "Pallet Racking Relocation Melbourne",
+    secondaryImage: warehouseDynaboltHoleRepairsImage,
+    secondaryImageAlt: "Filled pallet racking anchor holes on a warehouse concrete slab after racking was relocated, Melbourne",
+    secondaryImageTitle: "Old Warehouse Slab Repairs After Racking Relocation Melbourne",
+    trustBadges: [
+      "Both Sites Handled",
+      "Fixed-Price Quotes",
+      "Make Good Included"
+    ],
+    benefits: [
+      "Racking dismantled, labelled and bundled",
+      "Transport to your new site",
+      "Reinstalled to a new layout",
+      "Damaged components replaced",
+      "Old warehouse made good for handover",
+      "Beam levels and bays reconfigured on site"
+    ],
+    capabilityCards: [
+      {
+        icon: "brick",
+        title: "RELOCATION",
+        items: [
+          "Racking dismantled and labelled",
+          "Frames and beams bundled for transport",
+          "Delivered to your new warehouse",
+          "Reinstalled to a new layout",
+          "Damaged parts swapped out",
+          "Load signs updated"
+        ]
+      },
+      {
+        icon: "structure",
+        title: "RECONFIGURATION",
+        items: [
+          "Beam levels changed for new stock",
+          "Bays added or removed",
+          "Runs moved for wider aisles",
+          "Pallet racking swapped to pick shelving",
+          "Staged around operations",
+          "Peak season ready"
+        ]
+      },
+      {
+        icon: "waterproof",
+        title: "THE SITE YOU LEAVE",
+        items: [
+          "Anchors core drilled and removed",
+          "Holes epoxy filled and ground flush",
+          "Line marking removed",
+          "Strip out and patching",
+          "End of lease clean",
+          "Ready for the landlord's inspection"
+        ]
+      }
+    ],
+    capabilitiesTitle: "WHAT WE DO",
+    capabilitiesSubtitle: "Racking moved or reworked, without leaving a mess behind.",
+    scopeTitle: "MOST RACKING MOVES FORGET THE OLD WAREHOUSE",
+    scopeBody: "A racking relocation usually gets quoted as two jobs. Someone pulls the racking down and moves it, then the tenant finds out the old slab is full of anchor holes the lease says have to go. That second job lands late, costs more and holds up the bond.\n\nWe quote both ends. The racking comes down, gets labelled, bundled and moved to your new site, then goes back up to a layout that suits the new building. Meanwhile the old warehouse gets the [pallet racking removal](/services/strip-out-solutions/pallet-racking-removal/) treatment: every anchor core drilled, every hole epoxy filled and ground flush, ready for the [end of lease make good](/services/make-good-solutions/).\n\nNot moving? Plenty of warehouses just outgrow the layout. A new product range, more small e-commerce orders, a bigger forklift or a busy peak season coming. We change beam levels, add or remove bays and move runs where they stand, staged so you keep shipping.\n\nBuying new racking for the new site instead? See [pallet racking installation](/services/racking-solutions/pallet-racking-installation/).",
+    process: [
+      { step: "Site Visit", description: "We look at the racking you have, the warehouse it's going into and the lease on the one you're leaving." },
+      { step: "Plan", description: "A layout for the new site, a list of any parts to replace and a sequence that fits your move dates." },
+      { step: "Fixed-Price Quote", description: "Dismantle, transport, reinstall and make good of the old site, all in one price." },
+      { step: "Move", description: "Racking down, moved and back up, staged so you're out of one site and into the next with minimal downtime." },
+      { step: "Handover", description: "New site ready for stock. Old site repaired, cleaned and ready for the landlord." }
+    ],
+    faqs: [
+      { question: "Can you move our racking to a new warehouse?", answer: "Yes. We dismantle it, label and bundle the frames and beams, transport it and reinstall it at the new site, usually to a new layout that suits the building." },
+      { question: "Can we reuse our racking in a different building?", answer: "Usually. We check the frames and beams for damage first, replace anything that shouldn't go back up and confirm the layout suits the new ceiling height, sprinklers and slab." },
+      { question: "Do you fix the floor at the old warehouse?", answer: "Yes, and that's the bit most racking movers skip. Anchors are core drilled, holes epoxy filled and ground flush. We can handle the rest of the make good in the same quote too." },
+      { question: "Can you change our layout without shutting us down?", answer: "Yes. We work zone by zone, so receiving and dispatch keep moving while we change beam levels, add bays or shift runs." }
+    ],
+    ctaBlock: {
+      title: "Moving Warehouses?",
+      subtitle: "Racking moved. Old site made good. One quote.",
+      text: "Send us both addresses, your move dates and a few photos of the racking. We'll plan the move and come back with a fixed price for both ends."
+    },
+    linkedSpotlightBlock: {
+      title: "ONE CONTRACTOR.",
+      titleHighlight: "THE WHOLE WAREHOUSE.",
+      subtitle: "Racking in, racking moved, racking out. Floors fixed every time.",
+      cards: [
+        { slug: "racking-solutions/pallet-racking-installation", name: "Pallet Racking Installation", description: "Layout, supply and install, bolted into a slab we've actually checked." },
+        { slug: "strip-out-solutions/pallet-racking-removal", name: "Pallet Racking Removal", description: "Racking out, anchors core drilled, holes filled and the slab ground flush for handover." },
+        { slug: "handover-solutions/end-of-lease-relocation", name: "End of Lease Relocation", description: "The rest of the move, planned around your lease end date." }
+      ]
+    },
+    relatedServices: ["racking-solutions/pallet-racking-installation", "strip-out-solutions/pallet-racking-removal", "handover-solutions/end-of-lease-relocation"],
+    category: "trade",
+    published: true
   }
 
 ];
+
 
 export function getServiceBySlug(slug: string): Service | undefined {
   return services.find(service => service.slug === slug);

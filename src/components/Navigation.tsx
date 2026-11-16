@@ -56,7 +56,7 @@ const Navigation = () => {
             {/* Services: a real link plus a mega panel. The panel is always in the DOM (hidden with CSS)
                 so every service link is present in the server-rendered HTML for crawlers,
                 and it opens on hover or keyboard focus with no JavaScript. */}
-            <div className="relative group">
+            <div className="group h-16 flex items-center">
               <a
                 href="/services/"
                 className="flex items-center gap-1 text-foreground hover:text-accent transition-colors py-2"
@@ -65,8 +65,8 @@ const Navigation = () => {
                 Services
                 <ChevronDown className="h-4 w-4" />
               </a>
-              <div className="invisible opacity-0 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100 transition-opacity duration-150 absolute left-1/2 -translate-x-1/3 top-full pt-2 z-50">
-                <div className="bg-card border border-border rounded-md shadow-xl p-6 grid grid-cols-5 gap-6 w-[1000px] max-w-[calc(100vw-2rem)]">
+              <div className="invisible opacity-0 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100 transition-opacity duration-150 absolute left-1/2 -translate-x-1/2 top-full pt-2 z-50">
+                <div className="bg-card border border-border rounded-md shadow-xl p-6 grid grid-cols-3 xl:grid-cols-6 gap-6 w-[1160px] max-w-[calc(100vw-2rem)]">
                   {serviceCategories.map((category) => {
                     const categoryServices = getServicesByCategory(category.slugs);
                     if (categoryServices.length === 0) return null;

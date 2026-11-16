@@ -12,7 +12,7 @@ import {
 } from "@/components/ui/accordion";
 import { cn } from "@/lib/utils";
 
-type FAQCategory = "all" | "understanding" | "costs" | "process" | "services" | "remediation" | "roofing" | "working";
+type FAQCategory = "all" | "understanding" | "costs" | "process" | "services" | "remediation" | "roofing" | "racking" | "working";
 
 interface FAQ {
   question: string;
@@ -261,7 +261,28 @@ const faqs: FAQ[] = [
     question: "Can roofing work happen while the building is occupied?",
     answer: "Yes. Most roof work happens up top while you carry on below. We plan access, staging and any internal protection around your operations."
   },
-  // Category 7: Working With Us (merged with Common Concerns)
+  // Category 7: Racking
+  {
+    category: "racking",
+    question: "What racking work do you do?",
+    answer: "Pallet racking installation, relocation, reconfiguration and removal, with the slab repaired for handover. Warehouses, 3PL sites and e-commerce fulfilment centres across Melbourne."
+  },
+  {
+    category: "racking",
+    question: "Do you supply pallet racking or only install it?",
+    answer: "Both. We supply and install, or install racking you already own. Either way we confirm the bay sizes and load ratings suit what you're storing first."
+  },
+  {
+    category: "racking",
+    question: "Can you move our racking to a new warehouse?",
+    answer: "Yes. We dismantle, label, transport and reinstall it at the new site, and we can make good the old warehouse in the same quote."
+  },
+  {
+    category: "racking",
+    question: "Can you change our racking layout while we keep operating?",
+    answer: "Yes. We work zone by zone so receiving and dispatch keep moving while we change beam levels, add bays or move runs."
+  },
+  // Category 8: Working With Us (merged with Common Concerns)
   {
     category: "working",
     question: "Are you licensed and insured?",
@@ -317,6 +338,7 @@ const categories: { id: FAQCategory; label: string }[] = [
   { id: "services", label: "Services" },
   { id: "remediation", label: "Remediation" },
   { id: "roofing", label: "Roofing" },
+  { id: "racking", label: "Racking" },
   { id: "working", label: "Working With Us" },
 ];
 
@@ -368,7 +390,7 @@ const FAQPage = () => {
             Frequently Asked Questions
           </h1>
           <p className="text-xl text-primary font-medium">
-            Everything you need to know about make good, office strip out, remediation, roofing and working with us.
+            Everything you need to know about make good, office strip out, remediation, roofing, racking and working with us.
           </p>
         </div>
       </section>

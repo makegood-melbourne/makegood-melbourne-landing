@@ -16,7 +16,7 @@ const Footer = () => {
             </a>
             <p className="text-lg text-accent font-semibold mb-2">Make Good, BETTER.</p>
             <p className="text-muted-foreground leading-relaxed mb-4 max-w-md">
-              Professional make good, make safe and remediation services for commercial and industrial properties across Melbourne.
+              Make good, strip out, remediation, roofing and racking for commercial and industrial properties across Melbourne.
             </p>
             <a 
               href="mailto:info@makegood.melbourne" data-track="footer_email"
@@ -78,7 +78,7 @@ const Footer = () => {
         {/* Site links: plain links on every page so visitors and search engines can reach every service, area and industry page */}
         <nav aria-label="Footer" className="border-t border-border pt-8 mb-8">
           <h4 className="font-semibold mb-4 text-foreground">Services</h4>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 mb-8">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 mb-8">
             {serviceCategories.map((category) => {
               const categoryServices = getServicesByCategory(category.slugs);
               return (

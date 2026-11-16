@@ -21,6 +21,7 @@ export interface Location {
   businessTypes: string[];
   localExpertise?: LocalExpertiseItem[];
   endOfLeaseContent?: string;
+  rackingContent?: string[]; // Local racking section (installation, relocation, removal)
   faqs?: LocationFAQ[];
 }
 
@@ -140,6 +141,10 @@ export const locations: Location[] = [
       { title: "Medical Suite Compliance", description: "Restoring medical suites to original condition involves meeting strict hygiene and safety standards unique to Clayton’s health precinct." },
       { title: "Industrial Site Repairs", description: "Clayton South industrial properties often have heavy-duty flooring and structural wear needing targeted restoration methods." },
       { title: "Knowledge Precinct Fitouts", description: "Undoing custom fitouts in tech and innovation offices demands precision to preserve building integrity and meet landlord expectations." }
+    ],
+    rackingContent: [
+      "Clayton South is full of warehouse and light industrial units, from the Westall Road corridor to the Springs Road precinct. Plenty of them now run e-commerce and fulfilment operations, and that means racking.",
+      "We install new pallet racking and longspan shelving, move racking between sites and reconfigure layouts as your stock changes. Because we fix warehouse floors every day, the slab gets checked and repaired before anything is anchored to it. And when you leave, every anchor hole is filled and ground flush."
     ],
     endOfLeaseContent: "Make Good Melbourne specialises in end of lease restoration across Clayton’s diverse properties, including Monash University precinct offices, medical suites on Centre Road and industrial spaces in Clayton South. We understand local requirements and deliver practical solutions to leave your commercial space ready for handover.",
 
@@ -293,6 +298,10 @@ export const locations: Location[] = [
       { title: "Technology Facility Standards", description: "Working within strict technical and cabling layouts typical of Mulgrave’s technology company premises during restoration." },
       { title: "Traffic Access Coordination", description: "Managing site access and scheduling around Eastlink and Monash Freeway traffic to minimise disruption to commercial operations." },
       { title: "Springvale Road Compliance", description: "Navigating local council regulations for business properties along Springvale Road to ensure compliant end of lease works." }
+    ],
+    rackingContent: [
+      "Alongside the corporate business parks, Mulgrave has a solid base of warehouses and distribution sites around Jacksons Road and the Wellington Road precinct, with Eastlink and the Monash Freeway on the doorstep. That access makes it a natural spot for fulfilment and distribution.",
+      "We install new pallet racking and longspan shelving, relocate racking between sites and reconfigure layouts as your operation grows. The slab is checked and repaired before anything goes up, and when the lease ends every anchor hole is filled and ground flush for handover."
     ],
     endOfLeaseContent: "Make Good Melbourne specialises in end of lease restorations for Mulgrave’s commercial properties, including offices along Springvale Road and facilities within business parks near Monash Freeway. We understand the specific requirements of corporate and technology tenants and provide practical solutions tailored to this precinct.",
 
@@ -1403,8 +1412,16 @@ export const locations: Location[] = [
         "description": "A handover clean sized for big floor areas so the site is ready for landlord inspection."
       }
     ],
+    "rackingContent": [
+      "Dandenong South is one of Melbourne's biggest warehouse precincts, and the distribution centres along Abbotts Road, Greens Road and the Frankston-Dandenong Road corridor are full of racking. When tenants move in, expand or move out, the racking moves with them.",
+      "We install new pallet racking and longspan shelving for distribution, 3PL and e-commerce sites, relocate racking between warehouses and reconfigure layouts while you keep shipping. The slab gets fixed before anything is anchored, and at lease end every anchor hole is core drilled, epoxy filled and ground flush."
+    ],
     "endOfLeaseContent": "MakeGOOD Melbourne delivers end of lease make good for Dandenong South industrial properties, from racking removal and slab repairs to line marking and handover cleaning. We review your lease, inspect the site and provide a fixed price quote covering every trade.",
     "faqs": [
+      {
+        "question": "Do you install and relocate pallet racking in Dandenong South?",
+        "answer": "Yes. We install new pallet racking and longspan shelving, move racking between warehouses and reconfigure layouts, with the slab checked and repaired before anything is anchored."
+      },
       {
         "question": "Do you make good large warehouses in Dandenong South?",
         "answer": "Yes. We handle racking removal, slab repairs, line marking, strip out and handover cleaning for large industrial and distribution properties."
@@ -1454,8 +1471,16 @@ export const locations: Location[] = [
         "description": "A final clean so the unit is ready for the landlord's inspection."
       }
     ],
+    "rackingContent": [
+      "Hallam's mid sized industrial units around Hallam Road and the Princes Highway corridor suit growing e-commerce, wholesale and storage businesses. Most of them need racking to make the space work.",
+      "We install new pallet racking and longspan shelving laid out for the unit, move racking from your old site and reconfigure layouts as you grow. The slab is checked and repaired before anything goes up, and when you leave every anchor hole is filled and ground flush for handover."
+    ],
     "endOfLeaseContent": "MakeGOOD Melbourne delivers end of lease make good for Hallam industrial units and trade premises. We review your lease, inspect the property and provide a fixed price quote that covers strip out, repairs, painting and handover cleaning.",
     "faqs": [
+      {
+        "question": "Can you install racking in a Hallam industrial unit?",
+        "answer": "Yes. We lay out, supply and install pallet racking and longspan shelving to suit the unit, and we can move racking from your previous site."
+      },
       {
         "question": "Do you service industrial units in Hallam?",
         "answer": "Yes. We handle strip out, racking removal, floor and wall repairs, painting and handover cleaning for industrial units and trade premises in Hallam."
