@@ -244,6 +244,11 @@ export const industries: Industry[] = [
         link: "/services/strip-out-solutions/pallet-racking-removal/"
       },
       {
+        scope: "Racking Installation and Relocation",
+        worksIncluded: "Moving into a new warehouse? Pallet racking and longspan shelving laid out, supplied and installed, or your existing racking moved and reinstalled, with the old site made good.",
+        link: "/services/racking-solutions/"
+      },
+      {
         scope: "Slab and Floor Repairs",
         worksIncluded: "Anchor holes, concrete damage, traffic wear, floor coating removal and surface preparation are assessed against the lease requirements and slab condition.",
         link: "/services/make-good-solutions/warehouse-flooring/"
@@ -277,6 +282,8 @@ export const industries: Industry[] = [
       "strip-out-solutions/make-safe",
       "make-good-solutions/painting",
       "strip-out-solutions/pallet-racking-removal",
+      "racking-solutions/pallet-racking-installation",
+      "racking-solutions/racking-relocation-reconfiguration",
       "make-good-solutions/patching-plastering",
       "make-good-solutions/warehouse-flooring"
     ],

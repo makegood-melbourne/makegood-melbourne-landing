@@ -1,6 +1,6 @@
 import { getPublishedServices } from "@/data/services";
 
-// Service categories for navigation grouping - 5 main sections
+// Service categories for navigation grouping - 6 main sections
 export const serviceCategories: {
   label: string;
   href: string;
@@ -50,6 +50,16 @@ export const serviceCategories: {
       'roofing-solutions/polycarbonate-roofing-skylights': 'Polycarbonate Roofing & Skylights',
       'roofing-solutions/storm-damage-make-safe': 'Storm Damage & Make Safe',
       'roofing-solutions/roof-inspections-maintenance': 'Roof Inspections & Maintenance'
+    }
+  },
+  {
+    label: "Racking Solutions",
+    href: "/services/racking-solutions/",  // Clickable category header
+    slugs: ['racking-solutions/pallet-racking-installation', 'racking-solutions/racking-relocation-reconfiguration', 'strip-out-solutions/pallet-racking-removal'],
+    displayNames: {
+      'racking-solutions/pallet-racking-installation': 'Pallet Racking Installation',
+      'racking-solutions/racking-relocation-reconfiguration': 'Relocation & Reconfiguration',
+      'strip-out-solutions/pallet-racking-removal': 'Pallet Racking Removal'
     }
   }
 ];

@@ -1,5 +1,5 @@
 // Section landing page data for the 5 main service categories:
-// Strip Out, Make Good, Handover, Remediation, Roofing
+// Strip Out, Make Good, Handover, Remediation, Roofing, Racking
 
 import buildingRemediationHero from "@/assets/services/building-remediation-melbourne-shotcrete.jpg";
 import buildingRemediationHeroMobile from "@/assets/services/building-remediation-melbourne-shotcrete-mobile.jpg";
@@ -31,6 +31,8 @@ import claddingRemediationImage from "@/assets/services/cladding-remediation-fac
 import skylightRoofPanelsImage from "@/assets/services/industrial-skylight-roof-panels-steel-structure-melbourne.jpeg";
 import structuralRemediationHeroImage from "@/assets/services/structural-remediation-concrete-cancer-repair-melbourne.jpg";
 import shotcreteApplicationImage from "@/assets/services/shotcrete-application-structural-repair-melbourne.jpg";
+import rackingInstallHero from "@/assets/services/warehouse-pallet-racking-installation-melbourne.webp";
+import rackingInstallHeroMobile from "@/assets/services/warehouse-pallet-racking-installation-melbourne-mobile.webp";
 import roofingAerialHero from "@/assets/services/warehouse-metal-roof-skylights-aerial-melbourne.webp";
 import roofingAerialHeroMobile from "@/assets/services/warehouse-metal-roof-skylights-aerial-melbourne-mobile.webp";
 import rooferHarnessImage from "@/assets/services/roofer-safety-harness-metal-roof-repair-melbourne.webp";
@@ -1208,8 +1210,161 @@ export const sectionLandingPages: SectionLandingData[] = [
     ctaTitle: "NEED COMMERCIAL OR INDUSTRIAL ROOFING?",
     ctaSubtitle: "We do make goods all day, every day. Now we do the roof too.",
     ctaText: "Send us the address, a few photos and how we get up there. We'll find the cause and come back with a fixed price. No surprises later."
+  },
+  {
+    slug: "racking-solutions",
+    metaTitle: "Pallet Racking Melbourne | Install, Relocate, Remove | MakeGOOD",
+    metaDescription: "Pallet racking installation, relocation and removal for Melbourne warehouses, 3PL and e-commerce fulfilment. Slab repairs included. Fixed price quotes.",
+    ogImage: "/og/racking-solutions.jpg",
+
+    title: "RACKING SOLUTIONS MELBOURNE",
+    titleHighlight: "MELBOURNE",
+    tagline: "Pallet racking in, moved or out, for warehouses, fulfilment centres, 3PL and e-commerce operations across Melbourne. And because we fix warehouse floors every day, the slab gets sorted too. One quote. One crew.",
+    trustBadges: [
+      { icon: "shield", title: "Licensed & Insured" },
+      { icon: "dollar", title: "Fixed-Price Quotes" },
+      { icon: "clipboard", title: "Installed to AS 4084" },
+      { icon: "document", title: "Slab Repairs Included" }
+    ],
+    heroImage: rackingInstallHero,
+    heroImageMobile: rackingInstallHeroMobile,
+    heroImageAlt: "Newly installed blue and orange selective pallet racking in a large Melbourne fulfilment warehouse",
+    heroImageTitle: "Makegood Melbourne - Pallet Racking Solutions Melbourne",
+
+    aboutTitlePrefix: "RACKING IN. RACKING OUT.",
+    aboutTitleHighlight: "FLOORS FIXED EVERY TIME.",
+    aboutContentLeft: [
+      "Online orders keep growing, and so does the demand for warehouse space set up to pick, pack and ship them. Whether you're fitting out your first fulfilment warehouse, moving a 3PL operation to a bigger site or clearing racking out at lease end, the racking is the job that sets everything else in motion.",
+      "Here's the thing most racking companies won't tell you. Racking is only as good as the slab it's bolted into. Cracked joints, broken edges and old anchor holes don't belong under a new frame. We check the floor first and fix it before anything goes up."
+    ],
+    aboutContentRight: [
+      "And when racking comes down, the floor is left full of holes the lease says have to go. Most installers walk away at that point. We core drill every anchor, fill it with epoxy and grind it flush, so the site is ready for handover.",
+      "We work across Melbourne's warehouse belt, from Dandenong South and Hallam to Clayton, Mulgrave and beyond. Racking, floors, line marking and the make good, all from one contractor."
+    ],
+
+    serviceSlugs: [
+      "racking-solutions/pallet-racking-installation",
+      "racking-solutions/racking-relocation-reconfiguration",
+      "strip-out-solutions/pallet-racking-removal"
+    ],
+    hideServices: true,
+    useGrid: true,
+    carouselTitle: "OUR RACKING SERVICES",
+    carouselTitleHighlight: "SERVICES",
+    carouselDescription: "Pallet racking installation, relocation and removal across Melbourne.",
+
+    scopeCentred: true,
+    scopeTitle: "RACKING",
+    scopeTitleHighlight: "SCOPE",
+    scopeSubtitle: "The whole life of your racking, from the first frame to the last anchor hole.",
+    scopeRows: [
+      {
+        scope: "Pallet racking installation",
+        worksIncluded: "Layout, supply and install. Pallet racking and longspan shelving, anchored into a slab we've checked first.",
+        link: "/services/racking-solutions/pallet-racking-installation/",
+        linkLabel: "View racking installation",
+        image: rackingInstallHero,
+        imageAlt: "Newly installed selective pallet racking in a Melbourne fulfilment warehouse",
+        imageTitle: "Pallet Racking Installation Melbourne"
+      },
+      {
+        scope: "Relocation and reconfiguration",
+        worksIncluded: "Moving sites or outgrowing the layout. We take it down, move it and put it back up properly.",
+        link: "/services/racking-solutions/racking-relocation-reconfiguration/",
+        linkLabel: "View racking relocation",
+        image: warehouseRelocationImage,
+        imageAlt: "Forklift loading bundled pallet racking onto a truck during a Melbourne warehouse relocation",
+        imageTitle: "Pallet Racking Relocation Melbourne"
+      },
+      {
+        scope: "Pallet racking removal",
+        worksIncluded: "Racking out, anchors core drilled, holes epoxy filled and the slab ground flush for handover.",
+        link: "/services/strip-out-solutions/pallet-racking-removal/",
+        linkLabel: "View racking removal",
+        image: palletRackingRemovalHeroImage,
+        imageAlt: "Partially dismantled pallet racking in an empty Melbourne warehouse during a strip out",
+        imageTitle: "Pallet Racking Removal Melbourne"
+      }
+    ],
+
+    propertyTypesTitle: "WAREHOUSES WE",
+    propertyTypesTitleHighlight: "RACK",
+    propertyTypesSubtitle: "Every operation moves stock differently. We lay the racking out around how yours works.",
+    propertyTypes: [
+      {
+        title: "E-commerce & Fulfilment",
+        description: "Bulk stock up high. Pick faces down low. Orders out the door faster.",
+        image: "/images/industries/warehouse-logistics-make-good-melbourne.jpg",
+        imageAlt: "Warehouse fulfilment centre with pallet racking in Melbourne",
+        imageTitle: "E-commerce fulfilment warehouse racking Melbourne",
+        href: "/industries/warehouses-logistics/",
+        linkLabel: "Learn more"
+      },
+      {
+        title: "3PL & Distribution",
+        description: "Full pallets in, full pallets out. Aisles set for your forklifts.",
+        image: "/images/industries/warehouse-logistics-make-good-melbourne.jpg",
+        imageAlt: "Distribution warehouse and logistics facility in Melbourne",
+        imageTitle: "3PL and distribution warehouse racking Melbourne",
+        href: "/industries/warehouses-logistics/",
+        linkLabel: "Learn more"
+      },
+      {
+        title: "Industrial & Manufacturing",
+        description: "Raw materials and finished goods, stored where the line needs them.",
+        image: "/images/industries/industrial-manufacturing-make-good-melbourne.jpg",
+        imageAlt: "Industrial manufacturing facility in Melbourne",
+        imageTitle: "Industrial and manufacturing racking Melbourne",
+        href: "/industries/industrial/",
+        linkLabel: "Learn more"
+      }
+    ],
+
+    processTitle: "OUR RACKING PROCESS",
+    processSubtitle: "No guessing from a floor plan. Here's how it goes.",
+    processSteps: [
+      { step: "Site Visit", description: "We measure the space, check the slab, ceiling height and sprinklers. Then we talk through your stock, pallets and forklifts." },
+      { step: "Layout and Scope", description: "A racking layout for installs and moves, or a removal and slab repair scope for lease exits." },
+      { step: "Fixed-Price Quote", description: "Racking, floor repairs, line marking and make good, all in one price." },
+      { step: "Racking Works", description: "Installed, moved or removed, staged around your operation so receiving and dispatch keep moving." },
+      { step: "Handover", description: "Load signs fitted on new racking, or anchor holes filled and the slab ground flush on the site you're leaving." }
+    ],
+
+    faqTitle: "Racking Solutions FAQs",
+    faqSubtitle: "Common questions about pallet racking in Melbourne warehouses.",
+    faqs: [
+      {
+        question: "Do you supply racking or just install it?",
+        answer: "Both. We supply and install, or install racking you already own. Either way we confirm the bay sizes and load ratings suit what you're storing first."
+      },
+      {
+        question: "Can you set up racking for an e-commerce warehouse?",
+        answer: "Yes. Most online retailers need a mix of pallet racking for bulk stock and longspan shelving for pick faces. We lay it out so pickers aren't walking further than they need to."
+      },
+      {
+        question: "Can you move our racking to a new warehouse?",
+        answer: "Yes. We dismantle, label, transport and reinstall it at the new site, usually to a new layout. And we can make good the old site in the same quote."
+      },
+      {
+        question: "What happens to the floor when racking comes out?",
+        answer: "Every anchor is core drilled out, the hole is filled with epoxy and the repair is ground flush. That's usually what the lease asks for, and it's where most racking removals fall short."
+      },
+      {
+        question: "Can you work while we're still operating?",
+        answer: "Yes. We stage the work zone by zone so you can keep receiving and shipping. If you have a peak season coming, tell us early and we'll plan around it."
+      },
+      {
+        question: "What information helps with a racking quote?",
+        answer: "The address, a floor plan or rough measurements, the ceiling height, your pallet sizes and weights and the forklifts you use. For moves, both addresses and your dates. Phone photos are perfect."
+      }
+    ],
+
+    ctaTitle: "NEED RACKING INSTALLED, MOVED OR REMOVED?",
+    ctaSubtitle: "We do warehouse floors all day, every day. Now we do the racking too.",
+    ctaText: "Send us the address, a floor plan or a few photos and what you're storing. We'll come out, check the slab and come back with a fixed price. No surprises later."
   }
 ];
+
 
 export const getSectionLandingBySlug = (slug: string): SectionLandingData | undefined => {
   return sectionLandingPages.find(page => page.slug === slug);

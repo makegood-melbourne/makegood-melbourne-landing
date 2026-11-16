@@ -279,6 +279,7 @@ const Contact = () => {
                           <SelectItem value="remediation">Remediation & Rectification</SelectItem>
                           <SelectItem value="strip-out">Office/Warehouse Strip Out</SelectItem>
                           <SelectItem value="roofing">Roofing Solutions</SelectItem>
+                          <SelectItem value="racking">Racking Installation, Relocation or Removal</SelectItem>
                           <SelectItem value="other">Other Services</SelectItem>
                         </SelectContent>
                       </Select>

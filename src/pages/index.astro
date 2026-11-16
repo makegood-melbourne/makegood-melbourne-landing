@@ -38,6 +38,7 @@ const serviceCatalog = [
   { name: "Handover Solutions", url: "https://makegood.melbourne/services/handover-solutions/" },
   { name: "Remediation Solutions", url: "https://makegood.melbourne/services/remediation-solutions/" },
   { name: "Roofing Solutions", url: "https://makegood.melbourne/services/roofing-solutions/" },
+  { name: "Racking Solutions", url: "https://makegood.melbourne/services/racking-solutions/" },
 ];
 
 // LocalBusiness schema (service area business: suburb level address only, no street address)
@@ -55,7 +56,7 @@ const businessSchema = {
     "https://makegood.melbourne/images/commercial-property-restoration-capabilities-melbourne.jpg"
   ],
   "email": "info@makegood.melbourne",
-  "description": "Commercial make good, strip out, remediation and roofing for offices, warehouses and industrial properties across Melbourne. Free site inspection and fixed price quotes.",
+  "description": "Commercial make good, strip out, remediation, roofing and pallet racking for offices, warehouses and industrial properties across Melbourne. Free site inspection and fixed price quotes.",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Melbourne",
@@ -82,11 +83,14 @@ const businessSchema = {
     "Building Remediation",
     "Make Safe Services",
     "Commercial Roofing",
+    "Pallet Racking Installation",
+    "Pallet Racking Relocation",
+    "Pallet Racking Removal",
     "Commercial Property Restoration"
   ],
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
-    "name": "Commercial make good, strip out, remediation and roofing services",
+    "name": "Commercial make good, strip out, remediation, roofing and racking services",
     "itemListElement": serviceCatalog.map((service) => ({
       "@type": "Offer",
       "itemOffered": { "@type": "Service", "name": service.name, "url": service.url }
@@ -119,7 +123,7 @@ const websiteSchema = {
 
 <BaseLayout 
   title="Commercial Make Good & Strip Out Melbourne | MakeGOOD Melbourne"
-  description="End of lease make good, strip out, remediation and roofing for Melbourne offices, warehouses and industrial sites. Free site inspection and fixed price quote."
+  description="End of lease make good, strip out, remediation, roofing and pallet racking for Melbourne offices, warehouses and industrial sites. Free site visit and fixed price quote."
   ogImage="/og/commercial.jpg"
   canonicalUrl="https://makegood.melbourne/"
 >

@@ -2,8 +2,8 @@
 /**
  * ServicesGrid.astro
  * 
- * A static two-column grid section for the homepage displaying the 5 main service categories:
- * Strip Outs, Remediation, Make Goods, Handover and Roofing. An odd last card is centred.
+ * A static two-column grid section for the homepage displaying the 6 main service categories:
+ * Strip Outs, Remediation, Make Goods, Handover, Roofing and Racking. An odd last card is centred.
  * 
  * Each card dynamically pulls its hero image from the linked category/service page.
  */
@@ -15,6 +15,7 @@ import stripOutHero from "@/assets/services/commercial-industrial-strip-out-melb
 import makeGoodHero from "@/assets/services/melbourne-warehouse-make-good-hero.jpg";
 import buildingRemediationHero from "@/assets/services/building-remediation-melbourne-shotcrete.jpg";
 import roofingHero from "@/assets/services/warehouse-metal-roof-skylights-aerial-melbourne.webp";
+import rackingHero from "@/assets/services/warehouse-pallet-racking-installation-melbourne.webp";
 
 // Import hero image for Handover parent page
 import handoverHero from "@/assets/services/commercial-industrial-handover-ready-warehouse-melbourne.webp";
@@ -96,6 +97,19 @@ const serviceCards = [
       { label: 'Storm Damage & Make Safe', href: '/services/roofing-solutions/storm-damage-make-safe/' },
       { label: 'Roof Inspections & Maintenance', href: '/services/roofing-solutions/roof-inspections-maintenance/' },
     ],
+  },  {
+    id: 'racking',
+    title: 'RACKING SOLUTIONS',
+    description: 'Pallet racking in, moved or out. Slab fixed every time.',
+    categoryLink: '/services/racking-solutions/',
+    ctaLabel: 'Racking Solutions',
+    heroImage: rackingHero,
+    heroImageAlt: 'Newly installed selective pallet racking in a Melbourne fulfilment warehouse',
+    chips: [
+      { label: 'Pallet Racking Installation', href: '/services/racking-solutions/pallet-racking-installation/' },
+      { label: 'Relocation & Reconfiguration', href: '/services/racking-solutions/racking-relocation-reconfiguration/' },
+      { label: 'Pallet Racking Removal', href: '/services/strip-out-solutions/pallet-racking-removal/' },
+    ],
   },
 ];
 ---
@@ -109,7 +123,7 @@ const serviceCards = [
         <span class="title-orange">SERVICES</span>
       </h2>
       <p class="section-subtitle">
-        Strip out, make good, handover, remediation and roofing, delivered by one contractor.
+        Strip out, make good, handover, remediation, roofing and racking, delivered by one contractor.
       </p>
     </div>
 

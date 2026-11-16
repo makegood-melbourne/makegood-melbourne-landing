@@ -78,7 +78,7 @@ const Footer = () => {
         {/* Site links: plain links on every page so visitors and search engines can reach every service, area and industry page */}
         <nav aria-label="Footer" className="border-t border-border pt-8 mb-8">
           <h4 className="font-semibold mb-4 text-foreground">Services</h4>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 mb-8">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 mb-8">
             {serviceCategories.map((category) => {
               const categoryServices = getServicesByCategory(category.slugs);
               return (
