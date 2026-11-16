@@ -5,7 +5,7 @@ import { z } from "https://deno.land/x/zod@v3.22.4/mod.ts";
 const RESEND_API_KEY = Deno.env.get("RESEND_API_KEY");
 const SUPABASE_URL = Deno.env.get("SUPABASE_URL");
 const SUPABASE_SERVICE_ROLE_KEY = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY");
-const RECAPTCHA_SECRET_KEY = Deno.env.get("RECAPTCHA_SECRET_KEY") || "6LfptwEoAAAAAPs5mYV7sAvI7AXmvCr-UwQ79XM9";
+const RECAPTCHA_SECRET_KEY = Deno.env.get("RECAPTCHA_SECRET_KEY");
 
 // Layer 3: CORS restricted to production domain only
 const ALLOWED_ORIGINS = [
@@ -113,7 +113,13 @@ const handler = async (req: Request): Promise<Response> => {
     }
 
     // Layer 4 (server-side): reCAPTCHA v3 verification
-    if (_rc) {
+    // A failed or low reCAPTCHA check does NOT throw the enquiry away. Real customers can
+    // fail it (blocked scripts, wrong key setup, unlisted domain), so the enquiry is still
+    // saved and emailed to the business, flagged as "possible spam", and the visitor
+    // confirmation is skipped. Honeypot and too-fast submissions above are still dropped.
+    let recaptchaFailed = false;
+    let recaptchaNote = "";
+    if (_rc && RECAPTCHA_SECRET_KEY) {
       try {
         const recaptchaRes = await fetch("https://www.google.com/recaptcha/api/siteverify", {
           method: "POST",
@@ -124,16 +130,18 @@ const handler = async (req: Request): Promise<Response> => {
         console.log("reCAPTCHA result:", JSON.stringify(recaptchaData));
 
         if (!recaptchaData.success || recaptchaData.score < 0.3) {
-          console.warn("reCAPTCHA failed - score:", recaptchaData.score, "from:", email);
-          return new Response(
-            JSON.stringify({ success: true }),
-            { status: 200, headers: { ...corsHeaders, "Content-Type": "application/json" } }
-          );
+          console.warn("reCAPTCHA failed - score:", recaptchaData.score, "from:", email, "- delivering flagged");
+          recaptchaFailed = true;
+          recaptchaNote = recaptchaData.success
+            ? `low score (${recaptchaData.score})`
+            : `verification failed (${(recaptchaData["error-codes"] || []).join(", ") || "unknown"})`;
         }
       } catch (recaptchaError) {
         console.warn("reCAPTCHA verification error, proceeding:", recaptchaError);
         // Don't block if reCAPTCHA service is down
       }
+    } else if (!RECAPTCHA_SECRET_KEY) {
+      console.warn("RECAPTCHA_SECRET_KEY is not set - skipping verification");
     } else {
       console.warn("No reCAPTCHA token provided from:", email);
     }
@@ -177,8 +185,11 @@ const handler = async (req: Request): Promise<Response> => {
       body: JSON.stringify({
         from: "MakeGOOD Melbourne <noreply@makegood.melbourne>",
         to: ["enquiries@makegood.melbourne"],
-        subject: `New Enquiry from ${safeName}`,
+        subject: recaptchaFailed
+          ? `[Check: possible spam] New Enquiry from ${safeName}`
+          : `New Enquiry from ${safeName}`,
         html: `
+          ${recaptchaFailed ? `<p style="background:#fff3cd;padding:10px;border-radius:4px"><strong>Spam check:</strong> reCAPTCHA ${escapeHtml(recaptchaNote)}. This may be spam, or a real customer whose browser blocked the check. No confirmation email was sent to them.</p>` : ""}
           <h2>New Contact Form Enquiry</h2>
           <p><strong>Name:</strong> ${safeName}</p>
           <p><strong>Email:</strong> ${safeEmail}</p>
@@ -199,7 +210,8 @@ const handler = async (req: Request): Promise<Response> => {
       throw new Error(businessEmailData.message || "Failed to send business email");
     }
 
-    // Send confirmation email to customer
+    // Send confirmation email to customer (skipped when the spam check failed)
+    if (!recaptchaFailed) {
     const customerEmailRes = await fetch("https://api.resend.com/emails", {
       method: "POST",
       headers: {
@@ -224,6 +236,7 @@ const handler = async (req: Request): Promise<Response> => {
 
     const customerEmailData = await customerEmailRes.json();
     console.log("Customer confirmation sent:", customerEmailData);
+    }
 
     emailSent = true;
 

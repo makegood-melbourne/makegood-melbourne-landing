@@ -5,26 +5,19 @@ type BackendConfig = {
   publishableKey: string;
 };
 
-// Public (anon/publishable) config fallback.
-// This prevents production builds (e.g. Netlify) from breaking if VITE env vars
-// are not provided at build time.
-const FALLBACK_BACKEND_CONFIG: BackendConfig = {
-  url: "https://eijgvnbwbklartrzqhqt.supabase.co",
+// Backend: MakeGOOD's own Supabase project (krgbykvrigbbkvyprqnb).
+// This is set in code on purpose and NOT read from VITE_SUPABASE_URL, because the
+// Netlify build settings still pointed at the old Lovable Cloud project
+// (eijgvnbwbklartrzqhqt), which can no longer be managed. The key below is the
+// public anon key, which is safe to ship in the browser.
+const BACKEND_CONFIG: BackendConfig = {
+  url: "https://krgbykvrigbbkvyprqnb.supabase.co",
   publishableKey:
-    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVpamd2bmJ3YmtsYXJ0cnpxaHF0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjI5OTUxMTcsImV4cCI6MjA3ODU3MTExN30.I0HQj5pPxwjFTohztM-cg1IaVRcBhiKEu7JTtQJtuGc",
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtyZ2J5a3ZyaWdiYmt2eXBycW5iIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjkyMzk1NjYsImV4cCI6MjA4NDgxNTU2Nn0.8aCUrnJnMUVJ-BES78V13uZu671oQo6rNvu3ZrRV8vs",
 };
 
 export function getBackendConfig(): BackendConfig {
-  const url = import.meta.env.VITE_SUPABASE_URL || FALLBACK_BACKEND_CONFIG.url;
-  const publishableKey =
-    import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY ||
-    FALLBACK_BACKEND_CONFIG.publishableKey;
-
-  if (!url || !publishableKey) {
-    throw new Error("Backend configuration is missing.");
-  }
-
-  return { url, publishableKey };
+  return BACKEND_CONFIG;
 }
 
 let clientSingleton: SupabaseClient | null = null;
