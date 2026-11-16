@@ -414,8 +414,10 @@ const SectionLandingTemplate = ({ data }: SectionLandingTemplateProps) => {
       )}
 
       {/* FAQ Section */}
+      {/* When the services block is hidden, the FAQ sits straight after the (light) process
+          section, so it switches to the dark background to keep the sections alternating */}
       {data.faqs && data.faqs.length > 0 && (
-        <section className="py-16 px-4 sm:px-6 lg:px-8 bg-secondary">
+        <section className={`py-16 px-4 sm:px-6 lg:px-8 ${data.hideServices && data.processSteps && data.processSteps.length > 0 ? 'bg-background' : 'bg-secondary'}`}>
           <div className="max-w-3xl mx-auto">
             <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-center">
               {data.faqTitle || "Frequently Asked Questions"}
@@ -441,7 +443,7 @@ const SectionLandingTemplate = ({ data }: SectionLandingTemplateProps) => {
       )}
 
       {/* CTA Section */}
-      <section className="py-16 bg-background">
+      <section className={`py-16 ${data.hideServices && data.processSteps && data.processSteps.length > 0 ? 'bg-secondary border-t border-border' : 'bg-background'}`}>
         <div className="container mx-auto px-4 max-w-4xl text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">{data.ctaTitle}</h2>
           {data.ctaSubtitle && <p className="text-xl text-primary font-semibold mb-4">{data.ctaSubtitle}</p>}
