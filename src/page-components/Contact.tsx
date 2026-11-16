@@ -9,7 +9,7 @@ import { useState, useRef, useEffect } from "react";
 import { toast } from "sonner";
 import { getBackendClient } from "@/lib/backendClient";
 
-const RECAPTCHA_SITE_KEY = "6LfptwEoAAAAACzcHJsltAkUS5FjHL1jNgPgJ2uX";
+const RECAPTCHA_SITE_KEY = "6LdI2CIuAAAAAGFQfhGFC1FQRx6UFm7A8ALMZdKK";
 
 // Load reCAPTCHA v3 script once
 function loadRecaptchaScript(): Promise<void> {
