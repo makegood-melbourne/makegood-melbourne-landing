@@ -21,8 +21,8 @@ export const blogPosts: BlogPost[] = [
     readTime: "12 min read",
     excerpt: "Taking the racking out is the easy part. The anchor holes it leaves in the slab are what cost warehouse tenants money at lease end. Here's why, and how to avoid paying twice.",
     metaDescription: "Racking removal at lease end in Melbourne. Why anchor holes become a make good claim, what landlords check and how to plan the racking and floor as one job.",
-    image: "/src/assets/blog/racking-removal-anchor-holes-warehouse-lease-melbourne.webp",
-    imageAlt: "Empty warehouse slab after pallet racking removal with rows of anchor holes waiting to be core drilled and filled before lease handback in Melbourne",
+    image: "/src/assets/blog/pallet-racking-base-plate-anchor-bolt-warehouse-slab-melbourne.webp",
+    imageAlt: "Blue pallet racking upright with its base plate anchored to a concrete warehouse slab, the anchor that leaves a hole to repair when racking is removed at lease end in Melbourne",
     content: `The racking has been sold. The trucks have gone. The warehouse is empty for the first time in years.
 
 Then you look down. The slab is covered in anchor bolts, snapped studs and holes. Hundreds of them. In a big site it can be thousands. And the landlord's agent is booked in for the final inspection in three weeks.
