@@ -9,8 +9,10 @@
  * Exit code 0 = success, 1 = failure (will fail the deploy)
  */
 
-const SUPABASE_URL = process.env.VITE_SUPABASE_URL || "https://krgbykvrigbbkvyprqnb.supabase.co";
-const SUPABASE_ANON_KEY = process.env.VITE_SUPABASE_PUBLISHABLE_KEY || "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtyZ2J5a3ZyaWdiYmt2eXBycW5iIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjkyMzk1NjYsImV4cCI6MjA4NDgxNTU2Nn0.8aCUrnJnMUVJ-BES78V13uZu671oQo6rNvu3ZrRV8vs";
+// Always test MakeGOOD's own Supabase project, which the site uses (src/lib/backendClient.ts).
+// Netlify env vars are deliberately ignored: they used to point at the old Lovable backend.
+const SUPABASE_URL = "https://krgbykvrigbbkvyprqnb.supabase.co";
+const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtyZ2J5a3ZyaWdiYmt2eXBycW5iIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjkyMzk1NjYsImV4cCI6MjA4NDgxNTU2Nn0.8aCUrnJnMUVJ-BES78V13uZu671oQo6rNvu3ZrRV8vs";
 
 const CONTACT_ENDPOINT = `${SUPABASE_URL}/functions/v1/send-contact-email`;
 const CHAT_ENDPOINT = `${SUPABASE_URL}/functions/v1/chat`;
@@ -76,15 +78,17 @@ async function runSmokeTests() {
 
   const results = [];
 
-  // Test 1: Contact form endpoint (send empty body to trigger validation, not actual email)
+  // Test 1: Contact form endpoint. The message is deliberately too short, so the function
+  // rejects it with a 400 validation error before any email is sent or anything is saved.
+  // (A valid payload here would email enquiries@ and bounce a confirmation off a fake
+  // address on every deploy.)
   results.push(
     await testEndpoint("Contact Form Endpoint", CONTACT_ENDPOINT, {
       method: "POST",
       body: JSON.stringify({
         name: "__SMOKE_TEST__",
         email: "smoke@test.invalid",
-        message: "This is a smoke test - do not process",
-        phone: "0000000000",
+        message: "x",
         sourcePage: "/smoke-test",
       }),
     })
