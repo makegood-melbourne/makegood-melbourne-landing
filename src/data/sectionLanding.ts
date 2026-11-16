@@ -1305,9 +1305,7 @@ export const sectionLandingPages: SectionLandingData[] = [
         description: "Clients change and layouts change with them. Racking reworked without shutting the dock.",
         image: "/images/industries/warehouse-logistics-make-good-melbourne.jpg",
         imageAlt: "Distribution warehouse and logistics facility in Melbourne",
-        imageTitle: "3PL and distribution warehouse racking Melbourne",
-        href: "/services/racking-solutions/racking-relocation-reconfiguration/",
-        linkLabel: "Racking reconfiguration"
+        imageTitle: "3PL and distribution warehouse racking Melbourne"
       },
       {
         title: "Industrial & Manufacturing",
