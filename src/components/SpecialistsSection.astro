@@ -1,6 +1,7 @@
 ---
 // Melbourne's Make Good Specialists section
-// The image slot is a grey placeholder until Ali supplies a photo.
+import { Image } from 'astro:assets';
+import warehouseExterior from '@/assets/industrial-warehouse-exterior-roller-doors-lease-handover-melbourne.webp';
 ---
 
 <section class="mg-specialists">
@@ -18,9 +19,16 @@
           We inspect the site, review your lease obligations and give you a fixed price quote that covers every trade. A small office strip out can take 1 to 2 weeks and a large warehouse restoration 4 to 8 weeks, so the earlier you call, the easier it is to meet your handover date. Beyond lease end, we also deliver <a href="/services/remediation-solutions/">building remediation</a> and <a href="/services/roofing-solutions/">commercial roofing</a>. New to the process? Read our <a href="/learn/make-good-guide/">make good guide</a> or see <a href="/learn/our-process/">how a project runs from proposal to handover</a>.
         </p>
       </div>
-      <div class="mg-specialists__media" role="img" aria-label="Image placeholder">
-        <span>[Image to come: warehouse make good photo]</span>
-      </div>
+      <Image
+        src={warehouseExterior}
+        alt="Empty industrial warehouse with a two storey office, roller doors and a clean concrete hardstand, ready for lease handover in Melbourne"
+        class="mg-specialists__media"
+        widths={[480, 800, 1200]}
+        sizes="(max-width: 1023px) 100vw, 540px"
+        loading="lazy"
+        decoding="async"
+        quality={70}
+      />
     </div>
   </div>
 </section>
@@ -70,19 +78,12 @@
     text-underline-offset: 3px;
   }
   .mg-specialists__media {
-    aspect-ratio: 4 / 3;
+    aspect-ratio: 16 / 9;
     width: 100%;
+    height: auto;
+    object-fit: cover;
     border-radius: 8px;
     background: hsl(0 0% 32%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 16px;
-    text-align: center;
-  }
-  .mg-specialists__media span {
-    font-size: 14px;
-    color: rgba(255, 255, 255, 0.6);
   }
 
   @media (min-width: 1024px) {
