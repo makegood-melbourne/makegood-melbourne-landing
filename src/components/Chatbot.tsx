@@ -29,6 +29,13 @@ export function Chatbot() {
     scrollToBottom();
   }, [messages]);
 
+  // The mobile quote bar has its own chat button (FloatingCTAs.tsx), which fires this event.
+  useEffect(() => {
+    const open = () => setIsOpen(true);
+    window.addEventListener("mg:open-chat", open);
+    return () => window.removeEventListener("mg:open-chat", open);
+  }, []);
+
   const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
   const streamChatWithRetry = async (

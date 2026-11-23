@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Menu, ChevronDown } from "lucide-react";
 import { useState } from "react";
-import logo from "@/assets/makegood-melbourne-logo.png";
+import logo from "@/assets/makegood-melbourne-logo-400.png";
 import { getFeaturedLocations } from "@/data/locations";
 import { getAllIndustries } from "@/data/industries";
 import { serviceCategories, getServicesByCategory } from "@/data/serviceCategories";
