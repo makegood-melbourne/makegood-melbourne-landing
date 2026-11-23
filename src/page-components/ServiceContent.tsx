@@ -401,8 +401,8 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
                 {!service.scopeBody && (
                   <p className="text-xl text-foreground leading-relaxed mt-4">
                     {service.slug === 'cladding-glazing' 
-                      ? `Our experienced team delivers professional ${service.name.toLowerCase()} services across Melbourne's commercial buildings. We understand the critical importance of bringing buildings up to compliance with Australian Standards and building code requirements, working efficiently to minimise disruption while achieving quality results.`
-                      : `Our experienced team delivers professional ${service.name.toLowerCase()} services across Melbourne's commercial and industrial properties. We understand the importance of meeting lease obligations and landlord requirements, working efficiently to minimise disruption while achieving quality results.`
+                      ? `We bring buildings back into line with the building code and the relevant Australian Standards, with as little disruption to occupants as we can manage.`
+                      : `We do ${service.name.toLowerCase()} for commercial and industrial properties across Melbourne, scoped to what the lease and the landlord ask for.`
                     }
                   </p>
                 )}
@@ -439,7 +439,7 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
         <section className={`py-16 ${bgComparison}`}>
           <div className="container mx-auto px-4">
             <h2 className="text-3xl md:text-4xl text-foreground mb-10">
-              {service.comparison.title || "Why Choose Specialists?"}
+              {service.comparison.title || "Specialist or General Contractor"}
             </h2>
             <div className="overflow-x-auto">
               <table className="w-full border-collapse">
@@ -512,7 +512,7 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
           <section key="comparison-section" className={`py-16 ${bgComparisonInFeatured}`}>
             <div className="container mx-auto px-4">
               <h2 className="text-3xl md:text-4xl text-foreground mb-10">
-                {service.comparison.title || "Why Choose Specialists?"}
+                {service.comparison.title || "Specialist or General Contractor"}
               </h2>
               <div className="overflow-x-auto">
                 <table className="w-full border-collapse">

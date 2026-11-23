@@ -12,10 +12,10 @@ const ServiceAreas = () => {
   return (
     <>
       <Helmet>
-        <title>Service Areas | Make Good Melbourne - All Melbourne Suburbs</title>
+        <title>Service Areas | MakeGOOD Melbourne - All Melbourne Suburbs</title>
         <meta 
           name="description" 
-          content="Make Good Melbourne services all Melbourne metro areas. View our service coverage across suburbs including Altona, Clayton, Dandenong, Port Melbourne, and more." 
+          content="MakeGOOD Melbourne services all Melbourne metro areas. View our service coverage across suburbs including Altona, Clayton, Dandenong, Port Melbourne, and more." 
         />
         <link rel="canonical" href="https://makegood.melbourne/service-areas/" />
       </Helmet>
@@ -31,7 +31,7 @@ const ServiceAreas = () => {
               Melbourne Service Areas
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              We provide professional make good services across all Melbourne metropolitan areas. From inner-city offices to outer suburban warehouses, our team delivers expert commercial property restoration wherever you need us.
+              We work right across metropolitan Melbourne, with most of our work in the south east. From inner-city offices to outer suburban warehouses, our team delivers expert commercial property restoration wherever you need us.
             </p>
           </div>
         </section>
@@ -77,7 +77,7 @@ const ServiceAreas = () => {
                 Full Melbourne Metro Coverage
               </h2>
               <p className="text-muted-foreground text-center mb-8 max-w-2xl mx-auto">
-                Our team services all Melbourne metropolitan areas. If your suburb isn't listed above, don't worry—we likely cover it. Contact us to confirm availability in your area.
+                Our team services all Melbourne metropolitan areas. If your suburb isn't listed above, don't worry. We likely cover it. Contact us to confirm availability in your area.
               </p>
               <div className="rounded-xl overflow-hidden border border-border shadow-lg">
                 <iframe
@@ -88,7 +88,7 @@ const ServiceAreas = () => {
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Make Good Melbourne Service Coverage Map"
+                  title="MakeGOOD Melbourne Service Coverage Map"
                   className="grayscale"
                 />
               </div>

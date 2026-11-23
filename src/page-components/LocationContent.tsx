@@ -115,7 +115,7 @@ const LocationContent = ({ slug }: LocationContentProps) => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Our Services in {location.name}</h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">Comprehensive make good solutions for commercial & industrial properties</p>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">Everything a lease handback needs, from one contractor.</p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {services.map((service, index) => {
@@ -169,10 +169,10 @@ const LocationContent = ({ slug }: LocationContentProps) => {
                 </div>
               </div>
               <div className="order-1 lg:order-2">
-                <h2 className="text-3xl font-bold text-foreground mb-6">Why {location.name} Trusts Us</h2>
-                <p className="text-xl text-muted-foreground mb-8 leading-relaxed">Local expertise, professional service and guaranteed results.</p>
+                <h2 className="text-3xl font-bold text-foreground mb-6">How We Work in {location.name}</h2>
+                <p className="text-xl text-muted-foreground mb-8 leading-relaxed">We read the lease before we quote. One fixed price for every trade.</p>
                 <div className="space-y-4">
-                  {[{ title: "Licensed & Insured", desc: "Full public liability and WorkCover compliance" }, { title: "Rapid Response", desc: "Same-day quotes and flexible scheduling" }, { title: "Complete Documentation", desc: "Detailed reports for lease compliance" }, { title: "Fixed Pricing", desc: "No hidden costs or surprise charges" }].map((item, i) => (
+                  {[{ title: "Licensed & Insured", desc: "Full public liability and WorkCover compliance" }, { title: "Lease Read First", desc: "We scope to what your lease asks, not a landlord's wish list" }, { title: "Photos at Handover", desc: "Finished work photographed for your records" }, { title: "One Fixed Price", desc: "Grouped by type of works, with no surprise variations" }].map((item, i) => (
                     <div key={i} className="flex items-start gap-4"><CheckCircle2 className="w-6 h-6 text-primary flex-shrink-0 mt-1" /><div><h4 className="font-semibold text-foreground">{item.title}</h4><p className="text-muted-foreground text-sm">{item.desc}</p></div></div>
                   ))}
                 </div>
@@ -192,8 +192,8 @@ const LocationContent = ({ slug }: LocationContentProps) => {
                 <p className="leading-relaxed">{location.endOfLeaseContent}</p>
               ) : (
                 <>
-                  <p className="leading-relaxed">When your commercial or industrial lease ends in {location.name}, meeting your make good obligations can feel overwhelming. That's where Make Good Melbourne comes in.</p>
-                  <p className="leading-relaxed">Our experienced team works with real estate agents, property managers, strata managers and tenants throughout {location.name}.</p>
+                  <p className="leading-relaxed">When your commercial or industrial lease ends in {location.name}, we read the make good clause, walk the site and give you one fixed price for every trade.</p>
+                  <p className="leading-relaxed">We work with tenants, property managers and leasing agents throughout {location.name}.</p>
                 </>
               )}
             </div>

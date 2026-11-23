@@ -240,7 +240,7 @@ const IndustryContent = ({ slug }: IndustryContentProps) => {
               What We Deliver
             </h2>
             <p className="text-center text-muted-foreground mb-10 max-w-2xl mx-auto">
-              Comprehensive make good for {industry.name.toLowerCase()} properties
+              What a {industry.name.toLowerCase()} make good covers
             </p>
 
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
