@@ -698,6 +698,19 @@
   status = 301
   force = true
 
+# Old copy of the make good guide, no longer built
+[[redirects]]
+  from = "/learn/make-good-guide-old"
+  to = "/learn/make-good-guide/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/learn/make-good-guide-old/"
+  to = "/learn/make-good-guide/"
+  status = 301
+  force = true
+
 [[redirects]]
   from = "/our-process"
   to = "/learn/our-process/"
