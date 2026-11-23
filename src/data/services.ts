@@ -66,7 +66,7 @@ import stormMakeSafeHeroImage from "@/assets/services/storm-damage-roof-make-saf
 import asbestosRoofImage from "@/assets/blog/asbestos-management.jpg";
 import roofMaintenanceHeroImage from "@/assets/services/commercial-roof-inspection-maintenance-aerial-melbourne.webp";
 import rackingInstallationHeroImage from "@/assets/services/warehouse-pallet-racking-installation-melbourne.webp";
-import warehouseMakeGoodHeroImage from "@/assets/services/commercial-industrial-handover-ready-warehouse-melbourne.webp";
+import warehouseMakeGoodHeroImage from "@/assets/services/warehouse-make-good-roller-doors-hardstand-dusk-melbourne.webp";
 import stormCeilingDamageImage from "@/assets/services/storm-water-damaged-ceiling-tiles-commercial-melbourne.webp";
 
 export interface FeaturedSection {
@@ -1628,7 +1628,7 @@ export const services: Service[] = [
     metaDescription: "Warehouse make good services in Melbourne. Racking out, slab repairs, line marking and handover for Dandenong South, Clayton, Mulgrave and Hallam tenants.",
     heroText: "Racking out. Slab repaired. Lines marked. Building handed back. We run the whole warehouse make good for industrial tenants and property managers across Melbourne, with one fixed price and a programme built around your lease end date.",
     heroImage: warehouseMakeGoodHeroImage,
-    heroImageAlt: "Empty industrial warehouse with steel roof trusses, high bay lights and a clean concrete slab ready for lease handover in Melbourne",
+    heroImageAlt: "Row of closed roller doors under an awning at dusk, with an empty concrete hardstand and fresh line marking, ready for warehouse lease handover in Melbourne",
     ogImage: "/og/warehouse-make-good.jpg",
     benefits: [],
     ctaBlock: {
