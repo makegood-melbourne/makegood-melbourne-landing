@@ -5,6 +5,7 @@ import ServiceHeroSection from '../../components/ServiceHeroSection.astro';
 import ServiceContent from '../../page-components/ServiceContent.tsx';
 import CtaBlock from '../../components/CtaBlock.astro';
 import Footer from '../../components/Footer';
+import ServiceLinks from '../../components/ServiceLinks.astro';
 import { getPublishedServices, getServiceBySlug } from '../../data/services';
 
 export function getStaticPaths() {
@@ -88,6 +89,9 @@ const faqSchema = service.faqs && service.faqs.length > 0 ? {
       
       <!-- Interactive content loaded after hero -->
       <ServiceContent slug={fullSlug} client:idle />
+
+      <!-- Blog posts and suburbs for this service -->
+      <ServiceLinks serviceSlug={service.slug} serviceName={service.name} />
       
       <!-- Standardized CTA Block -->
       <CtaBlock custom={service.ctaBlock} />

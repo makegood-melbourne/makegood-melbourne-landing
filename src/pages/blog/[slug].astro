@@ -5,6 +5,8 @@ import BlogHeroSection from '../../components/BlogHeroSection.astro';
 import BlogContent from '../../page-components/BlogContent.tsx';
 import CtaBlock from '../../components/CtaBlock.astro';
 import Footer from '../../components/Footer';
+import RelatedPosts from '../../components/RelatedPosts.astro';
+import { toIsoDate } from '../../lib/blogUtils';
 import { blogPosts, getBlogPostBySlug } from '../../data/blogPosts';
 
 export function getStaticPaths() {
@@ -50,8 +52,8 @@ const ogImage = `/og/blog/${imageBaseName}.jpg`;
     "headline": post.title,
     "description": description,
     "image": `https://makegood.melbourne${ogImage}`,
-    "datePublished": post.date,
-    "dateModified": post.date,
+    "datePublished": toIsoDate(post.date),
+    "dateModified": toIsoDate(post.updated || post.date),
     "author": {
       "@type": "Organization",
       "name": "Make Good Melbourne",
@@ -68,12 +70,12 @@ const ogImage = `/og/blog/${imageBaseName}.jpg`;
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": `https://makegood.melbourne/blog/${post.slug}`
+      "@id": `https://makegood.melbourne/blog/${post.slug}/`
     }
   })} />
   <meta slot="head" property="og:type" content="article" />
-  <meta slot="head" property="article:published_time" content={post.date} />
-  <meta slot="head" property="article:modified_time" content={post.date} />
+  <meta slot="head" property="article:published_time" content={toIsoDate(post.date)} />
+  <meta slot="head" property="article:modified_time" content={toIsoDate(post.updated || post.date)} />
   <meta slot="head" property="article:author" content="Make Good Melbourne" />
   <div class="min-h-screen flex flex-col">
     <Navigation client:load />
@@ -83,6 +85,9 @@ const ogImage = `/og/blog/${imageBaseName}.jpg`;
     
     <!-- Interactive content loaded after hero -->
     <BlogContent slug={slug} client:idle />
+
+    <!-- Related posts: plain links to three posts on the same topic -->
+    <RelatedPosts slug={slug} />
     
     <!-- Standardized CTA Block -->
     <CtaBlock />

@@ -1,0 +1,38 @@
+---
+// "Nearby areas" block on each suburb page: links to the closest service areas.
+import { getNearbyAreas } from '@/data/internalLinks';
+
+interface Props {
+  slug: string;
+  name: string;
+}
+
+const { slug, name } = Astro.props;
+const nearby = getNearbyAreas(slug, 5);
+---
+
+{nearby.length > 0 && (
+  <section class="py-12 md:py-16 bg-background border-t border-border" aria-labelledby="nearby-areas-heading">
+    <div class="container mx-auto px-4 max-w-6xl">
+      <h2 id="nearby-areas-heading" class="text-3xl md:text-4xl font-bold text-foreground mb-3 uppercase">
+        Nearby <span class="text-primary">areas</span>
+      </h2>
+      <p class="text-lg text-muted-foreground mb-8">We also work in the suburbs around {name}.</p>
+      <ul class="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
+        {nearby.map((area) => (
+          <li>
+            <a
+              href={`/areas/${area.slug}/`}
+              class="block rounded-lg border border-border bg-card px-5 py-4 font-medium text-foreground hover:border-primary/50 hover:text-primary transition-colors"
+            >
+              Make good in {area.name}
+            </a>
+          </li>
+        ))}
+      </ul>
+      <p class="mt-8">
+        <a href="/service-areas/" class="text-primary underline underline-offset-4 hover:text-primary/80">All service areas</a>
+      </p>
+    </div>
+  </section>
+)}

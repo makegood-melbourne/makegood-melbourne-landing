@@ -1,0 +1,28 @@
+---
+// Blog pagination pages: /blog/page/2/ onwards. Page 1 lives at /blog/.
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Navigation from '../../../components/Navigation';
+import Breadcrumbs from '../../../components/Breadcrumbs.astro';
+import BlogPage, { getBlogPageCount } from '../../../page-components/Blog.tsx';
+
+export function getStaticPaths() {
+  const total = getBlogPageCount();
+  return Array.from({ length: Math.max(0, total - 1) }, (_, i) => ({
+    params: { page: String(i + 2) },
+  }));
+}
+
+const page = Number(Astro.params.page);
+---
+
+<BaseLayout
+  title={`Blog, Page ${page} | Make Good & Remediation Insights Melbourne`}
+  description={`Page ${page} of the Make Good Melbourne blog. Practical guides on make good, strip out, remediation and end of lease works in Melbourne.`}
+  canonicalUrl={`https://makegood.melbourne/blog/page/${page}/`}
+>
+  <Navigation client:load />
+  <div class="bg-secondary pt-20">
+    <Breadcrumbs path="/blog/" />
+  </div>
+  <BlogPage page={page} />
+</BaseLayout>

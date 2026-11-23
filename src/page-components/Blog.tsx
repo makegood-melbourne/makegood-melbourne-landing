@@ -1,47 +1,37 @@
-import { useState } from "react";
-import { Helmet } from "@/lib/helmet";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { ArrowRight, Clock } from "lucide-react";
 import Footer from "@/components/Footer";
 import { blogPosts } from "@/data/blogPosts";
 import { getBlogImage, sortBlogPostsByDate, calculateReadingTime } from "@/lib/blogUtils";
 
-const POSTS_PER_PAGE = 12;
+export const POSTS_PER_PAGE = 12;
 
-const Blog = () => {
+export const getBlogPageCount = () => Math.ceil(blogPosts.length / POSTS_PER_PAGE);
+
+export const blogPageHref = (page: number) => (page <= 1 ? "/blog/" : `/blog/page/${page}/`);
+
+// Server rendered pagination: /blog/ is page 1, /blog/page/2/ onwards hold the rest.
+// Every page links to every other page with plain links, so crawlers reach all posts.
+const Blog = ({ page = 1 }: { page?: number }) => {
   const sortedPosts = sortBlogPostsByDate(blogPosts);
-  const [visibleCount, setVisibleCount] = useState(POSTS_PER_PAGE);
-
-  // Every post is rendered into the HTML so search engines can find them all;
-  // posts beyond visibleCount are just hidden until "Load More" is clicked.
-  const hasMore = visibleCount < sortedPosts.length;
-
-  const handleLoadMore = () => {
-    setVisibleCount((prev) => Math.min(prev + POSTS_PER_PAGE, sortedPosts.length));
-  };
+  const totalPages = getBlogPageCount();
+  const pagePosts = sortedPosts.slice((page - 1) * POSTS_PER_PAGE, page * POSTS_PER_PAGE);
   
   return (
     <div className="min-h-screen flex flex-col">
-      <Helmet>
-        <title>Make Good Blog | Property Restoration Insights Melbourne</title>
-        <meta name="description" content="Industry insights on commercial make good services, end of lease obligations, warehouse restoration and building remediation. Practical guides from Melbourne's property restoration experts." />
-        <meta property="og:title" content="Make Good Blog | Expert Property Restoration Insights" />
-        <meta property="og:description" content="Industry insights on commercial make good services, end of lease obligations and property restoration in Melbourne." />
-        <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://makegood.melbourne/blog/" />
-      </Helmet>
       
       
       <main className="flex-1 pt-20">
         <div className="container mx-auto px-4 pt-4 pb-12">
           <div className="text-center mb-12">
-            <h1 className="text-4xl md:text-5xl text-foreground mb-4">Make Good Melbourne Blog</h1>
+            <h1 className="text-4xl md:text-5xl text-foreground mb-4">Make Good Melbourne Blog{page > 1 ? `, page ${page}` : ""}</h1>
             <p className="text-xl text-foreground max-w-2xl mx-auto">
               Expert insights on make good services, end of lease works and property restoration in Melbourne
             </p>
           </div>
 
-          {/* Intro Section for SEO */}
+          {/* Intro Section for SEO (page 1 only) */}
+          {page === 1 && (
           <div className="max-w-4xl mx-auto mb-16 prose prose-lg">
             <p className="text-muted-foreground mb-6 leading-relaxed">
               Welcome to the Make Good Melbourne blog, your comprehensive resource for professional insights into commercial and industrial property restoration. Our team of industry experts shares practical knowledge, compliance guidance and best practices for end of lease make good projects across Melbourne and Victoria.
@@ -56,10 +46,11 @@ const Blog = () => {
               Explore our latest articles below to discover expert advice on maximising property value, smooth lease transitions, strategic planning for make good works and cost-effective solutions for commercial, retail and industrial spaces throughout Melbourne.
             </p>
           </div>
+          )}
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {sortedPosts.map((post, index) => (
-              <Card key={post.id} className={`border-border hover:shadow-lg transition-shadow overflow-hidden group${index >= visibleCount ? " hidden" : ""}`}>
+            {pagePosts.map((post) => (
+              <Card key={post.id} className="border-border hover:shadow-lg transition-shadow overflow-hidden group">
                 <a href={`/blog/${post.slug}/`} className="block aspect-video overflow-hidden">
                   <img 
                     src={getBlogImage(post.image)}
@@ -97,15 +88,26 @@ const Blog = () => {
             ))}
           </div>
 
-          {hasMore && (
-            <div className="flex justify-center mt-12">
-              <button
-                onClick={handleLoadMore}
-                className="inline-flex items-center px-8 py-3 border border-accent text-accent hover:bg-accent hover:text-background transition-colors rounded-md text-lg font-medium"
-              >
-                Load More Articles
-              </button>
-            </div>
+          {totalPages > 1 && (
+            <nav aria-label="Blog pages" className="flex flex-wrap items-center justify-center gap-3 mt-12">
+              {page > 1 && (
+                <a href={blogPageHref(page - 1)} rel="prev" className="px-5 py-3 border border-accent text-accent hover:bg-accent hover:text-background transition-colors rounded-md font-medium">
+                  Newer posts
+                </a>
+              )}
+              {Array.from({ length: totalPages }, (_, i) => i + 1).map((n) => (
+                n === page ? (
+                  <span key={n} aria-current="page" className="px-4 py-3 rounded-md bg-accent text-background font-medium">{n}</span>
+                ) : (
+                  <a key={n} href={blogPageHref(n)} className="px-4 py-3 rounded-md border border-border text-foreground hover:border-accent hover:text-accent transition-colors font-medium">{n}</a>
+                )
+              ))}
+              {page < totalPages && (
+                <a href={blogPageHref(page + 1)} rel="next" className="px-5 py-3 border border-accent text-accent hover:bg-accent hover:text-background transition-colors rounded-md font-medium">
+                  Older posts
+                </a>
+              )}
+            </nav>
           )}
         </div>
       </main>

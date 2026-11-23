@@ -5,6 +5,7 @@ import Navigation from '../../components/Navigation';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import SectionLandingTemplate from '../../page-components/SectionLandingTemplate';
 import Footer from '../../components/Footer';
+import ServiceLinks from '../../components/ServiceLinks.astro';
 import { getSectionLandingBySlug } from '../../data/sectionLanding';
 import stripOutHero from '../../assets/services/commercial-industrial-strip-out-melbourne.jpg';
 import stripOutHeroMobile from '../../assets/services/commercial-industrial-strip-out-melbourne-mobile.jpg';
@@ -79,6 +80,7 @@ const faqSchema = data.faqs && data.faqs.length > 0 ? {
     
     <main id="main-content" class="flex-1">
       <SectionLandingTemplate data={data} client:idle />
+      <ServiceLinks serviceSlug="strip-out-solutions" serviceName="Strip out" />
     </main>
     
     <Footer client:idle />
