@@ -7,6 +7,11 @@ import TermsExplainer from '../components/TermsExplainer.astro';
 import SpecialistsSection from '../components/SpecialistsSection.astro';
 import ServicesGrid from '../components/ServicesGrid.astro';
 import RecentProjects from '../components/RecentProjects.astro';
+
+// Recent Projects stays hidden until real after photos are supplied.
+// Section backgrounds alternate dark and light, so they shift with it.
+const SHOW_PROJECTS = false;
+const flip = (tone: 'dark' | 'light') => (SHOW_PROJECTS ? tone : tone === 'dark' ? 'light' : 'dark');
 import IndexContent from '../components/IndexContent';
 import FAQ from '../components/FAQ.astro';
 import CtaBlock from '../components/CtaBlock.astro';
@@ -161,11 +166,11 @@ const websiteSchema = {
     <TrustStrip />
     <SpecialistsSection />
     <ServicesGrid />
-    <RecentProjects />
-    <TermsExplainer />
-    <IndexContent client:idle />
-    <FAQ />
-    <CtaBlock bg="bg-secondary" />
+    {SHOW_PROJECTS && <RecentProjects />}
+    <TermsExplainer tone={flip('light')} />
+    <IndexContent client:idle industriesTone={flip('dark')} areasTone={flip('light')} />
+    <FAQ tone={flip('dark')} />
+    <CtaBlock bg={flip('light') === 'light' ? 'bg-secondary' : 'bg-background'} />
     <Footer client:load />
   </main>
 </BaseLayout>

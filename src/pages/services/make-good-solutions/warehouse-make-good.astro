@@ -78,6 +78,9 @@ const processSteps = [
   { step: 'Clean and handover', description: 'Final clean, photos of the finished work and a walk through before the landlord’s inspection.' }
 ];
 
+// Recent projects stays hidden until real after photos are supplied.
+const SHOW_PROJECTS = false;
+
 const projects = [
   { suburb: '[Suburb, e.g. Dandenong South]', caption: '[One line on the scope, e.g. racking removal, slab repairs and line marking]' },
   { suburb: '[Suburb, e.g. Clayton]', caption: '[One line on the scope]' },
@@ -310,7 +313,8 @@ const link = 'text-primary underline underline-offset-4 hover:text-primary/80';
         </div>
       </section>
 
-      <!-- Projects (placeholders until photos are supplied) -->
+      <!-- Projects (hidden until photos are supplied) -->
+      {SHOW_PROJECTS && (
       <section class="py-16 bg-background">
         <div class="container mx-auto px-4">
           <h2 class={h2}>Recent warehouse projects</h2>
@@ -329,9 +333,10 @@ const link = 'text-primary underline underline-offset-4 hover:text-primary/80';
           </div>
         </div>
       </section>
+      )}
 
       <!-- FAQs: rendered as native details elements so every answer is in the HTML -->
-      <section class="py-16 px-4 sm:px-6 lg:px-8 bg-secondary">
+      <section class={`py-16 px-4 sm:px-6 lg:px-8 ${SHOW_PROJECTS ? 'bg-secondary' : 'bg-background'}`}>
         <div class="max-w-3xl mx-auto">
           <h2 class="text-2xl sm:text-3xl font-bold mb-10 text-center uppercase">Warehouse make good FAQs</h2>
           <div class="divide-y divide-border border-y border-border">
@@ -348,7 +353,7 @@ const link = 'text-primary underline underline-offset-4 hover:text-primary/80';
         </div>
       </section>
 
-      <CtaBlock custom={service.ctaBlock} />
+      <CtaBlock custom={service.ctaBlock} bg={SHOW_PROJECTS ? 'bg-background' : 'bg-secondary'} />
     </main>
 
     <Footer client:idle />
