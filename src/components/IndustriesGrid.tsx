@@ -61,9 +61,10 @@ const industries: Industry[] = [
   }
 ];
 
-const IndustriesGrid = () => {
+type Tone = "dark" | "light";
+const IndustriesGrid = ({ tone = "dark" }: { tone?: Tone }) => {
   return (
-    <section className="py-16 px-4 sm:px-6 lg:px-8 bg-secondary/20">
+    <section className={`py-16 px-4 sm:px-6 lg:px-8 ${tone === "light" ? "bg-secondary" : "bg-background"}`}>
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">

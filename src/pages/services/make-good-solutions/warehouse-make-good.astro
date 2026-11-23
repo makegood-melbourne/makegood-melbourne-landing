@@ -1,0 +1,361 @@
+---
+// Warehouse Make Good: dedicated, fully server rendered service page.
+// Registered in services.ts (customPage: true) so it appears in the nav, footer
+// and Make Good category, but it is built here rather than by [...slug].astro.
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Navigation from '../../../components/Navigation';
+import ServiceHeroSection from '../../../components/ServiceHeroSection.astro';
+import CtaBlock from '../../../components/CtaBlock.astro';
+import Footer from '../../../components/Footer';
+import { getServiceBySlug } from '../../../data/services';
+
+const slug = 'make-good-solutions/warehouse-make-good';
+const service = getServiceBySlug(slug);
+if (!service) {
+  return Astro.redirect('/services/');
+}
+
+const pageUrl = `https://makegood.melbourne/services/${slug}/`;
+
+const scopeItems = [
+  {
+    title: 'Racking removal and anchor hole repairs',
+    body: 'Racking dismantled, stacked, banded and taken away. Every anchor is core drilled out, the hole filled with high strength epoxy and ground flush. Bollards, guard rails and column guards come out at the same time. If your racking is reusable, we can make an offer on it and put that against the cost.',
+    link: { href: '/services/strip-out-solutions/pallet-racking-removal/', label: 'Pallet racking removal' }
+  },
+  {
+    title: 'Floor grinding and patching',
+    body: 'Cracks injected, failed joints rebuilt, chipped edges repaired and coatings or residue ground back. The slab is finished to match your lease, whether that means bare concrete, grind and seal or a coating.',
+    link: { href: '/services/make-good-solutions/warehouse-flooring/', label: 'Warehouse floor repairs' }
+  },
+  {
+    title: 'Line marking removal and reinstatement',
+    body: 'Your bays, zones and walkways ground or blasted off. The original layout put back from the lease drawings, or agreed with the property manager before we start.',
+    link: { href: '/services/make-good-solutions/line-marking/', label: 'Line marking' }
+  },
+  {
+    title: 'Office and mezzanine strip out',
+    body: 'Site offices, partitions, ceilings, cool rooms and mezzanine floors removed back to the base building. Walls and ceilings repaired where the fitout met them.',
+    link: { href: '/services/strip-out-solutions/demolition/', label: 'Demolition and strip out' }
+  },
+  {
+    title: 'Painting',
+    body: 'Walls, columns, doors and trims repainted where the lease asks for it. High walls done from boom lifts with proper preparation so the finish passes a close look.',
+    link: { href: '/services/make-good-solutions/painting/', label: 'Commercial painting' }
+  },
+  {
+    title: 'Roller doors and dock areas',
+    body: 'Damaged roller doors, dock edges, dock levellers and impact damage around openings repaired or replaced. Worn hardstand and loading dock concrete patched so trucks and forklifts can use it safely.',
+    link: { href: '/blog/warehouse-hardstand-loading-dock-repair-melbourne/', label: 'Hardstand and dock repairs' }
+  },
+  {
+    title: 'Electrical make safe and decommissioning',
+    body: 'Circuits to racking, machinery, signage and tenant equipment isolated and made safe by licensed electricians before demolition starts. Redundant cabling removed and the switchboard labelled for handover.',
+    link: { href: '/services/strip-out-solutions/make-safe/', label: 'Make safe works' }
+  },
+  {
+    title: 'Roof and box gutter repairs',
+    body: 'Leaks found and fixed, box gutters and sumps cleared or replaced and damaged skylights sorted. A roof that leaks at handover becomes the landlord’s first complaint.',
+    link: { href: '/services/roofing-solutions/box-gutters-roof-drainage/', label: 'Box gutters and drainage' }
+  },
+  {
+    title: 'Signage removal',
+    body: 'Building, pylon and wall signage taken down, fixings removed and the surface patched and painted so there’s no outline left behind.'
+  },
+  {
+    title: 'Final clean',
+    body: 'Floors swept and scrubbed, offices and amenities cleaned, high areas dusted and all waste gone. The building is ready for the inspection, not just empty.',
+    link: { href: '/services/handover-solutions/end-of-lease-cleaning/', label: 'End of lease cleaning' }
+  }
+];
+
+const processSteps = [
+  { step: 'Read the lease', description: 'We go through the make good clause, the entry condition report and any dilapidation report with you, so the scope matches what you actually owe.' },
+  { step: 'Site visit', description: 'We walk the warehouse, count the anchors, check the slab, roof, doors and dock and take photos.' },
+  { step: 'Fixed price scope', description: 'One scope and one price for every trade, grouped by type of works, with a programme worked back from your handover date.' },
+  { step: 'Strip out and make safe', description: 'Power made safe, racking and fitout out, waste removed.' },
+  { step: 'Repairs and reinstatement', description: 'Floors, walls, roof, doors and line marking, done in the right order.' },
+  { step: 'Clean and handover', description: 'Final clean, photos of the finished work and a walk through before the landlord’s inspection.' }
+];
+
+// Recent projects stays hidden until real after photos are supplied.
+const SHOW_PROJECTS = false;
+
+const projects = [
+  { suburb: '[Suburb, e.g. Dandenong South]', caption: '[One line on the scope, e.g. racking removal, slab repairs and line marking]' },
+  { suburb: '[Suburb, e.g. Clayton]', caption: '[One line on the scope]' },
+  { suburb: '[Suburb, e.g. Hallam]', caption: '[One line on the scope]' }
+];
+
+const faqs = [
+  {
+    question: 'What does a warehouse make good usually include?',
+    answer: 'Usually racking removal and anchor hole repairs, floor grinding and patching, line marking removal or reinstatement, office and mezzanine strip out, painting, electrical make safe, roof and door repairs, signage removal and a final clean. Your lease and condition report decide which of those apply.'
+  },
+  {
+    question: 'How long does a warehouse make good take?',
+    answer: 'It depends on the size of the building and the scope. Racking in a small warehouse can often be cleared in a day. A large distribution centre can take a week or more for the racking alone, before the floor and the rest of the scope. We give you a programme with the quote, worked back from your handover date.'
+  },
+  {
+    question: 'How much does a warehouse make good cost?',
+    answer: 'There is no honest square metre rate. Cost depends on the lease requirements, the number of anchors, the condition of the slab, what fitout needs to come out, the roof and doors and how much time is left. We give a fixed price after a site visit.'
+  },
+  {
+    question: 'Do I have to fill every racking anchor hole?',
+    answer: 'If your lease says to make good damage caused by your fixtures, almost always yes. The exception is holes that were already there when you moved in and are recorded in the entry condition report.'
+  },
+  {
+    question: 'Can you remove our pallet racking and repair the slab?',
+    answer: 'Yes. We dismantle and remove the racking, core drill every anchor out, fill the holes with high strength epoxy and grind the repairs flush. If the racking is reusable we can make an offer on it.'
+  },
+  {
+    question: 'Do we need a dilapidation report?',
+    answer: 'If one was done when you moved in, it is the benchmark for the handover. If there is no report, the entry condition report and any move in photos do the same job. Send us whatever you have and we will scope against it.'
+  },
+  {
+    question: 'Can you work while we are still operating?',
+    answer: 'Yes. We can stage the work zone by zone, starting with areas you have already cleared, so you can keep shipping while the make good starts.'
+  },
+  {
+    question: 'Which areas do you cover?',
+    answer: 'All of Melbourne. Most of our warehouse work is in the south east, including Dandenong South, Clayton, Mulgrave and Hallam.'
+  }
+];
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Warehouse Make Good",
+  "serviceType": "Warehouse make good",
+  "url": pageUrl,
+  "description": service.metaDescription,
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "MakeGOOD Melbourne",
+    "url": "https://makegood.melbourne",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Melbourne",
+      "addressRegion": "VIC",
+      "addressCountry": "AU"
+    },
+    "email": "info@makegood.melbourne"
+  },
+  "areaServed": [
+    { "@type": "City", "name": "Melbourne" },
+    { "@type": "Place", "name": "Dandenong South, VIC" },
+    { "@type": "Place", "name": "Clayton, VIC" },
+    { "@type": "Place", "name": "Mulgrave, VIC" },
+    { "@type": "Place", "name": "Hallam, VIC" }
+  ]
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": faqs.map((faq) => ({
+    "@type": "Question",
+    "name": faq.question,
+    "acceptedAnswer": { "@type": "Answer", "text": faq.answer }
+  }))
+};
+
+const h2 = 'text-3xl md:text-4xl text-foreground mb-6 uppercase';
+const prose = 'text-lg text-foreground leading-relaxed';
+const link = 'text-primary underline underline-offset-4 hover:text-primary/80';
+---
+
+<BaseLayout
+  title={service.metaTitle}
+  description={service.metaDescription}
+  ogImage={service.ogImage || "/og-default.jpg"}
+  canonicalUrl={pageUrl}
+>
+  <script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <div class="min-h-screen flex flex-col bg-background">
+    <a
+      href="#main-content"
+      class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:bg-primary focus:text-primary-foreground focus:rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
+    >
+      Skip to main content
+    </a>
+
+    <Navigation client:idle />
+
+    <main id="main-content" class="flex-1">
+      <ServiceHeroSection slug={slug} />
+
+      <!-- Intro -->
+      <section class="py-16 bg-background">
+        <div class="container mx-auto px-4 max-w-4xl">
+          <p class={`${prose} mb-5`}>
+            A warehouse make good is everything it takes to hand an industrial building back to the landlord in the condition your lease asks for. Racking out, anchor holes filled, the slab repaired, line marking sorted, offices stripped, walls painted, the roof and doors fixed and the place cleaned. It is rarely one trade, and it always has a deadline.
+          </p>
+          <p class={`${prose} mb-5`}>
+            We plan and run the whole scope for warehouse and industrial tenants, property managers and facility managers across Melbourne, with most of our work in the south east warehouse belt around <a href="/areas/dandenong-south/" class={link}>Dandenong South</a>, <a href="/areas/clayton/" class={link}>Clayton</a>, <a href="/areas/mulgrave/" class={link}>Mulgrave</a> and <a href="/areas/hallam/" class={link}>Hallam</a>. One contractor, one fixed price and a programme built around your handover date.
+          </p>
+          <p class={prose}>
+            The goal is simple. The landlord walks the building, signs it off and your security deposit or bank guarantee comes back without a fight.
+          </p>
+        </div>
+      </section>
+
+      <!-- Scope -->
+      <section class="py-16 bg-secondary">
+        <div class="container mx-auto px-4">
+          <h2 class={h2}>What a warehouse make good involves</h2>
+          <p class={`${prose} max-w-4xl mb-10`}>
+            Every lease is different, so not every warehouse needs all of this. These are the works we cover, and the ones that come up on almost every industrial handback.
+          </p>
+          <div class="grid md:grid-cols-2 gap-6">
+            {scopeItems.map((item) => (
+              <div class="bg-background border border-border rounded-lg p-6">
+                <h3 class="text-xl font-semibold text-foreground mb-3">{item.title}</h3>
+                <p class="text-muted-foreground leading-relaxed">{item.body}</p>
+                {item.link && (
+                  <a href={item.link.href} class={`inline-block mt-4 font-medium ${link}`}>{item.link.label}</a>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <!-- Process -->
+      <section class="py-16 bg-background">
+        <div class="container mx-auto px-4">
+          <h2 class={h2}>Our warehouse make good process</h2>
+          <p class={`${prose} max-w-4xl mb-10`}>
+            The order matters. Power is made safe before anything is cut. Racking comes out before the floor can be repaired. Epoxy fills cure before the slab is ground. Line marking goes down last. Get the sequence wrong and work gets redone.
+          </p>
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {processSteps.map((step, index) => (
+              <div class="bg-secondary border border-border rounded-lg p-6">
+                <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+                  <span class="text-xl font-bold text-primary">{index + 1}</span>
+                </div>
+                <h3 class="text-xl font-semibold text-foreground mb-2">{step.step}</h3>
+                <p class="text-muted-foreground">{step.description}</p>
+              </div>
+            ))}
+          </div>
+          <div class="max-w-4xl mt-10">
+            <h3 class="text-2xl font-semibold text-foreground mb-3">Typical timeline</h3>
+            <p class={`${prose} mb-4`}>
+              Timing depends on the size of the building and how much is in it. Racking in a small warehouse can often be cleared in a day. A large distribution centre can take a week or more for the racking alone, then the floor, walls, roof and line marking follow.
+            </p>
+            <p class={prose}>
+              For a large warehouse, six months out from lease end is not too early to get us in. It leaves time to agree the scope with the landlord, sell or move the racking and fit the floor work in before handover. Short on time? Call us anyway. We can stage the work around your last weeks of operation.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Cost -->
+      <section class="py-16 bg-secondary">
+        <div class="container mx-auto px-4 max-w-4xl">
+          <h2 class={h2}>What drives the cost</h2>
+          <p class={`${prose} mb-6`}>
+            There is no honest square metre rate for a warehouse make good. Two buildings the same size can need very different work. These are the things that move the price:
+          </p>
+          <ul class="list-disc pl-6 space-y-3 text-lg text-foreground mb-6">
+            <li><strong>The lease.</strong> Original condition, remove fixtures and make good damage, or a payment instead of works. Each one is a different scope.</li>
+            <li><strong>The anchors.</strong> A single run of 20 racking bays can have 42 to 84 anchors. A full distribution site can have thousands, plus guards, barriers and bollards.</li>
+            <li><strong>The slab.</strong> Cracks, failed joints, old coatings and whether the floor needs sealing or coating at handover.</li>
+            <li><strong>What has to come out.</strong> Offices, mezzanines, cool rooms, signage and services added during the lease.</li>
+            <li><strong>Roof, doors and dock.</strong> Leaks, box gutters, damaged roller doors and worn dock areas.</li>
+            <li><strong>Time.</strong> A tight deadline means more people on site at once, or after hours work.</li>
+          </ul>
+          <p class={prose}>
+            Reusable racking can bring the cost down, and sorting the floor properly once is always cheaper than doing it twice. Read more in <a href="/blog/make-good-cost-drivers-melbourne/" class={link}>what drives make good costs in Melbourne</a> and <a href="/blog/racking-removal-anchor-holes-lease-melbourne/" class={link}>why anchor holes cost tenants money</a>.
+          </p>
+        </div>
+      </section>
+
+      <!-- Lease and dilapidation -->
+      <section class="py-16 bg-background">
+        <div class="container mx-auto px-4 max-w-4xl">
+          <h2 class={h2}>Dilapidation reports and lease make good clauses</h2>
+          <p class={`${prose} mb-6`}>
+            Your lease decides what you owe. The condition report decides what it is measured against. Most industrial leases use one of these:
+          </p>
+          <ul class="list-disc pl-6 space-y-3 text-lg text-foreground mb-6">
+            <li><strong>Return to original condition.</strong> Everything you added comes out and the building goes back to how it was when you moved in, less fair wear and tear.</li>
+            <li><strong>Remove fixtures and make good damage.</strong> Racking, offices and signage come out, and any damage from installing or removing them is repaired. Anchor holes are the classic example.</li>
+            <li><strong>Payment instead of works.</strong> Some leases let the landlord ask for money rather than the work. That usually costs more, because you lose control of the scope and the price.</li>
+          </ul>
+          <p class={`${prose} mb-4`}>
+            A <a href="/blog/dilapidation-reports-melbourne-make-good/" class={link}>dilapidation report</a> done at the start of the lease is your best defence. If the slab was cracked or the walls marked when you arrived and it is on record, you are not paying to fix it. If there is no report, move in photos and the entry condition report do the same job.
+          </p>
+          <p class={prose}>
+            Send us the lease clause and whatever condition records you have. We scope to what you owe, not to a landlord’s wish list.
+          </p>
+        </div>
+      </section>
+
+      <!-- One contractor -->
+      <section class="py-16 bg-secondary">
+        <div class="container mx-auto px-4 max-w-4xl">
+          <h2 class={h2}>Why one contractor for the whole scope</h2>
+          <p class={`${prose} mb-6`}>
+            Most warehouse make good problems happen in the gaps between trades. The racking crew cuts the anchors flush and leaves. The floor contractor turns up later and finds a job nobody priced. The painter is booked before the patching is done. Meanwhile the handover date does not move.
+          </p>
+          <ul class="list-disc pl-6 space-y-3 text-lg text-foreground mb-6">
+            <li>One fixed price for every trade, so nothing falls between quotes</li>
+            <li>One programme, sequenced so no work gets redone</li>
+            <li>One point of contact for you, the property manager and the landlord’s consultant</li>
+            <li>Photos of the finished work for your records if anything is disputed later</li>
+          </ul>
+          <p class={prose}>
+            Moving to a new warehouse as well? We can take your racking out, <a href="/services/racking-solutions/racking-relocation-reconfiguration/" class={link}>move it to the new site</a> and <a href="/industries/warehouses-logistics/" class={link}>set up the new building</a> while we make good the old one. See how that played out on our <a href="/blog/port-melbourne-warehouse-end-of-lease-make-good/" class={link}>Port Melbourne warehouse case study</a>.
+          </p>
+        </div>
+      </section>
+
+      <!-- Projects (hidden until photos are supplied) -->
+      {SHOW_PROJECTS && (
+      <section class="py-16 bg-background">
+        <div class="container mx-auto px-4">
+          <h2 class={h2}>Recent warehouse projects</h2>
+          <div class="grid md:grid-cols-3 gap-6">
+            {projects.map((project) => (
+              <figure class="bg-secondary border border-border rounded-lg overflow-hidden">
+                <div class="aspect-[4/3] bg-muted flex items-center justify-center">
+                  <span class="text-muted-foreground text-sm">[Job photo to come]</span>
+                </div>
+                <figcaption class="p-5">
+                  <p class="text-lg font-semibold text-foreground">{project.suburb}</p>
+                  <p class="text-muted-foreground">{project.caption}</p>
+                </figcaption>
+              </figure>
+            ))}
+          </div>
+        </div>
+      </section>
+      )}
+
+      <!-- FAQs: rendered as native details elements so every answer is in the HTML -->
+      <section class={`py-16 px-4 sm:px-6 lg:px-8 ${SHOW_PROJECTS ? 'bg-secondary' : 'bg-background'}`}>
+        <div class="max-w-3xl mx-auto">
+          <h2 class="text-2xl sm:text-3xl font-bold mb-10 text-center uppercase">Warehouse make good FAQs</h2>
+          <div class="divide-y divide-border border-y border-border">
+            {faqs.map((faq) => (
+              <details class="group py-4">
+                <summary class="flex cursor-pointer list-none items-center justify-between gap-4 font-medium text-foreground">
+                  <span>{faq.question}</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="shrink-0 transition-transform group-open:rotate-180" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+                </summary>
+                <p class="mt-3 text-muted-foreground leading-relaxed">{faq.answer}</p>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <CtaBlock custom={service.ctaBlock} bg={SHOW_PROJECTS ? 'bg-background' : 'bg-secondary'} />
+    </main>
+
+    <Footer client:idle />
+  </div>
+</BaseLayout>

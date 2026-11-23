@@ -170,7 +170,7 @@ export const industries: Industry[] = [
     slug: "warehouses-logistics",
     title: "FULFILMENT WAREHOUSE FIT OUT MELBOURNE",
     metaTitle: "Fulfilment Warehouse Fit Out Melbourne | Make Good, BETTER.",
-    metaDescription: "Fulfilment warehouse fit out and make good in Melbourne for e-commerce, 3PL and distribution. Racking, slab repairs and line marking. Fixed price quotes.",
+    metaDescription: "Fulfilment warehouse fit out in Melbourne for e-commerce, 3PL and distribution. Racking, slab repairs and line marking before you move in. Fixed price quotes.",
     heroText: "Racking in. Slab fixed. Aisles marked. Ready to pick, pack and ship. Then at lease end, we take it all out and hand the building back. Warehouse fit out and make good for e-commerce brands, 3PL providers and distributors across Melbourne.",
     heroImage: fulfilmentFitOutHeroImage,
     heroImageAlt: "Blue and orange carton flow racking with roller lanes set up for order picking in a Melbourne fulfilment warehouse",
@@ -184,7 +184,7 @@ export const industries: Industry[] = [
     ],
     aboutContentRight: [
       "When you outgrow the layout, we reconfigure it. When you outgrow the building, we move your racking to the next one.",
-      "And when the lease ends, we strip it back, fill every anchor hole and hand the warehouse back. One contractor for the life of the lease."
+      "And when the lease ends, our [warehouse make good](/services/make-good-solutions/warehouse-make-good/) team strips it back, fills every anchor hole and hands the building back. One contractor for the life of the lease."
     ],
     propertyTypesTitle: "BUILT FOR HOW",
     propertyTypesTitleHighlight: "YOU SHIP",
@@ -256,8 +256,8 @@ export const industries: Industry[] = [
       },
       {
         scope: "Warehouse Make Good",
-        worksIncluded: "Strip out, patching, painting and cleaning so the building is ready for the landlord's inspection.",
-        link: "/services/make-good-solutions/"
+        worksIncluded: "At lease end, strip out, slab repairs, painting and cleaning so the building is ready for the landlord's inspection.",
+        link: "/services/make-good-solutions/warehouse-make-good/"
       }
     ],
     services: [
@@ -296,7 +296,7 @@ export const industries: Industry[] = [
       },
       {
         question: "Can you fit out our new warehouse and make good the old one?",
-        answer: "Yes. We can move your racking from the old site, reinstall it at the new one and make good the warehouse you're leaving, all in one quote."
+        answer: "Yes. We can move your racking from the old site, reinstall it at the new one and [make good the warehouse you're leaving](/services/make-good-solutions/warehouse-make-good/), all in one quote."
       },
       {
         question: "Do you remove racking and repair the slab at lease end?",

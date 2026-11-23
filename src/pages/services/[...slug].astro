@@ -8,7 +8,7 @@ import Footer from '../../components/Footer';
 import { getPublishedServices, getServiceBySlug } from '../../data/services';
 
 export function getStaticPaths() {
-  const services = getPublishedServices();
+  const services = getPublishedServices().filter((service) => !service.customPage);
   return services.map((service) => ({
     params: { slug: service.slug },
     props: { service },

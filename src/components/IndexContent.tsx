@@ -1,11 +1,13 @@
 import IndustriesGrid from "@/components/IndustriesGrid";
 import ServiceAreasGrid from "@/components/ServiceAreasGrid";
 
-const IndexContent = () => {
+type Tone = "dark" | "light";
+
+const IndexContent = ({ industriesTone = "dark", areasTone = "light" }: { industriesTone?: Tone; areasTone?: Tone }) => {
   return (
     <>
-      <IndustriesGrid />
-      <ServiceAreasGrid />
+      <IndustriesGrid tone={industriesTone} />
+      <ServiceAreasGrid tone={areasTone} />
     </>
   );
 };

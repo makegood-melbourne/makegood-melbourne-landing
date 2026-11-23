@@ -1,3 +1,4 @@
+import { renderTextWithLinks } from "@/lib/textWithLinks";
 import { MapPin, Clock, Shield, Mail, ArrowRight, CheckCircle2, Building2, Wrench, Warehouse, Factory, HardHat, Truck } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -47,7 +48,7 @@ const LocationContent = ({ slug }: LocationContentProps) => {
                   </h2>
                   <div className="text-muted-foreground space-y-4">
                     <p className="leading-relaxed">{location.uniqueIntro}</p>
-                    <p className="leading-relaxed">{location.localContext}</p>
+                    <p className="leading-relaxed">{renderTextWithLinks(location.localContext)}</p>
                   </div>
                 </div>
                 <div className="bg-card border border-border rounded-lg p-8">
@@ -74,7 +75,7 @@ const LocationContent = ({ slug }: LocationContentProps) => {
                 </h2>
                 <div className="text-muted-foreground space-y-4">
                   <p className="leading-relaxed">{location.uniqueIntro}</p>
-                  <p className="leading-relaxed">{location.localContext}</p>
+                  <p className="leading-relaxed">{renderTextWithLinks(location.localContext)}</p>
                 </div>
               </div>
             )}

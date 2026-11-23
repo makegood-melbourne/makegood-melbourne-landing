@@ -1,7 +1,8 @@
 import { ArrowRight, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-const ServiceAreasGrid = () => {
+type Tone = "dark" | "light";
+const ServiceAreasGrid = ({ tone = "light" }: { tone?: Tone }) => {
   const areas = [
     { name: "Melbourne CBD", description: "Office buildings, corporate headquarters", slug: "melbourne-cbd" },
     { name: "Port Melbourne", description: "Warehouses, Fishermans Bend precinct", slug: "port-melbourne" },
@@ -18,7 +19,7 @@ const ServiceAreasGrid = () => {
   ];
 
   return (
-    <section className="py-12 md:py-16 bg-muted/30">
+    <section className={`py-12 md:py-16 ${tone === "light" ? "bg-secondary" : "bg-background"}`}>
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-5xl md:text-5xl font-bold text-foreground mb-4">
@@ -35,7 +36,7 @@ const ServiceAreasGrid = () => {
               <a 
                 key={index}
                 href={`/areas/${area.slug}/`}
-                className="group bg-background border border-border rounded-lg p-5 hover:border-primary/50 hover:shadow-md transition-all duration-300"
+                className={`group ${tone === "light" ? "bg-background" : "bg-card"} border border-border rounded-lg p-5 hover:border-primary/50 hover:shadow-md transition-all duration-300`}
               >
                 <div className="flex items-start gap-3">
                   <MapPin className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />

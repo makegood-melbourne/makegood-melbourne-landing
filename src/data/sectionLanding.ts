@@ -175,7 +175,7 @@ export const sectionLandingPages: SectionLandingData[] = [
     ],
     aboutContentRight: [
       "Our team works across offices, industrial sites, retail centres, medical suites and hospitality tenancies throughout Melbourne. Lift bookings, loading dock coordination, access windows, after-hours requirements and waste removal are planned before anyone sets foot on site.",
-      "The strip out is done when the tenancy is genuinely ready for the next stage, not just when the last skip bin leaves. That means surfaces protected, waste gone, access closed out and the site is ready for patching, painting, flooring, repair, reinstatement or handover."
+      "The strip out is done when the tenancy is genuinely ready for the next stage, not just when the last skip bin leaves. That means surfaces protected, waste gone, access closed out and the site is ready for patching, painting, flooring, repair, reinstatement or handover. On industrial sites, the strip out is usually the first stage of a full [warehouse make good](/services/make-good-solutions/warehouse-make-good/)."
     ],
     
     serviceSlugs: [
@@ -391,12 +391,13 @@ export const sectionLandingPages: SectionLandingData[] = [
       "The sequence matters. Redundant fitout needs to come out before walls can be repaired. Flooring works need the strip out and surface preparation handled first. Ceiling repairs, painting and final presentation need to happen after the heavy work is complete. We plan the make good as one coordinated scope rather than a collection of disconnected trade jobs."
     ],
     aboutContentRight: [
-      "We complete make good works for offices, warehouses, factories, retail spaces, medical suites, hospitality premises, showrooms and mixed commercial sites throughout Melbourne. Each property type has its own access rules, handover expectations and practical constraints, so we scope the works around the lease, the site condition and the inspection pathway.",
+      "We complete make good works for offices, warehouses, factories, retail spaces, medical suites, hospitality premises, showrooms and mixed commercial sites throughout Melbourne. Each property type has its own access rules, handover expectations and practical constraints, so we scope the works around the lease, the site condition and the inspection pathway. For industrial tenancies, our [warehouse make good service](/services/make-good-solutions/warehouse-make-good/) covers racking, slabs, line marking, roofs and docks in one scope.",
       "We work with tenants, landlords, property managers, building managers and client-provided trades where required. If you already have a preferred painter, electrician or other trade, we can coordinate with their work while we handle the remaining make good scope.",
       "The result is a clear fixed-price scope, a practical programme and a tenancy prepared for handover without splitting the same make good intent across multiple service pages."
     ],
     
     serviceSlugs: [
+      "make-good-solutions/warehouse-make-good",
       "make-good-solutions/flooring-reinstatement",
       "make-good-solutions/line-marking",
       "make-good-solutions/painting",
@@ -495,7 +496,7 @@ export const sectionLandingPages: SectionLandingData[] = [
         image: "/images/industries/warehouse-logistics-make-good-melbourne.jpg",
         imageAlt: "Industrial warehouse and logistics facility make good services in Melbourne",
         imageTitle: "Warehouse and fulfilment centre make good services Melbourne",
-        href: "/industries/warehouses-logistics/",
+        href: "/services/make-good-solutions/warehouse-make-good/",
         linkLabel: "Learn more"
       },
       {
@@ -1239,7 +1240,7 @@ export const sectionLandingPages: SectionLandingData[] = [
     ],
     aboutContentRight: [
       "And when racking comes down, the floor is left full of holes the lease says have to go. Most installers walk away at that point. We core drill every anchor, fill it with epoxy and grind it flush, so the site is ready for handover.",
-      "We work across Melbourne's warehouse belt, from Dandenong South and Hallam to Clayton, Mulgrave and beyond. Racking, floors, line marking and the make good, all from one contractor."
+      "We work across Melbourne's warehouse belt, from Dandenong South and Hallam to Clayton, Mulgrave and beyond. Racking, floors, line marking and the [warehouse make good](/services/make-good-solutions/warehouse-make-good/), all from one contractor."
     ],
 
     serviceSlugs: [
