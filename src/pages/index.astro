@@ -6,6 +6,7 @@ import TrustStrip from '../components/TrustStrip.astro';
 import TermsExplainer from '../components/TermsExplainer.astro';
 import SpecialistsSection from '../components/SpecialistsSection.astro';
 import ServicesGrid from '../components/ServicesGrid.astro';
+import RecentProjects from '../components/RecentProjects.astro';
 import IndexContent from '../components/IndexContent';
 import FAQ from '../components/FAQ.astro';
 import CtaBlock from '../components/CtaBlock.astro';
@@ -160,10 +161,11 @@ const websiteSchema = {
     <TrustStrip />
     <SpecialistsSection />
     <ServicesGrid />
+    <RecentProjects />
     <TermsExplainer />
     <IndexContent client:idle />
     <FAQ />
-    <CtaBlock bg="bg-background" />
+    <CtaBlock bg="bg-secondary" />
     <Footer client:load />
   </main>
 </BaseLayout>

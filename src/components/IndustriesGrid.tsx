@@ -63,7 +63,7 @@ const industries: Industry[] = [
 
 const IndustriesGrid = () => {
   return (
-    <section className="py-16 px-4 sm:px-6 lg:px-8 bg-secondary">
+    <section className="py-16 px-4 sm:px-6 lg:px-8 bg-background">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
