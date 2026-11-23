@@ -187,16 +187,16 @@ export const locations: Location[] = [
         answer: "Under Victorian commercial lease law, the tenant is typically responsible for completing make good works before the lease expires. In Dandenong's industrial precinct, where leases often run 5-10 years, your make good obligations should be clearly stated in your lease agreement. We recommend reviewing your lease 6-12 months before expiry to understand exactly what's required and budget accordingly."
       },
       {
-        question: "How much does a make good cost per square metre in Dandenong South?",
-        answer: "Industrial make good costs in Dandenong South typically range from $30-$80 per square metre, depending on the condition and complexity of the space. A 2,000m² warehouse might cost $60,000-$160,000. Manufacturing facilities with contamination, asbestos, or specialised equipment removal can exceed $100/m². We provide fixed-price quotes after inspection, essential in this precinct where scope can vary dramatically."
+        question: "How much does a make good cost in Dandenong South?",
+        answer: "There's no honest square metre rate. Two warehouses the same size can need very different work. The price depends on what the lease asks for, how much racking, plant and fitout has to come out, the condition of the slab, roof and docks, and how much time you have. Contamination, asbestos or heavy plant add to it. We give you one fixed price after we've read the lease and walked the site."
       },
       {
         question: "Can I negotiate my make good clause in Dandenong before signing a lease?",
-        answer: "Absolutely, and we strongly recommend it. In Dandenong's competitive industrial market (vacancy rates under 2.5%), landlords are often willing to negotiate make good terms to secure quality tenants. Options include capped make good costs, 'as is' handover for older facilities, or landlord contributions toward restoration. Getting independent advice before signing could save you tens of thousands at lease end."
+        answer: "Absolutely, and we strongly recommend it. Landlords are often willing to negotiate make good terms to secure a good tenant. Options include capped make good costs, 'as is' handover for older facilities, or landlord contributions toward restoration. Getting independent advice before you sign can save you a lot at lease end."
       },
       {
         question: "What happens if I don't complete my make good by the lease end date in Dandenong?",
-        answer: "Failure to complete make good works by your lease expiry can have serious consequences: the landlord may complete the works and charge you at retail rates (often 30-50% higher than direct quotes), claim against your bank guarantee or security deposit, or pursue legal action for damages. In Dandenong's fast-moving industrial market, landlords are increasingly strict on timely handover. We recommend starting the process 8-12 weeks before lease end."
+        answer: "Failure to complete make good works by your lease expiry can have serious consequences: the landlord may complete the works and charge it back to you with their margin on top, claim against your bank guarantee or security deposit, or pursue legal action for damages. Start at least three months before lease end, and earlier for a large warehouse."
       }
     ]
   },
@@ -349,7 +349,7 @@ export const locations: Location[] = [
       },
       {
         question: "Can I pay the landlord instead of completing physical make good works in Port Melbourne?",
-        answer: "Yes, many Port Melbourne landlords accept a cash settlement in lieu of physical make good works, especially if they plan to refit the space for the next tenant anyway. This gives you cost certainty and avoids project management hassles. To negotiate this, you'll typically need 2-3 quotes from licensed contractors for the agreed scope of work. The final settlement is usually negotiated at 80-100% of quoted costs."
+        answer: "Yes, many Port Melbourne landlords accept a cash settlement in lieu of physical make good works, especially if they plan to refit the space for the next tenant anyway. This gives you cost certainty and avoids project management hassles. To negotiate this, you'll typically need 2-3 quotes from licensed contractors for the agreed scope of work. The settlement figure is then negotiated against those quotes."
       },
       {
         question: "How do heritage overlays affect make good requirements in Port Melbourne?",
@@ -426,7 +426,7 @@ export const locations: Location[] = [
     faqs: [
       {
         question: "When should I start planning my make good in Ringwood?",
-        answer: "We recommend beginning make good planning 6-12 months before your lease expires. This allows time to review your lease obligations, obtain quotes, negotiate with your landlord if needed, and schedule works without rushing. For retail tenancies around Eastland, where new tenants often need immediate access, starting early is especially critical. Last-minute make goods typically cost 20-30% more due to expedited scheduling and limited contractor availability."
+        answer: "We recommend beginning make good planning 6-12 months before your lease expires. This allows time to review your lease obligations, obtain quotes, negotiate with your landlord if needed, and schedule works without rushing. For retail tenancies around Eastland, where new tenants often need immediate access, starting early is especially critical. Last-minute make goods usually cost more, because trades have to be found at short notice and stacked on top of each other to make the date."
       },
       {
         question: "What does a typical office make good include in Ringwood?",
@@ -557,7 +557,7 @@ export const locations: Location[] = [
       },
       {
         question: "What does a typical Fitzroy office make good cost?",
-        answer: "Costs vary depending on the space and fitout complexity. A standard creative office strip out and make good in Fitzroy typically ranges from $50-$120 per square metre. Heritage buildings with sensitive restoration requirements sit at the higher end. We provide fixed-price quotes after inspection so there are no surprises."
+        answer: "Costs vary depending on the space and fitout complexity. Two offices the same size can need very different work, so we don't price by the square metre. Heritage buildings with original features to protect usually cost more. We provide fixed-price quotes after inspection so there are no surprises."
       }
     ]
   },
@@ -744,8 +744,8 @@ export const locations: Location[] = [
         answer: "With Preston's significant development pipeline, many make goods are for properties heading into redevelopment. In these cases, the scope may be reduced, focused on safe removal of tenant items, hazardous material management and basic site preparation rather than full cosmetic restoration. We work with property owners and developers to define the appropriate scope and avoid unnecessary costs."
       },
       {
-        question: "What's the typical cost of an industrial make good in Preston?",
-        answer: "Industrial make good costs in Preston typically range from $25-$70 per square metre depending on the property condition and scope. A standard warehouse strip out and restoration for a 1,000sqm unit might cost $25,000-$70,000. Older buildings with contamination or asbestos issues will sit at the higher end. We provide fixed-price quotes after inspection."
+        question: "What drives the cost of an industrial make good in Preston?",
+        answer: "There's no honest square metre rate. The price depends on what the lease asks for, how much racking, plant and fitout has to come out, the condition of the slab and how much time you have. Older buildings with contamination or asbestos cost more. We provide fixed-price quotes after inspection."
       }
     ]
   },
