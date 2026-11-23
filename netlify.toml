@@ -1,5 +1,5 @@
 [build]
-  command = "npx astro build && node scripts/smoke-tests.mjs"
+  command = "npx astro build && node scripts/build-sitemap.mjs && node scripts/check-links.mjs && node scripts/smoke-tests.mjs"
   publish = "dist"
   ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF -- . ':!*.md'"
 
@@ -270,11 +270,8 @@
   status = 301
   force = true
 
-[[redirects]]
-  from = "/#about"
-  to = "/about/"
-  status = 301
-  force = true
+# Removed "/#about" rule: browsers never send the # part to the server, so it
+# could never match and only risked being read as a rule for the homepage.
 
 [[redirects]]
   from = "/tenants"

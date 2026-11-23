@@ -6,6 +6,7 @@ import BaseLayout from '../../../layouts/BaseLayout.astro';
 import Navigation from '../../../components/Navigation';
 import ServiceHeroSection from '../../../components/ServiceHeroSection.astro';
 import CtaBlock from '../../../components/CtaBlock.astro';
+import ServiceLinks from '../../../components/ServiceLinks.astro';
 import Footer from '../../../components/Footer';
 import { getServiceBySlug } from '../../../data/services';
 
@@ -352,6 +353,8 @@ const link = 'text-primary underline underline-offset-4 hover:text-primary/80';
           </div>
         </div>
       </section>
+
+      <ServiceLinks serviceSlug={slug} serviceName={service.name} />
 
       <CtaBlock custom={service.ctaBlock} bg={SHOW_PROJECTS ? 'bg-background' : 'bg-secondary'} />
     </main>

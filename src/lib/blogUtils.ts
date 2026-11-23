@@ -164,3 +164,15 @@ export const parseMarkdown = (text: string): string => {
   
   return parsed;
 };
+
+// Blog dates are stored either as ISO (2026-11-16) or long form (1 August 2025).
+// Returns YYYY-MM-DD for schema, meta tags and the sitemap.
+export const toIsoDate = (value: string): string => {
+  if (/^\d{4}-\d{2}-\d{2}$/.test(value)) return value;
+  const months = ["january","february","march","april","may","june","july","august","september","october","november","december"];
+  const match = value.trim().match(/^(\d{1,2})\s+([A-Za-z]+)\s+(\d{4})$/);
+  if (!match) return value;
+  const month = months.indexOf(match[2].toLowerCase()) + 1;
+  if (!month) return value;
+  return `${match[3]}-${String(month).padStart(2, "0")}-${match[1].padStart(2, "0")}`;
+};

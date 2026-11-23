@@ -4,6 +4,7 @@ export interface BlogPost {
   title: string;
   subtitle?: string;
   date: string;
+  updated?: string; // Last meaningful edit (YYYY-MM-DD). Drives dateModified and the sitemap lastmod.
   excerpt: string;
   metaDescription?: string;
   imageAlt?: string;
@@ -1854,7 +1855,7 @@ The wall fixing points at each end of the partition, where it met the existing w
 
 A partition removal is not just a demolition job. It is a make good job, and the making good covers four surfaces: floor, ceiling and both end walls. This is a scope that surprises tenants who assumed pulling the wall down was most of the work.
 
-If you are planning a full office strip out and there are multiple partitions involved, it is worth reading our [office strip out guide](/blog/office-strip-out) before you scope the work. The plastering is only part of what needs to happen.
+If you are planning a full office strip out and there are multiple partitions involved, it is worth reading our [office strip out guide](/blog/office-strip-out/) before you scope the work. The plastering is only part of what needs to happen.
 
 ### Door Frame and Architrave Damage
 
@@ -1882,7 +1883,7 @@ The more reliable outcome in most cases is to repaint the full wall from corner 
 
 The cost of repainting a full wall is often not significantly more than the cost of attempting spot repairs that then get rejected and need to be redone. Doing it right the first time is almost always the more economical path.
 
-Painting at lease end is its own topic and worth understanding in detail before you get to inspection day. The [painting at lease handback guide](/blog/the-importance-of-painting) covers what landlords look for and why painting is typically the most scrutinised part of the make good process. Our [commercial painting service](/services/make-good-solutions/painting/) covers what the work actually involves.
+Painting at lease end is its own topic and worth understanding in detail before you get to inspection day. The [painting at lease handback guide](/blog/the-importance-of-painting/) covers what landlords look for and why painting is typically the most scrutinised part of the make good process. Our [commercial painting service](/services/make-good-solutions/painting/) covers what the work actually involves.
 
 ---
 
@@ -1922,7 +1923,7 @@ The cost of booking early is zero. The cost of leaving it too late is either a r
 
 ---
 
-*For more on what the full make good process involves across a commercial office tenancy, the [office strip out guide](/blog/office-strip-out) is a good starting point.*`,
+*For more on what the full make good process involves across a commercial office tenancy, the [office strip out guide](/blog/office-strip-out/) is a good starting point.*`,
   },
 
   {
@@ -1976,7 +1977,7 @@ Before you get to the anchors though, you need the racking itself gone. If your 
 
 Once the racking is dismantled and out of the building, you are left with the anchors. This is where the real floor work begins.
 
-For more detail on the full scope of a warehouse strip out, including what happens when you are also removing mezzanines, cool rooms and heavy machinery, have a read of our [warehouse demolition guide](/blog/warehouse-demolition-mezzanine-cool-room-removal). The floor restoration process is the same regardless of what else is coming out.
+For more detail on the full scope of a warehouse strip out, including what happens when you are also removing mezzanines, cool rooms and heavy machinery, have a read of our [warehouse demolition guide](/blog/warehouse-demolition-mezzanine-cool-room-removal/). The floor restoration process is the same regardless of what else is coming out.
 
 ---
 
@@ -2070,7 +2071,7 @@ Either way, the time to start planning is not the week before handback. Floor wo
 
 If you are approaching end of lease and you are not sure what your floor obligations are, start with the lease and the condition report. If you want someone to walk the floor with you and give you a straight read on what needs doing, that is what we are here for.
 
-For a broader picture of what a full warehouse make good involves beyond just the floor, the [warehouse and factory make good guide](/blog/warehouse-factory-make-good-melbourne) is a good place to start. And if your strip out involves more than just racking, our [demolition services](/services/strip-out-solutions/demolition/) cover the heavy end of the work.`,
+For a broader picture of what a full warehouse make good involves beyond just the floor, the [warehouse and factory make good guide](/blog/warehouse-factory-make-good-melbourne/) is a good place to start. And if your strip out involves more than just racking, our [demolition services](/services/strip-out-solutions/demolition/) cover the heavy end of the work.`,
   },
   {
     id: "41",
@@ -2125,7 +2126,7 @@ Removing it properly means decommissioning every part of that system in the righ
 
 The refrigeration plant comes first. Commercial refrigeration systems use refrigerant gases, many of which are controlled substances under Australian environmental law. You cannot simply disconnect the lines and let the gas vent. It has to be recovered by a licensed refrigeration technician using certified recovery equipment. The gas is then either reclaimed for reuse or disposed of through an approved facility. Skipping this step is not just an environmental issue, it is a legal one.
 
-Once the refrigeration plant is decommissioned and the gas is recovered, the electrical supply to the cool room needs to be isolated and made safe. This is work for a licensed electrician. The supply cables back to the switchboard need to be properly terminated or removed, not just cut and left live in the wall. As we discuss in our guide to [electrical make safe procedures](/blog/electrical-make-safe-decommissioning-demolition), this is the crucial first step before any physical strip out begins.
+Once the refrigeration plant is decommissioned and the gas is recovered, the electrical supply to the cool room needs to be isolated and made safe. This is work for a licensed electrician. The supply cables back to the switchboard need to be properly terminated or removed, not just cut and left live in the wall. As we discuss in our guide to [electrical make safe procedures](/blog/electrical-make-safe-decommissioning-demolition/), this is the crucial first step before any physical strip out begins.
 
 Then you can start on the panels themselves. Commercial cool room panels are heavy, typically 100mm to 150mm of polyurethane foam sandwiched between steel skins. They are also awkward. The panels interlock with cam-lock connectors and they need to be disassembled in sequence without damaging the surrounding structure. The panels themselves are generally recyclable and reputable demolition crews will separate them from general waste accordingly.
 
@@ -2195,7 +2196,7 @@ A few things that need to be properly managed:
 
 A complete warehouse demolition and make good is a sequenced job. It moves in a specific order and each stage clears the way for the next one.
 
-It starts with the planning. Review the lease, document existing conditions, engage an engineer if there is a mezzanine, complete the hazardous materials assessment, confirm permits and notifications. Understanding [what the lease requires](/blog/warehouse-factory-make-good-melbourne) is critical to getting the scope right from day one.
+It starts with the planning. Review the lease, document existing conditions, engage an engineer if there is a mezzanine, complete the hazardous materials assessment, confirm permits and notifications. Understanding [what the lease requires](/blog/warehouse-factory-make-good-melbourne/) is critical to getting the scope right from day one.
 
 Then services get isolated. Electrical, refrigeration, compressed air, gas, water. Everything gets made safe before any physical demolition starts. This is not optional and it is not just paperwork. It protects the crew doing the work.
 
@@ -2234,7 +2235,7 @@ Here is what each term means from a contractor's perspective.
 
 ## What is a Make Good?
 
-A make good is the broadest of the three terms. It refers to the process of returning the property to the condition it was in at the start of the lease. The exact scope is defined by the make good clause in your lease agreement and the ingoing [condition report](/blog/dilapidation-reports-melbourne-make-good).
+A make good is the broadest of the three terms. It refers to the process of returning the property to the condition it was in at the start of the lease. The exact scope is defined by the make good clause in your lease agreement and the ingoing [condition report](/blog/dilapidation-reports-melbourne-make-good/).
 
 A make good can involve a wide range of works, from a simple patch and paint to a full strip-out and reinstatement of the base building. The key thing to understand is that a make good is about reinstatement. It is about putting things back the way they were — not just clearing out your stuff.
 
@@ -2242,7 +2243,7 @@ A make good can involve a wide range of works, from a simple patch and paint to 
 
 A full make good project will usually cover removal of all tenant fixtures, fittings and equipment; [demolition](/services/strip-out-solutions/demolition/) and removal of any partition walls, offices or other structures the tenant has built; removal of all data and electrical cabling installed by the tenant; [patching and repairing walls, ceilings and floors](/services/make-good-solutions/patching-plastering/) to their original condition; repainting the entire tenancy to the base building standard; reinstating [flooring](/services/make-good-solutions/flooring-reinstatement/) to its original condition; reinstating base building services such as lighting, plumbing and fire systems; and a thorough [final clean](/services/handover-solutions/end-of-lease-cleaning/) of the entire premises.
 
-The scope varies depending on the property type. An office make good is different to a [warehouse make good](/blog/warehouse-factory-make-good-melbourne), which is different again to a [retail make good](/blog/retail-make-good-melbourne-shopping-centre-tenants). The lease and the condition report are always the starting point — not assumptions about what is "standard."
+The scope varies depending on the property type. An office make good is different to a [warehouse make good](/blog/warehouse-factory-make-good-melbourne/), which is different again to a [retail make good](/blog/retail-make-good-melbourne-shopping-centre-tenants/). The lease and the condition report are always the starting point — not assumptions about what is "standard."
 
 ---
 
@@ -2250,7 +2251,7 @@ The scope varies depending on the property type. An office make good is differen
 
 A strip out is a more specific term. It refers to the process of removing the tenant's fit-out and installations from the property. A strip out is often one component of a larger make good project — it is the [demolition](/services/strip-out-solutions/demolition/) phase, not the whole job.
 
-A typical strip out involves the removal of partition walls and offices; workstations and joinery; floor coverings such as [carpet tiles](/blog/carpet-tile-replacement-installation-floor-preparation) or vinyl; ceiling features such as bulkheads or [suspended ceiling tiles](/services/make-good-solutions/suspended-ceilings/); data and electrical cabling; kitchenettes and breakout areas; and signage and branding.
+A typical strip out involves the removal of partition walls and offices; workstations and joinery; floor coverings such as [carpet tiles](/blog/carpet-tile-replacement-installation-floor-preparation/) or vinyl; ceiling features such as bulkheads or [suspended ceiling tiles](/services/make-good-solutions/suspended-ceilings/); data and electrical cabling; kitchenettes and breakout areas; and signage and branding.
 
 After a strip out, the tenancy is usually left as an empty shell. But a strip out alone does not always fulfil a tenant's make good requirements. There may still be repairs, painting and reinstatement works needed to bring the property back to its original condition. This is a distinction that catches a lot of tenants out.
 
@@ -2290,7 +2291,7 @@ This is where the terminology confusion causes real financial problems. If you a
 
 Always provide contractors with your lease and ingoing condition report when requesting quotes. Ask them to quote against your specific lease obligations, not a generic strip out or make good. A contractor who will not do that — or who gives you a price without seeing the documents — is not someone you want managing your handover.
 
-A detailed, fixed-price scope of works that maps directly to your lease obligations is the only quote worth accepting. It tells you exactly what will be done, by whom and for how much. No surprises at the end. For more on why quotes vary so much, read [what drives make good costs in Melbourne](/blog/make-good-cost-drivers-melbourne).
+A detailed, fixed-price scope of works that maps directly to your lease obligations is the only quote worth accepting. It tells you exactly what will be done, by whom and for how much. No surprises at the end. For more on why quotes vary so much, read [what drives make good costs in Melbourne](/blog/make-good-cost-drivers-melbourne/).
 
 ---
 
@@ -2312,11 +2313,11 @@ The first step is always the lease. The make good clause is the source of truth.
 
 ### Phase 2: The Site Inspection and Scope of Works
 
-Based on the lease and a physical site inspection, we develop a detailed scope of works. This document itemises every task that needs to be completed. We walk the site with the tenant and, where possible, the landlord or [property manager](/blog/simplifying-property-management) — so everyone agrees on what needs to be done before a dollar is spent.
+Based on the lease and a physical site inspection, we develop a detailed scope of works. This document itemises every task that needs to be completed. We walk the site with the tenant and, where possible, the landlord or [property manager](/blog/simplifying-property-management/) — so everyone agrees on what needs to be done before a dollar is spent.
 
 ### Phase 3: The Strip Out
 
-If a strip out is required, this is the first major phase of work. Our team systematically removes all tenant fixtures and fittings — partition walls, workstations, floor coverings, data cabling. All [waste is removed from site](/blog/waste-management-sustainability-make-good-works) and recycled where possible. In a warehouse, this phase also covers [pallet racking](/services/strip-out-solutions/pallet-racking-removal/), mezzanine floors and specialised machinery.
+If a strip out is required, this is the first major phase of work. Our team systematically removes all tenant fixtures and fittings — partition walls, workstations, floor coverings, data cabling. All [waste is removed from site](/blog/waste-management-sustainability-make-good-works/) and recycled where possible. In a warehouse, this phase also covers [pallet racking](/services/strip-out-solutions/pallet-racking-removal/), mezzanine floors and specialised machinery.
 
 ### Phase 4: The Reinstatement
 
@@ -2326,7 +2327,7 @@ Once the strip out is complete, reinstatement begins. This is the part of the ma
 
 **[Flooring Reinstatement](/services/make-good-solutions/flooring-reinstatement/)** means repairing any damage to the base building flooring or installing new flooring if required by the lease. In a warehouse, this typically involves grinding and sealing the concrete slab.
 
-**Services Reinstatement** requires licensed trades to reinstate base building [electrical](/blog/electrical-make-safe-decommissioning-demolition), plumbing and fire services to their original layout. This is not optional and it is not DIY.
+**Services Reinstatement** requires licensed trades to reinstate base building [electrical](/blog/electrical-make-safe-decommissioning-demolition/), plumbing and fire services to their original layout. This is not optional and it is not DIY.
 
 **[Ceiling Reinstatement](/services/make-good-solutions/suspended-ceilings/)** covers replacing any damaged or missing ceiling tiles and reinstating the ceiling grid to its original layout.
 
@@ -2355,7 +2356,7 @@ Technically, but it is rarely a good idea. A commercial make good involves licen
 It depends on the scope. A small office strip out and make good might take one to two weeks. A large [warehouse make good](/services/make-good-solutions/warehouse-make-good/) with a mezzanine removal and floor reinstatement could take six to eight weeks. The only way to get an accurate timeline is to have a contractor inspect the site and scope the works.
 
 **What happens if I don't complete the make good?**
-The landlord will arrange the works themselves and charge it back to you — with their margin on top. If the cost exceeds your security deposit, they can pursue you for the shortfall. It is always cheaper and less stressful to [manage the make good yourself](/blog/last-minute-make-good-melbourne).
+The landlord will arrange the works themselves and charge it back to you — with their margin on top. If the cost exceeds your security deposit, they can pursue you for the shortfall. It is always cheaper and less stressful to [manage the make good yourself](/blog/last-minute-make-good-melbourne/).
 
 ---
 
@@ -2377,7 +2378,7 @@ They will. And their property manager will. If the make good is incomplete, you 
 
 Understanding the terminology is the first step to a smooth lease exit. The next is engaging a contractor who will scope the work properly, price it fairly and get it done on time.
 
-Need to scope a make good in Melbourne? [Get in touch.](/contact)`,
+Need to scope a make good in Melbourne? [Get in touch.](/contact/)`,
   },
   {
     id: "39",
@@ -2391,7 +2392,7 @@ Need to scope a make good in Melbourne? [Get in touch.](/contact)`,
     imageAlt: "Empty industrial warehouse interior with steel frame structure and polished concrete floor ready for make good handover in Melbourne",
     ogImage: "/og/blog/warehouse-factory-make-good-melbourne.jpg",
     content: `
-A warehouse or factory make good is a different beast to a standard office [strip-out](/blog/make-good-strip-out-defit-melbourne). The scale is larger, the machinery is heavier and the potential for disputes is higher. As specialists in industrial and commercial [make goods](/services/make-good-solutions/), we have seen what goes right and what goes wrong when tenants exit a warehouse or factory lease. This guide breaks down the process from a contractor's perspective — what's involved, what it costs, where tenants get caught out and how to get it done properly.
+A warehouse or factory make good is a different beast to a standard office [strip-out](/blog/make-good-strip-out-defit-melbourne/). The scale is larger, the machinery is heavier and the potential for disputes is higher. As specialists in industrial and commercial [make goods](/services/make-good-solutions/), we have seen what goes right and what goes wrong when tenants exit a warehouse or factory lease. This guide breaks down the process from a contractor's perspective — what's involved, what it costs, where tenants get caught out and how to get it done properly.
 
 ---
 
@@ -2401,7 +2402,7 @@ Most tenants underestimate what a warehouse make good actually involves. It is n
 
 The other thing that makes industrial make goods more complex is the sheer size of the space. A 3,000 square metre warehouse with a full racking system, a mezzanine floor and a tenant-installed amenities block is a major project. It involves structural engineers, licensed electricians and plumbers, [demolition](/services/strip-out-solutions/demolition/) crews, concrete specialists and waste removal contractors. Coordinating all of that while running a business and managing a [relocation](/services/handover-solutions/end-of-lease-relocation/) is a significant undertaking.
 
-The disputes are also bigger. In an office make good, a landlord might argue over a wall that was moved or a carpet that needs replacing. In a warehouse make good, the disagreements tend to involve concrete floor damage, incomplete racking removal or services that weren't properly decommissioned. These disputes can run into tens of thousands of dollars. Having a thorough ingoing [condition report](/blog/dilapidation-reports-melbourne-make-good) and a contractor who documents their work throughout the project is how you protect yourself.
+The disputes are also bigger. In an office make good, a landlord might argue over a wall that was moved or a carpet that needs replacing. In a warehouse make good, the disagreements tend to involve concrete floor damage, incomplete racking removal or services that weren't properly decommissioned. These disputes can run into tens of thousands of dollars. Having a thorough ingoing [condition report](/blog/dilapidation-reports-melbourne-make-good/) and a contractor who documents their work throughout the project is how you protect yourself.
 
 ---
 
@@ -2421,17 +2422,17 @@ While every lease is different, a typical industrial make good in Melbourne will
 
 **Service Reinstatement:** We reinstate base building services like lighting, plumbing and fire systems to their original layout. If you've moved sprinkler heads to accommodate racking, those need to go back.
 
-**Full Site Clean:** This includes a high-pressure clean of the walls and floors, [cleaning](/services/handover-solutions/end-of-lease-cleaning/) of amenities and a final removal of all [waste](/blog/waste-management-sustainability-make-good-works) from the site. Waste disposal in a warehouse make good is not a small line item — construction and industrial waste needs to be handled by a licensed contractor.
+**Full Site Clean:** This includes a high-pressure clean of the walls and floors, [cleaning](/services/handover-solutions/end-of-lease-cleaning/) of amenities and a final removal of all [waste](/blog/waste-management-sustainability-make-good-works/) from the site. Waste disposal in a warehouse make good is not a small line item — construction and industrial waste needs to be handled by a licensed contractor.
 
 ---
 
 ## The Biggest Mistakes We See Warehouse Tenants Make
 
 **Underestimating the Timeline.**
-A warehouse make good takes time. Assuming it can all be done in the last week of the lease is one of the most common and costly mistakes we see. For a large warehouse with significant infrastructure, the make good process can take four to eight weeks. Start planning at least three to six months before your lease ends. If you are already inside that window, you need to [move fast](/blog/last-minute-make-good-melbourne) — but you still need a plan, not a scramble.
+A warehouse make good takes time. Assuming it can all be done in the last week of the lease is one of the most common and costly mistakes we see. For a large warehouse with significant infrastructure, the make good process can take four to eight weeks. Start planning at least three to six months before your lease ends. If you are already inside that window, you need to [move fast](/blog/last-minute-make-good-melbourne/) — but you still need a plan, not a scramble.
 
 **Not Having a Detailed Condition Report.**
-With no clear record of the property's original condition, you are exposed to the landlord's interpretation of the make good clause. A detailed ingoing [condition report](/blog/dilapidation-reports-melbourne-make-good) with high-resolution photos is your best protection against unfair claims. We have seen this single document save tenants tens of thousands of dollars. If you do not have one, or it was not thorough, your negotiating position weakens considerably.
+With no clear record of the property's original condition, you are exposed to the landlord's interpretation of the make good clause. A detailed ingoing [condition report](/blog/dilapidation-reports-melbourne-make-good/) with high-resolution photos is your best protection against unfair claims. We have seen this single document save tenants tens of thousands of dollars. If you do not have one, or it was not thorough, your negotiating position weakens considerably.
 
 **Trying to Manage the Trades Themselves.**
 Coordinating multiple trades in a high-risk industrial environment is a full-time job. You need to manage sequencing — racking can't come out before the structural engineer has signed off, concrete can't be ground before all the bolts are removed, services can't be reinstated before the demolition is finished. One contractor who manages the whole project is faster, safer and almost always cheaper than trying to run it yourself.
@@ -2509,7 +2510,7 @@ We handle industrial make goods from Dandenong to the CBD, from small factory un
 
 One point of contact. Fixed price. Done properly.
 
-[Get in touch.](/contact)
+[Get in touch.](/contact/)
 `,
   },
   {
@@ -2523,7 +2524,7 @@ One point of contact. Fixed price. Done properly.
     image: "retail-make-good-shopping-centre-melbourne.webp",
     imageAlt: "Multi-level shopping centre interior with glass storefronts and skylights in Melbourne retail precinct",
     content: `
-Exiting a retail lease is not the same as leaving an office or warehouse. The [make good](/services/make-good-solutions/) process is more involved — and the [terminology itself](/blog/make-good-strip-out-defit-melbourne) can be confusing. You have your lease agreement, but you also have shopping centre management looking over your shoulder. Both have rules.
+Exiting a retail lease is not the same as leaving an office or warehouse. The [make good](/services/make-good-solutions/) process is more involved — and the [terminology itself](/blog/make-good-strip-out-defit-melbourne/) can be confusing. You have your lease agreement, but you also have shopping centre management looking over your shoulder. Both have rules.
 
 For retail tenants in Melbourne, this means a different set of challenges. It is not just about a fresh coat of paint. It involves shopfronts, specialised fixtures and strict centre guidelines that sit on top of your lease. Add to that the complexity of working in a live retail environment — where the centre is trading around you — and you have a make good that requires more planning, more coordination and more experience than most tenants expect.
 
@@ -2567,7 +2568,7 @@ This is one of the biggest differences between a retail make good and any other 
 
 Most centres will not allow noisy or disruptive works during trading hours. That means [demolition](/services/strip-out-solutions/demolition/), grinding, drilling and anything else that creates noise, dust or disruption needs to happen overnight or in the early hours of the morning. A strip-out that would take two days in an empty building might take four or five when you are restricted to a six-hour overnight window.
 
-There are also strict protocols around how you access the site and how you remove [waste](/blog/waste-management-sustainability-make-good-works). Most centres require you to use designated loading docks, during specific hours, with pre-approved contractors. You cannot just book a skip bin and start throwing debris out the front. Each waste run needs to be coordinated with centre management and logged.
+There are also strict protocols around how you access the site and how you remove [waste](/blog/waste-management-sustainability-make-good-works/). Most centres require you to use designated loading docks, during specific hours, with pre-approved contractors. You cannot just book a skip bin and start throwing debris out the front. Each waste run needs to be coordinated with centre management and logged.
 
 Hoarding is another requirement in most centres. If your tenancy faces the mall, you will need to install temporary hoarding panels to screen the works from the public. This needs to meet the centre's visual standards — usually branded or in a neutral colour — and be maintained throughout the works.
 
@@ -2581,10 +2582,10 @@ All of this adds time and cost. A contractor who has not worked in a live shoppi
 You cannot begin make good works without written approval from both the landlord and centre management. Some tenants — usually in a rush — start the strip-out before sign-off and then discover the scope they agreed with the landlord does not match what centre management requires. Works get stopped, items need to be redone and the handover is delayed. Get everything in writing before a single screw is removed.
 
 **Not Accounting for Centre Rules.**
-Tenants who have previously done office or [warehouse make goods](/blog/warehouse-factory-make-good-melbourne) are often caught off guard by the additional layer of centre management requirements. Assuming the process is the same is an expensive mistake. Read the centre's make good guide early and call their facilities team before engaging a contractor.
+Tenants who have previously done office or [warehouse make goods](/blog/warehouse-factory-make-good-melbourne/) are often caught off guard by the additional layer of centre management requirements. Assuming the process is the same is an expensive mistake. Read the centre's make good guide early and call their facilities team before engaging a contractor.
 
 **Underestimating the Timeline.**
-Because of the overnight work restrictions, a retail make good almost always takes longer than it looks on paper. A store that feels like a week's work might be two or three weeks when you factor in centre trading hours, hoarding installation and waste removal logistics. Start planning at least three to six months before lease end. If you have [left it to the last minute](/blog/last-minute-make-good-melbourne), you still have options — but the earlier you start, the better.
+Because of the overnight work restrictions, a retail make good almost always takes longer than it looks on paper. A store that feels like a week's work might be two or three weeks when you factor in centre trading hours, hoarding installation and waste removal logistics. Start planning at least three to six months before lease end. If you have [left it to the last minute](/blog/last-minute-make-good-melbourne/), you still have options — but the earlier you start, the better.
 
 **Leaving the Concrete in a Poor State.**
 The concrete slab underneath retail flooring often has significant adhesive residue from tiles, carpet glue or timber flooring underlays. Leaving this in place — or grinding it inadequately — is one of the most common reasons a retail make good gets rejected at the final inspection. The slab needs to be clean, level and free of any coatings before handover.
@@ -2625,7 +2626,7 @@ Every tenancy is different, so refer to your specific lease and centre guideline
 
 There is no single answer without knowing your tenancy, but a few factors consistently drive the cost.
 
-The size of the store is the obvious one. A 50sqm kiosk is a very different job to a 400sqm flagship store. But within the same floor area, the complexity of the fitout matters just as much. A store with a timber floor, custom tiling, feature lighting, a full joinery fit-out and a tenant-installed cool room will cost significantly more to make good than a store with [carpet tiles](/blog/carpet-tile-replacement-installation-floor-preparation), standard track lighting and a basic counter.
+The size of the store is the obvious one. A 50sqm kiosk is a very different job to a 400sqm flagship store. But within the same floor area, the complexity of the fitout matters just as much. A store with a timber floor, custom tiling, feature lighting, a full joinery fit-out and a tenant-installed cool room will cost significantly more to make good than a store with [carpet tiles](/blog/carpet-tile-replacement-installation-floor-preparation/), standard track lighting and a basic counter.
 
 The overnight work requirement adds cost. Night rates for trades are higher than day rates. When a job that would take two days is spread across four or five overnight shifts, that premium adds up. It is honest to say that retail make goods in shopping centres cost more per square metre than office or warehouse make goods — the site constraints are real and they have a direct impact on price.
 
@@ -2641,7 +2642,7 @@ Getting a fixed-price quote based on your actual scope — not a ballpark figure
 
 ### 3–6 Months Before Lease End
 
-Start here. Pull out your fully executed lease and the current shopping centre make good guidelines. Read the relevant clauses carefully. Contact centre management early — introduce yourself as the person managing the lease exit and ask them to confirm the process and any specific requirements. Engage a make good contractor to review your documents, inspect the site and provide an initial budget and timeline. A [dilapidation report](/blog/dilapidation-reports-melbourne-make-good) at this stage can help document the existing condition and protect you from disputes later. The earlier you do this, the more options you have.
+Start here. Pull out your fully executed lease and the current shopping centre make good guidelines. Read the relevant clauses carefully. Contact centre management early — introduce yourself as the person managing the lease exit and ask them to confirm the process and any specific requirements. Engage a make good contractor to review your documents, inspect the site and provide an initial budget and timeline. A [dilapidation report](/blog/dilapidation-reports-melbourne-make-good/) at this stage can help document the existing condition and protect you from disputes later. The earlier you do this, the more options you have.
 
 ### 1–2 Months Before Lease End
 
@@ -2673,7 +2674,7 @@ For a small store, allow one to two weeks. For a larger tenancy with significant
 
 A retail make good takes more planning than a standard commercial tenancy. There are more parties involved, stricter site rules and a wider scope of works. The tenants who get through it smoothly are the ones who start early, read their documents properly and engage a contractor who has done this before — in a shopping centre, not just in a warehouse or office building.
 
-Planning a retail lease exit in Melbourne? [Get in touch.](/contact)`
+Planning a retail lease exit in Melbourne? [Get in touch.](/contact/)`
   },
   {
     id: "37",
@@ -2688,7 +2689,7 @@ Planning a retail lease exit in Melbourne? [Get in touch.](/contact)`
     content: `
 The most common friction point at the end of a commercial lease is arguing over the property's original condition. A landlord remembers a perfect tenancy. A tenant remembers pre-existing scuffs and scrapes. With no proof, it becomes a problem — and problems at lease end cost everyone time and money.
 
-A detailed report at the start of the lease prevents this. This post explains what dilapidation and condition reports are from a [make good](/services/make-good-solutions/) contractor's perspective. If you are still getting your head around the [difference between a make good, a strip out and a defit](/blog/make-good-strip-out-defit-melbourne), start there first. We do not write these reports. We use them to define a scope of works, price a job fairly and deliver a clear outcome for both tenants and landlords.
+A detailed report at the start of the lease prevents this. This post explains what dilapidation and condition reports are from a [make good](/services/make-good-solutions/) contractor's perspective. If you are still getting your head around the [difference between a make good, a strip out and a defit](/blog/make-good-strip-out-defit-melbourne/), start there first. We do not write these reports. We use them to define a scope of works, price a job fairly and deliver a clear outcome for both tenants and landlords.
 
 ---
 
@@ -2750,7 +2751,7 @@ Not all condition reports are created equal. A one-page checklist with a few blu
 
 Fair wear and tear is one of the most argued-about concepts in commercial leasing. Most tenants have heard the term but are not sure exactly what it means or how it affects their make good.
 
-In simple terms, fair wear and tear is the normal deterioration that happens from ordinary, reasonable use of the property over time. A [carpet](/blog/carpet-tile-replacement-installation-floor-preparation) that has been walked on for five years will show wear. [Paint](/services/make-good-solutions/painting/) that is several years old will fade. These are expected outcomes of a tenancy and the tenant is not responsible for restoring them to new condition.
+In simple terms, fair wear and tear is the normal deterioration that happens from ordinary, reasonable use of the property over time. A [carpet](/blog/carpet-tile-replacement-installation-floor-preparation/) that has been walked on for five years will show wear. [Paint](/services/make-good-solutions/painting/) that is several years old will fade. These are expected outcomes of a tenancy and the tenant is not responsible for restoring them to new condition.
 
 What is not fair wear and tear is damage caused by carelessness, misuse or neglect. A hole in the wall from moving furniture. Staining on a carpet from a spill that was not cleaned up. A cracked [ceiling tile](/services/make-good-solutions/suspended-ceilings/) from something being wedged against it. These are the tenant's responsibility to fix.
 
@@ -2782,7 +2783,7 @@ If you are signing a new commercial lease, this is not optional. Insist on a pro
 
 ## Dilapidation Reports in a Construction Context
 
-While this post is primarily about condition reports for leases, it is worth explaining the other context in which dilapidation reports come up — particularly for industrial and [warehouse](/blog/warehouse-factory-make-good-melbourne) tenants in areas with ongoing construction activity.
+While this post is primarily about condition reports for leases, it is worth explaining the other context in which dilapidation reports come up — particularly for industrial and [warehouse](/blog/warehouse-factory-make-good-melbourne/) tenants in areas with ongoing construction activity.
 
 If a construction project is planned near your building, the developer or builder may commission a dilapidation report on your property before works begin. This documents the condition of your building so that any damage caused by the construction — vibration, ground movement, equipment strikes — can be clearly identified after the fact.
 
@@ -2798,7 +2799,7 @@ A good condition report is the foundation of a smooth make good. It provides cla
 
 If you take one thing from this: insist on a detailed, photographic condition report before you sign any commercial lease. Read it carefully when you receive it. If it is inadequate — blurry photos, vague descriptions, missing areas — push back before you sign. Once you take possession of the premises, the window for getting the report right has closed.
 
-Need to scope a make good in Melbourne? [Get in touch.](/contact)`
+Need to scope a make good in Melbourne? [Get in touch.](/contact/)`
   },
   {
     id: "35",
@@ -2895,7 +2896,7 @@ For smaller, quickly addressed incidents where the source is fixed and materials
 
 ## Strip Out vs. Salvage: How Decisions Are Made
 
-The term [strip out](/blog/make-good-strip-out-defit-melbourne) in this context refers to the removal of damaged materials rather than a full tenant fit-out removal, but the principle is the same. One of the most important calls in a water damage job is deciding what can be saved and what needs to come out. Getting this wrong in either direction costs money — replacing materials that could have been dried costs the client unnecessarily, while salvaging materials that should have been removed sets up a mould problem down the track.
+The term [strip out](/blog/make-good-strip-out-defit-melbourne/) in this context refers to the removal of damaged materials rather than a full tenant fit-out removal, but the principle is the same. One of the most important calls in a water damage job is deciding what can be saved and what needs to come out. Getting this wrong in either direction costs money — replacing materials that could have been dried costs the client unnecessarily, while salvaging materials that should have been removed sets up a mould problem down the track.
 
 | Material | Typical Decision |
 | --- | --- |
@@ -2934,7 +2935,7 @@ Several of these are maintenance issues — things that would be caught in a reg
 
 ## Handover Documentation: What You Should Receive
 
-At the end of a water damage remediation and reinstatement project, you should receive a clear documentation package. This should include moisture readings and monitoring logs from the drying phase; a scope summary covering what was repaired and what was done to prevent recurrence; trade compliance documents where relevant, including electrical safety certificates and safe work method statements; [waste](/blog/waste-management-sustainability-make-good-works) disposal dockets where contaminated materials were removed from site; and a final QA checklist signed off against the completed scope.
+At the end of a water damage remediation and reinstatement project, you should receive a clear documentation package. This should include moisture readings and monitoring logs from the drying phase; a scope summary covering what was repaired and what was done to prevent recurrence; trade compliance documents where relevant, including electrical safety certificates and safe work method statements; [waste](/blog/waste-management-sustainability-make-good-works/) disposal dockets where contaminated materials were removed from site; and a final QA checklist signed off against the completed scope.
 
 This documentation matters. It protects you if the damage reoccurs and the cause is disputed. It satisfies your insurer. And for a commercial tenant, it provides evidence that the reinstatement was carried out properly — which is relevant if the damage occurred during a lease and affects the [make good](/services/make-good-solutions/) at the end.
 
@@ -2961,7 +2962,7 @@ It depends on the cause. Landlords are typically responsible for building defect
 
 We handle water damage remediation from make safe through to reinstatement across Melbourne commercial properties. One contractor, coordinated from start to finish.
 
-[Get in touch for a scope and quote.](/contact)`
+[Get in touch for a scope and quote.](/contact/)`
   },
   // Blog post id:34 "commercial-painting-melbourne-make-good" REMOVED — duplicate of /services/make-good-solutions/painting/
   // 301 redirect added in netlify.toml
@@ -2996,9 +2997,9 @@ What you need is a single team who does this every day. One call. One scope. One
 
 ## What Is a Make Good, Exactly?
 
-Before we get into the how, it's worth being clear on the what — because [make good, strip out and defit](/blog/make-good-strip-out-defit-melbourne) are often used interchangeably, and make good obligations vary significantly from lease to lease.
+Before we get into the how, it's worth being clear on the what — because [make good, strip out and defit](/blog/make-good-strip-out-defit-melbourne/) are often used interchangeably, and make good obligations vary significantly from lease to lease.
 
-A make good clause in a commercial lease requires the tenant to return the premises to an agreed condition at the end of the tenancy. In most cases, that means returning the space to the condition it was in when you first took possession. This is evidenced by the ingoing [condition report](/blog/dilapidation-reports-melbourne-make-good), which should have been completed at the start of your lease and signed by both parties.
+A make good clause in a commercial lease requires the tenant to return the premises to an agreed condition at the end of the tenancy. In most cases, that means returning the space to the condition it was in when you first took possession. This is evidenced by the ingoing [condition report](/blog/dilapidation-reports-melbourne-make-good/), which should have been completed at the start of your lease and signed by both parties.
 
 Make good works typically include removing all the tenant's fit-out — partition walls, workstations, signage, cabling, storage racking, mezzanine floors — and repairing any damage caused during the tenancy. In some leases, it also includes repainting the entire premises, replacing flooring, or returning the space to a bare shell.
 
@@ -3078,7 +3079,7 @@ An office tenant in the Melbourne CBD is moving to a new building. They have bee
 
 ### The Warehouse Tenant with a Mezzanine Floor
 
-A logistics company is vacating a large [warehouse in Dandenong](/blog/warehouse-factory-make-good-melbourne). Their lease requires them to remove a substantial mezzanine floor they installed ten years ago. They have left it to the last minute and now have three weeks to get it done.
+A logistics company is vacating a large [warehouse in Dandenong](/blog/warehouse-factory-make-good-melbourne/). Their lease requires them to remove a substantial mezzanine floor they installed ten years ago. They have left it to the last minute and now have three weeks to get it done.
 
 **Our approach:** Removing a mezzanine floor is a structural job that requires careful planning. We engage a structural engineer to sign off on the removal method. We use a specialised crew with the right equipment to dismantle the mezzanine safely, the steel is recycled, and the floor is then ground and sealed. The job is completed in 18 days, just inside the lease end.
 
@@ -3101,7 +3102,7 @@ We specialise in urgent make good projects. We do [make goods](/services/make-go
 
 We manage the entire process, from the initial scope to the final handover. We deal with the landlord and property manager directly. That's not your problem. You get one point of contact and you'll know exactly who's handling it and what's getting done.
 
-Left your make good to the last minute? [Get in touch.](/contact)`
+Left your make good to the last minute? [Get in touch.](/contact/)`
   },
   {
     id: "33",
@@ -3131,7 +3132,7 @@ Make good is your contractual obligation to return the warehouse to the conditio
 - Professional cleaning of the entire premises
 - Waste removal and site clearance
 
-The key is your lease agreement and the **[ingoing condition report](/blog/dilapidation-reports-melbourne-make-good)**. If you didn't get a detailed condition report with photos when you moved in, you're already at a disadvantage. That's why we always tell tenants: document everything on day one.
+The key is your lease agreement and the **[ingoing condition report](/blog/dilapidation-reports-melbourne-make-good/)**. If you didn't get a detailed condition report with photos when you moved in, you're already at a disadvantage. That's why we always tell tenants: document everything on day one.
 
 ### Fair Wear and Tear: What You're NOT Responsible For
 
@@ -3173,7 +3174,7 @@ We can't stress this enough: start early. We've seen tenants leave everything un
 **Get Your Ducks in a Row:**
 - Choose your make good contractor and lock in dates
 - Check if you need permits for any structural work (mezzanine removal, etc.)
-- Arrange [asbestos testing](/blog/asbestos-management-commercial-make-good-safe-removal) if your warehouse was built pre-1990
+- Arrange [asbestos testing](/blog/asbestos-management-commercial-make-good-safe-removal/) if your warehouse was built pre-1990
 - Start negotiating with your landlord about scope of works
 - Clear out equipment and inventory to allow access for contractors
 
@@ -4027,7 +4028,7 @@ Done properly, a carpet tile replacement is straightforward. Done cheaply or wit
 
 ## What Your Lease Actually Requires
 
-Before any tiles are ordered or floors are ground, the starting point is the lease. Most commercial leases that include a carpet tile replacement obligation will specify one of two things: a return to the original base build specification, or a return to a condition consistent with the ingoing [condition report](/blog/dilapidation-reports-melbourne-make-good).
+Before any tiles are ordered or floors are ground, the starting point is the lease. Most commercial leases that include a carpet tile replacement obligation will specify one of two things: a return to the original base build specification, or a return to a condition consistent with the ingoing [condition report](/blog/dilapidation-reports-melbourne-make-good/).
 
 In practice, this usually means matching the original carpet tile product — or, if that product is no longer available, finding a tile of comparable quality, colour and pile weight that the landlord will accept. It does not mean installing the cheapest tile that technically covers the floor. A landlord who specified a mid-range commercial carpet tile at lease commencement is entitled to have it returned to that standard.
 
@@ -4129,7 +4130,7 @@ The cost of a proper carpet tile replacement — with correct floor preparation,
 
 The floor is one of the most visible things in a tenancy. It gets looked at closely. Getting it right the first time is not just about compliance — it is the fastest way to close out the make good and move on.
 
-Carpet tile replacement as part of a make good in Melbourne? [Get in touch.](/contact)
+Carpet tile replacement as part of a make good in Melbourne? [Get in touch.](/contact/)
     `
   },
   {
@@ -5596,7 +5597,7 @@ Available during business hours`,
 - Data and communications cabling
 
 **Hazardous and Regulated Waste**:
-- [Asbestos-containing materials](/blog/asbestos-management-commercial-make-good-safe-removal) (if present in older buildings)
+- [Asbestos-containing materials](/blog/asbestos-management-commercial-make-good-safe-removal/) (if present in older buildings)
 - Fluorescent tubes and lamps containing mercury
 - Electronic waste (e-waste) from office equipment
 - Paint and chemical waste

@@ -5,6 +5,7 @@ import LocationHeroSection from '../../components/LocationHeroSection.astro';
 import LocationContent from '../../page-components/LocationContent.tsx';
 import CtaBlock from '../../components/CtaBlock.astro';
 import Footer from '../../components/Footer';
+import NearbyAreas from '../../components/NearbyAreas.astro';
 import { locations, getLocationBySlug } from '../../data/locations';
 
 export function getStaticPaths() {
@@ -62,6 +63,8 @@ const faqSchema = location.faqs && location.faqs.length > 0 ? {
   <LocationContent slug={slug} client:idle />
   
   <!-- Standardized CTA Block -->
+  <NearbyAreas slug={slug} name={location.name} />
+
   <CtaBlock />
   
   <Footer client:idle />
