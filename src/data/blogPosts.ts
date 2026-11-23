@@ -168,7 +168,7 @@ Start early. Six months out from lease end isn't too soon for a large warehouse.
 - **Leave time for the floor.** Book the racking removal well before the final weeks so the floor work, cure times and line marking all fit before handback.
 - **Photograph everything.** Before, during and after. If there's a dispute later, photos are your evidence.
 
-If the racking is part of a bigger exit, our guide to [warehouse and factory make goods](/blog/warehouse-factory-make-good-melbourne/) covers the rest of the building. And if you're trying to make sense of quotes that are miles apart, read [what drives make good costs in Melbourne](/blog/make-good-cost-drivers-melbourne/).
+If the racking is part of a bigger exit, our guide to [warehouse and factory make goods](/blog/warehouse-factory-make-good-melbourne/) covers the rest of the building, and our [warehouse make good service](/services/make-good-solutions/warehouse-make-good/) runs racking, floors and everything else as one job. And if you're trying to make sense of quotes that are miles apart, read [what drives make good costs in Melbourne](/blog/make-good-cost-drivers-melbourne/).
 
 ## Why we price the racking and the floor as one job
 
@@ -2352,7 +2352,7 @@ The tenant. It is a condition of your lease to return the property to its origin
 Technically, but it is rarely a good idea. A commercial make good involves licensed trades, construction waste disposal and compliance documentation. If the work is not done to the required standard, the landlord can send you back to fix it — which costs more than doing it right the first time.
 
 **How long does a make good take?**
-It depends on the scope. A small office strip out and make good might take one to two weeks. A large [warehouse](/blog/warehouse-factory-make-good-melbourne) with a mezzanine removal and floor reinstatement could take six to eight weeks. The only way to get an accurate timeline is to have a contractor inspect the site and scope the works.
+It depends on the scope. A small office strip out and make good might take one to two weeks. A large [warehouse make good](/services/make-good-solutions/warehouse-make-good/) with a mezzanine removal and floor reinstatement could take six to eight weeks. The only way to get an accurate timeline is to have a contractor inspect the site and scope the works.
 
 **What happens if I don't complete the make good?**
 The landlord will arrange the works themselves and charge it back to you — with their margin on top. If the cost exceeds your security deposit, they can pursue you for the shortfall. It is always cheaper and less stressful to [manage the make good yourself](/blog/last-minute-make-good-melbourne).
@@ -3521,7 +3521,7 @@ Port Melbourne warehouse make good doesn't have to be stressful or blow your bud
 
 The Port Melbourne industrial property market is competitive, and landlords expect professional handovers. But with proper planning and the right approach, you can meet your make good obligations, protect your bond, and maintain a good relationship with property managers for future leasing needs.
 
-**Need expert help with your Port Melbourne warehouse make good?** Contact Make Good Melbourne for a no-obligation assessment. We've successfully completed hundreds of warehouse make good projects across Port Melbourne, Fishermans Bend, and surrounding industrial areas. Our team understands local requirements, has established contractor networks, and can guide you through the entire process—from initial planning to final handover.
+**Need expert help with your Port Melbourne [warehouse make good](/services/make-good-solutions/warehouse-make-good/)?** Contact Make Good Melbourne for a no-obligation assessment. We've successfully completed hundreds of warehouse make good projects across Port Melbourne, Fishermans Bend, and surrounding industrial areas. Our team understands local requirements, has established contractor networks, and can guide you through the entire process—from initial planning to final handover.
 
 Don't wait until the last minute. Smart planning today saves thousands tomorrow.
     `,
@@ -11006,7 +11006,7 @@ Our services are designed to offer a comprehensive solution that goes beyond mer
 
 ## Conclusion
 
-Pallet racking solutions are integral to the efficient running of any warehouse. From uninstalling and removing old systems to installing new or used ones and even custom-designing plans, make good services provide a full range of options to businesses. Opt for our make good services today to ensure your pallet racking systems are not just functional, but also tailored to your unique requirements.
+Pallet racking solutions are integral to the efficient running of any warehouse. From uninstalling and removing old systems to installing new or used ones and even custom-designing plans, make good services provide a full range of options to businesses. Opt for our make good services today to ensure your pallet racking systems are not just functional, but also tailored to your unique requirements. If the racking is coming out at lease end, our [warehouse make good solutions](/services/make-good-solutions/warehouse-make-good/) cover the slab and the rest of the building as well.
 
 Ready to maximise the efficiency of your warehouse with superior pallet racking solutions? Contact us today for a free consultation!`
   },

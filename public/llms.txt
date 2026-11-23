@@ -155,7 +155,8 @@ The timeline depends on the quantity and type of racking. A small warehouse can 
 ## Other Services
 
 ### Make Good Services
-- Warehouse Floor Restoration
+- Warehouse Make Good (racking removal, slab repairs, line marking, strip out, painting, roof and dock repairs, final clean): https://makegood.melbourne/services/make-good-solutions/warehouse-make-good/
+- Warehouse Floor Repairs & Grinding
 - Epoxy Flooring
 - Line Marking
 - Make Good Painting

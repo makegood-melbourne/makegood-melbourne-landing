@@ -66,6 +66,7 @@ import stormMakeSafeHeroImage from "@/assets/services/storm-damage-roof-make-saf
 import asbestosRoofImage from "@/assets/blog/asbestos-management.jpg";
 import roofMaintenanceHeroImage from "@/assets/services/commercial-roof-inspection-maintenance-aerial-melbourne.webp";
 import rackingInstallationHeroImage from "@/assets/services/warehouse-pallet-racking-installation-melbourne.webp";
+import warehouseMakeGoodHeroImage from "@/assets/services/commercial-industrial-handover-ready-warehouse-melbourne.webp";
 import stormCeilingDamageImage from "@/assets/services/storm-water-damaged-ceiling-tiles-commercial-melbourne.webp";
 
 export interface FeaturedSection {
@@ -199,6 +200,7 @@ export interface Service {
   relatedServices: string[];
   category: 'demolition' | 'make-good' | 'trade' | 'cleaning' | 'structural';
   published?: boolean;
+  customPage?: boolean; // Built by its own Astro page, so [...slug].astro skips it
 }
 
 export const services: Service[] = [
@@ -260,7 +262,7 @@ export const services: Service[] = [
     featuredSections: [
       {
         title: "MORE THAN JUST DISMANTLING",
-        description: "The removal of industrial racking involves significant logistical and safety challenges. An unprofessional approach can lead to more than just a poor-quality floor repair; it can result in safety incidents, damage to the building's structure or loading docks, and failure to meet the strict deadlines of a lease agreement.\n\nWe manage all site logistics and work to your project's deadlines. Our end-to-end service includes the complete removal of the racking from your site—be it for disposal, resale, or relocation. We then restore the concrete slab to its original condition for handover.",
+        description: "The removal of industrial racking involves significant logistical and safety challenges. An unprofessional approach can lead to more than just a poor-quality floor repair; it can result in safety incidents, damage to the building's structure or loading docks, and failure to meet the strict deadlines of a lease agreement.\n\nWe manage all site logistics and work to your project's deadlines. Our end-to-end service includes the complete removal of the racking from your site—be it for disposal, resale, or relocation. We then restore the concrete slab to its original condition for handover.\n\nIf the racking is part of a full lease handback, our [warehouse make good](/services/make-good-solutions/warehouse-make-good/) service covers the rest of the building too, from line marking and painting to roof repairs and the final clean.",
         image: palletRackingLogisticsImage,
         imageAlt: "Forklift loading dismantled pallet racking components onto a truck in a Melbourne warehouse",
         imageTitle: "Pallet Racking Logistics and Transport"
@@ -921,7 +923,7 @@ export const services: Service[] = [
     secondaryImage: flatbedTruckTransportImage,
     secondaryImageAlt: "Flatbed truck transporting pallet racking and industrial machinery with Melbourne city skyline in background",
     scopeTitle: "MAKE GOOD HERE. MOVE IN THERE.",
-    scopeBody: "Vacating your warehouse, factory or office? We handle the make-good at your old site and transport your equipment to the new one — anywhere in Australia. One contractor, one point of contact, one timeline aligned to your lease end date.\n\nWhile we're restoring your old premises to handover condition, your essential equipment is being carefully loaded and moved. Old site handed back inspection-ready. New site ready to operate.",
+    scopeBody: "Vacating your warehouse, factory or office? We handle the [warehouse make good](/services/make-good-solutions/warehouse-make-good/) at your old site and transport your equipment to the new one — anywhere in Australia. One contractor, one point of contact, one timeline aligned to your lease end date.\n\nWhile we're restoring your old premises to handover condition, your essential equipment is being carefully loaded and moved. Old site handed back inspection-ready. New site ready to operate.",
     benefits: [
       "Complete make-good at vacating site",
       "Equipment transport to new location",
@@ -1617,20 +1619,47 @@ export const services: Service[] = [
     published: true
   },
   {
+    name: "Warehouse Make Good",
+    slug: "make-good-solutions/warehouse-make-good",
+    title: "Warehouse Make Good Solutions",
+    titleHighlight: "Solutions",
+    metaTitle: "Warehouse Make Good Services Melbourne | MakeGOOD",
+    description: "Warehouse make good in Melbourne. Racking removal, slab repairs, line marking, strip out, painting, roof and door repairs and a final clean, run by one contractor to your handover date.",
+    metaDescription: "Warehouse make good services in Melbourne. Racking out, slab repairs, line marking and handover for Dandenong South, Clayton, Mulgrave and Hallam tenants.",
+    heroText: "Racking out. Slab repaired. Lines marked. Building handed back. We run the whole warehouse make good for industrial tenants and property managers across Melbourne, with one fixed price and a programme built around your lease end date.",
+    heroImage: warehouseMakeGoodHeroImage,
+    heroImageAlt: "Empty industrial warehouse with steel roof trusses, high bay lights and a clean concrete slab ready for lease handover in Melbourne",
+    ogImage: "/og/warehouse-make-good.jpg",
+    benefits: [],
+    ctaBlock: {
+      title: "Lease ending on a warehouse?",
+      subtitle: "We do makegoods all day, every day.",
+      text: "Send through the address, your lease end date and the make good clause. We'll come out, walk the building and come back with one fixed price for the whole scope."
+    },
+    relatedServices: [
+      "make-good-solutions/warehouse-flooring",
+      "make-good-solutions/line-marking",
+      "strip-out-solutions/pallet-racking-removal"
+    ],
+    category: "make-good",
+    published: true,
+    customPage: true
+  },
+  {
     name: "Warehouse Flooring",
     slug: "make-good-solutions/warehouse-flooring",
-    title: "Warehouse Flooring Restoration",
-    metaTitle: "Warehouse Flooring Melbourne | Make Good, BETTER.",
-    description: "Complete warehouse floor restoration services across Melbourne. We remove flooring, strip coatings, grind adhesives, repair damage and restore concrete slabs to handover-ready condition. From carpet strip-out to dynabolt filling, crack repairs to epoxy finishes—we deliver the full scope in one comprehensive service.",
-    metaDescription: "Warehouse floor restoration in Melbourne. We strip coatings, grind adhesives, repair damage and restore concrete slabs to handover-ready condition. Free quotes.",
-    heroText: "Your lease requires the floor restored to original condition. We handle everything—flooring removal, coating grinding, dynabolt repairs and surface finishing. One contractor, one scope, handover-ready results.",
+    title: "Warehouse Floor Repairs & Grinding",
+    metaTitle: "Warehouse Floor Repairs & Grinding Melbourne | Make Good, BETTER.",
+    description: "Warehouse floor repairs across Melbourne. Racking anchor holes core drilled and epoxy filled, cracks injected, failed joints rebuilt, coatings and adhesives ground off, slabs ground and sealed and line marking removed or reinstated. Floor work only, done properly.",
+    metaDescription: "Warehouse floor repairs in Melbourne. Anchor hole filling, crack and joint repairs, floor grinding, grind and seal and line marking for industrial slabs. Free quotes.",
+    heroText: "Anchor holes, cracked joints, worn coatings and faded lines. We repair, grind and finish warehouse slabs so they take forklifts, take new racking and pass a landlord's inspection.",
     ogImage: "/og/warehouse-floor-restoration.jpg",
     heroImage: concreteSlabRestorationHeroImage,
     heroImageAlt: "Large industrial warehouse with restored concrete slab floor showing completed floor restoration Melbourne",
     secondaryImage: warehouseFloorRepairsScopeImage,
     secondaryImageAlt: "Empty warehouse with polished concrete floor after complete floor restoration Melbourne",
-    scopeTitle: "STRIPPED BACK. RESTORED TO SPEC.",
-    scopeBody: "Your lease requires the floor handed back in its original condition — and warehouse floors take the full force of a tenancy. Coatings stripped, adhesives ground back, dynabolt holes core-drilled and filled, cracks injected, surface finished to the specification your lease requires. From carpet strip-out to epoxy recoat, we handle the full scope in one service — no separate contractors, no gaps between trades, one handover-ready result.",
+    scopeTitle: "REPAIRED. GROUND. MARKED.",
+    scopeBody: "The slab, start to finish. Racking anchor holes core drilled out, epoxy filled and ground flush. Cracks injected, failed joints rebuilt and broken edges repaired. Coatings, adhesives and residue ground back. Then the floor is finished to spec, whether that's bare concrete, grind and seal or a coating, and the aisles and walkways are line marked to suit.\n\nWe do this at lease end, between tenants and before new racking goes in. If you're handing back the whole building, not just the floor, see our [warehouse make good](/services/make-good-solutions/warehouse-make-good/) service, which covers the racking, walls, roof, doors and final clean as well.",
     trustBadges: [
       "Diamond-Tipped Grinding Technology",
       "Industrial Floor Repair Systems",
