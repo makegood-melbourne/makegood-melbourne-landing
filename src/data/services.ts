@@ -1054,8 +1054,6 @@ export const services: Service[] = [
     heroImageTitle: "Makegood Melbourne - Structural Concrete Cancer Repair",
     secondaryImage: retentionWallConstructionImage,
     secondaryImageAlt: "Large-scale retention wall formwork with steel reinforcement and crane demonstrating structural construction capabilities Melbourne",
-    scopeTitle: "BUILT TO THE ENGINEER'S DESIGN.",
-    scopeBody: "Structural defects don't fix themselves, and patching over them only hides the problem for a while. Every job starts with an engineer's assessment. Then we build what the engineer designed and coordinate the trades around it: corroded reinforcement broken out and treated, cracks injected, beams and slabs strengthened with carbon fibre, slabs lifted and underpinned.\n\nWe take on the jobs general builders usually pass on, and at the end you get the engineer's sign off and photos of the work before it was covered up.",
     trustBadges: [
       "Licensed & Insured",
       "Engineered Solutions",
@@ -2886,8 +2884,6 @@ export const services: Service[] = [
     heroImageTitle: "Makegood Melbourne - Water Damage & Mould Remediation Service",
     secondaryImage: concreteCancerImage,
     secondaryImageAlt: "Water damaged concrete column with exposed reinforcement before remediation works in a Melbourne commercial building",
-    scopeTitle: "WET MATERIALS OUT. DRIED. REPAIRED.",
-    scopeBody: "A burst pipe, a roof leak or a failed membrane soaks plasterboard, ceiling tiles, insulation and carpet. Left wet, it grows mould and the damage spreads.\n\nWe cut out what can't be saved, coordinate the drying with the right specialists, fix the cause with our roofing and waterproofing trades and then put back the walls, ceilings and floors. The work is planned around your tenants and building access.",
     skipAboutSection: true,
     trustBadges: ["Licensed & Insured", "Fixed-Price Quotes", "Full Reinstatement Included", "Commercial Site Coordination"],
     benefits: [
@@ -2932,7 +2928,7 @@ export const services: Service[] = [
       }
     ],
     capabilitiesTitle: "WATER DAMAGE & MOULD REMEDIATION CAPABILITIES",
-    capabilitiesSubtitle: "Our remediation service connects affected material removal, drying coordination, leak damage repairs and final reinstatement into one practical building scope.",
+    capabilitiesSubtitle: "Wet materials out, drying organised, the leak fixed and the walls, ceilings and floors put back, all as one building scope.",
     featuredSections: [
       {
         title: "WATER DAMAGE REPAIRS THAT CONNECT BACK TO THE BUILDING",
@@ -2987,8 +2983,6 @@ export const services: Service[] = [
     heroImageTitle: "Makegood Melbourne - Fire Compliance & Facade Cladding Remediation Service",
     secondaryImage: glazingFacadeInstallationImage,
     secondaryImageAlt: "Glazing and facade installation works on a commercial building in Melbourne",
-    scopeTitle: "THE BUILDING WORK AROUND THE SCOPE.",
-    scopeBody: "Fire compliance and cladding projects are led by fire engineers, building surveyors and consultants. Around their scope sits a lot of ordinary building work: panels and framing out, penetrations sealed, glazing and waterproofing details fixed, and the inside patched and painted wherever the works touched it.\n\nThat's the part we do. We stage it with the consultants and the builder so the compliance work isn't held up waiting for trades.",
     skipAboutSection: true,
     trustBadges: ["Licensed & Insured", "Fixed-Price Quotes", "Consultant Coordination", "Internal Make Good Included"],
     benefits: [
@@ -3033,7 +3027,7 @@ export const services: Service[] = [
       }
     ],
     capabilitiesTitle: "FIRE COMPLIANCE & FACADE REMEDIATION CAPABILITIES",
-    capabilitiesSubtitle: "Our remediation service supports the physical building repairs, interfaces and make good works connected to defined facade, cladding and fire compliance scopes.",
+    capabilitiesSubtitle: "The building work around a consultant's compliance scope: removal, interfaces, waterproofing details and the make good inside.",
     featuredSections: [
       {
         title: "REMEDIATION WORKS FOR COMMERCIAL BUILDINGS",
