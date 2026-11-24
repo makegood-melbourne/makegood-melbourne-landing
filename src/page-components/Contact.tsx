@@ -365,8 +365,7 @@ const Contact = () => {
                       </div>
                       <div>
                         <h3 className="font-semibold text-lg text-card-foreground mb-1">Email Response</h3>
-                        <p className="text-muted-foreground">All enquiries answered within 24 hours</p>
-                        <p className="text-muted-foreground">Available 7 days a week</p>
+                        <p className="text-muted-foreground">All enquiries answered within 24 hours on business days</p>
                       </div>
                     </div>
                   </CardContent>

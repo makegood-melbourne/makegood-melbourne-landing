@@ -1,5 +1,5 @@
 import { Mail } from "lucide-react";
-import logo from "@/assets/makegood-melbourne-logo.png";
+import logo from "@/assets/makegood-melbourne-logo-400.png";
 import { resolveImageSrc } from "@/lib/resolveImageSrc";
 import { serviceCategories, getServicesByCategory } from "@/data/serviceCategories";
 import { getFeaturedLocations } from "@/data/locations";

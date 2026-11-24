@@ -1,17 +1,35 @@
 import { Button } from "@/components/ui/button";
-import { Mail, MessageSquare } from "lucide-react";
+import { Mail, MessageCircle, MessageSquare } from "lucide-react";
+
+// The chat lives in the mobile bar so a floating bubble never sits over the page text.
+// Chatbot.tsx listens for this event and opens the chat window.
+const openChat = () => {
+  window.dispatchEvent(new Event("mg:open-chat"));
+  const w = window as unknown as { gtag?: (...args: unknown[]) => void };
+  if (typeof w.gtag === "function") {
+    w.gtag("event", "chat_open", { link_location: "floating_chat_mobile", page_path: window.location.pathname });
+  }
+};
 
 const FloatingCTAs = () => {
   return (
     <>
-      {/* Mobile: fixed bottom bar with a quote button and an email option (no phone number) */}
-      <div className="floating-cta fixed bottom-0 left-0 right-0 z-50 md:hidden bg-background/95 backdrop-blur-sm border-t border-border p-3 pb-[calc(0.75rem+env(safe-area-inset-bottom))] flex gap-2">
+      {/* Mobile: fixed bottom bar with a quote button, a chat button and an email option (no phone number) */}
+      <div className="floating-cta mobile-quote-bar fixed bottom-0 left-0 right-0 z-50 md:hidden bg-background/95 backdrop-blur-sm border-t border-border p-3 pb-[calc(0.75rem+env(safe-area-inset-bottom))] flex gap-2">
         <a href="/contact/" data-track="floating_quote_mobile" className="flex-1">
           <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">
             <MessageSquare className="h-4 w-4 mr-2" />
             Request a Quote
           </Button>
         </a>
+        <Button
+          variant="outline"
+          size="icon"
+          onClick={openChat}
+          aria-label="Open chat"
+        >
+          <MessageCircle className="h-4 w-4" />
+        </Button>
         <a
           href="mailto:info@makegood.melbourne"
           data-track="floating_email_mobile"
