@@ -640,6 +640,19 @@
   status = 301
   force = true
 
+# Remediation industry page retired (2026-11): overlaps the Remediation Solutions service page
+[[redirects]]
+  from = "/industries/remediation"
+  to = "/services/remediation-solutions/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/industries/remediation/"
+  to = "/services/remediation-solutions/"
+  status = 301
+  force = true
+
 # Remediation Solutions children
 [[redirects]]
   from = "/services/cladding-glazing"

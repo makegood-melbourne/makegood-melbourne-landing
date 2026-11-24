@@ -1,5 +1,5 @@
 import { renderTextWithLinks } from "@/lib/textWithLinks";
-import { MapPin, Clock, Shield, Mail, ArrowRight, CheckCircle2, Building2, Wrench, Warehouse, Factory, HardHat, Truck } from "lucide-react";
+import { ArrowRight, CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { getLocationBySlug } from "@/data/locations";
@@ -17,18 +17,6 @@ const LocationContent = ({ slug }: LocationContentProps) => {
     return null;
   }
 
-  const scrollToContact = () => {
-    window.location.href = "/#contact";
-  };
-
-  const services = [
-    { icon: Building2, title: "Office Strip Outs", bullets: ["Complete fitout removal", "Partitioning & ceilings", "Floor covering removal", "Electrical disconnection", "Waste disposal included"] },
-    { icon: Wrench, title: "Make Good Works", bullets: ["Full lease compliance", "Painting & patching", "Flooring restoration", "Ceiling repairs", "Final clean included"] },
-    { icon: Warehouse, title: "Warehouse Restoration", bullets: ["Racking removal", "Floor repairs & sealing", "Roller door servicing", "Line marking removal", "Industrial cleaning"] },
-    { icon: Factory, title: "Industrial Make Safe", bullets: ["Hazard mitigation", "Site security", "Electrical isolation", "Emergency repairs", "Compliance documentation"] },
-    { icon: HardHat, title: "Building Remediation", bullets: ["Concrete cancer repair", "Waterproofing solutions", "Façade restoration", "Structural repairs", "Defect rectification"] },
-    { icon: Truck, title: "Waste & Demolition", bullets: ["Licensed demolition", "Asbestos removal", "Skip bin services", "Recycling programs", "EPA compliance"] }
-  ];
 
   return (
     <>
@@ -110,28 +98,12 @@ const LocationContent = ({ slug }: LocationContentProps) => {
         </div>
       </section>
 
-      {/* Section 3: Services Grid — LIGHT */}
-      <section className="py-20 bg-secondary">
+      {/* Section 3: Services, one line and a link (the same six cards on every suburb page added nothing local) */}
+      <section className="py-16 bg-secondary">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
+          <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Our Services in {location.name}</h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">Everything a lease handback needs, from one contractor.</p>
-          </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {services.map((service, index) => {
-              const Icon = service.icon;
-              return (
-                <div key={index} className="bg-card border border-border rounded-lg p-6 hover:border-primary/50 transition-colors">
-                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4"><Icon className="h-6 w-6 text-primary" /></div>
-                  <h3 className="text-xl font-semibold text-card-foreground mb-4">{service.title}</h3>
-                  <ul className="space-y-2">
-                    {service.bullets.map((bullet, i) => (<li key={i} className="flex items-start gap-2 text-muted-foreground"><span className="text-primary mt-1">•</span><span>{bullet}</span></li>))}
-                  </ul>
-                </div>
-              );
-            })}
-          </div>
-          <div className="text-center mt-12">
+            <p className="text-xl text-muted-foreground mb-8">Strip out, make good, handover, remediation, roofing and racking, all from one contractor and one fixed price.</p>
             <Button variant="outline" size="lg" asChild><a href="/services/" className="group">View All Services<ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" /></a></Button>
           </div>
         </div>

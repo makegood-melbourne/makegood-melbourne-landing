@@ -4,6 +4,8 @@ import Navigation from '../../components/Navigation';
 import IndustryHeroSection from '../../components/IndustryHeroSection.astro';
 import IndustryContent from '../../page-components/IndustryContent.tsx';
 import CtaBlock from '../../components/CtaBlock.astro';
+import ServiceLinks from '../../components/ServiceLinks.astro';
+import { getPostsForIndustry } from '../../data/internalLinks';
 import Footer from '../../components/Footer';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import { industries, getIndustryBySlug } from '../../data/industries';
@@ -16,6 +18,18 @@ export function getStaticPaths() {
 }
 
 const { slug } = Astro.params;
+
+// Which service page's suburb rotation each industry page borrows for its "near you" links.
+// Blog posts come from the industry tags in src/data/internalLinks.ts, so new posts appear here automatically.
+const industryAreaService: Record<string, string> = {
+  "commercial": "strip-out-solutions",
+  "industrial": "make-good-solutions/warehouse-make-good",
+  "warehouses-logistics": "racking-solutions/pallet-racking-installation",
+  "retail": "make-good-solutions/flooring-reinstatement",
+  "medical-centres": "strip-out-solutions/make-safe",
+  "hospitality-venues": "handover-solutions/end-of-lease-cleaning",
+};
+const industryPosts = getPostsForIndustry(slug);
 const industry = getIndustryBySlug(slug);
 
 if (!industry) {
@@ -79,8 +93,17 @@ const faqSchema = industry.faqs && industry.faqs.length > 0 ? {
     <!-- Interactive content loaded after hero -->
     <IndustryContent slug={slug} client:idle />
     
-    <!-- Standardized CTA Block -->
-    <CtaBlock />
+    <!-- Blog posts and suburbs for this industry, same block as the service pages -->
+    <ServiceLinks
+      serviceSlug={industryAreaService[slug] ?? 'make-good-solutions'}
+      serviceName={industry.name}
+      postSlugs={industryPosts.map((post) => post.slug)}
+    />
+
+    <!-- Standardized CTA Block (an industry can set its own closing heading and text) -->
+    {industry.ctaTitle
+      ? <CtaBlock custom={{ title: industry.ctaTitle, subtitle: industry.ctaSubtitle, text: industry.ctaText ?? '' }} />
+      : <CtaBlock />}
     
     <Footer client:idle />
   </main>

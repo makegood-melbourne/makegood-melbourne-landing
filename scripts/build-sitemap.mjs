@@ -92,7 +92,7 @@ writeFileSync(join(DIST, 'sitemap.xml'), xml);
 const includedSet = new Set(included);
 const missing = manifest.required.filter((path) => !includedSet.has(path));
 if (manifest.unmappedPosts.length) {
-  fail(`blog posts missing from src/data/internalLinks.ts (topic and service): ${manifest.unmappedPosts.join(', ')}`);
+  fail(`blog posts missing from src/data/internalLinks.ts (topic, service and industries): ${manifest.unmappedPosts.join(', ')}`);
 }
 if (missing.length) fail(`published pages missing from the sitemap: ${missing.join(', ')}`);
 

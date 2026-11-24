@@ -176,3 +176,12 @@ export const toIsoDate = (value: string): string => {
   if (!month) return value;
   return `${match[3]}-${String(month).padStart(2, "0")}-${match[1].padStart(2, "0")}`;
 };
+
+// "2026-11-10" -> "10 Nov 2026" for display. Unparseable values are returned as they are.
+const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+export const formatPostDate = (value: string): string => {
+  const match = /^(\d{4})-(\d{2})-(\d{2})/.exec(value);
+  if (!match) return value;
+  const [, year, month, day] = match;
+  return `${Number(day)} ${MONTHS[Number(month) - 1]} ${year}`;
+};

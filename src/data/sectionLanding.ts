@@ -1034,7 +1034,6 @@ export const sectionLandingPages: SectionLandingData[] = [
       "roofing-solutions/storm-damage-make-safe",
       "roofing-solutions/roof-inspections-maintenance"
     ],
-    hideServices: true,
     useGrid: true,
     carouselTitle: "OUR ROOFING SERVICES",
     carouselTitleHighlight: "SERVICES",

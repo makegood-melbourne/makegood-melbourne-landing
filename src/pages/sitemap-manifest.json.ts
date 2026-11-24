@@ -26,9 +26,9 @@ export const GET: APIRoute = () => {
     ...locations.map((location) => `/areas/${location.slug}/`),
   ];
 
-  // Posts without a topic and service page would miss out on related links.
+  // Posts without a topic, service page and industry would miss out on related links.
   const unmappedPosts = blogPosts
-    .filter((post) => !blogTopicAndService[post.slug])
+    .filter((post) => !blogTopicAndService[post.slug] || !(blogTopicAndService[post.slug].industries?.length > 0))
     .map((post) => post.slug);
 
   return new Response(JSON.stringify({ required, blogLastmod, unmappedPosts }, null, 2), {

@@ -2,7 +2,7 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { ArrowRight, Clock } from "lucide-react";
 import Footer from "@/components/Footer";
 import { blogPosts } from "@/data/blogPosts";
-import { getBlogImage, sortBlogPostsByDate, calculateReadingTime } from "@/lib/blogUtils";
+import { getBlogImage, sortBlogPostsByDate, calculateReadingTime, formatPostDate } from "@/lib/blogUtils";
 
 export const POSTS_PER_PAGE = 12;
 
@@ -61,7 +61,7 @@ const Blog = ({ page = 1 }: { page?: number }) => {
                 </a>
                 <CardHeader>
                   <div className="flex items-center gap-3 text-sm text-muted-foreground mb-2">
-                    <span>{post.date}</span>
+                    <span>{formatPostDate(post.date)}</span>
                     <span className="flex items-center gap-1">
                       <Clock className="h-3 w-3" />
                       {calculateReadingTime(post.content)} min read
