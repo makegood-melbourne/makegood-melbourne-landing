@@ -204,10 +204,10 @@ const Contact = () => {
         <section className="bg-gradient-to-b from-background to-secondary py-16 md:py-20">
           <div className="container mx-auto px-4 text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-              Tell Us About the Site
+              Request a Quote
             </h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Send the address, your lease end date and the make good clause if you have it. We'll reply within 24 hours on business days to book a site visit and a fixed price quote.
+              Request a quote for your make good, strip out or remediation job: send the address, your lease end date and the make good clause if you have it. We'll reply within 24 hours on business days to book a site visit and a fixed price quote.
             </p>
           </div>
         </section>

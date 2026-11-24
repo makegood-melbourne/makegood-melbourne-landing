@@ -114,33 +114,41 @@ const Navigation = () => {
                 ))}
               </DropdownMenuContent>
             </DropdownMenu>
-            <DropdownMenu>
-              <DropdownMenuTrigger className="flex items-center gap-1 text-foreground hover:text-accent transition-colors">
+            {/* Service Areas: a real link to /service-areas/ plus a hover panel, like Services, so the
+                hub and the featured suburbs are in the server-rendered HTML rather than only on click. */}
+            <div className="group relative h-16 flex items-center">
+              <a
+                href="/service-areas/"
+                className="flex items-center gap-1 text-foreground hover:text-accent transition-colors py-2"
+                aria-haspopup="true"
+              >
                 Service Areas
                 <ChevronDown className="h-4 w-4" />
-              </DropdownMenuTrigger>
-              <DropdownMenuContent align="start" className="bg-card border-border">
-                {getFeaturedLocations().map((location) => (
-                  <DropdownMenuItem key={location.slug} asChild>
-                    <a 
-                      href={`/areas/${location.slug}/`}
-                      className="cursor-pointer"
-                    >
-                      {location.name}
-                    </a>
-                  </DropdownMenuItem>
-                ))}
-                <DropdownMenuSeparator />
-                <DropdownMenuItem asChild>
-                  <a 
+              </a>
+              <div className="invisible opacity-0 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100 transition-opacity duration-150 absolute left-0 top-full pt-2 z-50">
+                <div className="bg-card border border-border rounded-md shadow-xl p-2 min-w-[14rem]">
+                  <ul>
+                    {getFeaturedLocations().map((location) => (
+                      <li key={location.slug}>
+                        <a
+                          href={`/areas/${location.slug}/`}
+                          className="block rounded-sm px-2 py-1.5 text-sm text-foreground hover:bg-accent/10 hover:text-accent transition-colors"
+                        >
+                          {location.name}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                  <div className="my-1 h-px bg-border" />
+                  <a
                     href="/service-areas/"
-                    className="cursor-pointer font-medium text-accent"
+                    className="block rounded-sm px-2 py-1.5 text-sm font-medium text-accent hover:bg-accent/10 transition-colors"
                   >
                     View All Service Areas
                   </a>
-                </DropdownMenuItem>
-            </DropdownMenuContent>
-            </DropdownMenu>
+                </div>
+              </div>
+            </div>
             {/* About Us as standalone nav item */}
             <a href="/about/" className="text-foreground hover:text-accent transition-colors">
               About Us

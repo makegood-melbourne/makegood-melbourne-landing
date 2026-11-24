@@ -3,7 +3,9 @@
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import Navigation from '../../../components/Navigation';
 import Breadcrumbs from '../../../components/Breadcrumbs.astro';
-import BlogPage, { getBlogPageCount } from '../../../page-components/Blog.tsx';
+import BlogPage, { getBlogPageCount, POSTS_PER_PAGE } from '../../../page-components/Blog.tsx';
+import { blogPosts } from '../../../data/blogPosts';
+import { sortBlogPostsByDate } from '../../../lib/blogUtils';
 
 export function getStaticPaths() {
   const total = getBlogPageCount();
@@ -13,11 +15,16 @@ export function getStaticPaths() {
 }
 
 const page = Number(Astro.params.page);
+
+// Each page gets its own description by naming the first post on it, so pages 2, 3, 4...
+// aren't near duplicates of each other.
+const firstPost = sortBlogPostsByDate(blogPosts)[(page - 1) * POSTS_PER_PAGE];
+const pageDescription = `Page ${page} of the MakeGOOD Melbourne blog: make good, strip out and remediation guides, starting with ${firstPost ? `"${firstPost.title}"` : 'older posts'}.`;
 ---
 
 <BaseLayout
-  title={`Blog, Page ${page} | Make Good & Remediation Insights Melbourne`}
-  description={`Page ${page} of the MakeGOOD Melbourne blog. Practical guides on make good, strip out, remediation and end of lease works in Melbourne.`}
+  title={`Blog, Page ${page} | MakeGOOD Melbourne`}
+  description={pageDescription}
   canonicalUrl={`https://makegood.melbourne/blog/page/${page}/`}
 >
   <Navigation client:load />
