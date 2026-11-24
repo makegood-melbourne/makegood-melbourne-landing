@@ -5,9 +5,9 @@
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import Navigation from '../../../components/Navigation';
 import ServiceHeroSection from '../../../components/ServiceHeroSection.astro';
-import CtaBlock from '../../../components/CtaBlock.astro';
 import ServiceLinks from '../../../components/ServiceLinks.astro';
 import Footer from '../../../components/Footer';
+import QuickQuoteForm from '../../../components/QuickQuoteForm';
 import { getServiceBySlug } from '../../../data/services';
 
 const slug = 'make-good-solutions/warehouse-make-good';
@@ -356,7 +356,16 @@ const link = 'text-primary underline underline-offset-4 hover:text-primary/80';
 
       <ServiceLinks serviceSlug={slug} serviceName={service.name} />
 
-      <CtaBlock custom={service.ctaBlock} bg={SHOW_PROJECTS ? 'bg-background' : 'bg-secondary'} />
+      <section class={`py-12 md:py-16 ${SHOW_PROJECTS ? 'bg-background' : 'bg-secondary'}`}>
+        <div class="container mx-auto px-4">
+          <QuickQuoteForm
+            client:visible
+            sourcePage="/services/make-good-solutions/warehouse-make-good/"
+            propertyType="Warehouse or distribution centre"
+            heading="Get a fixed price for your warehouse make good"
+          />
+        </div>
+      </section>
     </main>
 
     <Footer client:idle />

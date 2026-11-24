@@ -4,48 +4,28 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Mail, MapPin, Phone, Clock } from "lucide-react";
-import { useState, useRef, useEffect } from "react";
+import { NativeSelect } from "@/components/ui/native-select";
+import { MapPin, Clock, ListChecks } from "lucide-react";
+import { useState, useRef, useEffect, type ReactNode } from "react";
 import { toast } from "sonner";
-import { getBackendClient } from "@/lib/backendClient";
-
-const RECAPTCHA_SITE_KEY = "6LdI2CIuAAAAAGFQfhGFC1FQRx6UFm7A8ALMZdKK";
-
-// Load reCAPTCHA v3 script once
-function loadRecaptchaScript(): Promise<void> {
-  return new Promise((resolve, reject) => {
-    if (document.querySelector(`script[src*="recaptcha"]`)) {
-      resolve();
-      return;
-    }
-    const script = document.createElement("script");
-    script.src = `https://www.google.com/recaptcha/api.js?render=${RECAPTCHA_SITE_KEY}`;
-    script.async = true;
-    script.onload = () => resolve();
-    script.onerror = () => reject(new Error("Failed to load reCAPTCHA"));
-    document.head.appendChild(script);
-  });
-}
+import {
+  LEASE_END_UNSURE,
+  PROPERTY_TYPES,
+  leaseEndOptions,
+  loadRecaptchaScript,
+  submitEnquiry,
+} from "@/lib/enquiry";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
-
-const loadBackendClient = async () => getBackendClient();
 
 const contactFaqs = [
   {
     question: "How quickly will you respond to my enquiry?",
-    answer: "Within 24 hours on business days. For urgent make safe situations, often the same day."
+    answer: "Within one business day. For urgent make safe situations, often the same day."
   },
   {
     question: "Do you provide free quotes?",
@@ -57,7 +37,7 @@ const contactFaqs = [
   },
   {
     question: "What information do you need for a quote?",
-    answer: "To provide an accurate quote, we'll need your property address, approximate size, type of tenancy (office, warehouse, retail, industrial), your lease end date and a brief description of the make good requirements or any specific concerns."
+    answer: "The suburb or address, the type of property, its rough size, your lease end date and the make good clause if you have it. The form above asks for all of it, and you can email the clause or photos to enquiries@makegood.melbourne."
   },
   {
     question: "Can you work outside business hours?",
@@ -73,100 +53,90 @@ const contactFaqs = [
   }
 ];
 
+const SERVICES = [
+  "End of lease make good",
+  "Strip out",
+  "Remediation or rectification",
+  "Make safe works",
+  "Roofing",
+  "Racking installation, relocation or removal",
+  "Something else",
+];
+
+const NEXT_STEPS = [
+  { title: "We read the clause", text: "We check what your lease actually asks you to hand back, so you only pay for what's required." },
+  { title: "We walk the site", text: "A free site visit to measure up the scope with you or your agent." },
+  { title: "You get one fixed price", text: "One price for every trade, grouped by type of works, with a programme that finishes before your lease end." },
+];
+
+const Field = ({ id, label, optional, children }: { id: string; label: string; optional?: boolean; children: ReactNode }) => (
+  <div className="space-y-1.5">
+    <label htmlFor={id} className="block text-sm font-medium text-foreground">
+      {label}
+      {optional ? <span className="font-normal text-muted-foreground"> (optional)</span> : null}
+    </label>
+    {children}
+  </div>
+);
+
 const Contact = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    company: '',
-    serviceType: '',
-    message: ''
+    name: "",
+    email: "",
+    phone: "",
+    company: "",
+    suburb: "",
+    propertyType: "",
+    size: "",
+    leaseEnd: "",
+    service: "",
+    message: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   // Honeypot field - bots will fill this, humans won't see it
-  const [website, setWebsite] = useState('');
+  const [website, setWebsite] = useState("");
   // Track when the form was rendered to detect instant submissions
   const formLoadTime = useRef(Date.now());
+  // Lease end months are built in the browser so they're always current
+  const [leaseEnds, setLeaseEnds] = useState<string[]>([LEASE_END_UNSURE]);
 
-  // Load reCAPTCHA script on mount
   useEffect(() => {
     loadRecaptchaScript().catch(console.error);
+    setLeaseEnds(leaseEndOptions());
   }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-
-    // Layer 1: Honeypot check - reject if hidden field is filled
-    if (website) {
-      window.location.href = "/thank-you";
-      return;
-    }
-
-    // Layer 2: Time-based check - reject if submitted in under 3 seconds
-    const timeElapsed = Date.now() - formLoadTime.current;
-    if (timeElapsed < 3000) {
-      window.location.href = "/thank-you";
-      return;
-    }
-
     setIsSubmitting(true);
-
     try {
-      // Layer 4: Get reCAPTCHA v3 token
-      let recaptchaToken = "";
-      try {
-        const grecaptcha = (window as any).grecaptcha;
-        if (grecaptcha) {
-          recaptchaToken = await grecaptcha.execute(RECAPTCHA_SITE_KEY, { action: "contact_form" });
-        }
-      } catch (recaptchaError) {
-        console.warn("reCAPTCHA failed, proceeding without token:", recaptchaError);
-      }
-
-      const sourcePage = '/contact/';
-      const messageWithService = formData.serviceType 
-        ? `[Service: ${formData.serviceType}]${formData.company ? ` [Company: ${formData.company}]` : ''}\n\n${formData.message}`
-        : formData.message;
-
-      const supabase = await loadBackendClient();
-      const { error } = await supabase.functions.invoke('send-contact-email', {
-        body: { 
-          name: formData.name,
-          email: formData.email,
-          phone: formData.phone,
-          message: messageWithService,
-          sourcePage,
-          _hp: website,
-          _ts: formLoadTime.current,
-          _rc: recaptchaToken,
-        }
+      await submitEnquiry({
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        details: {
+          suburb: formData.suburb,
+          propertyType: formData.propertyType,
+          size: formData.size,
+          leaseEnd: formData.leaseEnd,
+          service: formData.service,
+          company: formData.company,
+        },
+        note: formData.message,
+        sourcePage: "/contact/",
+        honeypot: website,
+        shownAt: formLoadTime.current,
       });
-
-      if (error) throw error;
-
-      // Flag a genuine submission so the thank-you page only counts real leads in Google Analytics
-      // (bots caught by the honeypot or time check are also sent to /thank-you, but without this flag)
-      try {
-        sessionStorage.setItem("mg_lead_submitted", sourcePage);
-      } catch {
-        // Storage unavailable (e.g. private mode); the lead just won't be tracked
-      }
-
-      // Redirect to thank you page with conversion tracking
-      window.location.href = "/thank-you";
+      window.location.href = "/thank-you/";
     } catch (error: any) {
-      console.error('Error submitting form:', error);
-      toast.error("Sorry, there was an issue sending your message. Please try again or email us directly.");
+      console.error("Error submitting form:", error);
+      toast.error("Sorry, there was an issue sending your message. Please try again or email us at enquiries@makegood.melbourne.");
     } finally {
       setIsSubmitting(false);
     }
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData(prev => ({
-      ...prev,
-      [e.target.name]: e.target.value
-    }));
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+    setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
   const faqSchema = {
@@ -195,11 +165,8 @@ const Contact = () => {
           {JSON.stringify(faqSchema)}
         </script>
       </Helmet>
-      
-      
+
       <main className="pt-16">
-        <div className="container mx-auto px-4 pt-4">
-        </div>
         {/* Hero Section */}
         <section className="bg-gradient-to-b from-background to-secondary py-16 md:py-20">
           <div className="container mx-auto px-4 text-center">
@@ -207,7 +174,7 @@ const Contact = () => {
               Request a Quote
             </h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Request a quote for your make good, strip out or remediation job: send the address, your lease end date and the make good clause if you have it. We'll reply within 24 hours on business days to book a site visit and a fixed price quote.
+              Request a quote for your make good, strip out or remediation job: tell us where the site is, what it is and when your lease ends. We reply within one business day to book a site visit and a fixed price quote.
             </p>
           </div>
         </section>
@@ -215,76 +182,65 @@ const Contact = () => {
         {/* Contact Form & Info */}
         <section className="py-16 bg-secondary">
           <div className="container mx-auto px-4">
-            <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+            <div className="grid lg:grid-cols-[3fr_2fr] gap-12 max-w-6xl mx-auto">
               {/* Form */}
-              <Card className="border-border">
+              <Card id="contact-form" className="border-border scroll-mt-24">
                 <CardHeader>
-                  <CardTitle className="text-2xl text-card-foreground">Send us a message</CardTitle>
-                  <p className="text-muted-foreground">Fill out the form below and we'll get back to you within 24 hours.</p>
+                  <CardTitle className="text-2xl text-card-foreground">Tell us about the site</CardTitle>
+                  <p className="text-muted-foreground">A few details now means our first reply can be useful, not just a request for more information.</p>
                 </CardHeader>
                 <CardContent>
-                  <form onSubmit={handleSubmit} className="space-y-4">
-                    <div>
-                      <Input
-                        name="name"
-                        placeholder="Full Name *"
-                        value={formData.name}
-                        onChange={handleChange}
-                        required
-                        className="bg-background border-input"
-                      />
-                    </div>
-                    <div>
-                      <Input
-                        name="email"
-                        type="email"
-                        placeholder="Email Address *"
-                        value={formData.email}
-                        onChange={handleChange}
-                        required
-                        className="bg-background border-input"
-                      />
-                    </div>
-                    <div>
-                      <Input
-                        name="phone"
-                        type="tel"
-                        placeholder="Phone Number (optional)"
-                        value={formData.phone}
-                        onChange={handleChange}
-                        className="bg-background border-input"
-                      />
-                    </div>
-                    <div>
-                      <Input
-                        name="company"
-                        placeholder="Company Name (optional)"
-                        value={formData.company}
-                        onChange={handleChange}
-                        className="bg-background border-input"
-                      />
-                    </div>
-                    <div>
-                      <Select 
-                        value={formData.serviceType} 
-                        onValueChange={(value) => setFormData(prev => ({ ...prev, serviceType: value }))}
-                      >
-                        <SelectTrigger className="bg-background border-input">
-                          <SelectValue placeholder="Select Service Type" />
-                        </SelectTrigger>
-                        <SelectContent>
-                          <SelectItem value="end-of-lease">End of Lease Make Good</SelectItem>
-                          <SelectItem value="make-safe">Make Safe Works</SelectItem>
-                          <SelectItem value="remediation">Remediation & Rectification</SelectItem>
-                          <SelectItem value="strip-out">Office/Warehouse Strip Out</SelectItem>
-                          <SelectItem value="roofing">Roofing Solutions</SelectItem>
-                          <SelectItem value="racking">Racking Installation, Relocation or Removal</SelectItem>
-                          <SelectItem value="other">Other Services</SelectItem>
-                        </SelectContent>
-                      </Select>
-                    </div>
+                  <form onSubmit={handleSubmit} className="space-y-6">
+                    <fieldset className="space-y-4">
+                      <legend className="text-sm font-semibold uppercase tracking-wide text-muted-foreground mb-3">Your details</legend>
+                      <div className="grid sm:grid-cols-2 gap-4">
+                        <Field id="contact-name" label="Full name">
+                          <Input id="contact-name" name="name" autoComplete="name" value={formData.name} onChange={handleChange} required />
+                        </Field>
+                        <Field id="contact-email" label="Email">
+                          <Input id="contact-email" name="email" type="email" autoComplete="email" value={formData.email} onChange={handleChange} required />
+                        </Field>
+                        <Field id="contact-phone" label="Phone" optional>
+                          <Input id="contact-phone" name="phone" type="tel" autoComplete="tel" value={formData.phone} onChange={handleChange} />
+                        </Field>
+                        <Field id="contact-company" label="Company" optional>
+                          <Input id="contact-company" name="company" autoComplete="organization" value={formData.company} onChange={handleChange} />
+                        </Field>
+                      </div>
+                    </fieldset>
+
+                    <fieldset className="space-y-4">
+                      <legend className="text-sm font-semibold uppercase tracking-wide text-muted-foreground mb-3">The site</legend>
+                      <div className="grid sm:grid-cols-2 gap-4">
+                        <Field id="contact-suburb" label="Site suburb">
+                          <Input id="contact-suburb" name="suburb" placeholder="e.g. Dandenong South" value={formData.suburb} onChange={handleChange} required />
+                        </Field>
+                        <Field id="contact-property" label="Property type">
+                          <NativeSelect id="contact-property" name="propertyType" value={formData.propertyType} onChange={handleChange} required>
+                            <option value="" disabled>Choose one</option>
+                            {PROPERTY_TYPES.map((type) => <option key={type} value={type}>{type}</option>)}
+                          </NativeSelect>
+                        </Field>
+                        <Field id="contact-size" label="Rough size in m²" optional>
+                          <Input id="contact-size" name="size" inputMode="numeric" placeholder="e.g. 2,500" value={formData.size} onChange={handleChange} maxLength={20} />
+                        </Field>
+                        <Field id="contact-lease-end" label="Lease end">
+                          <NativeSelect id="contact-lease-end" name="leaseEnd" value={formData.leaseEnd} onChange={handleChange} required>
+                            <option value="" disabled>Choose a month</option>
+                            {leaseEnds.map((month) => <option key={month} value={month}>{month}</option>)}
+                          </NativeSelect>
+                        </Field>
+                      </div>
+                      <Field id="contact-service" label="Service" optional>
+                        <NativeSelect id="contact-service" name="service" value={formData.service} onChange={handleChange}>
+                          <option value="">Not sure yet</option>
+                          {SERVICES.map((service) => <option key={service} value={service}>{service}</option>)}
+                        </NativeSelect>
+                      </Field>
+                    </fieldset>
+
                     {/* Honeypot field - hidden from humans, visible to bots */}
-                    <div aria-hidden="true" style={{ position: 'absolute', left: '-9999px', top: '-9999px', opacity: 0, height: 0, width: 0, overflow: 'hidden', tabIndex: -1 }}>
+                    <div aria-hidden="true" style={{ position: 'absolute', left: '-9999px', top: '-9999px', opacity: 0, height: 0, width: 0, overflow: 'hidden' }}>
                       <label htmlFor="contact-website">Website</label>
                       <input
                         type="text"
@@ -296,25 +252,34 @@ const Contact = () => {
                         autoComplete="off"
                       />
                     </div>
-                    <div>
+
+                    <Field id="contact-message" label="Anything else we should know?" optional>
                       <Textarea
+                        id="contact-message"
                         name="message"
-                        placeholder="Tell us about your project... *"
+                        placeholder="What the make good clause asks for, access times, anything you're unsure about."
                         value={formData.message}
                         onChange={handleChange}
-                        required
-                        rows={5}
-                        className="bg-background border-input resize-none"
+                        rows={4}
+                        maxLength={1500}
+                        className="resize-none"
                       />
-                    </div>
-                    <Button 
-                      type="submit" 
+                    </Field>
+
+                    <p className="text-sm text-muted-foreground rounded-md bg-secondary px-4 py-3">
+                      Have the make good clause or photos? After you send this, email them to{" "}
+                      <a href="mailto:enquiries@makegood.melbourne" className="text-primary underline">enquiries@makegood.melbourne</a>{" "}
+                      with the site suburb in the subject.
+                    </p>
+
+                    <Button
+                      type="submit"
                       className="w-full bg-accent hover:bg-accent/90 text-accent-foreground text-lg py-6"
                       disabled={isSubmitting}
                     >
-                      {isSubmitting ? "Sending..." : "Send Message"}
+                      {isSubmitting ? "Sending..." : "Request a Quote"}
                     </Button>
-                    <p className="text-xs text-muted-foreground mt-3">
+                    <p className="text-xs text-muted-foreground">
                       This site is protected by reCAPTCHA and the Google{" "}
                       <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" className="underline">Privacy Policy</a> and{" "}
                       <a href="https://policies.google.com/terms" target="_blank" rel="noopener noreferrer" className="underline">Terms of Service</a> apply.
@@ -323,23 +288,31 @@ const Contact = () => {
                 </CardContent>
               </Card>
 
-              {/* Contact Info */}
+              {/* What happens next and contact info */}
               <div className="space-y-6">
                 <Card className="border-border">
                   <CardContent className="pt-6">
                     <div className="flex items-start gap-4">
                       <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
-                        <MapPin className="h-6 w-6 text-accent" />
+                        <ListChecks className="h-6 w-6 text-accent" />
                       </div>
                       <div>
-                        <h3 className="font-semibold text-lg text-card-foreground mb-1">Location</h3>
-                        <p className="text-muted-foreground">Melbourne, Victoria</p>
-                        <p className="text-muted-foreground">Servicing all metro areas</p>
+                        <h2 className="font-semibold text-lg text-card-foreground mb-3">What happens next</h2>
+                        <ol className="space-y-4">
+                          {NEXT_STEPS.map((step, index) => (
+                            <li key={step.title} className="flex gap-3">
+                              <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-accent text-xs font-bold text-accent-foreground">{index + 1}</span>
+                              <div>
+                                <p className="font-medium text-card-foreground">{step.title}</p>
+                                <p className="text-sm text-muted-foreground">{step.text}</p>
+                              </div>
+                            </li>
+                          ))}
+                        </ol>
                       </div>
                     </div>
                   </CardContent>
                 </Card>
-
                 <Card className="border-border">
                   <CardContent className="pt-6">
                     <div className="flex items-start gap-4">
@@ -347,24 +320,22 @@ const Contact = () => {
                         <Clock className="h-6 w-6 text-accent" />
                       </div>
                       <div>
-                        <h3 className="font-semibold text-lg text-card-foreground mb-1">Business Hours</h3>
-                        <p className="text-muted-foreground">Monday - Friday: 7:00 AM - 6:00 PM</p>
-                        <p className="text-muted-foreground">Saturday: 7:00 AM - 4:00 PM</p>
-                        <p className="text-muted-foreground">Sunday: By appointment</p>
+                        <h2 className="font-semibold text-lg text-card-foreground mb-1">Reply time</h2>
+                        <p className="text-muted-foreground">We reply within one business day</p>
                       </div>
                     </div>
                   </CardContent>
                 </Card>
-
                 <Card className="border-border">
                   <CardContent className="pt-6">
                     <div className="flex items-start gap-4">
                       <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
-                        <Mail className="h-6 w-6 text-accent" />
+                        <MapPin className="h-6 w-6 text-accent" />
                       </div>
                       <div>
-                        <h3 className="font-semibold text-lg text-card-foreground mb-1">Email Response</h3>
-                        <p className="text-muted-foreground">All enquiries answered within 24 hours on business days</p>
+                        <h2 className="font-semibold text-lg text-card-foreground mb-1">Location</h2>
+                        <p className="text-muted-foreground">Melbourne, Victoria</p>
+                        <p className="text-muted-foreground">Servicing all metro areas</p>
                       </div>
                     </div>
                   </CardContent>
