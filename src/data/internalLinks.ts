@@ -19,7 +19,6 @@ export type IndustrySlug =
 export const blogTopicAndService: Record<string, { topic: Topic; service: string; industries: IndustrySlug[] }> = {
   // Warehouse and industrial
   "racking-removal-anchor-holes-lease-melbourne": { topic: "warehouse", service: "strip-out-solutions/pallet-racking-removal", industries: ["warehouses-logistics", "industrial"] },
-  "guide-to-pallet-racking-solutions": { topic: "warehouse", service: "racking-solutions/pallet-racking-installation", industries: ["warehouses-logistics"] },
   "warehouse-hardstand-loading-dock-repair-melbourne": { topic: "warehouse", service: "make-good-solutions/warehouse-flooring", industries: ["industrial", "warehouses-logistics"] },
   "warehouse-floor-restoration-racking-removal": { topic: "warehouse", service: "make-good-solutions/warehouse-flooring", industries: ["warehouses-logistics", "industrial"] },
   "restoring-concrete-floors": { topic: "warehouse", service: "make-good-solutions/flooring-reinstatement", industries: ["industrial", "warehouses-logistics"] },
@@ -56,7 +55,6 @@ export const blogTopicAndService: Record<string, { topic: Topic; service: string
   "restaurant-cafe-make-good-melbourne": { topic: "interiors", service: "make-good-solutions", industries: ["hospitality-venues"] },
   "retail-make-good-melbourne-shopping-centre-tenants": { topic: "interiors", service: "make-good-solutions", industries: ["retail"] },
   "waste-management-sustainability-make-good-works": { topic: "interiors", service: "strip-out-solutions/demolition", industries: ["commercial", "industrial"] },
-  "end-of-lease-cleaning-services": { topic: "interiors", service: "handover-solutions/end-of-lease-cleaning", industries: ["commercial", "hospitality-venues"] },
   // Lease planning and process
   "make-good-cost-drivers-melbourne": { topic: "lease", service: "make-good-solutions", industries: ["commercial", "industrial", "retail"] },
   "dilapidation-reports-melbourne-make-good": { topic: "lease", service: "make-good-solutions", industries: ["industrial", "commercial"] },
@@ -66,11 +64,7 @@ export const blogTopicAndService: Record<string, { topic: Topic; service: string
   "maximising-property-value-lease-end": { topic: "lease", service: "make-good-solutions", industries: ["commercial"] },
   "strategic-make-good-planning": { topic: "lease", service: "handover-solutions", industries: ["commercial"] },
   "year-end-property-planning": { topic: "lease", service: "handover-solutions", industries: ["commercial"] },
-  "new-year-property-transformations": { topic: "lease", service: "handover-solutions", industries: ["commercial"] },
   "last-minute-make-good-melbourne": { topic: "lease", service: "handover-solutions", industries: ["commercial", "industrial"] },
-  "love-your-property": { topic: "lease", service: "handover-solutions", industries: ["commercial"] },
-  "understanding-property-condition-reports": { topic: "lease", service: "handover-solutions", industries: ["commercial", "retail"] },
-  "top-5-tips-tenant-landlord-communication": { topic: "lease", service: "handover-solutions", industries: ["commercial"] },
   "tenants-guide-smooth-make-good-experience": { topic: "lease", service: "handover-solutions", industries: ["commercial"] },
   "simplifying-property-management": { topic: "lease", service: "handover-solutions/end-of-lease-relocation", industries: ["commercial"] },
   "mastering-lease-transitions": { topic: "lease", service: "handover-solutions/end-of-lease-relocation", industries: ["commercial"] },
@@ -96,9 +90,9 @@ export const getRelatedPosts = (slug: string, count = 3): BlogPost[] => {
 // category page ends with a "From the blog" block.
 const servicePostFallback: Record<string, string[]> = {
   "roofing-solutions": ["box-gutter-leaks-warehouse-melbourne", "metal-roof-replacement-warehouse-melbourne", "commercial-roof-storm-damage-first-24-hours-melbourne"],
-  "racking-solutions": ["racking-removal-anchor-holes-lease-melbourne", "guide-to-pallet-racking-solutions", "warehouse-floor-restoration-racking-removal"],
+  "racking-solutions": ["racking-removal-anchor-holes-lease-melbourne", "warehouse-floor-restoration-racking-removal", "port-melbourne-warehouse-end-of-lease-make-good"],
   "roofing-solutions/roof-leak-repairs": ["box-gutter-leaks-warehouse-melbourne", "commercial-roof-storm-damage-first-24-hours-melbourne"],
-  "racking-solutions/racking-relocation-reconfiguration": ["racking-removal-anchor-holes-lease-melbourne", "guide-to-pallet-racking-solutions"],
+  "racking-solutions/racking-relocation-reconfiguration": ["racking-removal-anchor-holes-lease-melbourne", "warehouse-floor-restoration-racking-removal"],
 };
 
 export const getPostsBySlugs = (slugs: string[]): BlogPost[] =>

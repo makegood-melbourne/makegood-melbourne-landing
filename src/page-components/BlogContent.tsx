@@ -97,8 +97,11 @@ const BlogContent = ({ slug }: BlogContentProps) => {
             } else if (paragraph.includes('|') && paragraph.split('\n').length > 2) {
               // Parse markdown table
               const lines = paragraph.split('\n').filter(line => line.trim());
-              const headers = lines[0].split('|').map(h => h.trim()).filter(h => h);
-              const rows = lines.slice(2).map(row => row.split('|').map(cell => cell.trim()).filter(cell => cell));
+              // Split a row into cells, keeping empty cells so columns stay aligned
+              const cells = (line: string) =>
+                line.trim().replace(/^\|/, '').replace(/\|$/, '').split('|').map(cell => cell.trim());
+              const headers = cells(lines[0]);
+              const rows = lines.slice(2).map(cells);
               
               return (
                 <div key={index} className="overflow-x-auto mb-6">
@@ -106,7 +109,7 @@ const BlogContent = ({ slug }: BlogContentProps) => {
                     <thead className="bg-muted/50">
                       <tr>
                         {headers.map((header, i) => (
-                          <th key={i} className="px-4 py-3 text-left text-foreground font-semibold border-b border-border">{header}</th>
+                          <th key={i} className="px-4 py-3 text-left text-foreground font-semibold border-b border-border" dangerouslySetInnerHTML={{ __html: parseMarkdown(header) }} />
                         ))}
                       </tr>
                     </thead>
@@ -114,7 +117,7 @@ const BlogContent = ({ slug }: BlogContentProps) => {
                       {rows.map((row, i) => (
                         <tr key={i} className="border-b border-border hover:bg-muted/20 transition-colors">
                           {row.map((cell, j) => (
-                            <td key={j} className="px-4 py-3 text-muted-foreground">{cell}</td>
+                            <td key={j} className="px-4 py-3 text-muted-foreground" dangerouslySetInnerHTML={{ __html: parseMarkdown(cell) }} />
                           ))}
                         </tr>
                       ))}
