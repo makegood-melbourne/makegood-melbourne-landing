@@ -13,7 +13,7 @@ const ProblemSolution = () => {
   const solutions = [
     "Clear scope documentation before work begins",
     "Fixed-price quotes with no hidden surprises",
-    "Reliable scheduling with guaranteed completion",
+    "A programme worked back from your handover date",
     "Quality workmanship that passes inspection",
     "Single point of contact for all trades",
     "Full bond protection with compliance documentation",
@@ -24,7 +24,7 @@ const ProblemSolution = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-8">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Why Make Good Projects Go Wrong — And How We Prevent It
+            Why Make Good Projects Go Wrong and How We Prevent It
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             Make good disputes, delays and cost blowouts usually come from poor scope definition and trade coordination. Our process is designed to eliminate those risks.

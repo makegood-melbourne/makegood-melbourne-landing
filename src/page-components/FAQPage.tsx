@@ -25,12 +25,12 @@ const faqs: FAQ[] = [
   {
     category: "understanding",
     question: "What is a make good clause in a commercial lease?",
-    answer: "A make good clause sets out what you're required to do when your lease ends. Usually that means removing your fitout, repairing damage and returning the space to its original condition. Every lease is different—read yours carefully."
+    answer: "A make good clause sets out what you're required to do when your lease ends. Usually that means removing your fitout, repairing damage and returning the space to its original condition. Every lease is different. Read yours carefully."
   },
   {
     category: "understanding",
     question: "What is the difference between make good and make safe?",
-    answer: "Make good is planned work at the end of a lease—restoring the space as required by your agreement. Make safe is urgent work after an incident—fire, flood, impact damage. It's about eliminating hazards and securing the site quickly."
+    answer: "Make good is planned work at the end of a lease, restoring the space as required by your agreement. Make safe is urgent work after an incident: fire, flood, impact damage. It's about eliminating hazards and securing the site quickly."
   },
   {
     category: "understanding",
@@ -40,7 +40,7 @@ const faqs: FAQ[] = [
   {
     category: "understanding",
     question: "What is a make good and when is it required?",
-    answer: "A make good is the process of returning a commercial space to its original or agreed condition at lease end. Most commercial leases have a make good clause. It's triggered when you vacate—whether at lease end, early termination or break clause."
+    answer: "A make good is the process of returning a commercial space to its original or agreed condition at lease end. Most commercial leases have a make good clause. It's triggered when you vacate, whether at lease end, early termination or break clause."
   },
   {
     category: "understanding",
@@ -50,29 +50,29 @@ const faqs: FAQ[] = [
   {
     category: "understanding",
     question: "What happens if I don't complete my make good?",
-    answer: "The landlord can complete the work and bill you—usually at a premium. You may lose part or all of your bond. In some cases, they'll pursue legal action. Better to deal with it yourself."
+    answer: "The landlord can complete the work and bill you, usually at a premium. You may lose part or all of your bond. In some cases, they'll pursue legal action. Better to deal with it yourself."
   },
 
   // Category 2: Costs & Pricing
   {
     category: "costs",
     question: "How much does a make good cost in Melbourne?",
-    answer: "It depends on size and scope. Office make goods typically run $100–$200 per square metre. Industrial spaces are often less. We quote after a site inspection—fixed price, no surprises."
+    answer: "It depends on size and scope. Office make goods typically run $100–$200 per square metre. Industrial spaces are often less. We quote after a site inspection, fixed price, no surprises."
   },
   {
     category: "costs",
-    question: "Who pays for the make good—tenant or landlord?",
+    question: "Who pays for the make good: tenant or landlord?",
     answer: "The tenant. In almost all commercial leases, you cover the cost."
   },
   {
     category: "costs",
     question: "Can I negotiate my make good costs with the landlord?",
-    answer: "Yes. Some landlords will accept a cash settlement instead of physical works—especially if they're planning to refurbish anyway. Others may agree to a reduced scope. We can help you work through the options."
+    answer: "Yes. Some landlords will accept a cash settlement instead of physical works, especially if they're planning to refurbish anyway. Others may agree to a reduced scope. We can help you work through the options."
   },
   {
     category: "costs",
     question: "How can I reduce my make good costs?",
-    answer: "Plan early. Get a clear scope agreed with your landlord before work starts. Negotiate what actually needs reinstating. And get it done right the first time—rework is expensive."
+    answer: "Plan early. Get a clear scope agreed with your landlord before work starts. Negotiate what actually needs reinstating. And get it done right the first time, rework is expensive."
   },
   {
     category: "costs",
@@ -99,7 +99,7 @@ const faqs: FAQ[] = [
   {
     category: "process",
     question: "What is your make good process?",
-    answer: "1. Free consultation—we review your lease and inspect the site. 2. Detailed quote—fixed price, no surprises. 3. Scope agreement—we finalise requirements with you and the landlord. 4. Execution—we complete the work to the agreed standard. 5. Documentation and handover—full records, final inspection coordinated."
+    answer: "1. Free consultation. We review your lease and inspect the site. 2. Detailed quote, fixed price, no surprises. 3. Scope agreement. We finalise requirements with you and the landlord. 4. Execution. We complete the work to the agreed standard. 5. Documentation and handover, full records, final inspection coordinated."
   },
   {
     category: "process",
@@ -116,7 +116,7 @@ const faqs: FAQ[] = [
   {
     category: "services",
     question: "Do you handle make safe or urgent works?",
-    answer: "Yes—during business hours. We secure sites after fire, flood or impact damage. We eliminate hazards and make the property safe. We don't offer 24/7 emergency call-outs."
+    answer: "Yes, during business hours. We secure sites after fire, flood or impact damage. We eliminate hazards and make the property safe. We don't offer 24/7 emergency call-outs."
   },
   {
     category: "services",
@@ -202,7 +202,7 @@ const faqs: FAQ[] = [
   {
     category: "remediation",
     question: "What is building remediation and when is it needed?",
-    answer: "Remediation is rectifying defects or damage—structural issues, water ingress, concrete spalling and cracking. It's needed when the problem affects the building's safety, integrity or compliance."
+    answer: "Remediation is rectifying defects or damage: structural issues, water ingress, concrete spalling and cracking. It's needed when the problem affects the building's safety, integrity or compliance."
   },
   {
     category: "remediation",
@@ -211,7 +211,7 @@ const faqs: FAQ[] = [
   },
   {
     category: "remediation",
-    question: "My building has water leaks—can you fix them?",
+    question: "My building has water leaks: can you fix them?",
     answer: "Yes. We find the source, repair the damage and restore affected areas. Water damage left untreated leads to bigger problems."
   },
 
@@ -311,7 +311,7 @@ const faqs: FAQ[] = [
   {
     category: "working",
     question: "What if my landlord questions the make good works?",
-    answer: "Agree on a clear scope in writing before work starts. If questions come up, our documentation—photos, certificates and records—shows the work was completed to standard."
+    answer: "Agree on a clear scope in writing before work starts. If questions come up, our documentation (photos, certificates and records) shows the work was completed to standard."
   },
   {
     category: "working",

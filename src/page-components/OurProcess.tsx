@@ -39,7 +39,7 @@ const processSteps = [
     number: "02",
     icon: FileText,
     title: "Detailed Quote",
-    description: "You receive a comprehensive, itemised quote with no hidden fees. You'll know exactly what's included and what it costs.",
+    description: "You get one fixed price, grouped by type of works, with no hidden fees. You'll know exactly what's included and what it costs.",
     details: [
       "Itemised scope of works",
       "Fixed pricing",
@@ -145,7 +145,7 @@ const OurProcess = () => {
   const processSchema = {
     "@context": "https://schema.org",
     "@type": "HowTo",
-    "name": "Make Good Melbourne Process",
+    "name": "MakeGOOD Melbourne Process",
     "description": "Our step-by-step process for commercial make good works in Melbourne",
     "step": processSteps.map((step, index) => ({
       "@type": "HowToStep",
@@ -193,7 +193,7 @@ const OurProcess = () => {
           <p className="text-sm text-muted-foreground">
             <strong className="text-tertiary">Note:</strong> This process applies to end-of-lease make good projects. 
             For simpler works (cleaning, minor repairs) or specialist services (structural remediation, cladding), 
-            we offer a streamlined approach tailored to your specific needs.{" "}
+            the process is shorter and fitted to the job.{" "}
             <a href="/contact/" className="text-primary hover:underline">Get in touch</a> to discuss.
           </p>
         </div>

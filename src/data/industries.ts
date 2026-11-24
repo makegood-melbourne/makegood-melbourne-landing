@@ -65,11 +65,11 @@ export const industries: Industry[] = [
     title: "Office & Commercial Make Good Melbourne",
     metaTitle: "Office & Commercial Make Good Melbourne | Retail Spaces",
     metaDescription: "Commercial make good services across Melbourne. Office strip outs, retail fitout removal, painting, flooring and full restoration. Fixed-price quotes. Call today.",
-    heroText: "Complete make good solutions for Melbourne offices, retail spaces and commercial properties — from single tenancies to entire commercial floors.",
+    heroText: "Complete make good solutions for Melbourne offices, retail spaces and commercial properties, from single tenancies to entire commercial floors.",
     heroImage: commercialHeroImage,
     heroImageAlt: "Completed commercial office make good with polished concrete floors and exposed ceiling services in Melbourne",
     ogImage: "/og/commercial.jpg",
-    introduction: "Office make goods require precision, coordination and minimal disruption to building operations. Whether you're vacating a single office suite, retail tenancy or an entire floor, we deliver comprehensive restoration that meets landlord specifications and building management requirements. We coordinate all trades, manage after-hours access and provide full documentation for a successful handover.",
+    introduction: "Office make goods require precision, coordination and minimal disruption to building operations. Whether you're vacating a single office suite, retail tenancy or an entire floor, we put it back to the landlord's specification and building management requirements. We coordinate all trades, manage after-hours access and provide full documentation for a successful handover.",
     challenges: [
       {
         title: "Building Access & Coordination",
@@ -118,7 +118,7 @@ export const industries: Industry[] = [
     title: "Warehouse & Industrial Make Good Melbourne",
     metaTitle: "Warehouse & Industrial Make Good Melbourne | Factories",
     metaDescription: "Industrial make good specialists Melbourne. Factory strip outs, warehouse restoration, racking removal, floor repair, hazardous material removal. Full compliance. Free quotes.",
-    heroText: "Warehouse and industrial make good services for Melbourne factories, warehouses and manufacturing facilities — from pallet racking removal to complete site restoration.",
+    heroText: "Warehouse and industrial make good services for Melbourne factories, warehouses and manufacturing facilities, from pallet racking removal to complete site restoration.",
     heroImage: industrialHeroImage,
     heroImageAlt: "Empty industrial warehouse after make good restoration with polished concrete floor and steel trusses in Melbourne",
     ogImage: "/og/industrial.jpg",
@@ -318,7 +318,7 @@ export const industries: Industry[] = [
     title: "Building Remediation Melbourne",
     metaTitle: "Building Remediation Melbourne | Make Good, BETTER.",
     metaDescription: "Specialist building remediation services in Melbourne. Cladding & glazing repairs, structural remediation, concrete cancer treatment, waterproofing solutions. Licensed contractors.",
-    heroText: "Expert building remediation services across Melbourne—structural repairs, cladding replacement, concrete restoration and waterproofing solutions.",
+    heroText: "Expert building remediation services across Melbourne: structural repairs, cladding replacement, concrete restoration and waterproofing solutions.",
     heroImage: remediationHeroImage,
     heroImageAlt: "Commercial building glazing and facade installation during remediation works in Melbourne",
     ogImage: "/og/remediation.jpg",
@@ -326,7 +326,7 @@ export const industries: Industry[] = [
     featuredSections: [
       {
         title: "Structural Systems & Building Envelope",
-        description: "Our structural works are planned and executed with precision to deliver strength, accuracy, and efficiency. We coordinate fabrication, transport, and installation to ensure every lift, alignment, and connection meets engineering tolerances and safety requirements. Roofing, cladding, and glazing are installed to exacting standards, achieving early lock-up while delivering superior weatherproofing to protect your asset and enable internal works to progress without interruption.",
+        description: "We plan the structural works so every lift, alignment and connection meets the engineer's tolerances and the safety plan. Roofing, cladding and glazing go on early, so the building is weathertight and the internal works can keep going.",
         image: remediationCladdingImage,
         imageAlt: "Building facade cladding remediation and glazing replacement works in Melbourne"
       },
@@ -361,7 +361,7 @@ export const industries: Industry[] = [
       "Engineering-certified solutions",
       "Compliant material specifications",
       "Minimal disruption to occupants",
-      "Comprehensive project documentation",
+      "Full project documentation",
       "Long-term warranty on works"
     ],
     faqs: [

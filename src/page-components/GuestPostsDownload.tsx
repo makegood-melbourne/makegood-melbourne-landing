@@ -9,16 +9,16 @@ const GuestPostsDownload = () => {
   return (
     <>
       <Helmet>
-        <title>Guest Post Download | Make Good Melbourne</title>
+        <title>Guest Post Download | MakeGOOD Melbourne</title>
         <meta
           name="description"
-          content="Download ready-to-submit guest post articles from Make Good Melbourne."
+          content="Download ready-to-submit guest post articles from MakeGOOD Melbourne."
         />
         <link rel="canonical" href={canonicalUrl} />
-        <meta property="og:title" content="Guest Post Download | Make Good Melbourne" />
+        <meta property="og:title" content="Guest Post Download | MakeGOOD Melbourne" />
         <meta
           property="og:description"
-          content="Download ready-to-submit guest post articles from Make Good Melbourne."
+          content="Download ready-to-submit guest post articles from MakeGOOD Melbourne."
         />
         <meta property="og:url" content={canonicalUrl} />
       </Helmet>

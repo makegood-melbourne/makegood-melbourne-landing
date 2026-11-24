@@ -25,11 +25,11 @@ if (!post) {
 
 const description = post.metaDescription || post.excerpt;
 
-// Build the browser title tag as "[Page title] | Make Good Melbourne" so the
+// Build the browser title tag as "[Page title] | MakeGOOD Melbourne" so the
 // brand and location both show, but drop the suffix on long titles rather
 // than let Google truncate the keyword itself. 60 characters is the usual
 // safe limit before a search result title gets cut off with an ellipsis.
-const brandSuffix = ' | Make Good Melbourne';
+const brandSuffix = ' | MakeGOOD Melbourne';
 const titleTag = post.title.length + brandSuffix.length <= 60
   ? `${post.title}${brandSuffix}`
   : post.title;
@@ -56,12 +56,12 @@ const ogImage = `/og/blog/${imageBaseName}.jpg`;
     "dateModified": toIsoDate(post.updated || post.date),
     "author": {
       "@type": "Organization",
-      "name": "Make Good Melbourne",
+      "name": "MakeGOOD Melbourne",
       "url": "https://makegood.melbourne"
     },
     "publisher": {
       "@type": "Organization",
-      "name": "Make Good Melbourne",
+      "name": "MakeGOOD Melbourne",
       "url": "https://makegood.melbourne",
       "logo": {
         "@type": "ImageObject",
@@ -76,7 +76,7 @@ const ogImage = `/og/blog/${imageBaseName}.jpg`;
   <meta slot="head" property="og:type" content="article" />
   <meta slot="head" property="article:published_time" content={toIsoDate(post.date)} />
   <meta slot="head" property="article:modified_time" content={toIsoDate(post.updated || post.date)} />
-  <meta slot="head" property="article:author" content="Make Good Melbourne" />
+  <meta slot="head" property="article:author" content="MakeGOOD Melbourne" />
   <div class="min-h-screen flex flex-col">
     <Navigation client:load />
     

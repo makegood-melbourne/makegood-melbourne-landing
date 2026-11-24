@@ -61,11 +61,11 @@ const contactFaqs = [
   },
   {
     question: "Can you work outside business hours?",
-    answer: "Yes, we understand that some make good works need to be completed outside regular hours to minimise disruption. We can arrange after-hours and weekend work where required—just let us know your constraints."
+    answer: "Yes. Some make good works need to happen outside normal hours to keep disruption down. We can arrange after hours and weekend work, so tell us your constraints."
   },
   {
     question: "What's the difference between a quote and an estimate?",
-    answer: "Our quotes are fixed-price—the amount we quote is the amount you pay (unless the scope changes). An estimate is approximate and can change. We always provide detailed fixed-price quotes after site inspection so there are no surprises."
+    answer: "Our quotes are fixed-price. The amount we quote is the amount you pay (unless the scope changes). An estimate is approximate and can change. We always provide detailed fixed-price quotes after site inspection so there are no surprises."
   },
   {
     question: "Do I need to be on site for the quote inspection?",
@@ -185,10 +185,10 @@ const Contact = () => {
   return (
     <>
       <Helmet>
-        <title>Contact Make Good Melbourne | Request Your Quote</title>
+        <title>Contact MakeGOOD Melbourne | Request a Quote</title>
         <meta 
           name="description" 
-          content="Get in touch with Make Good Melbourne for a free consultation. Contact us for end of lease make good services, make safe works and remediation across Melbourne." 
+          content="Request a quote from MakeGOOD Melbourne. Send the site address, your lease end date and the make good clause, and we'll book a free site visit." 
         />
         <link rel="canonical" href="https://makegood.melbourne/contact/" />
         <script type="application/ld+json">
@@ -204,10 +204,10 @@ const Contact = () => {
         <section className="bg-gradient-to-b from-background to-secondary py-16 md:py-20">
           <div className="container mx-auto px-4 text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-              Contact Make Good Melbourne
+              Tell Us About the Site
             </h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Ready to discuss your make good project? Tell us about your requirements and we'll be in touch within 24 hours to arrange a site inspection and detailed quote.
+              Send the address, your lease end date and the make good clause if you have it. We'll reply within 24 hours on business days to book a site visit and a fixed price quote.
             </p>
           </div>
         </section>

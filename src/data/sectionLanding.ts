@@ -165,7 +165,7 @@ export const sectionLandingPages: SectionLandingData[] = [
     heroImage: stripOutHero,
     heroImageMobile: stripOutHeroMobile,
     heroImageAlt: "Commercial and industrial strip out works in a Melbourne tenancy prepared for make good and handover",
-    heroImageTitle: "Makegood Melbourne - Commercial and Industrial Strip Out Services",
+    heroImageTitle: "MakeGOOD Melbourne - Commercial and Industrial Strip Out Services",
     
     aboutTitlePrefix: "STRIP OUTS THAT SET UP",
     aboutTitleHighlight: "THE HANDOVER PROPERLY",
@@ -382,7 +382,7 @@ export const sectionLandingPages: SectionLandingData[] = [
     heroImage: makeGoodHero,
     heroImageMobile: makeGoodHeroMobile,
     heroImageAlt: "Clean restored warehouse space showing completed commercial make good works in Melbourne",
-    heroImageTitle: "Makegood Melbourne - Make Good Solutions Melbourne",
+    heroImageTitle: "MakeGOOD Melbourne - Make Good Solutions Melbourne",
     
     aboutTitlePrefix: "WE DO MAKE GOODS",
     aboutTitleHighlight: "ALL DAY, EVERY DAY.",
@@ -604,7 +604,7 @@ export const sectionLandingPages: SectionLandingData[] = [
     heroImage: commercialIndustrialHandoverHero,
     heroImageMobile: commercialIndustrialHandoverHeroMobile,
     heroImageAlt: "Clean empty commercial warehouse ready for lease handover in Melbourne",
-    heroImageTitle: "Makegood Melbourne - Commercial and Industrial Handover Solutions",
+    heroImageTitle: "MakeGOOD Melbourne - Commercial and Industrial Handover Solutions",
 
     aboutTitlePrefix: "THE FINAL STAGE OF",
     aboutTitleHighlight: "A COMPLETE HANDOVER",
@@ -635,7 +635,7 @@ export const sectionLandingPages: SectionLandingData[] = [
         worksIncluded: "Heavy-duty cleaning, warehouse floor scrubbing, pressure washing, amenities, offices, loading docks and final presentation.",
         image: commercialFloorSweepingImage,
         imageAlt: "Commercial concrete floor cleaning during lease handover in Melbourne",
-        imageTitle: "Makegood Melbourne - End-of-Lease Cleaning",
+        imageTitle: "MakeGOOD Melbourne - End-of-Lease Cleaning",
         link: "/services/handover-solutions/end-of-lease-cleaning/",
         linkLabel: "View end-of-lease cleaning"
       },
@@ -644,7 +644,7 @@ export const sectionLandingPages: SectionLandingData[] = [
         worksIncluded: "Ride-on scrubbing, degreasing, tyre mark removal, concrete cleaning and warehouse floor presentation for inspection.",
         image: industrialFloorScrubberImage,
         imageAlt: "Industrial warehouse floor scrubbing for commercial handover in Melbourne",
-        imageTitle: "Makegood Melbourne - Industrial Floor Cleaning",
+        imageTitle: "MakeGOOD Melbourne - Industrial Floor Cleaning",
         link: "/services/handover-solutions/end-of-lease-cleaning/",
         linkLabel: "View floor cleaning scope"
       },
@@ -653,7 +653,7 @@ export const sectionLandingPages: SectionLandingData[] = [
         worksIncluded: "Equipment movement, racking transport, office relocation support, loading coordination and optional delivery to the new site.",
         image: warehouseRelocationImage,
         imageAlt: "Warehouse relocation and load-out support for lease handover in Melbourne",
-        imageTitle: "Makegood Melbourne - Relocation and Load-Out",
+        imageTitle: "MakeGOOD Melbourne - Relocation and Load-Out",
         link: "/services/handover-solutions/end-of-lease-relocation/",
         linkLabel: "View relocation support"
       },
@@ -662,7 +662,7 @@ export const sectionLandingPages: SectionLandingData[] = [
         worksIncluded: "Skip coordination, large item removal, scrap handling, post-strip-out waste and final site clearing.",
         image: highPressureWarehouseCleaningImage,
         imageAlt: "Commercial site clearing and final warehouse clean for lease handover in Melbourne",
-        imageTitle: "Makegood Melbourne - Waste Removal and Site Clearing",
+        imageTitle: "MakeGOOD Melbourne - Waste Removal and Site Clearing",
         link: "/services/handover-solutions/end-of-lease-cleaning/",
         linkLabel: "View cleaning and clearing"
       },
@@ -671,7 +671,7 @@ export const sectionLandingPages: SectionLandingData[] = [
         worksIncluded: "Final presentation, touch-ups and handover readiness for landlord or property manager inspection.",
         image: commercialIndustrialHandoverHero,
         imageAlt: "Clean empty commercial warehouse prepared for landlord inspection in Melbourne",
-        imageTitle: "Makegood Melbourne - Inspection Preparation",
+        imageTitle: "MakeGOOD Melbourne - Inspection Preparation",
         link: "/services/handover-solutions/end-of-lease-cleaning/",
         linkLabel: "View inspection preparation"
       },
@@ -680,7 +680,7 @@ export const sectionLandingPages: SectionLandingData[] = [
         worksIncluded: "Patching, painting, floor reinstatement, ceiling repairs and trade works where the handover requires more than cleaning.",
         image: endOfLeaseMakeGoodHeroImage,
         imageAlt: "Empty commercial tenancy prepared for make good and handover works in Melbourne",
-        imageTitle: "Makegood Melbourne - Make Good Coordination",
+        imageTitle: "MakeGOOD Melbourne - Make Good Coordination",
         link: "/services/make-good-solutions/",
         linkLabel: "View make good solutions"
       }
@@ -807,7 +807,7 @@ export const sectionLandingPages: SectionLandingData[] = [
     heroImage: buildingRemediationHero,
     heroImageMobile: buildingRemediationHeroMobile,
     heroImageAlt: "Worker applying shotcrete during commercial building remediation works in Melbourne",
-    heroImageTitle: "Makegood Melbourne - Remediation Solutions Melbourne",
+    heroImageTitle: "MakeGOOD Melbourne - Remediation Solutions Melbourne",
 
     aboutTitlePrefix: "REMEDIATION THAT PROTECTS",
     aboutTitleHighlight: "THE BUILDING FABRIC",
@@ -1013,7 +1013,7 @@ export const sectionLandingPages: SectionLandingData[] = [
     heroImage: roofingAerialHero,
     heroImageMobile: roofingAerialHeroMobile,
     heroImageAlt: "Aerial view of commercial warehouse metal roofs with rows of skylights, Melbourne",
-    heroImageTitle: "Makegood Melbourne - Commercial Roofing Solutions Melbourne",
+    heroImageTitle: "MakeGOOD Melbourne - Commercial Roofing Solutions Melbourne",
 
     aboutTitlePrefix: "ONE CALL.",
     aboutTitleHighlight: "THE WHOLE ROOF.",
@@ -1230,7 +1230,7 @@ export const sectionLandingPages: SectionLandingData[] = [
     heroImage: rackingInstallHero,
     heroImageMobile: rackingInstallHeroMobile,
     heroImageAlt: "Newly installed blue and orange selective pallet racking in a large Melbourne fulfilment warehouse",
-    heroImageTitle: "Makegood Melbourne - Pallet Racking Solutions Melbourne",
+    heroImageTitle: "MakeGOOD Melbourne - Pallet Racking Solutions Melbourne",
 
     aboutTitlePrefix: "RACKING IN. RACKING OUT.",
     aboutTitleHighlight: "FLOORS FIXED EVERY TIME.",

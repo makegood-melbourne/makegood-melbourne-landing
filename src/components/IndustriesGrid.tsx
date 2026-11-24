@@ -72,7 +72,7 @@ const IndustriesGrid = ({ tone = "dark" }: { tone?: Tone }) => {
             Make Good for Every <span className="text-primary">Commercial Property Type</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            From corporate offices to industrial facilities, we deliver professional make good solutions across diverse commercial sectors throughout Melbourne.
+            Every lease is different. Here's what each kind of property usually needs.
           </p>
         </div>
 
