@@ -13,6 +13,8 @@ export interface Location {
   slug: string;
   title: string;
   metaTitle: string;
+  /** First line of the H1 ("<heroLabel> in <name>"). Defaults to "Make Good Services". */
+  heroLabel?: string;
   description: string;
   metaDescription: string;
   uniqueIntro: string;
@@ -118,33 +120,34 @@ export const locations: Location[] = [
   {
     name: "Clayton",
     slug: "clayton",
-    title: "Make Good Services Clayton",
-    metaTitle: "Make Good Services Clayton | MakeGOOD Melbourne",
-    description: "Make good and strip out for Clayton's warehouses, factories and offices, from Westall Road to Clayton South.",
-    metaDescription: "Make good and strip out in Clayton: warehouses and industrial units in Clayton South, plus offices, labs and medical suites. Free site visit.",
-    uniqueIntro: "Clayton is known for Monash University and the Monash Medical Centre. Beyond them, Clayton South, Westall Road and Springs Road are lined with warehouses and light industrial units, with offices and medical suites along Clayton Road and Centre Road.",
-    localContext: "Clayton South's manufacturing and logistics tenants usually hand back racking anchors, worn slabs, line marking and site offices. Near the university, labs and medical suites bring their own scope: services capped, fixtures out, surfaces repaired. Vacating an industrial unit in Clayton South? Our [warehouse make good](/services/make-good-solutions/warehouse-make-good/) covers the whole scope.",
+    title: "Warehouse Make Good Clayton",
+    metaTitle: "Warehouse Make Good Clayton | MakeGOOD Melbourne",
+    heroLabel: "Warehouse Make Good",
+    description: "Warehouse and industrial make good in Clayton and Clayton South, from Westall Road to Springs Road, plus the offices and medical suites further north.",
+    metaDescription: "Warehouse and factory make good in Clayton and Clayton South: racking out, slab repairs, line marking and a handover clean. Free site visit.",
+    uniqueIntro: "Most of our Clayton work is warehouses, factories and light industrial units in Clayton South, along Westall Road, Springs Road and the streets between them. Further north, Clayton Road and Centre Road add offices and medical suites, and the Monash University and Monash Medical Centre precinct brings labs.",
+    localContext: "Warehouse and logistics tenants in Clayton South usually hand back racking anchors, worn slabs, line marking and the site offices they added. Factories add plant, pits and services to that list, and the floor can't be repaired until the machines are out. We plan the order around your lease end so nothing waits on anything else. Leaving a warehouse? See how a full [warehouse make good](/services/make-good-solutions/warehouse-make-good/) runs. Leaving a factory? Start with our [factory make good checklist](/blog/warehouse-factory-make-good-melbourne/).",
     keyAreas: [
-      "Clayton Road precinct",
-      "Centre Road businesses",
       "Clayton South industrial",
-      "Monash University area",
       "Westall Road corridor",
-      "Springs Road precinct"
+      "Springs Road precinct",
+      "Centre Road businesses",
+      "Clayton Road precinct",
+      "Monash University area"
     ],
     businessTypes: [
-      "Research facilities",
-      "Medical and healthcare",
-      "Commercial offices",
       "Warehouses and logistics",
       "Manufacturing facilities",
-      "Retail spaces"
+      "Light industrial units",
+      "Commercial offices",
+      "Medical and healthcare",
+      "Research facilities"
     ],
     localExpertise: [
-      { title: "Lab Equipment Removal", description: "Handling specialised lab fittings and fixtures common in Monash University research spaces requires careful disassembly and disposal." },
-      { title: "Medical Suite Compliance", description: "Restoring medical suites to original condition involves meeting strict hygiene and safety standards unique to Clayton’s health precinct." },
-      { title: "Industrial Site Repairs", description: "Clayton South industrial properties often have heavy-duty flooring and structural wear needing targeted restoration methods." },
-      { title: "Knowledge Precinct Fitouts", description: "Undoing custom fitouts in tech and innovation offices demands precision to preserve building integrity and meet landlord expectations." }
+      { title: "Racking Out, Anchors Filled", description: "Pallet racking dismantled and taken away, then every anchor hole filled and ground flush so the slab is ready for repair." },
+      { title: "Slabs and Line Marking", description: "Worn, cracked and stained concrete repaired, and line marking removed or reinstated to what the lease asks." },
+      { title: "Factory Plant and Services", description: "Machines disconnected by licensed trades, plant removed, and the pits, plinths and penetrations it leaves behind made good." },
+      { title: "Labs and Medical Suites", description: "Near Monash: services capped by licensed trades, benches and fixtures out, and walls, floors and ceilings repaired." }
     ],
     rackingContent: [
       "Clayton South is full of warehouse and light industrial units, from the Westall Road corridor to the Springs Road precinct. Plenty of them now run e-commerce and fulfilment operations, and that means racking.",
@@ -154,9 +157,9 @@ export const locations: Location[] = [
     faqs: [
       { question: "Do you make good warehouses and industrial units in Clayton South?", answer: "Yes. Racking out, anchor holes filled, slab repaired, line marking reinstated, offices stripped and the building cleaned for handover. One contractor and one fixed price for the whole scope." },
       { question: "Can you install or move pallet racking in Clayton?", answer: "Yes. We install new pallet racking and longspan shelving, move racking between sites and reconfigure layouts. The slab is checked and repaired before anything is anchored." },
-      { question: "Do you make good labs and medical suites near Monash?", answer: "Yes. Services are isolated and capped by licensed trades, benches and fixtures come out, and walls, floors and ceilings are repaired to what the lease asks." },
+      { question: "We're leaving a factory in Clayton South. What happens to the floor once the plant is out?", answer: "Hold down bolts are cut or pulled, plinths broken out and pits filled or reinstated as the lease asks. Then the slab is degreased, patched and ground where needed, so the floor is repaired once rather than around the machines." },
       { question: "How early should I get in touch before my lease ends?", answer: "For a warehouse, three to six months out is not too early. It leaves time to agree the scope with the landlord, sell or move the racking and fit the floor work in before handover. Short on time? Get in touch anyway and we'll stage the work around your last weeks." },
-      { question: "What do you need to give me a price?", answer: "Send the address, your lease end date and the make good clause if you have it. We walk the site and give you one fixed price for every trade, grouped by type of works." }
+      { question: "Do you make good labs and medical suites near Monash?", answer: "Yes. Services are isolated and capped by licensed trades, benches and fixtures come out, and walls, floors and ceilings are repaired to what the lease asks." }
     ]
   },
   {
@@ -289,33 +292,34 @@ export const locations: Location[] = [
   {
     name: "Mulgrave",
     slug: "mulgrave",
-    title: "Make Good Services Mulgrave",
-    metaTitle: "Make Good Services Mulgrave | MakeGOOD Melbourne",
-    description: "Make good and strip out for Mulgrave's warehouses, industrial units and business park offices, from Jacksons Road to Springvale Road.",
-    metaDescription: "Premium make good services in Mulgrave. Corporate office restoration, business park strip outs along Springvale Road. Free quotes.",
-    uniqueIntro: "Mulgrave is a business park suburb with corporate offices and technology companies close to EastLink and the Monash Freeway. Springvale Road and Wellington Road mix modern offices with older industrial stock.",
-    localContext: "Older industrial stock around Jacksons Road usually needs floor repairs, office strip outs and facade repairs at lease end. In the business parks, offices go back to base building with every partition, cable and floor tile accounted for. For the industrial side, see our [make good service for warehouses](/services/make-good-solutions/warehouse-make-good/).",
+    title: "Warehouse Make Good Mulgrave",
+    metaTitle: "Warehouse Make Good Mulgrave | MakeGOOD Melbourne",
+    heroLabel: "Warehouse Make Good",
+    description: "Warehouse and industrial make good in Mulgrave, from Jacksons Road and the Wellington Road precinct to the business park offices on Springvale Road.",
+    metaDescription: "Warehouse make good in Mulgrave: racking out, slab repairs, docks and line marking around Jacksons Road, plus business park office strip outs.",
+    uniqueIntro: "Mulgrave's warehouses and distribution sites sit around Jacksons Road and the Wellington Road precinct, with EastLink and the Monash Freeway on the doorstep. Alongside them, the business parks on Springvale Road hold corporate offices and technology companies.",
+    localContext: "Warehouse and distribution tenants around Jacksons Road usually hand back racking, worn slabs, line marking and the office pods they added. Older industrial stock often needs dock, roller door and facade repairs as well. In the business parks, offices go back to base building with every partition, cable and floor tile accounted for. See how a full [warehouse make good](/services/make-good-solutions/warehouse-make-good/) runs from first visit to handover.",
     keyAreas: [
-      "Mulgrave business parks",
-      "Springvale Road corridor",
-      "Wellington Road precinct",
-      "Waverley Gardens area",
       "Jacksons Road industrial",
-      "Eastlink corridor"
+      "Wellington Road precinct",
+      "Eastlink corridor",
+      "Springvale Road corridor",
+      "Mulgrave business parks",
+      "Waverley Gardens area"
     ],
     businessTypes: [
-      "Corporate offices",
-      "Technology companies",
       "Warehouses and distribution",
       "Manufacturing facilities",
-      "Retail spaces",
+      "Industrial units",
+      "Corporate offices",
+      "Technology companies",
       "Healthcare facilities"
     ],
     localExpertise: [
-      { title: "Corporate HQ Fitouts", description: "Handling complex make good requirements for large-scale corporate offices common in Mulgrave’s premium business parks." },
-      { title: "Technology Facility Standards", description: "Working within strict technical and cabling layouts typical of Mulgrave’s technology company premises during restoration." },
-      { title: "Traffic Access Coordination", description: "Managing site access and scheduling around Eastlink and Monash Freeway traffic to minimise disruption to commercial operations." },
-      { title: "Springvale Road Compliance", description: "Navigating local council regulations for business properties along Springvale Road to ensure compliant end of lease works." }
+      { title: "Racking and Slab", description: "Racking dismantled and removed, anchor holes filled and the slab repaired before the line marking is sorted." },
+      { title: "Docks, Doors and Hardstand", description: "Worn dock areas, damaged roller doors and broken hardstand repaired to what the lease asks." },
+      { title: "Business Park Offices", description: "Partitions, cabling, joinery and floor coverings out, and ceilings and walls repaired back to base building, working to the park's access and loading rules." },
+      { title: "Working While You Trade", description: "Work staged area by area, with the noisy and dusty parts after hours, so you can keep operating until you move." }
     ],
     rackingContent: [
       "Alongside the corporate business parks, Mulgrave has a solid base of warehouses and distribution sites around Jacksons Road and the Wellington Road precinct, with Eastlink and the Monash Freeway on the doorstep. That access makes it a natural spot for fulfilment and distribution.",
@@ -327,7 +331,7 @@ export const locations: Location[] = [
       { question: "What does an office make good in a Mulgrave business park involve?", answer: "Usually partitions, cabling and joinery out, ceilings and walls repaired, floor coverings removed or replaced and services made safe, so the floor goes back to base building. Business parks have their own rules on access and loading, and we work to them." },
       { question: "Can you install or relocate pallet racking in Mulgrave?", answer: "Yes. New pallet racking and longspan shelving, moves between sites and layout changes, with the slab checked before anything is anchored." },
       { question: "Can you work while we're still operating?", answer: "Yes. We can stage the work area by area and do the noisy or dusty parts after hours, so you can keep trading until you move." },
-      { question: "What do you need to give me a price?", answer: "Send the address, your lease end date and the make good clause if you have it. We walk the site and give you one fixed price for every trade, grouped by type of works." }
+      { question: "Do you repair docks, roller doors and hardstand at Mulgrave distribution sites?", answer: "Yes. Worn dock areas, damaged roller doors and cracked or broken hardstand are part of the same scope, repaired to what the lease asks and priced in the one fixed quote." }
     ]
   },
   {
@@ -1411,8 +1415,9 @@ export const locations: Location[] = [
   {
     "name": "Dandenong South",
     "slug": "dandenong-south",
-    "title": "Make Good Services Dandenong South",
-    "metaTitle": "Make Good Services Dandenong South | MakeGOOD Melbourne",
+    "title": "Warehouse Make Good Dandenong South",
+    "metaTitle": "Warehouse Make Good Dandenong South | MakeGOOD Melbourne",
+    "heroLabel": "Warehouse Make Good",
     "description": "Make good, strip out and warehouse restoration for Dandenong South's large industrial and distribution properties, including Abbotts Road, Greens Road and the Frankston-Dandenong Road corridor.",
     "metaDescription": "Warehouse make good in Dandenong South: racking removal, slab repairs, line marking and handover cleaning. Free site visit and fixed price quote.",
     "uniqueIntro": "Dandenong South is one of Melbourne's major industrial precincts, with large warehouses, distribution centres and manufacturing sites along Abbotts Road, Greens Road and the Frankston-Dandenong Road corridor. Leases here commonly require tenants to hand back big floor areas in a clean, repaired and compliant condition.",
@@ -1465,16 +1470,25 @@ export const locations: Location[] = [
       {
         "question": "How long does a warehouse make good take?",
         "answer": "A large warehouse restoration typically takes 4 to 8 weeks, depending on size, complexity and coordination with the landlord."
+      },
+      {
+        "question": "Can you start while we're still shipping out of the building?",
+        "answer": "Yes. We start in the zones you've already cleared, usually the back of the racking runs, and work towards the docks as you wind down. Your last trucks can still get in and out."
+      },
+      {
+        "question": "Do you strip out the warehouse offices and amenities too?",
+        "answer": "Yes. Office pods, mezzanine offices, partitions and amenities are stripped or repaired to what the lease asks, as part of the same fixed price as the racking and the slab."
       }
     ]
   },
   {
     "name": "Hallam",
     "slug": "hallam",
-    "title": "Make Good Services Hallam",
-    "metaTitle": "Make Good Services Hallam | MakeGOOD Melbourne",
+    "title": "Warehouse Make Good Hallam",
+    "metaTitle": "Warehouse Make Good Hallam | MakeGOOD Melbourne",
+    "heroLabel": "Warehouse Make Good",
     "description": "Make good, strip out and restoration for Hallam's industrial units, trade premises and logistics properties around Hallam Road and the Princes Highway corridor.",
-    "metaDescription": "Make good services in Hallam. Industrial unit restoration, strip out, floor repairs and handover. Free site inspection and fixed price quote.",
+    "metaDescription": "Warehouse and industrial unit make good in Hallam: office pods out, racking removed, slab and walls repaired and the unit cleaned. Free site visit.",
     "uniqueIntro": "Hallam is part of Melbourne's south east industrial belt, with industrial units, trade premises and logistics properties around Hallam Road and the Princes Highway corridor. Many tenancies are mid sized units where the lease asks for fitout and fixtures to be removed and the shell returned in good order.",
     "localContext": "Typical Hallam handbacks include office pods and mezzanines, racking, added partitions, damaged slab areas and repainting. We inspect the unit, confirm the lease requirements and quote every trade as one fixed price so you can plan the exit date. More on how a [warehouse make good](/services/make-good-solutions/warehouse-make-good/) runs from start to handover.",
     "keyAreas": [
@@ -1524,6 +1538,14 @@ export const locations: Location[] = [
       {
         "question": "Do you offer a free site inspection in Hallam?",
         "answer": "Yes. We provide a free site inspection, lease review and fixed price quote with no obligation."
+      },
+      {
+        "question": "What usually has to come out of a Hallam unit at lease end?",
+        "answer": "Most often the office pod or mezzanine, added partitions, racking, signage and any fixed equipment. What actually goes depends on the make good clause, so we read it before we price anything."
+      },
+      {
+        "question": "Is repainting part of the make good?",
+        "answer": "When the lease asks for it, yes. Walls and offices are patched and repainted to the lease standard, and it's included in the same fixed price as the strip out and repairs."
       }
     ]
   }

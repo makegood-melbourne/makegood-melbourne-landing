@@ -178,6 +178,12 @@ const industrialServicePrefixes = [
 const pick = (list: string[], start: number, count: number) =>
   Array.from({ length: count }, (_, i) => list[(start + i) % list.length]);
 
+// Suburbs a service page always lists first in "near you", before the rotating set.
+// The warehouse page leads with the four suburbs where most warehouse clients are.
+const pinnedAreasByService: Record<string, string[]> = {
+  "make-good-solutions/warehouse-make-good": ["dandenong-south", "clayton", "mulgrave", "hallam"],
+};
+
 // Deterministic rotation: each service gets a different window of suburbs.
 export const getAreasForService = (serviceSlug: string, allServiceSlugs: string[], count = 6) => {
   const industrial = industrialServicePrefixes.some((prefix) => serviceSlug.startsWith(prefix));
@@ -187,7 +193,10 @@ export const getAreasForService = (serviceSlug: string, allServiceSlugs: string[
   );
   const position = Math.max(0, peers.indexOf(serviceSlug));
   const start = (position * count) % pool.length;
-  return pick(pool, start, Math.min(count, pool.length))
+  const pinned = pinnedAreasByService[serviceSlug] ?? [];
+  const rotating = pick(pool, start, pool.length).filter((slug) => !pinned.includes(slug));
+  return [...pinned, ...rotating]
+    .slice(0, Math.min(count, pool.length))
     .map((slug) => locations.find((location) => location.slug === slug))
     .filter((location): location is NonNullable<typeof location> => Boolean(location))
     .map((location) => ({ slug: location.slug, name: location.name }));
