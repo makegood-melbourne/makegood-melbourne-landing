@@ -17,7 +17,7 @@ const nearby = getNearbyAreas(slug, 5);
       <h2 id="nearby-areas-heading" class="text-3xl md:text-4xl font-bold text-foreground mb-3 uppercase">
         Nearby <span class="text-primary">areas</span>
       </h2>
-      <p class="text-lg text-muted-foreground mb-8">We also work in the suburbs around {name}.</p>
+      <p class="text-lg text-muted-foreground mb-8">We also do make goods in the suburbs around {name}.</p>
       <ul class="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
         {nearby.map((area) => (
           <li>
@@ -25,7 +25,7 @@ const nearby = getNearbyAreas(slug, 5);
               href={`/areas/${area.slug}/`}
               class="block rounded-lg border border-border bg-card px-5 py-4 font-medium text-foreground hover:border-primary/50 hover:text-primary transition-colors"
             >
-              Make good in {area.name}
+              {area.name}
             </a>
           </li>
         ))}

@@ -5,6 +5,7 @@ import IndustryHeroSection from '../../components/IndustryHeroSection.astro';
 import IndustryContent from '../../page-components/IndustryContent.tsx';
 import CtaBlock from '../../components/CtaBlock.astro';
 import ServiceLinks from '../../components/ServiceLinks.astro';
+import { getPostsForIndustry } from '../../data/internalLinks';
 import Footer from '../../components/Footer';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import { industries, getIndustryBySlug } from '../../data/industries';
@@ -18,15 +19,17 @@ export function getStaticPaths() {
 
 const { slug } = Astro.params;
 
-// Which service page's suburb rotation and which blog posts each industry page links to.
-const industryLinks: Record<string, { serviceSlug: string; posts: string[] }> = {
-  "commercial": { serviceSlug: "strip-out-solutions", posts: ["make-good-strip-out-defit-melbourne", "office-strip-out", "patching-plastering-commercial-lease-handback"] },
-  "industrial": { serviceSlug: "make-good-solutions/warehouse-make-good", posts: ["warehouse-factory-make-good-melbourne", "warehouse-demolition-mezzanine-cool-room-removal", "racking-removal-anchor-holes-lease-melbourne"] },
-  "warehouses-logistics": { serviceSlug: "racking-solutions/pallet-racking-installation", posts: ["warehouse-floor-restoration-racking-removal", "car-park-repairs-line-marking-make-good", "racking-removal-anchor-holes-lease-melbourne"] },
-  "retail": { serviceSlug: "make-good-solutions/flooring-reinstatement", posts: ["retail-make-good-melbourne-shopping-centre-tenants", "make-good-cost-drivers-melbourne"] },
-  "medical-centres": { serviceSlug: "strip-out-solutions/make-safe", posts: ["medical-dental-clinic-make-good-melbourne", "electrical-make-safe-decommissioning-demolition"] },
-  "hospitality-venues": { serviceSlug: "handover-solutions/end-of-lease-cleaning", posts: ["restaurant-cafe-make-good-melbourne", "end-of-lease-cleaning-services"] },
+// Which service page's suburb rotation each industry page borrows for its "near you" links.
+// Blog posts come from the industry tags in src/data/internalLinks.ts, so new posts appear here automatically.
+const industryAreaService: Record<string, string> = {
+  "commercial": "strip-out-solutions",
+  "industrial": "make-good-solutions/warehouse-make-good",
+  "warehouses-logistics": "racking-solutions/pallet-racking-installation",
+  "retail": "make-good-solutions/flooring-reinstatement",
+  "medical-centres": "strip-out-solutions/make-safe",
+  "hospitality-venues": "handover-solutions/end-of-lease-cleaning",
 };
+const industryPosts = getPostsForIndustry(slug);
 const industry = getIndustryBySlug(slug);
 
 if (!industry) {
@@ -92,9 +95,9 @@ const faqSchema = industry.faqs && industry.faqs.length > 0 ? {
     
     <!-- Blog posts and suburbs for this industry, same block as the service pages -->
     <ServiceLinks
-      serviceSlug={industryLinks[slug]?.serviceSlug ?? 'make-good-solutions'}
+      serviceSlug={industryAreaService[slug] ?? 'make-good-solutions'}
       serviceName={industry.name}
-      postSlugs={industryLinks[slug]?.posts}
+      postSlugs={industryPosts.map((post) => post.slug)}
     />
 
     <!-- Standardized CTA Block (an industry can set its own closing heading and text) -->
