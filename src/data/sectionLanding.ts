@@ -149,13 +149,13 @@ export interface SectionLandingData {
 export const sectionLandingPages: SectionLandingData[] = [
   {
     slug: "strip-out-solutions",
-    metaTitle: "Strip Out Services Melbourne | Make Good, BETTER.",
+    metaTitle: "Strip Out Services Melbourne | MakeGOOD Melbourne",
     metaDescription: "Commercial strip out services in Melbourne for offices, warehouses, factories, retail and medical sites. Fitout removal, make safe works and handover prep.",
     ogImage: "/og/strip-out.jpg",
     
-    title: "COMMERCIAL & INDUSTRIAL STRIP OUTS MELBOURNE",
+    title: "STRIP OUT SERVICES MELBOURNE",
     titleHighlight: "MELBOURNE",
-    tagline: "Strip out works are where a make good project starts to take shape. We remove redundant fitout, fixtures, partitions, flooring, racking, signage and tenancy alterations so the space is ready for repair, reinstatement or handover. Offices, warehouses, factories, retail stores, medical tenancies and hospitality spaces across Melbourne.",
+    tagline: "Commercial and industrial strip outs for Melbourne offices, warehouses, shops and clinics: fitout out, services made safe and the space ready for the next stage. We remove redundant fitout, fixtures, partitions, flooring, racking, signage and tenancy alterations so the space is ready for repair, reinstatement or handover. Offices, warehouses, factories, retail stores, medical tenancies and hospitality spaces across Melbourne.",
     trustBadges: [
       { icon: "shield", title: "Licensed & Insured" },
       { icon: "clipboard", title: "Make Safe" },
@@ -366,13 +366,13 @@ export const sectionLandingPages: SectionLandingData[] = [
   },
   {
     slug: "make-good-solutions",
-    metaTitle: "Make Good Solutions Melbourne | Make Good, BETTER.",
+    metaTitle: "Make Good Solutions Melbourne | MakeGOOD Melbourne",
     metaDescription: "Commercial make good services in Melbourne for offices, warehouses, factories, retail, medical and hospitality sites. Strip out, repairs and handover prep.",
     ogImage: "/og/make-good.jpg",
     
     title: "MAKE GOOD SOLUTIONS MELBOURNE",
     titleHighlight: "MELBOURNE",
-    tagline: "End-of-lease make good works bring a tenancy back to the agreed handover condition. We coordinate strip out, repairs, reinstatement, painting, flooring, ceilings, warehouse floor works, waste removal and final presentation for commercial and industrial properties across Melbourne.",
+    tagline: "Make good works for Melbourne tenants at lease end, bringing offices, warehouses and shops back to the condition the lease asks for. We coordinate strip out, repairs, reinstatement, painting, flooring, ceilings, warehouse floor works, waste removal and final presentation for commercial and industrial properties across Melbourne.",
     trustBadges: [
       { icon: "shield", title: "Licensed & Insured" },
       { icon: "clipboard", title: "Lease Handover Ready" },
@@ -588,13 +588,13 @@ export const sectionLandingPages: SectionLandingData[] = [
   },
   {
     slug: "handover-solutions",
-    metaTitle: "Handover Solutions Melbourne | Make Good, BETTER.",
+    metaTitle: "Handover Solutions Melbourne | MakeGOOD Melbourne",
     metaDescription: "Commercial handover solutions in Melbourne for end-of-lease cleaning, relocation, final inspection preparation and key handback. Free quotes.",
     ogImage: "/og/handover-solutions.jpg",
 
     title: "HANDOVER SOLUTIONS MELBOURNE",
     titleHighlight: "MELBOURNE",
-    tagline: "The final stage of a lease exit needs more than a quick clean. We coordinate end-of-lease cleaning, relocation support, waste removal, final presentation and inspection preparation so commercial and industrial tenants can hand back the keys without loose ends.",
+    tagline: "Handover works for Melbourne tenants at lease end: the final clean, relocation and everything needed to hand back the keys. The final stage of a lease exit needs more than a quick clean. We coordinate end-of-lease cleaning, relocation support, waste removal, final presentation and inspection preparation so commercial and industrial tenants can hand back the keys without loose ends.",
     trustBadges: [
       { icon: "shield", title: "Licensed & Insured" },
       { icon: "clipboard", title: "Lease Handover Ready" },
@@ -791,13 +791,13 @@ export const sectionLandingPages: SectionLandingData[] = [
   },
   {
     slug: "remediation-solutions",
-    metaTitle: "Remediation Solutions Melbourne | Make Good, BETTER.",
+    metaTitle: "Remediation Solutions Melbourne | MakeGOOD Melbourne",
     metaDescription: "Commercial remediation solutions in Melbourne for structural repairs, waterproofing, facade cladding, glazing, water damage and mould remediation.",
     ogImage: "/og/remediation.jpg",
 
     title: "REMEDIATION SOLUTIONS MELBOURNE",
     titleHighlight: "MELBOURNE",
-    tagline: "Commercial and industrial remediation works protect the building fabric before defects turn into larger handover, compliance or asset issues. We coordinate structural repairs, waterproofing, facade cladding, glazing, polycarbonate roofing, water damage and mould remediation across Melbourne.",
+    tagline: "Building remediation for Melbourne commercial and industrial owners and tenants: structural repairs, waterproofing, water damage and cladding, fixed at the source. We coordinate structural repairs, waterproofing, facade cladding, glazing, polycarbonate roofing, water damage and mould remediation across Melbourne.",
     trustBadges: [
       { icon: "shield", title: "Licensed & Insured" },
       { icon: "compass", title: "Engineered Solutions" },
@@ -997,13 +997,13 @@ export const sectionLandingPages: SectionLandingData[] = [
   },
   {
     slug: "roofing-solutions",
-    metaTitle: "Roofing Solutions Melbourne | Make Good, BETTER.",
+    metaTitle: "Roofing Solutions Melbourne | MakeGOOD Melbourne",
     metaDescription: "Commercial and industrial roofing across Melbourne. Metal roof replacement, box gutters, leak repairs, skylights and asbestos roofs. Fixed-price quotes.",
     ogImage: "/og/roofing-solutions.jpg",
 
     title: "ROOFING SOLUTIONS MELBOURNE",
     titleHighlight: "MELBOURNE",
-    tagline: "Roofs on warehouses, factories and offices across Melbourne. We find the leak, fix what's broken and only replace what's past saving. Licensed roof plumbers, one quote, and the rest of your make good handled while we're up there.",
+    tagline: "Commercial roofing for warehouses, factories and offices across Melbourne: leak repairs, roof replacement, box gutters, skylights and storm damage. We find the leak, fix what's broken and only replace what's past saving. Licensed roof plumbers, one quote, and the rest of your make good handled while we're up there.",
     trustBadges: [
       { icon: "shield", title: "Licensed & Insured" },
       { icon: "dollar", title: "Fixed-Price Quotes" },
@@ -1213,13 +1213,13 @@ export const sectionLandingPages: SectionLandingData[] = [
   },
   {
     slug: "racking-solutions",
-    metaTitle: "Pallet Racking Melbourne | Install, Relocate, Remove | MakeGOOD",
+    metaTitle: "Pallet Racking Melbourne | MakeGOOD Melbourne",
     metaDescription: "Pallet racking installation, relocation and removal for Melbourne warehouses, 3PL and e-commerce fulfilment. Slab repairs included. Fixed price quotes.",
     ogImage: "/og/racking-solutions.jpg",
 
     title: "RACKING SOLUTIONS MELBOURNE",
     titleHighlight: "MELBOURNE",
-    tagline: "Pallet racking in, moved or out, for warehouses, fulfilment centres, 3PL and e-commerce operations across Melbourne. And because we fix warehouse floors every day, the slab gets sorted too. One quote. One crew.",
+    tagline: "Pallet racking installation, relocation and removal for warehouses, fulfilment centres, 3PL and e-commerce operations across Melbourne. And because we fix warehouse floors every day, the slab gets sorted too. One quote. One crew.",
     trustBadges: [
       { icon: "shield", title: "Licensed & Insured" },
       { icon: "dollar", title: "Fixed-Price Quotes" },

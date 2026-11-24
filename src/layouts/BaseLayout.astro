@@ -187,7 +187,8 @@ const ogImageType = ogImage.toLowerCase().endsWith('.png')
   <body>
     <slot />
     {showFloatingCta && <FloatingCTAs client:idle />}
-    <Chatbot client:idle />
+    {/* Rendered in the browser only, so the chat text is not part of every page's HTML */}
+    <Chatbot client:only="react" />
     <Toaster client:load richColors position="top-center" />
   </body>
 </html>
