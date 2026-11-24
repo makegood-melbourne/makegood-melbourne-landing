@@ -104,7 +104,7 @@ const faqs: FAQ[] = [
   {
     category: "process",
     question: "How quickly will you respond to my enquiry?",
-    answer: "Within 24 hours on business days. For urgent make safe situations, often the same day."
+    answer: "Within one business day. For urgent make safe situations, often the same day."
   },
   {
     category: "process",

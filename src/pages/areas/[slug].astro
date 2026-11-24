@@ -4,6 +4,7 @@ import Navigation from '../../components/Navigation';
 import LocationHeroSection from '../../components/LocationHeroSection.astro';
 import LocationContent from '../../page-components/LocationContent.tsx';
 import CtaBlock from '../../components/CtaBlock.astro';
+import QuickQuoteForm from '../../components/QuickQuoteForm';
 import Footer from '../../components/Footer';
 import NearbyAreas from '../../components/NearbyAreas.astro';
 import { locations, getLocationBySlug } from '../../data/locations';
@@ -47,6 +48,11 @@ const faqSchema = location.faqs && location.faqs.length > 0 ? {
   }))
 } : null;
 const imageVariants = await buildImageVariants(locationContentImages);
+
+// Core warehouse suburbs (where most clients are) get the short quote form instead of the
+// generic call to action, so people can ask for a price without leaving the page.
+const CORE_SUBURBS = ['clayton', 'mulgrave', 'dandenong-south', 'hallam'];
+const showQuickQuote = CORE_SUBURBS.includes(slug ?? '');
 ---
 
 <BaseLayout
@@ -68,7 +74,20 @@ const imageVariants = await buildImageVariants(locationContentImages);
   <!-- Standardized CTA Block -->
   <NearbyAreas slug={slug} name={location.name} />
 
-  <CtaBlock />
+  {showQuickQuote ? (
+    <section class="py-12 md:py-16 bg-secondary">
+      <div class="container mx-auto px-4">
+        <QuickQuoteForm
+          client:visible
+          sourcePage={`/areas/${slug}/`}
+          suburb={location.name}
+          heading={`Get a fixed price for your ${location.name} make good`}
+        />
+      </div>
+    </section>
+  ) : (
+    <CtaBlock />
+  )}
   
   <Footer client:idle />
 </BaseLayout>

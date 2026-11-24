@@ -56,7 +56,7 @@ const ThankYouContent = () => {
               Thank You!
             </h1>
             <p className="text-xl text-muted-foreground mb-8">
-              Your message has been received. We'll be in touch within 24 hours.
+              Your message has been received. We reply within one business day.
             </p>
 
             {/* What happens next cards */}
@@ -72,7 +72,7 @@ const ThankYouContent = () => {
                         Response Time
                       </h3>
                       <p className="text-sm text-muted-foreground">
-                        We respond to all enquiries within 24 hours during business days.
+                        We reply to every enquiry within one business day.
                       </p>
                     </div>
                   </div>
