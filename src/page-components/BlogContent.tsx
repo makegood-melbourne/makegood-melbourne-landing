@@ -72,6 +72,19 @@ const BlogContent = ({ slug }: BlogContentProps) => {
               return <h2 key={index} className="text-3xl text-foreground mt-8 mb-4">{paragraph.replace('## ', '')}</h2>;
             } else if (paragraph.startsWith('### ')) {
               return <h3 key={index} className="text-2xl text-foreground mt-6 mb-3">{paragraph.replace('### ', '')}</h3>;
+            } else if (paragraph.startsWith('- [ ] ')) {
+              // Checklist: "- [ ] item" lines render as a list with empty tick boxes
+              const items = paragraph.split('\n').filter(line => line.startsWith('- [ ] '));
+              return (
+                <ul key={index} className="mb-6 space-y-3">
+                  {items.map((item, i) => (
+                    <li key={i} className="flex gap-3 text-muted-foreground">
+                      <span aria-hidden="true" className="mt-1 h-4 w-4 shrink-0 rounded-sm border-2 border-accent" />
+                      <span dangerouslySetInnerHTML={{ __html: parseMarkdown(item.replace('- [ ] ', '')) }} />
+                    </li>
+                  ))}
+                </ul>
+              );
             } else if (paragraph.startsWith('- ')) {
               const items = paragraph.split('\n').filter(line => line.startsWith('- '));
               return (
