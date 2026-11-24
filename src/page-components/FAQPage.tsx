@@ -229,7 +229,7 @@ const faqs: FAQ[] = [
   {
     category: "roofing",
     question: "How quickly can you get to a roof leak or storm damage?",
-    answer: "We'll have someone on site within one business day of your call. Tell us what's happening when you get in touch so we can bring what's needed to stop the water."
+    answer: "We'll have someone on site within one business day of your enquiry. Tell us what's happening when you get in touch so we can bring what's needed to stop the water."
   },
   {
     category: "roofing",

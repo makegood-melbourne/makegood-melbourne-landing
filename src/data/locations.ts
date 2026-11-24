@@ -54,10 +54,10 @@ export const locations: Location[] = [
       "Creative agencies"
     ],
     localExpertise: [
-      { title: "High-Rise Access", description: "Specialised equipment and scheduling for make good work in multi-storey office towers common around Collins and Bourke Streets." },
-      { title: "Heritage Compliance", description: "Experience restoring interiors within heritage-listed buildings while respecting strict council and building regulations." },
-      { title: "After-Hours Work", description: "Coordinating with building managers to carry out make good tasks outside normal business hours to avoid disrupting tenants." },
-      { title: "Premium Finish Standards", description: "Delivering high-quality repairs and finishes that meet the expectations of Melbourne CBD’s corporate and retail precincts." }
+      { title: "Tower Access", description: "Freight lift bookings, loading dock slots and building manager sign off sorted before the first trade arrives on a Collins or Bourke Street floor." },
+      { title: "Heritage Buildings", description: "Original ceilings, cornices and timber floors protected while the fitout comes out, and council and heritage requirements checked first." },
+      { title: "After Hours Work", description: "Noisy and dusty work done at night or on weekends, when the building manager allows it, so other tenants aren't disturbed." },
+      { title: "Base Building Finish", description: "Walls, ceilings and floors put back to the building's own standard, the one the landlord will check at handback." }
     ],
     endOfLeaseContent: "We make good CBD office floors and shops on Collins, Bourke and Elizabeth Streets. We book the freight lifts, work after hours where the building requires it and leave heritage fabric alone.",
     faqs: [
@@ -188,10 +188,10 @@ export const locations: Location[] = [
       "Food production"
     ],
     localExpertise: [
-      { title: "Industrial Zone Compliance", description: "Handling make good tasks in Dandenong South requires adherence to strict industrial regulations and environmental standards unique to heavy manufacturing areas." },
-      { title: "Logistics Facility Restoration", description: "Expertise in restoring large warehouse and logistics properties along Cheltenham Road with focus on durable surfaces and heavy-duty fittings." },
-      { title: "Revitalised CBD Adaptations", description: "Experience adapting make good work to meet modern standards in Dandenong’s revitalised CBD retail and office spaces." },
-      { title: "Heavy-Duty Surface Repairs", description: "Specialised in repairing concrete floors and loading docks common in Dandenong’s industrial precincts to withstand ongoing operational demands." }
+      { title: "Warehouses and Docks", description: "Racking out, anchor holes filled, slabs and dock edges repaired on the warehouse and logistics sites along Cheltenham Road." },
+      { title: "Factory Plant", description: "Machines disconnected by licensed trades and removed, then the pits, plinths and penetrations they leave behind made good." },
+      { title: "Dandenong CBD Shops and Offices", description: "Retail and office fitouts in central Dandenong stripped back, patched and painted to what the lease asks." },
+      { title: "Floors That Take a Beating", description: "Cracked, worn and oil stained concrete repaired so the slab is ready for the next tenant's forklifts." }
     ],
     endOfLeaseContent: "We make good factories and warehouses across Dandenong, and offices and shops in the CBD around Lonsdale Street. One fixed price covers every trade.",
     faqs: [
@@ -277,10 +277,10 @@ export const locations: Location[] = [
       "Trade services"
     ],
     localExpertise: [
-      { title: "Aviation Facility Repairs", description: "Experienced in restoring specialised aviation hangars and workshops to meet strict safety and operational standards unique to Moorabbin Airport precinct." },
-      { title: "High-Security Premises", description: "Skilled at managing make good work in aerospace and defence sites requiring controlled access and compliance with security protocols." },
-      { title: "Industrial South Road Corridor", description: "Familiar with the heavy vehicle access and wear issues common in industrial properties along South Road, ensuring durable restoration results." },
-      { title: "Bayside Environmental Considerations", description: "Knowledgeable about local bayside regulations affecting waste disposal and environmental controls during make good projects near Moorabbin’s coastal zones." }
+      { title: "Airport Hangars and Workshops", description: "Fitout, equipment and services removed from hangars and workshops around Moorabbin Airport, and floors and walls repaired." },
+      { title: "Controlled Access Sites", description: "Work planned around inductions, escorts and security rules on sites that need them." },
+      { title: "South Road Industrial", description: "Truck worn slabs, dock areas and hardstand repaired on the industrial sites along South Road." },
+      { title: "Waste Sorted and Recorded", description: "Waste separated, recycled where it can be and disposed of with records kept for the landlord." }
     ],
     endOfLeaseContent: "We make good industrial units along South Road and buildings in the airport precinct. Where a site has controlled access, we work to its induction and access rules.",
     faqs: [
@@ -482,7 +482,7 @@ export const locations: Location[] = [
     description: "Make good and strip out for South Melbourne's studios, offices and warehouses, from Clarendon Street to City Road.",
     metaDescription: "Make good in South Melbourne: agency and studio fitouts removed, Clarendon Street offices restored and heritage features kept. Free site visit.",
     uniqueIntro: "South Melbourne is full of agencies, studios and professional firms. Clarendon Street has offices in character buildings, City Road and Kings Way have larger offices and warehouses, and the South Melbourne Market adds shops and food businesses.",
-    localContext: "Agencies and professional firms in South Melbourne often have bespoke fitouts: exposed brick, custom joinery and designer finishes that need careful removal or repair. Heritage overlays apply to many buildings. We meet the lease without stripping out the character the landlord wants to keep.",
+    localContext: "Agencies and professional firms in South Melbourne often have custom fitouts: exposed brick, custom joinery and designer finishes that need careful removal or repair. Heritage overlays apply to many buildings. We meet the lease without stripping out the character the landlord wants to keep.",
     keyAreas: [
       "Clarendon Street precinct",
       "City Road corridor",
@@ -500,10 +500,10 @@ export const locations: Location[] = [
       "Medical practices"
     ],
     localExpertise: [
-      { title: "Heritage Overlay Repairs", description: "Restoring walls and fixtures in heritage-listed Clarendon Street buildings requires complying with local heritage rules and preserving original features." },
-      { title: "Bespoke Fitout Removal", description: "Many design studios have custom fitouts that need careful dismantling and repair without damaging specialised materials or finishes." },
-      { title: "Commercial Precinct Knowledge", description: "Understanding South Melbourne Market and surrounding commercial zones means managing access and timing to minimise disruption to busy businesses." },
-      { title: "Creative Space Restoration", description: "Working with advertising agencies and creative firms involves restoring open-plan areas while maintaining the integrity of modern office elements." }
+      { title: "Heritage Buildings", description: "Original features protected while walls and fixtures are repaired in the character buildings along Clarendon Street." },
+      { title: "Custom Fitouts Out", description: "Studio joinery, feature walls and designer finishes taken out without damaging what's underneath." },
+      { title: "Around the Market", description: "Deliveries, skips and noisy work timed around the South Melbourne Market and the businesses next door." },
+      { title: "Open Plan Offices", description: "Partitions, cabling and joinery out of agency and studio floors, and the space put back to an open shell." }
     ],
     endOfLeaseContent: "We make good studios and offices around Clarendon Street and warehouses along City Road. Custom joinery comes out, exposed brick and heritage features stay.",
     faqs: [
@@ -538,10 +538,10 @@ export const locations: Location[] = [
       "Transport and freight"
     ],
     localExpertise: [
-      { title: "Large Warehouse Floors", description: "Handling make good for expansive 10,000sqm plus floor plates requires specialised equipment and efficient labour to minimise downtime." },
-      { title: "High-Bay Warehouse Ceilings", description: "Working on modern high-bay warehouses with tall ceilings demands expertise in elevated access and safety compliance unique to Truganina’s industrial buildings." },
-      { title: "Logistics Hub Demands", description: "Truganina’s role as a logistics centre means frequent tight deadlines to restore spaces in active distribution precincts like Forsyth Road." },
-      { title: "E-commerce Facility Standards", description: "Make good work must meet specific standards for clean, functional spaces suitable for e-commerce fulfilment centres common around Boundary Road." }
+      { title: "Big Floor Plates", description: "Racking out and slabs repaired across floor plates of 10,000 m\u00b2 and more, staged so the work keeps moving." },
+      { title: "High Bay Work", description: "Elevated work platforms and safe access for high bay ceilings, lighting and racking tops." },
+      { title: "Tight Handover Dates", description: "Work programmed backwards from your lease end, in the distribution precinct around Forsyth Road." },
+      { title: "Fulfilment Centres", description: "Pick modules, conveyors and mezzanines removed from e-commerce sites around Boundary Road, and the slab repaired." }
     ],
     endOfLeaseContent: "We make good large warehouses along Forsyth Road and Boundary Road. Thousands of racking anchors, big slabs and dock repairs, planned so the floor is only done once.",
     faqs: [
@@ -558,7 +558,7 @@ export const locations: Location[] = [
     description: "Make good and strip out for Fitzroy's studios, shops and converted warehouses on Brunswick Street and Smith Street, with the heritage fabric left intact.",
     metaDescription: "Fitzroy make goods for studios, shops and converted warehouses, with bespoke fitouts removed and the brick, timber and heritage features kept.",
     uniqueIntro: "In Fitzroy, heritage warehouses, converted factories and character buildings house studios, agencies and small businesses. Brunswick Street and Smith Street are lined with agencies, venues and shops in 19th century buildings with modern fitouts inside.",
-    localContext: "Heritage overlays are common in Fitzroy, so original features like exposed brick, timber trusses and pressed metal ceilings have to survive the make good. Creative tenants often have bespoke fitouts, with polished concrete, custom joinery and open plan layouts, that need to come out without damaging the building underneath.",
+    localContext: "Heritage overlays are common in Fitzroy, so original features like exposed brick, timber trusses and pressed metal ceilings have to survive the make good. Creative tenants often have custom fitouts, with polished concrete, custom joinery and open plan layouts, that need to come out without damaging the building underneath.",
     keyAreas: [
       "Brunswick Street precinct",
       "Smith Street corridor",
@@ -576,12 +576,12 @@ export const locations: Location[] = [
       "Professional services"
     ],
     localExpertise: [
-      { title: "Heritage Overlay Compliance", description: "Work respects Fitzroy’s strict heritage regulations on buildings along Brunswick and Smith Streets, ensuring restorations preserve original features." },
-      { title: "Exposed Brick Restoration", description: "Specialised repairs maintain the character of exposed brick walls common in converted factories and warehouses throughout Fitzroy." },
-      { title: "Bespoke Fitout Reversal", description: "Careful removal of customised fitouts in creative offices and retail spaces avoids damage to underlying surfaces unique to Fitzroy’s style." },
-      { title: "Narrow Lane Access", description: "Experience working in tight laneways and alleyways typical to Fitzroy’s urban layout, ensuring equipment and materials are delivered without hassle." }
+      { title: "Heritage Fabric Kept", description: "Original features on Brunswick and Smith Street buildings protected while the fitout comes out." },
+      { title: "Exposed Brick", description: "Fixings removed from exposed brick walls and holes repaired so the brick still looks like brick." },
+      { title: "Custom Fitouts Out", description: "Joinery, feature walls and studio fitouts taken out without damaging the floors and walls underneath." },
+      { title: "Laneway Access", description: "Small trucks, hand trolleys and timed deliveries for Fitzroy's narrow laneways." }
     ],
-    endOfLeaseContent: "We make good studios, shops and converted warehouses along Brunswick Street and Smith Street. Bespoke fitouts come out without damaging the brick, timber and pressed metal underneath.",
+    endOfLeaseContent: "We make good studios, shops and converted warehouses along Brunswick Street and Smith Street. Custom fitouts come out without damaging the brick, timber and pressed metal underneath.",
     faqs: [
       {
         question: "How do you handle make goods in Fitzroy's heritage-listed buildings?",
@@ -627,10 +627,10 @@ export const locations: Location[] = [
       "Retail spaces"
     ],
     localExpertise: [
-      { title: "Heritage Warehouse Restoration", description: "Specialising in restoring original brickwork and timber features common in Collingwood’s converted industrial warehouses to meet lease exit standards." },
-      { title: "A-Grade Office Finishes", description: "Experienced in refurbishing high-spec Wellington Street offices, including advanced lighting and flooring systems typical of Collingwood’s tech precinct." },
-      { title: "Mass Timber Building Repairs", description: "Skilled in working with exposed mass timber elements in new developments, ensuring repairs maintain structural and aesthetic integrity." },
-      { title: "Collingwood Yards Site Works", description: "Familiar with the unique mixed-use spaces at Collingwood Yards, handling make goods from retail fit-outs to creative studios." }
+      { title: "Converted Warehouses", description: "Fitout out and original brickwork and timber repaired in Collingwood's converted warehouses." },
+      { title: "Wellington Street Offices", description: "Lighting, ceilings and floor finishes in high spec offices put back to the base building." },
+      { title: "Exposed Timber", description: "Fixings removed from exposed timber in newer buildings and the marks repaired to match." },
+      { title: "Mixed Use Spaces", description: "Shops, studios and offices in the same building made good without disturbing the tenants who are staying." }
     ],
     endOfLeaseContent: "We make good offices on Wellington Street and converted warehouses along Smith Street. The fitout comes out, the base building is repaired and the space is ready to lease.",
     faqs: [
@@ -674,10 +674,10 @@ export const locations: Location[] = [
       "Hospitality venues"
     ],
     localExpertise: [
-      { title: "Server Room Handling", description: "Specialised care for tech startups’ server rooms ensures sensitive equipment areas are restored without disrupting network infrastructure." },
-      { title: "Tight Streets Access", description: "Navigating Cremorne’s narrow streets and limited loading zones requires precise planning for equipment delivery and waste removal." },
-      { title: "Commercial Fitouts", description: "Experience restoring high-tech office fitouts along Church Street and Balmain Street back to landlord standards efficiently and accurately." },
-      { title: "Digital Hub Compliance", description: "Understanding Cremorne Digital Hub’s unique building codes and tenant requirements helps us meet specific make good conditions in this precinct." }
+      { title: "Server and Comms Rooms", description: "Racks, cabling and cooling removed from tech tenants' server rooms, and the base building services left intact." },
+      { title: "Narrow Streets", description: "Deliveries and waste removal timed around Cremorne's narrow streets and limited loading zones." },
+      { title: "Office Fitouts Out", description: "Fitouts along Church Street and Balmain Street taken back to what the landlord handed over." },
+      { title: "Building Rules First", description: "Each building's access, noise and waste rules checked before we start, because they differ from site to site." }
     ],
     endOfLeaseContent: "We make good tech offices and shops around Church Street and Balmain Street. Narrow streets and small loading zones are planned for before we start.",
     faqs: [
@@ -768,10 +768,10 @@ export const locations: Location[] = [
       "Trade services"
     ],
     localExpertise: [
-      { title: "Preston Market Restorations", description: "Experience handling make good works in heritage-listed Preston Market, balancing modern requirements with preservation of original structures." },
-      { title: "Mixed-Use Property Expertise", description: "Skilled in managing make good tasks in multi-level retail and residential buildings common along High Street and Plenty Road." },
-      { title: "Industrial Site Repairs", description: "Proficient in restoring Bell Street industrial properties with heavy-duty flooring and specialised wall finishes." },
-      { title: "Rapid Development Adaptations", description: "Adapt make good approaches to suit Preston's fast-changing commercial precincts, ensuring compliance with evolving local council standards." }
+      { title: "Around Preston Market", description: "Shops and food businesses near Preston Market stripped out, with the older structures around them protected." },
+      { title: "Mixed Use Buildings", description: "Shops and offices below apartments along High Street and Plenty Road made good with noise and access planned around residents." },
+      { title: "Bell Street Industrial", description: "Slabs, walls and docks repaired on the industrial sites along Bell Street." },
+      { title: "Council Requirements", description: "Permits and council requirements checked before work starts in Preston's changing commercial strips." }
     ],
     endOfLeaseContent: "We make good shops on High Street, offices on Plenty Road and industrial sites around Bell Street. One fixed price covers every trade.",
     faqs: [
@@ -843,8 +843,8 @@ export const locations: Location[] = [
     metaTitle: "Make Good Services Hawthorn | MakeGOOD Melbourne",
     description: "Make good and strip out for Hawthorn's offices, medical suites and shops, from Glenferrie Road to Burwood Road.",
     metaDescription: "Hawthorn office and medical suite make goods on Glenferrie Road and Burwood Road: custom joinery out, heritage features kept, ready to lease.",
-    uniqueIntro: "Hawthorn is one of Melbourne's most established commercial suburbs, anchored by the Glenferrie Road and Burwood Road retail and office precincts. The suburb's proximity to Swinburne University drives demand for professional services, education-related businesses and technology firms. Character buildings line the main streets, with larger commercial developments concentrated around Glenferrie station and the Burwood Road corridor.",
-    localContext: "Hawthorn's professional firms, medical practices and education businesses tend to have good quality fitouts. Making good means careful patching and painting, protecting heritage features in older buildings and putting base building services back as they were.",
+    uniqueIntro: "Hawthorn's offices, medical suites and shops sit along Glenferrie Road and Burwood Road, many of them in character buildings. Swinburne University brings education businesses and technology firms, and the bigger commercial buildings are around Glenferrie station and the Burwood Road corridor.",
+    localContext: "Hawthorn's law and accounting firms, medical practices and education businesses tend to have good quality fitouts. Making good means careful patching and painting, protecting heritage features in older buildings and putting base building services back as they were.",
     keyAreas: [
       "Glenferrie Road precinct",
       "Burwood Road corridor",
@@ -862,10 +862,10 @@ export const locations: Location[] = [
       "Hospitality venues"
     ],
     localExpertise: [
-      { title: "Heritage Building Care", description: "Specialising in restoring and repairing heritage facades common on Burwood Road while respecting council heritage overlays and permit requirements." },
-      { title: "Medical Practice Fitouts", description: "Experienced in reinstating clinical spaces on Glenferrie Road to meet health regulations and specific end of lease standards for medical tenants." },
-      { title: "University Precinct Restorations", description: "Skilled at managing make good works near Swinburne University, addressing frequent student tenancy changes and high foot traffic wear." },
-      { title: "Professional Office Spaces", description: "Focused on reinstating offices for legal and financial services firms, ensuring professional finishes that match Hawthorn’s commercial character." }
+      { title: "Heritage Facades", description: "Signage and fixings removed from heritage shopfronts on Burwood Road and the facade repaired within the overlay rules." },
+      { title: "Medical Suites", description: "Clinical fitouts on Glenferrie Road taken out, services capped by licensed trades and surfaces repaired." },
+      { title: "Near Swinburne", description: "High wear from student and education tenancies near Swinburne repaired, from scuffed walls to worn floors." },
+      { title: "Office Floors", description: "Partitions, joinery and cabling out of offices, then walls patched and painted to match the base building." }
     ],
     endOfLeaseContent: "We make good offices, medical suites and shops along Glenferrie Road and Burwood Road. Custom joinery comes out, heritage features stay and the space is left ready to lease.",
     faqs: [
@@ -943,10 +943,10 @@ export const locations: Location[] = [
     keyAreas: ["Chapel Street", "Toorak Road", "Commercial Road", "Jam Factory Precinct", "Prahran Market Area", "South Yarra Railway Station Precinct"],
     businessTypes: ["Retail boutiques", "Cafes and restaurants", "Professional offices", "Creative studios", "Light industrial workshops", "Medical clinics"],
     localExpertise: [
-      { title: "Heritage Building Restoration", description: "Expertise in restoring and making good heritage-listed shopfronts and offices along Chapel Street and Toorak Road with compliance to local heritage overlays." },
-      { title: "Retail Fitout Reinstatement", description: "Specialised services for retail businesses in South Yarra’s busy shopping strips to make sure every lease make good obligation is met." },
-      { title: "Hospitality Venue Cleaning", description: "Thorough cleaning and equipment removal for cafes and restaurants in the Prahran Market precinct and surrounding areas." },
-      { title: "Office Space Make Good", description: "Professional reinstatement and repairs for boutique office spaces in the Commercial Road and Jam Factory precincts." }
+      { title: "Heritage Shopfronts", description: "Shopfronts and offices along Chapel Street and Toorak Road made good within the heritage overlay rules." },
+      { title: "Retail Fitouts Out", description: "Shopfitting, signage and floor finishes removed from South Yarra's shopping strips and the tenancy returned to shell." },
+      { title: "Cafes and Restaurants", description: "Kitchen equipment out, exhaust and services made safe and the space cleaned around the Prahran Market precinct." },
+      { title: "Boutique Offices", description: "Repairs, patching and painting for small office suites around Commercial Road and the Jam Factory." }
     ],
     endOfLeaseContent: "We make good shops, offices and venues along Chapel Street and Toorak Road. Shopfronts are reinstated to the lease, heritage fabric is left intact and noisy work is timed around the neighbours.",
     faqs: [
@@ -967,10 +967,10 @@ export const locations: Location[] = [
     keyAreas: ["Young Street", "Davey Street", "Seaford Road Industrial Precinct", "Karingal Drive", "Frankston Waterfront", "Bayside Shopping Centre"],
     businessTypes: ["Retail shops", "Professional offices", "Medical suites", "Light industrial warehouses", "Hospitality venues", "Automotive workshops"],
     localExpertise: [
-      { title: "Retail Fit-Out Restoration", description: "Expertise in restoring retail premises along Young Street and Bayside Shopping Centre to original condition for lease surrender." },
-      { title: "Industrial Warehouse Remediation", description: "Specialised services for industrial tenants in Seaford Road precinct, including floor repairs and dock area restorations." },
-      { title: "Moisture Damage Repair", description: "Addressing moisture-related issues common near the Frankston Waterfront to maintain property integrity during make good." },
-      { title: "Office Space Refurbishment", description: "Refurbishing professional office suites within the Frankston CBD, ensuring compliance with property manager standards." }
+      { title: "Retail Tenancies", description: "Shopfitting and signage removed from shops along Young Street and Bayside Shopping Centre, and the shell repaired." },
+      { title: "Seaford Road Industrial", description: "Floor repairs, dock repairs and racking removal for industrial tenants along Seaford Road." },
+      { title: "Moisture Damage", description: "Water damaged plasterboard, ceilings and floors cut out and replaced in buildings near the waterfront." },
+      { title: "Frankston CBD Offices", description: "Office suites stripped, patched, painted and cleaned to what the property manager asks for." }
     ],
     endOfLeaseContent: "We make good shops on Young Street, offices in the Frankston centre and industrial units around Seaford Road. One fixed price covers every trade.",
     faqs: [
@@ -991,10 +991,10 @@ export const locations: Location[] = [
     keyAreas: ["Watton Street", "K Road Industrial Estate", "Werribee Plaza precinct", "Princes Highway corridor", "Cherry Street commercial strip", "Werribee River precinct"],
     businessTypes: ["Retail shops", "Office spaces", "Industrial warehouses", "Light manufacturing facilities", "Logistics and distribution centres", "Professional services offices"],
     localExpertise: [
-      { title: "Industrial Warehouse Restoration", description: "Expertise in restoring aging warehouse buildings in the Werribee Industrial Estate to comply with strict lease exit conditions." },
-      { title: "Retail Shopfront Make Goods", description: "Specialised services for retail premises along Watton Street, ensuring shopfronts and interiors meet landlord standards." },
-      { title: "Heritage Compliance", description: "Proficient in managing make good works for properties near heritage zones around Werribee Park, adhering to preservation requirements." },
-      { title: "Office Space Refurbishment", description: "Providing detailed make good services for office spaces in Werribee’s commercial precincts, including Cherry Street and Princes Highway." }
+      { title: "Older Warehouses", description: "Racking out, slabs repaired and walls patched in the older buildings of the Werribee Industrial Estate." },
+      { title: "Watton Street Shops", description: "Shopfronts and interiors along Watton Street stripped and repaired to what the landlord expects." },
+      { title: "Near Heritage Zones", description: "Heritage rules checked first for properties near Werribee Park, and original features protected." },
+      { title: "Office Spaces", description: "Make good for offices around Cherry Street and the Princes Highway, from partitions out to paint." }
     ],
     endOfLeaseContent: "We make good shops along Watton Street and warehouses in the Werribee Industrial Estate. Warehouse floors, repainting and shopfronts, priced as one job.",
     faqs: [
@@ -1015,10 +1015,10 @@ export const locations: Location[] = [
     keyAreas: ["Caroline Springs Boulevard", "Christies Road", "Central West Shopping Centre precinct", "Burnside Drive Industrial Estate", "Caroline Springs Drive", "Lost Creek Business Park"],
     businessTypes: ["Retail shops", "Professional offices", "Medical suites", "Light industrial warehouses", "Logistics facilities", "Business parks"],
     localExpertise: [
-      { title: "Retail Shop Make Goods", description: "Expertise in restoring retail spaces along Caroline Springs Boulevard, including paintwork, flooring, and shopfront repairs." },
-      { title: "Office Fitout Reinstatement", description: "Specialised services for office spaces near Christies Road, including ceiling tile replacement and carpet restoration." },
-      { title: "Industrial Warehouse Repairs", description: "Professional make good solutions for warehouse flooring and wall repairs in the Burnside Drive Industrial Estate." },
-      { title: "Lease Compliance Consulting", description: "Guidance on meeting end-of-lease restoration requirements for properties managed by local Caroline Springs property managers." }
+      { title: "Retail Shops", description: "Paintwork, flooring and shopfront repairs for shops along Caroline Springs Boulevard." },
+      { title: "Office Fitouts", description: "Ceiling tiles replaced, carpet cleaned or replaced and walls repaired in offices near Christies Road." },
+      { title: "Burnside Industrial", description: "Warehouse floors and walls repaired in the Burnside Drive industrial estate." },
+      { title: "The Clause, Read First", description: "We read the make good clause before quoting, so the scope matches what your lease actually asks for." }
     ],
     endOfLeaseContent: "We make good shops near Caroline Springs Boulevard, offices near Christies Road and warehouses along Burnside Drive. Office fitouts go back to shell, warehouse floors are repaired and the site is cleaned for inspection.",
     faqs: [
@@ -1039,10 +1039,10 @@ export const locations: Location[] = [
     keyAreas: ["Cooper Street Industrial Estate", "O'Hern Street Warehouses", "Epping Plaza Retail Precinct", "High Street Commercial Strip", "Epping Station Precinct", "Pacific Epping Shopping Centre"],
     businessTypes: ["Industrial Warehouses", "Retail Shops", "Office Spaces", "Logistics Facilities", "Manufacturing Units", "Showrooms"],
     localExpertise: [
-      { title: "Industrial Warehouse Restoration", description: "Expertise in restoring older warehouses on Cooper Street to meet modern make good standards while preserving structural integrity." },
-      { title: "Retail Shop Fitouts", description: "Specialised make good services for retail outlets in Epping Plaza and Pacific Epping, ensuring compliance with landlord requirements." },
-      { title: "Office Space Refurbishment", description: "Office make goods along High Street, scoped to each lease." },
-      { title: "Compliance with Local Property Managers", description: "Experienced in working with major property management firms in Epping to satisfy stringent make good and lease exit protocols." }
+      { title: "Older Warehouses", description: "Floors, walls and docks repaired on the older warehouse sites along Cooper Street." },
+      { title: "Shopping Centre Tenancies", description: "Shops in Epping Plaza and Pacific Epping stripped back to the centre's handover standard." },
+      { title: "Office Space", description: "Office make goods along High Street, scoped to each lease." },
+      { title: "Property Manager Sign Off", description: "Photos and a walkthrough at handover so the property manager can sign the make good off." }
     ],
     endOfLeaseContent: "We make good warehouses and shops around Cooper Street and O'Hern Street and offices along High Street. Older buildings get the repairs the lease asks for, no more.",
     faqs: [
@@ -1063,10 +1063,10 @@ export const locations: Location[] = [
     keyAreas: ["Dalton Road Industrial Precinct", "High Street Commercial Strip", "West Street Warehouse Zone", "Thomastown Train Station Precinct", "Metropolitan Ring Road Access Corridor", "Keon Park Border Area"],
     businessTypes: ["Warehouses", "Manufacturing Facilities", "Logistics Distribution Centres", "Office Spaces", "Retail Shops", "Light Industrial Workshops"],
     localExpertise: [
-      { title: "Industrial Warehouse Restoration", description: "Expertise in restoring large-scale warehouse floors and walls common in Dalton Road and West Street industrial zones." },
-      { title: "Office Fitout Reinstatement", description: "Specialising in repainting, carpeting, and minor structural repairs for offices near High Street and Thomastown station precinct." },
-      { title: "Compliance with Local Regulations", description: "Deep knowledge of City of Whittlesea’s make good requirements and environmental regulations affecting industrial property exits." },
-      { title: "Environmental Remediation", description: "Skilled in dust and contaminant removal for manufacturing sites in older industrial estates, ensuring safe handover conditions." }
+      { title: "Industrial Floors and Walls", description: "Large warehouse slabs and walls repaired in the Dalton Road and West Street industrial areas." },
+      { title: "Offices Near the Station", description: "Repainting, new carpet and small repairs for offices near High Street and Thomastown station." },
+      { title: "Council Rules Checked", description: "City of Whittlesea permit and waste requirements checked before work starts on an industrial exit." },
+      { title: "Dust and Residue", description: "Dust, residues and process waste cleaned out of older manufacturing sites before handover." }
     ],
     endOfLeaseContent: "We make good warehouses and factories along Dalton Road and offices near High Street. Floors, walls and fixtures are sorted against the lease clause and priced as one job.",
     faqs: [
@@ -1087,10 +1087,10 @@ export const locations: Location[] = [
     keyAreas: ["Aviation Road", "Princes Freeway Corridor", "Laverton North Industrial Estate", "Railway Avenue", "Bladin Street", "Skeleton Creek Precinct"],
     businessTypes: ["Industrial warehouses", "Logistics and distribution centres", "Manufacturing plants", "Commercial office spaces", "Retail outlets", "Automotive service workshops"],
     localExpertise: [
-      { title: "Industrial Warehouse Restoration", description: "Specialising in restoring large warehouse spaces along Aviation Road and within Laverton North, ensuring flooring and structural elements meet lease-end standards." },
-      { title: "Loading Dock Repairs", description: "Expertise in repairing and refurbishing loading docks commonly found in Laverton’s logistics facilities to maintain operational safety and compliance." },
-      { title: "Commercial Office Make Goods", description: "Make good for office spaces on Railway Avenue and Bladin Street, including wall repairs, carpet replacement, and paint touch-ups." },
-      { title: "Compliance with Industrial Zoning", description: "We work to local council rules for industrial zones around Laverton, so all make good work meets strict environmental and safety standards." }
+      { title: "Large Warehouses", description: "Racking out and floors repaired in the warehouses along Aviation Road and in Laverton North." },
+      { title: "Loading Docks", description: "Dock edges, levellers and hardstand repaired at Laverton's logistics sites." },
+      { title: "Office Make Goods", description: "Wall repairs, carpet replacement and paint touch ups for offices on Railway Avenue and Bladin Street." },
+      { title: "Industrial Zone Rules", description: "Council requirements for industrial zones around Laverton checked before the work is planned." }
     ],
     endOfLeaseContent: "We make good warehouses and factories in Laverton North. Forklift damage to slabs, dock repairs and worn cladding paint are the usual scope, all in one fixed price.",
     faqs: [
@@ -1111,10 +1111,10 @@ export const locations: Location[] = [
     keyAreas: ["Mountain Highway", "Scoresby Road Industrial Estate", "Bayswater Shopping Centre precinct", "Dorset Road commercial strip", "Bayswater Station precinct", "Bayswater North light industrial zone"],
     businessTypes: ["Retail shops", "Light industrial warehouses", "Professional office spaces", "Automotive workshops", "Small manufacturing facilities", "Commercial storage units"],
     localExpertise: [
-      { title: "Retail Shop Fit-Out Restoration", description: "Expertise in restoring retail spaces around Bayswater Shopping Centre to meet lease exit standards, including wall repairs and flooring replacement." },
-      { title: "Industrial Warehouse Make Goods", description: "Skilled in handling make good requirements for older warehouses in the Scoresby Road industrial estate, including concrete repairs and electrical upgrades." },
-      { title: "Compliance with Local Lease Agreements", description: "In-depth knowledge of Bayswater’s common lease conditions enforced by major property managers ensuring smooth handovers." },
-      { title: "Mixed-Use Property Restoration", description: "Experience in servicing properties that combine retail, office, and light industrial uses typical in Bayswater’s commercial zones." }
+      { title: "Retail Tenancies", description: "Wall repairs and new flooring for shops around Bayswater Shopping Centre." },
+      { title: "Older Warehouses", description: "Concrete repairs and services made safe in the older warehouses of the Scoresby Road industrial estate." },
+      { title: "The Lease, Read First", description: "We read your make good clause before quoting, so the scope matches what the lease actually asks for." },
+      { title: "Mixed Use Buildings", description: "Shops, offices and light industrial units in the same building, each made good to its own lease." }
     ],
     endOfLeaseContent: "We make good industrial units near Scoresby Road and shops around Mountain Highway. Older floors, wiring and shopfronts are scoped against your lease before we price.",
     faqs: [
@@ -1135,10 +1135,10 @@ export const locations: Location[] = [
     keyAreas: ["Melrose Drive", "Airport Drive", "Tullamarine Freeway Precinct", "Tullamarine Airport Business Park", "Melbourne Airport Surrounds", "Broadmeadows Road Industrial Estate"],
     businessTypes: ["Industrial warehouses", "Logistics and distribution centers", "Commercial office spaces", "Aviation support facilities", "Manufacturing plants", "Freight and transport depots"],
     localExpertise: [
-      { title: "Industrial Warehouse Restoration", description: "Expertise in restoring large-scale warehouses along Melrose Drive, addressing concrete repairs and high-bay structural make good." },
-      { title: "Aviation Facility Compliance", description: "Specialised knowledge of make good requirements for aviation support properties near Melbourne Airport, ensuring adherence to strict safety regulations." },
+      { title: "Large Warehouses", description: "Concrete repairs, racking removal and high bay work in the warehouses along Melrose Drive." },
+      { title: "Near the Airport", description: "Aviation support sites near Melbourne Airport made good around their access and safety rules." },
       { title: "Lease Clause Review", description: "We read the make good clause and the entry condition report before we quote, so the scope matches what you actually owe." },
-      { title: "Environmental Remediation", description: "Proficiency in handling environmental considerations in industrial precincts, including waste removal and contamination remediation." }
+      { title: "Industrial Waste", description: "Waste removed and disposed of by licensed contractors, with contamination checked where the site needs it." }
     ],
     endOfLeaseContent: "We make good warehouses and logistics sites along Melrose Drive and Airport Drive. Slab repairs, high walls, docks and racking, sequenced so nothing is done twice.",
     faqs: [
@@ -1159,10 +1159,10 @@ export const locations: Location[] = [
     keyAreas: ["Somerton Road Industrial Precinct", "Cooper Street Warehouse Zone", "Campbellfield Plaza", "Hume Highway Corridor", "Northern Freight Hub", "Merri Creek Business Park"],
     businessTypes: ["Industrial warehouses", "Logistics and distribution centers", "Light manufacturing facilities", "Commercial office spaces", "Automotive workshops", "Food processing plants"],
     localExpertise: [
-      { title: "Industrial Floor Restoration", description: "Specialized in repairing and resurfacing heavy-duty concrete floors common in Campbellfield’s warehouses and manufacturing facilities." },
-      { title: "Hazardous Material Removal", description: "Experienced in safely removing asbestos and chemical residues from older industrial sites along Somerton Road." },
-      { title: "Equipment Decommissioning", description: "Comprehensive services for dismantling and removing manufacturing equipment to comply with lease agreements in Campbellfield." },
-      { title: "Logistics Facility Refurbishment", description: "Tailored make good solutions for transport and freight businesses operating in the Northern Freight Hub precinct." }
+      { title: "Heavy Duty Floors", description: "Cracked and worn concrete in Campbellfield's warehouses and factories repaired and resurfaced." },
+      { title: "Hazardous Materials", description: "Asbestos and chemical residues in older sites along Somerton Road removed by licensed contractors." },
+      { title: "Manufacturing Equipment", description: "Plant disconnected by licensed trades, dismantled and removed as the lease requires." },
+      { title: "Freight and Transport Sites", description: "Docks, hardstand and workshops repaired for freight businesses in the northern freight precinct." }
     ],
     endOfLeaseContent: "We make good warehouses, factories and workshops along Somerton Road and Cooper Street. Plant comes out, pits and oil stained floors are sorted and the site is cleaned for inspection.",
     faqs: [
@@ -1183,10 +1183,10 @@ export const locations: Location[] = [
     keyAreas: ["Lower Dandenong Road", "Springvale Road", "Boundary Road", "Centre Road", "Braeside Industrial Park", "Cheltenham Road"],
     businessTypes: ["Industrial warehouses", "Manufacturing factories", "Logistics distribution centers", "Commercial offices within industrial estates", "Automotive workshops", "Cold storage facilities"],
     localExpertise: [
-      { title: "Asbestos Removal in Older Factories", description: "We have extensive experience safely removing asbestos materials found in Braeside's older industrial buildings, ensuring compliance and tenant safety." },
-      { title: "Concrete Floor Resurfacing", description: "Our team specialises in restoring heavily trafficked warehouse floors common in Braeside's logistics centers, improving durability and appearance." },
-      { title: "Steel Cladding Repairs", description: "We conduct repairs and repainting of steel exterior cladding, a frequent requirement for Braeside's commercial sheds exposed to the elements." },
-      { title: "Roller Door Maintenance", description: "Expert servicing and restoration of industrial roller doors in Braeside's warehouses to meet end-of-lease standards and operational safety." }
+      { title: "Asbestos in Older Factories", description: "Asbestos found in Braeside's older buildings removed by licensed removalists before the rest of the work starts." },
+      { title: "Warehouse Floors", description: "Heavily trafficked floors in Braeside's logistics sites repaired and resurfaced." },
+      { title: "Steel Cladding", description: "Dents and rust repaired on steel wall cladding, then repainted, on sheds exposed to the weather." },
+      { title: "Roller Doors", description: "Damaged roller doors repaired or replaced so they work properly at handover." }
     ],
     endOfLeaseContent: "We make good factories and warehouses across Braeside's industrial estates. Plant removal, repainting and loading dock repairs, priced as one job.",
     faqs: [
@@ -1207,10 +1207,10 @@ export const locations: Location[] = [
     keyAreas: ["Ferntree Gully Road Industrial Precinct", "Wellington Road Business Park", "Scoresby Business Park", "Stud Road Commercial Zone", "EastLink Industrial Corridor", "Knoxfield Border Industrial Area"],
     businessTypes: ["Warehouses", "Manufacturing Plants", "Logistics Distribution Centres", "Light Industrial Units", "Commercial Offices", "Showroom Facilities"],
     localExpertise: [
-      { title: "Industrial Warehouse Restoration", description: "Specialised in restoring large-scale warehouses along Ferntree Gully Road, ensuring compliance with industrial lease standards." },
-      { title: "Manufacturing Facility Fit-Out Removal", description: "Expertise in dismantling and removing complex manufacturing equipment and restoring the property to original condition." },
-      { title: "Façade and External Surface Repairs", description: "Providing detailed façade make good services for commercial buildings on Wellington Road to meet stringent exit conditions." },
-      { title: "Environmental Compliance in Industrial Zones", description: "Ensuring make good works in Scoresby meet environmental guidelines, particularly near waste management and heavy machinery sites." }
+      { title: "Large Warehouses", description: "Racking out, slabs repaired and line marking sorted in the warehouses along Ferntree Gully Road." },
+      { title: "Factory Plant Out", description: "Manufacturing equipment disconnected, dismantled and removed, and the floor and walls repaired behind it." },
+      { title: "Facades", description: "Facade and external surface repairs for commercial buildings along Wellington Road." },
+      { title: "Environmental Rules", description: "Waste and dust controlled to the site's environmental requirements, especially near machinery and waste areas." }
     ],
     endOfLeaseContent: "We make good warehouses and factories from the Knox industrial area to the newer estates. Heavy duty floors and plant removal are the usual scope, priced upfront.",
     faqs: [
@@ -1232,9 +1232,9 @@ export const locations: Location[] = [
     businessTypes: ["Light manufacturing factories", "Warehouses", "Logistics and distribution centers", "Automotive repair workshops", "Office spaces within industrial complexes", "Showrooms"],
     localExpertise: [
       { title: "Industrial Warehouse Restoration", description: "Make good for the large warehouse units along Ferntree Gully Road and the Notting Hill Industrial Estate." },
-      { title: "Compliance with Environmental Regulations", description: "Expertise in managing make good works near Eumemmerring Creek with adherence to local environmental planning requirements." },
-      { title: "Heavy Vehicle Access Areas", description: "Experience restoring concrete and asphalt surfaces in loading docks and truck access zones common in Notting Hill’s industrial precinct." },
-      { title: "Factory Fit-out Removals", description: "Efficient removal and restoration of factory fit-outs, ensuring compliance with lease exit conditions from local property managers." }
+      { title: "Creekside Sites", description: "Waste, run off and dust controlled on sites near Eumemmerring Creek." },
+      { title: "Truck Areas", description: "Concrete and asphalt repaired in the loading docks and truck access areas of Notting Hill's industrial estate." },
+      { title: "Factory Fitouts Out", description: "Factory fitouts removed and the building repaired to what the lease and property manager ask for." }
     ],
     endOfLeaseContent: "We make good warehouses and factory units around Hutton Road and Ferntree Gully Road, inside and out, from the fitout to the loading areas.",
     faqs: [
@@ -1255,10 +1255,10 @@ export const locations: Location[] = [
     keyAreas: ["Drummond Street", "Atherton Road", "Oakleigh Central Shopping Precinct", "Oakleigh Industrial Estate", "Portman Street", "Huntingdale Road"],
     businessTypes: ["Retail shops", "Professional offices", "Light industrial warehouses", "Medical clinics", "Restaurants and cafes", "Logistics and distribution centres"],
     localExpertise: [
-      { title: "Heritage Property Restoration", description: "Specialised make good services respecting Oakleigh’s heritage overlays, particularly for older commercial buildings on Drummond Street." },
-      { title: "Industrial Warehouse Make Goods", description: "Expertise in restoring light industrial units within Oakleigh Industrial Estate to meet lease exit standards." },
-      { title: "Retail Fitout Reinstatement", description: "Efficient make good of retail shops in Oakleigh Central Precinct ensuring compliance with local council requirements." },
-      { title: "Office Space Refurbishment", description: "Make good for office spaces along Atherton Road and nearby commercial zones." }
+      { title: "Heritage Buildings", description: "Older commercial buildings on Drummond Street made good within the heritage overlay rules." },
+      { title: "Light Industrial Units", description: "Floors, walls and doors repaired in the light industrial units of the Oakleigh industrial estate." },
+      { title: "Retail Tenancies", description: "Shops in central Oakleigh stripped and repaired, with council requirements checked first." },
+      { title: "Office Space", description: "Make good for office spaces along Atherton Road and nearby commercial zones." }
     ],
     endOfLeaseContent: "We make good offices and shops on Drummond Street and Atherton Road and industrial units nearby. Shopfronts are repaired, fitouts removed and the space cleaned for handover.",
     faqs: [
@@ -1279,10 +1279,10 @@ export const locations: Location[] = [
     keyAreas: ["Glenferrie Road", "High Street", "Wattletree Road", "Malvern Central precinct", "Toorak Road East", "Malvern railway station precinct"],
     businessTypes: ["Boutique commercial offices", "Retail shops", "Medical suites", "Professional services offices", "Creative studios", "Small industrial workshops"],
     localExpertise: [
-      { title: "Heritage Building Reinstatement", description: "Expertise in restoring and making good heritage-listed commercial properties along Glenferrie Road and Wattletree Road, maintaining original aesthetics while meeting lease requirements." },
-      { title: "Retail Shop Fit-Out Removal", description: "Specialised in removing retail fit-outs in Malvern Central and High Street precincts to ensure spaces are returned to landlord standards." },
-      { title: "Medical Suite Compliance", description: "Experienced in handling end of lease make good for medical offices ensuring compliance with health regulations and property manager standards." },
-      { title: "Creative Workspace Restoration", description: "Proficient in restoring flexible creative studios and small industrial workshops near Toorak Road East." }
+      { title: "Heritage Shops and Offices", description: "Character buildings along Glenferrie Road and Wattletree Road made good with original features kept." },
+      { title: "Retail Fitouts Out", description: "Shopfitting removed in Malvern Central and the High Street strip, and the tenancy returned to the landlord's standard." },
+      { title: "Medical Suites", description: "Clinical fitouts removed, services capped by licensed trades and surfaces repaired." },
+      { title: "Studios and Workshops", description: "Small studios and workshops near Toorak Road East cleared, repaired and repainted." }
     ],
     endOfLeaseContent: "We make good offices, medical suites and shops along Glenferrie Road and High Street. Heritage interiors are protected while the tenant fitout comes out.",
     faqs: [
@@ -1303,10 +1303,10 @@ export const locations: Location[] = [
     keyAreas: ["Glen Eira Road", "Kooyong Road", "Balaclava Road", "Hawthorn Road", "Caulfield Racecourse precinct", "Caulfield Plaza"],
     businessTypes: ["Commercial offices", "Medical suites", "Retail shops", "Hospitality venues", "Educational facilities", "Light industrial workshops"],
     localExpertise: [
-      { title: "Heritage Property Restoration", description: "Specialised make good services for heritage-listed commercial buildings along Balaclava and Hawthorn Roads, ensuring compliance with Glen Eira heritage overlays." },
-      { title: "Medical Suite Compliance", description: "Expertise in restoring medical and allied health properties near Kooyong Road to meet strict hygiene and safety standards." },
-      { title: "Retail Fit-Out Remediation", description: "Efficient make good solutions for retail spaces in Glen Eira Road shopping precinct, accommodating fast tenant turnover." },
-      { title: "Racecourse Hospitality Venues", description: "Tailored end of lease make good for hospitality businesses around Caulfield Racecourse, addressing wear from high patronage events." }
+      { title: "Heritage Buildings", description: "Commercial buildings along Balaclava Road and Hawthorn Road made good within Glen Eira's heritage overlay rules." },
+      { title: "Medical and Allied Health", description: "Clinical fitouts near Kooyong Road removed, services capped and the space cleaned to a high standard." },
+      { title: "Glen Eira Road Shops", description: "Quick turnarounds for shops in the Glen Eira Road strip, so the next tenant isn't kept waiting." },
+      { title: "Venues Near the Racecourse", description: "Hospitality fitouts near Caulfield Racecourse removed and the wear from big event days repaired." }
     ],
     endOfLeaseContent: "We make good offices, medical suites and shops around Glen Eira Road and Kooyong Road. Clinical fitouts are removed and services made safe before the space is cleaned for handover.",
     faqs: [
@@ -1327,10 +1327,10 @@ export const locations: Location[] = [
     keyAreas: ["Centre Road Shopping Strip", "Patterson Road Commercial Precinct", "Jasper Road Industrial Area", "McKinnon Road Office Zone", "Bentleigh Railway Station Precinct", "North Road Retail Area"],
     businessTypes: ["Retail Shops", "Medical Clinics", "Professional Offices", "Light Industrial Units", "Cafes and Hospitality", "Small Warehouses"],
     localExpertise: [
-      { title: "Retail Shopfront Restoration", description: "Specialised in restoring Bentleigh’s older retail façades along Centre Road to comply with lease exit requirements and maintain heritage character." },
-      { title: "Medical Clinic Fitout Removal", description: "Experienced in carefully removing built-in cabinetry and partitions from medical suites common near Patterson Road without damage." },
-      { title: "Light Industrial Floor Repairs", description: "Skilled in repairing and resurfacing concrete floors typical in Jasper Road’s light industrial units after tenancy changes." },
-      { title: "Office Space Make Good", description: "Providing thorough cleaning, painting, and minor repairs for professional offices around McKinnon Road to meet strict lease standards." }
+      { title: "Older Shopfronts", description: "Signage and fixings removed from older facades along Centre Road and the shopfront repaired." },
+      { title: "Medical Clinics", description: "Built in cabinetry and partitions removed from medical suites near Patterson Road without damaging the walls." },
+      { title: "Light Industrial Floors", description: "Concrete floors repaired and resurfaced in the light industrial units on Jasper Road." },
+      { title: "Office Space", description: "Cleaning, painting and small repairs for offices around McKinnon Road." }
     ],
     endOfLeaseContent: "We make good shops and offices along Centre Road and Patterson Road. Shopfronts reinstated, waste gone and the space ready for the landlord's inspection.",
     faqs: [
@@ -1351,10 +1351,10 @@ export const locations: Location[] = [
     keyAreas: ["Banksia Street", "Burgundy Street", "Austin Hospital Precinct", "Heidelberg Industrial Estate", "Upper Heidelberg Road", "Bell Street"],
     businessTypes: ["Medical offices", "Retail shops", "Light industrial warehouses", "Professional services offices", "Small manufacturing facilities", "Commercial office spaces"],
     localExpertise: [
-      { title: "Medical Facility Compliance", description: "Expertise in restoring and making good commercial spaces within the Austin Hospital precinct, ensuring compliance with health sector standards." },
-      { title: "Heritage Building Restoration", description: "Specialised services for older brick and period commercial buildings along Burgundy Street requiring sensitive restoration." },
-      { title: "Industrial Flooring Repair", description: "Experienced in repairing and restoring heavy-duty flooring common in the Heidelberg Industrial Estate warehouses and workshops." },
-      { title: "Lease Condition Consultation", description: "Working closely with local property managers to meet specific make good requirements for commercial leases in Heidelberg." }
+      { title: "Near the Austin Hospital", description: "Medical and health tenancies around the Austin Hospital stripped, with services capped by licensed trades." },
+      { title: "Period Buildings", description: "Older brick and period buildings along Burgundy Street repaired without losing their original features." },
+      { title: "Industrial Floors", description: "Heavy duty floors repaired in the warehouses and workshops of the Heidelberg industrial estate." },
+      { title: "The Lease, Read First", description: "We read your make good clause and agree the scope with the property manager before work starts." }
     ],
     endOfLeaseContent: "We make good offices and medical suites around Burgundy Street and industrial units in the Heidelberg Industrial Estate. One fixed price covers every trade.",
     faqs: [
@@ -1375,10 +1375,10 @@ export const locations: Location[] = [
     keyAreas: ["Doncaster Road", "Westfield Doncaster", "Doncaster Hill", "Williamsons Road Business Park", "Tunstall Road Industrial Estate", "Andersons Creek Road"],
     businessTypes: ["Retail shops", "Corporate offices", "Medical centres", "Light industrial units", "Professional services offices", "Warehouse facilities"],
     localExpertise: [
-      { title: "Retail Shop Make Goods", description: "We specialise in restoring retail spaces in Westfield Doncaster and along Doncaster Road, ensuring compliance with mall management and retail lease conditions." },
-      { title: "Office Space Restoration", description: "Our team is experienced with office fitout removals and repainting in Doncaster’s commercial buildings, particularly in older properties requiring sensitive restoration." },
-      { title: "Industrial Unit Reinstatement", description: "We handle make good services for light industrial tenants around Tunstall Road, including concrete floor repairs and hazardous material disposal." },
-      { title: "End of Lease Compliance", description: "Familiar with local property managers’ requirements, we ensure tenants in Doncaster Hill precinct meet all lease exit obligations for a smooth handover." }
+      { title: "Shopping Centre Tenancies", description: "Shops in Westfield Doncaster and along Doncaster Road returned to the centre's handover standard." },
+      { title: "Office Space", description: "Fitouts removed and walls repainted in Doncaster's office buildings, with extra care in the older ones." },
+      { title: "Light Industrial Units", description: "Concrete floor repairs and hazardous waste disposal for light industrial tenants around Tunstall Road." },
+      { title: "Smooth Handover", description: "Photos of the finished work and a walkthrough with the property manager for tenants in the Doncaster Hill precinct." }
     ],
     endOfLeaseContent: "We make good shops, offices and clinics along Doncaster Road and around Doncaster Hill. Floor coverings, paint and fixtures are put back to what the lease asks.",
     faqs: [
@@ -1399,10 +1399,10 @@ export const locations: Location[] = [
     keyAreas: ["Kingsway Precinct", "Springvale Road Commercial Strip", "The Glen Shopping Centre", "Ferntree Gully Road Industrial Estate", "Glen Waverley Train Station Area", "Waverley Road Office Park"],
     businessTypes: ["Retail shops", "Professional offices", "Medical suites", "Light industrial warehouses", "Food and beverage outlets", "Mixed-use commercial/residential buildings"],
     localExpertise: [
-      { title: "Retail Shopfront Restoration", description: "Experienced in restoring shopfronts along Kingsway to comply with strict lease exit standards." },
-      { title: "Office Space Refurbishment", description: "Specialists in refurbishing office interiors in Springvale Road’s professional precincts." },
-      { title: "Industrial Warehouse Make Goods", description: "Proficient in industrial unit make good works within the Ferntree Gully Road estate." },
-      { title: "Heritage and Mixed-Use Compliance", description: "Knowledgeable in heritage overlays and mixed-use building regulations affecting Glen Waverley leases." }
+      { title: "Kingsway Shopfronts", description: "Shopfronts along Kingsway repaired to what the lease asks for at exit." },
+      { title: "Springvale Road Offices", description: "Office interiors along Springvale Road stripped, patched and painted." },
+      { title: "Industrial Units", description: "Make goods for industrial units in the Ferntree Gully Road estate." },
+      { title: "Heritage and Mixed Use", description: "Heritage overlays and mixed use building rules checked before any work starts." }
     ],
     endOfLeaseContent: "We make good shops around Kingsway and offices along Springvale Road. Shopfronts, carpet and paint are put back to the lease and the space is cleaned for handover.",
     faqs: [

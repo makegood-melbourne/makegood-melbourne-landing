@@ -620,7 +620,7 @@ The roof is only half the job. Water that got inside can leave wet insulation, d
 ## Storm damage questions we get asked
 
 **How quickly can a roofer get there?**
-We'll have someone on site within one business day of your call. Tell us what's happening so we can bring what's needed to stop the water.
+We'll have someone on site within one business day of your enquiry. Tell us what's happening so we can bring what's needed to stop the water.
 
 **Will make safe be covered by insurance?**
 Many policies cover reasonable steps to prevent further damage, but it depends on your policy. Keep invoices and photos of the make safe work and check with your insurer or broker.
@@ -638,7 +638,7 @@ It depends on the damage and on how long insurer approval takes. Small repairs c
 
 Storm damage usually needs a roofer, an electrician, a ceiling fixer and someone to sort the water damage, all coordinated around an insurer. That's a lot of phone calls in the middle of a crisis.
 
-Our [storm damage and make safe](/services/roofing-solutions/storm-damage-make-safe/) service handles the make safe, the photos and report for your insurer, the permanent roof repairs and the reinstatement inside. We'll have someone on site within one business day of your call, and we coordinate [electrical make safe](/services/strip-out-solutions/make-safe/) and [water damage and mould remediation](/services/remediation-solutions/water-damage-mould-remediation/) as part of the same job.
+Our [storm damage and make safe](/services/roofing-solutions/storm-damage-make-safe/) service handles the make safe, the photos and report for your insurer, the permanent roof repairs and the reinstatement inside. We'll have someone on site within one business day of your enquiry, and we coordinate [electrical make safe](/services/strip-out-solutions/make-safe/) and [water damage and mould remediation](/services/remediation-solutions/water-damage-mould-remediation/) as part of the same job.
 
 Send us the address, photos of the roof and the damage inside and tell us what's happening now. [Get in touch.](/contact/)`
   },

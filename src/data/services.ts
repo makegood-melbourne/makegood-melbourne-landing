@@ -766,16 +766,16 @@ export const services: Service[] = [
     slug: "handover-solutions/end-of-lease-cleaning",
     title: "End of Lease Cleaning",
     metaTitle: "End of Lease Cleaning Melbourne | MakeGOOD Melbourne",
-    description: "Lease ending? We handle the heavy-duty cleaning regular cleaners won't touch. Industrial floor scrubbing, high-pressure washing and chemical treatment, everything your landlord expects at handover. We work at scale: 500sqm warehouse floors, multi-level office strip-outs, loading docks caked in years of grime. This isn't maintenance cleaning, it's handover-ready restoration.",
+    description: "Lease ending? We do the heavy duty cleaning regular cleaners won't: warehouse floors scrubbed, loading docks pressure washed, oil stains treated and offices cleaned after the strip out, ready for the landlord's inspection.",
     metaDescription: "End of lease cleaning for Melbourne offices and warehouses: floor scrubbing, pressure washing and oil stain removal to pass inspection.",
-    heroText: "Heavy-duty cleaning for lease end and make good handovers. We tackle the jobs regular cleaners can't, warehouse floors, post-strip-out sites and final inspections that need to pass first time.",
+    heroText: "Heavy duty cleaning for lease end handovers: warehouse floors scrubbed, docks pressure washed, oil and tyre marks treated and offices cleaned after the strip out. The clean the landlord inspects, not a weekly tidy.",
     ogImage: "/og/commercial.jpg",
     heroImage: commercialFloorSweepingImage,
     heroImageAlt: "Worker sweeping concrete floor with industrial broom during make good cleaning Melbourne",
     secondaryImage: highPressureWarehouseCleaningImage,
     secondaryImageAlt: "High-pressure warehouse cleaning Melbourne - industrial cleaner pressure washing warehouse floor for lease end",
     scopeTitle: "A FULL HANDOVER CLEAN.",
-    scopeBody: "Lease ending? We handle the heavy-duty cleaning regular cleaners won\u2019t touch. Ride-on scrubbers for warehouse floors, industrial pressure washers for loading docks caked in years of grime, chemical treatment for oil stains and tyre marks. We work at scale: 500sqm+ warehouse floors, multi-level office strip-outs, concrete aprons and external hard surfaces that need more than a mop.\n\nThis isn\u2019t maintenance cleaning. It\u2019s intensive restoration for lease handover, and it needs to pass your landlord\u2019s final inspection first time.",
+    scopeBody: "Ride-on scrubbers for warehouse floors, industrial pressure washers for loading docks, chemical treatment for oil stains and tyre marks, and a detailed clean of offices, amenities and windows once the strip out is done. Floors of 500 m² and more, multi level offices and concrete aprons are all routine.\n\nIt's the last job before the inspection, so we plan it last and leave time to fix anything the walkthrough picks up.",
     trustBadges: [
       "Industrial-Grade Equipment",
       "After-Hours Capability",
@@ -783,7 +783,7 @@ export const services: Service[] = [
     ],
     featuredSection: {
       title: "Industrial Floor Cleaning",
-      description: "Years of grime, oil stains and tyre marks don't stand a chance. Our ride-on scrubbers and high-pressure systems restore warehouse floors to handover condition, ready for your landlord's final inspection. We handle the full scope: concrete polishing, chemical degreasing, line marking restoration and final detailing.",
+      description: "Ride-on scrubbers and high pressure washers take years of grime, oil stains and tyre marks off warehouse floors before the landlord's inspection. Degreasing, line marking touch ups and final detailing are part of the same job.",
       image: industrialFloorScrubberImage,
       imageAlt: "Industrial ride-on floor scrubber machine cleaning polished concrete warehouse floor Melbourne"
     },
@@ -1045,7 +1045,7 @@ export const services: Service[] = [
     slug: "remediation-solutions/structural",
     title: "Structural Remediation",
     metaTitle: "Structural Remediation Melbourne | MakeGOOD Melbourne",
-    description: "The structural integrity of your building is non-negotiable. At MakeGOOD Melbourne, we fix the root causes of structural decay to restore strength, safety and long-term stability to your asset.\n\nWe work with qualified engineers on a wide range of structural defects, and the repairs are certified. From diagnosing concrete cancer and rectifying slab settlement to advanced concrete injection and carbon fibre strengthening, we take on the jobs general builders usually pass on. We handle the entire process, from initial assessment and engineering specifications through to project completion and final certification.",
+    description: "Concrete cancer, cracked and settling slabs, failed lintels and corroded steel, repaired to an engineer's design on Melbourne commercial and industrial buildings.",
     metaDescription: "Structural remediation & concrete cancer repairs in Melbourne. Slab repairs, crack injection & waterproofing, assessed & certified by qualified engineers.",
     heroText: "Structural remediation for Melbourne commercial and industrial buildings, from concrete cancer and spalling to slab settlement and corrosion. We fix them at the source, to an engineer's design, so the building is safe and compliant again.",
     ogImage: "/og/structural-remediation.jpg",
@@ -1139,10 +1139,10 @@ export const services: Service[] = [
       "Steel Framework Retrofitting"
     ],
     process: [
-      { step: "Assessment & Diagnosis", description: "Every project begins with a comprehensive site assessment to diagnose the underlying cause and extent of the structural issue. We work with engineers to perform diagnostic testing and develop a precise scope of works." },
-      { step: "Engineered Proposal", description: "We provide a detailed, fixed-price proposal outlining the recommended repair methodology, all associated costs and a clear project timeline. We believe in full transparency, ensuring you can make an informed decision." },
+      { step: "Assessment & Diagnosis", description: "Every job starts on site. We work with engineers to test and find the cause and extent of the problem, then write the scope of works from what they find." },
+      { step: "Engineered Proposal", description: "You get one fixed price with the repair method, every cost and a programme, so you can decide with all of it in front of you." },
       { step: "Remediation & Project Management", description: "We build what the engineer designed and coordinate the trades around it. Work is staged to keep disruption down and done to the safety plan." },
-      { step: "Certification & Handover", description: "Upon completion, we provide a full handover package including all structural certifications, material warranties and maintenance documentation. This ensures you have a complete record of the work and full compliance sign-off." }
+      { step: "Certification & Handover", description: "At the end you get the engineer's certification, material warranties and maintenance notes in one pack, a complete record of the work." }
     ],
     processAfterSpotlight: true, // Show process after spotlight section
     ctaBlock: {
@@ -1153,7 +1153,7 @@ export const services: Service[] = [
     faqs: [
       {
         question: "How do I know if a crack in my concrete is a serious structural issue?",
-        answer: "While minor surface cracks can be cosmetic, signs of a serious structural issue include cracks that are wider than a credit card, are continuing to grow, are leaking water, or have one side that is offset from the other. If you notice any of these, we strongly recommend a professional assessment to diagnose the cause and prevent further damage."
+        answer: "While minor surface cracks can be cosmetic, signs of a serious structural issue include cracks that are wider than a credit card, are continuing to grow, are leaking water, or have one side that is offset from the other. If you notice any of these, get an engineer to look at it before it gets worse."
       },
       {
         question: "What is the difference between concrete cancer and regular concrete damage?",
@@ -1169,7 +1169,7 @@ export const services: Service[] = [
       },
       {
         question: "How do you ensure the structural repairs are certified and compliant?",
-        answer: "We ensure compliance at every step. We work directly with independent structural engineers who design and specify the repair methodology. During the project, we follow these specifications precisely. Upon completion, the engineer conducts a final inspection and provides a structural certification (e.g. a Form 16 in some states), giving you documented proof that the work meets all Australian Standards and is fit for purpose."
+        answer: "An independent structural engineer designs and specifies the repair, and we build exactly what they specify. Upon completion, the engineer conducts a final inspection and provides a structural certification (e.g. a Form 16 in some states), giving you documented proof that the work meets all Australian Standards and is fit for purpose."
       }
     ],
     faqTitle: "STRUCTURAL REMEDIATION FAQs",
@@ -1291,7 +1291,7 @@ export const services: Service[] = [
     secondaryImage: glazingFacadeInstallationImage,
     secondaryImageAlt: "Professional glazing facade installation on commercial high-rise building with workers in safety harnesses Melbourne",
     scopeTitle: "NON-COMPLIANT TODAY. FIXED FOR GOOD.",
-    scopeBody: "ACP cladding is banned. Non-compliant glazing is a liability. If your building has either, the clock is already running. We run the whole job: assessment, removal, replacement with fire-rated compliant materials tested to AS 1530 and AS 5113, and final certification for the VBA, councils and building managers.\n\nFrom facade panels to glazing upgrades, every project is engineered, documented and signed off.",
+    scopeBody: "Combustible ACP cladding is a known fire risk, and non-compliant glazing is a liability. If your building has either, the clock is already running. We run the whole job: assessment, removal, replacement with fire-rated compliant materials tested to AS 1530 and AS 5113, and final certification for the VBA, councils and building managers.\n\nFrom facade panels to glazing upgrades, every project is engineered, documented and signed off.",
     ctaBlock: {
       title: "Let Us Handle Your Cladding Remediation",
       subtitle: "We do makegoods all day, every day.",
@@ -1306,16 +1306,16 @@ export const services: Service[] = [
     slug: "remediation-solutions/waterproofing",
     title: "Waterproofing",
     metaTitle: "Waterproofing Melbourne | MakeGOOD Melbourne",
-    description: "Failed waterproofing causes costly damage to buildings, from balcony leaks penetrating into units below to roof failures flooding commercial spaces. We waterproof balconies, roofs, wet areas and podiums with membrane systems built to last.",
+    description: "Commercial waterproofing in Melbourne for balconies, roofs, wet areas, podiums and box gutters. We find where the water gets in, fix the surface and put down the right membrane.",
     metaDescription: "Commercial waterproofing in Melbourne. Balcony membranes, roofs, wet areas and podium deck systems. Licensed applicators, warranty included. Free quotes.",
-    heroText: "Waterproofing for Melbourne commercial buildings: balconies, roofs, wet areas and podiums. Water finds every weakness. Failed balcony membranes leak into apartments below. Deteriorated roof coatings let moisture into ceiling cavities. We apply proven membrane systems that protect your building for decades, not just pass the next inspection.",
+    heroText: "Waterproofing for Melbourne commercial buildings: balconies, roofs, wet areas, podiums and box gutters. We find where the water is getting in, repair the surface underneath and apply a membrane system to the manufacturer's specification.",
     ogImage: "/og/waterproofing.jpg",
     heroImage: rooftopWaterproofingImage,
     heroImageAlt: "Worker applying waterproofing membrane to commercial rooftop in Melbourne",
     secondaryImage: waterproofingMembraneImage,
     secondaryImageAlt: "Close-up of waterproofing membrane application on commercial building surface in Melbourne",
     scopeTitle: "SEALED AT THE SOURCE.",
-    scopeBody: "Failed waterproofing doesn't stay contained: balcony leaks penetrate into apartments below, roof failures flood commercial spaces, wet area failures cause damage that compounds over time. We identify where water is getting in, prepare the substrate properly and apply proven membrane systems that protect your building for the long term.\n\nBalconies, roofs, podiums, wet areas, box gutters. Every application backed by manufacturer warranties.",
+    scopeBody: "Water finds the weak spot. A failed balcony membrane leaks into the unit below, a tired roof coating lets water into the ceiling and a cracked wet area lets it into the slab. Coating over the top rarely lasts.\n\nWe find where it's getting in, strip back to a sound surface, repair it and apply the membrane the job calls for. Balconies, roofs, podiums, wet areas and box gutters.",
     benefits: [
       "Balcony and terrace membrane systems",
       "Flat roof and podium waterproofing",
@@ -2877,7 +2877,7 @@ export const services: Service[] = [
     metaTitle: "Water Damage & Mould Remediation Melbourne | MakeGOOD",
     description: "Water damage and mould remediation for commercial buildings, offices, warehouses and tenancy handovers across Melbourne. We remove affected materials, coordinate drying and restore damaged areas ready for safe use, reinstatement or make good.",
     metaDescription: "Commercial water damage and mould remediation in Melbourne. Leak damage repairs, affected material removal, drying coordination and reinstatement works.",
-    heroText: "Water damage and mould remediation for commercial buildings, offices, warehouses and tenancy handovers across Melbourne. We remove affected materials, coordinate drying and restore damaged areas ready for safe use, reinstatement or make good.",
+    heroText: "Water damage and mould remediation for Melbourne offices, warehouses and tenancies. Wet materials out, the space dried, the leak fixed and the damage repaired, ready to use again or hand back.",
     ogImage: "/og/water-damage-mould-remediation.jpg",
     heroImage: waterproofingMembraneImage,
     heroImageAlt: "Waterproofing membrane application as part of commercial water damage remediation works in Melbourne",
@@ -2928,7 +2928,7 @@ export const services: Service[] = [
       }
     ],
     capabilitiesTitle: "WATER DAMAGE & MOULD REMEDIATION CAPABILITIES",
-    capabilitiesSubtitle: "Our remediation service connects affected material removal, drying coordination, leak damage repairs and final reinstatement into one practical building scope.",
+    capabilitiesSubtitle: "Wet materials out, drying organised, the leak fixed and the walls, ceilings and floors put back, all as one building scope.",
     featuredSections: [
       {
         title: "WATER DAMAGE REPAIRS THAT CONNECT BACK TO THE BUILDING",
@@ -2976,7 +2976,7 @@ export const services: Service[] = [
     metaTitle: "Fire & Cladding Remediation Melbourne | MakeGOOD Melbourne",
     description: "Commercial fire compliance and facade cladding remediation works for Melbourne buildings. We coordinate building repairs, cladding-related works and associated make good requirements as part of broader remediation projects.",
     metaDescription: "Fire compliance and facade cladding remediation in Melbourne. Commercial building remediation, cladding replacement coordination and make good works.",
-    heroText: "Commercial fire compliance and facade cladding remediation works for Melbourne buildings. We coordinate building repairs, cladding-related works and associated make good requirements as part of broader remediation projects.",
+    heroText: "Building work for fire compliance and facade cladding projects in Melbourne. The consultants set the compliance scope. We do the removal, repairs and make good around it.",
     ogImage: "/og/fire-compliance-cladding-remediation.jpg",
     heroImage: claddingRemediationImage,
     heroImageAlt: "Facade cladding and glazing remediation works on a commercial building in Melbourne",
@@ -3027,7 +3027,7 @@ export const services: Service[] = [
       }
     ],
     capabilitiesTitle: "FIRE COMPLIANCE & FACADE REMEDIATION CAPABILITIES",
-    capabilitiesSubtitle: "Our remediation service supports the physical building repairs, interfaces and make good works connected to defined facade, cladding and fire compliance scopes.",
+    capabilitiesSubtitle: "The building work around a consultant's compliance scope: removal, interfaces, waterproofing details and the make good inside.",
     featuredSections: [
       {
         title: "REMEDIATION WORKS FOR COMMERCIAL BUILDINGS",
@@ -3476,10 +3476,10 @@ export const services: Service[] = [
       { step: "Reinstatement", description: "Ceilings, walls and floors damaged by the water are repaired and the site is handed back." }
     ],
     faqs: [
-      { question: "How quickly can you get here?", answer: "We'll have someone on site within one business day of your call. Tell us what's happening when you call, so we can bring what's needed to stop the water." },
+      { question: "How quickly can you get here?", answer: "We'll have someone on site within one business day of your enquiry. Tell us what's happening and send photos if you can, so we bring what's needed to stop the water." },
       { question: "What's the difference between make safe and repair?", answer: "Make safe is the temporary work that stops more damage, like tarps, covers and securing loose sheets. The repair is the permanent fix that comes once the weather clears and the scope is agreed." },
       { question: "Will my insurance cover storm damage to the roof?", answer: "That depends on your policy. On commercial claims your insurer will usually send a loss adjuster, who still needs a contractor's report and quote to approve the repair. We provide photos, a written report and an itemised scope that separates storm damage from wear and tear. Your insurer makes the call." },
-      { question: "What should we do while we wait?", answer: "Stay off the roof. Move stock and equipment away from leaks, keep people clear of wet areas near lights and power, and take photos of the damage inside. Call us with the address and what you can see." },
+      { question: "What should we do while we wait?", answer: "Stay off the roof. Move stock and equipment away from leaks, keep people clear of wet areas near lights and power, and take photos of the damage inside. Then send us the address and what you can see through the quote form or to enquiries@makegood.melbourne." },
       { question: "Is it safe to keep working in the building?", answer: "If water is near lights, power or switchboards, keep people away from that area until it's been checked. We coordinate electrical isolation as part of the make safe." },
       { question: "Can you fix the damage inside as well?", answer: "Yes. Once the roof is sorted, our make good and remediation teams repair ceilings, walls and floors, and handle any water damage and mould." },
       { question: "Do you replace hail damaged skylights?", answer: "Yes. We cover broken skylight sheets straight away to keep the weather out, then replace them with new polycarbonate sheets matched to your roof profile." }
