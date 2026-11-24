@@ -17,13 +17,13 @@ import {
 
 // Priority service links are duplicated at the top of the Services menu so new high-intent pages are easy to find in preview and production.
 const priorityServiceSlugs = [
+  'make-good-solutions/warehouse-make-good',
   'remediation-solutions/water-damage-mould-remediation',
-  'remediation-solutions/fire-compliance-facade-cladding-remediation',
 ];
 
 const priorityServiceDisplayNames: Record<string, string> = {
+  'make-good-solutions/warehouse-make-good': 'Warehouse Make Good',
   'remediation-solutions/water-damage-mould-remediation': 'Water Damage & Mould Remediation',
-  'remediation-solutions/fire-compliance-facade-cladding-remediation': 'Fire Compliance & Facade Cladding Remediation',
 };
 
 const Navigation = () => {

@@ -54,7 +54,7 @@ const IndustryContent = ({ slug }: IndustryContentProps) => {
         <section className="py-12 px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto">
             <p className="text-lg text-muted-foreground leading-relaxed">
-              {industry.introduction}
+              {renderTextWithLinks(industry.introduction)}
             </p>
           </div>
         </section>

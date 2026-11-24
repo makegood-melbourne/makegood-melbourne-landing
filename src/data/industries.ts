@@ -115,11 +115,11 @@ export const industries: Industry[] = [
     title: "Factory & Industrial Make Good Melbourne",
     metaTitle: "Factory & Industrial Make Good Melbourne | MakeGOOD",
     metaDescription: "Factory and industrial make good in Melbourne: plant out, racking removed, floors repaired and hazardous materials handled before handover.",
-    heroText: "Warehouse and industrial make good services for Melbourne factories, warehouses and manufacturing facilities, from pallet racking removal to complete site restoration.",
+    heroText: "Factory and industrial make good for Melbourne manufacturers and industrial tenants: plant out, services made safe, floors repaired and the site handed back.",
     heroImage: industrialHeroImage,
     heroImageAlt: "Empty industrial warehouse after make good restoration with polished concrete floor and steel trusses in Melbourne",
     ogImage: "/og/industrial.jpg",
-    introduction: "Industrial properties present the most complex make good challenges. Decades of manufacturing operations, heavy machinery anchored to floors, oil-stained concrete, hazardous materials and substantial modifications all require specialist handling. We've restored factories and warehouses across Melbourne to handover-ready condition, regardless of what operations occurred there.",
+    introduction: "Factories bring the hardest make goods: heavy machinery anchored to the floor, oil stained concrete, pits, hazardous materials and years of modifications. We plan the order so plant is disconnected and removed before the floor is repaired, and the site is handed back clean. Leaving a warehouse rather than a factory? Our [warehouse make good](/services/make-good-solutions/warehouse-make-good/) covers racking, slabs and line marking.",
     challenges: [
       {
         title: "Heavy Machinery Removal",
