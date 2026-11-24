@@ -7,6 +7,8 @@ import CtaBlock from '../../components/CtaBlock.astro';
 import Footer from '../../components/Footer';
 import NearbyAreas from '../../components/NearbyAreas.astro';
 import { locations, getLocationBySlug } from '../../data/locations';
+import { buildImageVariants } from '@/lib/imageVariants';
+import { locationContentImages } from '../../page-components/LocationContent.tsx';
 
 export function getStaticPaths() {
   return locations.map((location) => ({
@@ -44,6 +46,7 @@ const faqSchema = location.faqs && location.faqs.length > 0 ? {
     "acceptedAnswer": { "@type": "Answer", "text": faq.answer }
   }))
 } : null;
+const imageVariants = await buildImageVariants(locationContentImages);
 ---
 
 <BaseLayout
@@ -60,7 +63,7 @@ const faqSchema = location.faqs && location.faqs.length > 0 ? {
   <LocationHeroSection slug={slug} />
   
   <!-- Interactive content loaded after hero -->
-  <LocationContent slug={slug} client:idle />
+  <LocationContent slug={slug} imageVariants={imageVariants} client:idle />
   
   <!-- Standardized CTA Block -->
   <NearbyAreas slug={slug} name={location.name} />

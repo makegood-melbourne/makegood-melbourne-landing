@@ -40,6 +40,13 @@ import metalRoofSheetingImage from "@/assets/services/commercial-metal-roof-shee
 import boxGutterImage from "@/assets/services/commercial-box-gutter-metal-roof-melbourne.webp";
 import stormRainGutterImage from "@/assets/services/storm-rain-overflowing-roof-gutter-warehouse.webp";
 import roofMaintenanceCardImage from "@/assets/services/commercial-roof-inspection-maintenance-card-melbourne.webp";
+import commercialOfficeMakeGoodMelbourneImg from '@/assets/industries/commercial-office-make-good-melbourne.jpg';
+import ecommerceFulfilmentCartonFlowRackingMelbourneImg from '@/assets/industries/ecommerce-fulfilment-carton-flow-racking-melbourne.jpg';
+import hospitalityVenueKitchenMakeGoodMelbourneImg from '@/assets/industries/hospitality-venue-kitchen-make-good-melbourne.jpg';
+import industrialManufacturingMakeGoodMelbourneImg from '@/assets/industries/industrial-manufacturing-make-good-melbourne.jpg';
+import medicalCentreMakeGoodMelbourneImg from '@/assets/industries/medical-centre-make-good-melbourne.jpg';
+import retailShopfrontMakeGoodMelbourneImg from '@/assets/industries/retail-shopfront-make-good-melbourne.jpg';
+import warehouseLogisticsMakeGoodMelbourneImg from '@/assets/industries/warehouse-logistics-make-good-melbourne.jpg';
 
 export interface SectionLandingFAQ {
   question: string;
@@ -262,7 +269,7 @@ export const sectionLandingPages: SectionLandingData[] = [
       {
         title: "Offices",
         description: "Partitions out. Workstations removed. Walls ready for the make good works that follow.",
-        image: "/images/industries/commercial-office-make-good-melbourne.jpg",
+        image: commercialOfficeMakeGoodMelbourneImg,
         imageAlt: "Professional commercial office space after make good restoration in Melbourne",
         imageTitle: "Office make good and commercial property services Melbourne",
         href: "/industries/commercial/",
@@ -271,7 +278,7 @@ export const sectionLandingPages: SectionLandingData[] = [
       {
         title: "Warehouses & Fulfilment",
         description: "Racking dismantled. Anchors ground. Floors prepared for repair, reinstatement or handover.",
-        image: "/images/industries/warehouse-logistics-make-good-melbourne.jpg",
+        image: warehouseLogisticsMakeGoodMelbourneImg,
         imageAlt: "Industrial warehouse and logistics facility make good services in Melbourne",
         imageTitle: "Warehouse and fulfilment centre make good services Melbourne",
         href: "/industries/warehouses-logistics/",
@@ -280,7 +287,7 @@ export const sectionLandingPages: SectionLandingData[] = [
       {
         title: "Retail",
         description: "Shopfront stripped. Display fixtures removed. Back-of-house areas prepared for centre requirements.",
-        image: "/images/industries/retail-shopfront-make-good-melbourne.jpg",
+        image: retailShopfrontMakeGoodMelbourneImg,
         imageAlt: "Retail shopfront and commercial space make good services in Melbourne",
         imageTitle: "Retail shopfront make good and strip out services Melbourne",
         href: "/industries/commercial/",
@@ -289,7 +296,7 @@ export const sectionLandingPages: SectionLandingData[] = [
       {
         title: "Medical Centres & Suites",
         description: "Treatment rooms de-fitted. Cabinetry removed. Services coordinated for reinstatement.",
-        image: "/images/industries/medical-centre-make-good-melbourne.jpg",
+        image: medicalCentreMakeGoodMelbourneImg,
         imageAlt: "Medical centre and healthcare suite make good services in Melbourne",
         imageTitle: "Medical centre and suite make good services Melbourne",
         href: "/industries/commercial/",
@@ -298,7 +305,7 @@ export const sectionLandingPages: SectionLandingData[] = [
       {
         title: "Industrial & Manufacturing",
         description: "Plant zones cleared. Storage structures removed. Services isolated before the next trade stage.",
-        image: "/images/industries/industrial-manufacturing-make-good-melbourne.jpg",
+        image: industrialManufacturingMakeGoodMelbourneImg,
         imageAlt: "Industrial manufacturing facility make good and restoration services in Melbourne",
         imageTitle: "Industrial and manufacturing property services Melbourne",
         href: "/industries/industrial/",
@@ -307,7 +314,7 @@ export const sectionLandingPages: SectionLandingData[] = [
       {
         title: "Hospitality & Venues",
         description: "Counters removed. Kitchen-adjacent zones stripped. Floors and walls prepared for handover.",
-        image: "/images/industries/hospitality-venue-kitchen-make-good-melbourne.jpg",
+        image: hospitalityVenueKitchenMakeGoodMelbourneImg,
         imageAlt: "Commercial hospitality venue and kitchen make good services in Melbourne",
         imageTitle: "Hospitality venue make good and handover services Melbourne",
         href: "/industries/commercial/",
@@ -484,7 +491,7 @@ export const sectionLandingPages: SectionLandingData[] = [
       {
         title: "Offices",
         description: "Partitions down. Walls patched. Ceilings, floors and finishes brought back for handover.",
-        image: "/images/industries/commercial-office-make-good-melbourne.jpg",
+        image: commercialOfficeMakeGoodMelbourneImg,
         imageAlt: "Professional commercial office space after make good restoration in Melbourne",
         imageTitle: "Office make good and commercial property services Melbourne",
         href: "/industries/commercial/",
@@ -493,7 +500,7 @@ export const sectionLandingPages: SectionLandingData[] = [
       {
         title: "Warehouses & Fulfilment",
         description: "Racking out. Slabs repaired. Line marking, floors and loading areas prepared for inspection.",
-        image: "/images/industries/warehouse-logistics-make-good-melbourne.jpg",
+        image: warehouseLogisticsMakeGoodMelbourneImg,
         imageAlt: "Industrial warehouse and logistics facility make good services in Melbourne",
         imageTitle: "Warehouse and fulfilment centre make good services Melbourne",
         href: "/services/make-good-solutions/warehouse-make-good/",
@@ -502,7 +509,7 @@ export const sectionLandingPages: SectionLandingData[] = [
       {
         title: "Retail",
         description: "Fitout removed. Surfaces repaired. Shopfront and back-of-house areas prepared for centre standards.",
-        image: "/images/industries/retail-shopfront-make-good-melbourne.jpg",
+        image: retailShopfrontMakeGoodMelbourneImg,
         imageAlt: "Retail shopfront and commercial space make good services in Melbourne",
         imageTitle: "Retail shopfront make good and strip out services Melbourne",
         href: "/industries/commercial/",
@@ -511,7 +518,7 @@ export const sectionLandingPages: SectionLandingData[] = [
       {
         title: "Medical Centres & Suites",
         description: "Rooms reinstated. Plumbing points reviewed. Floors, walls and cabinetry areas prepared for return.",
-        image: "/images/industries/medical-centre-make-good-melbourne.jpg",
+        image: medicalCentreMakeGoodMelbourneImg,
         imageAlt: "Medical centre and healthcare suite make good services in Melbourne",
         imageTitle: "Medical centre and suite make good services Melbourne",
         href: "/industries/commercial/",
@@ -520,7 +527,7 @@ export const sectionLandingPages: SectionLandingData[] = [
       {
         title: "Industrial & Manufacturing",
         description: "Plant out. Floor damage repaired. Work zones restored around the agreed handover scope.",
-        image: "/images/industries/industrial-manufacturing-make-good-melbourne.jpg",
+        image: industrialManufacturingMakeGoodMelbourneImg,
         imageAlt: "Industrial manufacturing facility make good and restoration services in Melbourne",
         imageTitle: "Industrial and manufacturing property services Melbourne",
         href: "/industries/industrial/",
@@ -529,7 +536,7 @@ export const sectionLandingPages: SectionLandingData[] = [
       {
         title: "Hospitality & Venues",
         description: "Fixtures removed. Service points coordinated. Floors, walls and seating areas prepared for handover.",
-        image: "/images/industries/hospitality-venue-kitchen-make-good-melbourne.jpg",
+        image: hospitalityVenueKitchenMakeGoodMelbourneImg,
         imageAlt: "Commercial hospitality venue and kitchen make good services in Melbourne",
         imageTitle: "Hospitality venue make good and handover services Melbourne",
         href: "/industries/commercial/",
@@ -693,7 +700,7 @@ export const sectionLandingPages: SectionLandingData[] = [
       {
         title: "Offices",
         description: "Final presentation arranged. Amenities checked. Floors, kitchens and work areas ready for inspection.",
-        image: "/images/industries/commercial-office-make-good-melbourne.jpg",
+        image: commercialOfficeMakeGoodMelbourneImg,
         imageAlt: "Professional commercial office space after make good restoration in Melbourne",
         imageTitle: "Office make good and commercial property services Melbourne",
         href: "/industries/commercial/",
@@ -702,7 +709,7 @@ export const sectionLandingPages: SectionLandingData[] = [
       {
         title: "Warehouses & Fulfilment",
         description: "Floors presented. Waste removed. Loading areas, docks and access points ready for handback.",
-        image: "/images/industries/warehouse-logistics-make-good-melbourne.jpg",
+        image: warehouseLogisticsMakeGoodMelbourneImg,
         imageAlt: "Industrial warehouse and logistics facility make good services in Melbourne",
         imageTitle: "Warehouse and fulfilment centre make good services Melbourne",
         href: "/industries/warehouses-logistics/",
@@ -711,7 +718,7 @@ export const sectionLandingPages: SectionLandingData[] = [
       {
         title: "Retail",
         description: "Display areas cleared. Shopfront touch-points checked. Back-of-house areas prepared for centre review.",
-        image: "/images/industries/retail-shopfront-make-good-melbourne.jpg",
+        image: retailShopfrontMakeGoodMelbourneImg,
         imageAlt: "Retail shopfront and commercial space make good services in Melbourne",
         imageTitle: "Retail shopfront make good and strip out services Melbourne",
         href: "/industries/commercial/",
@@ -720,7 +727,7 @@ export const sectionLandingPages: SectionLandingData[] = [
       {
         title: "Medical Centres & Suites",
         description: "Treatment rooms presented. Flooring, cabinetry zones and service areas prepared for inspection.",
-        image: "/images/industries/medical-centre-make-good-melbourne.jpg",
+        image: medicalCentreMakeGoodMelbourneImg,
         imageAlt: "Medical centre and healthcare suite make good services in Melbourne",
         imageTitle: "Medical centre and suite make good services Melbourne",
         href: "/industries/commercial/",
@@ -729,7 +736,7 @@ export const sectionLandingPages: SectionLandingData[] = [
       {
         title: "Industrial & Manufacturing",
         description: "Equipment zones cleared. Floors, drains and work areas prepared for the final handover path.",
-        image: "/images/industries/industrial-manufacturing-make-good-melbourne.jpg",
+        image: industrialManufacturingMakeGoodMelbourneImg,
         imageAlt: "Industrial manufacturing facility make good and restoration services in Melbourne",
         imageTitle: "Industrial and manufacturing property services Melbourne",
         href: "/industries/industrial/",
@@ -738,7 +745,7 @@ export const sectionLandingPages: SectionLandingData[] = [
       {
         title: "Hospitality & Venues",
         description: "Kitchen-adjacent areas presented. Service points checked. Floors and seating areas ready to hand over.",
-        image: "/images/industries/hospitality-venue-kitchen-make-good-melbourne.jpg",
+        image: hospitalityVenueKitchenMakeGoodMelbourneImg,
         imageAlt: "Commercial hospitality venue and kitchen make good services in Melbourne",
         imageTitle: "Hospitality venue make good and handover services Melbourne",
         href: "/industries/commercial/",
@@ -899,7 +906,7 @@ export const sectionLandingPages: SectionLandingData[] = [
       {
         title: "Offices",
         description: "Facade leaks, glazing issues and water ingress managed around occupied commercial buildings.",
-        image: "/images/industries/commercial-office-make-good-melbourne.jpg",
+        image: commercialOfficeMakeGoodMelbourneImg,
         imageAlt: "Professional commercial office space after make good restoration in Melbourne",
         imageTitle: "Office make good and commercial property services Melbourne",
         href: "/industries/commercial/",
@@ -908,7 +915,7 @@ export const sectionLandingPages: SectionLandingData[] = [
       {
         title: "Warehouses & Fulfilment",
         description: "Roof sheets, skylights, slab defects and loading area damage addressed around site access.",
-        image: "/images/industries/warehouse-logistics-make-good-melbourne.jpg",
+        image: warehouseLogisticsMakeGoodMelbourneImg,
         imageAlt: "Industrial warehouse and logistics facility make good services in Melbourne",
         imageTitle: "Warehouse and fulfilment centre make good services Melbourne",
         href: "/industries/warehouses-logistics/",
@@ -917,7 +924,7 @@ export const sectionLandingPages: SectionLandingData[] = [
       {
         title: "Retail",
         description: "Facade presentation, glazing, water damage and access windows coordinated around trading environments.",
-        image: "/images/industries/retail-shopfront-make-good-melbourne.jpg",
+        image: retailShopfrontMakeGoodMelbourneImg,
         imageAlt: "Retail shopfront and commercial space make good services in Melbourne",
         imageTitle: "Retail shopfront make good and strip out services Melbourne",
         href: "/industries/commercial/",
@@ -926,7 +933,7 @@ export const sectionLandingPages: SectionLandingData[] = [
       {
         title: "Medical Centres & Suites",
         description: "Water ingress, mould-affected areas and sensitive room reinstatement planned around building use.",
-        image: "/images/industries/medical-centre-make-good-melbourne.jpg",
+        image: medicalCentreMakeGoodMelbourneImg,
         imageAlt: "Medical centre and healthcare suite make good services in Melbourne",
         imageTitle: "Medical centre and suite make good services Melbourne",
         href: "/industries/commercial/",
@@ -935,7 +942,7 @@ export const sectionLandingPages: SectionLandingData[] = [
       {
         title: "Industrial & Manufacturing",
         description: "Structural wear, slab deterioration, roof leaks and drainage issues repaired around production zones.",
-        image: "/images/industries/industrial-manufacturing-make-good-melbourne.jpg",
+        image: industrialManufacturingMakeGoodMelbourneImg,
         imageAlt: "Industrial manufacturing facility make good and restoration services in Melbourne",
         imageTitle: "Industrial and manufacturing property services Melbourne",
         href: "/industries/industrial/",
@@ -944,7 +951,7 @@ export const sectionLandingPages: SectionLandingData[] = [
       {
         title: "Hospitality & Venues",
         description: "Water damage, flooring defects, service leaks and back-of-house repairs coordinated for venue use.",
-        image: "/images/industries/hospitality-venue-kitchen-make-good-melbourne.jpg",
+        image: hospitalityVenueKitchenMakeGoodMelbourneImg,
         imageAlt: "Commercial hospitality venue and kitchen make good services in Melbourne",
         imageTitle: "Hospitality venue make good and handover services Melbourne",
         href: "/industries/commercial/",
@@ -1050,7 +1057,7 @@ export const sectionLandingPages: SectionLandingData[] = [
         link: "/services/roofing-solutions/roof-leak-repairs/",
         linkLabel: "View leak repairs",
         image: rooferHarnessImage,
-        imageAlt: "Roofer in a safety harness fixing metal roof sheets on a commercial warehouse",
+        imageAlt: "Close up of a roofer in a hard hat and harness drilling fixings into a metal roof sheet",
         imageTitle: "Commercial Roof Leak Repairs Melbourne"
       },
       {
@@ -1059,7 +1066,7 @@ export const sectionLandingPages: SectionLandingData[] = [
         link: "/services/roofing-solutions/metal-roof-replacement/",
         linkLabel: "View metal roof replacement",
         image: metalRoofSheetingImage,
-        imageAlt: "New metal deck roof sheeting across a large industrial warehouse roof",
+        imageAlt: "Rows of metal deck roof sheeting stretching across an industrial roof towards neighbouring factory buildings",
         imageTitle: "Metal Roof Replacement Melbourne"
       },
       {
@@ -1068,7 +1075,7 @@ export const sectionLandingPages: SectionLandingData[] = [
         link: "/services/roofing-solutions/box-gutters-roof-drainage/",
         linkLabel: "View box gutters",
         image: boxGutterImage,
-        imageAlt: "Galvanised box gutter and flashings between corrugated metal roof sheets on a commercial building",
+        imageAlt: "Long galvanised box gutter running down a commercial metal roof between two roof vents",
         imageTitle: "Box Gutters and Roof Drainage Melbourne"
       },
       {
@@ -1086,7 +1093,7 @@ export const sectionLandingPages: SectionLandingData[] = [
         link: "/services/roofing-solutions/storm-damage-make-safe/",
         linkLabel: "View storm make safe",
         image: stormRainGutterImage,
-        imageAlt: "Heavy rain pouring over a gutter beneath a metal warehouse roof during a storm",
+        imageAlt: "Rainwater spilling over the edge of a gutter under a warehouse roof in a downpour",
         imageTitle: "Storm Damage Roof Make Safe Melbourne"
       },
       {
@@ -1107,7 +1114,7 @@ export const sectionLandingPages: SectionLandingData[] = [
       {
         title: "Offices",
         description: "Leak fixed. Ceiling tiles replaced. Nobody moves desks.",
-        image: "/images/industries/commercial-office-make-good-melbourne.jpg",
+        image: commercialOfficeMakeGoodMelbourneImg,
         imageAlt: "Professional commercial office space after make good restoration in Melbourne",
         imageTitle: "Office make good and commercial property services Melbourne",
         href: "/industries/commercial/",
@@ -1116,7 +1123,7 @@ export const sectionLandingPages: SectionLandingData[] = [
       {
         title: "Warehouses & Fulfilment",
         description: "Sheets replaced. Box gutters cleared. Stock kept dry.",
-        image: "/images/industries/warehouse-logistics-make-good-melbourne.jpg",
+        image: warehouseLogisticsMakeGoodMelbourneImg,
         imageAlt: "Industrial warehouse and logistics facility make good services in Melbourne",
         imageTitle: "Warehouse and fulfilment centre make good services Melbourne",
         href: "/industries/warehouses-logistics/",
@@ -1125,7 +1132,7 @@ export const sectionLandingPages: SectionLandingData[] = [
       {
         title: "Retail",
         description: "Fixed before opening. Shoppers none the wiser.",
-        image: "/images/industries/retail-shopfront-make-good-melbourne.jpg",
+        image: retailShopfrontMakeGoodMelbourneImg,
         imageAlt: "Retail shopfront and commercial space make good services in Melbourne",
         imageTitle: "Retail shopfront make good and strip out services Melbourne",
         href: "/industries/commercial/",
@@ -1134,7 +1141,7 @@ export const sectionLandingPages: SectionLandingData[] = [
       {
         title: "Medical Centres & Suites",
         description: "Water kept well away from the treatment rooms.",
-        image: "/images/industries/medical-centre-make-good-melbourne.jpg",
+        image: medicalCentreMakeGoodMelbourneImg,
         imageAlt: "Medical centre and healthcare suite make good services in Melbourne",
         imageTitle: "Medical centre and suite make good services Melbourne",
         href: "/industries/commercial/",
@@ -1143,7 +1150,7 @@ export const sectionLandingPages: SectionLandingData[] = [
       {
         title: "Industrial & Manufacturing",
         description: "The line keeps running while we work above it.",
-        image: "/images/industries/industrial-manufacturing-make-good-melbourne.jpg",
+        image: industrialManufacturingMakeGoodMelbourneImg,
         imageAlt: "Industrial manufacturing facility make good and restoration services in Melbourne",
         imageTitle: "Industrial and manufacturing property services Melbourne",
         href: "/industries/industrial/",
@@ -1152,7 +1159,7 @@ export const sectionLandingPages: SectionLandingData[] = [
       {
         title: "Hospitality & Venues",
         description: "Exhaust flues resealed. Service carries on.",
-        image: "/images/industries/hospitality-venue-kitchen-make-good-melbourne.jpg",
+        image: hospitalityVenueKitchenMakeGoodMelbourneImg,
         imageAlt: "Commercial hospitality venue and kitchen make good services in Melbourne",
         imageTitle: "Hospitality venue make good and handover services Melbourne",
         href: "/industries/commercial/",
@@ -1294,7 +1301,7 @@ export const sectionLandingPages: SectionLandingData[] = [
       {
         title: "E-commerce & Fulfilment",
         description: "Bulk stock up high. Pick faces down low. Orders out the door faster.",
-        image: "/images/industries/ecommerce-fulfilment-carton-flow-racking-melbourne.jpg",
+        image: ecommerceFulfilmentCartonFlowRackingMelbourneImg,
         imageAlt: "Carton flow racking with roller lanes for order picking in a Melbourne fulfilment warehouse",
         imageTitle: "E-commerce fulfilment warehouse racking Melbourne",
         href: "/industries/warehouses-logistics/",
@@ -1303,14 +1310,14 @@ export const sectionLandingPages: SectionLandingData[] = [
       {
         title: "3PL & Distribution",
         description: "Clients change and layouts change with them. Racking reworked without shutting the dock.",
-        image: "/images/industries/warehouse-logistics-make-good-melbourne.jpg",
+        image: warehouseLogisticsMakeGoodMelbourneImg,
         imageAlt: "Distribution warehouse and logistics facility in Melbourne",
         imageTitle: "3PL and distribution warehouse racking Melbourne"
       },
       {
         title: "Industrial & Manufacturing",
         description: "Raw materials and finished goods, stored where the line needs them.",
-        image: "/images/industries/industrial-manufacturing-make-good-melbourne.jpg",
+        image: industrialManufacturingMakeGoodMelbourneImg,
         imageAlt: "Industrial manufacturing facility in Melbourne",
         imageTitle: "Industrial and manufacturing racking Melbourne",
         href: "/industries/industrial/",

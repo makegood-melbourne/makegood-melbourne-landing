@@ -9,6 +9,8 @@ import ServiceLinks from '../../components/ServiceLinks.astro';
 import { getSectionLandingBySlug } from '../../data/sectionLanding';
 import handoverHero from '../../assets/services/commercial-industrial-handover-ready-warehouse-melbourne.webp';
 import handoverHeroMobile from '../../assets/services/commercial-industrial-handover-ready-warehouse-melbourne-mobile.webp';
+import { buildImageVariants } from '@/lib/imageVariants';
+import { referencedServiceHeroImages } from '@/lib/pageImages';
 const data = getSectionLandingBySlug('handover-solutions');
 if (!data) {
   return Astro.redirect('/services/');
@@ -51,6 +53,8 @@ const faqSchema = data.faqs && data.faqs.length > 0 ? {
     }
   }))
 } : null;
+
+const imageVariants = await buildImageVariants(data, referencedServiceHeroImages(data));
 ---
 <BaseLayout
   title={data.metaTitle}
@@ -58,8 +62,8 @@ const faqSchema = data.faqs && data.faqs.length > 0 ? {
   ogImage={data.ogImage || "/og-default.jpg"}
   canonicalUrl="https://makegood.melbourne/services/handover-solutions/"
 >
-  <link slot="head" rel="preload" as="image" href={handoverHeroMobile.src} fetchpriority="high" media="(max-width: 1023px)" />
-  <link slot="head" rel="preload" as="image" href={handoverHero.src} fetchpriority="high" media="(min-width: 1024px)" />
+  <link slot="head" rel="preload" as="image" imagesrcset={imageVariants[handoverHeroMobile.src]?.srcSet} imagesizes="100vw" fetchpriority="high" media="(max-width: 1023px)" />
+  <link slot="head" rel="preload" as="image" imagesrcset={imageVariants[handoverHero.src]?.srcSet} imagesizes="600px" fetchpriority="high" media="(min-width: 1024px)" />
   <script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
   {faqSchema && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
   <div class="min-h-screen flex flex-col bg-background">
@@ -79,7 +83,7 @@ const faqSchema = data.faqs && data.faqs.length > 0 ? {
     </div>
 
     <main id="main-content" class="flex-1">
-      <SectionLandingTemplate data={data} client:idle />
+      <SectionLandingTemplate imageVariants={imageVariants} data={data} client:idle />
       <ServiceLinks serviceSlug="handover-solutions" serviceName="Handover" />
     </main>
 

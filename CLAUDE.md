@@ -11,3 +11,10 @@
   - 
 - Every new blog post must be added to `blogTopicAndService` in `src/data/internalLinks.ts` with a `topic`, a `service` and `industries` (best fit first; options: commercial, industrial, warehouses-logistics, retail, medical-centres, hospitality-venues). The build fails if any of these is missing. Once tagged, the post appears automatically in the "From the blog" block on its service page, in related posts on its topic and on the matching industry pages.
 - Every indexable page needs exactly one H1, a unique title (main topic first, under about 60 characters, ending "| MakeGOOD Melbourne" or "| MakeGOOD" if that doesn't fit) and a unique meta description of about 120 to 155 characters. `scripts/check-seo.mjs` runs in the build and fails on a missing or duplicate H1, title or description; it warns on length and brand ending. Blog posts with long titles set a shorter `seoTitle`. Don't change the homepage title without asking first.
+
+# Page and SEO standards
+
+- Before adding or changing any page, blog post, service, area or industry page, read and follow [docs/SEO-STANDARDS.md](docs/SEO-STANDARDS.md). It is the checklist for titles, H1s, meta descriptions, opening sentences, images, internal links, link blocks, sitemap, unique copy, tone of voice, lastmod dates and contact details.
+- `npm run build` must pass. It runs `build-sitemap`, `check-links`, `check-seo`, `check-images` and `check-content` after `astro build`, and fails on anything those scripts can detect. Read the build warnings too and fix the ones your change caused.
+- Images: import originals from `src/assets/` and render them with `<Image>` in `.astro` files or `<ResponsiveImg>` in React components, with the page passing `imageVariants` from `buildImageVariants()`. Never put page images in `public/` or reference a JPG or PNG directly.
+- Fill in the checklist in the PR description (`.github/pull_request_template.md`) for every PR.

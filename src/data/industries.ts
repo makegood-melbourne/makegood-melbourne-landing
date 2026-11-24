@@ -1,9 +1,13 @@
+import type { ImageMetadata } from 'astro';
 import commercialHeroImage from "@/assets/industries/commercial-office-make-good-polished-concrete-melbourne.jpeg";
 import industrialHeroImage from "@/assets/industries/industrial-warehouse-make-good-empty-floor-melbourne.jpeg";
 import fulfilmentFitOutHeroImage from "@/assets/industries/fulfilment-warehouse-fit-out-carton-flow-racking-melbourne.webp";
 import fitOutRackingImage from "@/assets/industries/warehouse-fulfilment-centre-racking-make-good-melbourne.webp";
 import fitOutSlabImage from "@/assets/services/warehouse-floor-repairs-scope-polished-concrete-melbourne.jpeg";
 import fitOutLineMarkingImage from "@/assets/services/warehouse-fresh-yellow-line-marking-polished-concrete-melbourne.jpg";
+import hospitalityVenueKitchenMakeGoodMelbourneImg from '@/assets/industries/hospitality-venue-kitchen-make-good-melbourne.jpg';
+import medicalCentreMakeGoodMelbourneImg from '@/assets/industries/medical-centre-make-good-melbourne.jpg';
+import retailShopfrontMakeGoodMelbourneImg from '@/assets/industries/retail-shopfront-make-good-melbourne.jpg';
 
 
 export interface FeaturedSection {
@@ -21,7 +25,7 @@ export interface Industry {
   metaTitle: string;
   metaDescription: string;
   heroText: string;
-  heroImage?: string;
+  heroImage?: string | ImageMetadata;
   heroImageAlt?: string;
   heroImagePlaceholder?: string; // Description of ideal hero image
   ogImage?: string; // Public URL for Open Graph image
@@ -316,7 +320,7 @@ export const industries: Industry[] = [
     "metaTitle": "Retail & Shopfront Make Good Melbourne | MakeGOOD",
     "metaDescription": "Retail make good for Melbourne shops and shopping centre tenancies: fitout out, shopfront, floors, ceilings and paint to centre standard.",
     "heroText": "Retail make good for Melbourne shopfronts, strip shops and shopping centre tenancies. We remove the fitout, restore the shell and hand back to your landlord's standard.",
-    "heroImage": "/images/industries/retail-shopfront-make-good-melbourne.jpg",
+    "heroImage": retailShopfrontMakeGoodMelbourneImg,
     "heroImageAlt": "Retail shopfront tenancy stripped back for make good in Melbourne",
     "ogImage": "/og/commercial.jpg",
     "introduction": "Retail leases usually set a clear handback standard: fixtures and signage out, services capped, and floors, walls and ceilings returned to the landlord's base condition. Shopping centres add design criteria, trading hours and access rules on top. We review your lease, plan the works around centre requirements and deliver every trade under one fixed price quote.",
@@ -376,7 +380,7 @@ export const industries: Industry[] = [
     "metaTitle": "Medical Centre & Clinic Make Good Melbourne | MakeGOOD",
     "metaDescription": "Make good for Melbourne medical centres and clinics: fitout and joinery out, services capped, floors, painting and a compliant handover.",
     "heroText": "Make good for Melbourne medical centres, dental and allied health clinics and consulting suites. Fitout removed, services capped and the space cleared for handover.",
-    "heroImage": "/images/industries/medical-centre-make-good-melbourne.jpg",
+    "heroImage": medicalCentreMakeGoodMelbourneImg,
     "heroImageAlt": "Medical centre consulting suite after fitout removal and make good in Melbourne",
     "ogImage": "/og/commercial.jpg",
     "introduction": "Clinical fitouts are more heavily serviced than a standard office. Hand basins, plumbing to treatment rooms, specialised joinery, medical gas outlets and imaging rooms all have to be dealt with before the space can be handed back. We coordinate licensed trades, disposal and cleaning under one fixed price quote so you can meet your lease end date.",
@@ -436,7 +440,7 @@ export const industries: Industry[] = [
     "metaTitle": "Hospitality & Kitchen Make Good Melbourne | MakeGOOD",
     "metaDescription": "Make good for Melbourne restaurants, cafes, bars and commercial kitchens: kitchen strip out, services capped, floors and handover.",
     "heroText": "Make good for Melbourne restaurants, cafes, bars and venues. Kitchen equipment removed, services made safe and the floor ready to hand over.",
-    "heroImage": "/images/industries/hospitality-venue-kitchen-make-good-melbourne.jpg",
+    "heroImage": hospitalityVenueKitchenMakeGoodMelbourneImg,
     "heroImageAlt": "Commercial kitchen stripped out for hospitality make good in Melbourne",
     "ogImage": "/og/commercial.jpg",
     "introduction": "Hospitality tenancies carry heavy fixed equipment and extensive services. Exhaust canopies and ducting, grease traps, gas and electrical connections, coolrooms and bar fitouts all need to be removed or capped before handback. We plan the sequence, use licensed trades for services and deliver the whole scope under one fixed price quote.",

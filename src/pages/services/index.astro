@@ -139,9 +139,12 @@ const faqSchema = {
                   src={servicesHeroMobile}
                   alt="Steel roof trusses and skylights in a large empty Melbourne warehouse ready for make good, racking and roofing works"
                   class="aspect-[4/3] w-full object-cover rounded-lg"
-                  width={800}
-                  height={600}
+                  width={1200}
+                  widths={[400, 800, 1200]}
+                  sizes="(max-width: 1023px) 100vw, 1px"
                   loading="eager"
+                  fetchpriority="high"
+                  quality={60}
                 />
               </div>
               <p class="services-hero__copy">
@@ -162,9 +165,12 @@ const faqSchema = {
                 src={servicesHero}
                 alt="Steel roof trusses and skylights in a large empty Melbourne warehouse ready for make good, racking and roofing works"
                 class="aspect-[4/3] w-full object-cover rounded-lg"
-                width={1600}
-                height={1067}
+                width={1200}
+                widths={[400, 800, 1200]}
+                sizes="(max-width: 1023px) 1px, 600px"
                 loading="eager"
+                fetchpriority="high"
+                quality={60}
               />
             </div>
           </div>

@@ -1,16 +1,27 @@
+import ResponsiveImg, { ImageVariantsProvider } from "@/components/ResponsiveImg";
+import type { ImageVariants } from "@/lib/imageVariantTypes";
 import { renderTextWithLinks } from "@/lib/textWithLinks";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { getLocationBySlug } from "@/data/locations";
-import { resolveImageSrc } from "@/lib/resolveImageSrc";
 import handoverImage from "@/assets/locations/handover-ready-warehouse-mezzanine-polished-concrete-melbourne.jpg";
+
+/** Images LocationContent renders, for buildImageVariants() in the page. */
+export const locationContentImages = [handoverImage];
 
 interface LocationContentProps {
   slug: string;
+  imageVariants?: ImageVariants;
 }
 
-const LocationContent = ({ slug }: LocationContentProps) => {
+const LocationContent = ({ imageVariants, ...props }: LocationContentProps) => (
+  <ImageVariantsProvider value={imageVariants}>
+    <LocationContentInner {...props} />
+  </ImageVariantsProvider>
+);
+
+const LocationContentInner = ({ slug }: Omit<LocationContentProps, "imageVariants">) => {
   const location = getLocationBySlug(slug);
 
   if (!location) {
@@ -137,7 +148,7 @@ const LocationContent = ({ slug }: LocationContentProps) => {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="order-2 lg:order-1">
                 <div className="aspect-[4/3] rounded-lg overflow-hidden">
-                  <img src={resolveImageSrc(handoverImage)} alt="Empty warehouse with polished concrete floor and mezzanine, ready for lease handover" className="w-full h-full object-cover" width={800} height={600} loading="lazy" decoding="async" />
+                  <ResponsiveImg image={handoverImage} sizes="(max-width: 1024px) 100vw, 600px" alt="Empty warehouse with polished concrete floor and mezzanine, ready for lease handover" className="w-full h-full object-cover" />
                 </div>
               </div>
               <div className="order-1 lg:order-2">

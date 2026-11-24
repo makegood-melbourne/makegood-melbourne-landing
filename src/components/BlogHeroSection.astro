@@ -69,11 +69,12 @@ const heroImage = imageModule?.default;
         src={heroImage}
         alt={post.imageAlt || post.title}
         class="w-full h-full object-cover"
+        width={800}
         widths={[360, 640, 800]}
         sizes="(max-width: 640px) 360px, (max-width: 1024px) 640px, 800px"
         loading="eager"
-        decoding="async"
-        quality={70}
+        fetchpriority="high"
+        quality={60}
       />
     ) : (
       <div class="w-full h-full bg-muted/30 flex items-center justify-center">
