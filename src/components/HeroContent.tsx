@@ -25,15 +25,15 @@ const HeroContent = () => {
             className="hero-reveal text-3xl sm:text-4xl md:text-5xl text-foreground leading-tight font-bold"
             style={{ fontFamily: "'PP Neue Montreal', sans-serif", ...reveal(0) }}
           >
-            Commercial Make Good, Strip Out &amp; Remediation in Melbourne
+            Warehouse &amp; Commercial Make Good in Melbourne
           </h1>
 
-          {/* Subtitle: who it is for */}
+          {/* Subtitle: the main services, so strip out and remediation stay near the top */}
           <p
             className="hero-reveal mt-3 text-xs md:text-sm tracking-[0.2em] uppercase font-light"
             style={{ color: "rgba(255, 255, 255, 0.55)", ...reveal(60) }}
           >
-            Offices, Warehouses &amp; Industrial Properties
+            End of Lease, Strip Out &amp; Remediation
           </p>
 
           {/* Brand tagline: styled as a heading but not a heading element,
