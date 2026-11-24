@@ -51,7 +51,7 @@ const LocationContentInner = ({ slug }: Omit<LocationContentProps, "imageVariant
                   </div>
                 </div>
                 <div className="bg-card border border-border rounded-lg p-8">
-                  <h3 className="text-xl md:text-2xl font-bold text-foreground mb-6">{location.name} Make Good Expertise</h3>
+                  <h3 className="text-xl md:text-2xl font-bold text-foreground mb-6">What we do in {location.name}</h3>
                   <div className="space-y-6">
                     {location.localExpertise.map((item, index) => (
                       <div key={index} className="flex items-start gap-4">

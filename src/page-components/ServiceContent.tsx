@@ -306,10 +306,10 @@ const ServiceContentInner = ({ slug }: Omit<ServiceContentProps, "imageVariants"
         <section className={`py-16 ${bgSpotlight}`}>
           <div className="container mx-auto px-4">
             <h2 className="text-3xl md:text-4xl text-foreground mb-4">
-              DELIVERING PROVEN <span className="text-primary">SOLUTIONS</span>
+              WHAT WE <span className="text-primary">REPAIR</span>
             </h2>
             <p className="text-lg text-foreground mb-10">
-              From concrete degradation to slab settlement, our team is equipped to manage complex structural challenges. We deliver proven, engineered solutions for a range of critical building failures.
+              From concrete cancer to slabs that have settled, these are the defects we fix most often, always to an engineer's design.
             </p>
             <div className="grid md:grid-cols-3 gap-6">
               {service.spotlightCards.map((card, index) => (
