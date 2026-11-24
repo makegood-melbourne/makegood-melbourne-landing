@@ -4,6 +4,7 @@
 //   - shows an em dash in its visible text (house style: use commas, full stops or a colon)
 //   - has a phone number in its visible text, a tel: link or a "telephone" in structured data
 //   - mentions the Kew office address anywhere, including structured data
+//   - shows raw markdown in its text: a link like [text](/page/) or **bold** that wasn't rendered
 // Prints warnings (without failing) for indexable pages that fewer than three other pages
 // link to from their main content (navigation, header and footer links don't count).
 import { readFileSync, readdirSync, statSync } from 'node:fs';
@@ -59,6 +60,11 @@ for (const file of walk(DIST).filter((f) => f.endsWith('.html'))) {
   if (/href="tel:/i.test(html)) failures.push(`${page}  tel: link`);
   if (/"telephone"\s*:/i.test(html)) failures.push(`${page}  "telephone" in structured data`);
 
+  const rawLink = text.match(/\[[^\]]{1,80}\]\((?:\/|https?:)[^)\s]*\)/);
+  if (rawLink) failures.push(`${page}  raw markdown link in page text: ${rawLink[0]}`);
+  const rawBold = text.match(/\*\*[^*\s][^*]{0,60}\*\*/);
+  if (rawBold) failures.push(`${page}  raw markdown bold in page text: ${rawBold[0]}`);
+
   const kew = html.match(KEW);
   if (kew) failures.push(`${page}  Kew office address: ${kew[0]}`);
 }
@@ -98,4 +104,4 @@ if (failures.length) {
   process.exit(1);
 }
 
-console.log(`[content] ${pages.size} pages checked. No em dashes, phone numbers or Kew address.`);
+console.log(`[content] ${pages.size} pages checked. No em dashes, raw markdown, phone numbers or Kew address.`);

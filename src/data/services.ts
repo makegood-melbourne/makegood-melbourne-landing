@@ -819,6 +819,7 @@ export const services: Service[] = [
           "Window and facade cleaning",
           "Carpet and hard floor cleaning",
           "Kitchen and amenities deep clean",
+          "Air conditioning registers and ceiling tiles",
           "Final inspection preparation",
           "After-hours and weekend availability"
         ]
@@ -898,6 +899,10 @@ export const services: Service[] = [
       {
         question: "Will this pass my landlord's final inspection?",
         answer: "That's exactly what we prepare for. Unlike maintenance cleaning, our focus is intensive restoration for lease handover. We clean to handover standard, not just tidy. If there are specific requirements in your lease, let us know and we'll address them."
+      },
+      {
+        question: "Can you fix the small things the landlord will notice at inspection?",
+        answer: "Yes. Alongside the clean we can wipe down or clean the air conditioning registers, clean or replace stained ceiling tiles, replace failed light tubes and patch and touch up dented or marked walls. They're small jobs, but they're often what a final inspection picks up."
       }
     ],
     ctaBlock: {

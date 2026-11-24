@@ -7,18 +7,13 @@ import cleaningImage from "@/assets/blog/cleaning-services.webp";
 import paintingImage from "@/assets/blog/painting-wall.webp";
 import asbestosCementRoofImage from "@/assets/blog/asbestos-cement-warehouse-roof-replacement-melbourne.webp";
 import warehouseImage from "@/assets/blog/warehouse-makegood.webp";
-import propertyImage from "@/assets/blog/property-transformation.webp";
-import newYearImage from "@/assets/blog/new-year-makegood.webp";
 import officeStripOutImage from "@/assets/blog/office-strip-out.webp";
 import constructionMeetingImage from "@/assets/blog/construction-site-meeting.webp";
 import medicalDentalClinicImage from "@/assets/blog/dental-clinic-strip-out-make-good-melbourne.webp";
 import epoxyFlooringImage from "@/assets/blog/epoxy-flooring.webp";
-import palletRackingImage from "@/assets/blog/pallet-racking.webp";
 import commercialMakeGoodImage from "@/assets/blog/commercial-make-good.webp";
-import conditionReportImage from "@/assets/blog/condition-report.webp";
 import leaseTransitionsImage from "@/assets/blog/lease-transitions.webp";
 import makeGoodServicesImage from "@/assets/blog/make-good-services.webp";
-import tenantLandlordImage from "@/assets/blog/tenant-landlord-communication.webp";
 import restaurantCafeMakeGoodImage from "@/assets/blog/commercial-kitchen-strip-out-make-good-melbourne.webp";
 import smoothMakeGoodImage from "@/assets/blog/smooth-make-good-experience.webp";
 import concreteCancerImage from "@/assets/blog/concrete-cancer.webp";
@@ -62,18 +57,13 @@ const imageMap: Record<string, unknown> = {
   'cleaning-services': cleaningImage,
   'painting-wall': paintingImage,
   'warehouse-makegood': warehouseImage,
-  'property-transformation': propertyImage,
-  'new-year-makegood': newYearImage,
   'office-strip-out': officeStripOutImage,
   'construction-site-meeting': constructionMeetingImage,
   'epoxy-flooring': epoxyFlooringImage,
   'asbestos-cement-warehouse-roof-replacement-melbourne': asbestosCementRoofImage,
-  'pallet-racking': palletRackingImage,
   'commercial-make-good': commercialMakeGoodImage,
-  'condition-report': conditionReportImage,
   'lease-transitions': leaseTransitionsImage,
   'make-good-services': makeGoodServicesImage,
-  'tenant-landlord-communication': tenantLandlordImage,
   'smooth-make-good-experience': smoothMakeGoodImage,
   'concrete-cancer': concreteCancerImage,
   'balcony-waterproofing': balconyWaterproofingImage,

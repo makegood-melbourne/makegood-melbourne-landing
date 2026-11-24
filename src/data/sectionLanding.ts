@@ -1343,6 +1343,10 @@ export const sectionLandingPages: SectionLandingData[] = [
         answer: "Both. We supply and install, or install racking you already own. Either way we confirm the bay sizes and load ratings suit what you're storing first."
       },
       {
+        question: "Should we buy new or used racking?",
+        answer: "Used racking can save money when it's in good condition, from a known manufacturer and suits your bay sizes and load ratings. New racking makes sense when you need specific sizes, higher loads or a layout the used stock can't match. Either way we check it suits what you're storing before it goes up."
+      },
+      {
         question: "Can you set up racking for an e-commerce warehouse?",
         answer: "Yes. Most online retailers need a mix of pallet racking for bulk stock and longspan shelving for pick faces. We lay it out so pickers aren't walking further than they need to."
       },

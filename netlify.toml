@@ -96,7 +96,7 @@
 
 [[redirects]]
   from = "/blogs/property-transformation-makegood-renovation"
-  to = "/blog/new-year-property-transformations/"
+  to = "/blog/year-end-property-planning/"
   status = 301
   force = true
 
@@ -156,7 +156,7 @@
 
 [[redirects]]
   from = "/blogs/commercial-cleaning-services-post-makegood"
-  to = "/blog/end-of-lease-cleaning-services/"
+  to = "/services/handover-solutions/end-of-lease-cleaning/"
   status = 301
   force = true
 
@@ -168,13 +168,13 @@
 
 [[redirects]]
   from = "/blogs/the-ultimate-guide-to-pallet-racking-solutions"
-  to = "/blog/guide-to-pallet-racking-solutions/"
+  to = "/services/racking-solutions/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/blogs/property-condition-report"
-  to = "/blog/understanding-property-condition-reports/"
+  to = "/blog/dilapidation-reports-melbourne-make-good/"
   status = 301
   force = true
 
@@ -481,7 +481,7 @@
 
 [[redirects]]
   from = "/blog/property-transformation-makegood-renovation"
-  to = "/blog/love-your-property/"
+  to = "/blog/maximising-property-value-lease-end/"
   status = 301
   force = true
 
@@ -541,7 +541,7 @@
 
 [[redirects]]
   from = "/blog/commercial-cleaning-services-post-makegood"
-  to = "/blog/end-of-lease-cleaning-services/"
+  to = "/services/handover-solutions/end-of-lease-cleaning/"
   status = 301
   force = true
 
@@ -771,6 +771,92 @@
 [[redirects]]
   from = "/blog/office-strip-out-demolition-melbourne/"
   to = "/blog/office-strip-out/"
+  status = 301
+  force = true
+
+# Thin posts merged into stronger pages (Nov 2026)
+[[redirects]]
+  from = "/blog/love-your-property"
+  to = "/blog/maximising-property-value-lease-end/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog/love-your-property/"
+  to = "/blog/maximising-property-value-lease-end/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog/new-year-property-transformations"
+  to = "/blog/year-end-property-planning/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog/new-year-property-transformations/"
+  to = "/blog/year-end-property-planning/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog/understanding-property-condition-reports"
+  to = "/blog/dilapidation-reports-melbourne-make-good/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog/understanding-property-condition-reports/"
+  to = "/blog/dilapidation-reports-melbourne-make-good/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog/guide-to-pallet-racking-solutions"
+  to = "/services/racking-solutions/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog/guide-to-pallet-racking-solutions/"
+  to = "/services/racking-solutions/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog/end-of-lease-cleaning-services"
+  to = "/services/handover-solutions/end-of-lease-cleaning/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog/end-of-lease-cleaning-services/"
+  to = "/services/handover-solutions/end-of-lease-cleaning/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog/top-5-tips-tenant-landlord-communication"
+  to = "/blog/tenants-guide-smooth-make-good-experience/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog/top-5-tips-tenant-landlord-communication/"
+  to = "/blog/tenants-guide-smooth-make-good-experience/"
+  status = 301
+  force = true
+
+# Blog list has four pages after the thin posts were merged
+[[redirects]]
+  from = "/blog/page/5"
+  to = "/blog/page/4/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog/page/5/"
+  to = "/blog/page/4/"
   status = 301
   force = true
 
