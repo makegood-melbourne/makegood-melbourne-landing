@@ -1,12 +1,12 @@
+import ResponsiveImg from "@/components/ResponsiveImg";
 import { useState } from "react";
-import { resolveImageSrc } from "@/lib/resolveImageSrc";
 import { renderTextWithLinks } from "@/lib/textWithLinks";
 
 export interface TabbedScopeTab {
   label: string;
   title: string;
   description: string;
-  image?: string;
+  image?: string | { src: string; width?: number; height?: number };
   imageAlt?: string;
 }
 
@@ -73,11 +73,11 @@ export default function TabbedScopePanel({ heading, tabs, bgClass = "bg-muted" }
               {/* Image */}
               <div className="relative aspect-[4/3] overflow-hidden">
                 {tab.image ? (
-                  <img
-                    src={resolveImageSrc(tab.image)}
+                  <ResponsiveImg
+                    image={tab.image}
+                    sizes="(max-width: 768px) 100vw, 640px"
                     alt={tab.imageAlt || tab.title}
                     className="w-full h-full object-cover"
-                    loading={i === 0 ? "eager" : "lazy"}
                   />
                 ) : (
                   <div className="w-full h-full flex items-center justify-center bg-background">

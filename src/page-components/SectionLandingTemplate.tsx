@@ -1,3 +1,7 @@
+import ResponsiveImg, { ImageVariantsProvider, useImageVariant } from "@/components/ResponsiveImg";
+import type { ImageVariants } from "@/lib/imageVariantTypes";
+
+type ImageLike = { src: string; width?: number; height?: number } | string | undefined;
 import { renderTextWithLinks } from "@/lib/textWithLinks";
 import { resolveImageSrc } from "@/lib/resolveImageSrc";
 import SimpleProcess from "@/components/SimpleProcess";
@@ -114,9 +118,17 @@ interface SectionLandingData {
 
 interface SectionLandingTemplateProps {
   data: SectionLandingData;
+  imageVariants?: ImageVariants;
 }
 
-const SectionLandingTemplate = ({ data }: SectionLandingTemplateProps) => {
+const SectionLandingTemplate = ({ imageVariants, ...props }: SectionLandingTemplateProps) => (
+  <ImageVariantsProvider value={imageVariants}>
+    <SectionLandingTemplateInner {...props} />
+  </ImageVariantsProvider>
+);
+
+const SectionLandingTemplateInner = ({ data }: Omit<SectionLandingTemplateProps, "imageVariants">) => {
+  const mobileHeroVariant = useImageVariant(data.heroImageMobile);
   // JSON-LD structured data for this section (Service + FAQPage schema) is
   // built and rendered server-side in each section's Astro page (e.g.
   // strip-out-solutions.astro) from the same section data, not here, since
@@ -152,21 +164,19 @@ const SectionLandingTemplate = ({ data }: SectionLandingTemplateProps) => {
                 {data.heroImage ? (
                   <picture>
                     {data.heroImageMobile && (
-                      <source 
-                        srcSet={resolveImageSrc(data.heroImageMobile)} 
-                        media="(max-width: 1023px)" 
+                      <source
+                        srcSet={mobileHeroVariant?.srcSet ?? resolveImageSrc(data.heroImageMobile)}
+                        sizes="100vw"
+                        media="(max-width: 1023px)"
                       />
                     )}
-                    <img 
-                      src={resolveImageSrc(data.heroImage)} 
+                    <ResponsiveImg
+                      image={data.heroImage as ImageLike}
+                      sizes="(max-width: 1023px) 100vw, 1px"
+                      priority
                       alt={data.heroImageAlt || `${data.title} - professional commercial services`}
                       title={data.heroImageTitle}
                       className="aspect-[4/3] w-full object-cover rounded-lg"
-                      width={800}
-                      height={600}
-                      loading="eager"
-                      decoding="async"
-                      fetchPriority="high"
                     />
                   </picture>
                 ) : (
@@ -197,19 +207,16 @@ const SectionLandingTemplate = ({ data }: SectionLandingTemplateProps) => {
               </div>
             </div>
             
-            {/* Hero Image - Desktop only */}
+            {/* Hero Image - Desktop only. On mobile, sizes="1px" makes the browser fetch only the smallest version. */}
             <div className="hidden lg:block">
               {data.heroImage ? (
-                <img 
-                  src={resolveImageSrc(data.heroImage)} 
+                <ResponsiveImg
+                  image={data.heroImage as ImageLike}
+                  sizes="(max-width: 1023px) 1px, 600px"
+                  priority
                   alt={data.heroImageAlt || `${data.title} - professional commercial services`}
                   title={data.heroImageTitle}
                   className="aspect-[4/3] w-full object-cover rounded-lg"
-                  width={800}
-                  height={600}
-                  loading="eager"
-                  decoding="async"
-                  fetchPriority="high"
                 />
               ) : (
                 <div className="aspect-[4/3] bg-muted/30 rounded-lg border-2 border-dashed border-muted-foreground/20 flex items-center justify-center">
@@ -270,15 +277,12 @@ const SectionLandingTemplate = ({ data }: SectionLandingTemplateProps) => {
                   <div className="rounded-lg border border-border bg-card h-full overflow-hidden shadow-sm transition-all duration-300 hover:border-primary/50 hover:shadow-lg">
                     {row.image && (
                       <div className="relative aspect-[16/10] overflow-hidden bg-muted/20">
-                        <img
-                          src={resolveImageSrc(row.image)}
+                        <ResponsiveImg
+                          image={row.image as ImageLike}
+                          sizes="(max-width: 768px) 100vw, 400px"
                           alt={row.imageAlt || `${row.scope} Melbourne strip out scope`}
                           title={row.imageTitle}
                           className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
-                          width={600}
-                          height={375}
-                          loading="lazy"
-                          decoding="async"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
                       </div>
@@ -323,15 +327,12 @@ const SectionLandingTemplate = ({ data }: SectionLandingTemplateProps) => {
                   <Card className="overflow-hidden border-border bg-card h-full transition-all duration-300 group-hover:border-primary/50 group-hover:shadow-xl">
                     {property.image && (
                       <div className="aspect-[4/3] overflow-hidden relative bg-muted/30">
-                        <img
-                          src={resolveImageSrc(property.image)}
+                        <ResponsiveImg
+                          image={property.image as ImageLike}
+                          sizes="(max-width: 768px) 100vw, 400px"
                           alt={property.imageAlt || `${property.title} commercial property services in Melbourne`}
                           title={property.imageTitle}
                           className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                          loading="lazy"
-                          decoding="async"
-                          width={800}
-                          height={600}
                         />
                       </div>
                     )}

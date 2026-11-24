@@ -3,6 +3,9 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Navigation from '../../components/Navigation';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import BlogPage from '../../page-components/Blog.tsx';
+import { buildImageVariants } from '@/lib/imageVariants';
+import { getBlogPageImages } from '../../page-components/Blog.tsx';
+const imageVariants = await buildImageVariants(getBlogPageImages(1));
 ---
 
 <BaseLayout 
@@ -14,5 +17,5 @@ import BlogPage from '../../page-components/Blog.tsx';
   <div class="bg-secondary pt-20">
     <Breadcrumbs path="/blog/" />
   </div>
-  <BlogPage page={1} />
+  <BlogPage page={1} imageVariants={imageVariants} />
 </BaseLayout>

@@ -1,10 +1,11 @@
+import ResponsiveImg, { ImageVariantsProvider } from "@/components/ResponsiveImg";
+import type { ImageVariants } from "@/lib/imageVariantTypes";
 import { renderTextWithLinks } from "@/lib/textWithLinks";
 import { ArrowRight, CheckCircle, AlertTriangle, ImageIcon, Warehouse, Package, Truck, Snowflake, Factory, Container } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { getIndustryBySlug } from "@/data/industries";
 import { getServiceBySlug } from "@/data/services";
-import { resolveImageSrc } from "@/lib/resolveImageSrc";
 
 const propertyIcons: Record<string, typeof Warehouse> = {
   warehouse: Warehouse,
@@ -26,9 +27,16 @@ const ImagePlaceholder = ({ description, className = "" }: { description: string
 
 interface IndustryContentProps {
   slug: string;
+  imageVariants?: ImageVariants;
 }
 
-const IndustryContent = ({ slug }: IndustryContentProps) => {
+const IndustryContent = ({ imageVariants, ...props }: IndustryContentProps) => (
+  <ImageVariantsProvider value={imageVariants}>
+    <IndustryContentInner {...props} />
+  </ImageVariantsProvider>
+);
+
+const IndustryContentInner = ({ slug }: Omit<IndustryContentProps, "imageVariants">) => {
   const industry = getIndustryBySlug(slug);
 
   if (!industry) {
@@ -142,14 +150,11 @@ const IndustryContent = ({ slug }: IndustryContentProps) => {
                 </div>
                 <div className={index % 2 === 0 ? 'lg:order-1' : ''}>
                   {section.image ? (
-                    <img 
-                      src={resolveImageSrc(section.image)} 
+                    <ResponsiveImg
+                      image={section.image}
+                      sizes="(max-width: 1024px) 100vw, 600px"
                       alt={section.imageAlt || section.title}
                       className="rounded-lg shadow-xl w-full aspect-[4/3] object-cover"
-                      width={800}
-                      height={600}
-                      loading="lazy"
-                      decoding="async"
                     />
                   ) : (
                     <ImagePlaceholder 
@@ -278,8 +283,9 @@ const IndustryContent = ({ slug }: IndustryContentProps) => {
                     <Card className="bg-card border-border h-full overflow-hidden transition-all duration-300 group-hover:border-primary/50 group-hover:shadow-lg">
                       {service.heroImage && (
                         <div className="aspect-[16/9] overflow-hidden bg-muted/20 relative">
-                          <img 
-                            src={resolveImageSrc(service.heroImage)} 
+                          <ResponsiveImg
+                            image={service.heroImage}
+                            sizes="(max-width: 768px) 100vw, 400px"
                             alt={service.title}
                             className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                           />

@@ -5,11 +5,19 @@ import Footer from "@/components/Footer";
 import CtaBlock from "@/components/CtaBlock.astro";
 import Breadcrumbs from "@/components/Breadcrumbs.astro";
 import { Button } from "@/components/ui/button";
+import { Image } from "astro:assets";
+import commercialRemediationWarehouseMelbourneImg from "@/assets/learn/commercial-remediation-warehouse-melbourne.jpg";
+import commercialWaterDamageCeilingMelbourneImg from "@/assets/blog/commercial-water-damage-ceiling-melbourne.jpg";
+import fireDamageRestorationImg from "@/assets/blog/fire-damage-restoration.jpg";
+import concreteCancerImg from "@/assets/blog/concrete-cancer.webp";
+import facadeCladdingRemediationImg from "@/assets/blog/facade-cladding-remediation.jpg";
+import electricalMakeSafeImg from "@/assets/blog/electrical-make-safe.jpg";
+import ceilingRepairsSuspendedAcousticImg from "@/assets/blog/ceiling-repairs-suspended-acoustic.jpg";
 
 const title = "Commercial Remediation Guide Melbourne | MakeGOOD";
 const description = "A plain guide to commercial remediation in Melbourne: water damage, mould, fire and structural defects, how repairs run and what's required.";
 const canonicalURL = new URL("/learn/remediation-guide/", Astro.site);
-const ogImage = new URL("/images/learn/remediation-hero-placeholder.svg", Astro.site);
+const ogImage = new URL("/images/learn/commercial-remediation-warehouse-melbourne.jpg", Astro.site);
 ---
 
 <BaseLayout
@@ -54,14 +62,17 @@ const ogImage = new URL("/images/learn/remediation-hero-placeholder.svg", Astro.
               </p>
             </div>
             <div class="relative">
-              <img
-                src="/images/learn/commercial-remediation-warehouse-melbourne.jpg"
+              <Image
+                src={commercialRemediationWarehouseMelbourneImg}
                 alt="Commercial warehouse remediation works showing yellow scissor lift and concrete flooring during building rectification in Melbourne"
                 class="aspect-[4/3] w-full object-cover rounded-lg"
                 style="object-position: 75% center;"
-                width="800"
-                height="600"
+                width={1200}
+                widths={[400, 800, 1200]}
+                sizes="(max-width: 1024px) 100vw, 600px"
                 loading="eager"
+                fetchpriority="high"
+                quality={60}
               />
             </div>
           </div>
@@ -121,13 +132,17 @@ const ogImage = new URL("/images/learn/remediation-hero-placeholder.svg", Astro.
           <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <!-- Water Damage and Mould -->
             <a href="/blog/commercial-water-damage-mould-remediation-melbourne/" class="group block bg-card border border-border rounded-lg overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-              <img
-                src="/images/blog/commercial-water-damage-ceiling-melbourne.jpg"
+              <Image
+                src={commercialWaterDamageCeilingMelbourneImg}
                 alt="Commercial ceiling water damage showing exposed ceiling grid and damaged plasterboard requiring remediation in Melbourne office"
-                class="w-full h-48 object-cover" style="aspect-ratio: 3/2;"
-                width="300"
-                height="200"
+                class="w-full h-48 object-cover"
+                style="aspect-ratio: 3/2;"
+                width={800}
+                widths={[400, 800]}
+                sizes="(max-width: 768px) 100vw, 400px"
                 loading="lazy"
+                decoding="async"
+                quality={60}
               />
               <div class="p-6">
                 <h3 class="text-xl font-semibold mb-3 group-hover:text-primary transition-colors">Water damage and mould remediation</h3>
@@ -142,13 +157,17 @@ const ogImage = new URL("/images/learn/remediation-hero-placeholder.svg", Astro.
 
             <!-- Fire and Smoke Damage -->
             <a href="/blog/fire-damage-restoration-make-good-commercial-properties/" class="group block bg-card border border-border rounded-lg overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-              <img
-                src="/images/blog/fire-damage-restoration.jpg"
+              <Image
+                src={fireDamageRestorationImg}
                 alt="Fire damage restoration and make good for commercial properties"
-                class="w-full h-48 object-cover" style="aspect-ratio: 3/2;"
-                width="300"
-                height="200"
+                class="w-full h-48 object-cover"
+                style="aspect-ratio: 3/2;"
+                width={800}
+                widths={[400, 800]}
+                sizes="(max-width: 768px) 100vw, 400px"
                 loading="lazy"
+                decoding="async"
+                quality={60}
               />
               <div class="p-6">
                 <h3 class="text-xl font-semibold mb-3 group-hover:text-primary transition-colors">Fire and smoke damage restoration</h3>
@@ -163,13 +182,17 @@ const ogImage = new URL("/images/learn/remediation-hero-placeholder.svg", Astro.
 
             <!-- Structural Remediation -->
             <a href="/blog/concrete-cancer-prevention-remediation/" class="group block bg-card border border-border rounded-lg overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-              <img
-                src="/images/blog/concrete-cancer.webp"
+              <Image
+                src={concreteCancerImg}
                 alt="Understanding concrete cancer: prevention and remediation for commercial properties"
-                class="w-full h-48 object-cover" style="aspect-ratio: 3/2;"
-                width="300"
-                height="200"
+                class="w-full h-48 object-cover"
+                style="aspect-ratio: 3/2;"
+                width={800}
+                widths={[400, 800]}
+                sizes="(max-width: 768px) 100vw, 400px"
                 loading="lazy"
+                decoding="async"
+                quality={60}
               />
               <div class="p-6">
                 <h3 class="text-xl font-semibold mb-3 group-hover:text-primary transition-colors">Structural remediation and concrete spalling</h3>
@@ -184,13 +207,17 @@ const ogImage = new URL("/images/learn/remediation-hero-placeholder.svg", Astro.
 
             <!-- Facade and Cladding -->
             <a href="/blog/facade-cladding-remediation-fireproof-compliance/" class="group block bg-card border border-border rounded-lg overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-              <img
-                src="/images/blog/facade-cladding-remediation.jpg"
+              <Image
+                src={facadeCladdingRemediationImg}
                 alt="Facade repairs and cladding remediation: navigating fireproof compliance in commercial buildings"
-                class="w-full h-48 object-cover" style="aspect-ratio: 3/2;"
-                width="300"
-                height="200"
+                class="w-full h-48 object-cover"
+                style="aspect-ratio: 3/2;"
+                width={800}
+                widths={[400, 800]}
+                sizes="(max-width: 768px) 100vw, 400px"
                 loading="lazy"
+                decoding="async"
+                quality={60}
               />
               <div class="p-6">
                 <h3 class="text-xl font-semibold mb-3 group-hover:text-primary transition-colors">Facade and cladding defect remediation</h3>
@@ -205,13 +232,17 @@ const ogImage = new URL("/images/learn/remediation-hero-placeholder.svg", Astro.
 
             <!-- Make Safe and Emergency Works -->
             <a href="/blog/electrical-make-safe-decommissioning-demolition/" class="group block bg-card border border-border rounded-lg overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-              <img
-                src="/images/blog/electrical-make-safe.jpg"
+              <Image
+                src={electricalMakeSafeImg}
                 alt="Electrical make safe: critical decommissioning before demolition and make good works"
-                class="w-full h-48 object-cover" style="aspect-ratio: 3/2;"
-                width="300"
-                height="200"
+                class="w-full h-48 object-cover"
+                style="aspect-ratio: 3/2;"
+                width={800}
+                widths={[400, 800]}
+                sizes="(max-width: 768px) 100vw, 400px"
                 loading="lazy"
+                decoding="async"
+                quality={60}
               />
               <div class="p-6">
                 <h3 class="text-xl font-semibold mb-3 group-hover:text-primary transition-colors">Make safe and emergency works</h3>
@@ -226,13 +257,17 @@ const ogImage = new URL("/images/learn/remediation-hero-placeholder.svg", Astro.
 
             <!-- Ceiling Failures -->
             <a href="/blog/ceiling-repairs-suspended-acoustic-tiles-make-good/" class="group block bg-card border border-border rounded-lg overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-              <img
-                src="/images/blog/ceiling-repairs-suspended-acoustic.jpg"
+              <Image
+                src={ceilingRepairsSuspendedAcousticImg}
                 alt="Ceiling repairs and replacement: suspended ceilings, water damage and make good standards"
-                class="w-full h-48 object-cover" style="aspect-ratio: 3/2;"
-                width="300"
-                height="200"
+                class="w-full h-48 object-cover"
+                style="aspect-ratio: 3/2;"
+                width={800}
+                widths={[400, 800]}
+                sizes="(max-width: 768px) 100vw, 400px"
                 loading="lazy"
+                decoding="async"
+                quality={60}
               />
               <div class="p-6">
                 <h3 class="text-xl font-semibold mb-3 group-hover:text-primary transition-colors">Leak related ceiling failures</h3>

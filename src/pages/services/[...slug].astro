@@ -7,6 +7,8 @@ import CtaBlock from '../../components/CtaBlock.astro';
 import Footer from '../../components/Footer';
 import ServiceLinks from '../../components/ServiceLinks.astro';
 import { getPublishedServices, getServiceBySlug } from '../../data/services';
+import { buildImageVariants } from '@/lib/imageVariants';
+import { referencedServiceHeroImages } from '@/lib/pageImages';
 
 export function getStaticPaths() {
   const services = getPublishedServices().filter((service) => !service.customPage);
@@ -62,6 +64,10 @@ const faqSchema = service.faqs && service.faqs.length > 0 ? {
     }
   }))
 } : null;
+
+// Resized WebP versions of every image ServiceContent renders (its own images plus the
+// hero images of services it links to).
+const imageVariants = service ? await buildImageVariants(service, referencedServiceHeroImages(service)) : {};
 ---
 
 <BaseLayout
@@ -88,7 +94,7 @@ const faqSchema = service.faqs && service.faqs.length > 0 ? {
       <ServiceHeroSection slug={fullSlug} />
       
       <!-- Interactive content loaded after hero -->
-      <ServiceContent slug={fullSlug} client:idle />
+      <ServiceContent imageVariants={imageVariants} slug={fullSlug} client:idle />
 
       <!-- Blog posts and suburbs for this service -->
       <ServiceLinks serviceSlug={service.slug} serviceName={service.name} />

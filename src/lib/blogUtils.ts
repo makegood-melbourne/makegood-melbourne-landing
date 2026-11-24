@@ -115,28 +115,24 @@ const imageMap: Record<string, unknown> = {
   'metal-roof-sheeting-warehouse-melbourne': metalRoofReplacementWarehouseImage,
 };
 
-// Normalize image imports across Astro + React builds.
-export const getBlogImage = (imagePath: unknown): string => {
-  // If the imagePath is a bundled image metadata object, use its .src.
-  if (typeof imagePath === "object" && imagePath !== null) {
-    const resolved = resolveImageSrc(imagePath);
-    return resolved || resolveImageSrc(cleaningImage);
+/** The imported image for a blog post (ImageMetadata), so it can go through Astro's image pipeline. */
+export const getBlogImageMeta = (imagePath: unknown): typeof cleaningImage => {
+  if (typeof imagePath === "object" && imagePath !== null && resolveImageSrc(imagePath)) {
+    return imagePath as typeof cleaningImage;
   }
-
-  if (typeof imagePath !== "string") return resolveImageSrc(cleaningImage);
+  if (typeof imagePath !== "string") return cleaningImage;
 
   // Extract the key from /src/assets/blog/xxx.jpg -> xxx
   const match = imagePath.match(/blog\/([^.\/]+)\./);
-  if (match?.[1]) {
-    const imageKey = match[1];
-    const mapped = imageMap[imageKey];
-    return resolveImageSrc(mapped) || resolveImageSrc(cleaningImage);
-  }
+  if (match?.[1] && imageMap[match[1]]) return imageMap[match[1]] as typeof cleaningImage;
 
   // Fallback: try to find any key that matches part of the path
   const imageKey = Object.keys(imageMap).find((key) => imagePath.includes(key));
-  return resolveImageSrc(imageKey ? imageMap[imageKey] : cleaningImage) || resolveImageSrc(cleaningImage);
+  return imageKey ? (imageMap[imageKey] as typeof cleaningImage) : cleaningImage;
 };
+
+// Normalize image imports across Astro + React builds.
+export const getBlogImage = (imagePath: unknown): string => resolveImageSrc(getBlogImageMeta(imagePath));
 
 export const sortBlogPostsByDate = (posts: BlogPost[]): BlogPost[] => {
   return [...posts].sort((a, b) => {

@@ -9,6 +9,8 @@ import { getPostsForIndustry } from '../../data/internalLinks';
 import Footer from '../../components/Footer';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import { industries, getIndustryBySlug } from '../../data/industries';
+import { buildImageVariants } from '@/lib/imageVariants';
+import { referencedServiceHeroImages } from '@/lib/pageImages';
 
 export function getStaticPaths() {
   return industries.map((industry) => ({
@@ -67,6 +69,7 @@ const faqSchema = industry.faqs && industry.faqs.length > 0 ? {
     }
   }))
 } : null;
+const imageVariants = industry ? await buildImageVariants(industry, referencedServiceHeroImages(industry.services)) : {};
 ---
 
 <BaseLayout
@@ -91,7 +94,7 @@ const faqSchema = industry.faqs && industry.faqs.length > 0 ? {
     <IndustryHeroSection slug={slug} />
     
     <!-- Interactive content loaded after hero -->
-    <IndustryContent slug={slug} client:idle />
+    <IndustryContent slug={slug} imageVariants={imageVariants} client:idle />
     
     <!-- Blog posts and suburbs for this industry, same block as the service pages -->
     <ServiceLinks

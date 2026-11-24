@@ -1,7 +1,7 @@
+import ResponsiveImg from "@/components/ResponsiveImg";
 import { ArrowRight } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { getPublishedServices } from "@/data/services";
-import { resolveImageSrc } from "@/lib/resolveImageSrc";
 
 interface SectionServicesGridProps {
   serviceSlugs: string[];
@@ -60,14 +60,11 @@ const SectionServicesGrid = ({
               <Card className="overflow-hidden border-border bg-card h-full transition-all duration-300 group-hover:border-primary/50 group-hover:shadow-xl">
                 <div className="aspect-[4/3] overflow-hidden relative">
                   {service.heroImage ? (
-                    <img
-                      src={resolveImageSrc(service.heroImage)}
+                    <ResponsiveImg
+                      image={service.heroImage}
+                      sizes="(max-width: 768px) 100vw, 400px"
                       alt={service.heroImageAlt || service.name}
                       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                      loading="lazy"
-                      decoding="async"
-                      width={600}
-                      height={450}
                     />
                   ) : (
                     <div className="w-full h-full bg-muted/30 flex items-center justify-center">

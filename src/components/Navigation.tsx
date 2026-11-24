@@ -1,11 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { Menu, ChevronDown } from "lucide-react";
 import { useState } from "react";
-import logo from "@/assets/makegood-melbourne-logo-400.png";
+import logo from "@/assets/makegood-melbourne-logo-400.webp";
 import { getFeaturedLocations } from "@/data/locations";
 import { getAllIndustries } from "@/data/industries";
 import { serviceCategories, getServicesByCategory } from "@/data/serviceCategories";
-import { resolveImageSrc } from "@/lib/resolveImageSrc";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -49,7 +48,7 @@ const Navigation = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <a href="/" className="flex items-center">
-            <img src={resolveImageSrc(logo)} alt="MakeGOOD Melbourne - Commercial Make Good Services" className="h-8 md:h-10 brightness-0 invert cursor-pointer" />
+            <img src={logo.src} width={logo.width} height={logo.height} alt="MakeGOOD Melbourne" className="h-8 md:h-10 brightness-0 invert cursor-pointer w-auto" />
           </a>
           
           <div className="hidden md:flex items-center gap-6">

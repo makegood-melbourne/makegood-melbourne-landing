@@ -4,11 +4,6 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 import { getIndustryBySlug } from '@/data/industries';
 
-// Import all industry hero images statically
-import commercialHeroImage from "@/assets/industries/commercial-office-make-good-polished-concrete-melbourne.jpeg";
-import industrialHeroImage from "@/assets/industries/industrial-warehouse-make-good-empty-floor-melbourne.jpeg";
-import fulfilmentFitOutHeroImage from "@/assets/industries/fulfilment-warehouse-fit-out-carton-flow-racking-melbourne.webp";
-
 interface Props {
   slug: string;
 }
@@ -20,14 +15,8 @@ if (!industry) {
   return;
 }
 
-// Map slugs to images
-const heroImages: Record<string, ImageMetadata> = {
-  "commercial": commercialHeroImage,
-  "industrial": industrialHeroImage,
-  "warehouses-logistics": fulfilmentFitOutHeroImage
-};
-
-const heroImage = heroImages[slug];
+const heroImage =
+  industry.heroImage && typeof industry.heroImage === 'object' ? (industry.heroImage as ImageMetadata) : undefined;
 const heroImageAlt = industry.heroImageAlt || industry.title;
 ---
 
@@ -56,26 +45,17 @@ const heroImageAlt = industry.heroImageAlt || industry.title;
         </div>
       </div>
       <div>
-        {!heroImage && typeof industry.heroImage === 'string' ? (
-          <img
-            src={industry.heroImage}
-            alt={heroImageAlt}
-            class="rounded-lg shadow-xl w-full aspect-[4/3] object-cover"
-            width="800"
-            height="600"
-            loading="eager"
-            decoding="async"
-          />
-        ) : heroImage ? (
+        {heroImage ? (
           <Image 
             src={heroImage} 
             alt={heroImageAlt}
             class="rounded-lg shadow-xl w-full aspect-[4/3] object-cover"
+            width={1200}
             widths={[360, 640, 800, 1200]}
             sizes="(max-width: 640px) 360px, (max-width: 1024px) 640px, (max-width: 1280px) 800px, 1200px"
             loading="eager"
-            decoding="async"
-            quality={70}
+            fetchpriority="high"
+            quality={60}
           />
         ) : (
           <div class="bg-secondary/50 border-2 border-dashed border-border rounded-lg flex flex-col items-center justify-center p-8 aspect-[4/3]">

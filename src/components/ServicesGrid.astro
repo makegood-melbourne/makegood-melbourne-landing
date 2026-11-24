@@ -139,8 +139,11 @@ const serviceCards = [
                 alt={card.heroImageAlt}
                 class="card-image"
                 loading="lazy"
-                widths={[400, 600, 800]}
+                width={1200}
+                widths={[400, 600, 800, 1200]}
                 sizes="(max-width: 768px) 100vw, 50vw"
+                decoding="async"
+                quality={60}
               />
               <div class="image-overlay">
                 <h3 class="card-title">{card.title}</h3>

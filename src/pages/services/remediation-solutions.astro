@@ -9,6 +9,8 @@ import ServiceLinks from '../../components/ServiceLinks.astro';
 import { getSectionLandingBySlug } from '../../data/sectionLanding';
 import buildingRemediationHero from '../../assets/services/building-remediation-melbourne-shotcrete.jpg';
 import buildingRemediationHeroMobile from '../../assets/services/building-remediation-melbourne-shotcrete-mobile.jpg';
+import { buildImageVariants } from '@/lib/imageVariants';
+import { referencedServiceHeroImages } from '@/lib/pageImages';
 const data = getSectionLandingBySlug('remediation-solutions');
 if (!data) {
   return Astro.redirect('/services/');
@@ -51,6 +53,8 @@ const faqSchema = data.faqs && data.faqs.length > 0 ? {
     }
   }))
 } : null;
+
+const imageVariants = await buildImageVariants(data, referencedServiceHeroImages(data));
 ---
 <BaseLayout 
   title={data.metaTitle}
@@ -58,8 +62,8 @@ const faqSchema = data.faqs && data.faqs.length > 0 ? {
   ogImage={data.ogImage || "/og-default.jpg"}
   canonicalUrl="https://makegood.melbourne/services/remediation-solutions/"
 >
-  <link slot="head" rel="preload" as="image" href={buildingRemediationHeroMobile.src} fetchpriority="high" media="(max-width: 1023px)" />
-  <link slot="head" rel="preload" as="image" href={buildingRemediationHero.src} fetchpriority="high" media="(min-width: 1024px)" />
+  <link slot="head" rel="preload" as="image" imagesrcset={imageVariants[buildingRemediationHeroMobile.src]?.srcSet} imagesizes="100vw" fetchpriority="high" media="(max-width: 1023px)" />
+  <link slot="head" rel="preload" as="image" imagesrcset={imageVariants[buildingRemediationHero.src]?.srcSet} imagesizes="600px" fetchpriority="high" media="(min-width: 1024px)" />
   <script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
   {faqSchema && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
   <div class="min-h-screen flex flex-col bg-background">
@@ -79,7 +83,7 @@ const faqSchema = data.faqs && data.faqs.length > 0 ? {
     </div>
     
     <main id="main-content" class="flex-1">
-      <SectionLandingTemplate data={data} client:idle />
+      <SectionLandingTemplate imageVariants={imageVariants} data={data} client:idle />
       <ServiceLinks serviceSlug="remediation-solutions" serviceName="Remediation" />
     </main>
     

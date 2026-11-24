@@ -1258,7 +1258,7 @@ Send through the property address, lease timing and a floor plan if you have one
     excerpt: "Most warehouse roof leaks start in the box gutter, not the sheets. Here's why box gutters fail, the warning signs inside and whether to clear, repair or replace.",
     metaDescription: "Why box gutters cause most warehouse roof leaks in Melbourne: blockages, rust, failed seals and missing overflows, and when to repair or replace.",
     image: "/src/assets/blog/box-gutter-leaks-warehouse-melbourne.webp",
-    imageAlt: "Galvanised box gutter and flashings between corrugated metal roof sheets on a commercial building",
+    imageAlt: "Galvanised box gutter on a warehouse roof with flashings along each side and roof vents beside it",
     content: `Ask anyone who has managed a warehouse for long enough where their worst roof leak came from and you'll hear the same answer more often than not. It wasn't the sheets. It wasn't the skylights. It was the box gutter.
 
 Box gutters do a big job quietly. On most Melbourne warehouses and factories they collect the water off two roof slopes and carry it to the sumps and downpipes. When they work, nobody thinks about them. When they don't, the water doesn't spill harmlessly over the edge of the building. It runs back under the roof sheets and comes down inside, onto stock, ceilings, switchboards and floors.

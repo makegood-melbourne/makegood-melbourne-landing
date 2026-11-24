@@ -6,6 +6,13 @@ import CtaBlock from "@/components/CtaBlock.astro";
 import Breadcrumbs from "@/components/Breadcrumbs.astro";
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero/commercial-office-make-good-melbourne.webp";
+import { Image } from "astro:assets";
+import officeStripOutImg from "@/assets/blog/office-strip-out.webp";
+import commercialPaintingMelbourneImg from "@/assets/blog/commercial-painting-melbourne.jpg";
+import ceilingRepairsSuspendedAcousticImg from "@/assets/blog/ceiling-repairs-suspended-acoustic.jpg";
+import portMelbourneWarehouseImg from "@/assets/blog/port-melbourne-warehouse.jpg";
+import strategicPlanningImg from "@/assets/blog/strategic-planning.jpg";
+import retailMakeGoodShoppingCentreMelbourneImg from "@/assets/blog/retail-make-good-shopping-centre-melbourne.webp";
 
 const title = "End of Lease Make Good Guide | MakeGOOD Melbourne";
 const description = "A guide to commercial make good works in Melbourne. Lease obligations, typical costs, timelines and what to expect when preparing for handover.";
@@ -56,13 +63,16 @@ const ogImage = new URL("/images/og/make-good-guide.jpg", Astro.site);
               </p>
             </div>
             <div class="relative">
-              <img
-                src={heroImage.src}
+              <Image
+                src={heroImage}
                 alt="Worker in hi-vis performing commercial office make good restoration in Melbourne CBD"
-                width="1200"
-                height="799"
                 class="aspect-[4/3] w-full object-cover rounded-lg"
+                width={1200}
+                widths={[400, 800, 1200]}
+                sizes="(max-width: 1024px) 100vw, 600px"
                 loading="eager"
+                fetchpriority="high"
+                quality={60}
               />
             </div>
           </div>
@@ -126,13 +136,17 @@ const ogImage = new URL("/images/og/make-good-guide.jpg", Astro.site);
           <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
             <!-- Strip Out -->
             <a href="/blog/office-strip-out/" class="group block bg-card border border-border rounded-lg overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-              <img
-                src="/images/blog/office-strip-out.webp"
+              <Image
+                src={officeStripOutImg}
                 alt="Commercial office strip out and demolition works in Melbourne"
-                class="w-full h-48 object-cover" style="aspect-ratio: 3/2;"
-                width="300"
-                height="200"
+                class="w-full h-48 object-cover"
+                style="aspect-ratio: 3/2;"
+                width={800}
+                widths={[400, 800]}
+                sizes="(max-width: 768px) 100vw, 400px"
                 loading="lazy"
+                decoding="async"
+                quality={60}
               />
               <div class="p-6">
                 <h3 class="text-xl font-semibold mb-3 group-hover:text-primary transition-colors">Strip out and demolition</h3>
@@ -147,13 +161,17 @@ const ogImage = new URL("/images/og/make-good-guide.jpg", Astro.site);
 
             <!-- Painting and Walls -->
             <a href="/services/make-good-solutions/painting/" class="group block bg-card border border-border rounded-lg overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-              <img
-                src="/images/blog/commercial-painting-melbourne.jpg"
+              <Image
+                src={commercialPaintingMelbourneImg}
                 alt="Commercial painting and wall restoration for make good works in Melbourne"
-                class="w-full h-48 object-cover" style="aspect-ratio: 3/2;"
-                width="300"
-                height="200"
+                class="w-full h-48 object-cover"
+                style="aspect-ratio: 3/2;"
+                width={800}
+                widths={[400, 800]}
+                sizes="(max-width: 768px) 100vw, 400px"
                 loading="lazy"
+                decoding="async"
+                quality={60}
               />
               <div class="p-6">
                 <h3 class="text-xl font-semibold mb-3 group-hover:text-primary transition-colors">Painting and wall restoration</h3>
@@ -168,13 +186,17 @@ const ogImage = new URL("/images/og/make-good-guide.jpg", Astro.site);
 
             <!-- Ceilings and Flooring -->
             <a href="/blog/ceiling-repairs-suspended-acoustic-tiles-make-good/" class="group block bg-card border border-border rounded-lg overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-              <img
-                src="/images/blog/ceiling-repairs-suspended-acoustic.jpg"
+              <Image
+                src={ceilingRepairsSuspendedAcousticImg}
                 alt="Suspended ceiling repairs and acoustic tile replacement in commercial make good"
-                class="w-full h-48 object-cover" style="aspect-ratio: 3/2;"
-                width="300"
-                height="200"
+                class="w-full h-48 object-cover"
+                style="aspect-ratio: 3/2;"
+                width={800}
+                widths={[400, 800]}
+                sizes="(max-width: 768px) 100vw, 400px"
                 loading="lazy"
+                decoding="async"
+                quality={60}
               />
               <div class="p-6">
                 <h3 class="text-xl font-semibold mb-3 group-hover:text-primary transition-colors">Ceilings and flooring</h3>
@@ -192,13 +214,17 @@ const ogImage = new URL("/images/og/make-good-guide.jpg", Astro.site);
           <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <!-- Warehouse Make Goods -->
             <a href="/blog/port-melbourne-warehouse-end-of-lease-make-good/" class="group block bg-card border border-border rounded-lg overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-              <img
-                src="/images/blog/port-melbourne-warehouse.jpg"
+              <Image
+                src={portMelbourneWarehouseImg}
                 alt="Warehouse make good and end of lease restoration in Port Melbourne"
-                class="w-full h-48 object-cover" style="aspect-ratio: 3/2;"
-                width="300"
-                height="200"
+                class="w-full h-48 object-cover"
+                style="aspect-ratio: 3/2;"
+                width={800}
+                widths={[400, 800]}
+                sizes="(max-width: 768px) 100vw, 400px"
                 loading="lazy"
+                decoding="async"
+                quality={60}
               />
               <div class="p-6">
                 <h3 class="text-xl font-semibold mb-3 group-hover:text-primary transition-colors">Warehouse make goods</h3>
@@ -213,13 +239,17 @@ const ogImage = new URL("/images/og/make-good-guide.jpg", Astro.site);
 
             <!-- Planning and Compliance -->
             <a href="/blog/strategic-make-good-planning/" class="group block bg-card border border-border rounded-lg overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-              <img
-                src="/images/blog/strategic-planning.jpg"
+              <Image
+                src={strategicPlanningImg}
                 alt="Strategic make good planning and compliance for commercial properties"
-                class="w-full h-48 object-cover" style="aspect-ratio: 3/2;"
-                width="300"
-                height="200"
+                class="w-full h-48 object-cover"
+                style="aspect-ratio: 3/2;"
+                width={800}
+                widths={[400, 800]}
+                sizes="(max-width: 768px) 100vw, 400px"
                 loading="lazy"
+                decoding="async"
+                quality={60}
               />
               <div class="p-6">
                 <h3 class="text-xl font-semibold mb-3 group-hover:text-primary transition-colors">Planning and compliance</h3>
@@ -234,13 +264,17 @@ const ogImage = new URL("/images/og/make-good-guide.jpg", Astro.site);
 
             <!-- Retail and Shopping Centre -->
             <a href="/blog/retail-make-good-melbourne-shopping-centre-tenants/" class="group block bg-card border border-border rounded-lg overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-              <img
-                src="/images/blog/retail-make-good-shopping-centre-melbourne.webp"
+              <Image
+                src={retailMakeGoodShoppingCentreMelbourneImg}
                 alt="Multi-level shopping centre interior with glass storefronts and skylights in Melbourne retail precinct"
-                class="w-full h-48 object-cover" style="aspect-ratio: 3/2;"
-                width="300"
-                height="200"
+                class="w-full h-48 object-cover"
+                style="aspect-ratio: 3/2;"
+                width={800}
+                widths={[400, 800]}
+                sizes="(max-width: 768px) 100vw, 400px"
                 loading="lazy"
+                decoding="async"
+                quality={60}
               />
               <div class="p-6">
                 <h3 class="text-xl font-semibold mb-3 group-hover:text-primary transition-colors">Retail and shopping centre make goods</h3>

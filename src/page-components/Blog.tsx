@@ -1,21 +1,34 @@
+import ResponsiveImg, { ImageVariantsProvider } from "@/components/ResponsiveImg";
+import type { ImageVariants } from "@/lib/imageVariantTypes";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { ArrowRight, Clock } from "lucide-react";
 import Footer from "@/components/Footer";
 import { blogPosts } from "@/data/blogPosts";
-import { getBlogImage, sortBlogPostsByDate, calculateReadingTime, formatPostDate } from "@/lib/blogUtils";
+import { getBlogImageMeta, sortBlogPostsByDate, calculateReadingTime, formatPostDate } from "@/lib/blogUtils";
 
 export const POSTS_PER_PAGE = 12;
 
 export const getBlogPageCount = () => Math.ceil(blogPosts.length / POSTS_PER_PAGE);
 
+export const getBlogPagePosts = (page: number) =>
+  sortBlogPostsByDate(blogPosts).slice((page - 1) * POSTS_PER_PAGE, page * POSTS_PER_PAGE);
+
+/** The card images shown on one blog list page, for buildImageVariants(). */
+export const getBlogPageImages = (page: number) => getBlogPagePosts(page).map((post) => getBlogImageMeta(post.image));
+
 export const blogPageHref = (page: number) => (page <= 1 ? "/blog/" : `/blog/page/${page}/`);
 
 // Server rendered pagination: /blog/ is page 1, /blog/page/2/ onwards hold the rest.
 // Every page links to every other page with plain links, so crawlers reach all posts.
-const Blog = ({ page = 1 }: { page?: number }) => {
-  const sortedPosts = sortBlogPostsByDate(blogPosts);
+const Blog = ({ imageVariants, ...props }: { page?: number; imageVariants?: ImageVariants }) => (
+  <ImageVariantsProvider value={imageVariants}>
+    <BlogInner {...props} />
+  </ImageVariantsProvider>
+);
+
+const BlogInner = ({ page = 1 }: { page?: number }) => {
   const totalPages = getBlogPageCount();
-  const pagePosts = sortedPosts.slice((page - 1) * POSTS_PER_PAGE, page * POSTS_PER_PAGE);
+  const pagePosts = getBlogPagePosts(page);
   
   return (
     <div className="min-h-screen flex flex-col">
@@ -49,14 +62,15 @@ const Blog = ({ page = 1 }: { page?: number }) => {
           )}
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {pagePosts.map((post) => (
+            {pagePosts.map((post, index) => (
               <Card key={post.id} className="border-border hover:shadow-lg transition-shadow overflow-hidden group">
                 <a href={`/blog/${post.slug}/`} className="block aspect-video overflow-hidden">
-                  <img 
-                    src={getBlogImage(post.image)}
+                  <ResponsiveImg
+                    image={getBlogImageMeta(post.image)}
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 400px"
+                    priority={index === 0}
                     alt={post.imageAlt || post.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                    loading="lazy"
                   />
                 </a>
                 <CardHeader>

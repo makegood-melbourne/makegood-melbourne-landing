@@ -1,6 +1,7 @@
+import ResponsiveImg, { ImageVariantsProvider } from "@/components/ResponsiveImg";
+import type { ImageVariants } from "@/lib/imageVariantTypes";
 import { getServiceBySlug, getPublishedServices } from "@/data/services";
 import { renderTextWithLinks } from "@/lib/textWithLinks";
-import { resolveImageSrc } from "@/lib/resolveImageSrc";
 import BeforeAfterSlider from "@/components/BeforeAfterSlider";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -15,9 +16,16 @@ import TabbedScopePanel from "@/components/TabbedScopePanel";
 
 interface ServiceContentProps {
   slug: string;
+  imageVariants?: ImageVariants;
 }
 
-const ServiceContent = ({ slug }: ServiceContentProps) => {
+const ServiceContent = ({ imageVariants, ...props }: ServiceContentProps) => (
+  <ImageVariantsProvider value={imageVariants}>
+    <ServiceContentInner {...props} />
+  </ImageVariantsProvider>
+);
+
+const ServiceContentInner = ({ slug }: Omit<ServiceContentProps, "imageVariants">) => {
   const service = slug ? getServiceBySlug(slug) : undefined;
 
   if (!service || service.published !== true) {
@@ -242,16 +250,13 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
               <div className={`grid lg:grid-cols-2 gap-12 items-center`}>
                 <div className={index % 2 === 0 ? 'lg:order-2' : ''}>
                   {section.image ? (
-                    <img 
-                      src={resolveImageSrc(section.image)} 
+                    <ResponsiveImg
+                      image={section.image}
+                      sizes="(max-width: 1024px) 100vw, 600px"
                       alt={section.imageAlt || `${service.name} professional services Melbourne`}
                       title={section.imageTitle}
                       className="aspect-[4/3] w-full object-cover rounded-lg"
                       style={{ objectPosition: section.imagePosition === 'left' ? 'left center' : section.imagePosition === 'right' ? 'right center' : 'center' }}
-                      width={800}
-                      height={600}
-                      loading="lazy"
-                      decoding="async"
                     />
                   ) : (
                     <div className="aspect-[4/3] bg-muted/30 rounded-lg border-2 border-dashed border-muted-foreground/20 flex items-center justify-center">
@@ -313,14 +318,11 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
                   className="bg-secondary border-border hover:border-primary/50 transition-colors overflow-hidden"
                 >
                   <div className="aspect-[4/3] overflow-hidden">
-                    <img
-                      src={resolveImageSrc(card.image)}
+                    <ResponsiveImg
+                      image={card.image}
+                      sizes="(max-width: 768px) 100vw, 400px"
                       alt={card.imageAlt}
                       className="w-full h-full object-cover"
-                      width={600}
-                      height={450}
-                      loading="lazy"
-                      decoding="async"
                     />
                   </div>
                   <CardContent className="p-6">
@@ -365,26 +367,20 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
                 {service.secondaryImage ? (
-                  <img 
-                    src={resolveImageSrc(service.secondaryImage)} 
+                  <ResponsiveImg
+                    image={service.secondaryImage}
+                    sizes="(max-width: 1024px) 100vw, 600px"
                     alt={service.secondaryImageAlt || `${service.name} Melbourne - professional commercial services`}
                     title={service.secondaryImageTitle}
                     className="aspect-[4/3] w-full object-cover rounded-lg"
                     style={{ objectPosition: service.slug === 'epoxy-flooring' ? '100% center' : 'center' }}
-                    width={800}
-                    height={600}
-                    loading="lazy"
-                    decoding="async"
                   />
                 ) : service.heroImage ? (
-                  <img 
-                    src={resolveImageSrc(service.heroImage)} 
+                  <ResponsiveImg
+                    image={service.heroImage}
+                    sizes="(max-width: 1024px) 100vw, 600px"
                     alt={service.heroImageAlt || `${service.name} Melbourne - professional commercial services`}
                     className="aspect-[4/3] w-full object-cover rounded-lg"
-                    width={800}
-                    height={600}
-                    loading="lazy"
-                    decoding="async"
                   />
                 ) : (
                   <div className="aspect-[4/3] bg-muted/30 rounded-lg border-2 border-dashed border-muted-foreground/20 flex items-center justify-center">
@@ -565,15 +561,12 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
                 <div className={`grid lg:grid-cols-2 gap-12 items-start`}>
                   <div className={index % 2 === 0 ? 'lg:order-2' : ''}>
                     {section.image ? (
-                      <img 
-                        src={resolveImageSrc(section.image)} 
+                      <ResponsiveImg
+                        image={section.image}
+                        sizes="(max-width: 1024px) 100vw, 600px"
                         alt={section.imageAlt || `${service.name} professional services Melbourne`}
                         className="aspect-[4/3] w-full object-cover rounded-lg"
                         style={{ objectPosition: section.imagePosition === 'left' ? 'left center' : section.imagePosition === 'right' ? 'right center' : 'center' }}
-                        width={800}
-                        height={600}
-                        loading="lazy"
-                        decoding="async"
                       />
                     ) : (
                       <div className="aspect-[4/3] bg-muted/30 rounded-lg border-2 border-dashed border-muted-foreground/20 flex items-center justify-center">
@@ -650,15 +643,12 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
                 </div>
                 <div className={shouldReverseLayout ? 'lg:order-1' : ''}>
                   {section.image ? (
-                    <img
-                      src={resolveImageSrc(section.image)}
+                    <ResponsiveImg
+                      image={section.image}
+                      sizes="(max-width: 1024px) 100vw, 600px"
                       alt={section.imageAlt || `${service.name} professional services Melbourne`}
                       className="aspect-[4/3] w-full object-cover rounded-lg"
                       style={{ objectPosition: section.imagePosition === 'left' ? 'left center' : section.imagePosition === 'right' ? 'right center' : 'center' }}
-                      width={800}
-                      height={600}
-                      loading="lazy"
-                      decoding="async"
                     />
                   ) : (
                     <div className="aspect-[4/3] bg-muted/30 rounded-lg border-2 border-dashed border-muted-foreground/20 flex items-center justify-center">
@@ -690,23 +680,18 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
             <div className="grid md:grid-cols-3 gap-6">
               {service.linkedSpotlightBlock.cards.map((card, index) => {
                 const linkedService = getServiceBySlug(card.slug);
-                const imageSrc = linkedService?.heroImage
-                  ? resolveImageSrc(linkedService.heroImage)
-                  : undefined;
+                const cardImage = linkedService?.heroImage;
 
                 return (
                   <a key={index} href={`/services/${card.slug}/`} className="block group">
                     <Card className="bg-secondary border-border hover:border-primary/50 transition-colors overflow-hidden h-full">
                       <div className="aspect-[4/3] overflow-hidden">
-                        {imageSrc ? (
-                          <img
-                            src={imageSrc}
+                        {cardImage ? (
+                          <ResponsiveImg
+                            image={cardImage}
+                            sizes="(max-width: 768px) 100vw, 400px"
                             alt={linkedService?.heroImageAlt || `${card.name} Melbourne`}
                             className="w-full h-full object-cover"
-                            width={600}
-                            height={450}
-                            loading="lazy"
-                            decoding="async"
                           />
                         ) : (
                           <div className="w-full h-full bg-muted/30 flex items-center justify-center">
@@ -742,14 +727,11 @@ const ServiceContent = ({ slug }: ServiceContentProps) => {
                   <Card className="overflow-hidden border-border bg-card h-full transition-all duration-300 group-hover:border-primary/50 group-hover:shadow-xl">
                     <div className="aspect-[4/3] overflow-hidden relative">
                       {relatedService.heroImage ? (
-                        <img
-                          src={resolveImageSrc(relatedService.heroImage)}
+                        <ResponsiveImg
+                          image={relatedService.heroImage}
+                          sizes="(max-width: 768px) 100vw, 400px"
                           alt={relatedService.heroImageAlt || relatedService.name}
                           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                          loading="lazy"
-                          decoding="async"
-                          width={400}
-                          height={300}
                         />
                       ) : (
                         <div className="w-full h-full bg-muted/30 flex items-center justify-center">

@@ -6,6 +6,8 @@ import Breadcrumbs from '../../../components/Breadcrumbs.astro';
 import BlogPage, { getBlogPageCount, POSTS_PER_PAGE } from '../../../page-components/Blog.tsx';
 import { blogPosts } from '../../../data/blogPosts';
 import { sortBlogPostsByDate } from '../../../lib/blogUtils';
+import { buildImageVariants } from '@/lib/imageVariants';
+import { getBlogPageImages } from '../../../page-components/Blog.tsx';
 
 export function getStaticPaths() {
   const total = getBlogPageCount();
@@ -20,6 +22,7 @@ const page = Number(Astro.params.page);
 // aren't near duplicates of each other.
 const firstPost = sortBlogPostsByDate(blogPosts)[(page - 1) * POSTS_PER_PAGE];
 const pageDescription = `Page ${page} of the MakeGOOD Melbourne blog: make good, strip out and remediation guides, starting with ${firstPost ? `"${firstPost.title}"` : 'older posts'}.`;
+const imageVariants = await buildImageVariants(getBlogPageImages(page));
 ---
 
 <BaseLayout
@@ -31,5 +34,5 @@ const pageDescription = `Page ${page} of the MakeGOOD Melbourne blog: make good,
   <div class="bg-secondary pt-20">
     <Breadcrumbs path="/blog/" />
   </div>
-  <BlogPage page={page} />
+  <BlogPage page={page} imageVariants={imageVariants} />
 </BaseLayout>

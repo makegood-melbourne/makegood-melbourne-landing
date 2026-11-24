@@ -1,22 +1,29 @@
+import ResponsiveImg from "@/components/ResponsiveImg";
 import { ArrowRight } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import commercialOfficeMakeGoodMelbourneImg from '@/assets/industries/commercial-office-make-good-melbourne.jpg';
+import hospitalityVenueKitchenMakeGoodMelbourneImg from '@/assets/industries/hospitality-venue-kitchen-make-good-melbourne.jpg';
+import industrialManufacturingMakeGoodMelbourneImg from '@/assets/industries/industrial-manufacturing-make-good-melbourne.jpg';
+import medicalCentreMakeGoodMelbourneImg from '@/assets/industries/medical-centre-make-good-melbourne.jpg';
+import retailShopfrontMakeGoodMelbourneImg from '@/assets/industries/retail-shopfront-make-good-melbourne.jpg';
+import warehouseLogisticsMakeGoodMelbourneImg from '@/assets/industries/warehouse-logistics-make-good-melbourne.jpg';
 
 interface Industry {
   id: string;
   title: string;
   description: string;
   href: string;
-  image: string;
+  image: { src: string; width: number; height: number };
   alt: string;
 }
 
-const industries: Industry[] = [
+export const industryCards: Industry[] = [
   {
     id: "offices",
     title: "Offices",
     description: "Partitions down. Walls patched. Back to base building.",
     href: "/industries/commercial/",
-    image: "/images/industries/commercial-office-make-good-melbourne.jpg",
+    image: commercialOfficeMakeGoodMelbourneImg,
     alt: "Professional commercial office space after make good restoration in Melbourne"
   },
   {
@@ -24,7 +31,7 @@ const industries: Industry[] = [
     title: "Warehouses & Fulfilment",
     description: "Racking in for the fit out. Racking out at lease end. Floors fixed both times.",
     href: "/industries/warehouses-logistics/",
-    image: "/images/industries/warehouse-logistics-make-good-melbourne.jpg",
+    image: warehouseLogisticsMakeGoodMelbourneImg,
     alt: "Warehouse and fulfilment centre make good services in Melbourne"
   },
   {
@@ -32,7 +39,7 @@ const industries: Industry[] = [
     title: "Retail",
     description: "Shopfront stripped. Surfaces finished. Handed back to centre standards.",
     href: "/industries/retail/",
-    image: "/images/industries/retail-shopfront-make-good-melbourne.jpg",
+    image: retailShopfrontMakeGoodMelbourneImg,
     alt: "Retail shopfront and commercial space make good services in Melbourne"
   },
   {
@@ -40,7 +47,7 @@ const industries: Industry[] = [
     title: "Medical Centres & Suites",
     description: "Fitout removed. Services capped. Compliant and cleared.",
     href: "/industries/medical-centres/",
-    image: "/images/industries/medical-centre-make-good-melbourne.jpg",
+    image: medicalCentreMakeGoodMelbourneImg,
     alt: "Medical centre and healthcare suite make good services in Melbourne"
   },
   {
@@ -48,7 +55,7 @@ const industries: Industry[] = [
     title: "Industrial & Manufacturing",
     description: "Plant out. Damage repaired. Drains cleared and compliant.",
     href: "/industries/industrial/",
-    image: "/images/industries/industrial-manufacturing-make-good-melbourne.jpg",
+    image: industrialManufacturingMakeGoodMelbourneImg,
     alt: "Industrial manufacturing facility make good and restoration services in Melbourne"
   },
   {
@@ -56,7 +63,7 @@ const industries: Industry[] = [
     title: "Hospitality & Venues",
     description: "Kitchen stripped. Services made safe. Floor ready to hand over.",
     href: "/industries/hospitality-venues/",
-    image: "/images/industries/hospitality-venue-kitchen-make-good-melbourne.jpg",
+    image: hospitalityVenueKitchenMakeGoodMelbourneImg,
     alt: "Commercial hospitality venue and kitchen make good services in Melbourne"
   }
 ];
@@ -78,7 +85,7 @@ const IndustriesGrid = ({ tone = "dark" }: { tone?: Tone }) => {
 
         {/* Grid - 3 columns on desktop, 2 on tablet, 1 on mobile */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {industries.map((industry) => (
+          {industryCards.map((industry) => (
             <a 
               key={industry.id} 
               href={industry.href} 
@@ -87,13 +94,11 @@ const IndustriesGrid = ({ tone = "dark" }: { tone?: Tone }) => {
               <Card className="overflow-hidden border-border bg-card h-full transition-all duration-300 group-hover:border-primary/50 group-hover:shadow-xl">
                 {/* Industry Image */}
                 <div className="aspect-[4/3] overflow-hidden relative bg-muted/30">
-                  <img 
-                    src={industry.image} 
+                  <ResponsiveImg
+                    image={industry.image}
+                    sizes="(max-width: 768px) 100vw, 400px"
                     alt={industry.alt}
                     className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                    loading="lazy"
-                    width="800"
-                    height="600"
                   />
                 </div>
 

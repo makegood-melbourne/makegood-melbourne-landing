@@ -1,6 +1,5 @@
 import { Mail } from "lucide-react";
-import logo from "@/assets/makegood-melbourne-logo-400.png";
-import { resolveImageSrc } from "@/lib/resolveImageSrc";
+import logo from "@/assets/makegood-melbourne-logo-400.webp";
 import { serviceCategories, getServicesByCategory } from "@/data/serviceCategories";
 import { getFeaturedLocations } from "@/data/locations";
 import { getAllIndustries } from "@/data/industries";
@@ -12,7 +11,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           <div className="lg:col-span-2">
             <a href="/">
-              <img src={resolveImageSrc(logo)} alt="MakeGOOD Melbourne" className="h-10 mb-4 brightness-0 invert hover:opacity-80 transition-opacity cursor-pointer" />
+              <img src={logo.src} width={logo.width} height={logo.height} alt="MakeGOOD Melbourne" className="h-10 mb-4 brightness-0 invert hover:opacity-80 transition-opacity cursor-pointer w-auto" loading="lazy" decoding="async" />
             </a>
             <p className="text-lg text-accent font-semibold mb-2">Make Good, BETTER.</p>
             <p className="text-muted-foreground leading-relaxed mb-4 max-w-md">

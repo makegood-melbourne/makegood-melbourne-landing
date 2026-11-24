@@ -9,7 +9,8 @@
 // src/data/pageLastmod.json. Pages with no known date are listed without lastmod.
 //
 // The build fails if any published blog post, service, category or area page is
-// missing, or if a blog post has no topic and service mapping for internal links.
+// missing, if a blog post has no topic and service mapping for internal links, or if
+// an included page has no lastmod date.
 import { readFileSync, writeFileSync, readdirSync, statSync, rmSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
 
@@ -99,4 +100,4 @@ if (missing.length) fail(`published pages missing from the sitemap: ${missing.jo
 const noDate = included.filter((path) => !lastmodFor(path));
 console.log(`[sitemap] ${included.length} URLs written to dist/sitemap.xml (${excluded.length} built pages excluded).`);
 if (excluded.length) console.log(`[sitemap] Excluded: ${excluded.join('; ')}`);
-if (noDate.length) console.log(`[sitemap] No lastmod (add to src/data/pageLastmod.json): ${noDate.join(', ')}`);
+if (noDate.length) fail(`pages with no lastmod date (add them to src/data/pageLastmod.json): ${noDate.join(', ')}`);
