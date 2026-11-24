@@ -249,10 +249,9 @@ const Contact = () => {
                       <Input
                         name="phone"
                         type="tel"
-                        placeholder="Phone Number *"
+                        placeholder="Phone Number (optional)"
                         value={formData.phone}
                         onChange={handleChange}
-                        required
                         className="bg-background border-input"
                       />
                     </div>
