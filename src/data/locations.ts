@@ -109,7 +109,11 @@ export const locations: Location[] = [
       { title: "Hazardous Waste Removal", description: "Knowledgeable in safely removing industrial residues and waste materials typical in Altona’s manufacturing and logistics facilities." }
     ],
     endOfLeaseContent: "We make good warehouses on Millers Road and factories around the Aircraft industrial estate. Racking, slab repairs, docks and roller doors, priced as one job.",
-
+    faqs: [
+      { question: "Do you make good warehouses in Altona North?", answer: "Yes. Racking removal, anchor holes filled, slab repairs, dock and roller door repairs and a full clean, priced as one job." },
+      { question: "What about factories with oil, residue or plant?", answer: "Plant is disconnected and removed, residues are cleaned off and the floor is repaired, with waste taken to licensed facilities." },
+      { question: "How early should I start?", answer: "As early as you can. For a large warehouse, three to six months out leaves time to agree the scope and fit the floor work in before handover." }
+    ]
   },
   {
     name: "Clayton",
@@ -147,7 +151,13 @@ export const locations: Location[] = [
       "We install new pallet racking and longspan shelving, move racking between sites and reconfigure layouts as your stock changes. Because we fix warehouse floors every day, the slab gets checked and repaired before anything is anchored to it. And when you leave, every anchor hole is filled and ground flush."
     ],
     endOfLeaseContent: "We make good industrial units in Clayton South, offices on Centre Road and labs and medical suites near Monash. Leaving a warehouse? We start with the racking, the slab and the docks, then work back from your handover date.",
-
+    faqs: [
+      { question: "Do you make good warehouses and industrial units in Clayton South?", answer: "Yes. Racking out, anchor holes filled, slab repaired, line marking reinstated, offices stripped and the building cleaned for handover. One contractor and one fixed price for the whole scope." },
+      { question: "Can you install or move pallet racking in Clayton?", answer: "Yes. We install new pallet racking and longspan shelving, move racking between sites and reconfigure layouts. The slab is checked and repaired before anything is anchored." },
+      { question: "Do you make good labs and medical suites near Monash?", answer: "Yes. Services are isolated and capped by licensed trades, benches and fixtures come out, and walls, floors and ceilings are repaired to what the lease asks." },
+      { question: "How early should I get in touch before my lease ends?", answer: "For a warehouse, three to six months out is not too early. It leaves time to agree the scope with the landlord, sell or move the racking and fit the floor work in before handover. Short on time? Get in touch anyway and we'll stage the work around your last weeks." },
+      { question: "What do you need to give me a price?", answer: "Send the address, your lease end date and the make good clause if you have it. We walk the site and give you one fixed price for every trade, grouped by type of works." }
+    ]
   },
   {
     name: "Dandenong",
@@ -232,7 +242,11 @@ export const locations: Location[] = [
       { title: "Yarra Ranges Gateway Compliance", description: "Properties near Yarra Ranges need make good work mindful of environmental regulations and local council standards unique to the area." }
     ],
     endOfLeaseContent: "We make good warehouses and trade premises on Canterbury Road and through Kilsyth South. Older buildings usually mean tired floor coatings, old wiring and dated offices, and we price all of it upfront.",
-
+    faqs: [
+      { question: "What do older Kilsyth warehouses usually need at lease end?", answer: "Tired floor coatings, original wiring and dated offices come up often in buildings from the 1980s and 1990s. We price for them upfront so they don't turn into variations." },
+      { question: "Do you make good trade premises and workshops?", answer: "Yes. Fitouts, mezzanines and equipment come out, floors and walls are repaired and the site is cleaned for inspection." },
+      { question: "What do you need to give me a price?", answer: "Send the address, your lease end date and the make good clause if you have it. We walk the site and give you one fixed price for every trade, grouped by type of works." }
+    ]
   },
   {
     name: "Moorabbin",
@@ -266,7 +280,11 @@ export const locations: Location[] = [
       { title: "Bayside Environmental Considerations", description: "Knowledgeable about local bayside regulations affecting waste disposal and environmental controls during make good projects near Moorabbin’s coastal zones." }
     ],
     endOfLeaseContent: "We make good industrial units along South Road and buildings in the airport precinct. Where a site has controlled access, we work to its induction and access rules.",
-
+    faqs: [
+      { question: "Do you work in the Moorabbin Airport precinct?", answer: "Yes. Where a site has controlled access, we work to its induction, access and security rules and plan deliveries and waste around them." },
+      { question: "What do older industrial buildings on Governor Road and Cochranes Road usually need?", answer: "Often concrete repairs, electrical work and, in older buildings, asbestos management before anything else can start. We check for these at the site visit so they're in the price, not a variation later." },
+      { question: "Do you handle the whole scope or just parts of it?", answer: "The whole scope. Strip out, repairs, painting, line marking, roofing and the final clean, from one contractor." }
+    ]
   },
   {
     name: "Mulgrave",
@@ -304,7 +322,13 @@ export const locations: Location[] = [
       "We install new pallet racking and longspan shelving, relocate racking between sites and reconfigure layouts as your operation grows. The slab is checked and repaired before anything goes up, and when the lease ends every anchor hole is filled and ground flush for handover."
     ],
     endOfLeaseContent: "We make good warehouses and industrial units around Jacksons Road and offices along Springvale Road. One scope, one fixed price and a programme built around your lease end.",
-
+    faqs: [
+      { question: "Do you make good industrial units around Jacksons Road?", answer: "Yes. Racking, plant and site offices come out, the slab and walls are repaired, line marking is sorted and the unit is cleaned for inspection." },
+      { question: "What does an office make good in a Mulgrave business park involve?", answer: "Usually partitions, cabling and joinery out, ceilings and walls repaired, floor coverings removed or replaced and services made safe, so the floor goes back to base building. Business parks have their own rules on access and loading, and we work to them." },
+      { question: "Can you install or relocate pallet racking in Mulgrave?", answer: "Yes. New pallet racking and longspan shelving, moves between sites and layout changes, with the slab checked before anything is anchored." },
+      { question: "Can you work while we're still operating?", answer: "Yes. We can stage the work area by area and do the noisy or dusty parts after hours, so you can keep trading until you move." },
+      { question: "What do you need to give me a price?", answer: "Send the address, your lease end date and the make good clause if you have it. We walk the site and give you one fixed price for every trade, grouped by type of works." }
+    ]
   },
   {
     name: "Port Melbourne",
@@ -389,7 +413,11 @@ export const locations: Location[] = [
       { title: "Mixed-Use Property Challenges", description: "Victoria Gardens properties combine residential and commercial areas, requiring coordination of different compliance and restoration standards." }
     ],
     endOfLeaseContent: "We make good shops on Bridge Road and Swan Street, offices in Cremorne and warehouses around Victoria Gardens. The fitout comes out and the heritage features stay.",
-
+    faqs: [
+      { question: "Can you work in heritage buildings on Church Street and Bridge Road?", answer: "Yes. Tenant additions come out, and original features such as brick, timber and pressed metal are protected and repaired, not replaced." },
+      { question: "How do you handle access on busy streets like Swan Street?", answer: "Deliveries, skip bins and waste removal are planned around loading zones and trading hours, and noisy work is done after hours where needed." },
+      { question: "What happens to server rooms and AV in tech offices?", answer: "Power and data are isolated by licensed electricians first. Then racks, cabling, cooling and AV come out and the room goes back to base building." }
+    ]
   },
   {
     name: "Ringwood",
@@ -474,7 +502,11 @@ export const locations: Location[] = [
       { title: "Creative Space Restoration", description: "Working with advertising agencies and creative firms involves restoring open-plan areas while maintaining the integrity of modern office elements." }
     ],
     endOfLeaseContent: "We make good studios and offices around Clarendon Street and warehouses along City Road. Custom joinery comes out, exposed brick and heritage features stay.",
-
+    faqs: [
+      { question: "Will you keep the exposed brick and character features?", answer: "Yes, where the lease allows. Custom joinery and fitout come out without damaging the brick, timber and other features the landlord wants to keep." },
+      { question: "Do heritage overlays affect my make good?", answer: "They can. Some work needs extra care or approval, and original fabric has to be protected. We check this at the site visit and build it into the scope." },
+      { question: "Do you make good warehouses and showrooms on City Road and Kings Way too?", answer: "Yes. Fitout and racking come out, floors and walls are repaired and the space is cleaned for handover." }
+    ]
   },
   {
     name: "Truganina",
@@ -508,7 +540,11 @@ export const locations: Location[] = [
       { title: "E-commerce Facility Standards", description: "Make good work must meet specific standards for clean, functional spaces suitable for e-commerce fulfilment centres common around Boundary Road." }
     ],
     endOfLeaseContent: "We make good large warehouses along Forsyth Road and Boundary Road. Thousands of racking anchors, big slabs and dock repairs, planned so the floor is only done once.",
-
+    faqs: [
+      { question: "Can you handle a very large warehouse?", answer: "Yes. Big sites mean thousands of racking anchors and a lot of slab, so we plan the order of works so the floor is only repaired once and line marking goes down last." },
+      { question: "Do you work at height in high bay warehouses?", answer: "Yes. High walls, racking and roof work are done from elevated work platforms, with the right tickets and a safety plan." },
+      { question: "Can you install racking in a new warehouse as well?", answer: "Yes. We install pallet racking and longspan shelving, check the slab first and plan the layout around how you pick and ship." }
+    ]
   },
   {
     name: "Fitzroy",

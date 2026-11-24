@@ -1,21 +1,23 @@
 ---
 // End of page links on service and category pages: the blog posts written about
 // this service and a rotating set of suburbs where this work is common.
-import { getPostsForService, getAreasForService } from '@/data/internalLinks';
+import { getPostsForService, getPostsBySlugs, getAreasForService } from '@/data/internalLinks';
 import { getPublishedServices } from '@/data/services';
 
 interface Props {
   serviceSlug: string;
   serviceName: string;
+  // Optional: link these posts instead of the ones mapped to the service
+  postSlugs?: string[];
 }
 
-const { serviceSlug, serviceName } = Astro.props;
+const { serviceSlug, serviceName, postSlugs } = Astro.props;
 const categorySlugs = [
   'make-good-solutions', 'strip-out-solutions', 'remediation-solutions',
   'roofing-solutions', 'handover-solutions', 'racking-solutions',
 ];
 const allServiceSlugs = [...getPublishedServices().map((service) => service.slug), ...categorySlugs];
-const posts = getPostsForService(serviceSlug);
+const posts = postSlugs ? getPostsBySlugs(postSlugs) : getPostsForService(serviceSlug);
 const areas = getAreasForService(serviceSlug, allServiceSlugs);
 ---
 

@@ -1,7 +1,7 @@
 ---
 import { Image } from 'astro:assets';
 import { getBlogPostBySlug } from '@/data/blogPosts';
-import { calculateReadingTime } from '@/lib/blogUtils';
+import { calculateReadingTime, formatPostDate } from '@/lib/blogUtils';
 import Breadcrumbs from './Breadcrumbs.astro';
 
 // Import all blog images statically using relative path from src
@@ -37,7 +37,7 @@ const heroImage = imageModule?.default;
 
 <!-- Breadcrumbs (using shared component) -->
 <div class="pt-20 bg-background">
-  <Breadcrumbs path={`/blog/${slug}`} />
+  <Breadcrumbs path={`/blog/${slug}`} currentLabel={post.title} />
 </div>
 
 <!-- Hero Section -->
@@ -49,8 +49,12 @@ const heroImage = imageModule?.default;
     )}
     <div class="flex flex-wrap items-center gap-4 text-sm text-muted-foreground">
       <span class="flex items-center gap-1">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        By MakeGOOD Melbourne
+      </span>
+      <span class="flex items-center gap-1">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/></svg>
-        {post.date}
+        {formatPostDate(post.date)}
       </span>
       <span class="flex items-center gap-1">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>

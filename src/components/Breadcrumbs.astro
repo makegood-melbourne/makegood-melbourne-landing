@@ -10,10 +10,11 @@ interface BreadcrumbItem {
 interface Props {
   path?: string;
   serviceName?: string; // Optional: pass service name for accurate display
+  currentLabel?: string; // Optional: label for the last crumb (e.g. a blog post title)
 }
 
 // Get the current URL path (use prop if provided, otherwise use Astro.url)
-const { path, serviceName } = Astro.props;
+const { path, serviceName, currentLabel } = Astro.props;
 const currentPath = path || Astro.url.pathname;
 
 // Function to convert slug to title
@@ -98,7 +99,7 @@ function generateBreadcrumbs(pathStr: string, serviceNameOverride?: string): Bre
     breadcrumbs.push({ label: 'Blog', href: '/blog/' });
     
     if (segments.length > 1) {
-      const postTitle = slugToTitle(segments[1]);
+      const postTitle = currentLabel || slugToTitle(segments[1]);
       breadcrumbs.push({ label: postTitle });
     }
   } else if (firstSegment === 'downloads') {

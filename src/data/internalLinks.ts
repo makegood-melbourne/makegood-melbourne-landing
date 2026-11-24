@@ -85,8 +85,25 @@ export const getRelatedPosts = (slug: string, count = 3): BlogPost[] => {
   return related;
 };
 
-export const getPostsForService = (serviceSlug: string): BlogPost[] =>
-  sortBlogPostsByDate(blogPosts).filter((post) => blogTopicAndService[post.slug]?.service === serviceSlug);
+// Services with no posts of their own borrow the closest ones, so every service and
+// category page ends with a "From the blog" block.
+const servicePostFallback: Record<string, string[]> = {
+  "roofing-solutions": ["box-gutter-leaks-warehouse-melbourne", "metal-roof-replacement-warehouse-melbourne", "commercial-roof-storm-damage-first-24-hours-melbourne"],
+  "racking-solutions": ["racking-removal-anchor-holes-lease-melbourne", "guide-to-pallet-racking-solutions", "warehouse-floor-restoration-racking-removal"],
+  "roofing-solutions/roof-leak-repairs": ["box-gutter-leaks-warehouse-melbourne", "commercial-roof-storm-damage-first-24-hours-melbourne"],
+  "racking-solutions/racking-relocation-reconfiguration": ["racking-removal-anchor-holes-lease-melbourne", "guide-to-pallet-racking-solutions"],
+};
+
+export const getPostsBySlugs = (slugs: string[]): BlogPost[] =>
+  slugs
+    .map((slug) => blogPosts.find((post) => post.slug === slug))
+    .filter((post): post is BlogPost => Boolean(post));
+
+export const getPostsForService = (serviceSlug: string): BlogPost[] => {
+  const own = sortBlogPostsByDate(blogPosts).filter((post) => blogTopicAndService[post.slug]?.service === serviceSlug);
+  if (own.length > 0) return own;
+  return getPostsBySlugs(servicePostFallback[serviceSlug] ?? []);
+};
 
 // Approximate suburb centres, used only to work out neighbours.
 const areaCoords: Record<string, [number, number]> = {

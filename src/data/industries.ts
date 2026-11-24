@@ -5,9 +5,6 @@ import fitOutRackingImage from "@/assets/industries/warehouse-fulfilment-centre-
 import fitOutSlabImage from "@/assets/services/warehouse-floor-repairs-scope-polished-concrete-melbourne.jpeg";
 import fitOutLineMarkingImage from "@/assets/services/warehouse-fresh-yellow-line-marking-polished-concrete-melbourne.jpg";
 
-import remediationHeroImage from "@/assets/services/glazing-facade-installation-commercial-building-melbourne.jpg";
-import remediationCladdingImage from "@/assets/services/cladding-remediation-facade-glazing-melbourne.jpeg";
-import remediationConcreteImage from "@/assets/services/concrete-cancer-exposed-rebar-column-spalling-melbourne.jpeg";
 
 export interface FeaturedSection {
   title: string;
@@ -312,74 +309,6 @@ export const industries: Industry[] = [
       }
     ]
   },
-  {
-    name: "Remediation",
-    slug: "remediation",
-    title: "Building Remediation Melbourne",
-    metaTitle: "Building Remediation Melbourne | Make Good, BETTER.",
-    metaDescription: "Specialist building remediation services in Melbourne. Cladding & glazing repairs, structural remediation, concrete cancer treatment, waterproofing solutions. Licensed contractors.",
-    heroText: "Expert building remediation services across Melbourne: structural repairs, cladding replacement, concrete restoration and waterproofing solutions.",
-    heroImage: remediationHeroImage,
-    heroImageAlt: "Commercial building glazing and facade installation during remediation works in Melbourne",
-    ogImage: "/og/remediation.jpg",
-    introduction: "Building remediation addresses defects and deterioration that affect a building's structural integrity, safety and weatherproofing. From combustible cladding replacement to concrete cancer treatment, our remediation services restore buildings to compliant, safe condition. We work with strata managers, building owners and facility managers across Melbourne to deliver lasting solutions.",
-    featuredSections: [
-      {
-        title: "Structural Systems & Building Envelope",
-        description: "We plan the structural works so every lift, alignment and connection meets the engineer's tolerances and the safety plan. Roofing, cladding and glazing go on early, so the building is weathertight and the internal works can keep going.",
-        image: remediationCladdingImage,
-        imageAlt: "Building facade cladding remediation and glazing replacement works in Melbourne"
-      },
-      {
-        title: "Concrete & Structural Restoration",
-        description: "Concrete cancer, spalling and reinforcement corrosion are addressed through proven repair methodologies. We remove deteriorated concrete, treat exposed reinforcement with protective coatings, and restore structural elements using high-performance repair mortars. Our approach extends the service life of your building while meeting engineering certification requirements.",
-        image: remediationConcreteImage,
-        imageAlt: "Concrete cancer repair showing exposed steel reinforcement and spalling on column in Melbourne"
-      }
-    ],
-    challenges: [
-      {
-        title: "Cladding & Glazing Defects",
-        description: "Non-compliant or damaged cladding requires careful removal and replacement with compliant materials."
-      },
-      {
-        title: "Structural Deterioration",
-        description: "Concrete cancer, spalling and reinforcement corrosion compromise structural integrity and require expert repair."
-      },
-      {
-        title: "Waterproofing Failures",
-        description: "Failed membranes in balconies, roofs and wet areas lead to water ingress and building damage."
-      },
-      {
-        title: "Compliance Requirements",
-        description: "Remediation work must meet current building codes and often requires engineering certification."
-      }
-    ],
-    services: ["cladding-glazing", "structural-remediation", "concrete-floor-repair", "waterproofing"],
-    benefits: [
-      "Licensed and insured contractors",
-      "Engineering-certified solutions",
-      "Compliant material specifications",
-      "Minimal disruption to occupants",
-      "Full project documentation",
-      "Long-term warranty on works"
-    ],
-    faqs: [
-      {
-        question: "What is cladding remediation?",
-        answer: "Cladding remediation involves removing non-compliant or defective external cladding and replacing it with materials that meet current fire safety and building standards."
-      },
-      {
-        question: "What is concrete cancer?",
-        answer: "Concrete cancer occurs when steel reinforcement corrodes and expands, causing the surrounding concrete to crack and spall. It requires removing damaged concrete, treating reinforcement and applying protective coatings."
-      },
-      {
-        question: "Do you provide engineering certification?",
-        answer: "Yes, we work with structural engineers to provide certification for remediation works, ensuring compliance with building regulations and providing documentation for building records."
-      }
-    ]
-  }
-,
   {
     "name": "Retail",
     "slug": "retail",
