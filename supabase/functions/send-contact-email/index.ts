@@ -185,6 +185,8 @@ const handler = async (req: Request): Promise<Response> => {
       body: JSON.stringify({
         from: "MakeGOOD Melbourne <noreply@makegood.melbourne>",
         to: ["enquiries@makegood.melbourne"],
+        // Hitting reply goes straight to the customer, not the noreply address
+        reply_to: email,
         subject: recaptchaFailed
           ? `[Check: possible spam] New Enquiry from ${safeName}`
           : `New Enquiry from ${safeName}`,
@@ -221,10 +223,13 @@ const handler = async (req: Request): Promise<Response> => {
       body: JSON.stringify({
         from: "MakeGOOD Melbourne <noreply@makegood.melbourne>",
         to: [email], // Use original email for sending, not escaped
-        subject: "We've received your enquiry - MakeGOOD Melbourne",
+        // Customers can reply with the make good clause or photos and it reaches us
+        reply_to: "enquiries@makegood.melbourne",
+        subject: "We've received your enquiry | MakeGOOD Melbourne",
         html: `
           <h2>Thank you for contacting MakeGOOD Melbourne, ${safeName}!</h2>
-          <p>We've received your enquiry and will get back to you within 24 hours.</p>
+          <p>We've received your enquiry and will reply within one business day.</p>
+          <p>Have the make good clause or photos of the site? Reply to this email and attach them.</p>
           <p><strong>Your message:</strong></p>
           <blockquote style="border-left: 3px solid #e5e5e5; padding-left: 15px; margin-left: 0;">
             ${safeMessage}
