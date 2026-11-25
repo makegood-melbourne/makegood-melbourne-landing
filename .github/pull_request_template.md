@@ -12,6 +12,6 @@ Standards: [docs/SEO-STANDARDS.md](../blob/main/docs/SEO-STANDARDS.md). The buil
 - [ ] The opening sentence says what the page is about and who it's for, with no repeated banners or promo text near the top
 - [ ] Images have descriptive filenames and alt text that describes what each one shows, and only the top image loads straight away
 - [ ] New pages are linked from at least 3 relevant pages and added to the right link blocks (related services, from the blog, nearby areas)
-- [ ] Copy is unique (no near duplicate suburb or service pages), plain and honest, with Australian spelling and no Oxford commas
+- [ ] Copy follows [docs/TONE-OF-VOICE.md](../blob/main/docs/TONE-OF-VOICE.md): unique, plain and honest, no words from its avoid list, Australian spelling and no Oxford commas
 - [ ] lastmod is bumped in `src/data/pageLastmod.json` (or `updated` on a blog post) for pages whose content changed
 - [ ] Deploy preview checked by the owner before merge

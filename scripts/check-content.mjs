@@ -5,8 +5,10 @@
 //   - has a phone number in its visible text, a tel: link or a "telephone" in structured data
 //   - mentions the Kew office address anywhere, including structured data
 //   - shows raw markdown in its text: a link like [text](/page/) or **bold** that wasn't rendered
-// Prints warnings (without failing) for indexable pages that fewer than three other pages
-// link to from their main content (navigation, header and footer links don't count).
+// Prints warnings (without failing) for:
+//   - words to avoid from docs/TONE-OF-VOICE.md ("comprehensive", "tailored" and so on)
+//   - indexable pages that fewer than three other pages link to from their main content
+//     (navigation, header and footer links don't count)
 import { readFileSync, readdirSync, statSync } from 'node:fs';
 import { join } from 'node:path';
 
@@ -42,8 +44,19 @@ const snippet = (text, index) => text.slice(Math.max(0, index - 40), index + 40)
 const PHONE = /(?:\+61\s?|\b0)[2-478](?:[\s-]?\d){8}\b|\b1[38]00(?:[\s-]?\d){6}\b|\b13(?:[\s-]?\d){4}\b(?=\s*$)/;
 const KEW = /Cobden\s+St|\bKew,?\s+(?:VIC|Victoria|310[1-3])\b|"addressLocality"\s*:\s*"Kew"/i;
 
+// Words to avoid, from docs/TONE-OF-VOICE.md. Warned about, not failed on.
+const AVOID = [
+  'comprehensive', 'tailored', 'bespoke', 'seamlessly', 'we understand', "whether you're",
+  'whether you are', 'proven', 'cutting-edge', 'cutting edge', 'state-of-the-art', 'world-class',
+  'top-notch', 'unparalleled', 'second to none', 'industry-leading', 'hassle-free', 'stress-free',
+  'peace of mind', 'leverage', 'utmost', 'highest standards',
+];
+const escapeRegExp = (value) => value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+const AVOID_PATTERN = new RegExp(`(?<![\\w-])(${AVOID.map(escapeRegExp).join('|')})(?![\\w-])`, 'gi');
+
 const failures = [];
 const warnings = [];
+const toneWarnings = [];
 const pages = new Map();
 
 for (const file of walk(DIST).filter((f) => f.endsWith('.html'))) {
@@ -51,6 +64,13 @@ for (const file of walk(DIST).filter((f) => f.endsWith('.html'))) {
   const html = readFileSync(file, 'utf8');
   pages.set(page, html);
   const text = visibleText(html);
+
+  // Words to avoid: main content only (not navigation, header or footer)
+  const main = visibleText(
+    (html.match(/<main\b[\s\S]*<\/main>/i)?.[0] || html).replace(/<(nav|header|footer)\b[\s\S]*?<\/\1>/gi, ' ')
+  ).replace(/’/g, "'");
+  const avoided = [...new Set([...main.matchAll(AVOID_PATTERN)].map((m) => m[1].toLowerCase()))];
+  if (avoided.length) toneWarnings.push(`${page}  ${avoided.join(', ')}`);
 
   const dash = text.indexOf('—');
   if (dash !== -1) failures.push(`${page}  em dash in page text: "...${snippet(text, dash)}..."`);
@@ -90,6 +110,11 @@ for (const [page, html] of pages) {
   if (!page.endsWith('/') || skipLinkCheck(page) || !isIndexable(html)) continue;
   const count = inbound.get(page)?.size || 0;
   if (count < 3) warnings.push(`${page}  linked from ${count} other page(s) in the main content (aim for at least 3)`);
+}
+
+if (toneWarnings.length) {
+  console.warn(`[content] ${toneWarnings.length} page(s) use words to avoid (see docs/TONE-OF-VOICE.md):`);
+  for (const warning of toneWarnings) console.warn(`  - ${warning}`);
 }
 
 if (warnings.length) {
