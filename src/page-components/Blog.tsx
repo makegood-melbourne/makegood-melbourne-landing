@@ -50,7 +50,7 @@ const BlogInner = ({ page = 1 }: { page?: number }) => {
               This is where we write down what we learn on site: what leases ask for, what make goods cost and what trips tenants up at handover.
             </p>
             <p className="text-muted-foreground mb-6 leading-relaxed">
-              Whether you're a property manager, real estate agent, strata manager or tenant preparing for lease expiry, our articles cover everything from asbestos management and concrete cancer remediation to electrical make-safe procedures and waste management compliance. Make goods can be complicated and expensive, so the guides are detailed.
+              For property managers, agents, strata managers and tenants preparing for lease expiry. The articles cover everything from asbestos management and concrete cancer remediation to electrical make-safe procedures and waste management compliance. Make goods can be complicated and expensive, so the guides are detailed.
             </p>
             <p className="text-muted-foreground mb-6 leading-relaxed">
               Our blog covers specialised topics including building defect remediation, facade cladding safety, fire damage restoration, waterproofing solutions and sustainable practices in commercial property maintenance. Each one is written by people who do make goods every day, and checked against current Victorian rules.

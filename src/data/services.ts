@@ -209,7 +209,7 @@ export const services: Service[] = [
     slug: "strip-out-solutions/pallet-racking-removal",
     title: "Pallet Racking Removal",
     metaTitle: "Pallet Racking Removal Melbourne | MakeGOOD Melbourne",
-    description: "Whether you are reconfiguring your warehouse, relocating, or preparing for handover, the removal of pallet racking must be done correctly. We don't just dismantle; we restore the concrete slab to a safe, clean condition. This means every anchor is core-drilled and removed, the void is filled with high-strength epoxy resin, and the repair is ground flush to restore your warehouse floor.",
+    description: "Reconfiguring, relocating or handing back the warehouse, pallet racking removal has to be done properly. We don't just dismantle; we restore the concrete slab to a safe, clean condition. This means every anchor is core-drilled and removed, the void is filled with high-strength epoxy resin, and the repair is ground flush to restore your warehouse floor.",
     metaDescription: "Pallet racking removal in Melbourne for warehouses and factories. Core drill and fill dynabolt removal, concrete repairs and floor grinding. Free quotes.",
     heroText: "Pallet racking removal for Melbourne warehouses that are reconfiguring, relocating or handing back the lease. We don't just dismantle; we restore the concrete slab to a safe, clean condition. This means every anchor is core-drilled and removed, the void is filled with high-strength epoxy resin, and the repair is ground flush to restore your warehouse floor.",
     ogImage: "/og/pallet-racking-removal.jpg",
@@ -318,7 +318,7 @@ export const services: Service[] = [
       title: "CLEAR YOUR WAREHOUSE",
       titleHighlight: "WITH CONFIDENCE",
       subtitle: "We do Make Goods all day, every day.",
-      text: "Whether you're moving, upgrading, or handing back the keys, we take the racking out safely, fix the floor and leave the site ready for the next trade. Contact us today for a site assessment and a no-obligation quote, including a potential valuation for your used racking."
+      text: "Moving, upgrading or handing back the keys, we take the racking out safely, fix the floor and leave the site ready for the next trade. Contact us today for a site assessment and a no-obligation quote, including a potential valuation for your used racking."
     },
     relatedServices: ["strip-out-solutions/demolition", "strip-out-solutions/make-safe"],
     category: "demolition",
@@ -1617,7 +1617,7 @@ export const services: Service[] = [
     ctaBlock: {
       title: "Skylights Part of Your Make Good?",
       subtitle: "We do makegoods all day, every day.",
-      text: "Whether you're completing end of lease obligations or upgrading your vacant property, we deliver complete skylight replacement as part of our make good service. One quote, one project manager, complete documentation for handover. Get in touch for a free assessment."
+      text: "At lease end or between tenants, we replace skylights as part of the make good. One quote, one project manager, complete documentation for handover. Get in touch for a free assessment."
     },
     relatedServices: ["roofing-solutions/metal-roof-replacement", "roofing-solutions/storm-damage-make-safe", "roofing-solutions/roof-leak-repairs"],
     category: "structural",

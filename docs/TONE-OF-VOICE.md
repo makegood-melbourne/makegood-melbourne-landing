@@ -48,7 +48,7 @@ the job: what we'll do, in what order, and what they need to know. Never like a 
 
 ## Words to avoid
 
-The build warns when one of the starred words appears on a page (`scripts/check-content.mjs`).
+The build fails when one of the starred words appears on a page (`scripts/check-content.mjs`).
 
 | Avoid | Write instead |
 |---|---|
@@ -56,7 +56,7 @@ The build warns when one of the starred words appears on a page (`scripts/check-
 | tailored \*, bespoke \* | "to what your lease asks for", or "custom" for a fitout |
 | seamless, seamlessly \* | Say what actually happens: "in one programme", "one contractor" ("a seamless coating" for a membrane is fine, that's what it is) |
 | we understand \* | Cut it and say the thing |
-| whether you're \* | Name the situations, or just start with the first one |
+| "Whether you're a..." as an opener \* | Name the situations, or just start with the first one |
 | proven \* | Show it: the steps, the photos, the sign off |
 | cutting-edge, state-of-the-art, world-class, top-notch, unparalleled, second to none, industry-leading \* | Cut it |
 | hassle-free, stress-free, peace of mind \* | Say what we take off their plate: "one contractor, one price, one handover" |
@@ -83,4 +83,4 @@ The build warns when one of the starred words appears on a page (`scripts/check-
 - [ ] Every claim is true and something we could show.
 - [ ] No words from the list above, unless the exception applies.
 - [ ] Read it aloud. If you wouldn't say it to a tenant on site, change it.
-- [ ] `npm run build` passes, and you've read the `[content]` warnings for your page.
+- [ ] `npm run build` passes (it fails on em dashes and the starred words).

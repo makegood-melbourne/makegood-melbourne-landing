@@ -161,7 +161,7 @@ const OurProcess = () => {
         <title>Our Process | How We Deliver Make Good Works | Melbourne</title>
         <meta 
           name="description" 
-          content="Discover our proven 6-step make good process. From free consultation to successful handover, we make commercial lease restoration simple and stress-free." 
+          content="Our 6-step make good process, from the free site visit and lease review to the fixed price, the works and the handover walkthrough." 
         />
         <meta name="keywords" content="make good process, commercial restoration Melbourne, lease end process, make good steps" />
         <link rel="canonical" href="https://makegood.melbourne/learn/our-process/" />
@@ -180,8 +180,8 @@ const OurProcess = () => {
             From First Contact to Final Handover
           </p>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
-            Our proven 6-step process ensures your end-of-lease make good is completed 
-            professionally, on time, and without stress.
+            Six steps from the first site visit to the handover walkthrough, so you know what happens next 
+            and when the building will be ready to hand back.
           </p>
 
         </div>

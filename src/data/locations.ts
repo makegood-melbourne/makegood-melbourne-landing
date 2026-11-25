@@ -556,7 +556,7 @@ export const locations: Location[] = [
     title: "Make Good Services Fitzroy",
     metaTitle: "Make Good Services Fitzroy | MakeGOOD Melbourne",
     description: "Make good and strip out for Fitzroy's studios, shops and converted warehouses on Brunswick Street and Smith Street, with the heritage fabric left intact.",
-    metaDescription: "Fitzroy make goods for studios, shops and converted warehouses, with bespoke fitouts removed and the brick, timber and heritage features kept.",
+    metaDescription: "Fitzroy make goods for studios, shops and converted warehouses, with custom fitouts removed and the brick, timber and heritage features kept.",
     uniqueIntro: "In Fitzroy, heritage warehouses, converted factories and character buildings house studios, agencies and small businesses. Brunswick Street and Smith Street are lined with agencies, venues and shops in 19th century buildings with modern fitouts inside.",
     localContext: "Heritage overlays are common in Fitzroy, so original features like exposed brick, timber trusses and pressed metal ceilings have to survive the make good. Creative tenants often have custom fitouts, with polished concrete, custom joinery and open plan layouts, that need to come out without damaging the building underneath.",
     keyAreas: [
@@ -589,7 +589,7 @@ export const locations: Location[] = [
       },
       {
         question: "What are the typical make good challenges for creative offices on Brunswick Street?",
-        answer: "Creative tenants in Fitzroy often install bespoke fitouts: custom joinery, feature lighting, polished concrete overlays and open-plan configurations. Removing these without damaging heritage fabric requires precision. Common challenges include restoring original floor surfaces beneath modern coverings, patching walls where custom shelving was anchored into brick, and reinstating ceiling systems. We handle the full scope from strip out through to final presentation."
+        answer: "Creative tenants in Fitzroy often install custom fitouts: custom joinery, feature lighting, polished concrete overlays and open-plan configurations. Removing these without damaging heritage fabric requires precision. Common challenges include restoring original floor surfaces beneath modern coverings, patching walls where custom shelving was anchored into brick, and reinstating ceiling systems. We handle the full scope from strip out through to final presentation."
       },
       {
         question: "Can you work around operating businesses in Fitzroy's mixed-use buildings?",
@@ -1072,7 +1072,7 @@ export const locations: Location[] = [
     faqs: [
       { question: "What are the common make good requirements for industrial warehouses in Thomastown?", answer: "Industrial warehouses in Thomastown, especially around Dalton Road, typically require concrete floor repairs, wall patching, and removal of tenant-installed fixtures. Due to the age of many buildings, tenants are often responsible for addressing any structural damage and ensuring compliance with environmental safety standards set by the City of Whittlesea." },
       { question: "How does the proximity to the Metropolitan Ring Road affect make good services in Thomastown?", answer: "Properties near the Metropolitan Ring Road benefit from high accessibility, but also face stricter environmental and noise regulations. Make good services here must consider additional remediation such as soundproofing repairs and dust control to comply with council and lease requirements." },
-      { question: "Are there unique challenges when making good retail shops along High Street in Thomastown?", answer: "Yes, retail shops on High Street often require detailed cosmetic reinstatement including repainting, signage removal, and floor repairs to restore the premises to a neutral condition. Additionally, the mix of older and newer shopfronts means tailored approaches are necessary to meet the diverse standards expected by local landlords." }
+      { question: "Are there unique challenges when making good retail shops along High Street in Thomastown?", answer: "Yes, retail shops on High Street often require detailed cosmetic reinstatement including repainting, signage removal, and floor repairs to restore the premises to a neutral condition. Older and newer shopfronts sit side by side, so the scope changes from one tenancy to the next." }
     ],
   },
   {
