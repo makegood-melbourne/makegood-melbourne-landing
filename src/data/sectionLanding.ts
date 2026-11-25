@@ -1241,7 +1241,7 @@ export const sectionLandingPages: SectionLandingData[] = [
     aboutTitlePrefix: "RACKING IN. RACKING OUT.",
     aboutTitleHighlight: "FLOORS FIXED EVERY TIME.",
     aboutContentLeft: [
-      "Online orders keep growing, and so does the demand for warehouse space set up to pick, pack and ship them. Whether you're fitting out your first fulfilment warehouse, moving a 3PL operation to a bigger site or clearing racking out at lease end, the racking is the job that sets everything else in motion.",
+      "Online orders keep growing, and so does the demand for warehouse space set up to pick, pack and ship them. Fitting out a first fulfilment warehouse, moving a 3PL operation to a bigger site or clearing racking out at lease end: either way, the racking is the job that sets everything else in motion.",
       "Here's the thing most racking companies won't tell you. Racking is only as good as the slab it's bolted into. Cracked joints, broken edges and old anchor holes don't belong under a new frame. We check the floor first and fix it before anything goes up."
     ],
     aboutContentRight: [
