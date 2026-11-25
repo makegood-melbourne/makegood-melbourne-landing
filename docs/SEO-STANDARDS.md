@@ -71,9 +71,13 @@ Netlify deploy (and the deploy preview on a PR) fails until they're fixed. Rules
 
 ## 9. Tone of voice
 
+The full guide, with the words to avoid and before and after examples, is [TONE-OF-VOICE.md](TONE-OF-VOICE.md).
+
+
 - [ ] **[checklist]** Plain, honest and confident. No corporate jargon and no claims we can't back up (no invented figures, partners or awards).
 - [ ] **[checklist]** Australian spelling (organise, colour, metres, centre).
 - [ ] **[checklist]** No Oxford commas.
+- [ ] **[warning]** None of the words to avoid listed in the tone guide ("comprehensive", "tailored", "we understand" and so on). The build lists every page that uses one.
 - [ ] **[build]** No em dashes in page text. Use commas, full stops, a colon or restructure the sentence.
 - [ ] **[build]** No raw markdown showing on the page. Links and bold must render, including inside tables.
 
@@ -97,7 +101,7 @@ Netlify deploy (and the deploy preview on a PR) fails until they're fixed. Rules
 | `scripts/check-links.mjs` | Internal link without trailing slash, to a redirect, or to a missing page; sitemap URL that isn't a page | |
 | `scripts/check-seo.mjs` | Missing or duplicate title, missing or duplicate meta description, no H1 or more than one H1 | Title over 60 characters or without the brand ending; description outside 120 to 155 characters |
 | `scripts/check-images.mjs` | Image without alt text, without width or height, served as JPG/PNG, over 300KB, or pointing to a missing file | Image file over 200KB; page with more than three images that aren't lazy loaded |
-| `scripts/check-content.mjs` | Em dash in page text, raw markdown (an unrendered `[link](/url/)` or `**bold**`), phone number or `tel:` link, `telephone` in structured data, Kew address | Indexable page linked from fewer than 3 other pages' main content |
+| `scripts/check-content.mjs` | Em dash in page text, raw markdown (an unrendered `[link](/url/)` or `**bold**`), phone number or `tel:` link, `telephone` in structured data, Kew address | Words to avoid from the tone guide; indexable page linked from fewer than 3 other pages' main content |
 
 Everything marked **[checklist]** above relies on the person (or chat) making the change,
 and on the PR checklist in `.github/pull_request_template.md`.
